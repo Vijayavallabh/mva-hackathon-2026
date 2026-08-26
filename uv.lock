@@ -162,7 +162,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "huggingface-hub", extras = ["cli", "hf-transfer"], specifier = ">=1.28.0" }]
+requires-dist = [{ name = "huggingface-hub", extras = ["cli"], specifier = ">=1.28.0" }]
 
 [[package]]
 name = "packaging"

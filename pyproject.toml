@@ -3,5 +3,5 @@ name = "mva-hackathon-2026"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
-    "huggingface-hub[cli,hf-transfer]>=1.28.0",
+    "huggingface-hub[cli]>=1.28.0",
 ]

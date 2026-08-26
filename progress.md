@@ -22,6 +22,20 @@ Next: feat-002, extract HPO terms from the clinical docx once the download lands
 Open question for the user: whether to run heavy realignment (feat-004) on the
 local A100s or sync to PrakashDGX_H2's H100s. Data stays local by default.
 
+## 2026-08-26 - session 1 continued: download complete
+
+- 84.99 GB / 11 files landed; `./init.sh` reports
+  `COMPLETE: all files present at expected size`. feat-001 done.
+- Repo pushed private to `Vijayavallabh/mva-hackathon-2026`, local git identity
+  set to `Vijayavallabh <be23b041@smail.iitm.ac.in>` (the global config on this
+  box belongs to a different user, so this had to be set per-repo).
+- Instruction file is `AGENTS.md`; `CLAUDE.md` is a gitignored local symlink.
+- Dropped the `hf_transfer` extra - deprecated upstream, replaced by
+  `HF_XET_HIGH_PERFORMANCE=1` in `scripts/download_data.sh`.
+- Disk after download: 3.3 TB free on /mnt/md0.
+
+Next: feat-002, HPO terms from the clinical docx.
+
 ## Resume
 
 Run `./init.sh` from a clean shell. It is the only setup step; it is idempotent
