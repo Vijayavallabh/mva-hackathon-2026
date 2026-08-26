@@ -1,0 +1,17 @@
+# ---- NEVER COMMIT SUBJECT DATA (Hackathon Rule 6: no resharing, delete within 30 days of close)
+data/
+results/
+logs/
+*.fastq *.fastq.gz *.fq *.fq.gz
+*.bam *.cram *.bai *.crai
+*.vcf *.vcf.gz *.vcf.gz.tbi *.bcf
+*.docx
+# ---- env / junk
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+
+# local agent-tool convenience symlink -> AGENTS.md
+CLAUDE.md

@@ -1,0 +1,63 @@
+{
+  "challenge": "Rare Disease, Real Kid: The MVA Hackathon 2026",
+  "close": "2026-10-24T23:59:00Z",
+  "delete_data_by": "2026-11-24",
+  "features": [
+    {
+      "id": "feat-001",
+      "name": "Environment and data acquisition",
+      "description": "uv project, gated HF dataset downloaded to data/ and size-verified against the remote tree, no-data-in-git gate wired as pre-commit hook.",
+      "dependencies": [],
+      "status": "in-progress",
+      "evidence": ""
+    },
+    {
+      "id": "feat-002",
+      "name": "Phenotype to HPO terms",
+      "description": "Extract the clinical narrative from Challenge_Clinical_Phenotype_1.docx into a tracked, de-identified HPO term list in notes/phenotype.md for downstream ranking tools (Exomiser/LIRICAL style).",
+      "dependencies": ["feat-001"],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-003",
+      "name": "VCF triage baseline",
+      "description": "Annotate the provided joint VCF (VEP or similar), filter to rare coding/splice variants, and produce a first candidate table. Establishes the reproducible baseline every later ranking is compared against.",
+      "dependencies": ["feat-002"],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-004",
+      "name": "Mosaicism and aneuploidy analysis from FASTQ",
+      "description": "MVA is defined by mosaic aneuploidy, which a germline-only VCF will under-report. Realign the 8 FASTQ lanes and run mosaic-aware SNV calling plus CNV/aneuploidy detection, so low-VAF and structural findings are recoverable. GPU-eligible.",
+      "dependencies": ["feat-003"],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-005",
+      "name": "Track 1 submission",
+      "description": "Ranked variant CSV matching static/templates/track1_submission_template.csv (proband_id, chrom/pos/ref/alt per allele, epcr, finding_type), plus methods writeup. Scored on rank points and F-max. Limit 6 submissions.",
+      "dependencies": ["feat-004"],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-006",
+      "name": "Track 2 drug repurposing report",
+      "description": "Mechanism characterization for the top variant(s) and approved-drug candidates targeting the disrupted pathway, with report, public GitHub link, and 3-minute pitch video. Judged on rigor 35 / impact 25 / innovation 25 / scalability 15. Limit 1 submission.",
+      "dependencies": ["feat-005"],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-007",
+      "name": "Data deletion and confirmation",
+      "description": "After close, delete data/, results/, logs/ and every derived copy, then email RarediseaserealkidMVAhackathon2026@synapse.org. Contractual obligation, due 2026-11-24.",
+      "dependencies": ["feat-006"],
+      "status": "not-started",
+      "evidence": ""
+    }
+  ]
+}
