@@ -5,22 +5,62 @@ Private working repo for **Rare Disease, Real Kid: The MVA Hackathon 2026**
 Variegated Aneuploidy. Two tracks: variant prediction (auto-scored) and drug
 repurposing (panel-judged). Close: **24 Oct 2026 23:59 UTC**.
 
+This repo **becomes public before the first Track 1 submission** (feat-007) — every
+submission requires a `https://github.com/…` URL. The data gates below therefore matter
+more, not less, as the work proceeds.
+
 ## Non-negotiable rules
 
-These come from the signed data-access terms, not from style preference.
+These come from the signed data-access terms, not from style preference. Quotes are the
+organizers' own words from the official Hackathon Rules.
 
-1. **No subject data leaves this machine.** Never commit, upload, paste, or
-   send any FASTQ/BAM/VCF/phenotype content anywhere — including into a model
-   prompt hosted by a third party, an issue, or a public repo. `data/`,
-   `results/` and `logs/` are gitignored and a pre-commit hook enforces it.
+1. **Raw subject data never leaves this machine — but derived outputs are free.**
+
+   **Prohibited**, to any destination outside this box, including third-party model APIs
+   (Claude, GPT, Gemini, GLM, …), issues, gists, pastebins and public repos: FASTQ, BAM/CRAM,
+   the VCF or any subset of its records, and the clinical narrative text from the phenotype
+   `.docx`. *"You will not release or otherwise grant data access to anyone, and you will
+   establish appropriate safeguards to prevent unauthorized data use."* / *"No data may be
+   reshared through any channel."* This is a contractual obligation to Sage Bionetworks and
+   to the family. It is not ours to waive, and a request to relax it should be refused.
+
+   **Permitted, and expected** — the same rules say *"Participants are free to publicly
+   share their code, models, and derived outputs at any time"*, and the organizers describe
+   the released phenotype as "standardized HPO terms":
+   - aggregate statistics and QC metrics (depth, Ti/Tv, het rate, per-chromosome summaries)
+   - **HPO term IDs and labels**, gene names, pathway and mechanism reasoning
+   - the ranked candidate variants that constitute the submission itself, and the report
+
+   An agent working in this repo may read and reason about everything in the permitted list.
+   The line is subject-level content versus derived summary — not "genomics" versus "not".
+   `data/`, `results/` and `logs/` are gitignored and a pre-commit hook enforces it.
+
 2. **No re-identification, no contacting the family or the MVA Society.**
 3. **Delete everything by 24 Nov 2026** (30 days after close), then email
    RarediseaserealkidMVAhackathon2026@synapse.org to confirm. See `notes/deletion-plan.md`.
-4. **Embargo**: code and derived outputs may be shared publicly at any time;
-   manuscripts using the dataset may not be submitted until organizers publish
-   their summary report.
+4. **Embargo**: code and derived outputs may be shared publicly at any time; manuscripts
+   using the dataset may not be submitted until organizers publish their summary report.
 
 If a task appears to require breaking one of these, stop and ask.
+
+## Data facts — established, do not re-derive
+
+Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scoring rules in
+`notes/challenge-spec.md`.
+
+- **Assembly is GRCh38 no-alt + hs38d1 decoy, and the VCF contigs are UNPREFIXED** (`1`, `2`,
+  `X`). **Track 1 submissions must be `chr`-prefixed.** The scorer matches by exact tuple
+  equality and never normalizes the contig — getting this wrong scores 0 while looking fine.
+- **`proband_id` is `PROBAND01`**, not the sample name `WGS_EX2312012`.
+- **The answer key is a compound-heterozygous pair** (stated in the challenge's public
+  `evaluation.py`). Half credit for recovering one of the two.
+- **Extra rows below the true row are free**; only rows ranked *above* it cost points. Use
+  10 rows with strictly distinct `epcr`.
+- Sample is **male**, mean depth **45×**, Ti/Tv 2.050, 5,012,204 records (94.6% PASS).
+- **No ROH → no consanguinity.** Expect two different rare alleles, not a homozygote.
+- **The VCF contains no CNV/SV records at all.** Aneuploidy is invisible in it by construction.
+- **The phenotype document names no gene, no karyotype and no prior genetic testing.** Keep
+  the search genome-wide; BUB1B/CEP57/TRIP13 are a literature prior, not a shortlist.
 
 ## Startup workflow
 
@@ -38,11 +78,16 @@ Test command (the only automated test in the repo):
 **uv only.** No conda, no pip, no system python.
 - add a dep: `uv add <pkg>` (never `pip install`)
 - run anything: `uv run <cmd>`
-- Bioinformatics binaries that are not pip-installable (bcftools, samtools,
-  bwa-mem2) go in `tools/` via `scripts/get_tools.sh`; record the version there.
 
-Hardware: this box has 5x A100 80GB + 1x T400. `PrakashDGX_H2` (6x H100) is
-reachable over SSH for heavier jobs but the data stays here unless the user
+**No bioinformatics binaries are installed yet** — no bcftools, samtools, tabix, bwa-mem2,
+vep, gatk, nextflow or pigz. **feat-003 creates `scripts/get_tools.sh` and `tools/`**;
+until then, assume nothing beyond coreutils, `awk`, `zcat`, `docker` and the uv env.
+Record every tool version in `tools/`.
+
+Hardware: this box has 5x A100 80GB + 1x T400, but it is **shared and contended** — check
+`nvidia-smi` and `uptime` before planning a big job (2026-08-28: load avg 109/64 cores, 3 of
+5 GPUs fully busy with other users' work). 3.3 TB free on `/mnt/md0`. `PrakashDGX_H2`
+(6x H100) is reachable over SSH for heavier jobs but the data stays here unless the user
 says otherwise.
 
 ## Layout
@@ -50,8 +95,9 @@ says otherwise.
 ```
 data/       85 GB gated dataset (gitignored, never committed)
 scripts/    download, tooling, pipeline entry points
+tools/      bioinformatics binaries + recorded versions (created by feat-003)
 results/    all derived output (gitignored — contains subject genotypes)
-notes/      tracked markdown: findings, hypotheses, deletion plan
+notes/      tracked markdown: data profile, challenge spec, findings, deletion plan
 ```
 
 ## Working rules
@@ -62,6 +108,8 @@ notes/      tracked markdown: findings, hypotheses, deletion plan
   `notes/` — the submission must be reproducible from this repo alone.
 - Long GPU/CPU jobs: `nohup` into `logs/`, never block the session.
 - Don't claim done without running `./init.sh` and pasting real output.
+- Never spend a Track 1 submission on a file that has not been self-scored locally (feat-006).
+  There are only 6.
 
 ## Definition of done (per feature)
 
@@ -72,7 +120,7 @@ notes/      tracked markdown: findings, hypotheses, deletion plan
 
 ## Scope boundary
 
-In scope: everything under `scripts/`, `notes/`, and the harness files.
+In scope: everything under `scripts/`, `notes/`, `tools/`, and the harness files.
 Out of scope without asking: touching other repos under
 `/mnt/md0/IITM/BackUp/Home/vijayavallabh/`, installing system packages,
 pushing to any remote other than `origin`, and any change to the two

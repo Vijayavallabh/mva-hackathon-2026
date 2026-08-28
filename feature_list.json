@@ -2,6 +2,8 @@
   "challenge": "Rare Disease, Real Kid: The MVA Hackathon 2026",
   "close": "2026-10-24T23:59:00Z",
   "delete_data_by": "2026-11-24",
+  "proband_id": "PROBAND01",
+  "assembly": "GRCh38 (no-alt, hs38d1 decoy, masked GRC exclusions v2) - contigs are UNPREFIXED in the VCF, but submissions must use chr-prefixed names",
   "features": [
     {
       "id": "feat-001",
@@ -13,8 +15,8 @@
     },
     {
       "id": "feat-002",
-      "name": "Phenotype to HPO terms",
-      "description": "Extract the clinical narrative from Challenge_Clinical_Phenotype_1.docx into a tracked, de-identified HPO term list in notes/phenotype.md for downstream ranking tools (Exomiser/LIRICAL style).",
+      "name": "Phenotype: extract embedded HPO terms",
+      "description": "The challenge supplies phenotype 'as standardized HPO terms' and the docx already carries 8 embedded HP:####### IDs - this is mechanical ID extraction, NOT narrative-to-HPO inference. Write scripts/extract_hpo.py to pull the HP: IDs from word/document.xml with stdlib zipfile, resolve labels against hp.obo (feat-003), and write notes/phenotype.md. Also record the negative: the document names no karyotype, no prior genetic testing, no candidate gene - so the search must stay genome-wide rather than collapsing onto BUB1B/CEP57/TRIP13.",
       "dependencies": [
         "feat-001"
       ],
@@ -23,28 +25,39 @@
     },
     {
       "id": "feat-003",
-      "name": "VCF triage baseline",
-      "description": "Annotate the provided joint VCF (VEP or similar), filter to rare coding/splice variants, and produce a first candidate table. Establishes the reproducible baseline every later ranking is compared against.",
+      "name": "Toolchain and annotation resources",
+      "description": "Nothing is installed on this box - no bcftools, samtools, tabix, bwa-mem2, vep, gatk, nextflow, pigz. AGENTS.md referenced scripts/get_tools.sh and tools/; this feature creates them. Also fetch the reference resources: the GRCh38 no-alt analysis set FASTA matching the VCF header, VEP cache (GRCh38), gnomAD v4 allele frequencies, ClinVar, and hp.obo. Outbound network to Ensembl / gnomAD GCS / UCSC / OBO / GitHub is confirmed reachable. Budget disk against the 3.3 TB free on /mnt/md0 and record every version in tools/.",
       "dependencies": [
-        "feat-002"
+        "feat-001"
       ],
       "status": "not-started",
       "evidence": ""
     },
     {
       "id": "feat-004",
-      "name": "Mosaicism and aneuploidy analysis from FASTQ",
-      "description": "MVA is defined by mosaic aneuploidy, which a germline-only VCF will under-report. Realign the 8 FASTQ lanes and run mosaic-aware SNV calling plus CNV/aneuploidy detection, so low-VAF and structural findings are recoverable. GPU-eligible.",
+      "name": "VCF triage baseline",
+      "description": "Annotate the provided joint VCF and produce the first candidate table - the reproducible baseline every later ranking is compared against. Known specifics: keep PASS only (4,740,790 of 5,012,204), drop the 116,485 records on alt/random/decoy contigs, and carry the no-chr <-> chr conversion explicitly since submissions are matched by exact tuple equality. Primary genetic model is COMPOUND HETEROZYGOUS (two rare damaging alleles in one gene) - both the scoring code's answer key and the absence of any ROH point there; de novo dominant is the second model. Rank with the feat-002 HPO terms (Exomiser / LIRICAL style).",
       "dependencies": [
+        "feat-002",
         "feat-003"
       ],
       "status": "not-started",
       "evidence": ""
     },
     {
-      "id": "feat-005",
-      "name": "Track 1 submission",
-      "description": "Ranked variant CSV matching static/templates/track1_submission_template.csv (proband_id, chrom/pos/ref/alt per allele, epcr, finding_type), plus methods writeup. Scored on rank points and F-max. Limit 6 submissions.",
+      "id": "feat-005a",
+      "name": "GC-corrected copy-number and BAF screen",
+      "description": "The provided VCF contains no CNV or structural records at all (genotypes are only 0/1, 1/1, 1/2), so MVA's defining mosaic aneuploidy is invisible in it. A quick 10 Mb BAF/depth screen (notes/data-profile.md) excluded high-level aneuploidy but left chr20 (and 19, 22) unresolved and confounded with GC/mappability bias. Redo it properly with GC-corrected read-depth binning and a mappability mask so the chr20 signal is either confirmed as low-level mosaic trisomy or attributed to bias. Small and targeted - this does not require re-calling the genome.",
+      "dependencies": [
+        "feat-004"
+      ],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-005b",
+      "name": "Targeted realignment for missed alleles",
+      "description": "OPTIONAL, contingent on feat-004's candidate list. Justification is recovering a second compound-het allele that Sentieon's diploid germline caller could have dropped - deep-intronic, structural, or repeat-adjacent - NOT aneuploidy detection, which feat-005a handles more cheaply. Realign the 8 FASTQ lanes (or only the intervals around surviving candidates) and re-call with a mosaic-aware caller. Real cost: ~385 GB decompressed, zcat alone is ~1 h serial, and the box is contended (load avg 109 on 64 cores, 3 of 5 A100s busy). nohup into logs/ and never block the session.",
       "dependencies": [
         "feat-004"
       ],
@@ -53,20 +66,52 @@
     },
     {
       "id": "feat-006",
-      "name": "Track 2 drug repurposing report",
-      "description": "Mechanism characterization for the top variant(s) and approved-drug candidates targeting the disrupted pathway, with report, public GitHub link, and 3-minute pitch video. Judged on rigor 35 / impact 25 / innovation 25 / scalability 15. Limit 1 submission.",
+      "name": "Local scorer and submission conformance",
+      "description": "Only 6 Track 1 submissions exist; none should be spent discovering a formatting bug. Vendor the challenge's public evaluation.py and track1_submission_template.csv into scripts/ and self-score every candidate CSV locally first. Must enforce: proband_id is exactly PROBAND01; chrom fields are chr-prefixed (the scorer only .strip()s them, so unprefixed names silently score zero); at most 10 rows; strictly distinct epcr values in (0,1] since ties collapse F-max thresholds; indels left-aligned and represented as the answer key would have them. Strategy note: rows with epcr BELOW the true row are free - they cannot lower F-max and do not move rank points - so fill all 10.",
       "dependencies": [
-        "feat-005"
+        "feat-004"
       ],
       "status": "not-started",
       "evidence": ""
     },
     {
       "id": "feat-007",
-      "name": "Data deletion and confirmation",
-      "description": "After close, delete data/, results/, logs/ and every derived copy, then email RarediseaserealkidMVAhackathon2026@synapse.org. Contractual obligation, due 2026-11-24.",
+      "name": "Make this repository public",
+      "description": "Every Track 1 submission requires a GitHub URL starting with https://github.com/ - this blocks the submission, it is not a Track 2 afterthought. History is currently clean (4 commits, 15 tracked files, nothing ever under data/ results/ logs/). Re-audit history at the time with 'git log --all --pretty=format: --name-only', confirm .gitignore and the pre-commit gate still hold, flip visibility on origin, and record the URL here.",
       "dependencies": [
-        "feat-006"
+        "feat-001"
+      ],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-008",
+      "name": "Track 1 submission",
+      "description": "Ranked variant CSV matching static/templates/track1_submission_template.csv (proband_id, chrom/pos/ref/alt per allele, epcr, finding_type, notes), self-scored via feat-006. Three hard requirements at upload: the CSV, a report file (.pdf or .md) describing the approach, and the public GitHub URL from feat-007. Scored on rank points (rank 1 = 100, ranks 2-3 = 50, 4-5 = 25, 6-10 = 10, partial match 0.5x) and F-max. Limit 6 submissions; best one counts.",
+      "dependencies": [
+        "feat-005a",
+        "feat-006",
+        "feat-007"
+      ],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-009",
+      "name": "Track 2 drug repurposing report",
+      "description": "Mechanism characterization for the top variant(s) and approved-drug candidates targeting the disrupted pathway. Deliverables: detailed report, public GitHub link, and a 3-minute recorded pitch video. Judged on rigor 35 / impact 25 / innovation 25 / scalability 15. Limit 1 submission, no re-submissions. The organizers state publicly that care for this child 'means managing symptoms and fighting cancer cells' - cancer predisposition is part of the phenotype and should anchor the mechanism argument (BUB1B/MVA1 is the canonical link).",
+      "dependencies": [
+        "feat-008"
+      ],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-010",
+      "name": "Data deletion and confirmation",
+      "description": "After close, delete data/, results/, logs/, the HF cache and every derived copy, then email RarediseaserealkidMVAhackathon2026@synapse.org. Contractual obligation, due 2026-11-24. See notes/deletion-plan.md.",
+      "dependencies": [
+        "feat-009"
       ],
       "status": "not-started",
       "evidence": ""

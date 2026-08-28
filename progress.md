@@ -66,3 +66,76 @@ verification and it was live:
 Verified: `./init.sh` -> `COMPLETE: all files present at expected size`, exit 0.
 
 Next: feat-002, HPO terms from the clinical docx. Unchanged.
+
+## 2026-08-28 — session 3: data screening, plan re-aimed
+
+The harness was built before anyone opened the data or read the challenge's scoring code.
+Screened both; several planning assumptions were wrong. No analysis was run and no candidate
+variant was proposed — this session only re-aimed the plan. Numbers and commands are in
+`notes/data-profile.md`, scoring rules in `notes/challenge-spec.md`.
+
+**Two submission-breaking facts, previously recorded nowhere:**
+
+- The VCF's contigs are **unprefixed** (`1`, `2`, `X` — reference is
+  `..._no_chr.fasta`), but Track 1 submissions must be **`chr`-prefixed**. The published
+  `evaluation.py` matches by exact tuple equality on `(chrom, pos, ref, alt)` and only
+  `.strip()`s the contig. Submitting VCF coordinates straight through scores 0 and looks
+  well-formed while doing it.
+- `proband_id` must be **`PROBAND01`**, not the sample name `WGS_EX2312012`.
+
+**What the data says:**
+
+- VCF: Sentieon 202308.02 Haplotyper → GVCFtyper, GATK 4.2.4.0 hard filters (no VQSR),
+  called 2025-02-05. 5,012,204 records, 94.6% PASS, mean DP 45.1, Ti/Tv 2.050, 88% dbSNP.
+  116,485 records on alt/random/decoy contigs to drop.
+- **No CNV, SV or symbolic-allele records exist in it** — genotypes are only `0/1`, `1/1`,
+  `1/2`. Mosaic aneuploidy cannot appear in this file by construction.
+- Sample is **male** (chrX depth ratio 0.565, chrX het 8.1%; already public via the
+  challenge page's own image alt-text).
+- **Zero runs of homozygosity** at 1 Mb resolution → no consanguinity → expect two different
+  rare alleles rather than a homozygote. The challenge's `evaluation.py` independently states
+  the answer key is compound-heterozygous.
+- Aneuploidy screen is **inconclusive, not negative**. chrX at ratio 0.565 works as a positive
+  control, so the method detects real copy-number change; no autosome shows a full trisomy.
+  But chr16/17/19/20/21/22 rise together in depth ratio, het% and BAF deviation — a
+  GC/mappability gradient. chr20 is the largest outlier on every column (ratio 1.039, het
+  70.4%, het:hom 2.38 vs ~1.60, BAF dev 0.090) and cannot be separated from bias without
+  GC-corrected read-depth binning.
+- FASTQ: NovaSeq A01973 run 164, 4 lanes, 2×149 bp, Phred+33, one library. 4.83× compression,
+  ~385 GB uncompressed; a single `zcat` took 6m56s, so decompression alone is ~1 h serial.
+  L003 R1's index ends `…GGAGA` where the other lanes end `…GGAGC` — worth checking.
+- Phenotype docx: probed structurally only, narrative not read. 380 words, and it **already
+  carries 8 embedded `HP:#######` IDs** — feat-002 is ID extraction, not narrative inference.
+  It names no karyotype, no prior genetic testing and no candidate gene, so the search stays
+  genome-wide.
+
+**Environment reality check:** no bioinformatics tooling is installed at all (no bcftools,
+samtools, tabix, bwa-mem2, vep, gatk, pigz); `AGENTS.md` pointed at a `scripts/get_tools.sh`
+and `tools/` that did not exist. Outbound network is open, so VEP cache / gnomAD / ClinVar /
+`hp.obo` are fetchable. The box is contended: load avg 109 on 64 cores, 3 of 5 A100s busy.
+3.3 TB free.
+
+**Changes made:**
+
+- `feature_list.json` rewritten, 7 → 11 features. feat-002 retargeted to HPO ID extraction.
+  New feat-003 (toolchain + annotation resources), feat-006 (local scorer and submission
+  conformance — never spend one of 6 attempts on a formatting bug), feat-007 (make this repo
+  public, which every Track 1 submission requires, not just Track 2). The old aneuploidy
+  feature split into feat-005a (cheap GC-corrected CN/BAF screen) and feat-005b (targeted,
+  optional realignment justified by recovering a missed second allele rather than by
+  aneuploidy detection).
+- `AGENTS.md` rule 1 **narrowed rather than deleted**: raw subject data still never leaves
+  the box, including into third-party model APIs; aggregate statistics, HPO IDs and labels,
+  gene names and submission-bound candidate variants are explicitly permitted, on the basis
+  of the organizers' own "code, models, and derived outputs" allowance. Added a "Data facts"
+  block, fixed the dangling `get_tools.sh`/`tools/` reference, noted the repo goes public.
+- New `notes/data-profile.md` and `notes/challenge-spec.md`. `notes/prior-knowledge.md` got
+  a dated "checked against the data" section with the pre-data prior left intact.
+  `notes/phenotype.md` restructured for the embedded HPO IDs.
+- Git history audited before planning the public flip: 4 commits, 15 tracked files, nothing
+  ever under `data/`, `results/` or `logs/`.
+
+Verified: `./init.sh` → `COMPLETE: all files present at expected size`, exit 0.
+
+Next: feat-002, extract the 8 embedded HPO IDs. feat-003 (toolchain) unblocks in parallel
+and is the real prerequisite for everything after.

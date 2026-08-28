@@ -22,3 +22,32 @@ Implications for the search:
 
 These are candidates, not an answer. Nothing here has been checked against
 this child's data yet.
+
+---
+
+## Checked against the data — 2026-08-28
+
+The prior above stands as written; it was recorded before any file was opened and is left
+intact on purpose. What the first screening pass (`data-profile.md`) says about it:
+
+- **The compound-het expectation is confirmed, from an independent direction.** The
+  challenge's own published `evaluation.py` describes "a clinically validated
+  compound-heterozygous answer key". The two allele slots per row were the right read.
+- **Homozygous-by-descent is now unlikely.** A 1 Mb runs-of-homozygosity scan found zero
+  runs of ≥3 Mb. No consanguinity signal. So of the two AR routes, expect **two different
+  rare alleles**, not one allele on a shared haplotype.
+- **The "deep-intronic or structural second allele" failure mode is still live and is now
+  the main justification for touching the FASTQ at all.** The provided VCF is a Sentieon
+  diploid germline SNV/indel call set with no CNV, SV or symbolic-allele records whatsoever.
+  Anything the germline caller dropped is invisible until we realign (feat-005b).
+- **"Not finding one of these three is a legitimate outcome" is stronger than it looked.**
+  The clinical phenotype document names no gene, no karyotype and no prior genetic testing
+  at all. We were given a bare HPO list. There is no external hint pointing at BUB1B, CEP57
+  or TRIP13 in this dataset — only the literature prior above and the organizers' public
+  statement that the child is "fighting cancer cells", which fits BUB1B/MVA1. The search
+  stays genome-wide; the three genes are a prior to be tested, not a shortlist to filter to.
+- **No aneuploidy has been ruled in or out.** Blood WGS at 45× excludes high-level
+  aneuploidy but not the low-level mosaicism MVA is named for, and the residual per-chromosome
+  signal (chr20 largest) is confounded with GC/mappability bias. MVA is classically diagnosed
+  on cultured cells by karyotype, so absence of a bulk signal in one blood sample is expected
+  and is **not** evidence against the diagnosis.
