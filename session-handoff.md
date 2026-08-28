@@ -1,6 +1,8 @@
 # Session handoff
 
-**Active feature:** feat-002 (phenotype to HPO terms). feat-001 is done.
+**Last updated:** 2026-08-28 (session 2 — harness audit)
+
+**Current objective / active feature:** feat-002 (phenotype to HPO terms). feat-001 is done.
 
 **State:** 84.99 GB dataset downloaded and integrity-verified (all 11 files match
 the remote HF tree by size). Harness in place, repo pushed to
@@ -21,7 +23,7 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 ./init.sh
 ```
 
-**Then:** feat-002 - read `data/Challenge_Clinical_Phenotype_1.docx` and write HPO
+**Recommended next step:** feat-002 - read `data/Challenge_Clinical_Phenotype_1.docx` and write HPO
 terms into `notes/phenotype.md`. Term IDs and labels only; keep narrative text,
 dates and places out of tracked files.
 

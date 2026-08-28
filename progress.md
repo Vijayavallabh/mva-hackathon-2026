@@ -40,3 +40,29 @@ Next: feat-002, HPO terms from the clinical docx.
 
 Run `./init.sh` from a clean shell. It is the only setup step; it is idempotent
 and safe to re-run at any point.
+
+## 2026-08-28 — session 2: harness audit, verification gate closed
+
+Audited the harness (harness-creator validator: 96/100). The validator named
+`lifecycle` as the bottleneck; that was a keyword check. The real defect was in
+verification and it was live:
+
+- `init.sh` step 4 ran `verify_data.py || echo "..."`, so a failed integrity
+  check printed its error and the script still exited 0 with `=== OK ===`.
+  The definition of done says "`./init.sh` passes" — for the one check that
+  guards 85 GB of subject data, it could not fail. Fixed: step 4 now exits 1.
+  Proved with a stubbed failure (`false` in place of the verify call) -> exit 1.
+- That hole was masking a real `INCOMPLETE`: `TRUNCATED README.md 5062/5076`.
+  Cause: the dataset's own README instructs `--exclude "README.md"
+  ".gitattributes"`, `download_data.sh` never passed it, and upstream edited
+  README.md after our copy landed. Both files are repo metadata, not subject
+  data. Now excluded in `download_data.sh` and skipped in `verify_data.py`.
+  All 11 payload files were and are intact — no re-download needed.
+- `feat-001`'s evidence string claimed "COMPLETE" while the repo reported
+  INCOMPLETE. Re-recorded against today's real run.
+- `no_data_in_git.sh` did not cover `logs/` although `.gitignore` does. Added.
+  Proved: staging `logs/download.log` now makes the gate exit 1.
+
+Verified: `./init.sh` -> `COMPLETE: all files present at expected size`, exit 0.
+
+Next: feat-002, HPO terms from the clinical docx. Unchanged.

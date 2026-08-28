@@ -3,7 +3,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 BAD=$( { git ls-files; git diff --cached --name-only; } 2>/dev/null \
-  | grep -Ei '(^|/)(data|results)/|\.(fastq|fq|bam|cram|vcf|bcf|docx)(\.gz)?$' || true )
+  | grep -Ei '(^|/)(data|results|logs)/|\.(fastq|fq|bam|cram|vcf|bcf|docx)(\.gz)?$' || true )
 if [ -n "$BAD" ]; then
   echo "REFUSING: subject data in git:"; echo "$BAD"; exit 1
 fi

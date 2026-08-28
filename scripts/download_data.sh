@@ -7,5 +7,6 @@ mkdir -p data logs
 export HF_XET_HIGH_PERFORMANCE=1
 uv run hf download SageBio/mva-hackathon-2026-data \
   --repo-type dataset --local-dir data --max-workers 8 \
+  --exclude "README.md" ".gitattributes" \
   2>&1 | tee -a logs/download.log
 uv run python scripts/verify_data.py

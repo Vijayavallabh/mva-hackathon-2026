@@ -11,6 +11,10 @@ from huggingface_hub import HfApi
 REPO = "SageBio/mva-hackathon-2026-data"
 DATA = Path(__file__).resolve().parent.parent / "data"
 
+# Repo metadata, not subject data. Excluded from download and edited upstream
+# after ours landed, so size-checking them yields a permanent false INCOMPLETE.
+SKIP = {"README.md", ".gitattributes"}
+
 
 def check(data_dir: Path = DATA) -> list[str]:
     """Return a list of problems; empty list means the download is complete."""
@@ -19,6 +23,8 @@ def check(data_dir: Path = DATA) -> list[str]:
     for f in api.list_repo_tree(REPO, repo_type="dataset", recursive=True):
         want = getattr(f, "size", None)
         if want is None:  # directory entry
+            continue
+        if f.path in SKIP:
             continue
         local = data_dir / f.path
         if not local.exists():

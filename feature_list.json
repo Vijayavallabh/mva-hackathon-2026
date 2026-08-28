@@ -9,7 +9,7 @@
       "description": "uv project, gated HF dataset downloaded to data/ and size-verified against the remote tree, no-data-in-git gate wired as pre-commit hook.",
       "dependencies": [],
       "status": "done",
-      "evidence": "./init.sh 2026-08-26: 'COMPLETE: all files present at expected size', 84.99 GB / 11 files verified against the remote HF tree; no-data-in-git gate passes; pre-commit hook active."
+      "evidence": "./init.sh 2026-08-28: 'COMPLETE: all files present at expected size', 84.99 GB / 11 payload files verified against the remote HF tree; no-data-in-git gate passes; pre-commit hook active. Integrity gate is now enforcing: init.sh exits 1 on a failed verify (proved with a stubbed failure -> exit 1), previously it printed the error and exited 0. README.md/.gitattributes are excluded from both download and verify as repo metadata that upstream edits post-download."
     },
     {
       "id": "feat-002",

@@ -16,9 +16,13 @@ uv run python scripts/verify_data.py --self-check
 
 echo "=== 4. dataset integrity ==="
 if [ -d data ] && [ -n "$(ls -A data 2>/dev/null)" ]; then
-  uv run python scripts/verify_data.py || echo "  (download incomplete - re-run ./scripts/download_data.sh)"
+  if ! uv run python scripts/verify_data.py; then
+    echo "  FAIL: dataset incomplete or truncated - re-run ./scripts/download_data.sh"
+    echo "  No feature may be claimed done against an unverified dataset."
+    exit 1
+  fi
 else
-  echo "  data/ empty - run ./scripts/download_data.sh"
+  echo "  data/ empty - run ./scripts/download_data.sh (analysis features cannot start)"
 fi
 
 echo "=== OK ==="
