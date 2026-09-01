@@ -1,6 +1,6 @@
 # Session handoff
 
-**Last updated:** 2026-09-01 (session 4 — harness reliability maintenance)
+**Last updated:** 2026-09-01 (session 5 — parent-directory authorization)
 
 **Current objective / active feature:** feat-002 (extract the embedded HPO terms).
 feat-001 is done. feat-003 (toolchain + annotation resources) remains queued until feat-002

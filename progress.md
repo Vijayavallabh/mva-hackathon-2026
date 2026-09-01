@@ -159,3 +159,15 @@ work or change feature status/evidence.
 
 Verified with `./init.sh` on 2026-09-01: `self-check ok`, `84.99 GB`,
 `COMPLETE: all files present at expected size`, `=== OK ===`.
+
+## 2026-09-01 — session 5: parent-directory authorization
+
+- Recorded the user's standing authorization in `AGENTS.md`: agents may operate without
+  additional permission anywhere below
+  `/mnt/md0/IITM/BackUp/Home/vijayavallabh/`, including sibling repositories.
+- Added the parent directory as a trusted project in `.codex/config.toml`.
+- Preserved contractual subject-data restrictions and explicit-task requirements for
+  destructive work, system-package installation, unusual remote pushes, and changes to
+  uploaded submission deliverables.
+
+This harness-only maintenance did not change feat-002 status or evidence.

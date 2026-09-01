@@ -120,11 +120,16 @@ notes/      tracked markdown: data profile, challenge spec, findings, deletion p
 
 ## Scope boundary
 
-In scope: everything under `scripts/`, `notes/`, `tools/`, and the harness files.
-Out of scope without asking: touching other repos under
-`/mnt/md0/IITM/BackUp/Home/vijayavallabh/`, installing system packages,
-pushing to any remote other than `origin`, and any change to the two
-submission deliverables after they have been uploaded.
+The user has granted standing authorization for agents to read, create, modify, run,
+and otherwise operate on files and repositories anywhere under
+`/mnt/md0/IITM/BackUp/Home/vijayavallabh/` without requesting additional permission.
+This includes sibling repositories and normal commands needed to complete assigned work.
+
+That authorization does not waive the non-negotiable subject-data rules above, permit
+re-identification or family contact, or make destructive operations implicit. Installing
+system packages, pushing to a remote other than a repository's configured `origin`, and
+changing either submission deliverable after upload still require an explicit task from
+the user.
 
 ## End of session
 
