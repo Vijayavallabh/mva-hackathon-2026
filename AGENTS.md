@@ -104,6 +104,10 @@ notes/      tracked markdown: data profile, challenge spec, findings, deletion p
 
 - One feature at a time from `feature_list.json`; update `status` + `evidence`
   in the same commit as the work.
+- Commit every intended repository change, however small. Do not leave completed work
+  only in the working tree.
+- At the end of every session, push all new commits to the repository's configured
+  `origin` and verify that the local branch matches its upstream.
 - Every claim about the genome needs the command that produced it recorded in
   `notes/` — the submission must be reproducible from this repo alone.
 - Long GPU/CPU jobs: `nohup` into `logs/`, never block the session.
@@ -129,12 +133,19 @@ That authorization does not waive the non-negotiable subject-data rules above, p
 re-identification or family contact, or make destructive operations implicit. Installing
 system packages, pushing to a remote other than a repository's configured `origin`, and
 changing either submission deliverable after upload still require an explicit task from
-the user.
+the user. The standing end-of-session authorization explicitly permits pushes to each
+repository's configured `origin`.
+
+Local programs may read and process gated subject files when required by an assigned
+feature. A hosted model must never receive raw subject data or clinical narrative; model
+context is limited to the permitted derived outputs in rule 1. “Full access” to the parent
+directory is filesystem authorization, not permission to transmit gated data.
 
 ## End of session
 
 1. Update `progress.md` (append a dated section) and `feature_list.json` status/evidence.
 2. Record blockers in `session-handoff.md` under Blockers.
-3. Commit — the pre-commit hook runs the no-data gate for you.
-4. Clean restart path: `./init.sh` must pass from a fresh shell with no
+3. Commit every intended change — the pre-commit hook runs the no-data gate for you.
+4. Push the current branch to its configured `origin`, then verify it matches upstream.
+5. Clean restart path: `./init.sh` must pass from a fresh shell with no
    arguments and no manual setup. If it does not, fix that before ending.

@@ -31,6 +31,13 @@ time". So aggregate statistics, HPO term IDs and labels, gene names and the subm
 candidate variants are tracked here deliberately. This repo goes **public** before the
 first Track 1 submission, which requires a GitHub URL.
 
+Local tooling may process gated inputs for assigned analyses, but hosted model context is
+restricted to permitted derived outputs. Filesystem authorization never permits uploading
+raw subject data or the clinical narrative to a model API.
+
+Commit every intended repository change, even a tiny one. At the end of each session,
+push all new commits to the configured `origin` after verification.
+
 Everything must be deleted by **24 Nov 2026** and confirmed by email —
 see `notes/deletion-plan.md`. Full rules in `AGENTS.md`.
 

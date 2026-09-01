@@ -1,6 +1,6 @@
 # Session handoff
 
-**Last updated:** 2026-09-01 (session 5 — parent-directory authorization)
+**Last updated:** 2026-09-01 (session 6 — commit-and-push policy)
 
 **Current objective / active feature:** feat-002 (extract the embedded HPO terms).
 feat-001 is done. feat-003 (toolchain + annotation resources) remains queued until feat-002
@@ -42,6 +42,11 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 against `hp.obo`, and fill the table in `notes/phenotype.md`. IDs and labels only; no
 narrative, no dates, no places. Fetch and record `hp.obo` as the one scoped input needed by
 feat-002; leave the broader toolchain and annotation-resource setup queued as feat-003.
+
+**Persistent repository workflow:** commit every intended change, however small. At the
+end of each session, push all new commits to the configured `origin` and verify that the
+branch matches upstream. Parent-directory filesystem access does not permit placing gated
+raw subject data or clinical narrative in hosted model context.
 
 **Open decisions:**
 - feat-005b (targeted realignment) can run on this box's A100s or sync to PrakashDGX_H2's

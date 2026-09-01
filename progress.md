@@ -171,3 +171,13 @@ Verified with `./init.sh` on 2026-09-01: `self-check ok`, `84.99 GB`,
   uploaded submission deliverables.
 
 This harness-only maintenance did not change feat-002 status or evidence.
+
+## 2026-09-01 — session 6: commit-and-push policy
+
+- Added a standing rule to commit every intended repository change, including tiny edits,
+  and push all session commits to the configured `origin` after verification.
+- Clarified that local tools may process gated inputs for assigned work, while hosted
+  models remain limited to permitted derived outputs. Filesystem authorization cannot
+  override the signed prohibition on data resharing.
+
+This harness-only maintenance did not change feat-002 status or evidence.
