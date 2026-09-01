@@ -12,6 +12,7 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
-
+.codex/
+.uv-cache/
 # local agent-tool convenience symlink -> AGENTS.md
 CLAUDE.md

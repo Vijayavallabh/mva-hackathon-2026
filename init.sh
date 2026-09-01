@@ -3,6 +3,8 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 unset VIRTUAL_ENV || true
+# Keep bootstrap writable and self-contained in restricted agent environments.
+export UV_CACHE_DIR="${UV_CACHE_DIR:-$PWD/.uv-cache}"
 
 echo "=== 1. uv environment ==="
 uv sync --quiet

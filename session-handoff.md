@@ -1,14 +1,14 @@
 # Session handoff
 
-**Last updated:** 2026-08-28 (session 3 — data screening, plan re-aimed)
+**Last updated:** 2026-09-01 (session 4 — harness reliability maintenance)
 
 **Current objective / active feature:** feat-002 (extract the embedded HPO terms).
-feat-001 is done. feat-003 (toolchain + annotation resources) is the real prerequisite for
-everything downstream and can start in parallel.
+feat-001 is done. feat-003 (toolchain + annotation resources) remains queued until feat-002
+is complete; keep exactly one feature active.
 
 **State:** 84.99 GB dataset downloaded and integrity-verified. The data has now been
 profiled — see `notes/data-profile.md` — but **no analysis has been run and no candidate
-variant proposed.** `feature_list.json` was rewritten this session from 7 to 11 features
+variant proposed.** `feature_list.json` was rewritten in session 3 from 7 to 11 features
 against what the data and the challenge's published scoring code actually say.
 
 **Read these before touching anything:** `notes/data-profile.md` (measured baseline, with
@@ -40,8 +40,8 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 **Recommended next step:** feat-002 — write `scripts/extract_hpo.py` to pull the 8 embedded
 `HP:\d{7}` IDs out of the docx's `word/document.xml` with stdlib `zipfile`, resolve labels
 against `hp.obo`, and fill the table in `notes/phenotype.md`. IDs and labels only; no
-narrative, no dates, no places. The `hp.obo` fetch belongs to feat-003, so either do that
-first or fetch just that one file.
+narrative, no dates, no places. Fetch and record `hp.obo` as the one scoped input needed by
+feat-002; leave the broader toolchain and annotation-resource setup queued as feat-003.
 
 **Open decisions:**
 - feat-005b (targeted realignment) can run on this box's A100s or sync to PrakashDGX_H2's

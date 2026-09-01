@@ -139,3 +139,23 @@ Verified: `./init.sh` → `COMPLETE: all files present at expected size`, exit 0
 
 Next: feat-002, extract the 8 embedded HPO IDs. feat-003 (toolchain) unblocks in parallel
 and is the real prerequisite for everything after.
+
+## 2026-09-01 — session 4: harness reliability maintenance
+
+Re-ran the structural harness audit: 100/100 across instructions, state, verification,
+scope, and lifecycle. Live bootstrap checks exposed two issues the structural score could
+not detect:
+
+- `uv.toml` and `init.sh` direct uv to the gitignored repository-local `.uv-cache/`, so
+  startup and standalone verification do not depend on a writable global user cache.
+- `verify_data.py --self-check` now uses a local fixture covering missing, truncated, and
+  complete files. Only the real dataset-integrity check contacts Hugging Face.
+- `session-handoff.md` no longer suggests starting feat-003 in parallel with feat-002;
+  `feature_list.json` assigns the narrowly required `hp.obo` fetch to feat-002, and exactly
+  one feature remains active.
+
+Active feature and next step remain feat-002. This maintenance did not perform phenotype
+work or change feature status/evidence.
+
+Verified with `./init.sh` on 2026-09-01: `self-check ok`, `84.99 GB`,
+`COMPLETE: all files present at expected size`, `=== OK ===`.

@@ -16,7 +16,7 @@
     {
       "id": "feat-002",
       "name": "Phenotype: extract embedded HPO terms",
-      "description": "The challenge supplies phenotype 'as standardized HPO terms' and the docx already carries 8 embedded HP:####### IDs - this is mechanical ID extraction, NOT narrative-to-HPO inference. Write scripts/extract_hpo.py to pull the HP: IDs from word/document.xml with stdlib zipfile, resolve labels against hp.obo (feat-003), and write notes/phenotype.md. Also record the negative: the document names no karyotype, no prior genetic testing, no candidate gene - so the search must stay genome-wide rather than collapsing onto BUB1B/CEP57/TRIP13.",
+      "description": "The challenge supplies phenotype 'as standardized HPO terms' and the docx already carries 8 embedded HP:####### IDs - this is mechanical ID extraction, NOT narrative-to-HPO inference. Write scripts/extract_hpo.py to pull the HP: IDs from word/document.xml with stdlib zipfile, fetch and provenance-record hp.obo as the single scoped resource for this feature, resolve labels, and write notes/phenotype.md. The broader toolchain and annotation-resource bundle remains feat-003. Also record the negative: the document names no karyotype, no prior genetic testing, no candidate gene - so the search must stay genome-wide rather than collapsing onto BUB1B/CEP57/TRIP13.",
       "dependencies": [
         "feat-001"
       ],
