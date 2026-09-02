@@ -16,12 +16,12 @@
     {
       "id": "feat-002",
       "name": "Phenotype: extract embedded HPO terms",
-      "description": "The challenge supplies phenotype 'as standardized HPO terms' and the docx already carries 8 embedded HP:####### IDs - this is mechanical ID extraction, NOT narrative-to-HPO inference. Write scripts/extract_hpo.py to pull the HP: IDs from word/document.xml with stdlib zipfile, fetch and provenance-record hp.obo as the single scoped resource for this feature, resolve labels, and write notes/phenotype.md. The broader toolchain and annotation-resource bundle remains feat-003. Also record the negative: the document names no karyotype, no prior genetic testing, no candidate gene - so the search must stay genome-wide rather than collapsing onto BUB1B/CEP57/TRIP13.",
+      "description": "The challenge supplies phenotype 'as standardized HPO terms' and the docx already carries 8 embedded HP:####### IDs. Write scripts/extract_hpo.py to pull the HP: IDs from word/document.xml with stdlib zipfile, fetch and provenance-record hp.obo, resolve labels, and write notes/phenotype.md. Reduce the Presentation and Notes cells to broad, non-verbatim lexical signals without emitting clinical narrative, exact ages, dates, or measurements. The broader toolchain and annotation-resource bundle remains feat-003. Also record the negative: the document names no karyotype, no prior genetic testing, no candidate gene - so the search must stay genome-wide rather than collapsing onto BUB1B/CEP57/TRIP13.",
       "dependencies": [
         "feat-001"
       ],
       "status": "done",
-      "evidence": "scripts/extract_hpo.py; `uv run python scripts/extract_hpo.py --self-check` proves ordered extraction, deduplication, OBO label resolution, and that surrounding prose is not emitted; `uv run python scripts/extract_hpo.py` wrote notes/phenotype.md with 8 permitted HPO ID/label pairs. hp.obo fetched from https://purl.obolibrary.org/obo/hp.obo, release 2026-06-23, SHA-256 a5092cbdf605f568403cf7380d9173014015692433b2cc631bc5c1b053876b1b. `./init.sh` passed 2026-09-02."
+      "evidence": "scripts/extract_hpo.py; `uv run python scripts/extract_hpo.py --self-check` proves HPO extraction, OBO lookup, Presentation/Notes classification, and that source text is not emitted; `uv run python scripts/extract_hpo.py` wrote notes/phenotype.md with 8 HPO ID/label rows and fixed-vocabulary context signals. Exact wording, ages, dates, numbers, and measurements remain local. hp.obo release 2026-06-23, SHA-256 a5092cbdf605f568403cf7380d9173014015692433b2cc631bc5c1b053876b1b. Final `./init.sh` output recorded in progress.md on 2026-09-02."
     },
     {
       "id": "feat-003",

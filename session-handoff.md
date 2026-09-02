@@ -1,12 +1,13 @@
 # Session handoff
 
-**Last updated:** 2026-09-02 (session 8 — feat-002 HPO extraction)
+**Last updated:** 2026-09-02 (session 9 — Presentation/Notes signals)
 
 **Current objective / active feature:** feat-003 (toolchain and annotation resources).
 feat-001 and feat-002 are done; keep exactly one feature active.
 
 **State:** 84.99 GB subject dataset downloaded and integrity-verified. The data has been
-profiled and its embedded HPO IDs extracted, but **no variant analysis has been run and no
+profiled; its HPO IDs, labels, and broad non-verbatim Presentation/Notes signals have been
+extracted, but **no variant analysis has been run and no
 candidate variant proposed.** `feature_list.json` was rewritten in session 3 from 7 to 11 features
 against what the data and the challenge's published scoring code actually say.
 
@@ -30,6 +31,8 @@ traps that silently score zero).
 
 None after the feat-002 commit. The fetched `data/resources/hp.obo` is intentionally
 gitignored; its release, source, and checksum are recorded in `notes/phenotype.md`.
+The protected Presentation/Notes wording was not copied; only fixed-vocabulary signals
+are tracked.
 
 **Resume with:**
 ```bash

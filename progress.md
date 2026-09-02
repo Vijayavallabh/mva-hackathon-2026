@@ -228,3 +228,46 @@ exit=0
 ```
 
 Next: feat-003, toolchain and annotation resources.
+
+## 2026-09-02 — session 9: Presentation/Notes context signals
+
+The user explicitly requested that feat-002 include the combined Presentation/Notes
+column rather than only its HPO IDs, so feat-002 was briefly reopened and feat-003 remained
+queued.
+
+- Extended `scripts/extract_hpo.py` to locate the combined Presentation/Notes table column
+  and reduce each protected cell to a fixed vocabulary of broad lexical signals: proband or
+  family context, prenatal/perinatal/postnatal timing, and quantitative, diagnostic,
+  treatment, or longitudinal information type.
+- The tracked output contains no source wording, ages, dates, measurements, or numeric
+  values. A mixed proband/family result is retained as ambiguity rather than automatically
+  assigning that phenotype or turning it into a ranking weight.
+- Expanded the synthetic self-check to use a real WordprocessingML table and prove that
+  protected example phrases do not appear in the generated Markdown.
+- The real run classified all 8 HPO rows and wrote the safe signals to
+  `notes/phenotype.md`.
+- Two-axis review tightened the implementation: Word XML reading is shared between stages,
+  postnatal timing now requires explicit postnatal language rather than generic diagnosis
+  words, and the synthetic test explicitly rejects source phrases, numbers, dates, and
+  measurements. A local four-word overlap audit across all 8 protected cells and the public
+  note returned `verbatim_4word_overlap=0` without printing either source.
+
+Final verification:
+
+```text
+self-check ok: IDs and context signals resolved; protected text not emitted
+wrote /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/notes/phenotype.md with 8 HPO terms
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+85.00 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== OK ===
+exit=0
+```
+
+Next: feat-003, toolchain and annotation resources.
