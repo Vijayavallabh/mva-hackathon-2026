@@ -16,12 +16,12 @@
     {
       "id": "feat-002",
       "name": "Phenotype: extract embedded HPO terms",
-      "description": "The challenge supplies phenotype as 8 embedded HP:####### IDs plus protected Presentation/Notes. Write scripts/extract_hpo.py to pull IDs from word/document.xml with stdlib zipfile, fetch and provenance-record hp.obo, resolve labels, verify populated context rows, and write notes/phenotype.md. Record only reviewed non-verbatim categories: seven proband phenotypes, one parental/family-history signal, broad timing and organ-system domain; never emit narrative, exact ages, dates or measurements. Also record the negative: the document names no karyotype, prior genetic testing or candidate gene, so the search stays genome-wide rather than collapsing onto BUB1B/CEP57/TRIP13. The broader toolchain remains feat-003.",
+      "description": "The challenge supplies phenotype as 8 embedded HP:####### IDs plus protected Presentation/Notes. Write scripts/extract_hpo.py to pull IDs from word/document.xml with stdlib zipfile, fetch and provenance-record hp.obo, resolve labels, verify populated context rows, and write notes/phenotype.md. Record reviewed non-verbatim context: seven proband phenotypes, one parental/family-history signal, broad timing, organ-system domain and concise clinical significance; never emit narrative, exact ages, dates or measurements. Also record the negative: the document names no karyotype, prior genetic testing or candidate gene, so the search stays genome-wide rather than collapsing onto BUB1B/CEP57/TRIP13. The broader toolchain remains feat-003.",
       "dependencies": [
         "feat-001"
       ],
       "status": "done",
-      "evidence": "scripts/extract_hpo.py; `uv run python scripts/extract_hpo.py --self-check` proves HPO/OBO processing, reviewed-context rendering and non-emission of source phrases, dates and measurements; `uv run python scripts/extract_hpo.py` verified 8 populated Presentation/Notes rows and wrote notes/phenotype.md with seven proband features plus one parental/family-history signal. Exact wording and quantitative details remain local. hp.obo release 2026-06-23, SHA-256 a5092cbdf605f568403cf7380d9173014015692433b2cc631bc5c1b053876b1b. Final `./init.sh` output recorded in progress.md on 2026-09-02."
+      "evidence": "scripts/extract_hpo.py; `uv run python scripts/extract_hpo.py --self-check` proves HPO/OBO processing, reviewed-context and clinical-significance rendering, and non-emission of source phrases, dates and measurements; `uv run python scripts/extract_hpo.py` verified 8 populated Presentation/Notes rows and wrote notes/phenotype.md with seven proband features plus one parental/family-history signal. Exact wording and quantitative details remain local. hp.obo release 2026-06-23, SHA-256 a5092cbdf605f568403cf7380d9173014015692433b2cc631bc5c1b053876b1b. Final `./init.sh` output recorded in progress.md on 2026-09-02."
     },
     {
       "id": "feat-003",
@@ -77,7 +77,7 @@
     {
       "id": "feat-007",
       "name": "Make this repository public",
-      "description": "Every Track 1 submission requires a GitHub URL starting with https://github.com/ - this blocks the submission, it is not a Track 2 afterthought. History is currently clean (4 commits, 15 tracked files, nothing ever under data/ results/ logs/). Re-audit history at the time with 'git log --all --pretty=format: --name-only', confirm .gitignore and the pre-commit gate still hold, flip visibility on origin, and record the URL here.",
+      "description": "Every Track 1 submission requires a GitHub URL starting with https://github.com/ - this blocks the submission, it is not a Track 2 afterthought. The current tree is data-safe, but the 2026-09-02 disclosure audit found two short non-HPO protected-text overlaps in reachable commit 05ed1cc. Before public visibility, rewrite that commit out of all reachable history with explicit authorization, force-push the configured origin, repeat the protected-text audit plus `git log --all --pretty=format: --name-only`, confirm .gitignore and the pre-commit gate, then flip visibility and record the URL.",
       "dependencies": [
         "feat-001"
       ],

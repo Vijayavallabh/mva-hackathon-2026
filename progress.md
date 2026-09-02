@@ -279,7 +279,7 @@ asked that the durable harness and relevant analysis documents reflect it. The s
 and exact quantitative details were not copied into tracked files.
 
 - Replaced keyword-only context signals in `scripts/extract_hpo.py` with a reviewed,
-  categorical mapping. Seven HPO terms are scoped to redacted proband; `HP:0200067` is retained
+  categorical mapping. Seven HPO terms describe PROBAND01; `HP:0200067` is retained
   separately as parental/family-history evidence. The script verifies that every expected
   ID still has a populated source row and detects ID-set or empty-row drift. Wording-only
   changes require a fresh human review.
@@ -295,6 +295,53 @@ and exact quantitative details were not copied into tracked files.
 - Two-axis review corrected an overclaim: the script detects changed ID sets and empty
   context rows, not wording-only edits. It also replaced free-form subject scope with an
   enum and derives analysis role from that scope, preventing contradictory combinations.
+
+Final verification:
+
+```text
+self-check ok: IDs and reviewed context resolved; protected text not emitted
+wrote /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/notes/phenotype.md with 8 HPO terms
+Harness validation: 100/100
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+85.00 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== OK ===
+exit=0
+```
+
+Next: feat-003, toolchain and annotation resources.
+
+## 2026-09-02 — session 11: complete privacy-safe phenotype semantics
+
+The user clarified that the categorical table still omitted analysis-relevant meaning.
+Expanded `PhenotypeContext` with concise, non-verbatim clinical significance for every
+row: the investigation trigger, congenital renal involvement, growth relative to expected
+context, persistent early growth/muscle impairment, co-occurring muscle loss, substantial
+prematurity, severe fetal growth restriction, and recurrent parental loss preceding the
+proband.
+
+The source wording and exact quantitative details remain excluded. The extractor now
+rejects any three-word overlap against both protected narrative-bearing table columns.
+`AGENTS.md`, feat-002 evidence and the session handoff now explicitly route future agents
+to the richer safe summary in `notes/phenotype.md`.
+- Standards review found that safe content was manually verified but not enforced at
+  runtime. The extractor now rejects digits/measurement units and any three-word overlap
+  between reviewed summaries and the protected Clinical Feature or Presentation/Notes
+  cells; the synthetic self-check exercises both rejection paths.
+- A stricter follow-up review found two shorter source fragments that the initial six-word
+  audit missed. Both were paraphrased; validation now checks three-word sequences across
+  both narrative-bearing columns.
+- Final current-tree audit, excluding explicitly permitted HPO labels:
+  `current_tree_non_hpo_verbatim_3word_overlap=0`.
+- Reachable-history audit found one affected commit (`05ed1cc`, two short overlaps). The
+  current tree is clean, but feat-007 is now blocked from making the repository public until
+  an explicitly authorized history rewrite and force-push removes that commit content.
 
 Final verification:
 

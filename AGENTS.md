@@ -28,8 +28,8 @@ organizers' own words from the official Hackathon Rules.
    share their code, models, and derived outputs at any time"*, and the organizers describe
    the released phenotype as "standardized HPO terms":
    - aggregate statistics and QC metrics (depth, Ti/Tv, het rate, per-chromosome summaries)
-   - **HPO term IDs and labels**, plus broad non-verbatim categorical context such as
-     proband versus family history, onset bins and organ-system groupings
+   - **HPO term IDs and labels**, plus broad non-verbatim categorical context and concise
+     clinical-significance summaries that omit exact ages, dates, measurements and wording
    - gene names, pathway and mechanism reasoning
    - the ranked candidate variants that constitute the submission itself, and the report
 
@@ -67,8 +67,11 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   parental/family history. Retain that term as a mechanistic and inheritance signal, but do
   not represent it as an abnormality observed in the proband.
 - **Rank the constellation, not one symptom:** malignancy, congenital renal involvement,
-  impaired growth and redacted development, adverse perinatal/fetal growth and parental
+  impaired somatic and muscular development, adverse perinatal/fetal growth and parental
   reproductive loss form the useful multi-system pattern. No single term is diagnostic.
+- **Do not make the repository public yet:** the current tree passes the disclosure audit,
+  but reachable commit `05ed1cc` contains two short non-HPO overlaps with protected table
+  wording. Feat-007 must remove them from history and re-audit before changing visibility.
 
 ## Startup workflow
 

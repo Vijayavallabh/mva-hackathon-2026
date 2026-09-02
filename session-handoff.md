@@ -1,12 +1,13 @@
 # Session handoff
 
-**Last updated:** 2026-09-02 (session 10 — reviewed phenotype context)
+**Last updated:** 2026-09-02 (session 11 — complete privacy-safe phenotype semantics)
 
 **Current objective / active feature:** feat-003 (toolchain and annotation resources).
 feat-001 and feat-002 are done; keep exactly one feature active.
 
 **State:** 84.99 GB subject dataset downloaded and integrity-verified. The data has been
-profiled; its HPO IDs, labels, and reviewed non-verbatim context have been extracted.
+profiled; its HPO IDs, labels, reviewed context and concise clinical-significance summaries
+have been extracted.
 Seven terms are proband phenotypes and one is parental/family history. **No variant analysis
 has been run and no candidate variant proposed.** `feature_list.json` was rewritten in
 session 3 from 7 to 11 features
@@ -18,6 +19,10 @@ traps that silently score zero).
 
 ## Blockers
 
+- **Do not make the repository public:** current tracked files have zero non-HPO three-word
+  overlap with protected table wording, but reachable commit `05ed1cc` has two overlaps.
+  Feat-007 must rewrite that content out of history and force-push the configured origin;
+  this destructive history operation requires an explicit user task.
 - **No bioinformatics tooling is installed** — no bcftools, samtools, tabix, bwa-mem2, vep,
   gatk, nextflow, pigz. Nothing beyond coreutils, `awk`, `zcat`, `docker` and the uv env.
   feat-003 fixes this and gates feat-004 onward.

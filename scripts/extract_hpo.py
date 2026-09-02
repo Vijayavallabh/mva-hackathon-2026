@@ -36,6 +36,9 @@ CONTEXT_REVIEW_DATE = "2026-09-02"
 HPO_ID = re.compile(rb"HP:\d{7}")
 WORD_NAMESPACE = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 WORD = {"w": WORD_NAMESPACE}
+FORBIDDEN_QUANTITATIVE_DETAIL = re.compile(
+    r"\d|\b(?:kg|kilogram\w*|gram\w*|cm|mm|week\w*|month\w*|year\w*)\b", re.I
+)
 
 class SubjectScope(StrEnum):
     """Whose phenotype or history a reviewed term describes."""
@@ -51,6 +54,7 @@ class PhenotypeContext:
     applies_to: SubjectScope
     broad_timing: str
     domain: str
+    clinical_significance: str
 
     @property
     def analysis_role(self) -> str:
@@ -66,30 +70,52 @@ class PhenotypeContext:
 # context rows. A wording-only source change still requires a fresh human review.
 REVIEWED_CONTEXT = {
     "HP:0002859": PhenotypeContext(
-        SubjectScope.PROBAND, "not specified", "oncologic"
+        SubjectScope.PROBAND,
+        "not specified",
+        "oncologic",
+        "malignancy that prompted genomic investigation",
     ),
     "HP:0000121": PhenotypeContext(
-        SubjectScope.PROBAND, "congenital", "renal"
+        SubjectScope.PROBAND,
+        "congenital",
+        "renal",
+        "congenital renal mineral deposition",
     ),
     "HP:0004322": PhenotypeContext(
-        SubjectScope.PROBAND, "not specified", "growth"
+        SubjectScope.PROBAND,
+        "not specified",
+        "growth",
+        "stature markedly low relative to familial and age expectations",
     ),
     "HP:0001508": PhenotypeContext(
-        SubjectScope.PROBAND, "early life", "growth and nutrition"
+        SubjectScope.PROBAND,
+        "early life",
+        "growth and nutrition",
+        "persistent early somatic growth and musculature impairment",
     ),
     "HP:0003202": PhenotypeContext(
-        SubjectScope.PROBAND, "not specified", "neuromuscular"
+        SubjectScope.PROBAND,
+        "not specified",
+        "neuromuscular",
+        "diminished musculature accompanying poor overall growth",
     ),
     "HP:0001622": PhenotypeContext(
-        SubjectScope.PROBAND, "perinatal", "perinatal"
+        SubjectScope.PROBAND,
+        "perinatal",
+        "perinatal",
+        "substantial prematurity",
     ),
     "HP:0001518": PhenotypeContext(
-        SubjectScope.PROBAND, "prenatal/perinatal", "fetal growth"
+        SubjectScope.PROBAND,
+        "prenatal/perinatal",
+        "fetal growth",
+        "marked prenatal growth impairment with substantially reduced neonatal mass",
     ),
     "HP:0200067": PhenotypeContext(
         SubjectScope.FAMILY,
         "family history",
         "reproductive",
+        "recurrent parental pregnancy loss preceding the proband",
     ),
 }
 
@@ -116,8 +142,16 @@ def _cell_text(cell: ElementTree.Element) -> str:
     return "".join(node.text or "" for node in cell.findall(".//w:t", WORD)).strip()
 
 
-def extract_populated_context_rows(docx: Path) -> set[str]:
-    """Return IDs whose Presentation/Notes cell is populated, never its source text."""
+def _word_ngrams(text: str, size: int = 3) -> set[tuple[str, ...]]:
+    """Return normalized word n-grams for private in-memory disclosure checks."""
+    words = re.findall(r"[a-z]+", text.casefold())
+    return {tuple(words[index : index + size]) for index in range(len(words) - size + 1)}
+
+
+def validate_context_rows(
+    docx: Path, contexts: Mapping[str, PhenotypeContext]
+) -> set[str]:
+    """Validate populated rows and summaries without returning protected source text."""
     root = ElementTree.fromstring(_read_document_xml(docx))
     tables = root.findall(".//w:tbl", WORD)
     if len(tables) != 1:
@@ -133,9 +167,17 @@ def extract_populated_context_rows(docx: Path) -> set[str]:
         for index, header in enumerate(headers)
         if "present" in header and "note" in header
     ]
+    feature_indices = [
+        index
+        for index, header in enumerate(headers)
+        if "clinical" in header and "feature" in header
+    ]
     if len(context_indices) != 1:
         raise ValueError("phenotype table lacks one combined Presentation/Notes column")
+    if len(feature_indices) != 1:
+        raise ValueError("phenotype table lacks one Clinical Feature column")
     context_index = context_indices[0]
+    protected_indices = (feature_indices[0], context_index)
 
     populated: set[str] = set()
     for row_number, row in enumerate(rows[1:], 1):
@@ -143,10 +185,23 @@ def extract_populated_context_rows(docx: Path) -> set[str]:
         if context_index >= len(cells):
             raise ValueError("phenotype table row has too few columns")
         row_ids = HPO_ID.findall(" ".join(_cell_text(cell) for cell in cells).encode())
-        if row_ids and not _cell_text(cells[context_index]):
+        source_texts = [_cell_text(cells[index]) for index in protected_indices]
+        if row_ids and not source_texts[-1]:
             raise ValueError(f"phenotype table row {row_number} has empty context")
         for raw_id in row_ids:
-            populated.add(raw_id.decode("ascii"))
+            hpo_id = raw_id.decode("ascii")
+            populated.add(hpo_id)
+            context = contexts.get(hpo_id)
+            if context is None:
+                continue
+            summary = " ".join(
+                (context.broad_timing, context.domain, context.clinical_significance)
+            )
+            if FORBIDDEN_QUANTITATIVE_DETAIL.search(summary):
+                raise ValueError(f"reviewed context contains quantitative detail: {hpo_id}")
+            source_ngrams = set().union(*(_word_ngrams(text) for text in source_texts))
+            if source_ngrams & _word_ngrams(summary):
+                raise ValueError(f"reviewed context overlaps protected wording: {hpo_id}")
     return populated
 
 
@@ -231,7 +286,8 @@ def render_markdown(
             raise ValueError(f"HPO ID lacks reviewed context: {hpo_id}") from error
         rows.append(
             f"| `{hpo_id}` | {label} | {context.applies_to} | "
-            f"{context.broad_timing} | {context.domain} | {context.analysis_role} |"
+            f"{context.broad_timing} | {context.domain} | "
+            f"{context.clinical_significance} | {context.analysis_role} |"
         )
 
     table = "\n".join(rows)
@@ -244,8 +300,8 @@ places, exact ages, measurements, or identifying free text.
 
 ## HPO terms
 
-| HPO ID | Label | Applies to | Broad timing | Domain | Analysis role |
-|---|---|---|---|---|---|
+| HPO ID | Label | Applies to | Broad timing | Domain | Clinical significance | Analysis role |
+|---|---|---|---|---|---|---|
 {table}
 
 Seven terms are proband phenotypes; the reproductive-loss term is parental/family history.
@@ -253,9 +309,11 @@ Keep the latter as mechanistic and inheritance context, but do not score it as a
 abnormality observed in the proband.
 
 The useful signal is the full multi-system constellation: malignancy, congenital renal
-involvement, impaired growth and redacted development, adverse perinatal/fetal growth, and
+involvement, impaired somatic and muscular development, adverse perinatal/fetal growth, and
 parental reproductive loss. No individual term is diagnostic, and the context does not
 establish whether the causal alleles were inherited or arose de novo.
+
+This constellation—not any one row—was the clinical basis for genomic investigation.
 
 ## Method and provenance
 
@@ -289,7 +347,7 @@ def run(
     ids = extract_hpo_ids(docx)
     if not ids:
         raise ValueError("no embedded HPO IDs found")
-    populated_context = extract_populated_context_rows(docx)
+    populated_context = validate_context_rows(docx, contexts)
     missing_rows = [hpo_id for hpo_id in ids if hpo_id not in populated_context]
     if missing_rows:
         raise ValueError(f"HPO IDs have no populated Presentation/Notes row: {missing_rows}")
@@ -314,7 +372,7 @@ def self_check() -> None:
         output = root / "phenotype.md"
 
         xml = f"""<w:document xmlns:w="{WORD_NAMESPACE}"><w:body><w:tbl>
-<w:tr><w:tc><w:p><w:r><w:t>Phenotype</w:t></w:r></w:p></w:tc>
+<w:tr><w:tc><w:p><w:r><w:t>Clinical Feature</w:t></w:r></w:p></w:tc>
 <w:tc><w:p><w:r><w:t>HPO ID</w:t></w:r></w:p></w:tc>
 <w:tc><w:p><w:r><w:t>Clinical Presentations / Notes</w:t></w:r></w:p></w:tc></w:tr>
 <w:tr><w:tc><w:p><w:r><w:t>Example one</w:t></w:r></w:p></w:tc>
@@ -339,12 +397,16 @@ def self_check() -> None:
 
         synthetic_context = {
             "HP:0000001": PhenotypeContext(
-                SubjectScope.PROBAND, "congenital", "renal"
+                SubjectScope.PROBAND,
+                "congenital",
+                "renal",
+                "synthetic renal context",
             ),
             "HP:0000002": PhenotypeContext(
                 SubjectScope.FAMILY,
                 "family history",
                 "reproductive",
+                "synthetic family context",
             ),
         }
         ids = run(docx, ontology, output, synthetic_context)
@@ -360,6 +422,34 @@ def self_check() -> None:
         assert "diagnosed after birth" not in rendered
         assert "congenital" in rendered
         assert "parental/family history" in rendered
+
+        unsafe_quantitative = dict(synthetic_context)
+        unsafe_quantitative["HP:0000001"] = PhenotypeContext(
+            SubjectScope.PROBAND,
+            "congenital",
+            "renal",
+            "quantified as 37 units",
+        )
+        try:
+            run(docx, ontology, output, unsafe_quantitative)
+        except ValueError as error:
+            assert "quantitative detail" in str(error)
+        else:
+            raise AssertionError("quantitative context was not rejected")
+
+        unsafe_overlap = dict(synthetic_context)
+        unsafe_overlap["HP:0000001"] = PhenotypeContext(
+            SubjectScope.PROBAND,
+            "congenital",
+            "renal",
+            "the child was diagnosed after birth private measurement",
+        )
+        try:
+            run(docx, ontology, output, unsafe_overlap)
+        except ValueError as error:
+            assert "overlaps protected wording" in str(error)
+        else:
+            raise AssertionError("verbatim context was not rejected")
     print("self-check ok: IDs and reviewed context resolved; protected text not emitted")
 
 

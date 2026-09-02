@@ -6,25 +6,27 @@ places, exact ages, measurements, or identifying free text.
 
 ## HPO terms
 
-| HPO ID | Label | Applies to | Broad timing | Domain | Analysis role |
-|---|---|---|---|---|---|
-| `HP:0002859` | Rhabdomyosarcoma | proband | not specified | oncologic | proband phenotype |
-| `HP:0000121` | Nephrocalcinosis | proband | congenital | renal | proband phenotype |
-| `HP:0004322` | Short stature | proband | not specified | growth | proband phenotype |
-| `HP:0001508` | Failure to thrive | proband | early life | growth and nutrition | proband phenotype |
-| `HP:0003202` | Skeletal muscle atrophy | proband | not specified | neuromuscular | proband phenotype |
-| `HP:0001622` | Premature birth | proband | perinatal | perinatal | proband phenotype |
-| `HP:0001518` | Small for gestational age | proband | prenatal/perinatal | fetal growth | proband phenotype |
-| `HP:0200067` | Recurrent spontaneous abortion | parental/family history | family history | reproductive | family-history signal |
+| HPO ID | Label | Applies to | Broad timing | Domain | Clinical significance | Analysis role |
+|---|---|---|---|---|---|---|
+| `HP:0002859` | Rhabdomyosarcoma | proband | not specified | oncologic | malignancy that prompted genomic investigation | proband phenotype |
+| `HP:0000121` | Nephrocalcinosis | proband | congenital | renal | congenital renal mineral deposition | proband phenotype |
+| `HP:0004322` | Short stature | proband | not specified | growth | stature markedly low relative to familial and age expectations | proband phenotype |
+| `HP:0001508` | Failure to thrive | proband | early life | growth and nutrition | persistent early somatic growth and musculature impairment | proband phenotype |
+| `HP:0003202` | Skeletal muscle atrophy | proband | not specified | neuromuscular | diminished musculature accompanying poor overall growth | proband phenotype |
+| `HP:0001622` | Premature birth | proband | perinatal | perinatal | substantial prematurity | proband phenotype |
+| `HP:0001518` | Small for gestational age | proband | prenatal/perinatal | fetal growth | marked prenatal growth impairment with substantially reduced neonatal mass | proband phenotype |
+| `HP:0200067` | Recurrent spontaneous abortion | parental/family history | family history | reproductive | recurrent parental pregnancy loss preceding the proband | family-history signal |
 
 Seven terms are proband phenotypes; the reproductive-loss term is parental/family history.
 Keep the latter as mechanistic and inheritance context, but do not score it as an
 abnormality observed in the proband.
 
 The useful signal is the full multi-system constellation: malignancy, congenital renal
-involvement, impaired growth and redacted development, adverse perinatal/fetal growth, and
+involvement, impaired somatic and muscular development, adverse perinatal/fetal growth, and
 parental reproductive loss. No individual term is diagnostic, and the context does not
 establish whether the causal alleles were inherited or arose de novo.
+
+This constellation—not any one row—was the clinical basis for genomic investigation.
 
 ## Method and provenance
 

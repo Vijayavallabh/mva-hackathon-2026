@@ -124,7 +124,7 @@ copied into tracked output. Only standardized IDs and reviewed broad categories 
 - 380 words, 51 paragraphs, 1 table, no images.
 - **Carries 8 embedded `HP:#######` IDs.** Consistent with the official rules, which state
   phenotypic data is provided "as standardized HPO terms". Reviewed categorical context
-  assigns seven terms to redacted proband and one (`HP:0200067`) to parental/family history.
+  assigns seven terms to PROBAND01 and one (`HP:0200067`) to parental/family history.
 - Keyword probe returns **false** for: `karyotype`, `aneuploid`, `mosaic`, `trisomy`, `OMIM`,
   `exome`, `variant`, `VUS`, `negative`, `microcephaly`, `BUB1B`, `CEP57`, `TRIP13`.
 
