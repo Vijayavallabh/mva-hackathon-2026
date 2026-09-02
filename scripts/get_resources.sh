@@ -7,10 +7,13 @@ DOWNLOADS="$RESOURCES/downloads"
 REFERENCE="$RESOURCES/reference"
 VEP_CACHE="$RESOURCES/vep"
 CLINVAR="$RESOURCES/clinvar"
+HPO_ANNOTATIONS="$RESOURCES/hpo"
+ENSEMBL="$RESOURCES/ensembl"
 TOOLS="$ROOT/tools/install/bin"
 RESOURCE_MANIFEST="$ROOT/tools/resources.tsv"
 VEP_EXTRACT_MARKER="$VEP_CACHE/.vep-116-GRCh38-extract-complete"
-mkdir -p "$DOWNLOADS" "$REFERENCE" "$VEP_CACHE" "$CLINVAR"
+mkdir -p \
+  "$DOWNLOADS" "$REFERENCE" "$VEP_CACHE" "$CLINVAR" "$HPO_ANNOTATIONS" "$ENSEMBL"
 
 locked() {
   local resource=$1 column=$2
@@ -58,6 +61,8 @@ check_resources() {
     "$CLINVAR/clinvar.vcf.gz" \
     "$CLINVAR/clinvar.vcf.gz.tbi" \
     "$RESOURCES/hp.obo" \
+    "$HPO_ANNOTATIONS/genes_to_phenotype.txt" \
+    "$ENSEMBL/Homo_sapiens.GRCh38.116.exons-plus-20bp.bed" \
     "$RESOURCE_MANIFEST"; do
     if [[ ! -s "$path" ]]; then echo "missing: ${path#$ROOT/}" >&2; failed=1; fi
   done
@@ -68,6 +73,10 @@ check_resources() {
   verify_sha256 VEP-cache "$DOWNLOADS/homo_sapiens_vep_116_GRCh38.tar.gz"
   verify_sha256 ClinVar "$CLINVAR/clinvar.vcf.gz"
   verify_sha256 HPO "$RESOURCES/hp.obo"
+  verify_sha256 HPO-gene-annotations "$HPO_ANNOTATIONS/genes_to_phenotype.txt"
+  verify_sha256 Ensembl-GTF "$DOWNLOADS/Homo_sapiens.GRCh38.116.gtf.gz"
+  verify_sha256 Ensembl-exon-windows \
+    "$ENSEMBL/Homo_sapiens.GRCh38.116.exons-plus-20bp.bed"
   [[ $(<"$VEP_EXTRACT_MARKER") == "$(locked VEP-cache 4)" ]]
   "$TOOLS/samtools" faidx "$REFERENCE/GCA_000001405.15_GRCh38_no_alt_analysis_set_plus_hs38d1_maskedGRC_exclusions_v2_no_chr.fasta" 1:1-1 >/dev/null
   "$TOOLS/tabix" -l "$CLINVAR/clinvar.vcf.gz" >/dev/null
@@ -138,5 +147,18 @@ download ClinVar "$CLINVAR_URL" "$CLINVAR/clinvar.vcf.gz"
 
 HPO_URL="https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-06-23/hp.obo"
 download HPO "$HPO_URL" "$RESOURCES/hp.obo"
+HPO_GENE_URL="https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-06-23/genes_to_phenotype.txt"
+download HPO-gene-annotations "$HPO_GENE_URL" "$HPO_ANNOTATIONS/genes_to_phenotype.txt"
+
+ENSEMBL_GTF="$DOWNLOADS/Homo_sapiens.GRCh38.116.gtf.gz"
+ENSEMBL_GTF_URL="https://ftp.ensembl.org/pub/release-116/gtf/homo_sapiens/Homo_sapiens.GRCh38.116.gtf.gz"
+download Ensembl-GTF "$ENSEMBL_GTF_URL" "$ENSEMBL_GTF"
+EXON_WINDOWS="$ENSEMBL/Homo_sapiens.GRCh38.116.exons-plus-20bp.bed"
+if [[ ! -s "$EXON_WINDOWS" ]] || ! verify_sha256 Ensembl-exon-windows "$EXON_WINDOWS"; then
+  rm -f "$EXON_WINDOWS"
+  uv run python "$ROOT/scripts/build_coding_regions.py" \
+    "$ENSEMBL_GTF" "$EXON_WINDOWS" --flank 20
+  verify_sha256 Ensembl-exon-windows "$EXON_WINDOWS"
+fi
 
 check_resources

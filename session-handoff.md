@@ -1,16 +1,17 @@
 # Session handoff
 
-**Last updated:** 2026-09-02 (session 13 — feat-003 toolchain and resources)
+**Last updated:** 2026-09-03 (session 14 — feat-004 VCF triage baseline)
 
-**Current objective / active feature:** feat-004 (VCF triage baseline).
-Feat-001 through feat-003 are done; keep exactly one feature active.
+**Current objective / active feature:** feat-005a (GC-corrected copy-number and BAF screen).
+Feat-001 through feat-004 are done; keep exactly one feature active.
 
 **State:** 84.99 GB subject dataset downloaded and integrity-verified. The data has been
 profiled; its HPO IDs, labels, reviewed context and concise clinical-significance summaries
 have been extracted.
-Seven terms are proband phenotypes and one is parental/family history. **No variant analysis
-has been run and no candidate variant proposed.** `feature_list.json` was rewritten in
-session 3 from 7 to 11 features
+Seven terms are proband phenotypes and one is parental/family history. Feat-004 completed
+the first offline genome-wide coding/splice analysis and identified a BUB1B compound-het
+pair as the leading unphased candidate; see `notes/vcf-triage.md`. `feature_list.json` was
+rewritten in session 3 from 7 to 11 features
 against what the data and the challenge's published scoring code actually say.
 
 **Read these before touching anything:** `notes/data-profile.md` (measured baseline, with
@@ -46,15 +47,13 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 ./init.sh
 ```
 
-**Recommended next step:** feat-004 — annotate the PASS, primary-contig VCF offline and
-produce the first reproducible candidate table. Start from `notes/toolchain.md`; preserve
-the explicit no-chr input to chr-prefixed submission conversion.
+**Recommended next step:** feat-005a — resolve the earlier chr20/19/22 depth signal with
+GC-corrected read-depth bins and a mappability mask. Do not alter the feat-004 candidate
+tables while that independent copy-number analysis runs.
 
-For feat-004, use all seven proband terms as phenotype observations. Retain `HP:0200067`
-as a separate, clinically meaningful phenotype-input dimension; do not feed it to a tool
-as if observed in the proband, and do not discard it as background. It supports both
-inherited-susceptibility and newly arising mechanism hypotheses without choosing between
-them. Rank the multi-system constellation rather than optimizing for one term.
+The feat-004 candidate is not confirmed: both alleles are unphased, and the second BUB1B
+missense allele has computational prediction support but no ClinVar assertion in the pinned
+release. Preserve the exact distinction between candidate, phase, and classification.
 
 **Persistent repository workflow:** commit every intended change, however small. At the
 end of each session, push all new commits to the configured `origin` and verify that the

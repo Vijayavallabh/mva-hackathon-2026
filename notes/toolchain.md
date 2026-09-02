@@ -23,6 +23,12 @@ their pinned versions, sources and checksums are recorded in `tools/versions.tsv
 - **Nextflow** provides a reproducible workflow engine when the pipeline is assembled.
 - **HPO** reuses feat-002's local copy when present, and otherwise downloads the same pinned
   ontology release so a clean feat-003 installation is self-contained.
+- **HPO gene-to-phenotype annotations** use the matching 2026-06-23 release. Feat-004 uses
+  these public associations for genome-wide semantic similarity; family-history similarity
+  is calculated separately from the seven proband observations.
+- **Ensembl 116 GTF** is reduced deterministically by `scripts/build_coding_regions.py` to
+  merged primary-contig exon windows with a 20 bp flank. This bounds coding/splice VEP
+  runtime without sending coordinates to a remote service.
 
 The native HTS tools were compiled locally because system-package installation is outside
 this feature's scope. Optional bzip2/LZMA and remote-URL support in HTSlib are disabled; the

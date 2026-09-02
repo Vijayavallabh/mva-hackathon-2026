@@ -441,3 +441,61 @@ annotation resources ready
 ```
 
 Next: feat-004, the VCF triage and annotation baseline.
+
+## 2026-09-02 — session 14: feat-004 VCF triage baseline
+
+- Added a fully offline, checkpointed triage pipeline: PASS primary-contig filtering,
+  biallelic normalization against the exact reference, exact-allele ClinVar annotation,
+  Ensembl exon±20 bp intersection, VEP 116 coding/splice annotation and phenotype-aware
+  candidate ranking.
+- Added the pinned Ensembl 116 GTF, deterministic exon-window builder and HPO
+  gene-to-phenotype release asset. Resource SHA-256 values are locked in
+  `tools/resources.tsv`.
+- The full run started from 5,012,204 records: 4,661,873 met PASS+primary criteria;
+  normalization produced 4,727,745 biallelic records; exon windows retained 308,080; VEP
+  yielded 29,701 coding/splice records. Ranking retained 418 rare damaging alleles across
+  366 genes, generating 115 compound-pair and 195 dominant-singleton hypotheses.
+- The leading genome-wide compound hypothesis is BUB1B, comprising one stop-gained and one
+  missense allele. Both are independent PASS 0/1 calls with DP/GQ 46/99 and 28/99 and
+  balanced allele depth. The stop allele has non-conflicting ClinVar pathogenic support;
+  the missense allele is absent from queried gnomAD fields and has concordant damaging
+  SIFT/PolyPhen predictions. Phase remains unknown.
+- The phenotype score averages all seven proband terms. `HP:0200067` is scored separately
+  as family history; it contributes zero to the leading BUB1B score, proving the scope
+  separation did not manufacture the result. Candidate output explicitly converts local
+  unprefixed contigs to submission-style `chr` names.
+- A live resource snapshot showed 465 GB available RAM and 3.75 TB free disk. CPU use was
+  capped at eight workers on the shared 64-core host; no GPU or remote annotation service
+  was used.
+
+Verification included `uv run python scripts/build_coding_regions.py --self-check`,
+`uv run python scripts/rank_candidates.py --self-check`, Ruff checks, the complete local
+pipeline, independent source-VCF re-query of the ranked pair, and final `./init.sh`.
+
+Final `./init.sh` completed on 2026-09-03:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Next: feat-005a, GC-corrected copy-number and BAF screen.

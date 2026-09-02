@@ -59,3 +59,18 @@ intact on purpose. What the first screening pass (`data-profile.md`) says about 
   signal (chr20 largest) is confounded with GC/mappability bias. MVA is classically diagnosed
   on cultured cells by karyotype, so absence of a bulk signal in one blood sample is expected
   and is **not** evidence against the diagnosis.
+
+---
+
+## Genome-wide baseline result — 2026-09-02
+
+Feat-004 tested the prior without restricting the search to the three established genes.
+The leading unique-gene compound-pair hypothesis is BUB1B: one stop-gained allele and one
+missense allele at different loci, both PASS heterozygous calls with strong depth, genotype
+quality and allele balance. It ranks above 114 other compound-pair hypotheses using the
+same consequence, rarity and seven-term phenotype scoring policy.
+
+This materially strengthens the original BUB1B/MVA1 prior but does not yet prove causality:
+the single-sample VCF cannot establish trans phase, and the missense allele has prediction
+support rather than a ClinVar assertion. See `vcf-triage.md` for tuples, evidence and exact
+reproduction commands.

@@ -6,3 +6,6 @@ VEP-cache	116_GRCh38	https://ftp.ensembl.org/pub/release-116/variation/indexed_v
 gnomAD-frequencies	v4.1	embedded in Ensembl VEP 116 cache	014c7dd9bb5ad06665866d62eb80f31ca761197bcb9b59280300676f996e600d
 ClinVar	20260822	https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/2026/clinvar_20260822.vcf.gz	d66b75c1cc433dd63471444fbf980fbc6ee07d6060f3b62b8f1910d52650933d
 HPO	2026-06-23	https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-06-23/hp.obo	a5092cbdf605f568403cf7380d9173014015692433b2cc631bc5c1b053876b1b
+HPO-gene-annotations	2026-06-23	https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-06-23/genes_to_phenotype.txt	26cb7ee00c73b5777f6e5ad43323c941e1fcef1d191592f332d7929f3ea1ab3f
+Ensembl-GTF	116_GRCh38	https://ftp.ensembl.org/pub/release-116/gtf/homo_sapiens/Homo_sapiens.GRCh38.116.gtf.gz	ed992f0eac7197d9627bda618f8f831ba355c95bd5d0796af785387d462828b6
+Ensembl-exon-windows	116_GRCh38-plus-20bp	local deterministic build	1b632ef6dabea768c7682ef94940d74d9b8cc0d8d84132301cd6483e05bfc876
