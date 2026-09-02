@@ -454,7 +454,8 @@ Next: feat-004, the VCF triage and annotation baseline.
 - The full run started from 5,012,204 records: 4,661,873 met PASS+primary criteria;
   normalization produced 4,727,745 biallelic records; exon windows retained 308,080; VEP
   yielded 29,701 coding/splice records. Ranking retained 418 rare damaging alleles across
-  366 genes, generating 115 compound-pair and 195 dominant-singleton hypotheses.
+  366 genes, generating 169 compound-pair and 195 dominant-singleton hypotheses after the
+  review-corrected complete within-gene enumeration.
 - The leading genome-wide compound hypothesis is BUB1B, comprising one stop-gained and one
   missense allele. Both are independent PASS 0/1 calls with DP/GQ 46/99 and 28/99 and
   balanced allele depth. The stop allele has non-conflicting ClinVar pathogenic support;
@@ -467,6 +468,12 @@ Next: feat-004, the VCF triage and annotation baseline.
 - A live resource snapshot showed 465 GB available RAM and 3.75 TB free disk. CPU use was
   capped at eight workers on the shared 64-core host; no GPU or remote annotation service
   was used.
+- Two-axis review tightened the baseline before handoff: ClinVar now requires exact allele
+  matching; compound pairs are exhaustively enumerated rather than capped per gene; family
+  history has the same coefficient under both inheritance hypotheses; explicit
+  zero-frequency HPO associations are excluded; and stage checkpoints bind the pipeline
+  code plus tool-version manifest. Shared allele rendering and typed model identifiers also
+  remove the review's two maintainability smells.
 
 Verification included `uv run python scripts/build_coding_regions.py --self-check`,
 `uv run python scripts/rank_candidates.py --self-check`, Ruff checks, the complete local

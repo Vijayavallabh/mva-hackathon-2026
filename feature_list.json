@@ -42,7 +42,7 @@
         "feat-003"
       ],
       "status": "done",
-      "evidence": "scripts/run_vcf_triage.sh, scripts/build_coding_regions.py and scripts/rank_candidates.py implement the checkpointed offline baseline. `./scripts/run_vcf_triage.sh --self-check` passes; the full 2026-09-02 run retained 4,661,873 PASS primary records, produced 4,727,745 normalized biallelic records, reduced them to 308,080 exon-window records and 29,701 VEP coding/splice records, then ranked 310 hypotheses from 418 rare damaging alleles. `notes/vcf-triage.md` records commands, thresholds and the leading BUB1B compound-het pair. Source-VCF re-query independently confirmed both ranked alleles are PASS 0/1 calls with DP/GQ 46/99 and 28/99. Final `./init.sh` output is recorded in progress.md."
+      "evidence": "scripts/run_vcf_triage.sh, scripts/build_coding_regions.py and scripts/rank_candidates.py implement the checkpointed offline baseline. `./scripts/run_vcf_triage.sh --self-check` passes; the review-corrected full run retained 4,661,873 PASS primary records, produced 4,727,745 normalized biallelic records, reduced them to 308,080 exon-window records and 29,701 VEP coding/splice records, then ranked 364 hypotheses from 418 rare damaging alleles. `notes/vcf-triage.md` records commands, thresholds and the leading BUB1B compound-het pair. Source-VCF re-query independently confirmed both ranked alleles are PASS 0/1 calls with DP/GQ 46/99 and 28/99. Final `./init.sh` output is recorded in progress.md."
     },
     {
       "id": "feat-005a",

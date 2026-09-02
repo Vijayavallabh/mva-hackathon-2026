@@ -17,6 +17,7 @@ import re
 import tempfile
 from collections import Counter, defaultdict
 from dataclasses import dataclass
+from enum import StrEnum
 from itertools import combinations, pairwise
 from pathlib import Path
 
@@ -32,6 +33,13 @@ PROBAND_HPO = (
 )
 FAMILY_HPO = ("HP:0200067",)
 AUTOSOMES = {str(number) for number in range(1, 23)}
+FAMILY_HISTORY_WEIGHT = 0.5
+
+
+class GeneticModel(StrEnum):
+    COMPOUND_HETEROZYGOUS = "compound_heterozygous"
+    DOMINANT_SINGLETON = "dominant_singleton_unconfirmed_de_novo"
+
 
 SEVERITY = {
     "transcript_ablation": 10.0,
@@ -98,7 +106,7 @@ class PhenotypeScore:
 
 @dataclass(frozen=True)
 class Candidate:
-    model: str
+    model: GeneticModel
     gene: str
     variants: tuple[Variant, ...]
     phenotype: PhenotypeScore
@@ -178,7 +186,11 @@ def parse_gene_annotations(path: Path) -> dict[str, set[str]]:
                 hpo_id = next(
                     (value for value in fields if value.startswith("HP:")), ""
                 )
-            if symbol and hpo_id:
+            frequency = normalized.get("frequency", "")
+            numerator, separator, _denominator = frequency.partition("/")
+            explicitly_absent = separator and numerator.strip() == "0"
+            explicitly_absent = explicitly_absent or frequency in {"0", "0%"}
+            if symbol and hpo_id and not explicitly_absent:
                 genes[symbol].add(hpo_id)
     if not genes:
         raise ValueError("HPO gene table yielded no associations")
@@ -438,7 +450,7 @@ def build_candidates(variants: list[Variant], phenotype_score) -> list[Candidate
         phenotype = phenotype_score(gene)
         selected = sorted(
             gene_variants, key=lambda item: item.variant_score, reverse=True
-        )[:12]
+        )
         for left, right in combinations(selected, 2):
             if left.locus == right.locus:
                 continue
@@ -446,10 +458,14 @@ def build_candidates(variants: list[Variant], phenotype_score) -> list[Candidate
             # The public scoring code establishes a compound-heterozygous answer key;
             # retain a transparent model prior while still ranking every gene genome-wide.
             total = 3.0 + variant_component + 8.0 * phenotype.proband_similarity
-            total += 0.75 * phenotype.family_similarity
+            total += FAMILY_HISTORY_WEIGHT * phenotype.family_similarity
             candidates.append(
                 Candidate(
-                    "compound_heterozygous", gene, (left, right), phenotype, total
+                    GeneticModel.COMPOUND_HETEROZYGOUS,
+                    gene,
+                    (left, right),
+                    phenotype,
+                    total,
                 )
             )
 
@@ -458,10 +474,10 @@ def build_candidates(variants: list[Variant], phenotype_score) -> list[Candidate
             continue
         phenotype = phenotype_score(variant.gene)
         total = variant.variant_score + 8.0 * phenotype.proband_similarity
-        total += 0.5 * phenotype.family_similarity
+        total += FAMILY_HISTORY_WEIGHT * phenotype.family_similarity
         candidates.append(
             Candidate(
-                "dominant_singleton_unconfirmed_de_novo",
+                GeneticModel.DOMINANT_SINGLETON,
                 variant.gene,
                 (variant,),
                 phenotype,
@@ -538,6 +554,31 @@ def variant_value(variant: Variant | None, field: str) -> str | int:
     return getattr(variant, field)
 
 
+def candidate_allele_fields(variant: Variant | None, suffix: str) -> dict[str, object]:
+    field_map = {
+        "chrom": "chrom",
+        "pos": "pos",
+        "ref": "ref",
+        "alt": "alt",
+        "gt": "genotype",
+        "dp": "depth",
+        "gq": "genotype_quality",
+        "allele_balance": "allele_balance",
+        "consequence": "consequence",
+        "max_af": "max_af",
+        "sift": "sift",
+        "polyphen": "polyphen",
+        "clinvar": "clinvar_significance",
+        "clinvar_review": "clinvar_review",
+        "hgvsc": "hgvsc",
+        "hgvsp": "hgvsp",
+    }
+    return {
+        f"{column}_{suffix}": variant_value(variant, attribute)
+        for column, attribute in field_map.items()
+    }
+
+
 def write_candidates(path: Path, candidates: list[Candidate], limit: int = 500) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="") as handle:
@@ -551,38 +592,8 @@ def write_candidates(path: Path, candidates: list[Candidate], limit: int = 500) 
                     "rank": rank,
                     "model": candidate.model,
                     "gene": candidate.gene,
-                    "chrom_1": variant_value(left, "chrom"),
-                    "pos_1": variant_value(left, "pos"),
-                    "ref_1": variant_value(left, "ref"),
-                    "alt_1": variant_value(left, "alt"),
-                    "gt_1": variant_value(left, "genotype"),
-                    "dp_1": variant_value(left, "depth"),
-                    "gq_1": variant_value(left, "genotype_quality"),
-                    "allele_balance_1": variant_value(left, "allele_balance"),
-                    "consequence_1": variant_value(left, "consequence"),
-                    "max_af_1": variant_value(left, "max_af"),
-                    "sift_1": variant_value(left, "sift"),
-                    "polyphen_1": variant_value(left, "polyphen"),
-                    "clinvar_1": variant_value(left, "clinvar_significance"),
-                    "clinvar_review_1": variant_value(left, "clinvar_review"),
-                    "hgvsc_1": variant_value(left, "hgvsc"),
-                    "hgvsp_1": variant_value(left, "hgvsp"),
-                    "chrom_2": variant_value(right, "chrom"),
-                    "pos_2": variant_value(right, "pos"),
-                    "ref_2": variant_value(right, "ref"),
-                    "alt_2": variant_value(right, "alt"),
-                    "gt_2": variant_value(right, "genotype"),
-                    "dp_2": variant_value(right, "depth"),
-                    "gq_2": variant_value(right, "genotype_quality"),
-                    "allele_balance_2": variant_value(right, "allele_balance"),
-                    "consequence_2": variant_value(right, "consequence"),
-                    "max_af_2": variant_value(right, "max_af"),
-                    "sift_2": variant_value(right, "sift"),
-                    "polyphen_2": variant_value(right, "polyphen"),
-                    "clinvar_2": variant_value(right, "clinvar_significance"),
-                    "clinvar_review_2": variant_value(right, "clinvar_review"),
-                    "hgvsc_2": variant_value(right, "hgvsc"),
-                    "hgvsp_2": variant_value(right, "hgvsp"),
+                    **candidate_allele_fields(left, "1"),
+                    **candidate_allele_fields(right, "2"),
                     "proband_similarity": f"{candidate.phenotype.proband_similarity:.6f}",
                     "proband_coverage_of_7": candidate.phenotype.proband_coverage,
                     "family_history_similarity": f"{candidate.phenotype.family_similarity:.6f}",
@@ -600,10 +611,11 @@ def write_qc(path: Path, variants: list[Variant], candidates: list[Candidate]) -
         "annotated_rare_damaging_variants": len(variants),
         "genes_with_retained_variants": len({variant.gene for variant in variants}),
         "compound_heterozygous_pair_hypotheses": sum(
-            candidate.model == "compound_heterozygous" for candidate in candidates
+            candidate.model is GeneticModel.COMPOUND_HETEROZYGOUS
+            for candidate in candidates
         ),
         "dominant_singleton_hypotheses": sum(
-            candidate.model == "dominant_singleton_unconfirmed_de_novo"
+            candidate.model is GeneticModel.DOMINANT_SINGLETON
             for candidate in candidates
         ),
         "proband_hpo_terms_scored": list(PROBAND_HPO),
@@ -654,7 +666,7 @@ def validate_output(output: Path) -> None:
         if not 0 <= coverage <= len(PROBAND_HPO):
             raise ValueError("proband HPO coverage is outside 0..7")
     for row in compound:
-        if row["model"] != "compound_heterozygous":
+        if row["model"] != GeneticModel.COMPOUND_HETEROZYGOUS:
             raise ValueError("compound table contains another model")
         if row["gt_1"] not in {"0/1", "1/0", "0|1", "1|0"} or row["gt_2"] not in {
             "0/1",
@@ -665,9 +677,7 @@ def validate_output(output: Path) -> None:
             raise ValueError("compound hypothesis contains a non-heterozygous allele")
         if (row["chrom_1"], row["pos_1"]) == (row["chrom_2"], row["pos_2"]):
             raise ValueError("compound hypothesis pairs alternate alleles at one locus")
-    if any(
-        row["model"] != "dominant_singleton_unconfirmed_de_novo" for row in dominant
-    ):
+    if any(row["model"] != GeneticModel.DOMINANT_SINGLETON for row in dominant):
         raise ValueError("dominant table contains another model")
     qc = json.loads((output / "candidate_qc.json").read_text())
     if qc["proband_hpo_terms_scored"] != list(PROBAND_HPO):
@@ -701,7 +711,7 @@ def run(annotated_vcf: Path, ontology: Path, annotations: Path, output: Path) ->
         [
             candidate
             for candidate in representative
-            if candidate.model == "compound_heterozygous"
+            if candidate.model is GeneticModel.COMPOUND_HETEROZYGOUS
         ],
     )
     write_candidates(
@@ -709,7 +719,7 @@ def run(annotated_vcf: Path, ontology: Path, annotations: Path, output: Path) ->
         [
             candidate
             for candidate in representative
-            if candidate.model == "dominant_singleton_unconfirmed_de_novo"
+            if candidate.model is GeneticModel.DOMINANT_SINGLETON
         ],
     )
     write_qc(output / "candidate_qc.json", variants, candidates)
@@ -733,9 +743,10 @@ def self_check() -> None:
             )
         )
         genes = root / "genes.tsv"
-        rows = ["#gene_id\tgene_symbol\thpo_id\thpo_name"]
-        rows.extend(f"1\tGENE_A\t{term}\tsynthetic" for term in PROBAND_HPO)
-        rows.append(f"2\tGENE_FAMILY\t{FAMILY_HPO[0]}\tsynthetic")
+        rows = ["#gene_id\tgene_symbol\thpo_id\thpo_name\tfrequency"]
+        rows.extend(f"1\tGENE_A\t{term}\tsynthetic\t-" for term in PROBAND_HPO)
+        rows.append(f"2\tGENE_FAMILY\t{FAMILY_HPO[0]}\tsynthetic\t-")
+        rows.append(f"2\tGENE_FAMILY\t{PROBAND_HPO[0]}\texcluded\t0/5")
         genes.write_text("\n".join(rows) + "\n")
         vcf = root / "annotated.vcf"
         csq = "Allele|Consequence|IMPACT|SYMBOL|Gene|SIFT|PolyPhen|MAX_AF|gnomADe_AF|gnomADg_AF|HGVSc|HGVSp"
@@ -750,6 +761,19 @@ def self_check() -> None:
             ("1", 100, "A", "G", "GENE_A", "missense_variant", "MODERATE", "0.0002"),
             ("2", 300, "C", "T", "GENE_FAMILY", "frameshift_variant", "HIGH", "0.0001"),
         ]
+        records.extend(
+            (
+                "3",
+                1_000 + index,
+                "A",
+                "T",
+                "GENE_MANY",
+                "frameshift_variant",
+                "HIGH",
+                "0.0001",
+            )
+            for index in range(13)
+        )
         with vcf.open("w") as handle:
             handle.write(header)
             for chrom, pos, ref, alt, gene, consequence, impact, af in records:
@@ -775,7 +799,7 @@ def self_check() -> None:
         out = root / "out"
         run(vcf, obo, genes, out)
         candidates = read_candidate_table(out / "candidate_models.tsv")
-        assert candidates[0]["model"] == "compound_heterozygous"
+        assert candidates[0]["model"] == GeneticModel.COMPOUND_HETEROZYGOUS
         assert candidates[0]["gene"] == "GENE_A"
         assert candidates[0]["chrom_1"].startswith("chr")
         assert candidates[0]["pos_1"] != candidates[0]["pos_2"]
@@ -784,6 +808,15 @@ def self_check() -> None:
         )
         assert float(family_candidate["family_history_similarity"]) > 0
         assert int(family_candidate["proband_coverage_of_7"]) == 0
+        all_candidates = read_candidate_table(out / "all_candidate_models.tsv")
+        assert (
+            sum(
+                row["gene"] == "GENE_MANY"
+                and row["model"] == GeneticModel.COMPOUND_HETEROZYGOUS
+                for row in all_candidates
+            )
+            == 78
+        )
         qc = json.loads((out / "candidate_qc.json").read_text())
         assert len(qc["proband_hpo_terms_scored"]) == 7
         assert qc["family_history_hpo_terms_scored_separately"] == list(FAMILY_HPO)

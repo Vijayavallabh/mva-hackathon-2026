@@ -53,9 +53,11 @@ locked_sha() {
 }
 
 input_sha=$(sha256sum "$INPUT" | cut -d' ' -f1)
+pipeline_sha=$(sha256sum "$ROOT/scripts/run_vcf_triage.sh" | cut -d' ' -f1)
+tool_manifest_sha=$(sha256sum "$ROOT/tools/versions.tsv" | cut -d' ' -f1)
 normalization_fingerprint=$(
-  printf 'normalization-v1\n%s\n%s\n' "$input_sha" \
-    "$(locked_sha reference-final)" |
+  printf 'normalization-v1\n%s\n%s\n%s\n%s\n' \
+    "$input_sha" "$(locked_sha reference-final)" "$pipeline_sha" "$tool_manifest_sha" |
     sha256sum | cut -d' ' -f1
 )
 clinvar_fingerprint=$(
@@ -103,6 +105,7 @@ if ! stage_complete clinvar "$CLINICAL" "$clinvar_fingerprint"; then
   tmp="$CLINICAL.partial"
   "$TOOLS/bcftools" annotate --threads "$THREADS" \
     --annotations "$CLINVAR" \
+    --pair-logic exact \
     --columns INFO/CLNSIG,INFO/CLNREVSTAT,INFO/CLNDN \
     --output-type z --output "$tmp" "$NORMALIZED"
   "$TOOLS/tabix" --force --preset vcf "$tmp"

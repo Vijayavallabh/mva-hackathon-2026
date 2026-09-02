@@ -56,16 +56,22 @@ For each gene, HPO associations are propagated through the ontology and compared
 information-content semantic similarity. The proband score averages the best match for all
 seven proband terms, so a single striking feature cannot dominate; coverage out of seven is
 also reported. `HP:0200067` is calculated as a separate family-history similarity and has a
-small mechanistic weight. It is never included in proband coverage.
+small mechanistic weight. It is never included in proband coverage. Associations whose
+release frequency explicitly has a zero numerator are treated as absent rather than as
+positive phenotype evidence.
 
 The combined score is a prioritization heuristic, not a pathogenicity classification:
 
 ```text
 compound = 3 + mean(two variant scores) + 8 × proband similarity
-           + 0.75 × family-history similarity
+           + 0.5 × family-history similarity
 dominant = one variant score + 8 × proband similarity
            + 0.5 × family-history similarity
 ```
+
+The family-history coefficient is deliberately identical across the two models: reproductive
+loss is mechanistic context, but it cannot choose inherited/compound over newly arising
+dominant inheritance without genomic evidence.
 
 Variant score combines consequence severity, VEP impact, measured rarity, SIFT/PolyPhen,
 ClinVar and soft penalties for low depth, low genotype quality or imbalanced heterozygous
@@ -104,11 +110,11 @@ The local run writes:
 Final aggregate results and reviewed candidate interpretation are appended only after the
 full run and validation complete.
 
-## Completed baseline results — 2026-09-02
+## Completed baseline results — reviewed rerun 2026-09-03
 
 The exon-window stage retained 308,080 records. VEP assigned a selected coding/splice
 consequence to 29,701 records. The rare-damaging filter retained 418 alleles across 366
-genes and generated 115 compound-pair hypotheses plus 195 dominant-singleton hypotheses.
+genes and generated 169 compound-pair hypotheses plus 195 dominant-singleton hypotheses.
 The review table keeps only the highest-scoring hypothesis per gene and model; the complete
 pair enumeration remains in `all_candidate_models.tsv`.
 
@@ -125,7 +131,7 @@ The leading genome-wide compound-heterozygous hypothesis is **BUB1B**:
 
 Both alleles were independently re-queried from the source VCF and are PASS, heterozygous,
 high-GQ records with balanced allele depth. Their selected transcript is
-`ENST00000287598.11`. The BUB1B hypothesis has proband semantic similarity 0.648435 and
+`ENST00000287598.11`. The BUB1B hypothesis has proband semantic similarity 0.648552 and
 coverage 6/7; its separately computed family-history similarity is 0. It ranks first
 without receiving any family-history boost and without restricting the search to known MVA
 genes.
