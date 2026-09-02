@@ -67,7 +67,7 @@ Command:
 zcat data/WGS_EX2312012_HGWCNDSX7.vcf.gz | awk -F'\t' '...'   # 1 Mb het-fraction bins, ROH runs
 ```
 
-## 3. Aneuploidy screen — inconclusive, not negative
+## 3. Preliminary aneuploidy screen — superseded by feat-005a
 
 10 Mb bins, PASS biallelic SNVs, DP band 20–90, measuring depth ratio vs the genome mean and
 mean |BAF − 0.5| over heterozygous sites.
@@ -87,13 +87,19 @@ chr16, 17, 19, 20, 21 and 22 all rise together in depth ratio, het%, and BAF dev
 | **20** | **1.039** | **70.4** | **0.0905** | **2.38** |
 | X (control) | 0.565 | 8.1 | — | 0.09 |
 
-chr20 is the largest outlier on every column. **This is unresolved.** The screen can exclude
-high-level aneuploidy but not low-level mosaicism, and it cannot separate a genuine
-low-level mosaic trisomy 20 from GC bias — the confounder moves both quantities the same way.
+In this preliminary screen, chr20 was the largest outlier on every column. It could exclude
+high-level aneuploidy but could not separate genuine low-level mosaic gain from GC bias —
+the confounder moved both quantities the same way.
 Bin-level outliers are additionally dominated by centromeric and segmental-duplication
 regions (chr9:40–50 Mb, chr1:120–130 Mb, chr17:20–30 Mb), which is the expected artefact
-pattern. Resolving it needs GC-corrected read-depth binning with a mappability mask →
-**feat-005a**.
+pattern.
+
+**Resolution (2026-09-03):** feat-005a re-aligned all lanes and used 100 kb bins,
+leave-one-chromosome-out GC correction, a Umap mappability mask and an independent BAF
+arm. Chr20 returns to baseline and is not supported; chr22 has a small depth-only shift;
+chr19 retains concordant depth and BAF evidence consistent with low-level mosaic gain.
+This is a screening result, not clinical confirmation. Full methods, aggregate intervals
+and limitations are in `copy-number-screen.md`.
 
 ## 4. FASTQ
 

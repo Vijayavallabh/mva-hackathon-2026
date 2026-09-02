@@ -9,3 +9,4 @@ HPO	2026-06-23	https://github.com/obophenotype/human-phenotype-ontology/releases
 HPO-gene-annotations	2026-06-23	https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-06-23/genes_to_phenotype.txt	26cb7ee00c73b5777f6e5ad43323c941e1fcef1d191592f332d7929f3ea1ab3f
 Ensembl-GTF	116_GRCh38	https://ftp.ensembl.org/pub/release-116/gtf/homo_sapiens/Homo_sapiens.GRCh38.116.gtf.gz	ed992f0eac7197d9627bda618f8f831ba355c95bd5d0796af785387d462828b6
 Ensembl-exon-windows	116_GRCh38-plus-20bp	local deterministic build	1b632ef6dabea768c7682ef94940d74d9b8cc0d8d84132301cd6483e05bfc876
+Umap-k100-multiread	GRCh38-hg38-v1.1.0	https://bismap.hoffmanlab.org/raw/hg38/k100.umap.bedgraph.gz	6aa2e28154086a84fef75986568207f106abb09f48e138252ef9dab9dafc5331

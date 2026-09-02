@@ -54,11 +54,11 @@ intact on purpose. What the first screening pass (`data-profile.md`) says about 
   Treat the reproductive-history term as a separate phenotype input dimension: in a
   chromosome-instability model it is compatible with inherited susceptibility or a newly
   arising causal event, and genomic evidence must decide between them.
-- **No aneuploidy has been ruled in or out.** Blood WGS at 45× excludes high-level
-  aneuploidy but not the low-level mosaicism MVA is named for, and the residual per-chromosome
-  signal (chr20 largest) is confounded with GC/mappability bias. MVA is classically diagnosed
-  on cultured cells by karyotype, so absence of a bulk signal in one blood sample is expected
-  and is **not** evidence against the diagnosis.
+- **The preliminary aneuploidy result required correction.** Blood WGS at 45× excluded
+  high-level aneuploidy but not low-level mosaicism, and its chr20-led signal was confounded
+  with GC/mappability bias. Feat-005a subsequently resolved chr20 as unsupported after
+  correction, while chr19 retained concordant low-level depth and BAF evidence. That is a
+  single-sample screening signal, not a clinical karyotype; see `copy-number-screen.md`.
 
 ---
 
@@ -74,3 +74,7 @@ This materially strengthens the original BUB1B/MVA1 prior but does not yet prove
 the single-sample VCF cannot establish trans phase, and the missense allele has prediction
 support rather than a ClinVar assertion. See `vcf-triage.md` for tuples, evidence and exact
 reproduction commands.
+
+The independent feat-005a screen does not change that phase assessment. Copy-number and BAF
+evidence cannot determine whether the two BUB1B alleles reside on opposite homologues;
+**trans phase remains unconfirmed**.

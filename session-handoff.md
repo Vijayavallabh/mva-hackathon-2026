@@ -1,9 +1,9 @@
 # Session handoff
 
-**Last updated:** 2026-09-03 (session 14 — feat-004 VCF triage baseline)
+**Last updated:** 2026-09-03 (session 15 — feat-005a corrected copy-number/BAF screen)
 
-**Current objective / active feature:** feat-005a (GC-corrected copy-number and BAF screen).
-Feat-001 through feat-004 are done; keep exactly one feature active.
+**Current objective / active feature:** feat-006 (local scorer and submission conformance).
+Feat-001 through feat-005a are done; keep exactly one feature active.
 
 **State:** 84.99 GB subject dataset downloaded and integrity-verified. The data has been
 profiled; its HPO IDs, labels, reviewed context and concise clinical-significance summaries
@@ -13,6 +13,9 @@ the first offline genome-wide coding/splice analysis and identified a BUB1B comp
 pair as the leading unphased candidate; see `notes/vcf-triage.md`. `feature_list.json` was
 rewritten in session 3 from 7 to 11 features
 against what the data and the challenge's published scoring code actually say.
+Feat-005a then resolved the preliminary chr20/19/22 ambiguity: chr20 returns to baseline,
+chr22 lacks joint BAF support and chr19 retains a credible low-level gain signal at both
+mappability thresholds. See `notes/copy-number-screen.md`.
 
 **Read these before touching anything:** `notes/data-profile.md` (measured baseline, with
 the command for every number) and `notes/challenge-spec.md` (scoring mechanics and the two
@@ -34,7 +37,7 @@ traps that silently score zero).
 
 ## Files in flight
 
-No tracked files in flight after the session-13 commit. The local toolchain and public
+No tracked files in flight after the session-15 commit. The local toolchain and public
 annotation resources are intentionally gitignored; their versions, sources and checksums
 are tracked in `tools/versions.tsv` and `tools/resources.tsv`.
 The fetched `data/resources/hp.obo` is reused rather than duplicated.
@@ -47,13 +50,15 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 ./init.sh
 ```
 
-**Recommended next step:** feat-005a — resolve the earlier chr20/19/22 depth signal with
-GC-corrected read-depth bins and a mappability mask. Do not alter the feat-004 candidate
-tables while that independent copy-number analysis runs.
+**Recommended next step:** feat-006 — vendor the organizers' public scorer/template,
+implement conformance checks and self-score candidate CSVs locally. Do not spend a Track 1
+submission until the exact contig, proband ID, allele normalization, row-count and EPCR
+rules pass locally.
 
 The feat-004 candidate is not confirmed: both alleles are unphased, and the second BUB1B
 missense allele has computational prediction support but no ClinVar assertion in the pinned
-release. Preserve the exact distinction between candidate, phase, and classification.
+release. Feat-005a does not phase small variants. Preserve the exact distinction between
+candidate, phase, and classification: **trans phase remains unconfirmed**.
 
 **Persistent repository workflow:** commit every intended change, however small. At the
 end of each session, push all new commits to the configured `origin` and verify that the

@@ -13,3 +13,16 @@ and the missense allele needs manual evidence review. The phenotype match uses a
 proband observations; parental reproductive history is retained as a separate dimension
 and contributes zero to this candidate's score. Full evidence and commands are in
 `notes/vcf-triage.md`.
+
+## 2026-09-03 — feat-005a copy-number/BAF screen
+
+The GC- and mappability-corrected whole-genome screen resolves the preliminary chr20
+outlier as technical bias: its corrected depth interval spans one and its BAF-excess
+interval spans zero. Chr22 has a small depth shift but no independent BAF support. Chr19
+retains joint depth and BAF evidence at both mappability thresholds, consistent with an
+approximately 4–9% low-level mosaic gain signal.
+
+Interpretation status: **credible screening signal, not a clinically confirmed mosaic
+trisomy**. This result neither proves causality nor phases the leading small variants. The
+BUB1B alleles remain unphased, and trans phase remains unconfirmed. Full methods, aggregate
+results and limitations are in `notes/copy-number-screen.md`.

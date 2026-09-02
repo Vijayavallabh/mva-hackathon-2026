@@ -506,3 +506,61 @@ annotation resources ready
 ```
 
 Next: feat-005a, GC-corrected copy-number and BAF screen.
+
+## 2026-09-03 — session 15: feat-005a corrected copy-number and BAF screen
+
+- Added a pinned GRCh38 Umap k=100 multi-read mappability asset and integrated checksum
+  verification into the resumable offline resource installer.
+- Added a checkpointed, all-lane pipeline that builds exact-reference 100 kb GC and
+  mappability bins, streams BWA-MEM2 alignments through mate fixing, coordinate sorting and
+  duplicate removal, and counts MAPQ≥30 primary aligned bases without retaining a BAM.
+- The real run examined 938,213,206 SAM records, accepted 868,096,455 records and counted
+  127,162,165,520 aligned bases. The primary analysis retained 25,883 autosomal bins,
+  2,110,700 high-quality heterozygous SNVs and 25,767 populated 100 kb BAF bins.
+- Replaced the preliminary 10 Mb comparison with leave-one-chromosome-out 0.5%-GC median
+  curves, mappability/ACGT masks, sampling-variance-corrected BAF and deterministic 2,000-
+  replicate chromosome-stratified 1 Mb block bootstraps. Each replicate jointly refits the
+  target, GC model/normalizer and leave-target-out BAF baseline. Repeated the analysis at
+  mappability thresholds 0.90 and 0.95.
+- Chr20 is no longer a gain after correction and chr22 lacks BAF support. Chr19 retains
+  joint support at both thresholds: primary depth ratio 1.02163 (95% CI 1.01803–1.02669)
+  and BAF excess 0.000423 (95% CI 0.000222–0.000778). Simple depth and BAF conversions give
+  a broad approximately 4–9% mosaic-fraction screening range.
+- This is a credible single-subject screening signal, not clinical confirmation of mosaic
+  trisomy 19. It does not establish small-variant inheritance or phase; the BUB1B pair's
+  trans phase remains unconfirmed.
+- Two-axis review widened the uncertainty model to joint chromosome-stratified 1 Mb block
+  bootstraps, added exact R1/R2 lane-key validation, split checkpoint signatures by stage,
+  corrected the feat-006 next-feature marker and removed stale README status text.
+
+Reproduction and aggregate limitations are recorded in `notes/copy-number-screen.md`.
+Verification included all three Python self-checks, shell syntax, the real all-lane run,
+the ≥0.95 sensitivity run and the repository gates.
+
+Next: feat-006, local scorer and submission conformance.
+
+Final `./init.sh` completed on 2026-09-03:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```

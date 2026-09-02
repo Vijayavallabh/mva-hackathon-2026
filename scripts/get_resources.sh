@@ -9,11 +9,13 @@ VEP_CACHE="$RESOURCES/vep"
 CLINVAR="$RESOURCES/clinvar"
 HPO_ANNOTATIONS="$RESOURCES/hpo"
 ENSEMBL="$RESOURCES/ensembl"
+MAPPABILITY="$RESOURCES/mappability"
 TOOLS="$ROOT/tools/install/bin"
 RESOURCE_MANIFEST="$ROOT/tools/resources.tsv"
 VEP_EXTRACT_MARKER="$VEP_CACHE/.vep-116-GRCh38-extract-complete"
 mkdir -p \
-  "$DOWNLOADS" "$REFERENCE" "$VEP_CACHE" "$CLINVAR" "$HPO_ANNOTATIONS" "$ENSEMBL"
+  "$DOWNLOADS" "$REFERENCE" "$VEP_CACHE" "$CLINVAR" "$HPO_ANNOTATIONS" "$ENSEMBL" \
+  "$MAPPABILITY"
 
 locked() {
   local resource=$1 column=$2
@@ -63,6 +65,7 @@ check_resources() {
     "$RESOURCES/hp.obo" \
     "$HPO_ANNOTATIONS/genes_to_phenotype.txt" \
     "$ENSEMBL/Homo_sapiens.GRCh38.116.exons-plus-20bp.bed" \
+    "$MAPPABILITY/k100.umap.MultiReadMappability.bedgraph.gz" \
     "$RESOURCE_MANIFEST"; do
     if [[ ! -s "$path" ]]; then echo "missing: ${path#$ROOT/}" >&2; failed=1; fi
   done
@@ -77,6 +80,8 @@ check_resources() {
   verify_sha256 Ensembl-GTF "$DOWNLOADS/Homo_sapiens.GRCh38.116.gtf.gz"
   verify_sha256 Ensembl-exon-windows \
     "$ENSEMBL/Homo_sapiens.GRCh38.116.exons-plus-20bp.bed"
+  verify_sha256 Umap-k100-multiread \
+    "$MAPPABILITY/k100.umap.MultiReadMappability.bedgraph.gz"
   [[ $(<"$VEP_EXTRACT_MARKER") == "$(locked VEP-cache 4)" ]]
   "$TOOLS/samtools" faidx "$REFERENCE/GCA_000001405.15_GRCh38_no_alt_analysis_set_plus_hs38d1_maskedGRC_exclusions_v2_no_chr.fasta" 1:1-1 >/dev/null
   "$TOOLS/tabix" -l "$CLINVAR/clinvar.vcf.gz" >/dev/null
@@ -149,6 +154,10 @@ HPO_URL="https://github.com/obophenotype/human-phenotype-ontology/releases/downl
 download HPO "$HPO_URL" "$RESOURCES/hp.obo"
 HPO_GENE_URL="https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-06-23/genes_to_phenotype.txt"
 download HPO-gene-annotations "$HPO_GENE_URL" "$HPO_ANNOTATIONS/genes_to_phenotype.txt"
+
+UMAP_URL="https://bismap.hoffmanlab.org/raw/hg38/k100.umap.bedgraph.gz"
+download Umap-k100-multiread "$UMAP_URL" \
+  "$MAPPABILITY/k100.umap.MultiReadMappability.bedgraph.gz"
 
 ENSEMBL_GTF="$DOWNLOADS/Homo_sapiens.GRCh38.116.gtf.gz"
 ENSEMBL_GTF_URL="https://ftp.ensembl.org/pub/release-116/gtf/homo_sapiens/Homo_sapiens.GRCh38.116.gtf.gz"

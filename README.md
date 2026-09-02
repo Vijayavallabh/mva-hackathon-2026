@@ -83,24 +83,26 @@ Both, plus the scoring mechanics, are in `notes/challenge-spec.md`.
 
 ## Status
 
-feat-001 and feat-002 are done. feat-003 installs the offline toolchain and annotation
-resources needed for the first variant-ranking baseline.
+Feat-001 through feat-005a are complete. The next feature is feat-006: build and verify the
+local Track 1 scorer before spending any of the six submissions.
 
-The data has been profiled but not yet analyzed — see `notes/data-profile.md` for the
-measured baseline and the exact commands. In short: a 45× male genome, 5.01M variants at
-Ti/Tv 2.050, called by Sentieon as a diploid germline SNV/indel set.
+The data profile and first two analyses are complete — see `notes/data-profile.md`,
+`notes/vcf-triage.md` and `notes/copy-number-screen.md` for measured results and exact
+commands. The baseline is a 45× male genome with 5.01M variants at Ti/Tv 2.050, called by
+Sentieon as a diploid germline SNV/indel set.
 
-Two findings shape the plan. **The provided VCF contains no CNV or structural records at
-all**, so MVA's defining mosaic aneuploidy cannot appear in it; a quick depth/BAF screen
-excludes high-level aneuploidy but leaves low-level mosaicism (chr20 is the largest outlier)
-unresolved and confounded with GC bias — that needs GC-corrected read-depth binning, not a
-full re-call. And **there is no runs-of-homozygosity signal**, so with the challenge's own
-scoring code stating a compound-heterozygous answer key, the working model is two different
-rare damaging alleles in one gene. Realignment of the FASTQ lanes is kept as a targeted,
-optional step aimed at recovering a second allele the germline caller could have dropped.
+Three findings shape the plan. **The provided VCF contains no CNV or structural records.**
+The corrected all-lane depth/BAF screen resolves the preliminary chr20 outlier as bias,
+finds no joint support on chr22, and retains a credible low-level chr19 gain signal that
+still requires orthogonal clinical confirmation. **There is no runs-of-homozygosity
+signal**, so with the challenge's public compound-heterozygous answer-key statement, the
+working model is two different rare damaging alleles in one gene. The first genome-wide
+triage ranks a BUB1B pair first, but the alleles are not proven to be in trans. Targeted
+realignment remains optional rather than a substitute for phase evidence.
 
 `notes/prior-knowledge.md` records the candidate genes considered before any data was
 examined, and what the first pass did and did not do to that prior.
+`notes/copy-number-screen.md` records the corrected screen, commands and limitations.
 
 ## Acknowledgement
 

@@ -14,6 +14,7 @@ __pycache__/
 .env
 .codex/
 .uv-cache/
+.claude_resources.json
 # Local bioinformatics installations; retain only their reproducibility metadata.
 /tools/*
 !/tools/.gitignore

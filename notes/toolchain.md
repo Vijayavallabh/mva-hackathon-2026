@@ -29,6 +29,9 @@ their pinned versions, sources and checksums are recorded in `tools/versions.tsv
 - **Ensembl 116 GTF** is reduced deterministically by `scripts/build_coding_regions.py` to
   merged primary-contig exon windows with a 20 bp flank. This bounds coding/splice VEP
   runtime without sending coordinates to a remote service.
+- **Umap k=100 multi-read mappability for hg38** masks poorly mappable 100 kb bins in the
+  feat-005a read-depth and BAF screen. Its source and checksum are pinned like the other
+  public resources; the analysis repeats at 0.90 and 0.95 thresholds.
 
 The native HTS tools were compiled locally because system-package installation is outside
 this feature's scope. Optional bzip2/LZMA and remote-URL support in HTSlib are disabled; the
@@ -77,7 +80,7 @@ checks installed versions against the locks. The large VEP cache is first extrac
 temporary directory; only a successful extraction replaces the active cache and writes a
 completion marker bound to the archive checksum.
 
-The installed local footprint is approximately 2.2 GiB under `tools/` and 56 GiB under
+The installed local footprint is approximately 2.2 GiB under `tools/` and 57 GiB under
 `data/resources/`, against 3.7 TiB free on `/mnt/md0` at installation time. The latter
 includes the 25.7 GiB VEP archive so its checksum remains independently reproducible.
 

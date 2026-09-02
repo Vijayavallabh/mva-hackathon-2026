@@ -51,8 +51,8 @@
       "dependencies": [
         "feat-004"
       ],
-      "status": "next",
-      "evidence": ""
+      "status": "done",
+      "evidence": "scripts/run_copy_number_screen.sh implements an all-lane, no-retained-BAM screen with 100 kb GC/mappability bins, MAPQ>=30 depth, high-quality heterozygous-SNV BAF, deterministic block bootstraps and a >=0.95 mappability sensitivity run. The real run accepted 868,096,455 primary nonduplicate alignments. At both thresholds chr20 is no gain after correction, chr22 lacks joint BAF support, and chr19 has joint support consistent with a low-level mosaic gain; notes/copy-number-screen.md records commands, aggregate intervals and limitations. `./scripts/run_copy_number_screen.sh --self-check` and the full local command pass. The result does not establish candidate-variant phase; trans phase remains unconfirmed."
     },
     {
       "id": "feat-005b",
@@ -71,7 +71,7 @@
       "dependencies": [
         "feat-004"
       ],
-      "status": "not-started",
+      "status": "next",
       "evidence": ""
     },
     {

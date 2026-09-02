@@ -61,6 +61,11 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
 - Sample is **male**, mean depth **45×**, Ti/Tv 2.050, 5,012,204 records (94.6% PASS).
 - **No ROH → no consanguinity.** Expect two different rare alleles, not a homozygote.
 - **The VCF contains no CNV/SV records at all.** Aneuploidy is invisible in it by construction.
+- **The corrected all-lane copy-number/BAF screen resolves the preliminary outliers.** With
+  100 kb leave-one-chromosome-out GC correction and Umap masks, chr20 returns to baseline,
+  chr22 lacks joint BAF support, and chr19 retains concordant low-level gain evidence at
+  mappability thresholds 0.90 and 0.95. This is a single-subject screening signal—not a
+  clinical karyotype or proof of mosaic trisomy 19. See `notes/copy-number-screen.md`.
 - **The phenotype document names no gene, no karyotype and no prior genetic testing.** Keep
   the search genome-wide; BUB1B/CEP57/TRIP13 are a literature prior, not a shortlist.
 - **Phenotype scope matters:** seven HPO terms are proband features; `HP:0200067` is
@@ -73,6 +78,9 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   clinically meaningful family-history dimension rather than discarding it as metadata.
   In chromosome-instability syndromes it is compatible with inherited susceptibility or a
   newly arising event, but cannot distinguish those models without genomic evidence.
+- **The leading BUB1B pair is still unphased.** Neither the copy-number result nor the
+  single-sample VCF establishes that the alleles are on opposite homologues; trans phase
+  remains unconfirmed.
 - **Do not make the repository public yet:** the current tree passes the disclosure audit,
   but reachable commit `05ed1cc` contains two short non-HPO overlaps with protected table
   wording. Feat-007 must remove them from history and re-audit before changing visibility.
