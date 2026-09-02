@@ -181,3 +181,17 @@ This harness-only maintenance did not change feat-002 status or evidence.
   override the signed prohibition on data resharing.
 
 This harness-only maintenance did not change feat-002 status or evidence.
+
+## 2026-09-02 — session 7: local genomics teaching workspace
+
+- Split the introductory data explanation into 12 short HTML lessons for a learner with
+  AI, deep-learning, and statistics experience but no biology background.
+- Added a local mission, curated primary resources, shared printable styling, an
+  AI-to-genomics glossary, learner notes, and a prior-knowledge learning record.
+- Added all teaching-workspace paths to `.gitignore` at the user's request. The lessons
+  use synthetic examples and safe aggregate facts only; no protected VCF records or
+  clinical narrative are present.
+- Validated all 13 HTML files and their local navigation: zero broken local links.
+
+This educational side task did not perform feat-002 phenotype extraction or change any
+feature status/evidence. The active feature remains feat-002.

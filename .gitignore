@@ -16,3 +16,12 @@ __pycache__/
 .uv-cache/
 # local agent-tool convenience symlink -> AGENTS.md
 CLAUDE.md
+
+# Local teaching workspace (generated via the teach skill; never commit)
+/MISSION.md
+/RESOURCES.md
+/NOTES.md
+/lessons/
+/reference/
+/learning-records/
+/assets/
