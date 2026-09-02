@@ -118,21 +118,24 @@ zcat data/WGS_EX2312012_HGWCNDSX7_S16_L001_R1_001.fastq.gz | wc -c    # 50,600,5
 
 ## 5. Phenotype document
 
-`data/Challenge_Clinical_Phenotype_1.docx` — probed **structurally only**; the narrative has
-not been read.
+`data/Challenge_Clinical_Phenotype_1.docx` — processed locally; protected wording was not
+copied into tracked output. Only standardized IDs and reviewed broad categories are kept.
 
 - 380 words, 51 paragraphs, 1 table, no images.
 - **Carries 8 embedded `HP:#######` IDs.** Consistent with the official rules, which state
-  phenotypic data is provided "as standardized HPO terms".
+  phenotypic data is provided "as standardized HPO terms". Reviewed categorical context
+  assigns seven terms to redacted proband and one (`HP:0200067`) to parental/family history.
 - Keyword probe returns **false** for: `karyotype`, `aneuploid`, `mosaic`, `trisomy`, `OMIM`,
   `exome`, `variant`, `VUS`, `negative`, `microcephaly`, `BUB1B`, `CEP57`, `TRIP13`.
 
-> Consequence: **we are given a bare phenotype list with no prior genetic workup and no
-> candidate gene.** The search stays genome-wide; do not collapse it onto the three known
-> MVA genes. See `prior-knowledge.md`.
+> Consequence: **we are given a multi-system phenotype with no prior genetic workup and no
+> candidate gene.** Rank the complete pattern across malignancy, renal, growth, muscle and
+> perinatal domains, retaining reproductive family history as separate mechanistic context.
+> The search stays genome-wide; do not collapse it onto the three known MVA genes. See
+> `phenotype.md` and `prior-knowledge.md`.
 
-Command: `uv run python` with stdlib `zipfile` + `re` over `word/document.xml`, printing
-counts only.
+Command: `uv run python scripts/extract_hpo.py` with stdlib `zipfile` + `re` over
+`word/document.xml`; it emits only permitted HPO labels and reviewed categorical context.
 
 ## 6. Compute environment (2026-08-28)
 

@@ -28,7 +28,9 @@ organizers' own words from the official Hackathon Rules.
    share their code, models, and derived outputs at any time"*, and the organizers describe
    the released phenotype as "standardized HPO terms":
    - aggregate statistics and QC metrics (depth, Ti/Tv, het rate, per-chromosome summaries)
-   - **HPO term IDs and labels**, gene names, pathway and mechanism reasoning
+   - **HPO term IDs and labels**, plus broad non-verbatim categorical context such as
+     proband versus family history, onset bins and organ-system groupings
+   - gene names, pathway and mechanism reasoning
    - the ranked candidate variants that constitute the submission itself, and the report
 
    An agent working in this repo may read and reason about everything in the permitted list.
@@ -61,6 +63,12 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
 - **The VCF contains no CNV/SV records at all.** Aneuploidy is invisible in it by construction.
 - **The phenotype document names no gene, no karyotype and no prior genetic testing.** Keep
   the search genome-wide; BUB1B/CEP57/TRIP13 are a literature prior, not a shortlist.
+- **Phenotype scope matters:** seven HPO terms are proband features; `HP:0200067` is
+  parental/family history. Retain that term as a mechanistic and inheritance signal, but do
+  not represent it as an abnormality observed in the proband.
+- **Rank the constellation, not one symptom:** malignancy, congenital renal involvement,
+  impaired growth and redacted development, adverse perinatal/fetal growth and parental
+  reproductive loss form the useful multi-system pattern. No single term is diagnostic.
 
 ## Startup workflow
 

@@ -42,10 +42,15 @@ intact on purpose. What the first screening pass (`data-profile.md`) says about 
   Anything the germline caller dropped is invisible until we realign (feat-005b).
 - **"Not finding one of these three is a legitimate outcome" is stronger than it looked.**
   The clinical phenotype document names no gene, no karyotype and no prior genetic testing
-  at all. We were given a bare HPO list. There is no external hint pointing at BUB1B, CEP57
-  or TRIP13 in this dataset — only the literature prior above and the organizers' public
+  at all. We were given HPO terms with presentation context, but no genetic shortlist.
+  There is no external hint pointing at BUB1B, CEP57 or TRIP13 in this dataset — only the literature prior above and the organizers' public
   statement that the child is "fighting cancer cells", which fits BUB1B/MVA1. The search
   stays genome-wide; the three genes are a prior to be tested, not a shortlist to filter to.
+- **The phenotype is a constellation, with scope attached.** Seven terms apply to redacted
+  proband across oncologic, renal, growth, neuromuscular and perinatal domains. The eighth
+  is parental/family reproductive history: retain it as evidence relevant to chromosome
+  instability and inheritance hypotheses, but do not mislabel it as a proband abnormality.
+  Neither that history nor the full pattern establishes inherited versus de novo origin.
 - **No aneuploidy has been ruled in or out.** Blood WGS at 45× excludes high-level
   aneuploidy but not the low-level mosaicism MVA is named for, and the residual per-chromosome
   signal (chr20 largest) is confounded with GC/mappability bias. MVA is classically diagnosed

@@ -1,7 +1,7 @@
 """Extract public-safe phenotype features from the protected phenotype DOCX.
 
 The protected clinical narrative is read locally but is never printed or written. The
-program emits standardized HPO IDs plus broad, non-verbatim context signals; it never
+program emits standardized HPO IDs plus reviewed, non-verbatim categorical context; it never
 emits the Presentation or Notes cell text, numbers, ages, or measurements.
 
 Run the real extraction from the repository root:
@@ -20,7 +20,9 @@ import hashlib
 import re
 import tempfile
 import zipfile
-from collections.abc import Iterable
+from collections.abc import Iterable, Mapping
+from dataclasses import dataclass
+from enum import StrEnum
 from pathlib import Path
 from xml.etree import ElementTree
 
@@ -30,48 +32,66 @@ DEFAULT_DOCX = ROOT / "data" / "Challenge_Clinical_Phenotype_1.docx"
 DEFAULT_ONTOLOGY = ROOT / "data" / "resources" / "hp.obo"
 DEFAULT_OUTPUT = ROOT / "notes" / "phenotype.md"
 HPO_SOURCE = "https://purl.obolibrary.org/obo/hp.obo"
+CONTEXT_REVIEW_DATE = "2026-09-02"
 HPO_ID = re.compile(rb"HP:\d{7}")
 WORD_NAMESPACE = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 WORD = {"w": WORD_NAMESPACE}
 
-# These deliberately broad patterns produce lexical signals, not clinical conclusions.
-SIGNAL_PATTERNS = {
-    "proband context": re.compile(r"\b(?:patient|proband|child|boy|he|his)\b", re.I),
-    "family context": re.compile(
-        r"\b(?:family|mother|maternal|father|paternal|parent|sibling|brother|sister|"
-        r"pregnan\w*|miscarri\w*)\b",
-        re.I,
+class SubjectScope(StrEnum):
+    """Whose phenotype or history a reviewed term describes."""
+
+    PROBAND = "proband"
+    FAMILY = "parental/family history"
+
+
+@dataclass(frozen=True)
+class PhenotypeContext:
+    """Reviewed, non-verbatim context safe for the eventual public repository."""
+
+    applies_to: SubjectScope
+    broad_timing: str
+    domain: str
+
+    @property
+    def analysis_role(self) -> str:
+        return (
+            "proband phenotype"
+            if self.applies_to is SubjectScope.PROBAND
+            else "family-history signal"
+        )
+
+
+# Curated from the protected Presentation/Notes column. Exact wording and quantitative
+# details intentionally do not appear here. The extractor detects ID-set changes and empty
+# context rows. A wording-only source change still requires a fresh human review.
+REVIEWED_CONTEXT = {
+    "HP:0002859": PhenotypeContext(
+        SubjectScope.PROBAND, "not specified", "oncologic"
     ),
-    "prenatal timing": re.compile(
-        r"\b(?:prenatal|antenatal|fetal|foetal|pregnancy|gestation|in utero)\b", re.I
+    "HP:0000121": PhenotypeContext(
+        SubjectScope.PROBAND, "congenital", "renal"
     ),
-    "perinatal timing": re.compile(
-        r"\b(?:birth|born|newborn|neonatal|prematur\w*|delivery)\b", re.I
+    "HP:0004322": PhenotypeContext(
+        SubjectScope.PROBAND, "not specified", "growth"
     ),
-    "postnatal timing": re.compile(
-        r"\b(?:postnatal|infancy|infant|childhood|after birth|later in life)\b", re.I
+    "HP:0001508": PhenotypeContext(
+        SubjectScope.PROBAND, "early life", "growth and nutrition"
     ),
-    "quantitative detail": re.compile(
-        r"\d|\b(?:cm|mm|kg|gram\w*|percentile|week\w*|month\w*|year\w*)\b", re.I
+    "HP:0003202": PhenotypeContext(
+        SubjectScope.PROBAND, "not specified", "neuromuscular"
     ),
-    "diagnostic detail": re.compile(
-        r"\b(?:diagnos\w*|biops\w*|patholog\w*|histolog\w*|imaging|ultrasound|"
-        r"scan|mri|ct|laboratory)\b",
-        re.I,
+    "HP:0001622": PhenotypeContext(
+        SubjectScope.PROBAND, "perinatal", "perinatal"
     ),
-    "treatment detail": re.compile(
-        r"\b(?:treat\w*|therap\w*|chemotherap\w*|radiotherap\w*|surg\w*|"
-        r"medication\w*)\b",
-        re.I,
+    "HP:0001518": PhenotypeContext(
+        SubjectScope.PROBAND, "prenatal/perinatal", "fetal growth"
     ),
-    "longitudinal detail": re.compile(
-        r"\b(?:recurrent|progress\w*|follow-up|previous\w*|history|resolved|ongoing)\b",
-        re.I,
+    "HP:0200067": PhenotypeContext(
+        SubjectScope.FAMILY,
+        "family history",
+        "reproductive",
     ),
 }
-
-
-ContextSignals = tuple[str, ...]
 
 
 def _read_document_xml(docx: Path) -> bytes:
@@ -96,13 +116,8 @@ def _cell_text(cell: ElementTree.Element) -> str:
     return "".join(node.text or "" for node in cell.findall(".//w:t", WORD)).strip()
 
 
-def _signals(text: str) -> tuple[str, ...]:
-    """Reduce protected text to a fixed vocabulary of broad lexical signals."""
-    return tuple(name for name, pattern in SIGNAL_PATTERNS.items() if pattern.search(text))
-
-
-def extract_context_signals(docx: Path) -> dict[str, ContextSignals]:
-    """Classify the Presentation/Notes cell without returning its source text."""
+def extract_populated_context_rows(docx: Path) -> set[str]:
+    """Return IDs whose Presentation/Notes cell is populated, never its source text."""
     root = ElementTree.fromstring(_read_document_xml(docx))
     tables = root.findall(".//w:tbl", WORD)
     if len(tables) != 1:
@@ -122,16 +137,17 @@ def extract_context_signals(docx: Path) -> dict[str, ContextSignals]:
         raise ValueError("phenotype table lacks one combined Presentation/Notes column")
     context_index = context_indices[0]
 
-    contexts: dict[str, ContextSignals] = {}
-    for row in rows[1:]:
+    populated: set[str] = set()
+    for row_number, row in enumerate(rows[1:], 1):
         cells = row.findall("./w:tc", WORD)
         if context_index >= len(cells):
             raise ValueError("phenotype table row has too few columns")
         row_ids = HPO_ID.findall(" ".join(_cell_text(cell) for cell in cells).encode())
+        if row_ids and not _cell_text(cells[context_index]):
+            raise ValueError(f"phenotype table row {row_number} has empty context")
         for raw_id in row_ids:
-            hpo_id = raw_id.decode("ascii")
-            contexts[hpo_id] = _signals(_cell_text(cells[context_index]))
-    return contexts
+            populated.add(raw_id.decode("ascii"))
+    return populated
 
 
 def _finish_obo_term(fields: dict[str, object], labels: dict[str, str]) -> None:
@@ -198,7 +214,7 @@ def sha256(path: Path) -> str:
 def render_markdown(
     ids: Iterable[str],
     labels: dict[str, str],
-    contexts: dict[str, ContextSignals],
+    contexts: Mapping[str, PhenotypeContext],
     metadata: dict[str, str],
     digest: str,
 ) -> str:
@@ -209,39 +225,48 @@ def render_markdown(
             label = labels[hpo_id]
         except KeyError as error:
             raise ValueError(f"HPO ID is absent or obsolete in hp.obo: {hpo_id}") from error
-        context = contexts.get(hpo_id, ())
-        signals = ", ".join(context) or "no broad signal"
-        rows.append(f"| `{hpo_id}` | {label} | {signals} |")
+        try:
+            context = contexts[hpo_id]
+        except KeyError as error:
+            raise ValueError(f"HPO ID lacks reviewed context: {hpo_id}") from error
+        rows.append(
+            f"| `{hpo_id}` | {label} | {context.applies_to} | "
+            f"{context.broad_timing} | {context.domain} | {context.analysis_role} |"
+        )
 
     table = "\n".join(rows)
     data_version = metadata.get("data-version", "not declared")
     return f"""# Phenotype (feat-002)
 
-The protected DOCX was processed locally. This tracked note contains only the standardized
-HPO IDs embedded in it, their public ontology labels, and broad lexical context signals—no
-clinical narrative, dates, places, ages, measurements, or identifying free text.
+The protected DOCX was processed locally. This tracked note contains only standardized HPO
+IDs, public ontology labels, and reviewed categorical context—no clinical narrative, dates,
+places, exact ages, measurements, or identifying free text.
 
 ## HPO terms
 
-| HPO ID | Label | Presentation/Notes signals |
-|---|---|---|
+| HPO ID | Label | Applies to | Broad timing | Domain | Analysis role |
+|---|---|---|---|---|---|
 {table}
 
-The signal columns are conservative keyword matches, not clinical interpretation. “No
-broad signal” means none of the fixed categories matched; it does not mean the cell was
-empty or uninformative. Exact wording and quantitative values remain protected locally.
-Mixed proband/family signals are deliberately left unresolved and must not be converted
-into phenotype-ranking weights without authorized local human review.
+Seven terms are proband phenotypes; the reproductive-loss term is parental/family history.
+Keep the latter as mechanistic and inheritance context, but do not score it as an
+abnormality observed in the proband.
+
+The useful signal is the full multi-system constellation: malignancy, congenital renal
+involvement, impaired growth and redacted development, adverse perinatal/fetal growth, and
+parental reproductive loss. No individual term is diagnostic, and the context does not
+establish whether the causal alleles were inherited or arose de novo.
 
 ## Method and provenance
 
 The IDs were mechanically matched as `HP:` followed by seven digits in
-`word/document.xml`. The combined Presentation/Notes column was reduced to a fixed
-vocabulary covering subject context, broad timing, and information type. Labels came from
+`word/document.xml`. The script verifies that every ID has a populated Presentation/Notes
+row, then applies the reviewed categorical mapping in `REVIEWED_CONTEXT`. Labels came from
 the official [Human Phenotype Ontology OBO file]({HPO_SOURCE}).
 
 - Ontology version: `{data_version}`
 - Local ontology SHA-256: `{digest}`
+- Categorical context review recorded: `{CONTEXT_REVIEW_DATE}`
 - Fetch ontology: `mkdir -p data/resources && curl --fail --location {HPO_SOURCE} --output data/resources/hp.obo`
 - Reproduce: `uv run python scripts/extract_hpo.py`
 - Data-free exercise: `uv run python scripts/extract_hpo.py --self-check`
@@ -254,15 +279,27 @@ known MVA genes are literature priors, not a hard shortlist.
 """
 
 
-def run(docx: Path, ontology: Path, output: Path) -> list[str]:
+def run(
+    docx: Path,
+    ontology: Path,
+    output: Path,
+    contexts: Mapping[str, PhenotypeContext] = REVIEWED_CONTEXT,
+) -> list[str]:
     """Extract IDs, resolve labels, and write the safe derived-output note."""
     ids = extract_hpo_ids(docx)
     if not ids:
         raise ValueError("no embedded HPO IDs found")
-    contexts = extract_context_signals(docx)
-    missing_context = [hpo_id for hpo_id in ids if hpo_id not in contexts]
-    if missing_context:
-        raise ValueError(f"HPO IDs have no Presentation/Notes row: {missing_context}")
+    populated_context = extract_populated_context_rows(docx)
+    missing_rows = [hpo_id for hpo_id in ids if hpo_id not in populated_context]
+    if missing_rows:
+        raise ValueError(f"HPO IDs have no populated Presentation/Notes row: {missing_rows}")
+    missing_review = [hpo_id for hpo_id in ids if hpo_id not in contexts]
+    stale_review = [hpo_id for hpo_id in contexts if hpo_id not in ids]
+    if missing_review or stale_review:
+        raise ValueError(
+            f"reviewed context does not match document IDs: "
+            f"missing={missing_review}, stale={stale_review}"
+        )
     labels, metadata = parse_obo(ontology)
     output.write_text(render_markdown(ids, labels, contexts, metadata, sha256(ontology)))
     return ids
@@ -300,7 +337,17 @@ def self_check() -> None:
             "name: Synthetic term two\n"
         )
 
-        ids = run(docx, ontology, output)
+        synthetic_context = {
+            "HP:0000001": PhenotypeContext(
+                SubjectScope.PROBAND, "congenital", "renal"
+            ),
+            "HP:0000002": PhenotypeContext(
+                SubjectScope.FAMILY,
+                "family history",
+                "reproductive",
+            ),
+        }
+        ids = run(docx, ontology, output, synthetic_context)
         rendered = output.read_text()
         assert ids == ["HP:0000001", "HP:0000002"]
         assert "Synthetic term one" in rendered
@@ -311,14 +358,14 @@ def self_check() -> None:
         assert "37 weeks" not in rendered
         assert "2026-01-01" not in rendered
         assert "diagnosed after birth" not in rendered
-        assert "quantitative detail" in rendered
-        assert "family context" in rendered
-    print("self-check ok: IDs and context signals resolved; protected text not emitted")
+        assert "congenital" in rendered
+        assert "parental/family history" in rendered
+    print("self-check ok: IDs and reviewed context resolved; protected text not emitted")
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Extract embedded HPO IDs without exposing clinical narrative."
+        description="Extract HPO IDs and reviewed context without exposing narrative."
     )
     parser.add_argument("--docx", type=Path, default=DEFAULT_DOCX)
     parser.add_argument("--ontology", type=Path, default=DEFAULT_ONTOLOGY)

@@ -1,14 +1,15 @@
 # Session handoff
 
-**Last updated:** 2026-09-02 (session 9 — Presentation/Notes signals)
+**Last updated:** 2026-09-02 (session 10 — reviewed phenotype context)
 
 **Current objective / active feature:** feat-003 (toolchain and annotation resources).
 feat-001 and feat-002 are done; keep exactly one feature active.
 
 **State:** 84.99 GB subject dataset downloaded and integrity-verified. The data has been
-profiled; its HPO IDs, labels, and broad non-verbatim Presentation/Notes signals have been
-extracted, but **no variant analysis has been run and no
-candidate variant proposed.** `feature_list.json` was rewritten in session 3 from 7 to 11 features
+profiled; its HPO IDs, labels, and reviewed non-verbatim context have been extracted.
+Seven terms are proband phenotypes and one is parental/family history. **No variant analysis
+has been run and no candidate variant proposed.** `feature_list.json` was rewritten in
+session 3 from 7 to 11 features
 against what the data and the challenge's published scoring code actually say.
 
 **Read these before touching anything:** `notes/data-profile.md` (measured baseline, with
@@ -29,10 +30,10 @@ traps that silently score zero).
 
 ## Files in flight
 
-None after the feat-002 commit. The fetched `data/resources/hp.obo` is intentionally
+None after the session-10 commit. The fetched `data/resources/hp.obo` is intentionally
 gitignored; its release, source, and checksum are recorded in `notes/phenotype.md`.
-The protected Presentation/Notes wording was not copied; only fixed-vocabulary signals
-are tracked.
+The protected Presentation/Notes wording was not copied; only reviewed categorical context
+is tracked.
 
 **Resume with:**
 ```bash
@@ -43,6 +44,10 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 **Recommended next step:** feat-003 — create the version-recorded local bioinformatics
 toolchain and fetch the remaining annotation resources. Reuse the already fetched
 `data/resources/hp.obo`; do not duplicate it.
+
+For feat-004, use all seven proband terms as phenotype observations. Retain `HP:0200067`
+separately as family-history/mechanistic evidence; do not feed it to a tool as if observed
+in the proband. Rank the multi-system constellation rather than optimizing for one term.
 
 **Persistent repository workflow:** commit every intended change, however small. At the
 end of each session, push all new commits to the configured `origin` and verify that the

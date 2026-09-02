@@ -271,3 +271,48 @@ exit=0
 ```
 
 Next: feat-003, toolchain and annotation resources.
+
+## 2026-09-02 — session 10: reviewed phenotype context and harness update
+
+The user provided explicit interpretation of the protected Presentation/Notes column and
+asked that the durable harness and relevant analysis documents reflect it. The source prose
+and exact quantitative details were not copied into tracked files.
+
+- Replaced keyword-only context signals in `scripts/extract_hpo.py` with a reviewed,
+  categorical mapping. Seven HPO terms are scoped to redacted proband; `HP:0200067` is retained
+  separately as parental/family-history evidence. The script verifies that every expected
+  ID still has a populated source row and detects ID-set or empty-row drift. Wording-only
+  changes require a fresh human review.
+- Recorded only broad timing and phenotype domains. Exact ages, dates, measurements and
+  narrative wording remain local and untracked.
+- Updated `AGENTS.md`, `feature_list.json`, `notes/data-profile.md`,
+  `notes/prior-knowledge.md`, `notes/phenotype.md`, and `session-handoff.md`. Future ranking
+  must use the whole multi-system constellation while preventing the family-history term
+  from being represented as a proband observation.
+- Harness validation remains **100/100**. A local privacy audit found
+  `diff_verbatim_6word_overlap=0` across all protected Presentation/Notes rows and the
+  tracked diff.
+- Two-axis review corrected an overclaim: the script detects changed ID sets and empty
+  context rows, not wording-only edits. It also replaced free-form subject scope with an
+  enum and derives analysis role from that scope, preventing contradictory combinations.
+
+Final verification:
+
+```text
+self-check ok: IDs and reviewed context resolved; protected text not emitted
+wrote /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/notes/phenotype.md with 8 HPO terms
+Harness validation: 100/100
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+85.00 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== OK ===
+exit=0
+```
+
+Next: feat-003, toolchain and annotation resources.
