@@ -31,7 +31,10 @@ ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_DOCX = ROOT / "data" / "Challenge_Clinical_Phenotype_1.docx"
 DEFAULT_ONTOLOGY = ROOT / "data" / "resources" / "hp.obo"
 DEFAULT_OUTPUT = ROOT / "notes" / "phenotype.md"
-HPO_SOURCE = "https://purl.obolibrary.org/obo/hp.obo"
+HPO_SOURCE = (
+    "https://github.com/obophenotype/human-phenotype-ontology/"
+    "releases/download/v2026-06-23/hp.obo"
+)
 CONTEXT_REVIEW_DATE = "2026-09-02"
 HPO_ID = re.compile(rb"HP:\d{7}")
 WORD_NAMESPACE = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"

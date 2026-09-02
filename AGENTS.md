@@ -94,10 +94,11 @@ Test command (the only automated test in the repo):
 - add a dep: `uv add <pkg>` (never `pip install`)
 - run anything: `uv run <cmd>`
 
-**No bioinformatics binaries are installed yet** — no bcftools, samtools, tabix, bwa-mem2,
-vep, gatk, nextflow or pigz. **feat-003 creates `scripts/get_tools.sh` and `tools/`**;
-until then, assume nothing beyond coreutils, `awk`, `zcat`, `docker` and the uv env.
-Record every tool version in `tools/`.
+**The feat-003 bioinformatics toolchain is local to this repo.** Add
+`tools/install/bin` to `PATH`, or call its executables by absolute path. Reproduce or check
+it with `scripts/get_tools.sh`; fetch/check the offline annotation bundle with
+`scripts/get_resources.sh`. Do not assume system copies. Pinned versions and checksums are
+recorded in `tools/versions.tsv` and `notes/toolchain.md`.
 
 Hardware: this box has 5x A100 80GB + 1x T400, but it is **shared and contended** — check
 `nvidia-smi` and `uptime` before planning a big job (2026-08-28: load avg 109/64 cores, 3 of

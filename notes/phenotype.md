@@ -43,12 +43,12 @@ required to discriminate between those models; the family-history feature alone 
 The IDs were mechanically matched as `HP:` followed by seven digits in
 `word/document.xml`. The script verifies that every ID has a populated Presentation/Notes
 row, then applies the reviewed categorical mapping in `REVIEWED_CONTEXT`. Labels came from
-the official [Human Phenotype Ontology OBO file](https://purl.obolibrary.org/obo/hp.obo).
+the official [Human Phenotype Ontology OBO file](https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-06-23/hp.obo).
 
 - Ontology version: `hp/releases/2026-06-23`
 - Local ontology SHA-256: `a5092cbdf605f568403cf7380d9173014015692433b2cc631bc5c1b053876b1b`
 - Categorical context review recorded: `2026-09-02`
-- Fetch ontology: `mkdir -p data/resources && curl --fail --location https://purl.obolibrary.org/obo/hp.obo --output data/resources/hp.obo`
+- Fetch ontology: `mkdir -p data/resources && curl --fail --location https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-06-23/hp.obo --output data/resources/hp.obo`
 - Reproduce: `uv run python scripts/extract_hpo.py`
 - Data-free exercise: `uv run python scripts/extract_hpo.py --self-check`
 

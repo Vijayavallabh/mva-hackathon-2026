@@ -12,6 +12,7 @@ Delete, from every environment:
 Then email **RarediseaserealkidMVAhackathon2026@synapse.org** to confirm.
 If not confirmed, the organizers will contact us.
 
-Note: the private GitHub repo is included in "private repos" under the rules.
-Nothing derived from the genome is ever committed, which keeps deletion to a
-local `rm -rf` and one email.
+The reference, VEP cache, ClinVar snapshot and HPO ontology installed by feat-003 live
+under `data/resources/`, so deleting `data/` removes them with the gated dataset. Publicly
+permitted tracked summaries and submission outputs may remain in Git; subject-bearing
+intermediate files must remain under the local deletion targets above.

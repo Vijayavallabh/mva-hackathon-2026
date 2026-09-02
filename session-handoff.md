@@ -1,9 +1,9 @@
 # Session handoff
 
-**Last updated:** 2026-09-02 (session 12 — phenotype interpretation policy)
+**Last updated:** 2026-09-02 (session 13 — feat-003 toolchain and resources)
 
-**Current objective / active feature:** feat-003 (toolchain and annotation resources).
-feat-001 and feat-002 are done; keep exactly one feature active.
+**Current objective / active feature:** feat-004 (VCF triage baseline).
+Feat-001 through feat-003 are done; keep exactly one feature active.
 
 **State:** 84.99 GB subject dataset downloaded and integrity-verified. The data has been
 profiled; its HPO IDs, labels, reviewed context and concise clinical-significance summaries
@@ -23,9 +23,6 @@ traps that silently score zero).
   overlap with protected table wording, but reachable commit `05ed1cc` has two overlaps.
   Feat-007 must rewrite that content out of history and force-push the configured origin;
   this destructive history operation requires an explicit user task.
-- **No bioinformatics tooling is installed** — no bcftools, samtools, tabix, bwa-mem2, vep,
-  gatk, nextflow, pigz. Nothing beyond coreutils, `awk`, `zcat`, `docker` and the uv env.
-  feat-003 fixes this and gates feat-004 onward.
 - **This repo is private, and every Track 1 submission requires a public GitHub URL.**
   Feat-007 remains blocked until the protected overlaps in reachable commit `05ed1cc` are
   removed by the explicitly authorized history rewrite described above. Re-audit the full
@@ -36,8 +33,10 @@ traps that silently score zero).
 
 ## Files in flight
 
-None after the session-10 commit. The fetched `data/resources/hp.obo` is intentionally
-gitignored; its release, source, and checksum are recorded in `notes/phenotype.md`.
+No tracked files in flight after the session-13 commit. The local toolchain and public
+annotation resources are intentionally gitignored; their versions, sources and checksums
+are tracked in `tools/versions.tsv` and `tools/resources.tsv`.
+The fetched `data/resources/hp.obo` is reused rather than duplicated.
 The protected Presentation/Notes wording was not copied; only reviewed categorical context
 is tracked.
 
@@ -47,9 +46,9 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 ./init.sh
 ```
 
-**Recommended next step:** feat-003 — create the version-recorded local bioinformatics
-toolchain and fetch the remaining annotation resources. Reuse the already fetched
-`data/resources/hp.obo`; do not duplicate it.
+**Recommended next step:** feat-004 — annotate the PASS, primary-contig VCF offline and
+produce the first reproducible candidate table. Start from `notes/toolchain.md`; preserve
+the explicit no-chr input to chr-prefixed submission conversion.
 
 For feat-004, use all seven proband terms as phenotype observations. Retain `HP:0200067`
 as a separate, clinically meaningful phenotype-input dimension; do not feed it to a tool

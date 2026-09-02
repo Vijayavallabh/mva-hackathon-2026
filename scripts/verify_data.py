@@ -47,6 +47,21 @@ def check(
     return problems
 
 
+def payload_size(data_dir: Path, repo_files: Iterable[object]) -> int:
+    """Sum only expected dataset payloads, excluding local annotation resources."""
+    total = 0
+    for item in repo_files:
+        if getattr(item, "size", None) is None:
+            continue
+        path = getattr(item, "path")
+        if path in SKIP:
+            continue
+        local = data_dir / path
+        if local.is_file():
+            total += local.stat().st_size
+    return total
+
+
 def demo() -> None:
     """Exercise missing, truncated, and complete cases without network access."""
     import tempfile
@@ -59,6 +74,9 @@ def demo() -> None:
         assert check(data_dir, expected) == ["TRUNCATED fixture.bin 2/3"]
         (data_dir / "fixture.bin").write_bytes(b"xxx")
         assert check(data_dir, expected) == []
+        (data_dir / "resources").mkdir()
+        (data_dir / "resources" / "public.bin").write_bytes(b"not payload")
+        assert payload_size(data_dir, expected) == 3
     print("self-check ok")
 
 
@@ -66,10 +84,13 @@ if __name__ == "__main__":
     if "--self-check" in sys.argv:
         demo()
         raise SystemExit(0)
-    bad = check()
+    repo_files = list(
+        HfApi().list_repo_tree(REPO, repo_type="dataset", recursive=True)
+    )
+    bad = check(repo_files=repo_files)
     for p in bad:
         print(p)
-    total = sum(f.stat().st_size for f in DATA.rglob("*") if f.is_file())
+    total = payload_size(DATA, repo_files)
     print(f"{total / 1e9:.2f} GB in {DATA}")
     print("INCOMPLETE" if bad else "COMPLETE: all files present at expected size")
     raise SystemExit(1 if bad else 0)

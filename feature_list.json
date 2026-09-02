@@ -30,8 +30,8 @@
       "dependencies": [
         "feat-001"
       ],
-      "status": "next",
-      "evidence": ""
+      "status": "done",
+      "evidence": "scripts/get_tools.sh and scripts/get_resources.sh install and verify the pinned local toolchain and offline bundle against immutable SHA-256 lock manifests in tools/versions.tsv and tools/resources.tsv. `uv run python scripts/build_reference.py --self-check` passes; all 5,012,204 VCF REF alleles match the reconstructed reference; an offline public-rs699 VEP 116 smoke test returns populated gnomADe/gnomADg v4.1 frequencies; `./scripts/get_tools.sh --check`, `./scripts/get_resources.sh --check`, and final `./init.sh` pass on 2026-09-02."
     },
     {
       "id": "feat-004",
@@ -41,7 +41,7 @@
         "feat-002",
         "feat-003"
       ],
-      "status": "not-started",
+      "status": "next",
       "evidence": ""
     },
     {

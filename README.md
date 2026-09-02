@@ -49,6 +49,8 @@ Requires [uv](https://docs.astral.sh/uv/) and a Hugging Face account approved fo
 ```bash
 hf auth login                 # or export HF_TOKEN
 ./scripts/download_data.sh    # 85 GB into data/, resumable, ~25 min at 60 MB/s
+./scripts/get_tools.sh        # pinned local bioinformatics toolchain
+./scripts/get_resources.sh    # matching reference + offline annotation resources
 ./init.sh                     # env + integrity + safety gates
 ```
 
@@ -71,8 +73,8 @@ Both, plus the scoring mechanics, are in `notes/challenge-spec.md`.
 | Path | Contents |
 |---|---|
 | `data/` | 85 GB gated dataset: 1 VCF + index, 8 FASTQ lanes, clinical phenotype docx. Gitignored. |
-| `scripts/` | `download_data.sh`, `verify_data.py`, `no_data_in_git.sh` |
-| `tools/` | Bioinformatics binaries and recorded versions (created by feat-003) |
+| `scripts/` | data, toolchain, resource, phenotype and verification entry points |
+| `tools/` | Gitignored local binaries plus tracked version/checksum metadata |
 | `notes/` | Tracked markdown: data profile, challenge spec, prior hypotheses, HPO terms, deletion plan |
 | `results/` | Derived output. Gitignored — contains subject genotypes. |
 | `AGENTS.md` | Working rules, access terms, established data facts, definition of done |
@@ -81,8 +83,8 @@ Both, plus the scoring mechanics, are in `notes/challenge-spec.md`.
 
 ## Status
 
-feat-001 done: dataset downloaded and verified, 84.99 GB across 11 files.
-feat-002 next: extract the HPO terms already embedded in the clinical phenotype document.
+feat-001 and feat-002 are done. feat-003 installs the offline toolchain and annotation
+resources needed for the first variant-ranking baseline.
 
 The data has been profiled but not yet analyzed — see `notes/data-profile.md` for the
 measured baseline and the exact commands. In short: a 45× male genome, 5.01M variants at

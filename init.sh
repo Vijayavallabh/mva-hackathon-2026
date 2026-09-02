@@ -27,4 +27,10 @@ else
   echo "  data/ empty - run ./scripts/download_data.sh (analysis features cannot start)"
 fi
 
+echo "=== 5. local bioinformatics toolchain ==="
+./scripts/get_tools.sh --check
+
+echo "=== 6. offline annotation resources ==="
+./scripts/get_resources.sh --check
+
 echo "=== OK ==="

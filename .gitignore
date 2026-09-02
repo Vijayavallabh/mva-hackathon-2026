@@ -14,6 +14,12 @@ __pycache__/
 .env
 .codex/
 .uv-cache/
+# Local bioinformatics installations; retain only their reproducibility metadata.
+/tools/*
+!/tools/.gitignore
+!/tools/README.md
+!/tools/versions.tsv
+!/tools/resources.tsv
 # local agent-tool convenience symlink -> AGENTS.md
 CLAUDE.md
 

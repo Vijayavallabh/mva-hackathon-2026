@@ -1,0 +1,8 @@
+resource	release	source	sha256
+reference-base	GRCh38-no-alt+hs38d1	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/GCA_000001405.15_GRCh38_no_alt_plus_hs38d1_analysis_set.fna.gz	08959902840a28f410ad1220e36b2a3fbe2cb90beecceb6ea5b050a0e68ed96d
+reference-mask	T2T-v2	https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/references/GRCh38/GCA_000001405.15_GRCh38_GRC_exclusions_T2Tv2.bed	4fce8e4cdeee61656c9c75ddce41df7caffb3d20f09c4489e17047a7a12346c5
+reference-final	GRCh38-no-alt+hs38d1-masked-v2-no-chr	local deterministic build	2acecee053b896597a1fb8fe923e3a920952e104e894b5e12ed0240fa227c32f
+VEP-cache	116_GRCh38	https://ftp.ensembl.org/pub/release-116/variation/indexed_vep_cache/homo_sapiens_vep_116_GRCh38.tar.gz	014c7dd9bb5ad06665866d62eb80f31ca761197bcb9b59280300676f996e600d
+gnomAD-frequencies	v4.1	embedded in Ensembl VEP 116 cache	014c7dd9bb5ad06665866d62eb80f31ca761197bcb9b59280300676f996e600d
+ClinVar	20260822	https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/2026/clinvar_20260822.vcf.gz	d66b75c1cc433dd63471444fbf980fbc6ee07d6060f3b62b8f1910d52650933d
+HPO	2026-06-23	https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2026-06-23/hp.obo	a5092cbdf605f568403cf7380d9173014015692433b2cc631bc5c1b053876b1b

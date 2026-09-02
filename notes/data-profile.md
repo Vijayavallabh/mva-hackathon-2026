@@ -139,10 +139,12 @@ Command: `uv run python scripts/extract_hpo.py` with stdlib `zipfile` + `re` ove
 
 ## 6. Compute environment (2026-08-28)
 
-- **No bioinformatics tooling installed**: no `bcftools`, `samtools`, `tabix`, `bgzip`,
-  `bwa`/`bwa-mem2`, `minimap2`, `gatk`, `vep`, `snpEff`, `nextflow`, `fastqc`, `seqkit`,
-  `pigz`. `docker` and `nvidia-smi` are present. → feat-003.
+- At profiling time, no bioinformatics tooling was installed. **Feat-003 completed this
+  prerequisite on 2026-09-02** with a pinned repository-local toolchain and offline
+  annotation resources; see `notes/toolchain.md` and `tools/versions.tsv`.
 - Outbound network reachable: Ensembl FTP, gnomAD GCS, UCSC goldenPath, `purl.obolibrary.org`,
   GitHub, Hugging Face. Annotation resources can be fetched.
 - **Box is contended**: load average 109 on 64 cores; GPUs 0/1/2 (A100 80 GB) at 100% with
   other users' jobs, GPU 3 is a T400, only GPU 4 free. 3.3 TB free on `/mnt/md0` (92% full).
+  Recheck live conditions before every large run rather than treating this snapshot as
+  current capacity.

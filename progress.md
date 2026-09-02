@@ -393,3 +393,51 @@ COMPLETE: all files present at expected size
 ```
 
 Next: feat-003, toolchain and annotation resources.
+
+## 2026-09-02 — session 13: feat-003 toolchain and offline annotation bundle
+
+- Added resumable, pinned local installers for bcftools/samtools/htslib 1.24, bwa-mem2
+  2.2.1, pigz 2.8, VEP 116, GATK 4.7.0.0, Nextflow 26.04.6 and Temurin Java 17.0.20.1.
+  No system package, conda or pip installation was used.
+- Built the VCF-header reference deterministically from NCBI's GRCh38 no-alt + hs38d1
+  analysis set and GIAB's T2T v2 exclusions, then removed leading `chr` prefixes. All
+  5,012,204 VCF records match the resulting FASTA; REF mismatches: zero.
+- Installed the Ensembl VEP 116 indexed GRCh38 cache, whose metadata confirms gnomAD exome
+  and genome frequencies v4.1; pinned ClinVar GRCh38 release 20260822; reused HPO release
+  2026-06-23. Exact sources and SHA-256 values are in `tools/resources.tsv`.
+- Added a bounded parallel range downloader after Ensembl throttled a single connection.
+  Chunk sizes and successful tar extraction guard the reassembly; incomplete downloads are
+  never marked complete.
+- Verified offline VEP on public benchmark rs699 with both gnomAD frequency flags:
+  `gnomADe_AF=0.458` and `gnomADg_AF=0.5782`. No subject coordinate was sent to an
+  external service.
+- Updated `init.sh` so clean restart now checks the toolchain and resource bundle as well as
+  the environment, disclosure gate and dataset integrity.
+
+Final `./init.sh` output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Next: feat-004, the VCF triage and annotation baseline.
