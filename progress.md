@@ -363,3 +363,33 @@ exit=0
 ```
 
 Next: feat-003, toolchain and annotation resources.
+
+## 2026-09-02 — session 12: phenotype interpretation policy
+
+Closed the remaining semantic gap in the derived guidance. `notes/phenotype.md` and the
+durable harness now state that the reproductive-history annotation is a clinically
+meaningful dimension of phenotype input, not disposable metadata. It remains scoped to
+family history rather than being represented as a PROBAND01 abnormality.
+
+For chromosome-instability hypotheses, that family feature is compatible with inherited
+susceptibility or a newly arising causal event; it cannot discriminate between them without
+genomic evidence. Ranking guidance continues to prioritize the cross-system pattern over
+any individual manifestation. Protected source wording remains excluded.
+
+Final verification: extractor self-check passed; harness validation remained `100/100`;
+`current_tree_non_hpo_verbatim_3word_overlap=0`; `./init.sh` returned:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+85.00 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== OK ===
+```
+
+Next: feat-003, toolchain and annotation resources.

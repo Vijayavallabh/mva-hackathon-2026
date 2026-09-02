@@ -1,6 +1,6 @@
 # Session handoff
 
-**Last updated:** 2026-09-02 (session 11 — complete privacy-safe phenotype semantics)
+**Last updated:** 2026-09-02 (session 12 — phenotype interpretation policy)
 
 **Current objective / active feature:** feat-003 (toolchain and annotation resources).
 feat-001 and feat-002 are done; keep exactly one feature active.
@@ -27,8 +27,9 @@ traps that silently score zero).
   gatk, nextflow, pigz. Nothing beyond coreutils, `awk`, `zcat`, `docker` and the uv env.
   feat-003 fixes this and gates feat-004 onward.
 - **This repo is private, and every Track 1 submission requires a public GitHub URL.**
-  feat-007. History is clean today (4 commits, 15 files, nothing under `data/`/`results/`/
-  `logs/`), so this is a visibility flip plus a re-audit, not a rewrite.
+  Feat-007 remains blocked until the protected overlaps in reachable commit `05ed1cc` are
+  removed by the explicitly authorized history rewrite described above. Re-audit the full
+  rewritten history before changing repository visibility.
 - **The box is shared and contended.** 2026-08-28: load average 109 on 64 cores, GPUs 0/1/2
   at 100% with other users' jobs, only GPU 4 free. 3.3 TB free on `/mnt/md0` (92% full).
   Check `uptime` and `nvidia-smi` before planning anything large.
@@ -51,8 +52,10 @@ toolchain and fetch the remaining annotation resources. Reuse the already fetche
 `data/resources/hp.obo`; do not duplicate it.
 
 For feat-004, use all seven proband terms as phenotype observations. Retain `HP:0200067`
-separately as family-history/mechanistic evidence; do not feed it to a tool as if observed
-in the proband. Rank the multi-system constellation rather than optimizing for one term.
+as a separate, clinically meaningful phenotype-input dimension; do not feed it to a tool
+as if observed in the proband, and do not discard it as background. It supports both
+inherited-susceptibility and newly arising mechanism hypotheses without choosing between
+them. Rank the multi-system constellation rather than optimizing for one term.
 
 **Persistent repository workflow:** commit every intended change, however small. At the
 end of each session, push all new commits to the configured `origin` and verify that the

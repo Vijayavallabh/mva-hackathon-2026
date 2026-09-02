@@ -28,6 +28,16 @@ establish whether the causal alleles were inherited or arose de novo.
 
 This constellation—not any one row—was the clinical basis for genomic investigation.
 
+## Interpretation policy
+
+Use the cross-system pattern as the primary phenotype representation; never tune ranking
+around one manifestation. The reproductive-history annotation is a clinically meaningful
+input dimension rather than disposable metadata, while remaining scoped to family history.
+
+For chromosome-instability syndromes, reproductive loss among relatives is compatible
+with either inherited susceptibility or a newly arising causal event. Genomic evidence is
+required to discriminate between those models; the family-history feature alone cannot.
+
 ## Method and provenance
 
 The IDs were mechanically matched as `HP:` followed by seven digits in

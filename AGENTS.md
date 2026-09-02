@@ -69,6 +69,10 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
 - **Rank the constellation, not one symptom:** malignancy, congenital renal involvement,
   impaired somatic and muscular development, adverse perinatal/fetal growth and parental
   reproductive loss form the useful multi-system pattern. No single term is diagnostic.
+- **Family reproductive history remains phenotype input:** model it as a separate,
+  clinically meaningful family-history dimension rather than discarding it as metadata.
+  In chromosome-instability syndromes it is compatible with inherited susceptibility or a
+  newly arising event, but cannot distinguish those models without genomic evidence.
 - **Do not make the repository public yet:** the current tree passes the disclosure audit,
   but reachable commit `05ed1cc` contains two short non-HPO overlaps with protected table
   wording. Feat-007 must remove them from history and re-audit before changing visibility.

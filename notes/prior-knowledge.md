@@ -51,6 +51,9 @@ intact on purpose. What the first screening pass (`data-profile.md`) says about 
   is parental/family reproductive history: retain it as evidence relevant to chromosome
   instability and inheritance hypotheses, but do not mislabel it as a proband abnormality.
   Neither that history nor the full pattern establishes inherited versus de novo origin.
+  Treat the reproductive-history term as a separate phenotype input dimension: in a
+  chromosome-instability model it is compatible with inherited susceptibility or a newly
+  arising causal event, and genomic evidence must decide between them.
 - **No aneuploidy has been ruled in or out.** Blood WGS at 45× excludes high-level
   aneuploidy but not the low-level mosaicism MVA is named for, and the residual per-chromosome
   signal (chr20 largest) is confounded with GC/mappability bias. MVA is classically diagnosed
