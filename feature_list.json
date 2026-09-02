@@ -20,8 +20,8 @@
       "dependencies": [
         "feat-001"
       ],
-      "status": "next",
-      "evidence": ""
+      "status": "done",
+      "evidence": "scripts/extract_hpo.py; `uv run python scripts/extract_hpo.py --self-check` proves ordered extraction, deduplication, OBO label resolution, and that surrounding prose is not emitted; `uv run python scripts/extract_hpo.py` wrote notes/phenotype.md with 8 permitted HPO ID/label pairs. hp.obo fetched from https://purl.obolibrary.org/obo/hp.obo, release 2026-06-23, SHA-256 a5092cbdf605f568403cf7380d9173014015692433b2cc631bc5c1b053876b1b. `./init.sh` passed 2026-09-02."
     },
     {
       "id": "feat-003",
@@ -30,7 +30,7 @@
       "dependencies": [
         "feat-001"
       ],
-      "status": "not-started",
+      "status": "next",
       "evidence": ""
     },
     {

@@ -1,14 +1,13 @@
 # Session handoff
 
-**Last updated:** 2026-09-01 (session 6 — commit-and-push policy)
+**Last updated:** 2026-09-02 (session 8 — feat-002 HPO extraction)
 
-**Current objective / active feature:** feat-002 (extract the embedded HPO terms).
-feat-001 is done. feat-003 (toolchain + annotation resources) remains queued until feat-002
-is complete; keep exactly one feature active.
+**Current objective / active feature:** feat-003 (toolchain and annotation resources).
+feat-001 and feat-002 are done; keep exactly one feature active.
 
-**State:** 84.99 GB dataset downloaded and integrity-verified. The data has now been
-profiled — see `notes/data-profile.md` — but **no analysis has been run and no candidate
-variant proposed.** `feature_list.json` was rewritten in session 3 from 7 to 11 features
+**State:** 84.99 GB subject dataset downloaded and integrity-verified. The data has been
+profiled and its embedded HPO IDs extracted, but **no variant analysis has been run and no
+candidate variant proposed.** `feature_list.json` was rewritten in session 3 from 7 to 11 features
 against what the data and the challenge's published scoring code actually say.
 
 **Read these before touching anything:** `notes/data-profile.md` (measured baseline, with
@@ -29,7 +28,8 @@ traps that silently score zero).
 
 ## Files in flight
 
-None. Working tree is clean.
+None after the feat-002 commit. The fetched `data/resources/hp.obo` is intentionally
+gitignored; its release, source, and checksum are recorded in `notes/phenotype.md`.
 
 **Resume with:**
 ```bash
@@ -37,11 +37,9 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 ./init.sh
 ```
 
-**Recommended next step:** feat-002 — write `scripts/extract_hpo.py` to pull the 8 embedded
-`HP:\d{7}` IDs out of the docx's `word/document.xml` with stdlib `zipfile`, resolve labels
-against `hp.obo`, and fill the table in `notes/phenotype.md`. IDs and labels only; no
-narrative, no dates, no places. Fetch and record `hp.obo` as the one scoped input needed by
-feat-002; leave the broader toolchain and annotation-resource setup queued as feat-003.
+**Recommended next step:** feat-003 — create the version-recorded local bioinformatics
+toolchain and fetch the remaining annotation resources. Reuse the already fetched
+`data/resources/hp.obo`; do not duplicate it.
 
 **Persistent repository workflow:** commit every intended change, however small. At the
 end of each session, push all new commits to the configured `origin` and verify that the

@@ -195,3 +195,36 @@ This harness-only maintenance did not change feat-002 status or evidence.
 
 This educational side task did not perform feat-002 phenotype extraction or change any
 feature status/evidence. The active feature remains feat-002.
+
+## 2026-09-02 — session 8: feat-002 HPO extraction
+
+- Added `scripts/extract_hpo.py`, a standard-library pipeline that reads only
+  `word/document.xml` inside the protected DOCX, retains embedded `HP:#######` identifiers,
+  resolves labels from the official HPO OBO file, and writes only permitted derived output.
+- Added a synthetic `--self-check` covering document-order extraction, deduplication,
+  ontology lookup, and the disclosure boundary: surrounding example prose must not appear
+  in the report.
+- Fetched `hp.obo` release `2026-06-23` into gitignored `data/resources/`; recorded its
+  source URL and SHA-256 in `notes/phenotype.md`.
+- The real local run resolved all 8 embedded IDs. No narrative was printed, tracked, or
+  sent outside this machine. The existing negative structural probe remains the basis for
+  keeping the search genome-wide.
+
+Verified: `uv run python scripts/extract_hpo.py --self-check` passed and
+`uv run python scripts/extract_hpo.py` wrote 8 terms. Final `./init.sh` output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+85.00 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== OK ===
+exit=0
+```
+
+Next: feat-003, toolchain and annotation resources.
