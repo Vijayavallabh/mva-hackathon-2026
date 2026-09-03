@@ -564,3 +564,64 @@ openjdk version "17.0.20.1" 2026-08-18
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-03 — session 16: feat-006 local scorer and submission conformance
+
+- Pinned the organizers' public Track 1 scorer and CSV template at Hugging Face Space
+  revision `1c761cc23d90aebe6a011fd5b0b99517df42408c`. The scorer is byte-identical to
+  upstream and its SHA-256 is mechanically verified before it can run.
+- Added `scripts/track1_submission.py` to build a ten-row draft from the feat-004
+  compound-pair ranking, enforce the exact official schema and `PROBAND01`, require
+  `chr`-prefixed contigs and strictly distinct descending EPCRs, reject duplicate or
+  incomplete hypotheses, and verify every allele against the exact reference with
+  `bcftools norm`.
+- The real local draft has ten pair hypotheses and 20 alleles. All 20 match the reference
+  and are already minimal and left-aligned. Its check report binds the tested CSV and
+  vendored scorer by SHA-256.
+- Under the explicit hypothetical assumption that row 1 is the answer, the unmodified
+  official scorer returns 100 rank points and F-max 1.0 at EPCR 0.95. No private answer key
+  was accessed, so this is a plumbing/conformance result rather than a biological score.
+- The draft EPCRs are deterministic rank-preserving placeholders, not calibrated
+  probabilities. No Track 1 submission was uploaded or spent.
+- The leading BUB1B pair remains an unphased hypothesis; trans phase remains unconfirmed.
+- Two-axis review caught and fixed missing checksum enforcement/report binding, replaced
+  anonymous allele tuples with named domain types, and required this final init evidence.
+
+Verification commands:
+
+```bash
+uv run python scripts/verify_data.py --self-check
+uv run python scripts/track1_submission.py --self-check
+uv run python scripts/track1_submission.py build
+uv run python scripts/track1_submission.py check
+uv run python -m compileall -q scripts/track1_submission.py scripts/vendor/evaluation.py
+```
+
+Final `./init.sh` output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Next: feat-007, history-safe publication. Do not start the destructive history rewrite or
+change repository visibility without explicit authorization.

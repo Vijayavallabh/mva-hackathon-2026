@@ -71,8 +71,8 @@
       "dependencies": [
         "feat-004"
       ],
-      "status": "next",
-      "evidence": ""
+      "status": "done",
+      "evidence": "scripts/vendor/evaluation.py pins the organizers' byte-identical public scorer at revision 1c761cc23d90aebe6a011fd5b0b99517df42408c; scripts/track1_submission_template.csv vendors its schema; scripts/track1_submission.py builds, validates and hypothetically self-scores the ten-row compound-pair draft. `uv run python scripts/track1_submission.py --self-check`, `uv run python scripts/track1_submission.py build`, and `uv run python scripts/track1_submission.py check` pass. The real local draft has 10 distinct descending EPCRs and 20 reference-confirmed, minimal, left-aligned alleles; under the explicitly hypothetical assumption that row 1 is truth, the official scorer returns rank points 100 and F-max 1.0. This does not use the private answer key or confirm biology; the leading BUB1B pair remains unphased and trans phase remains unconfirmed. See notes/submission-conformance.md."
     },
     {
       "id": "feat-007",
@@ -81,7 +81,7 @@
       "dependencies": [
         "feat-001"
       ],
-      "status": "not-started",
+      "status": "next",
       "evidence": ""
     },
     {

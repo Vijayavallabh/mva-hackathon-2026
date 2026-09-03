@@ -81,6 +81,11 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
 - **The leading BUB1B pair is still unphased.** Neither the copy-number result nor the
   single-sample VCF establishes that the alleles are on opposite homologues; trans phase
   remains unconfirmed.
+- **Feat-006 submission checking is local and pinned.** The vendored official scorer is
+  fixed to public Space revision `1c761cc23d90aebe6a011fd5b0b99517df42408c`. A local
+  ten-row draft passes exact schema/ID/contig/EPCR checks and reference-based indel
+  normalization. Its reported 100 rank points and 1.0 F-max are a hypothetical row-1
+  scorer test, not a comparison with the private answer key or evidence of causality.
 - **Do not make the repository public yet:** the current tree passes the disclosure audit,
   but reachable commit `05ed1cc` contains two short non-HPO overlaps with protected table
   wording. Feat-007 must remove them from history and re-audit before changing visibility.
@@ -93,8 +98,12 @@ cat feature_list.json    # pick exactly ONE unfinished feature
 git log --oneline -5
 ```
 
-Test command (the only automated test in the repo):
-`uv run python scripts/verify_data.py --self-check`
+Core self-checks:
+
+```bash
+uv run python scripts/verify_data.py --self-check
+uv run python scripts/track1_submission.py --self-check
+```
 
 ## Environment
 

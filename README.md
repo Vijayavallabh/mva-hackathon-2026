@@ -83,8 +83,11 @@ Both, plus the scoring mechanics, are in `notes/challenge-spec.md`.
 
 ## Status
 
-Feat-001 through feat-005a are complete. The next feature is feat-006: build and verify the
-local Track 1 scorer before spending any of the six submissions.
+Feat-001 through feat-006 are complete. The local Track 1 draft has been checked against a
+pinned copy of the official scorer and exact reference normalization. The next feature is
+feat-007: remove the two protected-text overlaps from reachable history, re-audit, and only
+then make the repository public. That history rewrite must be explicitly authorized before
+it runs.
 
 The data profile and first two analyses are complete — see `notes/data-profile.md`,
 `notes/vcf-triage.md` and `notes/copy-number-screen.md` for measured results and exact
@@ -99,6 +102,12 @@ signal**, so with the challenge's public compound-heterozygous answer-key statem
 working model is two different rare damaging alleles in one gene. The first genome-wide
 triage ranks a BUB1B pair first, but the alleles are not proven to be in trans. Targeted
 realignment remains optional rather than a substitute for phase evidence.
+
+The current ten-row draft is in gitignored `results/feat006/`. It has the exact official
+schema, `PROBAND01`, `chr`-prefixed contigs, distinct descending EPCRs, and 20 alleles that
+match the reference and are already minimal and left-aligned. Its local score of 100 rank
+points and F-max 1.0 assumes that row 1 is the hidden truth; it verifies scorer behavior but
+does not reveal the private answer key or validate the candidate biologically.
 
 `notes/prior-knowledge.md` records the candidate genes considered before any data was
 examined, and what the first pass did and did not do to that prior.

@@ -1,9 +1,10 @@
 # Session handoff
 
-**Last updated:** 2026-09-03 (session 15 — feat-005a corrected copy-number/BAF screen)
+**Last updated:** 2026-09-03 (session 16 — feat-006 local scorer and conformance)
 
-**Current objective / active feature:** feat-006 (local scorer and submission conformance).
-Feat-001 through feat-005a are done; keep exactly one feature active.
+**Current objective / active feature:** feat-007 (history-safe public repository).
+Feat-001 through feat-006 are done; keep exactly one feature active. Do not begin feat-007's
+destructive history rewrite until the user explicitly authorizes that operation.
 
 **State:** 84.99 GB subject dataset downloaded and integrity-verified. The data has been
 profiled; its HPO IDs, labels, reviewed context and concise clinical-significance summaries
@@ -15,7 +16,9 @@ rewritten in session 3 from 7 to 11 features
 against what the data and the challenge's published scoring code actually say.
 Feat-005a then resolved the preliminary chr20/19/22 ambiguity: chr20 returns to baseline,
 chr22 lacks joint BAF support and chr19 retains a credible low-level gain signal at both
-mappability thresholds. See `notes/copy-number-screen.md`.
+mappability thresholds. See `notes/copy-number-screen.md`. Feat-006 pinned the public
+official scorer and produced a ten-row local draft that passes schema, identity, EPCR and
+reference-normalization checks; see `notes/submission-conformance.md`.
 
 **Read these before touching anything:** `notes/data-profile.md` (measured baseline, with
 the command for every number) and `notes/challenge-spec.md` (scoring mechanics and the two
@@ -37,7 +40,8 @@ traps that silently score zero).
 
 ## Files in flight
 
-No tracked files in flight after the session-15 commit. The local toolchain and public
+The feat-006 scorer, wrapper, template and documentation are intended to land together in
+the session-16 commit; verify `git status` before resuming. The local toolchain and public
 annotation resources are intentionally gitignored; their versions, sources and checksums
 are tracked in `tools/versions.tsv` and `tools/resources.tsv`.
 The fetched `data/resources/hp.obo` is reused rather than duplicated.
@@ -50,10 +54,10 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 ./init.sh
 ```
 
-**Recommended next step:** feat-006 — vendor the organizers' public scorer/template,
-implement conformance checks and self-score candidate CSVs locally. Do not spend a Track 1
-submission until the exact contig, proband ID, allele normalization, row-count and EPCR
-rules pass locally.
+**Recommended next step:** feat-007 — after explicit authorization, rewrite reachable
+history to remove the two protected-text overlaps in commit `05ed1cc`, force-push the
+configured origin, repeat the full-history disclosure audit, and only then make the
+repository public. Do not change visibility before every audit passes.
 
 The feat-004 candidate is not confirmed: both alleles are unphased, and the second BUB1B
 missense allele has computational prediction support but no ClinVar assertion in the pinned
@@ -83,6 +87,10 @@ permitted and are what this repo tracks — see `AGENTS.md` rule 1.
 
 Do not spend a Track 1 submission on a CSV that has not been self-scored locally (feat-006).
 There are only six.
+
+The current draft has been hypothetically self-scored but has not been uploaded. Its local
+100 / 1.0 result assumes row 1 is truth and is only a scorer plumbing test; it is not a
+score against the private key.
 
 **Deadlines:** submissions close 2026-10-24 23:59 UTC. All data deleted and
 confirmed by email by 2026-11-24.

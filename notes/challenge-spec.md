@@ -4,6 +4,9 @@ Everything here comes from **public** sources: the challenge Space's own source 
 `SageBio/rare-disease-real-kid-mva-hackathon-2026` (`evaluation.py`, `groundtruth.py`,
 `config.py`, `tabs/submit_track1.py`, `tabs/rules.py`, `tabs/faq.py`, `tabs/about.py`) and
 the public dataset README. No subject data is involved and this file is safe to publish.
+Feat-006 pins `evaluation.py` and the CSV template at Space revision
+`1c761cc23d90aebe6a011fd5b0b99517df42408c` (resolved 2026-09-03); see
+`scripts/vendor/README.md` and `notes/submission-conformance.md`.
 
 The point of writing it down: two of these details silently score **zero** if got wrong,
 and there are only 6 attempts.
