@@ -26,3 +26,16 @@ Interpretation status: **credible screening signal, not a clinically confirmed m
 trisomy**. This result neither proves causality nor phases the leading small variants. The
 BUB1B alleles remain unphased, and trans phase remains unconfirmed. Full methods, aggregate
 results and limitations are in `notes/copy-number-screen.md`.
+
+## 2026-09-04 — feat-005b targeted missed-allele screen
+
+All four FASTQ lane pairs were realigned and independently re-called across every gene
+surviving feat-004. The screen retained 24 rare coding/splice rows, but none adds an allele
+in BUB1B, CEP57 or TRIP13 and none is supported by both callers. Structural discovery found
+no high-quality event in the BUB1B or CEP57 windows; one TRIP13-window event remains an
+unvalidated local review item. These findings do not displace the leading BUB1B pair.
+
+Read-backed phasing across the padded BUB1B locus found both leading alleles but left both
+unphased, without a shared phase set. Interpretation status: **BUB1B remains the leading
+candidate; trans phase remains unconfirmed**. Full methods, aggregate counts, commands and
+limitations are in `notes/targeted-recall.md`.

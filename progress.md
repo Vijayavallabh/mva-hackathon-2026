@@ -625,3 +625,53 @@ annotation resources ready
 
 Next: feat-007, history-safe publication. Do not start the destructive history rewrite or
 change repository visibility without explicit authorization.
+## 2026-09-04 — session 17: feat-005b targeted missed-allele screen
+
+- Activated exactly one feature, feat-005b, and profiled live resources before the heavy
+  run: 64 CPU cores, 446 GB available RAM and 3.65 TB free disk. Added pinned WhatsHap 2.8
+  and DELLY 2.1.0 support.
+- Realigned all four paired FASTQ lanes to the validated reference. The duplicate-removed
+  BAM contains 934,025,028 primary reads, with 99.55% mapped and 98.27% properly paired.
+- Re-called 187 genome-wide survivor genes across 184 padded intervals (25,332,670 bases)
+  with HaplotypeCaller and tumor-only Mutect2, normalized against the same reference,
+  subtracted the feat-004 PASS baseline by exact allele identity and annotated offline.
+  The final rare coding/splice review set has 24 rows across 12 genes, no new BUB1B/CEP57/
+  TRIP13 small allele and no two-caller-supported retained row.
+- Built a separate 1 Mb-flank SV target (144 intervals; 340,005,156 bases), extracted all
+  complete read pairs touching it and ran DELLY. Of 7,123 raw candidates, 1,500 pass
+  discovery filters at QUAL >= 300 and 167 touch a 20 kb gene window. None touches BUB1B
+  or CEP57; one padded-TRIP13-window event remains an unvalidated local review item.
+- WhatsHap used 432 multi-variant reads across the padded BUB1B locus. Both leading alleles
+  were present but remained unphased with no phase-set identifier; trans phase remains
+  unconfirmed. The Track 1 ordering is unchanged.
+- Added checkpoint signatures, raw-call recovery switches, BAM integrity checks, an
+  empty-call annotation guard, single-sample SV filtering, aggregate analysis and exact
+  reproduction commands in `notes/targeted-recall.md`. All subject-level artifacts remain
+  under ignored `results/feat005b/`.
+- Verification: `./scripts/run_targeted_recall.sh --self-check`, both `samtools quickcheck`
+  calls, `uv lock --check` and `git diff --check` pass. Final `./init.sh` output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```

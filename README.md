@@ -83,7 +83,8 @@ Both, plus the scoring mechanics, are in `notes/challenge-spec.md`.
 
 ## Status
 
-Feat-001 through feat-006 are complete. The local Track 1 draft has been checked against a
+Feat-001 through feat-006, including the optional feat-005b targeted recall, are complete.
+The local Track 1 draft has been checked against a
 pinned copy of the official scorer and exact reference normalization. The next feature is
 feat-007: remove the two protected-text overlaps from reachable history, re-audit, and only
 then make the repository public. That history rewrite must be explicitly authorized before
@@ -100,8 +101,9 @@ finds no joint support on chr22, and retains a credible low-level chr19 gain sig
 still requires orthogonal clinical confirmation. **There is no runs-of-homozygosity
 signal**, so with the challenge's public compound-heterozygous answer-key statement, the
 working model is two different rare damaging alleles in one gene. The first genome-wide
-triage ranks a BUB1B pair first, but the alleles are not proven to be in trans. Targeted
-realignment remains optional rather than a substitute for phase evidence.
+triage ranks a BUB1B pair first. Targeted all-lane realignment found no additional BUB1B
+coding/splice or high-quality window-overlapping structural allele, and read-backed phasing
+left both leading sites outside a supported phase block. Trans phase remains unconfirmed.
 
 The current ten-row draft is in gitignored `results/feat006/`. It has the exact official
 schema, `PROBAND01`, `chr`-prefixed contigs, distinct descending EPCRs, and 20 alleles that

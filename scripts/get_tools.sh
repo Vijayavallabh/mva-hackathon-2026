@@ -16,6 +16,7 @@ VEP_VERSION=116.0
 GATK_VERSION=4.7.0.0
 NEXTFLOW_VERSION=26.04.6
 JAVA_VERSION=17.0.20.1+1
+DELLY_VERSION=2.1.0
 
 mkdir -p "$SRC" "$PREFIX/bin" "$DOWNLOADS"
 
@@ -68,10 +69,10 @@ extract_once() {
 }
 
 check_tools() {
-  local failed=0 cmd output
+  local failed=0 cmd output delly_output
   export PATH="$PREFIX/bin:$PATH"
   export JAVA_CMD="$PREFIX/bin/java"
-  for cmd in bcftools samtools bgzip tabix bwa-mem2 pigz vep gatk nextflow java; do
+  for cmd in bcftools samtools bgzip tabix bwa-mem2 pigz vep gatk nextflow java delly; do
     if [[ ! -x "$PREFIX/bin/$cmd" ]]; then
       echo "missing: tools/install/bin/$cmd" >&2
       failed=1
@@ -91,6 +92,7 @@ check_tools() {
   verify_sha256 List-MoreUtils "$DOWNLOADS/List-MoreUtils-0.430.tar.gz"
   verify_sha256 VEP-HTSlib "$DOWNLOADS/htslib-1.9.tar.bz2"
   verify_sha256 Bio-DB-HTS "$DOWNLOADS/Bio-DB-HTS-2.11.tar.gz"
+  verify_sha256 DELLY "$DOWNLOADS/delly-v$DELLY_VERSION-linux-amd64"
   [[ $("$PREFIX/bin/bcftools" --version | head -1) == "bcftools $HTS_VERSION" ]]
   [[ $("$PREFIX/bin/samtools" --version | head -1) == "samtools $HTS_VERSION" ]]
   "$PREFIX/bin/tabix" --version 2>&1 | head -1 | rg -q "htslib\) $HTS_VERSION$"
@@ -100,6 +102,8 @@ check_tools() {
   "$PREFIX/bin/gatk" --version 2>&1 | rg -q "GATK\) v$GATK_VERSION$"
   NXF_HOME="$TOOLS/nextflow-home" "$PREFIX/bin/nextflow" -version | rg -q "version $NEXTFLOW_VERSION build"
   "$PREFIX/bin/java" -version 2>&1 | head -1 | rg -q "\"${JAVA_VERSION%%+*}\""
+  delly_output=$("$PREFIX/bin/delly" --version 2>&1)
+  rg -q "^Delly version: v$DELLY_VERSION$" <<<"$delly_output"
   "$PREFIX/bin/bcftools" --version | head -1
   "$PREFIX/bin/samtools" --version | head -1
   "$PREFIX/bin/tabix" --version 2>&1 | head -1
@@ -109,6 +113,7 @@ check_tools() {
   "$PREFIX/bin/gatk" --version 2>&1 | tail -1
   NXF_HOME="$TOOLS/nextflow-home" "$PREFIX/bin/nextflow" -version | rg 'version' | head -1
   "$PREFIX/bin/java" -version 2>&1 | head -1
+  printf 'Delly %s\n' "$DELLY_VERSION"
 }
 
 if [[ ${1:-} == "--check" ]]; then
@@ -183,6 +188,12 @@ export PATH="$PREFIX/bin:\$PATH"
 exec "$SRC/gatk-$GATK_VERSION/gatk" "\$@"
 EOF
 chmod 0755 "$PREFIX/bin/gatk"
+
+DELLY_ASSET="$DOWNLOADS/delly-v$DELLY_VERSION-linux-amd64"
+download DELLY \
+  "https://github.com/dellytools/delly/releases/download/v$DELLY_VERSION/delly-v$DELLY_VERSION-linux-amd64" \
+  "$DELLY_ASSET"
+install -m 0755 "$DELLY_ASSET" "$PREFIX/bin/delly"
 
 NEXTFLOW_ASSET="$DOWNLOADS/nextflow-$NEXTFLOW_VERSION-dist"
 download Nextflow "https://github.com/nextflow-io/nextflow/releases/download/v$NEXTFLOW_VERSION/nextflow-$NEXTFLOW_VERSION-dist" "$NEXTFLOW_ASSET"

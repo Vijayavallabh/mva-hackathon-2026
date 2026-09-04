@@ -4,4 +4,6 @@ version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
     "huggingface-hub[cli]>=1.28.0",
+    "psutil>=7.2.2",
+    "whatshap==2.8",
 ]

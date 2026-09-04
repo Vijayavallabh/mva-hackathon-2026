@@ -17,4 +17,5 @@ pip, or the system package manager.
 
 VEP code is installed locally, while its large cache is managed by
 `scripts/get_resources.sh`. The pinned Java runtime is private to this toolchain so GATK
-and Nextflow do not depend on the machine's old system Java.
+and Nextflow do not depend on the machine's old system Java. DELLY is pinned as a static
+binary for paired-end and split-read structural-variant discovery in feat-005b.

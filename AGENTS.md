@@ -78,9 +78,10 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   clinically meaningful family-history dimension rather than discarding it as metadata.
   In chromosome-instability syndromes it is compatible with inherited susceptibility or a
   newly arising event, but cannot distinguish those models without genomic evidence.
-- **The leading BUB1B pair is still unphased.** Neither the copy-number result nor the
-  single-sample VCF establishes that the alleles are on opposite homologues; trans phase
-  remains unconfirmed.
+- **The leading BUB1B pair is still unphased after feat-005b.** Targeted all-lane
+  realignment found both alleles, but WhatsHap placed neither in a supported phase block.
+  No additional rare coding/splice BUB1B allele or high-quality BUB1B-window SV was found;
+  trans phase remains unconfirmed. See `notes/targeted-recall.md`.
 - **Feat-006 submission checking is local and pinned.** The vendored official scorer is
   fixed to public Space revision `1c761cc23d90aebe6a011fd5b0b99517df42408c`. A local
   ten-row draft passes exact schema/ID/contig/EPCR checks and reference-based indel

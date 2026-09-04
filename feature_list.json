@@ -61,8 +61,8 @@
       "dependencies": [
         "feat-004"
       ],
-      "status": "not-started",
-      "evidence": ""
+      "status": "done",
+      "evidence": "scripts/run_targeted_recall.sh implements checkpointed all-lane BWA-MEM2 alignment, HaplotypeCaller and tumor-only Mutect2 recall over 187 genome-wide survivor genes, a complete-pair DELLY screen over 1 Mb gene flanks, offline VEP annotation, exact source-baseline subtraction and BUB1B-local WhatsHap phasing. The real run retained 24 rare coding/splice rows but no additional BUB1B/CEP57/TRIP13 small allele; no high-quality SV overlaps BUB1B or CEP57, while one padded-TRIP13-window event remains unvalidated. Both leading BUB1B alleles remain outside supported phase blocks, so trans phase remains unconfirmed. `./scripts/run_targeted_recall.sh --self-check`, BAM quickchecks and the checkpointed full command pass; methods, commands, aggregate counts and limitations are in notes/targeted-recall.md."
     },
     {
       "id": "feat-006",

@@ -19,7 +19,8 @@ their pinned versions, sources and checksums are recorded in `tools/versions.tsv
   variant filter; any later population resource must also be downloaded in full rather than
   queried with subject coordinates.
 - **ClinVar GRCh38** supplies clinical assertions independently of population frequency.
-- **bwa-mem2, GATK and pigz** support the optional targeted re-alignment/re-call path.
+- **bwa-mem2, GATK, DELLY, WhatsHap and pigz** support targeted realignment,
+  diploid/mosaic re-calling, structural-variant discovery and read-backed phasing.
 - **Nextflow** provides a reproducible workflow engine when the pipeline is assembled.
 - **HPO** reuses feat-002's local copy when present, and otherwise downloads the same pinned
   ontology release so a clean feat-003 installation is self-contained.

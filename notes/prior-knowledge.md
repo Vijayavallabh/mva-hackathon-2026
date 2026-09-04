@@ -78,3 +78,9 @@ reproduction commands.
 The independent feat-005a screen does not change that phase assessment. Copy-number and BAF
 evidence cannot determine whether the two BUB1B alleles reside on opposite homologues;
 **trans phase remains unconfirmed**.
+
+Feat-005b independently realigned all lane pairs and re-called the full genome-wide survivor
+set with diploid and mosaic-sensitive callers plus a target-enriched SV screen. It recovered
+no additional rare coding/splice BUB1B allele and no high-quality BUB1B-window SV. WhatsHap
+found both leading alleles but could not place either in a supported phase block. The prior
+is therefore unchanged: BUB1B remains first, while **trans phase remains unconfirmed**.

@@ -1,6 +1,6 @@
 # Session handoff
 
-**Last updated:** 2026-09-03 (session 16 — feat-006 local scorer and conformance)
+**Last updated:** 2026-09-04 (session 17 — feat-005b targeted recall)
 
 **Current objective / active feature:** feat-007 (history-safe public repository).
 Feat-001 through feat-006 are done; keep exactly one feature active. Do not begin feat-007's
@@ -18,7 +18,10 @@ Feat-005a then resolved the preliminary chr20/19/22 ambiguity: chr20 returns to 
 chr22 lacks joint BAF support and chr19 retains a credible low-level gain signal at both
 mappability thresholds. See `notes/copy-number-screen.md`. Feat-006 pinned the public
 official scorer and produced a ten-row local draft that passes schema, identity, EPCR and
-reference-normalization checks; see `notes/submission-conformance.md`.
+reference-normalization checks; see `notes/submission-conformance.md`. Feat-005b realigned
+all four lane pairs and re-called all 187 survivor genes: no extra rare BUB1B allele or
+high-quality BUB1B-window SV was recovered, and read-backed phasing left both leading
+alleles unphased. See `notes/targeted-recall.md`.
 
 **Read these before touching anything:** `notes/data-profile.md` (measured baseline, with
 the command for every number) and `notes/challenge-spec.md` (scoring mechanics and the two
@@ -40,8 +43,8 @@ traps that silently score zero).
 
 ## Files in flight
 
-The feat-006 scorer, wrapper, template and documentation are intended to land together in
-the session-16 commit; verify `git status` before resuming. The local toolchain and public
+Feat-005b's subject BAM/VCF/BCF and review tables remain gitignored under
+`results/feat005b/`; only code and aggregate interpretation are tracked. The local toolchain and public
 annotation resources are intentionally gitignored; their versions, sources and checksums
 are tracked in `tools/versions.tsv` and `tools/resources.tsv`.
 The fetched `data/resources/hp.obo` is reused rather than duplicated.
@@ -70,10 +73,8 @@ branch matches upstream. Parent-directory filesystem access does not permit plac
 raw subject data or clinical narrative in hosted model context.
 
 **Open decisions:**
-- feat-005b (targeted realignment) can run on this box's A100s or sync to PrakashDGX_H2's
-  H100s. Data stays local by default. Note it is now *optional and contingent* on feat-004's
-  candidate list — the case for it is recovering a second compound-het allele the germline
-  caller dropped, not aneuploidy detection.
+- One high-quality DELLY event overlaps the padded TRIP13 window but is not orthogonally
+  validated; keep it as a local manual-review item, not a causal claim.
 - L003 R1's index ends `…GGAGA` where L001/L002/L004 end `…GGAGC`. Confirm whether that is a
   first-read artefact or a systematic difference before treating the four lanes as one library.
 
