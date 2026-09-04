@@ -53,6 +53,36 @@ class NovelCall:
     alt_depth: int | None
     vaf: float | None
     genotype_quality: float | None
+    genotype: str
+
+
+@dataclass
+class CombinedCall:
+    call: NovelCall
+    callers: set[str]
+    metrics: dict[str, NovelCall]
+
+
+@dataclass(frozen=True)
+class ScreenedCall:
+    call: NovelCall
+    callers: tuple[str, ...]
+    max_depth: int | None
+    max_alt_depth: int | None
+    max_vaf: float | None
+    max_gq: float | None
+    nearest_exon_boundary_bp: int | None
+    classes: tuple[str, ...]
+    context_entropy: float
+    longest_homopolymer: int
+
+
+@dataclass(frozen=True)
+class PhaseCall:
+    found: bool
+    phased: bool
+    gt: tuple[int | None, ...]
+    ps: int | None
 
 
 def open_text(path: Path):
@@ -135,43 +165,117 @@ def iter_vep_calls(path: Path):
                 alt_depth,
                 vaf,
                 genotype_quality,
+                sample.get("GT", ""),
             )
 
 
 def collect_novel_calls(paths: dict[str, Path]):
-    calls: dict[VariantKey, dict[str, object]] = {}
+    calls: dict[VariantKey, CombinedCall] = {}
     counts: dict[str, int] = {}
     for caller, path in paths.items():
         caller_count = 0
         for call in iter_vep_calls(path):
             caller_count += 1
-            entry = calls.setdefault(
-                call.key, {"call": call, "callers": set(), "metrics": {}}
-            )
-            entry["callers"].add(caller)
-            entry["metrics"][caller] = call
-            previous = entry["call"]
+            entry = calls.setdefault(call.key, CombinedCall(call, set(), {}))
+            entry.callers.add(caller)
+            entry.metrics[caller] = call
+            previous = entry.call
             if consequence_score(call.consequence) > consequence_score(previous.consequence):
-                entry["call"] = call
+                entry.call = call
         counts[caller] = caller_count
     return calls, counts
 
 
-def write_novel_candidates(path: Path, calls: dict[VariantKey, dict[str, object]]) -> int:
-    retained = []
-    for entry in calls.values():
-        call = entry["call"]
-        assert isinstance(call, NovelCall)
-        if not call.gene or consequence_score(call.consequence) < 4:
-            continue
-        if call.max_af is not None and call.max_af > 0.01:
-            continue
-        retained.append((call, sorted(entry["callers"])))
+def load_exon_boundaries(gtf: Path, genes: set[str]) -> dict[tuple[str, str], list[int]]:
+    boundaries: dict[tuple[str, str], set[int]] = defaultdict(set)
+    with gzip.open(gtf, "rt") as handle:
+        for raw in handle:
+            if raw.startswith("#"):
+                continue
+            fields = raw.rstrip("\n").split("\t")
+            if len(fields) != 9 or fields[2] != "exon":
+                continue
+            match = re.search(r'gene_name "([^"]+)"', fields[8])
+            if not match or match.group(1) not in genes:
+                continue
+            boundaries[(fields[0], match.group(1))].update((int(fields[3]), int(fields[4])))
+    return {key: sorted(values) for key, values in boundaries.items()}
+
+
+def sequence_complexity(sequence: str) -> tuple[float, int]:
+    sequence = sequence.upper()
+    counts = [sequence.count(base) for base in "ACGT"]
+    observed = sum(counts)
+    entropy = -sum((count / observed) * math.log2(count / observed) for count in counts if count)
+    runs = re.findall(r"(A+|C+|G+|T+)", sequence)
+    return entropy, max((len(run) for run in runs), default=0)
+
+
+def screen_calls(
+    calls: dict[VariantKey, CombinedCall], gtf: Path, reference: Path
+) -> list[ScreenedCall]:
+    boundaries = load_exon_boundaries(gtf, {entry.call.gene for entry in calls.values()})
+    retained: list[ScreenedCall] = []
+    with pysam.FastaFile(str(reference)) as fasta:
+        for entry in calls.values():
+            call = entry.call
+            if not call.gene or (call.max_af is not None and call.max_af > 0.01):
+                continue
+            metrics = list(entry.metrics.values())
+            max_depth = max(
+                (item.depth for item in metrics if item.depth is not None), default=None
+            )
+            max_alt_depth = max(
+                (item.alt_depth for item in metrics if item.alt_depth is not None),
+                default=None,
+            )
+            max_vaf = max((item.vaf for item in metrics if item.vaf is not None), default=None)
+            max_gq = max(
+                (
+                    item.genotype_quality
+                    for item in metrics
+                    if item.genotype_quality is not None
+                ),
+                default=None,
+            )
+            # Require actual alternate-read support and exclude near-reference and near-fixed
+            # calls from the missed-heterozygous-allele screen.
+            if max_depth is None or max_depth < 10 or max_alt_depth is None or max_alt_depth < 3:
+                continue
+            if max_vaf is None or not 0.10 <= max_vaf <= 0.90:
+                continue
+            exon_bounds = boundaries.get((call.key.chrom, call.gene), [])
+            nearest = min((abs(call.key.pos - value) for value in exon_bounds), default=None)
+            start = max(0, call.key.pos - 16)
+            sequence = fasta.fetch(call.key.chrom, start, call.key.pos + 15)
+            entropy, homopolymer = sequence_complexity(sequence)
+            repeat_adjacent = entropy < 1.5 or homopolymer >= 6
+            classes = []
+            if consequence_score(call.consequence) >= 4:
+                classes.append("coding_or_splice")
+            if (
+                "intron_variant" in call.consequence.split("&")
+                and nearest is not None
+                and nearest >= 20
+            ):
+                classes.append("deep_intronic_ge20bp")
+            if repeat_adjacent:
+                classes.append("repeat_adjacent")
+            if not classes:
+                continue
+            retained.append(
+                ScreenedCall(call, tuple(sorted(entry.callers)), max_depth, max_alt_depth,
+                             max_vaf, max_gq, nearest, tuple(classes), entropy, homopolymer)
+            )
+    return retained
+
+
+def write_novel_candidates(path: Path, retained: list[ScreenedCall]) -> int:
     retained.sort(
         key=lambda item: (
-            len(item[1]),
-            consequence_score(item[0].consequence),
-            -(item[0].max_af if item[0].max_af is not None else -1),
+            len(item.callers),
+            consequence_score(item.call.consequence),
+            -(item.call.max_af if item.call.max_af is not None else -1),
         ),
         reverse=True,
     )
@@ -193,30 +297,16 @@ def write_novel_candidates(path: Path, calls: dict[VariantKey, dict[str, object]
                 "max_alt_depth",
                 "max_vaf",
                 "max_genotype_quality",
+                "nearest_exon_boundary_bp",
+                "screen_classes",
+                "context_entropy",
+                "longest_homopolymer",
                 "hgvsc",
                 "hgvsp",
             ]
         )
-        for call, callers in retained:
-            metrics = calls[call.key]["metrics"].values()
-            max_depth = max(
-                (item.depth for item in metrics if item.depth is not None), default=None
-            )
-            max_alt_depth = max(
-                (item.alt_depth for item in metrics if item.alt_depth is not None),
-                default=None,
-            )
-            max_vaf = max(
-                (item.vaf for item in metrics if item.vaf is not None), default=None
-            )
-            max_gq = max(
-                (
-                    item.genotype_quality
-                    for item in metrics
-                    if item.genotype_quality is not None
-                ),
-                default=None,
-            )
+        for item in retained:
+            call = item.call
             writer.writerow(
                 [
                     call.key.chrom,
@@ -227,11 +317,15 @@ def write_novel_candidates(path: Path, calls: dict[VariantKey, dict[str, object]
                     call.consequence,
                     call.impact,
                     "" if call.max_af is None else f"{call.max_af:.8g}",
-                    ",".join(callers),
-                    "" if max_depth is None else max_depth,
-                    "" if max_alt_depth is None else max_alt_depth,
-                    "" if max_vaf is None else f"{max_vaf:.6g}",
-                    "" if max_gq is None else f"{max_gq:.6g}",
+                    ",".join(item.callers),
+                    item.max_depth,
+                    item.max_alt_depth,
+                    f"{item.max_vaf:.6g}",
+                    "" if item.max_gq is None else f"{item.max_gq:.6g}",
+                    "" if item.nearest_exon_boundary_bp is None else item.nearest_exon_boundary_bp,
+                    ",".join(item.classes),
+                    f"{item.context_entropy:.4f}",
+                    item.longest_homopolymer,
                     call.hgvsc,
                     call.hgvsp,
                 ]
@@ -293,6 +387,120 @@ def write_target_svs(bcf: Path, manifest: Path, output: Path):
     return total, len(overlaps)
 
 
+def existing_alleles_by_gene(path: Path) -> dict[str, dict[VariantKey, dict[str, str]]]:
+    alleles: dict[str, dict[VariantKey, dict[str, str]]] = defaultdict(dict)
+    with path.open(newline="") as handle:
+        for row in csv.DictReader(handle, delimiter="\t"):
+            gene = row["gene"]
+            for suffix in ("1", "2"):
+                if not row.get(f"chrom_{suffix}"):
+                    continue
+                key = VariantKey(
+                    row[f"chrom_{suffix}"].removeprefix("chr"),
+                    int(row[f"pos_{suffix}"]),
+                    row[f"ref_{suffix}"],
+                    row[f"alt_{suffix}"],
+                )
+                alleles[gene][key] = {
+                    "consequence": row.get(f"consequence_{suffix}", ""),
+                    "max_af": row.get(f"max_af_{suffix}", ""),
+                    "gt": row.get(f"gt_{suffix}", ""),
+                }
+    return alleles
+
+
+def write_compound_reconstructions(
+    path: Path, screened: list[ScreenedCall], existing_path: Path
+) -> tuple[int, int]:
+    existing = existing_alleles_by_gene(existing_path)
+    best_gene_score: dict[str, float] = defaultdict(float)
+    with existing_path.open(newline="") as handle:
+        for row in csv.DictReader(handle, delimiter="\t"):
+            best_gene_score[row["gene"]] = max(
+                best_gene_score[row["gene"]], float(row["total_score"])
+            )
+    rows = []
+    for novel in screened:
+        for key, old in existing.get(novel.call.gene, {}).items():
+            evidence_score = (
+                (2.0 if "coding_or_splice" in novel.classes else 0.0)
+                + (0.5 if "deep_intronic_ge20bp" in novel.classes else 0.0)
+                + (0.25 if "repeat_adjacent" in novel.classes else 0.0)
+                + (1.0 if len(novel.callers) == 2 else 0.0)
+                + (0.5 if novel.call.max_af is not None and novel.call.max_af <= 0.001 else 0.0)
+            )
+            rows.append(
+                (best_gene_score[novel.call.gene] + evidence_score, evidence_score,
+                 novel, key, old)
+            )
+    rows.sort(
+        key=lambda row: (
+            row[0],
+            consequence_score(row[2].call.consequence),
+            len(row[2].callers),
+        ),
+        reverse=True,
+    )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="") as handle:
+        writer = csv.writer(handle, delimiter="\t")
+        writer.writerow(
+            [
+                "gene",
+                "review_rank",
+                "existing_gene_best_score",
+                "novel_evidence_score",
+                "review_priority_score",
+                "existing_chrom",
+                "existing_pos",
+                "existing_ref",
+                "existing_alt",
+                "existing_gt",
+                "existing_consequence",
+                "existing_max_af",
+                "novel_chrom",
+                "novel_pos",
+                "novel_ref",
+                "novel_alt",
+                "novel_consequence",
+                "novel_max_af",
+                "novel_callers",
+                "novel_vaf",
+                "novel_screen_classes",
+                "phase_status",
+            ]
+        )
+        for rank, (priority_score, evidence_score, novel, key, old) in enumerate(rows, 1):
+            call = novel.call
+            writer.writerow(
+                [
+                    call.gene,
+                    rank,
+                    f"{best_gene_score[call.gene]:.6f}",
+                    f"{evidence_score:.2f}",
+                    f"{priority_score:.6f}",
+                    key.chrom,
+                    key.pos,
+                    key.ref,
+                    key.alt,
+                    old["gt"],
+                    old["consequence"],
+                    old["max_af"],
+                    call.key.chrom,
+                    call.key.pos,
+                    call.key.ref,
+                    call.key.alt,
+                    call.consequence,
+                    "" if call.max_af is None else f"{call.max_af:.8g}",
+                    ",".join(novel.callers),
+                    f"{novel.max_vaf:.6g}",
+                    ",".join(novel.classes),
+                    "unconfirmed; no parental or shared read-backed phase",
+                ]
+            )
+    return len(rows), len({row[2].call.gene for row in rows})
+
+
 def leading_pair(path: Path) -> tuple[VariantKey, VariantKey]:
     with path.open(newline="") as handle:
         row = next(csv.DictReader(handle, delimiter="\t"))
@@ -313,24 +521,19 @@ def phased_call(path: Path, key: VariantKey, sample: str):
             if record.pos != key.pos or record.ref != key.ref or key.alt not in record.alts:
                 continue
             call = record.samples[sample]
-            return {
-                "found": True,
-                "phased": call.phased,
-                "gt": list(call.get("GT", ())),
-                "ps": call.get("PS"),
-            }
-    return {"found": False, "phased": False, "gt": [], "ps": None}
+            return PhaseCall(True, call.phased, tuple(call.get("GT", ())), call.get("PS"))
+    return PhaseCall(False, False, (), None)
 
 
-def phase_relation(left: dict[str, object], right: dict[str, object]):
-    if not left["found"] or not right["found"]:
+def phase_relation(left: PhaseCall, right: PhaseCall):
+    if not left.found or not right.found:
         return "unconfirmed", "one or both leading alleles absent from phased VCF"
-    if not left["phased"] or not right["phased"]:
+    if not left.phased or not right.phased:
         return "unconfirmed", "one or both leading alleles are unphased"
-    if left["ps"] is None or left["ps"] != right["ps"]:
+    if left.ps is None or left.ps != right.ps:
         return "unconfirmed", "alleles are not in the same phase set"
-    left_gt = list(left["gt"])
-    right_gt = list(right["gt"])
+    left_gt = list(left.gt)
+    right_gt = list(right.gt)
     if sorted(left_gt) != [0, 1] or sorted(right_gt) != [0, 1]:
         return "unconfirmed", "one or both phased genotypes are not biallelic heterozygotes"
     relation = "cis" if left_gt.index(1) == right_gt.index(1) else "trans"
@@ -341,13 +544,17 @@ def analyze(args: argparse.Namespace) -> dict[str, object]:
     calls, novel_counts = collect_novel_calls(
         {"haplotypecaller": args.hc_vep, "mutect2": args.mutect_vep}
     )
-    retained = write_novel_candidates(args.novel_candidates, calls)
+    screened = screen_calls(calls, args.gtf, args.reference)
+    retained = write_novel_candidates(args.novel_candidates, screened)
+    reconstruction_count, reconstruction_genes = write_compound_reconstructions(
+        args.compound_reconstructions, screened, args.all_candidates
+    )
     sv_total, sv_target = write_target_svs(args.delly, args.manifest, args.target_svs)
     left_key, right_key = leading_pair(args.candidates)
     left = phased_call(args.phased, left_key, "PROBAND01")
     right = phased_call(args.phased, right_key, "PROBAND01")
     relation, reason = phase_relation(left, right)
-    both_callers = sum(len(entry["callers"]) == 2 for entry in calls.values())
+    both_callers = sum(len(entry.callers) == 2 for entry in calls.values())
     candidate_gene_counts = defaultdict(int)
     with args.novel_candidates.open(newline="") as handle:
         for row in csv.DictReader(handle, delimiter="\t"):
@@ -357,21 +564,30 @@ def analyze(args: argparse.Namespace) -> dict[str, object]:
         "novel_calls_after_source_vcf_subtraction": novel_counts,
         "distinct_novel_calls": len(calls),
         "novel_calls_seen_by_both_callers": both_callers,
-        "rare_coding_or_splice_novel_candidates": retained,
+        "supported_rare_coding_splice_deep_intronic_or_repeat_adjacent_candidates": retained,
+        "candidate_class_counts": {
+            class_name: sum(class_name in item.classes for item in screened)
+            for class_name in ("coding_or_splice", "deep_intronic_ge20bp", "repeat_adjacent")
+        },
         "rare_candidate_gene_counts": dict(sorted(candidate_gene_counts.items())),
+        "novel_existing_allele_reconstructions": reconstruction_count,
+        "genes_with_novel_existing_allele_reconstructions": reconstruction_genes,
         "delly_pass_calls_in_target_enriched_bam": sv_total,
         "delly_pass_calls_overlapping_target_gene_windows": sv_target,
         "leading_pair_read_backed_phase": {
             "status": relation,
             "reason": reason,
-            "allele_1": left,
-            "allele_2": right,
+            "allele_1": left.__dict__,
+            "allele_2": right.__dict__,
         },
         "limitations": [
             "Single-subject tumor-only Mutect2 has no matched normal or panel of normals.",
             "Short-read phasing is conclusive only within a shared supported phase set.",
             "Candidate windows are hypothesis-driven and do not replace "
             "genome-wide interpretation.",
+            "Deep intronic is operationally >=20 bp from the nearest Ensembl 116 exon "
+            "boundary; no regulatory-effect prediction is implied.",
+            "Novel/existing same-gene pairs are hypotheses; trans phase remains unconfirmed.",
         ],
     }
     args.summary.parent.mkdir(parents=True, exist_ok=True)
@@ -381,16 +597,16 @@ def analyze(args: argparse.Namespace) -> dict[str, object]:
 
 def self_check() -> None:
     assert phase_relation(
-        {"found": True, "phased": True, "gt": [0, 1], "ps": 10},
-        {"found": True, "phased": True, "gt": [1, 0], "ps": 10},
+        PhaseCall(True, True, (0, 1), 10),
+        PhaseCall(True, True, (1, 0), 10),
     )[0] == "trans"
     assert phase_relation(
-        {"found": True, "phased": True, "gt": [0, 1], "ps": 10},
-        {"found": True, "phased": True, "gt": [0, 1], "ps": 10},
+        PhaseCall(True, True, (0, 1), 10),
+        PhaseCall(True, True, (0, 1), 10),
     )[0] == "cis"
     assert phase_relation(
-        {"found": True, "phased": True, "gt": [0, 1], "ps": 10},
-        {"found": True, "phased": True, "gt": [1, 0], "ps": 11},
+        PhaseCall(True, True, (0, 1), 10),
+        PhaseCall(True, True, (1, 0), 11),
     )[0] == "unconfirmed"
     with tempfile.TemporaryDirectory(prefix="recall-analysis-") as name:
         vcf = Path(name) / "novel.vcf"
@@ -399,12 +615,23 @@ def self_check() -> None:
             '##INFO=<ID=CSQ,Number=.,Type=String,Description="Format: '
             'Allele|Consequence|IMPACT|SYMBOL|HGVSc|HGVSp|MAX_AF|gnomADe_AF|'
             'gnomADg_AF">\n'
-            '#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\n'
-            '1\t10\t.\tA\tT\t.\tPASS\tCSQ=T|stop_gained|HIGH|GENE|c.1A>T|p.X|0.0001||\n'
+            '#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tFORMAT\tSAMPLE\n'
+            '1\t10\t.\tA\tT\t.\tPASS\tCSQ=T|stop_gained|HIGH|GENE|c.1A>T|p.X|'
+            '0.0001||\tGT:DP:AD:GQ\t0/1:20:10,10:99\n'
         )
         calls, counts = collect_novel_calls({"caller": vcf})
         assert counts == {"caller": 1}
-        assert write_novel_candidates(Path(name) / "out.tsv", calls) == 1
+        fasta = Path(name) / "ref.fa"
+        fasta.write_text(">1\n" + "ACGT" * 20 + "\n")
+        pysam.faidx(str(fasta))
+        gtf = Path(name) / "genes.gtf.gz"
+        with gzip.open(gtf, "wt") as handle:
+            handle.write('1\ttest\texon\t1\t5\t.\t+\t.\tgene_name "GENE";\n')
+        screened = screen_calls(calls, gtf, fasta)
+        assert len(screened) == 1
+        assert screened[0].classes == ("coding_or_splice",)
+        assert write_novel_candidates(Path(name) / "out.tsv", screened) == 1
+        assert sequence_complexity("AAAAAAAAAACGT")[1] == 10
     print("self-check ok: novel-call parsing, filtering and phase interpretation")
 
 
@@ -420,6 +647,10 @@ def main() -> None:
     parser.add_argument("--novel-candidates", type=Path)
     parser.add_argument("--target-svs", type=Path)
     parser.add_argument("--summary", type=Path)
+    parser.add_argument("--gtf", type=Path)
+    parser.add_argument("--reference", type=Path)
+    parser.add_argument("--all-candidates", type=Path)
+    parser.add_argument("--compound-reconstructions", type=Path)
     args = parser.parse_args()
     if args.self_check:
         self_check()
@@ -434,11 +665,16 @@ def main() -> None:
         args.novel_candidates,
         args.target_svs,
         args.summary,
+        args.gtf,
+        args.reference,
+        args.all_candidates,
+        args.compound_reconstructions,
     ]
     if any(path is None for path in required):
         parser.error("all analysis paths are required")
     summary = analyze(args)
-    print(json.dumps(summary, indent=2, sort_keys=True))
+    compact = {key: value for key, value in summary.items() if key != "target_manifest"}
+    print(json.dumps(compact, indent=2, sort_keys=True))
 
 
 if __name__ == "__main__":

@@ -101,9 +101,11 @@ finds no joint support on chr22, and retains a credible low-level chr19 gain sig
 still requires orthogonal clinical confirmation. **There is no runs-of-homozygosity
 signal**, so with the challenge's public compound-heterozygous answer-key statement, the
 working model is two different rare damaging alleles in one gene. The first genome-wide
-triage ranks a BUB1B pair first. Targeted all-lane realignment found no additional BUB1B
-coding/splice or high-quality window-overlapping structural allele, and read-backed phasing
-left both leading sites outside a supported phase block. Trans phase remains unconfirmed.
+triage ranks a BUB1B pair first. Targeted all-lane realignment screened supported
+coding/splice, operational deep-intronic, repeat-adjacent and heterozygous structural calls,
+then reconstructed same-gene novel/existing pairs. It found no additional BUB1B candidate;
+read-backed phasing left both leading sites outside a supported phase block. Trans phase
+remains unconfirmed.
 
 The current ten-row draft is in gitignored `results/feat006/`. It has the exact official
 schema, `PROBAND01`, `chr`-prefixed contigs, distinct descending EPCRs, and 20 alleles that

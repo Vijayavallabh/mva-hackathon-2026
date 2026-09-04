@@ -71,9 +71,6 @@ for index in "${!R1[@]}"; do
   [[ $left == "$right" ]] || { echo "FASTQ mate mismatch: $left != $right" >&2; exit 1; }
 done
 
-fingerprint() {
-  sha256sum "$@" | sha256sum | cut -d' ' -f1
-}
 reads_signature=$(stat --printf='%n:%s:%Y\n' "${R1[@]}" "${R2[@]}" | sha256sum | cut -d' ' -f1)
 interval_signature=$(
   {
@@ -165,7 +162,14 @@ annotate_vep() {
 }
 
 small_call_stage() {
-  if [[ $REUSE_RAW_CALLS == 0 || ! -s "$OUT/haplotypecaller.raw.vcf.gz" ]]; then
+  if [[ $REUSE_RAW_CALLS == 1 && (! -f "$OUT/raw-small.done" || \
+        $(<"$OUT/raw-small.done") != "$raw_small_signature") ]]; then
+    echo "refusing unbound raw small-call reuse; input-bound raw-small.done is absent/stale" >&2
+    exit 1
+  fi
+  if [[ $REUSE_RAW_CALLS == 0 || ! -s "$OUT/haplotypecaller.raw.vcf.gz" || \
+        ! -s "$OUT/mutect2.filtered.vcf.gz" ]]; then
+    # RAW_SMALL_BEGIN: included verbatim in raw_small_signature.
     "$TOOLS/gatk" --java-options '-Xmx64g' HaplotypeCaller \
       -R "$REF" -I "$BAM" -L "$TARGETS" --native-pair-hmm-threads "$CALL_THREADS" \
       -O "$OUT/haplotypecaller.raw.vcf.gz"
@@ -185,6 +189,8 @@ small_call_stage() {
       -R "$REF" -V "$OUT/mutect2.raw.vcf.gz" \
       --ob-priors "$OUT/mutect2.orientation-priors.tar.gz" \
       -O "$OUT/mutect2.filtered.vcf.gz"
+    # RAW_SMALL_END
+    printf '%s\n' "$raw_small_signature" > "$OUT/raw-small.done"
   fi
   "$TOOLS/bcftools" view -f PASS "$OUT/mutect2.filtered.vcf.gz" -Ou | \
     "$TOOLS/bcftools" norm -f "$REF" -m -any -Oz -o "$OUT/mutect2.pass.normalized.vcf.gz"
@@ -199,6 +205,16 @@ small_call_stage() {
   annotate_vep "$OUT/haplotypecaller.novel.vcf.gz" "$OUT/haplotypecaller.novel.vep.vcf.gz"
   annotate_vep "$OUT/mutect2.novel.vcf.gz" "$OUT/mutect2.novel.vep.vcf.gz"
 }
+raw_small_signature=$(
+  {
+    sed -n '/RAW_SMALL_BEGIN/,/RAW_SMALL_END/p' "$ROOT/scripts/run_targeted_recall.sh" | \
+      sha256sum
+    stat --printf='%n:%s:%Y\n' "$BAM"
+    sha256sum "$TARGETS"
+    awk -F '\t' '$1 == "GATK"' "$ROOT/tools/versions.tsv"
+    printf 'hc+mutect2+orientation+filter;threads=%s\n' "$CALL_THREADS"
+  } | sha256sum | cut -d' ' -f1
+)
 small_signature=$(
   {
     declare -f small_call_stage annotate_vep
@@ -217,7 +233,13 @@ if [[ ! -s "$OUT/haplotypecaller.novel.vep.vcf.gz" || \
 fi
 
 structural_stage() {
+  if [[ $REUSE_RAW_SV == 1 && (! -f "$OUT/raw-sv.done" || \
+        $(<"$OUT/raw-sv.done") != "$raw_sv_signature") ]]; then
+    echo "refusing unbound raw SV reuse; input-bound raw-sv.done is absent/stale" >&2
+    exit 1
+  fi
   if [[ $REUSE_RAW_SV == 0 || ! -s "$OUT/delly.raw.bcf" ]]; then
+    # RAW_SV_BEGIN: included verbatim in raw_sv_signature.
     "$TOOLS/samtools" view -@ "$SORT_THREADS" --fetch-pairs -L "$SV_TARGETS" \
       -b -o "$SV_BAM.partial" "$BAM"
     mv "$SV_BAM.partial" "$SV_BAM"
@@ -225,13 +247,27 @@ structural_stage() {
     "$TOOLS/samtools" quickcheck -v "$SV_BAM"
     "$TOOLS/delly" call -g "$REF" -h "$CALL_THREADS" \
       -o "$OUT/delly.raw.bcf" "$SV_BAM"
+    # RAW_SV_END
+    printf '%s\n' "$raw_sv_signature" > "$OUT/raw-sv.done"
   fi
   # DELLY's germline filter assumes a cohort. For this single subject, retain
   # discovery-PASS sites at DELLY's default site-quality threshold instead.
-  "$TOOLS/bcftools" view -f PASS -i 'QUAL>=300' -Ob \
+  "$TOOLS/bcftools" view -f PASS \
+    -i 'QUAL>=300 && GT="het" && (FORMAT/DV+FORMAT/RV)>=5' -Ob \
     -o "$OUT/delly.pass.bcf" "$OUT/delly.raw.bcf"
   "$TOOLS/bcftools" index --force "$OUT/delly.pass.bcf"
 }
+raw_sv_signature=$(
+  {
+    sed -n '/RAW_SV_BEGIN/,/RAW_SV_END/p' "$ROOT/scripts/run_targeted_recall.sh" | \
+      sha256sum
+    stat --printf='%n:%s:%Y\n' "$BAM" "$REF"
+    sha256sum "$SV_TARGETS"
+    awk -F '\t' '$1 == "DELLY" || $1 == "samtools+htslib"' \
+      "$ROOT/tools/versions.tsv"
+    printf 'fetch-pairs+delly-call;threads=%s\n' "$CALL_THREADS"
+  } | sha256sum | cut -d' ' -f1
+)
 structural_signature=$(
   {
     declare -f structural_stage
@@ -280,7 +316,9 @@ uv run python "$ROOT/scripts/analyze_targeted_recall.py" \
   --mutect-vep "$OUT/mutect2.novel.vep.vcf.gz" \
   --delly "$OUT/delly.pass.bcf" --manifest "$MANIFEST" \
   --phased "$OUT/target-source.phased.vcf.gz" --candidates "$LEADING" \
+  --all-candidates "$CANDIDATES" --gtf "$GTF" --reference "$REF" \
   --novel-candidates "$OUT/novel-candidates.tsv" --target-svs "$OUT/target-svs.tsv" \
+  --compound-reconstructions "$OUT/compound-het-reconstructions.tsv" \
   --summary "$OUT/summary.json"
 
 echo "targeted recall complete: $OUT/summary.json"

@@ -8,12 +8,12 @@ allele near genes that survived the genome-wide feat-004 ranking. It is not an a
 analysis; the corrected depth/BAF screen remains feat-005a.
 
 The interval builder takes every distinct gene represented in
-`results/feat004/all_candidate_models.tsv` and forces inclusion of the three established
-MVA genes BUB1B, CEP57 and TRIP13. Ensembl 116 gene bodies receive 20 kb flanks and are
-merged. The resulting 187-gene target comprises 184 intervals and 25,332,670 bases. This
-keeps all 185 genes that survived the first-pass candidate models rather than collapsing
-the analysis to BUB1B, while acknowledging that the re-call is hypothesis-directed rather
-than a second unrestricted whole-genome interpretation.
+`results/feat004/all_candidate_models.tsv`. BUB1B is already among those 185 genes; CEP57
+and TRIP13 are added as two explicit literature-prior controls. Ensembl 116 gene bodies
+receive 20 kb flanks and are merged. The resulting 187-gene target comprises 184 intervals
+and 25,332,670 bases. The two controls are reported separately from the genome-wide
+feat-004 survivors; this remains a hypothesis-directed re-call rather than a second
+unrestricted whole-genome interpretation.
 
 ## Design
 
@@ -36,8 +36,8 @@ The downstream evidence streams are deliberately complementary:
    either mate touches those regions, and DELLY 2.1.0 screens the resulting target-enriched
    BAM for deletions, insertions, duplications, inversions and breakends. Because DELLY's
    germline filter assumes a cohort, this single-sample analysis instead retains discovery
-   PASS sites at DELLY's default site-quality threshold, QUAL >= 300, before testing overlap
-   with the 20 kb gene windows.
+   PASS heterozygous sites at QUAL >= 300 with at least five variant-supporting split/paired
+   reads before testing overlap with the 20 kb gene windows.
 4. WhatsHap 2.8 attempts read-backed phasing across the complete padded BUB1B locus. The
    leading pair is called trans or cis only if both biallelic heterozygotes
    are phased in the same phase set. Separate phase sets, missing calls or an unphased
@@ -45,9 +45,17 @@ The downstream evidence streams are deliberately complementary:
 
 HaplotypeCaller and Mutect2 PASS calls are normalized against the exact reference and
 subtracted from the already normalized source VCF by exact allele identity. Novel calls
-are annotated offline with VEP 116 and its pinned gnomAD fields. The review table retains
-rare or frequency-absent coding/splice candidates; it remains local because it contains
-subject-level variant records.
+are annotated offline with VEP 116 and its pinned gnomAD fields. A supported rare-call
+screen requires depth >=10, alternate depth >=3 and allele fraction 0.10--0.90. It retains
+coding/splice calls, operational deep-intronic calls at least 20 bp from the nearest
+Ensembl exon boundary, and calls in locally low-complexity or homopolymer sequence. This
+sequence-context flag is a repeat-adjacent triage aid, not a repeat-expansion assay.
+
+Each retained novel call is paired locally with every distinct pre-existing rare feat-004
+allele in the same gene. `compound-het-reconstructions.tsv` ranks these review hypotheses
+using the existing gene score plus transparent bounded evidence bonuses. The table does
+not assert trans phase: a same-gene pair is not a confirmed compound heterozygote without
+parental or shared read-backed phase evidence. All subject-level rows remain local.
 
 No BQSR is applied: the installed bundle does not contain a reference-matched, pinned set
 of known-sites resources, and silently mixing reference builds would be worse than stating
@@ -64,6 +72,8 @@ nohup setsid env \
   MVA_RECALL_SORT_THREADS=8 \
   MVA_RECALL_DECOMP_THREADS=4 \
   MVA_RECALL_CALL_THREADS=8 \
+  MVA_RECALL_REUSE_RAW_CALLS=1 \
+  MVA_RECALL_REUSE_RAW_SV=1 \
   ./scripts/run_targeted_recall.sh \
   >> logs/feat005b-targeted-recall.log 2>&1 </dev/null &
 ```
@@ -73,10 +83,13 @@ free disk at 91% filesystem use; live load average was 13.4. Alignment is theref
 at 32 threads, sorting at eight threads with 4 GB per thread, and calling at eight threads.
 GPU availability does not materially accelerate this BWA/GATK/DELLY workflow.
 
-The pipeline validates all inputs and pinned tools before reading FASTQ, verifies mate-lane
+The two `MVA_RECALL_REUSE_RAW_*` settings reproduce the completed recovery run. Reuse is
+refused unless `raw-small.done` or `raw-sv.done` binds the intermediate to the current BAM,
+intervals, tool versions and calling parameters. A clean run omits both settings. The
+pipeline validates all inputs and pinned tools before reading FASTQ, verifies mate-lane
 pairing, uses input/code/tool-bound stage signatures, runs `samtools quickcheck`, records
-flagstat/stats, and can resume at intervals, alignment, small-call, structural-call and
-phase checkpoints.
+flagstat/stats, and resumes at intervals, alignment, small-call, structural-call and phase
+checkpoints.
 
 ## Outputs and privacy
 
@@ -92,19 +105,26 @@ The all-lane alignment retained 934,025,028 primary nonduplicate reads; 99.55% m
 98.27% were properly paired. HaplotypeCaller emitted 53,865 normalized accepted alleles in
 the 25.3 Mb target. Exact subtraction against the feat-004 normalized PASS baseline left
 2,374 annotated HaplotypeCaller calls and 541 Mutect2 calls, with 270 exact alleles seen by
-both callers. The offline rarity and coding/splice filter retained 24 rows across 12 genes.
-None adds an allele in BUB1B, CEP57 or TRIP13, and none is supported by both callers. The
-rows are concentrated in polymorphic or mapping-sensitive loci including MUC4, HLA/KIR,
-PKD1 and TAS2R31. A Mutect2-only CUL7 missense is retained for secondary manual review
-because of CUL7's growth biology, but its near-homozygous allele fraction and lack of
-HaplotypeCaller support do not justify promoting it over the existing BUB1B pair.
+both callers. After rarity and read-support filters, the expanded review set has 226 rows:
+13 coding/splice, 203 operational deep-intronic and 62 repeat-adjacent flags (classes can
+overlap). Only two rows are supported by both callers. None adds an allele in BUB1B, CEP57
+or TRIP13.
 
-DELLY generated 7,123 raw target-enriched candidates. Applying discovery PASS plus
-QUAL >= 300 retained 1,500; 167 overlap a 20 kb candidate-gene window. No retained event
-overlaps the BUB1B or CEP57 window. One overlaps the padded TRIP13 window and remains a
-local manual-review item, not a confirmed structural allele; the single-sample targeted
-screen has no orthogonal SV validation and its numerous window overlaps show that PASS and
-site quality alone are not sufficient for pathogenic interpretation.
+Same-gene reconstruction generated 314 local novel/existing pair hypotheses across 63
+genes, but none involves BUB1B, CEP57 or TRIP13. The highest reconstructed groups include
+HLA-DRB1 and SERPINA1. Their novel partners are single-caller calls at the lower retained
+allele-fraction boundary (0.10 and 0.12), and neither pair has confirmed trans phase;
+HLA-DRB1 is additionally mapping-sensitive. The mechanical review-priority score is
+therefore not treated as a new causal rank without independent validation. This screen
+adds secondary review hypotheses rather than evidence sufficient to displace the existing
+BUB1B pair.
+
+DELLY generated 7,123 raw target-enriched candidates. Requiring discovery PASS,
+heterozygous genotype, QUAL >= 300 and at least five variant-supporting reads retains 984;
+125 overlap a 20 kb candidate-gene window. No retained event overlaps the BUB1B or CEP57
+window. One overlaps the padded TRIP13 window and remains a local manual-review item, not a
+confirmed structural allele; the single-sample targeted screen has no orthogonal SV
+validation and is not a rigorous exclusion of every possible structural allele.
 
 Within the 100,154-base padded BUB1B locus, WhatsHap found 56 usable heterozygous variants
 and 432 reads covering at least two variants. It created local phase blocks, but both
@@ -124,9 +144,13 @@ uv run python scripts/analyze_targeted_recall.py \
   --mutect-vep results/feat005b/mutect2.novel.vep.vcf.gz \
   --delly results/feat005b/delly.pass.bcf \
   --manifest results/feat005b/targets.json \
+  --gtf data/resources/downloads/Homo_sapiens.GRCh38.116.gtf.gz \
+  --reference data/resources/reference/GCA_000001405.15_GRCh38_no_alt_analysis_set_plus_hs38d1_maskedGRC_exclusions_v2_no_chr.fasta \
   --phased results/feat005b/target-source.phased.vcf.gz \
   --candidates results/feat004/candidate_models.tsv \
+  --all-candidates results/feat004/all_candidate_models.tsv \
   --novel-candidates results/feat005b/novel-candidates.tsv \
   --target-svs results/feat005b/target-svs.tsv \
+  --compound-reconstructions results/feat005b/compound-het-reconstructions.tsv \
   --summary results/feat005b/summary.json
 ```

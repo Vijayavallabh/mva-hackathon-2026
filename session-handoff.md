@@ -19,9 +19,10 @@ chr22 lacks joint BAF support and chr19 retains a credible low-level gain signal
 mappability thresholds. See `notes/copy-number-screen.md`. Feat-006 pinned the public
 official scorer and produced a ten-row local draft that passes schema, identity, EPCR and
 reference-normalization checks; see `notes/submission-conformance.md`. Feat-005b realigned
-all four lane pairs and re-called all 187 survivor genes: no extra rare BUB1B allele or
-high-quality BUB1B-window SV was recovered, and read-backed phasing left both leading
-alleles unphased. See `notes/targeted-recall.md`.
+all four lane pairs and re-called 185 survivor genes plus two explicit controls. Supported
+coding/splice, operational deep-intronic, repeat-adjacent, same-gene reconstruction and
+heterozygous-SV screens found no extra BUB1B candidate; read-backed phasing left both
+leading alleles unphased. See `notes/targeted-recall.md`.
 
 **Read these before touching anything:** `notes/data-profile.md` (measured baseline, with
 the command for every number) and `notes/challenge-spec.md` (scoring mechanics and the two
@@ -73,7 +74,7 @@ branch matches upstream. Parent-directory filesystem access does not permit plac
 raw subject data or clinical narrative in hosted model context.
 
 **Open decisions:**
-- One high-quality DELLY event overlaps the padded TRIP13 window but is not orthogonally
+- One supported heterozygous DELLY event overlaps the padded TRIP13 window but is not orthogonally
   validated; keep it as a local manual-review item, not a causal claim.
 - L003 R1's index ends `…GGAGA` where L001/L002/L004 end `…GGAGC`. Confirm whether that is a
   first-read artefact or a systematic difference before treating the four lanes as one library.

@@ -80,8 +80,9 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   newly arising event, but cannot distinguish those models without genomic evidence.
 - **The leading BUB1B pair is still unphased after feat-005b.** Targeted all-lane
   realignment found both alleles, but WhatsHap placed neither in a supported phase block.
-  No additional rare coding/splice BUB1B allele or high-quality BUB1B-window SV was found;
-  trans phase remains unconfirmed. See `notes/targeted-recall.md`.
+  Supported coding/splice, operational deep-intronic, repeat-adjacent and heterozygous-SV
+  screens found no additional BUB1B candidate; trans phase remains unconfirmed. See
+  `notes/targeted-recall.md`.
 - **Feat-006 submission checking is local and pinned.** The vendored official scorer is
   fixed to public Space revision `1c761cc23d90aebe6a011fd5b0b99517df42408c`. A local
   ten-row draft passes exact schema/ID/contig/EPCR checks and reference-based indel
