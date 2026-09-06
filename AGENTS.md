@@ -108,6 +108,9 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
 - **AI disclosure:** the owner confirmed Codex uses API tier. This is recorded in
   `notes/track1-submission-config.json`; account data-handling settings and other providers
   remain unconfirmed. Rebuild the package after configuration changes; do not reuse v2.
+  The current v3 draft incorporates API tier and passes offline checks, but is not ready
+  for upload. Rebuilding an unchanged draft cannot resolve the remaining blockers;
+  obtain the missing disclosures and resolve the safety gate first.
 
 ## Startup workflow
 

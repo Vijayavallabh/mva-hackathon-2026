@@ -1,6 +1,6 @@
 # Track 1 submission preparation (feat-008)
 
-Status on 2026-09-06: local v2 draft built and verified; no submission has been uploaded
+Status on 2026-09-06: local v3 draft built and verified; no submission has been uploaded
 by this workflow and no official score or remaining-attempt count is claimed.
 The selected account from the local authenticated HF identity is `jvv7`; an empty
 display name uses that username. Never print the token or complete identity response.
@@ -32,11 +32,11 @@ on changed/unavailable rules. It never downloads private ground truth.
 uv run python scripts/prepare_track1_package.py --self-check
 uv run python scripts/track1_submission.py --self-check
 # Commit reviewed code, template and config first; build requires a clean tree.
-uv run python scripts/prepare_track1_package.py build --name jvv7_genomewide_mva_v2
-uv run python scripts/prepare_track1_package.py verify results/feat008/jvv7_genomewide_mva_v2
-uv run python scripts/test_track1_package.py results/feat008/jvv7_genomewide_mva_v2
+uv run python scripts/prepare_track1_package.py build --name jvv7_genomewide_mva_v3
+uv run python scripts/prepare_track1_package.py verify results/feat008/jvv7_genomewide_mva_v3
+uv run python scripts/test_track1_package.py results/feat008/jvv7_genomewide_mva_v3
 # Push the reviewed commits before this live check:
-uv run python scripts/prepare_track1_package.py preflight results/feat008/jvv7_genomewide_mva_v2
+uv run python scripts/prepare_track1_package.py preflight results/feat008/jvv7_genomewide_mva_v3
 ```
 
 Build refuses to overwrite an existing package. Changed evidence, code or disclosure
@@ -83,7 +83,7 @@ the purge gate when visibility is PUBLIC. Unknown visibility fails closed. Tests
 an unavailable remote, and payload/manifest corruption. Named evidence paths replaced
 positional dependencies. The report now states the actual +1 default for missing AF.
 
-## Verified local result and live blocker
+## Historical v2 result and live blocker
 
 Package: `results/feat008/jvv7_genomewide_mva_v2/`, built at code revision
 `c5bc2e0` (full SHA in its manifest). The CSV contains 10 ranked pairs and 20 alleles
@@ -130,5 +130,30 @@ upload is performed in response to this clarification.
 
 The v2 package above is a historical validated draft bound to the previous configuration.
 Its hashes remain unchanged, but verification against the updated configuration must
-reject it. After completing the remaining disclosure, commit the configuration and build
-a new package name (next: `jvv7_genomewide_mva_v3`); never edit the old deliverables in place.
+reject it. A refreshed v3 draft is documented below. After completing the remaining
+disclosure, commit the configuration and build a new package name (next: v4); never edit
+the old deliverables in place.
+
+## Current v3 draft (2026-09-06)
+
+Built `results/feat008/jvv7_genomewide_mva_v3/` from `cdfb444` with the owner-confirmed
+API-tier disclosure. This refresh changes the report, not the ranked candidates or
+scientific interpretation. Trans phase remains unconfirmed. The CSV SHA-256 is unchanged:
+`a1f9315e223a07914589ce6884a66702b80e587ec5b7ad67f2ca1213f6caa225`.
+The report SHA-256 is
+`eb836b42dc8b10c3dc010384edd124bd8e3c02a738a9106e097c887de42d421f`.
+
+Build, offline verification and package regression pass: 10 pairs, 20 normalized alleles,
+18 publication-policy cases, three live-upstream cases, portable copying and nine
+corruption rejections. The real preflight exits 1 with exactly these blockers:
+
+- API account data-handling disclosure remains unconfirmed.
+- Other AI providers used remain unconfirmed.
+- The independent retired-object purge gate still fails.
+
+The live repository is PUBLIC; the pinned official upload contract and origin
+synchronization checks pass. No submission was attempted, quota remains unqueried, and
+there is no official score or receipt. Repeatedly rebuilding an unchanged draft cannot
+resolve these blockers: the next material work requires the missing owner disclosures
+and resolution of the retained-object exposure. The request to ignore that gate was not
+implemented because it conflicts with the non-negotiable data-access rules.

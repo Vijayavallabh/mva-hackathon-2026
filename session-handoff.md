@@ -1,6 +1,6 @@
 # Session handoff
 
-**Last updated:** 2026-09-06 (session 20 — owner visibility and API-tier clarification)
+**Last updated:** 2026-09-06 (session 21 — refreshed v3 local draft)
 
 **Current objective / active feature:** feat-008 (Track 1 CSV/report package).
 Feat-001 through feat-006 are done; feat-007 is blocked, not active. The history rewrite
@@ -71,12 +71,12 @@ is tracked.
 Feat-007 recovery bundles, mirrors and maps are under ignored `results/feat007/`; some
 contain obsolete history. Never push or share those refs. Include them and local unreachable
 Git objects/reflogs in the deletion plan.
-Feat-008's historical reviewed draft is `results/feat008/jvv7_genomewide_mva_v2/`; v1 is superseded.
-It has 10 pairs/20 reference-normalized alleles and passes the offline package regression
-tests against its original configuration. Two AI disclosure fields remain unresolved.
-The owner-confirmed tier changes configuration, so v2 is now stale and must not be uploaded.
-Finish disclosure, commit and build a new v3 package; never edit old deliverables in place.
-Historical hashes and review outcomes are in `notes/track1-submission.md`.
+Feat-008's current local draft is `results/feat008/jvv7_genomewide_mva_v3/`, built from
+`cdfb444` with the owner-confirmed API tier. Its 10 pairs/20 reference-normalized alleles
+and package regressions pass. V1/v2 are historical and must not be reused. Two disclosure
+fields remain unresolved and the purge gate fails, so v3 is not upload-ready. Finish
+disclosure, commit and build a new v4 package; never edit old deliverables in place.
+Hashes and verification outcomes are in `notes/track1-submission.md`.
 
 **Resume with:**
 ```bash
@@ -90,6 +90,10 @@ Support request is still unsent, and public visibility does not clear it. After 
 run the publication checks and a fresh package preflight. The remote
 checker prints availability counts, never retrieved blob contents. No automated uploader
 was added; the exact authenticated upload/receipt procedure is in the submission notes.
+Do not rerun unchanged draft creation as a substitute for resolving the remaining inputs.
+The owner's request to ignore the purge gate was not implemented; the latest follow-up
+continued only safe local preparation. No authorization to send Support a message or
+change visibility has been inferred from that request.
 
 The feat-004 candidate is not confirmed: both alleles are unphased, and the second BUB1B
 missense allele has computational prediction support but no ClinVar assertion in the pinned

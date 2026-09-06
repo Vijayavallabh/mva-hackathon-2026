@@ -873,3 +873,52 @@ Delly 2.1.0
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-06 — session 21: refreshed v3 draft, upload still blocked
+
+- Continued feat-008's safe local preparation after the owner asked what comes next.
+  The request to ignore the purge gate was not implemented: it conflicts with the
+  non-negotiable data-access rules. No visibility change, external message or upload.
+- `uv run python scripts/prepare_track1_package.py build --name jvv7_genomewide_mva_v3`
+  produced the updated report using the committed owner-confirmed API tier at `cdfb444`.
+  Candidate ranking, scientific interpretation and unconfirmed trans phase are unchanged.
+- CSV SHA-256: `a1f9315e223a07914589ce6884a66702b80e587ec5b7ad67f2ca1213f6caa225`.
+  Report SHA-256: `eb836b42dc8b10c3dc010384edd124bd8e3c02a738a9106e097c887de42d421f`.
+- `uv run python scripts/test_track1_package.py results/feat008/jvv7_genomewide_mva_v3`
+  passed 18 publication-policy cases, three live-upstream cases, portable-copy verification
+  and nine corruption rejections. Build/verify confirmed 10 pairs and 20 normalized alleles.
+  Package and official-scorer self-checks also passed; no private answer key was queried.
+- `uv run python scripts/prepare_track1_package.py preflight results/feat008/jvv7_genomewide_mva_v3`
+  exited 1: account data-handling disclosure, other AI providers and the purge gate remain
+  unresolved. GitHub PUBLIC visibility, live upstream and official contract checks passed.
+  No remaining-attempt count, actual score or receipt is claimed.
+- Staged disclosure audit: 60 blobs, zero findings. Updated the harness, feature evidence
+  and handoff to point to v3 and require missing inputs before another package revision.
+  V1/v2 remain untouched historical artifacts. Whitespace checks passed.
+
+Fresh-shell `./init.sh` completed with exit 0:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
