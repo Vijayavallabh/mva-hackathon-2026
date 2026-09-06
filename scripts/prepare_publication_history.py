@@ -65,7 +65,7 @@ def prepare(destination: Path) -> dict:
         changes.append({"old_blob": oid, "paths": finding["paths"],
                         "words_redacted": count})
     source_head = git(ROOT, "rev-parse", "HEAD").decode().strip()
-    git(ROOT, "clone", "--quiet", "--mirror", "--no-hardlinks", str(ROOT), str(destination))
+    git(ROOT, "clone", "--quiet", "--mirror", "--no-local", str(ROOT), str(destination))
     replacement_path = parent / (destination.name + "-replacements.json")
     replacement_path.write_text(json.dumps(replacements) + "\n")
     callback = (
