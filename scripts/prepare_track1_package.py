@@ -41,8 +41,9 @@ CODE_FILES = [
     "notes/track1-report-template.md", "notes/track1-submission-config.json",
     "tools/versions.tsv", "tools/resources.tsv", "pyproject.toml", "uv.lock",
 ]
-EVIDENCE = [DEFAULT_CANDIDATES, ROOT / "results/feat004/candidate_qc.json",
-            ROOT / "results/feat005b/summary.json"]
+BASELINE_QC = ROOT / "results/feat004/candidate_qc.json"
+RECALL_SUMMARY = ROOT / "results/feat005b/summary.json"
+EVIDENCE = [DEFAULT_CANDIDATES, BASELINE_QC, RECALL_SUMMARY]
 
 
 def git(*args: str) -> str:
@@ -103,12 +104,12 @@ def render_report(rows: list[dict], config: dict, revision: str, csv_hash: str, 
 
 
 def assert_evidence() -> None:
-    qc = json.loads(EVIDENCE[1].read_text())
+    qc = json.loads(BASELINE_QC.read_text())
     expected = {"annotated_rare_damaging_variants": 418,
                 "compound_heterozygous_pair_hypotheses": 169, "dominant_singleton_hypotheses": 195}
     if any(qc.get(k) != v for k, v in expected.items()):
         raise ValueError("baseline evidence changed; review report before packaging")
-    recall = json.loads(EVIDENCE[2].read_text())
+    recall = json.loads(RECALL_SUMMARY.read_text())
     expected = {"delly_pass_calls_in_target_enriched_bam": 984,
                 "delly_pass_calls_overlapping_target_gene_windows": 125,
                 "novel_existing_allele_reconstructions": 314,
@@ -247,11 +248,39 @@ def verify(directory: Path) -> dict:
             "upload_performed": False}
 
 
+def upstream_is_synchronized() -> bool:
+    """Check the actual configured origin branch, not only its cached tracking ref."""
+    try:
+        branch = git("symbolic-ref", "--short", "HEAD")
+        remote = git("config", "--get", f"branch.{branch}.remote")
+        merge = git("config", "--get", f"branch.{branch}.merge")
+        if remote != "origin" or not merge.startswith("refs/heads/"):
+            return False
+        response = subprocess.run(["git", "-C", str(ROOT), "ls-remote", "--exit-code", remote, merge],
+                                  capture_output=True, text=True, timeout=30)
+        expected = f"{git('rev-parse', 'HEAD')}\t{merge}"
+        return (response.returncode == 0 and response.stdout.strip() == expected
+                and git("rev-parse", "HEAD") == git("rev-parse", "@{u}"))
+    except (subprocess.SubprocessError, OSError):
+        return False
+
+
+def publication_blockers(public_first: bool, visibility: str, purge_passed: bool | None) -> list[str]:
+    blockers = []
+    if visibility not in {"PRIVATE", "PUBLIC"}:
+        blockers.append("GitHub repository visibility is not verified PRIVATE or PUBLIC")
+    if public_first and visibility != "PUBLIC":
+        blockers.append("repository policy requires PUBLIC visibility before upload")
+    if (public_first or visibility == "PUBLIC") and purge_passed is not True:
+        blockers.append("GitHub removed-object purge gate has not passed")
+    return blockers
+
+
 def preflight(directory: Path) -> dict:
     result = verify(directory)
     config = json.loads((directory / "manifest.json").read_text())["config"]
     blockers = [f"AI disclosure missing: {k}" for k in missing_disclosure(config)]
-    if git("status", "--porcelain") or git("rev-parse", "HEAD") != git("rev-parse", "@{u}"):
+    if git("status", "--porcelain") or not upstream_is_synchronized():
         blockers.append("working tree or upstream is not synchronized")
     if not audit(ROOT, source_patterns(ROOT / "data/Challenge_Clinical_Phenotype_1.docx"))["passed"]:
         blockers.append("reachable-history disclosure audit failed")
@@ -262,13 +291,13 @@ def preflight(directory: Path) -> dict:
         visibility = "UNKNOWN"
     else:
         visibility = json.loads(remote.stdout)["visibility"]
-    if config["require_public_repository_before_upload"]:
-        if visibility != "PUBLIC":
-            blockers.append("repository policy requires PUBLIC visibility before upload")
+    public_first = config["require_public_repository_before_upload"]
+    purge_passed = None
+    if public_first or visibility == "PUBLIC":
         removed = subprocess.run(["uv", "run", "python", str(ROOT / "scripts/check_publication_remote.py")],
                                  cwd=ROOT, capture_output=True)
-        if removed.returncode:
-            blockers.append("GitHub removed-object purge gate has not passed")
+        purge_passed = removed.returncode == 0
+    blockers.extend(publication_blockers(public_first, visibility, purge_passed))
     source_url = f"https://huggingface.co/spaces/{SPACE}/resolve/main/{PORTAL_PATH}"
     try:
         head = subprocess.run(["git", "ls-remote", f"https://huggingface.co/spaces/{SPACE}.git", "HEAD"],

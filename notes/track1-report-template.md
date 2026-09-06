@@ -50,7 +50,9 @@ identity, and annotated Ensembl 116 exon windows with offline VEP 116. Gene, sel
 transcript, coding/splice consequence, gnomAD frequency fields and SIFT/PolyPhen predictions
 were used for prioritization. The coding/splice filter retained alleles with maximum
 observed population AF <=1%, or missing AF. Missing frequency is not proof of absence in
-the population and receives less rarity evidence than a measured low value.
+the population. The baseline gives missing AF a fixed +1 rarity score; it does not
+universally downweight missingness relative to measured low values. This heuristic
+can favor incompletely annotated alleles and is a limitation of the baseline.
 
 The pipeline retained 4,661,873 PASS primary records, generated 4,727,745 normalized
 biallelic records, and annotated 29,701 coding/splice records after exon-window selection.

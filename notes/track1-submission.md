@@ -32,10 +32,11 @@ on changed/unavailable rules. It never downloads private ground truth.
 uv run python scripts/prepare_track1_package.py --self-check
 uv run python scripts/track1_submission.py --self-check
 # Commit reviewed code, template and config first; build requires a clean tree.
-uv run python scripts/prepare_track1_package.py build --name jvv7_genomewide_mva_v1
-uv run python scripts/prepare_track1_package.py verify results/feat008/jvv7_genomewide_mva_v1
+uv run python scripts/prepare_track1_package.py build --name jvv7_genomewide_mva_v2
+uv run python scripts/prepare_track1_package.py verify results/feat008/jvv7_genomewide_mva_v2
+uv run python scripts/test_track1_package.py results/feat008/jvv7_genomewide_mva_v2
 # Push the reviewed commits before this live check:
-uv run python scripts/prepare_track1_package.py preflight results/feat008/jvv7_genomewide_mva_v1
+uv run python scripts/prepare_track1_package.py preflight results/feat008/jvv7_genomewide_mva_v2
 ```
 
 Build refuses to overwrite an existing package. Changed evidence, code or disclosure
@@ -70,3 +71,14 @@ and 1.0 F-max use assumed row-1 truth, not the private answer key.
 The script intentionally does not automate uploads or pretend that live quota is known.
 It can produce an offline-valid draft while required owner inputs remain unresolved;
 such a draft is **not submission-ready**.
+
+## Review corrections
+
+The first local package (`v1`) is superseded, not an uploaded deliverable. Independent
+specification and standards review identified a stale-upstream check, an upload-policy
+dependency in the public-repository purge check, and imprecise missing-AF wording.
+The revised preflight queries the actual configured origin branch and always requires
+the purge gate when visibility is PUBLIC. Unknown visibility fails closed. Tests cover
+18 policy/visibility/purge combinations, a moved remote despite matching cached refs,
+an unavailable remote, and payload/manifest corruption. Named evidence paths replaced
+positional dependencies. The report now states the actual +1 default for missing AF.
