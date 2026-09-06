@@ -7,6 +7,7 @@ phenotype source supplies the comparison vocabulary; it never enters the report.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import subprocess
@@ -86,6 +87,12 @@ def text_findings(text: str, patterns: dict[int, set[tuple[str, ...]]]) -> dict[
     return {key: count for key, count in result.items() if count}
 
 
+def report_name(name: str, patterns: dict[int, set[tuple[str, ...]]]) -> str:
+    if text_findings(name, patterns):
+        return "[redacted-name-sha256:" + hashlib.sha256(name.encode()).hexdigest() + "]"
+    return name
+
+
 def audit(repo: Path, patterns: dict[int, set[tuple[str, ...]]], current: bool = False,
           staged: bool = False):
     refs = git(repo, "for-each-ref", "--format=%(refname) %(objectname)").decode().splitlines()
@@ -96,7 +103,19 @@ def audit(repo: Path, patterns: dict[int, set[tuple[str, ...]]], current: bool =
         raise ValueError("refusing empty repository audit")
     blobs: dict[str, set[str]] = {}
     findings = []
+    for ref in refs:
+        name = ref.split()[0]
+        matches = text_findings(name, patterns)
+        if matches:
+            findings.append({"kind": "ref_name", "ref": report_name(name, patterns),
+                             "counts": matches})
     if not staged and not current:
+        for ref in refs:
+            name = ref.split()[0]
+            target = git(repo, "rev-parse", name + "^{}").decode().strip()
+            if git(repo, "cat-file", "-t", target).strip() != b"commit":
+                findings.append({"kind": "unsupported_noncommit_ref",
+                                 "ref": report_name(name, patterns)})
         for line in git(repo, "rev-list", "--objects", "--all").decode().splitlines():
             oid = line.split()[0]
             if git(repo, "cat-file", "-t", oid).strip() == b"tag":
@@ -115,6 +134,11 @@ def audit(repo: Path, patterns: dict[int, set[tuple[str, ...]]], current: bool =
             meta, raw_path = record.split(b"\t", 1)
             mode, kind, oid = meta.decode().split()
             path = raw_path.decode("utf-8", errors="replace")
+            name_matches = text_findings(path, patterns)
+            if name_matches:
+                findings.append({"kind": "path_name", "path": report_name(path, patterns),
+                                 "counts": name_matches})
+            path = report_name(path, patterns)
             if FORBIDDEN_PATH.search(path) or mode in ("120000", "160000"):
                 findings.append({"kind": "forbidden_path_or_link", "commit": commit,
                                  "path": path})
@@ -127,6 +151,11 @@ def audit(repo: Path, patterns: dict[int, set[tuple[str, ...]]], current: bool =
             metadata, raw_path = record.split(b"\t", 1)
             mode, oid, stage = metadata.decode().split()
             path = raw_path.decode("utf-8", errors="replace")
+            name_matches = text_findings(path, patterns)
+            if name_matches:
+                findings.append({"kind": "path_name", "path": report_name(path, patterns),
+                                 "counts": name_matches})
+            path = report_name(path, patterns)
             if stage != "0" or FORBIDDEN_PATH.search(path) or mode in ("120000", "160000"):
                 findings.append({"kind": "forbidden_or_unmerged_index_entry", "path": path})
             blobs.setdefault(oid, set()).add(path)
@@ -145,7 +174,8 @@ def audit(repo: Path, patterns: dict[int, set[tuple[str, ...]]], current: bool =
         if matches:
             findings.append({"kind": "blob", "object": oid, "paths": sorted(paths),
                              "counts": matches})
-    return {"scope": "index" if staged else "HEAD" if current else "all_refs", "refs": refs,
+    return {"scope": "index" if staged else "HEAD" if current else "all_refs",
+            "refs": [report_name(ref, patterns) for ref in refs],
             "commits_checked": 0 if staged else len(commits), "unique_blobs_checked": len(blobs),
             "findings": findings, "passed": not findings}
 
@@ -170,6 +200,15 @@ def self_check():
         assert not audit(repo, patterns)["passed"]
         git(repo, "tag", "-a", "fixture-tag", "-m", "fixture private phrase")
         assert any(item["kind"] == "tag" for item in audit(repo, patterns)["findings"])
+        blob = git(repo, "rev-parse", "HEAD:note.md").decode().strip()
+        git(repo, "tag", "blob-tag", blob)
+        assert any(item["kind"] == "unsupported_noncommit_ref"
+                   for item in audit(repo, patterns)["findings"])
+        (repo / "fixture-private-phrase.md").write_text("clean text\n")
+        git(repo, "add", ".")
+        staged = audit(repo, patterns, staged=True)
+        assert any(item["kind"] == "path_name" for item in staged["findings"])
+        assert "fixture-private-phrase" not in json.dumps(staged)
     print("publication audit self-check: historical disclosure detected; current tree clean")
 
 
