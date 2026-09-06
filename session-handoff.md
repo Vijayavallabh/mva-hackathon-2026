@@ -1,11 +1,12 @@
 # Session handoff
 
-**Last updated:** 2026-09-06 (session 18 — feat-007 history cleanup and publication gate)
+**Last updated:** 2026-09-06 (session 19 — feat-008 submission preparation)
 
-**Current objective / active feature:** feat-007 (history-safe public repository).
-Feat-001 through feat-006 are done; keep exactly one feature active. The user authorized
-feat-007 on 2026-09-06. The history rewrite and force-push are complete. Keep the repository
-private pending GitHub's purge of obsolete objects; see `notes/publication-audit.md`.
+**Current objective / active feature:** feat-008 (Track 1 CSV/report package).
+Feat-001 through feat-006 are done; feat-007 is blocked, not active. The history rewrite
+and force-push are complete. Keep the repository private pending GitHub's purge of
+obsolete objects; see `notes/publication-audit.md`. Feat-008 preparation can proceed
+locally, but no upload or official score is claimed. See `notes/track1-submission.md`.
 
 **State:** 84.99 GB subject dataset downloaded and integrity-verified. The data has been
 profiled; its HPO IDs, labels, reviewed context and concise clinical-significance summaries
@@ -36,10 +37,19 @@ traps that silently score zero).
   GitHub Support must purge the retained objects and cached references. A request with
   object identifiers only is prepared at `notes/github-support-request.md`; it has not been
   sent. No extra authorization for the already-completed history rewrite is needed.
-- **A public GitHub URL is still required for Track 1.** After Support confirms the purge,
+- **Our public-first policy remains active.** The official portal permits private
+  repositories until competition end, contrary to our earlier inference. The owner
+  has been asked whether to keep the stricter rule or allow the private URL at upload;
+  no change is assumed. After Support confirms the purge,
   run `uv run python scripts/check_publication_remote.py` and the full local disclosure
   audit, verify newly introduced remote refs/surfaces, then perform the authorized public
-  visibility change and anonymous-access checks. Feat-007 remains `next`, not done.
+  visibility change and anonymous-access checks. Feat-007 remains `blocked`, not done.
+- **Required AI-use disclosure is incomplete.** Ask the owner for the OpenAI/Codex
+  plan/tier, account data-handling setting and any other providers used. Do not infer
+  those from local authentication. Null config values block live submission preflight.
+- **Actual portal quota and receipt are unknown.** Confirm authenticated identity and
+  remaining attempts immediately before a real upload. Do not conflate local hypothetical
+  scorer output with an official score or count this preparation as a spent attempt.
 - **The box is shared and contended.** 2026-08-28: load average 109 on 64 cores, GPUs 0/1/2
   at 100% with other users' jobs, only GPU 4 free. 3.3 TB free on `/mnt/md0` (92% full).
   Check `uptime` and `nvidia-smi` before planning anything large.
@@ -63,10 +73,12 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 ./init.sh
 ```
 
-**Recommended next step:** submit the prepared GitHub Support purge request through the
-owner's authenticated Support account. After removal, run the local and remote publication
-checks documented in `notes/publication-audit.md` and make the repository public only when
-they pass. The remote checker prints availability counts, never retrieved blob contents.
+**Recommended next step:** resolve the two owner inputs (public-first policy and AI-use
+disclosure), then build a new immutable package and run its live preflight. If public-first
+is retained, the owner must send the prepared GitHub Support purge request; it is still
+unsent. After removal, run publication checks before changing visibility. The remote
+checker prints availability counts, never retrieved blob contents. No automated uploader
+was added; the exact authenticated upload/receipt procedure is in the submission notes.
 
 The feat-004 candidate is not confirmed: both alleles are unphased, and the second BUB1B
 missense allele has computational prediction support but no ClinVar assertion in the pinned

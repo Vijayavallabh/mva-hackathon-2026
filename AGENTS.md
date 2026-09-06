@@ -5,9 +5,11 @@ Private working repo for **Rare Disease, Real Kid: The MVA Hackathon 2026**
 Variegated Aneuploidy. Two tracks: variant prediction (auto-scored) and drug
 repurposing (panel-judged). Close: **24 Oct 2026 23:59 UTC**.
 
-This repo **becomes public before the first Track 1 submission** (feat-007) — every
-submission requires a `https://github.com/…` URL. The data gates below therefore matter
-more, not less, as the work proceeds.
+This repo **becomes public before the first Track 1 submission** (feat-007) under our
+current local policy. Every submission requires a `https://github.com/…` URL, but the
+official portal permits private visibility until the competition ends. Do not relax our
+public-first policy without the owner's decision. See `notes/track1-submission.md`.
+The data gates below matter more, not less, as the work proceeds.
 
 ## Non-negotiable rules
 
@@ -93,6 +95,11 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   GitHub still serves 13 obsolete blobs by ID. Keep visibility private until Support purges
   those objects and `scripts/check_publication_remote.py` passes. See
   `notes/publication-audit.md` and the prepared, unsent `notes/github-support-request.md`.
+- **Feat-008 is the active preparation task, not a completed upload.** Build and verify
+  the CSV/report together with `scripts/prepare_track1_package.py`. Missing AI-use
+  disclosures and the public-first policy fail the live preflight. Never infer account
+  plan/tier, training/retention settings, remaining quota or an official score. The
+  report keeps trans phase unconfirmed; a local hypothetical score is not a receipt.
 
 ## Startup workflow
 

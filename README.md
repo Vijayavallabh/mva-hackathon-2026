@@ -29,7 +29,9 @@ Derived outputs are a different matter and are meant to be shared: the rules sta
 participants "are free to publicly share their code, models, and derived outputs at any
 time". So aggregate statistics, HPO term IDs and labels, gene names and the submitted
 candidate variants are tracked here deliberately. This repo goes **public** before the
-first Track 1 submission, which requires a GitHub URL.
+first Track 1 submission under our current local policy. The official portal requires a
+GitHub URL but permits private visibility until the competition ends; changing our stricter
+policy requires the owner's decision.
 
 Local tooling may process gated inputs for assigned analyses, but hosted model context is
 restricted to permitted derived outputs. Filesystem authorization never permits uploading
@@ -85,8 +87,10 @@ Both, plus the scoring mechanics, are in `notes/challenge-spec.md`.
 
 Feat-001 through feat-006, including the optional feat-005b targeted recall, are complete.
 The local Track 1 draft has been checked against a
-pinned copy of the official scorer and exact reference normalization. Feat-007 is in
-progress: the authorized history cleanup is pushed and the reachable-history audit passes,
+pinned copy of the official scorer and exact reference normalization. Feat-008 is the
+active CSV/report packaging task; [submission notes](notes/track1-submission.md) distinguish
+local validation from a real upload. Feat-007 is blocked: the authorized history cleanup
+is pushed and the reachable-history audit passes,
 but GitHub still retains 13 obsolete objects accessible by ID. Publication awaits their
 removal by GitHub Support. See [the publication audit](notes/publication-audit.md) and
 [prepared Support request](notes/github-support-request.md).

@@ -86,7 +86,14 @@ the best F over all thresholds.
 
 - **Track 1: 6 submissions** per participant; highest score counts. Each upload requires
   **all three** of: the CSV, a report file (`.pdf` or `.md`), and a GitHub URL that starts
-  with `https://github.com/`. → the repo must be public before the first submission (feat-007).
+  with `https://github.com/`. **Correction checked 2026-09-06:** the pinned portal's
+  instructions permit private visibility during the competition and require public
+  visibility at its end. Our public-first-before-upload rule is a stricter local policy,
+  not a portal requirement; it remains in force pending the owner's decision.
+  The report must disclose AI provider, plan/tier and data-handling setting, and the
+  filename should identify the participant/team. Source: [official upload code at the
+  pinned revision](https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/blob/1c761cc23d90aebe6a011fd5b0b99517df42408c/tabs/submit_track1.py).
+  See `notes/track1-submission.md` for the local package and remaining gates.
 - **Track 2: 1 submission**, no re-submissions. Report + GitHub link + 3-minute recorded
   pitch video. Judged on rigor 35% / impact 25% / innovation 25% / scalability 15%.
 - Teams: each member registers individually and gets their own Track 1 quota; one Track 2

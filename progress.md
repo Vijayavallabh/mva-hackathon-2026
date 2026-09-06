@@ -742,3 +742,23 @@ Delly 2.1.0
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-06 — session 19: feat-008 local submission package
+
+- Selected feat-008 as the one active feature; feat-007 is blocked pending remote object
+  removal. No visibility change, Support message or competition upload was performed.
+- Implemented `scripts/prepare_track1_package.py` with separate build, offline verification
+  and live preflight. The package binds CSV/report/check bytes to committed source,
+  configuration and evidence hashes; tampering and symlink payloads are rejected.
+- Added a full report template with the exact ranked-pair table, phenotype/family scope,
+  reproducible methods, screening limitations, explicit unconfirmed trans phase and an
+  honest hypothetical-score explanation. Updated the ClinVar frequency caveat in notes.
+- Corrected the public-first inference against the pinned official upload source: private
+  visibility is permitted until competition end. Our stricter owner policy remains
+  unchanged pending a decision. Required AI plan/tier and data-handling disclosures are
+  unresolved and block preflight rather than being fabricated.
+- Initial tests: package self-check, official scorer conformance/normalization self-check,
+  data-verifier self-check, Python compilation and whitespace checks passed. Startup
+  `./init.sh` completed successfully, including all resource checksum verification.
+- Package generation, independent reviews and final verification are recorded below once
+  executed. This feature is not done until a real authenticated upload has a receipt.

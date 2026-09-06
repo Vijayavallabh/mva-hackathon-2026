@@ -81,20 +81,20 @@
       "dependencies": [
         "feat-001"
       ],
-      "status": "next",
+      "status": "blocked",
       "evidence": "2026-09-06: scripts/audit_publication.py and scripts/prepare_publication_history.py prepared and verified an isolated rewrite (26 commits, 188 unique blobs, zero findings), removing matches from 13 historical blob versions. Clean head 5581dfd was force-pushed to configured origin using the exact previous remote SHA as the lease. The staged disclosure check is integrated into the pre-commit gate; audit/rewrite self-checks and ./init.sh pass. scripts/check_publication_remote.py finds all 13 obsolete blobs still retrievable from GitHub, so visibility remains PRIVATE and this feature is NOT done. notes/publication-audit.md records commands and limitations; notes/github-support-request.md is a prepared, unsent purge request. Await GitHub purge, then rerun local/remote audits before publication."
     },
     {
       "id": "feat-008",
       "name": "Track 1 submission",
-      "description": "Ranked variant CSV matching static/templates/track1_submission_template.csv (proband_id, chrom/pos/ref/alt per allele, epcr, finding_type, notes), self-scored via feat-006. Three hard requirements at upload: the CSV, a report file (.pdf or .md) describing the approach, and the public GitHub URL from feat-007. Scored on rank points (rank 1 = 100, ranks 2-3 = 50, 4-5 = 25, 6-10 = 10, partial match 0.5x) and F-max. Limit 6 submissions; best one counts.",
+      "description": "Ranked variant CSV matching the official template, self-scored via feat-006, plus an approach report (.pdf or .md) with required AI-use disclosure and a GitHub URL. The official portal allows private visibility until competition end; our stricter public-first policy remains unless the owner changes it. Prepare a revision-bound, hash-verified CSV/report package, then check live rules, authenticated identity and remaining quota before upload. Record the actual submission receipt and score, never substitute a hypothetical local score. Limit 6 submissions; best one counts.",
       "dependencies": [
         "feat-005a",
         "feat-006",
         "feat-007"
       ],
-      "status": "not-started",
-      "evidence": ""
+      "status": "next",
+      "evidence": "2026-09-06: scripts/prepare_track1_package.py implements local build/verify/live-preflight with exact CSV checks, report rendering, committed-code and evidence hashes, and disclosure scanning. notes/track1-report-template.md and notes/track1-submission-config.json define the draft. Package self-check passes tamper and symlink rejection. Upload is NOT complete: owner AI-account disclosures are missing and the current public-first policy remains blocked by feat-007. See notes/track1-submission.md and session-handoff.md."
     },
     {
       "id": "feat-009",

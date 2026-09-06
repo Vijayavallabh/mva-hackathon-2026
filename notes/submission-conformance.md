@@ -54,6 +54,11 @@ not a true challenge score and is not biological confirmation. In particular, th
 BUB1B pair is still supported only as an unphased compound-heterozygous hypothesis; trans
 phase remains unconfirmed. No Track 1 submission has been spent.
 
+Feat-008 packages this checked ranking with a revision-bound report and a hash manifest;
+see `notes/track1-submission.md`. Offline validity alone is insufficient for upload: owner
+AI-account disclosures, local visibility policy and authenticated portal quota must also
+be resolved. No official competition score is represented by the hypothetical test.
+
 ## Pinned public provenance
 
 - Space: `SageBio/rare-disease-real-kid-mva-hackathon-2026`

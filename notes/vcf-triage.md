@@ -142,6 +142,19 @@ MVA1](https://www.ncbi.nlm.nih.gov/clinvar/RCV000641226/); the p.Asn1002Lys alle
 manual evidence review. Do not convert this table into a submission until feat-006 validates
 the exact CSV and scorer behavior.
 
+Manual review update (2026-09-06): the condition-specific public ClinVar record
+RCV000641226.9 has one pathogenic submitter, distinct from the pinned aggregate
+annotation in the table. That submitter cautions that gnomAD frequency data at this
+locus are unreliable. Treat the stop allele's maximum AF of 0.00009982 as uncertain,
+not precise independent rarity evidence. This is an interpretation caveat, not a
+change to the pinned baseline score or a new classification of the missense allele.
+Source: [ClinVar RCV000641226](https://www.ncbi.nlm.nih.gov/clinvar/RCV000641226/).
+Reproduce the public evidence check with:
+
+```bash
+curl -fsSL https://www.ncbi.nlm.nih.gov/clinvar/RCV000641226/
+```
+
 Aggregate reproduction:
 
 ```bash
