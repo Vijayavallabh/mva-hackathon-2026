@@ -1,6 +1,6 @@
 # Track 1 submission preparation (feat-008)
 
-Status on 2026-09-06: local preparation in progress; no submission has been uploaded
+Status on 2026-09-06: local v2 draft built and verified; no submission has been uploaded
 by this workflow and no official score or remaining-attempt count is claimed.
 The selected account from the local authenticated HF identity is `jvv7`; an empty
 display name uses that username. Never print the token or complete identity response.
@@ -82,3 +82,36 @@ the purge gate when visibility is PUBLIC. Unknown visibility fails closed. Tests
 18 policy/visibility/purge combinations, a moved remote despite matching cached refs,
 an unavailable remote, and payload/manifest corruption. Named evidence paths replaced
 positional dependencies. The report now states the actual +1 default for missing AF.
+
+## Verified local result and live blocker
+
+Package: `results/feat008/jvv7_genomewide_mva_v2/`, built at code revision
+`c5bc2e0` (full SHA in its manifest). The CSV contains 10 ranked pairs and 20 alleles
+that pass exact reference normalization. SHA-256:
+
+- CSV: `a1f9315e223a07914589ce6884a66702b80e587ec5b7ad67f2ca1213f6caa225`
+- Report: `e4df63305f7cdb3e3e6deb97a8366f859e6a08fa0dc58caefe0c33eb27d7a98f`
+
+The live preflight run after pushing returned exit 1, with the three missing disclosure
+fields and failed remote purge as blockers. The official contract and live origin checks
+passed. **Unexpectedly, GitHub reported PUBLIC**, confirmed by a separate query at about
+17:44 UTC on 2026-09-06; all 13 retired blobs remained retrievable with zero unknown
+errors and a successful control. This session performed no visibility change. The owner
+was asked to authorize restoration to PRIVATE. The object checker did not print blob
+contents, and no submission was attempted.
+
+### Standards review
+
+The independent review found a conditional purge-gate violation and a low-priority
+positional-evidence naming issue. Both were corrected in `c5bc2e0`; re-review identified
+no residual standards violations or material heuristic findings.
+
+### Specification review
+
+The independent review found stale cached-upstream verification, conditional publication
+safety and inaccurate missing-AF wording. All three were corrected in `c5bc2e0`;
+re-review identified no residual specification issues. The actual upload and owner
+inputs remain explicitly unfinished.
+
+Review totals: Standards 2 findings resolved; Specification 3 findings resolved (the
+purge issue appears in both axes). No remaining finding in either reviewed axis.

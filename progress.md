@@ -762,3 +762,68 @@ annotation resources ready
   `./init.sh` completed successfully, including all resource checksum verification.
 - Package generation, independent reviews and final verification are recorded below once
   executed. This feature is not done until a real authenticated upload has a receipt.
+
+### Session 19 verification and handoff
+
+- Built and verified `results/feat008/jvv7_genomewide_mva_v2/` at `c5bc2e0`;
+  v1 is superseded. CSV SHA-256
+  `a1f9315e223a07914589ce6884a66702b80e587ec5b7ad67f2ca1213f6caa225`,
+  report SHA-256 `e4df63305f7cdb3e3e6deb97a8366f859e6a08fa0dc58caefe0c33eb27d7a98f`.
+  Ten pairs and twenty normalized alleles pass. The local hypothetical row-1 score is
+  still 100 / 1.0, not an official score; no upload occurred.
+- `uv run python scripts/test_track1_package.py results/feat008/jvv7_genomewide_mva_v2`
+  passed 18 publication-policy cases, three live-upstream cases, portable-copy validation
+  and nine payload/manifest corruption rejections. Package self-check, data-verifier
+  self-check, Python compilation and whitespace checks also passed.
+- Full relevant regression command passed (exit 0):
+
+  ```bash
+  ./scripts/run_vcf_triage.sh --self-check &&
+  ./scripts/run_copy_number_screen.sh --self-check &&
+  ./scripts/run_targeted_recall.sh --self-check &&
+  uv run python scripts/audit_publication.py --self-check &&
+  uv run python scripts/check_publication_remote.py --self-check &&
+  uv run python scripts/test_publication_hooks.py &&
+  uv run python scripts/extract_hpo.py --self-check &&
+  uv run python scripts/track1_submission.py --self-check
+  ```
+
+- Independent standards and specification reviews identified and closed the purge-policy
+  gap, stale-upstream check, positional evidence naming and missing-AF wording issues.
+  Re-review found no residual issues in either axis. See `notes/track1-submission.md`.
+- `git push origin main` pushed the implementation and fixes. The subsequent real
+  `prepare_track1_package.py preflight results/feat008/jvv7_genomewide_mva_v2` returned
+  exit 1 for three missing AI disclosure fields and the failed obsolete-object purge.
+  Live official revision and origin synchronization checks passed.
+- **Unexpected external state:** around 17:44 UTC, GitHub reported PUBLIC twice even
+  though this session did not change visibility. The checker still found 13/13 retired
+  objects retrievable, with zero unknown errors and a successful control. Owner approval
+  to restore PRIVATE was requested; no response was available at this checkpoint.
+  The safety gate correctly prevented treating PUBLIC alone as readiness.
+
+Final fresh-shell `./init.sh` output (exit 0):
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```

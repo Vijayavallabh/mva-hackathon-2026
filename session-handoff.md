@@ -32,6 +32,10 @@ traps that silently score zero).
 
 ## Blockers
 
+- **Urgent live-state discrepancy:** at about 17:44 UTC on 2026-09-06 GitHub reported
+  PUBLIC twice while the 13-object purge check failed. This session did not change
+  visibility. Owner approval to restore PRIVATE was requested and remains unresolved.
+  Treat the previous PRIVATE snapshots as historical, not current. Feat-007 is not done.
 - **Do not make the repository public:** reachable history is clean after the authorized
   rewrite and force-push, but all 13 retired blobs remain retrievable through GitHub's API.
   GitHub Support must purge the retained objects and cached references. A request with
@@ -66,6 +70,10 @@ is tracked.
 Feat-007 recovery bundles, mirrors and maps are under ignored `results/feat007/`; some
 contain obsolete history. Never push or share those refs. Include them and local unreachable
 Git objects/reflogs in the deletion plan.
+Feat-008's reviewed draft is `results/feat008/jvv7_genomewide_mva_v2/`; v1 is superseded.
+It has 10 pairs/20 reference-normalized alleles and passes the offline package regression
+tests. Three AI disclosure fields remain unresolved, so the report is a draft, not an
+upload-ready deliverable. Hashes and review outcomes are in `notes/track1-submission.md`.
 
 **Resume with:**
 ```bash

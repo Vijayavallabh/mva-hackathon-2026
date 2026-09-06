@@ -94,7 +94,7 @@
         "feat-007"
       ],
       "status": "next",
-      "evidence": "2026-09-06: scripts/prepare_track1_package.py implements local build/verify/live-preflight with exact CSV checks, report rendering, committed-code and evidence hashes, and disclosure scanning. notes/track1-report-template.md and notes/track1-submission-config.json define the draft. Package self-check passes tamper and symlink rejection. Upload is NOT complete: owner AI-account disclosures are missing and the current public-first policy remains blocked by feat-007. See notes/track1-submission.md and session-handoff.md."
+      "evidence": "2026-09-06: `uv run python scripts/prepare_track1_package.py build --name jvv7_genomewide_mva_v2` and `verify results/feat008/jvv7_genomewide_mva_v2` pass: 10 ranked pairs, 20 reference-normalized alleles, matching CSV/report/code/evidence hashes and disclosure scan. `uv run python scripts/test_track1_package.py results/feat008/jvv7_genomewide_mva_v2` passes 18 publication-policy cases, 3 live-upstream cases, copied-package portability and 9 corruption rejections. Independent specification/standards reviews closed all findings. Live preflight exits 1: missing AI-account disclosures and failed 13-object purge; GitHub unexpectedly reports PUBLIC, not changed by this session, and restoration to PRIVATE was requested. No upload or official score; feat-008 is NOT done. Final init and commands are recorded in progress.md; see notes/track1-submission.md."
     },
     {
       "id": "feat-009",

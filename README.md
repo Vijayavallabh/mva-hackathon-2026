@@ -95,6 +95,11 @@ but GitHub still retains 13 obsolete objects accessible by ID. Publication await
 removal by GitHub Support. See [the publication audit](notes/publication-audit.md) and
 [prepared Support request](notes/github-support-request.md).
 
+**2026-09-06 live-check warning:** GitHub unexpectedly reports PUBLIC while the 13-object
+purge gate still fails. This preparation session did not change visibility. Restoration
+to PRIVATE has been requested from the owner; publication is not considered safely
+complete, and the submission preflight remains blocked.
+
 The data profile and first two analyses are complete — see `notes/data-profile.md`,
 `notes/vcf-triage.md` and `notes/copy-number-screen.md` for measured results and exact
 commands. The baseline is a 45× male genome with 5.01M variants at Ti/Tv 2.050, called by

@@ -100,6 +100,11 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   disclosures and the public-first policy fail the live preflight. Never infer account
   plan/tier, training/retention settings, remaining quota or an official score. The
   report keeps trans phase unconfirmed; a local hypothetical score is not a receipt.
+- **Unexpected remote visibility change, 2026-09-06:** feat-008's live preflight and a
+  second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
+  This session did not change visibility. The owner has been asked to authorize restoring
+  PRIVATE. Do not treat PUBLIC visibility alone as completion of feat-007 or upload
+  readiness; the independent purge gate still fails. Recheck before any further action.
 
 ## Startup workflow
 
