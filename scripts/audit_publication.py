@@ -20,8 +20,8 @@ ROOT = Path(__file__).resolve().parent.parent
 WORD = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
 FORBIDDEN_PATH = re.compile(
     r"(^|/)(data|results|logs|\.venv|\.uv-cache)/|"
-    r"\.(fastq|fq|bam|cram|vcf|bcf|docx)(\.gz)?($|\.)|"
-    r"\.(bai|crai|tbi)$|(^|/)\.env($|\.)", re.I
+    r"\.(fastq|fq|sam|bam|cram|vcf|bcf|docx)(\.gz)?($|\.)|"
+    r"\.(bai|crai|tbi|csi)$|(^|/)\.env($|\.)", re.I
 )
 SECRET = re.compile(
     r"-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----|"
@@ -209,6 +209,10 @@ def self_check():
         staged = audit(repo, patterns, staged=True)
         assert any(item["kind"] == "path_name" for item in staged["findings"])
         assert "fixture-private-phrase" not in json.dumps(staged)
+        git(repo, "branch", "fixture-private-phrase")
+        named = audit(repo, patterns)
+        assert any(item["kind"] == "ref_name" for item in named["findings"])
+        assert "fixture-private-phrase" not in json.dumps(named)
     print("publication audit self-check: historical disclosure detected; current tree clean")
 
 

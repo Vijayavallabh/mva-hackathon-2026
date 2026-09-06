@@ -1,10 +1,11 @@
 # Session handoff
 
-**Last updated:** 2026-09-04 (session 17 — feat-005b targeted recall)
+**Last updated:** 2026-09-06 (session 18 — feat-007 history cleanup and publication gate)
 
 **Current objective / active feature:** feat-007 (history-safe public repository).
-Feat-001 through feat-006 are done; keep exactly one feature active. Do not begin feat-007's
-destructive history rewrite until the user explicitly authorizes that operation.
+Feat-001 through feat-006 are done; keep exactly one feature active. The user authorized
+feat-007 on 2026-09-06. The history rewrite and force-push are complete. Keep the repository
+private pending GitHub's purge of obsolete objects; see `notes/publication-audit.md`.
 
 **State:** 84.99 GB subject dataset downloaded and integrity-verified. The data has been
 profiled; its HPO IDs, labels, reviewed context and concise clinical-significance summaries
@@ -30,14 +31,15 @@ traps that silently score zero).
 
 ## Blockers
 
-- **Do not make the repository public:** current tracked files have zero non-HPO three-word
-  overlap with protected table wording, but reachable commit `05ed1cc` has two overlaps.
-  Feat-007 must rewrite that content out of history and force-push the configured origin;
-  this destructive history operation requires an explicit user task.
-- **This repo is private, and every Track 1 submission requires a public GitHub URL.**
-  Feat-007 remains blocked until the protected overlaps in reachable commit `05ed1cc` are
-  removed by the explicitly authorized history rewrite described above. Re-audit the full
-  rewritten history before changing repository visibility.
+- **Do not make the repository public:** reachable history is clean after the authorized
+  rewrite and force-push, but all 13 retired blobs remain retrievable through GitHub's API.
+  GitHub Support must purge the retained objects and cached references. A request with
+  object identifiers only is prepared at `notes/github-support-request.md`; it has not been
+  sent. No extra authorization for the already-completed history rewrite is needed.
+- **A public GitHub URL is still required for Track 1.** After Support confirms the purge,
+  run `uv run python scripts/check_publication_remote.py` and the full local disclosure
+  audit, verify newly introduced remote refs/surfaces, then perform the authorized public
+  visibility change and anonymous-access checks. Feat-007 remains `next`, not done.
 - **The box is shared and contended.** 2026-08-28: load average 109 on 64 cores, GPUs 0/1/2
   at 100% with other users' jobs, only GPU 4 free. 3.3 TB free on `/mnt/md0` (92% full).
   Check `uptime` and `nvidia-smi` before planning anything large.
@@ -51,6 +53,9 @@ are tracked in `tools/versions.tsv` and `tools/resources.tsv`.
 The fetched `data/resources/hp.obo` is reused rather than duplicated.
 The protected Presentation/Notes wording was not copied; only reviewed categorical context
 is tracked.
+Feat-007 recovery bundles, mirrors and maps are under ignored `results/feat007/`; some
+contain obsolete history. Never push or share those refs. Include them and local unreachable
+Git objects/reflogs in the deletion plan.
 
 **Resume with:**
 ```bash
@@ -58,10 +63,10 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 ./init.sh
 ```
 
-**Recommended next step:** feat-007 — after explicit authorization, rewrite reachable
-history to remove the two protected-text overlaps in commit `05ed1cc`, force-push the
-configured origin, repeat the full-history disclosure audit, and only then make the
-repository public. Do not change visibility before every audit passes.
+**Recommended next step:** submit the prepared GitHub Support purge request through the
+owner's authenticated Support account. After removal, run the local and remote publication
+checks documented in `notes/publication-audit.md` and make the repository public only when
+they pass. The remote checker prints availability counts, never retrieved blob contents.
 
 The feat-004 candidate is not confirmed: both alleles are unphased, and the second BUB1B
 missense allele has computational prediction support but no ClinVar assertion in the pinned

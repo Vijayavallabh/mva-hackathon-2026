@@ -85,10 +85,11 @@ Both, plus the scoring mechanics, are in `notes/challenge-spec.md`.
 
 Feat-001 through feat-006, including the optional feat-005b targeted recall, are complete.
 The local Track 1 draft has been checked against a
-pinned copy of the official scorer and exact reference normalization. The next feature is
-feat-007: remove the two protected-text overlaps from reachable history, re-audit, and only
-then make the repository public. That history rewrite must be explicitly authorized before
-it runs.
+pinned copy of the official scorer and exact reference normalization. Feat-007 is in
+progress: the authorized history cleanup is pushed and the reachable-history audit passes,
+but GitHub still retains 13 obsolete objects accessible by ID. Publication awaits their
+removal by GitHub Support. See [the publication audit](notes/publication-audit.md) and
+[prepared Support request](notes/github-support-request.md).
 
 The data profile and first two analyses are complete — see `notes/data-profile.md`,
 `notes/vcf-triage.md` and `notes/copy-number-screen.md` for measured results and exact

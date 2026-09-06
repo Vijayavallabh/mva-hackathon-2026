@@ -683,3 +683,62 @@ Delly 2.1.0
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-06 — session 18: feat-007 history cleanup; GitHub purge pending
+
+- The user explicitly authorized feat-007, including its defined rewrite, force-push and
+  eventual public visibility change. The source branch began at `65ad73d` and was clean.
+- Added a repeatable local disclosure audit across all reachable commits/blobs, annotated
+  tags, paths and ref names. Protected vocabulary stays in local memory; reports contain
+  counts and identifiers only. Noncommit refs, suspicious credentials, prohibited paths and
+  binary/oversized blobs fail the gate. Synthetic fixtures verify historical, tag and name
+  disclosures, including removal from HEAD while old history still fails.
+- Prepared an isolated packed mirror with pinned git-filter-repo 2.47.0. Conservative
+  redaction changed 13 blob versions across seven paths and rewrote 22 of 26 commits.
+  The verified mirror contained 188 unique blobs and zero audit findings. Current notes
+  were then paraphrased for readability; scientific ranking and phase claims are unchanged.
+- Preserved a local recovery bundle under ignored `results/feat007/`, adopted clean head
+  `5581dfd`, and force-pushed configured origin with an explicit lease against `65ad73d`.
+  Reachable local and remote history passed the audit and branch SHAs matched.
+- GitHub still returned all 13 retired blobs by ID after the push. A known clean README
+  blob also succeeded as an access-control check. Visibility remains PRIVATE. The feature
+  remains `next`, not done; no submission was uploaded. GitHub must purge these objects
+  before the public flip. The prepared Support request has not been sent.
+- Integrated the staged phrase audit into the pre-commit gate when the local source is
+  present. Startup installs a missing hook and rejects incompatible hooks without replacing
+  them. Synthetic installation/invocation/dangling/nonexecutable-hook checks pass.
+- Standards and specification reviews found and closed tag/name coverage gaps, an
+  authentication-related false-pass risk in remote 404 handling, and incompatible-hook
+  acceptance. Both final review reports have zero remaining findings.
+- Verification: audit/rewrite/remote self-checks, hook regression checks, phenotype and
+  Track 1 scorer self-checks, shell syntax, Python compilation and whitespace checks pass.
+  The remote purge gate intentionally fails (13 retained objects, zero unknown errors).
+  `notes/publication-audit.md` contains the commands and limitations; the deletion plan
+  includes local recovery mirrors/bundles and unreachable Git objects.
+
+Final fresh-shell `./init.sh` output (exit 0):
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```

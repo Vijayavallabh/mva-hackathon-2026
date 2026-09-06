@@ -77,12 +77,12 @@
     {
       "id": "feat-007",
       "name": "Make this repository public",
-      "description": "Every Track 1 submission requires a GitHub URL starting with https://github.com/ - this blocks the submission, it is not a Track 2 afterthought. The current tree is data-safe, but the 2026-09-02 disclosure audit found two short non-HPO protected-text overlaps in reachable commit 05ed1cc. Before public visibility, rewrite that commit out of all reachable history with explicit authorization, force-push the configured origin, repeat the protected-text audit plus `git log --all --pretty=format: --name-only`, confirm .gitignore and the pre-commit gate, then flip visibility and record the URL.",
+      "description": "Every Track 1 submission requires a GitHub URL starting with https://github.com/. Before public visibility, remove protected text from all reachable history, force-push the configured origin, repeat the protected-text and path audits, confirm .gitignore and the pre-commit gate, verify removed GitHub objects are no longer retrievable, then flip visibility and record the URL. The user authorized feat-007 including its history rewrite on 2026-09-06. Reachable history is now clean, but GitHub must purge retained obsolete objects before publication.",
       "dependencies": [
         "feat-001"
       ],
       "status": "next",
-      "evidence": ""
+      "evidence": "2026-09-06: scripts/audit_publication.py and scripts/prepare_publication_history.py prepared and verified an isolated rewrite (26 commits, 188 unique blobs, zero findings), removing matches from 13 historical blob versions. Clean head 5581dfd was force-pushed to configured origin using the exact previous remote SHA as the lease. The staged disclosure check is integrated into the pre-commit gate; audit/rewrite self-checks and ./init.sh pass. scripts/check_publication_remote.py finds all 13 obsolete blobs still retrievable from GitHub, so visibility remains PRIVATE and this feature is NOT done. notes/publication-audit.md records commands and limitations; notes/github-support-request.md is a prepared, unsent purge request. Await GitHub purge, then rerun local/remote audits before publication."
     },
     {
       "id": "feat-008",

@@ -88,9 +88,11 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   ten-row draft passes exact schema/ID/contig/EPCR checks and reference-based indel
   normalization. Its reported 100 rank points and 1.0 F-max are a hypothetical row-1
   scorer test, not a comparison with the private answer key or evidence of causality.
-- **Do not make the repository public yet:** the current tree passes the disclosure audit,
-  but reachable commit `05ed1cc` contains two short non-HPO overlaps with protected table
-  wording. Feat-007 must remove them from history and re-audit before changing visibility.
+- **Feat-007 history cleanup is pushed, but publication is still blocked:** on 2026-09-06
+  the user authorized the feature, and all reachable history was rewritten and audited.
+  GitHub still serves 13 obsolete blobs by ID. Keep visibility private until Support purges
+  those objects and `scripts/check_publication_remote.py` passes. See
+  `notes/publication-audit.md` and the prepared, unsent `notes/github-support-request.md`.
 
 ## Startup workflow
 

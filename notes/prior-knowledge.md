@@ -46,8 +46,8 @@ intact on purpose. What the first screening pass (`data-profile.md`) says about 
   There is no external hint pointing at BUB1B, CEP57 or TRIP13 in this dataset — only the literature prior above and the organizers' public
   statement that the child is "fighting cancer cells", which fits BUB1B/MVA1. The search
   stays genome-wide; the three genes are a prior to be tested, not a shortlist to filter to.
-- **The phenotype is a constellation, with scope attached.** Seven terms apply to redacted
-  proband across oncologic, renal, growth, neuromuscular and perinatal domains. The eighth
+- **The phenotype is a constellation, with scope attached.** Seven observations describe
+  the proband across oncologic, renal, growth, neuromuscular and perinatal domains. The eighth
   is parental/family reproductive history: retain it as evidence relevant to chromosome
   instability and inheritance hypotheses, but do not mislabel it as a proband abnormality.
   Neither that history nor the full pattern establishes inherited versus de novo origin.

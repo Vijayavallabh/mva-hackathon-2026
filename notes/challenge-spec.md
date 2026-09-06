@@ -106,8 +106,8 @@ the best F over all thresholds.
   time."* — this is the basis for what `AGENTS.md` rule 1 permits.
 - Embargo on peer-reviewed manuscripts until the organizers publish their summary report.
 - Submissions are CC-BY 4.0 and may be rerun by the organizers.
-- Publications must not include information that could re-identify the subject or family
-  "beyond what redacted redacted redacted redacted redacted redacted redacted'redacted own blog posts".
+- Publications must respect the organizers' restrictions on identifying the participant
+  and relatives. Our working rule prohibits any re-identification attempt.
 
 ## 7. Publicly stated clinical context
 

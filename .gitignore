@@ -4,6 +4,7 @@ results/
 logs/
 *.fastq *.fastq.gz *.fq *.fq.gz
 *.bam *.cram *.bai *.crai
+*.sam *.sam.gz *.bcf.gz *.tbi *.csi
 *.vcf *.vcf.gz *.vcf.gz.tbi *.bcf
 *.docx
 # ---- env / junk
