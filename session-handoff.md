@@ -1,6 +1,6 @@
 # Session handoff
 
-**Last updated:** 2026-09-06 (session 19 — feat-008 submission preparation)
+**Last updated:** 2026-09-06 (session 20 — owner visibility and API-tier clarification)
 
 **Current objective / active feature:** feat-008 (Track 1 CSV/report package).
 Feat-001 through feat-006 are done; feat-007 is blocked, not active. The history rewrite
@@ -32,9 +32,9 @@ traps that silently score zero).
 
 ## Blockers
 
-- **Urgent live-state discrepancy:** at about 17:44 UTC on 2026-09-06 GitHub reported
-  PUBLIC twice while the 13-object purge check failed. This session did not change
-  visibility. Owner approval to restore PRIVATE was requested and remains unresolved.
+- **Public visibility confirmed by owner:** the owner deliberately made the repository
+  PUBLIC. The most recent 13-object purge check still failed. This confirmation explains
+  the change but does not waive confidentiality or establish successful removal.
   Treat the previous PRIVATE snapshots as historical, not current. Feat-007 is not done.
 - **Do not make the repository public:** reachable history is clean after the authorized
   rewrite and force-push, but all 13 retired blobs remain retrievable through GitHub's API.
@@ -48,9 +48,10 @@ traps that silently score zero).
   run `uv run python scripts/check_publication_remote.py` and the full local disclosure
   audit, verify newly introduced remote refs/surfaces, then perform the authorized public
   visibility change and anonymous-access checks. Feat-007 remains `blocked`, not done.
-- **Required AI-use disclosure is incomplete.** Ask the owner for the OpenAI/Codex
-  plan/tier, account data-handling setting and any other providers used. Do not infer
-  those from local authentication. Null config values block live submission preflight.
+- **Required AI-use disclosure is incomplete.** The owner confirmed OpenAI/Codex API
+  tier; this is saved in the config. Still needed: account data-handling setting and any
+  other providers used. Do not infer these from API tier or local authentication.
+  Null config values block live submission preflight.
 - **Actual portal quota and receipt are unknown.** Confirm authenticated identity and
   remaining attempts immediately before a real upload. Do not conflate local hypothetical
   scorer output with an official score or count this preparation as a spent attempt.
@@ -70,10 +71,12 @@ is tracked.
 Feat-007 recovery bundles, mirrors and maps are under ignored `results/feat007/`; some
 contain obsolete history. Never push or share those refs. Include them and local unreachable
 Git objects/reflogs in the deletion plan.
-Feat-008's reviewed draft is `results/feat008/jvv7_genomewide_mva_v2/`; v1 is superseded.
+Feat-008's historical reviewed draft is `results/feat008/jvv7_genomewide_mva_v2/`; v1 is superseded.
 It has 10 pairs/20 reference-normalized alleles and passes the offline package regression
-tests. Three AI disclosure fields remain unresolved, so the report is a draft, not an
-upload-ready deliverable. Hashes and review outcomes are in `notes/track1-submission.md`.
+tests against its original configuration. Two AI disclosure fields remain unresolved.
+The owner-confirmed tier changes configuration, so v2 is now stale and must not be uploaded.
+Finish disclosure, commit and build a new v3 package; never edit old deliverables in place.
+Historical hashes and review outcomes are in `notes/track1-submission.md`.
 
 **Resume with:**
 ```bash
@@ -81,10 +84,10 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 ./init.sh
 ```
 
-**Recommended next step:** resolve the two owner inputs (public-first policy and AI-use
-disclosure), then build a new immutable package and run its live preflight. If public-first
-is retained, the owner must send the prepared GitHub Support purge request; it is still
-unsent. After removal, run publication checks before changing visibility. The remote
+**Recommended next step:** complete the two remaining AI disclosure fields, then build
+a new immutable package. Separately, resolve the failed purge gate: the prepared GitHub
+Support request is still unsent, and public visibility does not clear it. After removal,
+run the publication checks and a fresh package preflight. The remote
 checker prints availability counts, never retrieved blob contents. No automated uploader
 was added; the exact authenticated upload/receipt procedure is in the submission notes.
 

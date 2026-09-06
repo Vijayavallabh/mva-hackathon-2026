@@ -95,10 +95,10 @@ but GitHub still retains 13 obsolete objects accessible by ID. Publication await
 removal by GitHub Support. See [the publication audit](notes/publication-audit.md) and
 [prepared Support request](notes/github-support-request.md).
 
-**2026-09-06 live-check warning:** GitHub unexpectedly reports PUBLIC while the 13-object
-purge gate still fails. This preparation session did not change visibility. Restoration
-to PRIVATE has been requested from the owner; publication is not considered safely
-complete, and the submission preflight remains blocked.
+**2026-09-06 live-check warning:** the owner confirmed deliberately making GitHub PUBLIC,
+but the latest 13-object purge check still fails. Publication is not considered safely
+complete, and the submission preflight remains blocked. Codex's API tier is now confirmed;
+the remaining account data-handling and other-provider disclosures are still needed.
 
 The data profile and first two analyses are complete — see `notes/data-profile.md`,
 `notes/vcf-triage.md` and `notes/copy-number-screen.md` for measured results and exact

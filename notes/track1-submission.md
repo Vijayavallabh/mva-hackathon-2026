@@ -16,8 +16,8 @@ configuration until explicitly changed. Neither publication nor sharing retired 
 is safe while GitHub still serves those objects. The prepared Support request is unsent.
 
 The official AI-use instructions require provider, plan/tier and data-handling setting.
-OpenAI/Codex is known from this session; the owner's billing plan/tier, applicable
-retention/training setting and any other AI providers used are not known. Null fields
+The owner confirmed OpenAI/Codex **API tier** on 2026-09-06. The applicable
+retention/training setting and any other AI providers used are still not known. Null fields
 in `notes/track1-submission-config.json` deliberately block preflight. Do not invent a
 no-training guarantee or assume that no other provider was used.
 
@@ -115,3 +115,20 @@ inputs remain explicitly unfinished.
 
 Review totals: Standards 2 findings resolved; Specification 3 findings resolved (the
 purge issue appears in both axes). No remaining finding in either reviewed axis.
+
+## Owner clarification (2026-09-06)
+
+The owner confirmed that they deliberately made the repository public and that Codex
+uses API tier. The configuration records the tier verbatim in meaning; it does not infer
+account-specific retention, training or data-sharing settings. Two disclosure fields
+remain unresolved: `ai_data_handling_setting` and `other_ai_providers`.
+
+The PUBLIC state is therefore explained, not an unexplained repository change. It does
+not establish that GitHub purged the retired objects or clear the confidentiality gate.
+The most recent remote check still found all 13 retrievable. No visibility change or
+upload is performed in response to this clarification.
+
+The v2 package above is a historical validated draft bound to the previous configuration.
+Its hashes remain unchanged, but verification against the updated configuration must
+reject it. After completing the remaining disclosure, commit the configuration and build
+a new package name (next: `jvv7_genomewide_mva_v3`); never edit the old deliverables in place.

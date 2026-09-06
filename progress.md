@@ -827,3 +827,49 @@ Delly 2.1.0
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-06 — session 20: owner-confirmed public visibility and API tier
+
+- The owner clarified that they made the repository public and that Codex uses API tier.
+  Saved `API tier (owner-confirmed)` in `notes/track1-submission-config.json` and updated
+  the harness/handoff to distinguish an explained owner action from an unknown change.
+- API tier does not establish account-specific data sharing, training or retention.
+  `ai_data_handling_setting` and `other_ai_providers` remain unresolved; requested these
+  remaining details without inventing them or waiving the historical-object purge gate.
+- No visibility change, Support message or upload was performed. Feat-008 remains active
+  and unfinished. The latest remote availability check still found 13 retired objects.
+- The immutable v2 package is now historical/stale because its configuration changed.
+  Do not alter its files or upload it. Complete disclosure and build a new v3 package.
+- `uv run python scripts/prepare_track1_package.py --self-check` passed. An explicit
+  configuration regression asserted the API-tier value, exactly two missing fields and
+  rejection of v2 with `code_files changed; build a new package after review`.
+- `uv run python scripts/audit_publication.py --staged --output
+  results/feat008/api-tier-staged-audit.json` scanned 60 blobs with zero findings;
+  `git diff --check` passed. Final startup verification is recorded below.
+
+Fresh-shell `./init.sh` completed with exit 0:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```

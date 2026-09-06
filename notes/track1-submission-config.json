@@ -5,7 +5,7 @@
   "require_public_repository_before_upload": true,
   "ai_provider": "OpenAI",
   "ai_tool": "Codex",
-  "ai_plan_or_tier": null,
+  "ai_plan_or_tier": "API tier (owner-confirmed)",
   "ai_data_handling_setting": null,
   "other_ai_providers": null
 }

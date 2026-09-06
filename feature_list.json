@@ -94,7 +94,7 @@
         "feat-007"
       ],
       "status": "next",
-      "evidence": "2026-09-06: `uv run python scripts/prepare_track1_package.py build --name jvv7_genomewide_mva_v2` and `verify results/feat008/jvv7_genomewide_mva_v2` pass: 10 ranked pairs, 20 reference-normalized alleles, matching CSV/report/code/evidence hashes and disclosure scan. `uv run python scripts/test_track1_package.py results/feat008/jvv7_genomewide_mva_v2` passes 18 publication-policy cases, 3 live-upstream cases, copied-package portability and 9 corruption rejections. Independent specification/standards reviews closed all findings. Live preflight exits 1: missing AI-account disclosures and failed 13-object purge; GitHub unexpectedly reports PUBLIC, not changed by this session, and restoration to PRIVATE was requested. No upload or official score; feat-008 is NOT done. Final init and commands are recorded in progress.md; see notes/track1-submission.md."
+      "evidence": "2026-09-06: v2 passed build/verify, 10-pair/20-allele reference checks, 18 publication-policy cases, 3 live-upstream cases, portability and 9 corruption rejections; independent reviews closed all findings. Owner subsequently confirmed deliberately making GitHub PUBLIC and using Codex API tier. notes/track1-submission-config.json now records API tier; data-handling setting and other providers remain unresolved. The config change deliberately makes v2 stale: verify rejects it; finish disclosure and build v3 rather than editing old files. The latest purge check still found 13 retained objects; PUBLIC alone is not safety clearance. No upload or official score; feat-008 is NOT done. Commands and init output are recorded in progress.md; see notes/track1-submission.md."
     },
     {
       "id": "feat-009",
