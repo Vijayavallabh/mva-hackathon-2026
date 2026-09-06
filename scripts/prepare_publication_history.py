@@ -70,10 +70,9 @@ def prepare(destination: Path) -> dict:
     replacement_path.write_text(json.dumps(replacements) + "\n")
     callback = (
         "import os, json, base64\n"
-        "if not hasattr(blob_callback, 'replacements'):\n"
-        "    with open(os.environ['MVA_SANITIZED_REPLACEMENTS']) as handle:\n"
-        "        blob_callback.replacements = json.load(handle)\n"
-        "value = blob_callback.replacements.get(blob.original_id.decode())\n"
+        "with open(os.environ['MVA_SANITIZED_REPLACEMENTS']) as handle:\n"
+        "    replacements = json.load(handle)\n"
+        "value = replacements.get(blob.original_id.decode())\n"
         "if value is not None:\n"
         "    blob.data = base64.b64decode(value)\n"
     )
