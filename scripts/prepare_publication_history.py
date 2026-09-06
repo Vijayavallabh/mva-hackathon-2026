@@ -79,7 +79,7 @@ def prepare(destination: Path) -> dict:
     env = dict(os.environ, MVA_SANITIZED_REPLACEMENTS=str(replacement_path))
     result = subprocess.run(
         ["uv", "tool", "run", "--from", "git-filter-repo==2.47.0", "git-filter-repo",
-         "--sensitive-data-removal", "--no-fetch", "--blob-callback", callback],
+         "--blob-callback", callback],
         cwd=destination, env=env, capture_output=True,
     )
     if result.returncode:

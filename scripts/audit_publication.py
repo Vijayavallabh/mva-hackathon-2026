@@ -96,6 +96,14 @@ def audit(repo: Path, patterns: dict[int, set[tuple[str, ...]]], current: bool =
         raise ValueError("refusing empty repository audit")
     blobs: dict[str, set[str]] = {}
     findings = []
+    if not staged and not current:
+        for line in git(repo, "rev-list", "--objects", "--all").decode().splitlines():
+            oid = line.split()[0]
+            if git(repo, "cat-file", "-t", oid).strip() == b"tag":
+                metadata = git(repo, "cat-file", "tag", oid).decode("utf-8", errors="replace")
+                matches = text_findings(metadata, patterns)
+                if matches:
+                    findings.append({"kind": "tag", "object": oid, "counts": matches})
     for commit in ([] if staged else commits):
         metadata = git(repo, "cat-file", "commit", commit).decode("utf-8", errors="replace")
         matches = text_findings(metadata, patterns)
@@ -160,6 +168,8 @@ def self_check():
         git(repo, "commit", "-qam", "clean fixture")
         assert audit(repo, patterns, current=True)["passed"]
         assert not audit(repo, patterns)["passed"]
+        git(repo, "tag", "-a", "fixture-tag", "-m", "fixture private phrase")
+        assert any(item["kind"] == "tag" for item in audit(repo, patterns)["findings"])
     print("publication audit self-check: historical disclosure detected; current tree clean")
 
 
