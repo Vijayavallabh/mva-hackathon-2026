@@ -44,6 +44,12 @@ EPCR, incomplete second allele, eleven rows, and a non-left-aligned indel.
 
 ## What the local score means
 
+Start with `uv run python scripts/audit_track1_evidence.py scores <submission.csv>`
+for unknown actual-score status and multiple explicitly hypothetical outcomes.
+This companion audit preserves pinned scorer and historic package bytes. See
+[the evidence audit](track1-evidence-audit.md) for ranking sensitivity and additional
+native-phase checks. Passing conformance cannot guarantee either metric.
+
 The real draft was scored under the explicit hypothetical assumption that submitted row 1
 is the causal pair. Under that assumption the official scorer returns rank points 100,
 F-max 1.0 at EPCR 0.95, and one prediction row at the maximizing threshold. This is the

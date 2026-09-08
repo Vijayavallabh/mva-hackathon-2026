@@ -85,6 +85,13 @@ Both, plus the scoring mechanics, are in `notes/challenge-spec.md`.
 
 ## Status
 
+**The actual Track 1 score is unknown.** Local 100 rank points / 1.0 F-max assumes
+our first pair is the answer; it is not a score prediction. The follow-up
+[evidence audit](notes/track1-evidence-audit.md) tests alternative answers, ranking
+sensitivity and native phase annotations. BUB1B remains a hypothesis, the ranking
+depends on evidence choices, and **trans phase remains unconfirmed**. The current
+v4 CSV/report were preserved; no new submission was made.
+
 Feat-001 through feat-006, including feat-005b targeted recall and feat-005c phase follow-up, are complete.
 The local Track 1 draft has been checked against a
 pinned copy of the official scorer and exact reference normalization. Feat-008 is the

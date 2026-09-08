@@ -53,13 +53,13 @@ zcat data/WGS_EX2312012_HGWCNDSX7.vcf.gz | awk -F'\t' '...'   # counts, FILTER, 
 8.1% (autosomes ~62%); chrY present. Already public — the challenge page's own image
 alt-text describes the child as "himself".
 
-**No consanguinity, no runs of homozygosity.** A 1 Mb scan for runs of ≥3 consecutive bins
+**No runs of homozygosity detected by this coarse screen.** A 1 Mb scan for runs of ≥3 consecutive bins
 with het fraction below 15% of the genome-wide value returned **zero runs**. Per-bin het
 fraction is unimodal around 0.65 across 2,709 informative bins.
 
-> Consequence: a homozygous-by-descent recessive hit is unlikely. **Compound heterozygous
-> is the more probable model** — which the challenge's own scoring code independently
-> confirms (`challenge-spec.md` §3).
+> This screen does not exclude consanguinity, shorter ROH or homozygous causes and
+> does not establish phase. The challenge's public compound-pair answer-key statement
+> motivates that competition model (`challenge-spec.md` §3), not a particular pair.
 
 Command:
 

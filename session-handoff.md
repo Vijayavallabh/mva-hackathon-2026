@@ -1,8 +1,20 @@
 # Session handoff
 
-**Last updated:** 2026-09-08 (session 28 — publication complete; portal login handoff)
+**Last updated:** 2026-09-08 (session 29 — score uncertainty and native-phase audit)
 
-**Current objective:** proceed after owner-made publication. Feat-007 is now complete:
+**Current objective:** respond to the owner's request to fix score overconfidence
+and pursue phase. Feat-006b adds `scripts/audit_track1_evidence.py` with score
+scenarios, fixed-universe rank sensitivity and native GT/PS plus PGT/PID checks.
+Tests and real audits pass; final review is pending. See
+`notes/track1-evidence-audit.md` for scope, commands and measured limitations.
+
+The actual score is unknown. BUB1B is first in 26/34 declared sensitivity settings
+over 169 pairs/27 genes, but falls under combined annotation ablation; this
+fraction is not confidence. Three native/recalled phase inputs supply no linkage.
+Trans remains unconfirmed. V4 files are unchanged and verify successfully. The
+owner was asked whether any upload already occurred; no receipt is available.
+
+Feat-007 remains complete:
 GitHub confirms PUBLIC, anonymous clean-main/current-blob controls return 200, all
 13 retired blobs return 404, authenticated purge passes and the all-ref audit at
 `e8b9113` passes 40 commits/289 blobs. No Support or publication blocker remains.
@@ -43,6 +55,11 @@ traps that silently score zero).
 
 ## Blockers
 
+- **Scientific uncertainty is not fixed by relabelling outputs.** The official
+  score requires a receipt. Native phase tags and existing read-connectivity
+  evidence do not establish trans or cis. New authorized phase-informative data
+  offers a different route; no family contact or raw-data transfer is permitted.
+  Do not claim all possible existing-data analysis is exhausted.
 - **Purge is resolved, not a blocker.** The owner supplied Support's reply dated
   2026-09-08 10:41 UTC. Ticket correspondence was not independently fetched, but
   removal is independently verified by authenticated API checks with controls.

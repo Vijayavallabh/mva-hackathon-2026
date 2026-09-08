@@ -5,6 +5,11 @@ only the existing local all-lane BAM and variant calls. **Trans phase remains
 unconfirmed.** No parental data, new sequencing, external data upload or family
 contact is involved. No submitted deliverable is changed.
 
+**Subsequent feat-006b check:** native source PGT/PID, raw recalled calls and the
+recalled WhatsHap GT/PS metadata also supply no phase assignment for the pair.
+This closes an additional metadata-check route, not the biological question.
+See [commands and limitations](track1-evidence-audit.md).
+
 ## Question and decision rule
 
 Can the available reads connect the two submitted candidate alleles, directly or

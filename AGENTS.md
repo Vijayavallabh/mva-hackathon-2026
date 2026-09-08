@@ -62,7 +62,9 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
 - **Extra rows below the true row are free**; only rows ranked *above* it cost points. Use
   10 rows with strictly distinct `epcr`.
 - Sample is **male**, mean depth **45×**, Ti/Tv 2.050, 5,012,204 records (94.6% PASS).
-- **No ROH → no consanguinity.** Expect two different rare alleles, not a homozygote.
+- **No ROH detected by the coarse screening method.** This does not exclude
+  consanguinity, shorter ROH or homozygous causes and does not establish trans.
+  The public compound-pair answer-key statement motivates the competition model.
 - **The VCF contains no CNV/SV records at all.** Aneuploidy is invisible in it by construction.
 - **The corrected all-lane copy-number/BAF screen resolves the preliminary outliers.** With
   100 kb leave-one-chromosome-out GC correction and Umap masks, chr20 returns to baseline,
@@ -127,6 +129,14 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   using API credentials: an authenticated browser session is still needed to verify
   quota and submit. No files were uploaded or submit callback invoked. Never spoof
   identity, bypass OAuth or infer quota from a successful local preflight.
+
+- **Never present hypothetical local 100/1 as predicted or guaranteed scores.**
+  Use `scripts/audit_track1_evidence.py scores <csv>` for conditional scenarios;
+  actual scores require the authenticated receipt for the exact bytes. Feat-006b
+  tests 169 retained pairs: BUB1B is first in 26/34 declared settings, but drops
+  under combined annotation ablation. That fraction is not a probability. Native
+  phase metadata adds no linkage evidence; trans remains unconfirmed. See
+  `notes/track1-evidence-audit.md`. Preserve existing deliverables.
 
 ## Startup workflow
 

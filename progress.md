@@ -1285,3 +1285,63 @@ Delly 2.1.0
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-08 — session 29: uncertainty audit and additional native-phase checks
+
+- Owner requested fixes after asking whether local 100/1 guaranteed official
+  results, including further trans-phase work. Added bounded feat-006b, with
+  scope/acceptance criteria in `notes/track1-evidence-audit.md`, baseline `608c1c6`.
+  No raw data left this machine. No official key, upload or quota-consuming action.
+- `uv run python scripts/test_track1_evidence.py` passes 23 synthetic regression
+  tests through audit functions/CLI: score failures and partial matches, monotonic
+  EPCR rescaling, schema rejection, phase groups/absence/conflicts, PGT/PID, explicit
+  sample identity, duplicate/missing targets, HP review flags, annotation-ablation
+  arithmetic, rank instability and non-emission of sensitive fixture values.
+- `scripts/audit_track1_evidence.py scores` on exact v4 emits 13 hypothetical
+  cases, null actual score and no guarantee. `ranking --candidates
+  results/feat004/all_candidate_models.tsv` tests 169 retained pairs/27 genes in
+  34 settings: leading BUB1B first in 26, baseline margin 1.405572; dropping both
+  computational and ClinVar bonuses gives rank 12, or 15 without missing-AF
+  credit. No phenotype gives rank 13/17. Not a probability or independent validation.
+- `tools/install/bin/bcftools index --csi --output results/feat006b/source-fresh.csi
+  data/WGS_EX2312012_HGWCNDSX7.vcf.gz` replaces no delivered file and provides a
+  fresh local query index after an older-index timestamp warning. New `phase`
+  audits of source, raw HaplotypeCaller and recalled WhatsHap calls each find
+  both exact leading alleles, unphased and without shared native annotations.
+  Reproducible commands and aggregate artifact names are in the evidence note.
+  This supplies no new cis/trans evidence; trans remains unconfirmed.
+- V4 package verification/regressions pass with unchanged CSV/report SHA-256:
+  `a1f9315e223a07914589ce6884a66702b80e587ec5b7ad67f2ca1213f6caa225` /
+  `f36bacbc506d5a717ee7a55f174fed3f376ed7beacd83d11091e57d319d0d68b`.
+  Existing 16 phase tests and scorer self-check pass. No new package built.
+  Corrected categorical ROH/consanguinity language without changing measurements.
+- Skills: implementation and harness guidance produced a reproducible companion
+  audit and explicit unknown-score state; pysam and critical-thinking guidance
+  keep metadata encoding, read linkage, causality and official score separate.
+  New tests use synthetic fixtures, not patient records. Final review pending.
+- Fresh-shell `./init.sh` completed with exit 0; actual output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```

@@ -1,5 +1,11 @@
 # Track 1 submission preparation (feat-008)
 
+**Session 29 evidence clarification:** the actual competition score remains
+unknown. [Feat-006b](track1-evidence-audit.md) now exposes score scenarios, ranking
+sensitivity and native-phase uncertainty. It does not change the v4 CSV/report,
+confirm trans, verify an owner-side upload, or spend an attempt. Read it before
+interpreting the local 100/1 test as a predicted result.
+
 Status on 2026-09-08 (session 28): publication and purge are verified; unchanged v4
 passes live preflight with no blockers. Authenticated portal quota/upload/receipt
 remain outstanding because the available API credentials did not establish portal
