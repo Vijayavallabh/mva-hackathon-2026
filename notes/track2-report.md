@@ -261,6 +261,12 @@ feasible; lineage differences need explicit controls. A tumour line bearing the 
 name is not automatically a model of this child's cancer. Initial single-agent work must
 precede any combination hypothesis; shared target class does not count as independent evidence.
 
+Before tumour screening, an oncology reviewer must select a clinically relevant RMS
+reference treatment for the documented model context. Test vehicle, reference and
+candidate arms with matched deficient-normal assessments. A later combination requires
+both single-agent controls. Temsirolimus is not automatically the appropriate clinical
+control; without a justified comparator, no comparative therapeutic claim is allowed.
+
 Randomize treatments within clone/day/plate blocks and blind image scoring. Wells receive
 treatment; imaged cells are nested observations, not independent biological replicates.
 Use independently derived clones and repeat-day cultures to assess reproducibility.
@@ -275,8 +281,11 @@ does not pass. No numeric clinical exposure margin has been calculated here.
 
 Predefined stop outcomes include absent pathway abnormality; increased protein without
 functional rescue; apparent error reduction explained by mitotic arrest or selective cell
-death; benefit lost after washout; excess normal-cell injury; and no attainable exposure
-window. Report negative results and all prespecified endpoints. Observed variability, not
+death; failure to reproduce on-treatment benefit; excess normal-cell injury; and no
+attainable exposure window. Reversible benefit may disappear after washout without
+invalidating an on-treatment effect. Assess recovery, harmful rebound and, specifically
+for durable tumour-killing claims, clonogenic regrowth. Report negative results and all
+prespecified endpoints. Observed variability, not
 the number of imaged cells, determines the strength of evidence.
 
 ## 9. Reproducibility, sensitivity and adversarial revision

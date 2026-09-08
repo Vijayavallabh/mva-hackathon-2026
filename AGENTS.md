@@ -161,6 +161,8 @@ Core self-checks:
 ```bash
 uv run python scripts/verify_data.py --self-check
 uv run python scripts/track1_submission.py --self-check
+uv run python scripts/track2_evidence.py check
+uv run python scripts/test_track2_evidence.py
 ```
 
 ## Environment

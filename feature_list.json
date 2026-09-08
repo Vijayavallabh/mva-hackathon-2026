@@ -120,7 +120,7 @@
         "feat-008"
       ],
       "status": "in-progress",
-      "evidence": "2026-09-08 session 31: active owner-authorized Track 2 research. Draft report, twelve-candidate ledger, thirty-source claim ledger, staged validation design and pitch script in notes/track2-*. Public search and evidence/package tools in scripts/track2_public_search.py and scripts/track2_evidence.py; adversarial tests in scripts/test_track2_evidence.py. Two conditional preclinical screens, no demonstrated efficacy or performed laboratory experiments. Final review, recorded/hosted pitch and authenticated submission remain incomplete. Checkpoints and actual verification results are recorded in notes/track2-devils-advocate.md and progress.md."
+      "evidence": "2026-09-08 session 31: research package built at results/feat009/jvv7_track2_research_v1 using `uv run python scripts/track2_evidence.py build results/feat009/jvv7_track2_research_v1`; corresponding verify command passes seven file hashes, exact input binding and unchanged Track 1 v4 artifacts. Thirty-source ledger: nineteen DOI/title matches, eleven official pages; twelve candidate entries, two conditional preclinical screens. `uv run python scripts/test_track2_evidence.py`: 60 tests pass. Two independent review axes identified four implementation/standards and two spec issues; all fixed and independently rechecked. Fresh ./init.sh passes; actual output and further regression commands in progress.md. No demonstrated clinical efficacy or performed laboratory experiments. Feature remains in progress for final owner/specialist review, recorded/hosted pitch and authenticated submission. Report, validation, search, pitch and adversarial revision records are in notes/track2-*."
     },
     {
       "id": "feat-010",

@@ -1473,3 +1473,66 @@ annotation resources ready
 
 Independent review and final verification outcomes follow below; feat-009 remains
 in progress, with recorded/hosted pitch and final submission outstanding.
+
+### Session 31 — independent review and final checks
+
+- Committed initial research draft as `9ccf8b2`. Before that commit, the staged disclosure
+  audit caught one short protected-wording overlap in the report. Revised the derived
+  sentence locally without printing matching source text. The corrected staged audit
+  passes 77 blobs, zero findings. Nothing containing that flagged wording was committed
+  or pushed in this session. The earlier `--current` audit checks HEAD, not working files;
+  the staged check is the relevant precommit result.
+- Independent Standards review found three implementation errors and one evidence-class
+  heuristic issue; Spec review found two design issues. Fixed all six: API error/empty
+  success accounting, nested response validation, missing explicit exposure fields,
+  uncontrolled evidence strings, unassigned RMS comparator, and an overstrict washout rule.
+  Separate reports and independent rechecks are preserved in the adversarial log.
+  Both axes report no remaining material findings within their bounded scope.
+- Revised `uv run python scripts/test_track2_evidence.py`: **60 tests pass**.
+  Existing suites: `scripts/test_track1_evidence.py` **24 tests pass**;
+  `scripts/test_phase_connectivity.py` **16 tests pass**;
+  `scripts/test_publication_hooks.py` installation/invocation/incompatibility checks pass.
+  All run using `uv run python`. Track 1 package regressions pass 18 publication-policy
+  cases, 3 live-upstream cases, portable copy and 9 corruptions. Official scorer self-check
+  passes strict conformance/normalization/scoring. Compileall of the three new scripts passes.
+- `uv run python scripts/prepare_track1_package.py verify
+  results/feat008/jvv7_genomewide_mva_v4` passes: ten rows, twenty normalized alleles,
+  no unresolved disclosure fields, unchanged CSV/report hashes. Its historical
+  `upload_performed: false` describes the local builder, not the owner's later submission.
+- Rechecked all fourteen cached expanded-search bodies with revised endpoint validators;
+  all pass. Rechecked thirty cached source SHA-256 values and the source-ledger hash;
+  nineteen DOI/title records pass the revised metadata validator. No fake retrieval
+  dates or new clinical-efficacy claims were introduced by those offline checks.
+- Built the research snapshot with
+  `uv run python scripts/track2_evidence.py build results/feat009/jvv7_track2_research_v1`.
+  The corresponding `verify` command returns `integrity_verified: true`, `files: 7`,
+  `stage: research_draft_not_submitted`, **`upload_ready: false`**. It includes report,
+  pitch script, validation plan, both ledgers, generated evidence table and sensitivity
+  results, with input/file hashes. Report SHA-256:
+  `48e0f15a6c13bcec5b39c7982e83c37795a88d11969175bb15c323aa4eb13a05`.
+- Final fresh-shell `./init.sh` completed exit 0. Actual output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```

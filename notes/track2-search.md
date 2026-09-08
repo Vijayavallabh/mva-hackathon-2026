@@ -41,6 +41,12 @@ no subject-file input and no caller-supplied query. It records public response b
 request URL, retrieval time and SHA-256. Current summaries also record script SHA-256.
 Historical runs predate that addition; their exact queries remain in their manifests.
 HTTP success is not evidence of a valid result schema or a fully read article.
+Independent review led to endpoint-specific schema checks for all JSON responses,
+Python syntax checks for fetched public code, explicit empty/error-envelope failures,
+and nonzero exit status when collection is partial. Revalidation with the revised parser
+passes all 14 cached responses from the expanded run. All 30 source-cache byte hashes
+and the final source-ledger hash match; 19 DOI/title pairs pass the revised validator too.
+These offline rechecks preserve retrieval dates rather than inventing new retrievals.
 
 The preferred skill search service had no configured authentication and started device
 authorization. It was stopped without authentication or research retrieval. Public web,

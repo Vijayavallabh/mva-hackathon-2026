@@ -68,9 +68,55 @@ tampered derived tables and accidental changes to the immutable Track 1 package.
 
 ## R4 — independent reviews and final verification
 
-Two separate agents will review the committed diff against repository standards and
-`track2-plan.md`. Findings, revisions and retest outcomes are appended here after review.
-They are not substitutes for a clinical/pharmacology review or performed experiments.
+Two separate agents reviewed `git diff 21896c6...9ccf8b2` against repository standards
+and `track2-plan.md`, then independently rechecked the working-tree fixes. Neither opened
+protected subject inputs or edited files. These are not clinical/pharmacology sign-off
+or evidence of performed experiments. Initial findings are preserved separately below.
+
+### Standards
+
+No confirmed AGENTS.md violation. Three implementation findings and one heuristic finding:
+
+- P2: successful HTTP responses could produce false success accounting. Empty Europe PMC
+  bodies and error envelopes from PubMed/ClinicalTrials were not counted as failures.
+- P2: malformed nested Europe PMC/Crossref/Space objects could raise unhandled
+  `AttributeError`, aborting collection instead of recording an unavailable result.
+- P2: omitting `clinical_exposure_margin` passed validation but failed sensitivity analysis.
+- Heuristic, possible Primitive Obsession: unconstrained `evidence_level` strings controlled
+  ablation. An evidence-class typo could silently retain a candidate in the wrong scenario.
+
+Revisions: validate bodies and endpoint-specific nested shapes before success; record
+schema failures and preserve other successful requests; nonzero CLI exit for partial
+searches or unresolved source checks; require an explicit unknown exposure field; constrain
+evidence and approval vocabularies. Added malformed, empty, mixed-response and CLI tests.
+
+Independent recheck: **all four resolved**, 60 tests pass. A mixed-response simulation
+retained five valid searches while counting four complementary-service failures and
+reporting `complete=False`. No directly introduced regression found in the bounded recheck.
+
+### Spec
+
+Two P2 findings, no material unrequested scope:
+
+- The specified clinically relevant oncology controls were not assigned to tumour
+  experiments. Generic reference controls and a literature benchmark were insufficient.
+- The washout rule conflated reversible pharmacology with failed replication, potentially
+  rejecting real on-treatment benefit. Loss after withdrawal is not automatically failure.
+
+Revisions: require oncology-reviewer selection of an RMS comparator before data collection;
+specify vehicle/reference/candidate arms and matched deficient-normal assessments, plus
+single-agent controls for any later combination. Do not assume the subject's regimen or
+make temsirolimus an automatic clinical standard. Separately assess independent replication,
+reversible modulation, normal-cell recovery/injury/rebound, and regrowth after a declared
+durable tumour-killing endpoint. Report and validation plan now agree.
+
+Independent recheck: **both resolved**, no new material issue identified. The central
+source interpretations withstood spot checks: mouse-allele mismatch, chloroquine-to-HCQ
+extrapolation, deficient-normal hazards, negative trials and unconfirmed phase remain clear.
+
+Summary: Standards initially 3 implementation issues plus 1 heuristic; Spec initially
+2 design issues. Both review axes report no unresolved material findings after revision.
+This is bounded review, not proof that every possible defect or scientific uncertainty is absent.
 
 Outstanding limits: no direct-pair drug data, no verified exposure window, no active-tumour
 model or treatment context, no experimental phase resolution, and no recorded/hosted pitch.

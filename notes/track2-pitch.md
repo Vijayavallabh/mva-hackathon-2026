@@ -5,6 +5,11 @@ including pauses; rehearse and time it before recording. Do not add the protecte
 narrative, raw reads or variant records to slides. Use permitted derived findings only.
 The final video must be hosted on YouTube or Vimeo and checked before portal submission.
 
+Timing check: approximately 401 spoken words, excluding headings, visual directions and
+checklist; about 134 words/minute across three minutes. This is a word-count estimate,
+not a measured recording duration. Keep detailed trial statistics and caveats in the report;
+the spoken message must preserve the distinction between hypotheses and performed work.
+
 ## 0:00–0:30 — the question
 
 Our Track 1 entry recovered the competition's selected BUB1B pair, with owner-reported

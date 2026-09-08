@@ -92,6 +92,25 @@ growth and transformation, so include genotype-matched comparisons within each b
 and growth-rate-aware analysis. If no relevant tumour model is available, do not report a
 tumour therapeutic window.
 
+**Mandatory oncology-comparator gate before tumour screening:** an oncology reviewer must
+select and justify an RMS reference agent or clinically relevant regimen for the model's
+documented subtype and treatment setting, with an assay-compatible exposure schedule.
+If that context or comparator cannot be justified, no comparative therapeutic claim is
+allowed and the tumour arm remains exploratory. The protocol must name the comparator
+before data collection; do not infer the child's current regimen.
+
+| Tumour experiment arm | Required matched non-cancer comparison | Purpose |
+|---|---|---|
+| Vehicle | Same solvent/handling in deficient and corrected backgrounds | Baseline effect and assay performance |
+| Selected RMS reference treatment | Same justified exposure/schedule in deficient non-cancer models | Clinical-context benchmark for benefit and injury |
+| Candidate alone | Same justified exposure/schedule in deficient non-cancer models | Incremental tumour-versus-normal selectivity |
+| Candidate plus reference, only after single-agent gates | Reference alone, candidate alone and combination in matched normal models | Test added benefit and added harm, not just more killing |
+
+Temsirolimus may supply a mechanistic class benchmark, but is not automatically the
+appropriate RMS standard-of-care control. In-vitro comparisons cannot reproduce all
+components of a clinical regimen, particularly host metabolism, surgery or radiotherapy;
+record which clinical comparison is and is not represented.
+
 Renal- and muscle-relevant non-cancer models help investigate context-specific harm, but
 are not validated surrogates for all organ toxicity. Pair them with appropriate viability,
 recovery and differentiation/function endpoints. A renal cell assay does not establish
@@ -104,6 +123,13 @@ genetic correction, an orthogonal target perturbation where interpretable, washo
 and a second independent background when feasible. Stop if apparent improvement results
 from selecting only less-abnormal surviving cells, a slowed cell cycle, altered imaging
 detection or a changed baseline karyotype. Report failures to replicate.
+
+Interpret washout according to the endpoint. Reversible on-treatment functional benefit
+does not have to persist after withdrawal to qualify as a reproducible pharmacological
+effect; record its exposure dependence and any rebound. Failure to recover normal-cell
+function, persistent injury, or inability to reproduce the on-treatment effect is a
+different concern. For a declared tumour-killing/clonogenic endpoint, quantify regrowth
+after withdrawal: cytostasis followed by regrowth cannot be relabelled durable killing.
 
 Only after single-agent results may a combination be explored. mTOR inhibition and
 lysosomal blockade could interact in either direction. A factorial response surface must
@@ -140,7 +166,10 @@ benefit. Do not call a combination beneficial because it kills more cells indisc
 | Fewer micronuclei with severe cytostasis/death | Possible denominator/selection artifact; not rescue |
 | Tumour and deficient normal cells equally sensitive | No therapeutic window demonstrated; stop tumour-selective claim |
 | Effect only above justified exposure | Translational no-go unless new credible PK evidence changes the envelope |
-| Effect disappears after washout or independent repeat | Do not advance; investigate durability and reproducibility |
+| On-treatment benefit fails independent replication | Do not advance; investigate reproducibility and assay confounding |
+| Functional modulation reverses after washout | Record exposure dependence; not an automatic no-go or proof of durable correction |
+| Persistent normal-cell injury or damaging rebound after washout | Safety no-go pending a credible mechanistic resolution |
+| Claimed durable tumour killing becomes regrowth after withdrawal | Reject the durable-killing claim; distinguish cytostasis from cytotoxicity |
 | Functional benefit, target engagement and normal-cell preservation replicate | Advance to further preclinical/specialist review, **not directly to patient dosing** |
 
 ## Deliverable and feasibility boundary

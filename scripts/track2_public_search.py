@@ -8,6 +8,7 @@ not reinterpreted as zero hits. This is a bounded scoping search, not exhaustive
 from __future__ import annotations
 
 import argparse
+import ast
 import hashlib
 import json
 import time
@@ -37,11 +38,50 @@ def get_bytes(url: str) -> bytes:
 
 def parse_epmc(data: bytes) -> tuple[int, list]:
     obj = json.loads(data)
+    if not isinstance(obj, dict) or not isinstance(obj.get("resultList"), dict):
+        raise ValueError("invalid Europe PMC response shape")
     hits = obj.get("hitCount")
     rows = obj.get("resultList", {}).get("result")
-    if type(hits) is not int or hits < 0 or not isinstance(rows, list):
+    if type(hits) is not int or hits < 0 or not isinstance(rows, list) or len(rows) > hits:
         raise ValueError("invalid Europe PMC result schema; not zero hits")
+    if any(not isinstance(r, dict) or not all(isinstance(r.get(k), str) and r[k] for k in ("id", "source", "title")) for r in rows):
+        raise ValueError("invalid Europe PMC result record")
     return hits, rows
+
+
+def validate_body(key: str, data: bytes) -> None:
+    """Successful HTTP is insufficient: reject empty bodies and service error envelopes."""
+    if not data.strip():
+        raise ValueError("empty public response")
+    if key.startswith("epmc-"):
+        parse_epmc(data)
+        return
+    if key.startswith("space-") and key != "space-info":
+        ast.parse(data.decode("utf-8"))
+        return
+    obj = json.loads(data)
+    if not isinstance(obj, dict) or "error" in obj or "errors" in obj:
+        raise ValueError("invalid public response envelope")
+    if key == "pubmed-rescue":
+        result = obj.get("esearchresult")
+        if not isinstance(result, dict) or "errorlist" in result:
+            raise ValueError("invalid PubMed response")
+        count, ids = result.get("count"), result.get("idlist")
+        if not isinstance(count, str) or not count.isdigit() or not isinstance(ids, list) or any(not isinstance(i, str) or not i.isdigit() for i in ids) or int(count) < len(ids):
+            raise ValueError("invalid PubMed count/identifiers")
+    elif key == "clinicaltrials-mva":
+        if not isinstance(obj.get("studies"), list) or any(not isinstance(s, dict) or not isinstance(s.get("protocolSection"), dict) for s in obj["studies"]):
+            raise ValueError("invalid ClinicalTrials search response")
+    elif key.startswith("NCT"):
+        protocol = obj.get("protocolSection")
+        if not isinstance(protocol, dict) or not isinstance(protocol.get("identificationModule"), dict) or protocol["identificationModule"].get("nctId") != key:
+            raise ValueError("trial identifier mismatch")
+    elif key == "space-info":
+        revision = obj.get("sha")
+        if not isinstance(revision, str) or len(revision) != 40 or any(c not in "0123456789abcdef" for c in revision):
+            raise ValueError("invalid public Space revision")
+    else:
+        raise ValueError("unrecognized public endpoint")
 
 
 def run(output: Path) -> dict:
@@ -57,7 +97,13 @@ def run(output: Path) -> dict:
             data = get_bytes(url)
             path = output / f"{key}.{extension}"
             path.write_bytes(data)
-            row.update(status="ok", file=path.name, bytes=len(data), sha256=hashlib.sha256(data).hexdigest())
+            row.update(file=path.name, bytes=len(data), sha256=hashlib.sha256(data).hexdigest())
+            try:
+                validate_body(key, data)
+            except (ValueError, TypeError, SyntaxError):
+                row.update(status="invalid_response", error_type="schema")
+                return None
+            row.update(status="ok")
             return data
         except (urllib.error.URLError, TimeoutError, OSError) as exc:
             row.update(status="error", error_type=type(exc).__name__)
@@ -96,15 +142,22 @@ def run(output: Path) -> dict:
         for name in ["config.py", "tabs/submit_track2.py", "tabs/about.py", "utils.py"]:
             capture("space-" + name.replace("/", "-"), public_base + "spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/raw/" + rev + "/" + name, "txt")
     result = {"cutoff": CUTOFF, "queries": summaries, "failed_requests": sum(r["status"] != "ok" for r in records),
+              "complete": all(r["status"] == "ok" for r in records),
               "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
               "note": "Bounded first-page scoping retrieval; Europe PMC and PubMed overlap. Trial status is as retrieved, not date-filtered."}
     (output / "search-summary.json").write_text(json.dumps(result, indent=2) + "\n")
     return result
 
 
-if __name__ == "__main__":
+def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("output", type=Path)
     args = parser.parse_args()
     summary = run(args.output)
     print(json.dumps({"queries": [{k: q[k] for k in ["id", "hit_count", "retrieved_count", "truncated"]} for q in summary["queries"]], "failed_requests": summary["failed_requests"]}, indent=2))
+    if not summary["complete"]:
+        raise SystemExit(1)
+
+
+if __name__ == "__main__":
+    main()

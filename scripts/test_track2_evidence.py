@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 import copy
+import contextlib
+import io
 import json
 import tempfile
 import unittest
@@ -9,7 +11,8 @@ from pathlib import Path
 from unittest.mock import patch
 
 import track2_evidence as evidence
-from track2_public_search import parse_epmc
+import track2_public_search as search
+from track2_public_search import parse_epmc, validate_body
 
 
 class LedgerTests(unittest.TestCase):
@@ -95,6 +98,18 @@ class LedgerTests(unittest.TestCase):
         del self.candidates["candidates"][0]["normal_tissue_risk"]
         self.reject()
 
+    def test_missing_unknown_margin_is_not_explicit_null(self):
+        del self.candidates["candidates"][0]["clinical_exposure_margin"]
+        self.reject()
+
+    def test_unknown_evidence_class_rejected(self):
+        self.candidates["candidates"][0]["evidence_level"] = "other_allele_animals"
+        self.reject()
+
+    def test_unknown_approval_state_rejected(self):
+        self.candidates["candidates"][0]["approval"] = "approved_probably"
+        self.reject()
+
     def test_empty_ledgers_rejected(self):
         self.candidates["candidates"] = []
         self.reject()
@@ -165,6 +180,74 @@ class RetrievalTests(unittest.TestCase):
     def test_no_metadata_title_fails(self):
         with self.assertRaises(ValueError):
             evidence.check_metadata({"doi": "10.1000/a", "title": "A"}, {"message": {"DOI": "10.1000/a"}})
+
+    def test_malformed_epmc_shapes_rejected(self):
+        for obj in [None, [], {"hitCount": 0, "resultList": None}, {"hitCount": 1, "resultList": {"result": [None]}}, {"hitCount": 0, "resultList": {"result": [{}]}}, {"hitCount": 1, "resultList": {"result": [{}]}}]:
+            with self.subTest(obj=obj), self.assertRaises(ValueError):
+                parse_epmc(json.dumps(obj).encode())
+
+    def test_epmc_good_record(self):
+        obj = {"hitCount": 1, "resultList": {"result": [{"id": "1", "source": "MED", "title": "Public fixture"}]}}
+        self.assertEqual(parse_epmc(json.dumps(obj).encode())[0], 1)
+
+    def test_empty_or_service_error_is_failure_for_each_endpoint(self):
+        for key in ["epmc-rescue", "pubmed-rescue", "clinicaltrials-mva", "NCT01222715", "space-info"]:
+            for data in [b"", b" ", b'null', b'[]', b'{"error":"temporary failure"}']:
+                with self.subTest(key=key, data=data), self.assertRaises(ValueError):
+                    validate_body(key, data)
+
+    def test_secondary_response_schemas(self):
+        valid = {
+            "pubmed-rescue": {"esearchresult": {"count": "1", "idlist": ["123"]}},
+            "clinicaltrials-mva": {"studies": []},
+            "NCT01222715": {"protocolSection": {"identificationModule": {"nctId": "NCT01222715"}}},
+            "space-info": {"sha": "a" * 40},
+        }
+        for key, obj in valid.items():
+            validate_body(key, json.dumps(obj).encode())
+        for key, obj in [
+            ("pubmed-rescue", {"esearchresult": {"count": None, "idlist": []}}),
+            ("pubmed-rescue", {"esearchresult": {"count": "0", "idlist": [], "errorlist": {}}}),
+            ("clinicaltrials-mva", {"studies": [None]}),
+            ("NCT01222715", {"protocolSection": None}),
+            ("space-info", {"sha": None}),
+            ("space-info", {"sha": "../../outside"}),
+        ]:
+            with self.subTest(key=key, obj=obj), self.assertRaises(ValueError):
+                validate_body(key, json.dumps(obj).encode())
+
+    def test_code_response_must_be_python(self):
+        validate_body("space-config.py", b"MAX_SUBMISSIONS = 3\n")
+        with self.assertRaises(SyntaxError):
+            validate_body("space-config.py", b"<html>Error</html>")
+
+    def test_invalid_crossref_shapes_fail_cleanly(self):
+        source = {"doi": "10.1000/a", "title": "A"}
+        for obj in [None, [], {"message": None}, {"message": {"DOI": None}}, {"message": {"DOI": "10.1000/a", "title": [None]}}, {"message": {"DOI": "10.1000/a", "title": ["A"], "subtitle": None}}, {"message": {"DOI": "10.1000/a", "title": ["A"], "author": [None]}}]:
+            with self.subTest(obj=obj), self.assertRaises(ValueError):
+                evidence.check_metadata(source, obj)
+
+    def test_complete_run_counts_empty_responses_as_failures(self):
+        parent = search.ROOT / "results/feat009"
+        parent.mkdir(parents=True, exist_ok=True)
+        with tempfile.TemporaryDirectory(prefix="track2-search-test-", dir=parent) as tmp:
+            with patch.object(search, "get_bytes", return_value=b""), patch.object(search.time, "sleep"):
+                result = search.run(Path(tmp) / "empty-responses")
+        self.assertEqual(result["failed_requests"], 10)
+        self.assertEqual(result["queries"], [])
+        self.assertFalse(result["complete"])
+
+    def test_partial_search_cli_is_nonzero(self):
+        with patch("sys.argv", ["search", "results/feat009/synthetic-unused"]), patch.object(search, "run", return_value={"queries": [], "failed_requests": 1, "complete": False}), contextlib.redirect_stdout(io.StringIO()):
+            with self.assertRaises(SystemExit) as error:
+                search.main()
+        self.assertEqual(error.exception.code, 1)
+
+    def test_source_review_cli_is_nonzero(self):
+        with patch("sys.argv", ["evidence", "sources", "results/feat009/synthetic-unused"]), patch.object(evidence, "fetch_sources", return_value={"needs_review": ["synthetic"]}), contextlib.redirect_stdout(io.StringIO()):
+            with self.assertRaises(SystemExit) as error:
+                evidence.main()
+        self.assertEqual(error.exception.code, 1)
 
 
 class PackageTests(unittest.TestCase):

@@ -24,6 +24,8 @@ SOURCES = ROOT / "notes/track2-sources.json"
 CANDIDATES = ROOT / "notes/track2-candidates.json"
 DECISIONS = {"conditional_screen", "benchmark_only", "deprioritize", "exclude"}
 SOURCE_KINDS = {"primary", "correction", "regulatory", "registry", "competition"}
+EVIDENCE_LEVELS = {"contradictory_cell_evidence", "cross_disease_hypothesis", "mechanistic_tool", "other_allele_animal", "other_compound_or_cancer", "other_intervention_animal", "pediatric_cancer_preclinical", "same_tumour_clinical_not_genotype"}
+APPROVAL_STATES = {"combination_not_verified", "not_current_in_reviewed_jurisdiction", "not_verified", "verified_other_indication"}
 PUBLIC_HOSTS = {"www.nature.com", "pubmed.ncbi.nlm.nih.gov", "pmc.ncbi.nlm.nih.gov", "aacrjournals.org", "www.jci.org", "www.sciencedirect.com", "ascopubs.org", "dailymed.nlm.nih.gov", "www.ema.europa.eu", "clinicaltrials.gov", "huggingface.co", "api.crossref.org"}
 TRACK1 = {
     "jvv7_genomewide_mva_v4.csv": "a1f9315e223a07914589ce6884a66702b80e587ec5b7ad67f2ca1213f6caa225",
@@ -48,6 +50,8 @@ def checked_url(url: str) -> str:
 
 
 def validate(sources: dict, candidates: dict) -> dict:
+    require(isinstance(sources, dict) and isinstance(candidates, dict), "ledger must be an object")
+    require(isinstance(sources.get("sources"), list) and isinstance(candidates.get("candidates"), list), "ledger entries must be arrays")
     require(sources.get("schema_version") == candidates.get("schema_version") == 1, "unsupported schema")
     require(candidates.get("phase") == "unconfirmed", "phase must remain unconfirmed in this research package")
     require(candidates.get("clinical_use") == "research_only", "research-only boundary missing")
@@ -72,6 +76,8 @@ def validate(sources: dict, candidates: dict) -> dict:
         for key in ["name", "role", "approval", "jurisdiction", "approved_use", "target_direction", "bridge", "evidence_level", "normal_tissue_risk", "exposure_gap", "falsifier", "next_test"]:
             require(isinstance(c.get(key), str) and bool(c[key].strip()), f"missing candidate {key}")
         require(c.get("decision") in DECISIONS, "invalid research decision")
+        require(c["evidence_level"] in EVIDENCE_LEVELS, "unknown evidence rationale class")
+        require(c["approval"] in APPROVAL_STATES, "unknown approval state")
         require(c.get("direct_pair_evidence") is False, "no direct-pair intervention experiment is established")
         require(c.get("clinical_efficacy") == "unestablished", "clinical efficacy must not be inferred")
         for kind in ["support", "counterevidence"]:
@@ -84,7 +90,8 @@ def validate(sources: dict, candidates: dict) -> dict:
             require(c["decision"] == "exclude", "unverified/non-current approval cannot enter the shortlist")
         if approval_source is not None:
             require(approval_source in registry and registry[approval_source]["kind"] == "regulatory", "invalid regulatory citation")
-        margin = c.get("clinical_exposure_margin")
+        require("clinical_exposure_margin" in c, "explicit exposure margin field required, even when unknown")
+        margin = c["clinical_exposure_margin"]
         require(margin is None, "no clinical exposure margin has been measured; do not manufacture one")
     require(bool(seen), "empty candidate ledger")
     return {"sources": len(registry), "candidates": len(seen), "decisions": {d: sum(c["decision"] == d for c in candidates["candidates"]) for d in sorted(DECISIONS)},
@@ -117,10 +124,13 @@ def normalize_title(title: str) -> str:
 
 
 def check_metadata(source: dict, obj: dict) -> dict:
+    require(isinstance(obj, dict) and isinstance(obj.get("message"), dict), "invalid citation metadata envelope")
     m = obj.get("message", {})
-    require(m.get("DOI", "").lower() == source["doi"].lower(), "DOI mismatch")
+    require(isinstance(m.get("DOI"), str) and m["DOI"].lower() == source["doi"].lower(), "DOI mismatch")
     titles = m.get("title", [])
-    require(bool(titles), "citation metadata has no title")
+    require(isinstance(titles, list) and bool(titles) and all(isinstance(t, str) and t.strip() for t in titles), "citation metadata has no valid title")
+    require(isinstance(m.get("subtitle", []), list) and all(isinstance(t, str) for t in m.get("subtitle", [])), "invalid citation subtitle")
+    require(isinstance(m.get("author", []), list) and all(isinstance(a, dict) for a in m.get("author", [])), "invalid citation authors")
     expected, actual = normalize_title(source["title"]), normalize_title(titles[0])
     # Crossref sometimes separates the main title and subtitle.
     joined = normalize_title(" ".join(titles + m.get("subtitle", [])))
@@ -267,6 +277,8 @@ def main() -> None:
         sources, candidates = load_ledgers()
         result = validate(sources, candidates) if args.command == "check" else sensitivities(sources, candidates)
     print(json.dumps(result, indent=2))
+    if args.command == "sources" and result["needs_review"]:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

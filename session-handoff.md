@@ -46,6 +46,13 @@ Scope and acceptance: `notes/track2-plan.md`; starting commit `21896c6`.
   optional public source verification, draft-package build/verify, Track 1 hash guard.
 - `scripts/test_track2_evidence.py`: adversarial unit/regression checks; no subject input.
 
+Two independent review agents reported four standards/implementation and two specification
+findings at `9ccf8b2`. All were fixed and independently rechecked, with no remaining material
+findings in scope. The revised suite passes **60 tests**. API failures no longer look like
+zero-hit success; missing exposure fields and evidence-class typos fail validation.
+The design now requires an RMS comparator gate and distinguishes reversible drug effects
+from replication failure, injury and failed durable tumour killing. See the revision log.
+
 Public caches are ignored under `results/feat009/`. The initial version-only Europe PMC
 response produced an **invalid** search summary; it is not zero-hit evidence. The
 expanded focused run retrieved 138/138, 404/404, 7/7, 12/12 and 5/5 overlapping hits,
@@ -83,6 +90,13 @@ Continue feat-009 only: address documented review findings, verify draft-package
 integrity, refine the scientific/pitch delivery and prepare a hosted pitch. The current
 review/test/commit record is appended to `progress.md` and the adversarial log.
 Do not infer completion from the presence of a report draft.
+
+Prepared local research bundle: `results/feat009/jvv7_track2_research_v1/`.
+`uv run python scripts/track2_evidence.py verify results/feat009/jvv7_track2_research_v1`
+passes seven file hashes, current input binding and Track 1 preservation; explicitly
+reports `upload_ready: false`. Any subsequent tracked input change requires a new
+bundle directory; do not overwrite this snapshot. The research report SHA-256 is
+`48e0f15a6c13bcec5b39c7982e83c37795a88d11969175bb15c323aa4eb13a05`.
 
 ## Retained earlier work and guardrails
 
