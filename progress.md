@@ -1229,3 +1229,59 @@ Delly 2.1.0
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-08 — session 28: public verification complete; portal-auth handoff
+
+- Owner reports making the repository public and requests proceeding.
+  `gh repo view Vijayavallabh/mva-hackathon-2026 --json visibility,url,forkCount`
+  confirms PUBLIC and zero forks; all-state PR count is zero. `git ls-remote origin`
+  shows only synchronized HEAD/main at `e8b9113`.
+- Independent anonymous urllib GETs return 200 for clean main README and the current
+  README Git blob; every retired blob in the fixed 13-object inventory returns 404.
+  Only response statuses were emitted. The authenticated purge check also passes.
+  `uv run python scripts/audit_publication.py --output results/feat007/public-history.json`
+  passes all refs: 40 commits, 289 unique blobs and zero findings.
+- `uv run python scripts/prepare_track1_package.py preflight results/feat008/jvv7_genomewide_mva_v4`
+  at synchronized `e8b9113` exits 0 with no blockers: PUBLIC, purge passed, unchanged
+  CSV/report hashes, 10 pairs, 20 normalized alleles, no missing disclosure and live
+  origin/official-contract checks passed. Package regression tests pass.
+- `HfApi().whoami()["name"]` confirms jvv7 without printing credentials or full
+  identity details. Live official Space metadata reports RUNNING; public config reports
+  Gradio 6.24.0 and `_quota_status`. Official pinned upload/identity code was inspected
+  without loading private ground truth. It requires OAuthProfile/request identity.
+- A read-only `_quota_status` request using available Bearer authentication returns
+  HTTP 200, event complete and `[""]`, not authenticated quota. This does not establish
+  zero prior submissions or any remaining attempts. No upload or `_handle_submit`
+  callback was invoked; the quota check does not spend an attempt. No identity override,
+  fabricated profile, authentication bypass or credential disclosure was attempted.
+- Marked feat-007 done using harness-creator evidence guidance. Feat-008 remains
+  blocked only at authenticated portal quota/upload/receipt, not publication or purge.
+  Added the exact signed-in browser handoff to `notes/track1-submission.md`; the owner
+  must check history first if any submission occurred outside this workflow. Updated
+  current harness/docs state without editing v4 or creating a redundant package.
+  Trans phase remains unconfirmed. Fresh-shell `./init.sh` completed with exit 0:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```

@@ -1,12 +1,13 @@
 # AGENTS.md
 
-Private working repo for **Rare Disease, Real Kid: The MVA Hackathon 2026**
+Public code and derived-output repo for **Rare Disease, Real Kid: The MVA Hackathon 2026**
 (Sage Bionetworks / MVA Society). Single-subject WGS of a child with Mosaic
 Variegated Aneuploidy. Two tracks: variant prediction (auto-scored) and drug
 repurposing (panel-judged). Close: **24 Oct 2026 23:59 UTC**.
 
-This repo **becomes public before the first Track 1 submission** (feat-007) under our
-current local policy. Every submission requires a `https://github.com/…` URL, but the
+This repo **is public**, with feat-007 verified complete on 2026-09-08 after Support
+purge and authenticated/anonymous checks. Our policy requires public visibility before
+Track 1 submission. Every submission requires a `https://github.com/…` URL, but the
 official portal permits private visibility until the competition ends. Do not relax our
 public-first policy without the owner's decision. See `notes/track1-submission.md`.
 The data gates below matter more, not less, as the work proceeds.
@@ -101,11 +102,10 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   retired commits unavailable, with successful live-object controls and no unknown
   errors. The all-ref audit at `6d2d8d0` passes 39 commits/281 blobs. See
   `notes/publication-audit.md`. Do not ask for another purge request.
-- **Publication itself is still pending:** GitHub reports PRIVATE. The owner had
-  stated they would make it public; this session did not change visibility. After
-  publication, verify anonymous access to clean main and failure of retired-object
-  retrieval, rerun preflight and only then complete feat-007. Retain the live purge
-  guard; resolving this incident does not waive future disclosure checks.
+- **Feat-007 publication is complete, session 28:** owner-made PUBLIC visibility is
+  independently verified. Anonymous clean-main and current-blob requests return 200;
+  all 13 retired blobs return 404. Authenticated purge and all-ref disclosure audits
+  also pass. Retain the live purge guard for every preflight.
 - **Feat-008 is the active preparation task, not a completed upload.** Build and verify
   the CSV/report together with `scripts/prepare_track1_package.py`. The independent
   publication purge gate must pass live preflight. Never infer account
@@ -122,9 +122,11 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   it is not an independent account audit or a claim of zero retention. The v4 package
   passes offline verification and regressions with zero unresolved disclosure fields;
   v1/v2/v3 are historical and must not be reused. The earlier PUBLIC preflight failed
-  solely on purge. The session-27 preflight now passes purge and fails only the
-  public-first visibility requirement. No upload was performed by this workflow;
-  any owner-side submission still requires receipt verification.
+  solely on purge. Session-28 public preflight now passes with no blockers. Local
+  HF identity is jvv7, but the portal's quota callback returned an empty response
+  using API credentials: an authenticated browser session is still needed to verify
+  quota and submit. No files were uploaded or submit callback invoked. Never spoof
+  identity, bypass OAuth or infer quota from a successful local preflight.
 
 ## Startup workflow
 

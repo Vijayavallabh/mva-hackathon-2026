@@ -1,12 +1,32 @@
 # Publication audit — feat-007
 
-As of 2026-09-08 session 27, **the retained-object purge gate passes**. The owner
-supplied Support's reply dated 10:41 UTC, associated with ticket **4738585**, reporting
-unreferenced-commit removal. Independent authenticated verification now finds all
-13 retired blobs unavailable, with zero unknown errors and a successful current-blob
-control. GitHub reports PRIVATE. Feat-007 is ready for its remaining publication and
-anonymous-access checks, not yet complete. Earlier failed-purge snapshots below are
-historical. This session did not change visibility or submit anything.
+As of 2026-09-08 session 28, **feat-007 is complete**. The owner made the repository
+PUBLIC after Support removal on ticket **4738585**. Authenticated and anonymous
+checks reject all 13 retired blobs, live-object controls succeed, and reachable
+history passes the disclosure audit. Earlier private/failed-purge snapshots below
+are historical. No agent changed visibility or uploaded submission files.
+
+## Public verification (session 28)
+
+Verified public URL: [Vijayavallabh/mva-hackathon-2026](https://github.com/Vijayavallabh/mva-hackathon-2026).
+
+- `gh repo view Vijayavallabh/mva-hackathon-2026 --json visibility,url,forkCount`
+  confirms PUBLIC and zero forks. All-state PR count is zero.
+- Anonymous standard-library `urllib.request` GETs, with no Authorization header,
+  return HTTP 200 for `raw.githubusercontent.com/Vijayavallabh/mva-hackathon-2026/main/README.md`
+  and the current README Git blob. Each of the 13 IDs from
+  `notes/publication-removed-objects.json` returns HTTP 404 from the GitHub Git blobs
+  API. The helper emits only status counts; bodies are not displayed.
+- Authenticated `scripts/check_publication_remote.py` passes inside live preflight.
+- `uv run python scripts/audit_publication.py --output results/feat007/public-history.json`
+  at `e8b9113` passes all refs: 40 commits, 289 unique blobs, zero findings.
+- `git ls-remote origin` shows only synchronized HEAD/main.
+- Fresh v4 package preflight exits 0 with no blockers, PUBLIC visibility and
+  `ready_for_authenticated_submission=true`. This flag does not establish portal
+  login or quota. The signed-in browser handoff is in `track1-submission.md`.
+
+The publication feature is complete; continue enforcing data gates and live purge
+checks. Removal cannot revoke copies previously downloaded by third parties.
 
 ## Post-Support verification (session 27)
 

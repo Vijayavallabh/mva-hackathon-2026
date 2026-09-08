@@ -1,7 +1,9 @@
 # Track 1 submission preparation (feat-008)
 
-Status on 2026-09-08 (session 27): the retired-object purge now passes. Fresh validation
-of unchanged v4 leaves only public-first visibility unmet. No submission has been uploaded
+Status on 2026-09-08 (session 28): publication and purge are verified; unchanged v4
+passes live preflight with no blockers. Authenticated portal quota/upload/receipt
+remain outstanding because the available API credentials did not establish portal
+identity. No submission has been uploaded
 by this workflow and no official score or remaining-attempt count is claimed.
 The selected account from the local authenticated HF identity is `jvv7`; an empty
 display name uses that username. Never print the token or complete identity response.
@@ -16,7 +18,7 @@ The owner's stricter public-first policy remains active in AGENTS.md and the pac
 configuration until explicitly changed. Neither publication nor sharing retired objects
 is safe while GitHub still serves those objects. The owner reports Support ticket 4738585
 and supplied Support's removal reply. Session-27 authenticated verification passes the
-purge gate. GitHub remains PRIVATE; publication and anonymous checks are still pending.
+purge gate. Session 28 verifies PUBLIC visibility and anonymous checks; feat-007 is complete.
 
 The official AI-use instructions require provider, plan/tier and data-handling setting.
 The owner confirmed OpenAI/Codex **API tier** on 2026-09-06 and, on 2026-09-08,
@@ -58,11 +60,11 @@ and 1.0 F-max use assumed row-1 truth, not the private answer key.
 
 ## Actual upload procedure — not yet executed
 
-1. Owner disclosure is complete. Finish feat-007's remote purge and publication gates
-   before uploading. Keep the repository PRIVATE until authenticated purge checks pass;
-   then complete public-first publication checks. The policy has not been relaxed.
-2. Commit configuration/report changes, create a new package, verify, push and run a
-   fresh live preflight. Use only the exact CSV/report named in its manifest.
+1. Owner disclosure and feat-007 publication/purge gates are complete. Keep enforcing
+   the live checks; a passing historical result is not a waiver for future changes.
+2. Use unchanged v4 while its verification passes. Only configuration/report/evidence
+   changes require a reviewed commit and a new immutable package. Verify, push any
+   intended commits and run fresh preflight. Use the exact CSV/report in the manifest.
 3. In the authenticated official portal, confirm identity `jvv7`, current quota and
    remaining attempts. No local score test consumes a submission; the real upload does.
 4. Submit the paired files and configured GitHub URL once. Do not retry blindly after
@@ -247,3 +249,43 @@ The repository remains PRIVATE. The owner had stated they would publish; this se
 did not change visibility. Finish public visibility and anonymous-access checks, then
 rerun preflight and verify authenticated identity/quota before any upload. No new
 package, upload or deliverable modification was performed. Trans remains unconfirmed.
+
+### Public preflight and authenticated browser handoff (session 28)
+
+At synchronized `e8b9113`, fresh public preflight exits 0: no blockers, unchanged
+hashes, 10 pairs, 20 normalized alleles, complete disclosure, public visibility,
+successful purge, clean history, synchronized origin and unchanged official contract.
+Anonymous requests independently confirm clean main access (200), a live-blob control
+(200) and all 13 retired blobs unavailable (404). Feat-007 is complete.
+
+`HfApi().whoami()["name"]` confirms **jvv7**, without emitting credentials or the full
+identity response. This is HF API identity, not proof of portal login. The live Space
+is RUNNING. Its public `/config` identifies Gradio 6.24.0 and the read-only quota
+callback `_quota_status`. A normal Bearer-authenticated POST of `{"data": []}` to
+`/gradio_api/call/_quota_status`, followed by retrieval of the returned event, returns
+HTTP 200 and `event: complete` with `data: [""]`: **no authenticated quota**.
+The official `utils.py`/`submit_track1.py` require an OAuthProfile or request username
+and return empty quota when identity is absent. No identity override, fabricated
+profile, header spoofing, upload endpoint or `_handle_submit` call was used.
+
+The remaining action requires the owner's signed-in browser:
+
+1. Open the [official portal](https://sagebio-rare-disease-real-kid-mva-hackathon-2026.hf.space/)
+   and sign in as **jvv7**. Select **Submit - Track 1**.
+2. Check submission history and the displayed quota. If this package was already
+   submitted outside this workflow, retrieve its receipt rather than submit again.
+   Continue only with at least one remaining attempt.
+3. Leave Team / Display Name blank for the configured individual submission. Set
+   GitHub URL to `https://github.com/Vijayavallabh/mva-hackathon-2026`.
+4. Attach only these two files from `results/feat008/jvv7_genomewide_mva_v4/`:
+   - Predictions: `jvv7_genomewide_mva_v4.csv`
+   - Report: `jvv7_genomewide_mva_v4_report.md`
+   Do not attach the raw VCF, phenotype document, result directory or recovery bundle.
+5. Click **Submit & Score** once. On timeout, inspect history before retrying.
+6. Preserve the displayed submission number, timestamp, scores and remaining quota;
+   share that receipt without credentials. An official score has not yet been observed
+   by this workflow. Trans phase remains unconfirmed regardless of format validation.
+
+No upload was attempted and no attempt was spent by the quota check. The successful
+preflight flag means the package is ready for an authenticated submission workflow,
+not that browser authentication or quota was successfully checked.

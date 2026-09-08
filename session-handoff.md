@@ -1,20 +1,19 @@
 # Session handoff
 
-**Last updated:** 2026-09-08 (session 27 — Support purge independently verified)
+**Last updated:** 2026-09-08 (session 28 — publication complete; portal login handoff)
 
-**Current objective:** verify the owner-supplied Support removal reply for ticket
-4738585. This is complete: all 13 retired blobs and three checked retired commits
-return authenticated 404s, with successful current-object controls. The all-ref audit
-at `6d2d8d0` passes 39 commits/281 blobs. The purge gate is resolved; do not ask the owner
-to wait for another reply or submit another ticket.
+**Current objective:** proceed after owner-made publication. Feat-007 is now complete:
+GitHub confirms PUBLIC, anonymous clean-main/current-blob controls return 200, all
+13 retired blobs return 404, authenticated purge passes and the all-ref audit at
+`e8b9113` passes 40 commits/289 blobs. No Support or publication blocker remains.
 
-Feat-001 through feat-006, including feat-005c, are done. Feat-007 is `next`, ready for
-its remaining publication and anonymous-access checks: GitHub still reports PRIVATE.
-The owner previously said they would make it public, so this session left visibility
-unchanged. Feat-008 remains `blocked` only by public-first visibility in fresh v4
-preflight; purge, offline package validation, live origin, disclosure audit and the
-pinned official contract pass. No upload or official score is claimed. Do not infer
-owner-side submission status or quota without a receipt/history check.
+Feat-001 through feat-007, including feat-005c, are done. Feat-008's unchanged v4
+passes live preflight with no blockers. The remaining blocker is authenticated portal
+access: HF API whoami confirms jvv7, but the read-only portal quota callback using
+available Bearer credentials returns an empty string, not a quota. No browser OAuth
+session is available to this workflow. No upload endpoint or submission callback was
+invoked. The exact browser handoff is in `notes/track1-submission.md` (session 28).
+Do not infer owner-side submission status or quota without a receipt/history check.
 See `notes/publication-audit.md` and `notes/track1-submission.md`.
 
 The phase follow-up remains scientifically unchanged: both alleles are unphased.
@@ -48,17 +47,18 @@ traps that silently score zero).
   2026-09-08 10:41 UTC. Ticket correspondence was not independently fetched, but
   removal is independently verified by authenticated API checks with controls.
   Preserve `notes/publication-removed-objects.json` and the live guard.
-- **Our public-first policy remains active.** GitHub reports PRIVATE. Complete
-  publication, verify anonymous access to the clean branch and rejection of every
-  retired object, then rerun preflight before finishing feat-007. The private-state
-  authenticated purge check already passes; anonymous 404s alone would not suffice.
-  No further history rewrite or duplicate Support request is currently needed.
+- **Public-first policy is satisfied.** GitHub is PUBLIC; anonymous clean-branch and
+  retired-object checks pass with controls. Feat-007 is done. Continue the live
+  preflight guard before uploads, but do not recreate this as an unresolved gate.
 - **AI disclosure is no longer a blocker.** The owner confirmed OpenAI/Codex API tier,
   and on 2026-09-08 confirmed no model training and no other AI providers. The config
   records owner attestations, not an independent account audit or zero-retention claim.
-- **Actual portal quota and receipt are unknown.** Confirm authenticated identity and
-  remaining attempts immediately before a real upload. Do not conflate local hypothetical
-  scorer output with an official score or count this preparation as a spent attempt.
+- **Portal browser authentication, quota and receipt remain outstanding.** Local API
+  credentials identify jvv7 but did not produce portal quota. The read-only quota
+  callback returned HTTP 200 / complete / `[""]`; it did not consume an attempt.
+  Use the owner's signed-in official browser to check quota and upload the two exact
+  v4 files once. Never fabricate OAuth profiles, use identity overrides, or request
+  passwords/cookies/tokens. Share the receipt, not credentials.
 - **The box is shared and contended.** 2026-08-28: load average 109 on 64 cores, GPUs 0/1/2
   at 100% with other users' jobs, only GPU 4 free. 3.3 TB free on `/mnt/md0` (92% full).
   Check `uptime` and `nvidia-smi` before planning anything large.
@@ -84,8 +84,8 @@ contain obsolete history. Never push or share those refs. Include them and local
 Git objects/reflogs in the deletion plan.
 Feat-008's current package is `results/feat008/jvv7_genomewide_mva_v4/`, built from
 `13f06ad` with complete owner disclosure. Offline verification and regressions pass;
-the session-27 PRIVATE live preflight exits 1 only on public-first visibility.
-Purge, live origin synchronization, reachable-history audit and pinned official contract pass.
+the session-28 PUBLIC live preflight exits 0 with no blockers. Purge, live origin,
+reachable-history audit and pinned official contract pass. This is not portal login.
 V1/v2/v3 must not be reused; never edit
 old deliverables in place. No upload, official score or receipt is recorded by this workflow.
 Hashes and verification outcomes are in `notes/track1-submission.md`.
@@ -96,11 +96,12 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 ./init.sh
 ```
 
-**Recommended next step:** the purge no longer prevents publication. The owner said
-they would make the repository public; it is still PRIVATE at the latest check.
-After publication, complete anonymous-access checks and fresh package preflight. The remote
-checker prints availability counts, never retrieved blob contents. No automated uploader
-was added; the exact authenticated upload/receipt procedure is in the submission notes.
+**Recommended next step:** follow the signed-in browser handoff in the submission
+notes: account jvv7, verify quota/history, upload unchanged v4 CSV and report with
+the public GitHub URL, submit once and preserve the receipt. If the owner already
+submitted outside this workflow, obtain that receipt instead of a duplicate upload.
+No automated uploader was added. Local HF API authentication did not establish portal
+identity; do not retry unchanged quota calls or rebuild packages as a substitute.
 Do not create v5 unless configuration, code or evidence changes; v4 already includes the
 completed disclosure. V4 has been rechecked after the purge was resolved.
 The owner's request to ignore the purge gate was not implemented. The owner subsequently

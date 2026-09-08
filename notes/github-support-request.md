@@ -9,7 +9,9 @@ not a ticket transcript independently retrieved through a Support portal session
 404s, with a successful current-README control and zero unknown errors. Three checked
 retired commit IDs also return 404 while current HEAD succeeds. The all-ref disclosure
 audit passes. See `publication-audit.md`. No further purge request is currently needed.
-GitHub still reports PRIVATE; publication and anonymous-access checks remain separate.
+Session 28 subsequently verifies owner-made PUBLIC visibility and successful
+anonymous clean-branch access plus rejection of all retired blobs. Feat-007 is complete;
+see `publication-audit.md`. No additional Support request is currently needed.
 
 The reply's general credential-rotation reminder does not establish that credentials
 were leaked in this incident. This request concerned protected wording; do not paste

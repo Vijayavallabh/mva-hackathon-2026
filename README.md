@@ -89,17 +89,17 @@ Feat-001 through feat-006, including feat-005b targeted recall and feat-005c pha
 The local Track 1 draft has been checked against a
 pinned copy of the official scorer and exact reference normalization. Feat-008 is the
 active CSV/report packaging task; [submission notes](notes/track1-submission.md) distinguish
-local validation from a real upload. **Feat-007's purge gate now passes:** GitHub Support
-reported removal, and authenticated checks confirm all 13 retired objects are unavailable
-while the live-object control succeeds. Reachable history passes the disclosure audit.
-The repository is still PRIVATE; publication and anonymous-access verification remain.
+local validation from a real upload. **Feat-007 is complete:** the repository is PUBLIC,
+and authenticated/anonymous checks confirm all 13 retired objects are unavailable
+while live-object controls succeed. Reachable history passes the disclosure audit.
 See [the publication audit](notes/publication-audit.md) and
 [Support correspondence record](notes/github-support-request.md).
 
 **2026-09-08 Support update:** the owner supplied the 10:41 UTC reply associated with
-ticket **4738585**. Independent purge verification passes. The fresh submission preflight
-has only the public-first visibility requirement outstanding; no upload was performed by
-this workflow. On 2026-09-08 the owner completed
+ticket **4738585**. Independent purge and public-access verification pass. The fresh
+submission preflight has no blockers. Feat-008 still needs a signed-in portal session
+to verify quota, submit and record the receipt; API identity alone did not establish
+portal authentication. No files were uploaded by this workflow. On 2026-09-08 the owner completed
 the AI disclosure: OpenAI/Codex API tier, data not used for model training, and no other
 AI providers. This attestation does not claim zero retention; purge was verified separately.
 
