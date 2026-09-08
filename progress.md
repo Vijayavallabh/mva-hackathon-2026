@@ -684,6 +684,12 @@ annotation resources ready
 === OK ===
 ```
 
+- Final staged audit passes 77 blobs with zero findings. The all-ref audit at
+  `f155f82` passes **47 commits / 351 blobs**, zero findings, recorded in
+  `results/feat009/all-ref-audit-final.json`. The research bundle still verifies
+  after commit. Feat-009 remains in progress for final review, pitch recording/hosting
+  and portal submission; no clinical efficacy or completed wet-lab work is claimed.
+
 ## 2026-09-06 — session 18: feat-007 history cleanup; GitHub purge pending
 
 - The user explicitly authorized feat-007, including its defined rewrite, force-push and
