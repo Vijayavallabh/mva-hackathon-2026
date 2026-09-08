@@ -99,6 +99,9 @@ everolimus as one conditional research priority and demotes hydroxychloroquine t
 The 53-source review and [exposure ledger](notes/track2-exposure.json) establish no clinical
 efficacy or therapeutic margin. No laboratory experiments or Track 2 upload have occurred.
 The [pitch script](notes/track2-pitch.md) still needs recording and a hosted URL.
+The [AlphaGenome Atlas follow-up](notes/alphagenome-assessment.md) finds potential
+molecular-interpretation value, but bounded score-download attempts returned HTTP 500;
+no Atlas scores were obtained and no phase, drug ranking or exposure conclusion changed.
 
 Feat-001 through feat-006, including feat-005b targeted recall and feat-005c phase follow-up, are complete.
 The local Track 1 draft has been checked against a

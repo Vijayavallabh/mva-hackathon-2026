@@ -1,7 +1,8 @@
 # Session handoff
 
-**Last updated:** 2026-09-08, session 32. **Active feature: feat-009 Track 2.**
-The user requested rigorous final scientific/exposure review. Baseline `1a97a0e`;
+**Last updated:** 2026-09-08, session 33. **Active feature: feat-009 Track 2.**
+The latest user requested rigorous use of AlphaGenome Atlas if relevant; baseline `d1e32b7`.
+The prior user request was final scientific/exposure review, baseline `1a97a0e`;
 review specification and findings: `notes/track2-final-review.md`.
 The previous session's equal-priority HCQ nomination is superseded.
 
@@ -67,6 +68,17 @@ Current suites: **63 evidence/package tests + 44 exposure/retrieval tests = 107*
 
 ## Blockers and unresolved evidence
 
+- **Optional Atlas evidence:** `notes/alphagenome-assessment.md` and the primary review
+  document today's release and actual bounded access attempts. Final access-v2 observed
+  five reachable documentation/catalogue resources and two HTTP 500 score archives;
+  exit 2 correctly indicates unavailable resources. No API key configured, complete terms
+  unverified, no scores/inference obtained. Actual lookup needs working public-artifact
+  access plus terms review, or an owner-configured authenticated route with approved
+  non-protected payload. This does not block submitting an honest research proposal.
+- Atlas new code has 33 synthetic transport tests; independent standards review found
+  two defects, both fixed/rechecked. Independent science/spec review found no material
+  issue. No Atlas evidence was inserted into the 53-source drug ledger or immutable v2
+  research bundle. AVI combines existing annotations; phase/drug/exposure claims unchanged.
 - **Delivery:** final recorded three-minute pitch, public playable URL, final owner review,
   live rule/disclosure and authenticated quota checks, and portal submission/receipt.
   Do not equate a script or locally verified bundle with an uploaded entry.
@@ -90,6 +102,7 @@ uv run python scripts/test_track2_review.py
 uv run python scripts/track2_exposure.py
 uv run python scripts/track2_evidence.py sensitivity
 uv run python scripts/track2_evidence.py track1
+uv run python scripts/test_alphagenome_access_audit.py
 ```
 
 Continue feat-009 only. The original `jvv7_track2_research_v1/` is preserved (seven file

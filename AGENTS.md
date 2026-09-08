@@ -126,6 +126,13 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   Preserve the historical Track 2 v1 bundle; new snapshots must use new directories.
   The verified public Track 2 code allows **three entries; only the latest is reviewed**.
   A three-minute hosted video is required; a script is not a recorded pitch or receipt.
+- **Session 33 AlphaGenome Atlas follow-up:** see `notes/alphagenome-assessment.md` and
+  `notes/alphagenome-primary-review.md`. Public-resource review/access audit only; both
+  bounded score-archive requests returned HTTP 500, no API key was configured, no scores
+  or hosted inference obtained. AVI is not independent of AlphaMissense/consequence/
+  conservation evidence and cannot resolve phase or establish drug response/exposure.
+  Do not turn access failures into zero scores or upload source VCF records to the API.
+  Preserve the reviewed Track 2 v2 snapshot; the addendum does not change drug ranking.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed

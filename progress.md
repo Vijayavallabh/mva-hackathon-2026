@@ -1651,3 +1651,76 @@ unknown. No clinical intervention, protected-data transfer or new provider was i
 - Post-commit final v2 bundle verification still passes all ten files/current input
   binding; worktree was clean. Push the session commits to configured `origin` and
   verify clean `main` with zero ahead/behind before handing off. No Track 2 quota spent.
+
+## 2026-09-08 — Session 33: AlphaGenome Atlas relevance and attempted access
+
+User requests rigorous use of AlphaGenome Atlas if relevant. Baseline `d1e32b7`, clean
+and synchronized. Feat-009 only; Track 1 submitted v4 and reviewed Track 2 v2 preserved.
+
+- Research and scientific-critical-thinking skills guided official-source review and
+  a separate source-review agent. `notes/alphagenome-primary-review.md` verifies today's
+  release, pinned SDK `aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d`, current SNV-only public
+  coverage and AVI's dependencies. Its score is not independent AlphaMissense/coding/
+  conservation evidence, not a pathogenicity probability and not drug/phase/exposure data.
+- `notes/alphagenome-assessment.md` records scope, actual requests, relevance, limitations,
+  prospective analysis and safe next routes. No Atlas score obtained, ranking unchanged.
+- New fixed-public-URL `scripts/alphagenome_access_audit.py` cannot accept variant/VCF/
+  sequence/key/arbitrary-URL input and invokes no model. Final command:
+
+  ```bash
+  uv run python scripts/alphagenome_access_audit.py results/feat009/alphagenome-access-v2
+  ```
+
+  Exit **2**, correctly reporting five reachable public documentation/catalogue pages
+  and two unavailable score archives (HTTP **500**). Both exploratory HEAD/range probes
+  and the v1 audit also failed on the score downloads. Complete terms remain unverified;
+  neither common API-key environment variable was configured (values never printed).
+  No authentication, new terms acceptance, hosted prediction, subject-data request or
+  large archive download occurred. Access failure is unknown evidence, not a zero effect.
+- V2 access manifest executing-script hash and all seven retained-response hashes match.
+  V1 is preserved as the pre-review snapshot. The resource skill used ephemeral
+  `uv run --with psutil` after its plain script lacked the dependency; no project
+  dependency changed. About 3,250 GB disk free, 452 GB RAM available; all four visible
+  A100s busy. No GPU job or full-archive download was started.
+- Independent standards review found two P2 defects: accepted declared-length truncation
+  and unhandled interrupted body reads losing the audit. Fixed and independently rechecked:
+  invalid/incomplete responses now stay unavailable; successful observations checkpoint
+  with explicit in-progress state. Independent science/spec review found no material
+  issue in the relevant primary manuscript/SDK claims and their limits.
+- **33 new tests + 63 evidence/package + 44 exposure/retrieval = 140 passing tests**.
+  `compileall`, `git diff --check`, official Track 1 scorer self-check and v4 hash guard
+  pass. Track 2 v2 still verifies ten files/current-input binding. No scientific evidence
+  inserted into the 53-source ledger, no new bundle or portal upload.
+- Startup and fresh post-change `./init.sh` both exit 0. Actual fresh output from
+  `logs/alphagenome-final-init-20260908.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+The relevance/access assessment is complete, but score retrieval has not happened.
+Working public-artifact access with terms review, or an owner-configured authenticated
+route with approved non-protected payload, is needed for actual Atlas evidence. This
+optional missing evidence does not block the honest Track 2 proposal. Trans remains
+unconfirmed; drug exposure margins unknown. Video/hosting/final submission checks remain.
