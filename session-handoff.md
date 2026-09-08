@@ -1,80 +1,84 @@
 # Session handoff
 
-**Last updated:** 2026-09-08, session 31. **Active feature: feat-009 Track 2.**
-Owner explicitly authorized rigorous autonomous research with repeated skeptical review.
-Scope and acceptance: `notes/track2-plan.md`; starting commit `21896c6`.
+**Last updated:** 2026-09-08, session 32. **Active feature: feat-009 Track 2.**
+The user requested rigorous final scientific/exposure review. Baseline `1a97a0e`;
+review specification and findings: `notes/track2-final-review.md`.
+The previous session's equal-priority HCQ nomination is superseded.
 
 ## Current scientific and competition state
 
-- Owner confirms first Track 1 submission and reports **100 rank points / F-max 1**,
-  leaderboard position **93**. Do not continue saying upload/score wholly unknown or
-  ask for duplicate submission. Receipt and uploaded-byte identity have not been
-  independently verified; feat-008 retains only this administrative archive requirement.
-  Owner authorization explicitly permits Track 2 research despite that dependency.
-- **Trans phase remains unconfirmed.** Feat-005b targeted recall, feat-005c fragment
-  connectivity and feat-006b native phase audits supplied no linking evidence. No
-  score, prediction or assumption of compound heterozygosity establishes phase.
-- **The v4 CSV/report are immutable** in `results/feat008/jvv7_genomewide_mva_v4/`.
-  Current hashes are checked by `uv run python scripts/track2_evidence.py track1`.
-  Do not rebuild or overwrite them. Earlier v1/v2/v3 are historical, not upload choices.
-- Feat-007 publication/purge is complete. Support ticket 4738585 and controlled
-  authenticated/anonymous checks resolved it. Repo is public. Retain preflight guards,
-  but do not recreate the old purge blocker or send another Support message.
-- Owner-attested AI disclosure: OpenAI Codex API tier, no model training, no other
-  AI providers. Not independently audited; does not imply zero retention. No new
-  AI-provider service was used in Track 2 work.
-- Public Track 2 code at `1c761cc23d90aebe6a011fd5b0b99517df42408c` allows **three
-  entries, latest only reviewed**, not one. Detailed report, GitHub URL and a
-  three-minute YouTube/Vimeo video URL are required. See `notes/track2-search.md`.
+- The owner reports first Track 1 submission: **100 rank points / F-max 1**, leaderboard
+  position **93**. Independent receipt/uploaded-byte archival remains the sole feat-008
+  administrative blocker, not a reason to resubmit or block authorized Track 2 research.
+- **Trans phase remains unconfirmed.** No new genetic/phase experiment occurred here.
+- Preserve `results/feat008/jvv7_genomewide_mva_v4/` byte-for-byte. Check with
+  `uv run python scripts/track2_evidence.py track1`; current-file identity does not
+  independently verify the uploaded bytes.
+- Feat-007 purge/publication is complete; repo public; Support ticket 4738585. Do not
+  recreate the old purge blocker, change visibility or contact Support/family.
+- Owner-attested AI disclosure: OpenAI/Codex API tier, no model training and no other
+  providers. This is not an account audit or zero-retention claim. No extra provider used.
+- Public Track 2 code permits **three entries, latest only reviewed**. Report, GitHub URL
+  and a three-minute YouTube/Vimeo URL are required; no Track 2 upload has occurred.
 
-## Track 2 artifacts and evidence
+## Final review outcome and artifacts
 
-- `notes/track2-report.md`: detailed research proposal, not a clinical treatment plan.
-- `notes/track2-sources.json`: thirty source/claim/model/reading-depth records.
-- `notes/track2-candidates.json`: twelve decisions; two conditional screens
-  (everolimus and hydroxychloroquine), one temsirolimus benchmark, three
-  deprioritizations, six exclusions. No established efficacy or measured exposure margin.
-- `notes/track2-validation.md`: staged genotype/phase, RNA/protein, functional,
-  matched-normal/tumour and exposure gates; randomization, blinding and replication.
-  **No laboratory experiment was performed.** Genetic correction is a proposed
-  positive control, not a drug or an observed rescue in this subject.
-- `notes/track2-pitch.md`: approximately 401 spoken words with storyboard/timing;
-  still a script, not a recorded/hosted pitch.
-- `notes/track2-devils-advocate.md`: R0–R4 objections, corrections and review record.
-- `scripts/track2_public_search.py`: fixed public-only queries and provenance.
-- `scripts/track2_evidence.py`: offline ledger checks, qualitative rationale ablations,
-  optional public source verification, draft-package build/verify, Track 1 hash guard.
-- `scripts/test_track2_evidence.py`: adversarial unit/regression checks; no subject input.
+- **Everolimus: one conditional, phenotype-first research priority.** Measure mTORC1
+  excess before screening; require functional benefit, exposure and deficient-normal safety.
+- **HCQ: reserve/deprioritized**, not an equal-priority lead. Closest compound-level
+  adult everolimus/HCQ trial is included with its positive single-arm endpoint and limitations.
+  No pediatric RMS or genotype-specific therapeutic window follows.
+- Twelve candidates: one conditional screen, one temsirolimus benchmark, four
+  deprioritizations and six exclusions. No established clinical efficacy.
+- `notes/track2-report.md`: research draft 2; `track2-final-review.md`: extended
+  scientific, PK/PD, negative/positive evidence and horizon review.
+- `notes/track2-sources.json`: **53 curated sources**, 40 DOI-bearing papers/notices,
+  eleven official pages and two chemical-property records. Selected text/abstract reading,
+  not complete reading of all search results.
+- `notes/track2-exposure.json`: eight public-study/label observations, with parent/salt,
+  matrix, binding, timing, endpoint and population retained. All clinical margins null.
+  `scripts/track2_exposure.py` converts units, not clinical doses or therapeutic margins.
+- `track2-validation.md`: proposed assays only; measured exposure, reporter controls,
+  matched deficient-normal assessment, RMS comparator and combination-antagonism gates.
+- `track2-pitch.md`: about 408 spoken words / 136 words per minute; not a recording.
+- `track2-devils-advocate.md`: separate standards/spec findings and revision record.
 
-Two independent review agents reported four standards/implementation and two specification
-findings at `9ccf8b2`. All were fixed and independently rechecked, with no remaining material
-findings in scope. The revised suite passes **60 tests**. API failures no longer look like
-zero-hit success; missing exposure fields and evidence-class typos fail validation.
-The design now requires an RMS comparator gate and distinguishes reversible drug effects
-from replication failure, injury and failed durable tumour killing. See the revision log.
+## Reproducibility and review evidence
 
-Public caches are ignored under `results/feat009/`. The initial version-only Europe PMC
-response produced an **invalid** search summary; it is not zero-hit evidence. The
-expanded focused run retrieved 138/138, 404/404, 7/7, 12/12 and 5/5 overlapping hits,
-with no failed requests. This is not full independent screening of every paper.
-Final source-verification-v2 recorded 19/19 DOI/title matches and 11 official pages
-retrieved, zero errors/review flags. Identifier checks do not establish scientific truth.
+Supplementary public search: twelve fixed sets, **941 distinct source/ID records**, no
+failed/truncated queries in `results/feat009/final-review-search-v2-20260908/`. This is
+not 941 screened studies, complete literature or a duplicate systematic review.
+One DOI has MED/PPR records; related studies/versions are not independent replications.
+
+The 23-article XML attempt in `final-review-fulltexts-v2-20260908/` returned eleven usable
+articles and twelve HTTP 404s, explicitly recorded. All eleven usable bodies pass the
+tightened substantive-text validator. Browser/abstract reading depth remains explicit.
+
+`source-verification-v5/` is the current 53-source identity/provenance run; older v4
+verified 52 sources and must not be called the current source-ledger hash.
+Full DOI/title and chemical-identity checks are separate from claim validity.
+
+Independent review of `893dbd2` identified three standards/validation defects and one
+specification omission (Haas 2019). Fixes bind analyte/form/mass to source metadata, reject
+per-record invented margins, reject empty article bodies, and include the actual drug
+combination trial. Both independent rechecks report all findings resolved; no new material
+issue was identified in their bounded reviews. Final checks are in progress/adversarial notes.
+Current suites: **63 evidence/package tests + 44 exposure/retrieval tests = 107**.
 
 ## Blockers and unresolved evidence
 
-- **Track 2 delivery:** final recorded three-minute pitch, public playable URL,
-  authenticated quota check and portal receipt remain outstanding. Do not equate a
-  script or a locally built package with submission. Do not spoof authentication.
-- **Track 1 archival check:** obtain the existing receipt when available, not another
-  upload. This does not block literature, code or draft-report work.
-- **Science:** exact-allele functional effects, phase, tumour context, pathway activity
-  and exposure-supported normal/tumour margin remain unknown. The two conditional
-  screens are experiments to falsify, not drugs recommended for the child.
-- Do not seek family contact, acquire patient samples, order treatment, or transfer
-  subject files to answer these questions. Authorized laboratory/material access would
-  be required for future wet-lab work. No clinical dose is proposed.
-- Preferred external search/image skill services lacked authentication; public web/API
-  retrieval and local text schematics were used. No extra model provider was introduced.
+- **Delivery:** final recorded three-minute pitch, public playable URL, final owner review,
+  live rule/disclosure and authenticated quota checks, and portal submission/receipt.
+  Do not equate a script or locally verified bundle with an uploaded entry.
+- **Science:** exact-allele effects, phase, current tumour/clinical context, pathway activity
+  and a measured normal/tumour exposure window remain unknown. No wet-lab work performed.
+  Literature review cannot establish these facts or authorize clinical treatment.
+- **Track 1:** independently archive the existing receipt if supplied; do not upload again.
+- No subject-file transfer, sample acquisition, treatment/procurement, family contact or
+  extra AI provider is authorized. Preferred research/image skill services lack credentials;
+  public sources/local tables were used instead.
+- These scientific limits do not prevent an honest research proposal, but must not be
+  concealed or presented as completed experiments.
 
 ## Resume and verify
 
@@ -82,21 +86,20 @@ retrieved, zero errors/review flags. Identifier checks do not establish scientif
 ./init.sh
 uv run python scripts/track2_evidence.py check
 uv run python scripts/test_track2_evidence.py
+uv run python scripts/test_track2_review.py
+uv run python scripts/track2_exposure.py
 uv run python scripts/track2_evidence.py sensitivity
 uv run python scripts/track2_evidence.py track1
 ```
 
-Continue feat-009 only: address documented review findings, verify draft-package
-integrity, refine the scientific/pitch delivery and prepare a hosted pitch. The current
-review/test/commit record is appended to `progress.md` and the adversarial log.
-Do not infer completion from the presence of a report draft.
-
-Prepared local research bundle: `results/feat009/jvv7_track2_research_v1/`.
-`uv run python scripts/track2_evidence.py verify results/feat009/jvv7_track2_research_v1`
-passes seven file hashes, current input binding and Track 1 preservation; explicitly
-reports `upload_ready: false`. Any subsequent tracked input change requires a new
-bundle directory; do not overwrite this snapshot. The research report SHA-256 is
-`48e0f15a6c13bcec5b39c7982e83c37795a88d11969175bb15c323aa4eb13a05`.
+Continue feat-009 only. The original `jvv7_track2_research_v1/` is preserved (seven file
+hashes checked). `jvv7_track2_research_v2-review/` is the pre-independent-fix snapshot;
+do not submit it. The final reviewed research bundle is
+`results/feat009/jvv7_track2_research_v2/`; report SHA-256
+`6685a1f25b7e8da6e69bab57bf5bdb855dce0e22095d80c9f1a02ea80d37ed72`.
+Run `uv run python scripts/track2_evidence.py verify results/feat009/jvv7_track2_research_v2`.
+V2 verification enforces ten files and current input hashes;
+any later input change requires a new directory. Integrity is not clinical validity.
 
 ## Retained earlier work and guardrails
 

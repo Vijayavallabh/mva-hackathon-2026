@@ -123,7 +123,7 @@ The initial broad full-text queries were noisy; focused title/abstract queries w
 Record retrieval counts are not counts of fully read or eligible studies. Key papers were
 selected for mechanistic relevance, closest model, counterevidence or regulatory relevance.
 The supplementary review retrieved twelve bounded query sets, comprising 941 distinct
-source/ID records, and expanded the curated ledger to 52 sources. Those numbers are not
+source/ID records, and expanded the curated ledger to 53 sources. Those numbers are not
 full-text reading counts. The [final review](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-final-review.md)
 records query counts, access failures, new clinical findings and the exposure audit.
 Some evidence was accessible only at abstract level. This can miss details, unpublished
@@ -198,6 +198,14 @@ perturbation, with adult oncology pharmacodynamic experience. An adult phase I c
 study does not establish pediatric MVA/RMS efficacy, and neither target engagement nor
 stable disease proves clinical benefit. We do not propose the combination as a treatment.
 [Rangwala et al., 2014](https://doi.org/10.4161/auto.29119)
+
+There is also an adult RCC trial of **everolimus plus HCQ itself**: two partial responses
+among 33 evaluable participants, and its predefined six-month PFS threshold was met.
+This is closer compound-level evidence and must not be omitted. However, there was no
+everolimus-alone control, HCQ PK varied, and the limited serial PBMC analysis did not
+show significant vesicle accumulation. It does not establish synergy, pediatric RMS
+efficacy or safety in BUB1B-deficient non-cancer cells. HCQ remains a reserve hypothesis.
+[Haas et al., 2019](https://doi.org/10.1158/1078-0432.CCR-18-2204)
 
 The label includes cardiac/QT, retinal, muscle/nerve and renal toxicity warnings. A
 pediatric malaria indication does not resolve pediatric oncology safety. Plasma, whole-blood,

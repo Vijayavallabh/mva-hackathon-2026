@@ -96,7 +96,7 @@ hypothetical 100/1 test. It does not establish allele function or phase:
 and [devil's-advocate revisions](notes/track2-devils-advocate.md). Twelve entries are
 assessed. The [final scientific/exposure review](notes/track2-final-review.md) retains
 everolimus as one conditional research priority and demotes hydroxychloroquine to reserve.
-The 52-source review and [exposure ledger](notes/track2-exposure.json) establish no clinical
+The 53-source review and [exposure ledger](notes/track2-exposure.json) establish no clinical
 efficacy or therapeutic margin. No laboratory experiments or Track 2 upload have occurred.
 The [pitch script](notes/track2-pitch.md) still needs recording and a hosted URL.
 

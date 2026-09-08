@@ -230,7 +230,10 @@
       "model": "US approved medicine label",
       "reading": "indications_warnings_pediatric_pk",
       "claim": "Pediatric TSC indications demonstrate formulation and monitoring experience; infection, renal failure, stomatitis and interaction risks remain.",
-      "limit": "Different disease and indication. Not approval for MVA, muscle wasting, nephrocalcinosis or RMS."
+      "limit": "Different disease and indication. Not approval for MVA, muscle wasting, nephrocalcinosis or RMS.",
+      "expected_analyte": "everolimus",
+      "expected_form": "parent",
+      "expected_molecular_weight": "958.22"
     },
     {
       "id": "hcq_label",
@@ -552,7 +555,9 @@
       "claim": "Parent hydroxychloroquine molecular weight 335.9 g/mol; not sulfate 433.95.",
       "limit": "Molecular-weight conversion does not establish bioavailability, free exposure or efficacy.",
       "expected_cid": 3652,
-      "expected_molecular_weight": "335.9"
+      "expected_molecular_weight": "335.9",
+      "expected_analyte": "hydroxychloroquine_base",
+      "expected_form": "parent base, not sulfate"
     },
     {
       "id": "metformin_mass",
@@ -564,7 +569,20 @@
       "claim": "Parent metformin molecular weight 129.16 g/mol; not hydrochloride.",
       "limit": "Molecular-weight conversion does not establish bioavailability, free exposure or efficacy.",
       "expected_cid": 4091,
-      "expected_molecular_weight": "129.16"
+      "expected_molecular_weight": "129.16",
+      "expected_analyte": "metformin_base",
+      "expected_form": "parent base, not hydrochloride"
+    },
+    {
+      "id": "haas2019",
+      "title": "Autophagy Inhibition to Augment mTOR Inhibition: a Phase I/II Trial of Everolimus and Hydroxychloroquine in Patients with Previously Treated Renal Cell Carcinoma",
+      "doi": "10.1158/1078-0432.CCR-18-2204",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30635337/",
+      "kind": "primary",
+      "model": "adult advanced RCC open-label phase I/II; actual everolimus/HCQ combination",
+      "reading": "abstract_and_selected_full_text_results_pk_pd",
+      "claim": "Two PRs among 33 evaluable participants; 15/33 reached six-month PFS, meeting the predefined >40% threshold. PK from 27; serial PBMC subset showed no significant AV increase.",
+      "limit": "No everolimus-alone control, variable HCQ PK, and nondefinitive surrogate PD. Closer compound-level evidence but not pediatric RMS, BUB1B-normal selectivity or clinical synergy proof."
     }
   ]
 }

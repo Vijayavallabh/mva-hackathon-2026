@@ -172,7 +172,7 @@ access failures, exposure quantities and updated decisions. The final search-onl
 One DOI appears under both a MED and a PPR identifier; these are not independent studies.
 Other overlapping reports/versions still need study-level linking before any meta-analysis.
 
-The current curated ledger contains **52 sources: 39 DOI-bearing papers/notices,
+The pre-review expanded ledger contained **52 sources: 39 DOI-bearing papers/notices,
 11 official pages and two PubChem molecular-identity records**. All 39 DOI/title pairs
 matched in source-verification-v3. Its two small valid PubChem JSON responses were initially
 rejected by the HTML-page size heuristic, not by an identity mismatch or API failure.
@@ -183,3 +183,10 @@ HCQ is now deprioritized: twelve entries comprise one conditional screen, one be
 four deprioritizations and six exclusions. New clinical response exceptions, negative
 endpoints and horizon findings are preserved. No claim of exhaustive screening, clinical
 efficacy or a measured normal/tumour therapeutic margin follows from these counts.
+
+Independent specification review identified Haas 2019 (PMID 30635337), retrieved in
+`hcq_oncology_pk.json` but omitted from synthesis. The actual everolimus/HCQ RCC trial
+is now included with its positive prespecified PFS result and attribution/PK/PD limits.
+The current ledger has **53 sources: 40 DOI-bearing papers/notices, eleven official
+pages and two chemical-identity records**. Source-verification-v5 verifies this revision;
+the older v4 record remains a valid historical 52-source snapshot, not the current hash.

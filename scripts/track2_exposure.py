@@ -49,15 +49,21 @@ def comparison_barriers(a: dict, b: dict) -> list[str]:
     return barriers
 
 
-def audit(ledger: dict, source_ids: set[str]) -> dict:
+def audit(ledger: dict, sources: dict[str, dict]) -> dict:
     if not isinstance(ledger, dict) or type(ledger.get("schema_version")) is not int or ledger.get("schema_version") != 1 or ledger.get("clinical_use") != "research_only" or ledger.get("clinical_exposure_margin", "missing") is not None:
         raise ValueError("unsupported exposure schema or manufactured clinical margin")
     analytes, records = ledger.get("analytes"), ledger.get("records")
     if not isinstance(analytes, dict) or not analytes or not isinstance(records, list) or not records:
         raise ValueError("missing exposure records/analytes")
-    for a in analytes.values():
-        if not isinstance(a, dict) or not positive(a.get("molecular_weight")) or a.get("source") not in source_ids:
+    if not isinstance(sources, dict):
+        raise ValueError("full source metadata required, not only source IDs")
+    for analyte, a in analytes.items():
+        if not isinstance(a, dict) or not positive(a.get("molecular_weight")) or a.get("source") not in sources:
             raise ValueError("invalid molecular-weight provenance")
+        source = sources[a["source"]]
+        if (source.get("expected_analyte") != analyte or source.get("expected_form") != a.get("form")
+                or str(a["molecular_weight"]) != source.get("expected_molecular_weight")):
+            raise ValueError("analyte, form or molecular weight differs from the cited source")
     converted, indexed = [], {}
     for r in records:
         if not isinstance(r, dict):
@@ -65,8 +71,10 @@ def audit(ledger: dict, source_ids: set[str]) -> dict:
         for k in ("id", "analyte", "source", "locator", "population", "time_context", "endpoint", "limitation"):
             if not isinstance(r.get(k), str) or not r[k].strip():
                 raise ValueError("exposure record missing " + k)
-        if r["id"] in indexed or r["source"] not in source_ids or r["analyte"] not in analytes:
+        if r["id"] in indexed or r["source"] not in sources or r["analyte"] not in analytes:
             raise ValueError("duplicate exposure ID or unknown source/analyte")
+        if r.get("clinical_exposure_margin") is not None:
+            raise ValueError("manufactured per-record clinical exposure margin")
         if r.get("matrix") not in MATRICES or r.get("basis") not in BASES or r.get("kind") not in KINDS or r.get("provenance") not in {"measured", "model_derived", "label_reference"}:
             raise ValueError("unrecognized exposure semantics")
         values = r.get("values")
@@ -91,7 +99,7 @@ def audit(ledger: dict, source_ids: set[str]) -> dict:
 
 def main() -> None:
     sources = json.loads((ROOT / "notes/track2-sources.json").read_text())
-    print(json.dumps(audit(json.loads(LEDGER.read_text()), {s["id"] for s in sources["sources"]}), indent=2))
+    print(json.dumps(audit(json.loads(LEDGER.read_text()), {s["id"]: s for s in sources["sources"]}), indent=2))
 
 
 if __name__ == "__main__":

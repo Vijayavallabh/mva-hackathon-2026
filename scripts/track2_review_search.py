@@ -72,7 +72,10 @@ def metadata_xml(data: bytes, expected_pmc: str) -> dict:
     if found.removeprefix("PMC") != expected_pmc.removeprefix("PMC"):
         raise ValueError("PMC article identity mismatch")
     title = " ".join("".join(e.itertext()) for e in root.findall("./front/article-meta/title-group/article-title"))
-    if not title or root.find("body") is None:
+    body = root.find("body")
+    # XML structure alone is insufficient: an empty body or headings-only stub is not text.
+    content = [] if body is None else body.findall(".//p") + body.findall(".//table-wrap")
+    if not title.strip() or not any("".join(e.itertext()).strip() for e in content):
         raise ValueError("article title or main text missing")
     return {"ids": ids, "title": title, "body_present": True, "full_text_retrieval_is_not_full_text_review": True}
 

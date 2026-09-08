@@ -249,7 +249,7 @@ def build(path: Path) -> dict:
     for phrase in ["trans phase remains unconfirmed", "research", "OpenAI", "API tier", "not used to train", "Acknowledgement"]:
         require(phrase.lower() in report.read_text().lower(), f"report lacks required boundary/disclosure: {phrase}")
     exposure = json.loads((ROOT / "notes/track2-exposure.json").read_text())
-    exposure_result = audit_exposure(exposure, {s["id"] for s in sources["sources"]})
+    exposure_result = audit_exposure(exposure, {s["id"]: s for s in sources["sources"]})
     path = new_output(path)
     for name, source in COPY_INPUTS.items():
         shutil.copyfile(ROOT / source, path / name)
@@ -284,7 +284,7 @@ def verify(path: Path) -> dict:
     require(validate(sources, candidates) == manifest.get("checks"), "package ledger checks mismatch")
     require(json.loads((path / "sensitivity.json").read_text()) == sensitivities(sources, candidates), "sensitivity output mismatch")
     require((path / "candidate-evidence.md").read_text() == candidate_table(sources, candidates), "candidate table mismatch")
-    exposure_result = audit_exposure(json.loads((path / "exposure.json").read_text()), {s["id"] for s in sources["sources"]})
+    exposure_result = audit_exposure(json.loads((path / "exposure.json").read_text()), {s["id"]: s for s in sources["sources"]})
     require(json.loads((path / "exposure-audit.json").read_text()) == exposure_result, "exposure audit mismatch")
     require(set(manifest.get("input_hashes", {})) == INPUT_PATHS, "input manifest mismatch")
     for name, digest in manifest["input_hashes"].items():

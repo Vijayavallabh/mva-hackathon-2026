@@ -20,7 +20,7 @@ import track2_review_search as search
 class ExposureTests(unittest.TestCase):
     def setUp(self):
         self.data = json.loads(exposure.LEDGER.read_text())
-        self.ids = {s["id"] for s in evidence.load_ledgers()[0]["sources"]}
+        self.ids = {s["id"]: s for s in evidence.load_ledgers()[0]["sources"]}
 
     def reject(self):
         with self.assertRaises(ValueError):
@@ -62,6 +62,22 @@ class ExposureTests(unittest.TestCase):
 
     def test_invalid_weight_rejected(self):
         self.data["analytes"]["everolimus"]["molecular_weight"] = 0
+        self.reject()
+
+    def test_valid_but_wrong_salt_weight_rejected(self):
+        self.data["analytes"]["hydroxychloroquine_base"]["molecular_weight"] = 433.95
+        self.reject()
+
+    def test_wrong_analyte_source_binding_rejected(self):
+        self.data["analytes"]["hydroxychloroquine_base"].update(source="metformin_mass", molecular_weight=129.16)
+        self.reject()
+
+    def test_wrong_form_rejected(self):
+        self.data["analytes"]["hydroxychloroquine_base"]["form"] = "sulfate"
+        self.reject()
+
+    def test_per_record_margin_rejected(self):
+        self.data["records"][0]["clinical_exposure_margin"] = 100
         self.reject()
 
     def test_unknown_mass_provenance_rejected(self):
@@ -150,6 +166,15 @@ class PublicRetrievalTests(unittest.TestCase):
     def test_missing_body_rejected(self):
         with self.assertRaises(ValueError):
             search.metadata_xml(self.XML.replace(b"<body><p>Test only</p></body>", b""), "PMC123")
+
+    def test_empty_or_heading_only_body_rejected(self):
+        for body in (b"<body/>", b"<body><p> </p></body>", b"<body><sec><title>Results</title></sec></body>"):
+            with self.subTest(body=body), self.assertRaises(ValueError):
+                search.metadata_xml(self.XML.replace(b"<body><p>Test only</p></body>", body), "PMC123")
+
+    def test_whitespace_title_rejected(self):
+        with self.assertRaises(ValueError):
+            search.metadata_xml(self.XML.replace(b"Public synthetic test", b"  "), "PMC123")
 
     def run_search(self, bodies):
         parent = evidence.ROOT / "results/feat009"

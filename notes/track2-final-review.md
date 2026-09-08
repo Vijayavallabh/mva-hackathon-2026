@@ -73,12 +73,12 @@ following complement this retrieval but do not establish independent database co
 ```bash
 uv run python scripts/track2_review_search.py search results/feat009/final-review-search-v2-20260908
 uv run python scripts/track2_review_search.py fulltexts results/feat009/final-review-fulltexts-v2-20260908
-uv run python scripts/track2_evidence.py sources results/feat009/source-verification-v3
+uv run python scripts/track2_evidence.py sources results/feat009/source-verification-v5
 uv run python scripts/track2_exposure.py
 ```
 
 Each command creates a **new** directory; use a new suffix for reproduction. The final
-source ledger has 52 entries, including 22 added records. It distinguishes abstract-only
+source ledger has 53 entries, including 23 added records. It distinguishes abstract-only
 reading from selected methods/results/PK-table reading. No independent dual full-text
 screening of all retrieved records, Embase subscription search, complete forward-citation
 census, non-English full-text review or unpublished-result search was performed. This is
@@ -150,6 +150,7 @@ silently substituted for an approved HCQ formulation.
 
 | HCQ clinical evidence | Positive finding | Counterweight |
 |---|---|---|
+| [Everolimus/HCQ phase I/II](https://doi.org/10.1158/1078-0432.CCR-18-2204) | Actual drug combination: two PRs in 33 evaluable adults; six-month PFS threshold met | Uncontrolled RCC, not RMS; variable HCQ PK and no significant AV rise in the small serial PBMC subset |
 | [Temsirolimus phase I](https://doi.org/10.4161/auto.29119) | Vesicle changes and stable disease | No RECIST partial responses; tiny serial-tumour subset, no randomized attribution; proposed blood threshold was nonsignificant |
 | [Glioblastoma phase I/II](https://doi.org/10.4161/auto.28984) | Exploratory blood/PBMC association at week 3 | Not significant at week 9; marrow toxicity constrained exposure; surrogate is not tumour efficacy |
 | [Metastatic pancreatic randomized trial](https://doi.org/10.1001/jamaoncol.2019.0684) | Response rate 38.2% versus 21.1% | Primary one-year survival not improved; additional toxicity. Do not erase the response finding |
@@ -158,6 +159,13 @@ silently substituted for an approved HCQ formulation.
 
 These adult studies neither establish pediatric RMS benefit nor prove HCQ can never work.
 They justify reserve status pending a direct, exposure-supported, normal-sparing result.
+
+Independent review identified the omitted Haas trial in the retrieved PK set. It is
+closer **drug-combination** evidence than the temsirolimus trial and is now included in
+both candidate support and counterevidence. Its positive prespecified single-arm outcome
+does not isolate HCQ's contribution, prove pharmacologic synergy or establish pediatric
+RMS benefit. Reserve status therefore remains, for those limitations—not on a claim
+that this combination has never reached clinical study.
 
 ### 4. Metformin and other alternatives deserve fair counter-review
 
@@ -252,3 +260,15 @@ The scientific desk review can be completed with these uncertainties explicit. L
 results are future research, not a prerequisite to honestly submitting a proposal. The
 recorded three-minute pitch, hosted URL, final owner review, live rules/quota check and
 portal receipt remain separate delivery gates. This review does not upload an entry.
+
+## Independent re-review completed
+
+Separate standards and specification reviewers checked the expanded draft against the
+session baseline, then rechecked the fixes. Standards found three validation defects:
+unbound parent/salt molecular-weight metadata, an accepted invented per-record margin,
+and an accepted empty article body. These now fail validation, including package creation
+for invalid exposure inputs. Specification review found the omitted Haas everolimus/HCQ
+trial; its favourable result and applicability limits are now retained. Both reviewers
+report no unresolved material finding in their bounded rechecks. All 107 tests pass;
+this is not clinical/pharmacology sign-off or proof of exhaustive literature coverage.
+The detailed initial findings and resolutions are in `track2-devils-advocate.md`.

@@ -50,14 +50,15 @@
       "approval_source": "hcq_label",
       "approved_use": "Malaria and specified adult autoimmune indications; not MVA or RMS.",
       "target_direction": "Disrupt lysosomal function/autophagic flux; a tumour-killing hypothesis, not constitutional repair.",
-      "bridge": "Reserve lysosomal-dependence hypothesis after final review: closest RMS studies use CQ, bafilomycin or Lys05; these do not validate HCQ or its combination with everolimus.",
+      "bridge": "Reserve lysosomal-dependence hypothesis after final review: closest RMS studies use CQ, bafilomycin or Lys05; these do not validate HCQ or its combination with everolimus. An actual everolimus/HCQ adult RCC trial met its single-arm PFS threshold; this is closer compound-level evidence but does not isolate HCQ or establish pediatric RMS selectivity.",
       "support": [
         "tang2011",
         "rangwala2014",
         "peron2012",
         "bez2352015",
         "kwong2025",
-        "zeh2020"
+        "zeh2020",
+        "haas2019"
       ],
       "counterevidence": [
         "tang2011",
@@ -67,7 +68,8 @@
         "karasic2019",
         "oreilly2026",
         "collins2018",
-        "tmz_autophagy2018"
+        "tmz_autophagy2018",
+        "haas2019"
       ],
       "evidence_level": "other_compound_or_cancer",
       "direct_pair_evidence": false,

@@ -127,7 +127,8 @@ has happened. Feat-009 remains in progress until the complete deliverable set is
 
 Baseline `1a97a0e`. User requests extensive final review; detailed methods/findings are in
 `track2-final-review.md`. The expanded rapid scoping review retrieved 941 distinct
-source/ID records across twelve overlapping query sets and curated 52 sources. This is
+source/ID records across twelve overlapping query sets and initially curated 52 sources
+(53 after independent review). This is
 not duplicate full-text screening or all literature.
 
 Material revisions before independent re-review:
@@ -151,3 +152,48 @@ The generic review skill assumes issue-tracker configuration absent from this re
 the existing local `feature_list.json` and `track2-plan.md`/final-review specification
 are used instead. Reconfiguring issue trackers/domain documentation is outside this task.
 Review findings and their resolution are appended below after the checks are performed.
+
+### Standards — initial findings and recheck
+
+The independent review of `893dbd2` identified three P2 validation defects:
+
+1. Exposure validation checked the molecular-weight source ID, not its analyte/form/mass.
+   Swapping HCQ parent weight 335.9 for sulfate weight 433.95 could silently produce an
+   incorrect conversion. The audit now requires the full source registry and binds all
+   three fields to its structured expectations; regression tests reject substitutions.
+2. An invented non-null `clinical_exposure_margin` on an individual record was accepted
+   while the generated audit reset it to null, leaving the copied raw ledger misleading.
+   Such records now fail validation, before a package output directory is created.
+3. Matching article identity with an empty XML body could be counted as successful
+   full-text retrieval. The parser now requires a nonblank title and substantive paragraph
+   or table text; empty/heading-only bodies fail with incomplete retrieval status.
+
+Independent recheck: all three resolved. The reviewer reproduced rejection of the wrong
+salt weight and manufactured margin through package building, and verified empty-body
+retrieval failure. All eleven previously usable public XML articles still validate.
+The current 53-source ledger and eight exposure records pass; every clinical margin
+remains null. Both suites pass: 63 evidence/package and 44 exposure/retrieval tests.
+No directly introduced regression found in this bounded recheck.
+
+### Specification — initial finding and recheck
+
+One P2 literature omission: Haas 2019 studied the actual everolimus/HCQ combination in
+adults with renal cell carcinoma. It was present in the retrieved PK set but absent from
+the synthesis. The revised source/candidate ledgers, report, search notes and final review
+retain two partial responses among 33 evaluable participants and 15/33 reaching six-month
+PFS, meeting the prespecified threshold. They also retain the uncontrolled design,
+variable HCQ pharmacokinetics and nonsignificant serial-PBMC vesicle finding.
+
+Independent primary-publication recheck: the omission is resolved and the new summary
+is accurate. HCQ remains reserve because attribution, pediatric RMS applicability and
+deficient-normal safety remain unresolved, not because clinical combination evidence is
+absent. No new material scientific finding was identified. Research-only status and
+unconfirmed trans phase remain intact.
+
+### Review conclusion
+
+Standards: three initial defects, all resolved. Specification: one initial omission,
+resolved. Neither review opened protected subject inputs or altered historical bundles.
+These bounded reviews are not an exhaustive systematic review, clinical approval or
+completed experimental validation. Feat-009 stays in progress for the recorded/hosted
+pitch and final submission workflow; the scoped scientific/exposure desk review is complete.

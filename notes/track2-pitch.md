@@ -47,7 +47,7 @@ Visual: everolimus conditional; hydroxychloroquine reserve; visible prerequisite
 We retained the negative phase-three temsirolimus trial alongside the encouraging relapse
 study, and added newer response exceptions without claiming a single drug caused them.
 We distinguished tumour response from survival and pathway inhibition from functional
-rescue. Our fifty-two-source review and twelve-entry ledger preserve both supporting and
+rescue. Our fifty-three-source review and twelve-entry ledger preserve both supporting and
 opposing findings. The strongest alternative explanation is often simple: a drug makes
 abnormal cells disappear because it harms them. This was broad review, not all literature.
 

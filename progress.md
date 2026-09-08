@@ -1577,3 +1577,65 @@ additional AI provider. Independent review uses the existing local feature/spec 
 No laboratory work, clinical intervention, new model provider or portal upload occurred.
 Scientific uncertainty remains explicit; the final recorded/hosted pitch and authenticated
 submission workflow are still outstanding.
+
+### Final independent revisions and verification
+
+- Draft commit `893dbd2` underwent separate standards/specification reviews. Standards
+  identified three P2 validation defects: unbound salt/parent mass, accepted invented
+  per-record margin and empty-body full-text false success. Specification identified one
+  P2 omission: the adult Haas 2019 everolimus/HCQ trial. All four findings are fixed;
+  both independent rechecks report no unresolved material finding in their bounded scope.
+  The favourable trial endpoint and limitations are now included, not selectively omitted.
+- Final ledger: **53 sources**. `source-verification-v5` reports 40 DOI/title matches,
+  two chemical-identity matches, eleven official pages and zero review flags. Its source
+  and script hashes match the current inputs. Identity/provenance checks are not clinical
+  validity checks. Eleven usable archived XML bodies still validate; twelve 404s remain
+  documented, not counted as successful full-text retrieval.
+- Final test rerun: **63 evidence/package + 44 exposure/retrieval = 107 passing tests**.
+  `track2_evidence.py check`, `track2_exposure.py`, `track1_submission.py --self-check`
+  and `git diff --check` pass. No measured clinical margin or phase confirmation added.
+- `track2_evidence.py track1` confirms both immutable v4 file hashes unchanged. Seven
+  historical v1 research file hashes were also checked unchanged. The pre-recheck
+  `jvv7_track2_research_v2-review` snapshot is retained but superseded, not overwritten.
+- Final fresh research snapshot and verification:
+
+  ```bash
+  uv run python scripts/track2_evidence.py build results/feat009/jvv7_track2_research_v2
+  uv run python scripts/track2_evidence.py verify results/feat009/jvv7_track2_research_v2
+  ```
+
+  Result: `integrity_verified: true`, ten files, current input hashes bound,
+  `upload_ready: false`. Report SHA-256:
+  `6685a1f25b7e8da6e69bab57bf5bdb855dce0e22095d80c9f1a02ea80d37ed72`.
+  No entry uploaded; recording/hosting and final owner/live submission checks remain.
+- Fresh no-argument startup ran as `nohup ./init.sh` with no manual environment setup;
+  exit 0. Actual output from `logs/track2-final-init-20260908.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+The scoped scientific/exposure review is complete; feat-009 remains in progress for
+delivery. Everolimus remains one conditional screen, HCQ reserve; all clinical margins
+unknown. No clinical intervention, protected-data transfer or new provider was introduced.
