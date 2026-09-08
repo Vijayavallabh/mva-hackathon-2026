@@ -1,5 +1,19 @@
 # Track 1 submission preparation (feat-008)
 
+## Current owner-reported result — session 31, 2026-09-08
+
+The owner confirms submitting the deliverables and reports **100 rank points / F-max 1**
+on the first attempt, at leaderboard position **93**. This supersedes the unknown upload
+status in the historical session notes below. The receipt, submission timestamp and
+uploaded-byte identity have not been independently verified; archive these from the
+existing submission rather than uploading again. Remaining quota is not inferred.
+
+The v4 CSV/report hashes remain unchanged and are checked by
+`uv run python scripts/track2_evidence.py track1`. The score is an owner-reported
+competition result, not a retrospective relabelling of hypothetical local tests.
+It does not confirm trans phase, exact functional effects or drug efficacy. Feat-008's
+remaining administrative receipt check does not block the explicitly authorized feat-009.
+
 ## Conditional CSV update decision — session 30
 
 On 2026-09-08 the owner authorized updating the submission CSV if required.

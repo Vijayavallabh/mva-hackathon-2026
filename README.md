@@ -85,18 +85,25 @@ Both, plus the scoring mechanics, are in `notes/challenge-spec.md`.
 
 ## Status
 
-**The actual Track 1 score is unknown.** Local 100 rank points / 1.0 F-max assumes
-our first pair is the answer; it is not a score prediction. The follow-up
-[evidence audit](notes/track1-evidence-audit.md) tests alternative answers, ranking
-sensitivity and native phase annotations. BUB1B remains a hypothesis, the ranking
-depends on evidence choices, and **trans phase remains unconfirmed**. The current
-v4 CSV/report were preserved; no new submission was made.
+**Track 1: owner-reported first-submission scores are 100 rank points / F-max 1**, at
+leaderboard position 93 (2026-09-08). Receipt and uploaded-byte identity have not been
+independently verified. This is a reported competition result, not the earlier local
+hypothetical 100/1 test. It does not establish allele function or phase:
+**trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
+
+**Track 2 (feat-009) is in progress:** see the [research report](notes/track2-report.md),
+[evidence ledger](notes/track2-candidates.json), [validation plan](notes/track2-validation.md)
+and [devil's-advocate revisions](notes/track2-devils-advocate.md). Twelve entries are
+assessed; everolimus and hydroxychloroquine remain conditional preclinical screens,
+not established treatments. No laboratory experiments or Track 2 upload have occurred.
+The [pitch script](notes/track2-pitch.md) still needs recording and a hosted URL.
 
 Feat-001 through feat-006, including feat-005b targeted recall and feat-005c phase follow-up, are complete.
 The local Track 1 draft has been checked against a
-pinned copy of the official scorer and exact reference normalization. Feat-008 is the
-active CSV/report packaging task; [submission notes](notes/track1-submission.md) distinguish
-local validation from a real upload. **Feat-007 is complete:** the repository is PUBLIC,
+pinned copy of the official scorer and exact reference normalization. Feat-008 retains
+only an independent receipt-archive task; [submission notes](notes/track1-submission.md)
+distinguish local validation, owner attestation and receipt verification. This does not
+block authorized Track 2 research. **Feat-007 is complete:** the repository is PUBLIC,
 and authenticated/anonymous checks confirm all 13 retired objects are unavailable
 while live-object controls succeed. Reachable history passes the disclosure audit.
 See [the publication audit](notes/publication-audit.md) and
@@ -104,9 +111,9 @@ See [the publication audit](notes/publication-audit.md) and
 
 **2026-09-08 Support update:** the owner supplied the 10:41 UTC reply associated with
 ticket **4738585**. Independent purge and public-access verification pass. The fresh
-submission preflight has no blockers. Feat-008 still needs a signed-in portal session
-to verify quota, submit and record the receipt; API identity alone did not establish
-portal authentication. No files were uploaded by this workflow. On 2026-09-08 the owner completed
+submission preflight had no blockers. API identity alone did not establish portal
+authentication; the owner subsequently reported submitting. Do not upload again merely
+to obtain a receipt. No files were uploaded by the agent workflow. On 2026-09-08 the owner completed
 the AI disclosure: OpenAI/Codex API tier, data not used for model training, and no other
 AI providers. This attestation does not claim zero retention; purge was verified separately.
 
@@ -119,8 +126,9 @@ Three findings shape the plan. **The provided VCF contains no CNV or structural 
 The corrected all-lane depth/BAF screen resolves the preliminary chr20 outlier as bias,
 finds no joint support on chr22, and retains a credible low-level chr19 gain signal that
 still requires orthogonal clinical confirmation. **There is no runs-of-homozygosity
-signal**, so with the challenge's public compound-heterozygous answer-key statement, the
-working model is two different rare damaging alleles in one gene. The first genome-wide
+signal in the coarse screen**, which does not exclude consanguinity or shorter ROH.
+The challenge's public compound-heterozygous answer-key statement motivates the
+working model of two different rare damaging alleles in one gene. The first genome-wide
 triage ranks a BUB1B pair first. Targeted all-lane realignment screened supported
 coding/splice, operational deep-intronic, repeat-adjacent and heterozygous structural calls,
 then reconstructed same-gene novel/existing pairs. It found no additional BUB1B candidate;

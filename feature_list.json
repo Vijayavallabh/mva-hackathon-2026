@@ -110,17 +110,17 @@
         "feat-007"
       ],
       "status": "blocked",
-      "evidence": "2026-09-08 session 30: reviewed owner-authorized conditional CSV update against feat-006b. No new supported allele/rank/phase change justifies editing v4. Temporary regeneration via build_submission(DEFAULT_CANDIDATES, path) is byte-identical to current CSV; all ten notes cells explicitly say trans phase unconfirmed. Package verify/regressions and 24 evidence tests pass: 10 pairs, 20 normalized alleles, complete disclosure, unchanged CSV/report hashes. No redundant v5, upload or attempt. Actual score and owner-side submission status remain unknown; feat-008 is still blocked only at authenticated portal quota/upload/receipt, not purge/publication. Session-29 live preflight at da813c9 passed PUBLIC visibility and all guards. API identity jvv7 did not establish browser quota in session 28; no unchanged auth retry. Decision, commands and fresh init output: notes/track1-submission.md and progress.md."
+      "evidence": "2026-09-08 session 31: owner confirms first submission and leaderboard scores 100 rank points / F-max 1 at position 93. Receipt and uploaded-byte identity are not independently verified; status remains blocked solely for that administrative archive requirement, not submission, purge or scientific readiness. Do not resubmit. Explicit owner authorization permits feat-009 research despite this receipt dependency. Submitted local v4 CSV/report preserved and verified with `uv run python scripts/track2_evidence.py track1`; trans remains unconfirmed. Earlier hypothetical tests remain labelled hypothetical. See notes/track1-submission.md and progress.md."
     },
     {
       "id": "feat-009",
       "name": "Track 2 drug repurposing report",
-      "description": "Mechanism characterization for the top variant(s) and approved-drug candidates targeting the disrupted pathway. Deliverables: detailed report, public GitHub link, and a 3-minute recorded pitch video. Judged on rigor 35 / impact 25 / innovation 25 / scalability 15. Limit 1 submission, no re-submissions. The organizers state publicly that care for this child 'means managing symptoms and fighting cancer cells' - malignancy should anchor the mechanism argument, but the report must also explain the renal, growth, muscle and perinatal constellation and distinguish parental reproductive history from proband findings.",
+      "description": "Mechanism characterization for the selected variants and approved-drug preclinical hypotheses. Deliverables: detailed report, public GitHub link, and a 3-minute recorded pitch hosted on YouTube/Vimeo. Rubric: rigor 35 / impact 25 / innovation 25 / scalability 15. Public config and instructions rechecked 2026-09-08 allow 3 entries, latest only reviewed; designate one team submitter. Separate constitutional functional rescue from tumour killing; retain renal/growth/muscle/developmental context and family-history scope. Preserve unconfirmed trans phase and immutable Track 1 deliverables. Evidence policy, staged gates and adversarial review: notes/track2-plan.md.",
       "dependencies": [
         "feat-008"
       ],
-      "status": "not-started",
-      "evidence": ""
+      "status": "in-progress",
+      "evidence": "2026-09-08 session 31: active owner-authorized Track 2 research. Draft report, twelve-candidate ledger, thirty-source claim ledger, staged validation design and pitch script in notes/track2-*. Public search and evidence/package tools in scripts/track2_public_search.py and scripts/track2_evidence.py; adversarial tests in scripts/test_track2_evidence.py. Two conditional preclinical screens, no demonstrated efficacy or performed laboratory experiments. Final review, recorded/hosted pitch and authenticated submission remain incomplete. Checkpoints and actual verification results are recorded in notes/track2-devils-advocate.md and progress.md."
     },
     {
       "id": "feat-010",

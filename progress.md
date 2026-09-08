@@ -1409,3 +1409,67 @@ Delly 2.1.0
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-08 — session 31: Track 2 evidence-led research and adversarial revisions
+
+- Owner reports first Track 1 submission scored 100 rank points / F-max 1, position 93.
+  Recorded as owner attestation; receipt/uploaded-byte verification remains a separate
+  administrative item, not a reason to repeat upload or block authorized feat-009.
+  No submitted Track 1 deliverable changed. Trans phase remains unconfirmed.
+- Started feat-009 against `21896c6`, specification in `notes/track2-plan.md`.
+  Thirty-source claim ledger, twelve-entry candidate ledger, detailed report, validation
+  design, search provenance, adversarial log and approximately 401-word pitch script.
+  No clinical intervention, wet-lab experiment, patient contact or Track 2 upload.
+- Literature-review and critical-thinking guidance drove correction-aware primary-source
+  checks, evidence-transfer limits and negative-trial retention. Experimental-design
+  guidance shaped genotype controls, randomization, blinding, replication and stop rules.
+  Harness/implementation guidance keeps feature state, actual evidence and deliverables separate.
+- Public rules correction: three Track 2 entries, latest reviewed, at the existing pinned
+  Space revision. Updated challenge spec/harness; no claim that the rule changed today.
+- `uv run python scripts/track2_public_search.py results/feat009/search-20260908-expanded`
+  returned all five focused result sets (138, 404, 7, 12, 5 overlapping records), zero
+  failed requests. Retrieval is not exhaustive reading or a systematic-review count.
+  The initial version-only API response is excluded; missing-result regression tests added.
+- `uv run python scripts/track2_evidence.py sources results/feat009/source-verification-v2`:
+  30 sources, 19 DOI/title matches, `needs_review: []`; 11 official pages retrieved with
+  content review separately recorded. Source ledger and downloaded bytes are hash-bound.
+  The literature skill's `CitationVerifier.verify_doi` additionally checked all 19
+  exact DOI strings, loaded via importlib from
+  `/home/sports/.agents/skills/literature-review/scripts/verify_citations.py`,
+  using `uv run --with requests python -c ...`. All 19 resolved with metadata.
+  Exact strings avoid its Markdown regex's parenthesis truncation. No new project
+  dependency or external AI provider was added.
+- Initial `uv run python scripts/test_track2_evidence.py`: **48 tests OK**.
+  Coverage includes fabricated efficacy/phase/margins, citation/approval errors,
+  invalid search schema, package tampering/staleness, missing files/path traversal
+  and no-overwrite behavior. `uv run python scripts/track2_evidence.py track1` verifies
+  unchanged local v4 hashes. These checks do not establish scientific efficacy.
+- Initial fresh `./init.sh` completed exit 0 before implementation. Actual output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Independent review and final verification outcomes follow below; feat-009 remains
+in progress, with recorded/hosted pitch and final submission outstanding.

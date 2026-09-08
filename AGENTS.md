@@ -108,11 +108,19 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   independently verified. Anonymous clean-main and current-blob requests return 200;
   all 13 retired blobs return 404. Authenticated purge and all-ref disclosure audits
   also pass. Retain the live purge guard for every preflight.
-- **Feat-008 is the active preparation task, not a completed upload.** Build and verify
-  the CSV/report together with `scripts/prepare_track1_package.py`. The independent
-  publication purge gate must pass live preflight. Never infer account
-  plan/tier, training/retention settings, remaining quota or an official score. The
-  report keeps trans phase unconfirmed; a local hypothetical score is not a receipt.
+- **Track 1 was submitted by the owner:** on 2026-09-08 the owner reported first-attempt
+  scores of **100 rank points / F-max 1**, displayed at position **93**. These are
+  owner-reported leaderboard results, distinct from historical hypothetical tests.
+  The receipt and uploaded-byte identity have not been independently archived/verified;
+  feat-008 retains that administrative blocker. Do not ask for another upload or infer
+  remaining quota. Preserve the v4 CSV/report; trans phase remains unconfirmed.
+- **Feat-009 is now the active research task**, explicitly authorized by the owner.
+  Missing independent Track 1 receipt verification does not block Track 2 research.
+  Use `notes/track2-plan.md`, report, source/candidate ledgers and adversarial revision log.
+  Evaluate non-cancer functional rescue separately from tumour killing. No proposed drug
+  has established efficacy for the selected pair; no wet-lab experiment has been performed.
+  The verified public Track 2 code allows **three entries; only the latest is reviewed**.
+  A three-minute hosted video is required; a script is not a recorded pitch or receipt.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed
@@ -127,12 +135,14 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   solely on purge. Session-28 public preflight now passes with no blockers. Local
   HF identity is jvv7, but the portal's quota callback returned an empty response
   using API credentials: an authenticated browser session is still needed to verify
-  quota and submit. No files were uploaded or submit callback invoked. Never spoof
+  quota and submit. No files were uploaded or submit callback invoked by that workflow;
+  the subsequent owner-reported submission supersedes its unknown upload status. Never spoof
   identity, bypass OAuth or infer quota from a successful local preflight.
 
 - **Never present hypothetical local 100/1 as predicted or guaranteed scores.**
   Use `scripts/audit_track1_evidence.py scores <csv>` for conditional scenarios;
-  actual scores require the authenticated receipt for the exact bytes. Feat-006b
+  independently verified exact-byte scores require the authenticated receipt. The owner's
+  subsequent 100/1 report is recorded as an attestation, not discarded as unknown. Feat-006b
   tests 169 retained pairs: BUB1B is first in 26/34 declared settings, but drops
   under combined annotation ablation. That fraction is not a probability. Native
   phase metadata adds no linkage evidence; trans remains unconfirmed. See

@@ -94,10 +94,17 @@ the best F over all thresholds.
   filename should identify the participant/team. Source: [official upload code at the
   pinned revision](https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/blob/1c761cc23d90aebe6a011fd5b0b99517df42408c/tabs/submit_track1.py).
   See `notes/track1-submission.md` for the local package and remaining gates.
-- **Track 2: 1 submission**, no re-submissions. Report + GitHub link + 3-minute recorded
-  pitch video. Judged on rigor 35% / impact 25% / innovation 25% / scalability 15%.
-- Teams: each member registers individually and gets their own Track 1 quota; one Track 2
-  submission per team.
+- **Track 2: maximum 3 entries; only the latest is reviewed.** Correction verified
+  2026-09-08 at public revision `1c761cc23d90aebe6a011fd5b0b99517df42408c`:
+  [configuration](https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/blob/1c761cc23d90aebe6a011fd5b0b99517df42408c/config.py)
+  and [Track 2 instructions](https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/blob/1c761cc23d90aebe6a011fd5b0b99517df42408c/tabs/submit_track2.py).
+  This corrects our earlier one-entry interpretation; it is not evidence that the
+  organizers changed the rule today. Submit a `.md`/`.pdf` report, GitHub URL and a
+  three-minute recorded pitch hosted on YouTube or Vimeo. Identify participant/team in
+  the filename; disclose AI provider, plan/tier and data handling. Rubric: rigor 35% /
+  impact 25% / innovation 25% / scalability 15%. See `track2-search.md` for source hashes.
+- Teams: each member registers individually; designate one submitter for the team's
+  Track 2 entry. Do not multiply the quota through additional accounts.
 - Judging runs ~2–3 months after the 2026-10-24 close.
 - Prize pool $50,000 (AWS Imagine Grant + Anthropic).
 
