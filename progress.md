@@ -1542,3 +1542,38 @@ annotation resources ready
   `results/feat009/all-ref-audit-final.json`. The research bundle still verifies
   after commit. Feat-009 remains in progress for final review, pitch recording/hosting
   and portal submission; no clinical efficacy or completed wet-lab work is claimed.
+
+
+## 2026-09-08 — Session 32: final scientific/exposure review
+
+User requests rigorous extensive review of Track 2. Baseline `1a97a0e`, clean/upstream
+matched. Feat-009 only; no Track 1 or v1 research-snapshot changes. Trans remains
+unconfirmed. Literature-review/scientific-critical-thinking skills guide the source
+selection, opposing evidence and exposure audit; public database fallbacks avoid any
+additional AI provider. Independent review uses the existing local feature/spec files.
+
+### Review and provisional verification
+
+- New `notes/track2-final-review.md` documents twelve supplementary fixed search sets,
+  941 distinct source/ID records and honest reading/access limits. This is not all
+  literature or an independent systematic review.
+- `source-verification-v4`: 52 sources, 39 exact DOI/title matches, two molecular-identity
+  matches, eleven official pages and no review flags. The preceding v3 wrongly applied
+  an HTML size threshold to small valid PubChem JSON; typed validation fixes that.
+- New clinical evidence preserves response exceptions, negative primary endpoints,
+  combination-attribution limits and deficient-normal hazards. HCQ is demoted to reserve;
+  everolimus remains one phenotype-first conditional research priority, not a treatment.
+- Eight public exposure observations, reproducible dimensional checks and explicit
+  unknown clinical margins in `notes/track2-exposure.json` and `scripts/track2_exposure.py`.
+- Updated report/pitch/validation/candidate/source ledgers and harness. V2 package schema
+  binds review and exposure inputs; historical v1 is preserved. Pitch estimate: 408 spoken
+  words / 136 words per minute, not a recorded duration.
+- `uv run python scripts/test_track2_evidence.py`: **63 tests pass**.
+  `uv run python scripts/test_track2_review.py`: **38 tests pass**.
+  `uv run python scripts/track2_evidence.py track1`: both v4 hashes unchanged.
+- Startup `./init.sh` passed; fresh post-change run, disclosure audits, independent
+  reviews and final research-bundle verification are recorded below when complete.
+
+No laboratory work, clinical intervention, new model provider or portal upload occurred.
+Scientific uncertainty remains explicit; the final recorded/hosted pitch and authenticated
+submission workflow are still outstanding.

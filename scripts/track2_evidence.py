@@ -19,14 +19,29 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+from track2_exposure import audit as audit_exposure
+
 ROOT = Path(__file__).resolve().parents[1]
+SCRIPT_SHA256 = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 SOURCES = ROOT / "notes/track2-sources.json"
 CANDIDATES = ROOT / "notes/track2-candidates.json"
+COPY_INPUTS = {
+    "jvv7_track2_report_v2.md": "notes/track2-report.md",
+    "jvv7_track2_pitch_v2.md": "notes/track2-pitch.md",
+    "validation-plan.md": "notes/track2-validation.md",
+    "sources.json": "notes/track2-sources.json",
+    "candidates.json": "notes/track2-candidates.json",
+    "scientific-exposure-review.md": "notes/track2-final-review.md",
+    "exposure.json": "notes/track2-exposure.json",
+}
+INPUT_PATHS = set(COPY_INPUTS.values()) | {"notes/track2-plan.md", "notes/track2-search.md", "notes/track2-devils-advocate.md",
+    "scripts/track2_evidence.py", "scripts/track2_public_search.py", "scripts/track2_review_search.py", "scripts/track2_exposure.py"}
+PACKAGE_FILES = set(COPY_INPUTS) | {"candidate-evidence.md", "sensitivity.json", "exposure-audit.json"}
 DECISIONS = {"conditional_screen", "benchmark_only", "deprioritize", "exclude"}
-SOURCE_KINDS = {"primary", "correction", "regulatory", "registry", "competition"}
+SOURCE_KINDS = {"primary", "correction", "regulatory", "registry", "competition", "database"}
 EVIDENCE_LEVELS = {"contradictory_cell_evidence", "cross_disease_hypothesis", "mechanistic_tool", "other_allele_animal", "other_compound_or_cancer", "other_intervention_animal", "pediatric_cancer_preclinical", "same_tumour_clinical_not_genotype"}
 APPROVAL_STATES = {"combination_not_verified", "not_current_in_reviewed_jurisdiction", "not_verified", "verified_other_indication"}
-PUBLIC_HOSTS = {"www.nature.com", "pubmed.ncbi.nlm.nih.gov", "pmc.ncbi.nlm.nih.gov", "aacrjournals.org", "www.jci.org", "www.sciencedirect.com", "ascopubs.org", "dailymed.nlm.nih.gov", "www.ema.europa.eu", "clinicaltrials.gov", "huggingface.co", "api.crossref.org"}
+PUBLIC_HOSTS = {"www.nature.com", "pubmed.ncbi.nlm.nih.gov", "pmc.ncbi.nlm.nih.gov", "pubchem.ncbi.nlm.nih.gov", "aacrjournals.org", "www.jci.org", "www.sciencedirect.com", "ascopubs.org", "dailymed.nlm.nih.gov", "www.ema.europa.eu", "clinicaltrials.gov", "huggingface.co", "api.crossref.org"}
 TRACK1 = {
     "jvv7_genomewide_mva_v4.csv": "a1f9315e223a07914589ce6884a66702b80e587ec5b7ad67f2ca1213f6caa225",
     "jvv7_genomewide_mva_v4_report.md": "f36bacbc506d5a717ee7a55f174fed3f376ed7beacd83d11091e57d319d0d68b",
@@ -67,6 +82,9 @@ def validate(sources: dict, candidates: dict) -> dict:
             doi = s["doi"].lower()
             require(re.fullmatch(r"10\.\d{4,9}/[^\s]+", doi) is not None and doi not in dois, "invalid or duplicate DOI")
             dois.add(doi)
+        if s["kind"] == "database":
+            require(type(s.get("expected_cid")) is int and s["expected_cid"] > 0
+                    and isinstance(s.get("expected_molecular_weight"), str), "chemical database identity missing")
         registry[s["id"]] = s
     require(bool(registry), "empty source ledger")
     seen = set()
@@ -148,6 +166,16 @@ class PublicRedirect(urllib.request.HTTPRedirectHandler):
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
+def check_chemical_metadata(source: dict, obj: dict) -> dict:
+    require(isinstance(obj, dict) and isinstance(obj.get("PropertyTable"), dict), "invalid chemical property envelope")
+    rows = obj["PropertyTable"].get("Properties")
+    require(isinstance(rows, list) and len(rows) == 1 and isinstance(rows[0], dict), "invalid chemical property records")
+    r = rows[0]
+    require(type(r.get("CID")) is int and r["CID"] == source["expected_cid"], "compound identity mismatch")
+    require(r.get("MolecularWeight") == source["expected_molecular_weight"], "molecular-weight mismatch")
+    return {"cid": r["CID"], "molecular_weight": r["MolecularWeight"], "clinical_efficacy_inferred": False}
+
+
 def new_output(path: Path) -> Path:
     path = path.resolve()
     require(path.is_relative_to(ROOT / "results/feat009"), "output must be a new directory under results/feat009")
@@ -157,6 +185,7 @@ def new_output(path: Path) -> Path:
 
 def fetch_sources(path: Path) -> dict:
     sources, _ = load_ledgers()
+    sources_hash = sha256(SOURCES)
     path = new_output(path)
     rows = []
     opener = urllib.request.build_opener(PublicRedirect())
@@ -167,11 +196,14 @@ def fetch_sources(path: Path) -> dict:
             req = urllib.request.Request(url, headers={"User-Agent": "MVA-Track2-public-evidence/1.0"})
             with opener.open(req, timeout=30) as response:
                 b = response.read()
-            (path / (s["id"] + (".json" if "doi" in s else ".html"))).write_bytes(b)
+            (path / (s["id"] + (".json" if "doi" in s or s["kind"] == "database" else ".html"))).write_bytes(b)
             row.update(sha256=hashlib.sha256(b).hexdigest(), bytes=len(b), status="retrieved")
             if "doi" in s:
                 row["metadata"] = check_metadata(s, json.loads(b))
                 row["status"] = "metadata_match" if row["metadata"]["title_matches"] else "title_review_required"
+            elif s["kind"] == "database":
+                row["metadata"] = check_chemical_metadata(s, json.loads(b))
+                row["status"] = "chemical_identity_match"
             else:
                 # HTTP success alone may be an anti-bot page, not the desired document.
                 require(len(b) > 2000 and not any(x in b.lower() for x in [b"checking your browser", b"just a moment..."]), "source body needs manual review")
@@ -179,8 +211,9 @@ def fetch_sources(path: Path) -> dict:
         except (ValueError, KeyError, TypeError, urllib.error.URLError, OSError) as exc:
             row.update(status="error", error_type=type(exc).__name__)
         rows.append(row)
-        (path / "verification.json").write_text(json.dumps({"sources_sha256": sha256(SOURCES), "script_sha256": sha256(Path(__file__)), "sources": rows}, indent=2) + "\n")
+        (path / "verification.json").write_text(json.dumps({"sources_sha256": sources_hash, "script_sha256": SCRIPT_SHA256, "sources": rows}, indent=2) + "\n")
     result = {"source_count": len(rows), "metadata_matches": sum(r["status"] == "metadata_match" for r in rows),
+              "chemical_identity_matches": sum(r["status"] == "chemical_identity_match" for r in rows),
               "needs_review": [r["id"] for r in rows if r["status"] in {"error", "title_review_required"}],
               "note": "Identifiers and page provenance only; inspect claim support and corrections separately."}
     (path / "summary.json").write_text(json.dumps(result, indent=2) + "\n")
@@ -211,24 +244,23 @@ def build(path: Path) -> dict:
     sources, candidates = load_ledgers()
     track1 = check_track1()
     report = ROOT / "notes/track2-report.md"
-    pitch = ROOT / "notes/track2-pitch.md"
-    inputs = [SOURCES, CANDIDATES, report, pitch, ROOT / "notes/track2-validation.md", ROOT / "notes/track2-plan.md", ROOT / "notes/track2-search.md", ROOT / "notes/track2-devils-advocate.md", Path(__file__), ROOT / "scripts/track2_public_search.py"]
+    inputs = [ROOT / p for p in sorted(INPUT_PATHS)]
     require(all(p.is_file() for p in inputs), "research input missing")
     for phrase in ["trans phase remains unconfirmed", "research", "OpenAI", "API tier", "not used to train", "Acknowledgement"]:
         require(phrase.lower() in report.read_text().lower(), f"report lacks required boundary/disclosure: {phrase}")
+    exposure = json.loads((ROOT / "notes/track2-exposure.json").read_text())
+    exposure_result = audit_exposure(exposure, {s["id"] for s in sources["sources"]})
     path = new_output(path)
-    shutil.copyfile(report, path / "jvv7_track2_report_v1.md")
-    shutil.copyfile(pitch, path / "jvv7_track2_pitch_v1.md")
-    shutil.copyfile(ROOT / "notes/track2-validation.md", path / "validation-plan.md")
-    shutil.copyfile(SOURCES, path / "sources.json")
-    shutil.copyfile(CANDIDATES, path / "candidates.json")
+    for name, source in COPY_INPUTS.items():
+        shutil.copyfile(ROOT / source, path / name)
     (path / "candidate-evidence.md").write_text(candidate_table(sources, candidates))
     (path / "sensitivity.json").write_text(json.dumps(sensitivities(sources, candidates), indent=2) + "\n")
-    manifest = {"schema_version": 1, "stage": "research_draft_not_submitted", "upload_performed": False, "video_url": None,
+    (path / "exposure-audit.json").write_text(json.dumps(exposure_result, indent=2) + "\n")
+    manifest = {"schema_version": 2, "stage": "research_draft_not_submitted", "upload_performed": False, "video_url": None,
                 "created_at": datetime.now(timezone.utc).isoformat(), "checks": validate(sources, candidates), "track1": track1,
                 "input_hashes": {str(p.relative_to(ROOT)): sha256(p) for p in inputs},
                 "files": {p.name: sha256(p) for p in sorted(path.iterdir())},
-                "remaining_gates": ["final scientific review and explicit unresolved exposure assumptions", "final recorded three-minute pitch and hosted URL", "live rules, disclosure and authenticated quota", "final owner review and portal receipt"],
+                "remaining_gates": ["final recorded three-minute pitch and hosted URL", "live rules, disclosure and authenticated quota", "final owner review and portal receipt"],
                 "future_research_not_submission_prerequisite": "Proposed laboratory and exposure experiments have not been performed. A research proposal must not label them as measured results."}
     (path / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     return manifest
@@ -239,9 +271,9 @@ def verify(path: Path) -> dict:
     path = path.resolve()
     require(path.is_relative_to(ROOT / "results/feat009") and path.is_dir(), "package must be under results/feat009")
     manifest = json.loads((path / "manifest.json").read_text())
-    require(manifest.get("schema_version") == 1 and manifest.get("stage") == "research_draft_not_submitted", "unsupported package stage")
+    require(manifest.get("schema_version") == 2 and manifest.get("stage") == "research_draft_not_submitted", "not a current v2 research package; preserve historical snapshots")
     require(manifest.get("upload_performed") is False and manifest.get("video_url") is None, "draft must not imply upload or a hosted pitch")
-    expected = {"jvv7_track2_report_v1.md", "jvv7_track2_pitch_v1.md", "validation-plan.md", "sources.json", "candidates.json", "candidate-evidence.md", "sensitivity.json"}
+    expected = PACKAGE_FILES
     require(set(manifest.get("files", {})) == expected, "package file set mismatch")
     require({p.name for p in path.iterdir()} == expected | {"manifest.json"}, "unexpected or missing package file")
     for name, digest in manifest["files"].items():
@@ -252,11 +284,12 @@ def verify(path: Path) -> dict:
     require(validate(sources, candidates) == manifest.get("checks"), "package ledger checks mismatch")
     require(json.loads((path / "sensitivity.json").read_text()) == sensitivities(sources, candidates), "sensitivity output mismatch")
     require((path / "candidate-evidence.md").read_text() == candidate_table(sources, candidates), "candidate table mismatch")
-    input_paths = {"notes/track2-sources.json", "notes/track2-candidates.json", "notes/track2-report.md", "notes/track2-pitch.md", "notes/track2-validation.md", "notes/track2-plan.md", "notes/track2-search.md", "notes/track2-devils-advocate.md", "scripts/track2_evidence.py", "scripts/track2_public_search.py"}
-    require(set(manifest.get("input_hashes", {})) == input_paths, "input manifest mismatch")
+    exposure_result = audit_exposure(json.loads((path / "exposure.json").read_text()), {s["id"] for s in sources["sources"]})
+    require(json.loads((path / "exposure-audit.json").read_text()) == exposure_result, "exposure audit mismatch")
+    require(set(manifest.get("input_hashes", {})) == INPUT_PATHS, "input manifest mismatch")
     for name, digest in manifest["input_hashes"].items():
         require(sha256(ROOT / name) == digest, "research input changed; build a new package")
-    for output, source in [("jvv7_track2_report_v1.md", "notes/track2-report.md"), ("jvv7_track2_pitch_v1.md", "notes/track2-pitch.md"), ("validation-plan.md", "notes/track2-validation.md"), ("sources.json", "notes/track2-sources.json"), ("candidates.json", "notes/track2-candidates.json")]:
+    for output, source in COPY_INPUTS.items():
         require(manifest["files"][output] == manifest["input_hashes"][source], "copied input mismatch")
     require(manifest.get("track1") == check_track1(), "Track 1 preservation record mismatch")
     return {"integrity_verified": True, "stage": manifest["stage"], "files": len(expected), "upload_ready": False,

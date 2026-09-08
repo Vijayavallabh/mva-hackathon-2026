@@ -75,3 +75,12 @@ regimen are unknown; no trial eligibility or patient-specific safety conclusion 
 
 Feat-009 remains in progress until the full deliverable set is ready. A report draft,
 storyboard or locally generated video is not a hosted pitch URL or submission receipt.
+
+## Session 32: final scientific/exposure review
+
+The user explicitly requests extensive final review. Baseline is `1a97a0e` (clean and
+upstream-matched at start). The detailed bounded specification and findings are in
+`notes/track2-final-review.md`. Reuse the two-axis independent review requirement above
+against this baseline, including new exposure semantics, public-only retrieval and
+preservation of historical bundles. Scientific unknowns must remain explicit; this review
+does not authorize a portal upload, patient intervention or changes to Track 1 artifacts.

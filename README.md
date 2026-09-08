@@ -94,8 +94,10 @@ hypothetical 100/1 test. It does not establish allele function or phase:
 **Track 2 (feat-009) is in progress:** see the [research report](notes/track2-report.md),
 [evidence ledger](notes/track2-candidates.json), [validation plan](notes/track2-validation.md)
 and [devil's-advocate revisions](notes/track2-devils-advocate.md). Twelve entries are
-assessed; everolimus and hydroxychloroquine remain conditional preclinical screens,
-not established treatments. No laboratory experiments or Track 2 upload have occurred.
+assessed. The [final scientific/exposure review](notes/track2-final-review.md) retains
+everolimus as one conditional research priority and demotes hydroxychloroquine to reserve.
+The 52-source review and [exposure ledger](notes/track2-exposure.json) establish no clinical
+efficacy or therapeutic margin. No laboratory experiments or Track 2 upload have occurred.
 The [pitch script](notes/track2-pitch.md) still needs recording and a hosted URL.
 
 Feat-001 through feat-006, including feat-005b targeted recall and feat-005c phase follow-up, are complete.

@@ -119,6 +119,11 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   Use `notes/track2-plan.md`, report, source/candidate ledgers and adversarial revision log.
   Evaluate non-cancer functional rescue separately from tumour killing. No proposed drug
   has established efficacy for the selected pair; no wet-lab experiment has been performed.
+  Session 32 final review: use `notes/track2-final-review.md` and the exposure ledger.
+  Everolimus is the sole conditional, phenotype-first research priority; HCQ is reserve,
+  not an equal-priority lead. All clinical exposure margins remain unknown. Do not equate
+  whole blood/plasma, peak/trough/AUC, or nominal culture with unbound tissue exposure.
+  Preserve the historical Track 2 v1 bundle; new snapshots must use new directories.
   The verified public Track 2 code allows **three entries; only the latest is reviewed**.
   A three-minute hosted video is required; a script is not a recorded pitch or receipt.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a

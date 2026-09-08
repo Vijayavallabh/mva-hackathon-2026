@@ -68,7 +68,9 @@
       "id": "feat-005c",
       "name": "Leading-pair phase-connectivity follow-up",
       "description": "User-authorized 2026-09-08 follow-up to the unconfirmed BUB1B phase result. Audit direct fragment support and indirect heterozygous-SNV connectivity in the existing all-lane BAM using original and recalled markers, explicit quality thresholds and sensitivity runs. Independently attempt WhatsHap on the existing HaplotypeCaller locus including supported non-SNV types. Emit only aggregate summaries; retain all reads and VCFs locally. Test filtering, fragment grouping, conflicts, sample identity and phase-set interpretation with synthetic fixtures. Record evidence and limitations without claiming trans from co-occurrence, statistical expectation or disconnected phase blocks. Completion means the scoped follow-up is performed, not that phase must be resolved. Do not change submitted deliverables or contact the family.",
-      "dependencies": ["feat-005b"],
+      "dependencies": [
+        "feat-005b"
+      ],
       "status": "done",
       "evidence": "2026-09-08: scripts/audit_phase_connectivity.py completes original-marker and exploratory HaplotypeCaller-union fragment audits; results/feat005c/source-connectivity-final.json and union-connectivity-final.json contain 48/49 eligible SNVs, zero fragments observing both targets and singleton target components at MAPQ/BQ 30/20 and 20/13, with edge support >=1 and >=3. Targets are 10,911 bp apart; local read length max 149 bp and proper-pair template length median 442 bp. WhatsHap 2.8 on the recalled locus completed with 58 usable heterozygous variants; both leading alleles are present but unphased, without a shared phase set, as in the original run. `uv run python scripts/test_phase_connectivity.py` passes 16 synthetic tests; new self-check, targeted-recall self-check, package regressions and compileall pass. Two-axis review found no blocking specification or standards issues. Fresh ./init.sh passes; actual output and commands are in progress.md and notes/phase-connectivity.md. The scoped follow-up is complete, NOT biological phase confirmation. Trans phase remains unconfirmed; no deliverable or ranking changed."
     },
@@ -86,7 +88,11 @@
       "id": "feat-006b",
       "name": "Track 1 score uncertainty, rank sensitivity and native-phase audit",
       "description": "User-requested correction after hypothetical local scores were confused with guaranteed competition scores. Audit score scenarios for the exact CSV, stress-test all retained compound-pair rankings, and inspect native GT/PS and PGT/PID phase evidence without disclosing raw records. Keep unknown scores unknown and trans unconfirmed unless reviewed evidence supports it. Preserve existing submission files and do not consume quota. Scope and acceptance criteria: notes/track1-evidence-audit.md.",
-      "dependencies": ["feat-004", "feat-005c", "feat-006"],
+      "dependencies": [
+        "feat-004",
+        "feat-005c",
+        "feat-006"
+      ],
       "status": "done",
       "evidence": "2026-09-08 session 29: scripts/audit_track1_evidence.py and scripts/test_track1_evidence.py complete the scoped audit from 608c1c6; 24 synthetic tests pass. results/feat006b/final/score-scenarios.json has 13 hypothetical cases and null actual score. final/rank-sensitivity.json reranks 169 pairs/27 genes in 34 settings: BUB1B first in 26, worse under combined annotation ablation, not a calibrated probability. Final native-source-phase.json, native-recall-phase.json and whatshap-recall-phase.json find both exact alleles unphased without shared native groups. Source queried with fresh ignored CSI. Native stderr finding fixed in 7b6273b and independently rechecked; zero remaining standards/specification findings. V4 hashes unchanged; package verification/regressions, existing phase/scorer tests, triage/recall self-checks and compileall pass. Two fresh ./init.sh runs exit 0 with actual output in progress.md. Scope completion does NOT mean perfect score or confirmed phase; trans remains unconfirmed and no attempt spent. See notes/track1-evidence-audit.md for commands and limitations."
     },
@@ -119,8 +125,8 @@
       "dependencies": [
         "feat-008"
       ],
-      "status": "in-progress",
-      "evidence": "2026-09-08 session 31: research package built at results/feat009/jvv7_track2_research_v1 using `uv run python scripts/track2_evidence.py build results/feat009/jvv7_track2_research_v1`; corresponding verify command passes seven file hashes, exact input binding and unchanged Track 1 v4 artifacts. Thirty-source ledger: nineteen DOI/title matches, eleven official pages; twelve candidate entries, two conditional preclinical screens. `uv run python scripts/test_track2_evidence.py`: 60 tests pass. Two independent review axes identified four implementation/standards and two spec issues; all fixed and independently rechecked. Fresh ./init.sh passes; actual output and further regression commands in progress.md. No demonstrated clinical efficacy or performed laboratory experiments. Feature remains in progress for final owner/specialist review, recorded/hosted pitch and authenticated submission. Report, validation, search, pitch and adversarial revision records are in notes/track2-*."
+      "status": "in_progress",
+      "evidence": "2026-09-08 session 32 final scientific/exposure review in notes/track2-final-review.md; baseline 1a97a0e. Twelve supplementary public queries retrieved 941 distinct source/ID records, zero failed/truncated queries (results/feat009/final-review-search-v2-20260908). Curated 52 sources; source-verification-v4 has 39 DOI/title matches, 2 chemical identity matches, 11 official pages and no review flags. One conditional phenotype-first everolimus screen; HCQ demoted to reserve; clinical margins null. Eight public exposure records checked by `uv run python scripts/track2_exposure.py`. `uv run python scripts/test_track2_evidence.py`: 63 tests; `uv run python scripts/test_track2_review.py`: 38 tests. Scientific review/pitch/report/validation/harness updated; independent re-review and new v2 bundle verification to be recorded in progress.md. Track 1 v4 hashes unchanged; phase unconfirmed; no wet-lab experiment or Track 2 upload. Feature remains in progress for final delivery gates."
     },
     {
       "id": "feat-010",

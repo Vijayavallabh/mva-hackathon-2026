@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "clinical_use": "research_only",
+  "clinical_exposure_margin": null,
+  "analytes": {
+    "everolimus": {
+      "molecular_weight": 958.22,
+      "source": "everolimus_label",
+      "form": "parent"
+    },
+    "hydroxychloroquine_base": {
+      "molecular_weight": 335.9,
+      "source": "hcq_mass",
+      "form": "parent base, not sulfate"
+    },
+    "metformin_base": {
+      "molecular_weight": 129.16,
+      "source": "metformin_mass",
+      "form": "parent base, not hydrochloride"
+    }
+  },
+  "records": [
+    {
+      "id": "evero_label_trough",
+      "analyte": "everolimus",
+      "source": "everolimus_label",
+      "locator": "Sections 2.8, 11 and 12.3",
+      "population": "TSC indications in the reviewed label",
+      "matrix": "whole_blood",
+      "basis": "total",
+      "kind": "concentration",
+      "provenance": "label_reference",
+      "values": [
+        5,
+        15
+      ],
+      "unit": "ng/mL",
+      "time_context": "steady_state_trough",
+      "endpoint": "labelled_TSC_TDM_range",
+      "limitation": "Not an RMS or constitutional MVA target. Plasma mass fraction and binding do not permit a direct whole-blood-to-unbound conversion."
+    },
+    {
+      "id": "evero_santana_peak",
+      "analyte": "everolimus",
+      "source": "santana2020",
+      "locator": "Table 5, course 2",
+      "population": "Six pediatric mixed-solid-tumour participants with PK during combination treatment",
+      "matrix": "whole_blood",
+      "basis": "total",
+      "kind": "concentration",
+      "provenance": "model_derived",
+      "values": [
+        52.1
+      ],
+      "unit": "nM",
+      "time_context": "steady_state_peak",
+      "endpoint": "PK_median_Cmax",
+      "limitation": "Median across six, not a sustained concentration or proof of tumour response."
+    },
+    {
+      "id": "evero_santana_auc",
+      "analyte": "everolimus",
+      "source": "santana2020",
+      "locator": "Table 5, course 2",
+      "population": "Six pediatric mixed-solid-tumour participants with PK during combination treatment",
+      "matrix": "whole_blood",
+      "basis": "total",
+      "kind": "auc",
+      "provenance": "model_derived",
+      "values": [
+        307
+      ],
+      "unit": "nM*h",
+      "time_context": "steady_state_AUC_0_24h",
+      "endpoint": "PK_median_AUC",
+      "limitation": "Do not divide by 24 and label the result a trough or free concentration."
+    },
+    {
+      "id": "hcq_label_blood_peak",
+      "analyte": "hydroxychloroquine_base",
+      "source": "hcq_label",
+      "locator": "Section 12.3, absorption",
+      "population": "Healthy adult male volunteers after the label's single oral administration",
+      "matrix": "whole_blood",
+      "basis": "total",
+      "kind": "concentration",
+      "provenance": "label_reference",
+      "values": [
+        129.6
+      ],
+      "unit": "ng/mL",
+      "time_context": "single_dose_peak",
+      "endpoint": "PK_Cmax",
+      "limitation": "Not a chronic adult oncology or pediatric RMS exposure target."
+    },
+    {
+      "id": "hcq_label_plasma_peak",
+      "analyte": "hydroxychloroquine_base",
+      "source": "hcq_label",
+      "locator": "Section 12.3, absorption",
+      "population": "Healthy adult male volunteers after the label's single oral administration",
+      "matrix": "plasma",
+      "basis": "total",
+      "kind": "concentration",
+      "provenance": "label_reference",
+      "values": [
+        50.3
+      ],
+      "unit": "ng/mL",
+      "time_context": "single_dose_peak",
+      "endpoint": "PK_Cmax",
+      "limitation": "Plasma and blood maxima occur at different times; their quotient is not a fixed partition coefficient."
+    },
+    {
+      "id": "hcq_rosenfeld_split",
+      "analyte": "hydroxychloroquine_base",
+      "source": "rosenfeld2014",
+      "locator": "PK/PD results, Figure 2",
+      "population": "Adult glioblastoma combined chemoradiation trial",
+      "matrix": "whole_blood",
+      "basis": "total",
+      "kind": "concentration",
+      "provenance": "model_derived",
+      "values": [
+        1785
+      ],
+      "unit": "ng/mL",
+      "time_context": "estimated_steady_state_peak",
+      "endpoint": "exploratory_PBMC_vesicle_association",
+      "limitation": "Post-hoc model-derived split associated at week 3 but not week 9; not a tumour IC50, validated clinical target, or recommended concentration."
+    },
+    {
+      "id": "hcq_rangwala_split",
+      "analyte": "hydroxychloroquine_base",
+      "source": "rangwala2014",
+      "locator": "PK/PD results, threshold comparison",
+      "population": "Adult solid-tumour/melanoma temsirolimus combination",
+      "matrix": "whole_blood",
+      "basis": "total",
+      "kind": "concentration",
+      "provenance": "model_derived",
+      "values": [
+        1348
+      ],
+      "unit": "ng/mL",
+      "time_context": "estimated_steady_state_peak",
+      "endpoint": "non_significant_PBMC_vesicle_split",
+      "limitation": "Exploratory threshold did not significantly predict vesicle change; do not treat as established PD target."
+    },
+    {
+      "id": "metformin_metts_css",
+      "analyte": "metformin_base",
+      "source": "metts2023",
+      "locator": "Sections 2.5 and 3.3; Table 4 RP2D cohort",
+      "population": "Two pediatric PK-evaluable participants at the reported cohort; VIT combination",
+      "matrix": "reported_plasma_unresolved",
+      "basis": "unresolved",
+      "kind": "concentration",
+      "provenance": "measured",
+      "values": [
+        404
+      ],
+      "unit": "ng/mL",
+      "time_context": "reported_average_steady_state",
+      "endpoint": "PK_reported_Css_average",
+      "limitation": "Methods describe whole-blood shipment but call parameters plasma; sparse sampling and unclear matrix require clarification before any free-exposure comparison."
+    }
+  ],
+  "comparisons": [
+    [
+      "evero_label_trough",
+      "evero_santana_peak"
+    ],
+    [
+      "evero_santana_peak",
+      "evero_santana_auc"
+    ],
+    [
+      "hcq_label_blood_peak",
+      "hcq_label_plasma_peak"
+    ],
+    [
+      "hcq_rangwala_split",
+      "hcq_rosenfeld_split"
+    ]
+  ]
+}

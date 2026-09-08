@@ -5,8 +5,8 @@ including pauses; rehearse and time it before recording. Do not add the protecte
 narrative, raw reads or variant records to slides. Use permitted derived findings only.
 The final video must be hosted on YouTube or Vimeo and checked before portal submission.
 
-Timing check: approximately 401 spoken words, excluding headings, visual directions and
-checklist; about 134 words/minute across three minutes. This is a word-count estimate,
+Timing check: approximately 408 spoken words, or 136 words/minute across three minutes,
+excluding headings, visual directions and checklist. This is
 not a measured recording duration. Keep detailed trial statistics and caveats in the report;
 the spoken message must preserve the distinction between hypotheses and performed work.
 
@@ -31,25 +31,25 @@ they require different outcomes.
 
 Visual: the two-branch mechanism diagram from the report; no claims of measured pathway activity.
 
-## 1:00–1:35 — two conditional experiments
+## 1:00–1:35 — one conditional priority
 
 Our first hypothesis tests everolimus only if the relevant genotype shows excessive mTOR
 signalling. The mouse evidence is allele-specific and does not test our exact variant.
-Our second tests hydroxychloroquine against tumour lysosomal dependence. The original
-aneuploid-cell evidence involved chloroquine, so this is an explicit extrapolation.
-Both drugs have approvals elsewhere, but neither has demonstrated benefit in this case.
-Each must pass matched non-cancer cell testing and a realistic exposure constraint.
+The final review moved hydroxychloroquine to reserve: much of its rationale involves
+other compounds or cancers, and its proposed vulnerability may also harm non-cancer cells.
+Approval elsewhere does not establish benefit here. No candidate has a measured clinical
+exposure margin. Whole-blood concentrations cannot simply become cell-culture targets.
 
-Visual: two candidate cards: hypothesis, prerequisite and stop rule; “preclinical only”.
+Visual: everolimus conditional; hydroxychloroquine reserve; visible prerequisite and stop rule.
 
 ## 1:35–2:05 — what the skeptical review changed
 
 We retained the negative phase-three temsirolimus trial alongside the encouraging relapse
-study. We did not turn mouse longevity into a vitamin recommendation, or a protein-binding
-prediction into functional rescue. Ataluren also failed our current EU regulatory gate.
-Our twelve-entry ledger records supporting evidence, opposing evidence, safety concerns
-and rejection reasons. The strongest alternative explanation is often simple: a drug
-makes abnormal cells disappear because it harms them.
+study, and added newer response exceptions without claiming a single drug caused them.
+We distinguished tumour response from survival and pathway inhibition from functional
+rescue. Our fifty-two-source review and twelve-entry ledger preserve both supporting and
+opposing findings. The strongest alternative explanation is often simple: a drug makes
+abnormal cells disappear because it harms them. This was broad review, not all literature.
 
 Visual: compact “claim → objection → revised decision” examples, with source links.
 

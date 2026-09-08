@@ -1,6 +1,6 @@
 # Track 2 research proposal: test the therapeutic window, not just the target
 
-**Participant:** jvv7 · **Version:** research draft 1 · **Date:** 2026-09-08
+**Participant:** jvv7 · **Version:** research draft 2 — scientific/exposure review · **Date:** 2026-09-08
 
 **Repository:** https://github.com/Vijayavallabh/mva-hackathon-2026
 
@@ -17,18 +17,20 @@ mechanistic research. We have not independently inspected the portal receipt or 
 uploaded bytes, and **trans phase remains unconfirmed** by our local analyses. Neither a
 leaderboard match nor a pathogenicity prediction supplies a drug-response experiment.
 
-We propose two **conditional preclinical hypotheses**, not two medicines to administer:
+The final scientific/exposure review retains **one conditional preclinical priority**:
+test everolimus only after demonstrating excessive mTORC1 activity in the relevant genotype.
+Functional improvement and preservation of deficient non-cancer cells are mandatory.
+This is an experiment to falsify, not a medicine to administer.
 
-| Hypothesis | Candidate | Required observation before advancement |
-|---|---|---|
-| Attenuate an abnormal downstream growth/stress pathway | Everolimus | Demonstrate excessive mTORC1 activity in the relevant genotype and functional improvement without harming deficient non-cancer cells |
-| Exploit tumour lysosomal dependence | Hydroxychloroquine | Demonstrate tumour killing within an exposure-supported window that spares matched non-cancer BUB1B-deficient cells |
+Hydroxychloroquine is **demoted to reserve status**. Its lysosomal-dependence rationale
+requires transfer from other compounds/cancers, and no reviewed HCQ RMS exposure window
+shows tumour killing while sparing deficient non-cancer cells. Clinical findings include
+both biological/response signals and negative survival or tolerability results.
 
-Temsirolimus is a clinical-evidence benchmark, not an additional independent discovery.
-The ten entries other than the two conditional screens are not promoted as therapeutic
-leads. The complete ledger contains twelve
-entries: two conditional screens, one benchmark, three deprioritized hypotheses and six
-exclusions. These are manually reviewed research decisions, not efficacy rankings.
+Temsirolimus remains a clinical-evidence benchmark, not an additional discovery.
+The twelve-entry ledger now contains one conditional screen, one benchmark, four
+deprioritized hypotheses and six exclusions. These are research-priority judgments, not
+efficacy rankings or evidence that everolimus is clinically superior.
 
 The central innovation is an explicit **matched-normal safety requirement**: constitutional
 chromosome instability may make non-cancer cells vulnerable to the same interventions
@@ -120,6 +122,10 @@ The fixed search implementation and provenance are documented in
 The initial broad full-text queries were noisy; focused title/abstract queries were added.
 Record retrieval counts are not counts of fully read or eligible studies. Key papers were
 selected for mechanistic relevance, closest model, counterevidence or regulatory relevance.
+The supplementary review retrieved twelve bounded query sets, comprising 941 distinct
+source/ID records, and expanded the curated ledger to 52 sources. Those numbers are not
+full-text reading counts. The [final review](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-final-review.md)
+records query counts, access failures, new clinical findings and the exposure audit.
 Some evidence was accessible only at abstract level. This can miss details, unpublished
 negative experiments, indexing updates and papers outside the retrieved pages/languages.
 
@@ -135,8 +141,9 @@ For clinical evidence, we assess randomization, comparator, attrition, endpoints
 precision. For cells/animals, we assess allele match, tissue, intervention identity,
 replication unit and functional endpoints. We do not apply an undifferentiated numerical
 score or call animal evidence high-certainty clinical GRADE evidence. Most therapeutic
-bridges here are low-directness hypotheses. No clinical MVA efficacy study was identified
-in the bounded review; that is not proof none exists.
+bridges here are low-directness hypotheses. No controlled drug-efficacy study for this pair or restoration of its segregation
+function was identified in the reviewed evidence; that is not proof none exists or a
+claim that MVA has no symptom-management literature.
 
 ## 4. Candidate A: everolimus—conditional downstream modulation
 
@@ -155,6 +162,17 @@ Developmental vulnerability makes preservation of normal-cell growth and tissue 
 part of the experiment, not an afterthought.
 [Everolimus US label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f1ae129-c21e-4c25-84c1-a6757d9a7eb2)
 
+The pediatric single-agent and bevacizumab-combination studies showed that pathway
+inhibition can occur without objective tumour responses. Conversely, a newer
+lenvatinib/everolimus study reported two partial responses among twenty RMS participants
+while missing efficacy goals. Preserve both facts: no universal negative, no attribution
+to everolimus alone. Preclinical IL17A-blockade combination work is another hypothesis,
+not a validated solution or justification for combining drugs here.
+[Fouladi 2007](https://doi.org/10.1200/JCO.2007.11.4017),
+[Santana 2020](https://doi.org/10.1002/cncr.32722),
+[lenvatinib/everolimus 2025](https://doi.org/10.1002/pbc.31692),
+[IL17A study](https://doi.org/10.1158/1535-7163.MCT-23-0342)
+
 **Advance only if:** the genotype produces reproducible excess phospho-S6/phospho-4EBP1,
 drug exposure suppresses that excess, and an independently measured functional outcome
 improves without worsened viability, differentiation, chromosome segregation or recovery
@@ -166,7 +184,7 @@ adaptive processes. A trial-negative class analogue cannot be sidestepped by cha
 drug name. We therefore nominate everolimus for a gated experiment, not as the predicted
 best clinical therapy. Without pathway excess, this arm stops.
 
-## 5. Candidate B: hydroxychloroquine—tumour-only stress hypothesis
+## 5. Reserve hypothesis: hydroxychloroquine—not an equal-priority lead
 
 Experiments in trisomic fibroblasts and cancer cell lines identified aneuploidy-associated
 sensitivity to selected stress-inducing compounds, including **chloroquine**. That is
@@ -186,7 +204,25 @@ pediatric malaria indication does not resolve pediatric oncology safety. Plasma,
 intracellular and lysosomal concentrations are not interchangeable exposure measures.
 [Hydroxychloroquine US label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=34496b43-05a2-45fb-a769-52b12e099341)
 
-**Advance only if:** a validated tumour model is more sensitive than matched deficient
+Expanded RMS evidence concerns CQ, bafilomycin or Lys05—not interchangeable HCQ
+experiments. A study including non-transformed muscle cells found that autophagy
+blockade could also increase their chemotherapy-associated death. Newer proteostasis
+xenograft work emphasizes exposure limitations and heterogeneous resistance.
+[Non-transformed-cell comparison](https://doi.org/10.1038/s41420-018-0115-9),
+[Kwong 2025](https://doi.org/10.18632/oncotarget.28764)
+
+Adult randomized pancreatic trials must be read by endpoint: one improved response rate
+without improving its primary one-year survival endpoint; another improved blinded
+pathological response without demonstrating OS/RFS differences and with substantial
+attrition before pathology evaluation. These favourable signals do not establish RMS
+benefit. Glioblastoma and newer multi-drug pancreatic work add exposure/tolerability
+constraints, not a universal verdict that HCQ is ineffective.
+[Metastatic trial](https://doi.org/10.1001/jamaoncol.2019.0684),
+[preoperative trial](https://doi.org/10.1158/1078-0432.CCR-19-4042),
+[glioblastoma study](https://doi.org/10.4161/auto.28984),
+[REVOLUTION 2026](https://doi.org/10.1136/jitc-2025-012864)
+
+**Reopen only if:** a validated tumour model is more sensitive than matched deficient
 non-cancer cells at justified exposure, with dynamic flux measurements and orthogonal
 cell-death assays. Lower metabolic-dye signal is insufficient. If the relevant tumour
 model is unavailable, retain this as a hypothesis rather than claiming a therapeutic window.
@@ -239,6 +275,17 @@ effects or the safety of constitutional mTOR inhibition.
 | Dasatinib plus quercetin | INK-ATTAC genetic removal of senescent cells in mice is not evidence for this drug combination in pediatric MVA. No verified clinical window. [Primary mouse study](https://doi.org/10.1038/nature10600) |
 | Bubristatin / direct checkpoint inhibition | Research-tool activity is not an approved drug. Inhibition may worsen the proposed constitutional defect. Docking cannot establish restorative direction or safety. [Primary study](https://doi.org/10.1038/s41422-019-0178-z) |
 
+One correction is important: a pediatric metformin/VIT study included an RMS partial
+response, but had no VIT-alone comparison and stopped before determining MTD. The added
+negative metformin xenograft study used Ewing sarcoma, not RMS. These findings refine
+the rationale without establishing a metformin-selective benefit or exposure window.
+[Metformin/VIT](https://doi.org/10.1002/cam4.5297),
+[sarcoma models](https://doi.org/10.1371/journal.pone.0083832)
+
+The final-review horizon table also considers auranofin combinations, posaconazole,
+IL17A blockade and MYOD1-subtype dependencies. None is silently promoted on pathway-name
+overlap or assumed relevant tumour genotype.
+
 These are research exclusions/deprioritizations, not assertions that a medicine is
 universally ineffective or contraindicated for its approved indications.
 
@@ -277,7 +324,27 @@ Drug-specific exposure ceilings must be established from appropriately reviewed 
 PK, formulation, protein binding, metabolites and planned assay conditions. No dose for
 the child is proposed. Report unbound exposure where meaningful; do not compare whole-blood
 troughs directly with nominal culture concentrations. An effect above a justified envelope
-does not pass. No numeric clinical exposure margin has been calculated here.
+does not pass. No numeric clinical exposure margin has been established here.
+
+### Exposure audit: measured quantity matters
+
+| Public observation | Interpretation retained |
+|---|---|
+| Everolimus labelled TSC whole-blood trough 5–15 ng/mL | About 5.2–15.7 nM total whole blood; not a free-culture or RMS target |
+| Pediatric everolimus combination: median peak 52.1 nM; AUC0–24 307 nM·h | Whole-blood model-derived PK in six participants; peak, trough and AUC cannot be substituted |
+| HCQ exploratory blood/PBMC splits in different trials | Not validated tumour thresholds; one nonsignificant and one timepoint-dependent association |
+| Pediatric metformin reported Css average 404 ng/mL | Tiny cohort, ambiguous blood/plasma description; conversion alone cannot resolve it |
+
+The [exposure ledger](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-exposure.json)
+records eight observations with analyte, matrix, binding basis, timing, population and
+limitations. Parent compound is distinguished from salt mass. No measured free-medium
+functional threshold and matched deficient-normal injury threshold are available; all
+clinical margin fields remain null. The checker converts units but blocks unsupported
+comparisons. No clinical dose is proposed.
+[Everolimus label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f1ae129-c21e-4c25-84c1-a6757d9a7eb2),
+[Santana PK](https://doi.org/10.1002/cncr.32722),
+[HCQ PK/PD](https://doi.org/10.4161/auto.28984),
+[metformin PK](https://doi.org/10.1002/cam4.5297)
 
 Predefined stop outcomes include absent pathway abnormality; increased protein without
 functional rescue; apparent error reduction explained by mitotic arrest or selective cell
@@ -294,13 +361,15 @@ the number of imaged cells, determines the strength of evidence.
 uv run python scripts/track2_evidence.py check
 uv run python scripts/track2_evidence.py sensitivity
 uv run python scripts/test_track2_evidence.py
+uv run python scripts/test_track2_review.py
+uv run python scripts/track2_exposure.py
 uv run python scripts/track2_evidence.py track1
 ```
 
 The candidate ledger supplies every decision's supporting sources, counterevidence,
 regulatory boundary, exposure gap and falsification criterion. The ablation removes
 other-allele animal support, other-compound/cancer support, or requires direct-pair evidence
-and a measured exposure margin. Neither conditional screen survives the strict direct-pair
+and a measured exposure margin. The remaining conditional screen does not survive the strict direct-pair
 or measured-margin requirement. This is a useful limitation, not a failed attempt to claim
 clinical validation. It is not a fitted ML model or calibrated drug-ranking algorithm.
 

@@ -26,7 +26,7 @@ class LedgerTests(unittest.TestCase):
     def test_reviewed_ledgers(self):
         result = evidence.validate(self.sources, self.candidates)
         self.assertEqual(result["candidates"], 12)
-        self.assertEqual(result["decisions"]["conditional_screen"], 2)
+        self.assertEqual(result["decisions"]["conditional_screen"], 1)
 
     def test_duplicate_candidate(self):
         self.candidates["candidates"].append(copy.deepcopy(self.candidates["candidates"][0]))
@@ -123,7 +123,8 @@ class LedgerTests(unittest.TestCase):
         self.assertEqual(a, evidence.sensitivities(self.sources, self.candidates))
         self.assertEqual(a["require_direct_pair_intervention_evidence"], [])
         self.assertEqual(a["require_measured_clinical_exposure_margin"], [])
-        self.assertEqual(a["remove_other_allele_animal_support"], ["hydroxychloroquine"])
+        self.assertEqual(a["baseline_conditional_screens"], ["everolimus"])
+        self.assertEqual(a["remove_other_allele_animal_support"], [])
         self.assertEqual(a["remove_other_compound_or_cancer_support"], ["everolimus"])
 
     def test_offline_checks_do_not_open_network(self):
@@ -283,7 +284,7 @@ class PackageTests(unittest.TestCase):
             evidence.build(self.path)
 
     def test_changed_report_rejected(self):
-        (self.path / "jvv7_track2_report_v1.md").write_text("tampered")
+        (self.path / "jvv7_track2_report_v2.md").write_text("tampered")
         self.reject()
 
     def test_extra_file_rejected(self):
@@ -340,8 +341,34 @@ class PackageTests(unittest.TestCase):
         self.save_manifest(manifest)
         self.reject()
 
+    def test_exposure_audit_tamper_even_with_updated_file_hash(self):
+        target = self.path / "exposure-audit.json"
+        target.write_text('{"clinical_exposure_margin": 100}')
+        manifest = self.manifest()
+        manifest["files"][target.name] = evidence.sha256(target)
+        self.save_manifest(manifest)
+        self.reject()
+
+    def test_exposure_ledger_cannot_invent_margin(self):
+        target = self.path / "exposure.json"
+        data = json.loads(target.read_text())
+        data["clinical_exposure_margin"] = 100
+        target.write_text(json.dumps(data))
+        manifest = self.manifest()
+        manifest["files"][target.name] = evidence.sha256(target)
+        self.save_manifest(manifest)
+        self.reject()
+
+    def test_final_review_copy_is_bound(self):
+        target = self.path / "scientific-exposure-review.md"
+        target.write_text("unreviewed replacement")
+        manifest = self.manifest()
+        manifest["files"][target.name] = evidence.sha256(target)
+        self.save_manifest(manifest)
+        self.reject()
+
     def test_copy_mismatch_even_with_updated_file_hash(self):
-        target = self.path / "jvv7_track2_report_v1.md"
+        target = self.path / "jvv7_track2_report_v2.md"
         target.write_text("changed public report")
         manifest = self.manifest()
         manifest["files"][target.name] = evidence.sha256(target)

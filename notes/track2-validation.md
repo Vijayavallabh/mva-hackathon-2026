@@ -5,6 +5,12 @@ order is authorized by this document.** An authorized laboratory would need to q
 the models and protocol. Raw subject material/data remains local under the access terms.
 Trans phase remains unconfirmed; engineered phase is not patient phase.
 
+The [final scientific/exposure review](track2-final-review.md) retains everolimus as
+one conditional, phenotype-first priority; HCQ is reserve and its assays below describe
+requirements for reopening, not a currently selected second lead. No clinical margin is
+established. The [public exposure ledger](track2-exposure.json) is reproducible with
+`uv run python scripts/track2_exposure.py`; conversions are not dose recommendations.
+
 ## Gate 0: establish the model before choosing a drug
 
 Question: does the selected pair impair BUBR1 availability, checkpoint control or
@@ -60,6 +66,10 @@ lysosomal-function assessment. Accumulating vesicles can reflect increased produ
 blocked clearance; both can occur in drug combinations. Distinguish cytostasis, metabolic
 assay interference, apoptosis and other cell death.
 
+Control for pH-dependent changes in fluorescent reporters during lysosomal perturbation;
+include independent protein-turnover/degradation and death measurements. A PBMC vesicle
+association or a static LC3/p62 image cannot establish selective tumour autophagy blockade.
+
 Absent pathway/flux dependence → stop that mechanistic branch. Do not search many assays
 and relabel the first positive result as the original hypothesis. Exploratory results must
 be identified and independently retested.
@@ -73,6 +83,12 @@ Specify duration, replenishment and washout before starting. Whole-blood troughs
 plasma peaks and nominal cell-culture concentration must not be directly substituted.
 For lysosomotropic compounds, intracellular accumulation adds uncertainty; an unmeasured
 tumour concentration cannot justify escalating above tolerated exposure.
+
+Record analyte/active-metabolite identity, salt versus parent mass, sample matrix, free
+fraction, serum composition, pH, nutrient/oxygen state, actual concentration over time and
+drug depletion/carryover. Match the time-dependent exposure, not only a published peak.
+Do not silently harmonize contradictory blood/plasma descriptions in a paper. Missing
+information means a failed advancement gate, not permission to assume a favourable ratio.
 
 Randomize vehicle and a log-spaced concentration series within clone/day blocks, preserving
 balanced edge/interior positions. Include common reference controls on each plate and

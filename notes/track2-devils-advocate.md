@@ -122,3 +122,32 @@ Outstanding limits: no direct-pair drug data, no verified exposure window, no ac
 model or treatment context, no experimental phase resolution, and no recorded/hosted pitch.
 A research proposal can document these gaps; it must not imply that future validation
 has happened. Feat-009 remains in progress until the complete deliverable set is ready.
+
+## R5: final scientific/exposure challenge, session 32
+
+Baseline `1a97a0e`. User requests extensive final review; detailed methods/findings are in
+`track2-final-review.md`. The expanded rapid scoping review retrieved 941 distinct
+source/ID records across twelve overlapping query sets and curated 52 sources. This is
+not duplicate full-text screening or all literature.
+
+Material revisions before independent re-review:
+
+1. Demote HCQ from equal-priority screen to reserve: compound-transfer assumptions,
+   uncertain RMS exposure/response, normal-cell hazards, mixed clinical efficacy and
+   regimen-dependent tolerability. Preserve favourable response/pathology findings.
+2. Add omitted pediatric everolimus/lenvatinib and metformin/VIT response exceptions;
+   neither combination isolates the repurposed agent. Correct cross-tumour attribution.
+3. Separate eight public exposure quantities by analyte, matrix, binding, timing and
+   endpoint. Keep every clinical margin null; reject peak/trough/AUC or salt/base confusion.
+4. Strengthen experimental gates for measured assay exposure, reporter pH effects,
+   deficient-normal function and possible combination antagonism. No experiment performed.
+5. Add v2 package inputs/copies for the scientific review and exposure ledger/audit;
+   preserve the v1 snapshot. Fix typed verification of small PubChem JSON responses.
+6. Record XML 404s, limited reading depth, overlapping MED/PPR identities and the first
+   mixed run's execution-hash limitation. Use the later fixed search-only snapshot.
+
+Independent standards/specification review is required against the session baseline.
+The generic review skill assumes issue-tracker configuration absent from this repo;
+the existing local `feature_list.json` and `track2-plan.md`/final-review specification
+are used instead. Reconfiguring issue trackers/domain documentation is outside this task.
+Review findings and their resolution are appended below after the checks are performed.

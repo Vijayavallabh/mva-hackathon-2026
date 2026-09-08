@@ -143,9 +143,9 @@ read and unindexed records remain important coverage gaps.
 
 ## Evidence inventory and verification
 
-`track2-sources.json` contains 30 distinct source IDs: 19 DOI-bearing papers/notices and
-11 official label/decision/registry/competition pages. Each records model, claim,
-reading depth and limitation. `track2-candidates.json` contains twelve entries:
+The session-31 ledger contained 30 distinct source IDs: 19 DOI-bearing papers/notices and
+11 official label/decision/registry/competition pages. Each recorded model, claim,
+reading depth and limitation. Its twelve candidate entries then comprised
 two conditional screens, one benchmark, three deprioritizations and six exclusions.
 These are manually reasoned decisions, not generated efficacy estimates.
 
@@ -162,3 +162,24 @@ review. The bundled literature-review citation verifier was also called on the e
 ledger DOI strings, avoiding its Markdown regex's truncation of parenthesized DOIs.
 Its DOI-resolution check is weaker than the repository's exact identifier/title match;
 neither constitutes clinical validation. Actual pass/error counts are recorded in progress.
+
+## Session 32 supplementary review
+
+See [the final review](track2-final-review.md) for all twelve additional fixed query
+themes/counts, 941 distinct source/ID records, selected-text reading limits, public XML
+access failures, exposure quantities and updated decisions. The final search-only run
+`results/feat009/final-review-search-v2-20260908/` has zero failed or truncated queries.
+One DOI appears under both a MED and a PPR identifier; these are not independent studies.
+Other overlapping reports/versions still need study-level linking before any meta-analysis.
+
+The current curated ledger contains **52 sources: 39 DOI-bearing papers/notices,
+11 official pages and two PubChem molecular-identity records**. All 39 DOI/title pairs
+matched in source-verification-v3. Its two small valid PubChem JSON responses were initially
+rejected by the HTML-page size heuristic, not by an identity mismatch or API failure.
+The revised implementation uses a typed CID/molecular-weight check for these records.
+The subsequent verification artifact and actual test counts are recorded in progress.
+
+HCQ is now deprioritized: twelve entries comprise one conditional screen, one benchmark,
+four deprioritizations and six exclusions. New clinical response exceptions, negative
+endpoints and horizon findings are preserved. No claim of exhaustive screening, clinical
+efficacy or a measured normal/tumour therapeutic margin follows from these counts.
