@@ -1,28 +1,55 @@
 # Prepared GitHub Support request — not sent
 
-Submit through [GitHub Support](https://support.github.com/contact) while authenticated as
-the repository owner. Keep the repository private until the removal checks pass.
+Updated 2026-09-08. Submit through [GitHub Support](https://support.github.com/contact)
+while signed in as the repository owner. Choose sensitive-data removal/security and
+paste the request below; do not attach original history, raw data or clinical wording.
+No ticket has been sent and no ticket identifier exists in this workflow. GitHub CLI
+repository authentication is available, but an authenticated Support portal session is not.
+The owner has already made the repository PUBLIC; temporary PRIVATE visibility is
+recommended containment, not proof of purge, and requires the owner's direction.
 
-Subject: Purge retained objects after sensitive-text history rewrite in a private repository
+Subject: Sensitive-data removal: server-side GC and cached-view purge after completed history rewrite
 
 Repository: `Vijayavallabh/mva-hackathon-2026`
 
-We are preparing this private repository for public release. A local audit found short
-overlaps with restricted clinical source wording in historical Markdown/Python files.
+Repository URL: https://github.com/Vijayavallabh/mva-hackathon-2026
+
+The repository is currently PUBLIC. A local audit found short overlaps with restricted
+clinical source wording in historical Markdown/Python files.
 We rewrote all reachable history and force-pushed the cleaned main branch. No raw sequence
 or variant files or phenotype documents were committed. This request contains no protected text.
+The removed wording derives from a restricted clinical document under data-access terms;
+this is a sensitive-data exposure, not a credential that can be rotated. Some other
+matches were conservatively included by the local lexical audit, as explained below.
 
 The cleaned branch initially pointed at `5581dfd84f7ab81bb5b341bf4a7cb1475970e99c`, replacing
 `65ad73d4545974c1afa8d8ac5c21ca7aa74f3214`. The originally identified affected commit was
 `05ed1ccd8ff67dd93a34cc8d56e228276d05a7ab`. Subsequent normal commits preserve the clean
-history. The full rewrite changed 22 commits; its earliest changed original commit is
-`119577d2977e30abd6c3783aa2e2963f03b26a23`. There are no pull requests, forks or extra
-branches in our inventory.
+history. The full rewrite changed 22 commits; its earliest changed original commit,
+derived from the rewrite commit map, is `119577d2977e30abd6c3783aa2e2963f03b26a23`.
+The regular git-filter-repo blob-callback rewrite was used; this identifier is not
+claimed to be output from its optional sensitive-data-removal mode.
+
+Fresh inventory on 2026-09-08:
+
+- Affected pull requests: 0; no open or closed pull requests exist.
+- Forks: 0. Advertised refs: only `refs/heads/main` and symbolic HEAD.
+- Actions runs, releases and issues: 0 each.
+- No Git LFS objects were involved in the rewrite.
+- Audited clean HEAD: `3c64b87b9837a97a183424b188457a98d86900ab`; subsequent documentation
+  commits may advance main without restoring old history.
+- All reachable local history: 34 commits, 251 unique blobs, zero audit findings.
+- Authenticated retired-object lookup: 13/13 retrievable; zero unknown errors;
+  a known current reachable blob succeeds as a positive access control.
+- Independent unauthenticated Git blobs API requests also returned HTTP 200 for all
+  13 retired objects and the reachable control. Response bodies were not displayed.
+  Exposure is therefore confirmed for anonymous access, not only repository administrators.
 
 After the force-push, authenticated lookups to the repository's Git blobs endpoint still
-return all 13 retired objects listed below. Please purge the obsolete objects and cached
-views/references, including original affected commits, or advise the exact remaining steps
-needed so changing this repository to public cannot expose the retired content.
+return all 13 retired objects listed below. Please run server-side garbage collection
+and purge cached views/references, including original affected commits and these retired
+blobs. Please confirm completion, or identify any remaining references preventing removal.
+Local garbage collection or another push cannot remove GitHub's retained storage.
 
 ```text
 09ef9dd25f68503360220c9903c1632c7906adaf

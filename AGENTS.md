@@ -95,6 +95,11 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   GitHub still serves 13 obsolete blobs by ID. Keep visibility private until Support purges
   those objects and `scripts/check_publication_remote.py` passes. See
   `notes/publication-audit.md` and the prepared, unsent `notes/github-support-request.md`.
+- **Purge resolution attempt, 2026-09-08:** reachable history and advertised refs are
+  clean; fresh inventory found no forks or PRs. GitHub's documented remaining step is
+  Support-run server-side GC/cache removal. The request has current PUBLIC visibility
+  and metadata, but must be sent through an owner-authenticated Support portal; this
+  environment has no such session/integration. No ticket or completed purge is claimed.
 - **Feat-008 is the active preparation task, not a completed upload.** Build and verify
   the CSV/report together with `scripts/prepare_track1_package.py`. The independent
   publication purge gate must pass live preflight. Never infer account

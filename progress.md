@@ -972,3 +972,54 @@ Delly 2.1.0
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-08 — session 23: purge resolution and concrete Support handoff
+
+- Worked only on feat-007 at the owner's explicit request. No repeat history rewrite,
+  remote deletion, visibility change, gate bypass or Track 1 upload was performed.
+- `uv run python scripts/audit_publication.py --output results/feat007/current-history.json`
+  passes at `3c64b87`: 34 reachable commits, 251 unique blobs, zero findings.
+- Fresh configured-origin inventory advertises main/HEAD only. GitHub API reports ADMIN
+  access, PUBLIC visibility, zero forks, PRs, Actions runs, releases and issues.
+- `uv run python scripts/check_publication_remote.py` exits 1: 13/13 retired objects
+  retrievable, zero unknown errors, successful current-blob control. Its self-check passes.
+  Separate unauthenticated standard-library API requests returned 200 for all 13 objects
+  and the control; only status counts were emitted, not protected response bodies.
+- Checked GitHub's official sensitive-data-removal and support-ticket documentation.
+  The remaining operation is Support-run server-side GC/cache removal. Prepared request
+  now includes PUBLIC visibility, current availability evidence, zero affected PRs, earliest
+  changed commit from the rewrite map and no LFS involvement. No protected attachments.
+- The available environment has repository CLI access but no authenticated Support
+  portal session/integration. Request remains unsent with no ticket ID. The owner must
+  sign into the Support portal and send it. Recommended temporary PRIVATE containment,
+  without overriding the owner's previous deliberate visibility choice.
+- Updated harness, feature evidence, publication audit and handoff. Skill-guided state
+  records the external dependency without falsely marking feat-007 complete. V4 stays
+  unchanged and locally valid; trans phase remains unconfirmed. `git diff --check` passes.
+
+Fresh-shell `./init.sh` completed with exit 0:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```

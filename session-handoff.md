@@ -1,9 +1,10 @@
 # Session handoff
 
-**Last updated:** 2026-09-08 (session 22 — complete AI disclosure; validated v4)
+**Last updated:** 2026-09-08 (session 23 — purge resolution: Support portal handoff)
 
-**Current objective / active feature:** feat-008 (Track 1 CSV/report package).
-Feat-001 through feat-006 are done; feat-007 is blocked, not active. The history rewrite
+**Current objective:** resolve feat-007's retained-object purge at the owner's request.
+Feat-001 through feat-006 are done; feat-007 remains blocked on Support. Feat-008's v4
+package is prepared and unchanged; no submission work was performed this session. The history rewrite
 and force-push are complete. The owner made the repository PUBLIC; the independent
 obsolete-object purge remains unresolved. See `notes/publication-audit.md`. Feat-008 preparation can proceed
 locally, but no upload or official score is claimed. See `notes/track1-submission.md`.
@@ -32,6 +33,14 @@ traps that silently score zero).
 
 ## Blockers
 
+- **Concrete next action: owner Support sign-in and ticket submission.** Updated
+  `notes/github-support-request.md` with PUBLIC visibility, sensitive-data rationale
+  without source wording, earliest changed commit, zero affected PRs/no LFS, and fresh
+  13/13 retained-object evidence. GitHub documentation requires Support-run GC/cache
+  removal. Available CLI authentication grants repository ADMIN access, not an
+  authenticated Support portal session. No ticket was submitted or ticket ID obtained.
+  Sign into https://support.github.com/contact and send the prepared request; do not
+  send credentials, original history or clinical attachments to an agent or Support.
 - **Public visibility confirmed by owner:** the owner deliberately made the repository
   PUBLIC. The most recent 13-object purge check still failed. This confirmation explains
   the change but does not waive confidentiality or establish successful removal.

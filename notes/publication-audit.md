@@ -1,9 +1,9 @@
 # Publication audit — feat-007
 
-As of 2026-09-06, the cleaned `main` branch is pushed, but the repository remains private.
-GitHub still returns all 13 retired blob objects by their identifiers after the rewrite.
-Changing visibility now could expose those objects. Feat-007 is therefore incomplete
-pending GitHub Support's removal of the retained objects and a successful remote recheck.
+As of 2026-09-08, the cleaned `main` branch is pushed and the owner has made the repository
+PUBLIC. GitHub still returns all 13 retired blob objects by their identifiers after the
+rewrite. Feat-007 is incomplete pending GitHub Support's removal of the retained objects
+and a successful remote recheck. The previous PRIVATE snapshot is historical, not current.
 
 ## Work completed
 
@@ -98,15 +98,59 @@ The request is prepared in `github-support-request.md`; it contains identifiers 
 clinical text. It has not been sent. Do not upload the recovery bundle or protected source
 to Support.
 
-After Support confirms removal, rerun the remote checker and the full local audit, verify
-all advertised remote refs and any newly created remote surfaces, then change visibility:
+After Support confirms removal, rerun the remote checker and the full local audit, and
+verify all advertised remote refs and any newly created remote surfaces. Visibility is
+already PUBLIC; do not replay the previous visibility-change command:
 
 ```bash
-gh repo edit Vijayavallabh/mva-hackathon-2026 \
-  --visibility public --accept-visibility-change-consequences
+uv run python scripts/check_publication_remote.py
+uv run python scripts/audit_publication.py --output results/feat007/current-history.json
+git ls-remote origin
 gh repo view Vijayavallabh/mva-hackathon-2026 --json visibility,url
 ```
 
 Finally verify anonymous access to the clean branch and failure to retrieve each removed
 object, record the public URL, and only then mark feat-007 done and feat-008 next. No Track 1
 submission has been uploaded by this work; trans phase remains unconfirmed.
+
+## Resolution attempt, 2026-09-08
+
+The owner explicitly requested resolution of the purge gate. Fresh checks found the
+remote main at `3c64b87b9837a97a183424b188457a98d86900ab`, no extra advertised refs,
+zero forks and pull requests, and zero Actions runs, releases and issues. Commands:
+
+```bash
+gh repo view Vijayavallabh/mva-hackathon-2026 --json nameWithOwner,visibility,url,viewerPermission,forkCount
+git ls-remote origin
+gh api --paginate 'repos/Vijayavallabh/mva-hackathon-2026/pulls?state=all' --jq 'length'
+gh api repos/Vijayavallabh/mva-hackathon-2026/actions/runs --jq '.total_count'
+gh api repos/Vijayavallabh/mva-hackathon-2026/releases --jq 'length'
+gh api 'repos/Vijayavallabh/mva-hackathon-2026/issues?state=all&per_page=100' --jq 'length'
+```
+
+The all-ref audit passed: 34 commits, 251 unique blobs, zero findings. The authenticated
+remote checker still failed: 13/13 retired objects retrievable, zero unknown errors and
+a successful reachable-blob control. There is no additional advertised ref to remove.
+An independent standard-library `urllib.request` check, with no Authorization header,
+requested `/repos/Vijayavallabh/mva-hackathon-2026/git/blobs/{id}` for the fixed inventory
+and current README control. It emitted status counts only: retired objects HTTP 200 = 13,
+control HTTP 200, no response bodies displayed. Anonymous exposure is confirmed.
+
+[GitHub's removal procedure](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository#fully-removing-the-data-from-github),
+checked today, assigns server-side garbage collection and cached-view removal to Support.
+Another local rewrite, force-push or local GC does not perform that server-side step.
+Deleting/recreating the repository is not authorized or an established purge guarantee.
+
+The refreshed `github-support-request.md` now accurately states PUBLIC visibility,
+the sensitive-data context without source wording, zero affected PRs, the earliest changed
+commit from the commit map, no LFS involvement, and fresh availability evidence. It asks
+Support to perform server-side GC and remove cached references.
+
+**Remaining handoff:** sign into the [Support portal](https://support.github.com/contact)
+as the owner and send that request. The available GitHub CLI session has repository ADMIN
+access, but no authenticated Support browser session or ticket-submission integration is
+available here. [GitHub documents portal sign-in and submission](https://docs.github.com/en/support/contacting-github-support/creating-a-support-ticket);
+security reports remain supported on GitHub Free. No request was sent and no ticket ID is
+claimed. Do not ask the owner to supply a password, token, cookie or protected attachment.
+Temporary PRIVATE visibility is recommended containment, not purge; no visibility change
+was made against the owner's previously stated public-repository preference.
