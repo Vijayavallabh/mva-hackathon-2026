@@ -1,8 +1,17 @@
 # Session handoff
 
-**Last updated:** 2026-09-08 (session 29 — score uncertainty and native-phase audit)
+**Last updated:** 2026-09-08 (session 30 — conditional CSV update review)
 
-**Current objective:** respond to the owner's request to fix score overconfidence
+**Latest decision:** owner requested updating the CSV if required. Reviewed the
+new evidence and regenerated the current baseline in a temporary directory: it
+is byte-identical to v4. All ten CSV notes already state trans phase unconfirmed.
+No supported allele/rank/phase change or calibrated replacement EPCRs were found,
+so both deliverables are retained unchanged. Package verification/regressions and
+all 24 evidence tests pass. See the session-30 decision in
+`notes/track1-submission.md`. This does not verify an owner-side upload or authorize
+an extra attempt; retrieve any existing receipt before uploading.
+
+**Completed preceding objective:** respond to the owner's request to fix score overconfidence
 and pursue phase. Feat-006b adds `scripts/audit_track1_evidence.py` with score
 scenarios, fixed-universe rank sensitivity and native GT/PS plus PGT/PID checks.
 Feat-006b is complete: 24 tests and all five real audits pass. Specification review

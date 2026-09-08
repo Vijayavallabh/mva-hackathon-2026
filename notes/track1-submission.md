@@ -1,5 +1,46 @@
 # Track 1 submission preparation (feat-008)
 
+## Conditional CSV update decision — session 30
+
+On 2026-09-08 the owner authorized updating the submission CSV if required.
+Review of feat-006b finds **no evidence-backed CSV change currently warranted**:
+
+- No new allele or phase assignment was established by that follow-up.
+- Sensitivity to removing evidence bonuses does not establish that an alternative
+  pair is a better causal prediction. The existing baseline order is retained.
+- All ten CSV `notes` cells already explicitly state `trans phase unconfirmed`.
+- The report already distinguishes the unphased hypothesis and uncalibrated EPCRs
+  from established causality. Rescaling EPCRs with order and distinctness unchanged
+  would not improve the pinned scorer's metrics; there is no calibration dataset
+  supporting new numerical probabilities.
+- A temporary regeneration using `build_submission(DEFAULT_CANDIDATES, path)`
+  matches the existing v4 CSV byte-for-byte. Package verification and regression
+  tests pass with 10 rows and 20 normalized alleles.
+
+The v4 CSV SHA-256 remains
+`a1f9315e223a07914589ce6884a66702b80e587ec5b7ad67f2ca1213f6caa225`.
+Neither deliverable was overwritten and no redundant v5 was generated. This is
+an evidence-based retention decision, not a claim that the current answer is correct.
+Actual scores and owner-side upload status remain unverified.
+
+A future allele correction, supported change of pair/order, or reviewed phase
+evidence can justify a new immutable CSV/report package. Preserve the old bytes,
+document the scientific reason, run reference/conformance/scenario checks, and
+verify portal history before any upload. This conditional edit authorization is
+not permission to spend another attempt or assert trans without evidence.
+
+Checks run:
+
+```bash
+uv run python scripts/prepare_track1_package.py verify results/feat008/jvv7_genomewide_mva_v4
+uv run python scripts/test_track1_package.py results/feat008/jvv7_genomewide_mva_v4
+uv run python scripts/test_track1_evidence.py
+```
+
+The direct regeneration and notes-cell checks are recorded in `progress.md`.
+
+## Previous evidence and publication status
+
 **Session 29 evidence clarification:** the actual competition score remains
 unknown. [Feat-006b](track1-evidence-audit.md) now exposes score scenarios, ranking
 sensitivity and native-phase uncertainty. It does not change the v4 CSV/report,

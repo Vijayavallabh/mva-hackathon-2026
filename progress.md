@@ -1359,3 +1359,53 @@ Delly 2.1.0
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-08 — session 30: conditional submission CSV review
+
+- Owner requested updating the CSV if required. Reviewed feat-006b's sensitivity
+  and phase findings within feat-008: neither supplies a supported replacement
+  allele/pair/order or a phase assignment. Retained the current v4 CSV/report;
+  no redundant v5, upload, quota spend or claim of an actual score.
+- `uv run python scripts/prepare_track1_package.py verify
+  results/feat008/jvv7_genomewide_mva_v4` passes: 10 rows, 20 normalized alleles,
+  complete disclosure, unchanged CSV/report hashes. Package regression tests
+  and all 24 evidence-audit tests pass. Staged disclosure audit has zero findings.
+- A direct Python check imported `build_submission`, `DEFAULT_CANDIDATES`,
+  `read_submission` and `sha256` from `scripts/track1_submission.py`; within
+  `tempfile.TemporaryDirectory(prefix='track1-csv-review-')` it regenerated a
+  ten-row CSV and asserted `regenerated.read_bytes() == submitted.read_bytes()`.
+  Result: true, SHA-256
+  `a1f9315e223a07914589ce6884a66702b80e587ec5b7ad67f2ca1213f6caa225`.
+  A `csv.DictReader` check confirms all ten notes cells already contain
+  `trans phase unconfirmed`. `score_scenarios(submitted)` still reports null
+  actual score, 13 hypothetical scenarios and no perfect-score guarantee.
+- Scientific-critical-thinking guidance supports an evidence-based no-change
+  decision rather than arbitrary EPCR rescaling. Harness guidance records the
+  conditional edit authorization, reasons to retain v4, and future change
+  criteria in submission notes, feature evidence and session handoff.
+- Fresh `./init.sh` completed with exit 0. Actual output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
