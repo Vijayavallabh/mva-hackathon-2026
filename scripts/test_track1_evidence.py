@@ -230,6 +230,25 @@ class EvidenceTests(unittest.TestCase):
         self.assertNotIn("private_fixture_group", run.stdout + run.stderr)
         self.assertNotIn("0|1", run.stdout + run.stderr)
 
+    def test_native_diagnostic_is_suppressed_and_fails_closed(self):
+        # htslib emits undeclared FILTER text directly to C stderr, not warnings.warn.
+        # The fixture is synthetic and never contains any actual subject data.
+        path = self.directory / "malformed.vcf"
+        path.write_text(
+            '##fileformat=VCFv4.2\n##contig=<ID=1,length=1000>\n'
+            '##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">\n'
+            '#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tFORMAT\tTEST\n'
+            '1\t10\t.\tA\tT\t.\tPRIVATE_FIXTURE_FILTER\t.\tGT\t0/1\n'
+            '1\t20\t.\tA\tT\t.\tPASS\t.\tGT\t0/1\n')
+        compressed = pysam.tabix_index(str(path), preset="vcf", force=True)
+        command = [sys.executable, str(Path(__file__).with_name("audit_track1_evidence.py")),
+                   "phase", str(self.csv), "--vcf", compressed, "--sample", "TEST"]
+        run = subprocess.run(command, capture_output=True, text=True)
+        self.assertNotEqual(run.returncode, 0)
+        self.assertNotIn("PRIVATE_FIXTURE_FILTER", run.stdout + run.stderr)
+        self.assertNotIn("0/1", run.stdout + run.stderr)
+        self.assertEqual(run.stdout, "")
+
     def test_cli_scores_is_read_only_and_emits_json(self):
         before = self.csv.read_bytes()
         command = [sys.executable, str(Path(__file__).with_name("audit_track1_evidence.py")),

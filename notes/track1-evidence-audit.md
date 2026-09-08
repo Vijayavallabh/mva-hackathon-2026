@@ -114,6 +114,11 @@ absent. Even positive encoding requires caller/read evidence review before
 biological confirmation. VCF provenance is size/mtime, not a full content hash;
 the explicit fresh index and exact submitted CSV have SHA-256 provenance.
 
+Native htslib diagnostics are captured at the file-descriptor boundary, never
+printed or copied into exception text. Any diagnostic fails the audit closed.
+This includes malformed-header warnings that otherwise expose raw field values.
+The guard is process-global and intended for this single-threaded CLI only.
+
 Together with feat-005c's zero connecting fragments and singleton target
 components, native metadata supplies **no new cis or trans evidence**. Trans
 remains unconfirmed; cis is not established either. Relabelling the same input
@@ -125,29 +130,31 @@ Run from the repository root. Outputs are aggregate JSON under ignored results.
 Use a new output directory for a changed analysis; do not overwrite old evidence.
 
 ```bash
-mkdir -p results/feat006b
+mkdir -p results/feat006b/final
 task_csv_path=results/feat008/jvv7_genomewide_mva_v4/jvv7_genomewide_mva_v4.csv
 uv run python scripts/test_track1_evidence.py
 uv run python scripts/audit_track1_evidence.py scores "$task_csv_path" \
-  > results/feat006b/score-scenarios.json
+  > results/feat006b/final/score-scenarios.json
 uv run python scripts/audit_track1_evidence.py ranking "$task_csv_path" \
   --candidates results/feat004/all_candidate_models.tsv \
-  > results/feat006b/rank-sensitivity.json
+  > results/feat006b/final/rank-sensitivity.json
 tools/install/bin/bcftools index --csi \
   --output results/feat006b/source-fresh.csi data/WGS_EX2312012_HGWCNDSX7.vcf.gz
 uv run python scripts/audit_track1_evidence.py phase "$task_csv_path" \
   --vcf data/WGS_EX2312012_HGWCNDSX7.vcf.gz --sample WGS_EX2312012 \
-  --index results/feat006b/source-fresh.csi > results/feat006b/native-source-phase.json
+  --index results/feat006b/source-fresh.csi > results/feat006b/final/native-source-phase.json
 uv run python scripts/audit_track1_evidence.py phase "$task_csv_path" \
   --vcf results/feat005b/haplotypecaller.raw.vcf.gz --sample PROBAND01 \
-  > results/feat006b/native-recall-phase.json
+  > results/feat006b/final/native-recall-phase.json
 uv run python scripts/audit_track1_evidence.py phase "$task_csv_path" \
   --vcf results/feat005c/hc-locus.phased.vcf.gz --sample PROBAND01 \
-  > results/feat006b/whatshap-recall-phase.json
+  > results/feat006b/final/whatshap-recall-phase.json
 ```
 
 The index command refuses to overwrite an existing index. Reuse its recorded
 artifact or choose a new output name on a later run.
+Final reports live under `results/feat006b/final/`; initial reports in its parent
+are retained as historical pre-review evidence. Numerical/phase conclusions agree.
 
 ## Next evidence needed, not promises
 

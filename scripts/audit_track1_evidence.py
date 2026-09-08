@@ -8,11 +8,14 @@ from __future__ import annotations
 
 import argparse
 import csv
+from contextlib import contextmanager
 from dataclasses import asdict
 from itertools import product
 import json
 import math
+import os
 from pathlib import Path
+import tempfile
 
 import pysam
 
@@ -181,6 +184,28 @@ def compare_encodings(encodings):
     return relations, overall
 
 
+@contextmanager
+def native_diagnostics_guard():
+    """Contain C-library stderr; any diagnostic fails closed without exposing it.
+
+    File-descriptor redirection is process-global: this CLI is single-threaded.
+    The temporary diagnostic bytes stay local and are discarded without reading.
+    """
+    with tempfile.TemporaryFile() as diagnostics:
+        saved = os.dup(2)
+        try:
+            os.dup2(diagnostics.fileno(), 2)
+            try:
+                yield
+            except Exception:
+                raise ValueError("native VCF processing failed; details suppressed") from None
+        finally:
+            os.dup2(saved, 2)
+            os.close(saved)
+        if diagnostics.seek(0, os.SEEK_END):
+            raise ValueError("native VCF diagnostic detected; details suppressed")
+
+
 def native_phase(csv_path: Path, vcf_path: Path, expected_sample: str, index_path: Path | None = None):
     leading = submission_rows(csv_path)[0]
     targets = sorted(pair_key(leading))
@@ -189,7 +214,9 @@ def native_phase(csv_path: Path, vcf_path: Path, expected_sample: str, index_pat
     if any(len(ref) != 1 or len(alt) != 1 for _, _, ref, alt in targets):
         raise ValueError("native phase audit currently requires biallelic SNV targets")
     statuses, encodings = [], []
-    with pysam.VariantFile(vcf_path, index_filename=str(index_path) if index_path else None) as vcf:
+    with native_diagnostics_guard(), pysam.VariantFile(
+        vcf_path, index_filename=str(index_path) if index_path else None
+    ) as vcf:
         if list(vcf.header.samples) != [expected_sample]:
             raise ValueError("VCF sample identity mismatch; no sample inferred")
         for chrom, pos, ref, alt in targets:

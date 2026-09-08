@@ -1318,7 +1318,14 @@ annotation resources ready
 - Skills: implementation and harness guidance produced a reproducible companion
   audit and explicit unknown-score state; pysam and critical-thinking guidance
   keep metadata encoding, read linkage, causality and official score separate.
-  New tests use synthetic fixtures, not patient records. Final review pending.
+  New tests use synthetic fixtures, not patient records.
+- Specification review found zero issues. Standards review caught native htslib
+  stderr bypassing Python error sanitization on a malformed synthetic header.
+  Added a file-descriptor diagnostic guard, fail-closed handling, and a CLI test
+  proving neither output stream emits the synthetic sentinel. All **24** tests
+  now pass. Reran all five real audits into `results/feat006b/final/` without
+  changing the initial evidence; score/rank/phase conclusions agree. Final
+  standards recheck pending. VCF triage and targeted-recall self-checks also pass.
 - Fresh-shell `./init.sh` completed with exit 0; actual output:
 
 ```text
