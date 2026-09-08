@@ -34,8 +34,11 @@ AlphaMissense, consequence, conservation and indel indicators. Regulatory featur
 take maxima across tissues and other dimensions. Training uses gnomAD v4.1 frequency
 proxies, not individual clinical outcomes. Chromosome 15 is among training chromosomes;
 exact overlap with our selected alleles is unknown. PHRED 20 means the top 1% of the
-SNV score distribution, **not 99% pathogenicity**. SHAP contributions sum to raw AVI,
-not its PHRED transformation. The study includes observed indels, but the initial
+SNV score distribution, **not 99% pathogenicity**. The overview describes SHAP
+contributions against raw AVI, not its PHRED transformation, but the Methods use
+approximate baseline-relative attributions. The baseline is not supplied by the
+inspected API; do not impose exact equality to raw AVI. See the
+[score-semantics clarification](alphagenome-score-semantics.md). The study includes observed indels, but the initial
 public datasets are restricted to valid hg38 SNVs. AVI code/weights are promised upon
 final publication. [Manuscript, methods and data/code availability](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/alphagenome-atlas.pdf)
 

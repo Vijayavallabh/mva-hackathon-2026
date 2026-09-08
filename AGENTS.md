@@ -138,6 +138,15 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   Eighteen static AVI feature definitions were extracted without executing the foreign
   CLI. Definitions are not scores; actual score access still needs a working download
   or configured API access. Do not manufacture evidence from metadata or retry failures.
+  Session 35 supersedes that access blocker: the owner configured an ignored, owner-only
+  `.env` key. Authenticated metadata (22 scorers), public DNM1 control and both submitted
+  candidate AVI/attribution lookups succeeded. Detailed molecular requests failed; no
+  molecular matrix was retained. See `notes/alphagenome-authenticated-results.md` and
+  `scripts/alphagenome_atlas.py`. Never print the key. Google DeepMind precomputed-output
+  API use is now part of future Track 2 disclosure; preserve earlier uploaded files and
+  historical attestations. AVI evidence mainly reuses termination/AlphaMissense/
+  conservation; no phase, drug-ranking or exposure update. Distinguish AVI CDF from
+  signed molecular calibration, and approximate baseline-relative SHAP from raw AVI.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed

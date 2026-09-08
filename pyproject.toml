@@ -3,6 +3,10 @@ name = "mva-hackathon-2026"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
+    "alphagenome",
     "huggingface-hub[cli]>=1.28.0",
     "whatshap==2.8",
 ]
+
+[tool.uv.sources]
+alphagenome = { git = "https://github.com/google-deepmind/alphagenome.git", rev = "aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d" }

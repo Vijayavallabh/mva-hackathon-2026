@@ -99,9 +99,11 @@ everolimus as one conditional research priority and demotes hydroxychloroquine t
 The 53-source review and [exposure ledger](notes/track2-exposure.json) establish no clinical
 efficacy or therapeutic margin. No laboratory experiments or Track 2 upload have occurred.
 The [pitch script](notes/track2-pitch.md) still needs recording and a hosted URL.
-The [AlphaGenome Atlas follow-up](notes/alphagenome-assessment.md) finds potential
-molecular-interpretation value, but bounded score-download attempts returned HTTP 500;
-no Atlas scores were obtained and no phase, drug ranking or exposure conclusion changed.
+The [authenticated AlphaGenome Atlas follow-up](notes/alphagenome-authenticated-results.md)
+retrieved both candidate AVI scores and feature attributions. These mainly reuse
+termination, AlphaMissense and conservation evidence; detailed molecular retrieval
+remains incomplete. No phase, drug ranking or exposure conclusion changed. The addendum
+records Google DeepMind API use and output terms separately from earlier disclosures.
 
 Feat-001 through feat-006, including feat-005b targeted recall and feat-005c phase follow-up, are complete.
 The local Track 1 draft has been checked against a
@@ -120,7 +122,10 @@ submission preflight had no blockers. API identity alone did not establish porta
 authentication; the owner subsequently reported submitting. Do not upload again merely
 to obtain a receipt. No files were uploaded by the agent workflow. On 2026-09-08 the owner completed
 the AI disclosure: OpenAI/Codex API tier, data not used for model training, and no other
-AI providers. This attestation does not claim zero retention; purge was verified separately.
+AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
+precomputed predictions, as disclosed in the addendum above; the submitted Track 1
+files remain unchanged. The earlier attestation does not claim zero retention; purge
+was verified separately.
 
 The data profile and first two analyses are complete — see `notes/data-profile.md`,
 `notes/vcf-triage.md` and `notes/copy-number-screen.md` for measured results and exact

@@ -1,7 +1,7 @@
 # Session handoff
 
-**Last updated:** 2026-09-08, session 34. **Active feature: feat-009 Track 2.**
-The latest user asked to continue the Atlas work; baseline `af8a58b`.
+**Last updated:** 2026-09-08, session 35. **Active feature: feat-009 Track 2.**
+The latest user supplied the local key location, not its value; baseline `6aa9d96`.
 The initial Atlas request followed the scientific/exposure review.
 The prior user request was final scientific/exposure review, baseline `1a97a0e`;
 review specification and findings: `notes/track2-final-review.md`.
@@ -18,8 +18,10 @@ The previous session's equal-priority HCQ nomination is superseded.
   independently verify the uploaded bytes.
 - Feat-007 purge/publication is complete; repo public; Support ticket 4738585. Do not
   recreate the old purge blocker, change visibility or contact Support/family.
-- Owner-attested AI disclosure: OpenAI/Codex API tier, no model training and no other
-  providers. This is not an account audit or zero-retention claim. No extra provider used.
+- Historical Track 1 AI attestation: OpenAI/Codex API tier, no model training and no
+  other providers at that time. Session 35 additionally used Google DeepMind Atlas's
+  precomputed-output API; future Track 2 disclosure must say so. This is not an account
+  audit or zero-retention claim. Do not change the already-submitted Track 1 files.
 - Public Track 2 code permits **three entries, latest only reviewed**. Report, GitHub URL
   and a three-minute YouTube/Vimeo URL are required; no Track 2 upload has occurred.
 
@@ -66,18 +68,23 @@ per-record invented margins, reject empty article bodies, and include the actual
 combination trial. Both independent rechecks report all findings resolved; no new material
 issue was identified in their bounded reviews. Final checks are in progress/adversarial notes.
 Current suites: **63 evidence/package tests + 44 exposure/retrieval tests = 107**.
+Session 35 adds 32 authenticated Atlas tests to the existing 33 access-audit tests:
+**172 total**, all passing. Final independent standards and science/spec rechecks find
+no remaining material issue; fresh `./init.sh` exits 0, with actual output in progress.md.
+The reviewed Track 2 v2 remains intact, not upload-ready and not an Atlas-inclusive release.
 
 ## Blockers and unresolved evidence
 
-- **Optional Atlas evidence:** `notes/alphagenome-assessment.md` and the primary review
-  document today's release and actual bounded access attempts. Latest access-v3 observed
-  five reachable documentation/catalogue resources and two HTTP 500 score archives;
-  exit 2 correctly indicates unavailable resources. No API key configured; no scores or
-  inference obtained. Normal isolated-browser rendering now reveals the complete current
-  service/output terms; they were read, not accepted, and account eligibility/all
-  incorporated policies were not audited. Actual lookup needs working public-artifact
-  access or an owner-configured authenticated route with approved
-  non-protected payload. This does not block submitting an honest research proposal.
+- **Optional detailed Atlas evidence:** authentication is now working. The owner-only,
+  ignored `.env` was used without exposing the key. `alphagenome-auth-composites-v1`
+  retains both candidate AVI scores and 18 attributions, after public metadata/control
+  and exact submission-derived/reference checks. PHRED 33.7641/25.6084 are calibration
+  ranks, not disease probabilities. Termination and AlphaMissense dominate respectively;
+  no new drug/phase inference. Detailed molecular retrieval returned `UNAVAILABLE`;
+  no usable molecular matrix was retained. See `notes/alphagenome-authenticated-results.md`
+  for attempts, provenance, signed-calibration correction and output notice. Historical
+  archive HTTP 500 failures and absent-key statements are superseded as access status.
+  Do not retry indefinitely or ask for the key value. No on-demand inference occurred.
 - Atlas new code has 33 synthetic transport tests; independent standards review found
   two defects, both fixed/rechecked. Independent science/spec review found no material
   issue. No Atlas evidence was inserted into the 53-source drug ledger or immutable v2
@@ -94,9 +101,10 @@ Current suites: **63 evidence/package tests + 44 exposure/retrieval tests = 107*
   and a measured normal/tumour exposure window remain unknown. No wet-lab work performed.
   Literature review cannot establish these facts or authorize clinical treatment.
 - **Track 1:** independently archive the existing receipt if supplied; do not upload again.
-- No subject-file transfer, sample acquisition, treatment/procurement, family contact or
-  extra AI provider is authorized. Preferred research/image skill services lack credentials;
-  public sources/local tables were used instead.
+- No subject-file transfer, sample acquisition, treatment/procurement or family contact
+  is authorized. The narrow Atlas route is now explicitly used; this does not authorize
+  another provider or protected payload. A future Track 2 release needs the new Atlas
+  disclosure/output notice; preserve the current-input-bound reviewed v2 snapshot.
 - These scientific limits do not prevent an honest research proposal, but must not be
   concealed or presented as completed experiments.
 
@@ -111,6 +119,7 @@ uv run python scripts/track2_exposure.py
 uv run python scripts/track2_evidence.py sensitivity
 uv run python scripts/track2_evidence.py track1
 uv run python scripts/test_alphagenome_access_audit.py
+uv run python scripts/test_alphagenome_atlas.py
 ```
 
 Continue feat-009 only. The original `jvv7_track2_research_v1/` is preserved (seven file

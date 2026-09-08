@@ -6,6 +6,13 @@ change uploaded Track 1 files or the reviewed Track 2 v2 research snapshot.
 
 ## Outcome
 
+**Session 35 supersedes the access status below:** the owner configured the key
+locally. Authenticated metadata, the public control and both candidate AVI/feature
+lookups succeeded. Detailed molecular retrieval failed. See the
+[authenticated results and disclosure](alphagenome-authenticated-results.md).
+No phase, drug-priority or exposure conclusion changes; v4/v2 snapshots are preserved.
+The following session-33/34 observations remain historical, not current access status.
+
 **Relevant for optional molecular interpretation; no Atlas scores obtained.** The
 official resource launched today. We inspected its primary manuscript, pinned SDK,
 public catalogue and downloadable-artifact routes. Both advertised score-download

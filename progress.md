@@ -1837,3 +1837,99 @@ Final reruns also pass the 63 evidence/package and 44 exposure tests (**140 test
 including the 33 access tests**) and the official Track 1 scorer self-check. Access-v3's
 executing-script hash and all seven retained-response hashes match. `git diff --check`
 passes. Disclosure audit and configured-origin synchronization complete the handoff.
+
+## 2026-09-08 — session 35: authenticated Atlas composite evidence
+
+User supplied the local `.env` / `ALPHAGENOME_API_KEY` location. Baseline `6aa9d96`,
+clean and upstream-matched. Feat-009 only. Research and scientific-critical-thinking
+skills guided pinned-source review, independent adversarial checks and interpretation.
+No raw subject data, clinical narrative or source VCF records were sent; the only
+candidate request tuples came from the permitted derived submission report.
+
+- Installed AlphaGenome SDK from source revision
+  `aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d` via `uv add`; dependencies locked.
+- `.env` was already ignored and mode 0600. Its key was loaded locally without shell
+  execution, output, command-line arguments or storage in results. Fixed TLS endpoint,
+  20-second connection timeout and 45-second RPC deadlines; no automatic retries.
+- `scripts/alphagenome_atlas.py` implements metadata/control gates, exact three-variant
+  outgoing allowlist, local submitted-artifact/reference checks, finite/identity/shape/
+  attribution-name checks, secret-safe errors and partial-result retention.
+- Authenticated public metadata returned 22 scorers; documented DNM1 control passed.
+  Full pair attempts retained failures: first unlocalized local gate, then service
+  `UNAVAILABLE` calls. Pair-v4 retained the stop-gain composite before a molecular failure.
+- A declared, narrower `submitted-composites` fallback then succeeded for both alleles:
+  raw AVI 1.872789502/1.216326118; PHRED 33.764076/25.608400. Termination and AlphaMissense
+  dominate respectively; these reuse existing evidence, not independent assays. No usable
+  detailed molecular matrix was retained. Trans remains unconfirmed; drug priorities and
+  unknown clinical exposure margins unchanged. No on-demand inference or wet-lab work.
+- Results, attempts, all hashes/commands, terms notice and new Google DeepMind API
+  disclosure: `notes/alphagenome-authenticated-results.md`. Reviewed Track 2 v2 and uploaded
+  Track 1 v4 remain unchanged; future Track 2 release must integrate the new disclosure,
+  not overwrite historical attestations or reuse an old no-other-provider statement.
+- Standards review caught lost partial composites and failure cleanup outside muted
+  diagnostics; both fixed and regression-tested. Scientific review caught universal
+  `[0,1]` molecular calibration; signed scorers use `[-1,1]`, AVI remains CDF. Historical
+  exact-SHAP-sum wording corrected to baseline-relative approximation. The first live
+  local failure lacked enough diagnostics to attribute its cause to any one fix.
+- `uv run python scripts/test_alphagenome_atlas.py`: 32 tests pass.
+  Existing evidence/package 63, exposure/retrieval 44 and access-audit 33 pass:
+  **172 tests total**. Official Track 1 scorer and verify-data self-checks pass.
+  Evidence ledger remains 53 sources / 12 candidates / no established efficacy;
+  Track 2 v2 verifies ten current-input-bound files and Track 1 v4 hashes match.
+
+Commands for successful retrieval and unchanged-bundle verification:
+
+```bash
+uv run python scripts/alphagenome_atlas.py results/feat009/alphagenome-auth-composites-v1 --mode submitted-composites
+uv run python scripts/test_alphagenome_atlas.py
+uv run python scripts/track2_evidence.py verify results/feat009/jvv7_track2_research_v2
+uv run python scripts/track2_evidence.py track1
+```
+
+Fresh no-argument `./init.sh` exits 0. Actual
+`logs/alphagenome-session35-final-init.log` output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Feat-009 remains in progress: final release/disclosure integration, recorded/hosted pitch,
+owner/live portal checks and submission receipt remain. Detailed Atlas RNA/splicing
+retrieval is optional and incomplete, not a failed-key blocker or evidence of no effect.
+No running inference, retry loop, submission upload or changes to preserved deliverables.
+
+Final independent standards and science/spec rechecks report no remaining material
+findings. Both reproduced the 32-test Atlas suite and inspected the final notes and
+successful normalized-output hashes; scientific review recomputed all three composites
+from retained tensors. This validates local parsing/reporting, not model biology.
+
+Pre-commit publication checks: staged disclosure audit passes 90 unique blobs with
+zero findings; baseline all-ref audit passes 55 commits / 404 blobs with zero findings.
+A local staged-blob literal check against the key (read only within muted local code,
+never printed or hashed) reports `staged_secret_literal_matches: 0`.
+Audit commands: `uv run python scripts/audit_publication.py --staged --output
+results/feat009/alphagenome-session35-disclosure-staged.json` and the same command
+without `--staged` to `alphagenome-session35-disclosure-history.json`.
+`git diff --cached --check` passes. Commit/push to configured origin and upstream
+equality verification are the remaining repository handoff operations.
