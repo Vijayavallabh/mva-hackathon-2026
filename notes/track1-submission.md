@@ -218,3 +218,13 @@ Feat-008 is explicitly blocked, not done. Keep PRIVATE until purge verification 
 finish feat-007 and repeat live preflight before checking portal identity/quota and uploading.
 No code/configuration/deliverable changes, new package, upload or submission attempt were
 made. Trans phase remains unconfirmed. Fresh startup output is recorded in `progress.md`.
+
+### Additional phase work (session 26)
+
+Feat-005c found no direct or indirect eligible-SNV fragment connection between the
+leading alleles. A separate WhatsHap run on recalled variants also leaves both
+unphased. See [phase-connectivity.md](phase-connectivity.md). The existing v4 CSV
+and report remain unchanged and pass verification and regressions. No uploaded
+deliverable was edited. The owner's announced intention to publish/submit was not
+verified as an external action or receipt in this analysis session; do not infer
+an official score or available quota from the local checks.

@@ -40,9 +40,10 @@ class PhaseConnectivityTests(unittest.TestCase):
         return path
 
     def bam(self, *, proper=True, duplicate=False, mapq=60, baseq=30,
-            different_groups=False, bad_sample=False, missing_group=False):
+            different_groups=False, bad_sample=False, missing_group=False,
+            extra_flag=0, cross_contig=False):
         path = self.root / "synthetic.bam"
-        header = {"HD": {"SO": "coordinate"}, "SQ": [{"SN": "1", "LN": 1000}],
+        header = {"HD": {"SO": "coordinate"}, "SQ": [{"SN": "1", "LN": 1000}, {"SN": "2", "LN": 1000}],
                   "RG": [{"ID": g, "SM": "wrong" if bad_sample else "PROBAND01"}
                          for g in ("a", "b")]}
         with pysam.AlignmentFile(path, "wb", header=header) as out:
@@ -53,12 +54,12 @@ class PhaseConnectivityTests(unittest.TestCase):
                 read.query_qualities = [baseq]
                 read.reference_id = 0
                 read.reference_start = pos
-                read.next_reference_id = 0
+                read.next_reference_id = 1 if cross_contig else 0
                 read.next_reference_start = 30 if index == 0 else 10
                 read.template_length = 21 if index == 0 else -21
                 read.cigarstring = "1M"
                 read.mapping_quality = mapq
-                read.flag = (99 if index == 0 else 147)
+                read.flag = (99 if index == 0 else 147) | extra_flag
                 if not proper:
                     read.flag &= ~2
                 if duplicate:
@@ -96,6 +97,22 @@ class PhaseConnectivityTests(unittest.TestCase):
 
     def test_low_baseq_excluded(self):
         self.assertEqual(self.audit(baseq=5)["fragments_with_marker_observations"], 0)
+
+    def test_secondary_supplementary_and_qcfail_excluded(self):
+        for flag in (256, 2048, 512):
+            with self.subTest(flag=flag):
+                self.assertEqual(self.audit(extra_flag=flag)["fragments_with_marker_observations"], 0)
+
+    def test_unmapped_or_cross_contig_mate_does_not_link(self):
+        for options in ({"extra_flag": 8}, {"cross_contig": True}):
+            with self.subTest(options=options):
+                self.assertEqual(sum(self.audit(**options)["direct_target_pair_fragments"].values()), 0)
+
+    def test_unphased_genotypes_do_not_imply_phase(self):
+        path = self.vcf("unphased", [(10, "G", "PASS", 30), (30, "G", "PASS", 30)])
+        status = phase_status(path, "1", [(10, ("A", "G")), (30, ("A", "G"))])
+        self.assertEqual(status["targets_phased"], [False, False])
+        self.assertEqual(status["encoded_phase_relation"], "unconfirmed")
 
     def test_bam_wrong_sample_rejected(self):
         with self.assertRaises(ValueError):

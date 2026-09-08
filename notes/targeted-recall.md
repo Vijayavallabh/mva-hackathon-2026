@@ -101,6 +101,13 @@ record is sent to a remote service.
 
 ## Result
 
+**Follow-up, 2026-09-08:** feat-005c independently audited original/recalled SNV
+fragment connectivity and reran WhatsHap on the HaplotypeCaller locus. Neither
+approach establishes phase for the leading pair; both alleles remain unphased.
+The added commands, aggregate evidence and limitations are in
+[phase-connectivity.md](phase-connectivity.md). The results below remain the
+original feat-005b evidence, not counts from the follow-up.
+
 The all-lane alignment retained 934,025,028 primary nonduplicate reads; 99.55% mapped and
 98.27% were properly paired. HaplotypeCaller emitted 53,865 normalized accepted alleles in
 the 25.3 Mb target. Exact subtraction against the feat-004 normalized PASS baseline left

@@ -1112,3 +1112,63 @@ Delly 2.1.0
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-08 — session 26: additional phase analysis, feat-005c
+
+- The owner requested trans-phase work. Added the bounded feat-005c follow-up rather
+  than treating the request as evidence of trans or permission to change a submission.
+  Scientific-critical-thinking guidance kept graph connectivity, encoded phase and
+  biological confirmation distinct; pysam was used only for local indexed processing.
+- `scripts/audit_phase_connectivity.py` audits source-marker and HaplotypeCaller-union
+  SNV graphs in the existing BUB1B interval at two MAPQ/base-quality settings and two
+  edge-support thresholds. Final artifacts are
+  `results/feat005c/source-connectivity-final.json` and `union-connectivity-final.json`.
+  Full commands and filters are in `notes/phase-connectivity.md`.
+- Measured 48 original / 49 union eligible SNVs; zero fragments observe both targets,
+  and both are singleton components at all settings. Target separation is 10,911 bp;
+  local maximum read length is 149 bp and median proper-pair template length is 442 bp.
+  Individual candidate support is retained, but it cannot establish relative phase.
+- WhatsHap 2.8 independently phased the existing recalled locus, with 58 usable
+  heterozygous variants. It completed successfully, but both candidates remain present
+  and unphased without a shared phase set. Final aggregate JSON checks both original
+  and recalled phase outputs. No source records, read bases, names or marker edges
+  were emitted to model context or transmitted externally.
+- `uv run python scripts/audit_phase_connectivity.py --self-check` passes.
+  `uv run python scripts/test_phase_connectivity.py` passes 16 synthetic integration
+  tests. `uv run python -m compileall -q scripts/audit_phase_connectivity.py scripts/test_phase_connectivity.py`
+  and `./scripts/run_targeted_recall.sh --self-check` pass. Specification and standards
+  review of `b827f17...c75926a` found zero blocking findings; optional filter-test
+  suggestions were implemented and retested. No static typechecker is configured.
+- `uv run python scripts/prepare_track1_package.py verify results/feat008/jvv7_genomewide_mva_v4`
+  passes with unchanged CSV/report hashes; package regressions also pass. No deliverable,
+  ranking, visibility or submission was changed. The owner's announced intention to
+  publish/submit is not a verified external action or receipt. No new live publication
+  status was inferred. Trans phase remains unconfirmed.
+- Harness-creator guidance informed the explicit distinction between completed analysis
+  and unresolved biological phase. Updated feature evidence, AGENTS, targeted-recall
+  notes and handoff. Fresh-shell `./init.sh` completed with exit 0; actual output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```

@@ -49,7 +49,7 @@ positions are one-based and explicitly converted. FILTER membership is tested
 through the explicit key set: in pysam 0.24.0, `"PASS" in record.filter` also
 returns true for an empty filter, which must not silently erase that distinction.
 
-## Initial measured result
+## Measured result
 
 Original calls supply 48 eligible SNVs; the union with HaplotypeCaller supplies 49.
 The nearest other eligible SNVs are 6,769 and 809 bases from the respective targets.
@@ -86,7 +86,8 @@ uv run python scripts/audit_phase_connectivity.py \
   --vcf results/feat005b/target-source.proband.vcf.gz \
   --bed results/feat005b/phase-target.bed \
   --left 40209701:T:G --right 40220612:T:G \
-  > results/feat005c/source-connectivity.json
+  --phased-vcf results/feat005b/target-source.phased.vcf.gz \
+  > results/feat005c/source-connectivity-final.json
 
 uv run python scripts/audit_phase_connectivity.py \
   --bam results/feat005b/all-lanes.markdup.bam \
@@ -106,8 +107,48 @@ uv run whatshap phase --sample PROBAND01 \
   results/feat005c/hc-locus.vcf.gz results/feat005b/all-lanes.markdup.bam \
   > logs/feat005c-hc-phase.log 2>&1
 tools/install/bin/tabix -p vcf results/feat005c/hc-locus.phased.vcf.gz
+
+# Final aggregate audit after both phased VCFs exist:
+uv run python scripts/audit_phase_connectivity.py \
+  --bam results/feat005b/all-lanes.markdup.bam \
+  --vcf results/feat005b/target-source.proband.vcf.gz \
+  --unfiltered-vcf results/feat005b/haplotypecaller.pass.normalized.vcf.gz \
+  --bed results/feat005b/phase-target.bed \
+  --left 40209701:T:G --right 40220612:T:G \
+  --phased-vcf results/feat005b/target-source.phased.vcf.gz \
+  --phased-vcf results/feat005c/hc-locus.phased.vcf.gz \
+  > results/feat005c/union-connectivity-final.json
 ```
 
-The WhatsHap 2.8 recall-locus run is in progress. Its phase result must be inspected
-before treating this follow-up as complete. Neither original evidence nor the
-connectivity audit currently establishes cis or trans.
+The WhatsHap 2.8 recall-locus run completed successfully: 58 usable heterozygous
+variants and 1,939 reads covering variants before informative-read selection;
+188 selected reads cover 48 variants. These read counts are not independent
+fragment counts and should not be equated to the connectivity audit's counts.
+Both candidate alleles are present in the output, but neither is phased and they
+have no shared phase-set identifier. The final JSON reports the same result for
+the original phased VCF and the new HaplotypeCaller-based phased VCF.
+
+## Verification and conclusion
+
+Sixteen synthetic integration tests pass, covering proper/improper mates, separate
+read groups, duplicates, secondary/supplementary/QC-fail exclusions, unmapped or
+cross-contig mates, base and mapping quality, marker conflicts, sample identity,
+explicit PASS versus unfiltered records, and cis/trans/unphased/separate/missing
+phase-set interpretation. The self-check also covers deletion-aware base indexing,
+persistent overlapping-mate conflicts, indirect links and support thresholds.
+Specification and standards reviews found zero blocking findings; their optional
+filter-test suggestions were added. `./init.sh`, the existing targeted-recall
+self-check, unchanged v4 package verification and package regressions pass.
+
+This completes the scoped follow-up, not the biological phase question. It supplies
+a concrete reason for the negative result: neither candidate is connected to
+another accepted SNV by the observed fragments, and the separate supported-variant
+WhatsHap attempt also leaves both unphased. Do not interpret this as evidence for
+cis, or as exclusion of every possible analysis of the existing data.
+
+Additional authorized phase-informative data—such as parental genotypes or long
+reads bridging the sites or an informative marker chain—would provide a different
+route, as described in the [WhatsHap guide](https://whatshap.readthedocs.io/en/latest/guide.html).
+Do not contact the family. Neither a compound-heterozygous answer-key expectation,
+similar allele balances, phenotype fit nor separate phase blocks establish trans
+for this particular pair. The ranking and existing submission files are unchanged.

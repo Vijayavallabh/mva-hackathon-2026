@@ -85,6 +85,11 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   Supported coding/splice, operational deep-intronic, repeat-adjacent and heterozygous-SV
   screens found no additional BUB1B candidate; trans phase remains unconfirmed. See
   `notes/targeted-recall.md`.
+- **Feat-005c phase follow-up also leaves trans unconfirmed.** Original and recalled
+  marker connectivity audits find no fragments linking the leading pair, directly or
+  through eligible SNVs, at either quality setting. WhatsHap on the recalled locus
+  also leaves both alleles unphased. This completes a bounded evidence audit, not
+  phase confirmation. See `notes/phase-connectivity.md`; do not alter submitted files.
 - **Feat-006 submission checking is local and pinned.** The vendored official scorer is
   fixed to public Space revision `1c761cc23d90aebe6a011fd5b0b99517df42408c`. A local
   ten-row draft passes exact schema/ID/contig/EPCR checks and reference-based indel

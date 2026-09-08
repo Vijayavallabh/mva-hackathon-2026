@@ -1,12 +1,20 @@
 # Session handoff
 
-**Last updated:** 2026-09-08 (session 25 — feat-008 revalidated; upload blocked)
+**Last updated:** 2026-09-08 (session 26 — feat-005c follow-up complete; trans unconfirmed)
 
-**Current objective:** execute feat-008, the next feature, at the owner's request.
-Feat-001 through feat-006 are done; feat-007 remains blocked on Support. Feat-008 is now
-explicitly `blocked`: its unchanged v4 package passed fresh offline validation and all
-regressions, but live preflight at `8476cc2` returned two blockers: PRIVATE visibility
-under the public-first policy and failed retired-object purge. No upload was performed. The history rewrite
+**Current objective:** the owner's additional trans-phase analysis is complete as
+feat-005c. The original/recalled marker graphs leave both targets isolated, and a
+fresh WhatsHap run on the recalled locus leaves both alleles unphased. Sixteen synthetic
+tests, independent specification/standards reviews and `./init.sh` pass. See
+`notes/phase-connectivity.md`. Completion of this audit does not confirm cis or trans.
+
+Feat-001 through feat-006, including the added feat-005c, are done; feat-007 remains
+blocked on Support. Feat-008 remains `blocked`: unchanged v4 passed verification and
+regressions again. The last live preflight at `8476cc2` returned two blockers: PRIVATE
+visibility under the public-first policy and failed retired-object purge. The owner
+later announced an intention to publish and submit; this session did not verify any
+external action or receipt. Do not assume an upload occurred or did not occur outside
+this workflow. No upload or visibility change was performed by this session. The history rewrite
 and force-push are complete. The owner restored PRIVATE visibility; the independent
 obsolete-object purge remains unresolved. See `notes/publication-audit.md`. Feat-008 preparation can proceed
 locally, but no upload or official score is claimed. See `notes/track1-submission.md`.
@@ -65,6 +73,13 @@ traps that silently score zero).
   Check `uptime` and `nvidia-smi` before planning anything large.
 
 ## Files in flight
+
+Feat-005c is finished. Its ignored `results/feat005c/` directory contains initial and
+final aggregate connectivity reports plus the recalled-locus input and phased VCFs.
+The final evidence files are `source-connectivity-final.json` and
+`union-connectivity-final.json`; the latter checks both original and recalled phase
+outputs. All subject-level files stay local. The log is `logs/feat005c-hc-phase.log`.
+The new analysis does not change the CSV, report, ranking or the trans-unconfirmed caveat.
 
 Feat-005b's subject BAM/VCF/BCF and review tables remain gitignored under
 `results/feat005b/`; only code and aggregate interpretation are tracked. The local toolchain and public
