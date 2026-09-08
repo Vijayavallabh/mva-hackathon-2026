@@ -922,3 +922,15 @@ Delly 2.1.0
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-08 — session 22: completed owner AI disclosure
+
+- Owner confirmed no other AI providers were used and data is not used to train the
+  provider's models. Recorded both in `notes/track1-submission-config.json`, alongside
+  the earlier OpenAI/Codex API-tier confirmation. No zero-retention or independent
+  account-verification claim is added; subject-data safeguards remain unchanged.
+- Updated current harness/README/submission guidance. Feat-008 remains active and
+  unfinished; feat-007's independent purge gate is unresolved. No upload or external
+  message was authorized or performed.
+- Package and official-scorer self-checks pass. `./init.sh` is running; final output
+  and the new immutable v4 package checks will be recorded after completion.

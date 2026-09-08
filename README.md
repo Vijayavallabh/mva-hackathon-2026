@@ -97,8 +97,9 @@ removal by GitHub Support. See [the publication audit](notes/publication-audit.m
 
 **2026-09-06 live-check warning:** the owner confirmed deliberately making GitHub PUBLIC,
 but the latest 13-object purge check still fails. Publication is not considered safely
-complete, and the submission preflight remains blocked. Codex's API tier is now confirmed;
-the remaining account data-handling and other-provider disclosures are still needed.
+complete, and the submission preflight remains blocked. On 2026-09-08 the owner completed
+the AI disclosure: OpenAI/Codex API tier, data not used for model training, and no other
+AI providers. This attestation does not claim zero retention or clear the purge gate.
 
 The data profile and first two analyses are complete — see `notes/data-profile.md`,
 `notes/vcf-triage.md` and `notes/copy-number-screen.md` for measured results and exact

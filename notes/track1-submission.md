@@ -1,6 +1,6 @@
 # Track 1 submission preparation (feat-008)
 
-Status on 2026-09-06: local v3 draft built and verified; no submission has been uploaded
+Status on 2026-09-08: owner AI disclosure completed; v4 rebuild pending. No submission has been uploaded
 by this workflow and no official score or remaining-attempt count is claimed.
 The selected account from the local authenticated HF identity is `jvv7`; an empty
 display name uses that username. Never print the token or complete identity response.
@@ -16,10 +16,11 @@ configuration until explicitly changed. Neither publication nor sharing retired 
 is safe while GitHub still serves those objects. The prepared Support request is unsent.
 
 The official AI-use instructions require provider, plan/tier and data-handling setting.
-The owner confirmed OpenAI/Codex **API tier** on 2026-09-06. The applicable
-retention/training setting and any other AI providers used are still not known. Null fields
-in `notes/track1-submission-config.json` deliberately block preflight. Do not invent a
-no-training guarantee or assume that no other provider was used.
+The owner confirmed OpenAI/Codex **API tier** on 2026-09-06 and, on 2026-09-08,
+confirmed that data is not used to train the provider's models and no other AI providers
+were used. These owner attestations complete `notes/track1-submission-config.json`.
+They are not independently verified account settings and do not imply zero retention,
+a retention duration, or permission to transmit prohibited subject data.
 
 Verified public source revision: `1c761cc23d90aebe6a011fd5b0b99517df42408c`.
 Upload source SHA-256: `685a3b6d57ef3a1c49a8be47845b10d77cb576ed2d30b5a90879b09707659b86`.
@@ -134,7 +135,7 @@ reject it. A refreshed v3 draft is documented below. After completing the remain
 disclosure, commit the configuration and build a new package name (next: v4); never edit
 the old deliverables in place.
 
-## Current v3 draft (2026-09-06)
+## Historical v3 draft (2026-09-06)
 
 Built `results/feat008/jvv7_genomewide_mva_v3/` from `cdfb444` with the owner-confirmed
 API-tier disclosure. This refresh changes the report, not the ranked candidates or

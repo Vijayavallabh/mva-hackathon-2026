@@ -94,7 +94,7 @@
         "feat-007"
       ],
       "status": "next",
-      "evidence": "2026-09-06: `uv run python scripts/prepare_track1_package.py build --name jvv7_genomewide_mva_v3` produced a refreshed API-tier draft at cdfb444. Offline verification and `uv run python scripts/test_track1_package.py results/feat008/jvv7_genomewide_mva_v3` pass 10-pair/20-allele reference checks, 18 publication-policy cases, 3 live-upstream cases, portability and 9 corruption rejections. CSV ranking is unchanged; report retains unconfirmed trans phase. Live preflight exits 1: data-handling setting, other AI providers and the independent purge gate remain unresolved. PUBLIC visibility, live origin synchronization and official contract are verified, but no upload, receipt or official score exists. V1/v2 are historical; v3 is not upload-ready. Feat-008 is NOT done. Artifacts, commands and init output are recorded in notes/track1-submission.md and progress.md."
+      "evidence": "2026-09-08: owner completed notes/track1-submission-config.json with no model training and no other AI providers, alongside previously confirmed OpenAI/Codex API tier. Package self-check passes. V3 is now historical; commit the configuration and run `uv run python scripts/prepare_track1_package.py build --name jvv7_genomewide_mva_v4`, verify, regression tests and live preflight. Publication purge remains independently unresolved; no upload, receipt or official score exists. Trans phase remains unconfirmed. Feat-008 is NOT done; final v4 verification will be recorded in notes/track1-submission.md and progress.md."
     },
     {
       "id": "feat-009",

@@ -96,8 +96,8 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   those objects and `scripts/check_publication_remote.py` passes. See
   `notes/publication-audit.md` and the prepared, unsent `notes/github-support-request.md`.
 - **Feat-008 is the active preparation task, not a completed upload.** Build and verify
-  the CSV/report together with `scripts/prepare_track1_package.py`. Missing AI-use
-  disclosures and the public-first policy fail the live preflight. Never infer account
+  the CSV/report together with `scripts/prepare_track1_package.py`. The independent
+  publication purge gate must pass live preflight. Never infer account
   plan/tier, training/retention settings, remaining quota or an official score. The
   report keeps trans phase unconfirmed; a local hypothetical score is not a receipt.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
@@ -105,12 +105,12 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   The owner subsequently confirmed making the repository public. No agent changed
   visibility. Do not treat PUBLIC visibility alone as completion of feat-007 or upload
   readiness; the independent purge gate still fails. Recheck before any further action.
-- **AI disclosure:** the owner confirmed Codex uses API tier. This is recorded in
-  `notes/track1-submission-config.json`; account data-handling settings and other providers
-  remain unconfirmed. Rebuild the package after configuration changes; do not reuse v2.
-  The current v3 draft incorporates API tier and passes offline checks, but is not ready
-  for upload. Rebuilding an unchanged draft cannot resolve the remaining blockers;
-  obtain the missing disclosures and resolve the safety gate first.
+- **AI disclosure is complete as an owner attestation:** Codex uses OpenAI API tier;
+  on 2026-09-08 the owner confirmed data is not used to train the provider's models and
+  no other AI providers were used. `notes/track1-submission-config.json` records this;
+  it is not an independent account audit or a claim of zero retention. Rebuild a v4
+  package from the committed configuration; v1/v2/v3 are historical and must not be reused.
+  The disclosure does not clear the independent publication purge gate.
 
 ## Startup workflow
 

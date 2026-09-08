@@ -6,6 +6,6 @@
   "ai_provider": "OpenAI",
   "ai_tool": "Codex",
   "ai_plan_or_tier": "API tier (owner-confirmed)",
-  "ai_data_handling_setting": null,
-  "other_ai_providers": null
+  "ai_data_handling_setting": "Data is not used to train the provider's models (owner-confirmed 2026-09-08)",
+  "other_ai_providers": "None (owner-confirmed 2026-09-08)"
 }
