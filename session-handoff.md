@@ -1,7 +1,7 @@
 # Session handoff
 
-**Last updated:** 2026-09-08, session 35. **Active feature: feat-009 Track 2.**
-The latest user supplied the local key location, not its value; baseline `6aa9d96`.
+**Last updated:** 2026-09-09 IST, session 36. **Active feature: feat-009 Track 2.**
+The latest user supplied the downloaded public merged-splicing ZIP path; baseline `25d8488`.
 The initial Atlas request followed the scientific/exposure review.
 The prior user request was final scientific/exposure review, baseline `1a97a0e`;
 review specification and findings: `notes/track2-final-review.md`.
@@ -72,6 +72,13 @@ Session 35 adds 32 authenticated Atlas tests to the existing 33 access-audit tes
 **172 total**, all passing. Final independent standards and science/spec rechecks find
 no remaining material issue; fresh `./init.sh` exits 0, with actual output in progress.md.
 The reviewed Track 2 v2 remains intact, not upload-ready and not an Atlas-inclusive release.
+Session 36 adds 43 offline archive/index/query tests: **215 total** pass. Public ZIP
+and both members pass full CRC/hash checks; the usable cache is
+`data/resources/alphagenome-splicing-v2/`. Cache v1 is historical after a local
+30-versus-28-byte EOF-constant error; the download itself was not defective. Query
+output `results/feat009/alphagenome-splicing-v1/` succeeds for the public DNM1 comparison
+and both candidates, retaining all nine same-position alternate rows. See
+`notes/alphagenome-splicing-results.md` for hashes, commands, output terms and limitations.
 
 ## Blockers and unresolved evidence
 
@@ -85,6 +92,11 @@ The reviewed Track 2 v2 remains intact, not upload-ready and not an Atlas-inclus
   for attempts, provenance, signed-calibration correction and output notice. Historical
   archive HTTP 500 failures and absent-key statements are superseded as access status.
   Do not retry indefinitely or ask for the key value. No on-demand inference occurred.
+  Session 36 supersedes the **aggregate splicing** gap using the local public download:
+  p.Leu737Ter 0.08699, p.Asn1002Lys 0.04813, public DNM1 comparison 2.522. Small model
+  magnitudes are not proof of normal splicing or benignity, nor independent experiments
+  from AVI's existing input features. Tissue/junction/component-resolved information
+  remains missing. No AlphaGenome API call or .env read was needed this session.
 - Atlas new code has 33 synthetic transport tests; independent standards review found
   two defects, both fixed/rechecked. Independent science/spec review found no material
   issue. No Atlas evidence was inserted into the 53-source drug ledger or immutable v2
@@ -120,6 +132,7 @@ uv run python scripts/track2_evidence.py sensitivity
 uv run python scripts/track2_evidence.py track1
 uv run python scripts/test_alphagenome_access_audit.py
 uv run python scripts/test_alphagenome_atlas.py
+uv run python scripts/test_alphagenome_splicing.py
 ```
 
 Continue feat-009 only. The original `jvv7_track2_research_v1/` is preserved (seven file

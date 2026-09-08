@@ -1933,3 +1933,94 @@ results/feat009/alphagenome-session35-disclosure-staged.json` and the same comma
 without `--staged` to `alphagenome-session35-disclosure-history.json`.
 `git diff --cached --check` passes. Commit/push to configured origin and upstream
 equality verification are the remaining repository handoff operations.
+
+## 2026-09-09 IST — session 36: verified offline merged-splicing evidence
+
+User supplied `data/resources/combined_splicing_snvs_tabix.zip`; baseline `25d8488`,
+clean and upstream-matched. Feat-009 only. Processing timestamps in artifacts are
+8 September UTC. Resource-check, research and scientific-critical-thinking skills
+informed bounded streaming, primary-source semantics and independent interpretation.
+
+- Resource helper initially lacked `psutil`; installed with `uv add psutil` (7.2.2
+  locked). Snapshot `results/feat009/alphagenome-session36-resources.json`: 64 cores,
+  roughly 456 GiB available RAM / 3.2 TiB disk. A100s were contended. Used one CPU
+  streaming process with 8 MiB chunks and no GPU, not the helper's suggested 62 workers.
+- Original ZIP, 20,637,482,323 bytes, preserved unchanged. Full SHA-256:
+  `21011fe376455c7692f7f8f24ae9898d8f758060a91a24b15c35ac1c6cffa7a3`.
+  Both complete member sizes/CRCs/hashes pass. This proves internal consistency and
+  pins local bytes, not independent publisher authentication or model correctness.
+- `scripts/alphagenome_splicing.py` safely extracts only the two expected members,
+  validates BGZF endpoints and the TBI schema, rehashes cached members, and performs
+  exact local indexed queries. No source VCF, clinical narrative, subject sequence,
+  .env, AlphaGenome API or hosted inference used. The lookup's tuples are public
+  control/submission-derived outputs, not a new raw-record export.
+- Initial cache v1 passed CRC/hash checks but failed our incorrect 30-byte EOF constant.
+  Fixed it to canonical 28 bytes; independent BGZF fixtures test the constant. Cache
+  `data/resources/alphagenome-splicing-v2/` is usable; the failed v1 is historical.
+  Also fixed the post-buffer output bound: child file-size limits cap native output
+  before Python buffering. ZIP and full BGZF table remain compressed.
+- Query `results/feat009/alphagenome-splicing-v1/scores.json` succeeds: public DNM1
+  comparison 2.522; p.Leu737Ter 0.08699; p.Asn1002Lys 0.04813. All nine same-position
+  alternate rows retained, no target absent. Other alternates are reference contrasts,
+  not extra subject variants or benign controls. Raw scalar is neither AVI/PHRED/SHAP
+  nor disease probability. Small predicted effects do not establish benignity or
+  normal splicing; no new strong splicing support, phase, drug or exposure inference.
+- `notes/alphagenome-splicing-results.md` records all hashes, times, commands, output
+  terms, missing publisher/producer provenance and whole-table-validation limits.
+  `notes/alphagenome-splicing-semantics.md` independently verifies the merger and
+  informal/nonclinical threshold guidance. The aggregate fills the scalar lookup gap,
+  not tissue/junction/component-resolved data or proposed RNA/protein experiments.
+- New 43 tests (including an independent tiny BGZF/Tabix round trip) plus 172 existing
+  tests pass: **215 total**. Official scorer/data self-checks pass. Track 2 v2 remains
+  ten-file/current-input verified; Track 1 v4 hashes unchanged. No uploaded file,
+  drug shortlist, clinical exposure margin or phase claim changed; trans unconfirmed.
+
+Reproduction (new output suffixes are required if these paths already exist):
+
+```bash
+uv run python scripts/alphagenome_splicing.py prepare data/resources/combined_splicing_snvs_tabix.zip data/resources/alphagenome-splicing-v2
+uv run python scripts/alphagenome_splicing.py query data/resources/alphagenome-splicing-v2 results/feat009/alphagenome-splicing-v1
+uv run python scripts/test_alphagenome_splicing.py
+uv run python scripts/track2_evidence.py verify results/feat009/jvv7_track2_research_v2
+uv run python scripts/track2_evidence.py track1
+```
+
+Fresh no-argument `./init.sh` exits 0. Actual
+`logs/alphagenome-session36-final-init.log` output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Independent science/spec final recheck verifies all three scores/nine contrasts, small
+result hash, interpretation limits, output notice and unchanged packages with no material
+finding. Standards review verifies archive/index/parser and bounded-child-output tests;
+final provenance/documentation recheck also reports no material finding. It independently
+matched the small manifest/result/script hashes and all nine score contrasts, without
+duplicating the bulk-file scan. Staged disclosure audit passes 94 unique blobs with no
+findings; report `results/feat009/alphagenome-session36-disclosure-staged.json`, produced
+by `uv run python scripts/audit_publication.py --staged --output` with that path.
+`git diff --cached --check` passes. No running model, data transfer, automatic
+retry or uploaded submission. Feat-009 remains in progress for an Atlas-inclusive final
+release/disclosure integration, recorded/hosted pitch, final portal checks and receipt.

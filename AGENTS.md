@@ -147,6 +147,14 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   historical attestations. AVI evidence mainly reuses termination/AlphaMissense/
   conservation; no phase, drug-ranking or exposure update. Distinguish AVI CDF from
   signed molecular calibration, and approximate baseline-relative SHAP from raw AVI.
+  Session 36 (2026-09-09 IST): the owner-supplied public merged-splicing ZIP was verified
+  locally. Use cache `data/resources/alphagenome-splicing-v2/` and query results
+  `results/feat009/alphagenome-splicing-v1/`; cache v1 records an earlier local validator
+  failure, not a bad download. Exact candidate scores are 0.08699 and 0.04813, versus
+  the public DNM1 comparison 2.522. These are raw aggregate magnitudes, not probabilities,
+  AVI PHRED or proof of normal splicing. See `notes/alphagenome-splicing-results.md` and
+  `scripts/alphagenome_splicing.py`. No source VCF/.env/API access or on-demand inference;
+  no phase/drug/exposure change. Full tissue/junction-resolved evidence remains missing.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed

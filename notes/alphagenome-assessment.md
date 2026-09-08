@@ -13,6 +13,11 @@ lookups succeeded. Detailed molecular retrieval failed. See the
 No phase, drug-priority or exposure conclusion changes; v4/v2 snapshots are preserved.
 The following session-33/34 observations remain historical, not current access status.
 
+**Session 36:** the owner-downloaded merged-splicing archive passed local integrity
+checks and exact indexed lookups. [Offline results](alphagenome-splicing-results.md)
+provide both candidate aggregate scores; no new hosted inference occurred. The
+remaining gap is tissue/junction detail, not absence of every splicing prediction.
+
 **Relevant for optional molecular interpretation; no Atlas scores obtained.** The
 official resource launched today. We inspected its primary manuscript, pinned SDK,
 public catalogue and downloadable-artifact routes. Both advertised score-download

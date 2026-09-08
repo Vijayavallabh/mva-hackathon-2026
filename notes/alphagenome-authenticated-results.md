@@ -4,6 +4,10 @@
 
 ## Outcome
 
+Session-36 update: [verified offline merged-splicing results](alphagenome-splicing-results.md)
+now supply the aggregate splicing scalar for both candidates. This does not supply
+the failed tissue/junction-resolved matrices described in this historical API record.
+
 **The owner-configured key works. Both submitted BUB1B candidates now have validated
 precomputed AVI scores and all 18 feature attributions.** Detailed molecular-scorer
 retrieval remains incomplete after service failures. No on-demand model inference,

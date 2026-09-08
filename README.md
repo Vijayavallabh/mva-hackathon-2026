@@ -104,6 +104,9 @@ retrieved both candidate AVI scores and feature attributions. These mainly reuse
 termination, AlphaMissense and conservation evidence; detailed molecular retrieval
 remains incomplete. No phase, drug ranking or exposure conclusion changed. The addendum
 records Google DeepMind API use and output terms separately from earlier disclosures.
+The [offline merged-splicing lookup](notes/alphagenome-splicing-results.md) now fills
+the aggregate-score gap: both candidates have small predicted effects, not evidence
+of benignity or experimentally normal splicing. Tissue/junction detail remains missing.
 
 Feat-001 through feat-006, including feat-005b targeted recall and feat-005c phase follow-up, are complete.
 The local Track 1 draft has been checked against a
