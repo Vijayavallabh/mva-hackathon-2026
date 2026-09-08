@@ -13,7 +13,8 @@ variant. Two tracks:
   against the NHS-confirmed answer on rank points and F-max. Six submissions allowed.
 - **Track 2 — drug repurposing.** Characterize the mechanism and propose approved
   drugs that plausibly act on it. Judged by a panel on rigor (35%), impact (25%),
-  innovation (25%), scalability (15%). One submission.
+  innovation (25%), scalability (15%). Public code reviewed 8 Sep permits three
+  entries; only the latest is reviewed. Recheck live rules before submission.
 
 Submissions close **24 Oct 2026, 23:59 UTC**.
 
@@ -91,14 +92,21 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-**Track 2 (feat-009) is in progress:** see the [research report](notes/track2-report.md),
+**Track 2 (feat-009) is in progress:** see the [current v3 research report](notes/track2-report-v3.md),
 [evidence ledger](notes/track2-candidates.json), [validation plan](notes/track2-validation.md)
 and [devil's-advocate revisions](notes/track2-devils-advocate.md). Twelve entries are
 assessed. The [final scientific/exposure review](notes/track2-final-review.md) retains
 everolimus as one conditional research priority and demotes hydroxychloroquine to reserve.
 The 53-source review and [exposure ledger](notes/track2-exposure.json) establish no clinical
 efficacy or therapeutic margin. No laboratory experiments or Track 2 upload have occurred.
-The [pitch script](notes/track2-pitch.md) still needs recording and a hosted URL.
+The [v3 pitch script](notes/track2-pitch-v3.md) still needs recording and a hosted URL.
+The [Firecrawl follow-up](notes/track2-firecrawl.md) exercised all 26 advertised MCP
+tools and added eight independently checked source documents at explicitly limited
+reading depths. Pralatrexate is a new fusion-positive RMS tumour-only horizon;
+rapamycin/slippage evidence strengthens [cell-fate safety gates](notes/track2-validation-v3.md).
+The baseline 53-source/12-candidate ledgers and historical v2 package remain unchanged.
+V3 integrates Atlas and Fireworks-hosted GLM disclosure; self-hosting is not a guarantee
+of local inference, zero retention or no training. No clinical exposure margin follows.
 The [authenticated AlphaGenome Atlas follow-up](notes/alphagenome-authenticated-results.md)
 retrieved both candidate AVI scores and feature attributions. These mainly reuse
 termination, AlphaMissense and conservation evidence; detailed molecular retrieval
@@ -127,7 +135,9 @@ to obtain a receipt. No files were uploaded by the agent workflow. On 2026-09-08
 the AI disclosure: OpenAI/Codex API tier, data not used for model training, and no other
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
-files remain unchanged. The earlier attestation does not claim zero retention; purge
+files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
+GLM for public-literature synthesis; the current v3 disclosure names this route without
+assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 
 The data profile and first two analyses are complete — see `notes/data-profile.md`,

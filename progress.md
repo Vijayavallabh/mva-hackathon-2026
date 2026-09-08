@@ -2024,3 +2024,128 @@ by `uv run python scripts/audit_publication.py --staged --output` with that path
 `git diff --cached --check` passes. No running model, data transfer, automatic
 retry or uploaded submission. Feat-009 remains in progress for an Atlas-inclusive final
 release/disclosure integration, recorded/hosted pitch, final portal checks and receipt.
+
+## 2026-09-09 IST — session 37: real Firecrawl MCP and Track 2 v3
+
+Baseline `42171c0`, feat-009 only. The owner explicitly requested the self-hosted
+Firecrawl MCP and rigorous use of all its tools. Research and scientific-critical-thinking
+skills guided source review, independent capability/science/standards checks and
+counterevidence. No teach skill, subject-file processing, project `.env` read, global
+configuration change, sibling-repository mutation or portal upload occurred.
+
+- Connected to the already-installed Firecrawl MCP 3.24.0 through real STDIO,
+  initializing protocol `2025-06-18`, listing the actual 26 tools and calling all
+  26 against public material. The API is loopback; no dynamic native Codex tool
+  registration is claimed. The child uses an empty cwd and minimal environment.
+- Three runs contain 84 tool calls: **79 ok, three empty reads, two tool errors**.
+  Web results are 122 rows/106 unique URLs, not screened studies. Exact arguments,
+  timestamps, schemas and hashes are retained in `firecrawl-research-v1`,
+  `firecrawl-capabilities-v1` and `firecrawl-followup-v1` under `results/feat009/`.
+  All result and executing-script hashes were independently rechecked. Two initial
+  detached launch attempts were reaped before starting the MCP; persistent tool
+  sessions running `nohup` supplied the actual runs. Empty launch logs were retained.
+- A completed public-paper agent job identified Fireworks-hosted
+  `accounts/fireworks/models/glm-5p3-flash`. Its JCI synthesis was checked against
+  primary text. Self-hosting does not establish local inference, zero retention or
+  no training. Source review identifies conditional Google/Vertex monitor judging;
+  a new-page baseline does not prove that path was invoked. Only public inputs were
+  used, with no new account-settings attestation. Google DeepMind Atlas use is also
+  included in v3; historical single-provider statements remain historical.
+- One-page public crawl/parse/browser/feedback/monitor work completed. The browser
+  was stopped; owned monitor baseline completed, no notifications attempted, then
+  soft deletion acknowledged. This disables its schedule but does not erase retained
+  public history. No unrelated monitor or ongoing task was changed/left running.
+- Independent scientific checking added six primary papers at selected-section
+  depth, one abstract and one official label. Pralatrexate is a new fusion-positive
+  RMS tumour-only horizon with regression, recurrence and schedule toxicity. The
+  rapamycin/slippage study adds explicit fate/post-slippage assessment. SIRT2 context,
+  engineered dimerizer identity, disulfiram potency/clonogenic disagreement and statin
+  tumour-damage/exposure limitations prevent unwarranted promotion. No new candidate
+  efficacy, genotype phase or clinical exposure margin is established.
+- New report, pitch and validation addendum integrate these findings and actual Atlas
+  scores/limitations/output notice. Baseline 53-source/12-candidate ledgers and all
+  v2-bound inputs remain unchanged. The narration is 385 whitespace-separated words,
+  128.3 words/minute over three minutes—not a recording or measured duration.
+- Independent standards tests exposed protocol/error/empty/truncation, blocked-stdin
+  deadline, malformed response, constructor cleanup, duplicate tools, cleanup coupling
+  and misleading exit-code issues; all fixed. Advanced monitor body replacement is
+  explicitly handled. The first broad truncation flag also matched biological wording;
+  it does not establish transport clipping. Old execution snapshots are retained.
+- New release checks reject historical-directory descendants, symlink substitution,
+  stale input hashes, changed phase/margins/disclosures and unexpected files. A real
+  first build caught a phrase split over Markdown lines before creating output;
+  whitespace normalization fixes it without weakening required disclosures.
+- **300 tests pass:** 63 evidence/package + 44 exposure/retrieval + 33 Atlas access +
+  32 authenticated Atlas + 43 offline splicing + 44 MCP bridge + 41 v3 release.
+  Data/official-scorer self-checks pass. Independent final science/standards rechecks
+  find no remaining material issue. The pitch's stop rule was explicitly scoped to
+  apparent constitutional rescue so it does not reject intended tumour-selective killing.
+
+Actual commands:
+
+```bash
+uv run python scripts/track2_firecrawl.py discover results/feat009/firecrawl-discovery-v1
+uv run python scripts/track2_firecrawl.py research results/feat009/firecrawl-research-v1
+uv run python scripts/track2_firecrawl.py capabilities results/feat009/firecrawl-capabilities-v1
+uv run python scripts/track2_firecrawl.py followup results/feat009/firecrawl-followup-v1
+uv run python scripts/track2_firecrawl.py discover results/feat009/firecrawl-final-discovery-v2
+uv run python scripts/test_track2_firecrawl.py
+uv run python scripts/test_track2_release.py
+uv run python scripts/track2_release.py build results/feat009/jvv7_track2_research_v3
+uv run python scripts/track2_release.py verify results/feat009/jvv7_track2_research_v3
+uv run python scripts/track2_evidence.py verify results/feat009/jvv7_track2_research_v2
+uv run python scripts/track2_evidence.py track1
+```
+
+Use new destinations for future builds/live runs; no overwrite. V3 verifies 15 files,
+phase unconfirmed and `upload_ready:false`; report SHA256
+`d6342f5cdcccb1958fffdaa8cdcdc2801fb3826f1b6562ce152e50775e012148`.
+V2 still verifies ten files and Track 1 v4 hashes are unchanged. Detailed sources,
+limitations, source/runtime pins and review decisions are in `notes/track2-firecrawl.md`,
+`notes/track2-firecrawl-scientific-review.md` and `notes/firecrawl-capability-review.md`.
+
+Before appending this progress entry, staged disclosure audit checked 104 unique blobs
+with no findings: `uv run python scripts/audit_publication.py --staged --output
+results/feat009/firecrawl-disclosure-staged.json`. Fresh final startup output and final
+publication verification follow below. Feat-009 remains in progress for the hosted
+video, final owner/live rules/disclosure/quota checks and upload receipt. No manuscript,
+patient intervention, new Track 1 submission or Track 2 upload is implied.
+
+Fresh no-argument `./init.sh` exited 0. Actual
+`logs/track2-firecrawl-final-init.log` output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+The repaired final-source MCP discovery also initializes and lists 26 tools. V3/v2
+and Track 1 preservation checks pass after final source changes. The first fresh
+startup run (`logs/track2-firecrawl-startup-init-v2.log`) also passed; neither is a
+substitute for clinical validation. All live literature/tool jobs are finished.
+
+Final staged disclosure audit again passes 104 unique blobs with zero findings:
+`uv run python scripts/audit_publication.py --staged --output
+results/feat009/firecrawl-final-disclosure-staged.json`. `git diff --cached --check`
+passes. Final v3 verification confirms all 15 files and the report hash above; independent
+science and standards reviewers report no remaining material findings in their scopes.

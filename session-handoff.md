@@ -1,13 +1,36 @@
 # Session handoff
 
-**Last updated:** 2026-09-09 IST, session 36. **Active feature: feat-009 Track 2.**
-The latest user supplied the downloaded public merged-splicing ZIP path; baseline `25d8488`.
+**Last updated:** 2026-09-09 IST, session 37. **Active feature: feat-009 Track 2.**
+The latest user requested connecting to the self-hosted Firecrawl MCP and rigorously
+using all its tools to improve Track 2; baseline `42171c0`.
+The earlier user supplied the downloaded public merged-splicing ZIP path; baseline `25d8488`.
 The initial Atlas request followed the scientific/exposure review.
 The prior user request was final scientific/exposure review, baseline `1a97a0e`;
 review specification and findings: `notes/track2-final-review.md`.
 The previous session's equal-priority HCQ nomination is superseded.
 
 ## Current scientific and competition state
+
+- **Current synthesis is v3:** `notes/track2-report-v3.md`, `track2-pitch-v3.md` and
+  `track2-validation-v3.md`. Atlas/output terms and expanded provider disclosure are
+  integrated. Preserve historical report/pitch v2, their bound inputs and all packages.
+- **Self-hosted MCP connected:** `scripts/track2_firecrawl.py`, real STDIO to loopback;
+  all 26 tools used across 84 calls (79 ok, three no-passage reads, two tool errors).
+  122 web-result rows/106 distinct URLs are discovery units, not screened studies.
+  Read `notes/track2-firecrawl.md` and the independent capability/scientific reviews.
+- **New evidence:** six primary papers at selected-section depth, another abstract
+  and one official label supplement the baseline ledger. Pralatrexate is a new
+  fusion-positive RMS tumour-only horizon, with recurrence and schedule toxicity;
+  rapamycin/slippage evidence strengthens cell-fate gates. Everolimus/HCQ priorities,
+  unknown phase and clinical margins remain unchanged. No experiments performed.
+- **Additional provider:** the completed public-paper agent returned Fireworks-hosted
+  `accounts/fireworks/models/glm-5p3-flash`. Settings are unaudited; do not extend the
+  OpenAI owner attestation to this route. Conditional Google/Vertex paths exist in
+  source but a baseline monitor does not establish their execution. Self-hosting is
+  not local inference/zero retention. No project `.env` or subject files were used.
+- **Cleanup:** browser explicitly stopped; owned public monitor check completed and
+  soft deletion acknowledged. Retained public history is not physically erased.
+  No unrelated monitor, global configuration, repository visibility or upload changed.
 
 - The owner reports first Track 1 submission: **100 rank points / F-max 1**, leaderboard
   position **93**. Independent receipt/uploaded-byte archival remains the sole feat-008
@@ -34,7 +57,8 @@ The previous session's equal-priority HCQ nomination is superseded.
   No pediatric RMS or genotype-specific therapeutic window follows.
 - Twelve candidates: one conditional screen, one temsirolimus benchmark, four
   deprioritizations and six exclusions. No established clinical efficacy.
-- `notes/track2-report.md`: research draft 2; `track2-final-review.md`: extended
+- `notes/track2-report.md`: preserved research draft 2, superseded for current synthesis
+  by `track2-report-v3.md`; `track2-final-review.md`: extended
   scientific, PK/PD, negative/positive evidence and horizon review.
 - `notes/track2-sources.json`: **53 curated sources**, 40 DOI-bearing papers/notices,
   eleven official pages and two chemical-property records. Selected text/abstract reading,
@@ -44,7 +68,8 @@ The previous session's equal-priority HCQ nomination is superseded.
   `scripts/track2_exposure.py` converts units, not clinical doses or therapeutic margins.
 - `track2-validation.md`: proposed assays only; measured exposure, reporter controls,
   matched deficient-normal assessment, RMS comparator and combination-antagonism gates.
-- `track2-pitch.md`: about 408 spoken words / 136 words per minute; not a recording.
+- `track2-pitch.md`: preserved v2; current `track2-pitch-v3.md` has 385 narration words,
+  about 128.3 words/minute over three minutes; not a recording or measured duration.
 - `track2-devils-advocate.md`: separate standards/spec findings and revision record.
 
 ## Reproducibility and review evidence
@@ -82,6 +107,16 @@ and both candidates, retaining all nine same-position alternate rows. See
 
 ## Blockers and unresolved evidence
 
+- **V3 release integration is complete in the new files:** use the separate
+  `scripts/track2_release.py build|verify results/feat009/jvv7_track2_research_v3`.
+  Fifteen copied files are current-input-bound; earlier v2 still passes its ten-file
+  checker. Do not modify an existing release or its descendants. New bridge/release
+  suites add 44 + 41 tests to 215 existing tests (300 passing). Independent reviews
+  fixed protocol/lifecycle errors and the pitch's constitutional-versus-tumour stop
+  rule. Remaining delivery gates are video, owner/live checks and receipt—not Atlas
+  disclosure integration or a reason to repeat the completed 84-call Firecrawl run.
+  V3 report SHA256 is `d6342f5cdcccb1958fffdaa8cdcdc2801fb3826f1b6562ce152e50775e012148`.
+
 - **Optional detailed Atlas evidence:** authentication is now working. The owner-only,
   ignored `.env` was used without exposing the key. `alphagenome-auth-composites-v1`
   retains both candidate AVI scores and 18 attributions, after public metadata/control
@@ -114,9 +149,9 @@ and both candidates, retaining all nine same-position alternate rows. See
   Literature review cannot establish these facts or authorize clinical treatment.
 - **Track 1:** independently archive the existing receipt if supplied; do not upload again.
 - No subject-file transfer, sample acquisition, treatment/procurement or family contact
-  is authorized. The narrow Atlas route is now explicitly used; this does not authorize
-  another provider or protected payload. A future Track 2 release needs the new Atlas
-  disclosure/output notice; preserve the current-input-bound reviewed v2 snapshot.
+  is authorized. The owner-requested Atlas/Firecrawl routes do not authorize protected
+  payloads or arbitrary provider expansion. V3 now includes their disclosure/output
+  notice; preserve the current-input-bound reviewed v2 snapshot and historical claims.
 - These scientific limits do not prevent an honest research proposal, but must not be
   concealed or presented as completed experiments.
 
@@ -133,11 +168,14 @@ uv run python scripts/track2_evidence.py track1
 uv run python scripts/test_alphagenome_access_audit.py
 uv run python scripts/test_alphagenome_atlas.py
 uv run python scripts/test_alphagenome_splicing.py
+uv run python scripts/test_track2_firecrawl.py
+uv run python scripts/test_track2_release.py
+uv run python scripts/track2_release.py verify results/feat009/jvv7_track2_research_v3
 ```
 
 Continue feat-009 only. The original `jvv7_track2_research_v1/` is preserved (seven file
 hashes checked). `jvv7_track2_research_v2-review/` is the pre-independent-fix snapshot;
-do not submit it. The final reviewed research bundle is
+do not submit it. The historical reviewed v2 research bundle is
 `results/feat009/jvv7_track2_research_v2/`; report SHA-256
 `6685a1f25b7e8da6e69bab57bf5bdb855dce0e22095d80c9f1a02ea80d37ed72`.
 Run `uv run python scripts/track2_evidence.py verify results/feat009/jvv7_track2_research_v2`.

@@ -155,6 +155,23 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   AVI PHRED or proof of normal splicing. See `notes/alphagenome-splicing-results.md` and
   `scripts/alphagenome_splicing.py`. No source VCF/.env/API access or on-demand inference;
   no phase/drug/exposure change. Full tissue/junction-resolved evidence remains missing.
+- **Session 37 Firecrawl/Track 2 v3 integration (2026-09-09 IST):** the owner requested
+  the local self-hosted MCP. `scripts/track2_firecrawl.py` uses real STDIO against the
+  loopback API, with an empty cwd/minimal environment and no project `.env` read.
+  All 26 advertised tools were exercised in 84 calls; 79 non-error responses, three
+  empty paper reads and two tool errors. Counts are not screened/validated studies.
+  See `notes/track2-firecrawl.md` and the independent scientific/capability reviews.
+  A completed agent job used Fireworks-hosted GLM; self-hosting does not imply local
+  inference/no training/zero retention. Additional-provider settings are unaudited.
+  The current report/pitch are `notes/track2-report-v3.md` and `track2-pitch-v3.md`;
+  they integrate Atlas/output terms and the expanded provider disclosure. Preserve
+  all earlier Track 1 and Track 2 files, including v2's bound inputs. Use the separate
+  `scripts/track2_release.py` for new v3 snapshots. Eight supplementary source documents
+  add a fusion-positive RMS pralatrexate horizon and stronger mitotic-slippage/fate
+  gates, not demonstrated efficacy. Everolimus remains conditional, HCQ reserve,
+  phase unconfirmed and clinical margins null. The temporary browser was stopped;
+  the owned public-page monitor was soft-deleted after completion, not physically
+  erased. No unrelated monitor, subject file, family contact or upload was involved.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed
