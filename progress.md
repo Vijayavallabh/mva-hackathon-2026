@@ -1639,3 +1639,15 @@ annotation resources ready
 The scoped scientific/exposure review is complete; feat-009 remains in progress for
 delivery. Everolimus remains one conditional screen, HCQ reserve; all clinical margins
 unknown. No clinical intervention, protected-data transfer or new provider was introduced.
+
+### Publication and handoff checks
+
+- Review fixes committed as `d72a835` after the 82-blob staged disclosure audit passed
+  with zero findings (`results/feat009/final-review-staged-fixes-audit.json`). The
+  pre-commit no-data gate also passed.
+- Full reachable-history audit at `d72a835`: **51 commits / 387 unique blobs, zero
+  findings**, recorded in `results/feat009/final-review-all-ref-fixes-audit.json` by
+  `uv run python scripts/audit_publication.py --output results/feat009/final-review-all-ref-fixes-audit.json`.
+- Post-commit final v2 bundle verification still passes all ten files/current input
+  binding; worktree was clean. Push the session commits to configured `origin` and
+  verify clean `main` with zero ahead/behind before handing off. No Track 2 quota spent.
