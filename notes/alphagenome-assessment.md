@@ -139,3 +139,79 @@ unperformed because of the observed access limitations. Feat-009's report/video/
 workflow can proceed without inventing Atlas evidence. The reviewed Track 2 v2 bundle
 and 53-source drug-evidence ledger remain unchanged; this addendum is not a new submitted
 report, hosted pitch, clinical validation or extra AI-provider inference run.
+
+## Session 34 continuation: rendering resolved, score access still unavailable
+
+The owner asked to continue. At baseline `af8a58b`, the new fixed-endpoint run
+`uv run python scripts/alphagenome_access_audit.py results/feat009/alphagenome-access-v3`
+again returned exit 2: five document/catalogue responses and two HTTP 500 score
+archives. Neither common API-key environment variable was configured. Earlier attempts
+remain preserved. No score, patient query or hosted inference was produced.
+
+There was material progress on the document-access issue. A fresh, unauthenticated
+headless Chrome profile rendered the official downloads page and output terms. Adding
+`--virtual-time-budget=10000` allowed the service-terms page's asynchronous content to
+appear. The initial plain rendered page had only navigation, so it is not evidence
+that the terms require sign-in. Complete service/output text was read by the main and
+independent research agents. No cookie-agreement, account-registration or terms-acceptance
+button was clicked. Account eligibility and all incorporated Google policies were not
+independently audited; this is not legal approval.
+
+Reproduction pattern (use a new output directory/profile; browser sandbox stays enabled):
+
+```bash
+atlas_profile=$(mktemp -d /tmp/atlas-browser-check.XXXXXX)
+timeout 45s google-chrome --headless=new --disable-gpu --no-first-run \
+  --user-data-dir="$atlas_profile" --timeout=30000 --virtual-time-budget=10000 \
+  --dump-dom https://deepmind.google.com/science/alphagenome/terms
+```
+
+Captured rendered documents:
+
+| Artifact under `results/feat009/` | SHA-256 |
+|---|---|
+| `alphagenome-browser-v2/terms-rendered.html` | `150ee80ca3715b90de608f6e79daa26a16e6ff400266c172f8fef71965dab954` |
+| `alphagenome-browser-v1/output-terms-rendered.html` | `834e1e5d244b9ee0d3941bce19d498fb671609200bc92962f8a02b4fb7f3bd2b` |
+| `alphagenome-browser-v1/downloads-rendered.html` | `402a0c1ffb9fdbca162f08cb404f3c3cd45041550e9740163c4794c5b8fd4982` |
+
+The [current service terms](https://deepmind.google.com/science/alphagenome/terms)
+are modified 8 September 2026; the [output terms](https://deepmind.google.com/science/alphagenome/output-terms)
+are effective 25 June 2025. AVI and its feature breakdown have different stated treatment;
+do not apply the permissive-artifact exception to every output. The prior conclusion
+that readable terms were unavailable is superseded, not the unchanged score-access result.
+The official `alphagenome.google/downloads` link redirects to the same downloads page,
+not an alternative working archive.
+
+### Actual offline metadata extraction
+
+We retrieved the official science-skills AVI helper at revision
+`28b8482603a420708c8896f6fe5e06c276d9933d` and extracted only literal assignments from
+its `AviFeature` enum using `ast.parse` and `ast.literal_eval`. The foreign program was
+**not executed/imported**; its environment-file loading and API routines were not run.
+The independently cached source and main download are retained locally. Source SHA-256:
+`2e82f51cdcb022e251a0bd4619b1dcd926d45ef020f40e260081e5fc3f9f3f60`.
+
+Final JSON: `results/feat009/alphagenome-browser-v1/feature-definitions-final.json`.
+The parser asserted 18 unique definitions and typed name/category/scorer tuples. It
+found **ten definitions tied to molecular scorers and eight annotation/indicator
+definitions**. Definition order is not a measured importance ranking. An initial
+extraction ran before the parallel download completed and failed; its empty JSON
+file is not evidence. The final extraction used the independently cached pinned source.
+
+| Static feature group | Count | Relevance to an eventual interpretation |
+|---|---:|---|
+| Splicing, RNA-seq, ATAC, DNase, TF/histone ChIP, CAGE, PRO-cap, polyadenylation, contact maps | 10 | Potential regulatory hypotheses; no predictions or tissue measurements obtained here |
+| AlphaMissense | 1 | Potential overlap with existing protein-impact evidence |
+| Cactus and PhastCons conservation | 2 | Potential overlap with conservation evidence |
+| Protein termination, start lost, stop lost | 3 | May restate coding consequences rather than add functional evidence |
+| Insertion and deletion indicators | 2 | Not an aneuploidy/CNV assay; the helper's broad “Structural Variant” category must not be misread |
+
+[Pinned source and enum](https://github.com/google-deepmind/science-skills/blob/28b8482603a420708c8896f6fe5e06c276d9933d/skills/alphagenome_variant_impact_score/scripts/alphagenome_atlas_avi.py)
+defines these fields; it does not supply their values for our candidates. The helper's
+score and experimental-metadata paths still require a key. No alternative unkeyed score
+route was found in the official source. Full reproducible extraction command is in
+the session 34 progress record.
+
+Next requirement for actual results remains working archive access or owner-configured
+API access with an approved non-protected payload. Do not mistake this genuine metadata
+work for AVI scoring or keep creating new score hypotheses from repeated access failures.

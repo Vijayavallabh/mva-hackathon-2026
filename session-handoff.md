@@ -1,7 +1,8 @@
 # Session handoff
 
-**Last updated:** 2026-09-08, session 33. **Active feature: feat-009 Track 2.**
-The latest user requested rigorous use of AlphaGenome Atlas if relevant; baseline `d1e32b7`.
+**Last updated:** 2026-09-08, session 34. **Active feature: feat-009 Track 2.**
+The latest user asked to continue the Atlas work; baseline `af8a58b`.
+The initial Atlas request followed the scientific/exposure review.
 The prior user request was final scientific/exposure review, baseline `1a97a0e`;
 review specification and findings: `notes/track2-final-review.md`.
 The previous session's equal-priority HCQ nomination is superseded.
@@ -69,16 +70,23 @@ Current suites: **63 evidence/package tests + 44 exposure/retrieval tests = 107*
 ## Blockers and unresolved evidence
 
 - **Optional Atlas evidence:** `notes/alphagenome-assessment.md` and the primary review
-  document today's release and actual bounded access attempts. Final access-v2 observed
+  document today's release and actual bounded access attempts. Latest access-v3 observed
   five reachable documentation/catalogue resources and two HTTP 500 score archives;
-  exit 2 correctly indicates unavailable resources. No API key configured, complete terms
-  unverified, no scores/inference obtained. Actual lookup needs working public-artifact
-  access plus terms review, or an owner-configured authenticated route with approved
+  exit 2 correctly indicates unavailable resources. No API key configured; no scores or
+  inference obtained. Normal isolated-browser rendering now reveals the complete current
+  service/output terms; they were read, not accepted, and account eligibility/all
+  incorporated policies were not audited. Actual lookup needs working public-artifact
+  access or an owner-configured authenticated route with approved
   non-protected payload. This does not block submitting an honest research proposal.
 - Atlas new code has 33 synthetic transport tests; independent standards review found
   two defects, both fixed/rechecked. Independent science/spec review found no material
   issue. No Atlas evidence was inserted into the 53-source drug ledger or immutable v2
   research bundle. AVI combines existing annotations; phase/drug/exposure claims unchanged.
+- Session 34 also extracted 18 static feature definitions from pinned official source
+  via AST literals without executing the foreign CLI: ten molecular-scorer definitions,
+  eight annotation/indicator definitions. This is not candidate feature values or scores.
+  Source hash, rendered terms, commands and access-v3 evidence are in the assessment and
+  progress log. Do not repeat the same dead-end checks indefinitely without changed access.
 - **Delivery:** final recorded three-minute pitch, public playable URL, final owner review,
   live rule/disclosure and authenticated quota checks, and portal submission/receipt.
   Do not equate a script or locally verified bundle with an uploaded entry.

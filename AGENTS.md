@@ -133,6 +133,11 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   conservation evidence and cannot resolve phase or establish drug response/exposure.
   Do not turn access failures into zero scores or upload source VCF records to the API.
   Preserve the reviewed Track 2 v2 snapshot; the addendum does not change drug ranking.
+  Session 34: access-v3 still returns two HTTP 500 archive failures. Ordinary isolated
+  browser rendering resolves readable service/output terms; no agreement was accepted.
+  Eighteen static AVI feature definitions were extracted without executing the foreign
+  CLI. Definitions are not scores; actual score access still needs a working download
+  or configured API access. Do not manufacture evidence from metadata or retry failures.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed

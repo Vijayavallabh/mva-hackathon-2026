@@ -53,13 +53,14 @@ machine-learning models on outputs. Predictions are not for clinical decisions.
 An Apache-2.0 client-code licence does **not** remove restrictions on hosted outputs.
 [Pinned README and terms links](https://github.com/google-deepmind/alphagenome/blob/aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d/README.md)
 
-The unauthenticated [portal](https://deepmind.google.com/science/alphagenome/atlas)
-and [terms page](https://deepmind.google.com/science/alphagenome/terms) returned an
+The initial unauthenticated [portal](https://deepmind.google.com/science/alphagenome/atlas)
+and [terms page](https://deepmind.google.com/science/alphagenome/terms) inspection returned an
 application/sign-in shell. Its public configuration advertised an 88.5 GB AVI-SNV
 Tabix ZIP as permissive for commercial/non-commercial use, while splicing (20.6 GB)
 and feature-importance (283.9 GB) downloads were labelled non-commercial. These labels
 are not a full review or acceptance of the service's legal terms; the complete terms
-were not available as readable text in this unauthenticated inspection. A public
+were not available as readable text in that initial inspection. The continuation
+below resolves text access through normal browser rendering. A public
 download link is also not evidence that its bytes can currently be retrieved.
 
 The separate base-model repository offers weights through gated Hugging Face/Kaggle
@@ -116,3 +117,65 @@ Release identity was cross-checked against
 `https://api.github.com/repos/google-deepmind/alphagenome/commits/main` and the pinned
 changelog. Preserve the recorded PDF hash and client commit when repeating the review;
 do not silently substitute future releases.
+
+## Continuation: documented alternative access, 2026-09-08
+
+After the owner's request to continue despite the failed download, the independent
+research check revisited official release metadata, Atlas client documentation and
+documented terms links. The live GitHub `commits/main` response still identified
+`aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d`; no newer client revision was found.
+The [pinned Atlas API documentation](https://github.com/google-deepmind/alphagenome/blob/aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d/docs/source/api/atlas.md)
+and [client implementation](https://github.com/google-deepmind/alphagenome/blob/aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d/src/alphagenome/atlas/atlas.py)
+document keyed API access, not an alternative unauthenticated static-data location.
+Bounded primary-domain searches found no documented alternative bulk endpoint. This
+is an access-search result, not proof that none exists.
+
+A new readable first-party terms artifact was found and independently retrieved:
+[AlphaGenome Model Parameters Terms of Use](https://storage.googleapis.com/alphagenome/terms/AlphaGenome-Model-Terms-of-Use.pdf).
+Its text is dated **10 December 2025**; HTTP metadata reports modification on
+23 January 2026. The complete 161,773-byte PDF was extracted locally and read;
+SHA-256 is `0c7115b38e801c54b3b8b523abe4478ec3216bd8291a769c8bd5e3a504c030f3`.
+It restricts base-model assets to eligible non-commercial use, requires notices for
+redistributed output and model derivatives, prohibits clinical use and bypassing model
+access controls, and links the separate output terms. **This is not the operative
+Atlas service/permissive-download agreement**, so it does not independently establish
+the current Atlas terms or authorize an alternative download path.
+
+The main session subsequently rendered the complete first-party service and output
+terms without login; this reviewer also read both complete rendered texts. The
+[Services Additional Terms](https://deepmind.google.com/science/alphagenome/terms),
+modified **8 September 2026**, distinguish the permissive downloadable AVI score from
+its feature breakdown. The permissive exception does not waive all other provisions.
+The service retains eligibility requirements, personal/non-shareable credentials,
+nonclinical restrictions and a prohibition on processing HIPAA-regulated health data.
+It incorporates other Google terms and policies. The
+[Output Terms](https://deepmind.google.com/science/alphagenome/output-terms), effective
+**25 June 2025**, describe redistribution notices and a specific exception for training
+similar models subject to model-parameter terms; a blanket claim that all possible
+output-based model training is prohibited would be too broad. This is a scoped
+research review, not a legal opinion or verification of account eligibility. No
+account registration or agreement-acceptance button was used.
+
+Reproducible rendered evidence is in
+`results/feat009/alphagenome-browser-v2/terms-rendered.html` and
+`results/feat009/alphagenome-browser-v1/output-terms-rendered.html`. The published
+[service-terms PDF](https://storage.googleapis.com/alphagenome/terms/20260908/AlphaGenome%20Services%20Additional%20Terms%20of%20Service%20-%20English.pdf)
+is a documented direct route to that document, not to prediction data.
+
+The newly linked official `science-skills` repository was inspected as source material,
+not executed or adopted as instructions. At commit
+`28b8482603a420708c8896f6fe5e06c276d9933d` (8 September, 12:12:22 UTC), its
+[AVI helper](https://github.com/google-deepmind/science-skills/blob/28b8482603a420708c8896f6fe5e06c276d9933d/skills/alphagenome_variant_impact_score/scripts/alphagenome_atlas_avi.py)
+requires a key for scores and experimental metadata. Its `AviFeature` enum and
+`metadata --features` branch provide **18 static feature definitions without a
+client**, not predictions. Public GENCODE reference annotations and URL construction
+are also available, but neither supplies AVI results. Inspecting these definitions
+can support an offline dependency checklist. Avoid executing the foreign CLI just to
+read them: its entry point also loads a home-directory environment file.
+
+This continuation did not repeat the scientific paper review or run variant queries.
+No authentication, agreement acceptance, inference, author contact, untrusted mirror,
+or access-control workaround was used. Normal browser rendering resolved the document
+access problem, but no alternative working score-download route was found by this
+independent review. Repeat checks of the published download remain separate,
+auditable access tests by the main session.

@@ -1731,3 +1731,109 @@ audit at that commit passed **53 commits / 397 unique blobs / zero findings**:
 `uv run python scripts/audit_publication.py --output results/feat009/alphagenome-all-ref-audit.json`.
 Post-commit reviewed Track 2 v2 integrity still passes all ten files/current inputs.
 Push session commits to configured origin and verify clean upstream equality before handoff.
+
+## 2026-09-08 — Session 34: continue Atlas access and offline metadata
+
+User asked to continue; baseline `af8a58b`, clean/upstream-matched. Feat-009 only.
+The interrupted prior encouragement message left no worktree change to recover.
+
+- Fixed-endpoint retry:
+  `uv run python scripts/alphagenome_access_audit.py results/feat009/alphagenome-access-v3`
+  again exits 2, with five reachable public document/catalogue pages and two HTTP 500
+  score archives. Both common key environment variables remain unset; values never
+  printed. No scores, authentication or subject-dependent request occurred.
+- Research skill directed a separate primary-source search for documented alternatives.
+  SDK main unchanged; the official `alphagenome.google/downloads` route redirects to the
+  same downloads page. No working alternative score source was identified.
+- Normal headless Chrome, fresh temporary profiles, enabled browser sandbox, no cookie/
+  account agreement clicks: complete output terms rendered directly, and complete service
+  terms after a 10-second virtual-time budget. This resolves the earlier text-access
+  limitation. Both main and independent research reviewer read the rendered text.
+  Account eligibility, agreement acceptance and all incorporated policies remain separate.
+  Browser paths/hashes and reproduction command are in `notes/alphagenome-assessment.md`.
+- The official science-skills helper at `28b8482603a420708c8896f6fe5e06c276d9933d`
+  supports offline static metadata. Download and independent cache have identical SHA-256
+  `2e82f51cdcb022e251a0bd4619b1dcd926d45ef020f40e260081e5fc3f9f3f60`.
+  AST-only extraction found 18 unique definitions: ten molecular-scorer, eight annotation/
+  indicator. No foreign code/imports/environment loading executed; no candidate feature
+  values or score computed. Definition order is not importance. The helper's broad
+  “Structural Variant” label for insertion/deletion indicators is not a CNV assay.
+- The first extraction ran before its parallel download completed and failed, leaving
+  an empty `feature-definitions.json`; this is explicitly excluded. Final output is
+  `results/feat009/alphagenome-browser-v1/feature-definitions-final.json`, computed from
+  the independently cached pinned source. The main download subsequently completed and
+  its identical hash was checked. Equivalent extraction reproduction follows; the original
+  execution passed this code through `uv run python -c` with stdout redirected to the
+  final JSON artifact.
+
+```bash
+uv run python - <<'PY'
+import ast, hashlib, json
+from pathlib import Path
+p = Path('results/feat009/alphagenome-browser-v1/official-avi-cli-cached.py')
+b = p.read_bytes()
+assert hashlib.sha256(b).hexdigest() == '2e82f51cdcb022e251a0bd4619b1dcd926d45ef020f40e260081e5fc3f9f3f60'
+tree = ast.parse(b.decode())
+c = next(n for n in tree.body if isinstance(n, ast.ClassDef) and n.name == 'AviFeature')
+rows = []
+for n in c.body:
+    if isinstance(n, ast.Assign):
+        assert len(n.targets) == 1 and isinstance(n.targets[0], ast.Name)
+        v = ast.literal_eval(n.value)
+        assert isinstance(v, tuple) and len(v) == 3
+        assert all(isinstance(x, str) for x in v[:2])
+        assert isinstance(v[2], tuple) and all(isinstance(x, str) for x in v[2])
+        rows.append(dict(feature_key=n.targets[0].id, display_name=v[0], category=v[1], scorers=list(v[2])))
+assert len(rows) == 18 and len({r['feature_key'] for r in rows}) == 18
+print(json.dumps(rows, indent=2))
+PY
+```
+
+Acquire the public source from the pinned URL in `notes/alphagenome-primary-review.md`
+if the cache is absent, finish downloading before extraction, and verify the hash.
+No score-bearing material can be inferred from this static list.
+
+- `uv run python scripts/test_alphagenome_access_audit.py`: all **33 tests pass**.
+  Reviewed Track 2 v2 still verifies ten files and current inputs; Track 1 v4 hashes
+  unchanged. No report, candidate/source ledger, script, package or submitted file changed.
+- Fresh `./init.sh` exits 0; actual `logs/alphagenome-session34-init.log` output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Actual scoring remains blocked by observed external access, not confidence or evidence
+of a zero biological effect. The owner was asked whether a key is configured locally,
+without requesting its secret value. Working public artifacts or approved authenticated
+access is needed to obtain scores; no repeated retries can substitute for them. No phase,
+drug-ranking, exposure or submission claim changed. Feat-009 remains in progress.
+
+Independent standards and specification reviews of the session-34 additions both report
+no material finding. Each reproduced the AST definitions and checked the recorded
+rendered-page/source/access-response provenance; no private input or credential flaw
+was identified in the bounded route. These checks do not replicate Atlas predictions.
+Final reruns also pass the 63 evidence/package and 44 exposure tests (**140 tests total
+including the 33 access tests**) and the official Track 1 scorer self-check. Access-v3's
+executing-script hash and all seven retained-response hashes match. `git diff --check`
+passes. Disclosure audit and configured-origin synchronization complete the handoff.
