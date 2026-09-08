@@ -1,9 +1,10 @@
 # Publication audit — feat-007
 
-As of 2026-09-08, the cleaned `main` branch is pushed and the owner has made the repository
-PUBLIC. GitHub still returns all 13 retired blob objects by their identifiers after the
-rewrite. Feat-007 is incomplete pending GitHub Support's removal of the retained objects
-and a successful remote recheck. The previous PRIVATE snapshot is historical, not current.
+As of the latest 2026-09-08 owner update, the cleaned `main` branch is pushed and the
+owner has restored PRIVATE visibility, independently confirmed by GitHub API. The owner
+reports Support ticket **4738585**; its contents/status are not independently accessible
+here. Feat-007 remains incomplete pending Support's purge and authenticated verification.
+The earlier PUBLIC and anonymous-access results below are pre-containment snapshots.
 
 ## Work completed
 
@@ -84,6 +85,11 @@ the deletion plan; do not push their obsolete refs or share them.
 
 ## Remaining publication gate
 
+Current owner-reported ticket: **4738585**. PRIVATE visibility is independently confirmed.
+The post-containment authenticated checker still returns 13/13 retired objects, zero
+unknown errors and a successful reachable-object control. Await Support's response;
+do not confuse private-repository anonymous 404s with successful purge.
+
 The remote checker makes authenticated, silent GitHub blob lookups using the fixed IDs in
 `publication-removed-objects.json`. It records availability only. All 13 objects returned
 success after the cleaned branch was pushed. A known reachable README blob must succeed
@@ -95,12 +101,12 @@ No content was sent to a new third party by these checks.
 GitHub documents that rewriting history does not remove all cached views and references;
 Support may need to purge them. See [GitHub's sensitive-data removal guidance](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
 The request is prepared in `github-support-request.md`; it contains identifiers and no
-clinical text. It has not been sent. Do not upload the recovery bundle or protected source
+clinical text. The owner now reports submitting ticket 4738585. Do not upload the recovery bundle or protected source
 to Support.
 
 After Support confirms removal, rerun the remote checker and the full local audit, and
-verify all advertised remote refs and any newly created remote surfaces. Visibility is
-already PUBLIC; do not replay the previous visibility-change command:
+verify all advertised remote refs and any newly created remote surfaces. Keep visibility
+PRIVATE during these authenticated checks; anonymous 404s alone do not demonstrate purge:
 
 ```bash
 uv run python scripts/check_publication_remote.py
@@ -113,7 +119,7 @@ Finally verify anonymous access to the clean branch and failure to retrieve each
 object, record the public URL, and only then mark feat-007 done and feat-008 next. No Track 1
 submission has been uploaded by this work; trans phase remains unconfirmed.
 
-## Resolution attempt, 2026-09-08
+## Earlier resolution attempt, 2026-09-08 (before ticket and containment)
 
 The owner explicitly requested resolution of the purge gate. Fresh checks found the
 remote main at `3c64b87b9837a97a183424b188457a98d86900ab`, no extra advertised refs,

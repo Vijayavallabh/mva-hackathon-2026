@@ -1,12 +1,17 @@
-# Prepared GitHub Support request — not sent
+# GitHub Support request — ticket 4738585 (owner-reported)
 
-Updated 2026-09-08. Submit through [GitHub Support](https://support.github.com/contact)
-while signed in as the repository owner. Choose sensitive-data removal/security and
-paste the request below; do not attach original history, raw data or clinical wording.
-No ticket has been sent and no ticket identifier exists in this workflow. GitHub CLI
-repository authentication is available, but an authenticated Support portal session is not.
-The owner has already made the repository PUBLIC; temporary PRIVATE visibility is
-recommended containment, not proof of purge, and requires the owner's direction.
+Updated 2026-09-08. The owner reports submitting GitHub Support ticket **4738585**
+and restoring PRIVATE visibility. A fresh GitHub API query independently confirms PRIVATE.
+The ticket contents and status have not been independently accessed: this environment
+has repository CLI authentication but no authenticated Support portal session.
+Await Support's response on this existing ticket; do not submit a duplicate request.
+Keep visibility private pending successful authenticated purge checks. Do not attach
+original history, raw data or clinical wording to any follow-up.
+
+## Prepared request retained for reference
+
+The text below is the pre-submission draft, not a verified copy of the ticket. Its PUBLIC
+visibility and anonymous-access findings describe the checks before containment.
 
 Subject: Sensitive-data removal: server-side GC and cached-view purge after completed history rewrite
 

@@ -13,7 +13,8 @@ during the competition, with public visibility required when the competition end
 The earlier inference that the portal requires public visibility immediately was wrong.
 The owner's stricter public-first policy remains active in AGENTS.md and the package
 configuration until explicitly changed. Neither publication nor sharing retired objects
-is safe while GitHub still serves those objects. The prepared Support request is unsent.
+is safe while GitHub still serves those objects. The owner reports Support ticket 4738585
+and has restored PRIVATE visibility, independently confirmed by GitHub API. Await purge.
 
 The official AI-use instructions require provider, plan/tier and data-handling setting.
 The owner confirmed OpenAI/Codex **API tier** on 2026-09-06 and, on 2026-09-08,
@@ -56,7 +57,8 @@ and 1.0 F-max use assumed row-1 truth, not the private answer key.
 ## Actual upload procedure — not yet executed
 
 1. Owner disclosure is complete. Finish feat-007's remote purge and publication gates
-   before uploading; the repository is already PUBLIC and the purge gate is independent.
+   before uploading. Keep the repository PRIVATE until authenticated purge checks pass;
+   then complete public-first publication checks. The policy has not been relaxed.
 2. Commit configuration/report changes, create a new package, verify, push and run a
    fresh live preflight. Use only the exact CSV/report named in its manifest.
 3. In the authenticated official portal, confirm identity `jvv7`, current quota and
@@ -178,3 +180,12 @@ unconfirmed trans phase. V1/v2/v3 remain untouched historical artifacts; do not 
 No upload, official score or receipt exists. Resolve the purge, then rerun verification
 and live preflight on v4; do not create v5 unless configuration, code or evidence changes.
 Confirm authenticated identity and remaining quota immediately before any real submission.
+
+### Containment and Support ticket update
+
+The owner reports Support ticket **4738585** and restored PRIVATE visibility on 2026-09-08;
+GitHub API independently confirms PRIVATE. Ticket contents/status remain owner-reported,
+not inspected by this workflow. The earlier v4 preflight above is a historical PUBLIC
+snapshot. With private containment, public-first visibility is also an upload prerequisite;
+do not republish until the authenticated purge check and audit pass. V4 files and config
+are unchanged. Await the existing ticket response; no duplicate request is needed.

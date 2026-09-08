@@ -94,12 +94,13 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   the user authorized the feature, and all reachable history was rewritten and audited.
   GitHub still serves 13 obsolete blobs by ID. Keep visibility private until Support purges
   those objects and `scripts/check_publication_remote.py` passes. See
-  `notes/publication-audit.md` and the prepared, unsent `notes/github-support-request.md`.
+  `notes/publication-audit.md` and `notes/github-support-request.md`.
 - **Purge resolution attempt, 2026-09-08:** reachable history and advertised refs are
   clean; fresh inventory found no forks or PRs. GitHub's documented remaining step is
-  Support-run server-side GC/cache removal. The request has current PUBLIC visibility
-  and metadata, but must be sent through an owner-authenticated Support portal; this
-  environment has no such session/integration. No ticket or completed purge is claimed.
+  Support-run server-side GC/cache removal. The owner subsequently reported ticket
+  **4738585** and restored PRIVATE visibility, independently confirmed by GitHub API.
+  Ticket contents/status are not independently accessible here. Await Support's response
+  on that ticket; do not ask for another submission or treat private visibility as purge.
 - **Feat-008 is the active preparation task, not a completed upload.** Build and verify
   the CSV/report together with `scripts/prepare_track1_package.py`. The independent
   publication purge gate must pass live preflight. Never infer account
@@ -115,8 +116,9 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   no other AI providers were used. `notes/track1-submission-config.json` records this;
   it is not an independent account audit or a claim of zero retention. The v4 package
   passes offline verification and regressions with zero unresolved disclosure fields;
-  v1/v2/v3 are historical and must not be reused. Live preflight still fails solely on
-  the independent publication purge gate. No upload has been performed.
+  v1/v2/v3 are historical and must not be reused. The earlier PUBLIC preflight failed
+  solely on purge; with PRIVATE containment, the public-first policy also prevents upload.
+  Keep private until purge verification passes. No upload has been performed.
 
 ## Startup workflow
 

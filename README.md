@@ -95,9 +95,10 @@ but GitHub still retains 13 obsolete objects accessible by ID. Publication await
 removal by GitHub Support. See [the publication audit](notes/publication-audit.md) and
 [prepared Support request](notes/github-support-request.md).
 
-**2026-09-06 live-check warning:** the owner confirmed deliberately making GitHub PUBLIC,
-but the latest 13-object purge check still fails. Publication is not considered safely
-complete, and the submission preflight remains blocked. On 2026-09-08 the owner completed
+**2026-09-08 containment update:** the owner restored PRIVATE visibility, independently
+confirmed by GitHub API, and reports Support ticket **4738585**. Await Support's purge
+and authenticated verification; private visibility alone is not removal. Publication and
+submission remain blocked. On 2026-09-08 the owner completed
 the AI disclosure: OpenAI/Codex API tier, data not used for model training, and no other
 AI providers. This attestation does not claim zero retention or clear the purge gate.
 

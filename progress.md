@@ -1023,3 +1023,46 @@ Delly 2.1.0
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-08 — session 24: owner Support ticket and private containment
+
+- Owner reports submitting GitHub Support ticket **4738585** and restoring PRIVATE
+  visibility. `gh repo view Vijayavallabh/mva-hackathon-2026 --json visibility,url`
+  independently confirms PRIVATE. Ticket contents/status remain owner-reported;
+  this environment has no authenticated Support portal session.
+- `uv run python scripts/check_publication_remote.py` exits 1: PRIVATE repository,
+  13/13 retired objects still retrievable under authentication, zero unknown errors,
+  successful reachable-blob control. Containment is not removal; feat-007 stays blocked.
+- Updated harness, feature evidence, README, publication/submission notes and Support
+  request header. Kept the original request draft explicitly historical rather than
+  presenting it as a verified transcript of the owner's submitted ticket. Do not ask
+  for another ticket; await Support's response on 4738585, then verify before publication.
+- V4 package verification passes with unchanged hashes, 10 pairs, 20 normalized alleles
+  and zero missing disclosures. No package rebuild, upload, visibility change, external
+  message or continuous monitoring was performed. Trans phase remains unconfirmed.
+- `git diff --check` passes. Fresh-shell `./init.sh` completed with exit 0:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```

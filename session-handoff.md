@@ -1,11 +1,11 @@
 # Session handoff
 
-**Last updated:** 2026-09-08 (session 23 — purge resolution: Support portal handoff)
+**Last updated:** 2026-09-08 (session 24 — PRIVATE confirmed; owner reports ticket 4738585)
 
 **Current objective:** resolve feat-007's retained-object purge at the owner's request.
 Feat-001 through feat-006 are done; feat-007 remains blocked on Support. Feat-008's v4
 package is prepared and unchanged; no submission work was performed this session. The history rewrite
-and force-push are complete. The owner made the repository PUBLIC; the independent
+and force-push are complete. The owner restored PRIVATE visibility; the independent
 obsolete-object purge remains unresolved. See `notes/publication-audit.md`. Feat-008 preparation can proceed
 locally, but no upload or official score is claimed. See `notes/track1-submission.md`.
 
@@ -33,30 +33,25 @@ traps that silently score zero).
 
 ## Blockers
 
-- **Concrete next action: owner Support sign-in and ticket submission.** Updated
-  `notes/github-support-request.md` with PUBLIC visibility, sensitive-data rationale
-  without source wording, earliest changed commit, zero affected PRs/no LFS, and fresh
-  13/13 retained-object evidence. GitHub documentation requires Support-run GC/cache
-  removal. Available CLI authentication grants repository ADMIN access, not an
-  authenticated Support portal session. No ticket was submitted or ticket ID obtained.
-  Sign into https://support.github.com/contact and send the prepared request; do not
-  send credentials, original history or clinical attachments to an agent or Support.
-- **Public visibility confirmed by owner:** the owner deliberately made the repository
-  PUBLIC. The most recent 13-object purge check still failed. This confirmation explains
-  the change but does not waive confidentiality or establish successful removal.
-  Treat the previous PRIVATE snapshots as historical, not current. Feat-007 is not done.
+- **Await GitHub Support ticket 4738585.** The owner reports submitting the request.
+  Ticket contents/status are not independently accessible here; do not claim Support
+  has replied or completed removal. Do not request a duplicate ticket. The next user
+  input needed is Support's response, without credentials or clinical attachments.
+- **PRIVATE containment independently verified:** the owner restored private visibility,
+  confirmed by `gh repo view ... --json visibility,url`. Earlier PUBLIC/anonymous-access
+  snapshots are historical. Private access restrictions do not establish object removal.
 - **Publication safety remains unresolved:** reachable history is clean after the authorized
   rewrite and force-push, but all 13 retired blobs remain retrievable through GitHub's API.
   GitHub Support must purge the retained objects and cached references. A request with
-  object identifiers only is prepared at `notes/github-support-request.md`; it has not been
-  sent. No extra authorization for the already-completed history rewrite is needed.
+  metadata only is retained at `notes/github-support-request.md`, alongside the
+  owner-reported ticket. No extra history rewrite is needed.
 - **Our public-first policy remains active.** The official portal permits private
   repositories until competition end, contrary to our earlier inference. The owner
   has been asked whether to keep the stricter rule or allow the private URL at upload;
   no change is assumed. After Support confirms the purge,
   run `uv run python scripts/check_publication_remote.py` and the full local disclosure
-  audit, verify newly introduced remote refs/surfaces and anonymous access; PUBLIC
-  visibility is already owner-confirmed. Feat-007 remains `blocked`, not done.
+  audit and verify newly introduced remote refs/surfaces while still PRIVATE. Only then
+  complete public visibility and anonymous-access checks. Feat-007 remains `blocked`.
 - **AI disclosure is no longer a blocker.** The owner confirmed OpenAI/Codex API tier,
   and on 2026-09-08 confirmed no model training and no other AI providers. The config
   records owner attestations, not an independent account audit or zero-retention claim.
@@ -81,7 +76,8 @@ contain obsolete history. Never push or share those refs. Include them and local
 Git objects/reflogs in the deletion plan.
 Feat-008's current package is `results/feat008/jvv7_genomewide_mva_v4/`, built from
 `13f06ad` with complete owner disclosure. Offline verification and regressions pass;
-live preflight exits 1 solely on the purge gate. V1/v2/v3 must not be reused; never edit
+the earlier PUBLIC live preflight exited 1 solely on purge. PRIVATE containment now also
+leaves public-first visibility unmet. V1/v2/v3 must not be reused; never edit
 old deliverables in place. No upload, official score or receipt exists.
 Hashes and verification outcomes are in `notes/track1-submission.md`.
 
@@ -91,16 +87,16 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 ./init.sh
 ```
 
-**Recommended next step:** resolve the failed purge gate: the prepared GitHub
-Support request is still unsent, and public visibility does not clear it. After removal,
+**Recommended next step:** await the response to existing Support ticket 4738585.
+Keep the repository private. After Support reports removal,
 run the publication checks and a fresh package preflight. The remote
 checker prints availability counts, never retrieved blob contents. No automated uploader
 was added; the exact authenticated upload/receipt procedure is in the submission notes.
 Do not create v5 unless configuration, code or evidence changes; v4 already includes the
 completed disclosure. Recheck v4 after the purge is resolved.
-The owner's request to ignore the purge gate was not implemented; the latest follow-up
-continued only safe local preparation. No authorization to send Support a message or
-change visibility has been inferred from that request.
+The owner's request to ignore the purge gate was not implemented. The owner subsequently
+submitted the Support ticket and restored private visibility; no agent sent a message or
+changed visibility. No continuous monitoring has been scheduled.
 
 The feat-004 candidate is not confirmed: both alleles are unphased, and the second BUB1B
 missense allele has computational prediction support but no ClinVar assertion in the pinned
