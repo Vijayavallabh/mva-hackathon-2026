@@ -1,10 +1,12 @@
 # Session handoff
 
-**Last updated:** 2026-09-08 (session 24 — PRIVATE confirmed; owner reports ticket 4738585)
+**Last updated:** 2026-09-08 (session 25 — feat-008 revalidated; upload blocked)
 
-**Current objective:** resolve feat-007's retained-object purge at the owner's request.
-Feat-001 through feat-006 are done; feat-007 remains blocked on Support. Feat-008's v4
-package is prepared and unchanged; no submission work was performed this session. The history rewrite
+**Current objective:** execute feat-008, the next feature, at the owner's request.
+Feat-001 through feat-006 are done; feat-007 remains blocked on Support. Feat-008 is now
+explicitly `blocked`: its unchanged v4 package passed fresh offline validation and all
+regressions, but live preflight at `8476cc2` returned two blockers: PRIVATE visibility
+under the public-first policy and failed retired-object purge. No upload was performed. The history rewrite
 and force-push are complete. The owner restored PRIVATE visibility; the independent
 obsolete-object purge remains unresolved. See `notes/publication-audit.md`. Feat-008 preparation can proceed
 locally, but no upload or official score is claimed. See `notes/track1-submission.md`.
@@ -76,8 +78,9 @@ contain obsolete history. Never push or share those refs. Include them and local
 Git objects/reflogs in the deletion plan.
 Feat-008's current package is `results/feat008/jvv7_genomewide_mva_v4/`, built from
 `13f06ad` with complete owner disclosure. Offline verification and regressions pass;
-the earlier PUBLIC live preflight exited 1 solely on purge. PRIVATE containment now also
-leaves public-first visibility unmet. V1/v2/v3 must not be reused; never edit
+the session-25 PRIVATE live preflight exited 1 on purge and public-first visibility.
+Live origin synchronization, reachable-history audit and pinned official contract passed.
+V1/v2/v3 must not be reused; never edit
 old deliverables in place. No upload, official score or receipt exists.
 Hashes and verification outcomes are in `notes/track1-submission.md`.
 

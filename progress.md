@@ -1066,3 +1066,49 @@ Delly 2.1.0
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-08 — session 25: feat-008 execution recheck, blocked before upload
+
+- Selected feat-008 from the queue in response to the request to execute the next
+  feature. The existing v4 deliverables remain unchanged; no new package was needed.
+- At clean, synchronized HEAD `8476cc2`, package and official-scorer self-checks pass.
+  `uv run python scripts/test_track1_package.py results/feat008/jvv7_genomewide_mva_v4`
+  passes 18 policy cases, three live-upstream cases, portable copy and nine corruptions.
+- `uv run python scripts/prepare_track1_package.py preflight results/feat008/jvv7_genomewide_mva_v4`
+  confirms offline validity, unchanged hashes, 10 pairs, 20 normalized alleles and no
+  unresolved disclosure fields. Live upstream, reachable-history audit and official
+  contract checks pass. Exit 1 reports exactly two blockers: PRIVATE visibility under
+  the public-first policy and failed remote purge. The nested check reports 13/13
+  retired objects retrievable, zero unknown errors and a successful access control.
+- Marked feat-008 `blocked` instead of `next`; updated submission notes and handoff
+  using the harness-creator skill's evidence-based state guidance. No implementation
+  change was needed, so no implementation-completion code review was triggered.
+  Ticket 4738585 remains owner-reported; no Support response was accessed. Keep private
+  pending purge verification. No upload, spent attempt, receipt, official score,
+  visibility change or external message. Trans phase remains unconfirmed.
+- Fresh-shell `./init.sh` completed with exit 0; actual output follows:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```

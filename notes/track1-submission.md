@@ -1,6 +1,7 @@
 # Track 1 submission preparation (feat-008)
 
-Status on 2026-09-08: v4 built and verified with complete owner AI disclosure. No submission has been uploaded
+Status on 2026-09-08 (session 25): feat-008 is blocked after fresh validation of unchanged
+v4; public-first visibility and the retired-object purge remain unmet. No submission has been uploaded
 by this workflow and no official score or remaining-attempt count is claimed.
 The selected account from the local authenticated HF identity is `jvv7`; an empty
 display name uses that username. Never print the token or complete identity response.
@@ -189,3 +190,31 @@ not inspected by this workflow. The earlier v4 preflight above is a historical P
 snapshot. With private containment, public-first visibility is also an upload prerequisite;
 do not republish until the authenticated purge check and audit pass. V4 files and config
 are unchanged. Await the existing ticket response; no duplicate request is needed.
+
+### Fresh execution attempt (session 25)
+
+At clean, synchronized revision `8476cc2`, reran:
+
+```bash
+uv run python scripts/prepare_track1_package.py --self-check
+uv run python scripts/track1_submission.py --self-check
+uv run python scripts/test_track1_package.py results/feat008/jvv7_genomewide_mva_v4
+uv run python scripts/prepare_track1_package.py preflight results/feat008/jvv7_genomewide_mva_v4
+```
+
+Both self-checks and all package regressions pass (18 policy cases, three upstream
+cases, portable copy and nine corruption rejections). Preflight confirms offline validity,
+10 pairs, 20 reference-normalized alleles, unchanged v4 hashes and complete disclosure.
+Live origin synchronization, the reachable-history disclosure audit and pinned official
+contract pass. Preflight exits 1 with exactly these blockers:
+
+- `repository policy requires PUBLIC visibility before upload`
+- `GitHub removed-object purge gate has not passed`
+
+The nested remote check confirms PRIVATE, 13/13 retired objects retrievable under
+authentication, zero unknown errors and a successful reachable-blob control. The existing
+Support ticket remains owner-reported; no response or completion is inferred from it.
+Feat-008 is explicitly blocked, not done. Keep PRIVATE until purge verification passes;
+finish feat-007 and repeat live preflight before checking portal identity/quota and uploading.
+No code/configuration/deliverable changes, new package, upload or submission attempt were
+made. Trans phase remains unconfirmed. Fresh startup output is recorded in `progress.md`.
