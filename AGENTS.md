@@ -95,17 +95,17 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   ten-row draft passes exact schema/ID/contig/EPCR checks and reference-based indel
   normalization. Its reported 100 rank points and 1.0 F-max are a hypothetical row-1
   scorer test, not a comparison with the private answer key or evidence of causality.
-- **Feat-007 history cleanup is pushed, but publication is still blocked:** on 2026-09-06
-  the user authorized the feature, and all reachable history was rewritten and audited.
-  GitHub still serves 13 obsolete blobs by ID. Keep visibility private until Support purges
-  those objects and `scripts/check_publication_remote.py` passes. See
-  `notes/publication-audit.md` and `notes/github-support-request.md`.
-- **Purge resolution attempt, 2026-09-08:** reachable history and advertised refs are
-  clean; fresh inventory found no forks or PRs. GitHub's documented remaining step is
-  Support-run server-side GC/cache removal. The owner subsequently reported ticket
-  **4738585** and restored PRIVATE visibility, independently confirmed by GitHub API.
-  Ticket contents/status are not independently accessible here. Await Support's response
-  on that ticket; do not ask for another submission or treat private visibility as purge.
+- **Feat-007 purge gate is resolved, 2026-09-08:** the owner supplied Support's reply
+  dated 10:41 UTC for ticket **4738585**, reporting unreferenced-commit removal.
+  Independent authenticated checks now find all 13 retired blobs and three checked
+  retired commits unavailable, with successful live-object controls and no unknown
+  errors. The all-ref audit at `6d2d8d0` passes 39 commits/281 blobs. See
+  `notes/publication-audit.md`. Do not ask for another purge request.
+- **Publication itself is still pending:** GitHub reports PRIVATE. The owner had
+  stated they would make it public; this session did not change visibility. After
+  publication, verify anonymous access to clean main and failure of retired-object
+  retrieval, rerun preflight and only then complete feat-007. Retain the live purge
+  guard; resolving this incident does not waive future disclosure checks.
 - **Feat-008 is the active preparation task, not a completed upload.** Build and verify
   the CSV/report together with `scripts/prepare_track1_package.py`. The independent
   publication purge gate must pass live preflight. Never infer account
@@ -115,15 +115,16 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed
   visibility. Do not treat PUBLIC visibility alone as completion of feat-007 or upload
-  readiness; the independent purge gate still fails. Recheck before any further action.
+  readiness. That failed-purge snapshot is historical; session 27 verifies removal.
 - **AI disclosure is complete as an owner attestation:** Codex uses OpenAI API tier;
   on 2026-09-08 the owner confirmed data is not used to train the provider's models and
   no other AI providers were used. `notes/track1-submission-config.json` records this;
   it is not an independent account audit or a claim of zero retention. The v4 package
   passes offline verification and regressions with zero unresolved disclosure fields;
   v1/v2/v3 are historical and must not be reused. The earlier PUBLIC preflight failed
-  solely on purge; with PRIVATE containment, the public-first policy also prevents upload.
-  Keep private until purge verification passes. No upload has been performed.
+  solely on purge. The session-27 preflight now passes purge and fails only the
+  public-first visibility requirement. No upload was performed by this workflow;
+  any owner-side submission still requires receipt verification.
 
 ## Startup workflow
 

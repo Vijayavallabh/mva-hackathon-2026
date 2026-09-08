@@ -1,10 +1,39 @@
 # Publication audit — feat-007
 
-As of the latest 2026-09-08 owner update, the cleaned `main` branch is pushed and the
-owner has restored PRIVATE visibility, independently confirmed by GitHub API. The owner
-reports Support ticket **4738585**; its contents/status are not independently accessible
-here. Feat-007 remains incomplete pending Support's purge and authenticated verification.
-The earlier PUBLIC and anonymous-access results below are pre-containment snapshots.
+As of 2026-09-08 session 27, **the retained-object purge gate passes**. The owner
+supplied Support's reply dated 10:41 UTC, associated with ticket **4738585**, reporting
+unreferenced-commit removal. Independent authenticated verification now finds all
+13 retired blobs unavailable, with zero unknown errors and a successful current-blob
+control. GitHub reports PRIVATE. Feat-007 is ready for its remaining publication and
+anonymous-access checks, not yet complete. Earlier failed-purge snapshots below are
+historical. This session did not change visibility or submit anything.
+
+## Post-Support verification (session 27)
+
+At synchronized HEAD `6d2d8d0`:
+
+- `uv run python scripts/check_publication_remote.py`: exit 0; 13 objects checked,
+  zero retrievable, zero unknown errors, successful current-README control.
+- Authenticated `gh api --silent repos/Vijayavallabh/mva-hackathon-2026/git/commits/<id>`
+  checks return 404 for `05ed1ccd8ff67dd93a34cc8d56e228276d05a7ab`,
+  `65ad73d4545974c1afa8d8ac5c21ca7aa74f3214` and
+  `119577d2977e30abd6c3783aa2e2963f03b26a23`; the same endpoint succeeds for current
+  HEAD `6d2d8d0ca00b2b5be0b128367bdcf1d91a7ae5fe`. Bodies are suppressed.
+- `uv run python scripts/audit_publication.py --output results/feat007/post-support-history.json`:
+  all refs pass, 39 commits and 281 unique blobs, zero findings.
+- `git ls-remote origin`: only HEAD/main at the synchronized commit. Fresh GitHub
+  metadata queries find zero forks, PRs (all states), Actions runs, releases and issues.
+- Remote-check self-check and `scripts/test_publication_hooks.py` pass.
+- Fresh v4 preflight passes offline validity, live origin synchronization, disclosure
+  audit, purge and the pinned official contract. It exits 1 with just
+  `repository policy requires PUBLIC visibility before upload`.
+
+The owner previously stated they would make the repository public. That action has
+not yet occurred according to the current API check. After publication, verify
+anonymous clean-branch access and retired-object rejection, then rerun live preflight.
+Do not count a private-repository anonymous 404 as purge evidence or claim an upload
+receipt from these checks. The independent authenticated results above establish the
+tracked purge gate's success; they cannot recover copies previously downloaded by others.
 
 ## Work completed
 
@@ -83,12 +112,12 @@ Those mutation commands are an execution record, not instructions to replay on t
 already-cleaned branch. Recovery bundles and failed/prepared mirrors remain local under
 the deletion plan; do not push their obsolete refs or share them.
 
-## Remaining publication gate
+## Historical failed purge gate (before Support's response)
 
-Current owner-reported ticket: **4738585**. PRIVATE visibility is independently confirmed.
-The post-containment authenticated checker still returns 13/13 retired objects, zero
-unknown errors and a successful reachable-object control. Await Support's response;
-do not confuse private-repository anonymous 404s with successful purge.
+At this earlier snapshot, owner-reported ticket **4738585** was pending and PRIVATE
+visibility was independently confirmed. The authenticated checker returned 13/13 retired objects, zero
+unknown errors and a successful reachable-object control. Session 27 above supersedes
+this result. Private-repository anonymous 404s alone never demonstrate purge.
 
 The remote checker makes authenticated, silent GitHub blob lookups using the fixed IDs in
 `publication-removed-objects.json`. It records availability only. All 13 objects returned

@@ -1,23 +1,24 @@
 # Session handoff
 
-**Last updated:** 2026-09-08 (session 26 — feat-005c follow-up complete; trans unconfirmed)
+**Last updated:** 2026-09-08 (session 27 — Support purge independently verified)
 
-**Current objective:** the owner's additional trans-phase analysis is complete as
-feat-005c. The original/recalled marker graphs leave both targets isolated, and a
-fresh WhatsHap run on the recalled locus leaves both alleles unphased. Sixteen synthetic
-tests, independent specification/standards reviews and `./init.sh` pass. See
-`notes/phase-connectivity.md`. Completion of this audit does not confirm cis or trans.
+**Current objective:** verify the owner-supplied Support removal reply for ticket
+4738585. This is complete: all 13 retired blobs and three checked retired commits
+return authenticated 404s, with successful current-object controls. The all-ref audit
+at `6d2d8d0` passes 39 commits/281 blobs. The purge gate is resolved; do not ask the owner
+to wait for another reply or submit another ticket.
 
-Feat-001 through feat-006, including the added feat-005c, are done; feat-007 remains
-blocked on Support. Feat-008 remains `blocked`: unchanged v4 passed verification and
-regressions again. The last live preflight at `8476cc2` returned two blockers: PRIVATE
-visibility under the public-first policy and failed retired-object purge. The owner
-later announced an intention to publish and submit; this session did not verify any
-external action or receipt. Do not assume an upload occurred or did not occur outside
-this workflow. No upload or visibility change was performed by this session. The history rewrite
-and force-push are complete. The owner restored PRIVATE visibility; the independent
-obsolete-object purge remains unresolved. See `notes/publication-audit.md`. Feat-008 preparation can proceed
-locally, but no upload or official score is claimed. See `notes/track1-submission.md`.
+Feat-001 through feat-006, including feat-005c, are done. Feat-007 is `next`, ready for
+its remaining publication and anonymous-access checks: GitHub still reports PRIVATE.
+The owner previously said they would make it public, so this session left visibility
+unchanged. Feat-008 remains `blocked` only by public-first visibility in fresh v4
+preflight; purge, offline package validation, live origin, disclosure audit and the
+pinned official contract pass. No upload or official score is claimed. Do not infer
+owner-side submission status or quota without a receipt/history check.
+See `notes/publication-audit.md` and `notes/track1-submission.md`.
+
+The phase follow-up remains scientifically unchanged: both alleles are unphased.
+`notes/phase-connectivity.md` records the evidence; completion does not confirm trans.
 
 **State:** 84.99 GB subject dataset downloaded and integrity-verified. The data has been
 profiled; its HPO IDs, labels, reviewed context and concise clinical-significance summaries
@@ -43,25 +44,15 @@ traps that silently score zero).
 
 ## Blockers
 
-- **Await GitHub Support ticket 4738585.** The owner reports submitting the request.
-  Ticket contents/status are not independently accessible here; do not claim Support
-  has replied or completed removal. Do not request a duplicate ticket. The next user
-  input needed is Support's response, without credentials or clinical attachments.
-- **PRIVATE containment independently verified:** the owner restored private visibility,
-  confirmed by `gh repo view ... --json visibility,url`. Earlier PUBLIC/anonymous-access
-  snapshots are historical. Private access restrictions do not establish object removal.
-- **Publication safety remains unresolved:** reachable history is clean after the authorized
-  rewrite and force-push, but all 13 retired blobs remain retrievable through GitHub's API.
-  GitHub Support must purge the retained objects and cached references. A request with
-  metadata only is retained at `notes/github-support-request.md`, alongside the
-  owner-reported ticket. No extra history rewrite is needed.
-- **Our public-first policy remains active.** The official portal permits private
-  repositories until competition end, contrary to our earlier inference. The owner
-  has been asked whether to keep the stricter rule or allow the private URL at upload;
-  no change is assumed. After Support confirms the purge,
-  run `uv run python scripts/check_publication_remote.py` and the full local disclosure
-  audit and verify newly introduced remote refs/surfaces while still PRIVATE. Only then
-  complete public visibility and anonymous-access checks. Feat-007 remains `blocked`.
+- **Purge is resolved, not a blocker.** The owner supplied Support's reply dated
+  2026-09-08 10:41 UTC. Ticket correspondence was not independently fetched, but
+  removal is independently verified by authenticated API checks with controls.
+  Preserve `notes/publication-removed-objects.json` and the live guard.
+- **Our public-first policy remains active.** GitHub reports PRIVATE. Complete
+  publication, verify anonymous access to the clean branch and rejection of every
+  retired object, then rerun preflight before finishing feat-007. The private-state
+  authenticated purge check already passes; anonymous 404s alone would not suffice.
+  No further history rewrite or duplicate Support request is currently needed.
 - **AI disclosure is no longer a blocker.** The owner confirmed OpenAI/Codex API tier,
   and on 2026-09-08 confirmed no model training and no other AI providers. The config
   records owner attestations, not an independent account audit or zero-retention claim.
@@ -93,10 +84,10 @@ contain obsolete history. Never push or share those refs. Include them and local
 Git objects/reflogs in the deletion plan.
 Feat-008's current package is `results/feat008/jvv7_genomewide_mva_v4/`, built from
 `13f06ad` with complete owner disclosure. Offline verification and regressions pass;
-the session-25 PRIVATE live preflight exited 1 on purge and public-first visibility.
-Live origin synchronization, reachable-history audit and pinned official contract passed.
+the session-27 PRIVATE live preflight exits 1 only on public-first visibility.
+Purge, live origin synchronization, reachable-history audit and pinned official contract pass.
 V1/v2/v3 must not be reused; never edit
-old deliverables in place. No upload, official score or receipt exists.
+old deliverables in place. No upload, official score or receipt is recorded by this workflow.
 Hashes and verification outcomes are in `notes/track1-submission.md`.
 
 **Resume with:**
@@ -105,13 +96,13 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 ./init.sh
 ```
 
-**Recommended next step:** await the response to existing Support ticket 4738585.
-Keep the repository private. After Support reports removal,
-run the publication checks and a fresh package preflight. The remote
+**Recommended next step:** the purge no longer prevents publication. The owner said
+they would make the repository public; it is still PRIVATE at the latest check.
+After publication, complete anonymous-access checks and fresh package preflight. The remote
 checker prints availability counts, never retrieved blob contents. No automated uploader
 was added; the exact authenticated upload/receipt procedure is in the submission notes.
 Do not create v5 unless configuration, code or evidence changes; v4 already includes the
-completed disclosure. Recheck v4 after the purge is resolved.
+completed disclosure. V4 has been rechecked after the purge was resolved.
 The owner's request to ignore the purge gate was not implemented. The owner subsequently
 submitted the Support ticket and restored private visibility; no agent sent a message or
 changed visibility. No continuous monitoring has been scheduled.

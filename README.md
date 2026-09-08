@@ -85,22 +85,23 @@ Both, plus the scoring mechanics, are in `notes/challenge-spec.md`.
 
 ## Status
 
-Feat-001 through feat-006, including the optional feat-005b targeted recall, are complete.
+Feat-001 through feat-006, including feat-005b targeted recall and feat-005c phase follow-up, are complete.
 The local Track 1 draft has been checked against a
 pinned copy of the official scorer and exact reference normalization. Feat-008 is the
 active CSV/report packaging task; [submission notes](notes/track1-submission.md) distinguish
-local validation from a real upload. Feat-007 is blocked: the authorized history cleanup
-is pushed and the reachable-history audit passes,
-but GitHub still retains 13 obsolete objects accessible by ID. Publication awaits their
-removal by GitHub Support. See [the publication audit](notes/publication-audit.md) and
-[prepared Support request](notes/github-support-request.md).
+local validation from a real upload. **Feat-007's purge gate now passes:** GitHub Support
+reported removal, and authenticated checks confirm all 13 retired objects are unavailable
+while the live-object control succeeds. Reachable history passes the disclosure audit.
+The repository is still PRIVATE; publication and anonymous-access verification remain.
+See [the publication audit](notes/publication-audit.md) and
+[Support correspondence record](notes/github-support-request.md).
 
-**2026-09-08 containment update:** the owner restored PRIVATE visibility, independently
-confirmed by GitHub API, and reports Support ticket **4738585**. Await Support's purge
-and authenticated verification; private visibility alone is not removal. Publication and
-submission remain blocked. On 2026-09-08 the owner completed
+**2026-09-08 Support update:** the owner supplied the 10:41 UTC reply associated with
+ticket **4738585**. Independent purge verification passes. The fresh submission preflight
+has only the public-first visibility requirement outstanding; no upload was performed by
+this workflow. On 2026-09-08 the owner completed
 the AI disclosure: OpenAI/Codex API tier, data not used for model training, and no other
-AI providers. This attestation does not claim zero retention or clear the purge gate.
+AI providers. This attestation does not claim zero retention; purge was verified separately.
 
 The data profile and first two analyses are complete — see `notes/data-profile.md`,
 `notes/vcf-triage.md` and `notes/copy-number-screen.md` for measured results and exact

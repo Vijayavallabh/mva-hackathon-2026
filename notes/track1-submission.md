@@ -1,7 +1,7 @@
 # Track 1 submission preparation (feat-008)
 
-Status on 2026-09-08 (session 25): feat-008 is blocked after fresh validation of unchanged
-v4; public-first visibility and the retired-object purge remain unmet. No submission has been uploaded
+Status on 2026-09-08 (session 27): the retired-object purge now passes. Fresh validation
+of unchanged v4 leaves only public-first visibility unmet. No submission has been uploaded
 by this workflow and no official score or remaining-attempt count is claimed.
 The selected account from the local authenticated HF identity is `jvv7`; an empty
 display name uses that username. Never print the token or complete identity response.
@@ -15,7 +15,8 @@ The earlier inference that the portal requires public visibility immediately was
 The owner's stricter public-first policy remains active in AGENTS.md and the package
 configuration until explicitly changed. Neither publication nor sharing retired objects
 is safe while GitHub still serves those objects. The owner reports Support ticket 4738585
-and has restored PRIVATE visibility, independently confirmed by GitHub API. Await purge.
+and supplied Support's removal reply. Session-27 authenticated verification passes the
+purge gate. GitHub remains PRIVATE; publication and anonymous checks are still pending.
 
 The official AI-use instructions require provider, plan/tier and data-handling setting.
 The owner confirmed OpenAI/Codex **API tier** on 2026-09-06 and, on 2026-09-08,
@@ -228,3 +229,21 @@ and report remain unchanged and pass verification and regressions. No uploaded
 deliverable was edited. The owner's announced intention to publish/submit was not
 verified as an external action or receipt in this analysis session; do not infer
 an official score or available quota from the local checks.
+
+### Support removal verified (session 27)
+
+The owner supplied a Support reply dated 2026-09-08 10:41 UTC, associated with ticket
+4738585. Independent authenticated checks confirm all 13 retired blobs unavailable,
+with zero unknown errors and a successful live-object control. The all-ref audit
+passes. Purge is no longer a blocker; see [publication-audit.md](publication-audit.md).
+
+At synchronized `6d2d8d0`, a fresh
+`uv run python scripts/prepare_track1_package.py preflight results/feat008/jvv7_genomewide_mva_v4`
+confirms unchanged hashes, 10 pairs, 20 normalized alleles, complete disclosure, live
+origin synchronization and the pinned official contract. Exit 1 now has exactly one
+blocker: `repository policy requires PUBLIC visibility before upload`.
+
+The repository remains PRIVATE. The owner had stated they would publish; this session
+did not change visibility. Finish public visibility and anonymous-access checks, then
+rerun preflight and verify authenticated identity/quota before any upload. No new
+package, upload or deliverable modification was performed. Trans remains unconfirmed.

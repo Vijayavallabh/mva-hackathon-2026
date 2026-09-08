@@ -1172,3 +1172,60 @@ Delly 2.1.0
 annotation resources ready
 === OK ===
 ```
+
+## 2026-09-08 — session 27: Support purge independently verified
+
+- Owner supplied a GitHub Support reply dated 10:41 UTC, associated with ticket
+  **4738585**, reporting unreferenced-commit removal. The correspondence is user-supplied,
+  not independently fetched from the Support portal. The following removal checks are
+  independent live observations.
+- `uv run python scripts/check_publication_remote.py` now exits 0: 13 retired blobs
+  checked, zero retrievable, zero unknown errors, successful current-README control.
+  Authenticated silent commit-endpoint checks additionally return 404 for the original
+  affected commit, original head and first changed commit; current HEAD succeeds.
+  Exact IDs and endpoint are recorded in `notes/publication-audit.md`. No response
+  bodies or protected text were emitted.
+- `uv run python scripts/audit_publication.py --output results/feat007/post-support-history.json`
+  at synchronized `6d2d8d0` passes 39 commits/281 unique blobs with zero findings.
+  `git ls-remote origin` shows only HEAD/main at that revision. Fresh GitHub metadata
+  queries find zero forks, PRs (all states), Actions runs, releases and issues.
+- Remote checker self-check, publication-hook regressions and staged disclosure audit
+  pass. Fresh v4 preflight verifies unchanged hashes, 10 pairs, 20 normalized alleles,
+  complete disclosure, live origin, the history audit, purge and the pinned official
+  contract. It exits 1 solely for `repository policy requires PUBLIC visibility before upload`.
+  Package regression tests pass. No new package or deliverable modification.
+- GitHub still reports PRIVATE. The owner said they would publish, so this session did
+  not change visibility. Feat-007 is now `next`, ready for publication/anonymous-access
+  verification, not blocked on Support and not yet done. Feat-008 remains blocked by
+  the public-first requirement. No submission, receipt or official score is claimed;
+  owner-side upload status cannot be inferred. Trans phase remains unconfirmed.
+- Harness-creator evidence-based state guidance informed updates to AGENTS, feature
+  evidence, README, Support/publication/submission notes and handoff. Removed stale
+  current instructions to wait for Support while preserving dated historical evidence.
+  No new Support request or external message was sent. Fresh-shell `./init.sh`
+  completed with exit 0; actual output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
