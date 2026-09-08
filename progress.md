@@ -1724,3 +1724,10 @@ Working public-artifact access with terms review, or an owner-configured authent
 route with approved non-protected payload, is needed for actual Atlas evidence. This
 optional missing evidence does not block the honest Track 2 proposal. Trans remains
 unconfirmed; drug exposure margins unknown. Video/hosting/final submission checks remain.
+
+Final publication checks: the staged disclosure audit passed **86 blobs / zero findings**;
+the pre-commit no-data gate passed. Work committed as `a365231`. Full reachable-history
+audit at that commit passed **53 commits / 397 unique blobs / zero findings**:
+`uv run python scripts/audit_publication.py --output results/feat009/alphagenome-all-ref-audit.json`.
+Post-commit reviewed Track 2 v2 integrity still passes all ten files/current inputs.
+Push session commits to configured origin and verify clean upstream equality before handoff.
