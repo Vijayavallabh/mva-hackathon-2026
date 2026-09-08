@@ -174,3 +174,21 @@ Implementation/harness guidance led to explicit unknown-score fields and a
 reproducible companion command; critical-thinking guidance keeps sensitivity
 distinct from calibration and confirmed phase. Existing v4 CSV/report hashes and
 offline validity are unchanged. Verification/review evidence is in `progress.md`.
+
+## Standards review
+
+One initial finding: native htslib diagnostics could bypass Python error
+sanitization on malformed input. Fixed in `7b6273b` with local diagnostic
+containment, fail-closed rejection and a synthetic CLI regression. Independent
+recheck reports zero remaining actionable standards findings.
+
+## Specification review
+
+Initial review and follow-up recheck report zero actionable specification
+findings. All five bounded acceptance criteria are met; no deliverable mutation,
+upload or private-key access was introduced.
+
+All 24 new tests, 16 existing phase tests, package/scorer regressions, triage and
+targeted-recall self-checks, compileall, disclosure checks and fresh `./init.sh`
+pass. Feat-006b is complete as an evidence audit, not as phase confirmation or
+an achievement of any official score.

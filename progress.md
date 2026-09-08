@@ -1324,8 +1324,15 @@ annotation resources ready
   Added a file-descriptor diagnostic guard, fail-closed handling, and a CLI test
   proving neither output stream emits the synthetic sentinel. All **24** tests
   now pass. Reran all five real audits into `results/feat006b/final/` without
-  changing the initial evidence; score/rank/phase conclusions agree. Final
-  standards recheck pending. VCF triage and targeted-recall self-checks also pass.
+  changing the initial evidence; score/rank/phase conclusions agree. Independent
+  standards and specification rechecks report zero remaining findings. VCF triage
+  and targeted-recall self-checks also pass. Package/scorer/phase regressions and
+  compileall pass after the fix. All five final JSON reports match current audit
+  code and the same exact CSV hash; aggregate payloads match the initial reports.
+- A second fresh-shell `./init.sh` after implementation also exits 0 with the
+  identical output below. Feat-006b is marked done for its bounded acceptance
+  criteria, NOT for guaranteed scores or phase. Feat-008 still needs an official
+  receipt; no owner-side upload status was inferred. No pending compute jobs.
 - Fresh-shell `./init.sh` completed with exit 0; actual output:
 
 ```text

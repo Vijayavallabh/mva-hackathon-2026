@@ -5,7 +5,10 @@
 **Current objective:** respond to the owner's request to fix score overconfidence
 and pursue phase. Feat-006b adds `scripts/audit_track1_evidence.py` with score
 scenarios, fixed-universe rank sensitivity and native GT/PS plus PGT/PID checks.
-Tests and real audits pass; final review is pending. See
+Feat-006b is complete: 24 tests and all five real audits pass. Specification review
+passed; a native-stderr privacy issue found by standards review was fixed and
+independently rechecked with zero remaining findings. Final aggregate evidence is
+under `results/feat006b/final/`; two fresh `./init.sh` runs pass. See
 `notes/track1-evidence-audit.md` for scope, commands and measured limitations.
 
 The actual score is unknown. BUB1B is first in 26/34 declared sensitivity settings
@@ -30,6 +33,8 @@ See `notes/publication-audit.md` and `notes/track1-submission.md`.
 
 The phase follow-up remains scientifically unchanged: both alleles are unphased.
 `notes/phase-connectivity.md` records the evidence; completion does not confirm trans.
+The same applies to completed feat-006b: fixing uncertainty reporting and checking
+native metadata does not guarantee competition points or solve biological phase.
 
 **State:** 84.99 GB subject dataset downloaded and integrity-verified. The data has been
 profiled; its HPO IDs, labels, reviewed context and concise clinical-significance summaries
@@ -81,6 +86,11 @@ traps that silently score zero).
   Check `uptime` and `nvidia-smi` before planning anything large.
 
 ## Files in flight
+
+Feat-006b is finished. Initial aggregate reports are retained at
+`results/feat006b/`; reports generated after diagnostic containment are in `final/`
+and match the current script hash. Its fresh source CSI is local and ignored.
+No submitted CSV/report, candidate ranking, or pinned scorer was modified.
 
 Feat-005c is finished. Its ignored `results/feat005c/` directory contains initial and
 final aggregate connectivity reports plus the recalled-locus input and phased VCFs.
