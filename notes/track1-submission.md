@@ -1,6 +1,6 @@
 # Track 1 submission preparation (feat-008)
 
-Status on 2026-09-08: owner AI disclosure completed; v4 rebuild pending. No submission has been uploaded
+Status on 2026-09-08: v4 built and verified with complete owner AI disclosure. No submission has been uploaded
 by this workflow and no official score or remaining-attempt count is claimed.
 The selected account from the local authenticated HF identity is `jvv7`; an empty
 display name uses that username. Never print the token or complete identity response.
@@ -33,11 +33,11 @@ on changed/unavailable rules. It never downloads private ground truth.
 uv run python scripts/prepare_track1_package.py --self-check
 uv run python scripts/track1_submission.py --self-check
 # Commit reviewed code, template and config first; build requires a clean tree.
-uv run python scripts/prepare_track1_package.py build --name jvv7_genomewide_mva_v3
-uv run python scripts/prepare_track1_package.py verify results/feat008/jvv7_genomewide_mva_v3
-uv run python scripts/test_track1_package.py results/feat008/jvv7_genomewide_mva_v3
+uv run python scripts/prepare_track1_package.py build --name jvv7_genomewide_mva_v4
+uv run python scripts/prepare_track1_package.py verify results/feat008/jvv7_genomewide_mva_v4
+uv run python scripts/test_track1_package.py results/feat008/jvv7_genomewide_mva_v4
 # Push the reviewed commits before this live check:
-uv run python scripts/prepare_track1_package.py preflight results/feat008/jvv7_genomewide_mva_v3
+uv run python scripts/prepare_track1_package.py preflight results/feat008/jvv7_genomewide_mva_v4
 ```
 
 Build refuses to overwrite an existing package. Changed evidence, code or disclosure
@@ -55,8 +55,8 @@ and 1.0 F-max use assumed row-1 truth, not the private answer key.
 
 ## Actual upload procedure — not yet executed
 
-1. Resolve the owner disclosure fields and public-first policy. If it stays public-first,
-   finish feat-007's remote purge and publication gates before uploading.
+1. Owner disclosure is complete. Finish feat-007's remote purge and publication gates
+   before uploading; the repository is already PUBLIC and the purge gate is independent.
 2. Commit configuration/report changes, create a new package, verify, push and run a
    fresh live preflight. Use only the exact CSV/report named in its manifest.
 3. In the authenticated official portal, confirm identity `jvv7`, current quota and
@@ -158,3 +158,23 @@ there is no official score or receipt. Repeatedly rebuilding an unchanged draft 
 resolve these blockers: the next material work requires the missing owner disclosures
 and resolution of the retained-object exposure. The request to ignore that gate was not
 implemented because it conflicts with the non-negotiable data-access rules.
+
+## Current v4 draft (2026-09-08)
+
+Built `results/feat008/jvv7_genomewide_mva_v4/` from committed revision `13f06ad`.
+The report now includes the owner's no-training and no-other-provider confirmations;
+there are **zero unresolved disclosure fields**. This is an owner attestation, not an
+account audit. Ranked candidates and scientific interpretation are unchanged, including
+unconfirmed trans phase. V1/v2/v3 remain untouched historical artifacts; do not upload them.
+
+- CSV SHA-256: `a1f9315e223a07914589ce6884a66702b80e587ec5b7ad67f2ca1213f6caa225`.
+- Report SHA-256: `f36bacbc506d5a717ee7a55f174fed3f376ed7beacd83d11091e57d319d0d68b`.
+- Build/verify pass: 10 pairs, 20 reference-normalized alleles, zero missing disclosures.
+- Regression passes: 18 publication-policy cases, three live-upstream cases, portable
+  copying and nine corruption rejections. Package and official-scorer self-checks pass.
+- Live preflight exits 1 with exactly one blocker: GitHub removed-object purge has not
+  passed. PUBLIC visibility, origin synchronization and the pinned official contract pass.
+
+No upload, official score or receipt exists. Resolve the purge, then rerun verification
+and live preflight on v4; do not create v5 unless configuration, code or evidence changes.
+Confirm authenticated identity and remaining quota immediately before any real submission.

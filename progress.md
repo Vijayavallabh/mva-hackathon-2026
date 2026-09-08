@@ -932,5 +932,43 @@ annotation resources ready
 - Updated current harness/README/submission guidance. Feat-008 remains active and
   unfinished; feat-007's independent purge gate is unresolved. No upload or external
   message was authorized or performed.
-- Package and official-scorer self-checks pass. `./init.sh` is running; final output
-  and the new immutable v4 package checks will be recorded after completion.
+- Package and official-scorer self-checks pass. Built v4 from committed `13f06ad` with
+  `uv run python scripts/prepare_track1_package.py build --name jvv7_genomewide_mva_v4`.
+  `verify results/feat008/jvv7_genomewide_mva_v4` passes: 10 pairs, 20 reference-normalized
+  alleles, zero unresolved disclosure fields. V1/v2/v3 remain untouched and historical.
+- `uv run python scripts/test_track1_package.py results/feat008/jvv7_genomewide_mva_v4`
+  passes 18 publication-policy cases, three live-upstream cases, portable copying and
+  nine corruption rejections. Ranking and unconfirmed trans phase are unchanged.
+- CSV SHA-256: `a1f9315e223a07914589ce6884a66702b80e587ec5b7ad67f2ca1213f6caa225`.
+  Report SHA-256: `f36bacbc506d5a717ee7a55f174fed3f376ed7beacd83d11091e57d319d0d68b`.
+- `uv run python scripts/prepare_track1_package.py preflight results/feat008/jvv7_genomewide_mva_v4`
+  exits 1 solely on the independent purge gate. GitHub is PUBLIC; all 13 retired objects
+  remain retrievable, with zero unknown errors and a successful reachable-object control.
+  Live origin synchronization and the pinned official contract pass. No upload, remaining
+  quota, official score or receipt is claimed. No visibility change or Support message.
+- `git diff --check` passes. Fresh-shell `./init.sh` completed with exit 0:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```

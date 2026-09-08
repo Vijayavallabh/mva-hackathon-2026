@@ -108,9 +108,10 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
 - **AI disclosure is complete as an owner attestation:** Codex uses OpenAI API tier;
   on 2026-09-08 the owner confirmed data is not used to train the provider's models and
   no other AI providers were used. `notes/track1-submission-config.json` records this;
-  it is not an independent account audit or a claim of zero retention. Rebuild a v4
-  package from the committed configuration; v1/v2/v3 are historical and must not be reused.
-  The disclosure does not clear the independent publication purge gate.
+  it is not an independent account audit or a claim of zero retention. The v4 package
+  passes offline verification and regressions with zero unresolved disclosure fields;
+  v1/v2/v3 are historical and must not be reused. Live preflight still fails solely on
+  the independent publication purge gate. No upload has been performed.
 
 ## Startup workflow
 

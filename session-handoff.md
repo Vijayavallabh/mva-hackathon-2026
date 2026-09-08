@@ -1,6 +1,6 @@
 # Session handoff
 
-**Last updated:** 2026-09-08 (session 22 — owner AI disclosure completed; v4 preparation)
+**Last updated:** 2026-09-08 (session 22 — complete AI disclosure; validated v4)
 
 **Current objective / active feature:** feat-008 (Track 1 CSV/report package).
 Feat-001 through feat-006 are done; feat-007 is blocked, not active. The history rewrite
@@ -70,10 +70,10 @@ is tracked.
 Feat-007 recovery bundles, mirrors and maps are under ignored `results/feat007/`; some
 contain obsolete history. Never push or share those refs. Include them and local unreachable
 Git objects/reflogs in the deletion plan.
-Feat-008's v3 draft is now historical because the owner completed the configuration.
-Commit the new disclosure and build `results/feat008/jvv7_genomewide_mva_v4/`, then
-verify the paired files and run regressions and live preflight. V1/v2/v3 must not be
-reused; never edit old deliverables in place. The purge gate remains independent.
+Feat-008's current package is `results/feat008/jvv7_genomewide_mva_v4/`, built from
+`13f06ad` with complete owner disclosure. Offline verification and regressions pass;
+live preflight exits 1 solely on the purge gate. V1/v2/v3 must not be reused; never edit
+old deliverables in place. No upload, official score or receipt exists.
 Hashes and verification outcomes are in `notes/track1-submission.md`.
 
 **Resume with:**
@@ -82,13 +82,13 @@ cd /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
 ./init.sh
 ```
 
-**Recommended next step:** validate the v4 package with the completed owner disclosure.
-Separately, resolve the failed purge gate: the prepared GitHub
+**Recommended next step:** resolve the failed purge gate: the prepared GitHub
 Support request is still unsent, and public visibility does not clear it. After removal,
 run the publication checks and a fresh package preflight. The remote
 checker prints availability counts, never retrieved blob contents. No automated uploader
 was added; the exact authenticated upload/receipt procedure is in the submission notes.
-Do not rerun unchanged draft creation as a substitute for resolving the remaining inputs.
+Do not create v5 unless configuration, code or evidence changes; v4 already includes the
+completed disclosure. Recheck v4 after the purge is resolved.
 The owner's request to ignore the purge gate was not implemented; the latest follow-up
 continued only safe local preparation. No authorization to send Support a message or
 change visibility has been inferred from that request.
