@@ -1,8 +1,10 @@
 # Session handoff
 
-**Last updated:** 2026-09-09 IST, session 37. **Active feature: feat-009 Track 2.**
-The latest user requested connecting to the self-hosted Firecrawl MCP and rigorously
-using all its tools to improve Track 2; baseline `42171c0`.
+**Last updated:** 2026-09-09 IST, session 38. **Active feature: feat-009 Track 2.**
+The latest user clarified: more substantive GLM model work through Firecrawl for
+expanded literature, not another capability test; baseline `8efde23`.
+See `notes/track2-glm-review.md` and its independent constitutional/oncology reviews.
+The prior user requested connecting to the self-hosted MCP; baseline `42171c0`.
 The earlier user supplied the downloaded public merged-splicing ZIP path; baseline `25d8488`.
 The initial Atlas request followed the scientific/exposure review.
 The prior user request was final scientific/exposure review, baseline `1a97a0e`;
@@ -11,6 +13,13 @@ The previous session's equal-priority HCQ nomination is superseded.
 
 ## Current scientific and competition state
 
+- **Latest research supplement:** ten GLM topics with adversarial rereads and explicit
+  primary-source adjudication. The first PP2A response was not source-grounded;
+  abstract-record recovery improves provenance but does not establish full-text review.
+  Corrected model claims, exposure/endpoint gaps and source limits are in the new notes.
+  Preserve the baseline ledgers and v3 inputs; no candidate, phase or clinical-margin
+  promotion follows. Entinostat's specific Chinese approval corrects a global
+  “unapproved” shorthand, not the lack of pediatric RMS efficacy/exposure evidence.
 - **Current synthesis is v3:** `notes/track2-report-v3.md`, `track2-pitch-v3.md` and
   `track2-validation-v3.md`. Atlas/output terms and expanded provider disclosure are
   integrated. Preserve historical report/pitch v2, their bound inputs and all packages.
@@ -107,6 +116,17 @@ and both candidates, retaining all nine same-position alternate rows. See
 
 ## Blockers and unresolved evidence
 
+- **Session 38 GLM research is complete, not a new submission:** nineteen accepted
+  service jobs are terminal (eighteen GLM completions, one failed retrieval); six
+  schema-rejected prompts had no job IDs. Recovery and residual scientific errors are
+  documented in `notes/track2-glm-review.md`. The first PP2A answer and unsupported
+  later claims are not evidence. Abstract-only gaps do not erase previously checked
+  Methods/Results. No more model calls are needed to force agreement. The scientific
+  blockers remain measured functional benefit, appropriate normal-tissue safety and
+  matched exposure; phase stays unconfirmed. Any future report integration needs a
+  NEW version/package, preserving current-input-bound v2/v3. New runner tests add 67
+  to the prior 300 (367 passing); fresh init and artifact-preservation checks pass.
+
 - **V3 release integration is complete in the new files:** use the separate
   `scripts/track2_release.py build|verify results/feat009/jvv7_track2_research_v3`.
   Fifteen copied files are current-input-bound; earlier v2 still passes its ten-file
@@ -170,6 +190,7 @@ uv run python scripts/test_alphagenome_atlas.py
 uv run python scripts/test_alphagenome_splicing.py
 uv run python scripts/test_track2_firecrawl.py
 uv run python scripts/test_track2_release.py
+uv run python scripts/test_track2_glm_review.py
 uv run python scripts/track2_release.py verify results/feat009/jvv7_track2_research_v3
 ```
 

@@ -2149,3 +2149,108 @@ Final staged disclosure audit again passes 104 unique blobs with zero findings:
 results/feat009/firecrawl-final-disclosure-staged.json`. `git diff --cached --check`
 passes. Final v3 verification confirms all 15 files and the report hash above; independent
 science and standards reviewers report no remaining material findings in their scopes.
+
+## 2026-09-09 IST — session 38: expanded GLM literature and adversarial adjudication
+
+Baseline `8efde23`, feat-009 only. The user clarified that they wanted substantially
+more GLM model literature work through Firecrawl, not another tool-coverage exercise.
+Research and scientific-critical-thinking skills supplied independent primary review
+alongside model synthesis. No subject inputs, `.env`, credentials, uploaded deliverable
+change, monitor, browser session, global service setting or visibility change was needed.
+
+- Added the ten-topic fixed public plan, `scripts/track2_glm_review.py`, and 67 offline
+  tests. The existing v3-bound MCP/release implementations remain byte-for-byte unchanged.
+- Eighteen real GLM completions: ten topic reviews, seven adversarial/corrective passes,
+  plus the first PP2A answer retained as rejected training-memory output. Final live
+  audit confirms nineteen accepted jobs, one `no_content` failure, all terminal, and
+  six overlong prompt-schema rejections without job IDs. The initial nine-review CLI
+  exits 2 because its old challenge prompts failed; corrected challenge runs exit 0.
+- The final plan has 35 distinct supplied source URLs: 31 paper/locator records and
+  four official pages. Independent reviewers started with twenty seed papers and two
+  follow-ups, with overlap and reading depth disclosed. This is not exhaustive reading
+  of all literature or a claim that every supplied URL was successfully consumed.
+- Full-text-URL retrieval failed or produced unusable grounding; recovered comparisons
+  use explicitly labeled primary abstracts/metadata. An unquoted parenthesized DOI
+  missed ARST1431; quoting it recovers PMID38936378. Independent Methods/Results checks
+  remain a separate evidence layer. Same-model rereading is not independent evidence.
+- Scientific changes: engineered PP2A localization is not faithful-division/drug rescue;
+  senescence effects oppose across tissues; readthrough needs a valid coupled assay;
+  TBX, azole and HDAC claims need exposure, endogenous-target and endpoint controls.
+  Entinostat's Chinese adult breast-cancer approval corrects a global unapproved claim.
+  Model overclaims, including invented exposure margins and universal synergy/subtype
+  rules, remain rejected. No candidate promotion, clinical margin or phase confirmation.
+- `notes/track2-glm-review.md` is the central synthesis/provenance record. Independent
+  constitutional and oncology notes adjudicate the generated claims and residual errors.
+  Final `glm-literature-final-job-audit/audit.json` records live states; subsequent
+  `proposal-inventory.json` records all eighteen output hashes/32,437 generated words.
+  The inventory is not a count of validated scientific text. Executed source snapshots
+  are retained separately from the final patched runner and expanded reviewer prompts.
+- Fixed and independently regression-tested: numeric dossier IDs, failed-job projection
+  without error leakage, model whitelist, truncation and ambiguous-start handling,
+  10,000-character prompt gate, explicit partial prior excerpts, immutable-output guards,
+  prior-proposal hash/model/state checks, symlink exclusion and quoted DOI search.
+  A stopped polling process is never claimed to cancel an asynchronous server job.
+
+Commands used (new output directories; all literature/model inputs public):
+
+```bash
+uv run python scripts/track2_glm_review.py results/feat009/glm-literature-abstracts-v2 --abstract-records --dossiers senescence readthrough sirt2 mtor tbx azole hdac antifolate redox
+uv run python scripts/track2_glm_review.py results/feat009/glm-literature-pp2a-abstract-v3 --abstract-records --dossiers pp2a
+uv run python scripts/track2_glm_review.py results/feat009/glm-literature-constitutional-challenges-v3 --abstract-records --challenge-only --dossiers senescence readthrough
+uv run python scripts/track2_glm_review.py results/feat009/glm-literature-mtor-challenge-v3 --abstract-records --challenge-only --dossiers mtor
+uv run python scripts/track2_glm_review.py results/feat009/glm-literature-oncology-challenges-v3 --abstract-records --challenge-only --dossiers tbx azole
+uv run python scripts/track2_glm_review.py results/feat009/glm-literature-hdac-challenge-v3 --abstract-records --challenge-only --dossiers hdac
+```
+
+These directories already exist; do not overwrite them or repeat billed/model work
+just to force agreement. Refer to executed snapshots for the version actually run.
+The controlled initial PP2A recovery reused its known job ID, not a duplicate inference.
+
+Verification: 63 evidence + 44 review + 33 access + 32 Atlas + 43 splicing + 44 MCP +
+41 release + 67 new GLM tests pass = **367**. The three preservation checks pass:
+`track2_evidence.py track1`, `track2_evidence.py verify results/feat009/jvv7_track2_research_v2`,
+and `track2_release.py verify results/feat009/jvv7_track2_research_v3`. V3 still binds
+15 files, report SHA `d6342f5cdcccb1958fffdaa8cdcdc2801fb3826f1b6562ce152e50775e012148`,
+upload-ready false, phase unconfirmed. No inference resolves phase or validates treatment.
+
+Fresh startup and final `./init.sh` both exit 0. Actual final output from
+`logs/track2-glm-final-init.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Initial staged publication audit passed 110 unique blobs with zero findings:
+`uv run python scripts/audit_publication.py --staged --output results/feat009/glm-disclosure-staged-v1.json`.
+Final intended changes are re-staged/re-audited before commit; all new commits are pushed
+to configured origin with branch/upstream equality checked. Feature remains in progress
+for hosted video, final owner/live checks and receipt, not further automatic GLM retries.
+
+Final staged audit `results/feat009/glm-disclosure-staged-final.json` passes **110 unique
+blobs, zero findings**. Final eight-suite execution exits 0 in
+`logs/track2-glm-final-tests.log` (367 tests). Independent scientific reviews finish
+all eighteen outputs with explicit residual-error exclusions; job completion is not
+claim acceptance. `git diff --cached --check` and all three package-preservation
+commands pass again. Live audit confirms no nonterminal accepted job; process check
+finds no remaining GLM runner/MCP child. No further model round is required.

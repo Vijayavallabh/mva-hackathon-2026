@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "scope": "Public literature only. No patient narrative, genotype records, or patient-specific treatment requests.",
+  "dossiers": [
+    {
+      "id": "pp2a",
+      "reviewer_checks": "Independent selected-section checks: Xu2013 DOI10.1242/bio.20134051 used MIS12-KARD-3D in MVA-derived cells during MG132 arrest; completed faithful daughter divisions were not shown. Leonard2020 is Cell DOI10.1016/j.cell.2020.03.038 and uses cryo-EM, not crystallography. Naqvi2026 DOI10.1021/jacsau.6c00003 studies ATUX-8385 and isolated PR65 mechanics; not a DT-061 cellular-specificity replication. Treat these reviewer summaries as secondary context, not proof you read the full texts.",
+      "query": "BUBR1 PP2A B56 DT-061 iHAP1 mechanism replication PR65",
+      "urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC3654266/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC7243596/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC9289710/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC13213488/"],
+      "question": "Compare engineered BUBR1-B56 recruitment rescue with proposed small-molecule PP2A stabilization and its negative replication. Extract compound identity, actual direct-binding/structural evidence, cell context, congression versus completed faithful divisions, toxicity and regulatory status. Does the 2026 PR65 study resolve the specific DT-061 conflict, or test a different mechanistic level? Is any approved drug shown to rescue constitutional BUBR1 deficiency?",
+      "challenge": "Attack any conflation of PP2A holoenzyme and scaffold stabilization, engineered recruitment and drug rescue, mitotic alignment under arrest and accurate viable daughter cells. Preserve unresolved positive-versus-negative replication rather than voting by publication recency."
+    },
+    {
+      "id": "senescence",
+      "reviewer_checks": "Independent reviewer correction: Baker2013 DOI10.1016/j.celrep.2013.03.028 reports p21 protects muscle/fat but PROMOTES lens senescence/cataracts; loss delays the lens phenotype, not worsens it. Prior GLM output reversed this. Accessible OA XML for Zhu2015 and Fuhrmann2017 disproves blanket subscription-only claims. No full-text access in this run does not mean paywalled. HSP90 senolysis in Ercc1 is not BUBR1 stabilization. These are secondary supplied reviewer checks, not proof of GLM full-text access.",
+      "query": "BubR1 p21 senolytic HSP90 inhibition senescent cell depletion liver harm",
+      "urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC3785294/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4531078/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC5583353/", "https://pubmed.ncbi.nlm.nih.gov/32485135/"],
+      "question": "Separate BubR1 from Ercc1 models and genetic cell clearance from drug treatment. Compare tissue-opposed p21 effects, dasatinib/quercetin and HSP90 senolytic experiments, and harmful senescent-cell depletion. Which endpoints measure function, lifespan or selective killing, and which controls detect loss of protective cells? Extract exact models and toxicity; do not call clearance of deficient cells constitutional rescue.",
+      "challenge": "Test whether apparently beneficial senolysis removes useful cells or selects survivors without correcting chromosome segregation. Is any evidence actually in a BUBR1-deficient model? Identify tissue-specific opposite effects and avoid treating pharmacological and genetic clearance as interchangeable."
+    },
+    {
+      "id": "readthrough",
+      "reviewer_checks": "Independent full-text check of Bolze2017 DOI10.1038/s41598-017-01093-9 identifies LEPR JAK/STAT3 functional signaling and PTP1B-inhibition control; missing abstract detail is not absence of receptor-function experiments. A prior proposed barcode-abundance assay did not couple translation to sorting/selection, so NGS counts alone cannot measure readthrough. Random-context median response is not necessary for one endogenous context. BUBR1 scaffold/pseudokinase function demands segregation/checkpoint/localization outcomes, not universal catalytic-activity restoration. These are secondary reviewer checks, not evidence of GLM full-text access.",
+      "query": "ataluren readthrough luciferase artefact near cognate tRNA 2016 2017",
+      "urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC5098639/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC5430635/"],
+      "question": "Compare positive ataluren near-cognate tRNA evidence with negative readthrough-context evidence. Extract reporters, endogenous proteins, stop-context dependence, amino-acid insertion, dose, assay artefact controls, NMD and full-length protein function. Explicitly distinguish absence of BUB1B-specific evidence from proof of ineffectiveness. Identify a rigorous sequence-agnostic assay strategy without inventing patient alleles or claiming current regulatory approval from old papers.",
+      "challenge": "Challenge reporter stabilization versus authentic full-length functional protein, cell-specific concentration effects, mixed inserted amino acids, NMD and stop-codon identity. A positive generic reporter must not be promoted to a BUB1B treatment result; negative contexts must not be generalized universally."
+    },
+    {
+      "id": "sirt2",
+      "query": "North SIRT2 BubR1 NAD 2014 lifespan 2023 overexpression negative",
+      "urls": ["https://www.embopress.org/doi/full/10.15252/embj.201386907", "https://pmc.ncbi.nlm.nih.gov/articles/PMC10726910/"],
+      "question": "Distinguish NAD precursor drug experiments, SIRT2 genetic overexpression, BUBR1 protein stabilization and mouse survival. Extract actual intervention-by-model-by-endpoint mappings and reconcile the ordinary-ageing negative study with the BubR1-hypomorphic experiment. Does any approved pharmacological intervention directly reproduce the genetic survival result? State unavailable sections and avoid extrapolating lifespan evidence across genotypes.",
+      "challenge": null
+    },
+    {
+      "id": "mtor",
+      "reviewer_checks": "Independent primary checks: JCI10.1172/JCI126863 fulltext shows mTORC1 excess in BubR1+/X753 gastrocnemius vs +/L1002P and wild-type; neither rapamycin nor everolimus rescue tested. Prior GLM experiment wrongly called H/L1002P monoallelic carriers. Yamada10.1016/j.isci.2021.103675 humanA549+nocodazole:rapamycin100nM,60h; slippage33.16->46.41% denominator death-or-slippage,not allcells; humanmechanism notyeastCdh1. GuptaARST1431 PMID38936378:297evaluable,3yEFS64.8%control/66.8%temsirolimus,HR0.86,95%CI0.58-1.26,p=.44. DirectSLiMS is engineered PP2A inhibition,not rapalog rescue. Secondary reviewer context,not GLM fulltextaccess. Shared pathway activation or later onset alone need not exclude a beneficial secondary-driver intervention.",
+      "query": "BubR1 mTORC1 rapamycin mitotic slippage ARST1431 temsirolimus",
+      "urls": ["https://www.jci.org/articles/view/126863", "https://pmc.ncbi.nlm.nih.gov/articles/PMC8814761/", "https://pubmed.ncbi.nlm.nih.gov/?term=10.1016%2FS1470-2045%2824%2900255-9", "https://pmc.ncbi.nlm.nih.gov/articles/PMC11954910/"],
+      "question": "Compare allele/tissue-specific mTORC1 observation, rapamycin-associated mitotic slippage, randomized RMS temsirolimus clinical findings and a rapamycin-triggered engineered PP2A dimerizer. Extract actual interventions and denominators; do not call pathway activation drug rescue, dimerization rapalog therapy, or everolimus and temsirolimus identical. Define kill gates for a conditional constitutional mTOR hypothesis and separate tumour-control endpoints. One URL is a PubMed search locator: identify the actual paper before attributing trial figures; declare access failure if necessary.",
+      "challenge": "Targeted repair after an unquoted DOI query missed the randomized trial: the quoted DOI query now resolves PMID38936378. Reconcile the negative RCT with conditional constitutional research, correct the model-genotype experiment and distinguish sensible safety/function gates from overstrong causal exclusions. Treat proposed assays as hypotheses, not performed experiments."
+    },
+    {
+      "id": "tbx",
+      "reviewer_checks": "Independent selected DOI10.1002/cam4.70303 sections:72h MTT/10%FBS; niclosamide RD6.79/RH30 11.06uM,pyrvinium3.30/7.10uM,piroctone RDnotestimable/RH30 31.29uM. Tested niclo/pyrvinium2-10uM/piroctone4-20uM; some EC50 extrapolate beyond maxima. Tacrolimus/vardenafil fail endogenous validation. PDMX1001 DOI10.1038/s41598-021-85969-x has only3 sampled patients,total predose0.31-0.65uM/one-hour0.21-0.72uM,not serial Cmax or unbound RMS exposure. Failed transient overexpression rescue does not prove generic toxicity unless functional target restoration under drug is verified. Healthy myoblasts do not replace deficient-normal controls. PLOS correction DOI10.1371/journal.pone.0202709 confirms35.7-182ng/mL corrected abstract range; do not count correction as a new study. These are secondary reviewer checks,not proof of GLM full-text access.",
+      "query": "TBX2 TBX3 niclosamide pyrvinium piroctone rhabdomyosarcoma systemic exposure",
+      "urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC11474296/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC5983471/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC7973745/", "https://pubmed.ncbi.nlm.nih.gov/26686089/"],
+      "question": "Evaluate TBX2/TBX3 screen hits niclosamide, pyrvinium and piroctone for RMS tumour-only research. Extract tested concentration ranges versus estimated EC50, serum fraction, time, subtype, target validation, senescence/apoptosis/clonogenic endpoints, normal-muscle roles and false screen hits. Compare conventional versus reformulated niclosamide human exposure and different oncology backbones. Do not infer current systemic approval or free RMS-active exposure from a drug-library label or unrelated clinical response.",
+      "challenge": "Audit numerical EC50 extrapolation beyond tested ranges, micromolar versus nanomolar units, reporter false positives, direct-binding overclaims, serum-binding and route/formulation mismatches. Does improved human exposure of a reformulation prove safe unbound RMS-active exposure or monotherapy efficacy?"
+    },
+    {
+      "id": "azole",
+      "reviewer_checks": "Independent Sun2021 PMC8493378 sections: mouse liver damage/meanGPT rise, but reported enzyme-group differences not significant; RD24h XTTIC50 36.51uM;70mg/kg oral x14days reduced growth,not eradication. Official label warns serious vinca toxicity and contraindicates sirolimus/selected CYP3A4statins; contraindication is not merely dose management. Sonidegib DOI10.1093/neuonc/nox109 responses were medulloblastoma,not RMS; RMSgrade4CPK and pediatric growth-plate findings. PriorGLM<=0.06uM arithmetic is only rough average-free-plasma bound,not measured tissue PK or a validated mouse dosing target. ATO+itraconazole primary shows model-dependent additional effects,not formal universal synergy; studies overlap ERMS rather than disjointsubtypes. Failed GLI rescue/flux mechanism alone does not negate all activity; verify restoration and separate mechanism from efficacy. These are secondary reviewer checks,not proof of GLM full-text access.",
+      "query": "posaconazole rhabdomyosarcoma hedgehog arsenic trioxide sonidegib toxicity",
+      "urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC8493378/", "https://pubmed.ncbi.nlm.nih.gov/26676886/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC5737275/", "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0bdf77ae-3639-49c1-b7c7-533f9d073084"],
+      "question": "Compare RMS posaconazole preclinical evidence, arsenic downstream Hedgehog inhibition and sonidegib pediatric clinical evidence with official posaconazole label risks. Extract liver findings, nominal concentrations, tumour growth versus regression, flux versus static autophagy markers, subtype identity, CPK/growth-plate effects, protein binding and CYP3A4 interactions relevant to oncology drugs. Do not transfer medulloblastoma responses to RMS or repeat authors' broad safety claims without label checking.",
+      "challenge": "Challenge claims of low liver toxicity or few interactions against actual mouse GPT/histology and the official label. Distinguish a direct SMO target from pathway marker change, autophagy induction from blocked clearance, growth delay from regression, and pediatric medulloblastoma efficacy from RMS efficacy."
+    },
+    {
+      "id": "hdac",
+      "reviewer_checks": "Independent ENT2024 DOI10.1038/s41598-024-66545-5 sections: humanweekly totalCmax140.8nM/AUC3087nM.h vs mousedaily Cmax4710nM/AUC0-24 2510nM.h;no matched weekly/free profile. CTG1008 combinationp=.016/.028 unadjusted;CTG2127monop=.053; no verified formal Bliss/Loewe synergy indices. ENT2019 DOI10.1002/pbc.27820 includes twoARMS(Rh10,Rh41)+twoERMS(Rh18,Rh36),not mostlyERMS or proof of subtype dichotomy; endpoint-dependent Rh18/vincristine antagonism. Vorinostat DOI10.3389/fonc.2017.00327 transient case benefit plus thrombocytopenia/bleeding/progression;PDXnecrosis without growth/Ki67 suppression. One uncontrolled case cannot validate SETD2/ARID1A/BCOR predictive eligibility. Cross-study/nonisogenic model differences cannot prove old null was schedule artifact. NMPA confirms April2024 Chinese adult breast-cancer approval for entinostat. These are secondary reviewer checks,not personal full-text verification.",
+      "query": "rhabdomyosarcoma vorinostat entinostat pediatric pharmacokinetics negative trial 2024",
+      "urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC2917318/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC2752378/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC5768639/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6685061/", "https://www.nature.com/articles/s41598-024-66545-5", "https://english.nmpa.gov.cn/2024-04/30/c_1049690.htm", "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd86ee78-2781-468b-930c-3c4677bcc092"],
+      "question": "Reconcile negative and favorable RMS HDAC inhibitor results, preserving vorinostat case benefit and harms separately from its parallel PDX findings. Compare entinostat 2019 versus 2024 combinations, dose schedules, Cmax and AUC sampling windows, free versus total, multiplicity, endpoints and model-specific effects. Check jurisdiction-specific entinostat China approval using NMPA, versus vorinostat label; neither implies pediatric RMS approval. Is any exposure-bridged tumour-only research option justified, and what remains missing?",
+      "challenge": "Audit weekly human versus daily mouse schedule and AUC windows; similar AUC is not identical peak or cumulative exposure. Are p-values adjusted, all models positive, necrosis accompanied by growth suppression, and a case response durable? Correct globally 'unapproved entinostat' using the official NMPA jurisdiction/indication. Do not transfer one HDAC compound's result to another."
+    },
+    {
+      "id": "antifolate",
+      "query": "fusion positive rhabdomyosarcoma pralatrexate TYMS vinorelbine recurrence 2026",
+      "urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC13389464/", "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=cc3df863-c51c-49c5-283a-d6808fb49258&version=6"],
+      "question": "Audit pralatrexate fusion-positive RMS primary evidence against its official label. Extract model heterogeneity, TYMS mechanism versus broader antifolate action, potency assay time/serum, regression durability, withdrawal recurrence, concurrent versus alternating vinorelbine toxicity, weight-loss stopping and renal/marrow/mucosal risks. State exactly what supports a tumour-only conditional horizon candidate and what blocks transfer to constitutional BUBR1 rescue or a pediatric recommendation. Do not compute a human exposure margin from nominal cell IC50 and total plasma.",
+      "challenge": null
+    },
+    {
+      "id": "redox",
+      "query": "rhabdomyosarcoma disulfiram sodium selenite palbociclib statin clonogenic repurposing",
+      "urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC13135720/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC11154391/"],
+      "question": "Compare disulfiram, selenite, palbociclib and statin RMS results. Preserve SRB potency versus post-withdrawal clonogenic outcomes; local CAM dosing versus systemic exposure; autophagy markers versus causal flux; and radiation sensitization versus constitutional benefit. Extract doses, serum, schedules and normal-cell gaps. Specify copper/speciation, delivery and free exposure uncertainties where actually supported rather than inventing measurements. Would any conclusion change the existing deprioritization of unbridged redox/proteotoxic approaches?",
+      "challenge": null
+    }
+  ]
+}

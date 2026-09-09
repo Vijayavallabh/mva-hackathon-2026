@@ -107,6 +107,11 @@ rapamycin/slippage evidence strengthens [cell-fate safety gates](notes/track2-va
 The baseline 53-source/12-candidate ledgers and historical v2 package remain unchanged.
 V3 integrates Atlas and Fireworks-hosted GLM disclosure; self-hosting is not a guarantee
 of local inference, zero retention or no training. No clinical exposure margin follows.
+The [expanded GLM literature review](notes/track2-glm-review.md) now separates ten
+topic comparisons and adversarial rereads from independent primary-source adjudication.
+It adds PP2A/senescence/readthrough controls and TBX/azole/HDAC exposure checks, including
+entinostat's jurisdiction-specific approval. Raw GLM errors and retrieval gaps are
+explicitly retained; these supplementary notes do not replace the v3 package or prove efficacy.
 The [authenticated AlphaGenome Atlas follow-up](notes/alphagenome-authenticated-results.md)
 retrieved both candidate AVI scores and feature attributions. These mainly reuse
 termination, AlphaMissense and conservation evidence; detailed molecular retrieval

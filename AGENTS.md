@@ -172,6 +172,18 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   phase unconfirmed and clinical margins null. The temporary browser was stopped;
   the owned public-page monitor was soft-deleted after completion, not physically
   erased. No unrelated monitor, subject file, family contact or upload was involved.
+- **Session 38 expanded GLM literature work (2026-09-09 IST):** use
+  `notes/track2-glm-review.md`, its two independent primary-review notes and the fixed
+  `notes/track2-glm-plan.json`. `scripts/track2_glm_review.py` uses the existing MCP
+  bridge; public literature only, no `.env` or subject inputs. Ten topic dossiers and
+  adversarial rereads are model proposals, not independent evidence. Failed full-text
+  retrieval prompted indexed-primary-abstract comparisons; do not describe these as
+  full-paper reviews. Corrected primary checks override GLM errors about division
+  rescue, p21 tissue direction, readthrough assays, exposure and regulatory scope.
+  Entinostat has a Chinese adult breast-cancer approval, not a pediatric RMS indication.
+  Preserve all v3-bound files and prior packages; the new supplement has not replaced
+  an upload. Everolimus remains conditional, HCQ reserve, clinical margins null and
+  trans phase unconfirmed. Do not rerun paid/model work merely to force agreement.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed
