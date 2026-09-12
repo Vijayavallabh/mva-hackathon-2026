@@ -2254,3 +2254,74 @@ all eighteen outputs with explicit residual-error exclusions; job completion is 
 claim acceptance. `git diff --cached --check` and all three package-preservation
 commands pass again. Live audit confirms no nonterminal accepted job; process check
 finds no remaining GLM runner/MCP child. No further model round is required.
+
+
+## Session 39 — 2026-09-13 IST — Project-local K-Dense installation (feat-009)
+
+Owner requested https://github.com/K-Dense-AI/k-dense-byok only inside this
+project. Installed upstream revision `2c613e38052f199526546191c8d8b98c1eb3b15e`
+(server 0.10.0) in ignored `tools/k-dense-byok/`; existing Node 22.22.3/npm
+11.17.0/uv used. `npm ci` installed 673 backend and 1162 frontend packages from
+upstream lockfiles. No global installation or parent dependency change.
+
+`scripts/k-dense.mjs` is the project entry point: app auth, projects and caches
+are beneath the clone; inherited credentials and parent `.env` are omitted;
+frontend/backend bind to 127.0.0.1 ports 3210/8210. Installation instructions,
+SSH forwarding and subject-data limitations are in `notes/k-dense-installation.md`.
+No subject input, login or inference was performed. Feat-009 remains in progress;
+all research/submission reports and packages are unchanged.
+
+Commands and actual evidence:
+
+- `node scripts/k-dense.mjs prep`: `skills: 165`, `venv: synced`,
+  `helper venv: synced`, `Done.`
+- `node scripts/k-dense.mjs check`: upstream dependency check complete and
+  project-local executables present. No provider configured, as expected.
+- `node scripts/k-dense.mjs`: web GET `/` returned 200; backend GET `/projects`
+  returned 200 with one default workspace; GET `/health` returned `{"status":"ok"}`.
+- A second launcher exited 1 with `EADDRINUSE`, leaving the first running.
+  SIGTERM to the owned supervisor then stopped both services, exit 0;
+  listener verification found neither port occupied. Test instance left stopped.
+- `node --check scripts/k-dense.mjs`, `bash -n init.sh`, `git diff --check` pass.
+- Core checks: `uv run python scripts/verify_data.py --self-check` and
+  `uv run python scripts/track1_submission.py --self-check` pass;
+  `uv run python scripts/track2_evidence.py check` reports 53 sources, 12 candidates,
+  no established clinical efficacy/direct-pair intervention, phase unconfirmed;
+  `uv run python scripts/test_track2_evidence.py`: 63 tests pass.
+
+Startup initially hit restricted DNS; the network-enabled rerun verified all
+84.99 GB, then exposed an existing fresh-shell failure: GATK's shebang could not
+find `python`. `init.sh` now calls `uv run bash ./scripts/get_tools.sh --check`,
+using the existing uv interpreter, with identical version/checksum gates.
+The repaired startup passed. Final fresh-shell `./init.sh` output is also saved
+in ignored `logs/k-dense-final-init.log` and reproduced below.
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Staged disclosure audit: `uv run python scripts/audit_publication.py --staged
+--output results/feat009/k-dense-installation-audit.json` passes 112 unique blobs,
+zero findings. Completed changes are committed and pushed to configured origin;
+branch/upstream equality and a clean working tree are checked at session end.

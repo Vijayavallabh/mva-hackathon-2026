@@ -116,6 +116,14 @@ and both candidates, retaining all nine same-position alternate rows. See
 
 ## Blockers and unresolved evidence
 
+- **Session 39 project-local K-Dense installation:** installed and smoke-tested;
+  use `node scripts/k-dense.mjs` and `notes/k-dense-installation.md`. The test
+  instance is stopped. A provider key/login or local model must be configured by
+  the owner before inference; no credentials were copied and no inference ran.
+  This setup adds no scientific evidence or submission. The app's workspace is
+  not a security sandbox; protected subject files must never enter hosted calls.
+  The pre-existing fresh-shell GATK check failure is fixed by running it via uv.
+
 - **Session 38 GLM research is complete, not a new submission:** nineteen accepted
   service jobs are terminal (eighteen GLM completions, one failed retrieval); six
   schema-rejected prompts had no job IDs. Recovery and residual scientific errors are

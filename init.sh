@@ -38,7 +38,7 @@ else
 fi
 
 echo "=== 5. local bioinformatics toolchain ==="
-./scripts/get_tools.sh --check
+uv run bash ./scripts/get_tools.sh --check
 
 echo "=== 6. offline annotation resources ==="
 ./scripts/get_resources.sh --check
