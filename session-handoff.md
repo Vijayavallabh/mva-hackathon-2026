@@ -1,6 +1,30 @@
 # Session handoff
 
-**Last updated:** 2026-09-19 IST, session 44. **Active feature: feat-009 Track 2.**
+**Last updated:** 2026-09-19 IST, session 45. **Active feature: feat-009 Track 2.**
+Owner-requested whole-Track-2 devil's-advocate review is complete, with substantive
+v9 revisions. See `notes/track2-adversarial-v9.md` for 12 findings, all-workstream
+coverage, primary source reading depth/failures and self-challenge of the revision.
+New current report, validation, ledger, pitch and slides all use v9. Everolimus is
+now an optional model-qualified mechanistic probe, not a comparative rescue priority;
+no drug earns a rescue priority. HCQ remains reserve. This supersedes earlier
+conditional-priority language and the previously supplied v8 read-aloud response.
+
+New evidence includes everolimus-associated BUBR1 protein loss in late-passage human
+stromal cells, adaptive mTOR counterexamples and favourable HGPS vessel function.
+These are not selected-pair response or clinical exposure evidence. V9 adds BUBR1/flux,
+orthogonal pathway perturbation, cell-state and precursor/mature-lineage controls.
+Source ledger:36 cumulative records/11 decisions; narration:339 words, unmeasured
+runtime; deck:320 words, all five PDF pages inspected. Current exports:
+`results/feat009/v9-slide-review-final-20260919/`.
+
+`uv run python scripts/track2_release_v9.py verify results/feat009/jvv7_track2_research_v9`
+passes six files/84 inputs and recursive v1-v8 preservation. All 450 Track 2 and
+108 AlphaGenome tests, core checks, fresh init and live PUBLIC/purge guard pass.
+The audit was performed by the main agent; no fresh independent or exhaustive review
+is claimed. No subject-file analysis, new provider, recording or upload occurred.
+
+## Session 44 context
+
 The owner requested removal of the cover line and more aesthetic, relevant slides.
 Current deck: `notes/track2-slides-v8.html`; unchanged v6 report/297-word narration,
 v5 validation and v4 evidence. New gene-level, pathway, cell-fate and advancement
@@ -70,14 +94,19 @@ The previous session's equal-priority HCQ nomination is superseded.
 
 ## Current scientific and competition state
 
-- **Latest research supplement:** ten GLM topics with adversarial rereads and explicit
+- **V9 overrides earlier priority claims:** model qualification and a bounded benefit/harm
+  probe replace comparative rescue prioritization. The older source/decision checkers
+  intentionally reproduce preserved historical decisions; use the v9 checker for the
+  revised 36-source/11-decision ledger. No candidate has clinical efficacy or a margin.
+
+- **Prior GLM research supplement:** ten GLM topics with adversarial rereads and explicit
   primary-source adjudication. The first PP2A response was not source-grounded;
   abstract-record recovery improves provenance but does not establish full-text review.
   Corrected model claims, exposure/endpoint gaps and source limits are in the new notes.
   Preserve the baseline ledgers and v3 inputs; no candidate, phase or clinical-margin
   promotion follows. Entinostat's specific Chinese approval corrects a global
   “unapproved” shorthand, not the lack of pediatric RMS efficacy/exposure evidence.
-- **The v6 story remains the basis for v8:** the story follows one conditional experiment, its
+- **The v6 story is revised by v9:** the story follows one conditional experiment, its
   limited mouse rationale, contrary tumour trial evidence, complete cell-fate
   accounting and preclinical advancement criteria. The report's scientific sections
   1-7, acknowledgement and reference URL set match v5. A connector/label collision
@@ -187,6 +216,14 @@ and both candidates, retaining all nine same-position alternate rows. See
 `notes/alphagenome-splicing-results.md` for hashes, commands, output terms and limitations.
 
 ## Blockers and unresolved evidence
+
+- **Session 45 desk audit/revision is complete; biological and delivery gaps remain.**
+  The BUBR1-loss result is an adverse-mechanism concern, not proof of harm in this
+  genotype. Model availability, phenotype, exposure, meaningful effect/injury bounds
+  and powered confirmation remain unestablished. V9 narration requires rehearsal,
+  recording/hosting, Fireworks settings verification, owner/live checks and receipt.
+  Preserve all v9-bound inputs and v1-v8 history. Any further edit needs a new snapshot.
+  V9 deck SHA-256: `c84e0ca12d7c47aaa63d04b23e1b099843e367161beb1ec33fc7a4e4877dcf8c`.
 
 - **Session 44 v8 revision is complete.** The requested line is absent from the
   cover; the new diagrams and closing qualifications preserve the proposal's
@@ -332,6 +369,7 @@ uv run python scripts/track2_release_v4.py verify results/feat009/jvv7_track2_re
 uv run python scripts/track2_release_v6.py verify results/feat009/jvv7_track2_research_v6
 uv run python scripts/track2_release_v7.py verify results/feat009/jvv7_track2_research_v7
 uv run python scripts/track2_release_v8.py verify results/feat009/jvv7_track2_research_v8
+uv run python scripts/track2_release_v9.py verify results/feat009/jvv7_track2_research_v9
 ```
 
 Continue feat-009 only. The original `jvv7_track2_research_v1/` is preserved (seven file

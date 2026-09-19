@@ -237,6 +237,21 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   and verifies v1-v7 preservation. See `notes/track2-v8-design.md`. This is author
   visual/source verification, not a new independent review or experimental evidence.
   Phase, drug priorities, clinical margins, provider and submission gates unchanged.
+- **Session 45 v9 adversarial revision (2026-09-19) supersedes earlier priority:**
+  current materials are `notes/track2-report-v9.md`, `track2-validation-v9.md`,
+  `track2-evidence-v9.json`, `track2-pitch-v9.md` and `track2-slides-v9.html`. The
+  owner requested a rigorous whole-Track-2 challenge and revisions. Goutas 2023
+  reports an everolimus-associated BUBR1 decrease in late-passage human stromal
+  cells; this is not selected-pair harm or a clinical exposure result. Adaptive
+  mTOR counterexamples and favourable HGPS vessel function are retained. Withdraw
+  comparative rescue priority: everolimus is an optional model-qualified mechanistic
+  probe; no drug earns a rescue priority, HCQ remains reserve. See the 12 findings
+  and complete workstream matrix in `notes/track2-adversarial-v9.md`. Add BUBR1/flux,
+  orthogonal perturbation and precursor-versus-mature-lineage controls. Main-agent
+  author audit, not a fresh independent review. Ledger:36 sources/11 decisions;
+  narration:339 words, runtime unmeasured; deck:320 words. The v9 release binds six
+  files/84 inputs, preserving v1-v8; 450 Track 2 + 108 Atlas tests pass. Phase and
+  clinical margins remain unresolved; no experiment, provider change or upload.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed

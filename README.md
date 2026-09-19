@@ -92,32 +92,36 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-**Track 2 (feat-009) is in progress:** the [current v6 research report](notes/track2-report-v6.md)
-centres one conditional everolimus experiment while preserving the evidence and limits. Its
-unchanged [32-source/11-decision supplement](notes/track2-evidence-v4.json),
-[validation plan](notes/track2-validation-v5.md),
-[297-word pitch](notes/track2-pitch-v6.md) and [v8 visual deck](notes/track2-slides-v8.html)
-are linked by `scripts/track2_release_v8.py`. V8 removes the owner-specified cover
-line and uses chromosome-control, pathway and cell-fate diagrams to make the proposal
-more concrete. The slides contain four schematics and
-a redraw of the published ARST1431 hazard ratio and confidence interval.
-Open the HTML locally or use the PDF export from
-`uv run node scripts/render_track2_slides_v8.mjs NEW-OUTPUT-NAME`.
-See the [v8 design and validation note](notes/track2-v8-design.md),
-[scientific review](notes/track2-v6-scientific-review.md) and
-[v6 standards review](notes/track2-v6-standards-review.md); the final pass was an author
-verification, distinguished from earlier reviewer checkpoints. These are research materials,
-not a recorded video or submission. Fireworks API-credit use is owner-confirmed;
-training/retention settings remain unverified. Video, final owner/live checks and receipt
-remain outstanding. No phase, efficacy or clinical exposure margin was established.
+**Track 2 (feat-009) is in progress:** the [v9 adversarial audit](notes/track2-adversarial-v9.md)
+identified a missed everolimus-associated BUBR1 decrease and an incomplete treatment of
+adaptive mTORC1 activity. The [current v9 report](notes/track2-report-v9.md) withdraws the
+comparative rescue priority: everolimus is an optional, model-qualified mechanistic probe.
+No drug currently earns a rescue priority; HCQ remains reserve. Positive findings from
+other disease models remain visible, and no patient harm or benefit is inferred.
+
+The [36-source/11-decision ledger](notes/track2-evidence-v9.json),
+[validation plan](notes/track2-validation-v9.md),
+[339-word pitch](notes/track2-pitch-v9.md) and [v9 deck](notes/track2-slides-v9.html)
+are bound by `scripts/track2_release_v9.py`. The protocol adds BUBR1/flux monitoring,
+competing mechanism tests and distinct precursor/mature-lineage endpoints. All five
+PDF pages were inspected; 450 Track 2 and 108 AlphaGenome tests pass. This is author
+verification with targeted primary reading, not a new independent or exhaustive review.
+Open the HTML locally or export with
+`uv run node scripts/render_track2_slides_v9.mjs NEW-OUTPUT-NAME`.
+
+These are research materials, not a recorded video or submission. Fireworks API-credit
+use is owner-confirmed; training/retention settings remain unverified. Recording/hosting,
+final owner/live checks and receipt remain outstanding. Phase and clinical exposure
+margins remain unresolved; no wet-lab experiment was performed.
 
 The historical [baseline evidence ledger](notes/track2-candidates.json) assesses twelve
 entries; the [v3 report](notes/track2-report-v3.md) and all earlier snapshots are preserved.
-The [final scientific/exposure review](notes/track2-final-review.md) retains
-everolimus as one conditional research priority and demotes hydroxychloroquine to reserve.
+The historical [scientific/exposure review](notes/track2-final-review.md) assigned
+everolimus a conditional priority and demoted hydroxychloroquine to reserve. V9 supersedes
+the everolimus priority while preserving that review and its source record.
 The 53-source review and [exposure ledger](notes/track2-exposure.json) establish no clinical
 efficacy or therapeutic margin. No laboratory experiments or Track 2 upload have occurred.
-The current v6 pitch still needs recording and a hosted URL; earlier scripts are historical.
+The current v9 pitch still needs recording and a hosted URL; earlier scripts are historical.
 The [Firecrawl follow-up](notes/track2-firecrawl.md) exercised all 26 advertised MCP
 tools and added eight independently checked source documents at explicitly limited
 reading depths. Pralatrexate is a new fusion-positive RMS tumour-only horizon;

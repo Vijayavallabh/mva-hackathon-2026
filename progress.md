@@ -2858,3 +2858,110 @@ Staged disclosure audit passed: **153 blobs, zero findings**, recorded in
 and `git diff --cached --check` pass. The all-ref audit is retained in
 `results/feat009/v8-history-final-20260919.json`; configured-origin push and clean
 upstream equality are checked at handoff.
+
+
+## 2026-09-19 — session 45: whole-Track-2 adversarial audit and v9
+
+Owner requested a rigorous devil's-advocate review of all Track 2 progress and revision
+where warranted. Baseline `0777a15`; feat-009 only. Applied scientific-critical-thinking,
+with public primary-source checks and a complete workstream/decision audit. No subagent,
+paid model rerun, subject-file analysis or new provider was used. This is author review,
+not an independently repeated full systematic review.
+
+Substantive finding: Goutas 2023 reports everolimus-associated BUBR1 protein reduction
+in late-passage human stromal cells. The current synthesis had omitted it. Added this
+potential adverse mechanism, adaptive mTOR counterexamples and balancing favourable
+HGPS vessel function. None establishes selected-pair benefit/harm or clinical exposure.
+Withdrew comparative rescue priority: everolimus remains an optional model-qualified
+mechanistic probe; HCQ stays reserve and no drug earns a rescue priority. Restored
+orthogonal perturbation controls and added BUBR1/flux, cell-state and distinct
+precursor/mature-lineage endpoints. All 12 findings and all-workstream dispositions
+are in `notes/track2-adversarial-v9.md`.
+
+New `track2-report-v9.md`, `track2-validation-v9.md`, `track2-evidence-v9.json`,
+`track2-pitch-v9.md` and `track2-slides-v9.html` are consistent with that decision.
+Four newly incorporated primary sources produce a 36-source/11-decision cumulative
+ledger, not 36 newly read papers. Public XML retrieval: three successes and three
+HTTP 500 failures across six requests; selected primary sections/abstracts and
+regulatory pages fill specified checks, without disguising access depth. Public
+source hashes and retrieval manifests are in the adversarial note and ignored
+`results/feat009/adversarial-v9-primary-20260919/`.
+
+Commands and actual outcomes:
+
+```bash
+uv run python scripts/track2_release_v9.py check
+# sources:36; decisions:11; rescue_priority_candidates:[]; clinical_exposure_margin:null
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+# Ran 450 tests in 5.072s; OK. logs/track2-v9-regressions.log
+uv run python -m unittest discover -s scripts -p 'test_alphagenome*.py'
+# Ran 108 tests in 2.065s; OK. logs/track2-v9-atlas-regressions.log
+uv run python scripts/test_track2_release_v9.py
+# 13 tests pass after final evidence-context refinement
+uv run python scripts/verify_data.py --self-check
+uv run python scripts/track1_submission.py --self-check
+uv run python scripts/track2_evidence.py track1
+uv run python scripts/track2_exposure.py
+uv run python scripts/track2_evidence.py sensitivity
+# Core/preservation/exposure checks pass; old sensitivity reproduces historical priority
+# Track 1 v4 bytes unchanged; actual uploaded-byte identity remains unverified
+uv run node scripts/render_track2_slides_v9.mjs v9-slide-review-final-20260919
+# Five slides, no outside text/overlaps; visible_words:[40,72,60,72,76]
+uv run pdftoppm -png -scale-to 1280 results/feat009/v9-slide-review-final-20260919/track2-slides-v9.pdf results/feat009/v9-slide-review-final-20260919/pdf-page
+uv run pdfinfo results/feat009/v9-slide-review-final-20260919/track2-slides-v9.pdf
+# Five 960x540pt pages; JavaScript:no; all five pages visually inspected
+uv run python scripts/track2_release_v9.py build results/feat009/jvv7_track2_research_v9
+uv run python scripts/track2_release_v9.py verify results/feat009/jvv7_track2_research_v9
+# integrity_verified:true; files:6; bound_inputs:84; historical_v1_through_v8_preserved:true
+# upload_ready:false
+uv run python scripts/check_publication_remote.py --output results/feat009/v9-publication-remote-20260919.json
+# PUBLIC; 13 retired objects unavailable; 0 unknown errors; live control reachable
+```
+
+Deck source SHA-256:
+`c84e0ca12d7c47aaa63d04b23e1b099843e367161beb1ec33fc7a4e4877dcf8c`.
+Final PDF/page previews/overview are under `results/feat009/v9-slide-review-final-20260919/`.
+The 339-word narration replaces the chat-supplied v8 version for recording; runtime
+remains unmeasured. Requested cover-line removal and exact ARST1431 plot remain.
+
+Fresh no-argument `./init.sh` exited 0 without manual setup. Actual output from
+`logs/track2-adversarial-init-20260919.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+The requested desk audit and revisions are complete; feat-009 remains in progress.
+Phase, functional assays, exposure, laboratory feasibility, recording/hosting,
+Fireworks settings, final owner/live checks and receipt remain open. No patient
+intervention or Track 2 submission occurred. Final staged/history disclosure audits,
+commit, configured-origin push and clean upstream verification follow the frozen
+v9 snapshot. Historical bound files and all earlier packages are preserved.
+
+Staged publication audit passes **162 blobs, zero findings** in
+`results/feat009/v9-disclosure-staged-20260919.json`; frozen v9 package verification
+also passes. Final staged/all-ref audits are retained as
+`v9-disclosure-staged-final-20260919.json` and `v9-history-final-20260919.json` under
+`results/feat009/`. Configured-origin push and clean upstream equality are checked
+at handoff; the existing live retired-object gate passes.
