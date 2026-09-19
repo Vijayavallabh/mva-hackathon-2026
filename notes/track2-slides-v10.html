@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Testing everolimus in BUB1B-deficient cells | jvv7</title>
+<style>
+:root{--paper:#f6f7fb;--ink:#241d32;--plum:#634285;--mist:#eae3f2;--teal:#17666c;--night:#30203e;--muted:#655b70}
+*{box-sizing:border-box}html{scroll-behavior:auto}body{margin:0;background:#ddd9e3;color:var(--ink);font-family:"Nimbus Sans",sans-serif}
+.slide{width:1280px;height:720px;position:relative;overflow:hidden;background:var(--paper);margin:0 auto 32px;break-after:page}
+header{position:absolute;left:64px;right:64px;top:36px;display:flex;justify-content:space-between;font-size:24px;line-height:1.25;color:var(--muted)}
+h1{position:absolute;left:64px;top:100px;margin:0;font-family:"Liberation Serif",serif;font-size:58px;line-height:1.18;font-weight:400;letter-spacing:-1.5px;max-width:1152px}
+.sub{position:absolute;left:64px;top:187px;font-size:28px;margin:0;line-height:1.3;color:var(--muted)}
+.diagram{position:absolute;left:64px;top:276px;width:1152px;height:270px;margin:0}
+svg{display:block;width:100%;height:100%;overflow:visible}svg text{font-family:"Nimbus Sans",sans-serif;fill:var(--ink);font-size:28px}svg .small{font-size:24px}svg .large{font-size:34px;font-weight:700}svg .display{font-family:"Liberation Serif",serif;font-size:44px;font-weight:400}svg .plum{fill:var(--plum)}svg .teal{fill:var(--teal)}svg .muted{fill:var(--muted)}
+.note{position:absolute;left:64px;right:64px;top:580px;margin:0;font-size:28px;line-height:1.25;color:var(--muted)}
+footer{position:absolute;left:64px;right:64px;bottom:24px;font-size:24px;line-height:1.3;display:flex;justify-content:space-between;gap:20px;color:var(--muted)}
+.sources{max-width:1070px;min-width:0;flex:1}footer>span:last-child{white-space:nowrap;flex:none}a{color:var(--plum);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}a:focus-visible{outline:3px solid currentColor;outline-offset:5px}
+.hero{background:#eae3f2}.hero header{color:var(--ink)}.hero h1{top:137px;width:720px;font-size:72px;line-height:1.18;letter-spacing:-2px}.hero .sub{top:428px;width:655px;font-size:30px;color:var(--ink)}.hero .diagram{left:790px;top:164px;width:426px;height:370px}.hero .note{top:579px;font-size:26px}
+.evidence h1,.experiment h1{font-size:60px}.evidence .diagram{top:284px}.experiment .diagram{top:287px}
+.trial{background:#ffffff}.trial h1{font-size:54px;letter-spacing:-1.8px}.trial .sub{top:184px;font-size:28px}.trial .diagram{top:252px;height:310px;background:var(--paper);border-radius:24px}.trial .note{top:582px;font-size:28px}
+.dark{background:var(--night);color:#ffffff}.dark header,.dark footer,.dark .note{color:#e4ddec}.dark svg text{fill:#ffffff}.dark a{color:#ffffff}
+.last h1{font-size:64px}.last .diagram{top:287px;height:245px}.last .note{top:561px;font-size:26px}.last footer{bottom:20px}
+
+.hero{background:#f6f7fb}.hero h1{top:136px;font-size:74px;line-height:1.16;width:700px}.hero .sub{top:439px;font-size:30px}.hero .diagram{left:779px;top:124px;width:420px;height:460px}
+.evidence .diagram{top:272px;height:300px}.evidence .note{top:592px;font-size:26px}
+.trial h1{font-size:60px}.trial .diagram{background:#ffffff;border-radius:0}.trial .note{color:var(--ink)}
+.experiment h1{font-size:56px}.experiment .diagram{top:285px;height:286px}.experiment .note{top:598px;font-size:26px}
+.last h1{font-size:62px}.last .diagram{top:279px;height:264px}.last .note{top:566px;font-size:25px}
+
+nav{position:fixed;top:4px;left:50%;transform:translateX(-50%);background:#ffffff;border-radius:20px;padding:3px 18px;display:flex;gap:20px;z-index:10;opacity:0;pointer-events:none}nav:hover,nav:focus-within{opacity:1;pointer-events:auto}nav a{color:var(--ink);font-size:20px;text-decoration:none}body:hover nav{opacity:1;pointer-events:auto}
+@media screen and (max-width:1279px){.slide{zoom:0.5;margin-bottom:32px}}
+@media screen and (max-width:639px){.slide{zoom:0.25}}
+@media screen and (max-width:319px){.slide{zoom:0.125}}
+@media print{@page{size:13.333333in 7.5in;margin:0}body{background:white}.slide{margin:0;break-after:page;page-break-after:always}.slide:last-of-type{break-after:auto;page-break-after:auto}nav{display:none}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<section class="slide hero" id="slide-1" aria-label="Testing everolimus for tissue function">
+<header><span>Rare Disease, Real Kid</span><span>jvv7 / Track 2</span></header>
+<h1>Can everolimus<br>support tissue<br>function in MVA?</h1>
+<p class="sub">A BUB1B-guided benefit–harm test<br>in non-cancer cells</p>
+<figure class="diagram" aria-label="Conceptual chromosome-control mechanism">
+<svg viewBox="0 0 420 460" role="img" aria-label="Conceptual BUB1B and BUBR1 checkpoint context: spindle attachment and the timing of chromosome separation, not measured subject cells or drug effects">
+<title>Gene-level chromosome-control schematic, not an assay result</title>
+<text x="210" y="33" text-anchor="middle" class="large plum">BUB1B</text>
+<text x="210" y="72" text-anchor="middle" class="small muted">BUBR1 checkpoint</text>
+<circle cx="210" cy="236" r="141" fill="#eae3f2"/>
+<circle cx="210" cy="236" r="118" fill="#ffffff"/>
+<path d="M93 236L210 181L327 236L210 291ZM93 236H327" fill="none" stroke="#a9c4c7" stroke-width="2"/>
+<path d="M93 236Q148 184 210 181M93 236Q148 288 210 291M327 236Q272 184 210 181M327 236Q272 288 210 291" fill="none" stroke="#a9c4c7" stroke-width="2"/>
+<circle cx="93" cy="236" r="7" fill="#17666c"/><circle cx="327" cy="236" r="7" fill="#17666c"/>
+<path d="M198 163L222 199M222 163L198 199M198 273L222 309M222 273L198 309" fill="none" stroke="#634285" stroke-width="8" stroke-linecap="round"/>
+<path d="M198 218L222 254M222 218L198 254" fill="none" stroke="#17666c" stroke-width="8" stroke-linecap="round"/>
+<text x="210" y="422" text-anchor="middle" class="small">Attachment &amp; division timing</text>
+</svg>
+</figure>
+<footer><span class="sources">Gene-level schematic: <a href="https://doi.org/10.1038/ng1449">Hanks 2004</a>; <a href="https://www.jci.org/articles/view/126863">BUBR1 mechanism</a>.</span><span>1 / 5</span></footer>
+</section>
+
+<section class="slide evidence" id="slide-2" aria-label="A limited mouse finding motivates the experiment">
+<header><span>Why test this pathway?</span><span>Conflicting signals / different models</span></header>
+<h1>One clue.<br>A competing concern.</h1>
+<figure class="diagram" aria-label="A mouse pathway observation and a contrary human-cell experiment">
+<svg viewBox="0 0 1152 300" role="img" aria-label="Different-allele mouse muscle showed elevated mTORC1 substrate phosphorylation; in a separate late-passage human stromal-cell experiment everolimus reduced BUBR1 protein. Neither establishes selected-pair functional benefit or harm.">
+<title>Competing evidence across different models, not a head-to-head comparison</title>
+<text x="0" y="34" class="large">Mouse muscle</text>
+<text x="0" y="80" class="muted">Different BubR1 alleles</text>
+<text x="0" y="138">Phospho-p70 S6 kinase ↑</text>
+<text x="0" y="182">Phospho-4EBP1 ↑</text>
+<text x="0" y="251" class="small muted">No rapalog rescue tested</text>
+<path d="M533 16V275" stroke="#c7addf" stroke-width="2" stroke-dasharray="4 8"/>
+<text x="614" y="34" class="large teal">Human stromal cells</text>
+<text x="614" y="80" class="small muted">Late passage; not this genotype</text>
+<text x="614" y="138" class="large plum">Everolimus</text>
+<path d="M670 158V204" stroke="#634285" stroke-width="2"/>
+<polygon points="670,211 663,199 677,199" fill="#634285"/>
+<text x="1134" y="174" text-anchor="end" class="small muted">50 nM / 24 h</text>
+<text x="1134" y="205" text-anchor="end" class="small muted">Nominal culture exposure</text>
+<text x="614" y="251" class="large plum">BUBR1 protein ↓</text>
+</svg>
+</figure>
+<p class="note">Test function and harm. Higher mTORC1 alone is insufficient.</p>
+<footer><span class="sources"><a href="https://doi.org/10.1172/JCI126863">Sieben</a> + <a href="https://doi.org/10.1172/JCI144781">correction</a>; <a href="https://doi.org/10.1016/j.redox.2023.102701">Goutas, Fig. 6</a>. Small model studies.</span><span>2 / 5</span></footer>
+</section>
+
+<section class="slide trial" id="slide-3" aria-label="The randomized tumour trial limits the claim">
+<header><span>ARST1431</span><span>297 evaluable / intermediate-risk RMS</span></header>
+<h1>The tumour trial sets a boundary</h1>
+<p class="sub">VAC/VI + temsirolimus versus VAC/VI; both followed by maintenance</p>
+<figure class="diagram" aria-label="Published event-free survival hazard ratio and confidence interval">
+<svg id="arst1431-plot" viewBox="0 0 1152 292" role="img" aria-label="Event-free survival hazard ratio 0.86, 95 percent confidence interval 0.58 to 1.26; logarithmic axis 0.5 to 2 crosses no difference at 1">
+<title>Published ARST1431 estimate, redrawn on a logarithmic axis</title>
+<text x="80" y="30" class="large plum">HR 0.86</text>
+<text x="315" y="30">95% CI 0.58-1.26</text>
+<text x="1072" y="30" text-anchor="end">p = 0.44</text>
+<line id="arst1431-null" x1="576" x2="576" y1="64" y2="203" stroke="#655b70" stroke-width="2" stroke-dasharray="6 6"/>
+<line id="arst1431-ci" x1="186.21" x2="741.38" y1="116" y2="116" stroke="#634285" stroke-width="8"/>
+<line x1="186.21" x2="186.21" y1="97" y2="135" stroke="#634285" stroke-width="4"/>
+<line x1="741.38" x2="741.38" y1="97" y2="135" stroke="#634285" stroke-width="4"/>
+<circle id="arst1431-estimate" cx="468.08" cy="116" r="12" fill="#634285"/>
+<line id="arst1431-axis" x1="80" x2="1072" y1="186" y2="186" stroke="#655b70" stroke-width="2"/>
+<text id="arst1431-tick-low" x="80" y="227" text-anchor="middle">0.5</text>
+<text id="arst1431-tick-mid" x="576" y="227" text-anchor="middle">1</text>
+<text id="arst1431-tick-high" x="1072" y="227" text-anchor="middle">2</text>
+<text x="80" y="277" class="small">Favours temsirolimus addition</text>
+<text x="576" y="277" text-anchor="middle" class="small">No difference</text>
+<text x="1072" y="277" text-anchor="end" class="small">Favours control</text>
+</svg>
+</figure>
+<p class="note">This trial does not test non-cancer everolimus rescue.</p>
+<footer><span class="sources"><a href="https://doi.org/10.1016/S1470-2045(24)00255-9">Gupta 2024</a>. Event-free survival; published estimate and 95% CI.</span><span>3 / 5</span></footer>
+</section>
+
+<section class="slide experiment" id="slide-4" aria-label="The experiment tests benefit and harm with matched controls">
+<header><span>Proposed experiment</span><span>Randomize treatment / blind scoring</span></header>
+<h1>Count every cell.<br>Keep benefit and harm visible.</h1>
+<figure class="diagram" aria-label="Matched model comparisons and complete cell-fate follow-up">
+<svg viewBox="0 0 1152 286" role="img" aria-label="Compare deficient and corrected models with vehicle and everolimus; enroll every cell, record first division and other fates, then follow daughter survival separately and report tracking loss">
+<title>Proposed cell tracking; no measured outcomes or assumed frequencies</title>
+<text x="0" y="37" class="large teal">Tissue-relevant function</text>
+<text x="0" y="90">Deficient vs corrected</text>
+<text x="0" y="134">Vehicle vs everolimus</text>
+<text x="0" y="222" class="small muted">Cis / trans / single / WT</text>
+<circle cx="444" cy="146" r="29" fill="#eae3f2" stroke="#634285" stroke-width="2"/>
+<circle cx="444" cy="146" r="10" fill="#c7addf"/>
+<text x="444" y="208" text-anchor="middle" class="small muted">Enroll</text>
+<path d="M483 146H549M549 146V66H616M549 146H616M549 146V231H616" fill="none" stroke="#634285" stroke-width="2" stroke-linecap="round"/>
+<text x="641" y="63" font-weight="700">First division</text>
+<text x="641" y="100" class="small muted">Accurate / error</text>
+<path d="M828 66H885" stroke="#17666c" stroke-width="2"/>
+<polygon points="894,66 882,59 882,73" fill="#17666c"/>
+<circle cx="939" cy="66" r="22" fill="#eae3f2" stroke="#17666c" stroke-width="2"/>
+<circle cx="1000" cy="66" r="22" fill="#eae3f2" stroke="#17666c" stroke-width="2"/>
+<text x="969" y="123" text-anchor="middle" class="small teal">Daughter survival</text>
+<text x="641" y="157">Death</text>
+<text x="641" y="242">Arrest / slippage</text>
+<text x="0" y="282" class="small teal">Track BUBR1 + flux</text>
+<text x="1130" y="282" text-anchor="end" class="small muted">Report tracking loss separately</text>
+</svg>
+</figure>
+<p class="note">A lower abnormal fraction among survivors can conceal harm.</p>
+<footer><span class="sources">Proposed comparisons. Full model controls and endpoints: <a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-validation-v10.md">validation plan</a>.</span><span>4 / 5</span></footer>
+</section>
+
+<section class="slide dark last" id="slide-5" aria-label="A conditional route to further preclinical work">
+<header><span>Decision after the experiment</span><span>Mechanistic proposal</span></header>
+<h1>What earns the<br>next experiment?</h1>
+<figure class="diagram" aria-label="All criteria are required to advance preclinically">
+<svg viewBox="0 0 1152 264" role="img" aria-label="All four criteria are required: functional benefit, acceptable deficient-normal safety, justified exposure, and replication across clones and days; otherwise stop advancement">
+<title>Proposed advancement criteria, not achieved outcomes</title>
+<text x="126" y="30" text-anchor="middle" class="large">Function</text>
+<text x="126" y="69" text-anchor="middle" class="small">Prespecified</text>
+<text x="126" y="100" text-anchor="middle" class="small">benefit</text>
+<text x="424" y="30" text-anchor="middle" class="large">Safety</text>
+<text x="424" y="69" text-anchor="middle" class="small">Acceptable injury to</text>
+<text x="424" y="100" text-anchor="middle" class="small">deficient-normal cells</text>
+<text x="722" y="30" text-anchor="middle" class="large">Exposure</text>
+<text x="722" y="69" text-anchor="middle" class="small">Justified</text>
+<text x="722" y="100" text-anchor="middle" class="small">concentration</text>
+<text x="1020" y="30" text-anchor="middle" class="large">Replication</text>
+<text x="1020" y="69" text-anchor="middle" class="small">Across clones</text>
+<text x="1020" y="100" text-anchor="middle" class="small">and days</text>
+<path d="M126 119V142H1020V119M424 119V142M722 119V142M576 142V171" fill="none" stroke="#c7addf" stroke-width="2" stroke-linecap="round"/>
+<polygon points="576,182 569,170 583,170" fill="#c7addf"/>
+<text x="629" y="176" class="small">All four required</text>
+<text x="576" y="221" text-anchor="middle" class="display">Further preclinical work</text>
+<text x="576" y="262" text-anchor="middle" class="small">Stop if any criterion is unmet or unresolved</text>
+</svg>
+</figure>
+<p class="note">Efficacy and clinical exposure margin unknown. Trans phase unconfirmed.<br>We thank the child, family and organizers.</p>
+<footer><span class="sources">AI: OpenAI API; Google DeepMind Atlas; Fireworks GLM.<br>Fireworks training/retention unverified. Full disclosure in report.</span><span>5 / 5</span></footer>
+</section>
+<nav aria-label="Slide navigation"><a href="#slide-1" aria-label="Slide 1">1</a><a href="#slide-2" aria-label="Slide 2">2</a><a href="#slide-3" aria-label="Slide 3">3</a><a href="#slide-4" aria-label="Slide 4">4</a><a href="#slide-5" aria-label="Slide 5">5</a></nav>
+</body>
+</html>

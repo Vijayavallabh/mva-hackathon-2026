@@ -92,12 +92,14 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-**Track 2 (feat-009) is in progress:** the [v9 adversarial audit](notes/track2-adversarial-v9.md)
-identified a missed everolimus-associated BUBR1 decrease and an incomplete treatment of
-adaptive mTORC1 activity. The [current v9 report](notes/track2-report-v9.md) withdraws the
-comparative rescue priority: everolimus is an optional, model-qualified mechanistic probe.
-No drug currently earns a rescue priority; HCQ remains reserve. Positive findings from
-other disease models remain visible, and no patient harm or benefit is inferred.
+**Track 2 (feat-009) is in progress:** the [first Firecrawl falsification cycle](notes/track2-falsification-cycle1.md)
+used 87 actual tool calls plus primary-paper and trial-registry retrieval to challenge
+the approach and its earlier rejection criteria. The [current v10 report](notes/track2-report-v10.md)
+separates excess-mTOR and flux/function hypotheses, strengthens regeneration and delayed
+injury checks, and retains favorable and unfavorable findings. Everolimus remains an
+optional, model-qualified mechanistic probe; HCQ remains reserve. No drug earns a rescue
+priority, and no patient benefit or harm is inferred. The [v9 audit](notes/track2-adversarial-v9.md)
+that withdrew the earlier priority is preserved.
 
 **Standing research objective:** actively and extensively seek evidence that could
 falsify the current approach, then use weaknesses and overlooked risks to revise or
@@ -105,15 +107,16 @@ abandon it when warranted. The [falsification plan](notes/track2-falsification-p
 requires reproducible searches, explicit overturning criteria and documented changes
 to decisions or experiments throughout the work, before candidate promotion or release.
 
-The [36-source/11-decision ledger](notes/track2-evidence-v9.json),
-[validation plan](notes/track2-validation-v9.md),
-[339-word pitch](notes/track2-pitch-v9.md) and [v9 deck](notes/track2-slides-v9.html)
-are bound by `scripts/track2_release_v9.py`. The protocol adds BUBR1/flux monitoring,
-competing mechanism tests and distinct precursor/mature-lineage endpoints. All five
-PDF pages were inspected; 450 Track 2 and 108 AlphaGenome tests pass. This is author
-verification with targeted primary reading, not a new independent or exhaustive review.
+The [52-source/11-decision ledger](notes/track2-evidence-v10.json),
+[validation plan](notes/track2-validation-v10.md),
+[339-word pitch](notes/track2-pitch-v10.md) and [v10 deck](notes/track2-slides-v10.html)
+are bound by `scripts/track2_release_v10.py` with the falsification review. The new
+package verifies six files/104 inputs and preserves v1-v9. All 471 Track 2 tests pass;
+the five rendered slides are pixel-identical to the inspected v9 slides, with the
+protocol link updated. Narration is unchanged. This is author adjudication with
+recorded reading depth and access failures, not a new independent or exhaustive review.
 Open the HTML locally or export with
-`uv run node scripts/render_track2_slides_v9.mjs NEW-OUTPUT-NAME`.
+`uv run node scripts/render_track2_slides_v10.mjs NEW-OUTPUT-NAME`.
 
 These are research materials, not a recorded video or submission. Fireworks API-credit
 use is owner-confirmed; training/retention settings remain unverified. Recording/hosting,
@@ -169,7 +172,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v6 disclosure names this route without
+GLM for public-literature synthesis; the current v10 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 

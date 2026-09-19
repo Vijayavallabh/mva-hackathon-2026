@@ -1,0 +1,879 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-19",
+  "baseline": "c97bfb1",
+  "interpretation": "Retrieval accounting, not numbers of validated studies or clinical evidence.",
+  "firecrawl_runs": [
+    {
+      "path": "results/feat009/falsification-firecrawl-discovery-v1",
+      "plan_sha256": "f666ed1d6376ba75abf478db5402e296e02e2efef7c7872efdfff2f9a139336e",
+      "script_sha256": "6f737677a5b2a88bf32497d8eac2541caed37804e19ac21d0c5d35c9a4aee071",
+      "counts": {
+        "ok": 36,
+        "tool_error": 5
+      },
+      "calls": [
+        {
+          "label": "evero_bubr1",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "9248555b1242caf9f0aff1b66c93a964c26212d260201eb0e0a4f7bd505499b4"
+        },
+        {
+          "label": "bubr1_degradation",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "73d6477360a1f89e1fcb75ded4e35a0e766b61f2ef511e0b786a2fcb0e56e0c2"
+        },
+        {
+          "label": "mtor_development",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "cf8635e381003cf7ec2a11938ef351d0e455afa27e0c60f96f58da50b5f96016"
+        },
+        {
+          "label": "rapa_bubr1_benefit",
+          "tool": "firecrawl_search",
+          "status": "tool_error",
+          "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0"
+        },
+        {
+          "label": "hcq_function",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "8fc70e391ee068e81e24b982fa4c95e6ecc01fd16cebb44d929e122ea7459f7b"
+        },
+        {
+          "label": "evero_kidney",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "67a3ab3763e72fed6e3f345a72d44f5f68a8929135cf55dc97ee0fb2c9bb8fd4"
+        },
+        {
+          "label": "rms_negative",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "f7a3e09321da54a40630d0edd6d892b16a6ed41a5cdcb3ae191dd8072182658b"
+        },
+        {
+          "label": "evero_failed_trial",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "45485471b76d4a01147b85bde0154c3492c68309a02c135b34f3af45ff48ad03"
+        },
+        {
+          "label": "correction_jci",
+          "tool": "firecrawl_search",
+          "status": "tool_error",
+          "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0"
+        },
+        {
+          "label": "pp2a_counter",
+          "tool": "firecrawl_search",
+          "status": "tool_error",
+          "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0"
+        },
+        {
+          "label": "papers_rescue",
+          "tool": "firecrawl_research_search_papers",
+          "status": "ok",
+          "sha256": "7327cb481970a58df263c0a569dd14669c1a085b6f7c99210523ea302ea1e952"
+        },
+        {
+          "label": "goutas_citers",
+          "tool": "firecrawl_research_related_papers",
+          "status": "ok",
+          "sha256": "3627873e23cd08657a1a9f303f469a8acd28cb0b837def07520e202db3f76bef"
+        },
+        {
+          "label": "north_references",
+          "tool": "firecrawl_research_related_papers",
+          "status": "ok",
+          "sha256": "35de23c0f9bd4a53555e65ba376f0b6705cd66fa31efa6e011ec75387aed4310"
+        },
+        {
+          "label": "read_sieben",
+          "tool": "firecrawl_research_read_paper",
+          "status": "ok",
+          "sha256": "a225eff5f1eb593b57f46f211ec80d8bc6a7484fa796bf6522eb2f2bf0b69b01"
+        },
+        {
+          "label": "bub1b_mtor",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "6ee4577474d9050fba46e65d7463b2d1be2bb09b1df63b177e413f01796fb441"
+        },
+        {
+          "label": "mtor_adaptive",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "dc898c9a9f0a604ee7a1b305db09559ebade6b2632d808cb9ac961c376079e6d"
+        },
+        {
+          "label": "bubr1_function",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "77a8b0d33861a1b1fc53f96b48edaeb03a66434f1cba08f7a18cb065b60910a0"
+        },
+        {
+          "label": "bubr1_nad_negative",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "870535f8c29a337c03e1181d11b45b2cbdca3bc2083052d0844aa966e8ec268c"
+        },
+        {
+          "label": "hcq_muscle",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "98e7398844b57577a7fca21888d4c441e83351ff9106f43ae050925b0394367b"
+        },
+        {
+          "label": "evero_exposure",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "429a2e69c4b790744d72ad94c856db6a87e67b23342238c2655848e43aec5912"
+        },
+        {
+          "label": "rms_hcq",
+          "tool": "firecrawl_search",
+          "status": "tool_error",
+          "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0"
+        },
+        {
+          "label": "hcq_failed_trial",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "bc085a31b3b2ab3bd7b657663cf825e7a47c667b31c1e808847e1c52d3139122"
+        },
+        {
+          "label": "interactions",
+          "tool": "firecrawl_search",
+          "status": "tool_error",
+          "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0"
+        },
+        {
+          "label": "papers_bubr1",
+          "tool": "firecrawl_research_search_papers",
+          "status": "ok",
+          "sha256": "8cca93344c980a70cb0d9db2fbdb19ad26042f85f51e816066040fc34efe54ad"
+        },
+        {
+          "label": "papers_hcq",
+          "tool": "firecrawl_research_search_papers",
+          "status": "ok",
+          "sha256": "501e3a1fc1949b9a2127898d752b9379da2d4db3aaeed653a473c6b14e4b7bcf"
+        },
+        {
+          "label": "sieben_references",
+          "tool": "firecrawl_research_related_papers",
+          "status": "ok",
+          "sha256": "3b1b859ebb4a5b7e8286d9a7905e234da3bcb263b951b9e742ddc5238c34122e"
+        },
+        {
+          "label": "north_citers",
+          "tool": "firecrawl_research_related_papers",
+          "status": "ok",
+          "sha256": "c7c45394dd5bf6b26915333a9e9eb24f1419a94a588a5088fbc81fa1d2cbe82e"
+        },
+        {
+          "label": "read_hgps",
+          "tool": "firecrawl_research_read_paper",
+          "status": "ok",
+          "sha256": "52bc257882377834fb53f0feb3b15a4b2d6fff6500ac6ddf29d259087aaf50a3"
+        },
+        {
+          "label": "rapa_missegregation",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "dea3d698fb962b7fdadda87faf867ce21449bf3d02ead9b16e533367b9932777"
+        },
+        {
+          "label": "mtor_regeneration",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "19b49ae5a170b1202fc9a9ad22e8125eb2db9602ee5f971a1043606f15c3378e"
+        },
+        {
+          "label": "mva_drug",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "00d1e3503d84ae73ad63b3ca04a009ba69cb90fd87ec521c4dfbf609fab85d2c"
+        },
+        {
+          "label": "bubr1_senolytic",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "d93a0232b7ec5ebaee0ba4b04dd5ba7e0bd0c41dc1af6b206508c4576b9990da"
+        },
+        {
+          "label": "evero_growth",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "591637be52da6c04a89f896e62a2272eb4717dc6576387d89c6c41b4355f9adc"
+        },
+        {
+          "label": "hcq_exposure",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "b1cd24cd1bff4ddc0298e2fc8678357ac558e529a78ea12a68db933340097108"
+        },
+        {
+          "label": "rms_prala",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "5ac1c1f56cdd145eb8a80c4c76a0384ce10212e930238eaf3b5e63bc42cef84c"
+        },
+        {
+          "label": "correction_goutas",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "522fbd1228c233632d7d8a85effe8ab31c6567b838f8546a441029f2ea399877"
+        },
+        {
+          "label": "readthrough_counter",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "91e67a9b19093ba76a3b84451136a38010e74df238c52b777b3a9cb9724020e0"
+        },
+        {
+          "label": "papers_muscle",
+          "tool": "firecrawl_research_search_papers",
+          "status": "ok",
+          "sha256": "5f0d8489cdb164369622722ea31d500093a7f55a3ac5b40d9263762104c42991"
+        },
+        {
+          "label": "goutas_references",
+          "tool": "firecrawl_research_related_papers",
+          "status": "ok",
+          "sha256": "60d87b4133f94d7e6108978098a55ae1418140867d1aa61eefd56c22be53ae2e"
+        },
+        {
+          "label": "sieben_citers",
+          "tool": "firecrawl_research_related_papers",
+          "status": "ok",
+          "sha256": "47e6a23b45718fc86ccd58b644abd1651deb83da6a01a1fa11135b6c0ff4a38d"
+        },
+        {
+          "label": "read_goutas",
+          "tool": "firecrawl_research_read_paper",
+          "status": "ok",
+          "sha256": "57d969348e5ac15a550e8d525e61c8b716d1753a59e899a52f2aacab7a7b6dd3"
+        }
+      ]
+    },
+    {
+      "path": "results/feat009/falsification-firecrawl-followup-v1",
+      "plan_sha256": "974f0f1bdc0b61a1543c0f59aa724edea417836b67113b755c0e694eb4dec601",
+      "script_sha256": "6f737677a5b2a88bf32497d8eac2541caed37804e19ac21d0c5d35c9a4aee071",
+      "counts": {
+        "TimeoutError": 1,
+        "empty": 3,
+        "ok": 22,
+        "tool_error": 7
+      },
+      "calls": [
+        {
+          "label": "regeneration_metadata",
+          "tool": "firecrawl_research_inspect_paper",
+          "status": "ok",
+          "sha256": "424a8977ec4d717a6f6d852c603bdcb63176e6610a09658d042baca746ec0234"
+        },
+        {
+          "label": "satellite_read",
+          "tool": "firecrawl_research_read_paper",
+          "status": "empty",
+          "sha256": "73b86afe75c601972035b9ac8ab2946645d36235a298571b9b6fd65b20a92500"
+        },
+        {
+          "label": "partial_mtor_metadata",
+          "tool": "firecrawl_research_inspect_paper",
+          "status": "ok",
+          "sha256": "0f3301543ea121ae37d48849552cfe141d7345d88d23a82ab9b2550165e59da2"
+        },
+        {
+          "label": "hcq_myopathy_read",
+          "tool": "firecrawl_research_read_paper",
+          "status": "ok",
+          "sha256": "d59b3f3491d1ae3786dd7af85b5f716735cea89bec2eef9a629aac82fed7a5dc"
+        },
+        {
+          "label": "hcq_ovarian_metadata",
+          "tool": "firecrawl_research_inspect_paper",
+          "status": "ok",
+          "sha256": "0b4708b46e81d668c72087dc9d986952478c288eb9b0250a221a5245159d6100"
+        },
+        {
+          "label": "bonatti_read",
+          "tool": "firecrawl_research_read_paper",
+          "status": "empty",
+          "sha256": "73b86afe75c601972035b9ac8ab2946645d36235a298571b9b6fd65b20a92500"
+        },
+        {
+          "label": "regeneration_scrape",
+          "tool": "firecrawl_scrape",
+          "status": "tool_error",
+          "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0"
+        },
+        {
+          "label": "hcq_myopathy_scrape",
+          "tool": "firecrawl_scrape",
+          "status": "tool_error",
+          "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0"
+        },
+        {
+          "label": "growth_registry",
+          "tool": "firecrawl_scrape",
+          "status": "ok",
+          "sha256": "eeb3180fa63706a8ce79e2568c1f044e02a368c396caac25edc11b2799012c73"
+        },
+        {
+          "label": "rescue_bibliographic",
+          "tool": "firecrawl_research_search_papers",
+          "status": "ok",
+          "sha256": "51af763e9784fa09204e63d4ca5beede12537901a8087c2cec9f703f76b59f2e"
+        },
+        {
+          "label": "goutas_identity",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "e8f34ac6237418ed65cb9a362140817cc4316a90373407ef876aa840cef39a0d"
+        },
+        {
+          "label": "regeneration_read",
+          "tool": "firecrawl_research_read_paper",
+          "status": "TimeoutError",
+          "sha256": null
+        },
+        {
+          "label": "hypercapnia_metadata",
+          "tool": "firecrawl_research_inspect_paper",
+          "status": "ok",
+          "sha256": "c04d83cc985c7a1977ce37d1da3aa6a05a22562c203bc95f0e0fe6ec0c44c8b4"
+        },
+        {
+          "label": "partial_mtor_read",
+          "tool": "firecrawl_research_read_paper",
+          "status": "ok",
+          "sha256": "91ba9a8c182fc9b73c48c0697a9a52315a537aa27c0e2611ab11df2f962e3921"
+        },
+        {
+          "label": "hematocrit_metadata",
+          "tool": "firecrawl_research_inspect_paper",
+          "status": "ok",
+          "sha256": "1b9f10690aca3e09adf569dcbe0dac74a50cfcd2b22dba7b5ef539a1d88e99e5"
+        },
+        {
+          "label": "hcq_ovarian_read",
+          "tool": "firecrawl_research_read_paper",
+          "status": "ok",
+          "sha256": "fa8cde683c9c78505e030f2f1997e39504a6c2ec27e2d2f6c12769de989c5a82"
+        },
+        {
+          "label": "cohesin2026_metadata",
+          "tool": "firecrawl_research_inspect_paper",
+          "status": "ok",
+          "sha256": "eebb30a0ba65331a17aedbf07729d0282e1ad3f1fb90bc31ebee95740470307e"
+        },
+        {
+          "label": "satellite_scrape",
+          "tool": "firecrawl_scrape",
+          "status": "tool_error",
+          "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0"
+        },
+        {
+          "label": "hematocrit_scrape",
+          "tool": "firecrawl_scrape",
+          "status": "tool_error",
+          "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0"
+        },
+        {
+          "label": "evero_pediatric_registry",
+          "tool": "firecrawl_scrape",
+          "status": "ok",
+          "sha256": "a76602accb13a7e85d37dab582e33f062dbbd567d2c4eec7e610844812bb15e0"
+        },
+        {
+          "label": "hcq_rms_bibliographic",
+          "tool": "firecrawl_research_search_papers",
+          "status": "ok",
+          "sha256": "56aae9fad752bf943c9fc1377f3d8208071b32303a38e7c596655a6417d4b530"
+        },
+        {
+          "label": "growth_results",
+          "tool": "firecrawl_search",
+          "status": "ok",
+          "sha256": "9f6177eace6b2da5a09f336f904a4811cd4625b5b39c252f76096860bad0e1b1"
+        },
+        {
+          "label": "satellite_metadata",
+          "tool": "firecrawl_research_inspect_paper",
+          "status": "ok",
+          "sha256": "f410376f43a6813d2d9d89a5f04c9a254eed2f20600e633da7394e54aabbc66b"
+        },
+        {
+          "label": "hypercapnia_read",
+          "tool": "firecrawl_research_read_paper",
+          "status": "ok",
+          "sha256": "0d97b15045beb9ab25fc0374e5a71d4f45617576ed8e9e8c3097e56938d0f61e"
+        },
+        {
+          "label": "hcq_myopathy_metadata",
+          "tool": "firecrawl_research_inspect_paper",
+          "status": "ok",
+          "sha256": "89325f0153c2703fdca3b92d5d49ac8cb46cd4a89e6d5035193c414d76373fb6"
+        },
+        {
+          "label": "hematocrit_read",
+          "tool": "firecrawl_research_read_paper",
+          "status": "ok",
+          "sha256": "8da1d6f7cf1679ad0fbd7345239da52a0cdd47a80f70ec9f24dc476509fc7447"
+        },
+        {
+          "label": "bonatti_metadata",
+          "tool": "firecrawl_research_inspect_paper",
+          "status": "ok",
+          "sha256": "e8dfc047737ac0df724bc85f91ebe22934e4b0428fbdc1e7137b1eaa183fa1ee"
+        },
+        {
+          "label": "cohesin2026_read",
+          "tool": "firecrawl_research_read_paper",
+          "status": "empty",
+          "sha256": "73b86afe75c601972035b9ac8ab2946645d36235a298571b9b6fd65b20a92500"
+        },
+        {
+          "label": "partial_mtor_scrape",
+          "tool": "firecrawl_scrape",
+          "status": "tool_error",
+          "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0"
+        },
+        {
+          "label": "hcq_ovarian_scrape",
+          "tool": "firecrawl_scrape",
+          "status": "tool_error",
+          "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0"
+        },
+        {
+          "label": "hcq_terminated_registry",
+          "tool": "firecrawl_scrape",
+          "status": "ok",
+          "sha256": "c4f852f42fe5fb239e1c3a93b28e64b136464d28f8536774bc32f8c16651b367"
+        },
+        {
+          "label": "pp2a_bibliographic",
+          "tool": "firecrawl_research_search_papers",
+          "status": "ok",
+          "sha256": "0d6971d7e17632af260d1a560331a06d2a0a7ebc3f2478be61d5f3808226d965"
+        },
+        {
+          "label": "hcq_ovarian_results",
+          "tool": "firecrawl_search",
+          "status": "tool_error",
+          "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0"
+        }
+      ]
+    },
+    {
+      "path": "results/feat009/falsification-firecrawl-primary-v1",
+      "plan_sha256": "0d4cb6ff20ea56554be3f7f9e1430c86635f98351cd727e531e8f60ccc27d35e",
+      "script_sha256": "6f737677a5b2a88bf32497d8eac2541caed37804e19ac21d0c5d35c9a4aee071",
+      "counts": {
+        "TimeoutError": 1,
+        "ok": 5,
+        "tool_error": 2
+      },
+      "calls": [
+        {
+          "label": "hypercapnia_gate",
+          "tool": "firecrawl_research_read_paper",
+          "status": "ok",
+          "sha256": "1f25f04fa5779e135a9c6988afcff88a15401f47b1c7638c11d7bd32e4be77fd"
+        },
+        {
+          "label": "regeneration_abstract",
+          "tool": "firecrawl_research_read_paper",
+          "status": "TimeoutError",
+          "sha256": null
+        },
+        {
+          "label": "hypercapnia_full",
+          "tool": "firecrawl_scrape",
+          "status": "tool_error",
+          "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0"
+        },
+        {
+          "label": "partial_mtor_gate",
+          "tool": "firecrawl_research_read_paper",
+          "status": "ok",
+          "sha256": "8be7bd9e1d3be16786047b342eb99bfda429780cd5aace55c1c1ccf3263b7aa7"
+        },
+        {
+          "label": "everolimus_label",
+          "tool": "firecrawl_scrape",
+          "status": "ok",
+          "sha256": "629992a017570feb031d2e24e938d411383e7d569ea1e45914a6386eea58b658"
+        },
+        {
+          "label": "monoallelic_full",
+          "tool": "firecrawl_scrape",
+          "status": "tool_error",
+          "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0"
+        },
+        {
+          "label": "monoallelic_taxol",
+          "tool": "firecrawl_research_read_paper",
+          "status": "ok",
+          "sha256": "923fd714ec6256f408f3ea9bab895e81461cc196ed358f3b470e9a97462c93d6"
+        },
+        {
+          "label": "sieben_correction",
+          "tool": "firecrawl_scrape",
+          "status": "ok",
+          "sha256": "564e38727979b85ccfaf6c499ec0957b2a40bd6ef9c66cca789d2d506ecd10c8"
+        }
+      ]
+    },
+    {
+      "path": "results/feat009/falsification-firecrawl-closure-v1",
+      "plan_sha256": "306988beb79efec0c108247595d179cd9de35134e893f0714337cfca0d0d0a54",
+      "script_sha256": "b767877321f803d5eed757cf861934faf3fce21d1457f40a1f9a28e72b022671",
+      "counts": {
+        "ok": 5
+      },
+      "calls": [
+        {
+          "label": "cardiac_development_metadata",
+          "tool": "firecrawl_research_inspect_paper",
+          "status": "ok",
+          "sha256": "ff6b6f993bb222671fc6f64bf6db4f310e989144ef3d71ce2b117de1f8a4611d"
+        },
+        {
+          "label": "hcq_rms_primary_read",
+          "tool": "firecrawl_research_read_paper",
+          "status": "ok",
+          "sha256": "512c51aa6657d88099ca1543a806b6d693039d341cfffb1731f6e2d614723c8c"
+        },
+        {
+          "label": "cardiac_development_read",
+          "tool": "firecrawl_research_read_paper",
+          "status": "ok",
+          "sha256": "0aedb3ea2405822623b6c105955f3eda7ea4c0ac323f3ebb7f97ba204f0b5617"
+        },
+        {
+          "label": "regeneration_identity_metadata",
+          "tool": "firecrawl_research_inspect_paper",
+          "status": "ok",
+          "sha256": "71ba31a9790e6759530552a750941f59fa39d8ac78eb61347eac0003033e1737"
+        },
+        {
+          "label": "hcq_rms_primary_metadata",
+          "tool": "firecrawl_research_inspect_paper",
+          "status": "ok",
+          "sha256": "a42f0c0129cbae8512ec06c8929b23fc4ee2fea663c2481694fc62a42eaec7f5"
+        }
+      ]
+    }
+  ],
+  "structured_runs": [
+    {
+      "path": "results/feat009/falsification-primary-records-v1",
+      "plan_sha256": "e7738d31b6b9383e9adcb37a0d9e3c6af0b26d833fa3d573093c72f33df72f24",
+      "script_sha256": "29edacf4f645fa0e5ef9d6be8af83983e5df9b6a66613d8606ad1983d1f18bb9",
+      "records": [
+        {
+          "id": "regeneration",
+          "format": "xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2793064/fullTextXML",
+          "started_utc": "2026-09-19T14:18:42.211660+00:00",
+          "status": "http_error",
+          "http_status": 500,
+          "ended_utc": "2026-09-19T14:18:42.933023+00:00"
+        },
+        {
+          "id": "satellite",
+          "format": "xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4484853/fullTextXML",
+          "started_utc": "2026-09-19T14:18:42.212478+00:00",
+          "status": "http_error",
+          "http_status": 500,
+          "ended_utc": "2026-09-19T14:18:42.999414+00:00"
+        },
+        {
+          "id": "partial_mtor",
+          "format": "xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6751631/fullTextXML",
+          "started_utc": "2026-09-19T14:18:42.218662+00:00",
+          "status": "ok",
+          "bytes": 147733,
+          "sha256": "6b080a133ecaddbea4725073c26311687209fa78f2d0e2d2a815764c5b94bfc3",
+          "ended_utc": "2026-09-19T14:18:43.573231+00:00"
+        },
+        {
+          "id": "hcq_myopathy",
+          "format": "xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7884308/fullTextXML",
+          "started_utc": "2026-09-19T14:18:42.933138+00:00",
+          "status": "ok",
+          "bytes": 94459,
+          "sha256": "a119ac6b76c8fa603c1f56f82cc482799bc745e6f06822eec5f9f7dbcb470b17",
+          "ended_utc": "2026-09-19T14:18:44.071085+00:00"
+        },
+        {
+          "id": "hematocrit",
+          "format": "xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5069307/fullTextXML",
+          "started_utc": "2026-09-19T14:18:42.999551+00:00",
+          "status": "ok",
+          "bytes": 90238,
+          "sha256": "ebfa49930a4244424b464733d2e71cca9cf3e188056c899bdd4d64eb70e4549c",
+          "ended_utc": "2026-09-19T14:18:44.086404+00:00"
+        },
+        {
+          "id": "hcq_ovarian",
+          "format": "xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11839959/fullTextXML",
+          "started_utc": "2026-09-19T14:18:43.573470+00:00",
+          "status": "ok",
+          "bytes": 95906,
+          "sha256": "9d64fd7e045a91496b8909e2beed82438a421fdcc38dab8e70aa4da123416f16",
+          "ended_utc": "2026-09-19T14:18:44.770672+00:00"
+        },
+        {
+          "id": "hypercapnia_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A39589836%20AND%20SRC%3AMED&format=json&resultType=core&pageSize=20",
+          "started_utc": "2026-09-19T14:18:44.071223+00:00",
+          "status": "ok",
+          "bytes": 8876,
+          "sha256": "6487d0f7529327826689dab4b6b4d0f2b2f202254ab3e932b40517272b9b9fc4",
+          "ended_utc": "2026-09-19T14:18:44.816561+00:00"
+        },
+        {
+          "id": "bonatti_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A9914383%20AND%20SRC%3AMED&format=json&resultType=core&pageSize=20",
+          "started_utc": "2026-09-19T14:18:44.086542+00:00",
+          "status": "ok",
+          "bytes": 7188,
+          "sha256": "7b41f7c6e24c0cb3daef90957f1028ae2a44f48d7fcfdb1c69e2c69df519e7bb",
+          "ended_utc": "2026-09-19T14:18:44.818389+00:00"
+        },
+        {
+          "id": "cohesin_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1093%2Fbbb%2Fzbag087&format=json&resultType=core&pageSize=20",
+          "started_utc": "2026-09-19T14:18:44.770815+00:00",
+          "status": "ok",
+          "bytes": 8999,
+          "sha256": "6597f34ca373383f040a1f744339d6c51ee7ea467c19d86b457ddd3e6a81157d",
+          "ended_utc": "2026-09-19T14:18:45.652523+00:00"
+        },
+        {
+          "id": "monoallelic_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1186%2Fs12929-024-01056-z&format=json&resultType=core&pageSize=20",
+          "started_utc": "2026-09-19T14:18:44.816631+00:00",
+          "status": "ok",
+          "bytes": 16132,
+          "sha256": "dc5e289e314e5710eb1a5eb1e8d2929647411aa0a4041328803e0c7b83ca99da",
+          "ended_utc": "2026-09-19T14:18:46.047913+00:00"
+        },
+        {
+          "id": "goutas_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1016%2Fj.redox.2023.102701&format=json&resultType=core&pageSize=20",
+          "started_utc": "2026-09-19T14:18:44.818475+00:00",
+          "status": "ok",
+          "bytes": 8679,
+          "sha256": "f8ea5def5cea671f4595a91a0574f68ed5a135b66d2540b611ae0c21dde987f7",
+          "ended_utc": "2026-09-19T14:18:45.814742+00:00"
+        },
+        {
+          "id": "sieben_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1172%2FJCI126863&format=json&resultType=core&pageSize=20",
+          "started_utc": "2026-09-19T14:18:45.652610+00:00",
+          "status": "ok",
+          "bytes": 9750,
+          "sha256": "f2708513354ed1753d6238e07e6d230c1aeeb70def669456d345e0985c6928b6",
+          "ended_utc": "2026-09-19T14:18:46.442833+00:00"
+        },
+        {
+          "id": "hcq_rms_complement",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=hydroxychloroquine%20AND%20rhabdomyosarcoma&format=json&resultType=core&pageSize=20",
+          "started_utc": "2026-09-19T14:18:45.814802+00:00",
+          "status": "ok",
+          "bytes": 129620,
+          "sha256": "17e54f30df899e7722940b6248d0581e4512bf89ea9f3be1e71853cceb3482e8",
+          "ended_utc": "2026-09-19T14:18:47.755592+00:00"
+        },
+        {
+          "id": "bubr1_rescue_complement",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28BUBR1%20OR%20BUB1B%29%20AND%20%28rapamycin%20OR%20everolimus%20OR%20rescue%29&format=json&resultType=core&pageSize=20",
+          "started_utc": "2026-09-19T14:18:46.047977+00:00",
+          "status": "ok",
+          "bytes": 149004,
+          "sha256": "916d210380764a076128e56eda05ab1e88b73d48f3e2a960b4714e31364aa458",
+          "ended_utc": "2026-09-19T14:18:49.307827+00:00"
+        },
+        {
+          "id": "growth_registry",
+          "format": "json",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT02338609",
+          "started_utc": "2026-09-19T14:18:46.442904+00:00",
+          "status": "ok",
+          "bytes": 112055,
+          "sha256": "a2a415c6e396f45623126a2fa2ae5b1786b40128d756d651818095ddf01b5ece",
+          "ended_utc": "2026-09-19T14:18:47.466860+00:00"
+        },
+        {
+          "id": "evero_pediatric_registry",
+          "format": "json",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT01216839",
+          "started_utc": "2026-09-19T14:18:47.466940+00:00",
+          "status": "ok",
+          "bytes": 7237,
+          "sha256": "91dff7026bfd5869d4f857d4b8a37921994033a7d6f17de0ad89fad48e5403d3",
+          "ended_utc": "2026-09-19T14:18:47.938032+00:00"
+        },
+        {
+          "id": "hcq_terminated_registry",
+          "format": "json",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT00786682",
+          "started_utc": "2026-09-19T14:18:47.755695+00:00",
+          "status": "ok",
+          "bytes": 24392,
+          "sha256": "d2d39ebffe5975035b5946605496cd61355506b534c6496547ff843bff32f5b1",
+          "ended_utc": "2026-09-19T14:18:48.244703+00:00"
+        },
+        {
+          "id": "arst1431_registry",
+          "format": "json",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT02567435",
+          "started_utc": "2026-09-19T14:18:47.938093+00:00",
+          "status": "ok",
+          "bytes": 265518,
+          "sha256": "effd16029a6b8a35bbbc61e1f58ef037981d92196f28a872bb32c7142ec7326f",
+          "ended_utc": "2026-09-19T14:18:49.032513+00:00"
+        }
+      ]
+    },
+    {
+      "path": "results/feat009/falsification-primary-records-supplement-v1",
+      "plan_sha256": "ed6848b4ace0c4e848703875b535986722f27650bbc6346df3c6e7dd9054a20c",
+      "script_sha256": "37015ca024c9f03464222adcd9ee371474e28852ab837eb33c8365b736b3a9a5",
+      "records": [
+        {
+          "id": "hypercapnia",
+          "format": "xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11721297/fullTextXML",
+          "started_utc": "2026-09-19T14:20:37.421851+00:00",
+          "status": "ok",
+          "bytes": 196128,
+          "sha256": "389dd8cc8c9eb62a8271fc794289f867658394f90aa8985372a3dedaa0d56f28",
+          "ended_utc": "2026-09-19T14:20:39.138292+00:00"
+        },
+        {
+          "id": "monoallelic",
+          "format": "xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11251299/fullTextXML",
+          "started_utc": "2026-09-19T14:20:37.423275+00:00",
+          "status": "ok",
+          "bytes": 152804,
+          "sha256": "0eb54e0f87ad100d62da9321097110e44f03f94499d0ec7e5eed6f3d1f7b0684",
+          "ended_utc": "2026-09-19T14:20:39.097007+00:00"
+        },
+        {
+          "id": "regeneration_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A19828831%20AND%20SRC%3AMED&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-19T14:20:37.424214+00:00",
+          "status": "ok",
+          "bytes": 5592,
+          "sha256": "4baf0c3d153841100e9eab3c405dce56c4816eb260630f1e7b771b2f9c7b6c8b",
+          "ended_utc": "2026-09-19T14:20:38.419292+00:00"
+        },
+        {
+          "id": "satellite_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID%3APMC4484853&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-19T14:20:38.419396+00:00",
+          "status": "ok",
+          "bytes": 11635,
+          "sha256": "55ff7beb64cdb1084bf455e0d8444f82dfb7fa967cd20a10b403e5621efbb3a7",
+          "ended_utc": "2026-09-19T14:20:39.106266+00:00"
+        },
+        {
+          "id": "north_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.15252%2Fembj.201386907&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-19T14:20:39.097458+00:00",
+          "status": "ok",
+          "bytes": 11470,
+          "sha256": "22c227fb67b9c7277ca0b611b0feffb41f56cacf69b701f5849acf3d30cc5efe",
+          "ended_utc": "2026-09-19T14:20:40.021061+00:00"
+        },
+        {
+          "id": "partial_mtor_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID%3APMC6751631&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-19T14:20:39.106350+00:00",
+          "status": "ok",
+          "bytes": 7964,
+          "sha256": "69ccb60c81563b7ccb8cbe9ae12a44a7d4d6d7e707332807467ef32f28a0042b",
+          "ended_utc": "2026-09-19T14:20:39.782781+00:00"
+        },
+        {
+          "id": "hcq_myopathy_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID%3APMC7884308&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-19T14:20:39.138685+00:00",
+          "status": "ok",
+          "bytes": 5759,
+          "sha256": "a88f6c018c2c25bb76ec2728aef0282b0483a2df05a77b35818331491820fd11",
+          "ended_utc": "2026-09-19T14:20:39.821697+00:00"
+        },
+        {
+          "id": "hcq_ovarian_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID%3APMC11839959&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-19T14:20:39.782854+00:00",
+          "status": "ok",
+          "bytes": 8978,
+          "sha256": "33999da2348ce11b370dde9eac502807f17049b55fba4667e45febded8219d4e",
+          "ended_utc": "2026-09-19T14:20:40.475250+00:00"
+        },
+        {
+          "id": "hematocrit_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID%3APMC5069307&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-19T14:20:39.821784+00:00",
+          "status": "ok",
+          "bytes": 8915,
+          "sha256": "e2691a499cd3e37963e2beafd55a07fd041018fdfc5c1cd2fc6be08929ea4e3e",
+          "ended_utc": "2026-09-19T14:20:40.515264+00:00"
+        }
+      ]
+    }
+  ],
+  "firecrawl_total_calls": 87,
+  "firecrawl_status_counts": {
+    "ok": 68,
+    "tool_error": 14,
+    "TimeoutError": 2,
+    "empty": 3
+  },
+  "web_result_rows": 180,
+  "distinct_exact_web_urls": 173,
+  "bibliographic_returned_rows": 161,
+  "distinct_bibliographic_identifiers": 145,
+  "rejected_identity_record": {
+    "path": "results/feat009/falsification-primary-records-supplement-v1/regeneration_metadata.json",
+    "requested_pmid": "19828831",
+    "actual_topic": "GPCR analgesia, unrelated",
+    "correct_pmid": "19794149",
+    "correct_pmcid": "PMC2793064",
+    "confirmation": "Firecrawl closure regeneration_identity_metadata; active plan corrected and guarded."
+  }
+}

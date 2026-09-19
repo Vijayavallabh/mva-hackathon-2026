@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-19",
+  "scope": "Adaptive primary full text and indexed-metadata/correction checks; new records, not repeated failed downloads",
+  "records": [
+    {
+      "id": "hypercapnia",
+      "format": "xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11721297/fullTextXML"
+    },
+    {
+      "id": "monoallelic",
+      "format": "xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11251299/fullTextXML"
+    },
+    {
+      "id": "regeneration_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A19794149%20AND%20SRC%3AMED&format=json&resultType=core&pageSize=1",
+      "expected_pmcid": "PMC2793064"
+    },
+    {
+      "id": "satellite_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID%3APMC4484853&format=json&resultType=core&pageSize=1"
+    },
+    {
+      "id": "north_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.15252%2Fembj.201386907&format=json&resultType=core&pageSize=1"
+    },
+    {
+      "id": "partial_mtor_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID%3APMC6751631&format=json&resultType=core&pageSize=1"
+    },
+    {
+      "id": "hcq_myopathy_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID%3APMC7884308&format=json&resultType=core&pageSize=1"
+    },
+    {
+      "id": "hcq_ovarian_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID%3APMC11839959&format=json&resultType=core&pageSize=1"
+    },
+    {
+      "id": "hematocrit_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID%3APMC5069307&format=json&resultType=core&pageSize=1"
+    }
+  ],
+  "revision_note": "The first archived run used an incorrect regeneration PMID (19828831), rejected as unrelated. The active plan uses verified PMID 19794149 and a PMCID identity guard. Original plan bytes remain in that run archive."
+}

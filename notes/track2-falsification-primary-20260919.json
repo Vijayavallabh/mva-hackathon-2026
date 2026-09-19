@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-19",
+  "scope": "Resolve potentially decision-changing model qualification and normal-tissue risks from discovery; no new drug ranking presumed",
+  "calls": [
+    {
+      "label": "hypercapnia_gate",
+      "claim": "F2",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC11721297",
+        "question": "Did hypercapnia increase mTOR signaling or p-ULK1 S757 before treatment? Give Figure 9 results and the rapamycin methods, dose, duration, control and myogenesis endpoints.",
+        "k": 10
+      }
+    },
+    {
+      "label": "partial_mtor_gate",
+      "claim": "F8",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC6751631",
+        "question": "RAD001 at 0.15 versus 0.5 mg/kg: muscle mass, force or strength, autophagy flux versus static markers, randomization and blinding; show methods and failed endpoints.",
+        "k": 10
+      }
+    },
+    {
+      "label": "monoallelic_taxol",
+      "claim": "F7",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC11251299",
+        "question": "Which BUB1B variants and cell lines were assayed for Taxol response? Dose, duration, survival/apoptosis/resistance and scope limits; distinguish selected variants from other variants.",
+        "k": 10
+      }
+    },
+    {
+      "label": "regeneration_abstract",
+      "claim": "F6",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC2793064",
+        "question": "What are the rapamycin mouse regeneration results and exact methods; if only abstract accessible state that limitation?",
+        "k": 10
+      }
+    },
+    {
+      "label": "everolimus_label",
+      "claim": "F6",
+      "tool": "firecrawl_scrape",
+      "arguments": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f1ae129-c21e-4c25-84c1-a6757d9a7eb2",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "label": "sieben_correction",
+      "claim": "F1",
+      "tool": "firecrawl_scrape",
+      "arguments": {
+        "url": "https://www.jci.org/articles/view/144781",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "label": "hypercapnia_full",
+      "claim": "F2",
+      "tool": "firecrawl_scrape",
+      "arguments": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11721297/",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "label": "monoallelic_full",
+      "claim": "F7",
+      "tool": "firecrawl_scrape",
+      "arguments": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11251299/",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    }
+  ]
+}

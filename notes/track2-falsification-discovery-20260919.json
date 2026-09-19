@@ -1,0 +1,420 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-19",
+  "baseline": "c97bfb1",
+  "scope": "public literature, no lower date cutoff; bounded first 8 web / 12 paper / 15 related results; no exhaustive claim",
+  "claims": {
+    "F1": "The selected-gene model can inform a drug experiment; challenge allele, phase, residual-function and tissue transfer assumptions.",
+    "F2": "mTOR inhibition might improve a qualified deficit; reject directional inference if activation is compensatory or fidelity/function worsens.",
+    "F3": "BUBR1 abundance changes might be useful; reject rescue inference without localization, checkpoint and tissue function.",
+    "F4": "An apparent response is functional benefit; reject if explained by arrest, cell loss, survivor selection or lost later output.",
+    "F5": "A usable exposure window might exist; reject unsupported nominal-culture to clinical-exposure bridging.",
+    "F6": "Non-cancer safety might be adequate; challenge developmental, muscle, renal, immune and interaction assumptions.",
+    "F7": "Tumour evidence might support a separate direction; challenge subtype/backbone and normal-tissue selectivity transfer.",
+    "F8": "No better-supported alternative is currently prioritized; seek genuine functional counterexamples and failed rescue routes."
+  },
+  "calls": [
+    {
+      "label": "evero_bubr1",
+      "claim": "F2",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "everolimus BUBR1 autophagy checkpoint",
+        "limit": 8
+      }
+    },
+    {
+      "label": "bub1b_mtor",
+      "claim": "F2",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "BUB1B mTOR inhibition chromosome segregation",
+        "limit": 8
+      }
+    },
+    {
+      "label": "rapa_missegregation",
+      "claim": "F4",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "rapamycin chromosome instability mitotic slippage normal cells",
+        "limit": 8
+      }
+    },
+    {
+      "label": "bubr1_degradation",
+      "claim": "F3",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "BUBR1 autophagy degradation senescence everolimus hydroxychloroquine",
+        "limit": 8
+      }
+    },
+    {
+      "label": "mtor_adaptive",
+      "claim": "F2",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "mTORC1 compensatory activation muscle denervation rapamycin atrophy",
+        "limit": 8
+      }
+    },
+    {
+      "label": "mtor_regeneration",
+      "claim": "F6",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "rapamycin skeletal muscle satellite cell regeneration inhibition",
+        "limit": 8
+      }
+    },
+    {
+      "label": "mtor_development",
+      "claim": "F6",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "Raptor loss muscle development growth mTORC1 inhibition",
+        "limit": 8
+      }
+    },
+    {
+      "label": "bubr1_function",
+      "claim": "F1",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "BUB1B mosaic variegated aneuploidy residual protein checkpoint function mutation",
+        "limit": 8
+      }
+    },
+    {
+      "label": "mva_drug",
+      "claim": "F8",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "\"mosaic variegated aneuploidy\" drug treatment rescue",
+        "limit": 8
+      }
+    },
+    {
+      "label": "rapa_bubr1_benefit",
+      "claim": "F8",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "BubR1 deficient mice rapamycin lifespan rescue",
+        "limit": 8
+      }
+    },
+    {
+      "label": "bubr1_nad_negative",
+      "claim": "F8",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "BubR1 SIRT2 nicotinamide mononucleotide failed rescue lifespan",
+        "limit": 8
+      }
+    },
+    {
+      "label": "bubr1_senolytic",
+      "claim": "F8",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "BubR1 senolytic drug functional rescue toxicity",
+        "limit": 8
+      }
+    },
+    {
+      "label": "hcq_function",
+      "claim": "F3",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "hydroxychloroquine BUBR1 mitosis chromosome function",
+        "limit": 8
+      }
+    },
+    {
+      "label": "hcq_muscle",
+      "claim": "F6",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "hydroxychloroquine myopathy autophagy muscle biopsy clinical study",
+        "limit": 8
+      }
+    },
+    {
+      "label": "evero_growth",
+      "claim": "F6",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "everolimus pediatric growth puberty long term tuberous sclerosis adverse effects",
+        "limit": 8
+      }
+    },
+    {
+      "label": "evero_kidney",
+      "claim": "F6",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "everolimus kidney injury proteinuria pediatric infection trial safety",
+        "limit": 8
+      }
+    },
+    {
+      "label": "evero_exposure",
+      "claim": "F5",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "everolimus unbound plasma whole blood tissue pharmacokinetics protein binding",
+        "limit": 8
+      }
+    },
+    {
+      "label": "hcq_exposure",
+      "claim": "F5",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "hydroxychloroquine oncology trial exposure autophagy inhibition toxicity 1200",
+        "limit": 8
+      }
+    },
+    {
+      "label": "rms_negative",
+      "claim": "F7",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "rhabdomyosarcoma temsirolimus ARST1431 ARST0921 toxicity randomized",
+        "limit": 8
+      }
+    },
+    {
+      "label": "rms_hcq",
+      "claim": "F7",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "rhabdomyosarcoma hydroxychloroquine autophagy inhibition normal cells",
+        "limit": 8
+      }
+    },
+    {
+      "label": "rms_prala",
+      "claim": "F7",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "pralatrexate fusion positive rhabdomyosarcoma recurrence toxicity",
+        "limit": 8
+      }
+    },
+    {
+      "label": "evero_failed_trial",
+      "claim": "F7",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "site:clinicaltrials.gov everolimus rhabdomyosarcoma terminated results",
+        "limit": 8
+      }
+    },
+    {
+      "label": "hcq_failed_trial",
+      "claim": "F7",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "site:clinicaltrials.gov hydroxychloroquine cancer terminated results",
+        "limit": 8
+      }
+    },
+    {
+      "label": "correction_goutas",
+      "claim": "F3",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "\"10.1016/j.redox.2023.102701\" correction retraction",
+        "limit": 8
+      }
+    },
+    {
+      "label": "correction_jci",
+      "claim": "F1",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "\"10.1172/JCI126863\" correction retraction",
+        "limit": 8
+      }
+    },
+    {
+      "label": "interactions",
+      "claim": "F6",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "site:dailymed.nlm.nih.gov everolimus CYP3A4 inhibitors infection wound healing renal",
+        "limit": 8
+      }
+    },
+    {
+      "label": "readthrough_counter",
+      "claim": "F8",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "BUB1B nonsense readthrough ataluren functional rescue negative",
+        "limit": 8
+      }
+    },
+    {
+      "label": "pp2a_counter",
+      "claim": "F8",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "BUBR1 PP2A recruitment drug chromosome segregation DT-061 off target",
+        "limit": 8
+      }
+    },
+    {
+      "label": "papers_bubr1",
+      "claim": "F3",
+      "tool": "firecrawl_research_search_papers",
+      "arguments": {
+        "query": "BUBR1 autophagy everolimus",
+        "k": 12
+      }
+    },
+    {
+      "label": "papers_muscle",
+      "claim": "F2",
+      "tool": "firecrawl_research_search_papers",
+      "arguments": {
+        "query": "mTOR inhibition muscle regeneration impaired",
+        "k": 12
+      }
+    },
+    {
+      "label": "papers_rescue",
+      "claim": "F8",
+      "tool": "firecrawl_research_search_papers",
+      "arguments": {
+        "query": "BubR1 deficiency pharmacological rescue",
+        "k": 12
+      }
+    },
+    {
+      "label": "papers_hcq",
+      "claim": "F6",
+      "tool": "firecrawl_research_search_papers",
+      "arguments": {
+        "query": "hydroxychloroquine myopathy clinical",
+        "k": 12
+      }
+    },
+    {
+      "label": "goutas_references",
+      "claim": "F3",
+      "tool": "firecrawl_research_related_papers",
+      "arguments": {
+        "seed_ids": [
+          "doi:10.1016/j.redox.2023.102701"
+        ],
+        "intent": "BUBR1 function, failed rescue, drug harms and opposing mechanisms",
+        "mode": "references",
+        "k": 15,
+        "rerank": false
+      }
+    },
+    {
+      "label": "goutas_citers",
+      "claim": "F3",
+      "tool": "firecrawl_research_related_papers",
+      "arguments": {
+        "seed_ids": [
+          "doi:10.1016/j.redox.2023.102701"
+        ],
+        "intent": "BUBR1 function, failed rescue, drug harms and opposing mechanisms",
+        "mode": "citers",
+        "k": 15,
+        "rerank": false
+      }
+    },
+    {
+      "label": "sieben_references",
+      "claim": "F1",
+      "tool": "firecrawl_research_related_papers",
+      "arguments": {
+        "seed_ids": [
+          "doi:10.1172/JCI126863"
+        ],
+        "intent": "BUBR1 function, failed rescue, drug harms and opposing mechanisms",
+        "mode": "references",
+        "k": 15,
+        "rerank": false
+      }
+    },
+    {
+      "label": "sieben_citers",
+      "claim": "F1",
+      "tool": "firecrawl_research_related_papers",
+      "arguments": {
+        "seed_ids": [
+          "doi:10.1172/JCI126863"
+        ],
+        "intent": "BUBR1 function, failed rescue, drug harms and opposing mechanisms",
+        "mode": "citers",
+        "k": 15,
+        "rerank": false
+      }
+    },
+    {
+      "label": "north_references",
+      "claim": "F8",
+      "tool": "firecrawl_research_related_papers",
+      "arguments": {
+        "seed_ids": [
+          "doi:10.15252/embj.201386907"
+        ],
+        "intent": "BUBR1 function, failed rescue, drug harms and opposing mechanisms",
+        "mode": "references",
+        "k": 15,
+        "rerank": false
+      }
+    },
+    {
+      "label": "north_citers",
+      "claim": "F8",
+      "tool": "firecrawl_research_related_papers",
+      "arguments": {
+        "seed_ids": [
+          "doi:10.15252/embj.201386907"
+        ],
+        "intent": "BUBR1 function, failed rescue, drug harms and opposing mechanisms",
+        "mode": "citers",
+        "k": 15,
+        "rerank": false
+      }
+    },
+    {
+      "label": "read_goutas",
+      "claim": "F3",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "doi:10.1016/j.redox.2023.102701",
+        "question": "Everolimus and hydroxychloroquine: exact passage, dose, duration, donor numbers, BUBR1 protein and functional checkpoint endpoints; cell-cycle confounding.",
+        "k": 10
+      }
+    },
+    {
+      "label": "read_sieben",
+      "claim": "F2",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "doi:10.1172/JCI126863",
+        "question": "Which genotype and tissue show mTOR phosphoprotein changes; was an mTOR drug intervention tested; sample sizes and model limitations?",
+        "k": 10
+      }
+    },
+    {
+      "label": "read_hgps",
+      "claim": "F8",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "doi:10.1038/s41598-023-32035-3",
+        "question": "Everolimus monotherapy: functional endpoints improved or not improved, nominal concentration, time, controls, replication and safety limits.",
+        "k": 10
+      }
+    }
+  ]
+}

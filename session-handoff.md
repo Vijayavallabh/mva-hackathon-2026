@@ -1,13 +1,39 @@
 # Session handoff
 
-**Last updated:** 2026-09-19 IST, session 46. **Active feature: feat-009 Track 2.**
-The owner made active, extensive falsification search a standing research objective.
-Read `notes/track2-falsification-plan.md` at the start of the next research cycle:
-state overturning criteria, search contrary evidence across all consequential
-assumptions, and use findings to revise decisions, controls or stop rules. The
-first-cycle question/query table is pending work, not completed retrieval. This
-session updates the objective and workflow; no new scientific evidence or candidate
-promotion is claimed. Preserve v9 and all earlier bound inputs and packages.
+**Last updated:** 2026-09-19 IST, session 47. **Active feature: feat-009 Track 2.**
+The owner authorized the standing falsification objective using Firecrawl. Cycle 1
+is complete at the recorded reading depth in `notes/track2-falsification-cycle1.md`:
+87 actual calls (68 non-error, 14 tool errors, two timeouts, three empty reads), plus
+27 primary/registry requests (25 returned, one rejected wrong identity, two HTTP 500).
+These are retrieval counts, not reviewed-study counts. Selected sections from six
+new full-text XML papers were read; supplements/access gaps remain explicit.
+
+Current report, validation, ledger, pitch and deck use **v10**. Keep branch A's
+excess-mTOR requirement, but allow a separately prespecified branch B only after
+demonstrating a relevant flux/function deficit and qualifying its own controls.
+Neither is established for the selected pair; no retrospective switching. Graded
+inhibition and regeneration/recovery checks reconcile favorable aged-muscle findings
+with repair-context risks. Add delayed HCQ muscle/lysosomal injury, blood partitioning
+and developmental-scope checks. Everolimus remains an optional mechanistic probe,
+HCQ reserve; no rescue-priority candidate or clinical margin.
+
+`uv run python scripts/track2_release_v10.py verify results/feat009/jvv7_track2_research_v10`
+passes six files/104 bound inputs and v1-v9 preservation. Ledger:52 cumulative sources,
+11 decisions. All 471 Track 2 tests and fresh init pass. Narration is unchanged at
+339 words; the five rendered PNGs are pixel-identical to the inspected v9 slides
+(protocol link updated), with zero overlap/clipping. Exports:
+`results/feat009/v10-slide-review-final-20260919/`. Public/purge gate passes.
+
+Read `notes/track2-falsification-plan.md` before the next cycle; this is a continuing
+objective. Next priorities: hypercapnia supplement/dose/replication audit before
+using it to select an experimental dose, qualified model and dynamic-flux evidence,
+partial-inhibition versus repair limits, chronic deficient-normal safety and an
+actual exposure bridge. Wrong PMID 19828831 was caught/excluded; active supplemental
+plan now uses 19794149/PMC2793064 with an identity guard, while original bytes remain
+in the archive. Do not count that rejected record as evidence or silently rerun failures.
+Author adjudication only, not an independent/systematic review. No subject processing,
+project .env access, deliberate new agent synthesis job, experiment or upload.
+Existing provider, phase, video and receipt gaps remain. Preserve v10 and older snapshots.
 
 ## Session 45 scientific baseline
 
@@ -104,10 +130,10 @@ The previous session's equal-priority HCQ nomination is superseded.
 
 ## Current scientific and competition state
 
-- **V9 overrides earlier priority claims:** model qualification and a bounded benefit/harm
+- **V10 retains the v9 priority withdrawal:** model qualification and a bounded benefit/harm
   probe replace comparative rescue prioritization. The older source/decision checkers
-  intentionally reproduce preserved historical decisions; use the v9 checker for the
-  revised 36-source/11-decision ledger. No candidate has clinical efficacy or a margin.
+  intentionally reproduce preserved historical decisions; use the v10 checker for the
+  revised 52-source/11-decision ledger. No candidate has clinical efficacy or a margin.
 
 - **Prior GLM research supplement:** ten GLM topics with adversarial rereads and explicit
   primary-source adjudication. The first PP2A response was not source-grounded;
@@ -168,7 +194,7 @@ The previous session's equal-priority HCQ nomination is superseded.
 - Public Track 2 code permits **three entries, latest only reviewed**. Report, GitHub URL
   and a three-minute YouTube/Vimeo URL are required; no Track 2 upload has occurred.
 
-## Final review outcome and artifacts
+## Historical session-32 review outcome and artifacts (superseded by v9/v10)
 
 - **Everolimus: one conditional, phenotype-first research priority.** Measure mTORC1
   excess before screening; require functional benefit, exposure and deficient-normal safety.
@@ -227,20 +253,20 @@ and both candidates, retaining all nine same-position alternate rows. See
 
 ## Blockers and unresolved evidence
 
-- **Standing falsification search remains ongoing:** execute the first-cycle
-  priorities in `notes/track2-falsification-plan.md` during the next substantive
-  research session. Record coverage/access gaps and evidence that would overturn
-  each decision. This research queue is not an access blocker; high-impact gaps
-  block only the scientific inferences that depend on them. The completed v9 desk
-  audit does not close the continuing objective.
+- **Standing falsification search remains ongoing:** cycle 1 is complete in
+  `notes/track2-falsification-cycle1.md`. Its next-work table supersedes the initial
+  queue: dose/schedule supplements and replication, model/flux qualification,
+  repair and delayed injury, and an exposure bridge remain unresolved. Access
+  failures and bibliographic errors are recorded, not treated as negative results.
+  The completed cycle does not close the continuing objective or validate a drug.
 
 - **Session 45 desk audit/revision is complete; biological and delivery gaps remain.**
   The BUBR1-loss result is an adverse-mechanism concern, not proof of harm in this
   genotype. Model availability, phenotype, exposure, meaningful effect/injury bounds
-  and powered confirmation remain unestablished. V9 narration requires rehearsal,
+  and powered confirmation remain unestablished. Current v10 narration requires rehearsal,
   recording/hosting, Fireworks settings verification, owner/live checks and receipt.
-  Preserve all v9-bound inputs and v1-v8 history. Any further edit needs a new snapshot.
-  V9 deck SHA-256: `c84e0ca12d7c47aaa63d04b23e1b099843e367161beb1ec33fc7a4e4877dcf8c`.
+  Preserve all v10-bound inputs and v1-v9 history. Any further edit needs a new snapshot.
+  V10 deck SHA-256: `dba6c51e392fc09ed0d7f8fb5e1bdde5ecacf06d685fe4188fbb114950381e7b`.
 
 - **Session 44 v8 revision is complete.** The requested line is absent from the
   cover; the new diagrams and closing qualifications preserve the proposal's
@@ -387,6 +413,7 @@ uv run python scripts/track2_release_v6.py verify results/feat009/jvv7_track2_re
 uv run python scripts/track2_release_v7.py verify results/feat009/jvv7_track2_research_v7
 uv run python scripts/track2_release_v8.py verify results/feat009/jvv7_track2_research_v8
 uv run python scripts/track2_release_v9.py verify results/feat009/jvv7_track2_research_v9
+uv run python scripts/track2_release_v10.py verify results/feat009/jvv7_track2_research_v10
 ```
 
 Continue feat-009 only. The original `jvv7_track2_research_v1/` is preserved (seven file

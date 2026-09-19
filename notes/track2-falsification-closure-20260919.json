@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-19",
+  "scope": "Bounded closure of gene-development and actual-HCQ/RMS citation leads; independently resolve an incorrect metadata-query identifier",
+  "calls": [
+    {
+      "label": "cardiac_development_metadata",
+      "claim": "F1",
+      "tool": "firecrawl_research_inspect_paper",
+      "arguments": {
+        "paperId": "doi:10.1161/JAHA.124.038286"
+      }
+    },
+    {
+      "label": "cardiac_development_read",
+      "claim": "F1",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "doi:10.1161/JAHA.124.038286",
+        "question": "What model, genotype and actual compound were tested? Identify measured benefit, harm, cardiac function or autophagy endpoints, exact concentration, time, controls and whether tissue development is independent of mitotic errors. Distinguish direct evidence from extrapolation.",
+        "k": 10
+      }
+    },
+    {
+      "label": "hcq_rms_primary_metadata",
+      "claim": "F7",
+      "tool": "firecrawl_research_inspect_paper",
+      "arguments": {
+        "paperId": "doi:10.1038/s41420-018-0115-9"
+      }
+    },
+    {
+      "label": "hcq_rms_primary_read",
+      "claim": "F7",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "doi:10.1038/s41420-018-0115-9",
+        "question": "What model, genotype and actual compound were tested? Identify measured benefit, harm, cardiac function or autophagy endpoints, exact concentration, time, controls and whether tissue development is independent of mitotic errors. Distinguish direct evidence from extrapolation.",
+        "k": 10
+      }
+    },
+    {
+      "label": "regeneration_identity_metadata",
+      "claim": "F6",
+      "tool": "firecrawl_research_inspect_paper",
+      "arguments": {
+        "paperId": "pmid:19794149"
+      }
+    }
+  ]
+}

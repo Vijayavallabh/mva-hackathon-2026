@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-19",
+  "scope": "Public structured records complementary to Firecrawl; no retries; fixed primary sources and two complementary discovery queries",
+  "records": [
+    {
+      "id": "regeneration",
+      "format": "xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2793064/fullTextXML"
+    },
+    {
+      "id": "satellite",
+      "format": "xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4484853/fullTextXML"
+    },
+    {
+      "id": "partial_mtor",
+      "format": "xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6751631/fullTextXML"
+    },
+    {
+      "id": "hcq_myopathy",
+      "format": "xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7884308/fullTextXML"
+    },
+    {
+      "id": "hematocrit",
+      "format": "xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5069307/fullTextXML"
+    },
+    {
+      "id": "hcq_ovarian",
+      "format": "xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11839959/fullTextXML"
+    },
+    {
+      "id": "hypercapnia_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A39589836%20AND%20SRC%3AMED&format=json&resultType=core&pageSize=20"
+    },
+    {
+      "id": "bonatti_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A9914383%20AND%20SRC%3AMED&format=json&resultType=core&pageSize=20"
+    },
+    {
+      "id": "cohesin_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1093%2Fbbb%2Fzbag087&format=json&resultType=core&pageSize=20"
+    },
+    {
+      "id": "monoallelic_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1186%2Fs12929-024-01056-z&format=json&resultType=core&pageSize=20"
+    },
+    {
+      "id": "goutas_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1016%2Fj.redox.2023.102701&format=json&resultType=core&pageSize=20"
+    },
+    {
+      "id": "sieben_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1172%2FJCI126863&format=json&resultType=core&pageSize=20"
+    },
+    {
+      "id": "hcq_rms_complement",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=hydroxychloroquine%20AND%20rhabdomyosarcoma&format=json&resultType=core&pageSize=20"
+    },
+    {
+      "id": "bubr1_rescue_complement",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28BUBR1%20OR%20BUB1B%29%20AND%20%28rapamycin%20OR%20everolimus%20OR%20rescue%29&format=json&resultType=core&pageSize=20"
+    },
+    {
+      "id": "growth_registry",
+      "format": "json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT02338609"
+    },
+    {
+      "id": "evero_pediatric_registry",
+      "format": "json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT01216839"
+    },
+    {
+      "id": "hcq_terminated_registry",
+      "format": "json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT00786682"
+    },
+    {
+      "id": "arst1431_registry",
+      "format": "json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT02567435"
+    }
+  ]
+}

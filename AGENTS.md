@@ -65,8 +65,8 @@ Apply the same standards to favorable and unfavorable evidence; missing evidence
 is not disproof, and failure to find a contradiction is not validation. Resolve or
 explicitly retain high-impact gaps before promoting the corresponding claim.
 This is a continuing objective, not a one-time devil's-advocate review. Preserve
-bound snapshots; use new versions when findings change the science. The v9
-dispositions remain current until a documented evidence-based revision.
+bound snapshots; use new versions when findings change the science. The v10
+report and cycle-1 review now record the current evidence-based revision.
 
 ## Data facts — established, do not re-derive
 
@@ -272,6 +272,26 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   narration:339 words, runtime unmeasured; deck:320 words. The v9 release binds six
   files/84 inputs, preserving v1-v8; 450 Track 2 + 108 Atlas tests pass. Phase and
   clinical margins remain unresolved; no experiment, provider change or upload.
+- **Session 47 v10 Firecrawl falsification cycle (2026-09-19):** current report,
+  validation, evidence, pitch and slides use v10. See `notes/track2-falsification-cycle1.md`
+  and the fixed plans/retrieval summary: 87 actual calls, 68 non-error responses,
+  14 tool errors, two timeouts and three empty reads; not 87 reviewed studies.
+  Complementary primary/registry retrieval made 27 requests, 25 returned records,
+  one rejected as a wrong bibliographic identity, two HTTP 500 failures. Six XML
+  papers were read at selected-section depth; unreviewed supplements remain explicit.
+  Balnis challenges a universal measured-excess-mTOR requirement. Keep branch A's
+  excess requirement and separately preregister branch B for a demonstrated relevant
+  flux/function deficit; no retrospective switching and neither established here.
+  Joseph's favorable partial-inhibition results coexist with repair-context risk.
+  Add graded exposure, regeneration/recovery, delayed HCQ myopathy, blood-partition
+  and developmental-scope checks. Everolimus stays an optional mechanistic probe,
+  HCQ reserve; no rescue priority, clinical margin, phase confirmation or experiment.
+  Ledger:52 cumulative sources/11 decisions. V10 release binds six files/104 inputs,
+  preserving v1-v9; 471 Track 2 tests pass. Narration remains 339 words and all five
+  rendered slides are pixel-identical to v9 (current protocol link updated).
+  Author adjudication, not an independent/systematic review. Public retrieval only,
+  no new agent synthesis job or subject/.env use; existing provider and delivery
+  gates remain. The standing falsification objective continues beyond this cycle.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed

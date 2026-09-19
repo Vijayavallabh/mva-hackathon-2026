@@ -3048,3 +3048,145 @@ open in `session-handoff.md`. The new research queue is not an external access b
 Live publication, staged and all-ref audit outputs use the
 `results/feat009/falsification-objective-*-20260919.json` prefix. Configured-origin
 push and clean upstream equality are verified at handoff.
+
+
+## 2026-09-19 — session 47: execute Firecrawl falsification cycle and revise v10
+
+Owner authorized the standing objective with Firecrawl. Baseline `c97bfb1`; feat-009
+only, still `in_progress`. Applied scientific-critical-thinking guidance. This is
+main-agent source adjudication at recorded depth, not an independent panel or a
+systematic/exhaustive review.
+
+Used the existing real STDIO Firecrawl bridge to loopback, with four fixed plans,
+separate worker processes/archives, bounded results/timeouts and no automatic retries.
+The runner allows six retrieval tools and public literature only; no deliberate new
+agent synthesis job, monitor, browser action, project .env read or subject payload.
+External retrieval/provider processing is not a zero-retention or LLM-free claim.
+
+Actual commands (each output directory was new):
+
+```bash
+uv run python scripts/track2_falsification_search.py discovery results/feat009/falsification-firecrawl-discovery-v1
+uv run python scripts/track2_falsification_search.py followup results/feat009/falsification-firecrawl-followup-v1
+uv run python scripts/track2_falsification_search.py primary results/feat009/falsification-firecrawl-primary-v1
+uv run python scripts/track2_falsification_search.py closure results/feat009/falsification-firecrawl-closure-v1
+uv run python scripts/track2_falsification_sources.py results/feat009/falsification-primary-records-v1
+uv run python scripts/track2_falsification_sources.py results/feat009/falsification-primary-records-supplement-v1 --supplement
+```
+
+The four plans made **87 actual calls**: 68 non-error responses, 14 tool errors,
+two timeouts and three empty passage responses. Discovery units: 180 web rows/173
+exact URLs, 161 bibliographic rows/145 identifier strings; these are not validated
+study counts. Structured retrieval made 27 requests: 25 returned records, two HTTP 500
+XML failures. One returned record was unrelated and excluded. Six full-text XML
+papers were retrieved and selected sections read, not all full papers/supplements.
+Partial retrieval exit 2 statuses are preserved as failures. Exact query/status/hash accounting,
+source reading depth and eight-claim disposition are in
+`notes/track2-falsification-cycle1.md` and `track2-falsification-retrieval-summary.json`.
+Original plans, executed scripts and responses remain in ignored archives.
+
+A supplemental request mistakenly used PMID 19828831 for muscle regeneration. Its
+unrelated GPCR/analgesia identity was caught and rejected; Firecrawl/closure verified
+PMID 19794149 / PMC2793064 / DOI 10.1152/ajpcell.00248.2009. Original erroneous bytes remain
+archived; active plan is corrected with a PMCID guard and synthetic mismatch test.
+Do not reinterpret the rejected record, failed retrievals or absent registry results
+as biological negatives. The active corrected plan differs from the archived first run.
+
+Material revisions, recorded in report/validation/ledger **v10**:
+
+- Balnis hypercapnia findings challenge a universal measured-excess-mTOR requirement,
+  without proving all pathway activity normal or benefit in MVA. Keep excess branch A;
+  separately prespecify branch B for demonstrated relevant dynamic-flux and regenerative-
+  function deficits, its own controls and independent confirmation. Neither is established
+  for the selected pair; no retrospective switching after a negative result.
+- Retain favorable RAD001 partial-inhibition results from Joseph alongside Ge/Zhang
+  regeneration risks. Add graded exposure, precursor activation, mature function,
+  recovery and useful output rather than accepting mass/markers as function.
+- Naddaf CQ/HCQ myopathy adds delayed normal-muscle/lysosome injury checks. Goenka's
+  negative ovarian trial is kept with its small-sample/biomarker limitations and lack
+  of excess reported adverse events, not a zero-effect claim in RMS. Van Erp's modeled
+  hematocrit/blood-partition result does not measure free tissue exposure.
+- Silva's title does not define its functional model: clones have two different edited
+  alleles. Pun's embryonic cardiac KO limits developmental claims, without implying
+  a cardiac finding in the child. Bonatti/Yamada remain context-limited leads.
+- Four registry rechecks retain actual versus estimated enrollment, correct analysis
+  denominators, missing results and unresolved overlap. Current label and correction
+  checks preserve risks and earlier correction provenance; RMS/TMZ uses bafilomycin A1,
+  not HCQ. No newly verified alternative earns rescue priority.
+
+Everolimus remains an optional mechanistic probe, HCQ reserve; no candidate rescue
+priority, clinical margin, phase confirmation, experimental result or upload. Current
+ledger has 52 cumulative sources/11 decisions. The 339-word narration is unchanged;
+v10 deck visible content is unchanged from inspected v9, with current protocol link.
+Render produces five pages, 320 visible words, zero text overlaps or out-of-bounds text.
+PIL ImageChops comparison of each v10 PNG with the corresponding final v9 PNG found
+all five pixel-identical; no new visual review is claimed for changed content.
+Source SHA256: `dba6c51e392fc09ed0d7f8fb5e1bdde5ecacf06d685fe4188fbb114950381e7b`.
+
+Actual validation:
+
+```text
+uv run python scripts/verify_data.py --self-check
+self-check ok
+uv run python scripts/track1_submission.py --self-check
+self-check ok: build, strict conformance, normalization and official scoring
+uv run python scripts/track2_evidence.py check
+53 sources / 12 candidates; direct_pair_intervention_evidence:0;
+clinical_efficacy_established:0; phase:unconfirmed
+uv run python scripts/test_track2_falsification.py
+Ran 8 tests; OK
+uv run python scripts/test_track2_release_v10.py
+Ran 13 tests; OK
+uv run python -m unittest discover -s scripts -p "test_track2*.py"
+Ran 471 tests in 5.526s; OK
+uv run python scripts/track2_release_v10.py check
+52 cumulative sources / 11 decisions; no rescue priority; phase unconfirmed; margin null
+uv run node scripts/render_track2_slides_v10.mjs v10-slide-review-final-20260919
+slides:5; text_outside_slides:0; text_overlaps:0; visible_words:[40,72,60,72,76]
+uv run python scripts/track2_release_v10.py build results/feat009/jvv7_track2_research_v10
+uv run python scripts/track2_release_v10.py verify results/feat009/jvv7_track2_research_v10
+integrity_verified:true; files:6; bound_inputs:104;
+historical_v1_through_v9_preserved:true; upload_ready:false
+```
+
+The baseline evidence checker reproduces historical decisions; v10 is current.
+Logs use `logs/track2-falsification-v10-{regressions,render,init}-20260919.log`.
+Live PUBLIC/purge check passed: 13 retired objects unavailable, zero unknown errors,
+live control retrievable (`results/feat009/falsification-v10-publication-20260919.json`).
+README, AGENTS, feature evidence and handoff now point to v10. No missing local links
+in those navigation files. Prior release inputs and submitted Track 1 files are preserved.
+Model/phase/exposure, source-supplement/replication, provider settings, video and receipt
+remain open in the handoff; the standing falsification objective continues.
+
+Fresh no-argument `./init.sh` exited 0 without manual setup. Actual output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Staged disclosure audit passes 182 blobs with zero findings in
+`results/feat009/falsification-v10-staged-20260919.json`. Final staged and all-ref
+audits use `falsification-v10-staged-final-20260919.json` and
+`falsification-v10-history-20260919.json`. Configured-origin push and clean upstream
+equality are verified at handoff.

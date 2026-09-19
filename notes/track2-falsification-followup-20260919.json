@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-19",
+  "baseline": "c97bfb1",
+  "scope": "Adaptive primary follow-up of first discovery results; selected models, safety and positive counterweights; no exhaustive claim",
+  "calls": [
+    {
+      "label": "regeneration_metadata",
+      "claim": "F6",
+      "tool": "firecrawl_research_inspect_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC2793064"
+      }
+    },
+    {
+      "label": "regeneration_read",
+      "claim": "F6",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC2793064",
+        "question": "What are the exact model, compound, dose, exposure duration, comparator, functional outcomes including failures or harm, independent sample sizes and transfer limits? Separate measured results from mechanism speculation and report whether full text is accessible.",
+        "k": 12
+      }
+    },
+    {
+      "label": "satellite_metadata",
+      "claim": "F6",
+      "tool": "firecrawl_research_inspect_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC4484853"
+      }
+    },
+    {
+      "label": "satellite_read",
+      "claim": "F6",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC4484853",
+        "question": "What are the exact model, compound, dose, exposure duration, comparator, functional outcomes including failures or harm, independent sample sizes and transfer limits? Separate measured results from mechanism speculation and report whether full text is accessible.",
+        "k": 12
+      }
+    },
+    {
+      "label": "hypercapnia_metadata",
+      "claim": "F8",
+      "tool": "firecrawl_research_inspect_paper",
+      "arguments": {
+        "paperId": "pmid:39589836"
+      }
+    },
+    {
+      "label": "hypercapnia_read",
+      "claim": "F8",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "pmid:39589836",
+        "question": "What are the exact model, compound, dose, exposure duration, comparator, functional outcomes including failures or harm, independent sample sizes and transfer limits? Separate measured results from mechanism speculation and report whether full text is accessible.",
+        "k": 12
+      }
+    },
+    {
+      "label": "partial_mtor_metadata",
+      "claim": "F8",
+      "tool": "firecrawl_research_inspect_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC6751631"
+      }
+    },
+    {
+      "label": "partial_mtor_read",
+      "claim": "F8",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC6751631",
+        "question": "What are the exact model, compound, dose, exposure duration, comparator, functional outcomes including failures or harm, independent sample sizes and transfer limits? Separate measured results from mechanism speculation and report whether full text is accessible.",
+        "k": 12
+      }
+    },
+    {
+      "label": "hcq_myopathy_metadata",
+      "claim": "F6",
+      "tool": "firecrawl_research_inspect_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC7884308"
+      }
+    },
+    {
+      "label": "hcq_myopathy_read",
+      "claim": "F6",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC7884308",
+        "question": "What are the exact model, compound, dose, exposure duration, comparator, functional outcomes including failures or harm, independent sample sizes and transfer limits? Separate measured results from mechanism speculation and report whether full text is accessible.",
+        "k": 12
+      }
+    },
+    {
+      "label": "hematocrit_metadata",
+      "claim": "F5",
+      "tool": "firecrawl_research_inspect_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC5069307"
+      }
+    },
+    {
+      "label": "hematocrit_read",
+      "claim": "F5",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC5069307",
+        "question": "What are the exact model, compound, dose, exposure duration, comparator, functional outcomes including failures or harm, independent sample sizes and transfer limits? Separate measured results from mechanism speculation and report whether full text is accessible.",
+        "k": 12
+      }
+    },
+    {
+      "label": "hcq_ovarian_metadata",
+      "claim": "F7",
+      "tool": "firecrawl_research_inspect_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC11839959"
+      }
+    },
+    {
+      "label": "hcq_ovarian_read",
+      "claim": "F7",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "pmcid:PMC11839959",
+        "question": "What are the exact model, compound, dose, exposure duration, comparator, functional outcomes including failures or harm, independent sample sizes and transfer limits? Separate measured results from mechanism speculation and report whether full text is accessible.",
+        "k": 12
+      }
+    },
+    {
+      "label": "bonatti_metadata",
+      "claim": "F4",
+      "tool": "firecrawl_research_inspect_paper",
+      "arguments": {
+        "paperId": "pmid:9914383"
+      }
+    },
+    {
+      "label": "bonatti_read",
+      "claim": "F4",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "pmid:9914383",
+        "question": "What are the exact model, compound, dose, exposure duration, comparator, functional outcomes including failures or harm, independent sample sizes and transfer limits? Separate measured results from mechanism speculation and report whether full text is accessible.",
+        "k": 12
+      }
+    },
+    {
+      "label": "cohesin2026_metadata",
+      "claim": "F4",
+      "tool": "firecrawl_research_inspect_paper",
+      "arguments": {
+        "paperId": "doi:10.1093/bbb/zbag087"
+      }
+    },
+    {
+      "label": "cohesin2026_read",
+      "claim": "F4",
+      "tool": "firecrawl_research_read_paper",
+      "arguments": {
+        "paperId": "doi:10.1093/bbb/zbag087",
+        "question": "What are the exact model, compound, dose, exposure duration, comparator, functional outcomes including failures or harm, independent sample sizes and transfer limits? Separate measured results from mechanism speculation and report whether full text is accessible.",
+        "k": 12
+      }
+    },
+    {
+      "label": "regeneration_scrape",
+      "claim": "F6",
+      "tool": "firecrawl_scrape",
+      "arguments": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2793064/",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "label": "satellite_scrape",
+      "claim": "F6",
+      "tool": "firecrawl_scrape",
+      "arguments": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4484853/",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "label": "partial_mtor_scrape",
+      "claim": "F8",
+      "tool": "firecrawl_scrape",
+      "arguments": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6751631/",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "label": "hcq_myopathy_scrape",
+      "claim": "F6",
+      "tool": "firecrawl_scrape",
+      "arguments": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7884308/",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "label": "hematocrit_scrape",
+      "claim": "F5",
+      "tool": "firecrawl_scrape",
+      "arguments": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5069307/",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "label": "hcq_ovarian_scrape",
+      "claim": "F7",
+      "tool": "firecrawl_scrape",
+      "arguments": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11839959/",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "label": "growth_registry",
+      "claim": "F6",
+      "tool": "firecrawl_scrape",
+      "arguments": {
+        "url": "https://clinicaltrials.gov/study/NCT02338609",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "label": "evero_pediatric_registry",
+      "claim": "F7",
+      "tool": "firecrawl_scrape",
+      "arguments": {
+        "url": "https://clinicaltrials.gov/study/NCT01216839",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "label": "hcq_terminated_registry",
+      "claim": "F7",
+      "tool": "firecrawl_scrape",
+      "arguments": {
+        "url": "https://clinicaltrials.gov/study/NCT00786682",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "label": "rescue_bibliographic",
+      "claim": "F8",
+      "tool": "firecrawl_research_search_papers",
+      "arguments": {
+        "query": "BubR1 deficient mouse rapamycin rescue",
+        "k": 12
+      }
+    },
+    {
+      "label": "hcq_rms_bibliographic",
+      "claim": "F7",
+      "tool": "firecrawl_research_search_papers",
+      "arguments": {
+        "query": "rhabdomyosarcoma hydroxychloroquine autophagy",
+        "k": 12
+      }
+    },
+    {
+      "label": "pp2a_bibliographic",
+      "claim": "F8",
+      "tool": "firecrawl_research_search_papers",
+      "arguments": {
+        "query": "DT-061 PP2A Golgi endoplasmic reticulum off target",
+        "k": 12
+      }
+    },
+    {
+      "label": "goutas_identity",
+      "claim": "F3",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "\"The establishment of mitotic errors-driven senescence\"",
+        "limit": 8
+      }
+    },
+    {
+      "label": "growth_results",
+      "claim": "F6",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "NCT02338609 everolimus growth puberty results",
+        "limit": 8
+      }
+    },
+    {
+      "label": "hcq_ovarian_results",
+      "claim": "F7",
+      "tool": "firecrawl_search",
+      "arguments": {
+        "query": "\"Targeting autophagy\" \"platinum-sensitive\" hydroxychloroquine randomized",
+        "limit": 8
+      }
+    }
+  ]
+}
