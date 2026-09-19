@@ -1,6 +1,18 @@
 # Session handoff
 
-**Last updated:** 2026-09-19 IST, session 43. **Active feature: feat-009 Track 2.**
+**Last updated:** 2026-09-19 IST, session 44. **Active feature: feat-009 Track 2.**
+The owner requested removal of the cover line and more aesthetic, relevant slides.
+Current deck: `notes/track2-slides-v8.html`; unchanged v6 report/297-word narration,
+v5 validation and v4 evidence. New gene-level, pathway, cell-fate and advancement
+schematics; exact ARST1431 plot retained. 313 visible words. All five PDF pages
+inspected in `results/feat009/v8-slide-review-final-20260919/`; includes overview.
+Use `uv run python scripts/track2_release_v8.py verify results/feat009/jvv7_track2_research_v8`.
+Six files/75 inputs and historical v1-v7 preservation pass. The 437 Track 2 tests,
+core checks, fresh init and live PUBLIC/purge guard pass. No experimental results,
+new provider, recording or upload. Author review: `notes/track2-v8-design.md`.
+
+## Session 43 context
+
 The owner requested a more aesthetic deck. Current presentation:
 `notes/track2-slides-v7.html`, with the unchanged v6 report and 297-word narration,
 v5 validation and v4 evidence. Every slide word and source link matches v6; 301 words.
@@ -65,7 +77,7 @@ The previous session's equal-priority HCQ nomination is superseded.
   Preserve the baseline ledgers and v3 inputs; no candidate, phase or clinical-margin
   promotion follows. Entinostat's specific Chinese approval corrects a global
   “unapproved” shorthand, not the lack of pediatric RMS efficacy/exposure evidence.
-- **Current presentation is v6:** the story follows one conditional experiment, its
+- **The v6 story remains the basis for v8:** the story follows one conditional experiment, its
   limited mouse rationale, contrary tumour trial evidence, complete cell-fate
   accounting and preclinical advancement criteria. The report's scientific sections
   1-7, acknowledgement and reference URL set match v5. A connector/label collision
@@ -175,6 +187,14 @@ and both candidates, retaining all nine same-position alternate rows. See
 `notes/alphagenome-splicing-results.md` for hashes, commands, output terms and limitations.
 
 ## Blockers and unresolved evidence
+
+- **Session 44 v8 revision is complete.** The requested line is absent from the
+  cover; the new diagrams and closing qualifications preserve the proposal's
+  scientific scope. Use the v8 deck/PDF with the unchanged v6 narration/report.
+  All five PDF pages passed author visual review; 437 tests and recursive package
+  verification pass. Preserve the bound inputs and previous packages. Recording,
+  hosting, Fireworks settings, final owner/live checks and receipt remain open.
+  V8 deck SHA-256: `93804595099b9422e4eede96d73b6fe80cebe7b877b25dfcd301c6fd242f655e`.
 
 - **Session 43 visual revision is complete.** Use the v7 deck/PDF with the unchanged
   v6 narration/report. The v6 pitch retains its historical v6 deck link; the v7 use
@@ -311,6 +331,7 @@ uv run python scripts/test_track2_release_v4.py
 uv run python scripts/track2_release_v4.py verify results/feat009/jvv7_track2_research_v4
 uv run python scripts/track2_release_v6.py verify results/feat009/jvv7_track2_research_v6
 uv run python scripts/track2_release_v7.py verify results/feat009/jvv7_track2_research_v7
+uv run python scripts/track2_release_v8.py verify results/feat009/jvv7_track2_research_v8
 ```
 
 Continue feat-009 only. The original `jvv7_track2_research_v1/` is preserved (seven file

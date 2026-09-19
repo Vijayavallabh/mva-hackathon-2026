@@ -227,6 +227,16 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   `scripts/render_track2_slides_v7.mjs`. Five PDF pages were inspected; 429 Track 2
   tests pass. `scripts/track2_release_v7.py` binds six files/70 inputs and verifies
   all historical v1-v6 releases. No science, provider or submission status changed.
+- **Session 44 v8 scientific visual revision (2026-09-19):** current deck is
+  `notes/track2-slides-v8.html`; the owner-requested cover line is removed. Four
+  conceptual diagrams make chromosome control, conditional pathway testing,
+  cell-fate accounting and advancement criteria explicit; the ARST1431 plot is
+  unchanged. Use the unchanged v6 report/297-word narration, v5 validation and v4
+  ledger. Five PDF pages inspected; 313 visible words, no overlap/clipping, min24px;
+  437 Track 2 tests pass. `scripts/track2_release_v8.py` binds six files/75 inputs
+  and verifies v1-v7 preservation. See `notes/track2-v8-design.md`. This is author
+  visual/source verification, not a new independent review or experimental evidence.
+  Phase, drug priorities, clinical margins, provider and submission gates unchanged.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed

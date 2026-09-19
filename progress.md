@@ -2767,3 +2767,94 @@ Staged disclosure audit passed: **148 blobs, zero findings**, recorded in
 and `git diff --cached --check` also pass. The all-ref audit is retained in
 `results/feat009/v7-history-final-20260919.json`; configured-origin push and clean
 upstream equality are verified at handoff.
+
+
+## 2026-09-19 — session 44: v8 cover and scientific visual revision
+
+Owner request: remove the specified cover line, then make the slides more aesthetic
+and relevant. Baseline `333abd1`. Feat-009 only; status remains in progress.
+Created `notes/track2-slides-v8.html` and `track2-v8-design.md`; the cover line is
+removed and the visuals now explain chromosome-control context, the conditional
+pathway test, enrolled-cell fates and four advancement requirements. The published
+ARST1431 interval and values are unchanged. Reused the bound v6 report/297-word
+narration, v5 validation and v4 ledger. No historical bound input was modified.
+
+Applied the existing frontend-design/PDF workflow. Selected primary JCI sections
+were rechecked for the gene-level diagram and limited mouse observation; no new
+full-paper or independent review is claimed. The new deck has 313 visible words,
+four explanatory figures and one published-data plot. All five PDF pages were
+visually inspected. No clipping or text overlaps; projected text >=24px and checked
+text contrast >=5.11:1; 640px view has no horizontal overflow. New plots do not
+represent observed subject cells, allele effects or completed drug experiments.
+
+Commands and actual outcomes:
+
+```bash
+uv run python scripts/track2_release_v8.py check-deck
+uv run node scripts/render_track2_slides_v8.mjs v8-slide-review-final-20260919
+# Five slides; text_outside_slides:0; text_overlaps:0
+# visible_words:[39,70,60,68,76]; render.json records source/code/export hashes
+uv run pdftoppm -png -scale-to 1280 results/feat009/v8-slide-review-final-20260919/track2-slides-v8.pdf results/feat009/v8-slide-review-final-20260919/pdf-page
+uv run pdfinfo results/feat009/v8-slide-review-final-20260919/track2-slides-v8.pdf
+uv run pdffonts results/feat009/v8-slide-review-final-20260919/track2-slides-v8.pdf
+# 5 pages, 960x540pt, fonts embedded, JavaScript:no; all pages inspected
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+# Ran 437 tests in 4.832s; OK. logs/track2-v8-regressions-final.log
+# First run found an ineffective plot-tamper test fixture: corrected its target
+# to the actual v8 point coordinate, then reran the suite successfully.
+uv run python scripts/verify_data.py --self-check
+uv run python scripts/track1_submission.py --self-check
+uv run python scripts/track2_evidence.py check
+uv run python scripts/track2_evidence.py track1
+# All pass; local Track 1 v4 bytes unchanged, upload identity still unverified
+uv run python scripts/track2_release_v8.py build results/feat009/jvv7_track2_research_v8
+uv run python scripts/track2_release_v8.py verify results/feat009/jvv7_track2_research_v8
+# integrity_verified:true; files:6; bound_inputs:75
+# historical_v1_through_v7_preserved:true; upload_ready:false
+uv run python scripts/check_publication_remote.py --output results/feat009/v8-publication-remote-20260919.json
+# PUBLIC; 13 retired blobs unavailable; 0 unknown errors; live control retrievable
+```
+
+Deck SHA-256:
+`93804595099b9422e4eede96d73b6fe80cebe7b877b25dfcd301c6fd242f655e`.
+Final PDF, page previews, overview and render metadata:
+`results/feat009/v8-slide-review-final-20260919/`.
+
+Fresh-shell no-argument `./init.sh` exited 0 without manual setup. Actual output
+from `logs/track2-v8-init.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Feat-009 remains in progress for narration rehearsal/recording/hosting, provider
+settings, final owner/live checks and receipt. No new model provider or subject-data
+processing; no phase, efficacy, clinical-margin or drug-ranking change. Publication
+audits, commit and configured-origin push follow the verified frozen v8 snapshot.
+
+Staged disclosure audit passed: **153 blobs, zero findings**, recorded in
+`results/feat009/v8-disclosure-staged-20260919.json`. Frozen-package verification
+and `git diff --cached --check` pass. The all-ref audit is retained in
+`results/feat009/v8-history-final-20260919.json`; configured-origin push and clean
+upstream equality are checked at handoff.
