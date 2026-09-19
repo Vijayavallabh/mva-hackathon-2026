@@ -1,6 +1,16 @@
 # Session handoff
 
-**Last updated:** 2026-09-19 IST, session 45. **Active feature: feat-009 Track 2.**
+**Last updated:** 2026-09-19 IST, session 46. **Active feature: feat-009 Track 2.**
+The owner made active, extensive falsification search a standing research objective.
+Read `notes/track2-falsification-plan.md` at the start of the next research cycle:
+state overturning criteria, search contrary evidence across all consequential
+assumptions, and use findings to revise decisions, controls or stop rules. The
+first-cycle question/query table is pending work, not completed retrieval. This
+session updates the objective and workflow; no new scientific evidence or candidate
+promotion is claimed. Preserve v9 and all earlier bound inputs and packages.
+
+## Session 45 scientific baseline
+
 Owner-requested whole-Track-2 devil's-advocate review is complete, with substantive
 v9 revisions. See `notes/track2-adversarial-v9.md` for 12 findings, all-workstream
 coverage, primary source reading depth/failures and self-challenge of the revision.
@@ -216,6 +226,13 @@ and both candidates, retaining all nine same-position alternate rows. See
 `notes/alphagenome-splicing-results.md` for hashes, commands, output terms and limitations.
 
 ## Blockers and unresolved evidence
+
+- **Standing falsification search remains ongoing:** execute the first-cycle
+  priorities in `notes/track2-falsification-plan.md` during the next substantive
+  research session. Record coverage/access gaps and evidence that would overturn
+  each decision. This research queue is not an access blocker; high-impact gaps
+  block only the scientific inferences that depend on them. The completed v9 desk
+  audit does not close the continuing objective.
 
 - **Session 45 desk audit/revision is complete; biological and delivery gaps remain.**
   The BUBR1-loss result is an adverse-mechanism concern, not proof of harm in this

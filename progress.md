@@ -2965,3 +2965,86 @@ also passes. Final staged/all-ref audits are retained as
 `v9-disclosure-staged-final-20260919.json` and `v9-history-final-20260919.json` under
 `results/feat009/`. Configured-origin push and clean upstream equality are checked
 at handoff; the existing live retired-object gate passes.
+
+## 2026-09-19 — session 46: standing Track 2 falsification objective
+
+Owner requested a continuing objective: actively and extensively seek information
+that could falsify the current approach, treating this as critical because the
+child's life is at stake, and use weaknesses, errors and overlooked risks to
+substantially improve the solution. Baseline `65e522d`; feat-009 only, still
+`in_progress`.
+
+Added `notes/track2-falsification-plan.md` and a prominent standing instruction in
+`AGENTS.md`; updated README, feat-009 description/evidence and the handoff. The plan
+specifies a seven-step research cycle, eight search dimensions, five initial
+question/query priorities, explicit overturning criteria, reproducible search and
+reading-depth records, equal scrutiny of favorable/unfavorable evidence, and
+decision/control/stop-rule revisions. Unknowns and access failures remain explicit.
+The objective continues beyond the completed v9 audit, including testing any revised
+or rejected position against contrary evidence of its own.
+
+This session establishes the objective and execution plan; no additional literature
+search, scientific adjudication, biological experiment or candidate promotion was
+performed. The first-cycle queue is explicitly pending. No new provider, subject-file
+analysis, treatment, recording or upload occurred. Applied the existing
+scientific-critical-thinking guidance. Kept the original bound plan, all v9 scientific
+artifacts and all older packages unchanged; the new plan is their working companion.
+
+Actual validation:
+
+```text
+uv run python scripts/verify_data.py --self-check
+self-check ok
+uv run python scripts/track1_submission.py --self-check
+self-check ok: build, strict conformance, normalization and official scoring
+uv run python scripts/track2_evidence.py check
+53 sources / 12 candidates; direct_pair_intervention_evidence:0;
+clinical_efficacy_established:0; phase:unconfirmed
+uv run python scripts/test_track2_evidence.py
+Ran 63 tests in 0.246s
+OK
+uv run python scripts/track2_release_v9.py verify results/feat009/jvv7_track2_research_v9
+integrity_verified:true; files:6; bound_inputs:84;
+historical_v1_through_v8_preserved:true; upload_ready:false
+git diff --check
+exit 0
+```
+
+The baseline ledger checker deliberately reproduces historical candidate decisions;
+it does not reinstate the pre-v9 everolimus priority. Current scientific decisions
+remain those of v9. Local documentation check: all five companion-plan links resolve,
+the AGENTS/README/handoff pointers exist, and feat-009 remains in progress. No new
+tests were added for this documentation-only change.
+
+Fresh no-argument `./init.sh` exited 0 without manual setup. Actual output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Biological uncertainties and existing delivery/provider/receipt requirements remain
+open in `session-handoff.md`. The new research queue is not an external access blocker.
+Live publication, staged and all-ref audit outputs use the
+`results/feat009/falsification-objective-*-20260919.json` prefix. Configured-origin
+push and clean upstream equality are verified at handoff.

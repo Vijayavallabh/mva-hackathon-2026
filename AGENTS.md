@@ -48,6 +48,26 @@ organizers' own words from the official Hackathon Rules.
 
 If a task appears to require breaking one of these, stop and ask.
 
+## Track 2 standing objective: actively try to falsify the approach
+
+Owner instruction, 2026-09-19 (session 46): while working toward a solution,
+**actively and extensively search for information that could falsify or disprove
+the current approach**. Treat this as critical because the child's life is at
+stake. Use weaknesses, errors, contradictions and overlooked risks to substantially
+improve the proposal, including changing direction or abandoning a favored approach.
+
+Follow `notes/track2-falsification-plan.md` alongside the preserved original plan.
+Every substantive research cycle must dedicate effort to contrary evidence across
+mechanism, model validity, functional endpoints, failed studies, exposure, safety
+and alternatives. State what would overturn a claim, record reproducible searches
+and reading depth, and translate material findings into decisions or stop rules.
+Apply the same standards to favorable and unfavorable evidence; missing evidence
+is not disproof, and failure to find a contradiction is not validation. Resolve or
+explicitly retain high-impact gaps before promoting the corresponding claim.
+This is a continuing objective, not a one-time devil's-advocate review. Preserve
+bound snapshots; use new versions when findings change the science. The v9
+dispositions remain current until a documented evidence-based revision.
+
 ## Data facts — established, do not re-derive
 
 Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scoring rules in

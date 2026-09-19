@@ -99,6 +99,12 @@ comparative rescue priority: everolimus is an optional, model-qualified mechanis
 No drug currently earns a rescue priority; HCQ remains reserve. Positive findings from
 other disease models remain visible, and no patient harm or benefit is inferred.
 
+**Standing research objective:** actively and extensively seek evidence that could
+falsify the current approach, then use weaknesses and overlooked risks to revise or
+abandon it when warranted. The [falsification plan](notes/track2-falsification-plan.md)
+requires reproducible searches, explicit overturning criteria and documented changes
+to decisions or experiments throughout the work, before candidate promotion or release.
+
 The [36-source/11-decision ledger](notes/track2-evidence-v9.json),
 [validation plan](notes/track2-validation-v9.md),
 [339-word pitch](notes/track2-pitch-v9.md) and [v9 deck](notes/track2-slides-v9.html)
