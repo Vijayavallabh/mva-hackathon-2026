@@ -96,14 +96,15 @@ hypothetical 100/1 test. It does not establish allele function or phase:
 centres one conditional everolimus experiment while preserving the evidence and limits. Its
 unchanged [32-source/11-decision supplement](notes/track2-evidence-v4.json),
 [validation plan](notes/track2-validation-v5.md),
-[297-word pitch](notes/track2-pitch-v6.md) and [five-slide visual deck](notes/track2-slides-v6.html)
-are linked by `scripts/track2_release_v6.py`. The slides contain four schematics and
+[297-word pitch](notes/track2-pitch-v6.md) and [v7 visual deck](notes/track2-slides-v7.html)
+are linked by `scripts/track2_release_v7.py`. V7 refines typography, spacing and diagram
+grouping while preserving every slide word and citation from v6. The slides contain four schematics and
 a redraw of the published ARST1431 hazard ratio and confidence interval.
 Open the HTML locally or use the PDF export from
-`uv run node scripts/render_track2_slides_v6.mjs NEW-OUTPUT-NAME`.
-See the [design review](notes/track2-v6-design.md),
+`uv run node scripts/render_track2_slides_v7.mjs NEW-OUTPUT-NAME`.
+See the [v7 design and validation note](notes/track2-v7-design.md),
 [scientific review](notes/track2-v6-scientific-review.md) and
-[standards review](notes/track2-v6-standards-review.md); the final pass was an author
+[v6 standards review](notes/track2-v6-standards-review.md); the final pass was an author
 verification, distinguished from earlier reviewer checkpoints. These are research materials,
 not a recorded video or submission. Fireworks API-credit use is owner-confirmed;
 training/retention settings remain unverified. Video, final owner/live checks and receipt

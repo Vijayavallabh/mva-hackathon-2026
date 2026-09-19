@@ -220,6 +220,13 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   and Track 1 v4 verify unchanged. Runtime unmeasured; no recorded/hosted video or
   submission. Everolimus remains conditional, HCQ reserve, phase unconfirmed and
   clinical margins null. Provider/owner/live submission gates remain open.
+- **Session 43 v7 visual refinement (2026-09-19):** current presentation is
+  `notes/track2-slides-v7.html`, using the unchanged v6 report and 297-word narration.
+  Every slide word/citation matches v6; the 301-word deck adds lighter serif titles,
+  calmer spacing and grouped diagrams. See `notes/track2-v7-design.md` and renderer
+  `scripts/render_track2_slides_v7.mjs`. Five PDF pages were inspected; 429 Track 2
+  tests pass. `scripts/track2_release_v7.py` binds six files/70 inputs and verifies
+  all historical v1-v6 releases. No science, provider or submission status changed.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed

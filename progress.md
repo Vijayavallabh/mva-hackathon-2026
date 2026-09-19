@@ -2674,3 +2674,96 @@ Staged disclosure check passed on **143 blobs, zero findings**:
 Final `git diff --cached --check` and v6 verification also pass. The post-commit
 all-ref report is retained at `results/feat009/v6-history-final-20260919.json`;
 configured-origin push and upstream equality are verified at handoff.
+
+## Session 43 · 2026-09-19 · V7 aesthetic refinement
+
+Active feature: feat-009. Baseline `b83c3d2`. The owner requested a more aesthetic
+presentation. Created `notes/track2-slides-v7.html` with regular serif headings,
+softer lilac/plum colors, more space, curved objective connectors and grouped
+experimental comparisons. The cover and conclusion use distinct compositions.
+Every slide word and citation link matches v6; no scientific rewrite occurred.
+Use the unchanged v6 report/297-word narration, v5 validation and v4 evidence ledger.
+
+Applied frontend-design and PDF guidance. All work used local fonts/SVG/Chrome;
+no new source search, model provider, image API or protected input. The first
+render exposed overlapping title line boxes; increasing line height fixed them.
+PDF font inspection identified the serif fallback, which the final CSS now names
+explicitly as Liberation Serif. Font glyphs are embedded in the exported PDF.
+
+Final output: `results/feat009/v7-slide-review-verified-20260919/`. All five PDF
+pages were rasterized and visually inspected. The overview PNG provides a compact
+preview. Five 1280-by-720 slides, 301 words (49/64/61/60/67), zero text overlaps or
+boundary failures, minimum text size 24 px, passing 640 px viewport check. Checked
+text/background contrast ranges from 5.11:1 to 15.13:1. The PDF has five 960-by-540-point
+pages, no JavaScript and embedded fonts. This bounded author review does not
+certify owner aesthetic approval, measured runtime or a recorded/hosted pitch.
+
+Commands and actual results:
+
+```bash
+uv run python scripts/track2_release_v7.py check-deck
+# v6_slide_wording_and_links_preserved: true
+# 5 slides, 4 schematics, 1 published plot with unchanged values/log axis
+uv run node scripts/render_track2_slides_v7.mjs v7-slide-review-verified-20260919
+# slides:5, text_outside_slides:0, text_overlaps:0
+uv run pdftoppm -png -scale-to 1280 results/feat009/v7-slide-review-verified-20260919/track2-slides-v7.pdf results/feat009/v7-slide-review-verified-20260919/pdf-slide
+uv run pdfinfo results/feat009/v7-slide-review-verified-20260919/track2-slides-v7.pdf
+# 5 pages, 960 x 540 pts; JavaScript:no
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+# Ran 429 tests in 4.462s; OK. logs/track2-v7-regressions.log
+# Includes 8 new synthetic snapshot/content/history-preservation tests
+uv run python scripts/verify_data.py --self-check
+uv run python scripts/track1_submission.py --self-check
+uv run python scripts/track2_evidence.py check
+uv run python scripts/track2_evidence.py track1
+# All pass; Track 1 v4 unchanged, uploaded-byte identity still unverified
+uv run python scripts/track2_release_v7.py build results/feat009/jvv7_track2_research_v7
+uv run python scripts/track2_release_v7.py verify results/feat009/jvv7_track2_research_v7
+# integrity_verified:true; files:6; bound_inputs:70
+# historical_v1_through_v6_preserved:true; upload_ready:false
+uv run python scripts/check_publication_remote.py --output results/feat009/v7-live-purge-20260919.json
+# PUBLIC; 13 retired blobs unavailable; 0 unknown errors; live control retrievable
+```
+
+Deck SHA-256:
+`25607c6f2ffda140c7c3482490e002f926149556efc7e65d99e64332117fc026`.
+The visual snapshot copies existing prose instead of manufacturing new report or
+narration versions. The use note explains the v6 narration/v7 deck pairing.
+
+Fresh-shell no-argument `./init.sh` exited 0 without manual setup. Actual output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Feat-009 remains in progress. Owner review, rehearsal/recording/hosting, Fireworks
+training/retention verification, live submission checks and receipt remain open.
+No phase, efficacy, exposure-margin or candidate-priority change. Final disclosure
+audits, commit and configured-origin push follow the frozen snapshot verification.
+
+Staged disclosure audit passed: **148 blobs, zero findings**, recorded in
+`results/feat009/v7-disclosure-staged-20260919.json`. Final package verification
+and `git diff --cached --check` also pass. The all-ref audit is retained in
+`results/feat009/v7-history-final-20260919.json`; configured-origin push and clean
+upstream equality are verified at handoff.

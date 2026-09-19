@@ -1,6 +1,19 @@
 # Session handoff
 
-**Last updated:** 2026-09-19 IST, session 42. **Active feature: feat-009 Track 2.**
+**Last updated:** 2026-09-19 IST, session 43. **Active feature: feat-009 Track 2.**
+The owner requested a more aesthetic deck. Current presentation:
+`notes/track2-slides-v7.html`, with the unchanged v6 report and 297-word narration,
+v5 validation and v4 evidence. Every slide word and source link matches v6; 301 words.
+V7 uses regular serif headings, a softer lilac palette, greater spacing and grouped
+figures. The final five-page PDF, previews and overview are in
+`results/feat009/v7-slide-review-verified-20260919/`.
+Use `uv run python scripts/track2_release_v7.py verify results/feat009/jvv7_track2_research_v7`.
+Six files/70 inputs and historical v1-v6 preservation pass. The 429 Track 2 tests,
+core self-checks, fresh init and live publication/purge guard pass. No new source,
+provider, scientific claim, recording or upload. Design/review: `notes/track2-v7-design.md`.
+
+## Session 42 context
+
 The owner said to continue. The working tree held an interrupted v6 story/design
 rebuild beyond the last handoff. Completed its narration, bounded source/visual
 checks, release verification and repository records. Baseline `17e9c66`.
@@ -163,6 +176,14 @@ and both candidates, retaining all nine same-position alternate rows. See
 
 ## Blockers and unresolved evidence
 
+- **Session 43 visual revision is complete.** Use the v7 deck/PDF with the unchanged
+  v6 narration/report. The v6 pitch retains its historical v6 deck link; the v7 use
+  note identifies the new presentation. All five PDF pages were inspected, labels
+  are at least 24 px and checked text contrast is at least 5.11:1. Visual changes
+  do not satisfy recording/hosting, provider settings, owner/live checks or receipt.
+  Preserve bound inputs; further edits require another version/snapshot.
+  V7 deck SHA-256: `25607c6f2ffda140c7c3482490e002f926149556efc7e65d99e64332117fc026`.
+
 - **Session 42 v6 work is complete as a research draft.** The 421 Track 2 regressions,
   core self-checks, fresh no-argument init and v6 package verification pass. Live
   authenticated GitHub checks confirm PUBLIC and all 13 retired blobs unavailable,
@@ -289,6 +310,7 @@ uv run python scripts/track2_release.py verify results/feat009/jvv7_track2_resea
 uv run python scripts/test_track2_release_v4.py
 uv run python scripts/track2_release_v4.py verify results/feat009/jvv7_track2_research_v4
 uv run python scripts/track2_release_v6.py verify results/feat009/jvv7_track2_research_v6
+uv run python scripts/track2_release_v7.py verify results/feat009/jvv7_track2_research_v7
 ```
 
 Continue feat-009 only. The original `jvv7_track2_research_v1/` is preserved (seven file
