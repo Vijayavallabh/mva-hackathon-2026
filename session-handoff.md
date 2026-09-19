@@ -1,7 +1,17 @@
 # Session handoff
 
-**Last updated:** 2026-09-09 IST, session 38. **Active feature: feat-009 Track 2.**
-The latest user clarified: more substantive GLM model work through Firecrawl for
+**Last updated:** 2026-09-19 IST, session 40. **Active feature: feat-009 Track 2.**
+The latest owner request authorized the proposed next step: v4 report/evidence/validation
+integration and matching pitch materials, baseline `e7aee96`. The owner then confirmed
+Fireworks usage was API credits; training/retention settings remain unverified.
+Current artifacts: `notes/track2-report-v4.md`, `track2-evidence-v4.json`,
+`track2-validation-v4.md`, `track2-pitch-v4.md`, `track2-slides-v4.html`.
+The independent scientific and integration/standards reviews are
+`track2-v4-primary-review.md` and `track2-v4-review.md`.
+Use `scripts/track2_release_v4.py` for new snapshots and `verify` for preserved v4.
+No hosted video, upload, new drug experiment, phase or clinical-margin evidence.
+
+The earlier user clarified: more substantive GLM model work through Firecrawl for
 expanded literature, not another capability test; baseline `8efde23`.
 See `notes/track2-glm-review.md` and its independent constitutional/oncology reviews.
 The prior user requested connecting to the self-hosted MCP; baseline `42171c0`.
@@ -20,7 +30,13 @@ The previous session's equal-priority HCQ nomination is superseded.
   Preserve the baseline ledgers and v3 inputs; no candidate, phase or clinical-margin
   promotion follows. Entinostat's specific Chinese approval corrects a global
   “unapproved” shorthand, not the lack of pediatric RMS efficacy/exposure evidence.
-- **Current synthesis is v3:** `notes/track2-report-v3.md`, `track2-pitch-v3.md` and
+- **Current synthesis is v4:** it integrates the adjudicated GLM supplement and contains
+  a cumulative 32-source/11-decision supplement, proposed staged validation, 336-word
+  narration (112 words/minute is a planning estimate) and five locally rendered slides.
+  Source/protocol corrections and all unchanged scientific limits are explicit.
+  Everolimus remains conditional, HCQ reserve and pralatrexate a tumour-only horizon.
+  The owner confirmed credit-based Fireworks API use, not training or retention policy.
+- **Historical v3 synthesis:** `notes/track2-report-v3.md`, `track2-pitch-v3.md` and
   `track2-validation-v3.md`. Atlas/output terms and expanded provider disclosure are
   integrated. Preserve historical report/pitch v2, their bound inputs and all packages.
 - **Self-hosted MCP connected:** `scripts/track2_firecrawl.py`, real STDIO to loopback;
@@ -116,6 +132,19 @@ and both candidates, retaining all nine same-position alternate rows. See
 
 ## Blockers and unresolved evidence
 
+- **Session 40 v4 integration is complete as a research draft, not a submission.**
+  `scripts/track2_release_v4.py` binds 25 copied files/44 inputs; current-input-bound v2
+  and v3 remain intact. Existing 367 tests + 72 v4 tests pass (439 total). Fresh init
+  passes with network access; an earlier sandboxed DNS failure is recorded, not a bad
+  download. The local renderer records source/code hashes, five 1280×720 previews,
+  text-boundary checks and a retained isolated public-only temp-profile path.
+  `results/feat009/v4-slide-review-audited-20260919/` is the final preview audit.
+  A slide-3 overlap was fixed after visual inspection; geometry alone is insufficient.
+  Remaining tasks are an actual recorded/hosted pitch, Fireworks training/retention
+  verification, final owner/live rules/disclosure/quota/publication checks and receipt.
+  API credits do not establish no-training or zero retention. No new GLM/provider call
+  or protected-data transfer was needed. Do not rerun phase audits without new evidence.
+
 - **Session 39 project-local K-Dense installation:** installed and smoke-tested;
   use `node scripts/k-dense.mjs` and `notes/k-dense-installation.md`. The test
   instance is stopped. A provider key/login or local model must be configured by
@@ -200,6 +229,8 @@ uv run python scripts/test_track2_firecrawl.py
 uv run python scripts/test_track2_release.py
 uv run python scripts/test_track2_glm_review.py
 uv run python scripts/track2_release.py verify results/feat009/jvv7_track2_research_v3
+uv run python scripts/test_track2_release_v4.py
+uv run python scripts/track2_release_v4.py verify results/feat009/jvv7_track2_research_v4
 ```
 
 Continue feat-009 only. The original `jvv7_track2_research_v1/` is preserved (seven file

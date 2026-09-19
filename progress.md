@@ -2325,3 +2325,141 @@ Staged disclosure audit: `uv run python scripts/audit_publication.py --staged
 --output results/feat009/k-dense-installation-audit.json` passes 112 unique blobs,
 zero findings. Completed changes are committed and pushed to configured origin;
 branch/upstream equality and a clean working tree are checked at session end.
+# Session 40 — 2026-09-19 IST — Track 2 v4 synthesis, validation and pitch materials
+
+Baseline `e7aee96`; feat-009 only, still **in_progress**. The owner authorized the
+recommended next step after asking what remained. This session integrates the existing
+adjudicated GLM literature into a new report, focused decision ledger, consolidated
+validation design, narration and local deck. No new model call, new provider, subject
+input, phase analysis, wet-lab work, procurement, family contact or portal upload.
+
+New artifacts: `notes/track2-report-v4.md`, `track2-evidence-v4.json`,
+`track2-validation-v4.md`, `track2-pitch-v4.md`, `track2-slides-v4.html`,
+`track2-v4-primary-review.md`, `track2-v4-review.md`, and separate release/tests/renderer.
+The ledger has 32 cumulative source records and 11 fixed decisions; this is neither
+all-new literature nor an exhaustive replacement of the frozen 53-source baseline.
+The narration has 336 words: 112 words/minute over three minutes is an estimate only.
+
+Research and scientific-critical-thinking skills prompted independent primary/source
+and standards reviews. Scientific-slides guidance prompted a timed, source-backed deck
+and actual image inspection. Optional remote skill backends were not used, avoiding an
+unnecessary provider expansion. Bounded primary checks verified source/model distinctions;
+new exact details include original p70S6K/4EBP1 mouse readouts, small depicted blot groups,
+nonrandomized/unblinded Methods, and positive PR65 ensemble binding alongside disputed
+DT-061 pharmacology. Design review separated downstream mitigation from chromosome repair
+and first division from later daughter survival. No candidate/phase/margin promotion.
+
+The owner confirmed Fireworks use as **API credits**. This is recorded as credit-based
+API access/billing, not an inferred training or retention policy. Those settings remain
+unverified. No API key was requested or emitted. Current disclosures retain OpenAI API
+owner attestation, Google DeepMind precomputed outputs and Fireworks-hosted GLM history.
+
+## Verification actually performed
+
+```bash
+uv run python scripts/verify_data.py --self-check
+uv run python scripts/track1_submission.py --self-check
+uv run python scripts/track2_evidence.py check
+uv run python scripts/track2_evidence.py track1
+uv run python scripts/test_track2_evidence.py
+uv run python scripts/test_track2_review.py
+uv run python scripts/test_alphagenome_access_audit.py
+uv run python scripts/test_alphagenome_atlas.py
+uv run python scripts/test_alphagenome_splicing.py
+uv run python scripts/test_track2_firecrawl.py
+uv run python scripts/test_track2_release.py
+uv run python scripts/test_track2_glm_review.py
+uv run python scripts/test_track2_release_v4.py
+node --check scripts/render_track2_slides.mjs
+node scripts/render_track2_slides.mjs v4-slide-review-audited-20260919
+uv run python scripts/track2_release_v4.py build results/feat009/jvv7_track2_research_v4
+uv run python scripts/track2_release_v4.py verify results/feat009/jvv7_track2_research_v4
+```
+
+Eight previous suites pass 367 tests; the new suite passes 72 (439 total), logs
+`logs/track2-v4-regressions.log` and `logs/track2-v4-release-tests.log`. Synthetic
+tests check code and tamper handling, not efficacy. All eleven decision identities,
+scopes and roles are fixed. Type-coercion, CSP/entity handling, symlink/traversal,
+overwrite, input/source drift, renderer binding and draft-gate defects are covered.
+
+Final v4 build and verification both return:
+
+```json
+{
+  "integrity_verified": true,
+  "files": 25,
+  "upload_ready": false,
+  "provider_settings_verified": false,
+  "phase": "unconfirmed",
+  "historical_v2_preserved": true,
+  "historical_v3_preserved": true,
+  "report_sha256": "79d962cb2723c3fa73c3591f6c3749eddd08d859edcecb7a9631ae424d31dc8a",
+  "slides_sha256": "30110964d8e09f83d49307b9f22e74d54ce9da4a18fcf6eb159c30dc02d576d8"
+}
+```
+
+The 25 files plus manifest bind 44 current inputs. Earlier v2/v3 and Track 1 v4
+verify unchanged. Intended future report: `jvv7_track2_report_v4.md`; historical
+reports included as support in the snapshot are not alternative upload choices.
+No existing snapshot or bound input was overwritten. Integrity is not upload readiness.
+
+## Visual check and bounded browser handling
+
+Direct Chrome CLI attempts produced clipped/blank previews and were rejected as QA.
+The CDP renderer uses a fixed local public-safe HTML source, minimal environment,
+temporary isolated profile, dead loopback proxy, blocked target HTTP(S)/WebSocket loads,
+disabled page scripts, explicit 1280×720 viewport and owned-process-group cleanup.
+Sandbox socket restrictions required approved headless-browser execution outside it.
+No unrelated browser, credentials or subject files were involved.
+
+All five slides were viewed; a slide-3 footer overlap was fixed and slide-4 spacing
+improved. Five final screenshots have zero text-boundary violations; contrast ratios
+are at least 8.49:1. `results/feat009/v4-slide-review-audited-20260919/render.json`
+records source/renderer/browser versions, image hashes and the retained public-only
+temporary profile path. Earlier CLI/CDP attempts remain honest historical diagnostics.
+The deck is not an audio/video recording, measured runtime or hosted playback check.
+
+## Fresh no-argument startup output
+
+The startup from the preceding status turn finished successfully. A new final sandboxed
+run failed DNS on the remote file-size manifest; `logs/track2-v4-final-init.log` retains
+that failure. The network-enabled rerun used **`./init.sh` with no arguments** and exited
+0; output in `logs/track2-v4-final-init-network.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+No redownload or data mutation was needed. Remaining delivery gates: actual recorded/hosted
+pitch, Fireworks training/retention verification, final owner/live rules/disclosure/
+quota/publication checks and receipt. Current public submit-tab requirements were
+rechecked; current config retrieval failed, so no fresh quota assertion is made.
+
+Staged publication audit `uv run python scripts/audit_publication.py --staged --output
+results/feat009/v4-disclosure-staged-20260919.json` passes **122 unique blobs, zero
+findings**. Final read-only independent review verifies the exact renderer/source/image
+hashes, v4 package, narration word count and harness changes. No remaining material issue
+was identified. End-of-session all-ref audit is retained in
+`results/feat009/v4-history-final-20260919.json`; commit/push and upstream equality are
+verified at handoff. No Track 2 submission has been made.

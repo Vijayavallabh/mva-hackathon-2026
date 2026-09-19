@@ -184,6 +184,19 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   Preserve all v3-bound files and prior packages; the new supplement has not replaced
   an upload. Everolimus remains conditional, HCQ reserve, clinical margins null and
   trans phase unconfirmed. Do not rerun paid/model work merely to force agreement.
+- **Session 40 v4 synthesis/pitch integration (2026-09-19):** current draft is
+  `notes/track2-report-v4.md`, with `track2-evidence-v4.json` (32 cumulative source
+  records/11 fixed decisions), consolidated `track2-validation-v4.md`, 336-word
+  `track2-pitch-v4.md` and five-slide `track2-slides-v4.html`. See independent
+  `track2-v4-primary-review.md` and `track2-v4-review.md`. Original mTOR phosphoproteins,
+  small/unblinded/nonrandomized mouse evidence and actual PR65 binding are retained.
+  Downstream functional mitigation is not necessarily chromosome repair; first-division
+  events and daughter survival are separate records. No ranking/phase/margin promotion.
+  Use new `scripts/track2_release_v4.py` for immutable v4 snapshots; preserve every
+  older bound input and package. Local rendering uses `scripts/render_track2_slides.mjs`,
+  no extra model provider or protected input. The owner confirmed Fireworks API credits;
+  training/retention remain unverified. The deck/script are not a recording or hosted
+  video. Feat-009 stays in progress for video, provider/owner/live checks and receipt.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed

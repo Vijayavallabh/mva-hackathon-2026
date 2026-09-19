@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>jvv7 · Track 2 v4 · Research-only pitch</title>
+  <style>
+    :root { color-scheme: dark; --bg:#10232d; --panel:#1b3541; --text:#f5f8fa; --muted:#c8d7dd; --teal:#83e3cf; --gold:#ffda8a; }
+    * { box-sizing:border-box; }Reframe the paper around its novel contribution, not our experiment log — Oral/Spotlight papers lead with a breakthrough, ours currently reads like "we ran experiments and falsified our hypotheses." Make it figure/table-driven: a strong overview figure up front, visuals carrying the evidence, self-contained captions, and text only to frame and interpret them. Prose must be precise, concise, accurate: exact numbers, no filler, nothing stated the figures don't back. The draft is 18 pages with appendix — way too long, so cut text without hesitation and replace it with figures and tables; push mechanical detail to the appendix. I'm fine with drastic changes — restructure from scratch if needed. And if you conclude we don't have a real contribution yet, say so and propose what's missing.
+    html { scroll-behavior:auto; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:Arial,Helvetica,sans-serif; }
+    .slide { width:1280px; height:720px; padding:44px 56px 72px; position:relative; overflow:hidden; border-bottom:1px solid #345363; }
+    .eyebrow { font-size:24px; letter-spacing:2px; color:var(--teal); margin:0 0 18px; text-transform:uppercase; }
+    h1 { font-size:64px; line-height:1.06; letter-spacing:-2px; margin:0 0 26px; max-width:1000px; }
+    h2 { font-size:48px; line-height:1.1; letter-spacing:-1px; margin:0 0 26px; }
+    h3 { font-size:30px; line-height:1.15; margin:0 0 16px; color:var(--teal); }
+    p { font-size:30px; line-height:1.3; margin:0 0 18px; }
+    .lead { max-width:1050px; font-size:34px; }
+    .small { font-size:25px; line-height:1.35; }
+    .muted { color:var(--muted); }
+    .gold { color:var(--gold); }
+    .row { display:flex; gap:22px; }
+    .card { flex:1; background:var(--panel); padding:24px; border-radius:12px; border-top:5px solid var(--teal); }
+    .card.warn { border-top-color:var(--gold); }
+    .cards { margin:22px 0; }
+    .callout { border-left:6px solid var(--gold); padding:12px 20px; margin:24px 0; background:var(--panel); }
+    .callout p { margin:0; }
+    .number { font-size:27px; color:var(--gold); display:block; margin-bottom:14px; }
+    .candidates { display:grid; grid-template-columns:270px 260px 1fr; gap:0; margin:24px 0; }
+    .candidates > div { padding:20px 18px; border-bottom:2px solid #345363; font-size:27px; line-height:1.25; }
+    .candidates .head { font-size:24px; color:var(--muted); padding-top:0; }
+    .fates { display:flex; gap:12px; margin:18px 0; }
+    .fates span { flex:1; text-align:center; background:var(--panel); padding:16px 8px; border-radius:9px; font-size:25px; line-height:1.2; }
+    .refs { position:absolute; left:56px; right:56px; bottom:63px; font-size:24px; color:var(--muted); line-height:1.25; }
+    a { color:inherit; text-decoration:underline; text-underline-offset:4px; }
+    a:focus { outline:3px solid var(--gold); outline-offset:3px; }
+    footer { position:absolute; left:56px; right:56px; bottom:20px; display:flex; justify-content:space-between; align-items:center; font-size:24px; color:var(--muted); }
+    nav a { margin-left:14px; text-decoration:none; }
+    .endline { font-size:40px; color:var(--teal); margin-top:22px; }
+    @media print {
+      @page { size:1280px 720px; margin:0; }
+      body { print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+      .slide { break-after:page; border:0; }
+      .slide:last-child { break-after:auto; }
+      nav { display:none; }
+    }
+  </style>
+</head>
+<body>
+  <section class="slide" id="slide-1" aria-label="Slide 1: protect normal tissue">
+    <div class="eyebrow">jvv7 · MVA Hackathon 2026 · Track 2</div>
+    <h1>Preserve normal tissue.<br>Then pursue tumour vulnerability.</h1>
+    <p class="lead">BUB1B-guided repurposing must account for<br>the vulnerability shared by non-cancer cells.</p>
+    <div class="row cards">
+      <div class="card"><h3>Constitutional arm</h3><p class="small">Improve useful cellular function.<br>Preserve division and tissue health.</p></div>
+      <div class="card warn"><h3>Tumour arm</h3><p class="small">Test relevant-model activity.<br>Require deficient-normal protection.</p></div>
+    </div>
+    <div class="refs">Genetic starting point ≠ drug-response evidence. Trans phase unconfirmed.</div>
+    <footer><span>Research only · No experiments performed</span><nav aria-label="Slides"><a href="#slide-1">1</a><a href="#slide-2">2</a><a href="#slide-3">3</a><a href="#slide-4">4</a><a href="#slide-5">5</a></nav></footer>
+  </section>
+  <section class="slide" id="slide-2" aria-label="Slide 2: conditional everolimus hypothesis">
+    <div class="eyebrow">One conditional constitutional hypothesis</div>
+    <h2>Everolimus earns an experiment—not a prescription.</h2>
+    <div class="row cards">
+      <div class="card"><span class="number">01 · QUALIFY</span><h3>Measure excess<br>mTOR activity</h3><p class="small">Relevant genotype and tissue.<br>Do not assume the pathway.</p></div>
+      <div class="card"><span class="number">02 · TEST</span><h3>Modulate at<br>justified exposure</h3><p class="small">Measure functional benefit.<br>Target engagement is not enough.</p></div>
+      <div class="card warn"><span class="number">03 · CHALLENGE</span><h3>Require normal-<br>cell preservation</h3><p class="small">Replicate the effect.<br>Stop for unacceptable injury.</p></div>
+    </div>
+    <div class="callout"><p class="small">Different-allele mouse evidence; no rapalog rescue tested.<br>ARST1431 did not demonstrate added temsirolimus EFS benefit.</p></div>
+    <div class="refs"><a href="https://doi.org/10.1172/JCI126863">Sieben 2020</a> · <a href="https://doi.org/10.1016/S1470-2045(24)00255-9">Gupta 2024</a> · Neither establishes this pair's response.</div>
+    <footer><span>Research only · Clinical exposure margin unknown</span><nav aria-label="Slides"><a href="#slide-1">1</a><a href="#slide-2">2</a><a href="#slide-3">3</a><a href="#slide-4">4</a><a href="#slide-5">5</a></nav></footer>
+  </section>
+  <section class="slide" id="slide-3" aria-label="Slide 3: decisions after review">
+    <div class="eyebrow">Evidence narrows the choices</div>
+    <h2>Benefits and limits must stay together.</h2>
+    <div class="candidates" role="table" aria-label="Research priority decisions">
+      <div class="head" role="columnheader">Direction</div><div class="head" role="columnheader">Decision</div><div class="head" role="columnheader">Unresolved constraint</div>
+      <div role="cell">Hydroxychloroquine</div><div role="cell" class="gold">Reserve</div><div role="cell">Compound-specific selectivity and exposure</div>
+      <div role="cell">Pralatrexate</div><div role="cell" class="gold">Tumour-only horizon</div><div role="cell">Verified fusion-positive model; toxicity and recurrence</div>
+      <div role="cell">Other reviewed routes</div><div role="cell" class="gold">Not promoted</div><div role="cell">Mechanism, tissue safety and exposure gaps</div>
+    </div>
+    <p class="small muted">Entinostat: Chinese breast-cancer approval ≠ pediatric RMS indication.<br>Model agreement is not independent biological evidence.</p>
+    <div class="refs"><a href="https://doi.org/10.1158/1078-0432.CCR-18-2204">Haas 2019</a> · <a href="https://doi.org/10.1038/s41467-026-73749-y">Pralatrexate study</a> · <a href="https://english.nmpa.gov.cn/2024-04/30/c_1049690.htm">NMPA 2024</a></div>
+    <footer><span>Research only · No established efficacy for this pair</span><nav aria-label="Slides"><a href="#slide-1">1</a><a href="#slide-2">2</a><a href="#slide-3">3</a><a href="#slide-4">4</a><a href="#slide-5">5</a></nav></footer>
+  </section>
+  <section class="slide" id="slide-4" aria-label="Slide 4: proposed validation">
+    <div class="eyebrow">Proposed experiments · not performed</div>
+    <h2>Fewer abnormal survivors is not rescue.</h2>
+    <div class="row cards">
+      <div class="card"><h3>Qualify</h3><p class="small">Independent clones<br>Cis / trans / corrected controls<br>Target and exposure</p></div>
+      <div class="card"><h3>Measure</h3><p class="small">Enroll before treatment<br>Track every first fate<br>Follow daughters and function</p></div>
+      <div class="card warn"><h3>Challenge</h3><p class="small">Randomize and blind<br>Replicate across clones/days<br>Stop for harm or nonreplication</p></div>
+    </div>
+    <div class="fates" aria-label="Distinct cell fates"><span>Accurate<br>division</span><span>Erroneous<br>division</span><span>Persistent<br>arrest</span><span>Cell<br>death</span><span>Mitotic<br>slippage</span></div>
+    <p class="small muted">Retain tracking loss. Cells are nested observations—not independent clones.<br>Downstream functional benefit need not mean chromosome repair.</p>
+    <div class="refs"><a href="https://doi.org/10.1016/j.isci.2021.103675">Yamada: slippage in arrested A549 cells</a> · Not a patient risk estimate.</div>
+    <footer><span>Research only · Engineered phase ≠ subject phase</span><nav aria-label="Slides"><a href="#slide-1">1</a><a href="#slide-2">2</a><a href="#slide-3">3</a><a href="#slide-4">4</a><a href="#slide-5">5</a></nav></footer>
+  </section>
+  <section class="slide" id="slide-5" aria-label="Slide 5: contribution and disclosure">
+    <div class="eyebrow">The contribution</div>
+    <h2>A reproducible decision framework<br>with explicit reasons to stop.</h2>
+    <div class="row cards">
+      <div class="card"><h3>Useful evidence</h3><p class="small">Source-linked decisions<br>Matched-normal safety<br>Complete cell-fate accounting</p></div>
+      <div class="card warn"><h3>Honest limits</h3><p class="small">Trans phase unconfirmed<br>No established efficacy<br>Clinical exposure margin unknown</p></div>
+    </div>
+    <p class="small">AI: OpenAI / Codex; Google DeepMind Atlas; Fireworks-hosted GLM.<br>Fireworks API credits confirmed; training / retention unverified.</p>
+    <p class="endline">Next: authorized validation. Not patient dosing.</p>
+    <div class="refs">Thank you to the child, family and organizers. Full credits and sources in the report.</div>
+    <footer><span><a href="https://github.com/Vijayavallabh/mva-hackathon-2026">github.com/Vijayavallabh/mva-hackathon-2026</a></span><nav aria-label="Slides"><a href="#slide-1">1</a><a href="#slide-2">2</a><a href="#slide-3">3</a><a href="#slide-4">4</a><a href="#slide-5">5</a></nav></footer>
+  </section>
+</body>
+</html>

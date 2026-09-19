@@ -92,14 +92,24 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-**Track 2 (feat-009) is in progress:** see the [current v3 research report](notes/track2-report-v3.md),
-[evidence ledger](notes/track2-candidates.json), [validation plan](notes/track2-validation.md)
-and [devil's-advocate revisions](notes/track2-devils-advocate.md). Twelve entries are
-assessed. The [final scientific/exposure review](notes/track2-final-review.md) retains
+**Track 2 (feat-009) is in progress:** the [current v4 research report](notes/track2-report-v4.md)
+integrates the expanded, independently adjudicated literature. Its
+[32-source/11-decision supplement](notes/track2-evidence-v4.json),
+[consolidated validation plan](notes/track2-validation-v4.md),
+[336-word pitch](notes/track2-pitch-v4.md) and [five-slide local deck](notes/track2-slides-v4.html)
+are linked by a new immutable release checker. See the [v4 review](notes/track2-v4-review.md)
+for scientific/implementation findings and visual checks. These are research materials,
+not a recorded video or submission. Fireworks API-credit use is owner-confirmed;
+training/retention settings remain unverified. Video, final owner/live checks and receipt
+remain outstanding. No phase, efficacy or clinical exposure margin was established.
+
+The historical [baseline evidence ledger](notes/track2-candidates.json) assesses twelve
+entries; the [v3 report](notes/track2-report-v3.md) and all earlier snapshots are preserved.
+The [final scientific/exposure review](notes/track2-final-review.md) retains
 everolimus as one conditional research priority and demotes hydroxychloroquine to reserve.
 The 53-source review and [exposure ledger](notes/track2-exposure.json) establish no clinical
 efficacy or therapeutic margin. No laboratory experiments or Track 2 upload have occurred.
-The [v3 pitch script](notes/track2-pitch-v3.md) still needs recording and a hosted URL.
+The current v4 pitch still needs recording and a hosted URL; v3's script is historical.
 The [Firecrawl follow-up](notes/track2-firecrawl.md) exercised all 26 advertised MCP
 tools and added eight independently checked source documents at explicitly limited
 reading depths. Pralatrexate is a new fusion-positive RMS tumour-only horizon;
@@ -111,7 +121,7 @@ The [expanded GLM literature review](notes/track2-glm-review.md) now separates t
 topic comparisons and adversarial rereads from independent primary-source adjudication.
 It adds PP2A/senescence/readthrough controls and TBX/azole/HDAC exposure checks, including
 entinostat's jurisdiction-specific approval. Raw GLM errors and retrieval gaps are
-explicitly retained; these supplementary notes do not replace the v3 package or prove efficacy.
+explicitly retained; v4 integrates their verified findings without changing v3 package bytes.
 The [authenticated AlphaGenome Atlas follow-up](notes/alphagenome-authenticated-results.md)
 retrieved both candidate AVI scores and feature attributions. These mainly reuse
 termination, AlphaMissense and conservation evidence; detailed molecular retrieval
@@ -141,7 +151,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v3 disclosure names this route without
+GLM for public-literature synthesis; the current v4 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 
