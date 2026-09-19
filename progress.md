@@ -2563,3 +2563,114 @@ The staged disclosure audit passed on 133 blobs with zero findings:
 `uv run python scripts/audit_publication.py --staged --output results/feat009/v5-disclosure-staged-20260919.json`.
 `git diff --check` and final v5 verification pass. End-of-session commit/push and the
 post-commit all-ref audit follow this recorded check; no upload operation is included.
+
+## Session 42 · 2026-09-19 · Complete the interrupted v6 story/design rebuild
+
+Active feature: feat-009. Baseline `17e9c66`. The owner's continuation request resumed
+eight untracked v6 files beyond the session-41 handoff: report/deck/design/reviewer
+checkpoints and release code/tests/renderer. Completed the missing pitch and public
+visual-basis note, corrected a label/connector collision, verified the final artifacts
+and updated the repository status. Every earlier bound source/package is preserved.
+
+The proposal now follows one conditional experiment: qualify a pathway abnormality,
+test everolimus for non-cancer function, retain contrary tumour evidence and account
+for every enrolled cell. Four figures are schematics; the fifth redraws the published
+ARST1431 HR/95% CI. No new efficacy, phase or exposure evidence is asserted. V4's
+32-source/11-decision ledger and v5's validation plan are unchanged. Report sections
+1-7, the full acknowledgement and source URL set match v5.
+
+The narration has **297 words** (51/65/54/62/65 by slide), **99 words/minute** over
+three minutes as a planning estimate only. The five-slide deck has **301 visible
+words**, versus v5's 288; this revision changes the story and evidence presentation.
+V6 remains unrecorded with no measured runtime or hosted URL.
+
+Used frontend-design and PDF guidance for this continuation. Reopened selected JCI
+results/figure/Methods text and the indexed primary ARST1431 abstract; access limits
+and source links are in `sources/research_track2_v6_visual_basis.md`. This was not a
+new full-paper review. The final content/render checks were the resumed main agent's
+author review, distinguished from earlier reviewer checkpoints. No new independent
+reviewer, external model route, protected-data transfer or paid model work was used.
+
+Final local previews and five-page 16:9 PDF:
+`results/feat009/v6-slide-review-final-20260919/`. All five PDF pages were rasterized
+and visually inspected. The initial slide-5 label crossed a brace despite passing
+text-box geometry; the corrected final version is clear. Final checks report zero
+text overlaps/boundary violations, minimum 24 px text and no horizontal overflow at
+640 px. A reproducible standalone Matplotlib SVG/PDF trial redraw was also exported
+and visually inspected. The figures contain only public evidence or proposed designs.
+
+Commands and actual results:
+
+```bash
+uv run node scripts/render_track2_slides_v6.mjs v6-slide-review-final-20260919
+# slides: 5; text_outside_slides: 0; text_overlaps: 0
+# visible_words: [49, 64, 61, 60, 67]
+uv run pdftoppm -png -scale-to 1280 results/feat009/v6-slide-review-final-20260919/track2-slides-v6.pdf results/feat009/v6-slide-review-final-20260919/pdf-slide
+uv run pdfinfo results/feat009/v6-slide-review-final-20260919/track2-slides-v6.pdf
+# Pages: 5; page size: 960 x 540 pts; JavaScript: no
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+# Ran 421 tests in 5.409s; OK (includes 50 new v6 tests)
+# Captured in logs/track2-v6-regressions.log
+uv run python scripts/verify_data.py --self-check
+# self-check ok
+uv run python scripts/track1_submission.py --self-check
+# self-check ok: build, strict conformance, normalization and official scoring
+uv run python scripts/track2_evidence.py check
+# 53 sources, 12 candidates, no established pair efficacy, phase unconfirmed
+uv run python scripts/track2_evidence.py track1
+# unchanged_local_v4_hashes; uploaded_bytes_independently_verified: false
+uv run python scripts/track2_release_v6.py build results/feat009/jvv7_track2_research_v6
+uv run python scripts/track2_release_v6.py verify results/feat009/jvv7_track2_research_v6
+# integrity_verified: true; 8 files / 65 bound inputs
+# historical_v1/v2/v3/v4/v5_preserved: true; upload_ready: false
+# provider_settings_verified: false; phase: unconfirmed
+uv run python scripts/check_publication_remote.py --output results/feat009/v6-live-purge-20260919.json
+# PUBLIC; removed_objects_checked: 13; still_retrievable: 0; unknown_errors: 0
+# reachable_blob_control: retrievable; removed_object_gate_passed: true
+```
+
+New report SHA-256:
+`b75876ab97c9d230b1c07d11793cdae39245a6ca40ec801b2f7b948ac65cf8c1`.
+New deck SHA-256:
+`2de0e16570ac2541e4a5faab4171240331dc26056f9781e0a9dea20ae2dce02d`.
+These are local identity checks, not clinical validation or submission receipts.
+
+The no-argument startup ran from a fresh shell without manual setup and exited 0.
+Actual `./init.sh` output, collected from the running command:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Feat-009 stays in progress for owner review, rehearsal/recording/hosting, Fireworks
+training/retention verification, final live portal/disclosure checks and receipt.
+The successful public-repository guard is not a quota or portal identity check.
+No upload, new experiment or family contact occurred. The staged disclosure audit,
+commit, all-ref audit and configured-origin push follow these frozen release checks.
+
+Staged disclosure check passed on **143 blobs, zero findings**:
+`uv run python scripts/audit_publication.py --staged --output results/feat009/v6-disclosure-staged-20260919.json`.
+Final `git diff --cached --check` and v6 verification also pass. The post-commit
+all-ref report is retained at `results/feat009/v6-history-final-20260919.json`;
+configured-origin push and upstream equality are verified at handoff.

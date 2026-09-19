@@ -210,6 +210,16 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   `scripts/track2_release_v5.py` for new v5 snapshots; preserve all older bound inputs.
   Nothing changes phase, candidate priorities, clinical margins, provider gates or
   upload status. The deck/PDF is not a recording; feat-009 stays in progress.
+- **Session 42 v6 completion (2026-09-19):** the interrupted story/design rebuild is
+  complete in `notes/track2-report-v6.md`, `track2-pitch-v6.md` (297 narration words)
+  and `track2-slides-v6.html` (301 visible words). Four schematics and one published
+  ARST1431 HR/95% CI redraw explain the conditional experiment. The v4 evidence ledger
+  and v5 validation plan remain unchanged. Final content/visual review was the resumed
+  main agent's author review, not a fresh independent review. Five PDF pages were
+  inspected; use `scripts/track2_release_v6.py` for new snapshots. Historical v1-v5
+  and Track 1 v4 verify unchanged. Runtime unmeasured; no recorded/hosted video or
+  submission. Everolimus remains conditional, HCQ reserve, phase unconfirmed and
+  clinical margins null. Provider/owner/live submission gates remain open.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed

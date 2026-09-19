@@ -1,6 +1,23 @@
 # Session handoff
 
-**Last updated:** 2026-09-19 IST, session 41. **Active feature: feat-009 Track 2.**
+**Last updated:** 2026-09-19 IST, session 42. **Active feature: feat-009 Track 2.**
+The owner said to continue. The working tree held an interrupted v6 story/design
+rebuild beyond the last handoff. Completed its narration, bounded source/visual
+checks, release verification and repository records. Baseline `17e9c66`.
+Current: `notes/track2-report-v6.md`, `track2-pitch-v6.md` and `track2-slides-v6.html`;
+the v4 scientific ledger and v5 validation plan remain unchanged. The pitch has 297
+narration words (runtime unmeasured). The five-slide deck has 301 visible words,
+four schematics and one published ARST1431 HR/CI redraw. Final rendered PDF and
+previews: `results/feat009/v6-slide-review-final-20260919/`.
+Use `uv run python scripts/track2_release_v6.py verify results/feat009/jvv7_track2_research_v6`.
+Eight files/65 bound inputs pass; historical v1-v5 and Track 1 v4 are preserved.
+Final content and visual review were performed by the resumed main agent; no new
+independent reviewer was used. The earlier incomplete reviewer checkpoints are
+distinguished from the final author verification in the v6 review notes.
+No recording, hosted video, provider-account verification or upload occurred.
+
+## Prior session context
+
 The latest owner request was to find/install slide-design skills, use humanizer and
 no-ai-slop on the submission/pitch, and make the deck more visual. Baseline `13c8b46`.
 Installed pinned Anthropic frontend-design locally; used the existing scientific-slides,
@@ -35,7 +52,12 @@ The previous session's equal-priority HCQ nomination is superseded.
   Preserve the baseline ledgers and v3 inputs; no candidate, phase or clinical-margin
   promotion follows. Entinostat's specific Chinese approval corrects a global
   “unapproved” shorthand, not the lack of pediatric RMS efficacy/exposure evidence.
-- **Current presentation is v5:** humanizer/no-ai-slop revisions preserve the v4 evidence
+- **Current presentation is v6:** the story follows one conditional experiment, its
+  limited mouse rationale, contrary tumour trial evidence, complete cell-fate
+  accounting and preclinical advancement criteria. The report's scientific sections
+  1-7, acknowledgement and reference URL set match v5. A connector/label collision
+  was fixed after visual inspection. The v5 revision below is preserved history.
+- **Historical presentation v5:** humanizer/no-ai-slop revisions preserve the v4 evidence
   ledger and all primary claims. Five conceptual SVG diagrams replace the earlier card
   layouts; slide text drops from 410 to 288 words. The 337-word script needs rehearsal.
   Final PDF and visual checks are in `results/feat009/v5-slide-review-scaled-20260919/`.
@@ -140,6 +162,17 @@ and both candidates, retaining all nine same-position alternate rows. See
 `notes/alphagenome-splicing-results.md` for hashes, commands, output terms and limitations.
 
 ## Blockers and unresolved evidence
+
+- **Session 42 v6 work is complete as a research draft.** The 421 Track 2 regressions,
+  core self-checks, fresh no-argument init and v6 package verification pass. Live
+  authenticated GitHub checks confirm PUBLIC and all 13 retired blobs unavailable,
+  with a successful live-object control and zero unknown errors. This does not
+  verify portal identity/quota or owner approval. The 297-word script still needs
+  rehearsal, recording and hosting; Fireworks training/retention, final owner/live
+  checks and receipt remain open. No new phase, efficacy or exposure evidence.
+  Preserve every bound v6 input and package; further edits need a new version.
+  Report SHA-256: `b75876ab97c9d230b1c07d11793cdae39245a6ca40ec801b2f7b948ac65cf8c1`.
+  Deck SHA-256: `2de0e16570ac2541e4a5faab4171240331dc26056f9781e0a9dea20ae2dce02d`.
 
 - **Session 41 editorial/visual work is complete; submission gates are unchanged.**
   Current v5 source and release verification use `scripts/track2_release_v5.py`.
@@ -255,6 +288,7 @@ uv run python scripts/test_track2_glm_review.py
 uv run python scripts/track2_release.py verify results/feat009/jvv7_track2_research_v3
 uv run python scripts/test_track2_release_v4.py
 uv run python scripts/track2_release_v4.py verify results/feat009/jvv7_track2_research_v4
+uv run python scripts/track2_release_v6.py verify results/feat009/jvv7_track2_research_v6
 ```
 
 Continue feat-009 only. The original `jvv7_track2_research_v1/` is preserved (seven file
