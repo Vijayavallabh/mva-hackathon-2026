@@ -92,13 +92,17 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-**Track 2 (feat-009) is in progress:** the [current v4 research report](notes/track2-report-v4.md)
-integrates the expanded, independently adjudicated literature. Its
-[32-source/11-decision supplement](notes/track2-evidence-v4.json),
-[consolidated validation plan](notes/track2-validation-v4.md),
-[336-word pitch](notes/track2-pitch-v4.md) and [five-slide local deck](notes/track2-slides-v4.html)
-are linked by a new immutable release checker. See the [v4 review](notes/track2-v4-review.md)
-for scientific/implementation findings and visual checks. These are research materials,
+**Track 2 (feat-009) is in progress:** the [current v5 research report](notes/track2-report-v5.md)
+uses plainer prose while preserving the reviewed evidence and scientific limits. Its
+unchanged [32-source/11-decision supplement](notes/track2-evidence-v4.json),
+[validation plan](notes/track2-validation-v5.md),
+[337-word pitch](notes/track2-pitch-v5.md) and [five-slide visual deck](notes/track2-slides-v5.html)
+are linked by `scripts/track2_release_v5.py`. The slides have five vector diagrams and
+about 30% fewer words than v4. Open the HTML locally or use the PDF export from
+`node scripts/render_track2_slides_v5.mjs NEW-OUTPUT-NAME`.
+See the [design review](notes/track2-v5-design.md),
+[editorial/scientific review](notes/track2-v5-editorial-review.md) and
+[standards review](notes/track2-v5-standards-review.md). These are research materials,
 not a recorded video or submission. Fireworks API-credit use is owner-confirmed;
 training/retention settings remain unverified. Video, final owner/live checks and receipt
 remain outstanding. No phase, efficacy or clinical exposure margin was established.
@@ -109,7 +113,7 @@ The [final scientific/exposure review](notes/track2-final-review.md) retains
 everolimus as one conditional research priority and demotes hydroxychloroquine to reserve.
 The 53-source review and [exposure ledger](notes/track2-exposure.json) establish no clinical
 efficacy or therapeutic margin. No laboratory experiments or Track 2 upload have occurred.
-The current v4 pitch still needs recording and a hosted URL; v3's script is historical.
+The current v5 pitch still needs recording and a hosted URL; earlier scripts are historical.
 The [Firecrawl follow-up](notes/track2-firecrawl.md) exercised all 26 advertised MCP
 tools and added eight independently checked source documents at explicitly limited
 reading depths. Pralatrexate is a new fusion-positive RMS tumour-only horizon;
@@ -151,7 +155,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v4 disclosure names this route without
+GLM for public-literature synthesis; the current v5 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 

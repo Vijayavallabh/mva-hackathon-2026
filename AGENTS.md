@@ -197,6 +197,19 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   no extra model provider or protected input. The owner confirmed Fireworks API credits;
   training/retention remain unverified. The deck/script are not a recording or hosted
   video. Feat-009 stays in progress for video, provider/owner/live checks and receipt.
+- **Session 41 v5 editorial/visual revision (2026-09-19):** current prose is
+  `notes/track2-report-v5.md` and `track2-validation-v5.md`; the scientific ledger
+  remains unchanged at v4. Humanizer and no-ai-slop editing preserve the evidence,
+  numbers, citations, uncertainty and required acknowledgement. New
+  `track2-pitch-v5.md` has 337 narration words (runtime unmeasured), and
+  `track2-slides-v5.html` has five conceptual SVG figures and 288 slide words versus
+  v4's 410. See `track2-v5-design.md` and the independent editorial/standards reviews.
+  Anthropic frontend-design is installed locally at a pinned revision; no new model
+  provider was used. `scripts/render_track2_slides_v5.mjs` validates fixed static
+  input before isolated offline rendering to five PNGs and a PDF. Use
+  `scripts/track2_release_v5.py` for new v5 snapshots; preserve all older bound inputs.
+  Nothing changes phase, candidate priorities, clinical margins, provider gates or
+  upload status. The deck/PDF is not a recording; feat-009 stays in progress.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed

@@ -1,15 +1,20 @@
 # Session handoff
 
-**Last updated:** 2026-09-19 IST, session 40. **Active feature: feat-009 Track 2.**
-The latest owner request authorized the proposed next step: v4 report/evidence/validation
-integration and matching pitch materials, baseline `e7aee96`. The owner then confirmed
-Fireworks usage was API credits; training/retention settings remain unverified.
-Current artifacts: `notes/track2-report-v4.md`, `track2-evidence-v4.json`,
-`track2-validation-v4.md`, `track2-pitch-v4.md`, `track2-slides-v4.html`.
-The independent scientific and integration/standards reviews are
-`track2-v4-primary-review.md` and `track2-v4-review.md`.
-Use `scripts/track2_release_v4.py` for new snapshots and `verify` for preserved v4.
+**Last updated:** 2026-09-19 IST, session 41. **Active feature: feat-009 Track 2.**
+The latest owner request was to find/install slide-design skills, use humanizer and
+no-ai-slop on the submission/pitch, and make the deck more visual. Baseline `13c8b46`.
+Installed pinned Anthropic frontend-design locally; used the existing scientific-slides,
+humanizer/no-ai-slop and local PDF workflow. No extra model provider.
+Current artifacts: `notes/track2-report-v5.md`, unchanged `track2-evidence-v4.json`,
+`track2-validation-v5.md`, `track2-pitch-v5.md`, `track2-slides-v5.html`.
+Reviews: `track2-v5-editorial-review.md`, `track2-v5-standards-review.md` and
+`track2-v5-design.md`. The deck has five vector diagrams, 288 words versus v4's 410,
+and a local five-page PDF. Narration has 337 words; actual runtime is unmeasured.
+Use `scripts/track2_release_v5.py` for new snapshots and existing scripts to verify
+the preserved earlier packages. Local render/export:
+`node scripts/render_track2_slides_v5.mjs NEW-OUTPUT-NAME`.
 No hosted video, upload, new drug experiment, phase or clinical-margin evidence.
+The owner confirmed Fireworks API credits; training/retention remain unverified.
 
 The earlier user clarified: more substantive GLM model work through Firecrawl for
 expanded literature, not another capability test; baseline `8efde23`.
@@ -30,7 +35,11 @@ The previous session's equal-priority HCQ nomination is superseded.
   Preserve the baseline ledgers and v3 inputs; no candidate, phase or clinical-margin
   promotion follows. Entinostat's specific Chinese approval corrects a global
   “unapproved” shorthand, not the lack of pediatric RMS efficacy/exposure evidence.
-- **Current synthesis is v4:** it integrates the adjudicated GLM supplement and contains
+- **Current presentation is v5:** humanizer/no-ai-slop revisions preserve the v4 evidence
+  ledger and all primary claims. Five conceptual SVG diagrams replace the earlier card
+  layouts; slide text drops from 410 to 288 words. The 337-word script needs rehearsal.
+  Final PDF and visual checks are in `results/feat009/v5-slide-review-scaled-20260919/`.
+- **Historical synthesis v4:** it integrates the adjudicated GLM supplement and contains
   a cumulative 32-source/11-decision supplement, proposed staged validation, 336-word
   narration (112 words/minute is a planning estimate) and five locally rendered slides.
   Source/protocol corrections and all unchanged scientific limits are explicit.
@@ -131,6 +140,21 @@ and both candidates, retaining all nine same-position alternate rows. See
 `notes/alphagenome-splicing-results.md` for hashes, commands, output terms and limitations.
 
 ## Blockers and unresolved evidence
+
+- **Session 41 editorial/visual work is complete; submission gates are unchanged.**
+  Current v5 source and release verification use `scripts/track2_release_v5.py`.
+  Eight copied files and 55 bound inputs preserve all earlier packages. The deck/PDF
+  has five diagrams, no detected text-box overlap and a tested 640 px reduced view.
+  Final report still needs owner approval; record/host the three-minute video, verify
+  Fireworks training/retention, and perform live rules/identity/quota/publication checks
+  before any submission. Do not treat the design revision as new phase, efficacy or
+  exposure evidence. New edits after bundling need a new version.
+  Verification passes: 479 regressions (371 Track 2 + 108 Atlas), core self-checks,
+  historical preservation, fresh no-argument init and staged disclosure (133 blobs,
+  zero findings). The v5 report hash is
+  `e87c384e0f83350713dd587c660e5f412cdfcba0e24c7afec60667ec813ae656`.
+  Final deck hash is
+  `3333e5f6cd1da1d1a4f618b6ffdb6b38946264bafce8f6c8472c86c737f26203`.
 
 - **Session 40 v4 integration is complete as a research draft, not a submission.**
   `scripts/track2_release_v4.py` binds 25 copied files/44 inputs; current-input-bound v2

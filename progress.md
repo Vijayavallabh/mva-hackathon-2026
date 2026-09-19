@@ -2463,3 +2463,103 @@ hashes, v4 package, narration word count and harness changes. No remaining mater
 was identified. End-of-session all-ref audit is retained in
 `results/feat009/v4-history-final-20260919.json`; commit/push and upstream equality are
 verified at handoff. No Track 2 submission has been made.
+
+## Session 41 · 2026-09-19 · Track 2 editorial and visual revision
+
+Active feature: feat-009. Baseline: `13c8b46`. The owner asked for relevant slide-design
+skill installation, humanizer/no-ai-slop editing and a more visual, less text-heavy deck.
+No Track 1 file or historical Track 2 source/package was edited.
+
+Installed Anthropic frontend-design locally at revision
+`34040c9c568585f6929bedeaad110ad08f079624` after discovery/source inspection. Used existing
+scientific-slides, humanizer, no-ai-slop, research-lookup/source reuse and local PDF
+guidance. Installation and design decisions are in `notes/track2-v5-design.md`.
+No added model provider, hosted image generation or protected-data transfer.
+
+Current materials are `notes/track2-report-v5.md`, `track2-validation-v5.md`,
+`track2-pitch-v5.md` and `track2-slides-v5.html`. The v4 evidence ledger is unchanged.
+The report/validation preserve source URLs, quantitative evidence, candidate roles,
+full acknowledgement, provider disclosures and all scientific limits. The pitch has
+337 narration words (112.3 words/minute planning estimate, runtime unmeasured).
+The five-slide deck has five conceptual SVG diagrams and 288 slide words versus 410
+in v4, a 29.8% reduction including citations/headers. No simulated efficacy plots.
+
+Independent reviews: `notes/track2-v5-editorial-review.md` and
+`notes/track2-v5-standards-review.md`. Fixed normal-injury versus benefit wording,
+preclinical-only advancement, tracking-loss wording and the exact ARST1431 endpoint.
+The new renderer validates allowlisted static SVG/HTML before browser launch, checks
+the source hash and uses a read-only isolated snapshot. It omits project secrets,
+blocks networking and disables page scripts. It refuses output reuse.
+
+Final visual artifacts: `results/feat009/v5-slide-review-scaled-20260919/`.
+All five PDF pages were rasterized and inspected; headers/spacing/footer wrapping were
+corrected. Browser tests report no text overlap/boundary failures, min24px slide text,
+and a 640px reduced view without horizontal overflow. Conservative palette contrast
+is at least5.62:1. Unsupported continuous CSS scaling attempts remain diagnostic
+history; tested fixed breakpoints replace them. The PDF is a five-page 16:9 export,
+not a recording or hosted pitch.
+
+Commands and results:
+
+```bash
+node scripts/render_track2_slides_v5.mjs v5-slide-review-scaled-20260919
+# 5 slides, 5 conceptual figures, 0 text-boundary violations, 0 text-box overlaps
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+# 371 tests, OK
+uv run python -m unittest discover -s scripts -p 'test_alphagenome*.py'
+# 108 tests, OK; total479 = prior439 + new40
+uv run python scripts/verify_data.py --self-check
+uv run python scripts/track1_submission.py --self-check
+uv run python scripts/track2_evidence.py check
+uv run python scripts/track2_evidence.py track1
+# all pass; local Track1 v4 hashes unchanged, uploaded identity still unverified
+uv run python scripts/track2_release_v5.py build results/feat009/jvv7_track2_research_v5
+uv run python scripts/track2_release_v5.py verify results/feat009/jvv7_track2_research_v5
+# integrity_verified true,8files/55inputs; historicalv2/v3/v4 preserved
+# upload_ready false, provider_settings_verified false, phase unconfirmed
+```
+
+V5 report SHA-256:
+`e87c384e0f83350713dd587c660e5f412cdfcba0e24c7afec60667ec813ae656`.
+Deck SHA-256:
+`3333e5f6cd1da1d1a4f618b6ffdb6b38946264bafce8f6c8472c86c737f26203`.
+These hashes detect file drift; they do not establish clinical truth or a receipt.
+
+Fresh no-argument `./init.sh`, log `logs/track2-v5-final-init.log`, completed
+successfully from a fresh shell. Actual output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Feat-009 remains in progress. Still needed: owner review, record/host the three-minute
+pitch, verify Fireworks training/retention settings, live rules/identity/quota/publication
+checks and an authorized submission receipt. API credits do not establish data policy.
+Trans remains unconfirmed; efficacy and clinical exposure margins remain unestablished.
+No experiments, patient dosing, family contact or portal upload occurred.
+
+The staged disclosure audit passed on 133 blobs with zero findings:
+`uv run python scripts/audit_publication.py --staged --output results/feat009/v5-disclosure-staged-20260919.json`.
+`git diff --check` and final v5 verification pass. End-of-session commit/push and the
+post-commit all-ref audit follow this recorded check; no upload operation is included.
