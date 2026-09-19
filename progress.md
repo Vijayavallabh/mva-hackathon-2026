@@ -3306,3 +3306,120 @@ science. Biological/provider/video/owner/live/receipt gaps remain open. Final st
 and all-ref disclosure audits use `results/feat009/v11-staged-20260919.json` and
 `v11-history-20260919.json`; configured-origin push and clean upstream equality are
 verified at handoff.
+
+
+## 2026-09-19 — session 49: official website review and v12 alignment
+
+Owner request: review the challenge website and make any required changes. Baseline
+`6d33184`; feat-009 remains in progress. Read live public Gradio content, pinned
+source, rules, FAQ, Track 2 instructions and official methods-template fields A7–A17.
+Public Space metadata still resolves to revision
+`1c761cc23d90aebe6a011fd5b0b99517df42408c`. Relevant organizer discussions #2, #5,
+#10 and #13 clarify data-processing terms, approved combinations, quota and dataset
+citation. This was anonymous public retrieval: no authentication, quota callback,
+upload, agreement acceptance or subject payload. Scope and access-path differences
+are in `notes/track2-challenge-review-20260919.md`.
+
+The official 35/25/25/15 rubric made three pitch gaps clear: impact, innovation and
+scalability were underexplained. V12 makes the approved-drug/variant mechanism and
+conditional contributions explicit, adds eleven template answers with a 228-word
+abstract, and includes the complete acknowledgement in the report, a seventh end
+slide and a ready-to-copy video description. The acknowledgement slide belongs
+inside the three-minute recording. Narration is 338 words, runtime unmeasured.
+
+Current files: `notes/track2-report-v12.md`, `track2-slides-v12.html`,
+`track2-pitch-v12.md`, `track2-video-description-v12.md`. Scientific decisions stay
+v10: 52 cumulative source records, 11 decisions, everolimus optional mechanistic
+probe, HCQ reserve, no rescue priority. Report sections 1–6 and the published
+ARST1431 plot are unchanged. No phase, clinical margin or experimental efficacy is
+established. The website accepts hypotheses for follow-up; the weak indirect
+rationale remains a limitation rather than a reason to overstate benefit.
+
+The template's stale one-entry sentence is superseded by live instructions and
+organizer #10: three entries, only the latest reviewed. Remaining quota is unknown.
+Organizer #13 says the later-publication dataset citation is not an extra Track 2
+report requirement now. Existing manuscript/data-deletion restrictions and unresolved
+provider settings remain. No new model provider, experiment or recorded/uploaded
+pitch is claimed. Main-agent author review, not a new independent panel.
+
+Verification commands and actual outputs:
+
+```text
+uv run python scripts/track2_challenge_review.py results/feat009/challenge-review-live-v1
+9 sources returned successfully, plus Space metadata; pinned revision unchanged
+uv run python scripts/verify_data.py --self-check
+self-check ok
+uv run python scripts/track1_submission.py --self-check
+self-check ok: build, strict conformance, normalization and official scoring
+uv run python scripts/track2_evidence.py check
+53 historical sources / 12 candidates; zero direct-pair intervention evidence;
+clinical efficacy unestablished; phase unconfirmed
+uv run python scripts/track2_evidence.py track1
+local Track 1 v4 CSV/report hashes unchanged; uploaded bytes not independently verified
+uv run python scripts/test_track2_evidence.py
+Ran 63 tests in 0.169s; OK
+uv run python -m unittest discover -s scripts -p 'test_track2_release_v12.py'
+Ran 10 tests in 0.414s; OK
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+Ran 489 tests in 6.182s; OK
+uv run python scripts/track2_release_v12.py check
+52 sources / 11 decisions; rescue_priority_candidates:[]; clinical_exposure_margin:null;
+narration_words:338; words_per_slide:[50,47,53,39,53,74,22]; runtime_measured:false;
+scientific_sections_1_through_6_preserved:true; template_answers:11; abstract_words:228
+uv run node scripts/render_track2_slides_v12.mjs v12-slide-review-first-20260919
+slides:7; text_outside_slides:0; text_overlaps:0;
+visible_words:[57,78,67,60,72,95,105]
+uv run pdftoppm -png -scale-to 1280 results/feat009/v12-slide-review-first-20260919/track2-slides-v12.pdf results/feat009/v12-slide-review-first-20260919/pdf-page
+uv run pdfinfo results/feat009/v12-slide-review-first-20260919/track2-slides-v12.pdf
+Pages:7; Page size:960 x 540 pts; tagged:yes; JavaScript:no
+uv run python scripts/track2_release_v12.py build results/feat009/jvv7_track2_research_v12
+uv run python scripts/track2_release_v12.py verify results/feat009/jvv7_track2_research_v12
+integrity_verified:true; files:8; bound_inputs:119;
+historical_v1_through_v11_preserved:true; upload_ready:false
+uv run python scripts/track2_release_v11.py verify results/feat009/jvv7_track2_research_v11
+integrity_verified:true; files:7; bound_inputs:110; historical_v1_through_v10_preserved:true
+```
+
+All seven PDF pages visually inspected; no observed overlap/clipping. Minimum text
+24 px, 640 px view passes, unchanged text palette retains contrast >=5.43:1.
+Full acknowledgement is visible and matches the report's existing exact wording.
+Tests enforce declared limits/provenance, not scientific validity or eligibility.
+The historical baseline checker reproduces historical decisions; v10 science and
+v12 report/presentation are current. Regression log:
+`logs/track2-v12-tests-20260919.log`. Live publication guard passes: PUBLIC, 13 retired
+objects unavailable, zero unknown errors, live blob control reachable in
+`results/feat009/v12-publication-20260919.json`.
+
+Fresh no-argument startup `./init.sh` passed without manual setup; actual output
+from `logs/track2-site-review-init-20260919.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+README, AGENTS, feature evidence and handoff identify v12. Continuing falsification,
+biological qualification, Fireworks settings, rehearsed/hosted video, owner/live
+checks and receipt remain unresolved. Staged and all-ref disclosure audit outputs
+use `results/feat009/v12-staged-20260919.json` and `v12-history-20260919.json`;
+configured-origin push and clean upstream equality are checked at handoff.

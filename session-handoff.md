@@ -1,26 +1,40 @@
 # Session handoff
 
-**Last updated:** 2026-09-19 IST, session 48. **Active feature: feat-009 Track 2.**
-Owner requested slides and script relevant to v10. Current presentation is
-`notes/track2-slides-v11.html`, with six matching narration sections in
-`notes/track2-pitch-v11.md` (358 words; three-minute allocations, runtime unmeasured).
-The report/validation/ledger/falsification review remain **v10 and unchanged**.
-The deck now shows context-specific evidence, separate prospective A/B hypotheses,
-the exact tumour-trial plot, and graded-exposure/regeneration/recovery/safety checks.
-Narration retains the unexplained-BUBR1-loss pause, HCQ reserve, phase/exposure and
-provider limits. The previously removed cover line remains absent.
+**Last updated:** 2026-09-19 IST, session 49. **Active feature: feat-009 Track 2.**
+Owner requested an official challenge website review and necessary changes. Read
+live public content, pinned source, methods template and relevant organizer threads;
+see `notes/track2-challenge-review-20260919.md`. Revision remains
+`1c761cc23d90aebe6a011fd5b0b99517df42408c`. No authenticated callback or upload.
 
-All six PDF pages were inspected; final pages 1–5 match the first review pixel for
-pixel and updated page 6 was re-inspected. No overlap/clipping, min24px, checked
-contrast >=5.43:1, 640px view passes. Exports and overview:
-`results/feat009/v11-slide-review-final-20260919/`. See `notes/track2-v11-design.md`.
-All 479 Track 2 tests, fresh init, core checks and live PUBLIC/purge guard pass.
-`uv run python scripts/track2_release_v11.py verify results/feat009/jvv7_track2_research_v11`
-passes seven files/110 bound inputs and v1-v10 preservation. This is an editorial/
-presentation update and author review; no new scientific finding, experiment,
-provider, recording or upload. Rehearse, record/host, resolve existing provider and
-owner/live checks, then obtain the receipt. The standing falsification objective and
-v10 biological uncertainties remain open.
+Current report, slides, script and video description use **v12**. The v10 ledger,
+validation and scientific sections 1–6 are unchanged. The seven-page deck explains
+approved-drug/allele mechanism, impact/innovation/scalability and retains all key
+scientific boundaries. Page 7 contains the full required acknowledgement and belongs
+inside the three-minute video. Script: 338 words, runtime unmeasured. The report adds
+all eleven methods-template answers and a 228-word abstract. The full acknowledgement
+also appears in the report and ready-to-copy video description.
+
+All seven PDF pages inspected; no overlap/clipping, minimum 24 px, checked contrast >=5.43:1,
+640px view passes. Exports: `results/feat009/v12-slide-review-first-20260919/`.
+All 489 Track 2 tests, core checks and live PUBLIC/purge guard pass.
+`uv run python scripts/track2_release_v12.py verify results/feat009/jvv7_track2_research_v12`
+passes eight files/119 bound inputs and v1-v11 preservation. Fresh init output and
+commands are in progress.md. This is author requirements/presentation review, not
+independent biological evidence. No drug ranking, phase/margin, provider or upload change.
+
+The site accepts hypotheses for further study; no efficacy claim is needed to fit
+that scope. Three entries/latest reviewed supersede the template's stale one-entry
+wording. Remaining quota unknown. Organizer #13 confirms no additional Track 2 report
+dataset-citation requirement at present. Provider settings remain unresolved. Rehearse,
+record/host, complete owner/live checks and archive the eventual receipt. The standing
+falsification objective and v10 biological uncertainties continue.
+
+## Session 48 presentation baseline
+
+V11's six-page deck and 358-word narration remain preserved with its seven-file,
+110-input package. Its sources/scientific content informed v12, which adds website
+alignment without modifying those bound inputs. Earlier visual review and all 479
+then-current tests passed; see `notes/track2-v11-design.md`.
 
 ## Session 47 scientific baseline
 
@@ -286,10 +300,10 @@ and both candidates, retaining all nine same-position alternate rows. See
 - **Session 45 desk audit/revision is complete; biological and delivery gaps remain.**
   The BUBR1-loss result is an adverse-mechanism concern, not proof of harm in this
   genotype. Model availability, phenotype, exposure, meaningful effect/injury bounds
-  and powered confirmation remain unestablished. Current v11 narration requires rehearsal,
+  and powered confirmation remain unestablished. Current v12 narration requires rehearsal,
   recording/hosting, Fireworks settings verification, owner/live checks and receipt.
-  Preserve all v11-bound inputs and v1-v10 history. Any further edit needs a new snapshot.
-  V11 deck SHA-256: `fbdfbd447c949482ca015b5b2a90e025e2a6dbd8ec21c5f780ccc01513999cf2`.
+  Preserve all v12-bound inputs and v1-v11 history. Any further edit needs a new snapshot.
+  V12 deck SHA-256: `b733b0723f32a33b07cc10e1a51051ca19baa625d6de2a3421d0e1720bd254bc`.
 
 - **Session 44 v8 revision is complete.** The requested line is absent from the
   cover; the new diagrams and closing qualifications preserve the proposal's
@@ -438,6 +452,7 @@ uv run python scripts/track2_release_v8.py verify results/feat009/jvv7_track2_re
 uv run python scripts/track2_release_v9.py verify results/feat009/jvv7_track2_research_v9
 uv run python scripts/track2_release_v10.py verify results/feat009/jvv7_track2_research_v10
 uv run python scripts/track2_release_v11.py verify results/feat009/jvv7_track2_research_v11
+uv run python scripts/track2_release_v12.py verify results/feat009/jvv7_track2_research_v12
 ```
 
 Continue feat-009 only. The original `jvv7_track2_research_v1/` is preserved (seven file

@@ -66,7 +66,8 @@ is not disproof, and failure to find a contradiction is not validation. Resolve 
 explicitly retain high-impact gaps before promoting the corresponding claim.
 This is a continuing objective, not a one-time devil's-advocate review. Preserve
 bound snapshots; use new versions when findings change the science. The v10
-report and cycle-1 review now record the current evidence-based revision.
+ledger, validation and cycle-1 review record the current scientific revision; the
+v12 report and presentation align it with the official website and rubric.
 
 ## Data facts — established, do not re-derive
 
@@ -302,6 +303,22 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   timestamps are rehearsal allocations, not measured runtime or a recording.
   V11 release binds seven files/110 inputs and preserves v1-v10; 479 Track 2 tests
   pass. No new science, drug ranking, phase/margin, provider or upload change.
+- **Session 49 official website/v12 alignment (2026-09-19):** use
+  `notes/track2-challenge-review-20260919.md`, `track2-report-v12.md`, seven-page
+  `track2-slides-v12.html`, 338-word `track2-pitch-v12.md` and
+  `track2-video-description-v12.md`. Live public app/source, template and relevant
+  organizer clarifications were reviewed anonymously; pinned revision unchanged.
+  Added approved-drug/allele mechanism, conditional impact/innovation/scalability,
+  eleven template answers and the full required acknowledgement in all public
+  presentation artifacts. Science remains v10; report sections 1-6 and the ARST1431
+  plot are unchanged. The site permits hypotheses; it does not require proven
+  efficacy. Three entries/latest reviewed supersede the template's stale one-entry
+  wording; remaining quota unknown. Dataset citation clarification #13 does not
+  impose a new Track 2 report citation blocker. Seven PDF pages inspected,
+  zero overlap/clipping, min24px, 489 tests; v12 binds eight files/119 inputs and
+  preserves v1-v11. No new experiment, provider, phase/margin/ranking change,
+  recording or upload. Include acknowledgement page inside the three-minute video;
+  runtime, hosting, Fireworks settings and owner/live/receipt checks remain open.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed

@@ -94,7 +94,7 @@ hypothetical 100/1 test. It does not establish allele function or phase:
 
 **Track 2 (feat-009) is in progress:** the [first Firecrawl falsification cycle](notes/track2-falsification-cycle1.md)
 used 87 actual tool calls plus primary-paper and trial-registry retrieval to challenge
-the approach and its earlier rejection criteria. The [current v10 report](notes/track2-report-v10.md)
+the approach and its earlier rejection criteria. The [current v12 report](notes/track2-report-v12.md)
 separates excess-mTOR and flux/function hypotheses, strengthens regeneration and delayed
 injury checks, and retains favorable and unfavorable findings. Everolimus remains an
 optional, model-qualified mechanistic probe; HCQ remains reserve. No drug earns a rescue
@@ -107,18 +107,22 @@ abandon it when warranted. The [falsification plan](notes/track2-falsification-p
 requires reproducible searches, explicit overturning criteria and documented changes
 to decisions or experiments throughout the work, before candidate promotion or release.
 
-The [52-source/11-decision ledger](notes/track2-evidence-v10.json),
-[validation plan](notes/track2-validation-v10.md),
-[358-word pitch](notes/track2-pitch-v11.md) and [six-slide v11 deck](notes/track2-slides-v11.html)
-are bound by `scripts/track2_release_v11.py` with the falsification and presentation
-reviews. The slides now explain conflicting model findings, the separate A/B
-hypotheses, regeneration/recovery and stronger safety/exposure criteria. The exact
-ARST1431 plot is retained. The package verifies seven files/110 inputs and preserves
-v1-v10. All six PDF pages were reviewed; 479 Track 2 tests pass. The planned three-minute
-narration needs rehearsal. Scientific evidence remains v10, with recorded reading
-depth and access failures; this is author review, not a new independent review.
+The [52-source/11-decision ledger](notes/track2-evidence-v10.json) and
+[validation plan](notes/track2-validation-v10.md) retain the v10 scientific decisions.
+The [official website review](notes/track2-challenge-review-20260919.md) aligns the
+[v12 report](notes/track2-report-v12.md), [338-word script](notes/track2-pitch-v12.md),
+[seven-page deck](notes/track2-slides-v12.html) and
+[video description](notes/track2-video-description-v12.md) with the rubric and methods
+template. The pitch now explains the approved-drug/mechanism rationale, conditional
+impact, innovation and reuse. A seventh page carries the full required acknowledgement
+inside the planned three-minute video. No efficacy or candidate priority is promoted.
+
+`scripts/track2_release_v12.py` binds eight files/119 inputs and preserves v1-v11.
+All seven PDF pages were reviewed; 489 Track 2 tests pass. The planned narration
+needs rehearsal. Scientific evidence remains v10, with recorded reading depth and
+access failures; this is author review, not a new independent review.
 Open the HTML locally or export with
-`uv run node scripts/render_track2_slides_v11.mjs NEW-OUTPUT-NAME`.
+`uv run node scripts/render_track2_slides_v12.mjs new-output-name`.
 
 These are research materials, not a recorded video or submission. Fireworks API-credit
 use is owner-confirmed; training/retention settings remain unverified. Recording/hosting,
@@ -174,7 +178,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v10 disclosure names this route without
+GLM for public-literature synthesis; the current v12 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 
