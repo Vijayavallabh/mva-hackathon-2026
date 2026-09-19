@@ -109,14 +109,16 @@ to decisions or experiments throughout the work, before candidate promotion or r
 
 The [52-source/11-decision ledger](notes/track2-evidence-v10.json),
 [validation plan](notes/track2-validation-v10.md),
-[339-word pitch](notes/track2-pitch-v10.md) and [v10 deck](notes/track2-slides-v10.html)
-are bound by `scripts/track2_release_v10.py` with the falsification review. The new
-package verifies six files/104 inputs and preserves v1-v9. All 471 Track 2 tests pass;
-the five rendered slides are pixel-identical to the inspected v9 slides, with the
-protocol link updated. Narration is unchanged. This is author adjudication with
-recorded reading depth and access failures, not a new independent or exhaustive review.
+[358-word pitch](notes/track2-pitch-v11.md) and [six-slide v11 deck](notes/track2-slides-v11.html)
+are bound by `scripts/track2_release_v11.py` with the falsification and presentation
+reviews. The slides now explain conflicting model findings, the separate A/B
+hypotheses, regeneration/recovery and stronger safety/exposure criteria. The exact
+ARST1431 plot is retained. The package verifies seven files/110 inputs and preserves
+v1-v10. All six PDF pages were reviewed; 479 Track 2 tests pass. The planned three-minute
+narration needs rehearsal. Scientific evidence remains v10, with recorded reading
+depth and access failures; this is author review, not a new independent review.
 Open the HTML locally or export with
-`uv run node scripts/render_track2_slides_v10.mjs NEW-OUTPUT-NAME`.
+`uv run node scripts/render_track2_slides_v11.mjs NEW-OUTPUT-NAME`.
 
 These are research materials, not a recorded video or submission. Fireworks API-credit
 use is owner-confirmed; training/retention settings remain unverified. Recording/hosting,

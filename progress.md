@@ -3190,3 +3190,119 @@ Staged disclosure audit passes 182 blobs with zero findings in
 audits use `falsification-v10-staged-final-20260919.json` and
 `falsification-v10-history-20260919.json`. Configured-origin push and clean upstream
 equality are verified at handoff.
+
+
+## 2026-09-19 — session 48: align the slides and read-aloud script with v10
+
+Owner requested relevant updates to slides and script. Baseline `5d0a344`; feat-009
+only, still `in_progress`. Applied scientific-slides and installed frontend-design
+principles to the existing local HTML/SVG workflow. Research-lookup source-selection
+guidance was satisfied with existing adjudicated public sources and a bounded web
+recheck; no additional Parallel/OpenRouter/image-generation provider was used.
+
+Created `notes/track2-slides-v11.html`, `track2-pitch-v11.md` and
+`track2-v11-design.md`. Six slides now follow the question, conflicting evidence,
+separate A/B hypotheses, tumour boundary, experiment and advancement decision.
+Positive aged-rat muscle-mass findings remain alongside rapamycin regeneration risk
+and everolimus-associated BUBR1 loss in a different human-cell model. The separate
+flux/regeneration hypothesis is visible, without assuming it exists in the selected
+pair. Dose/timing, regeneration/recovery, delayed injury and blood/free-exposure
+limits now appear in the experimental narrative. No drug earns rescue priority.
+The exact ARST1431 SVG is preserved and moves to slide 4. The requested cover line
+remains removed; uncertainty remains in the presentation and narration.
+
+The read-aloud script has **358 words** (42/61/66/46/65/78) and 22/30/32/23/34/39-second
+allocations. About 119 words/minute is a planning estimate, not a measured recording.
+The script retains the unexplained-BUBR1-loss pause, HCQ reserve/myopathy concern,
+phase and exposure uncertainty, absence of experiments, AI disclosure and thanks.
+A source map and recording notes are separate from narration. Use the unchanged
+v10 report's complete acknowledgement/disclosure in the video description.
+
+The report, validation, 52-source/11-decision ledger and falsification review remain
+v10 and byte-preserved. Public Balnis article recheck succeeds; Joseph's PMC page
+shows a browser challenge and Ge's PubMed page returns no parsed text. Earlier
+archived primary sections/abstracts supply those statements. No new scientific
+finding or full-paper/independent review is claimed. The standing falsification
+objective continues; no selected-pair experiment, phase, margin, provider setting,
+subject analysis, recording or upload changed.
+
+Final exported PDF and PNGs are in
+`results/feat009/v11-slide-review-final-20260919/`, with `overview.png`. Inspected
+all six rasterized pages from the first render, then final page 6 after adding
+its source/disclosure link. Final pages 1–5 are pixel-identical to the inspected
+first pass (PIL ImageChops comparison). Render geometry reports zero overlaps and
+out-of-bounds text; min24px, checked text-palette contrast >=5.43:1, 640px layout
+width/scrollWidth both 640. PDF has six 960 × 540 pt pages, embedded fonts and no
+JavaScript. Slide words: 410 (44/78/67/60/72/89), including sources/disclosure.
+The six conceptual/source-summary vectors include one exact published-data plot.
+Deck SHA256: `fbdfbd447c949482ca015b5b2a90e025e2a6dbd8ec21c5f780ccc01513999cf2`.
+
+Actual checks:
+
+```text
+uv run python scripts/track1_submission.py --self-check
+self-check ok: build, strict conformance, normalization and official scoring
+uv run python scripts/track2_evidence.py check
+53 historical sources / 12 candidates; no direct-pair intervention evidence;
+clinical efficacy unestablished; phase unconfirmed
+uv run python scripts/test_track2_release_v11.py
+Ran 8 tests in 0.328s; OK
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+Ran 479 tests in 5.738s; OK
+uv run python scripts/track2_release_v11.py check
+52 sources / 11 decisions; rescue_priority_candidates:[];
+narration_words:358; words_per_slide:[42,61,66,46,65,78]; runtime_measured:false
+uv run node scripts/render_track2_slides_v11.mjs v11-slide-review-final-20260919
+slides:6; text_outside_slides:0; text_overlaps:0;
+visible_words:[44,78,67,60,72,89]
+uv run pdftoppm -png -scale-to 1280 results/feat009/v11-slide-review-final-20260919/track2-slides-v11.pdf results/feat009/v11-slide-review-final-20260919/pdf-page
+uv run pdfinfo results/feat009/v11-slide-review-final-20260919/track2-slides-v11.pdf
+Pages:6; Page size:960 x 540 pts; JavaScript:no
+uv run python scripts/track2_release_v10.py verify results/feat009/jvv7_track2_research_v10
+integrity_verified:true; files:6; bound_inputs:104; historical_v1_through_v9_preserved:true
+uv run python scripts/track2_release_v11.py build results/feat009/jvv7_track2_research_v11
+uv run python scripts/track2_release_v11.py verify results/feat009/jvv7_track2_research_v11
+integrity_verified:true; files:7; bound_inputs:110;
+historical_v1_through_v10_preserved:true; upload_ready:false
+```
+
+The baseline candidate checker deliberately reproduces historical decisions; v10
+science and v11 presentation are current. Tests enforce presentation limits and
+immutable provenance, not scientific validity. No-data gate, core checks, navigation
+link checks and `git diff --check` pass. Live publication guard passes: PUBLIC,
+13 retired objects unavailable, zero unknown errors, live blob control reachable
+(`results/feat009/v11-publication-20260919.json`). Regression/render logs use
+`logs/track2-v11-{regressions,render}-20260919.log`.
+
+Fresh no-argument `./init.sh` exited 0 without manual setup. Actual output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+README, AGENTS, feature evidence and handoff now identify v11 presentation with v10
+science. Biological/provider/video/owner/live/receipt gaps remain open. Final staged
+and all-ref disclosure audits use `results/feat009/v11-staged-20260919.json` and
+`v11-history-20260919.json`; configured-origin push and clean upstream equality are
+verified at handoff.

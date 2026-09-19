@@ -292,6 +292,16 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   Author adjudication, not an independent/systematic review. Public retrieval only,
   no new agent synthesis job or subject/.env use; existing provider and delivery
   gates remain. The standing falsification objective continues beyond this cycle.
+- **Session 48 v11 presentation integration (2026-09-19):** use the six-slide
+  `notes/track2-slides-v11.html` and 358-word `track2-pitch-v11.md` with the unchanged
+  v10 report, validation, ledger and cycle-1 review. Added context-specific benefit/
+  harm evidence, separate A/B eligibility, graded exposure, regeneration/recovery,
+  delayed injury and blood-versus-free-exposure limits. Exact ARST1431 plot moves
+  to slide 4; all six PDF pages reviewed, zero text overlap/clipping, min24px and
+  checked contrast >=5.43:1. See `notes/track2-v11-design.md`. The three-minute
+  timestamps are rehearsal allocations, not measured runtime or a recording.
+  V11 release binds seven files/110 inputs and preserves v1-v10; 479 Track 2 tests
+  pass. No new science, drug ranking, phase/margin, provider or upload change.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed
