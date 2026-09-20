@@ -3423,3 +3423,101 @@ biological qualification, Fireworks settings, rehearsed/hosted video, owner/live
 checks and receipt remain unresolved. Staged and all-ref disclosure audit outputs
 use `results/feat009/v12-staged-20260919.json` and `v12-history-20260919.json`;
 configured-origin push and clean upstream equality are checked at handoff.
+
+
+## 2026-09-20 — session 50: Track 2 model and GPU feasibility assessment
+
+Active feature: feat-009, retained in_progress. Owner asked whether Anthropic's
+uplifting-biomolecular-modeling or other models could improve Track 2 and offered
+local GPUs plus an eight-H100 host. Public-source review and a resource check are
+complete in `notes/track2-model-assessment-20260920.md`.
+
+Toolkit revision `f4f62fa6592ae4938d49b1757bea0cfeff9f468e`; eight selected public
+README/STOCK files and commit metadata retrieved with bounded anonymous urllib
+GETs under uv. URL/hash/byte/time manifest:
+`results/feat009/model-assessment-public-20260920/manifest.json`. Assessed variant
+scoring, structural models, affinity, genomic models and public perturbation-data
+analysis. Reviewed adverse benchmark findings with explicit reading depth and
+limitations; did not treat computational comparisons as experimental truth.
+
+Recommend a control-first, one-H100 variant/mechanism pilot, with a structural
+stage only for an assay-relevant question. Larger allocation requires useful
+control performance, incremental evidence and measured memory/throughput needs.
+No model installed, weights downloaded, GPU computation, remote-host access,
+subject transfer, new provider inference or drug promotion. No changes to current
+v12 deliverables, v10 science, phase, clinical margins, video or submission status.
+
+Actual resource commands:
+
+```bash
+uv run python /home/sports/.agents/skills/get-available-resources/scripts/detect_resources.py -o results/feat009/model-assessment-resources-20260920.json
+nvidia-smi --query-gpu=index,name,memory.total,memory.used,utilization.gpu,driver_version --format=csv
+uptime
+cat /proc/driver/nvidia/version
+```
+
+The skill completed, but GPU detection failed: `nvidia-smi` exit 18, NVML
+580.173 versus loaded NVIDIA kernel 580.178.04. GPU availability is unknown;
+the detector's empty list does not mean no GPUs. Approximately 454.71 GiB RAM and
+4,775.62 GiB disk available; CPU load 54.22/46.34/39.04. No driver repair, reboot
+or job termination attempted. Host access/health and relevant benchmark controls
+remain to be qualified; documented under Blockers in session-handoff.md.
+
+Verification performed:
+
+```text
+uv run python scripts/verify_data.py --self-check
+self-check ok
+uv run python scripts/track1_submission.py --self-check
+self-check ok: build, strict conformance, normalization and official scoring
+uv run python scripts/track2_evidence.py check
+53 historical sources / 12 candidates; direct_pair_intervention_evidence:0;
+clinical_efficacy_established:0; phase:unconfirmed
+uv run python scripts/test_track2_evidence.py
+Ran 63 tests in 0.172s; OK
+uv run python scripts/track2_release_v12.py verify results/feat009/jvv7_track2_research_v12
+integrity_verified:true; files:8; bound_inputs:119;
+historical_v1_through_v11_preserved:true; upload_ready:false
+```
+
+No implementation changed; no new tests were added for this assessment. The
+historical checker retains historical decisions; current science remains v10.
+Fresh no-argument `./init.sh` passed without manual setup. Actual output from
+`logs/track2-model-assessment-init-20260920.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Publication preflight and disclosure checks use:
+
+```bash
+uv run python scripts/check_publication_remote.py --output results/feat009/model-assessment-publication-20260920.json
+uv run python scripts/audit_publication.py --staged --output results/feat009/model-assessment-staged-20260920.json
+uv run python scripts/audit_publication.py --output results/feat009/model-assessment-history-20260920.json
+```
+
+Configured-origin push, clean working tree and upstream equality are checked at
+handoff. The assessment does not replace the continuing falsification objective
+or resolve biological/provider/recording/receipt gaps.

@@ -1,6 +1,26 @@
 # Session handoff
 
-**Last updated:** 2026-09-19 IST, session 49. **Active feature: feat-009 Track 2.**
+**Last updated:** 2026-09-20 IST, session 50. **Active feature: feat-009 Track 2.**
+
+Owner offered GPUs and asked about Anthropic's biomolecular optimization toolkit.
+The public-source feasibility assessment is complete in
+`notes/track2-model-assessment-20260920.md`. Reviewed toolkit revision
+`f4f62fa6592ae4938d49b1757bea0cfeff9f468e`; eight pinned documents archived under
+`results/feat009/model-assessment-public-20260920/`. Recommend a one-H100 control-first
+variant/mechanism pilot, with structure prediction only for a specific assay-relevant
+question. No allocation of eight GPUs is currently justified. These are prospective
+recommendations, not model results. No model install, weight download, GPU job,
+remote-host access, subject transfer or new provider inference occurred.
+
+The local resource check failed with an NVML/library mismatch (580.173 versus
+loaded kernel 580.178.04); GPU availability is unknown, not zero. Freeing jobs does
+not fix the mismatch. A working H100 host and access details remain unverified.
+The repository accelerates existing models and is an unmaintained reference release;
+Boltz affinity has a size-domain warning relevant to everolimus. Preserve v12 and
+v10 decisions; phase, clinical margins, rescue priority and delivery status do not change.
+
+## Session 49 website and presentation baseline
+
 Owner requested an official challenge website review and necessary changes. Read
 live public content, pinned source, methods template and relevant organizer threads;
 see `notes/track2-challenge-review-20260919.md`. Revision remains
@@ -289,6 +309,13 @@ and both candidates, retaining all nine same-position alternate rows. See
 `notes/alphagenome-splicing-results.md` for hashes, commands, output terms and limitations.
 
 ## Blockers and unresolved evidence
+
+- **Optional model pilot:** assessment complete, computation not started. Local
+  `nvidia-smi` fails with a driver/library mismatch; the offered H100 host's access
+  and health are not verified. Assemble relevant measured controls and fix the
+  interpretation rules before candidate inference. Stop escalation if controls
+  fail or the models add no information beyond existing annotations. These limits
+  do not block literature work, CPU input qualification or the existing proposal.
 
 - **Standing falsification search remains ongoing:** cycle 1 is complete in
   `notes/track2-falsification-cycle1.md`. Its next-work table supersedes the initial
