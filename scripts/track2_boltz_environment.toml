@@ -1,0 +1,13 @@
+[project]
+name = "track2-boltz-expansion"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+dependencies = ["boltz==2.2.1", "torch==2.5.1", "numpy==1.26.4"]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }

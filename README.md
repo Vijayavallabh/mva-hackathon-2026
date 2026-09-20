@@ -94,20 +94,24 @@ hypothetical 100/1 test. It does not establish allele function or phase:
 
 **Track 2 (feat-009) is in progress:** the [first Firecrawl falsification cycle](notes/track2-falsification-cycle1.md)
 used 87 actual tool calls plus primary-paper and trial-registry retrieval to challenge
-the approach and its earlier rejection criteria. The [current v12 report](notes/track2-report-v12.md)
+the approach and its earlier rejection criteria. The [current v13 report](notes/track2-report-v13.md)
 separates excess-mTOR and flux/function hypotheses, strengthens regeneration and delayed
 injury checks, and retains favorable and unfavorable findings. Everolimus remains an
 optional, model-qualified mechanistic probe; HCQ remains reserve. No drug earns a rescue
 priority, and no patient benefit or harm is inferred. The [v9 audit](notes/track2-adversarial-v9.md)
 that withdrew the earlier priority is preserved.
 
-The [remote ESM pilot](notes/track2-esm-pilot.md) (2026-09-20) passed a small,
-prespecified primary-control test, then scored the missense candidate as
-sequence-compatible in three contexts. A secondary control disagreed with the
-functional ordering, limiting interpretation. This is no proof of benignity or
-drug response; it reinforces the need to measure allele function. The addendum
-records owner-hosted inference and all results. V12 is preserved and does not yet
-incorporate this additional model work; future synthesis/disclosure must include it.
+The [expanded H100 model comparison](notes/track2-model-expansion.md) supersedes
+interpretation based on the single-checkpoint [ESM pilot](notes/track2-esm-pilot.md).
+Seven ESM checkpoints disagree and fail selected control comparisons; larger
+models do not remove that limitation. All 48 Boltz-2 and 120 AlphaFold2 predictions
+are retained: confident folds also occur in impaired controls. V13 therefore
+qualifies the earlier blanket claim of computational support for the missense
+allele. Evo2 7B and 40B pass the fixed public BRCA1 benchmark; 40B long-window work
+completed across all eight H100s after an explicit memory continuation. No clinical
+classification, phase, drug priority or exposure margin follows.
+The comparison records fixed plans, full results and owner-hosted inference,
+plus the external public-WT-only ColabFold alignment search. Frozen v12 is preserved.
 
 **Standing research objective:** actively and extensively seek evidence that could
 falsify the current approach, then use weaknesses and overlooked risks to revise or
@@ -117,22 +121,21 @@ to decisions or experiments throughout the work, before candidate promotion or r
 
 The [52-source/11-decision ledger](notes/track2-evidence-v10.json) and
 [validation plan](notes/track2-validation-v10.md) retain the v10 scientific decisions.
-The [official website review](notes/track2-challenge-review-20260919.md) aligns the
-[v12 report](notes/track2-report-v12.md), [338-word script](notes/track2-pitch-v12.md),
-[seven-page deck](notes/track2-slides-v12.html) and
-[video description](notes/track2-video-description-v12.md) with the rubric and methods
-template. The pitch now explains the approved-drug/mechanism rationale, conditional
-impact, innovation and reuse. A seventh page carries the full required acknowledgement
-inside the planned three-minute video. No efficacy or candidate priority is promoted.
+The [official website review](notes/track2-challenge-review-20260919.md) supplies
+the rubric, methods-template and acknowledgement requirements. The new
+[v13 report](notes/track2-report-v13.md), [329-word script](notes/track2-pitch-v13.md),
+[eight-page deck](notes/track2-slides-v13.html) and
+[video description](notes/track2-video-description-v13.md) integrate the model
+findings and provider disclosure. All eight rendered pages passed author visual
+review and geometry checks; narration still requires rehearsal. The full
+acknowledgement remains inside the planned three-minute video.
 
-`scripts/track2_release_v12.py` binds eight files/119 inputs and preserves v1-v11.
-All seven PDF pages were reviewed; 489 Track 2 tests pass. The planned narration
-needs rehearsal. Scientific evidence remains v10, with recorded reading depth and
-access failures; this is author review, not a new independent review.
-Open the HTML locally or export with
-`uv run node scripts/render_track2_slides_v12.mjs new-output-name`.
-
-These are research materials, not a recorded video or submission. Fireworks API-credit
+Use `scripts/track2_release_v13.py` for new snapshots; v12 and every earlier bound
+release are preserved. Export the deck with
+`uv run node scripts/render_track2_slides_v13.mjs new-output-name`.
+The scientific drug decisions remain v10; model results and their limitations
+are documented separately. These are research materials, not a recording or submission.
+Fireworks API-credit
 use is owner-confirmed; training/retention settings remain unverified. Recording/hosting,
 final owner/live checks and receipt remain outstanding. Phase and clinical exposure
 margins remain unresolved; no wet-lab experiment was performed.
@@ -144,7 +147,7 @@ everolimus a conditional priority and demoted hydroxychloroquine to reserve. V9 
 the everolimus priority while preserving that review and its source record.
 The 53-source review and [exposure ledger](notes/track2-exposure.json) establish no clinical
 efficacy or therapeutic margin. No laboratory experiments or Track 2 upload have occurred.
-The current v9 pitch still needs recording and a hosted URL; earlier scripts are historical.
+The pitch still needs updating, recording and a hosted URL; earlier scripts are historical.
 The [Firecrawl follow-up](notes/track2-firecrawl.md) exercised all 26 advertised MCP
 tools and added eight independently checked source documents at explicitly limited
 reading depths. Pralatrexate is a new fusion-positive RMS tumour-only horizon;

@@ -1,6 +1,44 @@
 # Session handoff
 
-**Last updated:** 2026-09-20 IST, session 51. **Active feature: feat-009 Track 2.**
+**Last updated:** 2026-09-21 IST, session 52. **Active feature: feat-009 Track 2.**
+
+Expanded owner-authorized H100 modeling under
+`PrakashDGX_H2:~/v/mva-track2-expanded-20260920/`. Raw subject data never left the
+original machine; inputs are public references, published controls and permitted
+report-derived substitutions. Preserve the previous pilot and all v1-v12 releases.
+The expanded root and pilot are both in the deletion inventory.
+
+Use `notes/track2-model-expansion.md`, complete result JSONs, public provenance
+manifest and the new v13 report/deck/script/video description. Seven ESM checkpoints
+retain failed control orderings and candidate sign changes; 48 Boltz and 120
+AlphaFold2 structures include confident predictions for impaired controls. V13
+qualifies the broad v12 missense-support claim. This is not benign/pathogenic
+classification, biological replication, drug rescue or phase/exposure evidence.
+The public-WT-only ColabFold alignment service adds an external disclosure route.
+
+Evo2 7B completed the fixed 96-site BRCA1 benchmark and four candidate/window
+comparisons (AUROC 0.94184); all strands are retained. The 40B original runtime
+failed before biological scores. Its isolated cuBLAS-preload retry passes the
+unchanged official-loss and exact-repeat gates and the 96-site benchmark (AUROC
+0.92014), then exhausted memory on a 32,768-base candidate. All four candidate/window
+comparisons completed on all eight H100s, with exact original-reference and duplicate
+short-window agreement. Both complete model matrices and their arithmetic/provenance
+pass the local audit. All GPU jobs are finished and every device is idle.
+Preserve its failed first attempt, standalone diagnostics and runtime amendment.
+Do not disable FP8 or relax thresholds to force an answer.
+
+The eight-page v13 deck includes the full acknowledgement. The 329-word script
+has unmeasured runtime. All pages passed visual/geometry review, min24px, zero
+clipping/overlap and the 640px viewport check. The v10 drug decisions remain:
+no rescue priority; everolimus optional mechanistic probe; HCQ reserve; phase
+unconfirmed; clinical margins unknown; no wet-lab experiment.
+
+Fresh no-argument init and 533 Track 2 tests pass. The local protein reanalysis
+matches all seven ESM / 48 Boltz / 120 AlphaFold outputs with 71 bound-file checks.
+Live PUBLIC/purge guard passes; prior releases remain intact. The v13 package and end-of-session Git verification are recorded in progress.md.
+Use `scripts/track2_release_v13.py`; never overwrite old bound inputs.
+
+## Session 51 pilot baseline (historical)
 
 Owner authorized `PrakashDGX_H2` and required all remote processes/artifacts under
 `~/v`. Completed the public-reference ESM pilot in
@@ -342,14 +380,12 @@ and both candidates, retaining all nine same-position alternate rows. See
 
 ## Blockers and unresolved evidence
 
-- **Model pilot completed; interpretation and integration remain bounded.** Remote
-  H100 access/health are verified and upstream ESM ran successfully. A passing
-  minimal primary test is limited by secondary-control disagreement, one retaining
-  site and shared evolutionary information. It does not resolve allele function or
-  justify a large screen. Integrate the addendum and owner-hosted ESM disclosure
-  only through a new synthesis/version. Local NVML mismatch remains; remote driver
-  555 is below the reviewed Anthropic kits' floors. No driver fix is required for
-  the completed pilot or ongoing literature work.
+- **Expanded model evidence is not a functional or clinical validation.** ESM
+  disagreements and failed controls, structural-control similarity, BRCA1-to-BUB1B
+  transfer and pretraining overlap constrain interpretation. The v13 report records
+  these limits and the revised claim. Biological assays remain necessary; no
+  rescue priority, phase or clinical exposure margin follows. The local NVML
+  mismatch remains, while the authorized remote host supports the completed models.
 
 - **Standing falsification search remains ongoing:** cycle 1 is complete in
   `notes/track2-falsification-cycle1.md`. Its next-work table supersedes the initial
@@ -361,7 +397,7 @@ and both candidates, retaining all nine same-position alternate rows. See
 - **Session 45 desk audit/revision is complete; biological and delivery gaps remain.**
   The BUBR1-loss result is an adverse-mechanism concern, not proof of harm in this
   genotype. Model availability, phenotype, exposure, meaningful effect/injury bounds
-  and powered confirmation remain unestablished. Current v12 narration requires rehearsal,
+  and powered confirmation remain unestablished. Current v13 narration requires rehearsal,
   recording/hosting, Fireworks settings verification, owner/live checks and receipt.
   Preserve all v12-bound inputs and v1-v11 history. Any further edit needs a new snapshot.
   V12 deck SHA-256: `b733b0723f32a33b07cc10e1a51051ca19baa625d6de2a3421d0e1720bd254bc`.

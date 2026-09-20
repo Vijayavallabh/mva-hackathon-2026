@@ -3664,3 +3664,143 @@ uv run python scripts/audit_publication.py --output results/feat009/model-pilot-
 ```
 
 Configured-origin push, clean worktree and upstream equality are verified at handoff.
+
+
+## Session 52 — 2026-09-20–21: expanded H100 model falsification and v13 integration
+
+Continued feat-009 under the owner's explicit heavy-model/AlphaFold/Evo request.
+All remote work is under `PrakashDGX_H2:~/v/mva-track2-expanded-20260920/`.
+Public references, published engineered/assay controls and permitted report-derived
+candidate substitutions only; no raw subject transfer, narrative, project `.env`,
+password storage, family contact, biological experiment or upload. The pilot and
+all historical v1-v12 inputs/releases remain preserved. The remote root is now
+explicitly listed in the deletion inventory.
+
+Completed protein-model campaign: seven ESM checkpoints / 147 scores; 24 Boltz
+single-sequence and 24 shared-MSA predictions; all 120 AlphaFold2 predictions across
+five parameter sets and three seeds. The MSA request sent only a public WT domain
+and returned 623 records; this external ColabFold service is explicitly disclosed.
+Only ESM-1v checkpoints 1 and 5 pass primary controls in every window; the full
+ensemble fails one context. Larger ESM models fail selected controls, including
+all three contexts for 15B. Confident folds also occur in impaired controls.
+The two audited experimental human structures do not resolve the tested domain.
+See `notes/track2-model-expansion.md`, fixed plans and all result JSONs.
+
+The initial ESM-2 3B load lacked its official contact-regression companion; a new
+run with that resource succeeds, with contact inference still disabled. Boltz
+single-sequence results are weak and unstable; the shared alignment improves fold
+confidence without establishing function. AlphaFold setup retained its first
+failed dependency resolution, then used a locked ColabFold 1.6.3 stack. Evo2's
+prebuilt FlashAttention ABI failure was resolved by a 24m30s source build. The
+original 40B FP8/cuBLAS failure and ineffective search-path attempt are retained;
+an isolated library preload fixes the standalone FP8 operation and passes the
+unchanged official model-loss and exact-repeat gates. No driver/system changes,
+precision downgrade or relaxed scientific threshold were used.
+
+New `notes/track2-report-v13.md` qualifies the broad v12 missense-support claim.
+The new eight-page slides, aligned 329-word narration and video description add
+model disagreement, failed controls and expanded disclosure. The trial plot and
+full acknowledgement are preserved. Local render in
+`results/feat009/v13-slide-review-first-20260921/` passes all eight pages with zero
+overlap/clipping, min24px and a 640px viewport check. Every page was visually
+reviewed. Narration duration, recording/hosting and upload remain unverified.
+The v10 drug ledger stays unchanged: no rescue priority, everolimus optional
+mechanistic probe, HCQ reserve, clinical margins unknown and phase unconfirmed.
+
+Validation so far (actual output):
+
+```text
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+Ran 533 tests in 6.378s
+OK
+uv run python scripts/verify_data.py --self-check
+self-check ok
+uv run python scripts/track1_submission.py --self-check
+self-check ok: build, strict conformance, normalization and official scoring
+uv run python scripts/track2_model_result_audit.py results/feat009/model-expansion-archive-v1 notes/track2-protein-model-audit.json
+passed:true; 71 bound-file checks; all 7 ESM / 48 Boltz / 120 AlphaFold outputs matched
+uv run python scripts/track2_release_v12.py verify results/feat009/jvv7_track2_research_v12
+integrity_verified:true; files:8; bound_inputs:119; historical_v1_through_v11_preserved:true
+uv run python scripts/check_publication_remote.py --output results/feat009/model-expansion-publication-20260921.json
+PUBLIC; 13 retired blobs unavailable; 0 unknown errors; live control reachable;
+removed_object_gate_passed:true
+```
+
+Core `track2_evidence.py check` and `track1` also pass. Fresh no-argument `./init.sh`
+passes from the ordinary shell. Actual output from
+`logs/track2-model-expansion-final-init-20260921.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Session-52 final model/package results:
+
+- Evo2 7B: complete 96-control + four-candidate/window matrix, AUROC 0.9418403;
+  loss 0.34716797 versus expected 0.3476563; exact reference repeat.
+- Evo2 40B: complete original 96-control matrix, AUROC 0.9201389; two-H100 OOM
+  on the first 32,768-base candidate retained. The fixed eight-H100 continuation
+  completes all four candidate/window comparisons. Loss 0.21569824 versus expected
+  0.2159424; repeat, original reference and all four duplicate likelihoods match
+  exactly. The hardware split is explicit, not described as one uninterrupted run.
+- Both candidates score less sequence-compatible in both models/windows; this
+  does not validate BUB1B function, phase, splicing/NMD or drug response. The same
+  96 public assay controls are reused, not 192 independent experiments.
+- Both local Evo matrices pass design, arithmetic, numerical, benchmark and
+  provenance checks via `scripts/track2_evo2_result_audit.py`; result in
+  `notes/track2-evo2-result-audit.json`. Protein archive SHA is
+  `789c2bc60a20051f3d7731844894924eb2afbdff8c408462eb771db0f73d994c`;
+  Evo archive SHA is
+  `2dc84faf0b1a0187857f593378f1a2f64a54e32cb57c60b8d38c4c0d60181bcc`.
+- Final device query: all eight H100s at 1 MiB / 0% utilization; no owned GPU job
+  remains. All files/caches stay under the authorized `~/v` tree.
+
+```text
+uv run python scripts/track2_evo2_result_audit.py results/feat009/model-expansion-evo-archive-v1 notes/track2-evo2-result-audit.json
+passed:true; 2 models; 100 rows/model; complete fixed matrices and arithmetic verified
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+Ran 533 tests in 6.326s
+OK
+uv run python scripts/track2_release_v13.py build results/feat009/jvv7_track2_research_v13
+uv run python scripts/track2_release_v13.py verify results/feat009/jvv7_track2_research_v13
+integrity_verified:true; files:23; bound_inputs:190;
+historical_v1_through_v12_preserved:true; upload_ready:false
+```
+
+The initial staged disclosure audit passes 264 blobs with zero findings. Final
+staging includes the finished Evo outputs, amendments and administrative records.
+End-of-session verification commands:
+
+```bash
+uv run python scripts/audit_publication.py --staged --output results/feat009/model-expansion-staged-final-20260921.json
+uv run python scripts/audit_publication.py --output results/feat009/model-expansion-history-final-20260921.json
+git push origin main
+git status --short
+git rev-list --left-right --count HEAD...@{upstream}
+```
+
+Feat-009 remains in progress for continuing falsification, biological qualification,
+provider/owner/live checks, recorded/hosted video and receipt. No uploaded deliverable
+was changed and no submission occurred. V13 is an immutable research snapshot,
+not a clinical result or upload-ready attestation.

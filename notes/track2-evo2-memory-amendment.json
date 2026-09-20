@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-21",
+  "reason": "40B cuBLAS-corrected two-H100 run completed all 96 benchmark rows and the first 8192-base candidate, then failed allocating 16 GiB on the first 32768-base window.",
+  "preserve": "Original 97 rows, benchmark gate, both numerical tests, log, status and runtime provenance remain unchanged.",
+  "followup_devices": 8,
+  "followup_scope": "All four already-prespecified candidate/window comparisons, including the completed short-window comparison; no new biological input, window or scoring method.",
+  "qualification": "Repeat original official expected-loss tolerance <0.001, repeated first benchmark reference <=1e-6, agreement with its original reference score <=1e-6, and every strand-specific reference/alternate score for the completed short-window candidate <=1e-6. Stop integration if any check fails.",
+  "integration": "Retain the fixed two-GPU 96-row benchmark and the eight-GPU four-row candidate matrix with separate provenance. Original duplicated short-window row remains archived. Report hardware split and OOM, not a fictitious single uninterrupted run.",
+  "inference": "Same pinned checkpoint, FP8, cuBLAS libraries, plan and inputs. No threshold relaxation, model selection or biological reinterpretation of resource failure."
+}

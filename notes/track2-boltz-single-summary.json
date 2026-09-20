@@ -1,0 +1,868 @@
+{
+  "plan_sha256": "1850e522b663f6520c9cdbf47d0e302b6900f4dc528d370c8e3c500956e94100",
+  "records": [
+    {
+      "variant": "V793R",
+      "seed": 11,
+      "cif_sha256": "f8d6c3bd79829e0ac8139ace2fb8ad829aa8290115dd1ee3cdef9626d01edc4e",
+      "confidence_sha256": "407f29e6c4c8115424e2b4093b69e49b6e6d2c43a406635995980516c8344745",
+      "confidence": {
+        "confidence_score": 0.29820045828819275,
+        "ptm": 0.18044011294841766,
+        "complex_plddt": 0.327640563249588,
+        "complex_pde": 4.194321155548096
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "WT",
+      "seed": 11,
+      "cif_sha256": "46544e30b30cde6fc9c074984e2992cb2236f82473a4ceb52f155207fb5dd07e",
+      "confidence_sha256": "576265b58c0bf880906dc3288b914d122d12018727828ac87b4e2d8907b560ea",
+      "confidence": {
+        "confidence_score": 0.311069518327713,
+        "ptm": 0.19134311378002167,
+        "complex_plddt": 0.34100112318992615,
+        "complex_pde": 4.112485408782959
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "K795R",
+      "seed": 11,
+      "cif_sha256": "ce329c5d450d284559420550459b2390254945f371c6ef2eb75dff24d122e3fc",
+      "confidence_sha256": "6a31fda85d4784fc5873ef2f06aa48e201a9a7221c8f4ff56484db5488f83849",
+      "confidence": {
+        "confidence_score": 0.30762043595314026,
+        "ptm": 0.1856803596019745,
+        "complex_plddt": 0.3381054401397705,
+        "complex_pde": 4.130952835083008
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "K795A",
+      "seed": 11,
+      "cif_sha256": "2d055990d0e4cf9d8f53cbf11ebda292a6644c1be5151c4a643841f9b8a50a08",
+      "confidence_sha256": "2a83453df268df5c5143e2f01100a8c1753fb7bd2ab124a0b6f27d5217765938",
+      "confidence": {
+        "confidence_score": 0.323967307806015,
+        "ptm": 0.20264986157417297,
+        "complex_plddt": 0.3542966842651367,
+        "complex_pde": 3.9618968963623047
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "D911N",
+      "seed": 11,
+      "cif_sha256": "060c2c43ea458bf7e55fec5f8ac20de2cc32e718e47032d9b37f3a7908be8652",
+      "confidence_sha256": "c2bdb22b3cb2ebf6f50442f7dbf9cf66b369c3b6646d3c0b085eefb5f85fca41",
+      "confidence": {
+        "confidence_score": 0.3108079135417938,
+        "ptm": 0.18600720167160034,
+        "complex_plddt": 0.3420080840587616,
+        "complex_pde": 4.0641889572143555
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "D882N",
+      "seed": 11,
+      "cif_sha256": "b115a79d9388ab4fb02a5e31fedf1e6d62fe59bc9c9986d8dc05b50cd60924c9",
+      "confidence_sha256": "46381e485b19e77a05001aef7e41d6be2ea0ab18b82468c3cd12ad07152d70a9",
+      "confidence": {
+        "confidence_score": 0.31233859062194824,
+        "ptm": 0.19214290380477905,
+        "complex_plddt": 0.34238752722740173,
+        "complex_pde": 4.054214000701904
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "D882A",
+      "seed": 11,
+      "cif_sha256": "618c55784e359d15c6af59636acd8e4b04a93da6d231ccd9e22fe8c0177f37cc",
+      "confidence_sha256": "88102f3f6383919a627ad21ad638784d3ab6bdbf35813a9bf4f0fae7d0abbff1",
+      "confidence": {
+        "confidence_score": 0.30898377299308777,
+        "ptm": 0.1935526430606842,
+        "complex_plddt": 0.33784154057502747,
+        "complex_pde": 4.051146984100342
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "N1002K",
+      "seed": 11,
+      "cif_sha256": "ed0e88dc56d51355ace9d2bd3fd122593354ce71349d3951b318fcf7b47d096e",
+      "confidence_sha256": "b78d3c4a7269fcf3779860df8a44fba74de4d94e59d9081b56573735082ae5f8",
+      "confidence": {
+        "confidence_score": 0.3143255412578583,
+        "ptm": 0.19096244871616364,
+        "complex_plddt": 0.34516629576683044,
+        "complex_pde": 4.096480846405029
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "D882A",
+      "seed": 22,
+      "cif_sha256": "2e324e61066634f31d3ee41b96c561da1f65f982d4aee17a82b93027f907ab1f",
+      "confidence_sha256": "6c3d5a71bb4059ab8eaa3727e981a9ffabf03644c018d5abcb499430d4ecd26b",
+      "confidence": {
+        "confidence_score": 0.293794721364975,
+        "ptm": 0.16901938617229462,
+        "complex_plddt": 0.32498854398727417,
+        "complex_pde": 4.173520565032959
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "N1002K",
+      "seed": 22,
+      "cif_sha256": "a76dde1ea8a739934fcd4bc31c8ac678961b1312b8821d5028b18bbc37cf1d0a",
+      "confidence_sha256": "f92224829e33b1524d804547a232e252195fa04d82ad91e89a64e92ec65c9487",
+      "confidence": {
+        "confidence_score": 0.31356534361839294,
+        "ptm": 0.20128509402275085,
+        "complex_plddt": 0.3416353762149811,
+        "complex_pde": 4.042926788330078
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "K795A",
+      "seed": 22,
+      "cif_sha256": "61df08e9cfa9cf5d09636ce493f61019846c8942868c044ee2e8b6f52c90e93b",
+      "confidence_sha256": "5909c438a6e62adaad222f6633d55463bcf8894ed80bf036db7e275da97c70a9",
+      "confidence": {
+        "confidence_score": 0.3011462092399597,
+        "ptm": 0.2095644474029541,
+        "complex_plddt": 0.3240416347980499,
+        "complex_pde": 3.991940975189209
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "D911N",
+      "seed": 22,
+      "cif_sha256": "58947c20c7e5205ccb6a55807400b3261f82ff3e965216be4d815c4902011f63",
+      "confidence_sha256": "2714230611f772f49ef5347a40469d21fb2bb8239cc3e6f79bc37a7d1a578384",
+      "confidence": {
+        "confidence_score": 0.29557347297668457,
+        "ptm": 0.17111027240753174,
+        "complex_plddt": 0.3266892731189728,
+        "complex_pde": 4.051939964294434
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "D882N",
+      "seed": 22,
+      "cif_sha256": "fbfe5d9015e64df4c71457d9a91bc9e3f88dbe6100681526bdf4dfe5046882d1",
+      "confidence_sha256": "0c1c18ff0442380da1b2ce4ad207cab34f86ebc0aefe5b6b3a459b1c2fe4d6a4",
+      "confidence": {
+        "confidence_score": 0.30014967918395996,
+        "ptm": 0.1707126498222351,
+        "complex_plddt": 0.33250892162323,
+        "complex_pde": 4.062642574310303
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "WT",
+      "seed": 22,
+      "cif_sha256": "6d11580a5b5a8d4987eadce0db2f2d8dd795608bc68493cd3e6016de64c688df",
+      "confidence_sha256": "95063259fa9f21ed3541f43b65a3b9a8284f5b9cecf3498581cc50d8c9ab2ea9",
+      "confidence": {
+        "confidence_score": 0.3133980929851532,
+        "ptm": 0.2580818831920624,
+        "complex_plddt": 0.3272271156311035,
+        "complex_pde": 3.6139891147613525
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "V793R",
+      "seed": 22,
+      "cif_sha256": "c02cd40bce4746dfda84d2cf4931fa2d0c9b7a2e0595b299712d4db3f622ce6f",
+      "confidence_sha256": "1751ac02bd2658398f4c16f6ffe1dce87f7b622839392d31e6ecea534e13350c",
+      "confidence": {
+        "confidence_score": 0.2858702838420868,
+        "ptm": 0.17596594989299774,
+        "complex_plddt": 0.31334635615348816,
+        "complex_pde": 4.195185661315918
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "K795R",
+      "seed": 22,
+      "cif_sha256": "69e13c0eb4b996307b1ac9c2a3ae56b372ccc4b38dc35ed4b853d948bac68762",
+      "confidence_sha256": "a6ab51f2861bd5e4bbca0f27363967fe71c4e056c5bcaa44d8baedb9b85decc1",
+      "confidence": {
+        "confidence_score": 0.29901123046875,
+        "ptm": 0.1938098520040512,
+        "complex_plddt": 0.3253115713596344,
+        "complex_pde": 4.126912593841553
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "D882A",
+      "seed": 33,
+      "cif_sha256": "cc1db5e4156ccbd34ed45da3db52c1820a3fed43688dda4997b9887bce090970",
+      "confidence_sha256": "7c0974d77430910d3038c8babc0e3c3bf0a3b32d7ce25eac645250a0e09d3b05",
+      "confidence": {
+        "confidence_score": 0.31318509578704834,
+        "ptm": 0.20632459223270416,
+        "complex_plddt": 0.3399002254009247,
+        "complex_pde": 4.068943977355957
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "WT",
+      "seed": 33,
+      "cif_sha256": "5b6b3571fc42e1b8a67fdca6c82d0766bacbcabfe2b69106e9f5c40c8d1a7668",
+      "confidence_sha256": "be6c57160f98b4b4dc07acbc976ba821412106dcf4e2b9a42785dfa9f03673db",
+      "confidence": {
+        "confidence_score": 0.31199392676353455,
+        "ptm": 0.20384763181209564,
+        "complex_plddt": 0.33903050422668457,
+        "complex_pde": 4.087782859802246
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "D882N",
+      "seed": 33,
+      "cif_sha256": "30806f02fa686fb88adba7a0883c8ebbf059f08dc81cdc3f52775178bdf66d19",
+      "confidence_sha256": "aab78486dae03fdf5f6a6b9cbd07391fd4de51b63ff77d15263478742a84e792",
+      "confidence": {
+        "confidence_score": 0.3166869282722473,
+        "ptm": 0.19505566358566284,
+        "complex_plddt": 0.34709474444389343,
+        "complex_pde": 3.9567339420318604
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "D911N",
+      "seed": 33,
+      "cif_sha256": "51f828e4bbbec868eb39b38bdfdba400d11d3e5578ebcaa4494a6225415c4541",
+      "confidence_sha256": "ecc3ba635767d9d813f46596589f1b29fa11366db07c1e7af2f78837a29ba341",
+      "confidence": {
+        "confidence_score": 0.3064552843570709,
+        "ptm": 0.19077855348587036,
+        "complex_plddt": 0.3353744447231293,
+        "complex_pde": 4.119954586029053
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "N1002K",
+      "seed": 33,
+      "cif_sha256": "9ddbacae0d2481258f94137308f9b912c4a1718dac12e2b5c30c8bf9ff354f17",
+      "confidence_sha256": "73a76df166197bbd080cccda2cc0a0e5098b7b47574b36f65f82ed5c953e46e0",
+      "confidence": {
+        "confidence_score": 0.3183649182319641,
+        "ptm": 0.1926611065864563,
+        "complex_plddt": 0.34979087114334106,
+        "complex_pde": 4.019162654876709
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "V793R",
+      "seed": 33,
+      "cif_sha256": "e975df9f3fb7640710ac225aab99bb5b38312258f62a4ec91ecfc42ff98a2d98",
+      "confidence_sha256": "fb540680279b5cbb8285f2f495aa9834928e6caf4a8b051e3123f7b25e01eaf9",
+      "confidence": {
+        "confidence_score": 0.3196493089199066,
+        "ptm": 0.1960424929857254,
+        "complex_plddt": 0.35055097937583923,
+        "complex_pde": 4.0792765617370605
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "K795A",
+      "seed": 33,
+      "cif_sha256": "8092e78b50029a68f63b399a1dec7819f461faaa4777abdd3b728e3ef4db7214",
+      "confidence_sha256": "1150a66ae83d8b5565d9fe6ee339028223e143a7ed8d5de1a36b24b4c0d3bbae",
+      "confidence": {
+        "confidence_score": 0.34297478199005127,
+        "ptm": 0.21925029158592224,
+        "complex_plddt": 0.37390589714050293,
+        "complex_pde": 3.8348939418792725
+      },
+      "CA_count": 324
+    },
+    {
+      "variant": "K795R",
+      "seed": 33,
+      "cif_sha256": "ae457b1e191494baafcba83fb4a839f6ba355eefa91d23d8036ee36694bf404e",
+      "confidence_sha256": "97675765a07c61f8410e654db65d5dd69e278aaec0e7c2b8452c991b5b6da145",
+      "confidence": {
+        "confidence_score": 0.3130861222743988,
+        "ptm": 0.2039244920015335,
+        "complex_plddt": 0.34037652611732483,
+        "complex_pde": 3.974620819091797
+      },
+      "CA_count": 324
+    }
+  ],
+  "comparisons": [
+    {
+      "variant": "WT",
+      "wt_seed": 11,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 21.248441688229608
+    },
+    {
+      "variant": "WT",
+      "wt_seed": 11,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 19.429281043998582
+    },
+    {
+      "variant": "WT",
+      "wt_seed": 22,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 19.79225790679447
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 11,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 13.589929795626702,
+      "local_CA_rmsd_after_global_fit_angstrom": 10.83614626241403
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 11,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 21.34221839449471,
+      "local_CA_rmsd_after_global_fit_angstrom": 22.571389065174053
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 11,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 17.637226688445622,
+      "local_CA_rmsd_after_global_fit_angstrom": 22.349886558632587
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 22,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 20.86456281001898,
+      "local_CA_rmsd_after_global_fit_angstrom": 18.211333357365888
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 22,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 11.585853610230451,
+      "local_CA_rmsd_after_global_fit_angstrom": 12.853394753731827
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 22,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 20.435971468320822,
+      "local_CA_rmsd_after_global_fit_angstrom": 27.972253352508517
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 33,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 20.469171674255144,
+      "local_CA_rmsd_after_global_fit_angstrom": 28.85612485065221
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 33,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 20.175001141636393,
+      "local_CA_rmsd_after_global_fit_angstrom": 18.65505636981818
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 33,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 9.055553423865831,
+      "local_CA_rmsd_after_global_fit_angstrom": 13.283946985042427
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 11,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 10.64180755157113,
+      "local_CA_rmsd_after_global_fit_angstrom": 8.90926869744656
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 11,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 20.390091285900585,
+      "local_CA_rmsd_after_global_fit_angstrom": 23.38180274081504
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 11,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 16.419843114856395,
+      "local_CA_rmsd_after_global_fit_angstrom": 22.66063809970729
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 22,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 22.685562345172496,
+      "local_CA_rmsd_after_global_fit_angstrom": 27.92048500290026
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 22,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 9.101438988293976,
+      "local_CA_rmsd_after_global_fit_angstrom": 8.141093974375597
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 22,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 20.45279210533872,
+      "local_CA_rmsd_after_global_fit_angstrom": 23.597582500697104
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 33,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 19.96442892701823,
+      "local_CA_rmsd_after_global_fit_angstrom": 25.31709023559901
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 33,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 18.038993357527303,
+      "local_CA_rmsd_after_global_fit_angstrom": 14.866279646385804
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 33,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 9.828054756775844,
+      "local_CA_rmsd_after_global_fit_angstrom": 8.874520207687858
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 11,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 7.976703608614606,
+      "local_CA_rmsd_after_global_fit_angstrom": 6.136531441184031
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 11,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 22.359162846012012,
+      "local_CA_rmsd_after_global_fit_angstrom": 27.388945992866315
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 11,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 18.0744320090475,
+      "local_CA_rmsd_after_global_fit_angstrom": 10.646298599944132
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 22,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 21.088499241885422,
+      "local_CA_rmsd_after_global_fit_angstrom": 21.175849245321473
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 22,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 7.324772154616436,
+      "local_CA_rmsd_after_global_fit_angstrom": 13.810862208115147
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 22,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 20.54978411545428,
+      "local_CA_rmsd_after_global_fit_angstrom": 17.03913079969883
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 33,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 18.904391074919264,
+      "local_CA_rmsd_after_global_fit_angstrom": 23.515112120662202
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 33,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 20.042449474298216,
+      "local_CA_rmsd_after_global_fit_angstrom": 15.281472327349585
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 33,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 9.26691167918366,
+      "local_CA_rmsd_after_global_fit_angstrom": 15.18880870593169
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 11,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 11.795636488967196,
+      "local_CA_rmsd_after_global_fit_angstrom": 6.882049023719826
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 11,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 22.149602097282855,
+      "local_CA_rmsd_after_global_fit_angstrom": 20.90924601729337
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 11,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 16.828085338634487,
+      "local_CA_rmsd_after_global_fit_angstrom": 15.355295615451464
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 22,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 20.725563621416192,
+      "local_CA_rmsd_after_global_fit_angstrom": 13.61984272474754
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 22,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 6.611371516144654,
+      "local_CA_rmsd_after_global_fit_angstrom": 10.55319682551042
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 22,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 20.774286622347052,
+      "local_CA_rmsd_after_global_fit_angstrom": 24.13915232390604
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 33,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 21.212978613260976,
+      "local_CA_rmsd_after_global_fit_angstrom": 22.436308419229945
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 33,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 19.325653132115523,
+      "local_CA_rmsd_after_global_fit_angstrom": 26.53230785419758
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 33,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 11.394828709062052,
+      "local_CA_rmsd_after_global_fit_angstrom": 9.35843949430505
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 11,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 18.746198522310923,
+      "local_CA_rmsd_after_global_fit_angstrom": 11.744214035952862
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 11,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 21.25733320935099,
+      "local_CA_rmsd_after_global_fit_angstrom": 19.515242685249497
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 11,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 15.62529613394977,
+      "local_CA_rmsd_after_global_fit_angstrom": 15.126099425149262
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 22,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 21.071438733274842,
+      "local_CA_rmsd_after_global_fit_angstrom": 18.10862745793834
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 22,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 11.769532430065288,
+      "local_CA_rmsd_after_global_fit_angstrom": 13.351234163051998
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 22,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 17.891125095787036,
+      "local_CA_rmsd_after_global_fit_angstrom": 16.371536126702654
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 33,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 22.81236852476523,
+      "local_CA_rmsd_after_global_fit_angstrom": 24.254953233166315
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 33,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 19.518265194242442,
+      "local_CA_rmsd_after_global_fit_angstrom": 17.949722457064084
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 33,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 16.103623691511114,
+      "local_CA_rmsd_after_global_fit_angstrom": 25.715017727086128
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 11,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 10.696104557648294,
+      "local_CA_rmsd_after_global_fit_angstrom": 11.13416104460278
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 11,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 21.65364745114752,
+      "local_CA_rmsd_after_global_fit_angstrom": 14.512274898449231
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 11,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 18.895356837341478,
+      "local_CA_rmsd_after_global_fit_angstrom": 19.899470440504768
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 22,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 22.54404770170356,
+      "local_CA_rmsd_after_global_fit_angstrom": 24.079732266319976
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 22,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 13.271408066645991,
+      "local_CA_rmsd_after_global_fit_angstrom": 15.797835170263019
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 22,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 19.617934932963816,
+      "local_CA_rmsd_after_global_fit_angstrom": 28.330096113077214
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 33,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 19.401456431705128,
+      "local_CA_rmsd_after_global_fit_angstrom": 20.518876527187018
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 33,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 19.659485544605854,
+      "local_CA_rmsd_after_global_fit_angstrom": 26.661518662538974
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 33,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 4.788551327190816,
+      "local_CA_rmsd_after_global_fit_angstrom": 7.731711906145123
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 11,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 15.879512366202269,
+      "local_CA_rmsd_after_global_fit_angstrom": 10.94257682925837
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 11,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 21.036886002225447,
+      "local_CA_rmsd_after_global_fit_angstrom": 14.583402882635472
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 11,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 17.40180038615493,
+      "local_CA_rmsd_after_global_fit_angstrom": 21.31441695281711
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 22,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 18.874512021573715,
+      "local_CA_rmsd_after_global_fit_angstrom": 10.19881826469992
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 22,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 18.742684548054925,
+      "local_CA_rmsd_after_global_fit_angstrom": 10.103388812361958
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 22,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 20.389907286821614,
+      "local_CA_rmsd_after_global_fit_angstrom": 13.417159705616182
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 33,
+      "other_seed": 11,
+      "CA_rmsd_angstrom": 18.622808071077394,
+      "local_CA_rmsd_after_global_fit_angstrom": 16.817576391764593
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 33,
+      "other_seed": 22,
+      "CA_rmsd_angstrom": 21.26918411475618,
+      "local_CA_rmsd_after_global_fit_angstrom": 11.274914153054825
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 33,
+      "other_seed": 33,
+      "CA_rmsd_angstrom": 14.700617855945284,
+      "local_CA_rmsd_after_global_fit_angstrom": 10.041499758159986
+    }
+  ],
+  "ranges": {
+    "WT": {
+      "plddt_range": [
+        0.3272271156311035,
+        0.34100112318992615
+      ],
+      "CA_rmsd_range_angstrom": [
+        19.429281043998582,
+        21.248441688229608
+      ]
+    },
+    "V793R": {
+      "plddt_range": [
+        0.31334635615348816,
+        0.35055097937583923
+      ],
+      "CA_rmsd_range_angstrom": [
+        9.055553423865831,
+        21.34221839449471
+      ]
+    },
+    "K795R": {
+      "plddt_range": [
+        0.3253115713596344,
+        0.34037652611732483
+      ],
+      "CA_rmsd_range_angstrom": [
+        9.101438988293976,
+        22.685562345172496
+      ]
+    },
+    "D911N": {
+      "plddt_range": [
+        0.3266892731189728,
+        0.3420080840587616
+      ],
+      "CA_rmsd_range_angstrom": [
+        7.324772154616436,
+        22.359162846012012
+      ]
+    },
+    "D882N": {
+      "plddt_range": [
+        0.33250892162323,
+        0.34709474444389343
+      ],
+      "CA_rmsd_range_angstrom": [
+        6.611371516144654,
+        22.149602097282855
+      ]
+    },
+    "K795A": {
+      "plddt_range": [
+        0.3240416347980499,
+        0.37390589714050293
+      ],
+      "CA_rmsd_range_angstrom": [
+        11.769532430065288,
+        22.81236852476523
+      ]
+    },
+    "D882A": {
+      "plddt_range": [
+        0.32498854398727417,
+        0.3399002254009247
+      ],
+      "CA_rmsd_range_angstrom": [
+        4.788551327190816,
+        22.54404770170356
+      ]
+    },
+    "N1002K": {
+      "plddt_range": [
+        0.3416353762149811,
+        0.34979087114334106
+      ],
+      "CA_rmsd_range_angstrom": [
+        14.700617855945284,
+        21.26918411475618
+      ]
+    }
+  },
+  "analysis_script_sha256": "1bf3d5f01ef5734466c1dbf5188a39cae3c6a79031186f4b20e610253baec23f",
+  "model": "boltz 2.2.1",
+  "single_sequence": true,
+  "msa_records": null,
+  "interpretation": "All comparisons retained. Seeds and pairwise combinations are correlated sampling diagnostics, not independent biological replicates. Confidence/RMSD cannot establish stability, abundance, pathogenicity or rescue.",
+  "clinical_classification": false,
+  "drug_ranking_changed": false,
+  "phase_resolved": false
+}

@@ -67,7 +67,8 @@ explicitly retain high-impact gaps before promoting the corresponding claim.
 This is a continuing objective, not a one-time devil's-advocate review. Preserve
 bound snapshots; use new versions when findings change the science. The v10
 ledger, validation and cycle-1 review record the current scientific revision; the
-v12 report and presentation align it with the official website and rubric.
+v12 report and presentation align it with the official website and rubric. The new
+v13 report/presentation integrate session-52 modeling without altering the v10 drug decisions.
 
 ## Data facts — established, do not re-derive
 
@@ -333,6 +334,30 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   All pilot files/caches/results are under that remote directory; include it in
   deletion inventory. No pilot GPU job remains running. Ten new tests, 499 total,
   fresh init and historical package verification pass. Feat-009 remains in progress.
+- **Session 52 expanded owner-hosted modeling (2026-09-20–21):** use
+  `notes/track2-model-expansion.md`, the four fixed model/MSA plans and full result
+  JSONs. All remote work is under `~/v/mva-track2-expanded-20260920/`; public
+  references, published controls and permitted report-derived substitutions only.
+  Seven ESM checkpoints retain discordance/failed controls; the five-checkpoint
+  ensemble fails one context and ESM-2 15B fails all three selected primary gates.
+  Preserve the positive single-checkpoint pilot; it is not representative of the
+  full ensemble. Both 24-run Boltz arms and all 120 AlphaFold2 predictions complete.
+  Shared alignment improves confidence, including impaired controls; confidence
+  and fold similarity cannot validate function or a folding-rescue intervention.
+  The public-WT-only ColabFold alignment service is an additional disclosure route.
+  Evo2 7B passes numerical checks and the fixed 96-site BRCA1 benchmark (AUROC
+  0.94184); both candidate/window outputs are sequence scores, not BUB1B validation.
+  40B original FP8 runtime failed before biological scores; an isolated cuBLAS
+  preload correction passes numerical/repeat checks and the 96-site benchmark
+  (AUROC 0.92014). After a two-H100 long-window OOM, all four candidate/window
+  comparisons complete on all eight H100s with exact reference/duplicate agreement.
+  Both candidates have negative DNA scores in both models/windows; this does not
+  validate function, phase or rescue. Preserve failures and the declared hardware
+  split. Local audits pass both complete matrices; no GPU job remains running.
+  V13 report qualifies v12's broad missense-support claim. Eight-page v13 deck,
+  329-word narration and video description integrate model limits and disclosure;
+  preserve all v1-v12 inputs. No drug priority, phase or exposure promotion.
+  Recording/hosting/provider/owner/live/receipt and biological gaps remain open.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed
@@ -392,8 +417,9 @@ recorded in `tools/versions.tsv` and `notes/toolchain.md`.
 Hardware: this box has 5x A100 80GB + 1x T400, but it is **shared and contended** — check
 `nvidia-smi` and `uptime` before planning a big job (2026-08-28: load avg 109/64 cores, 3 of
 5 GPUs fully busy with other users' work). 3.3 TB free on `/mnt/md0`. `PrakashDGX_H2`
-(6x H100) is reachable over SSH for heavier jobs but the data stays here unless the user
-says otherwise.
+(8x H100 80GB, verified 2026-09-20) is reachable over SSH for heavier jobs. Raw
+subject data stays here under rule 1; remote jobs use public references and
+permitted derived outputs only.
 
 ## Layout
 

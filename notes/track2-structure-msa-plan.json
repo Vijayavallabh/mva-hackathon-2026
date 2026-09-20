@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-09-20T17:52:23.298120+00:00",
+  "scope": "Additional shared-MSA sensitivity arm; original sequence-model and single-sequence plans remain unchanged",
+  "timing": "Fixed after single-sequence jobs launched, before reviewing any structural output",
+  "rationale": "Upstream recommends MSA; test whether omission changes control conclusions rather than relying on knowingly weaker single-sequence predictions",
+  "external_service": "https://api.colabfold.com; public WT UniProt O60566 residues 721-1044 only; no variant or subject input transmitted",
+  "search": "one bounded 900-second upstream run_mmseqs2 request, standard client retries; retain failure, no repeated requests to force success",
+  "comparison": "Repeat all eight variants and all three seeds (24), same default recycling/sampling/no_kernels; shared homolog set with only query row changed",
+  "additional_limits": [
+    "Homolog database provenance is the public service response; no claim of independent biological evidence",
+    "The same WT homolog set is deliberately shared, including any additional WT-like hits",
+    "No best-seed or best-MSA-arm selection; report both arms and all failures",
+    "MSA search is an external compute service, not local-only inference; model inference stays on owner host"
+  ],
+  "full_length": "Still deferred until interpretable domain/control evidence exists"
+}

@@ -1,0 +1,44 @@
+{
+  "created_utc": "2026-09-20T18:04:01.623385+00:00",
+  "scope": "Owner-requested Evo 2 DNA-sequence sensitivity comparison, fixed before model scores",
+  "models": [
+    "evo2_7b",
+    "evo2_40b"
+  ],
+  "runtime": "Evo 2 0.6.0, Vortex 1.1.0, torch 2.6.0+cu124, FlashAttention 2.8.0.post2; 7B supported BF16, 40B required Transformer Engine FP8; no approximate kernel override",
+  "benchmark": "Public Findlay 2018 BRCA1 saturation genome editing table and public GRCh37 chr17 distributed with official Evo2 notebook",
+  "benchmark_per_class": 48,
+  "selection": "Exclude intermediate/non-SNV; sort SHA256(20260920:BRCA1:position:REF>ALT); choose first 48 FUNC and 48 LOF with at most one alternate per genomic site across both classes",
+  "benchmark_window": 8192,
+  "score": "mean autoregressive log likelihood alternate minus reference, no BOS; retain forward and reverse-complement scores separately and their average; same as upstream mean-reduction method",
+  "numerical_gate": "Official built-in forward-test mean loss within 0.001 of checkpoint expected value; repeat reference score difference <=0.000001; finite outputs required. Stop runtime if numerical gate fails.",
+  "functional_gate": "Descriptive BRCA1 AUROC using negative mean-strand delta >=0.70 and LOF median delta lower than FUNC; this is a resource qualification, not clinical validation or a gene-transfer guarantee",
+  "candidate_inference": "Diagnostic outputs retained for both prespecified models even if functional gate fails; no candidate inference on a failed numerical gate. No selecting passing models, windows or strands after seeing results.",
+  "candidates": [
+    {
+      "id": "BUB1B-L737Ter",
+      "pos": 40209701,
+      "ref": "T",
+      "alt": "G"
+    },
+    {
+      "id": "BUB1B-N1002K",
+      "pos": 40220612,
+      "ref": "T",
+      "alt": "G"
+    }
+  ],
+  "candidate_source": "Permitted ranked-pair report notes/track2-report-v12.md; no VCF access",
+  "candidate_windows": [
+    8192,
+    32768
+  ],
+  "reference_source": "Public Ensembl REST GRCh38 forward-strand sequence; REF/length/alphabet checks before transfer; alternate is synthetic",
+  "limitations": [
+    "Reference DNA not a subject haplotype; phase cannot be inferred",
+    "BRCA1 benchmark cannot establish BUB1B accuracy; benchmark/pretraining overlap is unknown",
+    "Whole-window scores are context/strand/model-dependent and do not measure splicing, NMD, protein function, drug response or clinical probabilities",
+    "Model scales are correlated comparisons, not independent genetic evidence or biological replication",
+    "No generation, genome editing, biological material or treatment action"
+  ]
+}

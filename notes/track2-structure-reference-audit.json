@@ -1,0 +1,24 @@
+{
+  "5KHU": {
+    "chain": "Q",
+    "entity": "13",
+    "sha256": "08608f1bb4987931e67f4042bb36699d2450a1768a88680e559175c3cd6a6d68",
+    "deposited_sequence_length": 1050,
+    "observed_CA_count": 219,
+    "observed_label_min": 18,
+    "observed_label_max": 308,
+    "candidate_1002_observed": false,
+    "domain_721_1044_CA": 0
+  },
+  "6TLJ": {
+    "chain": "S",
+    "entity": "16",
+    "sha256": "19d86aed34b2b3abb1028c4838c419526f2ff0402a6084da5811213e21b0c5a9",
+    "deposited_sequence_length": 1050,
+    "observed_CA_count": 293,
+    "observed_label_min": 19,
+    "observed_label_max": 345,
+    "candidate_1002_observed": false,
+    "domain_721_1044_CA": 0
+  }
+}

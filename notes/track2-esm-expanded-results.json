@@ -1,0 +1,1599 @@
+{
+  "models": [
+    {
+      "model": "esm1v_t33_650M_UR90S_1",
+      "rows": [
+        {
+          "window": "n_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.3745510578155518
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -2.050142288208008
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -1.188690185546875
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -0.2150275707244873
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -2.4003891944885254
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -1.5546939373016357
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": 0.7085394859313965
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.34586238861084
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -2.178295612335205
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -1.2517743110656738
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": 0.003734588623046875
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -3.1649274826049805
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -1.2473787069320679
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": 0.586444616317749
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -2.884788990020752
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -2.596789598464966
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -1.799965739250183
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -0.46874451637268066
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -3.4439494609832764
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -2.7266011238098145
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": 0.4832444190979004
+        }
+      ],
+      "gate": {
+        "windows": {
+          "c_terminal_1022": {
+            "retained_minus_highest_impaired": 1.2555088996887207,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          },
+          "n_terminal_1022": {
+            "retained_minus_highest_impaired": 0.9736626148223877,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          },
+          "published_domain_721_1044": {
+            "retained_minus_highest_impaired": 1.3312212228775024,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          }
+        },
+        "pass": true,
+        "repeat_max_abs_difference": 0.0,
+        "numerical_pass": true
+      },
+      "plan_sha256": "1850e522b663f6520c9cdbf47d0e302b6900f4dc528d370c8e3c500956e94100",
+      "script_sha256": "e54430927287d26c653fc999bbae96a1e0c0f2f730891962beece2eec74da74d",
+      "pilot_helpers_sha256": "d2ed238d66d851f44ef5129ae9ad6b3f1e9a1de366f8ea8ce972950e2611715c",
+      "fasta_sha256": "4ac6895daf90501d8398d17ded42f46d78b9db777f5084facc875c2926496d1b",
+      "checkpoint": {
+        "model": "esm1v_t33_650M_UR90S_1",
+        "url": "https://dl.fbaipublicfiles.com/fair-esm/models/esm1v_t33_650M_UR90S_1.pt",
+        "bytes": 7828635339,
+        "sha256": "9519ee60f1cddad3c101afb1f42612499e188534969c3f682e94850870f70433",
+        "retrieved_utc": "2026-09-20T17:27:11.361233+00:00",
+        "trust": "Official upstream HTTPS checkpoint; digest records received bytes, not an independent signature"
+      },
+      "created_utc": "2026-09-20T17:45:42.078612+00:00",
+      "elapsed_seconds": 10.908829736988991,
+      "peak_allocated_gib": 2.716374397277832,
+      "peak_reserved_gib": 2.787109375,
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "visible_devices": "2",
+      "python": "3.11.16",
+      "torch": "2.5.1+cu124",
+      "esm": "2.0.0",
+      "precision": "float32; TF32 disabled",
+      "candidate_is_diagnostic_even_if_gate_fails": true,
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false
+    },
+    {
+      "model": "esm1v_t33_650M_UR90S_2",
+      "rows": [
+        {
+          "window": "n_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -4.631647109985352
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -1.6824604272842407
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -1.334364414215088
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -1.3979644775390625
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -4.030124664306641
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -1.5691821575164795
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -0.3932688236236572
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -4.9630327224731445
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -1.5381033420562744
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -1.6543419361114502
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -1.1627191305160522
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -3.6050641536712646
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -1.3574274778366089
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -0.44685161113739014
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -4.564072608947754
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -2.394442081451416
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -1.1864709854125977
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -1.1151788234710693
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -5.29105281829834
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -2.2773261070251465
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -0.26496100425720215
+        }
+      ],
+      "gate": {
+        "windows": {
+          "c_terminal_1022": {
+            "retained_minus_highest_impaired": 0.37538421154022217,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          },
+          "n_terminal_1022": {
+            "retained_minus_highest_impaired": -0.06360006332397461,
+            "pass": false,
+            "correct_pairwise_orderings": 2,
+            "comparisons": 3
+          },
+          "published_domain_721_1044": {
+            "retained_minus_highest_impaired": 0.07129216194152832,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          }
+        },
+        "pass": false,
+        "repeat_max_abs_difference": 0.0,
+        "numerical_pass": true
+      },
+      "plan_sha256": "1850e522b663f6520c9cdbf47d0e302b6900f4dc528d370c8e3c500956e94100",
+      "script_sha256": "e54430927287d26c653fc999bbae96a1e0c0f2f730891962beece2eec74da74d",
+      "pilot_helpers_sha256": "d2ed238d66d851f44ef5129ae9ad6b3f1e9a1de366f8ea8ce972950e2611715c",
+      "fasta_sha256": "4ac6895daf90501d8398d17ded42f46d78b9db777f5084facc875c2926496d1b",
+      "checkpoint": {
+        "model": "esm1v_t33_650M_UR90S_2",
+        "url": "https://dl.fbaipublicfiles.com/fair-esm/models/esm1v_t33_650M_UR90S_2.pt",
+        "bytes": 7828635339,
+        "sha256": "5b7b095e8eafc53ccfe5994b954fb756bfe7a081f22b4caa1ed59b77b90bcf81",
+        "retrieved_utc": "2026-09-20T17:46:48.570466+00:00",
+        "trust": "Official HTTPS origin; digest describes received bytes, not an independent signature"
+      },
+      "created_utc": "2026-09-20T17:47:06.785142+00:00",
+      "elapsed_seconds": 10.266628092969768,
+      "peak_allocated_gib": 2.716374397277832,
+      "peak_reserved_gib": 2.787109375,
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "visible_devices": "2",
+      "python": "3.11.16",
+      "torch": "2.5.1+cu124",
+      "esm": "2.0.0",
+      "precision": "float32; TF32 disabled",
+      "candidate_is_diagnostic_even_if_gate_fails": true,
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false
+    },
+    {
+      "model": "esm1v_t33_650M_UR90S_3",
+      "rows": [
+        {
+          "window": "n_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -2.5448508262634277
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -2.297436237335205
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -0.7667569518089294
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -0.8758034110069275
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -3.2327237129211426
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -2.5563950538635254
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": 0.10324835777282715
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -2.79244327545166
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -2.116320848464966
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -0.6707477569580078
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -0.9456133842468262
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -3.20524263381958
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -2.7109622955322266
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": 0.35440683364868164
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -4.070859909057617
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -2.1068367958068848
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -1.6589035987854004
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -0.6686644554138184
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -4.590100288391113
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -2.500734329223633
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": 0.3346027135848999
+        }
+      ],
+      "gate": {
+        "windows": {
+          "c_terminal_1022": {
+            "retained_minus_highest_impaired": -0.27486562728881836,
+            "pass": false,
+            "correct_pairwise_orderings": 2,
+            "comparisons": 3
+          },
+          "n_terminal_1022": {
+            "retained_minus_highest_impaired": -0.10904645919799805,
+            "pass": false,
+            "correct_pairwise_orderings": 2,
+            "comparisons": 3
+          },
+          "published_domain_721_1044": {
+            "retained_minus_highest_impaired": 0.990239143371582,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          }
+        },
+        "pass": false,
+        "repeat_max_abs_difference": 0.0,
+        "numerical_pass": true
+      },
+      "plan_sha256": "1850e522b663f6520c9cdbf47d0e302b6900f4dc528d370c8e3c500956e94100",
+      "script_sha256": "e54430927287d26c653fc999bbae96a1e0c0f2f730891962beece2eec74da74d",
+      "pilot_helpers_sha256": "d2ed238d66d851f44ef5129ae9ad6b3f1e9a1de366f8ea8ce972950e2611715c",
+      "fasta_sha256": "4ac6895daf90501d8398d17ded42f46d78b9db777f5084facc875c2926496d1b",
+      "checkpoint": {
+        "model": "esm1v_t33_650M_UR90S_3",
+        "url": "https://dl.fbaipublicfiles.com/fair-esm/models/esm1v_t33_650M_UR90S_3.pt",
+        "bytes": 7828635339,
+        "sha256": "bc5cb2f2a1b35def284e2b2833ae58c803ca9c61b16b72c1dd54c54e76df0b67",
+        "retrieved_utc": "2026-09-20T17:46:20.921861+00:00",
+        "trust": "Official HTTPS origin; digest describes received bytes, not an independent signature"
+      },
+      "created_utc": "2026-09-20T17:46:39.073766+00:00",
+      "elapsed_seconds": 10.256162254954688,
+      "peak_allocated_gib": 2.716374397277832,
+      "peak_reserved_gib": 2.787109375,
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "visible_devices": "6",
+      "python": "3.11.16",
+      "torch": "2.5.1+cu124",
+      "esm": "2.0.0",
+      "precision": "float32; TF32 disabled",
+      "candidate_is_diagnostic_even_if_gate_fails": true,
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false
+    },
+    {
+      "model": "esm1v_t33_650M_UR90S_4",
+      "rows": [
+        {
+          "window": "n_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.5485146045684814
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -2.8207695484161377
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": 1.1127452850341797
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -0.27275538444519043
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -4.668746471405029
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -1.2053974866867065
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -0.018796443939208984
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.757094144821167
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -2.5819787979125977
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": 1.028733730316162
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -0.1490929126739502
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -4.4152116775512695
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -1.1905635595321655
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -0.1926743984222412
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.7623467445373535
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -2.7912967205047607
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -0.18189096450805664
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": 0.08533978462219238
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -4.690537452697754
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -0.21094989776611328
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -0.5663201808929443
+        }
+      ],
+      "gate": {
+        "windows": {
+          "c_terminal_1022": {
+            "retained_minus_highest_impaired": -1.1778266429901123,
+            "pass": false,
+            "correct_pairwise_orderings": 2,
+            "comparisons": 3
+          },
+          "n_terminal_1022": {
+            "retained_minus_highest_impaired": -1.3855006694793701,
+            "pass": false,
+            "correct_pairwise_orderings": 2,
+            "comparisons": 3
+          },
+          "published_domain_721_1044": {
+            "retained_minus_highest_impaired": 0.267230749130249,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          }
+        },
+        "pass": false,
+        "repeat_max_abs_difference": 0.0,
+        "numerical_pass": true
+      },
+      "plan_sha256": "1850e522b663f6520c9cdbf47d0e302b6900f4dc528d370c8e3c500956e94100",
+      "script_sha256": "e54430927287d26c653fc999bbae96a1e0c0f2f730891962beece2eec74da74d",
+      "pilot_helpers_sha256": "d2ed238d66d851f44ef5129ae9ad6b3f1e9a1de366f8ea8ce972950e2611715c",
+      "fasta_sha256": "4ac6895daf90501d8398d17ded42f46d78b9db777f5084facc875c2926496d1b",
+      "checkpoint": {
+        "model": "esm1v_t33_650M_UR90S_4",
+        "url": "https://dl.fbaipublicfiles.com/fair-esm/models/esm1v_t33_650M_UR90S_4.pt",
+        "bytes": 7828635339,
+        "sha256": "44750a28c09f7ba9e7ccb7aeaba812cbbe90eb2a8a2c658dc5fa165f7090a15a",
+        "retrieved_utc": "2026-09-20T17:51:38.307186+00:00",
+        "trust": "Official HTTPS origin; digest describes received bytes, not an independent signature"
+      },
+      "created_utc": "2026-09-20T17:51:56.372831+00:00",
+      "elapsed_seconds": 10.065927127026953,
+      "peak_allocated_gib": 2.716374397277832,
+      "peak_reserved_gib": 2.787109375,
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "visible_devices": "6",
+      "python": "3.11.16",
+      "torch": "2.5.1+cu124",
+      "esm": "2.0.0",
+      "precision": "float32; TF32 disabled",
+      "candidate_is_diagnostic_even_if_gate_fails": true,
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false
+    },
+    {
+      "model": "esm1v_t33_650M_UR90S_5",
+      "rows": [
+        {
+          "window": "n_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.6503140926361084
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -2.086850166320801
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": 0.01221776008605957
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": 0.31092071533203125
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -4.454817295074463
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -0.6976239681243896
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -0.6768127679824829
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.135606288909912
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -2.213233709335327
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -0.00439763069152832
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": 0.17365813255310059
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -4.551721096038818
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -0.8920948505401611
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -0.827296257019043
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.9678375720977783
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -1.6371235847473145
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -0.8686861991882324
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -0.6743540167808533
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -4.768624782562256
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -2.2454397678375244
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -1.227743148803711
+        }
+      ],
+      "gate": {
+        "windows": {
+          "c_terminal_1022": {
+            "retained_minus_highest_impaired": 0.1780557632446289,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          },
+          "n_terminal_1022": {
+            "retained_minus_highest_impaired": 0.2987029552459717,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          },
+          "published_domain_721_1044": {
+            "retained_minus_highest_impaired": 0.19433218240737915,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          }
+        },
+        "pass": true,
+        "repeat_max_abs_difference": 0.0,
+        "numerical_pass": true
+      },
+      "plan_sha256": "1850e522b663f6520c9cdbf47d0e302b6900f4dc528d370c8e3c500956e94100",
+      "script_sha256": "e54430927287d26c653fc999bbae96a1e0c0f2f730891962beece2eec74da74d",
+      "pilot_helpers_sha256": "d2ed238d66d851f44ef5129ae9ad6b3f1e9a1de366f8ea8ce972950e2611715c",
+      "fasta_sha256": "4ac6895daf90501d8398d17ded42f46d78b9db777f5084facc875c2926496d1b",
+      "checkpoint": {
+        "model": "esm1v_t33_650M_UR90S_5",
+        "url": "https://dl.fbaipublicfiles.com/fair-esm/models/esm1v_t33_650M_UR90S_5.pt",
+        "bytes": 7828635531,
+        "sha256": "69ffd06be29aaaf105eda919f23e5ac4a6872e7907fbf1f087fd942abdb3adf7",
+        "retrieved_utc": "2026-09-20T17:50:16.825294+00:00",
+        "trust": "Official HTTPS origin; digest describes received bytes, not an independent signature"
+      },
+      "created_utc": "2026-09-20T17:50:35.197216+00:00",
+      "elapsed_seconds": 10.394129661959596,
+      "peak_allocated_gib": 2.716374397277832,
+      "peak_reserved_gib": 2.787109375,
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "visible_devices": "7",
+      "python": "3.11.16",
+      "torch": "2.5.1+cu124",
+      "esm": "2.0.0",
+      "precision": "float32; TF32 disabled",
+      "candidate_is_diagnostic_even_if_gate_fails": true,
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false
+    },
+    {
+      "model": "esm2_t36_3B_UR50D",
+      "rows": [
+        {
+          "window": "n_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -5.405569076538086
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -4.766695976257324
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -2.26608943939209
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -3.9783618450164795
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -12.243570327758789
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -5.723078727722168
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -7.137022972106934
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -5.436844825744629
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -4.914218902587891
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -2.237675189971924
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -3.870046615600586
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -12.154820442199707
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -5.678850173950195
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -7.48870849609375
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -6.305118560791016
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -4.591938018798828
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -3.1359548568725586
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -3.061192512512207
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -12.34262466430664
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -5.616456985473633
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -7.5140581130981445
+        }
+      ],
+      "gate": {
+        "windows": {
+          "c_terminal_1022": {
+            "retained_minus_highest_impaired": -1.632371425628662,
+            "pass": false,
+            "correct_pairwise_orderings": 2,
+            "comparisons": 3
+          },
+          "n_terminal_1022": {
+            "retained_minus_highest_impaired": -1.7122724056243896,
+            "pass": false,
+            "correct_pairwise_orderings": 2,
+            "comparisons": 3
+          },
+          "published_domain_721_1044": {
+            "retained_minus_highest_impaired": 0.07476234436035156,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          }
+        },
+        "pass": false,
+        "repeat_max_abs_difference": 0.0,
+        "numerical_pass": true
+      },
+      "plan_sha256": "1850e522b663f6520c9cdbf47d0e302b6900f4dc528d370c8e3c500956e94100",
+      "script_sha256": "e54430927287d26c653fc999bbae96a1e0c0f2f730891962beece2eec74da74d",
+      "pilot_helpers_sha256": "d2ed238d66d851f44ef5129ae9ad6b3f1e9a1de366f8ea8ce972950e2611715c",
+      "fasta_sha256": "4ac6895daf90501d8398d17ded42f46d78b9db777f5084facc875c2926496d1b",
+      "checkpoint": {
+        "model": "esm2_t36_3B_UR50D",
+        "url": "https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t36_3B_UR50D.pt",
+        "bytes": 5678116398,
+        "sha256": "7de8b4082ba15891959ab368b77ce3886697af1efb16d3c9e9e7b0c5d3f07500",
+        "retrieved_utc": "2026-09-20T17:46:03.021005+00:00",
+        "trust": "Official HTTPS origin; digest describes received bytes, not an independent signature"
+      },
+      "created_utc": "2026-09-20T17:49:27.546650+00:00",
+      "elapsed_seconds": 26.455176049028523,
+      "peak_allocated_gib": 11.131811141967773,
+      "peak_reserved_gib": 11.328125,
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "visible_devices": "4",
+      "python": "3.11.16",
+      "torch": "2.5.1+cu124",
+      "esm": "2.0.0",
+      "precision": "float32; TF32 disabled",
+      "candidate_is_diagnostic_even_if_gate_fails": true,
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false
+    },
+    {
+      "model": "esm2_t48_15B_UR50D",
+      "rows": [
+        {
+          "window": "n_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -7.89791202545166
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -8.128641128540039
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -4.685959339141846
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -5.485307693481445
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -13.684340476989746
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -6.306042194366455
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -10.095721244812012
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -8.13900375366211
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -8.08090877532959
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -4.909236907958984
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -5.829505920410156
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -13.764015197753906
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -6.934963226318359
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -9.402791023254395
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -7.67515230178833
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -7.943246841430664
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -4.928709030151367
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -6.295473098754883
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -13.54782772064209
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -6.210600852966309
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -8.865179061889648
+        }
+      ],
+      "gate": {
+        "windows": {
+          "c_terminal_1022": {
+            "retained_minus_highest_impaired": -0.9202690124511719,
+            "pass": false,
+            "correct_pairwise_orderings": 2,
+            "comparisons": 3
+          },
+          "n_terminal_1022": {
+            "retained_minus_highest_impaired": -0.7993483543395996,
+            "pass": false,
+            "correct_pairwise_orderings": 2,
+            "comparisons": 3
+          },
+          "published_domain_721_1044": {
+            "retained_minus_highest_impaired": -1.3667640686035156,
+            "pass": false,
+            "correct_pairwise_orderings": 2,
+            "comparisons": 3
+          }
+        },
+        "pass": false,
+        "repeat_max_abs_difference": 0.0,
+        "numerical_pass": true
+      },
+      "plan_sha256": "1850e522b663f6520c9cdbf47d0e302b6900f4dc528d370c8e3c500956e94100",
+      "script_sha256": "e54430927287d26c653fc999bbae96a1e0c0f2f730891962beece2eec74da74d",
+      "pilot_helpers_sha256": "d2ed238d66d851f44ef5129ae9ad6b3f1e9a1de366f8ea8ce972950e2611715c",
+      "fasta_sha256": "4ac6895daf90501d8398d17ded42f46d78b9db777f5084facc875c2926496d1b",
+      "checkpoint": {
+        "model": "esm2_t48_15B_UR50D",
+        "url": "https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t48_15B_UR50D.pt",
+        "bytes": 30258341762,
+        "sha256": "0e9901bb97aa9baf396b0ac07cb445844428111e6b90acd2fac33bed74a336b7",
+        "retrieved_utc": "2026-09-20T18:06:23.971362+00:00",
+        "trust": "Official HTTPS origin; digest describes received bytes, not an independent signature"
+      },
+      "created_utc": "2026-09-20T18:09:16.326087+00:00",
+      "elapsed_seconds": 145.4079037050251,
+      "peak_allocated_gib": 56.85250997543335,
+      "peak_reserved_gib": 56.943359375,
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "visible_devices": "5",
+      "python": "3.11.16",
+      "torch": "2.5.1+cu124",
+      "esm": "2.0.0",
+      "precision": "float32; TF32 disabled",
+      "candidate_is_diagnostic_even_if_gate_fails": true,
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false
+    }
+  ],
+  "esm1v_five_checkpoint_ensemble": [
+    {
+      "window": "c_terminal_1022",
+      "variant": "D882A",
+      "group": "secondary_retained",
+      "mean": -1.479685378074646,
+      "min": -2.7109622955322266,
+      "max": -0.8920948505401611,
+      "checkpoint_values": [
+        -1.2473787069320679,
+        -1.3574274778366089,
+        -2.7109622955322266,
+        -1.1905635595321655,
+        -0.8920948505401611
+      ]
+    },
+    {
+      "window": "c_terminal_1022",
+      "variant": "D882N",
+      "group": "primary_retained",
+      "mean": -0.4160065412521362,
+      "min": -1.1627191305160522,
+      "max": 0.17365813255310059,
+      "checkpoint_values": [
+        0.003734588623046875,
+        -1.1627191305160522,
+        -0.9456133842468262,
+        -0.1490929126739502,
+        0.17365813255310059
+      ]
+    },
+    {
+      "window": "c_terminal_1022",
+      "variant": "D911N",
+      "group": "primary_impaired",
+      "mean": -0.5105055809020996,
+      "min": -1.6543419361114502,
+      "max": 1.028733730316162,
+      "checkpoint_values": [
+        -1.2517743110656738,
+        -1.6543419361114502,
+        -0.6707477569580078,
+        1.028733730316162,
+        -0.00439763069152832
+      ]
+    },
+    {
+      "window": "c_terminal_1022",
+      "variant": "K795A",
+      "group": "secondary_impaired",
+      "mean": -3.7884334087371827,
+      "min": -4.551721096038818,
+      "max": -3.1649274826049805,
+      "checkpoint_values": [
+        -3.1649274826049805,
+        -3.6050641536712646,
+        -3.20524263381958,
+        -4.4152116775512695,
+        -4.551721096038818
+      ]
+    },
+    {
+      "window": "c_terminal_1022",
+      "variant": "K795R",
+      "group": "primary_impaired",
+      "mean": -2.125586462020874,
+      "min": -2.5819787979125977,
+      "max": -1.5381033420562744,
+      "checkpoint_values": [
+        -2.178295612335205,
+        -1.5381033420562744,
+        -2.116320848464966,
+        -2.5819787979125977,
+        -2.213233709335327
+      ]
+    },
+    {
+      "window": "c_terminal_1022",
+      "variant": "N1002K",
+      "group": "candidate",
+      "mean": -0.10519416332244873,
+      "min": -0.827296257019043,
+      "max": 0.586444616317749,
+      "checkpoint_values": [
+        0.586444616317749,
+        -0.44685161113739014,
+        0.35440683364868164,
+        -0.1926743984222412,
+        -0.827296257019043
+      ]
+    },
+    {
+      "window": "c_terminal_1022",
+      "variant": "V793R",
+      "group": "primary_impaired",
+      "mean": -3.598807764053345,
+      "min": -4.9630327224731445,
+      "max": -2.79244327545166,
+      "checkpoint_values": [
+        -3.34586238861084,
+        -4.9630327224731445,
+        -2.79244327545166,
+        -3.757094144821167,
+        -3.135606288909912
+      ]
+    },
+    {
+      "window": "n_terminal_1022",
+      "variant": "D882A",
+      "group": "secondary_retained",
+      "mean": -1.5166585206985475,
+      "min": -2.5563950538635254,
+      "max": -0.6976239681243896,
+      "checkpoint_values": [
+        -1.5546939373016357,
+        -1.5691821575164795,
+        -2.5563950538635254,
+        -1.2053974866867065,
+        -0.6976239681243896
+      ]
+    },
+    {
+      "window": "n_terminal_1022",
+      "variant": "D882N",
+      "group": "primary_retained",
+      "mean": -0.4901260256767273,
+      "min": -1.3979644775390625,
+      "max": 0.31092071533203125,
+      "checkpoint_values": [
+        -0.2150275707244873,
+        -1.3979644775390625,
+        -0.8758034110069275,
+        -0.27275538444519043,
+        0.31092071533203125
+      ]
+    },
+    {
+      "window": "n_terminal_1022",
+      "variant": "D911N",
+      "group": "primary_impaired",
+      "mean": -0.4329697012901306,
+      "min": -1.334364414215088,
+      "max": 1.1127452850341797,
+      "checkpoint_values": [
+        -1.188690185546875,
+        -1.334364414215088,
+        -0.7667569518089294,
+        1.1127452850341797,
+        0.01221776008605957
+      ]
+    },
+    {
+      "window": "n_terminal_1022",
+      "variant": "K795A",
+      "group": "secondary_impaired",
+      "mean": -3.75736026763916,
+      "min": -4.668746471405029,
+      "max": -2.4003891944885254,
+      "checkpoint_values": [
+        -2.4003891944885254,
+        -4.030124664306641,
+        -3.2327237129211426,
+        -4.668746471405029,
+        -4.454817295074463
+      ]
+    },
+    {
+      "window": "n_terminal_1022",
+      "variant": "K795R",
+      "group": "primary_impaired",
+      "mean": -2.1875317335128783,
+      "min": -2.8207695484161377,
+      "max": -1.6824604272842407,
+      "checkpoint_values": [
+        -2.050142288208008,
+        -1.6824604272842407,
+        -2.297436237335205,
+        -2.8207695484161377,
+        -2.086850166320801
+      ]
+    },
+    {
+      "window": "n_terminal_1022",
+      "variant": "N1002K",
+      "group": "candidate",
+      "mean": -0.0554180383682251,
+      "min": -0.6768127679824829,
+      "max": 0.7085394859313965,
+      "checkpoint_values": [
+        0.7085394859313965,
+        -0.3932688236236572,
+        0.10324835777282715,
+        -0.018796443939208984,
+        -0.6768127679824829
+      ]
+    },
+    {
+      "window": "n_terminal_1022",
+      "variant": "V793R",
+      "group": "primary_impaired",
+      "mean": -3.549975538253784,
+      "min": -4.631647109985352,
+      "max": -2.5448508262634277,
+      "checkpoint_values": [
+        -3.3745510578155518,
+        -4.631647109985352,
+        -2.5448508262634277,
+        -3.5485146045684814,
+        -3.6503140926361084
+      ]
+    },
+    {
+      "window": "published_domain_721_1044",
+      "variant": "D882A",
+      "group": "secondary_retained",
+      "mean": -1.9922102451324464,
+      "min": -2.7266011238098145,
+      "max": -0.21094989776611328,
+      "checkpoint_values": [
+        -2.7266011238098145,
+        -2.2773261070251465,
+        -2.500734329223633,
+        -0.21094989776611328,
+        -2.2454397678375244
+      ]
+    },
+    {
+      "window": "published_domain_721_1044",
+      "variant": "D882N",
+      "group": "primary_retained",
+      "mean": -0.5683204054832458,
+      "min": -1.1151788234710693,
+      "max": 0.08533978462219238,
+      "checkpoint_values": [
+        -0.46874451637268066,
+        -1.1151788234710693,
+        -0.6686644554138184,
+        0.08533978462219238,
+        -0.6743540167808533
+      ]
+    },
+    {
+      "window": "published_domain_721_1044",
+      "variant": "D911N",
+      "group": "primary_impaired",
+      "mean": -1.1391834974288941,
+      "min": -1.799965739250183,
+      "max": -0.18189096450805664,
+      "checkpoint_values": [
+        -1.799965739250183,
+        -1.1864709854125977,
+        -1.6589035987854004,
+        -0.18189096450805664,
+        -0.8686861991882324
+      ]
+    },
+    {
+      "window": "published_domain_721_1044",
+      "variant": "K795A",
+      "group": "secondary_impaired",
+      "mean": -4.556852960586548,
+      "min": -5.29105281829834,
+      "max": -3.4439494609832764,
+      "checkpoint_values": [
+        -3.4439494609832764,
+        -5.29105281829834,
+        -4.590100288391113,
+        -4.690537452697754,
+        -4.768624782562256
+      ]
+    },
+    {
+      "window": "published_domain_721_1044",
+      "variant": "K795R",
+      "group": "primary_impaired",
+      "mean": -2.3052977561950683,
+      "min": -2.7912967205047607,
+      "max": -1.6371235847473145,
+      "checkpoint_values": [
+        -2.596789598464966,
+        -2.394442081451416,
+        -2.1068367958068848,
+        -2.7912967205047607,
+        -1.6371235847473145
+      ]
+    },
+    {
+      "window": "published_domain_721_1044",
+      "variant": "N1002K",
+      "group": "candidate",
+      "mean": -0.24823544025421143,
+      "min": -1.227743148803711,
+      "max": 0.4832444190979004,
+      "checkpoint_values": [
+        0.4832444190979004,
+        -0.26496100425720215,
+        0.3346027135848999,
+        -0.5663201808929443,
+        -1.227743148803711
+      ]
+    },
+    {
+      "window": "published_domain_721_1044",
+      "variant": "V793R",
+      "group": "primary_impaired",
+      "mean": -3.849981164932251,
+      "min": -4.564072608947754,
+      "max": -2.884788990020752,
+      "checkpoint_values": [
+        -2.884788990020752,
+        -4.564072608947754,
+        -4.070859909057617,
+        -3.7623467445373535,
+        -3.9678375720977783
+      ]
+    }
+  ],
+  "interpretation": "Checkpoint ranges describe model sensitivity, not confidence intervals or independent biological replication",
+  "clinical_classification": false,
+  "drug_ranking_changed": false,
+  "phase_resolved": false
+}

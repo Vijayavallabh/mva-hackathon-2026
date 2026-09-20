@@ -1,0 +1,5 @@
+[project]
+name = "track2-alphafold-comparison"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+dependencies = ["colabfold[alphafold]==1.6.3", "jax[cuda12]==0.6.2", "numpy==2.0.2", "biopython==1.85"]

@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-20T18:01:51.916869+00:00",
+  "scope": "Owner-requested AlphaFold comparison; does not alter frozen ESM/Boltz plans",
+  "model": "AlphaFold2 pTM via ColabFold 1.6.3 / alphafold-colabfold 2.3.20; all five pretrained parameter sets",
+  "variants": [
+    "WT",
+    "V793R",
+    "K795R",
+    "D911N",
+    "D882N",
+    "K795A",
+    "D882A",
+    "N1002K"
+  ],
+  "reference": "UniProt O60566 residues 721-1044, same checked sequences as Boltz",
+  "msa": "Previously retrieved public-WT-derived 623-record shared alignment; no further alignment service query",
+  "seeds": [
+    11,
+    12,
+    13
+  ],
+  "predictions": 120,
+  "recycles": 3,
+  "templates": false,
+  "relaxation": false,
+  "dropout": false,
+  "early_stopping_tolerance": 0.0,
+  "metrics": [
+    "all per-model/per-seed pLDDT and pTM",
+    "within-model WT-seed variability",
+    "within-model WT-versus-substitution CA RMSD and local RMSD"
+  ],
+  "interpretation": "Parameter sets/seeds are correlated sensitivity comparisons; neither structure resemblance nor confidence validates protein abundance, stability, pathogenicity or functional rescue. Agreement with Boltz may share evolutionary/training information. Retain all five models and all seeds, not just ranked winners.",
+  "candidate_reading": "Prespecified diagnostic comparison; failed control sensitivity cannot establish a benign or damaging candidate. No drug ranking/phase/exposure claim."
+}

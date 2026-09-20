@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "models": [
+    {
+      "model": "evo2_7b",
+      "rows": 100,
+      "benchmark_gate": {
+        "auroc_negative_delta": 0.9418402777777778,
+        "median_delta": {
+          "LOF": -0.005084574222564697,
+          "FUNC": -0.000581204891204834
+        },
+        "pass_gate": true
+      },
+      "arithmetic_checked": true
+    },
+    {
+      "model": "evo2_40b",
+      "rows": 100,
+      "benchmark_gate": {
+        "auroc_negative_delta": 0.9201388888888888,
+        "median_delta": {
+          "LOF": -0.006321907043457031,
+          "FUNC": -0.0011114180088043213
+        },
+        "pass_gate": true
+      },
+      "arithmetic_checked": true
+    }
+  ],
+  "protected_subject_inputs_used": false,
+  "limitation": "Verifies provenance, design completeness and arithmetic; no new inference or clinical validation."
+}

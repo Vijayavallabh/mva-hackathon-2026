@@ -1,0 +1,30 @@
+[project]
+name = "track2-evo2-fp8-comparison"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "evo2==0.6.0",
+  "vtx==1.1.0",
+  "torch==2.6.0",
+  "numpy==1.26.4",
+  "transformer-engine==2.3.0",
+  "ninja",
+  "packaging",
+  "setuptools",
+  "wheel",
+  "transformer-engine-torch==2.3.0",
+  "flash-attn==2.8.0.post2",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
+
+[tool.uv]
+# Evo2 documents cuDNN >=9.3; isolate this ABI-compatible dependency override.
+# Numerical qualification is required before interpreting this runtime's outputs.
+override-dependencies = ["nvidia-cudnn-cu12==9.3.0.75"]

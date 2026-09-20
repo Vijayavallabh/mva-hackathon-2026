@@ -1,0 +1,650 @@
+{
+  "outputs/boltz-resources.json": {
+    "mols.tar": {
+      "url": "https://huggingface.co/boltz-community/boltz-2/resolve/main/mols.tar",
+      "bytes": 1855662080,
+      "sha256": "39e076d96dbec6b4e86982bbda16f3a53a2a60c9bdc17828d88f6f9a0c7d1fd7"
+    },
+    "boltz2_conf.ckpt": {
+      "url": "https://model-gateway.boltz.bio/boltz2_conf.ckpt",
+      "bytes": 2286561469,
+      "sha256": "090e82ac8c92f5e943fa1b39e7410a44027bea7243c0bbb3caa67a77fc1428e1"
+    },
+    "boltz2_aff.ckpt": {
+      "url": "https://model-gateway.boltz.bio/boltz2_aff.ckpt",
+      "bytes": 2062139170,
+      "sha256": "dcc5cd3722b1c9eaa34267e4ae32f55cbbf1963f4c19319381ccfa30fdd2ca9e"
+    }
+  },
+  "outputs/boltz-preregistration.json": {
+    "created_utc": "2026-09-20T17:48:10.892513+00:00",
+    "schedule": [
+      {
+        "variant": "V793R",
+        "seed": 11
+      },
+      {
+        "variant": "WT",
+        "seed": 11
+      },
+      {
+        "variant": "K795R",
+        "seed": 11
+      },
+      {
+        "variant": "K795A",
+        "seed": 11
+      },
+      {
+        "variant": "D911N",
+        "seed": 11
+      },
+      {
+        "variant": "D882N",
+        "seed": 11
+      },
+      {
+        "variant": "D882A",
+        "seed": 11
+      },
+      {
+        "variant": "N1002K",
+        "seed": 11
+      },
+      {
+        "variant": "D882A",
+        "seed": 22
+      },
+      {
+        "variant": "N1002K",
+        "seed": 22
+      },
+      {
+        "variant": "K795A",
+        "seed": 22
+      },
+      {
+        "variant": "D911N",
+        "seed": 22
+      },
+      {
+        "variant": "D882N",
+        "seed": 22
+      },
+      {
+        "variant": "WT",
+        "seed": 22
+      },
+      {
+        "variant": "V793R",
+        "seed": 22
+      },
+      {
+        "variant": "K795R",
+        "seed": 22
+      },
+      {
+        "variant": "D882A",
+        "seed": 33
+      },
+      {
+        "variant": "WT",
+        "seed": 33
+      },
+      {
+        "variant": "D882N",
+        "seed": 33
+      },
+      {
+        "variant": "D911N",
+        "seed": 33
+      },
+      {
+        "variant": "N1002K",
+        "seed": 33
+      },
+      {
+        "variant": "V793R",
+        "seed": 33
+      },
+      {
+        "variant": "K795A",
+        "seed": 33
+      },
+      {
+        "variant": "K795R",
+        "seed": 33
+      }
+    ],
+    "plan_sha256": "1850e522b663f6520c9cdbf47d0e302b6900f4dc528d370c8e3c500956e94100",
+    "script_sha256": "64c7dd1bf1799943ff3f9df01a4b8d31ae42bc49f3af6d07f4959212c5ac183c",
+    "inputs": {
+      "D882A.yaml": "6addaf2968b1a6708df36704814acd52a64d7d5ac173edbb58efc0aefa349e14",
+      "D882N.yaml": "6ff569b858108f5bedd36a36ebc18d9f7cfd0f792727ab30abde8720eabda346",
+      "D911N.yaml": "9b1236725c2f020fa8ad6de814cb162207fc76515df513afa47f1abfa7180918",
+      "K795A.yaml": "caa12d39a564956644e4aec34f1f62b253be1681247e82989a25f2eb4f544c6c",
+      "K795R.yaml": "1acc290686763409d746838d9a6cdb1ee74d1dd9c4307fb24e0490bc45f1ffa4",
+      "N1002K.yaml": "53a313ccce0452b9c051b57a4bf1139649f4a9ff6515db41b6cb87e6335919f8",
+      "V793R.yaml": "9a32f5b9cd2abff3dc3d5bb48961786c3d3f3da619c1a43798cebbafc03baaa6",
+      "WT.yaml": "6a29b8a339cd52d223713d2361b8d6210fbfdd8901f9a627bd5a95808ec7f8f7"
+    },
+    "uv_lock_sha256": "68616f23c8c39e7feff5ba056f9ef41dee746508f61449e51c76081724f5dc00",
+    "interpretation": "Structure resemblance or confidence is not folding stability, protein abundance, enzymatic activity or functional rescue. Compare all controls and all seeds, not best-ranked structures. Three seeds are sampling variability, not biological replicates."
+  },
+  "msa-arm/outputs/boltz-preregistration.json": {
+    "created_utc": "2026-09-20T17:56:36.784209+00:00",
+    "schedule": [
+      {
+        "variant": "V793R",
+        "seed": 11
+      },
+      {
+        "variant": "WT",
+        "seed": 11
+      },
+      {
+        "variant": "K795R",
+        "seed": 11
+      },
+      {
+        "variant": "K795A",
+        "seed": 11
+      },
+      {
+        "variant": "D911N",
+        "seed": 11
+      },
+      {
+        "variant": "D882N",
+        "seed": 11
+      },
+      {
+        "variant": "D882A",
+        "seed": 11
+      },
+      {
+        "variant": "N1002K",
+        "seed": 11
+      },
+      {
+        "variant": "D882A",
+        "seed": 22
+      },
+      {
+        "variant": "N1002K",
+        "seed": 22
+      },
+      {
+        "variant": "K795A",
+        "seed": 22
+      },
+      {
+        "variant": "D911N",
+        "seed": 22
+      },
+      {
+        "variant": "D882N",
+        "seed": 22
+      },
+      {
+        "variant": "WT",
+        "seed": 22
+      },
+      {
+        "variant": "V793R",
+        "seed": 22
+      },
+      {
+        "variant": "K795R",
+        "seed": 22
+      },
+      {
+        "variant": "D882A",
+        "seed": 33
+      },
+      {
+        "variant": "WT",
+        "seed": 33
+      },
+      {
+        "variant": "D882N",
+        "seed": 33
+      },
+      {
+        "variant": "D911N",
+        "seed": 33
+      },
+      {
+        "variant": "N1002K",
+        "seed": 33
+      },
+      {
+        "variant": "V793R",
+        "seed": 33
+      },
+      {
+        "variant": "K795A",
+        "seed": 33
+      },
+      {
+        "variant": "K795R",
+        "seed": 33
+      }
+    ],
+    "plan_sha256": "1850e522b663f6520c9cdbf47d0e302b6900f4dc528d370c8e3c500956e94100",
+    "script_sha256": "5139e78b0eb0e92e4bdf5155d87b34c5438ee13650f7646e2f4515e46bcdb42b",
+    "inputs": {
+      "inputs/boltz/D882A.yaml": "dad4f183a9e9904c444ad8049aa81241ba845cfa32c2bed5fd4a0a3da6c25d8b",
+      "inputs/boltz/D882N.yaml": "7859ed5cbb374250cf8fd1448af9f7b4ea212ff871dcee45be026083f49181dd",
+      "inputs/boltz/D911N.yaml": "07f14b1422e124bcfe12578c48c05d00bf4ca937331fa4bedcd8867df671b21d",
+      "inputs/boltz/K795A.yaml": "11555d03975ccaa5e09dc19360b7684dd3dedc8983aa97ff60a7db328fa24c44",
+      "inputs/boltz/K795R.yaml": "8b483b1947174a886d65bbd53581c55dbcbc969a80a6cd14f6fed4b100539e8d",
+      "inputs/boltz/N1002K.yaml": "31d45ada59b647d722d8a7658df2159bc3935c0c7053338ca6227aa175b71d82",
+      "inputs/boltz/V793R.yaml": "5cfb4ce11a6886c3bc0ac9d8e8e60e2fe85a78c9b65aab0b6f6ec0b6c14c7ec9",
+      "inputs/boltz/WT.yaml": "fdcbc4a6ac98c8a71240045d2d23c78928188cb6483e27cd746ffd78a75f4c70",
+      "inputs/msa/D882A.a3m": "fb669dcd6c1dec71c5b0d0ba06929a6226e553408cfacdc0781c5fab185dbea1",
+      "inputs/msa/D882N.a3m": "45ef1c9e9064adff63035e7ef02541b55fd569748449cd7fcb2cd678ae59aa82",
+      "inputs/msa/D911N.a3m": "f39b6eafe0fa53bffb8a662dada21283a56d86478c85de3ec7c2ccc3768dc437",
+      "inputs/msa/K795A.a3m": "74c85ec10691e14266879e1879d57ad6e953b06bc93cc5d761edc9305545dc57",
+      "inputs/msa/K795R.a3m": "63b55cb96c4240c4ae0dd23474c98110fba86043c73cbc47ed3a6c921df0f4db",
+      "inputs/msa/N1002K.a3m": "3c1faa12da3bda9d06587ba2e1b01fca1d932022fc9cc3e8f01fe5970aa8d9d1",
+      "inputs/msa/V793R.a3m": "b1093eab078445f8d82d3be79efe717e46a4388b44553004f3e150e1872b45c8",
+      "inputs/msa/WT.a3m": "c59f94294da63654f24824e5f6505cdd9695e4708dd31b51df6033f2e1a45015"
+    },
+    "uv_lock_sha256": "68616f23c8c39e7feff5ba056f9ef41dee746508f61449e51c76081724f5dc00",
+    "interpretation": "Structure resemblance or confidence is not folding stability, protein abundance, enzymatic activity or functional rescue. Compare all controls and all seeds, not best-ranked structures. Three seeds are sampling variability, not biological replicates.",
+    "arm": "shared WT-derived MSA",
+    "amendment_sha256": "9339d5978c3b22757783eac1769f3d6e7d14b7def5a2dcb981d50b6f6a28a31c",
+    "msa_raw_sha256": "9728eb7f27722330c62bff0ed9795529d09808af8d0df577ef0536172760eb23",
+    "msa_records": 623
+  },
+  "outputs/alphafold-weights.json": {
+    "model": "AlphaFold2 pTM; all five parameter sets",
+    "files": {
+      "params/params_model_1_ptm.npz": {
+        "bytes": 373103340,
+        "sha256": "5e564f79af5bcd54ccef6e2a6bb0ff01015d01650ebc41d4575e35f0de9ecc84"
+      },
+      "params/params_model_2_ptm.npz": {
+        "bytes": 373103340,
+        "sha256": "23645d9a82c4af2ed54cd48a7b3c1c2575dc6aa9fe931adb4d7203ca5f0dc398"
+      },
+      "params/params_model_3_ptm.npz": {
+        "bytes": 371746284,
+        "sha256": "b53a724294cdd46a45d530b306bced8e429ffee74a4f9a2a897551b30966c415"
+      },
+      "params/params_model_4_ptm.npz": {
+        "bytes": 371746284,
+        "sha256": "07d0e285ad1406ce3d91a2f6633a8ce9ee99155a53d24ee7783f8fd1e89f5d3a"
+      },
+      "params/params_model_5_ptm.npz": {
+        "bytes": 371746284,
+        "sha256": "2f8d0bd193e7d6e837958ba92acdc3f02b23b61bf841fa043fc076ee0e1996a5"
+      }
+    }
+  },
+  "outputs/alphafold-preregistration.json": {
+    "created_utc": "2026-09-20T18:02:57.474224+00:00",
+    "plan_sha256": "0d8f67f9320497b551eec2fe3ca35eb40b51b5253c713d4e094b44ede702aea9",
+    "script_sha256": "85931816c4e4db24f3ec452adcd106fdc988dc4845a360ff5607cd02a4fd830a",
+    "lock_sha256": "b74688024512c46415d555cf8c7f895242561e157603e1fd4ada0fda2c86e854",
+    "inputs": {
+      "inputs/alphafold/batch0/D882A.a3m": "fb669dcd6c1dec71c5b0d0ba06929a6226e553408cfacdc0781c5fab185dbea1",
+      "inputs/alphafold/batch0/D882N.a3m": "45ef1c9e9064adff63035e7ef02541b55fd569748449cd7fcb2cd678ae59aa82",
+      "inputs/alphafold/batch0/K795R.a3m": "63b55cb96c4240c4ae0dd23474c98110fba86043c73cbc47ed3a6c921df0f4db",
+      "inputs/alphafold/batch0/WT.a3m": "c59f94294da63654f24824e5f6505cdd9695e4708dd31b51df6033f2e1a45015",
+      "inputs/alphafold/batch1/D911N.a3m": "f39b6eafe0fa53bffb8a662dada21283a56d86478c85de3ec7c2ccc3768dc437",
+      "inputs/alphafold/batch1/K795A.a3m": "74c85ec10691e14266879e1879d57ad6e953b06bc93cc5d761edc9305545dc57",
+      "inputs/alphafold/batch1/N1002K.a3m": "3c1faa12da3bda9d06587ba2e1b01fca1d932022fc9cc3e8f01fe5970aa8d9d1",
+      "inputs/alphafold/batch1/V793R.a3m": "b1093eab078445f8d82d3be79efe717e46a4388b44553004f3e150e1872b45c8"
+    }
+  },
+  "outputs/alphafold-worker-status.json": [
+    {
+      "batch": 0,
+      "gpu": 6,
+      "command": [
+        "/home/prachh/v/bin/uv",
+        "run",
+        "--frozen",
+        "--project",
+        "/home/prachh/v/mva-track2-expanded-20260920/alphafold-env",
+        "colabfold_batch",
+        "/home/prachh/v/mva-track2-expanded-20260920/inputs/alphafold/batch0",
+        "/home/prachh/v/mva-track2-expanded-20260920/outputs/alphafold/batch0",
+        "--model-type",
+        "alphafold2_ptm",
+        "--num-models",
+        "5",
+        "--num-seeds",
+        "3",
+        "--random-seed",
+        "11",
+        "--num-recycle",
+        "3",
+        "--recycle-early-stop-tolerance",
+        "0.0",
+        "--data",
+        "/home/prachh/v/mva-track2-expanded-20260920/cache/alphafold",
+        "--disable-unified-memory"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 588.2001222049585
+    },
+    {
+      "batch": 1,
+      "gpu": 7,
+      "command": [
+        "/home/prachh/v/bin/uv",
+        "run",
+        "--frozen",
+        "--project",
+        "/home/prachh/v/mva-track2-expanded-20260920/alphafold-env",
+        "colabfold_batch",
+        "/home/prachh/v/mva-track2-expanded-20260920/inputs/alphafold/batch1",
+        "/home/prachh/v/mva-track2-expanded-20260920/outputs/alphafold/batch1",
+        "--model-type",
+        "alphafold2_ptm",
+        "--num-models",
+        "5",
+        "--num-seeds",
+        "3",
+        "--random-seed",
+        "11",
+        "--num-recycle",
+        "3",
+        "--recycle-early-stop-tolerance",
+        "0.0",
+        "--data",
+        "/home/prachh/v/mva-track2-expanded-20260920/cache/alphafold",
+        "--disable-unified-memory"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 590.0724103390239
+    }
+  ],
+  "outputs/evo2_7b-weights.json": {
+    "repository": "arcinstitute/evo2_7b",
+    "revision": "bda0089f92582d5baabf0f22d9fc85f3588f6b58",
+    "created_utc": "2026-09-20T18:04:45.978277+00:00",
+    "files": [
+      {
+        "name": "evo2_7b.pt",
+        "bytes": 13766621200,
+        "sha256": "c66645929dc1b9c631f5be656da8726f38946315dc9167000a615dd626fcecf4",
+        "upstream_lfs_sha256": "c66645929dc1b9c631f5be656da8726f38946315dc9167000a615dd626fcecf4"
+      }
+    ],
+    "merged": {
+      "path": "/home/prachh/v/mva-track2-expanded-20260920/cache/evo2/evo2_7b/evo2_7b.pt",
+      "bytes": 13766621200,
+      "sha256": "c66645929dc1b9c631f5be656da8726f38946315dc9167000a615dd626fcecf4"
+    }
+  },
+  "outputs/evo2_40b-weights.json": {
+    "repository": "arcinstitute/evo2_40b",
+    "revision": "d529aa57c30771814217ad89baaeaf6e2315c7d7",
+    "created_utc": "2026-09-20T18:04:46.007310+00:00",
+    "files": [
+      {
+        "name": "evo2_40b.pt.part0",
+        "bytes": 41126745847,
+        "sha256": "3b74fa4e6158d49265e3e270ba8869390d064358f8bf3d2af0b3e1772728f485",
+        "upstream_lfs_sha256": "3b74fa4e6158d49265e3e270ba8869390d064358f8bf3d2af0b3e1772728f485"
+      },
+      {
+        "name": "evo2_40b.pt.part1",
+        "bytes": 41126745847,
+        "sha256": "bdc4a76e0f23f8295e7061c2f0deff24f723bd916dc4cdc4d9216cac9c2d49d5",
+        "upstream_lfs_sha256": "bdc4a76e0f23f8295e7061c2f0deff24f723bd916dc4cdc4d9216cac9c2d49d5"
+      }
+    ],
+    "merged": {
+      "path": "/home/prachh/v/mva-track2-expanded-20260920/cache/evo2/evo2_40b/evo2_40b.pt",
+      "bytes": 82253491694,
+      "sha256": "dd299612b1c1cdded0dfdcaf4d16f98fc97458261d80f4d662429f0ccb316bc3"
+    }
+  },
+  "outputs/esm2-loader-resources.json": {
+    "esm2_t36_3B_UR50D": {
+      "url": "https://dl.fbaipublicfiles.com/fair-esm/regression/esm2_t36_3B_UR50D-contact-regression.pt",
+      "bytes": 6759,
+      "sha256": "4da500eab246481dc9c8c95bc7b1d02f2803d761c380b0e95186d4a07d0fc84e"
+    },
+    "esm2_t48_15B_UR50D": {
+      "url": "https://dl.fbaipublicfiles.com/fair-esm/regression/esm2_t48_15B_UR50D-contact-regression.pt",
+      "bytes": 8679,
+      "sha256": "9a41cef624e16e6ef2753d3fbb13468cfd26a57db91fb3efb5200eeb3157b043"
+    }
+  },
+  "scope": "Public model/reference resource identities and prospective registrations; no subject input or credentials. Weight files are not redistributed.",
+  "public_reference": {
+    "accession": "UniProt O60566",
+    "length": 1050,
+    "fasta_sha256": "4ac6895daf90501d8398d17ded42f46d78b9db777f5084facc875c2926496d1b"
+  },
+  "esm_checkpoint_provenance": "All seven full checkpoint/runtime records are retained in track2-esm-expanded-results.json.",
+  "public_dna_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/ArcInstitute/evo2/53f195997257c56c00e5ef8d33a54f5baad143a6/notebooks/brca1/41586_2018_461_MOESM3_ESM.xlsx",
+      "sha256": "0100fc651b6ec6015f02a5813660afdcf9cf3969790992104e99e74f7348d0fd",
+      "bytes": 2268761
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ArcInstitute/evo2/53f195997257c56c00e5ef8d33a54f5baad143a6/notebooks/brca1/GRCh37.p13_chr17.fna.gz",
+      "sha256": "d50b4616790d7352c5025bcf9070a4de4f76bab41c6d2dcd504382c67c5534fb",
+      "bytes": 23195609
+    },
+    {
+      "url": "https://rest.ensembl.org/sequence/region/human/15:40205605..40213796:1?coord_system_version=GRCh38;content-type=text/plain",
+      "sha256": "1bd03fed4ef0873bc1a781e57aad037f489e92af38f7b1474772f0f83faed795",
+      "bytes": 8193
+    },
+    {
+      "url": "https://rest.ensembl.org/sequence/region/human/15:40193317..40226084:1?coord_system_version=GRCh38;content-type=text/plain",
+      "sha256": "f1d21bb0ce7d9f477dec7b4734eb03c7db9c99cd6b39811f8f9fc141351d2f27",
+      "bytes": 32769
+    },
+    {
+      "url": "https://rest.ensembl.org/sequence/region/human/15:40216516..40224707:1?coord_system_version=GRCh38;content-type=text/plain",
+      "sha256": "ea2f69b89ade8e49f8fc5e82fdcc92684f89afa61fcb04b85ec784c018250ca5",
+      "bytes": 8193
+    },
+    {
+      "url": "https://rest.ensembl.org/sequence/region/human/15:40204228..40236995:1?coord_system_version=GRCh38;content-type=text/plain",
+      "sha256": "e9dae4e94df07a0eee2f0611e4c8d9f639971f022885dc3eee6b87fbdf0c418b",
+      "bytes": 32769
+    }
+  ],
+  "evo_execution_provenance": {
+    "outputs/evo2_7b-run-v1/preregistration.json": {
+      "created_utc": "2026-09-20T18:31:37.477996+00:00",
+      "plan_sha256": "5f353baf17a927598192663e85b2f29b330d518bff51f37622ed1434760b9adc",
+      "inputs_sha256": "489fdcb323b547f655bdaa28e6bf1e407f629e8bece0dac6ada9076a3738bd2e",
+      "script_sha256": "8fcd7046d9ec0a5e17a4ab9513ddfb8b68ce371833a337bb0e6a32d95f1213ee",
+      "checkpoint": {
+        "path": "/home/prachh/v/mva-track2-expanded-20260920/cache/evo2/evo2_7b/evo2_7b.pt",
+        "bytes": 13766621200,
+        "sha256": "c66645929dc1b9c631f5be656da8726f38946315dc9167000a615dd626fcecf4"
+      },
+      "checkpoint_repository_revision": "bda0089f92582d5baabf0f22d9fc85f3588f6b58",
+      "packages": {
+        "evo2": "0.6.0",
+        "vtx": "1.1.0",
+        "torch": "2.6.0+cu124",
+        "flash-attn": "2.8.0.post2",
+        "numpy": "1.26.4"
+      },
+      "environment_hashes": {
+        "pyproject.toml": "9ae12b41b50a36b669293f6030ef15dcd11d925d4f63010e3ec8c5aac76f5601",
+        "uv.lock": "4e06c960b86faec9e6ed97e7e5ce99f8da845a42ec268a1272a2d6423a7b239e"
+      },
+      "cuda": "12.4",
+      "cudnn": 90100,
+      "visible_devices": "5",
+      "generation_requested": false
+    },
+    "outputs/evo2_7b-run-v1-status.json": {
+      "command": [
+        "/home/prachh/v/bin/uv",
+        "run",
+        "--frozen",
+        "--project",
+        "/home/prachh/v/mva-track2-expanded-20260920/evo2-env",
+        "python",
+        "/home/prachh/v/mva-track2-expanded-20260920/scripts/track2_evo2_comparison.py",
+        "evo2_7b",
+        "/home/prachh/v/mva-track2-expanded-20260920/outputs/evo2_7b-run-v1"
+      ],
+      "devices": [
+        5
+      ],
+      "created_utc": "2026-09-20T18:31:23.108293+00:00",
+      "exit": 0,
+      "elapsed_seconds": 177.0235126010375
+    },
+    "outputs/evo2_40b-run-v1/preregistration.json": {
+      "created_utc": "2026-09-20T18:33:17.269512+00:00",
+      "plan_sha256": "5f353baf17a927598192663e85b2f29b330d518bff51f37622ed1434760b9adc",
+      "inputs_sha256": "489fdcb323b547f655bdaa28e6bf1e407f629e8bece0dac6ada9076a3738bd2e",
+      "script_sha256": "8fcd7046d9ec0a5e17a4ab9513ddfb8b68ce371833a337bb0e6a32d95f1213ee",
+      "checkpoint": {
+        "path": "/home/prachh/v/mva-track2-expanded-20260920/cache/evo2/evo2_40b/evo2_40b.pt",
+        "bytes": 82253491694,
+        "sha256": "dd299612b1c1cdded0dfdcaf4d16f98fc97458261d80f4d662429f0ccb316bc3"
+      },
+      "checkpoint_repository_revision": "d529aa57c30771814217ad89baaeaf6e2315c7d7",
+      "packages": {
+        "evo2": "0.6.0",
+        "vtx": "1.1.0",
+        "torch": "2.6.0+cu124",
+        "flash-attn": "2.8.0.post2",
+        "numpy": "1.26.4",
+        "transformer-engine": "2.3.0",
+        "transformer-engine-torch": "2.3.0"
+      },
+      "environment_hashes": {
+        "pyproject.toml": "a0594bf310156adc2bcb161087b23998609a558746532bcbd61d3181adfc43d4",
+        "uv.lock": "8a2587de2cc385f062a16b0a7e171f666cd9f4a003ecfe7884d4983aa0a85ef7"
+      },
+      "cuda": "12.4",
+      "cudnn": 90300,
+      "visible_devices": "2,4",
+      "generation_requested": false
+    },
+    "outputs/evo2_40b-run-v1-status.json": {
+      "command": [
+        "/home/prachh/v/bin/uv",
+        "run",
+        "--frozen",
+        "--project",
+        "/home/prachh/v/mva-track2-expanded-20260920/evo2-fp8-env",
+        "python",
+        "/home/prachh/v/mva-track2-expanded-20260920/scripts/track2_evo2_comparison.py",
+        "evo2_40b",
+        "/home/prachh/v/mva-track2-expanded-20260920/outputs/evo2_40b-run-v1"
+      ],
+      "devices": [
+        2,
+        4
+      ],
+      "created_utc": "2026-09-20T18:32:01.307745+00:00",
+      "exit": 1,
+      "elapsed_seconds": 100.07514151500072
+    },
+    "outputs/evo2_40b-runtime-cublas128v2.json": {
+      "created_utc": "2026-09-20T18:38:55.052665+00:00",
+      "files": {
+        "/home/prachh/v/mva-track2-expanded-20260920/cublas-compat-env/.venv/lib/python3.11/site-packages/nvidia/cublas/lib/libcublasLt.so.12": "10b5e6631cf8115c661eb895ed1533826308b58f7956466f53d236a40c9b622c",
+        "/home/prachh/v/mva-track2-expanded-20260920/cublas-compat-env/.venv/lib/python3.11/site-packages/nvidia/cublas/lib/libcublas.so.12": "031ce6c2cbfbb9468f040527cab5c599069ce5609e73e28f87503881063eac21",
+        "cublas-compat-env/pyproject.toml": "18b576807fc608b237ff5b7faec1a36e139cc53d6cb2e2635f51ec9d3e59ab75",
+        "cublas-compat-env/uv.lock": "52c819f5c64652261a818334b8920170f7fa92bf1e57ae46defcad577ad9bb32",
+        "scripts/track2_evo2_comparison.py": "8fcd7046d9ec0a5e17a4ab9513ddfb8b68ce371833a337bb0e6a32d95f1213ee",
+        "scripts/run_track2_evo2_model.py": "dffd351338d83e4dfbc894606532e6014f5c0e48baa94191897525e749e4671e",
+        "scripts/run_track2_evo2_cublas_retry.sh": "a05968e15b7ad623645ff26ca6e5e5c7835c4b77719d6d4afeaeb5edd5bc8f89"
+      },
+      "reason": "Original cuBLAS 12.4 FP8 Linear fails; 12.8.4.1 LD_PRELOAD resolves the isolated operation. Strict model qualification remains required.",
+      "loaded_cublasLt_version_in_minimal_test": 120804,
+      "scoring_plan_changed": false
+    },
+    "outputs/evo2_40b-run-cublas128v2/preregistration.json": {
+      "created_utc": "2026-09-20T18:40:07.012112+00:00",
+      "plan_sha256": "5f353baf17a927598192663e85b2f29b330d518bff51f37622ed1434760b9adc",
+      "inputs_sha256": "489fdcb323b547f655bdaa28e6bf1e407f629e8bece0dac6ada9076a3738bd2e",
+      "script_sha256": "8fcd7046d9ec0a5e17a4ab9513ddfb8b68ce371833a337bb0e6a32d95f1213ee",
+      "checkpoint": {
+        "path": "/home/prachh/v/mva-track2-expanded-20260920/cache/evo2/evo2_40b/evo2_40b.pt",
+        "bytes": 82253491694,
+        "sha256": "dd299612b1c1cdded0dfdcaf4d16f98fc97458261d80f4d662429f0ccb316bc3"
+      },
+      "checkpoint_repository_revision": "d529aa57c30771814217ad89baaeaf6e2315c7d7",
+      "packages": {
+        "evo2": "0.6.0",
+        "vtx": "1.1.0",
+        "torch": "2.6.0+cu124",
+        "flash-attn": "2.8.0.post2",
+        "numpy": "1.26.4",
+        "transformer-engine": "2.3.0",
+        "transformer-engine-torch": "2.3.0"
+      },
+      "environment_hashes": {
+        "pyproject.toml": "a0594bf310156adc2bcb161087b23998609a558746532bcbd61d3181adfc43d4",
+        "uv.lock": "8a2587de2cc385f062a16b0a7e171f666cd9f4a003ecfe7884d4983aa0a85ef7"
+      },
+      "cuda": "12.4",
+      "cudnn": 90300,
+      "visible_devices": "2,4",
+      "generation_requested": false
+    },
+    "outputs/evo2_40b-run-cublas128v2-status.json": {
+      "command": [
+        "/home/prachh/v/bin/uv",
+        "run",
+        "--frozen",
+        "--project",
+        "/home/prachh/v/mva-track2-expanded-20260920/evo2-fp8-env",
+        "python",
+        "/home/prachh/v/mva-track2-expanded-20260920/scripts/track2_evo2_comparison.py",
+        "evo2_40b",
+        "/home/prachh/v/mva-track2-expanded-20260920/outputs/evo2_40b-run-cublas128v2"
+      ],
+      "devices": [
+        2,
+        4
+      ],
+      "created_utc": "2026-09-20T18:38:56.369243+00:00",
+      "exit": 1,
+      "elapsed_seconds": 672.0999455950223
+    },
+    "outputs/evo2_40b-8gpu-long-v1/preregistration.json": {
+      "files": {
+        "inputs/evo2-plan.json": "5f353baf17a927598192663e85b2f29b330d518bff51f37622ed1434760b9adc",
+        "inputs/evo2-inputs.json": "489fdcb323b547f655bdaa28e6bf1e407f629e8bece0dac6ada9076a3738bd2e",
+        "inputs/evo2-memory-amendment.json": "96dfa09cc01c9dd2e04ffdc19fbcd09dd2999ea0dfaf14eb6e4ea66e35ace3b2",
+        "scripts/track2_evo2_long_context.py": "77df72504f01bd37b6f91d2b4216c8392f62c030061cc9c721a7cdc11c4273ae",
+        "scripts/track2_evo2_comparison.py": "8fcd7046d9ec0a5e17a4ab9513ddfb8b68ce371833a337bb0e6a32d95f1213ee",
+        "evo2-fp8-env/pyproject.toml": "a0594bf310156adc2bcb161087b23998609a558746532bcbd61d3181adfc43d4",
+        "evo2-fp8-env/uv.lock": "8a2587de2cc385f062a16b0a7e171f666cd9f4a003ecfe7884d4983aa0a85ef7",
+        "outputs/evo2_40b-runtime-cublas128v2.json": "a880fdc36a74635655e18aee9c85c75434320d2b6dc4f1a8183e564e7cef213a"
+      },
+      "benchmark_sha256": "d9320b08b0c6bd475169e0953b82354def8e0f176992b171e1d54f2b017b21c6",
+      "original_rows_sha256": "d2a928f2a25f5014be5af81d7bfe00b81e762f690f206b7a63cab79c249f9117",
+      "visible_devices": "0,1,2,3,4,5,6,7",
+      "checkpoint": {
+        "path": "/home/prachh/v/mva-track2-expanded-20260920/cache/evo2/evo2_40b/evo2_40b.pt",
+        "bytes": 82253491694,
+        "sha256": "dd299612b1c1cdded0dfdcaf4d16f98fc97458261d80f4d662429f0ccb316bc3"
+      },
+      "explicit_library_preload": "/home/prachh/v/mva-track2-expanded-20260920/cublas-compat-env/.venv/lib/python3.11/site-packages/nvidia/cublas/lib/libcublasLt.so.12:/home/prachh/v/mva-track2-expanded-20260920/cublas-compat-env/.venv/lib/python3.11/site-packages/nvidia/cublas/lib/libcublas.so.12"
+    },
+    "outputs/evo2_40b-8gpu-long-v1/placement-comparison.json": {
+      "differences": {
+        "reference_forward": 0.0,
+        "alternate_forward": 0.0,
+        "reference_reverse_complement": 0.0,
+        "alternate_reverse_complement": 0.0
+      },
+      "pass_gate": true
+    }
+  }
+}

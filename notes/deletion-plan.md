@@ -8,6 +8,11 @@ Delete, from every environment:
 - `results/`, `logs/`
 - the HF cache: `~/.cache/huggingface/hub/datasets--SageBio--mva-hackathon-2026-data`
 - any copy synced to PrakashDGX_H2 or elsewhere
+- the complete owner-hosted model directories on PrakashDGX_H2:
+  `/home/prachh/v/mva-track2-pilot-20260920/` and
+  `/home/prachh/v/mva-track2-expanded-20260920/`, including inputs, outputs,
+  environments, caches, logs and archives; these runs used public references and
+  permitted derived candidates, never raw subject files
 - any intermediate BAM/VCF outside this repo
 - feat-007 recovery bundles, mirror clones and replacement maps in `results/feat007/`
 - local unreachable Git objects and reflogs retained during feat-007 recovery; coordinate

@@ -1,0 +1,16 @@
+[project]
+name = "track2-evo2-comparison"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "evo2==0.6.0", "vtx==1.1.0", "torch==2.6.0", "numpy==1.26.4",
+  "flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.0.post2/flash_attn-2.8.0.post2%2Bcu12torch2.6cxx11abiFALSE-cp311-cp311-linux_x86_64.whl",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
