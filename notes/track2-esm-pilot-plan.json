@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "scope": "Public-reference BUBR1 control-first ESM-1v feasibility pilot; no clinical classification or drug ranking",
+  "model": "esm1v_t33_650M_UR90S_1",
+  "reference_accession": "O60566",
+  "reference_length": 1050,
+  "reference_fasta_sha256": "4ac6895daf90501d8398d17ded42f46d78b9db777f5084facc875c2926496d1b",
+  "score": "masked log probability of alternate minus reference residue; natural log; lower means less sequence-compatible",
+  "windows": [
+    {"name": "n_terminal_1022", "start": 1, "end": 1022},
+    {"name": "c_terminal_1022", "start": 29, "end": 1050},
+    {"name": "published_domain_721_1044", "start": 721, "end": 1044}
+  ],
+  "control_source": "https://doi.org/10.1016/j.devcel.2012.03.009",
+  "source_reading": "Main text pages 1325-1327 and Figure 3/legend; supplementary D882A conclusion reported in main text, supplement not independently reviewed",
+  "controls": [
+    {"variant": "V793R", "group": "primary_impaired", "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays", "source_panel": "Figure 3 A-C,I"},
+    {"variant": "K795R", "group": "primary_impaired", "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays", "source_panel": "Figure 3 A-D"},
+    {"variant": "D911N", "group": "primary_impaired", "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays", "source_panel": "Figure 3 A-D"},
+    {"variant": "D882N", "group": "primary_retained", "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label", "source_panel": "Figure 3 A-D"},
+    {"variant": "K795A", "group": "secondary_impaired", "endpoint": "Reduced abundance and thermal stability; contextual check only", "source_panel": "Figure 3 F-H"},
+    {"variant": "D882A", "group": "secondary_retained", "endpoint": "Main-text-reported retained function; contextual check only", "source_panel": "Main text referring to Figure S3C"}
+  ],
+  "candidate": "N1002K",
+  "candidate_source": "Previously permitted ranked candidate protein substitution; constructed on public reference, not a subject sequence",
+  "gate": {
+    "rule": "D882N must score strictly higher than every primary_impaired control in every prespecified window; numerical repeat difference <= 0.000001",
+    "candidate_inference": "Only if the control gate passes; otherwise omit candidate and stop model/structure escalation",
+    "no_reselection": "Do not change checkpoints, controls, windows or score direction after seeing results to obtain a pass",
+    "interpretation": "A conservative resource-allocation gate, not validated sensitivity/specificity or a pathogenicity threshold"
+  },
+  "limitations": [
+    "Small selected control set from one study; one primary retained-function site; substitutions at shared sites are not independent",
+    "Engineered reconstitution in cancer cell backgrounds is not deficient non-cancer tissue or the selected pair",
+    "No tuning set, no fitted classifier and no clinical probability calibration; this is a fixed directional challenge",
+    "Protein evolution may reflect processes outside the reported assay; disagreement does not invalidate the experiment or universally invalidate ESM",
+    "Single fixed ESM-1v checkpoint baseline, not the five-checkpoint ensemble",
+    "Shared evolutionary information with prior predictors; no independent experimental replication",
+    "Stop-gain/NMD, phase, exposure and drug rescue are outside this model's inference"
+  ]
+}

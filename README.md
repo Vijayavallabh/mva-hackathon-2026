@@ -101,6 +101,14 @@ optional, model-qualified mechanistic probe; HCQ remains reserve. No drug earns 
 priority, and no patient benefit or harm is inferred. The [v9 audit](notes/track2-adversarial-v9.md)
 that withdrew the earlier priority is preserved.
 
+The [remote ESM pilot](notes/track2-esm-pilot.md) (2026-09-20) passed a small,
+prespecified primary-control test, then scored the missense candidate as
+sequence-compatible in three contexts. A secondary control disagreed with the
+functional ordering, limiting interpretation. This is no proof of benignity or
+drug response; it reinforces the need to measure allele function. The addendum
+records owner-hosted inference and all results. V12 is preserved and does not yet
+incorporate this additional model work; future synthesis/disclosure must include it.
+
 **Standing research objective:** actively and extensively seek evidence that could
 falsify the current approach, then use weaknesses and overlooked risks to revise or
 abandon it when warranted. The [falsification plan](notes/track2-falsification-plan.md)

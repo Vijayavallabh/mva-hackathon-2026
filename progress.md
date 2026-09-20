@@ -3521,3 +3521,146 @@ uv run python scripts/audit_publication.py --output results/feat009/model-assess
 Configured-origin push, clean working tree and upstream equality are checked at
 handoff. The assessment does not replace the continuing falsification objective
 or resolve biological/provider/recording/receipt gaps.
+
+
+## 2026-09-20 — session 51: authorized H100 ESM pilot completed under ~/v
+
+Active feature: feat-009, retained in_progress. Owner supplied SSH access to
+PrakashDGX_H2 and required all remote work under subfolder v. Key authentication
+succeeded; no password saved. Created private workspace
+`~/v/mva-track2-pilot-20260920/`, containing all new managed Python, uv environment,
+weights, caches, temporary files, code, inputs, logs and outputs. Only explicitly
+selected public code/reference and a permitted derived candidate substitution
+were sent; no raw subject data, narrative, .env or API key transfer. No repo-wide
+copy, driver change, system-package install, other-job termination or hosted model
+API. The workspace is included in the deletion inventory in the research note
+and handoff. Authentication/connection secrets are not recorded here.
+
+Initial remote inspection: eight H100 80 GB cards; GPUs 0–3 occupied and 4–7 idle.
+Driver 555.42.02 is below the reviewed Anthropic kits' floors. Installed upstream
+fair-esm 2.0.0, torch 2.5.1+cu124, numpy 1.26.4 and psutil 7.0.0 with uv, using
+managed Python 3.11.16. No Anthropic kit was installed or benchmarked. Committed
+`track2_esm_environment.toml` and `track2_esm_pilot.uv.lock` record dependencies;
+`track2_esm_remote_env.sh` confines all configured caches/scratch to the workspace.
+Remote resource skill reports 192 logical CPUs, about 982 GiB available RAM and
+839 GiB disk after setup. Never inferred a free GPU solely from available RAM.
+
+Public controls came from Suijkerbuijk 2012, Figure 3/main text and legend;
+D882A supplement result was read via the main-text account only. The different
+2010 article's Europe PMC XML request returned HTTP 500 and PMC web view hit an
+access challenge; neither was bypassed. Successful public source URL/hash archive:
+`results/feat009/model-pilot-public-v1/sources.json` (UniProt FASTA, 2012 author PDF,
+ESM variant-workflow README). Public reference length and every targeted residue
+were verified. Initial official checkpoint fetch hit a too-small 3.5 GB cap;
+upstream HEAD established 7,828,635,339 bytes, and fresh `cache/weights-v2/` retrieval
+passed that exact size. Failed partial/log retained. No inference occurred before
+this infrastructure correction and no scientific decision rule changed.
+
+`notes/track2-esm-pilot-plan.json` fixed the checkpoint, six controls, three windows,
+score direction and all-or-none primary gate before inference. Plan SHA-256:
+`fbd5d8dcdf51bc19b5f2735374dd66619fe1a1c7cac7b633330d77cde533d9e7`.
+Runner preregistration records seven input/code/environment hashes before the model
+runs. The primary D882N-versus-V793R/K795R/D911N ordering passed all three windows;
+the repeated masked distribution agreed exactly. Only then N1002K was scored:
++0.70853949, +0.58644462, +0.48324442 for 1–1022, 29–1050, 721–1044 respectively.
+These are model sequence-compatibility log ratios, not clinical probabilities.
+The secondary retained-function control D882A was ordered below impaired controls
+in two windows. This prospectively secondary discrepancy limits the passing gate;
+do not claim clinical validation or conceal it. No genetic classification, phase,
+drug ranking, rescue priority or clinical exposure update. No structure campaign
+or larger GPU allocation launched. This is additional computational evidence with
+an author adjudication, not a new independent review or biological experiment.
+
+Artifacts: `notes/track2-esm-pilot.md`, fixed plan and full
+`track2-esm-pilot-results.json`; remote outputs/logs archived locally in
+`results/feat009/esm-pilot-remote-v1/`. Scripts, environment, lock and ten tests are
+tracked. The addendum and owner-hosted Meta ESM disclosure must enter the next
+synthesis. V12 remains immutable and does not contain this new work; v10 remains
+the last consolidated scientific ledger. Feat-009 remains open for biological
+qualification, continuing falsification, provider/video/owner/live checks and receipt.
+
+Actual remote commands, run from the private workspace (setup/download and inference
+were nohup jobs with logs; no protected input mounts):
+
+```bash
+source scripts/track2_esm_remote_env.sh
+/home/prachh/v/bin/uv sync --python 3.11 --managed-python
+/home/prachh/v/bin/uv run --frozen python scripts/detect_resources.py -o outputs/resources.json
+/home/prachh/v/bin/uv run --frozen python scripts/track2_esm_pilot.py fetch-model cache/weights-v2
+nohup bash scripts/run_track2_esm_pilot.sh > logs/inference.log 2>&1 < /dev/null &
+```
+
+The launcher selects physical GPU 4 only after a fresh availability check.
+Inference exit: 0. Measured loading/scoring after initial checkpoint checksum:
+10.476124916 seconds; peak PyTorch tensor allocation 2.716374397 GiB, reserved
+2.787109375 GiB. These exclude installation/download/initial checksum and other
+memory use. Final GPU 4 snapshot: 1 MiB used, 0% utilization; pilot process ended.
+No speedup relative to another implementation is claimed.
+
+Local result verification matched all seven preregistered inputs, recomputed the
+control decision, and checked candidate inference was consistent with the gate.
+A separate CPU-only check using the actual ESM tokenizer verified all 21
+reference-token coordinates; `outputs/token-coordinate-check.json` is archived.
+
+Verification commands and actual results:
+
+```text
+uv run python scripts/test_track2_esm_pilot.py
+Ran 10 tests in 0.001s; OK
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+Ran 499 tests in 10.117s; OK
+bash -n scripts/run_track2_esm_pilot.sh scripts/track2_esm_remote_env.sh
+exit 0
+uv run python scripts/verify_data.py --self-check
+self-check ok
+uv run python scripts/track1_submission.py --self-check
+self-check ok: build, strict conformance, normalization and official scoring
+uv run python scripts/track2_evidence.py check
+53 historical sources / 12 candidates; direct_pair_intervention_evidence:0;
+clinical_efficacy_established:0; phase:unconfirmed
+uv run python scripts/test_track2_evidence.py
+Ran 63 tests in 7.723s; OK
+uv run python scripts/track2_release_v12.py verify results/feat009/jvv7_track2_research_v12
+integrity_verified:true; files:8; bound_inputs:119;
+historical_v1_through_v11_preserved:true; upload_ready:false
+uv run python scripts/check_publication_remote.py --output results/feat009/model-pilot-publication-20260920.json
+PUBLIC; 13 retired blobs unavailable; 0 unknown errors;
+live control reachable; removed_object_gate_passed:true
+```
+
+Fresh no-argument startup `./init.sh` passed without manual setup. Actual output
+from `logs/track2-model-pilot-init-20260920.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+Staged and post-commit disclosure audit commands:
+
+```bash
+uv run python scripts/audit_publication.py --staged --output results/feat009/model-pilot-staged-20260920.json
+uv run python scripts/audit_publication.py --output results/feat009/model-pilot-history-20260920.json
+```
+
+Configured-origin push, clean worktree and upstream equality are verified at handoff.

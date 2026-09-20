@@ -319,6 +319,20 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   preserves v1-v11. No new experiment, provider, phase/margin/ranking change,
   recording or upload. Include acknowledgement page inside the three-minute video;
   runtime, hosting, Fireworks settings and owner/live/receipt checks remain open.
+- **Session 51 remote ESM pilot (2026-09-20):** owner authorized `PrakashDGX_H2`
+  with all remote work under `~/v`. Completed one-H100 upstream ESM-1v checkpoint-1
+  pilot in `~/v/mva-track2-pilot-20260920/`; see `notes/track2-esm-pilot.md`, fixed
+  plan and full result JSON. Primary controls passed all three fixed windows;
+  N1002K then scored +0.709/+0.586/+0.483 (sequence compatibility, not benignity).
+  Secondary D882A ordering disagreed in two windows; retain this limitation.
+  No drug/genetic-classification/phase/exposure change or structural escalation.
+  V12 remains frozen; this addendum and owner-hosted Meta ESM inference must enter
+  the next synthesis/disclosure. Driver 555 on the H100 host excludes the reviewed
+  Anthropic kit stacks; upstream torch 2.5.1+cu124 worked. No raw subject data,
+  narrative or credentials transferred; no password stored or other job disturbed.
+  All pilot files/caches/results are under that remote directory; include it in
+  deletion inventory. No pilot GPU job remains running. Ten new tests, 499 total,
+  fresh init and historical package verification pass. Feat-009 remains in progress.
 - **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
   second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
   The owner subsequently confirmed making the repository public. No agent changed

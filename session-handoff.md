@@ -1,6 +1,38 @@
 # Session handoff
 
-**Last updated:** 2026-09-20 IST, session 50. **Active feature: feat-009 Track 2.**
+**Last updated:** 2026-09-20 IST, session 51. **Active feature: feat-009 Track 2.**
+
+Owner authorized `PrakashDGX_H2` and required all remote processes/artifacts under
+`~/v`. Completed the public-reference ESM pilot in
+`~/v/mva-track2-pilot-20260920/`; key authentication succeeded, no password stored.
+See `notes/track2-esm-pilot.md`, `track2-esm-pilot-plan.json` and
+`track2-esm-pilot-results.json`. Public scripts/FASTA/derived candidate only;
+no raw subject file, narrative, `.env` or API key transferred. Keep the entire
+remote pilot directory in the 2026-11-24 deletion inventory.
+
+One idle H100 (GPU 4) was used. The driver 555 stack cannot run the reviewed
+Anthropic kits, so upstream fair-esm 2.0.0/torch 2.5.1+cu124 was installed through
+uv with all caches/managed Python under the private pilot directory. The initial
+checkpoint download hit a too-small guard; upstream HEAD established the 7.83 GB
+size and a fresh bounded fetch passed. No driver changes or other job termination.
+
+The fixed ESM-1v checkpoint-1 primary gate passed all three windows; only then
+N1002K was scored +0.709/+0.586/+0.483. These are sequence-compatibility log scores,
+not clinical probabilities. Secondary D882A was ordered inconsistently in two
+windows; do not hide it or call the model clinically validated. Retain unknown
+allele function and the planned biological assays. No drug/genetic classification,
+phase/exposure change, structural job or eight-GPU expansion. Runtime after initial
+hash: 10.48 s; peak allocated tensors 2.72 GiB. Inference exit 0, GPU released.
+Seven input hashes, control adjudication and actual ESM tokenizer coordinates were
+checked. Ten new tests/499 total pass; fresh init and unchanged v12/v1-v11 verify.
+
+V12 report/slides remain immutable, and v10 remains the last consolidated scientific
+ledger. The ESM addendum is additional research and must be included with its
+limitations and model disclosure in the next synthesis, not silently attributed
+to the frozen v12 package. No GPU process is pending. The exact scripts and lock
+are tracked; archive is `results/feat009/esm-pilot-remote-v1/`.
+
+## Session 50 model assessment baseline
 
 Owner offered GPUs and asked about Anthropic's biomolecular optimization toolkit.
 The public-source feasibility assessment is complete in
@@ -310,12 +342,14 @@ and both candidates, retaining all nine same-position alternate rows. See
 
 ## Blockers and unresolved evidence
 
-- **Optional model pilot:** assessment complete, computation not started. Local
-  `nvidia-smi` fails with a driver/library mismatch; the offered H100 host's access
-  and health are not verified. Assemble relevant measured controls and fix the
-  interpretation rules before candidate inference. Stop escalation if controls
-  fail or the models add no information beyond existing annotations. These limits
-  do not block literature work, CPU input qualification or the existing proposal.
+- **Model pilot completed; interpretation and integration remain bounded.** Remote
+  H100 access/health are verified and upstream ESM ran successfully. A passing
+  minimal primary test is limited by secondary-control disagreement, one retaining
+  site and shared evolutionary information. It does not resolve allele function or
+  justify a large screen. Integrate the addendum and owner-hosted ESM disclosure
+  only through a new synthesis/version. Local NVML mismatch remains; remote driver
+  555 is below the reviewed Anthropic kits' floors. No driver fix is required for
+  the completed pilot or ongoing literature work.
 
 - **Standing falsification search remains ongoing:** cycle 1 is complete in
   `notes/track2-falsification-cycle1.md`. Its next-work table supersedes the initial
