@@ -3922,3 +3922,143 @@ independently unverified.
 Feat-009 stays in progress for biological qualification and continuing falsification,
 provider/owner/live checks, recorded/hosted video and receipt. The model subtask is
 complete, with all owned GPU processes released and no change to uploaded files.
+
+
+## Session 54 — 2026-09-21: v14 presentation, transcript and harness integration
+
+Owner requested updated slides, video transcript, other necessary files and
+especially the harness. Continued feat-009 only. Used scientific-slides,
+frontend-design and harness-creator for local presentation design/author review
+and current-state verification. No new biological inference, GPU job, external
+model provider, protected-input processing, family contact or upload.
+
+New v14 report, nine-slide deck, 336-word pitch, plain transcript and video description
+integrate the complete newer-model campaign: 84 protein scores, 192 structures and 100
+DNA comparisons. Sequence-control successes strengthen computational motivation to
+test N1002K while retaining older disagreements, failed controls, confident impaired
+structures, ESM3 WT variability and BRCA1 transfer limits. Report sections 2–7 and the
+v10 drug ledger/validation remain unchanged: no rescue priority, optional everolimus
+mechanistic probe, HCQ reserve, phase unconfirmed and exposure margins unknown.
+AlphaFold3 output terms, modification notice and citation travel with derivatives.
+
+All nine PDF pages were rasterized and visually reviewed, including full-size
+inspection of the two new pages. No clipping/overlaps, minimum 24px, checked text
+contrast >= 5.43:1 and 640px viewport pass. There are 731 visible words including sources
+and the complete acknowledgement, eight inline SVG figures, and an unchanged
+ARST1431 plot. The narration is 336 words over nine aligned paragraphs; timing is
+unmeasured. The methods abstract is 261 words. See notes/track2-v14-design.md and
+track2-v14-render-audit.json for hashes, author review and geometry evidence.
+
+Harness changes address observed state conflicts, not missing file templates:
+AGENTS shrank from 492 to 294 lines, and the 617-line sequential handoff became a
+current summary with next steps/blockers. Contractual/publication rules and the
+entire environment/scope/lifecycle tail were compared byte-for-byte with bb82cd6
+and preserved. Prior harness text and feat-009's long history remain in Git and
+progress.md. The old structural skill validator scored 100/100 (all five areas 5/5)
+despite obsolete “current” labels and a withdrawn drug priority; that score was
+not treated as a scientific or workflow-effectiveness test.
+
+Added notes/track2-current.json as the authoritative mutable artifact/status record.
+AGENTS, README, feature state and handoff route there. init.sh now runs
+scripts/check_track2_harness.py to catch mixed/stale presentation paths, wrong
+active-feature ownership, transcript/model claims and unsupported scientific/delivery
+promotion. The first stale-version rule incorrectly rejected the legitimate v10
+drug ledger alongside v14 presentation; a regression exposed it, and explicit
+version roles fixed it. New tests also challenge lost terms/acknowledgements, altered
+trial numbers, score/provenance drift and changed readiness. Mutable lifecycle files
+remain outside immutable release bindings.
+
+Validation commands and actual results:
+
+```text
+uv run node scripts/render_track2_slides_v14.mjs v14-slide-review-first-20260921
+slides:9; text_outside_slides:0; text_overlaps:0;
+visible_words:[57,93,99,78,67,60,72,100,105]
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+Ran 562 tests in 7.947s
+OK
+uv run python -m unittest discover -s scripts -p 'test_track2_harness.py'
+Ran 8 tests in 0.098s
+OK
+uv run python scripts/track2_release_v14.py build results/feat009/jvv7_track2_research_v14
+uv run python scripts/track2_release_v14.py verify results/feat009/jvv7_track2_research_v14
+integrity_verified:true; files:38; bound_inputs:234;
+historical_v1_through_v13_preserved:true; upload_ready:false
+uv run python scripts/check_track2_harness.py
+passed:true; active_feature:feat-009; presentation_version:14;
+drug_science_version:10; slides:9; narration_words:336; upload_ready:false
+uv run python scripts/verify_data.py --self-check
+self-check ok
+uv run python scripts/track1_submission.py --self-check
+self-check ok: build, strict conformance, normalization and official scoring
+uv run python scripts/track2_evidence.py track1
+local v4 CSV/report hashes unchanged; uploaded_bytes_independently_verified:false
+uv run python scripts/check_publication_remote.py --output results/feat009/v14-publication-20260921.json
+PUBLIC; 13 retired blobs unavailable; 0 unknown errors; live control reachable;
+removed_object_gate_passed:true
+uv run python scripts/audit_publication.py --staged --output results/feat009/v14-staged-disclosure-20260921.json
+passed:true; unique_blobs_checked:317; findings:[]
+```
+
+The historical evidence check also passes 53 sources/12 candidates and its 63 tests;
+its conditional-screen label is explicitly historical, not today's drug decision.
+The fresh ordinary-shell, no-argument init passes. Actual output from
+logs/track2-v14-final-init-20260921.log follows. The final addition of bundle/render
+path guards was then checked through the eight harness tests and standalone check.
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "presentation_version": 14,
+  "drug_science_version": 10,
+  "slides": 9,
+  "narration_words": 336,
+  "upload_ready": false,
+  "scope": "Public artifact/state consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```
+
+Convenience recording bundle: results/feat009/jvv7_track2_video_materials_v14.zip,
+18 files including a checksum manifest; ZIP CRC and every included SHA pass.
+Size 1,213,809 bytes; SHA-256
+33ea38be486043c537eca31acbb0bd3a009aa91abc037337b488779d7aff6d5b.
+It contains PDF/HTML/nine PNG slides, pitch/plain transcript, report, video description
+and both AF3 terms files. It is not a recorded video or submission-ready attestation.
+
+End-of-session commands:
+
+```bash
+uv run python scripts/audit_publication.py --output results/feat009/v14-history-disclosure-20260921.json
+git push origin main
+git status --short
+git rev-list --left-right --count HEAD...@{upstream}
+```
+
+Feat-009 remains in progress for continuing falsification, biological qualification,
+provider/owner/live review, recording/hosting and receipt. The requested presentation
+and harness integration is complete. Historical submissions and every earlier bound
+artifact remain unchanged; no upload or recording was performed.

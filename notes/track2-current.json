@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "updated_date": "2026-09-21",
+  "active_feature": "feat-009",
+  "presentation_version": 14,
+  "drug_science_version": 10,
+  "artifacts": {
+    "report": "notes/track2-report-v14.md",
+    "slides": "notes/track2-slides-v14.html",
+    "pitch": "notes/track2-pitch-v14.md",
+    "transcript": "notes/track2-transcript-v14.txt",
+    "video_description": "notes/track2-video-description-v14.md",
+    "design_review": "notes/track2-v14-design.md",
+    "evidence": "notes/track2-evidence-v10.json",
+    "validation": "notes/track2-validation-v10.md",
+    "latest_model_findings": "notes/track2-latest-models.md",
+    "latest_model_audit": "notes/track2-latest-model-audit.json",
+    "release_script": "scripts/track2_release_v14.py",
+    "renderer": "scripts/render_track2_slides_v14.mjs",
+    "af3_terms": "notes/alphafold3-output-terms.md",
+    "af3_notice": "notes/alphafold3-Legally-Binding-Terms-of-Use.txt"
+  },
+  "snapshot": "results/feat009/jvv7_track2_research_v14",
+  "render_directory": "results/feat009/v14-slide-review-first-20260921",
+  "model_campaign": {
+    "protein_scores": 84,
+    "structures": 192,
+    "dna_comparisons": 100,
+    "inference_complete": true
+  },
+  "status": {
+    "rescue_priority": null,
+    "everolimus": "mechanistic_probe_only",
+    "hcq": "reserve",
+    "phase": "unconfirmed",
+    "clinical_exposure_margin": null,
+    "wet_lab_performed": false,
+    "video_recorded": false,
+    "video_url": null,
+    "runtime_measured": false,
+    "upload_performed": false,
+    "upload_ready": false,
+    "provider_settings_verified": false
+  },
+  "history": "progress.md",
+  "harness_review": "notes/track2-harness-review-v14.md",
+  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v14.zip"
+}

@@ -82,6 +82,7 @@ Both, plus the scoring mechanics, are in `notes/challenge-spec.md`.
 | `results/` | Derived output. Gitignored — contains subject genotypes. |
 | `AGENTS.md` | Working rules, access terms, established data facts, definition of done |
 | `feature_list.json` | Source of truth for what is done |
+| `notes/track2-current.json` | Current Track 2 artifacts and unresolved status |
 | `progress.md` | Session log |
 
 ## Status
@@ -94,7 +95,7 @@ hypothetical 100/1 test. It does not establish allele function or phase:
 
 **Track 2 (feat-009) is in progress:** the [first Firecrawl falsification cycle](notes/track2-falsification-cycle1.md)
 used 87 actual tool calls plus primary-paper and trial-registry retrieval to challenge
-the approach and its earlier rejection criteria. The [current v13 report](notes/track2-report-v13.md)
+the approach and its earlier rejection criteria. The [current v14 report](notes/track2-report-v14.md)
 separates excess-mTOR and flux/function hypotheses, strengthens regeneration and delayed
 injury checks, and retains favorable and unfavorable findings. Everolimus remains an
 optional, model-qualified mechanistic probe; HCQ remains reserve. No drug earns a rescue
@@ -113,7 +114,7 @@ classification, phase, drug priority or exposure margin follows.
 The comparison records fixed plans, full results and owner-hosted inference,
 plus the external public-WT-only ColabFold alignment search. Frozen v12 is preserved.
 
-The [newer-model follow-up](notes/track2-latest-models.md), alongside frozen v13,
+The [newer-model follow-up](notes/track2-latest-models.md), now integrated in v14,
 completes ESMC 300M/600M/6B, ESM3-open, AlphaFold3, both ESMFold2 arms and Evo2 20B:
 84 protein scores, 192 structures and 100 DNA comparisons. All four new protein
 sequence models pass the small prespecified control challenge and score N1002K
@@ -133,20 +134,23 @@ The [52-source/11-decision ledger](notes/track2-evidence-v10.json) and
 [validation plan](notes/track2-validation-v10.md) retain the v10 scientific decisions.
 The [official website review](notes/track2-challenge-review-20260919.md) supplies
 the rubric, methods-template and acknowledgement requirements. The new
-[v13 report](notes/track2-report-v13.md), [329-word script](notes/track2-pitch-v13.md),
-[eight-page deck](notes/track2-slides-v13.html) and
-[video description](notes/track2-video-description-v13.md) integrate the model
-findings and provider disclosure. All eight rendered pages passed author visual
+[v14 report](notes/track2-report-v14.md), [336-word script](notes/track2-pitch-v14.md),
+[nine-page deck](notes/track2-slides-v14.html) and
+[video description](notes/track2-video-description-v14.md) integrate the model
+findings and provider disclosure. All nine rendered pages passed author visual
 review and geometry checks; narration still requires rehearsal. The full
 acknowledgement remains inside the planned three-minute video.
 
-Use `scripts/track2_release_v13.py` for new snapshots; v12 and every earlier bound
+Use `scripts/track2_release_v14.py` for new snapshots; v13 and every earlier bound
 release are preserved. Export the deck with
-`uv run node scripts/render_track2_slides_v13.mjs new-output-name`.
+`uv run node scripts/render_track2_slides_v14.mjs new-output-name`.
 The scientific drug decisions remain v10; model results and their limitations
-are documented separately. These are research materials, not a recording or submission.
-Fireworks API-credit
-use is owner-confirmed; training/retention settings remain unverified. Recording/hosting,
+are integrated with their full comparison records. These are research materials, not a recording or submission.
+The [current-artifact record](notes/track2-current.json), [plain transcript](notes/track2-transcript-v14.txt)
+and [harness review](notes/track2-harness-review-v14.md) provide a consistent restart path.
+`./init.sh` now checks mixed versions, transcript alignment, model claims and unresolved
+scientific/delivery status. PDF exports include the AlphaFold3 terms and notice;
+keep them with any distributed copy. Fireworks API-credit use is owner-confirmed; training/retention settings remain unverified. Recording/hosting,
 final owner/live checks and receipt remain outstanding. Phase and clinical exposure
 margins remain unresolved; no wet-lab experiment was performed.
 
@@ -199,7 +203,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v12 disclosure names this route without
+GLM for public-literature synthesis; the current v14 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 

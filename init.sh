@@ -43,4 +43,7 @@ uv run bash ./scripts/get_tools.sh --check
 echo "=== 6. offline annotation resources ==="
 ./scripts/get_resources.sh --check
 
+echo "=== 7. current Track 2 harness ==="
+uv run python scripts/check_track2_harness.py
+
 echo "=== OK ==="

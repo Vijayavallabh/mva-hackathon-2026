@@ -64,21 +64,84 @@ and reading depth, and translate material findings into decisions or stop rules.
 Apply the same standards to favorable and unfavorable evidence; missing evidence
 is not disproof, and failure to find a contradiction is not validation. Resolve or
 explicitly retain high-impact gaps before promoting the corresponding claim.
-This is a continuing objective, not a one-time devil's-advocate review. Preserve
-bound snapshots; use new versions when findings change the science. The v10
-ledger, validation and cycle-1 review record the current scientific revision; the
-v12 report and presentation align it with the official website and rubric. The new
-v13 report/presentation integrate session-52 modeling without altering the v10 drug decisions.
+This is a continuing objective, not a one-time review. Preserve immutable snapshots.
 
-Session 53 adds `notes/track2-latest-models.md` and its fixed plan/results: AlphaFold3,
-ESMC 300M/600M/6B, ESM3-open 1.4B, ESMFold2 and Evo2 20B completed on the owner host.
-All four newer protein language models pass the small control gate; negative N1002K
-scores strengthen computational motivation for an assay, not clinical classification.
-Confident structures still occur for impaired controls; ESM3 WT seed variability is
-large. No phase, exposure, rescue-priority or drug-efficacy change follows. Preserve
-v13 and all earlier bound files. Read the supplement with v13; carry forward its
-AlphaFold3 output terms and disclosure in any new presentation/release. All remote
-work is under `~/v/mva-track2-expanded-latest-20260921/`, in the deletion inventory.
+## Current work and authoritative files
+
+**Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
+as the current artifact record and [session-handoff.md](session-handoff.md) for next
+steps and blockers. V14 is the current report, nine-slide deck, read-aloud transcript
+and video description. The scientific drug ledger and validation plan remain v10.
+The complete research history is in `progress.md`; older harness wording is preserved
+at Git revision `bb82cd6`, not treated as current instructions.
+
+- **Drug decisions:** no rescue-priority candidate. Everolimus is an optional,
+  model-qualified mechanistic probe; HCQ is reserve. The session-32 conditional
+  priority is historical and was withdrawn. Clinical exposure margins remain unknown.
+  Do not equate whole blood/plasma, peak/trough/AUC or nominal culture with unbound
+  tissue exposure. Keep non-cancer function separate from tumour killing.
+- **Model evidence:** newer ESMC 300M/600M/6B and ESM3-open 1.4B pass the small fixed
+  control challenge and score N1002K negatively. This strengthens computational
+  motivation to test it; prior ESM sign disagreement and failed controls remain.
+  AlphaFold3/ESMFold2 confidently fold impaired controls; ESM3 WT seed variability
+  is large. Evo2 7B/20B/40B reuse the BRCA1 benchmark, which does not validate BUB1B.
+  No allele function, drug response, phase or clinical benefit is established.
+- **Complete newer campaign:** 84 protein scores, 192 structures, 100 DNA comparisons.
+  See `notes/track2-latest-models.md`, complete matrices, plan and provenance. Retain
+  failed attempts and documented device, CCD-cache, inherited-plan and runtime-flag
+  corrections. All owned GPU inference finished; do not rerun it merely to update slides.
+- **AlphaGenome:** authenticated Atlas/precomputed and public merged-splicing results
+  succeeded in sessions 35–36. Earlier access failures are historical, not current
+  zero scores. AVI reuses termination/AlphaMissense/conservation; merged-splicing
+  magnitudes are not probabilities or proof of normal splicing. No on-demand
+  AlphaGenome inference, phase resolution or drug/exposure update follows. See
+  `notes/alphagenome-authenticated-results.md` and `notes/alphagenome-splicing-results.md`.
+- **Disclosure:** OpenAI/API no-training is an owner attestation, not an account audit.
+  Firecrawl used Fireworks-hosted GLM; credits are owner-confirmed, training/retention
+  are unverified. The earlier external ColabFold search received only public WT
+  sequence; its policies remain unverified. Newer model inference ran on the owner
+  host and reused the alignment. Self-hosted retrieval does not imply local inference.
+  Carry AlphaFold3 Output Terms, mandatory notice, modifications and citation with
+  derived findings. Never print `.env` or keys. See the current report section 9.
+- **Delivery:** no wet-lab experiment, recorded/hosted video or Track 2 submission is
+  established. A script/PDF and successful tests do not fill those gaps. The portal
+  permits three entries and reviews only the latest; remaining quota is unknown.
+  Record the complete acknowledgement inside the three-minute video. Preserve the
+  Track 1 submitted v4 and every Track 2 v1–v13 bound input/package.
+
+Use `scripts/track2_release_v14.py` to check/build/verify **new** v14 snapshot
+directories. Render with `scripts/render_track2_slides_v14.mjs`; include the two
+AlphaFold3 terms files that accompany its PDF. The mutable current-artifact record,
+AGENTS, feature state and handoff are not bound into historical release manifests.
+Future science/presentation changes need a new version and coordinated record update.
+Do not edit old bound code to make a new check pass or mark upload readiness true.
+
+## Startup workflow
+
+```bash
+./init.sh                 # includes current Track 2 harness consistency check
+cat feature_list.json     # exactly one active feature: feat-009
+cat notes/track2-current.json
+cat session-handoff.md
+git log --oneline -5
+```
+
+Core self-checks and current presentation validation:
+
+```bash
+uv run python scripts/verify_data.py --self-check
+uv run python scripts/track1_submission.py --self-check
+uv run python scripts/track2_evidence.py check
+uv run python scripts/check_track2_harness.py
+uv run python scripts/track2_release_v14.py check
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+```
+
+`track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
+its old conditional-screen label is not today's drug decision. The current v10
+ledger and v14 report take precedence. Historical exact-byte verification remains
+available through the versioned release scripts; never resubmit Track 1 to resolve
+its missing administrative receipt.
 
 ## Data facts — established, do not re-derive
 
@@ -146,271 +209,10 @@ Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scori
   The receipt and uploaded-byte identity have not been independently archived/verified;
   feat-008 retains that administrative blocker. Do not ask for another upload or infer
   remaining quota. Preserve the v4 CSV/report; trans phase remains unconfirmed.
-- **Feat-009 is now the active research task**, explicitly authorized by the owner.
-  Missing independent Track 1 receipt verification does not block Track 2 research.
-  Use `notes/track2-plan.md`, report, source/candidate ledgers and adversarial revision log.
-  Evaluate non-cancer functional rescue separately from tumour killing. No proposed drug
-  has established efficacy for the selected pair; no wet-lab experiment has been performed.
-  Session 32 final review: use `notes/track2-final-review.md` and the exposure ledger.
-  Everolimus is the sole conditional, phenotype-first research priority; HCQ is reserve,
-  not an equal-priority lead. All clinical exposure margins remain unknown. Do not equate
-  whole blood/plasma, peak/trough/AUC, or nominal culture with unbound tissue exposure.
-  Preserve the historical Track 2 v1 bundle; new snapshots must use new directories.
-  The verified public Track 2 code allows **three entries; only the latest is reviewed**.
-  A three-minute hosted video is required; a script is not a recorded pitch or receipt.
-- **Session 33 AlphaGenome Atlas follow-up:** see `notes/alphagenome-assessment.md` and
-  `notes/alphagenome-primary-review.md`. Public-resource review/access audit only; both
-  bounded score-archive requests returned HTTP 500, no API key was configured, no scores
-  or hosted inference obtained. AVI is not independent of AlphaMissense/consequence/
-  conservation evidence and cannot resolve phase or establish drug response/exposure.
-  Do not turn access failures into zero scores or upload source VCF records to the API.
-  Preserve the reviewed Track 2 v2 snapshot; the addendum does not change drug ranking.
-  Session 34: access-v3 still returns two HTTP 500 archive failures. Ordinary isolated
-  browser rendering resolves readable service/output terms; no agreement was accepted.
-  Eighteen static AVI feature definitions were extracted without executing the foreign
-  CLI. Definitions are not scores; actual score access still needs a working download
-  or configured API access. Do not manufacture evidence from metadata or retry failures.
-  Session 35 supersedes that access blocker: the owner configured an ignored, owner-only
-  `.env` key. Authenticated metadata (22 scorers), public DNM1 control and both submitted
-  candidate AVI/attribution lookups succeeded. Detailed molecular requests failed; no
-  molecular matrix was retained. See `notes/alphagenome-authenticated-results.md` and
-  `scripts/alphagenome_atlas.py`. Never print the key. Google DeepMind precomputed-output
-  API use is now part of future Track 2 disclosure; preserve earlier uploaded files and
-  historical attestations. AVI evidence mainly reuses termination/AlphaMissense/
-  conservation; no phase, drug-ranking or exposure update. Distinguish AVI CDF from
-  signed molecular calibration, and approximate baseline-relative SHAP from raw AVI.
-  Session 36 (2026-09-09 IST): the owner-supplied public merged-splicing ZIP was verified
-  locally. Use cache `data/resources/alphagenome-splicing-v2/` and query results
-  `results/feat009/alphagenome-splicing-v1/`; cache v1 records an earlier local validator
-  failure, not a bad download. Exact candidate scores are 0.08699 and 0.04813, versus
-  the public DNM1 comparison 2.522. These are raw aggregate magnitudes, not probabilities,
-  AVI PHRED or proof of normal splicing. See `notes/alphagenome-splicing-results.md` and
-  `scripts/alphagenome_splicing.py`. No source VCF/.env/API access or on-demand inference;
-  no phase/drug/exposure change. Full tissue/junction-resolved evidence remains missing.
-- **Session 37 Firecrawl/Track 2 v3 integration (2026-09-09 IST):** the owner requested
-  the local self-hosted MCP. `scripts/track2_firecrawl.py` uses real STDIO against the
-  loopback API, with an empty cwd/minimal environment and no project `.env` read.
-  All 26 advertised tools were exercised in 84 calls; 79 non-error responses, three
-  empty paper reads and two tool errors. Counts are not screened/validated studies.
-  See `notes/track2-firecrawl.md` and the independent scientific/capability reviews.
-  A completed agent job used Fireworks-hosted GLM; self-hosting does not imply local
-  inference/no training/zero retention. Additional-provider settings are unaudited.
-  The current report/pitch are `notes/track2-report-v3.md` and `track2-pitch-v3.md`;
-  they integrate Atlas/output terms and the expanded provider disclosure. Preserve
-  all earlier Track 1 and Track 2 files, including v2's bound inputs. Use the separate
-  `scripts/track2_release.py` for new v3 snapshots. Eight supplementary source documents
-  add a fusion-positive RMS pralatrexate horizon and stronger mitotic-slippage/fate
-  gates, not demonstrated efficacy. Everolimus remains conditional, HCQ reserve,
-  phase unconfirmed and clinical margins null. The temporary browser was stopped;
-  the owned public-page monitor was soft-deleted after completion, not physically
-  erased. No unrelated monitor, subject file, family contact or upload was involved.
-- **Session 38 expanded GLM literature work (2026-09-09 IST):** use
-  `notes/track2-glm-review.md`, its two independent primary-review notes and the fixed
-  `notes/track2-glm-plan.json`. `scripts/track2_glm_review.py` uses the existing MCP
-  bridge; public literature only, no `.env` or subject inputs. Ten topic dossiers and
-  adversarial rereads are model proposals, not independent evidence. Failed full-text
-  retrieval prompted indexed-primary-abstract comparisons; do not describe these as
-  full-paper reviews. Corrected primary checks override GLM errors about division
-  rescue, p21 tissue direction, readthrough assays, exposure and regulatory scope.
-  Entinostat has a Chinese adult breast-cancer approval, not a pediatric RMS indication.
-  Preserve all v3-bound files and prior packages; the new supplement has not replaced
-  an upload. Everolimus remains conditional, HCQ reserve, clinical margins null and
-  trans phase unconfirmed. Do not rerun paid/model work merely to force agreement.
-- **Session 40 v4 synthesis/pitch integration (2026-09-19):** current draft is
-  `notes/track2-report-v4.md`, with `track2-evidence-v4.json` (32 cumulative source
-  records/11 fixed decisions), consolidated `track2-validation-v4.md`, 336-word
-  `track2-pitch-v4.md` and five-slide `track2-slides-v4.html`. See independent
-  `track2-v4-primary-review.md` and `track2-v4-review.md`. Original mTOR phosphoproteins,
-  small/unblinded/nonrandomized mouse evidence and actual PR65 binding are retained.
-  Downstream functional mitigation is not necessarily chromosome repair; first-division
-  events and daughter survival are separate records. No ranking/phase/margin promotion.
-  Use new `scripts/track2_release_v4.py` for immutable v4 snapshots; preserve every
-  older bound input and package. Local rendering uses `scripts/render_track2_slides.mjs`,
-  no extra model provider or protected input. The owner confirmed Fireworks API credits;
-  training/retention remain unverified. The deck/script are not a recording or hosted
-  video. Feat-009 stays in progress for video, provider/owner/live checks and receipt.
-- **Session 41 v5 editorial/visual revision (2026-09-19):** current prose is
-  `notes/track2-report-v5.md` and `track2-validation-v5.md`; the scientific ledger
-  remains unchanged at v4. Humanizer and no-ai-slop editing preserve the evidence,
-  numbers, citations, uncertainty and required acknowledgement. New
-  `track2-pitch-v5.md` has 337 narration words (runtime unmeasured), and
-  `track2-slides-v5.html` has five conceptual SVG figures and 288 slide words versus
-  v4's 410. See `track2-v5-design.md` and the independent editorial/standards reviews.
-  Anthropic frontend-design is installed locally at a pinned revision; no new model
-  provider was used. `scripts/render_track2_slides_v5.mjs` validates fixed static
-  input before isolated offline rendering to five PNGs and a PDF. Use
-  `scripts/track2_release_v5.py` for new v5 snapshots; preserve all older bound inputs.
-  Nothing changes phase, candidate priorities, clinical margins, provider gates or
-  upload status. The deck/PDF is not a recording; feat-009 stays in progress.
-- **Session 42 v6 completion (2026-09-19):** the interrupted story/design rebuild is
-  complete in `notes/track2-report-v6.md`, `track2-pitch-v6.md` (297 narration words)
-  and `track2-slides-v6.html` (301 visible words). Four schematics and one published
-  ARST1431 HR/95% CI redraw explain the conditional experiment. The v4 evidence ledger
-  and v5 validation plan remain unchanged. Final content/visual review was the resumed
-  main agent's author review, not a fresh independent review. Five PDF pages were
-  inspected; use `scripts/track2_release_v6.py` for new snapshots. Historical v1-v5
-  and Track 1 v4 verify unchanged. Runtime unmeasured; no recorded/hosted video or
-  submission. Everolimus remains conditional, HCQ reserve, phase unconfirmed and
-  clinical margins null. Provider/owner/live submission gates remain open.
-- **Session 43 v7 visual refinement (2026-09-19):** current presentation is
-  `notes/track2-slides-v7.html`, using the unchanged v6 report and 297-word narration.
-  Every slide word/citation matches v6; the 301-word deck adds lighter serif titles,
-  calmer spacing and grouped diagrams. See `notes/track2-v7-design.md` and renderer
-  `scripts/render_track2_slides_v7.mjs`. Five PDF pages were inspected; 429 Track 2
-  tests pass. `scripts/track2_release_v7.py` binds six files/70 inputs and verifies
-  all historical v1-v6 releases. No science, provider or submission status changed.
-- **Session 44 v8 scientific visual revision (2026-09-19):** current deck is
-  `notes/track2-slides-v8.html`; the owner-requested cover line is removed. Four
-  conceptual diagrams make chromosome control, conditional pathway testing,
-  cell-fate accounting and advancement criteria explicit; the ARST1431 plot is
-  unchanged. Use the unchanged v6 report/297-word narration, v5 validation and v4
-  ledger. Five PDF pages inspected; 313 visible words, no overlap/clipping, min24px;
-  437 Track 2 tests pass. `scripts/track2_release_v8.py` binds six files/75 inputs
-  and verifies v1-v7 preservation. See `notes/track2-v8-design.md`. This is author
-  visual/source verification, not a new independent review or experimental evidence.
-  Phase, drug priorities, clinical margins, provider and submission gates unchanged.
-- **Session 45 v9 adversarial revision (2026-09-19) supersedes earlier priority:**
-  current materials are `notes/track2-report-v9.md`, `track2-validation-v9.md`,
-  `track2-evidence-v9.json`, `track2-pitch-v9.md` and `track2-slides-v9.html`. The
-  owner requested a rigorous whole-Track-2 challenge and revisions. Goutas 2023
-  reports an everolimus-associated BUBR1 decrease in late-passage human stromal
-  cells; this is not selected-pair harm or a clinical exposure result. Adaptive
-  mTOR counterexamples and favourable HGPS vessel function are retained. Withdraw
-  comparative rescue priority: everolimus is an optional model-qualified mechanistic
-  probe; no drug earns a rescue priority, HCQ remains reserve. See the 12 findings
-  and complete workstream matrix in `notes/track2-adversarial-v9.md`. Add BUBR1/flux,
-  orthogonal perturbation and precursor-versus-mature-lineage controls. Main-agent
-  author audit, not a fresh independent review. Ledger:36 sources/11 decisions;
-  narration:339 words, runtime unmeasured; deck:320 words. The v9 release binds six
-  files/84 inputs, preserving v1-v8; 450 Track 2 + 108 Atlas tests pass. Phase and
-  clinical margins remain unresolved; no experiment, provider change or upload.
-- **Session 47 v10 Firecrawl falsification cycle (2026-09-19):** current report,
-  validation, evidence, pitch and slides use v10. See `notes/track2-falsification-cycle1.md`
-  and the fixed plans/retrieval summary: 87 actual calls, 68 non-error responses,
-  14 tool errors, two timeouts and three empty reads; not 87 reviewed studies.
-  Complementary primary/registry retrieval made 27 requests, 25 returned records,
-  one rejected as a wrong bibliographic identity, two HTTP 500 failures. Six XML
-  papers were read at selected-section depth; unreviewed supplements remain explicit.
-  Balnis challenges a universal measured-excess-mTOR requirement. Keep branch A's
-  excess requirement and separately preregister branch B for a demonstrated relevant
-  flux/function deficit; no retrospective switching and neither established here.
-  Joseph's favorable partial-inhibition results coexist with repair-context risk.
-  Add graded exposure, regeneration/recovery, delayed HCQ myopathy, blood-partition
-  and developmental-scope checks. Everolimus stays an optional mechanistic probe,
-  HCQ reserve; no rescue priority, clinical margin, phase confirmation or experiment.
-  Ledger:52 cumulative sources/11 decisions. V10 release binds six files/104 inputs,
-  preserving v1-v9; 471 Track 2 tests pass. Narration remains 339 words and all five
-  rendered slides are pixel-identical to v9 (current protocol link updated).
-  Author adjudication, not an independent/systematic review. Public retrieval only,
-  no new agent synthesis job or subject/.env use; existing provider and delivery
-  gates remain. The standing falsification objective continues beyond this cycle.
-- **Session 48 v11 presentation integration (2026-09-19):** use the six-slide
-  `notes/track2-slides-v11.html` and 358-word `track2-pitch-v11.md` with the unchanged
-  v10 report, validation, ledger and cycle-1 review. Added context-specific benefit/
-  harm evidence, separate A/B eligibility, graded exposure, regeneration/recovery,
-  delayed injury and blood-versus-free-exposure limits. Exact ARST1431 plot moves
-  to slide 4; all six PDF pages reviewed, zero text overlap/clipping, min24px and
-  checked contrast >=5.43:1. See `notes/track2-v11-design.md`. The three-minute
-  timestamps are rehearsal allocations, not measured runtime or a recording.
-  V11 release binds seven files/110 inputs and preserves v1-v10; 479 Track 2 tests
-  pass. No new science, drug ranking, phase/margin, provider or upload change.
-- **Session 49 official website/v12 alignment (2026-09-19):** use
-  `notes/track2-challenge-review-20260919.md`, `track2-report-v12.md`, seven-page
-  `track2-slides-v12.html`, 338-word `track2-pitch-v12.md` and
-  `track2-video-description-v12.md`. Live public app/source, template and relevant
-  organizer clarifications were reviewed anonymously; pinned revision unchanged.
-  Added approved-drug/allele mechanism, conditional impact/innovation/scalability,
-  eleven template answers and the full required acknowledgement in all public
-  presentation artifacts. Science remains v10; report sections 1-6 and the ARST1431
-  plot are unchanged. The site permits hypotheses; it does not require proven
-  efficacy. Three entries/latest reviewed supersede the template's stale one-entry
-  wording; remaining quota unknown. Dataset citation clarification #13 does not
-  impose a new Track 2 report citation blocker. Seven PDF pages inspected,
-  zero overlap/clipping, min24px, 489 tests; v12 binds eight files/119 inputs and
-  preserves v1-v11. No new experiment, provider, phase/margin/ranking change,
-  recording or upload. Include acknowledgement page inside the three-minute video;
-  runtime, hosting, Fireworks settings and owner/live/receipt checks remain open.
-- **Session 51 remote ESM pilot (2026-09-20):** owner authorized `PrakashDGX_H2`
-  with all remote work under `~/v`. Completed one-H100 upstream ESM-1v checkpoint-1
-  pilot in `~/v/mva-track2-pilot-20260920/`; see `notes/track2-esm-pilot.md`, fixed
-  plan and full result JSON. Primary controls passed all three fixed windows;
-  N1002K then scored +0.709/+0.586/+0.483 (sequence compatibility, not benignity).
-  Secondary D882A ordering disagreed in two windows; retain this limitation.
-  No drug/genetic-classification/phase/exposure change or structural escalation.
-  V12 remains frozen; this addendum and owner-hosted Meta ESM inference must enter
-  the next synthesis/disclosure. Driver 555 on the H100 host excludes the reviewed
-  Anthropic kit stacks; upstream torch 2.5.1+cu124 worked. No raw subject data,
-  narrative or credentials transferred; no password stored or other job disturbed.
-  All pilot files/caches/results are under that remote directory; include it in
-  deletion inventory. No pilot GPU job remains running. Ten new tests, 499 total,
-  fresh init and historical package verification pass. Feat-009 remains in progress.
-- **Session 52 expanded owner-hosted modeling (2026-09-20–21):** use
-  `notes/track2-model-expansion.md`, the four fixed model/MSA plans and full result
-  JSONs. All remote work is under `~/v/mva-track2-expanded-20260920/`; public
-  references, published controls and permitted report-derived substitutions only.
-  Seven ESM checkpoints retain discordance/failed controls; the five-checkpoint
-  ensemble fails one context and ESM-2 15B fails all three selected primary gates.
-  Preserve the positive single-checkpoint pilot; it is not representative of the
-  full ensemble. Both 24-run Boltz arms and all 120 AlphaFold2 predictions complete.
-  Shared alignment improves confidence, including impaired controls; confidence
-  and fold similarity cannot validate function or a folding-rescue intervention.
-  The public-WT-only ColabFold alignment service is an additional disclosure route.
-  Evo2 7B passes numerical checks and the fixed 96-site BRCA1 benchmark (AUROC
-  0.94184); both candidate/window outputs are sequence scores, not BUB1B validation.
-  40B original FP8 runtime failed before biological scores; an isolated cuBLAS
-  preload correction passes numerical/repeat checks and the 96-site benchmark
-  (AUROC 0.92014). After a two-H100 long-window OOM, all four candidate/window
-  comparisons complete on all eight H100s with exact reference/duplicate agreement.
-  Both candidates have negative DNA scores in both models/windows; this does not
-  validate function, phase or rescue. Preserve failures and the declared hardware
-  split. Local audits pass both complete matrices; no GPU job remains running.
-  V13 report qualifies v12's broad missense-support claim. Eight-page v13 deck,
-  329-word narration and video description integrate model limits and disclosure;
-  preserve all v1-v12 inputs. No drug priority, phase or exposure promotion.
-  Recording/hosting/provider/owner/live/receipt and biological gaps remain open.
-- **Owner-confirmed visibility change, 2026-09-06:** feat-008's live preflight and a
-  second GitHub query reported PUBLIC while all 13 retired objects remained retrievable.
-  The owner subsequently confirmed making the repository public. No agent changed
-  visibility. Do not treat PUBLIC visibility alone as completion of feat-007 or upload
-  readiness. That failed-purge snapshot is historical; session 27 verifies removal.
-- **AI disclosure is complete as an owner attestation:** Codex uses OpenAI API tier;
-  on 2026-09-08 the owner confirmed data is not used to train the provider's models and
-  no other AI providers were used. `notes/track1-submission-config.json` records this;
-  it is not an independent account audit or a claim of zero retention. The v4 package
-  passes offline verification and regressions with zero unresolved disclosure fields;
-  v1/v2/v3 are historical and must not be reused. The earlier PUBLIC preflight failed
-  solely on purge. Session-28 public preflight now passes with no blockers. Local
-  HF identity is jvv7, but the portal's quota callback returned an empty response
-  using API credentials: an authenticated browser session is still needed to verify
-  quota and submit. No files were uploaded or submit callback invoked by that workflow;
-  the subsequent owner-reported submission supersedes its unknown upload status. Never spoof
-  identity, bypass OAuth or infer quota from a successful local preflight.
-
-- **Never present hypothetical local 100/1 as predicted or guaranteed scores.**
-  Use `scripts/audit_track1_evidence.py scores <csv>` for conditional scenarios;
-  independently verified exact-byte scores require the authenticated receipt. The owner's
-  subsequent 100/1 report is recorded as an attestation, not discarded as unknown. Feat-006b
-  tests 169 retained pairs: BUB1B is first in 26/34 declared settings, but drops
-  under combined annotation ablation. That fraction is not a probability. Native
-  phase metadata adds no linkage evidence; trans remains unconfirmed. See
-  `notes/track1-evidence-audit.md`. Preserve existing deliverables.
-
-## Startup workflow
-
-```bash
-./init.sh          # env + data integrity + no-data-in-git gate
-cat feature_list.json    # pick exactly ONE unfinished feature
-git log --oneline -5
-```
-
-Core self-checks:
-
-```bash
-uv run python scripts/verify_data.py --self-check
-uv run python scripts/track1_submission.py --self-check
-uv run python scripts/track2_evidence.py check
-uv run python scripts/test_track2_evidence.py
-```
+- **Do not present hypothetical local 100/1 as guaranteed scores.** The owner's
+  later 100/1 report is an attestation, not an independently archived receipt.
+  Feat-006b places BUB1B first in 26/34 declared settings but loses rank under
+  combined annotation ablation; that fraction is not a probability. Preserve v4.
 
 ## Environment
 
