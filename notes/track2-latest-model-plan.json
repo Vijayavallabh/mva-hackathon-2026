@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-20T19:55:26.232206+00:00",
+  "scope": "Owner-requested newer-model comparison; all outputs exploratory, no clinical decisions",
+  "remote_root": "/home/prachh/v/mva-track2-expanded-latest-20260921",
+  "models": [
+    {
+      "repository": "biohub/ESMC-300M",
+      "revision": "e4bac860f0c502cd80f3aeac3d0ce6524c6627cb",
+      "bytes": 1332088898,
+      "gated": false
+    },
+    {
+      "repository": "biohub/ESMC-600M",
+      "revision": "fcc9d36f5fff97d9bb69a36e3252de61cc78c968",
+      "bytes": 2300257715,
+      "gated": false
+    },
+    {
+      "repository": "biohub/ESMC-6B",
+      "revision": "af1602ba7406f521b11bf8f81d52af378cde09e4",
+      "bytes": 25408281233,
+      "gated": false
+    },
+    {
+      "repository": "biohub/ESMFold2",
+      "revision": "69869f737beffec5294845ede23db5fc0b4f509e",
+      "bytes": 26737068175,
+      "gated": false
+    },
+    {
+      "repository": "EvolutionaryScale/esm3-sm-open-v1",
+      "revision": "47f0545b2b6daf26a93439a3cd610f4f7f3d5478",
+      "bytes": 5495561673,
+      "gated": false
+    },
+    {
+      "repository": "arcinstitute/evo2_20b",
+      "revision": "8b0f0a9a70c66367ed181a17d049b95699a28fed",
+      "bytes": 47945800535,
+      "gated": false
+    }
+  ],
+  "source_revisions": {
+    "Biohub/esm": "43b4548b86762edfa747b07d5f440aad3c33acee",
+    "google-deepmind/alphafold3": "c0f97eda2f1f482fd94d3a38bece18c7069b4a5c",
+    "ArcInstitute/evo2": "53f195997257c56c00e5ef8d33a54f5baad143a6"
+  },
+  "protein_reference": {
+    "reference_accession": "O60566",
+    "reference_length": 1050,
+    "reference_fasta_sha256": "4ac6895daf90501d8398d17ded42f46d78b9db777f5084facc875c2926496d1b"
+  },
+  "protein_score": "masked log probability of alternate minus reference residue; natural log; lower means less sequence-compatible",
+  "protein_windows": [
+    {
+      "name": "n_terminal_1022",
+      "start": 1,
+      "end": 1022
+    },
+    {
+      "name": "c_terminal_1022",
+      "start": 29,
+      "end": 1050
+    },
+    {
+      "name": "published_domain_721_1044",
+      "start": 721,
+      "end": 1044
+    }
+  ],
+  "protein_controls": [
+    {
+      "variant": "V793R",
+      "group": "primary_impaired",
+      "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+      "source_panel": "Figure 3 A-C,I"
+    },
+    {
+      "variant": "K795R",
+      "group": "primary_impaired",
+      "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+      "source_panel": "Figure 3 A-D"
+    },
+    {
+      "variant": "D911N",
+      "group": "primary_impaired",
+      "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+      "source_panel": "Figure 3 A-D"
+    },
+    {
+      "variant": "D882N",
+      "group": "primary_retained",
+      "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+      "source_panel": "Figure 3 A-D"
+    },
+    {
+      "variant": "K795A",
+      "group": "secondary_impaired",
+      "endpoint": "Reduced abundance and thermal stability; contextual check only",
+      "source_panel": "Figure 3 F-H"
+    },
+    {
+      "variant": "D882A",
+      "group": "secondary_retained",
+      "endpoint": "Main-text-reported retained function; contextual check only",
+      "source_panel": "Main text referring to Figure S3C"
+    }
+  ],
+  "protein_candidate": "N1002K",
+  "protein_gate": {
+    "rule": "D882N must score strictly higher than every primary_impaired control in every prespecified window; numerical repeat difference <= 0.000001",
+    "candidate_inference": "All prespecified candidates are diagnostic outputs, even for a failed control gate; never select only passing models for the ensemble. No clinical interpretation from failed qualification.",
+    "no_reselection": "Use all seven models and all three windows; no replacement or score-direction change after results. Checkpoint 1 results were already observed.",
+    "interpretation": "A conservative resource-allocation gate, not validated sensitivity/specificity or a pathogenicity threshold"
+  },
+  "protein_precision": "float32 with TF32 disabled for masked language scores; default documented folding precision recorded separately",
+  "protein_sequence_models": [
+    "biohub/ESMC-300M",
+    "biohub/ESMC-600M",
+    "biohub/ESMC-6B",
+    "EvolutionaryScale/esm3-sm-open-v1"
+  ],
+  "structures": {
+    "variants": [
+      "WT",
+      "V793R",
+      "K795R",
+      "D911N",
+      "D882N",
+      "K795A",
+      "D882A",
+      "N1002K"
+    ],
+    "domain": [
+      721,
+      1044
+    ],
+    "seeds": [
+      11,
+      12,
+      13
+    ],
+    "alphafold3": {
+      "msa": "existing public-WT-derived 623-record alignment, query row changed only for synthetic substitution",
+      "templates": false,
+      "recycles": 10,
+      "diffusion_samples_per_seed": 5
+    },
+    "esmfold2": {
+      "arms": [
+        "single_sequence",
+        "shared_msa"
+      ],
+      "num_loops": 20,
+      "num_sampling_steps": 100,
+      "num_diffusion_samples": 1
+    },
+    "esm3": {
+      "mode": "sequence-only-conditioned structure generation",
+      "num_steps": 64,
+      "temperature": 0.0
+    },
+    "metrics": [
+      "all-sample confidence",
+      "all-seed WT-WT and WT-alternate CA RMSD",
+      "local CA RMSD"
+    ],
+    "interpretation": "Structure resemblance or confidence is not folding stability, protein abundance, enzymatic activity or functional rescue. Compare all controls and all seeds, not best-ranked structures. Three seeds are sampling variability, not biological replicates."
+  },
+  "evo2": {
+    "created_utc": "2026-09-20T18:04:01.623385+00:00",
+    "scope": "Owner-requested Evo 2 DNA-sequence sensitivity comparison, fixed before model scores",
+    "models": [
+      "evo2_20b"
+    ],
+    "runtime": "Evo 2 0.6.0, Vortex 1.1.0, torch 2.6.0+cu124, FlashAttention 2.8.0.post2; 7B supported BF16, 40B required Transformer Engine FP8; no approximate kernel override",
+    "benchmark": "Public Findlay 2018 BRCA1 saturation genome editing table and public GRCh37 chr17 distributed with official Evo2 notebook",
+    "benchmark_per_class": 48,
+    "selection": "Exclude intermediate/non-SNV; sort SHA256(20260920:BRCA1:position:REF>ALT); choose first 48 FUNC and 48 LOF with at most one alternate per genomic site across both classes",
+    "benchmark_window": 8192,
+    "score": "mean autoregressive log likelihood alternate minus reference, no BOS; retain forward and reverse-complement scores separately and their average; same as upstream mean-reduction method",
+    "numerical_gate": "Official built-in forward-test mean loss within 0.001 of checkpoint expected value; repeat reference score difference <=0.000001; finite outputs required. Stop runtime if numerical gate fails.",
+    "functional_gate": "Descriptive BRCA1 AUROC using negative mean-strand delta >=0.70 and LOF median delta lower than FUNC; this is a resource qualification, not clinical validation or a gene-transfer guarantee",
+    "candidate_inference": "Diagnostic outputs retained for both prespecified models even if functional gate fails; no candidate inference on a failed numerical gate. No selecting passing models, windows or strands after seeing results.",
+    "candidates": [
+      {
+        "id": "BUB1B-L737Ter",
+        "pos": 40209701,
+        "ref": "T",
+        "alt": "G"
+      },
+      {
+        "id": "BUB1B-N1002K",
+        "pos": 40220612,
+        "ref": "T",
+        "alt": "G"
+      }
+    ],
+    "candidate_source": "Permitted ranked-pair report notes/track2-report-v12.md; no VCF access",
+    "candidate_windows": [
+      8192,
+      32768
+    ],
+    "reference_source": "Public Ensembl REST GRCh38 forward-strand sequence; REF/length/alphabet checks before transfer; alternate is synthetic",
+    "limitations": [
+      "Reference DNA not a subject haplotype; phase cannot be inferred",
+      "BRCA1 benchmark cannot establish BUB1B accuracy; benchmark/pretraining overlap is unknown",
+      "Whole-window scores are context/strand/model-dependent and do not measure splicing, NMD, protein function, drug response or clinical probabilities",
+      "Model scales are correlated comparisons, not independent genetic evidence or biological replication",
+      "No generation, genome editing, biological material or treatment action"
+    ],
+    "expected_mean_loss": 0.2166748046875,
+    "inputs": "Reuse exact earlier 100-row public-reference design; no site/window reselection",
+    "devices": "two currently idle H100s; if memory fails, retain partial and require idle devices before documented continuation"
+  },
+  "limitations": [
+    "Small selected control set from one study; one primary retained-function site; substitutions at shared sites are not independent",
+    "Engineered reconstitution in cancer cell backgrounds is not deficient non-cancer tissue or the selected pair",
+    "No tuning set, no fitted classifier and no clinical probability calibration; this is a fixed directional challenge",
+    "Protein evolution may reflect processes outside the reported assay; disagreement does not invalidate the experiment or universally invalidate ESM",
+    "Shared evolutionary information with prior predictors; no independent experimental replication",
+    "Stop-gain/NMD, phase, exposure and drug rescue are outside this model's inference",
+    "Checkpoints/windows/model scales are correlated sensitivity analyses, not independent biological replicates or confidence intervals",
+    "ESM2 general sequence model scores are exploratory; increased size does not establish validity",
+    "All models float32 with TF32 disabled. OOM is a technical failure, not a zero score; no hidden precision change.",
+    "Reference DNA not a subject haplotype; phase cannot be inferred",
+    "BRCA1 benchmark cannot establish BUB1B accuracy; benchmark/pretraining overlap is unknown",
+    "Whole-window scores are context/strand/model-dependent and do not measure splicing, NMD, protein function, drug response or clinical probabilities",
+    "Model scales are correlated comparisons, not independent genetic evidence or biological replication",
+    "No generation, genome editing, biological material or treatment action"
+  ],
+  "data_boundary": "No subject VCF/read/clinical narrative input; public reference and published controls, permitted report substitution only.",
+  "terms": "AlphaFold3 noncommercial academic theoretical research only; preserve Output Terms and modification notice. ESM model-card and third-party notices archived. No hosted inference requested.",
+  "retention": "Remote root, caches and copied derived outputs in deletion inventory for 2026-11-24",
+  "selection_policy": "Model families selected before this cycle; earlier model results known. No post-result threshold, control or seed reselection; technical failures are not zero scores."
+}

@@ -3804,3 +3804,121 @@ Feat-009 remains in progress for continuing falsification, biological qualificat
 provider/owner/live checks, recorded/hosted video and receipt. No uploaded deliverable
 was changed and no submission occurred. V13 is an immutable research snapshot,
 not a clinical result or upload-ready attestation.
+
+
+## Session 53 — 2026-09-21: requested newer models completed and audited
+
+Continued feat-009 under the owner's “run those too” request, following the
+current-release/source assessment. Used the available-resource and ESM skills.
+All inference ran on the authorized H100 host under
+`~/v/mva-track2-expanded-latest-20260921/`; the root is added to the deletion
+inventory. Public references, published engineered controls and permitted derived
+candidate substitutions only. No source VCF/read/narrative, project key or password
+was transferred. No new hosted inference, wet-lab work or submission.
+
+Completed ESMC 300M/600M/6B and ESM3-open 1.4B (84 scores), AlphaFold3 (120 structures),
+ESM3 (24), ESMFold2 sequence-only/shared-MSA (24 each), and Evo2 20B (100 comparisons).
+All four new sequence models pass the small prespecified control gate and score
+N1002K negatively. This strengthens computational motivation to test the allele,
+without erasing the older failures/sign changes. Impaired controls still yield
+confident structures; ESM3 also has substantial WT seed variability. Evo2 20B's
+strict loss/repeat checks pass and its fixed BRCA1 AUROC is 0.9201389. No clinical,
+drug-ranking, phase or exposure promotion. No drug has a rescue priority; v10
+mechanistic-probe/reserve decisions remain unchanged. All owned inference finished;
+all eight H100s were idle at the final query.
+
+See `notes/track2-latest-models.md`, complete model result JSONs, fixed plan, source
+audit, local audit and provenance. The note records public falsification searches
+and primary reading depth, not an exhaustive review. AF3 output terms and the
+mandatory notice/modifications statement accompany its derived outputs. All
+v1–v13 inputs and releases remain immutable. This supplement must be carried into
+future synthesis; the v13 deck/script are not rewritten or represented as containing
+these new results.
+
+Technical corrections are preserved: initial downloader dependency/status-writer
+failures; first ESMC300M device-filter omission; transient GPU-utilization pause;
+ESMFold2 CCD-file versus cache-directory failure; inherited plan prose; and the
+Evo uv reconciliation that invalidates its generated “without mutation” flag.
+No competing process was stopped and no scientific threshold was changed.
+Both archived downloader versions are now tracked under their actual executed
+filenames. Archive creation initially rejected only a generated untracked build/
+directory; tracked upstream sources are verified unchanged. A post-run AF3 CRC32C
+check matches Google's header `0h6mjg==`; original transport had no MD5 header.
+
+Remote archive: 37,529,461 bytes, 686 files including manifest, SHA-256
+`084c764b8beb33ae831c5070e702173611c5ba8d8b88e5e61ee75ec9d715baa6`.
+All 685 member size/SHA checks pass. Reanalysis verifies all sequences/324 CA sites,
+all prespecified samples and comparisons, 84 protein rows and 100 DNA rows, with
+arithmetic, gates and provenance. Local and remote scores/gates match exactly;
+coordinate-analysis maximum absolute difference is 1.4210854715202004e-14, below
+1e-10 tolerance. This is author verification using a separate local execution,
+not an independent reviewer or biological validation.
+
+Actual commands/results:
+
+```text
+uv run python scripts/track2_latest_verify_archive.py results/feat009/latest-model-remote-v1/latest-model-comparison-v1.tar.gz results/feat009/latest-model-archive-v1
+passed:true; files:686; verified_manifest_entries:685
+uv run --with numpy --with biopython python scripts/track2_latest_analysis.py results/feat009/latest-model-archive-v1 results/feat009/latest-model-local-audit-v1
+exit 0; passed:true; protein_models:4; structures:192; dna_rows:100
+uv run python scripts/track2_latest_publish_results.py results/feat009/latest-model-archive-v1 results/feat009/latest-model-local-audit-v1 notes results/feat009/latest-model-remote-v1/af3-crc32c-postrun.json
+passed:true; additional_provenance_checks_passed:true
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+Ran 543 tests in 6.264s
+OK
+uv run python scripts/track2_release_v13.py verify results/feat009/jvv7_track2_research_v13
+integrity_verified:true; files:23; bound_inputs:190;
+historical_v1_through_v12_preserved:true; upload_ready:false
+uv run python scripts/check_publication_remote.py --output results/feat009/latest-model-publication-20260921.json
+PUBLIC; 13 retired blobs unavailable; 0 unknown errors; live control reachable;
+removed_object_gate_passed:true
+```
+
+Fresh ordinary-shell, no-argument `./init.sh` exits 0; actual output from
+`logs/track2-latest-final-init-20260921.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== OK ===
+```
+
+End-of-session publication checks and Git verification:
+
+```bash
+uv run python scripts/audit_publication.py --staged --output results/feat009/latest-model-staged-20260921.json
+uv run python scripts/audit_publication.py --output results/feat009/latest-model-history-20260921.json
+git push origin main
+git status --short
+git rev-list --left-right --count HEAD...@{upstream}
+```
+
+The staged disclosure audit passed 303 blobs with zero findings. Core verification
+and Track 1 submission self-checks pass; the baseline evidence check reports
+53 sources/12 candidates, zero direct-pair intervention evidence and unconfirmed
+phase. That historical ledger is not the current v10 drug-priority decision.
+Track 1 v4 local CSV/report hashes are unchanged; uploaded-byte identity remains
+independently unverified.
+
+Feat-009 stays in progress for biological qualification and continuing falsification,
+provider/owner/live checks, recorded/hosted video and receipt. The model subtask is
+complete, with all owned GPU processes released and no change to uploaded files.

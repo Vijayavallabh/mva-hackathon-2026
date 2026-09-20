@@ -10,7 +10,8 @@ Delete, from every environment:
 - any copy synced to PrakashDGX_H2 or elsewhere
 - the complete owner-hosted model directories on PrakashDGX_H2:
   `/home/prachh/v/mva-track2-pilot-20260920/` and
-  `/home/prachh/v/mva-track2-expanded-20260920/`, including inputs, outputs,
+  `/home/prachh/v/mva-track2-expanded-20260920/` and
+  `/home/prachh/v/mva-track2-expanded-latest-20260921/`, including inputs, outputs,
   environments, caches, logs and archives; these runs used public references and
   permitted derived candidates, never raw subject files
 - any intermediate BAM/VCF outside this repo

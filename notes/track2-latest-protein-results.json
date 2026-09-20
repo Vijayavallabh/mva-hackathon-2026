@@ -1,0 +1,866 @@
+{
+  "models": {
+    "ESMC-300M-score": {
+      "model": "biohub/ESMC-300M",
+      "rows": [
+        {
+          "window": "n_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.6915082931518555
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -1.3490123748779297
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -0.5495166182518005
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": 2.243544578552246
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -4.759950637817383
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": 0.6091585159301758
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -0.1907491683959961
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.920856237411499
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -1.6251182556152344
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -0.45737457275390625
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": 2.523383140563965
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -5.1549882888793945
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": 0.6646394729614258
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -0.26294994354248047
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.5342063903808594
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -1.5959901809692383
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -0.7530765533447266
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": 1.4891977310180664
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -4.735645294189453
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -0.14398765563964844
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -0.09096145629882812
+        }
+      ],
+      "gate": {
+        "windows": {
+          "c_terminal_1022": {
+            "retained_minus_highest_impaired": 2.980757713317871,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          },
+          "n_terminal_1022": {
+            "retained_minus_highest_impaired": 2.7930611968040466,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          },
+          "published_domain_721_1044": {
+            "retained_minus_highest_impaired": 2.242274284362793,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          }
+        },
+        "pass": true,
+        "repeat_max_abs_difference": 0.0,
+        "numerical_pass": true
+      },
+      "elapsed_seconds": 4.524057327071205,
+      "peak_allocated_gib": 1.3360600471496582,
+      "precision": "float32; TF32 disabled; no autocast",
+      "clinical_classification": false,
+      "drug_ranking_changed": false,
+      "phase_resolved": false
+    },
+    "ESMC-600M-score": {
+      "model": "biohub/ESMC-600M",
+      "rows": [
+        {
+          "window": "n_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -5.878635406494141
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -1.473398208618164
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": 0.3564109802246094
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": 0.5758991241455078
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -6.096674919128418
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -0.46478283405303955
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -2.309414863586426
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -5.806692123413086
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -1.4749259948730469
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": 0.25160592794418335
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": 0.4671058654785156
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -5.782161712646484
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -0.603063702583313
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -2.664999008178711
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -4.9659833908081055
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -1.4545707702636719
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -0.18648338317871094
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": 0.8610553741455078
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -5.033502578735352
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": 0.12296295166015625
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -1.8599051237106323
+        }
+      ],
+      "gate": {
+        "windows": {
+          "c_terminal_1022": {
+            "retained_minus_highest_impaired": 0.21549993753433228,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          },
+          "n_terminal_1022": {
+            "retained_minus_highest_impaired": 0.21948814392089844,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          },
+          "published_domain_721_1044": {
+            "retained_minus_highest_impaired": 1.0475387573242188,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          }
+        },
+        "pass": true,
+        "repeat_max_abs_difference": 0.0,
+        "numerical_pass": true
+      },
+      "elapsed_seconds": 3.619621125049889,
+      "peak_allocated_gib": 2.3118910789489746,
+      "precision": "float32; TF32 disabled; no autocast",
+      "clinical_classification": false,
+      "drug_ranking_changed": false,
+      "phase_resolved": false
+    },
+    "ESMC-6B-score": {
+      "model": "biohub/ESMC-6B",
+      "rows": [
+        {
+          "window": "n_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.73722243309021
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -4.107845306396484
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -3.3656582832336426
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -1.3283653259277344
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -10.189776420593262
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -4.4085588455200195
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -6.362634658813477
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.5163793563842773
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -4.1384358406066895
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -3.2015414237976074
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": -1.173356056213379
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -10.086372375488281
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -4.120464324951172
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -5.645506381988525
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.6141936779022217
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -3.9058213233947754
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -1.4175238609313965
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": 0.6110355257987976
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -9.271249771118164
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -2.1891703605651855
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -4.718564987182617
+        }
+      ],
+      "gate": {
+        "windows": {
+          "c_terminal_1022": {
+            "retained_minus_highest_impaired": 2.0281853675842285,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          },
+          "n_terminal_1022": {
+            "retained_minus_highest_impaired": 2.037292957305908,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          },
+          "published_domain_721_1044": {
+            "retained_minus_highest_impaired": 2.028559386730194,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          }
+        },
+        "pass": true,
+        "repeat_max_abs_difference": 0.0,
+        "numerical_pass": true
+      },
+      "elapsed_seconds": 14.404609140008688,
+      "peak_allocated_gib": 24.1323561668396,
+      "precision": "float32; TF32 disabled; no autocast",
+      "clinical_classification": false,
+      "drug_ranking_changed": false,
+      "phase_resolved": false
+    },
+    "ESM3-score": {
+      "model": "EvolutionaryScale/esm3-sm-open-v1",
+      "rows": [
+        {
+          "window": "n_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.471920967102051
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -1.0460913181304932
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -0.8622210025787354
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": 0.7860409617424011
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -3.5641274452209473
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -1.1493942737579346
+        },
+        {
+          "window": "n_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -0.2691171169281006
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.308927536010742
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -1.064060926437378
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -0.8322069644927979
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": 0.824237585067749
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -3.530764102935791
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -1.0867942571640015
+        },
+        {
+          "window": "c_terminal_1022",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -0.13247299194335938
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "V793R",
+          "group": "primary_impaired",
+          "score": -3.1188173294067383
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795R",
+          "group": "primary_impaired",
+          "score": -1.3111240863800049
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D911N",
+          "group": "primary_impaired",
+          "score": -1.3895199298858643
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882N",
+          "group": "primary_retained",
+          "score": 0.19094538688659668
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "K795A",
+          "group": "secondary_impaired",
+          "score": -4.251506328582764
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "D882A",
+          "group": "secondary_retained",
+          "score": -1.6484135389328003
+        },
+        {
+          "window": "published_domain_721_1044",
+          "variant": "N1002K",
+          "group": "candidate",
+          "score": -0.07524561882019043
+        }
+      ],
+      "gate": {
+        "windows": {
+          "c_terminal_1022": {
+            "retained_minus_highest_impaired": 1.6564445495605469,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          },
+          "n_terminal_1022": {
+            "retained_minus_highest_impaired": 1.6482619643211365,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          },
+          "published_domain_721_1044": {
+            "retained_minus_highest_impaired": 1.5020694732666016,
+            "pass": true,
+            "correct_pairwise_orderings": 3,
+            "comparisons": 3
+          }
+        },
+        "pass": true,
+        "repeat_max_abs_difference": 0.0,
+        "numerical_pass": true
+      },
+      "elapsed_seconds": 5.271860201959498,
+      "peak_allocated_gib": 10.372118949890137,
+      "precision": "float32; TF32 disabled; no autocast",
+      "clinical_classification": false,
+      "drug_ranking_changed": false,
+      "phase_resolved": false
+    }
+  },
+  "audit": {
+    "models": [
+      {
+        "model": "biohub/ESMC-300M",
+        "gate": {
+          "windows": {
+            "c_terminal_1022": {
+              "retained_minus_highest_impaired": 2.980757713317871,
+              "pass": true,
+              "correct_pairwise_orderings": 3,
+              "comparisons": 3
+            },
+            "n_terminal_1022": {
+              "retained_minus_highest_impaired": 2.7930611968040466,
+              "pass": true,
+              "correct_pairwise_orderings": 3,
+              "comparisons": 3
+            },
+            "published_domain_721_1044": {
+              "retained_minus_highest_impaired": 2.242274284362793,
+              "pass": true,
+              "correct_pairwise_orderings": 3,
+              "comparisons": 3
+            }
+          },
+          "pass": true,
+          "repeat_max_abs_difference": 0.0,
+          "numerical_pass": true
+        },
+        "candidate": [
+          {
+            "window": "n_terminal_1022",
+            "variant": "N1002K",
+            "group": "candidate",
+            "score": -0.1907491683959961
+          },
+          {
+            "window": "c_terminal_1022",
+            "variant": "N1002K",
+            "group": "candidate",
+            "score": -0.26294994354248047
+          },
+          {
+            "window": "published_domain_721_1044",
+            "variant": "N1002K",
+            "group": "candidate",
+            "score": -0.09096145629882812
+          }
+        ]
+      },
+      {
+        "model": "biohub/ESMC-600M",
+        "gate": {
+          "windows": {
+            "c_terminal_1022": {
+              "retained_minus_highest_impaired": 0.21549993753433228,
+              "pass": true,
+              "correct_pairwise_orderings": 3,
+              "comparisons": 3
+            },
+            "n_terminal_1022": {
+              "retained_minus_highest_impaired": 0.21948814392089844,
+              "pass": true,
+              "correct_pairwise_orderings": 3,
+              "comparisons": 3
+            },
+            "published_domain_721_1044": {
+              "retained_minus_highest_impaired": 1.0475387573242188,
+              "pass": true,
+              "correct_pairwise_orderings": 3,
+              "comparisons": 3
+            }
+          },
+          "pass": true,
+          "repeat_max_abs_difference": 0.0,
+          "numerical_pass": true
+        },
+        "candidate": [
+          {
+            "window": "n_terminal_1022",
+            "variant": "N1002K",
+            "group": "candidate",
+            "score": -2.309414863586426
+          },
+          {
+            "window": "c_terminal_1022",
+            "variant": "N1002K",
+            "group": "candidate",
+            "score": -2.664999008178711
+          },
+          {
+            "window": "published_domain_721_1044",
+            "variant": "N1002K",
+            "group": "candidate",
+            "score": -1.8599051237106323
+          }
+        ]
+      },
+      {
+        "model": "biohub/ESMC-6B",
+        "gate": {
+          "windows": {
+            "c_terminal_1022": {
+              "retained_minus_highest_impaired": 2.0281853675842285,
+              "pass": true,
+              "correct_pairwise_orderings": 3,
+              "comparisons": 3
+            },
+            "n_terminal_1022": {
+              "retained_minus_highest_impaired": 2.037292957305908,
+              "pass": true,
+              "correct_pairwise_orderings": 3,
+              "comparisons": 3
+            },
+            "published_domain_721_1044": {
+              "retained_minus_highest_impaired": 2.028559386730194,
+              "pass": true,
+              "correct_pairwise_orderings": 3,
+              "comparisons": 3
+            }
+          },
+          "pass": true,
+          "repeat_max_abs_difference": 0.0,
+          "numerical_pass": true
+        },
+        "candidate": [
+          {
+            "window": "n_terminal_1022",
+            "variant": "N1002K",
+            "group": "candidate",
+            "score": -6.362634658813477
+          },
+          {
+            "window": "c_terminal_1022",
+            "variant": "N1002K",
+            "group": "candidate",
+            "score": -5.645506381988525
+          },
+          {
+            "window": "published_domain_721_1044",
+            "variant": "N1002K",
+            "group": "candidate",
+            "score": -4.718564987182617
+          }
+        ]
+      },
+      {
+        "model": "EvolutionaryScale/esm3-sm-open-v1",
+        "gate": {
+          "windows": {
+            "c_terminal_1022": {
+              "retained_minus_highest_impaired": 1.6564445495605469,
+              "pass": true,
+              "correct_pairwise_orderings": 3,
+              "comparisons": 3
+            },
+            "n_terminal_1022": {
+              "retained_minus_highest_impaired": 1.6482619643211365,
+              "pass": true,
+              "correct_pairwise_orderings": 3,
+              "comparisons": 3
+            },
+            "published_domain_721_1044": {
+              "retained_minus_highest_impaired": 1.5020694732666016,
+              "pass": true,
+              "correct_pairwise_orderings": 3,
+              "comparisons": 3
+            }
+          },
+          "pass": true,
+          "repeat_max_abs_difference": 0.0,
+          "numerical_pass": true
+        },
+        "candidate": [
+          {
+            "window": "n_terminal_1022",
+            "variant": "N1002K",
+            "group": "candidate",
+            "score": -0.2691171169281006
+          },
+          {
+            "window": "c_terminal_1022",
+            "variant": "N1002K",
+            "group": "candidate",
+            "score": -0.13247299194335938
+          },
+          {
+            "window": "published_domain_721_1044",
+            "variant": "N1002K",
+            "group": "candidate",
+            "score": -0.07524561882019043
+          }
+        ]
+      }
+    ],
+    "bound_results": [
+      {
+        "file": "results/feat009/latest-model-archive-v1/outputs/ESMC-300M-score/summary.json",
+        "sha256": "b9174c917c51d20047eb7831991378c96817dae43e3c7b65d3bfc5268a326327"
+      },
+      {
+        "file": "results/feat009/latest-model-archive-v1/outputs/ESMC-600M-score/summary.json",
+        "sha256": "79d901241046fd4a2fa4523ad4cfc4f93ba03bef99d7d7b460114999c0200db8"
+      },
+      {
+        "file": "results/feat009/latest-model-archive-v1/outputs/ESMC-6B-score/summary.json",
+        "sha256": "267e901fc03e850bb596d371f95173cd0c4cfc0a65fb8da01b35ed4cc277e3be"
+      },
+      {
+        "file": "results/feat009/latest-model-archive-v1/outputs/ESM3-score/summary.json",
+        "sha256": "70cccbababcc848c1961978d5c3fd03d6bdf3b09cb05b9246bcbf20d4ef64c23"
+      }
+    ]
+  }
+}

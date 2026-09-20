@@ -1,0 +1,14 @@
+[project]
+name = "track2-latest-esm-comparison"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["esm==3.4.1.post1", "torch==2.11.0", "numpy", "huggingface-hub"]
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu126" }
+esm = { path = "../../source/esm" }

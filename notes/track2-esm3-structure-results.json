@@ -1,0 +1,900 @@
+{
+  "model": "ESM3-fold",
+  "structures": 24,
+  "records": [
+    {
+      "variant": "D882A",
+      "seed": 11,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 84.41141975308642,
+      "file": "outputs/ESM3-fold/D882A-seed11.pdb",
+      "sha256": "80c2c3d25a80ea63ec15055239fb3a615942719d8d0bcfb653295db3a22bb62a"
+    },
+    {
+      "variant": "D882A",
+      "seed": 12,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 87.39675925925926,
+      "file": "outputs/ESM3-fold/D882A-seed12.pdb",
+      "sha256": "9420eb8a1de0c1aceeb0f54530c157c8aa29213c9b736b2c6c48dbabdd5fd20b"
+    },
+    {
+      "variant": "D882A",
+      "seed": 13,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 90.20283950617284,
+      "file": "outputs/ESM3-fold/D882A-seed13.pdb",
+      "sha256": "97409493cf1c02b37bdffc79a4fff93216434f6bba76ca7d209d91d7aa9269d2"
+    },
+    {
+      "variant": "D882N",
+      "seed": 11,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 84.85907407407409,
+      "file": "outputs/ESM3-fold/D882N-seed11.pdb",
+      "sha256": "1ebe516c948598c3d3d5273332eef6af65a807d91dccc31af528a83fb0919a00"
+    },
+    {
+      "variant": "D882N",
+      "seed": 12,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 86.54228395061727,
+      "file": "outputs/ESM3-fold/D882N-seed12.pdb",
+      "sha256": "94555ad3664b2b50e073091f8eaa673bef1143f5fc5ae79478c17e0680daa061"
+    },
+    {
+      "variant": "D882N",
+      "seed": 13,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 85.26904320987654,
+      "file": "outputs/ESM3-fold/D882N-seed13.pdb",
+      "sha256": "27643092172481b6be5862f42352dffdaa6e73b48d6ef8aa099d0809625d98ef"
+    },
+    {
+      "variant": "D911N",
+      "seed": 11,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 85.28111111111112,
+      "file": "outputs/ESM3-fold/D911N-seed11.pdb",
+      "sha256": "d9ad740ce40bff83e8cfdac0f7c3795ee1848eb327c142365bfc434967c47169"
+    },
+    {
+      "variant": "D911N",
+      "seed": 12,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 83.59682098765433,
+      "file": "outputs/ESM3-fold/D911N-seed12.pdb",
+      "sha256": "8a45e419faff6d6d8182083391a6a16c8d040d9dfec1560ed8bc862885d3876f"
+    },
+    {
+      "variant": "D911N",
+      "seed": 13,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 86.5504012345679,
+      "file": "outputs/ESM3-fold/D911N-seed13.pdb",
+      "sha256": "7f939ad7ed8802312fb6506660c2e59217871dfd0e4496e69c80679c2277c70b"
+    },
+    {
+      "variant": "K795A",
+      "seed": 11,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 84.96521604938272,
+      "file": "outputs/ESM3-fold/K795A-seed11.pdb",
+      "sha256": "402ad860d3b1c54cb90c07b4e1957c9900173975212837d3a1fe32cf67e50e87"
+    },
+    {
+      "variant": "K795A",
+      "seed": 12,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 87.39271604938273,
+      "file": "outputs/ESM3-fold/K795A-seed12.pdb",
+      "sha256": "0051b0c4f8f0f90c77dac330d24626f8f71f9227f749fd1d883fb87b31fb6b3c"
+    },
+    {
+      "variant": "K795A",
+      "seed": 13,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 86.00324074074072,
+      "file": "outputs/ESM3-fold/K795A-seed13.pdb",
+      "sha256": "33ebf9e0019fe104960f525bca566ea17ad78f90c677ccec5bb81423ad93e4c3"
+    },
+    {
+      "variant": "K795R",
+      "seed": 11,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 90.02824074074073,
+      "file": "outputs/ESM3-fold/K795R-seed11.pdb",
+      "sha256": "c0cbbbc6e379bbc75e8ba60bfea1ef764e7069e5df0dda6b6faabacac09a73e8"
+    },
+    {
+      "variant": "K795R",
+      "seed": 12,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 85.06361111111111,
+      "file": "outputs/ESM3-fold/K795R-seed12.pdb",
+      "sha256": "37e1ccfa23caf7e1550176375c3f0e46615601fc5dd692c818ac1ebcb7041716"
+    },
+    {
+      "variant": "K795R",
+      "seed": 13,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 85.08407407407407,
+      "file": "outputs/ESM3-fold/K795R-seed13.pdb",
+      "sha256": "d3b784b1ce4d5263ada0f31341c9623086b1e798c7c877decc45deeb32a8b24d"
+    },
+    {
+      "variant": "N1002K",
+      "seed": 11,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 84.94632716049382,
+      "file": "outputs/ESM3-fold/N1002K-seed11.pdb",
+      "sha256": "cf5d23257f923a6d32ee2389861edb0340de49eeeb9a1af115561012112eb2ca"
+    },
+    {
+      "variant": "N1002K",
+      "seed": 12,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 84.99740740740741,
+      "file": "outputs/ESM3-fold/N1002K-seed12.pdb",
+      "sha256": "0fd662b34a5a3fb512fb77a1cee5d9a6a82b3ef15610e2bee8acafb65977e6be"
+    },
+    {
+      "variant": "N1002K",
+      "seed": 13,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 84.5358024691358,
+      "file": "outputs/ESM3-fold/N1002K-seed13.pdb",
+      "sha256": "10949983cf42932752ae12b69fd1c517eada6e6f9b69c71f390aea7d78593ce1"
+    },
+    {
+      "variant": "V793R",
+      "seed": 11,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 85.79317901234568,
+      "file": "outputs/ESM3-fold/V793R-seed11.pdb",
+      "sha256": "2dd6b30396f3ca4ed828b25c370dfc8b86a46ac9968c3d3ce41e682a2a2c661e"
+    },
+    {
+      "variant": "V793R",
+      "seed": 12,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 86.32203703703703,
+      "file": "outputs/ESM3-fold/V793R-seed12.pdb",
+      "sha256": "9410ad7f80648e730b6bfde65102645a919bca70a3931630c347f735a8de1bdc"
+    },
+    {
+      "variant": "V793R",
+      "seed": 13,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 87.42138888888888,
+      "file": "outputs/ESM3-fold/V793R-seed13.pdb",
+      "sha256": "86cd2bbb17ec1b24ab4e14a53a354a851ef2c03373d3c6cfcaeb984e7f4b7e9b"
+    },
+    {
+      "variant": "WT",
+      "seed": 11,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 85.35231481481482,
+      "file": "outputs/ESM3-fold/WT-seed11.pdb",
+      "sha256": "ce0b464ac74f188bd58f6248c2899b488a84eeae57bbc75a1f5a49ea5e2fc260"
+    },
+    {
+      "variant": "WT",
+      "seed": 12,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 85.53287037037038,
+      "file": "outputs/ESM3-fold/WT-seed12.pdb",
+      "sha256": "efa4abbd7f42b769395571467bf76c9ce6699c839983b450e30826aadedb6635"
+    },
+    {
+      "variant": "WT",
+      "seed": 13,
+      "sample": 0,
+      "CA_count": 324,
+      "mean_CA_bfactor": 87.79762345679012,
+      "file": "outputs/ESM3-fold/WT-seed13.pdb",
+      "sha256": "e7d42ba4d298c65d9b20dc41a924906fd825cff5d938e158252fd02587daf85d"
+    }
+  ],
+  "comparisons": [
+    {
+      "variant": "WT",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 7.098193779274283
+    },
+    {
+      "variant": "WT",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 9.097628849999733
+    },
+    {
+      "variant": "WT",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.767191531503773
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 2.625516457952967,
+      "local_CA_rmsd_after_global_fit_angstrom": 0.864386639458094
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 7.358620546229286,
+      "local_CA_rmsd_after_global_fit_angstrom": 3.2760160046855753
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 9.06759143312982,
+      "local_CA_rmsd_after_global_fit_angstrom": 3.085737526044808
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 7.605758790871132,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.3581108740500043
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 4.462874925316236,
+      "local_CA_rmsd_after_global_fit_angstrom": 1.1816442522560873
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.281922840152843,
+      "local_CA_rmsd_after_global_fit_angstrom": 3.593063895276235
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.365634079063554,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.274704768376176
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 7.6400957419656885,
+      "local_CA_rmsd_after_global_fit_angstrom": 4.284504661659655
+    },
+    {
+      "variant": "V793R",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 2.0833185133530794,
+      "local_CA_rmsd_after_global_fit_angstrom": 1.6280725730364298
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 2.159393886421267,
+      "local_CA_rmsd_after_global_fit_angstrom": 1.0036504341080228
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 7.45577816725735,
+      "local_CA_rmsd_after_global_fit_angstrom": 3.692886588193119
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.49334336163982,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.070725487460362
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 7.656960133417998,
+      "local_CA_rmsd_after_global_fit_angstrom": 3.1201996158516465
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 4.3792804834859655,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.002146946496037
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.130269045134446,
+      "local_CA_rmsd_after_global_fit_angstrom": 3.1466382648913993
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.514275753087999,
+      "local_CA_rmsd_after_global_fit_angstrom": 1.8719443030364886
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 7.696884710341364,
+      "local_CA_rmsd_after_global_fit_angstrom": 4.088748578369977
+    },
+    {
+      "variant": "K795R",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 1.750315755820507,
+      "local_CA_rmsd_after_global_fit_angstrom": 0.8121501430844162
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 1.3315218433569576,
+      "local_CA_rmsd_after_global_fit_angstrom": 1.5131915653458499
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 5.576259679053119,
+      "local_CA_rmsd_after_global_fit_angstrom": 3.097169753792431
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 9.179372785184674,
+      "local_CA_rmsd_after_global_fit_angstrom": 4.044126239349164
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 7.16249589576213,
+      "local_CA_rmsd_after_global_fit_angstrom": 3.0581727708592217
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 5.63247958973488,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.6811836242305866
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.487021896119577,
+      "local_CA_rmsd_after_global_fit_angstrom": 5.716322081398167
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.692677654622747,
+      "local_CA_rmsd_after_global_fit_angstrom": 3.183757740292175
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.939919020921312,
+      "local_CA_rmsd_after_global_fit_angstrom": 4.862963007034728
+    },
+    {
+      "variant": "D911N",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 1.8576735089548444,
+      "local_CA_rmsd_after_global_fit_angstrom": 0.6626467379821425
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 3.741790392402866,
+      "local_CA_rmsd_after_global_fit_angstrom": 0.7888362476946947
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 4.231930995789774,
+      "local_CA_rmsd_after_global_fit_angstrom": 1.0352449629557978
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 9.338107958139364,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.726898330939914
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 6.998338598355809,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.6611218130468637
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 6.3150008412166985,
+      "local_CA_rmsd_after_global_fit_angstrom": 1.7673610432028621
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.798335982526254,
+      "local_CA_rmsd_after_global_fit_angstrom": 3.6246480979015936
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.156879456207207,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.5986682653378916
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 9.725523594569266,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.958447806957532
+    },
+    {
+      "variant": "D882N",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 2.182259580679578,
+      "local_CA_rmsd_after_global_fit_angstrom": 0.6388354366707552
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 1.5089132998868457,
+      "local_CA_rmsd_after_global_fit_angstrom": 0.5850822338905681
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 5.493267028176653,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.2299344477872913
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 9.266427181311995,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.821017188771888
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 6.929064236195089,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.677568317197324
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 3.63837241477512,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.398041775382997
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.81241994969479,
+      "local_CA_rmsd_after_global_fit_angstrom": 3.4719732080477486
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.446567287267813,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.0215229165461603
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.947527883834551,
+      "local_CA_rmsd_after_global_fit_angstrom": 3.583599479105303
+    },
+    {
+      "variant": "K795A",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 1.246177787303483,
+      "local_CA_rmsd_after_global_fit_angstrom": 1.115304127697031
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 2.870966122967207,
+      "local_CA_rmsd_after_global_fit_angstrom": 0.8695727656957053
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 4.072456945217336,
+      "local_CA_rmsd_after_global_fit_angstrom": 1.3326019664399913
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 9.478019915155764,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.497203298072893
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 7.475898266451531,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.275754465158574
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 6.483937154472489,
+      "local_CA_rmsd_after_global_fit_angstrom": 1.3117756153006743
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 9.544569298061898,
+      "local_CA_rmsd_after_global_fit_angstrom": 3.560110263825579
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.718646721009923,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.3569613093846473
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 9.062042213186935,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.903333638357536
+    },
+    {
+      "variant": "D882A",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 1.7190854191896139,
+      "local_CA_rmsd_after_global_fit_angstrom": 0.6603541163414685
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 1.8174063640372031,
+      "local_CA_rmsd_after_global_fit_angstrom": 1.3046939744452304
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 11.559823726635836,
+      "local_CA_rmsd_after_global_fit_angstrom": 19.644129349107676
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 11,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.98543417925559,
+      "local_CA_rmsd_after_global_fit_angstrom": 1.6356122938024993
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 7.515590277548713,
+      "local_CA_rmsd_after_global_fit_angstrom": 2.7504626629986673
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 10.53982565196254,
+      "local_CA_rmsd_after_global_fit_angstrom": 20.382272480592903
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 12,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.704574291753193,
+      "local_CA_rmsd_after_global_fit_angstrom": 3.566531099967311
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 11,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 8.532175698388667,
+      "local_CA_rmsd_after_global_fit_angstrom": 1.0395150385876615
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 12,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 10.468704151329586,
+      "local_CA_rmsd_after_global_fit_angstrom": 18.577750424972262
+    },
+    {
+      "variant": "N1002K",
+      "wt_seed": 13,
+      "wt_sample": 0,
+      "other_seed": 13,
+      "other_sample": 0,
+      "CA_rmsd_angstrom": 1.5349998729237457,
+      "local_CA_rmsd_after_global_fit_angstrom": 1.5963655679188238
+    }
+  ],
+  "ranges": {
+    "WT": {
+      "mean_CA_bfactor_range": [
+        85.35231481481482,
+        87.79762345679012
+      ],
+      "CA_rmsd_range_angstrom": [
+        7.098193779274283,
+        9.097628849999733
+      ]
+    },
+    "V793R": {
+      "mean_CA_bfactor_range": [
+        85.79317901234568,
+        87.42138888888888
+      ],
+      "CA_rmsd_range_angstrom": [
+        2.0833185133530794,
+        9.06759143312982
+      ]
+    },
+    "K795R": {
+      "mean_CA_bfactor_range": [
+        85.06361111111111,
+        90.02824074074073
+      ],
+      "CA_rmsd_range_angstrom": [
+        1.750315755820507,
+        8.514275753087999
+      ]
+    },
+    "D911N": {
+      "mean_CA_bfactor_range": [
+        83.59682098765433,
+        86.5504012345679
+      ],
+      "CA_rmsd_range_angstrom": [
+        1.3315218433569576,
+        9.179372785184674
+      ]
+    },
+    "D882N": {
+      "mean_CA_bfactor_range": [
+        84.85907407407409,
+        86.54228395061727
+      ],
+      "CA_rmsd_range_angstrom": [
+        2.182259580679578,
+        9.725523594569266
+      ]
+    },
+    "K795A": {
+      "mean_CA_bfactor_range": [
+        84.96521604938272,
+        87.39271604938273
+      ],
+      "CA_rmsd_range_angstrom": [
+        1.246177787303483,
+        9.266427181311995
+      ]
+    },
+    "D882A": {
+      "mean_CA_bfactor_range": [
+        84.41141975308642,
+        90.20283950617284
+      ],
+      "CA_rmsd_range_angstrom": [
+        1.7190854191896139,
+        9.544569298061898
+      ]
+    },
+    "N1002K": {
+      "mean_CA_bfactor_range": [
+        84.5358024691358,
+        84.99740740740741
+      ],
+      "CA_rmsd_range_angstrom": [
+        1.5349998729237457,
+        11.559823726635836
+      ]
+    }
+  },
+  "confidence_note": "Raw CA B-factor field; check model export scaling before cross-model comparison.",
+  "interpretation": "All samples retained. Seeds/samples/pairs are correlated computations, not biological replicates; confidence and RMSD do not measure function or rescue.",
+  "output_terms": null
+}

@@ -1,6 +1,35 @@
 # Session handoff
 
-**Last updated:** 2026-09-21 IST, session 52. **Active feature: feat-009 Track 2.**
+**Last updated:** 2026-09-21 IST, session 53. **Active feature: feat-009 Track 2.**
+
+The owner-requested newer-model follow-up is complete under
+`PrakashDGX_H2:~/v/mva-track2-expanded-latest-20260921/`. Read
+`notes/track2-latest-models.md` alongside the preserved v13 snapshot. ESMC
+300M/600M/6B and ESM3-open 1.4B complete 84 scores; all four pass the small fixed
+control challenge and score N1002K negatively. This strengthens computational
+motivation to test the allele but does not resolve prior disagreements or establish
+function. AlphaFold3 (120), ESM3 (24) and ESMFold2 (24 per arm) complete 192 structures;
+confident impaired controls still prevent confidence/global-RMSD functional claims.
+Evo2 20B completes all 100 public-reference comparisons with exact numerical checks
+and BRCA1 AUROC 0.9201389. No drug rescue, clinical classification, phase or exposure
+promotion follows. The v10 drug decisions remain unchanged.
+
+The 686-file archive passes all 685 member checks. Local complete-matrix reanalysis
+matches remote scores and gates; maximum coordinate-analysis difference is
+1.43e-14. Full public result JSONs and `track2-latest-model-provenance.json` retain
+checkpoint/source/runtime identities, controls, samples and failed attempts. Read
+the explicit first-device, CCD-resource, inherited-plan and environment-mutation
+corrections. AlphaFold3 terms and modification notices must travel with derivatives.
+Both new runtime locks and all executed script versions are tracked. The remote
+root is in the deletion inventory; no protected subject input or hosted inference
+was used. All owned GPU jobs finished; all eight devices were idle at the final check.
+
+Fresh init, 543 Track 2 tests, core checks, immutable v13 verification and live
+PUBLIC/purge guard pass. This is an addendum, not an updated deck, recorded video or
+submission. Future synthesis must integrate these findings and model/output terms
+without overwriting frozen v13. See progress.md for exact commands and outputs.
+
+## Session 52 expanded-model baseline (historical)
 
 Expanded owner-authorized H100 modeling under
 `PrakashDGX_H2:~/v/mva-track2-expanded-20260920/`. Raw subject data never left the
@@ -380,10 +409,11 @@ and both candidates, retaining all nine same-position alternate rows. See
 
 ## Blockers and unresolved evidence
 
-- **Expanded model evidence is not a functional or clinical validation.** ESM
-  disagreements and failed controls, structural-control similarity, BRCA1-to-BUB1B
-  transfer and pretraining overlap constrain interpretation. The v13 report records
-  these limits and the revised claim. Biological assays remain necessary; no
+- **Model evidence is not a functional or clinical validation.** Newer ESMC/ESM3
+  control successes strengthen computational motivation but do not erase prior ESM
+  disagreements. Structural-control similarity, BRCA1-to-BUB1B transfer and
+  pretraining overlap constrain interpretation. Read the newer-model addendum
+  alongside the preserved v13 report. Biological assays remain necessary; no
   rescue priority, phase or clinical exposure margin follows. The local NVML
   mismatch remains, while the authorized remote host supports the completed models.
 

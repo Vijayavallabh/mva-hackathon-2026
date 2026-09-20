@@ -70,6 +70,16 @@ ledger, validation and cycle-1 review record the current scientific revision; th
 v12 report and presentation align it with the official website and rubric. The new
 v13 report/presentation integrate session-52 modeling without altering the v10 drug decisions.
 
+Session 53 adds `notes/track2-latest-models.md` and its fixed plan/results: AlphaFold3,
+ESMC 300M/600M/6B, ESM3-open 1.4B, ESMFold2 and Evo2 20B completed on the owner host.
+All four newer protein language models pass the small control gate; negative N1002K
+scores strengthen computational motivation for an assay, not clinical classification.
+Confident structures still occur for impaired controls; ESM3 WT seed variability is
+large. No phase, exposure, rescue-priority or drug-efficacy change follows. Preserve
+v13 and all earlier bound files. Read the supplement with v13; carry forward its
+AlphaFold3 output terms and disclosure in any new presentation/release. All remote
+work is under `~/v/mva-track2-expanded-latest-20260921/`, in the deletion inventory.
+
 ## Data facts — established, do not re-derive
 
 Measured 2026-08-28; full numbers and commands in `notes/data-profile.md`, scoring rules in

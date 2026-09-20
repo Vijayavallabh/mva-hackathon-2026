@@ -113,6 +113,16 @@ classification, phase, drug priority or exposure margin follows.
 The comparison records fixed plans, full results and owner-hosted inference,
 plus the external public-WT-only ColabFold alignment search. Frozen v12 is preserved.
 
+The [newer-model follow-up](notes/track2-latest-models.md), alongside frozen v13,
+completes ESMC 300M/600M/6B, ESM3-open, AlphaFold3, both ESMFold2 arms and Evo2 20B:
+84 protein scores, 192 structures and 100 DNA comparisons. All four new protein
+sequence models pass the small prespecified control challenge and score N1002K
+negatively, strengthening the computational reason to test it. Earlier model
+disagreement remains relevant. Confident structures still occur for impaired
+controls; the models establish neither allele function nor drug rescue. The full
+matrices, pinned versions, failed attempts and AlphaFold3 output terms are retained.
+Drug decisions, phase and clinical exposure margins remain unchanged.
+
 **Standing research objective:** actively and extensively seek evidence that could
 falsify the current approach, then use weaknesses and overlooked risks to revise or
 abandon it when warranted. The [falsification plan](notes/track2-falsification-plan.md)

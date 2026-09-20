@@ -1,0 +1,223 @@
+{
+  "sources": [
+    {
+      "repo": "Biohub/esm",
+      "revision": "43b4548b86762edfa747b07d5f440aad3c33acee",
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/Biohub/esm/43b4548b86762edfa747b07d5f440aad3c33acee/README.md",
+      "bytes": 21113,
+      "sha256": "57ea7f51b5e9ec3a334beab4ebf024f445cf557da0602986e7e5087a4a194a81"
+    },
+    {
+      "repo": "Biohub/esm",
+      "revision": "43b4548b86762edfa747b07d5f440aad3c33acee",
+      "file": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/Biohub/esm/43b4548b86762edfa747b07d5f440aad3c33acee/LICENSE.md",
+      "bytes": 1095,
+      "sha256": "b63df9ca1dd96b3b21eec226b51b236d0bd152ac20eafc43aad46bf832b48d8a"
+    },
+    {
+      "repo": "Biohub/esm",
+      "revision": "43b4548b86762edfa747b07d5f440aad3c33acee",
+      "file": "pyproject.toml",
+      "url": "https://raw.githubusercontent.com/Biohub/esm/43b4548b86762edfa747b07d5f440aad3c33acee/pyproject.toml",
+      "bytes": 7354,
+      "sha256": "93841ac8dd0a62d39e3437e1e6eebbc41fe62c2956334ce87579361ac7ac0e42"
+    },
+    {
+      "repo": "Biohub/esm",
+      "revision": "43b4548b86762edfa747b07d5f440aad3c33acee",
+      "file": "esm/pretrained.py",
+      "url": "https://raw.githubusercontent.com/Biohub/esm/43b4548b86762edfa747b07d5f440aad3c33acee/esm/pretrained.py",
+      "bytes": 5860,
+      "sha256": "296712893a3d29f0206bbfda1fbbced038fe119ccef3b69d7da669a1877d6852"
+    },
+    {
+      "repo": "Biohub/esm",
+      "revision": "43b4548b86762edfa747b07d5f440aad3c33acee",
+      "file": "esm/models/esmc.py",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "repo": "Biohub/esm",
+      "revision": "43b4548b86762edfa747b07d5f440aad3c33acee",
+      "file": "esm/models/esm3.py",
+      "url": "https://raw.githubusercontent.com/Biohub/esm/43b4548b86762edfa747b07d5f440aad3c33acee/esm/models/esm3.py",
+      "bytes": 23417,
+      "sha256": "63d92035cc418320c33c2c687ffe099ac25115a5ffbbf88f46661c5c5df16b7a"
+    },
+    {
+      "repo": "Biohub/esm",
+      "revision": "43b4548b86762edfa747b07d5f440aad3c33acee",
+      "file": "esm/models/esmfold2.py",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "repo": "Biohub/esm",
+      "revision": "43b4548b86762edfa747b07d5f440aad3c33acee",
+      "file": "esm/sdk/api.py",
+      "url": "https://raw.githubusercontent.com/Biohub/esm/43b4548b86762edfa747b07d5f440aad3c33acee/esm/sdk/api.py",
+      "bytes": 31964,
+      "sha256": "eee019847f8f3ac6bb97d5b2839fe69707e889663f99b4f97c6ad912d31d1758"
+    },
+    {
+      "repo": "google-deepmind/alphafold3",
+      "revision": "c0f97eda2f1f482fd94d3a38bece18c7069b4a5c",
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/google-deepmind/alphafold3/c0f97eda2f1f482fd94d3a38bece18c7069b4a5c/README.md",
+      "bytes": 12221,
+      "sha256": "cc16ba436ea8a967c764ac034a655d632b4c1ef8b4065868b8d07914c7cb88be"
+    },
+    {
+      "repo": "google-deepmind/alphafold3",
+      "revision": "c0f97eda2f1f482fd94d3a38bece18c7069b4a5c",
+      "file": "WEIGHTS_TERMS_OF_USE.md",
+      "url": "https://raw.githubusercontent.com/google-deepmind/alphafold3/c0f97eda2f1f482fd94d3a38bece18c7069b4a5c/WEIGHTS_TERMS_OF_USE.md",
+      "bytes": 16130,
+      "sha256": "41adf62ff5eabc58831c828793988537948663c139f8b87d8d413851b150b6e5"
+    },
+    {
+      "repo": "google-deepmind/alphafold3",
+      "revision": "c0f97eda2f1f482fd94d3a38bece18c7069b4a5c",
+      "file": "WEIGHTS_PROHIBITED_USE_POLICY.md",
+      "url": "https://raw.githubusercontent.com/google-deepmind/alphafold3/c0f97eda2f1f482fd94d3a38bece18c7069b4a5c/WEIGHTS_PROHIBITED_USE_POLICY.md",
+      "bytes": 7080,
+      "sha256": "4992aebdc29bc7a9260bed6373bad05bb5a7e1b783451cd170163dd259f46c45"
+    },
+    {
+      "repo": "google-deepmind/alphafold3",
+      "revision": "c0f97eda2f1f482fd94d3a38bece18c7069b4a5c",
+      "file": "OUTPUT_TERMS_OF_USE.md",
+      "url": "https://raw.githubusercontent.com/google-deepmind/alphafold3/c0f97eda2f1f482fd94d3a38bece18c7069b4a5c/OUTPUT_TERMS_OF_USE.md",
+      "bytes": 13036,
+      "sha256": "7ab1c4ef16a8fe88db3ccef813a5e28dec63b1e2d336876e5ae60b6d6b4686b8"
+    },
+    {
+      "repo": "google-deepmind/alphafold3",
+      "revision": "c0f97eda2f1f482fd94d3a38bece18c7069b4a5c",
+      "file": "pyproject.toml",
+      "url": "https://raw.githubusercontent.com/google-deepmind/alphafold3/c0f97eda2f1f482fd94d3a38bece18c7069b4a5c/pyproject.toml",
+      "bytes": 1557,
+      "sha256": "68de17658c98df6ddc466fdf381f4125f71d853cae0c5c90440c1d0109fe89d6"
+    },
+    {
+      "repo": "google-deepmind/alphafold3",
+      "revision": "c0f97eda2f1f482fd94d3a38bece18c7069b4a5c",
+      "file": "docs/installation.md",
+      "url": "https://raw.githubusercontent.com/google-deepmind/alphafold3/c0f97eda2f1f482fd94d3a38bece18c7069b4a5c/docs/installation.md",
+      "bytes": 21303,
+      "sha256": "4e91ac50393d9579316ca13cf438d516a17cea2f73c2ef1a0a1066b37c797c34"
+    },
+    {
+      "repo": "google-deepmind/alphafold3",
+      "revision": "c0f97eda2f1f482fd94d3a38bece18c7069b4a5c",
+      "file": "docs/input.md",
+      "url": "https://raw.githubusercontent.com/google-deepmind/alphafold3/c0f97eda2f1f482fd94d3a38bece18c7069b4a5c/docs/input.md",
+      "bytes": 40133,
+      "sha256": "e75407473d8c6975a91bd40605b7c8075008426a15a1a952826996e3387226c1"
+    },
+    {
+      "repo": "google-deepmind/alphafold3",
+      "revision": "c0f97eda2f1f482fd94d3a38bece18c7069b4a5c",
+      "file": "run_alphafold.py",
+      "url": "https://raw.githubusercontent.com/google-deepmind/alphafold3/c0f97eda2f1f482fd94d3a38bece18c7069b4a5c/run_alphafold.py",
+      "bytes": 41276,
+      "sha256": "f8aba1ff09cc34dc986a2a4533c79680d688c710c22da6b3ec727549c8cdb526"
+    },
+    {
+      "repo": "ArcInstitute/evo2",
+      "revision": "53f195997257c56c00e5ef8d33a54f5baad143a6",
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/ArcInstitute/evo2/53f195997257c56c00e5ef8d33a54f5baad143a6/README.md",
+      "bytes": 12895,
+      "sha256": "58787c8ef5cb4fba4c04322a4ceb9f174e2233ec22d4193622fb6bc67d651d89"
+    },
+    {
+      "repo": "ArcInstitute/evo2",
+      "revision": "53f195997257c56c00e5ef8d33a54f5baad143a6",
+      "file": "pyproject.toml",
+      "url": "https://raw.githubusercontent.com/ArcInstitute/evo2/53f195997257c56c00e5ef8d33a54f5baad143a6/pyproject.toml",
+      "bytes": 743,
+      "sha256": "7cc6a516e1da69df2f87f6487f80bdc69a50b581c4a674a3313b4c9c23b5cddf"
+    },
+    {
+      "repo": "ArcInstitute/evo2",
+      "revision": "53f195997257c56c00e5ef8d33a54f5baad143a6",
+      "file": "evo2/models.py",
+      "url": "https://raw.githubusercontent.com/ArcInstitute/evo2/53f195997257c56c00e5ef8d33a54f5baad143a6/evo2/models.py",
+      "bytes": 12471,
+      "sha256": "0b757fcc42b37a52b0c3f508e876a52356331392ae8aa16a923576265043b78c"
+    },
+    {
+      "repo": "ArcInstitute/evo2",
+      "revision": "53f195997257c56c00e5ef8d33a54f5baad143a6",
+      "file": "evo2/test/test_evo2.py",
+      "url": "https://raw.githubusercontent.com/ArcInstitute/evo2/53f195997257c56c00e5ef8d33a54f5baad143a6/evo2/test/test_evo2.py",
+      "bytes": 4777,
+      "sha256": "519ca21be7364e6750ff2ef36309090e8120bc738b928f88fc09eb1761958852"
+    },
+    {
+      "repo": "ArcInstitute/evo2",
+      "revision": "53f195997257c56c00e5ef8d33a54f5baad143a6",
+      "file": "evo2/configs/evo2-20b-1m.yml",
+      "url": "https://raw.githubusercontent.com/ArcInstitute/evo2/53f195997257c56c00e5ef8d33a54f5baad143a6/evo2/configs/evo2-20b-1m.yml",
+      "bytes": 1684,
+      "sha256": "92c32c34581ed6b3f76a66659d3ef90302e0aff9b7890e6b97b806067b07fae4"
+    }
+  ],
+  "huggingface": [
+    {
+      "repository": "biohub/ESMC-6B",
+      "revision": "af1602ba7406f521b11bf8f81d52af378cde09e4",
+      "gated": false,
+      "license": [
+        "mit",
+        "other"
+      ],
+      "source_metadata_local": "results/feat009/latest-model-source-review/biohub_ESMC-6B/metadata.json"
+    },
+    {
+      "repository": "biohub/esm3-sm-open-v1",
+      "revision": "47f0545b2b6daf26a93439a3cd610f4f7f3d5478",
+      "gated": false,
+      "license": null,
+      "source_metadata_local": "results/feat009/latest-model-source-review/EvolutionaryScale_esm3-sm-open-v1/metadata.json"
+    },
+    {
+      "repository": "biohub/ESMFold2",
+      "revision": "69869f737beffec5294845ede23db5fc0b4f509e",
+      "gated": false,
+      "license": [
+        "mit"
+      ],
+      "source_metadata_local": "results/feat009/latest-model-source-review/biohub_ESMFold2/metadata.json"
+    },
+    {
+      "repository": "biohub/ESMC-300M",
+      "revision": "e4bac860f0c502cd80f3aeac3d0ce6524c6627cb",
+      "gated": false,
+      "license": [
+        "mit",
+        "other"
+      ],
+      "source_metadata_local": "results/feat009/latest-model-source-review/biohub_ESMC-300M/metadata.json"
+    },
+    {
+      "repository": "biohub/ESMC-600M",
+      "revision": "fcc9d36f5fff97d9bb69a36e3252de61cc78c968",
+      "gated": false,
+      "license": [
+        "mit",
+        "other"
+      ],
+      "source_metadata_local": "results/feat009/latest-model-source-review/biohub_ESMC-600M/metadata.json"
+    },
+    {
+      "repository": "arcinstitute/evo2_20b",
+      "revision": "8b0f0a9a70c66367ed181a17d049b95699a28fed",
+      "gated": false,
+      "license": "apache-2.0",
+      "source_metadata_local": "results/feat009/latest-model-source-review/arcinstitute_evo2_20b/metadata.json"
+    }
+  ]
+}

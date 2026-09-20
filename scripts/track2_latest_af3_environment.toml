@@ -1,0 +1,8 @@
+[project]
+name = "track2-alphafold3-comparison"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["alphafold3", "huggingface-hub"]
+
+[tool.uv.sources]
+alphafold3 = { path = "../../source/alphafold3" }

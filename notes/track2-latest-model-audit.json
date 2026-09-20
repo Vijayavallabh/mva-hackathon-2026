@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "protein_models": 4,
+  "structures": 192,
+  "dna_rows": 100,
+  "plan_sha256": "241ce0d5a9a3f6405788cb4b4bc9fa44d511a28017cff44605eb55c673d75ed7",
+  "analysis_sha256": "bcea66a8e0d8c54b4cd73c4c33b0cd2b68bba72e34b85a6e45c401911617b7f6",
+  "protected_subject_inputs_used": false,
+  "clinical_validation": false,
+  "local_remote_max_abs_difference": 1.4210854715202004e-14,
+  "comparison_absolute_and_relative_tolerance": 1e-10,
+  "additional_provenance_checks_passed": true,
+  "archive": {
+    "passed": true,
+    "archive_sha256": "084c764b8beb33ae831c5070e702173611c5ba8d8b88e5e61ee75ec9d715baa6",
+    "bytes": 37529461,
+    "files": 686,
+    "verified_manifest_entries": 685
+  }
+}
