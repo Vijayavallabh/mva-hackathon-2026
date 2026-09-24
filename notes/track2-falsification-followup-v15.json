@@ -1,0 +1,71 @@
+{
+  "date": "2026-09-24",
+  "scope": "Adaptive TITLE_ABS searches after noisy full-text matching; API-default first six only. Identifier queries need identity adjudication, not automatic acceptance.",
+  "records": [
+    {
+      "id": "bubr1_title",
+      "format": "json",
+      "query": "TITLE_ABS:(BUB1B OR BUBR1) AND TITLE_ABS:(drug OR rescue OR treatment OR everolimus OR rapamycin)",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3A(BUB1B%20OR%20BUBR1)%20AND%20TITLE_ABS%3A(drug%20OR%20rescue%20OR%20treatment%20OR%20everolimus%20OR%20rapamycin))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "tumour_title",
+      "format": "json",
+      "query": "TITLE_ABS:rhabdomyosarcoma AND TITLE_ABS:(everolimus OR temsirolimus)",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3Arhabdomyosarcoma%20AND%20TITLE_ABS%3A(everolimus%20OR%20temsirolimus))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "alternatives_title",
+      "format": "json",
+      "query": "TITLE_ABS:rhabdomyosarcoma AND TITLE_ABS:(pralatrexate OR entinostat OR vorinostat OR niclosamide OR posaconazole)",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3Arhabdomyosarcoma%20AND%20TITLE_ABS%3A(pralatrexate%20OR%20entinostat%20OR%20vorinostat%20OR%20niclosamide%20OR%20posaconazole))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "muscle_title",
+      "format": "json",
+      "query": "TITLE_ABS:(rapamycin OR everolimus) AND TITLE_ABS:muscle AND TITLE_ABS:(regeneration OR atrophy)",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3A(rapamycin%20OR%20everolimus)%20AND%20TITLE_ABS%3Amuscle%20AND%20TITLE_ABS%3A(regeneration%20OR%20atrophy))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "safety_title",
+      "format": "json",
+      "query": "TITLE_ABS:everolimus AND TITLE_ABS:pediatric AND TITLE_ABS:(growth OR renal OR infection)",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3Aeverolimus%20AND%20TITLE_ABS%3Apediatric%20AND%20TITLE_ABS%3A(growth%20OR%20renal%20OR%20infection))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "control_supplement",
+      "format": "json",
+      "query": "EXT_ID:22698286 AND SRC:MED",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(EXT_ID%3A22698286%20AND%20SRC%3AMED)%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "arst_identity",
+      "format": "json",
+      "query": "EXT_ID:38838360 AND SRC:MED",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(EXT_ID%3A38838360%20AND%20SRC%3AMED)%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "new_bubr1",
+      "format": "json",
+      "query": "EXT_ID:42434306 AND SRC:MED",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(EXT_ID%3A42434306%20AND%20SRC%3AMED)%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "tpr",
+      "format": "json",
+      "query": "EXT_ID:42477419 AND SRC:MED",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(EXT_ID%3A42477419%20AND%20SRC%3AMED)%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "tpr_fulltext",
+      "format": "xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13385977/fullTextXML"
+    },
+    {
+      "id": "new_bubr1_fulltext",
+      "format": "xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13349884/fullTextXML"
+    }
+  ],
+  "fixed_public_downloads": {}
+}

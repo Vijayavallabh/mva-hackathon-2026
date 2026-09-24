@@ -1,0 +1,280 @@
+{
+  "schema_version": 15,
+  "input_hashes": {
+    "notes/track2-latest-protein-results.json": "0c3259047cc11efe6811d30e53f9cdfa794ecef10b4d18aeb7b2fd28225a3c74",
+    "notes/track2-falsification-register-v15.json": "c7ac1761525f4f56db8978f22d9dc4ecc6cd8e9ce0a2d69b9eeacf62bd1b52fb",
+    "scripts/track2_falsification_v15.py": "56c52a986e2a32cf963180609f6799e137a34f1e62551221f29f6978df0e0fbf"
+  },
+  "sequence": {
+    "analysis": "Post-hoc sensitivity; does not replace the prespecified primary gate",
+    "model_window_comparisons": 12,
+    "primary_pass": 12,
+    "all_control_pass": 4,
+    "all_control_fail": 8,
+    "negative_retained_scores": 11,
+    "retained_scores": 24,
+    "positive_impaired_scores": 2,
+    "impaired_scores": 48,
+    "candidate_negative_scores": 12,
+    "rows": [
+      {
+        "model": "ESM3-score",
+        "window": "n_terminal_1022",
+        "scores": {
+          "V793R": -3.471920967102051,
+          "K795R": -1.0460913181304932,
+          "D911N": -0.8622210025787354,
+          "D882N": 0.7860409617424011,
+          "K795A": -3.5641274452209473,
+          "D882A": -1.1493942737579346,
+          "N1002K": -0.2691171169281006
+        },
+        "primary_ordering": true,
+        "all_control_separation": false,
+        "smallest_retained_minus_largest_impaired": -0.2871732711791992
+      },
+      {
+        "model": "ESM3-score",
+        "window": "c_terminal_1022",
+        "scores": {
+          "V793R": -3.308927536010742,
+          "K795R": -1.064060926437378,
+          "D911N": -0.8322069644927979,
+          "D882N": 0.824237585067749,
+          "K795A": -3.530764102935791,
+          "D882A": -1.0867942571640015,
+          "N1002K": -0.13247299194335938
+        },
+        "primary_ordering": true,
+        "all_control_separation": false,
+        "smallest_retained_minus_largest_impaired": -0.2545872926712036
+      },
+      {
+        "model": "ESM3-score",
+        "window": "published_domain_721_1044",
+        "scores": {
+          "V793R": -3.1188173294067383,
+          "K795R": -1.3111240863800049,
+          "D911N": -1.3895199298858643,
+          "D882N": 0.19094538688659668,
+          "K795A": -4.251506328582764,
+          "D882A": -1.6484135389328003,
+          "N1002K": -0.07524561882019043
+        },
+        "primary_ordering": true,
+        "all_control_separation": false,
+        "smallest_retained_minus_largest_impaired": -0.3372894525527954
+      },
+      {
+        "model": "ESMC-300M-score",
+        "window": "n_terminal_1022",
+        "scores": {
+          "V793R": -3.6915082931518555,
+          "K795R": -1.3490123748779297,
+          "D911N": -0.5495166182518005,
+          "D882N": 2.243544578552246,
+          "K795A": -4.759950637817383,
+          "D882A": 0.6091585159301758,
+          "N1002K": -0.1907491683959961
+        },
+        "primary_ordering": true,
+        "all_control_separation": true,
+        "smallest_retained_minus_largest_impaired": 1.1586751341819763
+      },
+      {
+        "model": "ESMC-300M-score",
+        "window": "c_terminal_1022",
+        "scores": {
+          "V793R": -3.920856237411499,
+          "K795R": -1.6251182556152344,
+          "D911N": -0.45737457275390625,
+          "D882N": 2.523383140563965,
+          "K795A": -5.1549882888793945,
+          "D882A": 0.6646394729614258,
+          "N1002K": -0.26294994354248047
+        },
+        "primary_ordering": true,
+        "all_control_separation": true,
+        "smallest_retained_minus_largest_impaired": 1.122014045715332
+      },
+      {
+        "model": "ESMC-300M-score",
+        "window": "published_domain_721_1044",
+        "scores": {
+          "V793R": -3.5342063903808594,
+          "K795R": -1.5959901809692383,
+          "D911N": -0.7530765533447266,
+          "D882N": 1.4891977310180664,
+          "K795A": -4.735645294189453,
+          "D882A": -0.14398765563964844,
+          "N1002K": -0.09096145629882812
+        },
+        "primary_ordering": true,
+        "all_control_separation": true,
+        "smallest_retained_minus_largest_impaired": 0.6090888977050781
+      },
+      {
+        "model": "ESMC-600M-score",
+        "window": "n_terminal_1022",
+        "scores": {
+          "V793R": -5.878635406494141,
+          "K795R": -1.473398208618164,
+          "D911N": 0.3564109802246094,
+          "D882N": 0.5758991241455078,
+          "K795A": -6.096674919128418,
+          "D882A": -0.46478283405303955,
+          "N1002K": -2.309414863586426
+        },
+        "primary_ordering": true,
+        "all_control_separation": false,
+        "smallest_retained_minus_largest_impaired": -0.8211938142776489
+      },
+      {
+        "model": "ESMC-600M-score",
+        "window": "c_terminal_1022",
+        "scores": {
+          "V793R": -5.806692123413086,
+          "K795R": -1.4749259948730469,
+          "D911N": 0.25160592794418335,
+          "D882N": 0.4671058654785156,
+          "K795A": -5.782161712646484,
+          "D882A": -0.603063702583313,
+          "N1002K": -2.664999008178711
+        },
+        "primary_ordering": true,
+        "all_control_separation": false,
+        "smallest_retained_minus_largest_impaired": -0.8546696305274963
+      },
+      {
+        "model": "ESMC-600M-score",
+        "window": "published_domain_721_1044",
+        "scores": {
+          "V793R": -4.9659833908081055,
+          "K795R": -1.4545707702636719,
+          "D911N": -0.18648338317871094,
+          "D882N": 0.8610553741455078,
+          "K795A": -5.033502578735352,
+          "D882A": 0.12296295166015625,
+          "N1002K": -1.8599051237106323
+        },
+        "primary_ordering": true,
+        "all_control_separation": true,
+        "smallest_retained_minus_largest_impaired": 0.3094463348388672
+      },
+      {
+        "model": "ESMC-6B-score",
+        "window": "n_terminal_1022",
+        "scores": {
+          "V793R": -3.73722243309021,
+          "K795R": -4.107845306396484,
+          "D911N": -3.3656582832336426,
+          "D882N": -1.3283653259277344,
+          "K795A": -10.189776420593262,
+          "D882A": -4.4085588455200195,
+          "N1002K": -6.362634658813477
+        },
+        "primary_ordering": true,
+        "all_control_separation": false,
+        "smallest_retained_minus_largest_impaired": -1.042900562286377
+      },
+      {
+        "model": "ESMC-6B-score",
+        "window": "c_terminal_1022",
+        "scores": {
+          "V793R": -3.5163793563842773,
+          "K795R": -4.1384358406066895,
+          "D911N": -3.2015414237976074,
+          "D882N": -1.173356056213379,
+          "K795A": -10.086372375488281,
+          "D882A": -4.120464324951172,
+          "N1002K": -5.645506381988525
+        },
+        "primary_ordering": true,
+        "all_control_separation": false,
+        "smallest_retained_minus_largest_impaired": -0.9189229011535645
+      },
+      {
+        "model": "ESMC-6B-score",
+        "window": "published_domain_721_1044",
+        "scores": {
+          "V793R": -3.6141936779022217,
+          "K795R": -3.9058213233947754,
+          "D911N": -1.4175238609313965,
+          "D882N": 0.6110355257987976,
+          "K795A": -9.271249771118164,
+          "D882A": -2.1891703605651855,
+          "N1002K": -4.718564987182617
+        },
+        "primary_ordering": true,
+        "all_control_separation": false,
+        "smallest_retained_minus_largest_impaired": -0.7716464996337891
+      }
+    ],
+    "independent_biological_replications": 0,
+    "limitations": [
+      "One published engineered-control study; endpoint-specific labels.",
+      "D882A secondary label is reported in main text; supplement not independently verified.",
+      "Windows, related substitutions and models are dependent; no pooled p-value or accuracy estimate.",
+      "Negative score is not a pathogenicity or loss-of-function threshold."
+    ]
+  },
+  "synthetic_examples": {
+    "synthetic": true,
+    "biological_data": false,
+    "selection": {
+      "control": {
+        "enrolled": 100,
+        "accurate_viable": 60,
+        "error": 20,
+        "death": 10,
+        "arrest": 5,
+        "lost": 5
+      },
+      "treated": {
+        "enrolled": 100,
+        "accurate_viable": 40,
+        "error": 5,
+        "death": 20,
+        "arrest": 25,
+        "lost": 10
+      },
+      "error_among_completed": [
+        0.25,
+        0.1111111111111111
+      ],
+      "all_enrolled_success": [
+        0.6,
+        0.4
+      ],
+      "difference_bounds": [
+        -0.25,
+        -0.09999999999999998
+      ]
+    },
+    "missingness": {
+      "difference_bounds": [
+        0.0,
+        0.35
+      ],
+      "interpretation": "Bounds include no improvement; neither significance nor power follows."
+    }
+  },
+  "advancement": {
+    "decision": "hold_unresolved",
+    "failed": [],
+    "unresolved": [
+      "division_capacity",
+      "exposure_match",
+      "functional_benefit",
+      "hypothesis_lock",
+      "model_qualification",
+      "normal_tissue_safety",
+      "replication",
+      "source_integrity"
+    ],
+    "clinical_recommendation": false
+  },
+  "new_inference_performed": false,
+  "wet_lab_performed": false,
+  "clinical_exposure_margin": null
+}

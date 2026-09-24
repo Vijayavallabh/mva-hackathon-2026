@@ -57,6 +57,14 @@ stake. Use weaknesses, errors, contradictions and overlooked risks to substantia
 improve the proposal, including changing direction or abandoning a favored approach.
 
 Follow `notes/track2-falsification-plan.md` alongside the preserved original plan.
+Use the current 19-claim `notes/track2-falsification-register-v15.json` and
+`notes/track2-falsification-review-v15.md` across every part of the evidence chain.
+Each consequential claim needs support and challenge, a falsifier, stop/reopening
+criteria and a next discriminating action. Unknown evidence means hold; it is not
+disproof. Failed safety overrides apparent benefit; all-pass permits only further
+preclinical review. Never substitute score signs, fold confidence, survivor fractions
+or software success for relevant biological evidence. The Balnis supplement has
+unresolved ex vivo units: do not silently correct or reuse the disputed concentration.
 Every substantive research cycle must dedicate effort to contrary evidence across
 mechanism, model validity, functional endpoints, failed studies, exposure, safety
 and alternatives. State what would overturn a claim, record reproducible searches
@@ -70,8 +78,8 @@ This is a continuing objective, not a one-time review. Preserve immutable snapsh
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the current artifact record and [session-handoff.md](session-handoff.md) for next
-steps and blockers. V14 is the current report, nine-slide deck, read-aloud transcript
-and video description. The scientific drug ledger and validation plan remain v10.
+steps and blockers. V16 is the current report, nine-slide deck, read-aloud transcript
+and video description. The v15 ledger and validation plan preserve v10 drug dispositions and add stricter falsification gates.
 The complete research history is in `progress.md`; older harness wording is preserved
 at Git revision `bb82cd6`, not treated as current instructions.
 
@@ -81,8 +89,10 @@ at Git revision `bb82cd6`, not treated as current instructions.
   Do not equate whole blood/plasma, peak/trough/AUC or nominal culture with unbound
   tissue exposure. Keep non-cancer function separate from tumour killing.
 - **Model evidence:** newer ESMC 300M/600M/6B and ESM3-open 1.4B pass the small fixed
-  control challenge and score N1002K negatively. This strengthens computational
-  motivation to test it; prior ESM sign disagreement and failed controls remain.
+  control challenge and score N1002K negatively. The primary pass is narrow: adding secondary controls breaks separation in 8/12
+  model/window comparisons; 11/24 retained-control scores are negative. This is
+  post-hoc sensitivity, not a replacement gate or calibrated accuracy. Prior ESM
+  disagreement and failed controls remain.
   AlphaFold3/ESMFold2 confidently fold impaired controls; ESM3 WT seed variability
   is large. Evo2 7B/20B/40B reuse the BRCA1 benchmark, which does not validate BUB1B.
   No allele function, drug response, phase or clinical benefit is established.
@@ -107,10 +117,10 @@ at Git revision `bb82cd6`, not treated as current instructions.
   established. A script/PDF and successful tests do not fill those gaps. The portal
   permits three entries and reviews only the latest; remaining quota is unknown.
   Record the complete acknowledgement inside the three-minute video. Preserve the
-  Track 1 submitted v4 and every Track 2 v1–v13 bound input/package.
+  Track 1 submitted v4 and every Track 2 v1–v15 bound input/package.
 
-Use `scripts/track2_release_v14.py` to check/build/verify **new** v14 snapshot
-directories. Render with `scripts/render_track2_slides_v14.mjs`; include the two
+Use `scripts/track2_release_v16.py` to check/build/verify **new** v16 snapshot
+directories. Render with `scripts/render_track2_slides_v16.mjs`; include the two
 AlphaFold3 terms files that accompany its PDF. The mutable current-artifact record,
 AGENTS, feature state and handoff are not bound into historical release manifests.
 Future science/presentation changes need a new version and coordinated record update.
@@ -133,13 +143,14 @@ uv run python scripts/verify_data.py --self-check
 uv run python scripts/track1_submission.py --self-check
 uv run python scripts/track2_evidence.py check
 uv run python scripts/check_track2_harness.py
-uv run python scripts/track2_release_v14.py check
+uv run python scripts/track2_falsification_v15.py check
+uv run python scripts/track2_release_v16.py check
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
 `track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
-its old conditional-screen label is not today's drug decision. The current v10
-ledger and v14 report take precedence. Historical exact-byte verification remains
+its old conditional-screen label is not today's drug decision. The current v15
+ledger and v16 report take precedence. Historical exact-byte verification remains
 available through the versioned release scripts; never resubmit Track 1 to resolve
 its missing administrative receipt.
 

@@ -1,0 +1,30 @@
+Track 2 v15 — read-aloud transcript
+Read the paragraphs; headings and times are cues, not narration.
+
+Slide 1 | 0:00–0:21 | Candidate and mechanism
+Everolimus is an approved mTORC1 inhibitor. We propose testing downstream tissue function in BUB1B-associated MVA. Endogenous allele effects and phase remain unconfirmed. Everolimus is an optional mechanistic probe; no drug currently earns rescue priority.
+
+Slide 2 | 0:21–0:43 | Control-set sensitivity
+Newer sequence models pass the small fixed control challenge. But adding secondary controls breaks separation in eight of twelve comparisons. Even retained-function controls can score negatively. Earlier models disagree and fail selected controls. Candidate scores cannot establish allele function or drug response.
+
+Slide 3 | 0:43–1:05 | Structure and DNA limits
+AlphaFold3 and ESMFold2 confidently fold impaired controls. ESM3 structures vary substantially across wild-type seeds. Evo2 twenty-billion passes the reused BRCA1 benchmark, which does not validate BUB1B. Endogenous RNA, protein and cell function still need measurement.
+
+Slide 4 | 1:05–1:22 | Conflicting drug evidence
+Drug evidence conflicts too. Everolimus improved selected muscle-mass outcomes without established force improvement. Rapamycin impaired regeneration; everolimus reduced BUBR1 in late-passage stromal cells. Different models establish neither benefit nor harm for our variants.
+
+Slide 5 | 1:22–1:43 | Separate hypotheses
+Branch A requires excess mTOR and functional impairment. Branch B requires impaired flux and regeneration. Neither is established. The supporting hypercapnia supplement reports conflicting ex vivo units, so its concentration is quarantined. No switching hypotheses after failure.
+
+Slide 6 | 1:43–1:58 | The tumour boundary
+In ARST1431, adding temsirolimus did not establish an event-free survival benefit. The hazard ratio was zero point eight six, with uncertainty crossing one. This does not test non-cancer everolimus rescue.
+
+Slide 7 | 1:58–2:22 | The experiment
+Compare deficient and corrected models with phase controls, randomized treatment and blinded scoring. Count useful output from every enrolled culture, track all cell fates and test recovery. Challenge growth-rate, flux-reporter and missing-data artifacts. A better survivor fraction can conceal worse function.
+
+Slide 8 | 2:22–2:47 | Impact and decisions
+Every major claim now has a falsifier and reopening criteria. Unknown evidence means hold; a failed safety gate stops advancement. Function, safety, exposure and replication must pass before further preclinical review. Whole blood is not free tissue exposure. HCQ stays reserve. No rescue priority, clinical margin or wet-lab result is established.
+
+Slide 9 | 2:47–3:00 | Acknowledgement and disclosure
+We disclose the AI providers, owner-hosted models and alignment service, with unresolved service policies and AlphaFold3 output terms. We thank the child, family and organizers.
+

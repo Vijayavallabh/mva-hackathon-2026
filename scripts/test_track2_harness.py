@@ -41,7 +41,8 @@ class CurrentStateTests(unittest.TestCase):
             harness.validate(self.state,self.features,self.documents)
 
     def test_stale_release_instruction_rejected(self):
-        self.documents['AGENTS.md']=self.documents['AGENTS.md'].replace('scripts/track2_release_v14.py','scripts/track2_release_v13.py')
+        version=self.state['presentation_version']
+        self.documents['AGENTS.md']=self.documents['AGENTS.md'].replace(f'scripts/track2_release_v{version}.py','scripts/track2_release_v13.py')
         with self.assertRaises(ValueError):harness.validate(self.state,self.features,self.documents)
 
     def test_model_count_drift_rejected(self):

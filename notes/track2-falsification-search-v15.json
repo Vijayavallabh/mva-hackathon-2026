@@ -1,0 +1,206 @@
+{
+  "date": "2026-09-24",
+  "scope": "Bounded adversarial update; relevance-ordered first six per query, no lower date or language filter. Not a systematic review.",
+  "records": [
+    {
+      "id": "search_disease",
+      "format": "json",
+      "query": "((BUB1B OR BUBR1) AND (drug OR rescue OR treatment)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "reading": "discovery_top_six",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUB1B%20OR%20BUBR1)%20AND%20(drug%20OR%20rescue%20OR%20treatment))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "search_direction",
+      "format": "json",
+      "query": "((BUB1B OR BUBR1) AND (mTOR OR rapamycin OR everolimus)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "reading": "discovery_top_six",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUB1B%20OR%20BUBR1)%20AND%20(mTOR%20OR%20rapamycin%20OR%20everolimus))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "search_adaptive",
+      "format": "json",
+      "query": "((everolimus OR rapamycin) AND muscle AND (regeneration OR harm OR atrophy)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "reading": "discovery_top_six",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((everolimus%20OR%20rapamycin)%20AND%20muscle%20AND%20(regeneration%20OR%20harm%20OR%20atrophy))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "search_tumour",
+      "format": "json",
+      "query": "(rhabdomyosarcoma AND (everolimus OR temsirolimus) AND (trial OR resistance)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "reading": "discovery_top_six",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(rhabdomyosarcoma%20AND%20(everolimus%20OR%20temsirolimus)%20AND%20(trial%20OR%20resistance))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "search_hcq",
+      "format": "json",
+      "query": "(hydroxychloroquine AND (myopathy OR rhabdomyosarcoma OR randomized)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "reading": "discovery_top_six",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(hydroxychloroquine%20AND%20(myopathy%20OR%20rhabdomyosarcoma%20OR%20randomized))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "search_readthrough",
+      "format": "json",
+      "query": "(BUB1B AND (readthrough OR ataluren OR gentamicin)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "reading": "discovery_top_six",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(BUB1B%20AND%20(readthrough%20OR%20ataluren%20OR%20gentamicin))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "search_proteostasis",
+      "format": "json",
+      "query": "((BUB1B OR BUBR1) AND (SIRT2 OR senolytic OR phenylbutyrate OR HSP90)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "reading": "discovery_top_six",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUB1B%20OR%20BUBR1)%20AND%20(SIRT2%20OR%20senolytic%20OR%20phenylbutyrate%20OR%20HSP90))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "search_pp2a",
+      "format": "json",
+      "query": "((BUBR1 OR BUB1B) AND (PP2A OR pseudokinase)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "reading": "discovery_top_six",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUBR1%20OR%20BUB1B)%20AND%20(PP2A%20OR%20pseudokinase))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "search_alternatives",
+      "format": "json",
+      "query": "(rhabdomyosarcoma AND (pralatrexate OR entinostat OR vorinostat OR niclosamide OR posaconazole)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "reading": "discovery_top_six",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(rhabdomyosarcoma%20AND%20(pralatrexate%20OR%20entinostat%20OR%20vorinostat%20OR%20niclosamide%20OR%20posaconazole))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "search_safety",
+      "format": "json",
+      "query": "(everolimus AND pediatric AND (growth OR renal OR infection OR development)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "reading": "discovery_top_six",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(everolimus%20AND%20pediatric%20AND%20(growth%20OR%20renal%20OR%20infection%20OR%20development))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "search_assay",
+      "format": "json",
+      "query": "((drug sensitivity) AND (growth rate OR ATP) AND confounders) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "reading": "discovery_top_six",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((drug%20sensitivity)%20AND%20(growth%20rate%20OR%20ATP)%20AND%20confounders)%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "search_corrections",
+      "format": "json",
+      "query": "((BUBR1 OR everolimus OR rapamycin) AND (retraction OR corrigendum OR erratum)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "reading": "discovery_top_six",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUBR1%20OR%20everolimus%20OR%20rapamycin)%20AND%20(retraction%20OR%20corrigendum%20OR%20erratum))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "search_sign",
+      "format": "json",
+      "query": "((protein language model) AND (clinical calibration OR benchmark leakage OR variant effect)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "reading": "discovery_top_six",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((protein%20language%20model)%20AND%20(clinical%20calibration%20OR%20benchmark%20leakage%20OR%20variant%20effect))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "search_flux",
+      "format": "json",
+      "query": "((autophagy flux) AND (lysosomal pH OR tandem reporter)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "reading": "discovery_top_six",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((autophagy%20flux)%20AND%20(lysosomal%20pH%20OR%20tandem%20reporter))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6"
+    },
+    {
+      "id": "control_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1016%2Fj.devcel.2012.03.009&format=json&resultType=core&pageSize=1"
+    },
+    {
+      "id": "domain_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1016%2Fj.celrep.2020.108397&format=json&resultType=core&pageSize=1"
+    },
+    {
+      "id": "goutas_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1016%2Fj.redox.2023.102701&format=json&resultType=core&pageSize=1"
+    },
+    {
+      "id": "balnis_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1172%2Fjci.insight.182842&format=json&resultType=core&pageSize=1"
+    },
+    {
+      "id": "hafner_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fnmeth.3853&format=json&resultType=core&pageSize=1"
+    },
+    {
+      "id": "oreilly_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1158%2F0008-5472.CAN-05-2925&format=json&resultType=core&pageSize=1"
+    },
+    {
+      "id": "arst1431_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1016%2FS1470-2045(24)00255-9&format=json&resultType=core&pageSize=1"
+    },
+    {
+      "id": "joseph_metadata",
+      "format": "json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1128%2FMCB.00141-19&format=json&resultType=core&pageSize=1"
+    },
+    {
+      "id": "hafner_fulltext",
+      "format": "xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4887336/fullTextXML"
+    },
+    {
+      "id": "oreilly_fulltext",
+      "format": "xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3193604/fullTextXML"
+    },
+    {
+      "id": "balnis_fulltext",
+      "format": "xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11721297/fullTextXML"
+    },
+    {
+      "id": "flux_fulltext",
+      "format": "xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3121655/fullTextXML"
+    },
+    {
+      "id": "nct02579044",
+      "format": "json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT02579044"
+    },
+    {
+      "id": "nct02567435",
+      "format": "json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT02567435"
+    },
+    {
+      "id": "nct01216839",
+      "format": "json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT01216839"
+    },
+    {
+      "id": "nct02338609",
+      "format": "json",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT02338609"
+    }
+  ],
+  "firecrawl_queries": [
+    {
+      "id": "disease",
+      "query": "(BUB1B OR BUBR1) AND (drug OR rescue OR treatment)"
+    },
+    {
+      "id": "direction",
+      "query": "(BUB1B OR BUBR1) AND (mTOR OR rapamycin OR everolimus)"
+    },
+    {
+      "id": "tumour",
+      "query": "rhabdomyosarcoma AND (everolimus OR temsirolimus) AND (trial OR resistance)"
+    },
+    {
+      "id": "alternatives",
+      "query": "rhabdomyosarcoma AND (pralatrexate OR entinostat OR vorinostat OR niclosamide OR posaconazole)"
+    }
+  ],
+  "fixed_public_downloads": {
+    "balnis_supplement": "https://insight.jci.org/articles/view/182842/sd/pdf/render/1",
+    "everolimus_label": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f1ae129-c21e-4c25-84c1-a6757d9a7eb2"
+  }
+}

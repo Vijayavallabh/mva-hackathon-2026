@@ -1,0 +1,398 @@
+{
+  "schema_version": 15,
+  "date": "2026-09-24",
+  "clinical_recommendation": false,
+  "baseline": "v14 presentation; v10 drug science",
+  "claims": [
+    {
+      "id": "G01",
+      "layer": "genetics",
+      "claim": "The selected pair explains a relevant biallelic BUB1B deficit.",
+      "support": "Gene-level MVA evidence and the permitted ranked pair motivate testing.",
+      "challenge": "Phase is unresolved; competition performance is not molecular validation; other causes remain possible.",
+      "falsifier": "Supported cis phase or a discordant, adequately measured endogenous functional phenotype.",
+      "stop_rule": "Do not attribute a trans-specific result to the subject while phase remains unknown.",
+      "reopen_rule": "Independent phase and allele-function evidence with an appropriate model.",
+      "next_action": "Qualify single, cis, trans and corrected models; do not rerun disconnected short-read phasing.",
+      "state": "unresolved",
+      "depends_on": [],
+      "evidence_refs": [
+        "notes/phase-connectivity.md",
+        "notes/track1-evidence-audit.md"
+      ]
+    },
+    {
+      "id": "G02",
+      "layer": "genetics",
+      "claim": "The stop allele is a null and the missense allele impairs endogenous function.",
+      "support": "Consequence and sequence evidence support a loss-of-function hypothesis.",
+      "challenge": "Transcript decay, residual protein and scaffold/checkpoint effects are unmeasured; cDNA overexpression bypasses endogenous RNA regulation.",
+      "falsifier": "Reproducible retained endogenous function, or a different mechanism, with valid positive controls.",
+      "stop_rule": "Suspend the specific null/folding mechanism if endogenous evidence disagrees; do not deny all disease mechanisms.",
+      "reopen_rule": "RNA, abundance, localization and checkpoint/attachment evidence resolve the mechanism.",
+      "next_action": "Measure endogenous RNA/protein and distinct checkpoint entry, maintenance and silencing; use correction and expression-matched controls.",
+      "state": "unresolved",
+      "depends_on": [
+        "G01"
+      ],
+      "evidence_refs": [
+        "https://doi.org/10.1016/j.devcel.2012.03.009",
+        "https://doi.org/10.1016/j.celrep.2020.108397"
+      ]
+    },
+    {
+      "id": "M01",
+      "layer": "models",
+      "claim": "A negative protein language-model score establishes impaired function.",
+      "support": "All 12 newer model/window candidate scores are negative.",
+      "challenge": "Retained controls have negative scores in 11/24 comparisons; impaired controls have positive scores in 2/48.",
+      "falsifier": "Already observed counterexamples invalidate a universal sign cutoff.",
+      "stop_rule": "Reject sign-based pathogenicity or rescue selection.",
+      "reopen_rule": "An independently validated, context-specific calibration could support a bounded predictive claim.",
+      "next_action": "Report the entire control matrix and prospective calibration limits.",
+      "state": "inference_rejected",
+      "depends_on": [],
+      "evidence_refs": [
+        "notes/track2-latest-protein-results.json",
+        "scripts/track2_falsification_v15.py"
+      ]
+    },
+    {
+      "id": "M02",
+      "layer": "models",
+      "claim": "Confident, similar mutant structures establish normal function or a repairable folding defect.",
+      "support": "Several models consistently predict a confident fold.",
+      "challenge": "Impaired controls also fold confidently; domain-only structures omit full-length interactions, abundance and cell state.",
+      "falsifier": "Confident predictions for experimentally impaired controls already defeat the shortcut.",
+      "stop_rule": "Do not qualify a folding-rescue drug or binder from confidence/RMSD alone.",
+      "reopen_rule": "A measured repairable defect and validated intervention-specific functional assay.",
+      "next_action": "Prioritize endogenous biology over further correlated structure runs.",
+      "state": "inference_rejected",
+      "depends_on": [],
+      "evidence_refs": [
+        "notes/track2-latest-models.md",
+        "notes/track2-model-expansion.md"
+      ]
+    },
+    {
+      "id": "M03",
+      "layer": "models",
+      "claim": "Atlas and Evo benchmarks supply independent BUB1B functional validation.",
+      "support": "Public benchmark and numerical checks succeeded.",
+      "challenge": "Reused evolutionary/annotation information and BRCA1 controls are not BUB1B transfer validation; window means change scale.",
+      "falsifier": "Failure on independent, biologically relevant BUB1B controls would defeat the transfer claim.",
+      "stop_rule": "No clinical classification, NMD, splicing, phase or drug inference from benchmark success.",
+      "reopen_rule": "Independent domain-relevant functional calibration with pretraining overlap assessed.",
+      "next_action": "Keep an evidence-dependence map; do not count checkpoints, seeds or reviews as studies.",
+      "state": "unresolved",
+      "depends_on": [],
+      "evidence_refs": [
+        "notes/alphagenome-authenticated-results.md",
+        "notes/alphagenome-splicing-results.md",
+        "notes/track2-latest-models.md"
+      ]
+    },
+    {
+      "id": "M04",
+      "layer": "models",
+      "claim": "Passing the small primary control gate establishes robust general predictive accuracy.",
+      "support": "The prespecified primary ordering passes 12/12 newer comparisons.",
+      "challenge": "Post-hoc inclusion of secondary controls fails complete separation in 8/12; one study and repeated residue 882 dominate retained-function coverage.",
+      "falsifier": "Control-set sensitivity is already observed; it does not invalidate the original narrow pass.",
+      "stop_rule": "Withdraw broad validation wording; retain primary success and sensitivity failures together.",
+      "reopen_rule": "An independent, representative functional panel and prospectively fixed evaluation.",
+      "next_action": "Do not tune controls, windows or model choice to the candidate score.",
+      "state": "inference_rejected",
+      "depends_on": [],
+      "evidence_refs": [
+        "notes/track2-latest-model-plan.json",
+        "notes/track2-latest-protein-results.json"
+      ]
+    },
+    {
+      "id": "H01",
+      "layer": "mechanism",
+      "claim": "Branch A: excess mTOR signaling contributes to a modifiable functional deficit.",
+      "support": "Different-allele mouse muscle phosphoproteins motivate measuring the pathway.",
+      "challenge": "No selected-pair excess or benefit is established; excess can be adaptive and the mouse study did not test rapalog rescue.",
+      "falsifier": "No reproducible excess with adequate assay range, or inhibition worsens useful function.",
+      "stop_rule": "Stop branch A when its eligibility fails; unresolved measurements remain a hold, not disproof.",
+      "reopen_rule": "Reproducible functional deficit, excess and a locked benefit/harm perturbation.",
+      "next_action": "Resolve nutrient, density, differentiation and timing effects before screening.",
+      "state": "unresolved",
+      "depends_on": [
+        "G02"
+      ],
+      "evidence_refs": [
+        "https://doi.org/10.1172/JCI126863",
+        "https://doi.org/10.1172/JCI144781",
+        "notes/track2-validation-v10.md"
+      ]
+    },
+    {
+      "id": "H02",
+      "layer": "mechanism",
+      "claim": "Branch B: correcting a flux/regenerative deficit could improve useful function without excess baseline mTOR.",
+      "support": "Hypercapnia experiments report rapamycin-associated functional benefit.",
+      "challenge": "Different disease and compound; supplement reports inconsistent ex vivo concentration units; no relevant deficit exists here yet.",
+      "falsifier": "No qualified flux/function deficit or no meaningful benefit under a valid, adequately informative test.",
+      "stop_rule": "Do not rescue failed A by switching to B; do not import an unresolved study concentration.",
+      "reopen_rule": "Independently qualify B and resolve source/exposure questions before an exposure-linked claim.",
+      "next_action": "Keep B a separately registered mechanistic question; test flux and function independently.",
+      "state": "unresolved",
+      "depends_on": [
+        "G02",
+        "R01"
+      ],
+      "evidence_refs": [
+        "https://doi.org/10.1172/jci.insight.182842",
+        "https://insight.jci.org/articles/view/182842/sd/pdf/render/1"
+      ]
+    },
+    {
+      "id": "H03",
+      "layer": "mechanism",
+      "claim": "Drug target engagement means the intended mechanism causes benefit.",
+      "support": "Pathway measurements can establish a bounded pharmacodynamic response.",
+      "challenge": "pS6 alone misses substrate-specific and feedback responses; genetic perturbations can differ in timing and extent.",
+      "falsifier": "Engagement without function, or discordance with an interpretable orthogonal perturbation.",
+      "stop_rule": "Reject biomarker-only rescue; restrict mechanism attribution when orthogonal results disagree.",
+      "reopen_rule": "Replicated functional effect with graded, time-matched mechanistic controls.",
+      "next_action": "Assess total/activated markers and relevant feedback; do not add a combination merely to suppress feedback.",
+      "state": "unresolved",
+      "depends_on": [
+        "H01"
+      ],
+      "evidence_refs": [
+        "https://doi.org/10.1158/0008-5472.CAN-05-2925",
+        "notes/track2-validation-v10.md"
+      ]
+    },
+    {
+      "id": "E01",
+      "layer": "measurement",
+      "claim": "Fewer abnormal surviving divisions demonstrate constitutional rescue.",
+      "support": "Accurate segregation is a relevant endpoint.",
+      "challenge": "Death, arrest, slippage, delayed daughter loss or tracking loss can improve a survivor fraction.",
+      "falsifier": "No gain in useful output per enrolled culture, or plausible missing-outcome bounds erase the claimed gain.",
+      "stop_rule": "Reject survivor-only rescue; distinguish absent benefit, harm and imprecision.",
+      "reopen_rule": "Prespecified gain with all fates retained and injury bounds met.",
+      "next_action": "Use separate first-event and daughter follow-up records, absolute output and missingness bounds.",
+      "state": "inference_rejected",
+      "depends_on": [],
+      "evidence_refs": [
+        "notes/track2-validation-v10.md",
+        "scripts/track2_falsification_v15.py"
+      ]
+    },
+    {
+      "id": "E02",
+      "layer": "measurement",
+      "claim": "A lower tumour IC50 than in deficient-normal cells establishes selectivity.",
+      "support": "Tumour response deserves a separate efficacy test.",
+      "challenge": "Different baseline division rates distort endpoint IC50; ATP signal is a proxy and normal cells may be slow or postmitotic.",
+      "falsifier": "Apparent selectivity disappears in direct counts/fates or growth-rate-aware analysis, or normal function worsens.",
+      "stop_rule": "No selectivity claim from endpoint ratios alone or undefined growth-rate normalization.",
+      "reopen_rule": "Matched exposure/time and justified functional normal-tissue bounds with a valid oncology comparator.",
+      "next_action": "Measure baseline and longitudinal counts; use growth-rate metrics only where control growth makes them meaningful.",
+      "state": "unresolved",
+      "depends_on": [
+        "X01"
+      ],
+      "evidence_refs": [
+        "https://doi.org/10.1038/nmeth.3853",
+        "https://doi.org/10.1016/S1470-2045(24)00255-9"
+      ]
+    },
+    {
+      "id": "E03",
+      "layer": "measurement",
+      "claim": "A fluorescent or LC3 change establishes beneficial autophagic flux.",
+      "support": "Dynamic reporters and degradation measurements can interrogate flux.",
+      "challenge": "Reporter expression, acidity, lysosome abundance and compound optical interference can mimic flux changes.",
+      "falsifier": "The signal tracks pH/reporter abundance without corroborating cargo turnover or function.",
+      "stop_rule": "No flux or rescue inference from a single reporter or inhibitor-associated protein accumulation.",
+      "reopen_rule": "Orthogonal turnover and pH-aware assay qualification plus meaningful function.",
+      "next_action": "Include assay-interference, pH and viability controls; retain adequate assay dynamic range.",
+      "state": "unresolved",
+      "depends_on": [],
+      "evidence_refs": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3121655/",
+        "https://doi.org/10.1016/j.redox.2023.102701"
+      ]
+    },
+    {
+      "id": "X01",
+      "layer": "exposure",
+      "claim": "A successful culture concentration has an achievable, tolerable human tissue counterpart.",
+      "support": "Compound-specific PK and official-label observations inform feasibility.",
+      "challenge": "Whole blood, total plasma and nominal culture differ; free tissue time profiles and a normal-tissue window are unknown.",
+      "falsifier": "Benefit occurs only outside a justified exposure bound or at unacceptable injury.",
+      "stop_rule": "Hold translation with missing exposure; stop the tested exposure-linked claim if the bound fails.",
+      "reopen_rule": "Measured or defensibly bounded relevant free exposures with matched analyte, matrix and schedule.",
+      "next_action": "Prepare an exposure memorandum; never calculate a child dose from the culture value.",
+      "state": "unresolved",
+      "depends_on": [],
+      "evidence_refs": [
+        "notes/track2-exposure.json",
+        "https://doi.org/10.1007/s40262-016-0414-3"
+      ]
+    },
+    {
+      "id": "S01",
+      "layer": "safety",
+      "claim": "A normal-tissue assay or an approved pediatric indication establishes safety for this context.",
+      "support": "Specified pediatric TSC indications and growth follow-up are favorable context-specific evidence.",
+      "challenge": "Kidney, immune, marrow, wound, muscle and developmental risks differ; no MVA margin is established.",
+      "falsifier": "Function or recovery exceeds prespecified injury limits in a relevant deficient-normal model.",
+      "stop_rule": "No advancement when safety bounds are failed or unresolved; nonsignificance is not noninferiority.",
+      "reopen_rule": "Adequately precise injury bounds and relevant context/exposure review.",
+      "next_action": "Retain supportive TSC evidence and its limitations; specify delayed injury and drug-interaction review.",
+      "state": "unresolved",
+      "depends_on": [
+        "X01"
+      ],
+      "evidence_refs": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f1ae129-c21e-4c25-84c1-a6757d9a7eb2",
+        "notes/track2-validation-v10.md"
+      ]
+    },
+    {
+      "id": "S02",
+      "layer": "safety",
+      "claim": "Improved short-term survival or proliferation implies durable developmental benefit.",
+      "support": "Useful cell output can be a valid bounded endpoint.",
+      "challenge": "Expansion may select damaged clones; mature tissues and developmental timing differ; neither risk nor benefit has been measured here.",
+      "falsifier": "Persistent chromosomal injury, harmful rebound, loss of mature function or selective expansion of unstable cells.",
+      "stop_rule": "Do not expand a short-term assay result into whole-development rescue or tumour safety.",
+      "reopen_rule": "Lineage-relevant recovery and longitudinal fidelity evidence in the intended scope.",
+      "next_action": "Measure later daughter fates and karyotypic composition; assess surveillance/selection as hypotheses, not established harm.",
+      "state": "unresolved",
+      "depends_on": [
+        "E01",
+        "S01"
+      ],
+      "evidence_refs": [
+        "notes/track2-validation-v10.md",
+        "https://doi.org/10.1172/JCI126863"
+      ]
+    },
+    {
+      "id": "T01",
+      "layer": "statistics",
+      "claim": "A positive exploratory result with many cells establishes reproducible benefit and safety.",
+      "support": "Blocked randomization, blinding and clustered analysis can support inference.",
+      "challenge": "Cells are nested; clones share a donor; small clusters, endpoint switching and imprecise safety tests can inflate certainty.",
+      "falsifier": "Effects disappear under clone/day sensitivity or do not exceed a meaningful benefit bound in independent confirmation.",
+      "stop_rule": "Hold underpowered/ambiguous results; reject the tested meaningful-effect claim only with adequate precision; retain safety stops.",
+      "reopen_rule": "Locked estimands, margins, replication units, multiplicity and independently collected confirmation.",
+      "next_action": "Set numerical thresholds using assay/pilot evidence before confirmatory outcomes; do not invent them now.",
+      "state": "unresolved",
+      "depends_on": [],
+      "evidence_refs": [
+        "notes/track2-validation-v10.md"
+      ]
+    },
+    {
+      "id": "A01",
+      "layer": "alternatives",
+      "claim": "Weakening everolimus justifies promoting another drug or a de novo binder.",
+      "support": "Other candidates have limited disease- or tumour-context rationale.",
+      "challenge": "None has direct-pair functional rescue plus relevant exposure and deficient-normal safety; a binder is a separate development programme.",
+      "falsifier": "The proposed alternative fails any essential benefit/harm/exposure prerequisite.",
+      "stop_rule": "Do not inherit priority by elimination; retain no-drug-priority as a valid conclusion.",
+      "reopen_rule": "A stronger compound-specific causal chain meeting the same gates.",
+      "next_action": "Revisit HCQ, pralatrexate and the full decision ledger symmetrically; defer BindCraft2 without a defined functional target.",
+      "state": "unresolved",
+      "depends_on": [],
+      "evidence_refs": [
+        "notes/track2-evidence-v10.json",
+        "https://github.com/PacesaLab/BindCraft2"
+      ]
+    },
+    {
+      "id": "R01",
+      "layer": "statistics",
+      "claim": "An accessible paper, model summary or successful retrieval verifies the critical source claim.",
+      "support": "Primary papers, supplements, registries and preserved hashes support checking.",
+      "challenge": "Source identity errors, incompatible units, missing results and failed retrieval are not experimental findings.",
+      "falsifier": "Primary methods contradict the extracted claim or the source identity fails.",
+      "stop_rule": "Quarantine the disputed numerical inference; do not silently repair units or convert missing results to failure.",
+      "reopen_rule": "A verified corrected primary record or independent evidence resolves the exact ambiguity.",
+      "next_action": "Retain the Balnis 10 mM versus 10 micromolar ex vivo reporting discrepancy and all access failures.",
+      "state": "unresolved",
+      "depends_on": [],
+      "evidence_refs": [
+        "https://insight.jci.org/articles/view/182842/sd/pdf/render/1",
+        "notes/track2-falsification-search-v15.json"
+      ]
+    },
+    {
+      "id": "D01",
+      "layer": "delivery",
+      "claim": "A polished report, many model outputs or passing tests means the solution is validated and ready to submit.",
+      "support": "Reproducible software and clear materials improve reviewability.",
+      "challenge": "No wet-lab result, clinical margin or recorded/hosted video; provider and live submission checks remain open.",
+      "falsifier": "Any material statement exceeds the reviewed evidence or a required delivery check is missing.",
+      "stop_rule": "Reject scientific/readiness promotion from software tests or presentation quality.",
+      "reopen_rule": "Evidence-supported wording and separately completed owner/provider/video/live checks.",
+      "next_action": "Release v15 with explicit claim gates and aligned report/slides/transcript; keep upload readiness false.",
+      "state": "inference_rejected",
+      "depends_on": [],
+      "evidence_refs": [
+        "notes/track2-current.json",
+        "notes/track2-report-v14.md"
+      ]
+    }
+  ],
+  "advancement_gates": {
+    "model_qualification": {
+      "status": "unknown",
+      "evidence_kind": null,
+      "evidence_refs": [],
+      "rule_fixed_before_results": false
+    },
+    "hypothesis_lock": {
+      "status": "unknown",
+      "evidence_kind": null,
+      "evidence_refs": [],
+      "rule_fixed_before_results": false
+    },
+    "functional_benefit": {
+      "status": "unknown",
+      "evidence_kind": null,
+      "evidence_refs": [],
+      "rule_fixed_before_results": false
+    },
+    "division_capacity": {
+      "status": "unknown",
+      "evidence_kind": null,
+      "evidence_refs": [],
+      "rule_fixed_before_results": false
+    },
+    "normal_tissue_safety": {
+      "status": "unknown",
+      "evidence_kind": null,
+      "evidence_refs": [],
+      "rule_fixed_before_results": false
+    },
+    "replication": {
+      "status": "unknown",
+      "evidence_kind": null,
+      "evidence_refs": [],
+      "rule_fixed_before_results": false
+    },
+    "exposure_match": {
+      "status": "unknown",
+      "evidence_kind": null,
+      "evidence_refs": [],
+      "rule_fixed_before_results": false
+    },
+    "source_integrity": {
+      "status": "unknown",
+      "evidence_kind": null,
+      "evidence_refs": [],
+      "rule_fixed_before_results": false
+    }
+  }
+}

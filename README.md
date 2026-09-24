@@ -93,66 +93,61 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-**Track 2 (feat-009) is in progress:** the [first Firecrawl falsification cycle](notes/track2-falsification-cycle1.md)
-used 87 actual tool calls plus primary-paper and trial-registry retrieval to challenge
-the approach and its earlier rejection criteria. The [current v14 report](notes/track2-report-v14.md)
-separates excess-mTOR and flux/function hypotheses, strengthens regeneration and delayed
-injury checks, and retains favorable and unfavorable findings. Everolimus remains an
-optional, model-qualified mechanistic probe; HCQ remains reserve. No drug earns a rescue
-priority, and no patient benefit or harm is inferred. The [v9 audit](notes/track2-adversarial-v9.md)
-that withdrew the earlier priority is preserved.
+**Track 2 (feat-009) is in progress.** The [current v16 report](notes/track2-report-v16.md)
+and [falsification review](notes/track2-falsification-review-v15.md) challenge the full
+chain from genotype to useful function, tumour selectivity, exposure and safety.
+No drug earns rescue priority; everolimus is an optional qualified mechanistic probe,
+HCQ is reserve, phase is unconfirmed and clinical exposure margins are unknown.
 
-The [expanded H100 model comparison](notes/track2-model-expansion.md) supersedes
-interpretation based on the single-checkpoint [ESM pilot](notes/track2-esm-pilot.md).
-Seven ESM checkpoints disagree and fail selected control comparisons; larger
-models do not remove that limitation. All 48 Boltz-2 and 120 AlphaFold2 predictions
-are retained: confident folds also occur in impaired controls. V13 therefore
-qualifies the earlier blanket claim of computational support for the missense
-allele. Evo2 7B and 40B pass the fixed public BRCA1 benchmark; 40B long-window work
-completed across all eight H100s after an explicit memory continuation. No clinical
-classification, phase, drug priority or exposure margin follows.
-The comparison records fixed plans, full results and owner-hosted inference,
-plus the external public-WT-only ColabFold alignment search. Frozen v12 is preserved.
+The [19-claim register](notes/track2-falsification-register-v15.json) specifies support,
+contrary evidence, falsifiers, stop/reopening rules and next actions. The new offline
+checker distinguishes unresolved evidence from failed hypotheses and prevents model-only
+or planned evidence from satisfying biological advancement gates. All-pass evidence
+could permit only preclinical review. The software does not validate biology.
 
-The [newer-model follow-up](notes/track2-latest-models.md), now integrated in v14,
-completes ESMC 300M/600M/6B, ESM3-open, AlphaFold3, both ESMFold2 arms and Evo2 20B:
-84 protein scores, 192 structures and 100 DNA comparisons. All four new protein
-sequence models pass the small prespecified control challenge and score N1002K
-negatively, strengthening the computational reason to test it. Earlier model
-disagreement remains relevant. Confident structures still occur for impaired
-controls; the models establish neither allele function nor drug rescue. The full
-matrices, pinned versions, failed attempts and AlphaFold3 output terms are retained.
-Drug decisions, phase and clinical exposure margins remain unchanged.
+Two concrete findings change the narrative. All four newer protein models still pass
+the original primary gate, but adding retained secondary controls breaks separation in
+8/12 model/window comparisons; 11/24 retained-function scores are negative. This is
+post-hoc sensitivity, not a new accuracy estimate. Visual inspection of the Balnis
+supplement also confirms an unresolved 10 mM versus 10 micromolar discrepancy across
+related ex vivo methods; the disputed concentration is quarantined. All original
+results, narrow successes, prior failures and positive safety counterweights remain.
 
-**Standing research objective:** actively and extensively seek evidence that could
-falsify the current approach, then use weaknesses and overlooked risks to revise or
-abandon it when warranted. The [falsification plan](notes/track2-falsification-plan.md)
-requires reproducible searches, explicit overturning criteria and documented changes
-to decisions or experiments throughout the work, before candidate promotion or release.
+The [63-source/11-decision ledger](notes/track2-evidence-v15.json) and
+[validation plan](notes/track2-validation-v15.md) add controls for growth-rate and
+flux-reporter artifacts, missingness, meaningful-effect/safety bounds and delayed
+injury. Synthetic examples demonstrate how fewer abnormal survivors can coexist with
+worse useful output; they are explicitly not laboratory data. Bounded public searches,
+Firecrawl failures, source identities, hashes and reading limits are archived.
 
-The [52-source/11-decision ledger](notes/track2-evidence-v10.json) and
-[validation plan](notes/track2-validation-v10.md) retain the v10 scientific decisions.
-The [official website review](notes/track2-challenge-review-20260919.md) supplies
-the rubric, methods-template and acknowledgement requirements. The new
-[v14 report](notes/track2-report-v14.md), [336-word script](notes/track2-pitch-v14.md),
-[nine-page deck](notes/track2-slides-v14.html) and
-[video description](notes/track2-video-description-v14.md) integrate the model
-findings and provider disclosure. All nine rendered pages passed author visual
-review and geometry checks; narration still requires rehearsal. The full
-acknowledgement remains inside the planned three-minute video.
+The completed [earlier](notes/track2-model-expansion.md) and
+[newer](notes/track2-latest-models.md) model campaigns are preserved. The newer campaign
+contains 84 protein scores, 192 structures and 100 DNA comparisons. Impaired controls
+fold confidently; ESM3 WT variability is large; BRCA1/Evo performance does not validate
+BUB1B. No new GPU inference was needed for v15. BindCraft2 remains deferred without a
+defined functional target and experimental validation route.
 
-Use `scripts/track2_release_v14.py` for new snapshots; v13 and every earlier bound
-release are preserved. Export the deck with
-`uv run node scripts/render_track2_slides_v14.mjs new-output-name`.
-The scientific drug decisions remain v10; model results and their limitations
-are integrated with their full comparison records. These are research materials, not a recording or submission.
-The [current-artifact record](notes/track2-current.json), [plain transcript](notes/track2-transcript-v14.txt)
-and [harness review](notes/track2-harness-review-v14.md) provide a consistent restart path.
-`./init.sh` now checks mixed versions, transcript alignment, model claims and unresolved
-scientific/delivery status. PDF exports include the AlphaFold3 terms and notice;
-keep them with any distributed copy. Fireworks API-credit use is owner-confirmed; training/retention settings remain unverified. Recording/hosting,
-final owner/live checks and receipt remain outstanding. Phase and clinical exposure
-margins remain unresolved; no wet-lab experiment was performed.
+**Standing objective:** actively seek evidence that can falsify each consequential
+assumption; revise or abandon the approach when warranted. Use the original
+[falsification plan](notes/track2-falsification-plan.md) and current claim register
+throughout research and before promotion/release. Apply the same standard to benefit,
+harm and alternative candidates. Missing evidence and search failures are not disproof.
+
+Current materials: [report](notes/track2-report-v16.md),
+[328-word narration](notes/track2-pitch-v16.md), [plain transcript](notes/track2-transcript-v16.txt),
+[nine-slide deck](notes/track2-slides-v16.html) and
+[video description](notes/track2-video-description-v16.md). The full acknowledgement
+and AlphaFold3 terms/notice remain. These are recording materials; runtime, recording,
+hosting, provider/owner/live checks and receipt remain open. No wet-lab result or upload.
+
+Use `scripts/track2_release_v16.py` for new snapshots and
+`uv run node scripts/render_track2_slides_v16.mjs new-output-name` for export.
+All v1–v15 bound inputs/releases and submitted Track 1 v4 are preserved.
+The [current-artifact record](notes/track2-current.json) and
+[harness review](notes/track2-harness-review-v15.md) route the current work.
+`./init.sh` checks artifact versions, narration, original models, new falsification
+results and unresolved scientific/delivery status. The [website review](notes/track2-challenge-review-20260919.md)
+records the last rules/template check; no authenticated portal action occurred here.
 
 The historical [baseline evidence ledger](notes/track2-candidates.json) assesses twelve
 entries; the [v3 report](notes/track2-report-v3.md) and all earlier snapshots are preserved.
@@ -161,7 +156,7 @@ everolimus a conditional priority and demoted hydroxychloroquine to reserve. V9 
 the everolimus priority while preserving that review and its source record.
 The 53-source review and [exposure ledger](notes/track2-exposure.json) establish no clinical
 efficacy or therapeutic margin. No laboratory experiments or Track 2 upload have occurred.
-The pitch still needs updating, recording and a hosted URL; earlier scripts are historical.
+The current pitch is updated; recording and a hosted URL remain outstanding. Earlier scripts are historical.
 The [Firecrawl follow-up](notes/track2-firecrawl.md) exercised all 26 advertised MCP
 tools and added eight independently checked source documents at explicitly limited
 reading depths. Pralatrexate is a new fusion-positive RMS tumour-only horizon;
@@ -203,7 +198,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v14 disclosure names this route without
+GLM for public-literature synthesis; the current v16 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 

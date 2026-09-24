@@ -1,27 +1,30 @@
 {
   "schema_version": 1,
-  "updated_date": "2026-09-21",
+  "updated_date": "2026-09-24",
   "active_feature": "feat-009",
-  "presentation_version": 14,
-  "drug_science_version": 10,
+  "presentation_version": 16,
+  "drug_science_version": 15,
   "artifacts": {
-    "report": "notes/track2-report-v14.md",
-    "slides": "notes/track2-slides-v14.html",
-    "pitch": "notes/track2-pitch-v14.md",
-    "transcript": "notes/track2-transcript-v14.txt",
-    "video_description": "notes/track2-video-description-v14.md",
-    "design_review": "notes/track2-v14-design.md",
-    "evidence": "notes/track2-evidence-v10.json",
-    "validation": "notes/track2-validation-v10.md",
+    "report": "notes/track2-report-v16.md",
+    "slides": "notes/track2-slides-v16.html",
+    "pitch": "notes/track2-pitch-v16.md",
+    "transcript": "notes/track2-transcript-v16.txt",
+    "video_description": "notes/track2-video-description-v16.md",
+    "design_review": "notes/track2-v16-design.md",
+    "evidence": "notes/track2-evidence-v15.json",
+    "validation": "notes/track2-validation-v15.md",
     "latest_model_findings": "notes/track2-latest-models.md",
     "latest_model_audit": "notes/track2-latest-model-audit.json",
-    "release_script": "scripts/track2_release_v14.py",
-    "renderer": "scripts/render_track2_slides_v14.mjs",
+    "release_script": "scripts/track2_release_v16.py",
+    "renderer": "scripts/render_track2_slides_v16.mjs",
     "af3_terms": "notes/alphafold3-output-terms.md",
-    "af3_notice": "notes/alphafold3-Legally-Binding-Terms-of-Use.txt"
+    "af3_notice": "notes/alphafold3-Legally-Binding-Terms-of-Use.txt",
+    "falsification_register": "notes/track2-falsification-register-v15.json",
+    "falsification_review": "notes/track2-falsification-review-v15.md",
+    "falsification_analysis": "notes/track2-falsification-analysis-v15.json"
   },
-  "snapshot": "results/feat009/jvv7_track2_research_v14",
-  "render_directory": "results/feat009/v14-slide-review-first-20260921",
+  "snapshot": "results/feat009/jvv7_track2_research_v16",
+  "render_directory": "results/feat009/v16-slide-review-final-20260924",
   "model_campaign": {
     "protein_scores": 84,
     "structures": 192,
@@ -43,6 +46,6 @@
     "provider_settings_verified": false
   },
   "history": "progress.md",
-  "harness_review": "notes/track2-harness-review-v14.md",
-  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v14.zip"
+  "harness_review": "notes/track2-harness-review-v15.md",
+  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v16.zip"
 }

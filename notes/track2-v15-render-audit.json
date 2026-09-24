@@ -1,0 +1,157 @@
+{
+  "source": "notes/track2-slides-v15.html",
+  "source_sha256": "d28c9d355cf7fccc23f63970be1dd02953275ca16e3421cbeabb7fffbb3c8d54",
+  "renderer_sha256": "24ecb7d2958c958a6bfa0a0a62084395f0c40d37d5cb61ccb0b824f66e534c4d",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/131.0.6778.139",
+    "revision": "@c35bbcbd7c2775a12a3f320e05ac0022939b1a8a",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+    "jsVersion": "13.1.201.16"
+  },
+  "slides": [
+    {
+      "id": "slide-1",
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 54,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-2",
+      "x": 0,
+      "y": 752,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 91,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-3",
+      "x": 0,
+      "y": 1504,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 99,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-4",
+      "x": 0,
+      "y": 2256,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 78,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-5",
+      "x": 0,
+      "y": 3008,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 68,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-6",
+      "x": 0,
+      "y": 3760,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 60,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-7",
+      "x": 0,
+      "y": 4512,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 72,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-8",
+      "x": 0,
+      "y": 5264,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 97,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-9",
+      "x": 0,
+      "y": 6016,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 105,
+      "min_font_px": 24,
+      "svg_figures": 0
+    }
+  ],
+  "narrow_screen": {
+    "width": 640,
+    "scrollWidth": 640
+  },
+  "files": {
+    "slide-1.png": "283c07c8b3844db0fc9e740504c89a80ff76eca593a811e1b7398f8b5fa9aadd",
+    "slide-2.png": "2f6671afd7e7152d45ba0f5e5cfa06ef58da28e2934805bd068a8359b4b54f48",
+    "slide-3.png": "1ff459d082e031b41d1bcb15591f033e3da09b6f8a65a66e5413b6a32b80afb2",
+    "slide-4.png": "b3da59b37a706a6b7ff548f1a2e94259da99b9c113bed96a5bde59a2fa3ee986",
+    "slide-5.png": "1933f754f6a7d5646cc18f4eedce2ad1fe31620b90a83837702e586028a8bd2f",
+    "slide-6.png": "c24bab172809dcd09b289aa7d8901e3bd36c360cb24311802c20ff610b854fb8",
+    "slide-7.png": "7f780d86f73c8f5067c74f71083be8fe32d0de0221f2ddb2cc1823a6e3c62ee8",
+    "slide-8.png": "b1c191ffe78b347721af315e73d2cb0160be616abd569ce1303589a5f3a42298",
+    "slide-9.png": "8c371a30bd5f8cc8e26e2fa05946342f06c67e3e7b8d9b484bce81bc899c6d53",
+    "track2-slides-v15.pdf": "872055dc5193708b0cf5c533bd5e99cbb18808402885ef410316a37ac466e5a8",
+    "AlphaFold3-Output-Terms.md": "7ab1c4ef16a8fe88db3ccef813a5e28dec63b1e2d336876e5ae60b6d6b4686b8",
+    "Legally-Binding-Terms-of-Use.txt": "56aeaba693f47b4ad7a243d828f8080e64d5d5fd24cc473db70313a1bbd3b38b"
+  },
+  "limits": "Geometry and screenshots are preview checks, not recording, runtime validation, scientific validity or upload readiness.",
+  "author_visual_review": "All nine initial revised PDF pages inspected; changed pages 2 and 5 inspected at full size. Final page 2 rechecked and final PDF rasterized; unchanged pages verified pixel-identical to the inspected preview.",
+  "independent_review": false,
+  "clinical_validation": false,
+  "minimum_checked_text_contrast": 5.438156322679123,
+  "contrast_basis": "Same text colors/backgrounds as reviewed v14 palette",
+  "render_directory": "results/feat009/v15-slide-review-final-20260924",
+  "final_pdf_pages_identical_to_inspected_preview": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}

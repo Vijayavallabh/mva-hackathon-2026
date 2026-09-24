@@ -1,0 +1,955 @@
+{
+  "schema_version": 15,
+  "phase": "unconfirmed",
+  "clinical_use": "research_only",
+  "clinical_exposure_margin": null,
+  "direct_pair_intervention_evidence": false,
+  "clinical_efficacy": "unestablished",
+  "sources": [
+    {
+      "id": "jci126863",
+      "title": "Sieben 2020: BubR1 allelic effects",
+      "url": "https://doi.org/10.1172/JCI126863",
+      "kind": "primary",
+      "publication_model": "Different-allele mouse models; gastrocnemius",
+      "reading": "selected_sections",
+      "claim": "Phospho-p70S6K and phospho-4EBP1 elevation in +/X753 muscle motivates a conditional pathway assay.",
+      "limit": "Not the selected pair; no rapalog intervention; small depicted blot groups; no randomization/blinding. Proposed pS6 is a future assay."
+    },
+    {
+      "id": "jci_correction",
+      "title": "Sieben corrigendum",
+      "url": "https://doi.org/10.1172/JCI144781",
+      "kind": "correction",
+      "publication_model": "Correction to image/method reporting",
+      "reading": "official_page",
+      "claim": "Correction must remain associated with the parent study.",
+      "limit": "Not an independent replication or intervention experiment."
+    },
+    {
+      "id": "everolimus_label",
+      "title": "Everolimus US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f1ae129-c21e-4c25-84c1-a6757d9a7eb2",
+      "kind": "regulatory",
+      "publication_model": "Approved indications/formulations and safety",
+      "reading": "official_page_rechecked_2026_09_24",
+      "claim": "Approved indications include specified pediatric TSC uses; relevant renal, infection and interaction warnings.",
+      "limit": "Does not establish MVA/RMS efficacy or a deficient-normal exposure window. June 2026 label retains favorable but uncontrolled TSC growth follow-up alongside warnings; neither generalized safety nor inevitable harm follows."
+    },
+    {
+      "id": "arst0921",
+      "title": "Mascarenhas 2019: randomized first-relapse RMS trial",
+      "url": "https://doi.org/10.1200/JCO.19.00576",
+      "kind": "primary",
+      "publication_model": "Relapsed RMS; active-comparator phase II",
+      "reading": "selected_sections",
+      "claim": "Temsirolimus-containing regimen favoured over bevacizumab-containing regimen for EFS.",
+      "limit": "Not chemotherapy-alone comparison or constitutional rescue; no significant OS difference."
+    },
+    {
+      "id": "arst1431",
+      "title": "Gupta 2024: temsirolimus added to intermediate-risk RMS therapy",
+      "url": "https://doi.org/10.1016/S1470-2045(24)00255-9",
+      "kind": "primary",
+      "publication_model": "Randomized phase III intermediate-risk RMS",
+      "reading": "selected_sections",
+      "claim": "Adding temsirolimus did not demonstrate improved three-year EFS.",
+      "limit": "Nonsignificance is not exact-zero effect; different question from constitutional everolimus rescue."
+    },
+    {
+      "id": "slippage",
+      "title": "Yamada: rapamycin and mitotic slippage",
+      "url": "https://doi.org/10.1016/j.isci.2021.103675",
+      "kind": "primary",
+      "publication_model": "Nocodazole-arrested A549 human tumour cells",
+      "reading": "selected_sections",
+      "claim": "Rapamycin increased slippage in the reported death-versus-slippage comparison.",
+      "limit": "Not all-enrolled-cell denominator, everolimus, deficient normal tissue or clinical risk estimate."
+    },
+    {
+      "id": "haas_hcq",
+      "title": "Haas 2019: everolimus and hydroxychloroquine",
+      "url": "https://doi.org/10.1158/1078-0432.CCR-18-2204",
+      "kind": "primary",
+      "publication_model": "Single-arm adult renal-cell carcinoma trial",
+      "reading": "selected_sections",
+      "claim": "The study met its prespecified six-month PFS threshold and reported partial responses.",
+      "limit": "No everolimus-only comparator; not pediatric RMS, synergy proof or deficient-normal safety."
+    },
+    {
+      "id": "tang",
+      "title": "Tang 2011: aneuploid-cell stress vulnerabilities",
+      "url": "https://doi.org/10.1016/j.cell.2011.01.017",
+      "kind": "primary",
+      "publication_model": "Trisomic fibroblasts and cancer lines",
+      "reading": "selected_sections",
+      "claim": "Chloroquine-associated sensitivity supplies both mechanistic rationale and normal-cell concern.",
+      "limit": "Chloroquine is not HCQ; constitutional aneuploid-cell killing is not functional rescue."
+    },
+    {
+      "id": "pralatrexate_rms",
+      "title": "Pralatrexate in fusion-positive RMS models",
+      "url": "https://doi.org/10.1038/s41467-026-73749-y",
+      "kind": "primary",
+      "publication_model": "Fusion-positive RMS cell and mouse models",
+      "reading": "selected_sections",
+      "claim": "Some tumours regressed; recurrence and schedule-dependent toxicity were observed.",
+      "limit": "No selected-pair rescue, durable cure, established clinical margin or uniquely assigned TYMS mechanism."
+    },
+    {
+      "id": "pralatrexate_label",
+      "title": "Pralatrexate US label version 6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=cc3df863-c51c-49c5-283a-d6808fb49258&version=6",
+      "kind": "regulatory",
+      "publication_model": "PTCL indication; safety and pharmacology",
+      "reading": "official_page",
+      "claim": "Approved PTCL use and folate-pathway pharmacology; marrow, mucosal and renal risks.",
+      "limit": "Not pediatric RMS approval; no dose or supplementation recommendation derived."
+    },
+    {
+      "id": "entinostat2019",
+      "title": "Kurmasheva 2019: entinostat RMS preclinical testing",
+      "url": "https://doi.org/10.1002/pbc.27820",
+      "kind": "primary",
+      "publication_model": "Two ARMS and two ERMS models",
+      "reading": "abstract_and_indexed_excerpt",
+      "claim": "Mostly limited potentiation; model/endpoint-dependent vincristine antagonism reported.",
+      "limit": "Does not refute every future schedule; full article/corrigendum contents not exhaustively checked."
+    },
+    {
+      "id": "entinostat2024",
+      "title": "Chauhan 2024: entinostat RMS combination models",
+      "url": "https://doi.org/10.1038/s41598-024-66545-5",
+      "kind": "primary",
+      "publication_model": "RMS preclinical models with daily mouse regimen",
+      "reading": "selected_sections",
+      "claim": "Favourable model-dependent comparisons coexist with unadjusted testing and schedule differences.",
+      "limit": "Daily mouse and weekly human profiles are not equivalent despite superficially comparable single-dose AUC."
+    },
+    {
+      "id": "entinostat_nmpa",
+      "title": "NMPA: Entinostat Tablets Approved for Marketing",
+      "url": "https://english.nmpa.gov.cn/2024-04/30/c_1049690.htm",
+      "kind": "regulatory",
+      "publication_model": "Chinese approval notice, April 2024",
+      "reading": "official_page",
+      "claim": "Approval with aromatase inhibition in a defined HR-positive HER2-negative advanced breast-cancer setting.",
+      "limit": "Not global unapproved status; does not establish FDA or pediatric RMS approval, availability or efficacy."
+    },
+    {
+      "id": "vorinostat_case",
+      "title": "Vorinostat anaplastic ERMS case and paired PDX",
+      "url": "https://doi.org/10.3389/fonc.2017.00327",
+      "kind": "primary",
+      "publication_model": "Single clinical case plus randomized PDX experiment",
+      "reading": "selected_sections",
+      "claim": "Transient clinical benefit; PDX necrosis without growth/Ki67 suppression.",
+      "limit": "Progression and severe thrombocytopenia/hemorrhage; uncontrolled clinical attribution and no established margin."
+    },
+    {
+      "id": "tbx_screen",
+      "title": "TBX2/TBX3 drug repurposing screen",
+      "url": "https://doi.org/10.1002/cam4.70303",
+      "kind": "primary",
+      "publication_model": "Inducible melanoma screen and endogenous/RMS validation",
+      "reading": "selected_sections",
+      "claim": "Niclosamide, pyrvinium and piroctone show context-dependent micromolar nominal activity.",
+      "limit": "Some EC50s exceed tested maxima; failed endogenous hits and reporter artefacts retained; no direct-binding or deficient-normal window."
+    },
+    {
+      "id": "niclo_original",
+      "title": "Schweizer 2018: niclosamide and enzalutamide",
+      "url": "https://doi.org/10.1371/journal.pone.0198389",
+      "kind": "primary",
+      "publication_model": "Small adult prostate-cancer combination trial",
+      "reading": "selected_sections",
+      "claim": "Tolerated original-formulation exposure fell below that study's preclinical target.",
+      "limit": "Not universal formulation failure or a matched free RMS exposure estimate."
+    },
+    {
+      "id": "niclo_correction",
+      "title": "Correction: niclosamide phase I study",
+      "url": "https://doi.org/10.1371/journal.pone.0202709",
+      "kind": "correction",
+      "publication_model": "Correction of abstract PK range",
+      "reading": "official_page",
+      "claim": "Corrected abstract range agrees with original PK table and Results.",
+      "limit": "Not another study or independent exposure replication."
+    },
+    {
+      "id": "niclo_reformulation",
+      "title": "Parikh 2021: reformulated PDMX1001 combination",
+      "url": "https://doi.org/10.1038/s41598-021-85969-x",
+      "kind": "primary",
+      "publication_model": "Small adult prostate-cancer combination study",
+      "reading": "selected_sections",
+      "claim": "Favourable tolerability/response findings and scheduled total-plasma samples qualify the original-formulation negative.",
+      "limit": "No backbone-only control; three PK participants; one-hour sample not serially established Cmax; no RMS margin."
+    },
+    {
+      "id": "posaconazole",
+      "title": "Sun 2021: posaconazole in RMS models",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8493378/",
+      "kind": "primary",
+      "publication_model": "RMS lines and RD xenograft",
+      "reading": "selected_sections",
+      "claim": "Tumour-growth inhibition accompanied by liver histologic injury.",
+      "limit": "Not eradication; nonsignificant enzyme comparisons do not erase histology; nominal medium is not free tissue exposure."
+    },
+    {
+      "id": "posaconazole_label",
+      "title": "Posaconazole US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0bdf77ae-3639-49c1-b7c7-533f9d073084",
+      "kind": "regulatory",
+      "publication_model": "Formulation-specific antifungal label",
+      "reading": "official_page",
+      "claim": "Major interactions include serious vinca warnings and contraindicated sirolimus/selected statins.",
+      "limit": "Do not infer current patient regimen or convert average total plasma and binding into a validated tumour exposure."
+    },
+    {
+      "id": "xu_pp2a",
+      "title": "Xu 2013: BUBR1 recruits PP2A via B56",
+      "url": "https://doi.org/10.1242/bio.20134051",
+      "kind": "primary",
+      "publication_model": "Engineered MVA-cell recruitment; separate HeLa chemical perturbation",
+      "reading": "selected_sections",
+      "claim": "MIS12-linked KARD recruitment improved MVA-cell chromosome alignment under MG132 arrest.",
+      "limit": "Not chemical rescue in those MVA cells or completed faithful daughter division."
+    },
+    {
+      "id": "leonard_pp2a",
+      "title": "Leonard 2020: biased PP2A heterotrimer stabilization",
+      "url": "https://doi.org/10.1016/j.cell.2020.03.038",
+      "kind": "primary",
+      "publication_model": "Biochemical/structural and cancer models",
+      "reading": "abstract",
+      "claim": "Positive DT-061 PP2A-holoenzyme stabilization interpretation.",
+      "limit": "Archived independent reading abstract-only; no MVA or approved-drug bridge; mechanism disputed."
+    },
+    {
+      "id": "vit_pp2a",
+      "title": "Vit 2022: PP2A-independent cytotoxicity",
+      "url": "https://doi.org/10.15252/embj.2022110611",
+      "kind": "primary",
+      "publication_model": "Biochemical and chemogenetic re-examination",
+      "reading": "selected_sections",
+      "claim": "Proposed PP2A effects not reproduced; alternative microtubule/ER-Golgi mechanisms and structural-density reassessment.",
+      "limit": "Does not exclude every experimental condition; not a clinical efficacy study."
+    },
+    {
+      "id": "naqvi_pp2a",
+      "title": "Naqvi 2026: PP2A activators and PR65 stabilization",
+      "url": "https://doi.org/10.1021/jacsau.6c00003",
+      "kind": "primary",
+      "publication_model": "Isolated PR65 biophysics and ensemble binding",
+      "reading": "selected_sections",
+      "claim": "ATUX-8385 binding and stabilization support a different compound/scaffold interaction.",
+      "limit": "Not DT-061 cellular-specificity resolution or MVA rescue; comparator spelling discrepancy remains."
+    },
+    {
+      "id": "baker2011",
+      "title": "Baker 2011: genetic senescent-cell clearance",
+      "url": "https://doi.org/10.1038/nature10600",
+      "kind": "primary",
+      "publication_model": "BubR1 hypomorph genetic clearance model",
+      "reading": "selected_sections",
+      "claim": "Favourable genetic senescent-cell-clearance evidence exists in a BubR1 model.",
+      "limit": "Not drug D+Q efficacy or clinical safety."
+    },
+    {
+      "id": "baker2013",
+      "title": "Baker 2013: opposing p21 tissue effects",
+      "url": "https://doi.org/10.1016/j.celrep.2013.03.028",
+      "kind": "primary",
+      "publication_model": "BubR1 hypomorph mice; tissue-dependent phenotypes",
+      "reading": "abstract_and_indexed_excerpt",
+      "claim": "p21 protects muscle/fat but promotes lens senescence/cataract phenotype.",
+      "limit": "Lower p21 is not a universal rescue criterion; no drug therapeutic window."
+    },
+    {
+      "id": "zhu_senolysis",
+      "title": "Zhu 2015: dasatinib/quercetin senolysis",
+      "url": "https://doi.org/10.1111/acel.12344",
+      "kind": "primary",
+      "publication_model": "Cell-type-dependent senolysis; Ercc1 progeroid experiments",
+      "reading": "selected_sections",
+      "claim": "Positive senolytic and functional findings in tested contexts.",
+      "limit": "Ercc1 drug intervention is not BubR1 drug rescue or pediatric safety."
+    },
+    {
+      "id": "fuhrmann_hsp90",
+      "title": "Fuhrmann-Stroissnigg 2017: HSP90 senolytics",
+      "url": "https://doi.org/10.1038/s41467-017-00314-z",
+      "kind": "primary",
+      "publication_model": "Senescent cell types and Ercc1 mice",
+      "reading": "selected_sections",
+      "claim": "Cell-dependent senolysis and healthspan effects.",
+      "limit": "Not mutant-BUBR1 stabilization; reduced marker fractions may reflect population changes."
+    },
+    {
+      "id": "bubr1_stability",
+      "title": "Suijkerbuijk 2010: BUBR1 deficiency and MVA",
+      "url": "https://doi.org/10.1158/0008-5472.CAN-09-4319",
+      "kind": "primary",
+      "publication_model": "MVA-associated protein and cellular models",
+      "reading": "selected_sections",
+      "claim": "Protein availability/function both matter; HSP90 inhibition can deplete unstable BUBR1.",
+      "limit": "Not exact-pair drug rescue; restored abundance alone is insufficient."
+    },
+    {
+      "id": "roy_readthrough",
+      "title": "Roy 2016: ataluren near-cognate tRNA selection",
+      "url": "https://doi.org/10.1073/pnas.1605336113",
+      "kind": "primary",
+      "publication_model": "Readthrough reporter and functional systems",
+      "reading": "abstract",
+      "claim": "Positive context-dependent readthrough and functional-product evidence.",
+      "limit": "Not BUB1B efficacy or proof of native-stop toxicity; insertion need not restore wild-type residue."
+    },
+    {
+      "id": "bolze_readthrough",
+      "title": "Bolze 2017: negative PTC124 and context-dependent aminoglycoside rescue",
+      "url": "https://doi.org/10.1038/s41598-017-01093-9",
+      "kind": "primary",
+      "publication_model": "Leptin-receptor/reporters with signaling assays",
+      "reading": "selected_sections",
+      "claim": "Ataluren negative results and sequence/species dependence; functional JAK/STAT3 assay and PTP1B controls present.",
+      "limit": "No universal readthrough failure or BUB1B-specific response claim."
+    },
+    {
+      "id": "ema_ataluren",
+      "title": "EMA Translarna authorization status",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/translarna",
+      "kind": "regulatory",
+      "publication_model": "European authorization decision",
+      "reading": "official_page",
+      "claim": "European Commission did not renew conditional authorization in March 2025.",
+      "limit": "Older mechanism papers cannot establish current EU approval or clinical efficacy here."
+    },
+    {
+      "id": "goutas2023",
+      "title": "Goutas 2023: autophagy, senescence and BUBR1",
+      "url": "https://doi.org/10.1016/j.redox.2023.102701",
+      "kind": "primary",
+      "publication_model": "Human Wharton jelly stromal cells; early and late passage",
+      "reading": "selected_results_figure6_and_methods",
+      "claim": "Everolimus lowered late-passage BUBR1 protein at 24 h; HCQ increased it in a different exposure experiment.",
+      "limit": "Not the selected genotype, proof of drug-induced segregation harm, functional HCQ rescue or a clinical exposure margin."
+    },
+    {
+      "id": "quy2013",
+      "title": "Quy 2013: compensatory mTORC1 after denervation",
+      "url": "https://doi.org/10.1074/jbc.M112.399949",
+      "kind": "primary",
+      "publication_model": "Denervated mouse skeletal muscle",
+      "reading": "indexed_primary_results_and_figure6_caption",
+      "claim": "Rapamycin reduced protein synthesis and worsened atrophy in the tested context.",
+      "limit": "Denervation and rapamycin are not MVA and everolimus; selected primary sections, full XML request failed."
+    },
+    {
+      "id": "castets2019",
+      "title": "Castets 2019: balanced mTORC1 and muscle adaptation",
+      "url": "https://doi.org/10.1038/s41467-019-11227-4",
+      "kind": "primary",
+      "publication_model": "Mouse muscle denervation and Raptor/TSC perturbations",
+      "reading": "selected_results_and_methods",
+      "claim": "Pathway/flux effects depended on timing; muscle Raptor loss enhanced atrophy.",
+      "limit": "Not a universal inhibition hazard or the selected pair; knockout is not matched drug exposure."
+    },
+    {
+      "id": "abutaleb2023",
+      "title": "Abutaleb 2023: everolimus and HGPS tissue-engineered vessels",
+      "url": "https://doi.org/10.1038/s41598-023-32035-3",
+      "kind": "primary",
+      "publication_model": "HGPS iPSC vascular cells and tissue-engineered vessels",
+      "reading": "selected_results_figures4_5_and_methods",
+      "claim": "Everolimus alone improved vasoconstriction; monotherapy did not establish improved vasodilation; combinations had context-dependent benefits and toxicity.",
+      "limit": "Different LMNA/progerin pathology, small model experiments and nominal concentrations; no MVA rescue or free tissue-exposure bridge."
+    },
+    {
+      "id": "balnis2025",
+      "title": "Balnis 2025: rapamycin and hypercapnic satellite cells",
+      "url": "https://doi.org/10.1172/jci.insight.182842",
+      "kind": "primary",
+      "publication_model": "Adult mice and C2C12 hypercapnia models",
+      "reading": "selected_results_figures7_10_main_methods_discussion",
+      "claim": "Regenerative and flux-related outcomes improved despite unchanged baseline measured mTOR readouts.",
+      "limit": "Rapamycin, not everolimus; no BUB1B model; key n=3-4, reused controls; dose/schedule supplement not reviewed. V15 selected-supplement review found conflicting ex vivo units; disputed concentration remains quarantined."
+    },
+    {
+      "id": "joseph2019",
+      "title": "Joseph 2019: partial RAD001 inhibition in aged rat muscle",
+      "url": "https://doi.org/10.1128/MCB.00141-19",
+      "kind": "primary",
+      "publication_model": "Aged male rat muscle",
+      "reading": "selected_results_figures2_8_and_methods",
+      "claim": "Low-dose RAD001 improved selected muscle mass/morphology outcomes; benefits varied by muscle and dose.",
+      "limit": "Mass is not force; static LC3 is not dynamic flux; no MVA, pediatric exposure or dose-equivalence inference."
+    },
+    {
+      "id": "ge2009",
+      "title": "Ge 2009: mTOR and injury-induced muscle regeneration",
+      "url": "https://doi.org/10.1152/ajpcell.00248.2009",
+      "kind": "primary",
+      "publication_model": "Injured mouse skeletal muscle with resistant mTOR constructs",
+      "reading": "verified_primary_abstract_only",
+      "claim": "Rapamycin impaired regeneration; resistant constructs separated fiber formation and growth mechanisms.",
+      "limit": "Full text failed/timed out; concentration, sample size and complete design not freshly verified."
+    },
+    {
+      "id": "zhang2015",
+      "title": "Zhang 2015: satellite-cell Mtor deletion",
+      "url": "https://doi.org/10.1016/j.bbrc.2015.05.032",
+      "kind": "primary",
+      "publication_model": "Mouse satellite-cell conditional Mtor deletion",
+      "reading": "indexed_primary_abstract_only",
+      "claim": "Mtor loss impaired regeneration, proliferation and differentiation.",
+      "limit": "Knockout is not a titrated rapalog; no selected-pair or clinical result; XML unavailable."
+    },
+    {
+      "id": "naddaf2021",
+      "title": "Naddaf 2021: CQ/HCQ myopathy case series",
+      "url": "https://doi.org/10.3389/fneur.2020.616075",
+      "kind": "primary",
+      "publication_model": "Selected adult retrospective myopathy series",
+      "reading": "selected_methods_results_tables",
+      "claim": "13 selected cases included muscle, swallowing and respiratory involvement; incomplete recovery occurred after withdrawal.",
+      "limit": "10 HCQ, 2 CQ, 1 both; no exposed-population denominator, pediatric estimate or selected-pair risk."
+    },
+    {
+      "id": "vanerp2016",
+      "title": "van Erp 2016: hematocrit and everolimus PK",
+      "url": "https://doi.org/10.1007/s40262-016-0414-3",
+      "kind": "primary",
+      "publication_model": "Population model based on 73 cancer patients",
+      "reading": "selected_methods_results_limitations",
+      "claim": "Hematocrit strongly influenced predicted whole-blood exposure without corresponding modeled plasma/PD change.",
+      "limit": "Binding and PD assumptions; not measured unbound tissue exposure or patient-specific dosing guidance."
+    },
+    {
+      "id": "goenka2025",
+      "title": "Goenka 2025: randomized HCQ ovarian-cancer trial",
+      "url": "https://doi.org/10.1007/s12672-025-01904-w",
+      "kind": "primary",
+      "publication_model": "Platinum-sensitive relapsed ovarian cancer",
+      "reading": "selected_methods_efficacy_biomarker_results_discussion",
+      "claim": "59 enrolled, 56 response-evaluable; no demonstrated response or survival improvement with HCQ addition.",
+      "limit": "Different cancer/backbone; small trial, response evaluability and peripheral biomarkers; no proof of zero effect or universal toxicity."
+    },
+    {
+      "id": "bonatti1998",
+      "title": "Bonatti 1998: rapamycin and chromosome malsegregation",
+      "url": "https://doi.org/10.1007/s004120050335",
+      "kind": "primary",
+      "publication_model": "Mammalian and yeast cell assays",
+      "reading": "indexed_primary_abstract_only",
+      "claim": "Malsegregation response varied with cell-cycle/model context.",
+      "limit": "Full text unavailable; no verified dose/effect-size or clinical everolimus harm estimate."
+    },
+    {
+      "id": "yamada2026",
+      "title": "Yamada 2026: noncanonical cohesin degradation",
+      "url": "https://doi.org/10.1093/bbb/zbag087",
+      "kind": "primary",
+      "publication_model": "Budding yeast TORC1 inactivation",
+      "reading": "indexed_primary_abstract_only",
+      "claim": "A separase-independent cohesin-degradation route was reported.",
+      "limit": "Not a mammalian or everolimus response; full text unavailable."
+    },
+    {
+      "id": "silva2024",
+      "title": "Silva 2024: BUB1B variants and Taxol response",
+      "url": "https://doi.org/10.1186/s12929-024-01056-z",
+      "kind": "primary",
+      "publication_model": "RWPE-1 clones carrying two different edited in-frame BUB1B deletions",
+      "reading": "selected_model_generation_results_figure4_discussion",
+      "claim": "Edited clones showed reduced Taxol growth inhibition/apoptosis at 10 nM for 96 h.",
+      "limit": "Four response experiments; not the selected variants, a monoallelic response test or universal antimitotic resistance."
+    },
+    {
+      "id": "pun2025",
+      "title": "Pun 2025: BubR1 and cardiac development",
+      "url": "https://doi.org/10.1161/JAHA.124.038286",
+      "kind": "primary",
+      "publication_model": "Embryonic heart-specific Bub1b knockout mice",
+      "reading": "primary_abstract_and_selected_firecrawl_results_discussion_passages",
+      "claim": "Cardiac deletion disturbed development and differentiation; early transcriptomic changes preceded detected proliferation/apoptosis changes.",
+      "limit": "No drug rescue or selected-pair experiment; complete independence from mitosis not proved; no subject cardiac phenotype inferred."
+    },
+    {
+      "id": "rms_tmz2018",
+      "title": "Moghadam 2018: autophagy blockade with TMZ",
+      "url": "https://doi.org/10.1038/s41420-018-0115-9",
+      "kind": "primary",
+      "publication_model": "RH30 RMS and C2C12 myoblast models",
+      "reading": "metadata_and_selected_firecrawl_methods_results_passages",
+      "claim": "Bafilomycin A1 augmented TMZ-associated death in both models.",
+      "limit": "Not HCQ; mouse myoblast comparator is not deficient human normal tissue; volume-assignment correction; previously in baseline source ledger, not new independent evidence."
+    },
+    {
+      "id": "growth_registry",
+      "title": "NCT02338609 registry recheck",
+      "url": "https://clinicaltrials.gov/study/NCT02338609",
+      "kind": "registry",
+      "publication_model": "Public trial record retrieved 2026-09-19",
+      "reading": "status_design_selected_posted_results",
+      "claim": "Completed single-group long-term follow-up: 15 enrolled, 13 completed; posted growth/puberty outcomes.",
+      "limit": "Selected population, no concurrent untreated comparator; overlap with earlier studies not resolved."
+    },
+    {
+      "id": "evero_pediatric_registry",
+      "title": "NCT01216839 registry recheck",
+      "url": "https://clinicaltrials.gov/study/NCT01216839",
+      "kind": "registry",
+      "publication_model": "Public trial record retrieved 2026-09-19",
+      "reading": "status_design_selected_posted_results",
+      "claim": "Retrieved record UNKNOWN, estimated enrollment 20, no results posted, last posted update 2013.",
+      "limit": "Not a negative trial, actual enrollment or proof of lack of drug activity."
+    },
+    {
+      "id": "hcq_terminated_registry",
+      "title": "NCT00786682 registry recheck",
+      "url": "https://clinicaltrials.gov/study/NCT00786682",
+      "kind": "registry",
+      "publication_model": "Public trial record retrieved 2026-09-19",
+      "reading": "status_design_selected_posted_results",
+      "claim": "Stopped for lack of improvement versus historical controls and competing studies.",
+      "limit": "Narrative/structured-denominator inconsistency; no constructed effect estimate; different cancer/backbone."
+    },
+    {
+      "id": "arst1431_registry",
+      "title": "NCT02567435 registry recheck",
+      "url": "https://clinicaltrials.gov/study/NCT02567435",
+      "kind": "registry",
+      "publication_model": "Public trial record retrieved 2026-09-19",
+      "reading": "status_design_selected_posted_results",
+      "claim": "Posted EFS analysis uses 148+149 participants and p=0.44.",
+      "limit": "325 overall enrolled is not the 297-person analysis denominator; previously indexed baseline trial, not independent replication."
+    },
+    {
+      "id": "controls2012",
+      "title": "BUBR1 engineered-control study",
+      "url": "https://doi.org/10.1016/j.devcel.2012.03.009",
+      "kind": "primary",
+      "publication_model": "Engineered human-cell complementation",
+      "reading": "selected_main_text",
+      "claim": "D882N/A retained function in the reported assays; primary and secondary controls support sensitivity analysis.",
+      "limit": "One study; secondary D882A supplement not independently reviewed; no clinical calibration."
+    },
+    {
+      "id": "domain2020",
+      "title": "BUBR1 pseudokinase domain and phosphatase recruitment",
+      "url": "https://doi.org/10.1016/j.celrep.2020.108397",
+      "kind": "primary",
+      "publication_model": "Engineered human-cell domain perturbations",
+      "reading": "indexed_primary_sections",
+      "claim": "Removal or disruption affects KARD/PP2A-B56 and checkpoint silencing/alignment.",
+      "limit": "Not the selected allele; expression, construct and endpoint context differ from earlier complementation."
+    },
+    {
+      "id": "hafner2016",
+      "title": "Growth-rate inhibition metrics",
+      "url": "https://doi.org/10.1038/nmeth.3853",
+      "kind": "primary",
+      "publication_model": "Cell-based drug-response methodological experiments",
+      "reading": "selected_sections",
+      "claim": "Baseline division differences can distort conventional endpoint drug-sensitivity metrics.",
+      "limit": "Growth-rate normalization needs meaningful control growth; not a normal-tissue function or clinical margin."
+    },
+    {
+      "id": "oreilly2006",
+      "title": "mTOR inhibition and upstream/Akt feedback",
+      "url": "https://doi.org/10.1158/0008-5472.CAN-05-2925",
+      "kind": "primary",
+      "publication_model": "Tumour-cell signaling experiments",
+      "reading": "indexed_primary_sections",
+      "claim": "Feedback challenges target suppression as a complete mechanistic endpoint.",
+      "limit": "Not direct-pair constitutional evidence; full-text refresh failed."
+    },
+    {
+      "id": "flux2011",
+      "title": "Autolysosome formation and degradation reporter analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3121655/",
+      "kind": "primary",
+      "publication_model": "Cell-based multiparameter reporter experiments",
+      "reading": "selected_sections",
+      "claim": "pH, reporter expression and optical changes need controls distinct from turnover.",
+      "limit": "Not BUB1B or HCQ functional rescue; assay methods need local qualification."
+    },
+    {
+      "id": "tpr2026",
+      "title": "BubR1 TPR domain and MCC/APC/C interactions",
+      "url": "https://doi.org/10.1038/s42003-026-10384-9",
+      "kind": "primary",
+      "publication_model": "HeLa RNAi/complementation and biochemical assays",
+      "reading": "selected_sections",
+      "claim": "N-terminal interactions contribute to checkpoint function outside the modeled C-terminal fragment.",
+      "limit": "Different perturbations and endpoints; no selected-pair functional classification."
+    },
+    {
+      "id": "heterozygous2026",
+      "title": "Two different heterozygous BUB1B variants in recurrent pregnancy loss",
+      "url": "https://doi.org/10.3389/fendo.2026.1838559",
+      "kind": "primary",
+      "publication_model": "Two-family observational/functional study; different variants",
+      "reading": "selected_sections",
+      "claim": "Preliminary PCS and expression observations retain single-allele mechanisms as questions.",
+      "limit": "Variants remain VUS; no causal or phase inference about this family; no drug intervention."
+    },
+    {
+      "id": "transplant2025",
+      "title": "Everolimus/low-dose tacrolimus pediatric heart-transplant RCT",
+      "url": "https://doi.org/10.1001/jama.2025.14338",
+      "kind": "primary",
+      "publication_model": "211 six-month post-transplant survivors; regimen comparison",
+      "reading": "abstract",
+      "claim": "Reports safety noninferiority under its prespecified composite and no significant primary efficacy difference.",
+      "limit": "Abstract-only review; comparator changes more than one drug; indication and survivor selection limit transfer."
+    },
+    {
+      "id": "biomede2026",
+      "title": "BIOMEDE randomized phase 2 DIPG trial",
+      "url": "https://doi.org/10.1038/s41591-026-04354-1",
+      "kind": "primary",
+      "publication_model": "Biomarker-constrained randomized drug arms plus historical efficacy cohort",
+      "reading": "abstract",
+      "claim": "Reports primary futility alongside favorable everolimus tolerability and exploratory response associations.",
+      "limit": "Historical efficacy comparator is not randomized; no RMS or constitutional rescue; biomarker analyses not fully reviewed."
+    },
+    {
+      "id": "balnis_supplement",
+      "title": "Balnis supplemental Methods",
+      "url": "https://insight.jci.org/articles/view/182842/sd/pdf/render/1",
+      "kind": "primary",
+      "publication_model": "Mouse hypercapnia and cultured myogenic cells",
+      "reading": "selected_supplement_and_visual_pages",
+      "claim": "PDF page 12 specifies 10 mM ex vivo; page 15 specifies 10 micromolar in primary cells.",
+      "limit": "Unresolved 1000-fold difference across related ex vivo methods; do not silently correct or transfer concentration."
+    },
+    {
+      "id": "hgps_registry",
+      "title": "Everolimus/lonafarnib HGPS registry",
+      "url": "https://clinicaltrials.gov/study/NCT02579044",
+      "kind": "registry",
+      "publication_model": "HGPS trial; different mechanism and combination",
+      "reading": "official_registry",
+      "claim": "April 2 2026 record reports enrolling by invitation and no posted results.",
+      "limit": "Absence of results is not a failed trial or evidence of efficacy."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "everolimus",
+      "name": "Everolimus",
+      "scope": "constitutional",
+      "decision": "mechanistic_probe_only",
+      "support": [
+        "jci126863",
+        "everolimus_label",
+        "abutaleb2023",
+        "joseph2019"
+      ],
+      "counterevidence": [
+        "slippage",
+        "goutas2023",
+        "quy2013",
+        "castets2019",
+        "ge2009",
+        "zhang2015",
+        "bonatti1998"
+      ],
+      "rationale": "Optional model-qualified probe only. Separate excess-pathway branch A from prospectively qualified flux/function branch B; neither is established in the selected pair. Graded exposure, regeneration/recovery and delayed injury must be adjudicated.",
+      "stop_rule": "No advancement without qualified branch-specific functional phenotype, faithful useful output, acceptable immediate/delayed safety, justified exposure and replication. No post-hoc switching between branches; material BUBR1 loss pauses review. Unresolved source units, model-only function or survivor/growth-rate artifacts cannot satisfy gates; imprecise results are held, not automatically rejected.",
+      "clinical_exposure_margin": null,
+      "context_sources": {
+        "arst1431": "Tumour-claim boundary only; not direct counterevidence to constitutional rescue.",
+        "jci_correction": "Figure 2E provenance correction; does not specifically invalidate Figure 5 mTOR blots.",
+        "balnis2025": "Challenges a universal measured-excess gate; different compound/model, separate prospective flux-function hypothesis only.",
+        "yamada2026": "Yeast mechanism lead, not direct mammalian harm.",
+        "pun2025": "Developmental scope limit; no drug response.",
+        "vanerp2016": "Exposure-matrix limitation; clinical margin stays null.",
+        "growth_registry": "Selected uncontrolled follow-up; not generalized pediatric safety.",
+        "balnis_supplement": "Disputed concentration quarantined; qualitative branch B rationale remains indirect.",
+        "transplant2025": "Context-specific positive safety counterweight; not MVA safety.",
+        "biomede2026": "Mixed tumor evidence outside RMS; no general biomarker rule."
+      },
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "hydroxychloroquine",
+      "name": "Hydroxychloroquine",
+      "scope": "tumour",
+      "decision": "reserve",
+      "support": [
+        "haas_hcq",
+        "goutas2023"
+      ],
+      "counterevidence": [
+        "tang",
+        "naddaf2021"
+      ],
+      "rationale": "Retain actual adult compound-combination signal while requiring compound-specific RMS flux/selectivity evidence. HCQ increased protein abundance at 100 micromolar for 2 h in late-passage stromal cells; this is not constitutional functional rescue or an exposure bridge.",
+      "stop_rule": "Do not reopen without compound-specific flux/function, matched deficient-normal safety including delayed muscle/lysosomal injury and recovery, and exposure; no inference from protein accumulation or another lysosomal drug.",
+      "clinical_exposure_margin": null,
+      "context_sources": {
+        "goenka2025": "Negative different-cancer randomized combination; not an RMS effect estimate.",
+        "hcq_terminated_registry": "Historical-control stopping record, not randomized efficacy.",
+        "rms_tmz2018": "Bafilomycin evidence must not be attributed to HCQ."
+      },
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "pralatrexate",
+      "name": "Pralatrexate",
+      "scope": "tumour",
+      "decision": "tumour_only_horizon",
+      "support": [
+        "pralatrexate_rms"
+      ],
+      "counterevidence": [
+        "pralatrexate_rms",
+        "pralatrexate_label"
+      ],
+      "rationale": "Optional documented fusion-positive RMS model hypothesis, not constitutional repair or assumed subject subtype.",
+      "stop_rule": "No advance without subtype/comparator, matched exposure and deficient-normal safety; recurrence rules out durable-eradication claims.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "temsirolimus",
+      "name": "Temsirolimus",
+      "scope": "tumour",
+      "decision": "benchmark_only",
+      "support": [
+        "arst0921"
+      ],
+      "counterevidence": [
+        "arst1431"
+      ],
+      "rationale": "Preserve different trial questions; prevent unsupported class-wide benefit claims.",
+      "stop_rule": "No direct transfer to constitutional everolimus rescue or unqualified standard-of-care comparator.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "entinostat",
+      "name": "Entinostat",
+      "scope": "tumour",
+      "decision": "deprioritize",
+      "support": [
+        "entinostat2024",
+        "entinostat_nmpa"
+      ],
+      "counterevidence": [
+        "entinostat2019",
+        "entinostat2024"
+      ],
+      "rationale": "Jurisdiction-aware eligibility does not repair model/schedule, multiplicity and exposure gaps.",
+      "stop_rule": "No promotion without appropriate subtype, replicated benefit, schedule-matched exposure and deficient-normal assessment.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "vorinostat",
+      "name": "Vorinostat",
+      "scope": "tumour",
+      "decision": "deprioritize",
+      "support": [
+        "vorinostat_case"
+      ],
+      "counterevidence": [
+        "vorinostat_case"
+      ],
+      "rationale": "Retain transient case benefit alongside progression, toxicity and negative PDX growth outcome.",
+      "stop_rule": "Necrosis or target engagement alone cannot establish efficacy; require exposure and matched normal safety.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "niclosamide",
+      "name": "Niclosamide and TBX-screen compounds",
+      "scope": "tumour",
+      "decision": "deprioritize",
+      "support": [
+        "tbx_screen",
+        "niclo_reformulation"
+      ],
+      "counterevidence": [
+        "niclo_original",
+        "niclo_correction",
+        "tbx_screen"
+      ],
+      "rationale": "Reformulation evidence tempers original PK failure but does not create a free RMS exposure bridge.",
+      "stop_rule": "Verify product/jurisdiction and endogenous mechanism; no advancement from extrapolated EC50s or unmatched total-plasma comparisons.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "posaconazole",
+      "name": "Posaconazole",
+      "scope": "tumour",
+      "decision": "deprioritize",
+      "support": [
+        "posaconazole"
+      ],
+      "counterevidence": [
+        "posaconazole",
+        "posaconazole_label"
+      ],
+      "rationale": "Actual growth inhibition retained; tissue injury and interactions undermine broad safety assumptions.",
+      "stop_rule": "No advancement without justified free exposure, normal-cell function and interaction review; no paper-to-paper combination assembly.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "pp2a_tools",
+      "name": "PP2A recruitment and chemical tools",
+      "scope": "mechanistic",
+      "decision": "exclude",
+      "support": [
+        "xu_pp2a",
+        "leonard_pp2a",
+        "naqvi_pp2a"
+      ],
+      "counterevidence": [
+        "vit_pp2a",
+        "xu_pp2a"
+      ],
+      "rationale": "Exclude from approved-drug shortlist; retain localized recruitment as an optional mechanistic control.",
+      "stop_rule": "Alignment under arrest, isolated scaffold binding or disputed compound annotation cannot establish faithful division or drug eligibility.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "senolysis",
+      "name": "Drug senolysis and HSP90 inhibition",
+      "scope": "constitutional",
+      "decision": "exclude",
+      "support": [
+        "baker2011",
+        "zhu_senolysis",
+        "fuhrmann_hsp90"
+      ],
+      "counterevidence": [
+        "baker2013",
+        "bubr1_stability"
+      ],
+      "rationale": "Genetic BubR1 clearance evidence and other-model drug benefits do not establish drug-mediated constitutional rescue.",
+      "stop_rule": "No generic lower-p21 or marker-clearance success criterion; require tissue-resolved viable function and chromosome safety.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "readthrough",
+      "name": "Ataluren/readthrough route",
+      "scope": "constitutional",
+      "decision": "exclude",
+      "support": [
+        "roy_readthrough"
+      ],
+      "counterevidence": [
+        "bolze_readthrough",
+        "ema_ataluren"
+      ],
+      "rationale": "Retain mechanism-control lessons but no approved clinical candidate promotion or selected-pair functional evidence.",
+      "stop_rule": "Endogenous RNA, actual traversal, full-length protein and function must pass separately; current regulatory eligibility also required.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    }
+  ],
+  "provider_settings": {
+    "openai_training": "owner_attested_not_used_for_training",
+    "fireworks_training": "unverified",
+    "fireworks_retention": "unverified",
+    "fireworks_tier": "owner_attested_api_credits",
+    "google_deepmind": "precomputed_output_api_and_downloads"
+  },
+  "adversarial_review": {
+    "date": "2026-09-24",
+    "baseline_commit": "255cabc86b8d1513ae7e3ae7edce679a157cc4f2",
+    "review_type": "main_agent_author_audit",
+    "scope": "19-claim whole-chain falsification; bounded public search and retained-score reanalysis",
+    "rescued_or_clinically_prioritized_candidates": [],
+    "current_interpretation": "No rescue-priority candidate; everolimus optional qualified probe; HCQ reserve."
+  },
+  "new_exposure_observations": [
+    {
+      "id": "goutas_everolimus_3h",
+      "source": "goutas2023",
+      "analyte": "everolimus",
+      "concentration": 100,
+      "unit": "nM",
+      "hours": 3,
+      "matrix": "culture_medium",
+      "basis": "nominal",
+      "serum": "10% FBS culture conditions",
+      "endpoint": "BUBR1_protein_abundance",
+      "clinical_exposure_margin": null
+    },
+    {
+      "id": "goutas_everolimus_24h",
+      "source": "goutas2023",
+      "analyte": "everolimus",
+      "concentration": 50,
+      "unit": "nM",
+      "hours": 24,
+      "matrix": "culture_medium",
+      "basis": "nominal",
+      "serum": "10% FBS culture conditions",
+      "endpoint": "BUBR1_protein_abundance",
+      "clinical_exposure_margin": null
+    },
+    {
+      "id": "goutas_hcq_2h",
+      "source": "goutas2023",
+      "analyte": "hydroxychloroquine",
+      "concentration": 100,
+      "unit": "uM",
+      "hours": 2,
+      "matrix": "culture_medium",
+      "basis": "nominal",
+      "serum": "10% FBS culture conditions",
+      "endpoint": "BUBR1_protein_abundance",
+      "clinical_exposure_margin": null
+    }
+  ],
+  "falsification_cycle": {
+    "date": "2026-09-19",
+    "baseline": "c97bfb1",
+    "review": "notes/track2-falsification-cycle1.md",
+    "claims": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8"
+    ],
+    "rescue_priority_candidates": [],
+    "experimental_hypotheses": {
+      "A": "Functional deficit plus reproducible excess mTOR-associated signaling; failure of excess stops A.",
+      "B": "Separately prespecified dynamic-flux and regenerative-function deficit with mechanistic plausibility; elevated baseline mTOR readouts are not universally necessary. B is not established for this pair."
+    },
+    "branch_switching": "No retrospective substitution; independent prospective qualification and confirmation required.",
+    "new_clinical_exposure_margin": null,
+    "new_experiments_performed": false,
+    "identity_error_rejected": "Supplemental regeneration query PMID19828831 was unrelated; corrected identity PMC2793064/PMID19794149 verified through Firecrawl."
+  },
+  "baseline_science_version": 10,
+  "falsification_v15": {
+    "review": "notes/track2-falsification-review-v15.md",
+    "register": "notes/track2-falsification-register-v15.json",
+    "analysis": "notes/track2-falsification-analysis-v15.json",
+    "source_audit": "notes/track2-falsification-source-audit-v15.json",
+    "primary_gate_pass": 12,
+    "secondary_sensitivity_fail": 8,
+    "control_comparisons": 12,
+    "post_hoc_sensitivity": true,
+    "source_unit_discrepancy": "Balnis supplement PDF pages 12/15: 10 mM versus 10 micromolar in related ex vivo methods; unresolved.",
+    "biological_advancement": "hold_unresolved",
+    "new_clinical_exposure_margin": null,
+    "new_experiments_performed": false
+  }
+}

@@ -4062,3 +4062,205 @@ Feat-009 remains in progress for continuing falsification, biological qualificat
 provider/owner/live review, recording/hosting and receipt. The requested presentation
 and harness integration is complete. Historical submissions and every earlier bound
 artifact remain unchanged; no upload or recording was performed.
+
+
+## Session 55 — 2026-09-24: falsification at every Track 2 inference
+
+The owner requested rigorous falsification throughout Track 2. Selected only feat-009,
+read the scientific-critical-thinking and harness-creator skills, and completed an
+author audit without subagents. Initial startup passed; the final regression run includes the original 562 tests. No protected subject input was opened by the research workflow or transmitted;
+local integrity/disclosure programs retain their existing local-data access. No new
+GPU/model inference, laboratory action, family contact, recording or submission occurred.
+
+The new v15 scientific revision comprises a 19-claim register across genetics, models,
+mechanism, measurement, exposure, safety, statistics, sources, alternatives and delivery.
+Each claim carries support, challenge, an observable falsifier, stop/reopening rules,
+dependencies and a discriminating next action. The register is not measured evidence
+or a laboratory preregistration. The executable advancement gate distinguishes missing
+evidence/hold from demonstrated failure/stop; all-pass can permit only preclinical
+review. Human evidence adjudication remains fallible; software cannot validate biology.
+
+Material findings and changes:
+
+- All 84 archived newer protein scores were reanalyzed. The original narrow primary
+  ordering still passes 12/12 model/window comparisons. With all six retained controls,
+  complete separation fails 8/12: ESMC300M passes 3/3, ESMC600M 1/3, ESMC6B and ESM3
+  0/3 each. Retained controls score negatively 11/24 times, impaired controls positively
+  2/48. All 12 N1002K scores are still negative. This is post-hoc sensitivity, not a
+  replacement primary gate, independent replication, accuracy estimate or clinical
+  classification. The D882A secondary label is reported in main text; its supplementary
+  experiment remains independently unreviewed. The report now narrows the inference.
+- The Balnis supplement was obtained and two relevant PDF pages visually inspected:
+  page 12 reports 10 mM ex vivo rapamycin; page 15 reports 10 micromolar in related
+  primary-cell methods. The 1,000-fold discrepancy is real source text, not merely OCR.
+  Neither concentration is silently corrected or adopted. Qualitative positive evidence
+  remains; whether the units reflect an error or different conditions is unresolved.
+  File SHA-256: 5cbc048a9b2200c33e3794e9b932a96809c8785e96f7ee61b1d698b2c6b15a43.
+- Published truncation/domain observations depend on expression and endpoint; 731X
+  is not L737Ter and ectopic cDNA bypasses endogenous transcript regulation. Separate
+  checkpoint activation, maintenance, silencing, attachment and useful daughter fate.
+- Growth-rate, ATP/viability, flux-reporter pH/expression/interference, missing tracks,
+  delayed injury/recovery and meaningful-effect/safety margins now have explicit rules.
+  A synthetic counterexample shows apparent survivor improvement alongside worse
+  all-enrolled useful output. Worst-case missingness bounds are not confidence intervals.
+- Favorable safety and indirect mechanistic evidence is retained alongside objections.
+  Pediatric transplant-regimen safety, uncontrolled TSC growth follow-up and exploratory
+  BIOMEDE findings do not establish MVA safety or rescue. Contrary evidence also tests
+  rejection; lack of access or an inconclusive result is not proof of failure.
+
+Reproducible source work is in notes/track2-falsification-search-v15.json,
+track2-falsification-followup-v15.json, track2-falsification-source-audit-v15.json and
+track2-falsification-review-v15.md. The initial 30 structured requests had 22 HTTP
+successes and eight errors (seven 503, one 500); two additional public downloads
+succeeded. Eleven adaptive requests succeeded at transport level, but an unrelated
+paper from guessed ARST ID 38838360 was explicitly rejected; correct PMID 38936378
+and DOI identity were verified. An unquoted DOI query's zero hits are a query failure,
+not absence of the study. Nineteen discovery queries produced 15 usable responses,
+90 returned records / 83 unique source+ID pairs. These are titles screened and selected
+abstracts/passages read, not 90 validated papers. The plan's intended relevance sort
+was not sent to the API; the audit correctly records API-default first-six ordering.
+All four new Firecrawl searches returned tool errors despite successful tool discovery;
+no usable Firecrawl evidence or new hosted-LLM job resulted. No blind retries were used.
+Reading depths, correction/access limits, positive findings and rejected matches remain.
+
+The v15 ledger has 63 cumulative source records and 11 unchanged drug dispositions.
+No rescue-priority drug; everolimus remains an optional model-qualified mechanistic
+probe, HCQ reserve. All biological advancement gates remain unknown. Subject phase,
+endogenous function, relevant exposure and clinical margins remain unresolved. No
+wet-lab experiment or treatment recommendation. BindCraft2 remains deferred without
+a defined functional target and experimental route. Existing 84/192/100 model result
+counts and their limitations are preserved; more correlated models cannot fill these gaps.
+
+Current science is v15 and presentation is v16. The v15 research snapshot had already
+been bound when final readthrough found residual method-abstract and video-description
+wording emphasizing primary-model success without its new sensitivity qualification.
+V15 was preserved unchanged; v16 fixes those passages and routes the current report
+to the 63-source ledger. Its nine-slide deck and 328-word narration match v15 except
+for version labels/links. Both versions retain the exact ARST1431 figure, uncertainty,
+full acknowledgement, provider disclosure and AF3 terms/notice/citation. No revision
+changes submitted Track 1 v4 or any older bound file. Earlier history remains available.
+
+AGENTS.md now routes every substantive research cycle through contrary-evidence checks,
+claim-specific falsifiers and explicit unknown/failed distinctions. The current-state
+record, README, feature evidence, handoff and startup checker agree on v16 presentation
+and v15 science. The checker rederives the control sensitivity, rejects model/planned
+substitutes for biology and retains conservative status. The final abstract checks
+prevent the new counterevidence from disappearing in the condensed submission answer.
+The harness skill's structural validator reports 100/100, all five subsystems 5/5;
+this heuristic is not evidence of scientific truth or clinical effectiveness.
+
+Verification (actual commands/results):
+
+```text
+uv run python scripts/track2_falsification_v15.py check
+passed:true; claims:19; primary_pass:12; sensitivity_fail:8;
+advancement:hold_unresolved; clinical_recommendation:false
+uv run python scripts/track2_release_v15.py build results/feat009/jvv7_track2_research_v15
+integrity_verified:true; files:44; bound_inputs:255; v1-v14 preserved; upload_ready:false
+uv run python scripts/track2_release_v16.py build results/feat009/jvv7_track2_research_v16
+integrity_verified:true; files:44; bound_inputs:265; v1-v15 preserved; upload_ready:false
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+Ran 595 tests in 6.689s
+OK
+uv run python scripts/verify_data.py --self-check
+self-check ok
+uv run python scripts/track1_submission.py --self-check
+self-check ok: build, strict conformance, normalization and official scoring
+uv run python scripts/track2_evidence.py track1
+local v4 CSV/report hashes unchanged; uploaded_bytes_independently_verified:false
+uv run python scripts/check_publication_remote.py --output results/feat009/v15-publication-20260924.json
+PUBLIC; 13 retired objects unavailable; 0 unknown errors; live control reachable;
+removed_object_gate_passed:true
+```
+
+The historical evidence check also passes 53 sources/12 candidates and its 63 tests;
+that older conditional-screen label is historical. The final 595-test log is
+logs/track2-v16-regressions-20260924.log; the initial v15-only revision passed 585 tests.
+New tests exercise missing/duplicate/mislabeled scores, nonfinite values, invalid
+denominators, missing/cyclic claims, insufficient evidence types, failed safety,
+post-hoc success and current-summary omissions. Passing tests is not biological evidence.
+
+Visual verification: v15's nine PDF pages were visually inspected, including changed
+pages 2 and 5 at full size. Final v16 PDF pages and PNG exports are all pixel-identical
+to the reviewed v15 pages. Nine pages, eight SVG figures, 724 visible words, 24px minimum,
+zero text clipping/overlap, 640px viewport pass, unchanged reviewed palette with minimum
+checked contrast 5.438. Per-slide narration counts are 34/42/35/33/37/30/41/51/25;
+actual runtime remains unmeasured. Export commands:
+
+```bash
+uv run node scripts/render_track2_slides_v15.mjs v15-slide-review-final-20260924
+uv run node scripts/render_track2_slides_v16.mjs v16-slide-review-final-20260924
+pdfinfo results/feat009/v16-slide-review-final-20260924/track2-slides-v16.pdf
+pdftoppm -r 72 -png results/feat009/v16-slide-review-final-20260924/track2-slides-v16.pdf results/feat009/v16-slide-review-final-20260924/pdf-page
+```
+
+The v16 recording-materials ZIP contains 19 files including SHA256SUMS.json; ZIP CRC
+and every included SHA pass. It holds PDF/HTML/nine PNGs/report/pitch/transcript/video
+description/falsification review and both AF3 terms files. It is not a recorded video.
+Path: results/feat009/jvv7_track2_video_materials_v16.zip; size 1,207,609 bytes;
+SHA-256 f998bd10181e3ecbefd22611db7297539fa194fd3895f5697e3ccbc904db90f6.
+The preserved v15 ZIP is 1,208,328 bytes with SHA-256
+2ec0ff8c29521b59dbbda2e9bc079249da5e3f00d1b58fa61117d71fd6d30735.
+
+Fresh ordinary-shell, no-argument startup passed after the final presentation and
+harness changes. Actual output from logs/track2-v16-final-init-20260924.log:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "presentation_version": 16,
+  "drug_science_version": 15,
+  "slides": 9,
+  "narration_words": 328,
+  "upload_ready": false,
+  "scope": "Public artifact/state consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```
+
+The staged disclosure audit passes 349 unique blobs with no findings. The default
+Git whitespace check reports only the intentional terminal blank separator in the
+two generated transcripts, whose exact bytes are release-bound. With that single
+blank-at-EOF rule excluded, the staged whitespace check passes. No bound file was
+modified to hide the warning. All older snapshots verify recursively.
+
+End-of-session commands:
+
+```bash
+uv run python scripts/audit_publication.py --staged --output results/feat009/v16-staged-final-disclosure-20260924.json
+git -c core.whitespace=-blank-at-eof diff --cached --check
+git commit -m "Make Track 2 falsification explicit across evidence and advancement gates"
+uv run python scripts/audit_publication.py --output results/feat009/v16-history-disclosure-20260924.json
+git push origin main
+git status --short
+git rev-list --left-right --count HEAD...@{upstream}
+```
+
+Feat-009 stays in progress for continued falsification and biological qualification,
+source clarification, provider/owner/live review, recorded/hosted video and receipt.
+The requested audit, concrete protocol revisions, presentation and harness update
+are complete. The strongest next evidence requires endogenous functional measurements
+and source clarification; no further compute is claimed to replace them.

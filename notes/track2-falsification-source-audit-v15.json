@@ -1,0 +1,1302 @@
+{
+  "date": "2026-09-24",
+  "scope": "Bounded author review, not exhaustive or independent peer review",
+  "queries": [
+    {
+      "id": "search_disease",
+      "query": "((BUB1B OR BUBR1) AND (drug OR rescue OR treatment)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUB1B%20OR%20BUBR1)%20AND%20(drug%20OR%20rescue%20OR%20treatment))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "42434306",
+          "source": "MED",
+          "doi": "10.3389/fendo.2026.1838559",
+          "title": "Functional and clinical evidence for two novel heterozygous &lt;i&gt;BUB1B&lt;/i&gt; variants and their value in precision genetic counseling for recurrent pregnancy loss."
+        },
+        {
+          "id": "PPR1117151",
+          "source": "PPR",
+          "doi": "10.1101/2025.11.09.687448",
+          "title": "BUB1B MITOTIC KINASE DRIVES THERAPY RESISTANT PROSTATE CANCER"
+        },
+        {
+          "id": "42647139",
+          "source": "MED",
+          "doi": "10.1158/2767-9764.crc-26-0560",
+          "title": "Spindle Assembly Checkpoint Competency Determines Sensitivity to KIF18A Inhibition in Small Cell Lung Cancer."
+        },
+        {
+          "id": "41534835",
+          "source": "MED",
+          "doi": "10.1016/j.jbc.2026.111148",
+          "title": "Targeting the splicing factor CWC22 induces mitotic slippage through repression of BubR1 expression and CDK1 activity in cancer cells."
+        },
+        {
+          "id": "41053901",
+          "source": "MED",
+          "doi": "10.1186/s41016-025-00407-5",
+          "title": "Identifying the role of aging-related genes in intracranial aneurysms through bioinformatics analysis."
+        },
+        {
+          "id": "41706839",
+          "source": "MED",
+          "doi": "10.1126/sciadv.aea1660",
+          "title": "Aneuploidy of chromosome 8 promotes the mesenchymal lineage during cell fate transitions."
+        }
+      ],
+      "hit_count": 5921
+    },
+    {
+      "id": "search_direction",
+      "query": "((BUB1B OR BUBR1) AND (mTOR OR rapamycin OR everolimus)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUB1B%20OR%20BUBR1)%20AND%20(mTOR%20OR%20rapamycin%20OR%20everolimus))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "42339509",
+          "source": "MED",
+          "doi": "10.1242/jcs.264929",
+          "title": "Cumulus cells enhance oocyte genomic quality control by promoting DNA damage-induced meiotic arrest."
+        },
+        {
+          "id": "42414255",
+          "source": "MED",
+          "doi": "10.1038/s41392-026-02756-8",
+          "title": "Aging and cancer: current understandings and future perspectives."
+        },
+        {
+          "id": "42278672",
+          "source": "MED",
+          "doi": "10.3390/ijms27115147",
+          "title": "Integrative Transcriptomic, Network, and Genomic Analysis of Peripheral Blood Mononuclear Cells Identifies Candidate Genes Associated with Dupilumab Clinical Response in Atopic Dermatitis Patients."
+        },
+        {
+          "id": "42726806",
+          "source": "MED",
+          "doi": "10.1371/journal.pone.0358180",
+          "title": "Identification of functional genes and immune cell infiltration analysis in liposarcoma."
+        },
+        {
+          "id": "41229848",
+          "source": "MED",
+          "doi": "10.21037/jtd-2025-704",
+          "title": "NUF2 promotes the malignant development of lung adenocarcinoma through the mTORC1 signaling pathway via binding to BUB1B."
+        },
+        {
+          "id": "41287778",
+          "source": "MED",
+          "doi": "10.7150/ijbs.111254",
+          "title": "PTEN-deficient, chromosomal instability colorectal cancer is hypersensitive to STAT3 inhibition."
+        }
+      ],
+      "hit_count": 1122
+    },
+    {
+      "id": "search_adaptive",
+      "query": "((everolimus OR rapamycin) AND muscle AND (regeneration OR harm OR atrophy)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((everolimus%20OR%20rapamycin)%20AND%20muscle%20AND%20(regeneration%20OR%20harm%20OR%20atrophy))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "unavailable",
+      "returned": []
+    },
+    {
+      "id": "search_tumour",
+      "query": "(rhabdomyosarcoma AND (everolimus OR temsirolimus) AND (trial OR resistance)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(rhabdomyosarcoma%20AND%20(everolimus%20OR%20temsirolimus)%20AND%20(trial%20OR%20resistance))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "unavailable",
+      "returned": []
+    },
+    {
+      "id": "search_hcq",
+      "query": "(hydroxychloroquine AND (myopathy OR rhabdomyosarcoma OR randomized)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(hydroxychloroquine%20AND%20(myopathy%20OR%20rhabdomyosarcoma%20OR%20randomized))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "42570312",
+          "source": "MED",
+          "doi": "10.1093/jnen/nlag074",
+          "title": "Drug-induced autophagic myopathies: Exploring pathophysiology with immunolabelling and proteomics."
+        },
+        {
+          "id": "42367441",
+          "source": "MED",
+          "doi": "10.7759/cureus.109799",
+          "title": "Rash-Negative Dermatomyositis-Spectrum Overlap Myositis With PM/Scl Positivity Presenting With Progressive Pharyngeal Dysphagia."
+        },
+        {
+          "id": "42559851",
+          "source": "MED",
+          "doi": "10.5152/eurjrheum.2026.25045",
+          "title": "Nemaline Myopathy in Systemic Lupus Erythematosus."
+        },
+        {
+          "id": "42698682",
+          "source": "MED",
+          "doi": "10.3389/fped.2026.1880638",
+          "title": "Juvenile dermatomyositis in Latvia: clinical, radiologic, laboratory, and therapeutic findings from 2010 to 2025."
+        },
+        {
+          "id": "42614460",
+          "source": "MED",
+          "doi": "10.1155/crot/3370053",
+          "title": "Laryngeal Complications of Dermatomyositis: A Case Report and Comprehensive Review of the Literature."
+        },
+        {
+          "id": "42147513",
+          "source": "MED",
+          "doi": "10.7759/cureus.107056",
+          "title": "More Than Skin Deep: Diffuse Calcinosis Mimicking Malignancy in Refractory Adult-Onset Dermatomyositis With Anti-transcription Intermediary Factor 1-Gamma (Anti-TIF1-\u03b3) Positivity."
+        }
+      ],
+      "hit_count": 18806
+    },
+    {
+      "id": "search_readthrough",
+      "query": "(BUB1B AND (readthrough OR ataluren OR gentamicin)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(BUB1B%20AND%20(readthrough%20OR%20ataluren%20OR%20gentamicin))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "41579174",
+          "source": "MED",
+          "doi": "10.1007/s00210-026-04997-4",
+          "title": "Sex-dependent transcriptional responses and druggable targets in gentamicin-induced nephrotoxicity."
+        },
+        {
+          "id": "39653367",
+          "source": "MED",
+          "doi": "10.1089/gtmb.2024.0350",
+          "title": "Detection of Genetic Variations in Children with Tetralogy of Fallot Using Whole Exome Sequencing Technology Integrated Bioinformatics Analysis."
+        },
+        {
+          "id": "35804254",
+          "source": "MED",
+          "doi": "10.1007/s10072-022-06247-w",
+          "title": "Pathogenic correlation between mosaic variegated aneuploidy 1 (MVA1) and a novel BUB1B variant: a reappraisal of a severe syndrome."
+        },
+        {
+          "id": "35311995",
+          "source": "MED",
+          "doi": "10.1242/dev.198341",
+          "title": "Molecular contribution to embryonic aneuploidy and karyotypic complexity in initial cleavage divisions of mammalian development."
+        },
+        {
+          "id": "41636927",
+          "source": "MED",
+          "doi": "10.1007/s10571-026-01681-2",
+          "title": "Leigh Syndrome Pathomechanism Involves Region-Specific Innate Immune Activation in Ndufs4 Knockout Mice."
+        },
+        {
+          "id": "40671100",
+          "source": "MED",
+          "doi": "10.1186/s12964-025-02348-z",
+          "title": "Campylobacter jejuni regulates cell cycle progression to potentiate host cell invasion."
+        }
+      ],
+      "hit_count": 48
+    },
+    {
+      "id": "search_proteostasis",
+      "query": "((BUB1B OR BUBR1) AND (SIRT2 OR senolytic OR phenylbutyrate OR HSP90)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUB1B%20OR%20BUBR1)%20AND%20(SIRT2%20OR%20senolytic%20OR%20phenylbutyrate%20OR%20HSP90))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "39490401",
+          "source": "MED",
+          "doi": "10.1016/j.semcancer.2024.10.005",
+          "title": "BubR1 and SIRT2: Insights into aneuploidy, aging, and cancer."
+        },
+        {
+          "id": "42414255",
+          "source": "MED",
+          "doi": "10.1038/s41392-026-02756-8",
+          "title": "Aging and cancer: current understandings and future perspectives."
+        },
+        {
+          "id": "39273652",
+          "source": "MED",
+          "doi": "10.3390/ijms25179705",
+          "title": "The Role of Molecular and Cellular Aging Pathways on Age-Related Hearing Loss."
+        },
+        {
+          "id": "41231600",
+          "source": "MED",
+          "doi": "10.1093/jmcb/mjaf040",
+          "title": "Dynamic crotonylation of Bub3 regulates mitotic checkpoint silencing and chromosome segregation."
+        },
+        {
+          "id": "40607964",
+          "source": "MED",
+          "doi": "10.1111/acel.70160",
+          "title": "BubR1 Insufficiency Drives Transcriptomic Alterations and Pathology Associated With Cardiac Aging and Heart Failure."
+        },
+        {
+          "id": "42074013",
+          "source": "MED",
+          "doi": "10.3390/ijms27083370",
+          "title": "Multiple Regulatory Mechanisms of Post-Translational Modifications and Therapeutic Potential of Mitotic Catastrophe."
+        }
+      ],
+      "hit_count": 539
+    },
+    {
+      "id": "search_pp2a",
+      "query": "((BUBR1 OR BUB1B) AND (PP2A OR pseudokinase)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUBR1%20OR%20BUB1B)%20AND%20(PP2A%20OR%20pseudokinase))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "42477419",
+          "source": "MED",
+          "doi": "10.1038/s42003-026-10384-9",
+          "title": "BubR1 TPR domain supports the mitotic checkpoint by promoting MCC formation and MCC-APC/C interaction."
+        },
+        {
+          "id": "39490401",
+          "source": "MED",
+          "doi": "10.1016/j.semcancer.2024.10.005",
+          "title": "BubR1 and SIRT2: Insights into aneuploidy, aging, and cancer."
+        },
+        {
+          "id": "40684918",
+          "source": "MED",
+          "doi": "10.1016/j.mocell.2025.100255",
+          "title": "Phosphatase regulation in cell division: With emphasis on PP2A-B56."
+        },
+        {
+          "id": "41120314",
+          "source": "MED",
+          "doi": "10.1038/s41467-025-64148-w",
+          "title": "CENP-E initiates chromosome congression by opposing Aurora kinases to promote end-on attachments."
+        },
+        {
+          "id": "41533580",
+          "source": "MED",
+          "doi": "10.1093/nar/gkaf1517",
+          "title": "Linking kinetochore attachment to checkpoint control: the role of Aurora B in BubR1 acetylation."
+        },
+        {
+          "id": "40157924",
+          "source": "MED",
+          "doi": "10.1038/s41467-025-58185-8",
+          "title": "A chemical-genetic system to rapidly inhibit the PP2A-B56 phosphatase reveals a role at metaphase kinetochores."
+        }
+      ],
+      "hit_count": 600
+    },
+    {
+      "id": "search_alternatives",
+      "query": "(rhabdomyosarcoma AND (pralatrexate OR entinostat OR vorinostat OR niclosamide OR posaconazole)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(rhabdomyosarcoma%20AND%20(pralatrexate%20OR%20entinostat%20OR%20vorinostat%20OR%20niclosamide%20OR%20posaconazole))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "41768998",
+          "source": "MED",
+          "doi": "10.3389/fcell.2026.1774090",
+          "title": "From bench to bedside: combining HDAC inhibitors with standard therapies in rhabdomyosarcoma treatment."
+        },
+        {
+          "id": "42624103",
+          "source": "MED",
+          "doi": "10.1016/j.medj.2026.101266",
+          "title": "Melanoma to rhabdomyosarcoma plasticity in the setting of immunotherapy."
+        },
+        {
+          "id": "42209514",
+          "source": "MED",
+          "doi": "10.1038/s41467-026-73749-y",
+          "title": "Fusion-positive rhabdomyosarcoma oncofusions share a common interactome."
+        },
+        {
+          "id": "40464712",
+          "source": "MED",
+          "doi": "10.1111/jcmm.70626",
+          "title": "Dual Targeting EZH2 and Histone Deacetylases in Human Uterine Sarcoma Cells Under Both 2D and 3D Culture Conditions."
+        },
+        {
+          "id": "42449647",
+          "source": "MED",
+          "doi": "10.3390/cancers18132103",
+          "title": "Strategies to Improve Sensitivity to Radiotherapy in Pediatric Solid Tumors."
+        },
+        {
+          "id": "PPR1113205",
+          "source": "PPR",
+          "doi": "10.1101/2025.10.31.25338685",
+          "title": "Melanoma to rhabdomyosarcoma plasticity in the setting of immunotherapy"
+        }
+      ],
+      "hit_count": 883
+    },
+    {
+      "id": "search_safety",
+      "query": "(everolimus AND pediatric AND (growth OR renal OR infection OR development)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(everolimus%20AND%20pediatric%20AND%20(growth%20OR%20renal%20OR%20infection%20OR%20development))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "unavailable",
+      "returned": []
+    },
+    {
+      "id": "search_assay",
+      "query": "((drug sensitivity) AND (growth rate OR ATP) AND confounders) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((drug%20sensitivity)%20AND%20(growth%20rate%20OR%20ATP)%20AND%20confounders)%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "42698560",
+          "source": "MED",
+          "doi": "10.1016/j.jtcme.2026.06.002",
+          "title": "&lt;i&gt;Astragalus membranaceus&lt;/i&gt; therapy in patients with spinocerebellar ataxia type 3."
+        },
+        {
+          "id": "42308356",
+          "source": "MED",
+          "doi": "10.1080/21505594.2026.2690833",
+          "title": "Targeting metabolism and membrane: Neferine synergizes with gentamicin against &lt;i&gt;Escherichia coli&lt;/i&gt; by disrupting FNR/ArcA-mediated homeostasis."
+        },
+        {
+          "id": "42171656",
+          "source": "MED",
+          "doi": "10.1158/0008-5472.can-25-4262",
+          "title": "Evolutionary Antifragile Therapy Is a Treatment Strategy to Suppress Drug Resistance by Exploiting Dose-Response Convexity."
+        },
+        {
+          "id": "42639147",
+          "source": "MED",
+          "doi": "10.34133/research.1402",
+          "title": "MRI-Based Deep Learning Guides Multi-Omics Discovery of NBPF4 as a Therapeutic Target for Breast Cancer Lymph Node Metastasis."
+        },
+        {
+          "id": "42325755",
+          "source": "MED",
+          "doi": "10.62347/pmfb6027",
+          "title": "Efficacy and safety of nintedanib combined with pirfenidone versus monotherapy in patients with idiopathic pulmonary fibrosis: a systematic review and meta-analysis."
+        },
+        {
+          "id": "42113889",
+          "source": "MED",
+          "doi": "10.1002/uog.70233",
+          "title": "Left and right myocardial performance indices in growth-restricted fetuses: systematic review and meta-analysis."
+        }
+      ],
+      "hit_count": 21200
+    },
+    {
+      "id": "search_corrections",
+      "query": "((BUBR1 OR everolimus OR rapamycin) AND (retraction OR corrigendum OR erratum)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUBR1%20OR%20everolimus%20OR%20rapamycin)%20AND%20(retraction%20OR%20corrigendum%20OR%20erratum))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "42169645",
+          "source": "MED",
+          "doi": "10.3892/or.2026.9139",
+          "title": "[Corrigendum] Rapamycin enhances the sensitivity of ER\u2011positive breast cancer cells to tamoxifen by upregulating p73 expression."
+        },
+        {
+          "id": "41905871",
+          "source": "MED",
+          "doi": "10.1016/j.exger.2026.113111",
+          "title": "Corrigendum to \"Mammalian target of rapamycin in chronic liver disease and the potential for therapeutic manipulation\" [Exp. Gerontol. Volume 217 (May 2026) 113105]."
+        },
+        {
+          "id": "42375101",
+          "source": "MED",
+          "doi": "10.4143/crt.2017.085.re",
+          "title": "RETRACTION: Everolimus Plus Ku0063794 Regimen Promotes Anticancer Effects against Hepatocellular Carcinoma Cells through the Paradoxical Inhibition of Autophagy."
+        },
+        {
+          "id": "41690846",
+          "source": "MED",
+          "doi": "10.1016/j.freeradbiomed.2026.02.022",
+          "title": "Corrigendum to \"NEAT1/hsa-miR-372-3p axis participates in rapamycin-induced lipid metabolic disorder\" [Free Radic. Biol. Med. 167 (2021) 1-11]."
+        },
+        {
+          "id": "40930900",
+          "source": "MED",
+          "doi": "10.1016/j.expneurol.2025.115452",
+          "title": "Corrigendum to \"RAD001 (everolimus) attenuates experimental autoimmune neuritis by inhibiting the mTOR pathway, elevating Akt activity and polarizing M2 macrophages\" [Exp. Neurol. 280 (2016) 106-114]."
+        },
+        {
+          "id": "41175562",
+          "source": "MED",
+          "doi": "10.1016/j.cbi.2025.111781",
+          "title": "Corrigendum to \"Sirtuin 1/3 regulates p53 deacetylation to inhibit iron poisoning-induced alveolar epithelial cell death and contributes to Rapamycin-mediated protection against limb ischemia/reperfusion-induced lung injury\" [Chem. Biol. Interact. 421 (2025) 111756]."
+        }
+      ],
+      "hit_count": 3810
+    },
+    {
+      "id": "search_sign",
+      "query": "((protein language model) AND (clinical calibration OR benchmark leakage OR variant effect)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((protein%20language%20model)%20AND%20(clinical%20calibration%20OR%20benchmark%20leakage%20OR%20variant%20effect))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "unavailable",
+      "returned": []
+    },
+    {
+      "id": "search_flux",
+      "query": "((autophagy flux) AND (lysosomal pH OR tandem reporter)) AND FIRST_PDATE:[* TO 2026-09-24]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((autophagy%20flux)%20AND%20(lysosomal%20pH%20OR%20tandem%20reporter))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "42317397",
+          "source": "MED",
+          "doi": "10.1080/27694127.2026.2687045",
+          "title": "Seeing is believing: visualizing spatiotemporal lipophagic flux in vivo with the tfLiveDrop reporter mice."
+        },
+        {
+          "id": "42738836",
+          "source": "MED",
+          "doi": "10.3390/cells15171542",
+          "title": "Autophagy-Ferroptosis Crosstalk in Dry Eye Disease: Context-Dependent Regulation of Ocular Surface Homeostasis."
+        },
+        {
+          "id": "42738843",
+          "source": "MED",
+          "doi": "10.3390/cells15171548",
+          "title": "Mitochondria-Lysosome Quality Flux in Aging Mesenchymal Stem/Stromal Cells: Quality-Control Bottlenecks and Therapeutic Opportunities for Regenerative Decline."
+        },
+        {
+          "id": "42504995",
+          "source": "MED",
+          "doi": "10.1002/advs.76771",
+          "title": "ANGPTL4 Exacerbates Renal Injury in Diabetic Kidney Disease by Impairing Podocyte Lipophagy via Compromised Lysosomal Degradative Function."
+        },
+        {
+          "id": "42724314",
+          "source": "MED",
+          "doi": "10.62347/tvyx8770",
+          "title": "HMTA, a natural alkylphenol from &lt;i&gt;Ardisia virens&lt;/i&gt; Kurz, obstructs autophagic flux to exert anti-pancreatic cancer activity."
+        },
+        {
+          "id": "42439611",
+          "source": "MED",
+          "doi": "10.3390/cells15131134",
+          "title": "Autophagy Stress Responses in Localized Prostate Cancer: A Flux-Aware Framework for Disease-Relevant Interpretation."
+        }
+      ],
+      "hit_count": 5186
+    },
+    {
+      "id": "bubr1_title",
+      "query": "TITLE_ABS:(BUB1B OR BUBR1) AND TITLE_ABS:(drug OR rescue OR treatment OR everolimus OR rapamycin)",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3A(BUB1B%20OR%20BUBR1)%20AND%20TITLE_ABS%3A(drug%20OR%20rescue%20OR%20treatment%20OR%20everolimus%20OR%20rapamycin))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "PPR1117151",
+          "source": "PPR",
+          "doi": "10.1101/2025.11.09.687448",
+          "title": "BUB1B MITOTIC KINASE DRIVES THERAPY RESISTANT PROSTATE CANCER"
+        },
+        {
+          "id": "42757823",
+          "source": "MED",
+          "doi": "10.1158/0008-5472.can-26-0874",
+          "title": "BUB1B Mitotic Kinase Dependency Reveals CENP-E Inhibition as a Tractable Approach for Castration and Enzalutamide Resistant Prostate Cancer."
+        },
+        {
+          "id": "41578708",
+          "source": "MED",
+          "doi": "10.1080/10428194.2025.2612628",
+          "title": "Targeting the FOXM1/BUB1B signaling network in multiple myeloma: mechanistic insights and therapeutic potential."
+        },
+        {
+          "id": "41229848",
+          "source": "MED",
+          "doi": "10.21037/jtd-2025-704",
+          "title": "NUF2 promotes the malignant development of lung adenocarcinoma through the mTORC1 signaling pathway via binding to BUB1B."
+        },
+        {
+          "id": "40857057",
+          "source": "MED",
+          "doi": "10.1111/jcmm.70767",
+          "title": "KIFC1 Overexpression Promotes Pancreatic Carcinoma Progression via Stabilising BUB1B."
+        },
+        {
+          "id": "39014450",
+          "source": "MED",
+          "doi": "10.1186/s12929-024-01056-z",
+          "title": "BUB1B monoallelic germline variants contribute to prostate cancer predisposition by triggering chromosomal instability."
+        }
+      ],
+      "hit_count": 400
+    },
+    {
+      "id": "tumour_title",
+      "query": "TITLE_ABS:rhabdomyosarcoma AND TITLE_ABS:(everolimus OR temsirolimus)",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3Arhabdomyosarcoma%20AND%20TITLE_ABS%3A(everolimus%20OR%20temsirolimus))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "38936378",
+          "source": "MED",
+          "doi": "10.1016/s1470-2045(24)00255-9",
+          "title": "Addition of temsirolimus to chemotherapy in children, adolescents, and young adults with intermediate-risk rhabdomyosarcoma (ARST1431): a randomised, open-label, phase 3 trial from the Children's Oncology Group."
+        },
+        {
+          "id": "40313040",
+          "source": "MED",
+          "doi": "10.1002/pbc.31692",
+          "title": "A Phase 1/2 Study of Lenvatinib in Combination With Everolimus in Recurrent and Refractory Pediatric and Young Adult Solid Tumors."
+        },
+        {
+          "id": "38295302",
+          "source": "MED",
+          "doi": "10.1158/1535-7163.mct-23-0342",
+          "title": "Enhanced Antipediatric Sarcoma Effect of Everolimus with Secukinumab by Targeting IL17A."
+        },
+        {
+          "id": "37243336",
+          "source": "MED",
+          "doi": "10.1002/pbc.30436",
+          "title": "Feasibility of combining temsirolimus to vincristine, dactinomycin, cyclophosphamide, and vincristine and irinotecan chemotherapy for children with intermediate-risk rhabdomyosarcoma: A report from Children's Oncology Group."
+        },
+        {
+          "id": "37016270",
+          "source": "MED",
+          "doi": "10.1002/cam4.5749",
+          "title": "Alveolar rhabdomyosarcoma has superior response rates to vinorelbine compared to embryonal rhabdomyosarcoma in patients with relapsed/refractory disease: A meta-analysis."
+        },
+        {
+          "id": "31513481",
+          "source": "MED",
+          "doi": "10.1200/jco.19.00576",
+          "title": "Randomized Phase II Trial of Bevacizumab or Temsirolimus in Combination With Chemotherapy for First Relapse Rhabdomyosarcoma: A Report From the Children's Oncology Group."
+        }
+      ],
+      "hit_count": 14
+    },
+    {
+      "id": "alternatives_title",
+      "query": "TITLE_ABS:rhabdomyosarcoma AND TITLE_ABS:(pralatrexate OR entinostat OR vorinostat OR niclosamide OR posaconazole)",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3Arhabdomyosarcoma%20AND%20TITLE_ABS%3A(pralatrexate%20OR%20entinostat%20OR%20vorinostat%20OR%20niclosamide%20OR%20posaconazole))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "42209514",
+          "source": "MED",
+          "doi": "10.1038/s41467-026-73749-y",
+          "title": "Fusion-positive rhabdomyosarcoma oncofusions share a common interactome."
+        },
+        {
+          "id": "42624103",
+          "source": "MED",
+          "doi": "10.1016/j.medj.2026.101266",
+          "title": "Melanoma to rhabdomyosarcoma plasticity in the setting of immunotherapy."
+        },
+        {
+          "id": "PPR1113205",
+          "source": "PPR",
+          "doi": "10.1101/2025.10.31.25338685",
+          "title": "Melanoma to rhabdomyosarcoma plasticity in the setting of immunotherapy"
+        },
+        {
+          "id": "39147820",
+          "source": "MED",
+          "doi": "10.1038/s41598-024-66545-5",
+          "title": "Entinostat as a combinatorial therapeutic for rhabdomyosarcoma."
+        },
+        {
+          "id": "39403898",
+          "source": "MED",
+          "doi": "10.1002/cam4.70303",
+          "title": "A High-Throughput Drug Repurposing Strategy to Treat TBX2 and/or TBX3 Dependent Cancers."
+        },
+        {
+          "id": "38277404",
+          "source": "MED",
+          "doi": "10.1371/journal.pone.0295629",
+          "title": "Integrated drug response prediction models pinpoint repurposed drugs with effectiveness against rhabdomyosarcoma."
+        }
+      ],
+      "hit_count": 19
+    },
+    {
+      "id": "muscle_title",
+      "query": "TITLE_ABS:(rapamycin OR everolimus) AND TITLE_ABS:muscle AND TITLE_ABS:(regeneration OR atrophy)",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3A(rapamycin%20OR%20everolimus)%20AND%20TITLE_ABS%3Amuscle%20AND%20TITLE_ABS%3A(regeneration%20OR%20atrophy))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "42485945",
+          "source": "MED",
+          "doi": "10.1016/j.nutres.2026.06.007",
+          "title": "Black ginger (Kaempferia parviflora) extract ameliorates high-fat diet-induced muscle atrophy through regulation of protein homeostasis and mitochondrial biogenesis."
+        },
+        {
+          "id": "42534629",
+          "source": "MED",
+          "doi": "10.1007/s10068-026-02195-9",
+          "title": "Fucosterol-standardized extract of &lt;i&gt;Sargassum fulvellum&lt;/i&gt; attenuates immobilization-induced skeletal muscle atrophy via PI3K/Akt/mTOR signaling."
+        },
+        {
+          "id": "42471106",
+          "source": "MED",
+          "doi": "10.1016/j.cbi.2026.112260",
+          "title": "ER stress-dependent Ddit4/REDD1 induction contributes to translational suppression during cisplatin-induced skeletal muscle atrophy."
+        },
+        {
+          "id": "42250616",
+          "source": "MED",
+          "doi": "10.1016/j.jnutbio.2026.110434",
+          "title": "Shikimic acid ameliorates immobilization-induced muscle atrophy through regulation of inflammation and muscle protein homeostasis."
+        },
+        {
+          "id": "42237612",
+          "source": "MED",
+          "doi": "10.4014/jmb.2604.04033",
+          "title": "Leonurine-Standardized &lt;i&gt;Leonurus japonicus&lt;/i&gt; Extract Promotes Recovery from Immobilization-Induced Muscle Atrophy via PI3K/Akt/mTOR Signaling in Mice."
+        },
+        {
+          "id": "42571457",
+          "source": "MED",
+          "doi": "10.29219/fnr.v70.14578",
+          "title": "A standardized combination of &lt;i&gt;Sphaeranthus indicus&lt;/i&gt; and &lt;i&gt;Mangifera indica&lt;/i&gt; extracts improves antioxidant defense and anabolic signaling and attenuates dexamethasone-induced skeletal muscle atrophy."
+        }
+      ],
+      "hit_count": 474
+    },
+    {
+      "id": "safety_title",
+      "query": "TITLE_ABS:everolimus AND TITLE_ABS:pediatric AND TITLE_ABS:(growth OR renal OR infection)",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3Aeverolimus%20AND%20TITLE_ABS%3Apediatric%20AND%20TITLE_ABS%3A(growth%20OR%20renal%20OR%20infection))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+      "status": "retrieved",
+      "returned": [
+        {
+          "id": "42569945",
+          "source": "MED",
+          "doi": "10.1002/1545-5017.70620",
+          "title": "Everolimus in the Treatment of Tuberous Sclerosis-Associated Renal Cell Carcinoma in a Pediatric Patient: A Case Report."
+        },
+        {
+          "id": "42656203",
+          "source": "MED",
+          "doi": "10.1016/j.jhlto.2026.100610",
+          "title": "Efficacy and safety of everolimus in heart transplant recipients: A meta-analysis."
+        },
+        {
+          "id": "42032072",
+          "source": "MED",
+          "doi": "10.1038/s41591-026-04354-1",
+          "title": "Targeted therapies plus radiotherapy for diffuse intrinsic pontine glioma: the randomized phase 2 BIOMEDE trial."
+        },
+        {
+          "id": "41463094",
+          "source": "MED",
+          "doi": "10.3390/biomedicines13123084",
+          "title": "Immunosuppressive Therapy in Pediatric Kidney Transplantation: Evolution, Current Practices, and Future Directions."
+        },
+        {
+          "id": "39448920",
+          "source": "MED",
+          "doi": "10.1186/s12882-024-03743-3",
+          "title": "Everolimus on cystic kidney disease burden reduction in pediatric tuberous sclerosis complex patients: a case series."
+        },
+        {
+          "id": "40960806",
+          "source": "MED",
+          "doi": "10.1001/jama.2025.14338",
+          "title": "Everolimus and Low-Dose Tacrolimus After Heart Transplant in Children: A Randomized Clinical Trial."
+        }
+      ],
+      "hit_count": 96
+    }
+  ],
+  "returned_records": 90,
+  "unique_source_id_records": 83,
+  "reading": "Returned discovery titles screened; only the selected primary passages/abstracts named in the review were read. Full-text download is not full-paper review.",
+  "retrieval_manifests": {
+    "results/feat009/v15-public-sources-20260924/retrieval.json": "f69b7c3b09a447752d950277227da103f63f9510f7dc929189897e1f3489851a",
+    "results/feat009/v15-public-followup-20260924/retrieval.json": "1b8c2f03c1f97a55ae41678f14729ab069f527a9d2630b99a57f862f9de62f3f",
+    "results/feat009/v15-firecrawl-20260924/manifest.json": "905b39c867a4cc449c21d1caecbd904a642478be3effc4e7de7096bae72623ef"
+  },
+  "records": [
+    {
+      "started_utc": "2026-09-24T04:20:56.469590+00:00",
+      "plan_sha256": "d2b2e09d71621e0cd49abd68e35c72d2d62df5d13399fd3007b33283c25dc01a",
+      "records": [
+        {
+          "id": "search_disease",
+          "format": "json",
+          "query": "((BUB1B OR BUBR1) AND (drug OR rescue OR treatment)) AND FIRST_PDATE:[* TO 2026-09-24]",
+          "reading": "discovery_top_six",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUB1B%20OR%20BUBR1)%20AND%20(drug%20OR%20rescue%20OR%20treatment))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:20:56.469936+00:00",
+          "status": "ok",
+          "bytes": 46528,
+          "sha256": "aa720d68e3bf3b2546e02915312ea4e679c5e39d65c96324f04b935fc781a790",
+          "ended_utc": "2026-09-24T04:20:58.794757+00:00"
+        },
+        {
+          "id": "search_direction",
+          "format": "json",
+          "query": "((BUB1B OR BUBR1) AND (mTOR OR rapamycin OR everolimus)) AND FIRST_PDATE:[* TO 2026-09-24]",
+          "reading": "discovery_top_six",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUB1B%20OR%20BUBR1)%20AND%20(mTOR%20OR%20rapamycin%20OR%20everolimus))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:20:56.471284+00:00",
+          "status": "ok",
+          "bytes": 47585,
+          "sha256": "7afc45ffa984ef3bb3aa7e1913243c4c20127cb15587d809c7598d0c6b49bcfc",
+          "ended_utc": "2026-09-24T04:20:59.020684+00:00"
+        },
+        {
+          "id": "search_adaptive",
+          "format": "json",
+          "query": "((everolimus OR rapamycin) AND muscle AND (regeneration OR harm OR atrophy)) AND FIRST_PDATE:[* TO 2026-09-24]",
+          "reading": "discovery_top_six",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((everolimus%20OR%20rapamycin)%20AND%20muscle%20AND%20(regeneration%20OR%20harm%20OR%20atrophy))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:20:56.472212+00:00",
+          "status": "http_error",
+          "http_status": 503,
+          "ended_utc": "2026-09-24T04:20:57.417345+00:00"
+        },
+        {
+          "id": "search_tumour",
+          "format": "json",
+          "query": "(rhabdomyosarcoma AND (everolimus OR temsirolimus) AND (trial OR resistance)) AND FIRST_PDATE:[* TO 2026-09-24]",
+          "reading": "discovery_top_six",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(rhabdomyosarcoma%20AND%20(everolimus%20OR%20temsirolimus)%20AND%20(trial%20OR%20resistance))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:20:57.417451+00:00",
+          "status": "http_error",
+          "http_status": 503,
+          "ended_utc": "2026-09-24T04:20:58.086751+00:00"
+        },
+        {
+          "id": "search_hcq",
+          "format": "json",
+          "query": "(hydroxychloroquine AND (myopathy OR rhabdomyosarcoma OR randomized)) AND FIRST_PDATE:[* TO 2026-09-24]",
+          "reading": "discovery_top_six",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(hydroxychloroquine%20AND%20(myopathy%20OR%20rhabdomyosarcoma%20OR%20randomized))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:20:58.086817+00:00",
+          "status": "ok",
+          "bytes": 33671,
+          "sha256": "cbb24a4328de3d9bf9df17f87e049ccd5e812c78b724e4bb3b3956efbfcb9d8f",
+          "ended_utc": "2026-09-24T04:21:00.540813+00:00"
+        },
+        {
+          "id": "search_readthrough",
+          "format": "json",
+          "query": "(BUB1B AND (readthrough OR ataluren OR gentamicin)) AND FIRST_PDATE:[* TO 2026-09-24]",
+          "reading": "discovery_top_six",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(BUB1B%20AND%20(readthrough%20OR%20ataluren%20OR%20gentamicin))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:20:58.794845+00:00",
+          "status": "ok",
+          "bytes": 50980,
+          "sha256": "d11c2afec2abbdb54eee33b8d0de6c95c08434aac986749c718d983aaef97457",
+          "ended_utc": "2026-09-24T04:21:01.122296+00:00"
+        },
+        {
+          "id": "search_proteostasis",
+          "format": "json",
+          "query": "((BUB1B OR BUBR1) AND (SIRT2 OR senolytic OR phenylbutyrate OR HSP90)) AND FIRST_PDATE:[* TO 2026-09-24]",
+          "reading": "discovery_top_six",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUB1B%20OR%20BUBR1)%20AND%20(SIRT2%20OR%20senolytic%20OR%20phenylbutyrate%20OR%20HSP90))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:20:59.020757+00:00",
+          "status": "ok",
+          "bytes": 48757,
+          "sha256": "a6b2dd4f1bcd09628b191af18a561be4a648e30ddf96575d050834ce4ab61bd7",
+          "ended_utc": "2026-09-24T04:21:01.115345+00:00"
+        },
+        {
+          "id": "search_pp2a",
+          "format": "json",
+          "query": "((BUBR1 OR BUB1B) AND (PP2A OR pseudokinase)) AND FIRST_PDATE:[* TO 2026-09-24]",
+          "reading": "discovery_top_six",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUBR1%20OR%20BUB1B)%20AND%20(PP2A%20OR%20pseudokinase))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:21:00.540869+00:00",
+          "status": "ok",
+          "bytes": 45930,
+          "sha256": "4f5076763ff0aa6cb38e89df12571d9d6bf7ba6cb33ddec84ad9ce18bd27bd0b",
+          "ended_utc": "2026-09-24T04:21:03.666886+00:00"
+        },
+        {
+          "id": "search_alternatives",
+          "format": "json",
+          "query": "(rhabdomyosarcoma AND (pralatrexate OR entinostat OR vorinostat OR niclosamide OR posaconazole)) AND FIRST_PDATE:[* TO 2026-09-24]",
+          "reading": "discovery_top_six",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(rhabdomyosarcoma%20AND%20(pralatrexate%20OR%20entinostat%20OR%20vorinostat%20OR%20niclosamide%20OR%20posaconazole))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:21:01.115385+00:00",
+          "status": "ok",
+          "bytes": 51041,
+          "sha256": "3ed2c8c8595f0375413c98a1e6f24daa165e41c0afc8c639c32cc2a308a4512a",
+          "ended_utc": "2026-09-24T04:21:04.398142+00:00"
+        },
+        {
+          "id": "search_safety",
+          "format": "json",
+          "query": "(everolimus AND pediatric AND (growth OR renal OR infection OR development)) AND FIRST_PDATE:[* TO 2026-09-24]",
+          "reading": "discovery_top_six",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(everolimus%20AND%20pediatric%20AND%20(growth%20OR%20renal%20OR%20infection%20OR%20development))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:21:01.122326+00:00",
+          "status": "http_error",
+          "http_status": 503,
+          "ended_utc": "2026-09-24T04:21:01.859963+00:00"
+        },
+        {
+          "id": "search_assay",
+          "format": "json",
+          "query": "((drug sensitivity) AND (growth rate OR ATP) AND confounders) AND FIRST_PDATE:[* TO 2026-09-24]",
+          "reading": "discovery_top_six",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((drug%20sensitivity)%20AND%20(growth%20rate%20OR%20ATP)%20AND%20confounders)%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:21:01.860029+00:00",
+          "status": "ok",
+          "bytes": 47756,
+          "sha256": "ecdc855a05b9b6583d7cefe069a289635b64b737b038f4153db84cb6983a5733",
+          "ended_utc": "2026-09-24T04:21:04.411804+00:00"
+        },
+        {
+          "id": "search_corrections",
+          "format": "json",
+          "query": "((BUBR1 OR everolimus OR rapamycin) AND (retraction OR corrigendum OR erratum)) AND FIRST_PDATE:[* TO 2026-09-24]",
+          "reading": "discovery_top_six",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((BUBR1%20OR%20everolimus%20OR%20rapamycin)%20AND%20(retraction%20OR%20corrigendum%20OR%20erratum))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:21:03.666952+00:00",
+          "status": "ok",
+          "bytes": 31022,
+          "sha256": "70413691d30b1b2c9690ca97387a7ae0d4d0614a189c5677fd93f717534149d1",
+          "ended_utc": "2026-09-24T04:21:06.902086+00:00"
+        },
+        {
+          "id": "search_sign",
+          "format": "json",
+          "query": "((protein language model) AND (clinical calibration OR benchmark leakage OR variant effect)) AND FIRST_PDATE:[* TO 2026-09-24]",
+          "reading": "discovery_top_six",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((protein%20language%20model)%20AND%20(clinical%20calibration%20OR%20benchmark%20leakage%20OR%20variant%20effect))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:21:04.398209+00:00",
+          "status": "http_error",
+          "http_status": 503,
+          "ended_utc": "2026-09-24T04:21:05.085935+00:00"
+        },
+        {
+          "id": "search_flux",
+          "format": "json",
+          "query": "((autophagy flux) AND (lysosomal pH OR tandem reporter)) AND FIRST_PDATE:[* TO 2026-09-24]",
+          "reading": "discovery_top_six",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((autophagy%20flux)%20AND%20(lysosomal%20pH%20OR%20tandem%20reporter))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:21:04.411879+00:00",
+          "status": "ok",
+          "bytes": 36029,
+          "sha256": "e5431d9001729955419ae670fffb76c37393b12d3cdcd55f5bbef4c69bf9985f",
+          "ended_utc": "2026-09-24T04:21:07.913287+00:00"
+        },
+        {
+          "id": "control_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1016%2Fj.devcel.2012.03.009&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-24T04:21:05.086120+00:00",
+          "status": "ok",
+          "bytes": 7375,
+          "sha256": "3a110da8cb5269d1fe49cf712cd6470f9c1dd8f76b95d75e7fb38e7c8e537b58",
+          "ended_utc": "2026-09-24T04:21:05.803174+00:00"
+        },
+        {
+          "id": "domain_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1016%2Fj.celrep.2020.108397&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-24T04:21:05.803241+00:00",
+          "status": "ok",
+          "bytes": 11387,
+          "sha256": "95b3d9b1854952f8bf840ebf88cb743043c7f421d6237ef9dc564140c990d416",
+          "ended_utc": "2026-09-24T04:21:06.647823+00:00"
+        },
+        {
+          "id": "goutas_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1016%2Fj.redox.2023.102701&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-24T04:21:06.647888+00:00",
+          "status": "http_error",
+          "http_status": 503,
+          "ended_utc": "2026-09-24T04:21:07.369877+00:00"
+        },
+        {
+          "id": "balnis_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1172%2Fjci.insight.182842&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-24T04:21:06.902150+00:00",
+          "status": "ok",
+          "bytes": 8832,
+          "sha256": "1db611c99f3cf7bbfaf0735c3e59b7a26e1419ae123695db023a755b8332512a",
+          "ended_utc": "2026-09-24T04:21:07.661997+00:00"
+        },
+        {
+          "id": "hafner_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fnmeth.3853&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-24T04:21:07.369948+00:00",
+          "status": "http_error",
+          "http_status": 503,
+          "ended_utc": "2026-09-24T04:21:08.105887+00:00"
+        },
+        {
+          "id": "oreilly_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1158%2F0008-5472.CAN-05-2925&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-24T04:21:07.662054+00:00",
+          "status": "http_error",
+          "http_status": 503,
+          "ended_utc": "2026-09-24T04:21:08.394216+00:00"
+        },
+        {
+          "id": "arst1431_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1016%2FS1470-2045(24)00255-9&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-24T04:21:07.913398+00:00",
+          "status": "ok",
+          "bytes": 195,
+          "sha256": "8e248889a6e31e1a98d241f6580d5a4b6c5a2c0c78eead0e39cf786b8ad5dfbe",
+          "ended_utc": "2026-09-24T04:21:08.621005+00:00"
+        },
+        {
+          "id": "joseph_metadata",
+          "format": "json",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1128%2FMCB.00141-19&format=json&resultType=core&pageSize=1",
+          "started_utc": "2026-09-24T04:21:08.105952+00:00",
+          "status": "ok",
+          "bytes": 7937,
+          "sha256": "88e2954fd5236b3ffd2a5bc03bf2ad9295bcf229cd2656a03fea9b20276ddeb5",
+          "ended_utc": "2026-09-24T04:21:08.960546+00:00"
+        },
+        {
+          "id": "hafner_fulltext",
+          "format": "xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4887336/fullTextXML",
+          "started_utc": "2026-09-24T04:21:08.394363+00:00",
+          "status": "ok",
+          "bytes": 133004,
+          "sha256": "bc371af7ba5528deed1fe4dd88ecca2041a126a562071eb01db386c1ef5020ae",
+          "ended_utc": "2026-09-24T04:21:09.648444+00:00"
+        },
+        {
+          "id": "oreilly_fulltext",
+          "format": "xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3193604/fullTextXML",
+          "started_utc": "2026-09-24T04:21:08.621068+00:00",
+          "status": "http_error",
+          "http_status": 500,
+          "ended_utc": "2026-09-24T04:21:09.362165+00:00"
+        },
+        {
+          "id": "balnis_fulltext",
+          "format": "xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11721297/fullTextXML",
+          "started_utc": "2026-09-24T04:21:08.960617+00:00",
+          "status": "ok",
+          "bytes": 196128,
+          "sha256": "389dd8cc8c9eb62a8271fc794289f867658394f90aa8985372a3dedaa0d56f28",
+          "ended_utc": "2026-09-24T04:21:10.404859+00:00"
+        },
+        {
+          "id": "flux_fulltext",
+          "format": "xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3121655/fullTextXML",
+          "started_utc": "2026-09-24T04:21:09.362225+00:00",
+          "status": "ok",
+          "bytes": 121223,
+          "sha256": "7739a58258c32f66ea409c6560552c9bb0bb6c93560e1329db6827786772763a",
+          "ended_utc": "2026-09-24T04:21:10.744038+00:00"
+        },
+        {
+          "id": "nct02579044",
+          "format": "json",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT02579044",
+          "started_utc": "2026-09-24T04:21:09.648700+00:00",
+          "status": "ok",
+          "bytes": 9116,
+          "sha256": "b08572680bd73f6f0da9745d798f2ac567fddfd535bc135f0c250759538503cc",
+          "ended_utc": "2026-09-24T04:21:10.066163+00:00"
+        },
+        {
+          "id": "nct02567435",
+          "format": "json",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT02567435",
+          "started_utc": "2026-09-24T04:21:10.066295+00:00",
+          "status": "ok",
+          "bytes": 265518,
+          "sha256": "dbc78d8f8432e0141b8f94dffa4f7ac0e9a85cc172522fbcdfc17577f6c48e54",
+          "ended_utc": "2026-09-24T04:21:10.710105+00:00"
+        },
+        {
+          "id": "nct01216839",
+          "format": "json",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT01216839",
+          "started_utc": "2026-09-24T04:21:10.405110+00:00",
+          "status": "ok",
+          "bytes": 7237,
+          "sha256": "6fc16f0c7c4b5094d623b3e5ce4c5fa9ade0a3e3b45ae135962d5677894014b6",
+          "ended_utc": "2026-09-24T04:21:10.882978+00:00"
+        },
+        {
+          "id": "nct02338609",
+          "format": "json",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT02338609",
+          "started_utc": "2026-09-24T04:21:10.710333+00:00",
+          "status": "ok",
+          "bytes": 112055,
+          "sha256": "0137576fdd8e608fb0907e63739526ad2a8fa296bf6e623704e6fb7008306c5d",
+          "ended_utc": "2026-09-24T04:21:11.542155+00:00"
+        }
+      ],
+      "downloads": [
+        {
+          "id": "balnis_supplement",
+          "url": "https://insight.jci.org/articles/view/182842/sd/pdf/render/1",
+          "status": "ok",
+          "bytes": 1621721,
+          "sha256": "5cbc048a9b2200c33e3794e9b932a96809c8785e96f7ee61b1d698b2c6b15a43"
+        },
+        {
+          "id": "everolimus_label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f1ae129-c21e-4c25-84c1-a6757d9a7eb2",
+          "status": "ok",
+          "bytes": 321409,
+          "sha256": "5089d7dcadb24315a0cafc3c241f0236dd486dd124c771bbe5a192fc85ca751c"
+        }
+      ],
+      "ended_utc": "2026-09-24T04:21:17.573970+00:00"
+    },
+    {
+      "started_utc": "2026-09-24T04:22:13.404757+00:00",
+      "plan_sha256": "869af58ae5b256ac006572a1aa5465a74dcd9ce7e494a7a6ed22e4c8b3bd1f1b",
+      "records": [
+        {
+          "id": "bubr1_title",
+          "format": "json",
+          "query": "TITLE_ABS:(BUB1B OR BUBR1) AND TITLE_ABS:(drug OR rescue OR treatment OR everolimus OR rapamycin)",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3A(BUB1B%20OR%20BUBR1)%20AND%20TITLE_ABS%3A(drug%20OR%20rescue%20OR%20treatment%20OR%20everolimus%20OR%20rapamycin))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:22:13.407677+00:00",
+          "status": "ok",
+          "bytes": 51119,
+          "sha256": "916cbfd62f5bd300528c59b6456d291a23493d4280ee235f93f96fcc2d3e9a55",
+          "ended_utc": "2026-09-24T04:22:14.918680+00:00"
+        },
+        {
+          "id": "tumour_title",
+          "format": "json",
+          "query": "TITLE_ABS:rhabdomyosarcoma AND TITLE_ABS:(everolimus OR temsirolimus)",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3Arhabdomyosarcoma%20AND%20TITLE_ABS%3A(everolimus%20OR%20temsirolimus))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:22:13.414206+00:00",
+          "status": "ok",
+          "bytes": 67477,
+          "sha256": "e9fcb7dad8a9b2f0c204d39f43a8712dcf3759e756adb153a714b11f2ebac273",
+          "ended_utc": "2026-09-24T04:22:14.893073+00:00"
+        },
+        {
+          "id": "alternatives_title",
+          "format": "json",
+          "query": "TITLE_ABS:rhabdomyosarcoma AND TITLE_ABS:(pralatrexate OR entinostat OR vorinostat OR niclosamide OR posaconazole)",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3Arhabdomyosarcoma%20AND%20TITLE_ABS%3A(pralatrexate%20OR%20entinostat%20OR%20vorinostat%20OR%20niclosamide%20OR%20posaconazole))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:22:13.417848+00:00",
+          "status": "ok",
+          "bytes": 57033,
+          "sha256": "0fa1a79df01e1f644d9053fa4d65f249623f11eb3c1df30ddc3ea1475215eb9c",
+          "ended_utc": "2026-09-24T04:22:14.890648+00:00"
+        },
+        {
+          "id": "muscle_title",
+          "format": "json",
+          "query": "TITLE_ABS:(rapamycin OR everolimus) AND TITLE_ABS:muscle AND TITLE_ABS:(regeneration OR atrophy)",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3A(rapamycin%20OR%20everolimus)%20AND%20TITLE_ABS%3Amuscle%20AND%20TITLE_ABS%3A(regeneration%20OR%20atrophy))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:22:14.890713+00:00",
+          "status": "ok",
+          "bytes": 49663,
+          "sha256": "da5bd73ae1bd44b81e8c00c320a43f1c6ecbb28c0f27e116b0a647abb0cb6e3c",
+          "ended_utc": "2026-09-24T04:22:17.179218+00:00"
+        },
+        {
+          "id": "safety_title",
+          "format": "json",
+          "query": "TITLE_ABS:everolimus AND TITLE_ABS:pediatric AND TITLE_ABS:(growth OR renal OR infection)",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(TITLE_ABS%3Aeverolimus%20AND%20TITLE_ABS%3Apediatric%20AND%20TITLE_ABS%3A(growth%20OR%20renal%20OR%20infection))%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:22:14.893137+00:00",
+          "status": "ok",
+          "bytes": 69083,
+          "sha256": "5784e6e886c6ab4a14a392cce5f01608e9096dcb6c9700f3bcaef4e81d8662f4",
+          "ended_utc": "2026-09-24T04:22:17.208685+00:00"
+        },
+        {
+          "id": "control_supplement",
+          "format": "json",
+          "query": "EXT_ID:22698286 AND SRC:MED",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(EXT_ID%3A22698286%20AND%20SRC%3AMED)%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:22:14.918862+00:00",
+          "status": "ok",
+          "bytes": 7406,
+          "sha256": "a7d3e3f31035add4c9b2f251b1476ecae8b4e4a46e778539028720c524a1c772",
+          "ended_utc": "2026-09-24T04:22:16.522403+00:00"
+        },
+        {
+          "id": "arst_identity",
+          "format": "json",
+          "query": "EXT_ID:38838360 AND SRC:MED",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(EXT_ID%3A38838360%20AND%20SRC%3AMED)%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:22:16.522483+00:00",
+          "status": "ok",
+          "bytes": 5237,
+          "sha256": "550c962f510a8768869f4ef4e0ea9cb454c6dd2d4afd4e23258721c8774b8118",
+          "ended_utc": "2026-09-24T04:22:17.449029+00:00"
+        },
+        {
+          "id": "new_bubr1",
+          "format": "json",
+          "query": "EXT_ID:42434306 AND SRC:MED",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(EXT_ID%3A42434306%20AND%20SRC%3AMED)%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:22:17.179286+00:00",
+          "status": "ok",
+          "bytes": 8479,
+          "sha256": "f87ca2b0c18cec4ff64dd8c1ab861c709cb94eb1e6cda4dfd1221ad175481e31",
+          "ended_utc": "2026-09-24T04:22:18.114639+00:00"
+        },
+        {
+          "id": "tpr",
+          "format": "json",
+          "query": "EXT_ID:42477419 AND SRC:MED",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(EXT_ID%3A42477419%20AND%20SRC%3AMED)%20AND%20FIRST_PDATE%3A%5B*%20TO%202026-09-24%5D&format=json&resultType=core&pageSize=6",
+          "started_utc": "2026-09-24T04:22:17.208893+00:00",
+          "status": "ok",
+          "bytes": 7370,
+          "sha256": "6e8ad6cde880e7f12a6d4f7789c74de1d1c23ab79700317a96a3258731301b24",
+          "ended_utc": "2026-09-24T04:22:18.125133+00:00"
+        },
+        {
+          "id": "tpr_fulltext",
+          "format": "xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13385977/fullTextXML",
+          "started_utc": "2026-09-24T04:22:17.449091+00:00",
+          "status": "ok",
+          "bytes": 128321,
+          "sha256": "04ce48a18bda390409d5aae06563eedb9cb709c7852d9927fa0c479f06bf5d99",
+          "ended_utc": "2026-09-24T04:22:18.758043+00:00"
+        },
+        {
+          "id": "new_bubr1_fulltext",
+          "format": "xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13349884/fullTextXML",
+          "started_utc": "2026-09-24T04:22:18.114834+00:00",
+          "status": "ok",
+          "bytes": 100068,
+          "sha256": "ad85ba8d54b7a974f9fae5ff49921ec0de0f6226025197dc7a25428ec52466ff",
+          "ended_utc": "2026-09-24T04:22:19.454549+00:00"
+        }
+      ],
+      "downloads": [],
+      "ended_utc": "2026-09-24T04:22:19.468624+00:00"
+    }
+  ],
+  "firecrawl": {
+    "created_utc": "2026-09-24T04:20:57.620632+00:00",
+    "script_sha256": "ef0400576924623dba6ddd266b4b7bf6950d4b33530952bcf014a975f887200d",
+    "mcp_entry": "/home/sports/.npm/_npx/12b05d58670d8359/node_modules/firecrawl-mcp/dist/index.js",
+    "mcp_entry_sha256": "9c383e18df046ec29e8de5b08474d86b5245dcab10bf61c01f562648d5c564bb",
+    "mcp_package_version": "3.25.4",
+    "api_url": "http://127.0.0.1:3002",
+    "transport": "stdio",
+    "public_sources_only": true,
+    "project_env_loaded": false,
+    "upstream_llm_possible": true,
+    "calls": [
+      {
+        "label": "disease",
+        "tool": "firecrawl_search",
+        "arguments": {
+          "query": "(BUB1B OR BUBR1) AND (drug OR rescue OR treatment)",
+          "limit": 6
+        },
+        "started_utc": "2026-09-24T04:20:58.202168+00:00",
+        "status": "tool_error",
+        "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0",
+        "ended_utc": "2026-09-24T04:20:58.241320+00:00"
+      },
+      {
+        "label": "direction",
+        "tool": "firecrawl_search",
+        "arguments": {
+          "query": "(BUB1B OR BUBR1) AND (mTOR OR rapamycin OR everolimus)",
+          "limit": 6
+        },
+        "started_utc": "2026-09-24T04:20:58.241660+00:00",
+        "status": "tool_error",
+        "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0",
+        "ended_utc": "2026-09-24T04:20:58.252003+00:00"
+      },
+      {
+        "label": "tumour",
+        "tool": "firecrawl_search",
+        "arguments": {
+          "query": "rhabdomyosarcoma AND (everolimus OR temsirolimus) AND (trial OR resistance)",
+          "limit": 6
+        },
+        "started_utc": "2026-09-24T04:20:58.255445+00:00",
+        "status": "tool_error",
+        "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0",
+        "ended_utc": "2026-09-24T04:20:58.259415+00:00"
+      },
+      {
+        "label": "alternatives",
+        "tool": "firecrawl_search",
+        "arguments": {
+          "query": "rhabdomyosarcoma AND (pralatrexate OR entinostat OR vorinostat OR niclosamide OR posaconazole)",
+          "limit": 6
+        },
+        "started_utc": "2026-09-24T04:20:58.259708+00:00",
+        "status": "tool_error",
+        "sha256": "3051e7a3696ded13d5ab5e4f6facd4291d26b0d3be5778dbc6ccdbb6806891b0",
+        "ended_utc": "2026-09-24T04:20:58.264799+00:00"
+      }
+    ],
+    "advertised_tools": [
+      "firecrawl_agent",
+      "firecrawl_agent_status",
+      "firecrawl_check_crawl_status",
+      "firecrawl_crawl",
+      "firecrawl_credit_usage",
+      "firecrawl_developer_search",
+      "firecrawl_extract",
+      "firecrawl_feedback",
+      "firecrawl_find_tools",
+      "firecrawl_interact",
+      "firecrawl_interact_stop",
+      "firecrawl_map",
+      "firecrawl_monitor_check",
+      "firecrawl_monitor_checks",
+      "firecrawl_monitor_create",
+      "firecrawl_monitor_delete",
+      "firecrawl_monitor_get",
+      "firecrawl_monitor_list",
+      "firecrawl_monitor_run",
+      "firecrawl_monitor_update",
+      "firecrawl_parse",
+      "firecrawl_research_inspect_paper",
+      "firecrawl_research_read_paper",
+      "firecrawl_research_related_papers",
+      "firecrawl_research_search_github",
+      "firecrawl_research_search_papers",
+      "firecrawl_scrape",
+      "firecrawl_search",
+      "firecrawl_search_feedback"
+    ],
+    "ended_utc": "2026-09-24T04:20:58.280697+00:00",
+    "used_tools": [
+      "firecrawl_search"
+    ]
+  },
+  "identity_rejections": [
+    {
+      "record": "arst_identity",
+      "queried_pmid": "38838360",
+      "actual_topic": "Facial bone ageing bibliometrics; excluded",
+      "verified_arst1431_pmid": "38936378",
+      "verified_source": "results/feat009/v15-public-followup-20260924/tumour_title.json"
+    },
+    {
+      "record": "arst1431_metadata",
+      "problem": "Unquoted DOI query returned zero records; not evidence of absent study",
+      "verified_source": "results/feat009/v15-public-followup-20260924/tumour_title.json"
+    }
+  ],
+  "ordering_correction": "Original plan called results relevance-ordered, but request fixed no sort; treat as API-default first six. Broad full-text searches were noisy; TITLE_ABS followups added. No exhaustive coverage claim.",
+  "independent_experiment_count": null
+}

@@ -29,7 +29,7 @@ def validate(state, features, documents):
     current = next(f for f in features if f['id'] == 'feat-009')
     require('notes/track2-current.json' in current['evidence'] and f'v{version}' in current['evidence'],
             'Feature evidence points to stale artifacts')
-    require(state['drug_science_version'] == 10, 'Drug science changed without a reviewed harness update')
+    require(state['drug_science_version'] == 15, 'Drug science changed without a reviewed harness update')
     require(state['status'] == STATUS, 'Unsupported scientific/delivery promotion; review evidence before updating the harness')
     require(state['model_campaign'] == dict(protein_scores=84, structures=192, dna_comparisons=100,
                                           inference_complete=True), 'Model completion/count drift')
@@ -40,7 +40,10 @@ def validate(state, features, documents):
         'transcript':f'notes/track2-transcript-v{version}.txt',
         'video_description':f'notes/track2-video-description-v{version}.md',
         'design_review':f'notes/track2-v{version}-design.md',
-        'evidence':'notes/track2-evidence-v10.json', 'validation':'notes/track2-validation-v10.md',
+        'evidence':'notes/track2-evidence-v15.json', 'validation':'notes/track2-validation-v15.md',
+        'falsification_register':'notes/track2-falsification-register-v15.json',
+        'falsification_review':'notes/track2-falsification-review-v15.md',
+        'falsification_analysis':'notes/track2-falsification-analysis-v15.json',
         'latest_model_findings':'notes/track2-latest-models.md',
         'latest_model_audit':'notes/track2-latest-model-audit.json',
         'release_script':f'scripts/track2_release_v{version}.py',
@@ -77,7 +80,7 @@ def check(root=ROOT):
     release = importlib.import_module(f"track2_release_v{state['presentation_version']}")
     presentation = release.scientific_checks()
     return dict(passed=True, active_feature='feat-009', presentation_version=state['presentation_version'],
-                drug_science_version=10, slides=presentation['slides'],
+                drug_science_version=15, slides=presentation['slides'],
                 narration_words=presentation['narration_words'], upload_ready=False,
                 scope='Public artifact/state consistency; not biological validation or submission preflight')
 
