@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "files_copied": 367,
+  "network_forbidden_by_audit_hook": true,
+  "data_results_logs_env_forbidden_by_audit_hook": true,
+  "project_environment_used": false,
+  "result": {
+    "passed": true,
+    "presentation_version": 17,
+    "drug_science_version": 15,
+    "static_deck_verified": true,
+    "source_sha256": "f386d5772a69f5d63303b3f8a0dec7536f231bc47e259998b63bd8b21333c7b8",
+    "slides": 8,
+    "vector_figures": 7,
+    "visible_words": [
+      47,
+      75,
+      84,
+      79,
+      70,
+      49,
+      73,
+      101
+    ],
+    "narration_words": 342,
+    "words_per_slide": [
+      44,
+      43,
+      47,
+      47,
+      47,
+      42,
+      49,
+      23
+    ],
+    "requirements": {
+      "revision": "aeeef5ad49f51204a7439352e59e9d310aee5e9e",
+      "public_discussions": 24,
+      "visible_comments": 68,
+      "closed_discussions": 12
+    },
+    "methods_fields": 11,
+    "abstract_words": 249,
+    "falsification": {
+      "passed": true,
+      "claims": 19,
+      "primary_pass": 12,
+      "sensitivity_fail": 8,
+      "advancement": {
+        "decision": "hold_unresolved",
+        "failed": [],
+        "unresolved": [
+          "division_capacity",
+          "exposure_match",
+          "functional_benefit",
+          "hypothesis_lock",
+          "model_qualification",
+          "normal_tissue_safety",
+          "replication",
+          "source_integrity"
+        ],
+        "clinical_recommendation": false
+      },
+      "scope": "Evidence consistency, not biological validation"
+    },
+    "upload_ready": false,
+    "biological_validation": false,
+    "scope": "Tracked-public consistency checks; no inference, clinical or eligibility certification"
+  },
+  "resource_measurement": "elapsed_seconds=0.21\nmax_rss_kib=37376\n",
+  "limits": "One local CPU consistency check; not model inference, laboratory cost, throughput or biological validation.",
+  "script_sha256": "be228516be644d5d1b613fabaa1f3e0d9f0d8b18544e59e40f3dccc7a4e3c53d",
+  "report_sha256": "6231af9eccb6f368fcf82215f2d5432c6387d13c42b1c5ed3e753c9b2406a852",
+  "slide_sha256": "f386d5772a69f5d63303b3f8a0dec7536f231bc47e259998b63bd8b21333c7b8"
+}

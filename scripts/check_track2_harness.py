@@ -11,6 +11,7 @@ STATUS = {
     'phase': 'unconfirmed', 'clinical_exposure_margin': None, 'wet_lab_performed': False,
     'video_recorded': False, 'video_url': None, 'runtime_measured': False,
     'upload_performed': False, 'upload_ready': False, 'provider_settings_verified': False,
+    'licensing_scope_resolved': False,
 }
 
 
@@ -50,6 +51,14 @@ def validate(state, features, documents):
         'renderer':f'scripts/render_track2_slides_v{version}.mjs',
         'af3_terms':'notes/alphafold3-output-terms.md',
         'af3_notice':'notes/alphafold3-Legally-Binding-Terms-of-Use.txt',
+        'official_requirements':f'notes/track2-requirements-v{version}.json',
+        'community_review':'notes/track2-community-review-20260924.md',
+        'reviewer_guide':f'notes/track2-reviewer-guide-v{version}.md',
+        'owner_readiness':f'notes/track2-owner-readiness-v{version}.md',
+        'public_review_script':f'scripts/track2_public_review_v{version}.py',
+        'document_exporter':f'scripts/track2_export_documents_v{version}.py',
+        'report_renderer':f'scripts/render_track2_report_v{version}.mjs',
+        'bundle_script':f'scripts/track2_bundle_v{version}.py',
     }
     require(state['artifacts'] == roles, 'Mixed, missing or unsafe artifact paths')
     require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}', 'Stale snapshot path')
@@ -57,6 +66,9 @@ def validate(state, features, documents):
             'Stale recording-materials bundle path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['render_directory']),
             'Stale or unsafe render-directory path')
+    require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['document_directory']),
+            'Stale or unsafe document-directory path')
+    require(state['harness_review'] == f'notes/track2-harness-review-v{version}.md', 'Stale harness review')
     for name in ['AGENTS.md', 'session-handoff.md', 'README.md']:
         require('notes/track2-current.json' in documents[name], 'Missing state-record route: '+name)
         require(f'v{version}' in documents[name].lower(), 'Stale current revision: '+name)

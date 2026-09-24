@@ -78,8 +78,9 @@ This is a continuing objective, not a one-time review. Preserve immutable snapsh
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the current artifact record and [session-handoff.md](session-handoff.md) for next
-steps and blockers. V16 is the current report, nine-slide deck, read-aloud transcript
-and video description. The v15 ledger and validation plan preserve v10 drug dispositions and add stricter falsification gates.
+steps and blockers. V17 is the current seven-page report, eight-slide deck, 342-word
+read-aloud transcript, methods workbook and video description. The v15 ledger and
+validation plan preserve v10 drug dispositions and add stricter falsification gates.
 The complete research history is in `progress.md`; older harness wording is preserved
 at Git revision `bb82cd6`, not treated as current instructions.
 
@@ -112,16 +113,36 @@ at Git revision `bb82cd6`, not treated as current instructions.
   sequence; its policies remain unverified. Newer model inference ran on the owner
   host and reused the alignment. Self-hosted retrieval does not imply local inference.
   Carry AlphaFold3 Output Terms, mandatory notice, modifications and citation with
-  derived findings. Never print `.env` or keys. See the current report section 9.
+  derived findings. Never print `.env` or keys. See the current report section 7.
+- **Official requirements and community:** session 56 reviewed live revision
+  `aeeef5ad49f51204a7439352e59e9d310aee5e9e`, all 24 public discussions/68 latest
+  comments and three administrative images. Use `notes/track2-requirements-v17.json`
+  and `notes/track2-community-review-20260924.md`; rubric weights are 35/25/25/15.
+  PDF/Markdown report plus GitHub and three-minute YouTube/Vimeo pitch are required.
+  Methods B9 is required and B17 is limited to 500 words. The template's one-entry
+  line is stale; three entries/latest-only is current. Quota remains unknown.
+- **Distribution scope:** challenge CC BY scope versus historical AF3/non-AVI Atlas
+  output terms remains unresolved. V17 omits their numerical outputs/derived figures
+  from judge-facing materials, but does not establish that linked history is outside
+  submission scope. Preserve original notices; do not grant a blanket relicence or
+  mark eligibility resolved. Concrete unsent clarification in
+  `notes/track2-owner-readiness-v17.md`; no organizer contact is authorized.
 - **Delivery:** no wet-lab experiment, recorded/hosted video or Track 2 submission is
   established. A script/PDF and successful tests do not fill those gaps. The portal
   permits three entries and reviews only the latest; remaining quota is unknown.
   Record the complete acknowledgement inside the three-minute video. Preserve the
-  Track 1 submitted v4 and every Track 2 v1–v15 bound input/package.
+  Track 1 submitted v4 and every Track 2 v1–v16 bound input/package.
 
-Use `scripts/track2_release_v16.py` to check/build/verify **new** v16 snapshot
-directories. Render with `scripts/render_track2_slides_v16.mjs`; include the two
-AlphaFold3 terms files that accompany its PDF. The mutable current-artifact record,
+Use `scripts/track2_release_v17.py` to check/build/verify **new** v17 research snapshot
+directories. Render with `scripts/render_track2_slides_v17.mjs`; export the report and
+workbook with `scripts/track2_export_documents_v17.py` followed by
+`scripts/render_track2_report_v17.mjs`. Current recording materials have a separate
+`scripts/track2_bundle_v17.py` builder; historical research retains AF3 notices.
+The public reviewer command needs no data/results folders, keys, network, GPUs or old
+local snapshots: `uv run --no-project python scripts/track2_public_review_v17.py`.
+Its passing result verifies consistency, not biology or eligibility. The stricter
+release verification also requires retained local historical archives.
+The mutable current-artifact record,
 AGENTS, feature state and handoff are not bound into historical release manifests.
 Future science/presentation changes need a new version and coordinated record update.
 Do not edit old bound code to make a new check pass or mark upload readiness true.
@@ -144,13 +165,14 @@ uv run python scripts/track1_submission.py --self-check
 uv run python scripts/track2_evidence.py check
 uv run python scripts/check_track2_harness.py
 uv run python scripts/track2_falsification_v15.py check
-uv run python scripts/track2_release_v16.py check
+uv run --no-project python scripts/track2_public_review_v17.py
+uv run python scripts/track2_release_v17.py check
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
 `track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
 its old conditional-screen label is not today's drug decision. The current v15
-ledger and v16 report take precedence. Historical exact-byte verification remains
+ledger and v17 report take precedence. Historical exact-byte verification remains
 available through the versioned release scripts; never resubmit Track 1 to resolve
 its missing administrative receipt.
 

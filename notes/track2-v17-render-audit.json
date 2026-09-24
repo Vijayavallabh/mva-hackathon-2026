@@ -1,0 +1,233 @@
+{
+  "source": "notes/track2-slides-v17.html",
+  "source_sha256": "f386d5772a69f5d63303b3f8a0dec7536f231bc47e259998b63bd8b21333c7b8",
+  "renderer_sha256": "f6242b9873cf1149d892c59504369cc9f220fba497566ee20636ee7fcae52a18",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/131.0.6778.139",
+    "revision": "@c35bbcbd7c2775a12a3f320e05ac0022939b1a8a",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+    "jsVersion": "13.1.201.16"
+  },
+  "slides": [
+    {
+      "id": "slide-1",
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 47,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-2",
+      "x": 0,
+      "y": 752,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 75,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-3",
+      "x": 0,
+      "y": 1504,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 84,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-4",
+      "x": 0,
+      "y": 2256,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 79,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-5",
+      "x": 0,
+      "y": 3008,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 70,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-6",
+      "x": 0,
+      "y": 3760,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 49,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-7",
+      "x": 0,
+      "y": 4512,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 73,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-8",
+      "x": 0,
+      "y": 5264,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 101,
+      "min_font_px": 24,
+      "svg_figures": 0
+    }
+  ],
+  "narrow_screen": {
+    "width": 640,
+    "scrollWidth": 640
+  },
+  "files": {
+    "slide-1.png": "cfbe7620e273a617b6228fbb0a432e37b89c523799e231e1cf951a54111179cc",
+    "slide-2.png": "a5644de286c571d5d98b0e70f841bdb54fd34144fa7ee31fdc550740ae9a7603",
+    "slide-3.png": "24e3ef0704684252e2caac4557c07002e803033f0b4a2b4926204ea093c9c896",
+    "slide-4.png": "2ba8dab37b0f3509fa82f4e91aba17ff4b64c79a69018fcb1d2419be929239c0",
+    "slide-5.png": "c15bd60dcb6620e5b6d6dd57882d87966d2c4c7f2f4af95863e35892cb0210c1",
+    "slide-6.png": "bb2ea525df68cc2d88dad81a00aee3b5745adec492da0c06f3618fe0f467ba42",
+    "slide-7.png": "8a9811cba6d9bce50770972566844ac5ec03015434d075d73f0a5a0efe5cb369",
+    "slide-8.png": "6b0e56e9a87aaeeadc532e5f2f7f37f1ff404261982e6382c319c7758c8f1431",
+    "track2-slides-v17.pdf": "5e33c7ff637fe9048282b416f38e59f16f0e18351a91e3e26cf7b6a5227b2372"
+  },
+  "limits": "Geometry and screenshots are preview checks, not recording, runtime validation, scientific validity or upload readiness.",
+  "render_directory": "results/feat009/v17-slide-review-release-20260924",
+  "author_visual_review": "All eight initial PDF pages and screen exports reviewed; slides 5 and 6 also inspected individually. Final screen exports byte-identical; only decision-label IDs changed.",
+  "screen_pages_identical_to_reviewed_initial_v17": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "independent_visual_review": false,
+  "clinical_validation": false,
+  "minimum_checked_text_contrast": 5.10645025768706,
+  "text_contrast_pairs": [
+    {
+      "foreground": "#241d32",
+      "background": "#f6f7fb",
+      "ratio": 15.12616875637971
+    },
+    {
+      "foreground": "#241d32",
+      "background": "#eae3f2",
+      "ratio": 12.930332464287494
+    },
+    {
+      "foreground": "#241d32",
+      "background": "#dcebed",
+      "ratio": 13.22417954725744
+    },
+    {
+      "foreground": "#241d32",
+      "background": "#ffffff",
+      "ratio": 16.19349041308074
+    },
+    {
+      "foreground": "#634285",
+      "background": "#f6f7fb",
+      "ratio": 7.406392001163184
+    },
+    {
+      "foreground": "#634285",
+      "background": "#eae3f2",
+      "ratio": 6.331220580590718
+    },
+    {
+      "foreground": "#634285",
+      "background": "#dcebed",
+      "ratio": 6.47510015247212
+    },
+    {
+      "foreground": "#634285",
+      "background": "#ffffff",
+      "ratio": 7.928996416608747
+    },
+    {
+      "foreground": "#17666c",
+      "background": "#f6f7fb",
+      "ratio": 6.220308032453876
+    },
+    {
+      "foreground": "#17666c",
+      "background": "#eae3f2",
+      "ratio": 5.317318098542546
+    },
+    {
+      "foreground": "#17666c",
+      "background": "#dcebed",
+      "ratio": 5.438156322679123
+    },
+    {
+      "foreground": "#17666c",
+      "background": "#ffffff",
+      "ratio": 6.659220858386039
+    },
+    {
+      "foreground": "#655b70",
+      "background": "#f6f7fb",
+      "ratio": 5.973630496908447
+    },
+    {
+      "foreground": "#655b70",
+      "background": "#eae3f2",
+      "ratio": 5.10645025768706
+    },
+    {
+      "foreground": "#655b70",
+      "background": "#dcebed",
+      "ratio": 5.222496424071163
+    },
+    {
+      "foreground": "#655b70",
+      "background": "#ffffff",
+      "ratio": 6.395137442994253
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#30203e",
+      "ratio": 14.980306108348822
+    },
+    {
+      "foreground": "#e4ddec",
+      "background": "#30203e",
+      "ratio": 11.308420795516605
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "started_utc": "2026-09-24T07:56:19.757322+00:00",
+  "anonymous_get_only": true,
+  "sources": [
+    {
+      "file": "index-0.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions?p=0",
+      "sha256": "32fee2d88235a465cb121101549acf97be1806e1de28130c76df554f3ab0a6d8",
+      "bytes": 15928
+    }
+  ],
+  "script_sha256": "002993a1ca2b2a46f6fede3813862866fb5da7675bd8ba7f7b55d61cbbac2a9f",
+  "scope": "All listed open and closed public discussions; no hidden/deleted/private content or edit history",
+  "listed_count": 24,
+  "listed_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "closed_count": 12,
+  "threads": [
+    {
+      "num": 1,
+      "file": "discussion-1.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/1",
+      "status": "ok",
+      "sha256": "8218963ef5cda92e0dfac4bc0562d05434a75709e713bb45380194f867868a7d",
+      "bytes": 7553,
+      "comments": 3,
+      "events": 4
+    },
+    {
+      "num": 2,
+      "file": "discussion-2.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/2",
+      "status": "ok",
+      "sha256": "a3e840e38374c8b2e25d68e641e049ac61845130404e37132f37a013ecf8f435",
+      "bytes": 38744,
+      "comments": 9,
+      "events": 13
+    },
+    {
+      "num": 3,
+      "file": "discussion-3.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/3",
+      "status": "ok",
+      "sha256": "47808a7831ecbfc151c1b4dabbbd1187668ebefc74fd5c54ba00340738e84286",
+      "bytes": 6610,
+      "comments": 2,
+      "events": 3
+    },
+    {
+      "num": 4,
+      "file": "discussion-4.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/4",
+      "status": "ok",
+      "sha256": "9ab4d77eab1f27775b775cbb16e0de507cabac580c76cce677c16d314bc7a9ab",
+      "bytes": 9307,
+      "comments": 3,
+      "events": 4
+    },
+    {
+      "num": 5,
+      "file": "discussion-5.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/5",
+      "status": "ok",
+      "sha256": "e9025e507d49b80b3b493771b571ba898a2cde9b104b1cfb8d119903326ed3ce",
+      "bytes": 5649,
+      "comments": 3,
+      "events": 3
+    },
+    {
+      "num": 6,
+      "file": "discussion-6.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/6",
+      "status": "ok",
+      "sha256": "0a9694909d58e45732fc9df3ab5a3e2a5e9c865c078b6f990ba473533fbb4bec",
+      "bytes": 6056,
+      "comments": 3,
+      "events": 3
+    },
+    {
+      "num": 7,
+      "file": "discussion-7.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/7",
+      "status": "ok",
+      "sha256": "56ab81fdafd9854e266cc01e6bbb45046e338472791092cf20c997ece13492c1",
+      "bytes": 10581,
+      "comments": 3,
+      "events": 4
+    },
+    {
+      "num": 8,
+      "file": "discussion-8.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/8",
+      "status": "ok",
+      "sha256": "395aa69a5a6cb57532e337f48932c9e7eaaff6c8fb0032acfe111633edbf9911",
+      "bytes": 11682,
+      "comments": 4,
+      "events": 5
+    },
+    {
+      "num": 10,
+      "file": "discussion-10.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/10",
+      "status": "ok",
+      "sha256": "ba7a1453b5f44f2b5329097d0badd3d4620e27f03f2233336aee8eac3e53d586",
+      "bytes": 16109,
+      "comments": 5,
+      "events": 6
+    },
+    {
+      "num": 11,
+      "file": "discussion-11.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/11",
+      "status": "ok",
+      "sha256": "6b03db4b3b7c081b50d3c59af82460de7a279068b75c8e96ab3c1cd00a4dd3b9",
+      "bytes": 4454,
+      "comments": 2,
+      "events": 2
+    },
+    {
+      "num": 12,
+      "file": "discussion-12.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/12",
+      "status": "ok",
+      "sha256": "e8b87ea3d2762f3361ebb856bca306963a357990ea97e8aecdca092c1e8b7be9",
+      "bytes": 3637,
+      "comments": 2,
+      "events": 2
+    },
+    {
+      "num": 13,
+      "file": "discussion-13.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/13",
+      "status": "ok",
+      "sha256": "e5644e851720c9853aed987af4754aaf628af7ba40a14bb96f560494a75af3e9",
+      "bytes": 4855,
+      "comments": 2,
+      "events": 3
+    },
+    {
+      "num": 14,
+      "file": "discussion-14.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/14",
+      "status": "ok",
+      "sha256": "207094ae5eadacf07fb68d8232418583a8c2a88ef7b29b120284a21eb2c68ffc",
+      "bytes": 6347,
+      "comments": 2,
+      "events": 3
+    },
+    {
+      "num": 15,
+      "file": "discussion-15.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/15",
+      "status": "ok",
+      "sha256": "6343487497c0eed1ac4924d58d507a79792419043ffbee18d6f07afba8bbd67b",
+      "bytes": 10930,
+      "comments": 4,
+      "events": 5
+    },
+    {
+      "num": 16,
+      "file": "discussion-16.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/16",
+      "status": "ok",
+      "sha256": "883584c022424883c90a1b9cfde3491338295d3462794a5a7e21c69c6f083081",
+      "bytes": 4553,
+      "comments": 2,
+      "events": 3
+    },
+    {
+      "num": 17,
+      "file": "discussion-17.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/17",
+      "status": "ok",
+      "sha256": "a34d07667d6f2d390dde2420ee32ccc64308777b8759420b303e748771917c2f",
+      "bytes": 13453,
+      "comments": 5,
+      "events": 5
+    },
+    {
+      "num": 18,
+      "file": "discussion-18.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/18",
+      "status": "ok",
+      "sha256": "d897e8ba611a6b8ee601748c3ef5954bac25024a8d8582ad081fc62ee21b4834",
+      "bytes": 3766,
+      "comments": 1,
+      "events": 2
+    },
+    {
+      "num": 19,
+      "file": "discussion-19.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/19",
+      "status": "ok",
+      "sha256": "5ab76f1599db86bdba03ceb410c777ed14e791bbd4f5a3276a593d5933fa9d9f",
+      "bytes": 12711,
+      "comments": 4,
+      "events": 5
+    },
+    {
+      "num": 20,
+      "file": "discussion-20.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/20",
+      "status": "ok",
+      "sha256": "a397cbc09259e61f72c38ed2f3e377bb2e034ecd1991ceaa5525465c057c11f5",
+      "bytes": 4966,
+      "comments": 1,
+      "events": 1
+    },
+    {
+      "num": 21,
+      "file": "discussion-21.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/21",
+      "status": "ok",
+      "sha256": "bd879026aa65e7ea53e750ba79e7cb908c64e344626b54fe850d9acfec02ef2b",
+      "bytes": 6465,
+      "comments": 2,
+      "events": 2
+    },
+    {
+      "num": 22,
+      "file": "discussion-22.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/22",
+      "status": "ok",
+      "sha256": "e5d0524ff6f7657ff4379a7dccdfcaf909732463bc8cc68f7a11ad0296065ca5",
+      "bytes": 5427,
+      "comments": 2,
+      "events": 3
+    },
+    {
+      "num": 23,
+      "file": "discussion-23.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/23",
+      "status": "ok",
+      "sha256": "9d1109fb97a7c8dd0c941007f7e804d2bee5a165d0cd4bc36f6775514eed4d8d",
+      "bytes": 5373,
+      "comments": 2,
+      "events": 3
+    },
+    {
+      "num": 24,
+      "file": "discussion-24.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/24",
+      "status": "ok",
+      "sha256": "c2ef1c6b8f0c24fa096b37ec34f4c912361069136b3c9252b1df7744d08b9d28",
+      "bytes": 3913,
+      "comments": 1,
+      "events": 1
+    },
+    {
+      "num": 25,
+      "file": "discussion-25.json",
+      "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/25",
+      "status": "ok",
+      "sha256": "b52000367b42222ec03fde3ee59f59fcac81f3555051255dd8a04c5ef43fd540",
+      "bytes": 4175,
+      "comments": 1,
+      "events": 1
+    }
+  ],
+  "ended_utc": "2026-09-24T07:56:22.688823+00:00",
+  "complete": true,
+  "visible_comments": 68,
+  "events": 86,
+  "reviewed_all_latest_visible_comments": true,
+  "reviewed_admin_attachments": 3,
+  "attachments": [
+    {
+      "thread": 1,
+      "url": "https://cdn-uploads.huggingface.co/production/uploads/675e725ccd95ed0ab81e489b/Et-ALBsklm9tRPVEEVot-.png",
+      "file": "attachment-1.png",
+      "sha256": "ae9a86526ba28b71e340b7205e880e65a88a0d03f5f0ca53dcf60140a6b33e1f"
+    },
+    {
+      "thread": 3,
+      "url": "https://cdn-uploads.huggingface.co/production/uploads/6a8d9631d68ef6b793a45605/Fk3DpuQmL3J9d1o_QgWom.png",
+      "file": "attachment-2.png",
+      "sha256": "34c272d545f84e5f667095e4e38613f0db9fa36a74258fdbf8e375ec3e2fc0aa"
+    },
+    {
+      "thread": 3,
+      "url": "https://cdn-uploads.huggingface.co/production/uploads/6a8d9631d68ef6b793a45605/H0xDErrtrI46018VCxPVS.png",
+      "file": "attachment-3.png",
+      "sha256": "8bd3d79a7ba898560972970282cf676a88c37314c18e48f0ac2f648545da6fab"
+    }
+  ],
+  "no_hidden_edit_history_review": true
+}

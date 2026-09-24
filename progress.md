@@ -4264,3 +4264,197 @@ source clarification, provider/owner/live review, recorded/hosted video and rece
 The requested audit, concrete protocol revisions, presentation and harness update
 are complete. The strongest next evidence requires endogenous functional measurements
 and source clarification; no further compute is claimed to replace them.
+
+
+## 2026-09-24 — session 56: Track 2 v17 aligned to live rubric and all public discussions
+
+Owner request: thoroughly review the current challenge website and every public discussion,
+then update outputs, presentation, scripts and report to strengthen the Track 2 entry.
+Only feat-009 was worked; it remains in progress. Presentation v17 preserves v15 science
+(63 cumulative sources, eleven unchanged dispositions, nineteen falsifiable claims).
+Everolimus is an optional qualified mechanistic probe, HCQ reserve, no rescue priority;
+phase and clinical exposure remain unresolved. No new inference, experiment or upload.
+
+Applied research, scientific-slides, harness-creator and xlsx skills. The research skill
+explicitly calls for a background agent: one agent independently reviewed official
+requirements and an initial v17 report while root reviewed all public discussions and
+implemented the revision. The agent did not review final exports or validate biology.
+
+### Official and complete community review
+
+Live Space and source revision: aeeef5ad49f51204a7439352e59e9d310aee5e9e, updated Sep22.
+Ten anonymous official GETs succeeded; live rules/submission components match source
+exactly after trimming. Named About/FAQ/submission/config/README/workbook hashes remain
+unchanged versus the earlier pinned revision; rules contain a spelling correction.
+Official rubric: rigor 35%, impact 25%, innovation 25%, scalability 15%. Approved-drug
+hypotheses are permitted without compulsory wet-lab results; no fixed slide count or
+live Q&A. Required participant-named PDF/Markdown report, GitHub and three-minute
+YouTube/Vimeo video. AI disclosure B9 required; B17 at most 500 words. Three entries,
+latest only reviewed; the template's one-entry sentence is stale. No quota queried.
+
+Anonymous API enumeration returned all 24 public threads, 12 open/12 closed, with
+68 latest visible comments and 86 events. Root reviewed the full visible text and all
+three administrative screenshots. Thread 9 is absent from the public list; hidden,
+deleted, earlier edits and private material were not sought. Participant biological
+claims were not adopted. Potential source-record and contact strings were excluded
+from the local preview; tracked notes contain summaries/hashes, not source posts.
+Sep23's PDF-methods acceptance and newest unanswered reads/library question are included;
+the web cache alone had missed thread 25. Other significant clarifications concern
+provider terms/settings, no additional clinical data, reproducibility, unknown parental
+phase and unresolved cross-track prize allocation. No external message/contact occurred.
+
+Sources/reading limits: notes/track2-official-requirements-review-20260924.md,
+notes/track2-community-review-20260924.md, requirements and community JSON audits.
+The ordinary raw public cache remains ignored under results/feat009. Retrieval command:
+
+```bash
+uv run python scripts/track2_community_review_v17.py results/feat009/challenge-community-all-20260924
+```
+
+### What changed
+
+- Candidate-first seven-page report explains the conditional mechanism, balanced drug
+  findings and qualify/probe/confirm experiment. It addresses impact, innovation and
+  practical reuse explicitly without self-scoring or promising a win. All eleven methods
+  answers, 249-word abstract, provider handling and full acknowledgement are included.
+- Eight-slide deck uses seven conceptual SVG figures and 578 visible words, minimum 24px.
+  All pages visually reviewed; no text overflow/overlap, 640px viewport passes. Checked
+  text/background contrast is at least 5.106. The synthetic bars share a common 0–100%
+  scale and remain labelled not data. Final images are identical to reviewed previews.
+- Eight-section narration/plain transcript has 342 words, planned but unmeasured runtime;
+  final acknowledgement remains visible inside the proposed video. Video description
+  matches the report AI disclosure. No script/PDF is represented as a recording.
+- Original pinned workbook filled in B7–B17; questions and Track 1 template values/styles
+  preserved, no formulas/external links/macros. Workbook round-trip verified, appearance
+  not visually rendered. Report uses absolute public links after independent review
+  flagged ten relative links. Seven PDF pages reviewed, including table/final pages at
+  full size. The initial eight-page export is retained as a preview.
+- New public standard-library reviewer command works without historical results folders,
+  subject data, API keys, network, SSH, GPUs or weights. In an isolated 367-file copy with
+  network/protected-path audit-hook rejection, one run used 0.21 seconds and 37,376 KiB
+  maximum RSS. That measures consistency checks, not inference, lab cost or efficacy.
+- New release, document export, PDF/slide rendering, discussion retrieval and bundle
+  scripts; updated AGENTS, README, current-state, feature evidence and handoff. No project
+  dependency/lockfile change. Structural harness audit scores 5/5 in each of five areas;
+  its 100/100 is a structural score, not operational, scientific or competition evidence.
+
+The AF3/Atlas numerical inventory and figures stay in technical history rather than the
+judge-facing narrative. Historical use is disclosed and notices preserved. Distribution
+scope remains genuinely unresolved: official CC BY wording and separate historical
+output terms cannot be declared compatible merely by this omission. The readiness note
+contains a concrete unsent clarification; no blanket licence change or provider
+attestation was made. Recording/hosting, actual terms/settings, owner/live checks and
+receipt remain delivery gaps. Biological qualification remains a distinct research gap.
+
+### Verification and immutable outputs
+
+```bash
+uv run --no-project python scripts/track2_public_review_v17.py
+uv run python scripts/track2_release_v17.py check
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+uv run python scripts/track1_submission.py --self-check
+uv run python scripts/track2_evidence.py track1
+uv run python scripts/track2_evidence.py check
+uv run python scripts/track2_release_v17.py build results/feat009/jvv7_track2_research_v17
+uv run python scripts/track2_bundle_v17.py build
+```
+
+Actual regression output (logs/track2-v17-regressions-20260924.log):
+
+```text
+Ran 614 tests in 8.355s
+OK
+```
+
+Nineteen new tests cover incomplete retrieval/coverage, false quota or compliance,
+required disclosure/abstract limits, missing scientific qualifications, trial uncertainty,
+synthetic denominators/bar scale, unsafe assets, export drift and preservation/readiness.
+One initial mutation exposed a footer masking a removed main stop-rule label; semantic
+IDs now verify all six main labels directly. No test success is biological validation.
+Track 1 v4 hashes remain a1f9315e223a07914589ce6884a66702b80e587ec5b7ad67f2ca1213f6caa225
+(CSV) and f36bacbc506d5a717ee7a55f174fed3f376ed7beacd83d11091e57d319d0d68b (report).
+The historical 53-source/12-candidate evidence baseline still passes; its old conditional
+screen wording is not the current disposition.
+
+V17 research snapshot verifies 54 files, 291 bound inputs and all v1–v16 releases.
+Manifest SHA256: 0d7671f8672cb011938ff16f5c5aba6ad42df209fefc3c9a86e7c4b8d2b6f509.
+Recording-materials ZIP: results/feat009/jvv7_track2_video_materials_v17.zip, 20 files
+including SHA256SUMS.json, 1,150,894 bytes, CRC and every included byte/hash verified.
+ZIP SHA256: 70c177d1e5ac8df0c9573d437ef767f216f1457c281e3a7774cd56185f680c0f.
+This is a recording/review bundle, not a video, upload or receipt.
+
+Export commands and final outputs:
+
+```bash
+uv run scripts/track2_export_documents_v17.py v17-documents-final-20260924
+uv run node scripts/render_track2_report_v17.mjs v17-documents-final-20260924
+uv run node scripts/render_track2_slides_v17.mjs v17-slide-review-release-20260924
+```
+
+Report PDF SHA256: 2ddc1c45370341e919fef4d2f87eeb18a6ea5b5f3f136e9ca68286be4f3050b8.
+Slide PDF SHA256: 5e33c7ff637fe9048282b416f38e59f16f0e18351a91e3e26cf7b6a5227b2372.
+Methods XLSX SHA256: 724bfa4fe49ce82b242e2ac06e0a3acd627e330cf4e702b4a44b3a8f51c4b4e7.
+See notes/track2-v17-design.md and the render/documents/public-review audits for scope.
+No new third-party inference, subject-file transfer or external browser asset was used.
+
+Live publication guard: PUBLIC, all 13 retired objects unavailable, zero unknown errors,
+reachable live control, removed_object_gate_passed:true. Initial staged disclosure audit
+checks 375 blobs with zero findings; default whitespace check passes. Final staging also
+includes this progress record and the final feature evidence. The checks use local
+protected-text comparison without emitting its vocabulary or source records.
+
+Fresh ordinary-shell, no-argument startup passed. Actual output from
+logs/track2-v17-final-init-20260924.log:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "presentation_version": 17,
+  "drug_science_version": 15,
+  "slides": 8,
+  "narration_words": 342,
+  "upload_ready": false,
+  "scope": "Public artifact/state consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```
+
+End-of-session publication and synchronization commands:
+
+```bash
+uv run python scripts/audit_publication.py --staged --output results/feat009/v17-staged-final-disclosure-20260924.json
+git diff --cached --check
+git commit -m "Align Track 2 report and presentation with live rubric and community guidance"
+uv run python scripts/audit_publication.py --output results/feat009/v17-history-disclosure-20260924.json
+git push origin main
+git status --short
+git rev-list --left-right --count HEAD...@{upstream}
+```
+
+The requested review, revision, exports and reproducible harness work are complete.
+Feat-009 remains in progress for biological qualification, source clarification,
+provider/distribution review, recorded/hosted video, final owner/live checks and receipt.
+No submission attempt, organizer message or change to any previously uploaded file.

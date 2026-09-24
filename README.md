@@ -93,7 +93,7 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-**Track 2 (feat-009) is in progress.** The [current v16 report](notes/track2-report-v16.md)
+**Track 2 (feat-009) is in progress.** The [current v17 report](notes/track2-report-v17.md)
 and [falsification review](notes/track2-falsification-review-v15.md) challenge the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
 No drug earns rescue priority; everolimus is an optional qualified mechanistic probe,
@@ -133,21 +133,37 @@ assumption; revise or abandon the approach when warranted. Use the original
 throughout research and before promotion/release. Apply the same standard to benefit,
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
-Current materials: [report](notes/track2-report-v16.md),
-[328-word narration](notes/track2-pitch-v16.md), [plain transcript](notes/track2-transcript-v16.txt),
-[nine-slide deck](notes/track2-slides-v16.html) and
-[video description](notes/track2-video-description-v16.md). The full acknowledgement
-and AlphaFold3 terms/notice remain. These are recording materials; runtime, recording,
-hosting, provider/owner/live checks and receipt remain open. No wet-lab result or upload.
+Current materials: [seven-page report source](notes/track2-report-v17.md),
+[342-word narration](notes/track2-pitch-v17.md), [plain transcript](notes/track2-transcript-v17.txt),
+[eight-slide deck](notes/track2-slides-v17.html) and
+[video description](notes/track2-video-description-v17.md). The report leads with the
+conditional approved-drug hypothesis, balanced evidence and a staged benefit/harm test.
+It answers all eleven methods questions, including AI disclosure and a 249-word abstract.
+The original methods workbook is also filled by the document exporter. Full
+acknowledgement and historical model notices remain. The [readiness note](notes/track2-owner-readiness-v17.md)
+retains recording/hosting, provider handling, unresolved distribution scope, owner/live
+checks and receipt. These drafts do not establish a wet-lab result or an upload.
 
-Use `scripts/track2_release_v16.py` for new snapshots and
-`uv run node scripts/render_track2_slides_v16.mjs new-output-name` for export.
-All v1–v15 bound inputs/releases and submitted Track 1 v4 are preserved.
+Start with the [reviewer guide](notes/track2-reviewer-guide-v17.md). Its public CPU check
+needs no subject files, data/results folders, keys, network or model weights:
+
+```bash
+uv run --no-project python scripts/track2_public_review_v17.py
+```
+
+Use `scripts/track2_release_v17.py` for new research snapshots; the reviewer guide
+documents PDF/workbook/slide regeneration and separates historical integrity checks.
+All v1–v16 bound inputs/releases and submitted Track 1 v4 are preserved.
 The [current-artifact record](notes/track2-current.json) and
-[harness review](notes/track2-harness-review-v15.md) route the current work.
+[harness review](notes/track2-harness-review-v17.md) route the current work.
 `./init.sh` checks artifact versions, narration, original models, new falsification
-results and unresolved scientific/delivery status. The [website review](notes/track2-challenge-review-20260919.md)
-records the last rules/template check; no authenticated portal action occurred here.
+results and unresolved scientific/delivery status. The [official review](notes/track2-official-requirements-review-20260924.md)
+checks live revision aeeef5ad49f51204a7439352e59e9d310aee5e9e; the
+[community review](notes/track2-community-review-20260924.md) covers all 24 public
+discussions and 68 latest visible comments. Rigor/impact/innovation/scalability receive
+35/25/25/15 percent; hypotheses are permitted and three entries/latest-only applies.
+No authenticated portal action occurred here. Current materials omit AF3/Atlas numerical
+outputs and derived figures; this does not itself resolve CC BY scope for linked history.
 
 The historical [baseline evidence ledger](notes/track2-candidates.json) assesses twelve
 entries; the [v3 report](notes/track2-report-v3.md) and all earlier snapshots are preserved.
@@ -198,7 +214,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v16 disclosure names this route without
+GLM for public-literature synthesis; the current v17 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 

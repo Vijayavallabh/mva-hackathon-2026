@@ -26,7 +26,7 @@ class CurrentStateTests(unittest.TestCase):
     def test_false_readiness_or_scientific_promotion_rejected(self):
         for key,value in [('upload_ready',True),('video_recorded',True),('video_url','https://example.org/video'),
                           ('phase','trans'),('clinical_exposure_margin',10),('rescue_priority','everolimus'),
-                          ('provider_settings_verified',True)]:
+                          ('provider_settings_verified',True),('licensing_scope_resolved',True)]:
             state=deepcopy(self.state);state['status'][key]=value
             with self.subTest(key=key),self.assertRaises(ValueError):
                 harness.validate(state,self.features,self.documents)
