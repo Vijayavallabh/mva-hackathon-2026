@@ -93,7 +93,7 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-**Track 2 (feat-009) is in progress.** The [current v17 report](notes/track2-report-v17.md)
+**Track 2 (feat-009) is in progress.** The [current v18 report](notes/track2-report-v18.md)
 and [falsification review](notes/track2-falsification-review-v15.md) challenge the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
 No drug earns rescue priority; everolimus is an optional qualified mechanistic probe,
@@ -133,29 +133,31 @@ assumption; revise or abandon the approach when warranted. Use the original
 throughout research and before promotion/release. Apply the same standard to benefit,
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
-Current materials: [seven-page report source](notes/track2-report-v17.md),
-[342-word narration](notes/track2-pitch-v17.md), [plain transcript](notes/track2-transcript-v17.txt),
-[eight-slide deck](notes/track2-slides-v17.html) and
-[video description](notes/track2-video-description-v17.md). The report leads with the
+Current materials: [six-page report source](notes/track2-report-v18.md),
+[334-word narration](notes/track2-pitch-v18.md), [plain transcript](notes/track2-transcript-v18.txt),
+[eight-slide deck](notes/track2-slides-v18.html) and
+[video description](notes/track2-video-description-v18.md). The report leads with the
 conditional approved-drug hypothesis, balanced evidence and a staged benefit/harm test.
-It answers all eleven methods questions, including AI disclosure and a 249-word abstract.
+The report is 27.18% shorter; the redesigned deck and rewritten pitch follow the
+[official Track 2 brief](notes/track2-v18-brief-review.md), rechecked September 25.
+It answers all eleven methods questions, including AI disclosure and a 166-word abstract.
 The original methods workbook is also filled by the document exporter. Full
-acknowledgement and historical model notices remain. The [readiness note](notes/track2-owner-readiness-v17.md)
+acknowledgement and historical model notices remain. The [readiness note](notes/track2-owner-readiness-v18.md)
 retains recording/hosting, provider handling, unresolved distribution scope, owner/live
 checks and receipt. These drafts do not establish a wet-lab result or an upload.
 
-Start with the [reviewer guide](notes/track2-reviewer-guide-v17.md). Its public CPU check
+Start with the [reviewer guide](notes/track2-reviewer-guide-v18.md). Its public CPU check
 needs no subject files, data/results folders, keys, network or model weights:
 
 ```bash
-uv run --no-project python scripts/track2_public_review_v17.py
+uv run --no-project python scripts/track2_public_review_v18.py
 ```
 
-Use `scripts/track2_release_v17.py` for new research snapshots; the reviewer guide
+Use `scripts/track2_release_v18.py` for new research snapshots; the reviewer guide
 documents PDF/workbook/slide regeneration and separates historical integrity checks.
-All v1–v16 bound inputs/releases and submitted Track 1 v4 are preserved.
+All v1–v17 bound inputs/releases and submitted Track 1 v4 are preserved.
 The [current-artifact record](notes/track2-current.json) and
-[harness review](notes/track2-harness-review-v17.md) route the current work.
+[harness review](notes/track2-harness-review-v18.md) route the current work.
 `./init.sh` checks artifact versions, narration, original models, new falsification
 results and unresolved scientific/delivery status. The [official review](notes/track2-official-requirements-review-20260924.md)
 checks live revision aeeef5ad49f51204a7439352e59e9d310aee5e9e; the
@@ -214,7 +216,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v17 disclosure names this route without
+GLM for public-literature synthesis; the current v18 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 

@@ -1,0 +1,53 @@
+# Track 2 v18: slide-by-slide recording script
+
+Participant jvv7 · 25 September 2026. Read with the eight-slide v18 deck.
+Reframed against the official Track 2 brief: candidate and mechanism, supporting
+and opposing evidence, validation, potential impact, innovation and reuse.
+Times total three minutes but are rehearsal allocations; runtime is unmeasured.
+Read the paragraphs only. Keep the complete acknowledgement visible in the video.
+
+## Narration
+
+### Slide 1 / 0:00–0:22 / The repurposing proposal
+
+Our Track Two proposal tests everolimus for useful, non-cancer cell function in MVA. It is an approved mTORC1 inhibitor. Our model-qualified experiment would measure benefit, accurate division and tissue safety together. MVA efficacy is unproven; no drug currently earns rescue priority.
+
+### Slide 2 / 0:22–0:46 / From variant to drug hypothesis
+
+Our starting hypothesis is a stop-gain and missense BUB1B pair. BUB1B encodes the checkpoint protein BUBR1. Phase and endogenous effects remain unresolved. Different-model evidence motivates two branches: excess mTOR activity with functional impairment, or impaired flux and regeneration. Neither is established here; everolimus does not replace BUBR1.
+
+### Slide 3 / 0:46–1:13 / Why investigate everolimus?
+
+Everolimus increased selected muscle-mass outcomes in aged rats without established force benefit. It also reduced BUBR1 in late-passage stromal cells. A temsirolimus RMS trial did not establish event-free survival benefit. These different contexts justify a bounded experiment, not a rescue claim. HCQ remains reserve.
+
+### Slide 4 / 1:13–1:38 / The first decisive experiment
+
+First qualify endogenous models with single alleles, cis, trans and corrected controls. Lock one mechanistic branch before exposure. Randomize a blinded benefit-and-harm probe, then independently confirm a worthwhile result. Failed qualification stops drug advancement. No wet-lab experiment has been performed; assay margins and sample size still require qualification.
+
+### Slide 5 / 1:38–2:02 / Define useful improvement
+
+Our design counts every enrolled cell. In this synthetic example, errors among completed divisions decrease, but accurate viable output falls from sixty to forty percent. That is not rescue. Track death, arrest, missing cells, daughters and tissue function. Tumour killing separately requires deficient-normal controls.
+
+### Slide 6 / 2:02–2:25 / Rules for advancement
+
+Unknown evidence means hold. Failed safety means stop, despite apparent benefit. Require replicated function, preserved division and a justified exposure comparison. Whole blood is not free tissue. A disputed source concentration stays quarantined. Passing all requirements permits preclinical review, not treatment.
+
+### Slide 7 / 2:25–2:47 / Impact and reuse
+
+Validated findings could clarify whether this route merits further MVA research. Our contribution combines genotype-aware models, complete cell-fate accounting and explicit stop rules. Public CPU checks need no subject files or GPUs. Another genotype or tissue needs fresh biological qualification. The next step is model qualification.
+
+### Slide 8 / 2:47–3:00 / Acknowledgement
+
+We thank the child and family, MVA Society and Sage Bionetworks. The full acknowledgement is displayed. Our next decisive step is biological validation.
+
+## Recording notes
+
+Narration contains 334 whitespace-separated words. This is a timing plan, not a measured runtime.
+Rehearse with slide transitions and measure the final file. Sources and the full AI
+disclosure are in the accompanying video description. The existing report and v15
+scientific ledger retain the detailed control failures and exposure limitations.
+
+Pronunciation: MVA and RMS as letters; BUB1B as “bub one bee”; BUBR1 as “bub R one”;
+mTORC1 as “em-tor complex one”; everolimus as “eh-ver-OH-li-mus”.
+Use the proposal tone of the slides; do not imply demonstrated response,
+confirmed phase, a usable clinical dose or a completed experiment.

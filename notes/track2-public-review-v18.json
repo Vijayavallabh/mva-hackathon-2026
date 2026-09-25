@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "files_copied": 397,
+  "network_forbidden_by_audit_hook": true,
+  "data_results_logs_env_forbidden_by_audit_hook": true,
+  "project_environment_used": false,
+  "result": {
+    "passed": true,
+    "presentation_version": 18,
+    "drug_science_version": 15,
+    "static_deck_verified": true,
+    "source_sha256": "5146433f0969e077460db48e3fa6c7ed52f356b1e80f713a0f18bf708fdacb6a",
+    "slides": 8,
+    "vector_figures": 7,
+    "visible_words": [
+      40,
+      68,
+      75,
+      73,
+      84,
+      44,
+      59,
+      106
+    ],
+    "narration_words": 334,
+    "words_per_slide": [
+      41,
+      47,
+      44,
+      48,
+      44,
+      41,
+      46,
+      23
+    ],
+    "requirements": {
+      "revision": "aeeef5ad49f51204a7439352e59e9d310aee5e9e",
+      "public_discussions": 24,
+      "visible_comments": 68,
+      "closed_discussions": 12
+    },
+    "methods_fields": 11,
+    "abstract_words": 166,
+    "falsification": {
+      "passed": true,
+      "claims": 19,
+      "primary_pass": 12,
+      "sensitivity_fail": 8,
+      "advancement": {
+        "decision": "hold_unresolved",
+        "failed": [],
+        "unresolved": [
+          "division_capacity",
+          "exposure_match",
+          "functional_benefit",
+          "hypothesis_lock",
+          "model_qualification",
+          "normal_tissue_safety",
+          "replication",
+          "source_integrity"
+        ],
+        "clinical_recommendation": false
+      },
+      "scope": "Evidence consistency, not biological validation"
+    },
+    "upload_ready": false,
+    "biological_validation": false,
+    "scope": "Tracked-public consistency checks; no inference, clinical or eligibility certification"
+  },
+  "elapsed_seconds": 0.315,
+  "limits": "One isolated public-artifact consistency check, not biological or model validation.",
+  "script_sha256": "cae90faa87025ed46f909ee73c59100ab207deb034df59e2dc5e9a65b45fca82",
+  "report_sha256": "227adc6b3e1682317dff03f3314c3945c266d3d91455e4bbce5c090ad16a0d51",
+  "slide_sha256": "5146433f0969e077460db48e3fa6c7ed52f356b1e80f713a0f18bf708fdacb6a"
+}

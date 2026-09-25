@@ -4458,3 +4458,133 @@ The requested review, revision, exports and reproducible harness work are comple
 Feat-009 remains in progress for biological qualification, source clarification,
 provider/distribution review, recorded/hosted video, final owner/live checks and receipt.
 No submission attempt, organizer message or change to any previously uploaded file.
+
+
+## 2026-09-25 — Session 57: Track 2 v18 design, concise report and competition pitch
+
+The owner requested relevant skills for a substantial aesthetic redesign, then explicitly
+requested no-ai-slop/humanizer report editing and a website-grounded Track 2 pitch rewrite.
+Applied scientific-slides and the pinned frontend-design skill to eight new HTML/SVG
+slides; applied both requested editing skills to the report. No subagent was needed.
+
+V18 uses Ubuntu type, deep teal/ice/mint/iris, a large conceptual mitotic spindle, a
+mechanism fork, contextual evidence rows, a staged experiment, explicit synthetic
+denominators and large hold/stop/review decisions. Seven SVGs, 549 visible words,
+24px minimum slide text. The report is 2,119 words versus 2,910 (27.18% shorter),
+six A4 pages; B17 is 166 words. Full B9 AI disclosure and acknowledgement are exact;
+27 unique citation targets remain after version-link normalization. All eleven methods
+answers round-trip in the original workbook. The 334-word narration is rewritten for
+the candidate/mechanism/evidence/validation/impact story; runtime remains unmeasured.
+
+Fresh anonymous official-page checks retain revision aeeef5ad49f51204a7439352e59e9d310aee5e9e.
+Overview, FAQ, rules, submission source, config.py and README hashes are unchanged.
+Trimmed live submission component 40 matches the source. Full live runtime config differs
+and is not called byte-identical. Standard web rendering could not retrieve some files;
+anonymous direct requests returned 200. See notes/track2-v18-brief-review.md and its
+hash audit. The complete 24-discussion/68-comment review remains dated September 24;
+no repeat enumeration or new biological literature review is claimed.
+
+Scientific ledger v15 and all drug dispositions remain unchanged. No rescue-priority
+drug, phase unconfirmed, endogenous function/clinical margins unresolved, no wet lab.
+No GPU run, new provider, accepted terms, external message, portal callback or upload.
+Track 1 v4 hashes are unchanged. Provider/distribution/recording/live-portal gaps remain
+in the handoff and readiness note. The two author reviews are not independent reviews.
+
+Validation and reproducible artifacts:
+
+- `uv run python -m unittest discover -s scripts -p 'test_track2*.py'`: 633 tests,
+  7.286 seconds, OK; log `logs/track2-v18-regressions-20260925.log`.
+- `uv run --no-project python scripts/track2_public_review_v18.py`: passes in a
+  separate 397-file copy without data/results/logs/.env/.git and with network/protected
+  path access forbidden by an audit hook. One local run: 0.315 seconds.
+- All eight final slide screenshot/PDF pages and six report PDF pages inspected.
+  Initial heading line-height and a mechanism label/fork were corrected; report table
+  columns rebalanced. Geometry/contrast/narrow viewport pass. Fonts are embedded.
+  The workbook's values/styles are checked; its appearance was not visually rendered.
+- `uv run python scripts/track2_release_v18.py build results/feat009/jvv7_track2_research_v18`
+  verifies 57 files, 316 bound inputs and all v1-v17 historical snapshots.
+- `uv run python scripts/track2_bundle_v18.py build` verifies 20 files, 1,232,600 bytes,
+  ZIP CRC and exact contents. This is recording material, not a recorded video.
+- `uv run python scripts/check_publication_remote.py --output results/feat009/v18-publication-remote-20260925.json`:
+  PUBLIC, all 13 retired blobs unavailable, zero unknown errors, live control reachable.
+- Historical evidence checker remains 53 sources/12 candidates; its old conditional
+  decision is historical only. Current science remains the v15 63-source ledger.
+
+Final exports:
+
+- `results/feat009/v18-slides-competition-20260925/track2-slides-v18.pdf`
+- `results/feat009/v18-documents-final-b-20260925/jvv7_track2_report_v18.pdf`
+- `results/feat009/v18-documents-final-b-20260925/jvv7_track2_methods_v18.xlsx`
+- `results/feat009/jvv7_track2_video_materials_v18.zip`
+
+Earlier previews are retained. After the research snapshot was built, all bound v18
+files are immutable; future content changes need another version.
+
+SHA-256 `notes/track2-report-v18.md`: `227adc6b3e1682317dff03f3314c3945c266d3d91455e4bbce5c090ad16a0d51`.
+
+SHA-256 `notes/track2-slides-v18.html`: `5146433f0969e077460db48e3fa6c7ed52f356b1e80f713a0f18bf708fdacb6a`.
+
+SHA-256 `results/feat009/v18-slides-competition-20260925/track2-slides-v18.pdf`: `6be41a26cb20741453ae26063aed4ddb8fcc1c24637fa54e882b5098703c7f70`.
+
+SHA-256 `results/feat009/v18-documents-final-b-20260925/jvv7_track2_report_v18.pdf`: `727659500b33867fb42a344ba9aae539ff0c6784e138c3a8ee68e3a1e34ad3bb`.
+
+SHA-256 `results/feat009/jvv7_track2_research_v18/manifest.json`: `dbd858ef76e93842a24aa476a2d54a86e3d40c423997ea486c4a2d74d7b93a8c`.
+
+SHA-256 `results/feat009/jvv7_track2_video_materials_v18.zip`: `77921b94cbb0a1ba49ddd99e1e239e9caebb2ee284a39363ca199291e4f17a32`.
+
+
+Fresh no-argument `./init.sh` completed successfully from an ordinary new shell.
+Actual output (`logs/track2-v18-final-init-20260925.log`):
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "presentation_version": 18,
+  "drug_science_version": 15,
+  "slides": 8,
+  "narration_words": 334,
+  "upload_ready": false,
+  "scope": "Public artifact/state consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```
+
+The staged publication audit passes 398 blobs with zero findings; the live retired-object
+guard passes. End-of-session commands:
+
+```bash
+uv run python scripts/audit_publication.py --staged --output results/feat009/v18-staged-final-disclosure-20260925.json
+git diff --cached --check
+git commit -m "Redesign Track 2 slides and sharpen the competition pitch and report"
+uv run python scripts/audit_publication.py --output results/feat009/v18-history-disclosure-20260925.json
+git push origin main
+git status --short
+git rev-list --left-right --count HEAD...@{upstream}
+```
+
+The requested slide redesign, concise report edit and competition-focused pitch rewrite
+are complete. Feat-009 remains in progress for the biological and delivery items listed
+in the handoff; no submission is claimed.

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Everolimus: testing useful function in MVA | jvv7 | Track 2 v18</title>
+<style>
+:root{--ice:#f7fafc;--ink:#142c3c;--deep:#123a40;--green:#176359;--mint:#d8eee5;--iris:#48419d;--lilac:#eae9f6;--muted:#4c6370}
+*{box-sizing:border-box}body{margin:0;background:#cad7db;color:var(--ink);font-family:Ubuntu,sans-serif}
+.slide{width:1280px;height:720px;position:relative;overflow:hidden;background:var(--ice);margin:0 auto 32px;break-after:page}
+header{position:absolute;left:64px;right:64px;top:32px;display:flex;justify-content:space-between;align-items:center;font-size:24px;line-height:1.25;color:var(--muted)}
+header .chapter{display:flex;align-items:center;gap:14px}.chapter:before{content:"";width:12px;height:12px;border-radius:50%;background:var(--green)}
+h1{position:absolute;left:64px;top:105px;margin:0;font-size:55px;line-height:1.1;font-weight:500;letter-spacing:-1.8px;max-width:1160px}
+.sub{position:absolute;left:66px;top:185px;margin:0;font-size:27px;line-height:1.3;color:var(--muted)}
+.diagram{position:absolute;left:64px;top:254px;width:1152px;height:322px;margin:0}svg{display:block;width:100%;height:100%;overflow:visible}svg text{font-family:Ubuntu,sans-serif;fill:var(--ink);font-size:28px;font-weight:400}svg .small{font-size:24px}svg .strong{font-size:32px;font-weight:500}svg .number{font-size:64px;font-weight:500;letter-spacing:-2px}svg .green{fill:var(--green)}svg .iris{fill:var(--iris)}svg .muted{fill:var(--muted)}
+.note{position:absolute;left:64px;right:64px;top:591px;margin:0;font-size:25px;line-height:1.3;color:var(--muted)}
+footer{position:absolute;left:64px;right:64px;bottom:24px;display:flex;justify-content:space-between;gap:24px;align-items:flex-end;color:var(--muted);font-size:24px;line-height:1.3}footer .sources{max-width:1064px}footer .page{white-space:nowrap}a{color:inherit;text-decoration-thickness:1px;text-underline-offset:5px}a:focus-visible{outline:3px solid currentColor;outline-offset:5px}
+.dark{background:var(--deep);color:#fff}.dark header,.dark .sub,.dark .note,.dark footer{color:var(--mint)}.dark .chapter:before{background:var(--mint)}.dark svg text{fill:#fff}.dark svg .mint{fill:var(--mint)}
+.hero h1{top:126px;font-size:76px;line-height:1.23;letter-spacing:-2.5px;width:670px}.hero .sub{top:426px;font-size:28px;color:var(--mint)}.hero .note{top:535px;width:650px;font-size:26px}.hero .diagram{left:745px;top:113px;width:486px;height:468px}.hero footer{bottom:30px}
+.mechanism .diagram{top:256px;height:325px}.mechanism h1{font-size:54px}.mechanism .sub{font-size:29px}
+.evidence .diagram{top:238px;height:340px}.evidence .note{top:580px;font-size:24px}.evidence footer{bottom:18px;font-size:24px}
+.experiment .diagram{top:261px;height:316px}.experiment h1{font-size:54px}
+.outcomes .diagram{top:240px;height:340px}.outcomes h1{font-size:56px}
+.gates .diagram{top:235px;height:340px}.gates .note{top:594px;font-size:25px}.gates h1{font-size:62px}
+.contribution .diagram{top:250px;height:321px}.contribution h1{font-size:54px}
+.ack h1{top:131px;font-size:90px;line-height:1.23;width:390px}.ack .gratitude{position:absolute;left:66px;top:378px;width:330px;font-size:29px;line-height:1.4;color:var(--mint);margin:0}.ack .acknowledgement{position:absolute;left:482px;top:149px;right:65px;font-size:28px;line-height:1.47;margin:0}.ack .sub{top:582px;font-size:27px}
+nav{position:fixed;left:50%;top:6px;transform:translateX(-50%);display:flex;gap:18px;background:white;padding:8px 24px;border-radius:24px;opacity:0;pointer-events:none;z-index:20}body:hover nav,nav:focus-within{opacity:1;pointer-events:auto}nav a{font-size:20px;color:var(--ink);text-decoration:none}
+@media screen and (max-width:1279px){.slide{zoom:0.5}}@media screen and (max-width:639px){.slide{zoom:0.25}}@media screen and (max-width:319px){.slide{zoom:0.125}}
+@media print{@page{size:13.333333in 7.5in;margin:0}body{background:white}.slide{margin:0;break-after:page;page-break-after:always}.slide:last-of-type{break-after:auto;page-break-after:auto}nav{display:none}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<section class="slide hero dark" id="slide-1" aria-label="Everolimus as a qualified research hypothesis">
+<header><span class="chapter">Rare Disease, Real Kid</span><span>jvv7 / Track 2</span></header>
+<h1>Repurposing<br>everolimus<br>for MVA</h1>
+<p class="sub">An approved mTORC1 inhibitor<br>Testing non-cancer function and division</p>
+<figure class="diagram"><svg viewBox="0 0 486 468" role="img" aria-label="Conceptual mitotic spindle with stylized chromosomes. This is an illustration, not patient cells, a structure prediction or a drug response.">
+<title>Useful function must preserve accurate division</title>
+<ellipse cx="248" cy="224" rx="233" ry="207" fill="#d8eee5"/>
+<ellipse cx="248" cy="224" rx="215" ry="189" fill="none" stroke="#176359" stroke-width="1" opacity="0.32"/>
+<path d="M51 224Q149 40 247 80Q346 40 445 224M51 224Q145 80 247 113Q350 80 445 224M51 224Q146 122 247 158Q349 122 445 224M51 224Q145 177 247 202Q350 177 445 224M51 224Q149 410 247 368Q346 410 445 224M51 224Q145 369 247 334Q350 369 445 224M51 224Q146 326 247 289Q349 326 445 224M51 224Q145 275 247 245Q350 275 445 224" fill="none" stroke="#176359" stroke-width="1.8" opacity="0.5"/>
+<path d="M51 224H445" stroke="#176359" stroke-width="1.5" opacity="0.4"/>
+<path d="M236 88Q250 110 260 134M260 88Q246 111 236 134M236 160Q250 185 260 211M260 160Q246 185 236 211M236 240Q250 265 260 289M260 240Q246 265 236 289M236 316Q250 342 260 366M260 316Q246 342 236 366" fill="none" stroke="#48419d" stroke-width="11" stroke-linecap="round"/>
+<circle cx="51" cy="224" r="12" fill="#123a40"/><circle cx="445" cy="224" r="12" fill="#123a40"/>
+<circle cx="51" cy="224" r="22" fill="none" stroke="#123a40" stroke-width="2"/><circle cx="445" cy="224" r="22" fill="none" stroke="#123a40" stroke-width="2"/>
+<text x="248" y="462" text-anchor="middle" class="small mint">Conceptual mitosis</text>
+</svg></figure>
+<p class="note">Research hypothesis; MVA efficacy unproven.<br>No rescue-priority drug.</p>
+<footer><span class="sources"><a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f1ae129-c21e-4c25-84c1-a6757d9a7eb2">Approval / mechanism</a> &nbsp; <a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v18.md">Report and disclosures</a></span><span class="page">1 / 8</span></footer>
+</section>
+
+<section class="slide mechanism" id="slide-2" aria-label="The genetic and conditional mechanistic bridge">
+<header><span class="chapter">Mechanism</span><span>Two hypotheses to qualify</span></header>
+<h1>Connect the variant to the drug target.</h1>
+<p class="sub">BUB1B p.Leu737Ter / p.Asn1002Lys → BUBR1 function?</p>
+<figure class="diagram"><svg viewBox="0 0 1152 325" role="img" aria-label="The BUB1B hypothesis has unknown allele effects and unconfirmed phase. A dashed fork leads to two separately qualified branches: excess mTOR activity with a functional deficit, or impaired flux and regeneration. Neither is established.">
+<title>Uncertainty precedes both branches</title>
+<rect x="0" y="16" width="343" height="275" rx="24" fill="#eae9f6"/>
+<text x="28" y="68" class="strong iris" style="font-size:28px">Genetic starting point</text>
+<text x="28" y="127">Phase unconfirmed</text><text x="28" y="169">Allele effects unknown</text><text x="28" y="243" class="small muted">Endogenous models first</text>
+<path d="M361 151H414Q449 151 449 116V75Q449 55 482 55H510M414 151Q449 151 449 187V216Q449 236 482 236H510" fill="none" stroke="#4c6370" stroke-width="2.5" stroke-dasharray="7 6"/>
+<circle cx="530" cy="55" r="22" fill="#176359"/><text x="530" y="64" text-anchor="middle" style="fill:white;font-size:26px">A</text>
+<text x="576" y="64" class="strong green">Excess mTOR activity</text><text x="576" y="109">Plus a functional deficit</text>
+<circle cx="530" cy="236" r="22" fill="#48419d"/><text x="530" y="245" text-anchor="middle" style="fill:white;font-size:26px">B</text>
+<text x="576" y="209" class="strong iris">Impaired flux</text><text x="576" y="250" class="strong iris">+ regeneration</text><text x="576" y="296" class="small muted">Separate eligibility and controls</text>
+</svg></figure>
+<p class="note">Neither branch established. Everolimus does not replace BUBR1.</p>
+<footer><span class="sources"><a href="https://doi.org/10.1038/ng1449">Hanks</a> · <a href="https://doi.org/10.1172/JCI126863">Sieben</a> / <a href="https://doi.org/10.1172/JCI144781">corrigendum</a> · <a href="https://doi.org/10.1172/jci.insight.182842">Balnis</a>. Different-model evidence.</span><span class="page">2 / 8</span></footer>
+</section>
+
+<section class="slide evidence" id="slide-3" aria-label="Balanced drug evidence and its limitations">
+<header><span class="chapter">Candidate choice</span><span>HCQ remains reserve</span></header>
+<h1>Why investigate everolimus?</h1>
+<p class="sub">Different-model evidence; no selected-pair rescue shown.</p>
+<figure class="diagram"><svg viewBox="0 0 1152 340" role="img" aria-label="Three evidence rows: everolimus increased selected muscle mass in aged rats without established force benefit; it reduced BUBR1 in late-passage stromal cells; the temsirolimus RMS trial did not establish event-free survival benefit. These are not a head-to-head comparison.">
+<title>Compound-specific findings and trial uncertainty</title>
+<rect x="0" y="0" width="1152" height="100" rx="18" fill="#d8eee5"/>
+<text x="24" y="37" class="strong green">Everolimus</text><text x="24" y="77" class="small green">Aged rats</text>
+<path d="M396 76V29M386 41L396 29L406 41" fill="none" stroke="#176359" stroke-width="3" stroke-linecap="round"/>
+<text x="448" y="38" class="strong green">Selected muscle mass increased</text><text x="448" y="79" class="small green">Force benefit not established</text>
+<rect x="0" y="116" width="1152" height="100" rx="18" fill="#eae9f6"/>
+<text x="24" y="153" class="strong iris">Everolimus</text><text x="24" y="193" class="small iris">Stromal cells, late passage</text>
+<path d="M396 143V189M386 177L396 189L406 177" fill="none" stroke="#48419d" stroke-width="3" stroke-linecap="round"/>
+<text x="448" y="153" class="strong iris">BUBR1 protein decreased</text><text x="448" y="194" class="small iris">Loss alone does not prove harm</text>
+<text x="24" y="272" class="strong">Temsirolimus</text><text x="24" y="312" class="small muted">RMS / ARST1431</text>
+<text x="448" y="272" class="strong">EFS benefit not established</text><text x="448" y="313" class="small muted">HR 0.86; 95% CI 0.58–1.26; p=0.44</text>
+</svg></figure>
+<p class="note">Add-on to VAC/VI; 297 evaluable. Not non-cancer everolimus rescue.</p>
+<footer><span class="sources"><a href="https://doi.org/10.1128/MCB.00141-19">Joseph</a> · <a href="https://doi.org/10.1016/j.redox.2023.102701">Goutas</a> · <a href="https://doi.org/10.1016/S1470-2045(24)00255-9">ARST1431</a>. Further counterevidence in report.</span><span class="page">3 / 8</span></footer>
+</section>
+
+<section class="slide experiment" id="slide-4" aria-label="Staged experimental plan">
+<header><span class="chapter">Experiment</span><span>Each stage earns the next</span></header>
+<h1>Test function before advancing the drug.</h1>
+<p class="sub">Proposed study; no wet-lab experiments performed</p>
+<figure class="diagram"><svg viewBox="0 0 1152 316" role="img" aria-label="A proposed three-stage route: qualify endogenous models and controls, lock a mechanistic branch for a blinded randomized probe, then independently confirm meaningful benefit, safety, exposure and recovery. No sample-size or power claim.">
+<title>A staged experiment with stop points</title>
+<path d="M29 36H1074" stroke="#b6cbd0" stroke-width="3"/><polygon points="1088,36 1073,28 1073,44" fill="#4c6370"/>
+<circle cx="30" cy="36" r="28" fill="#48419d"/><text x="30" y="46" text-anchor="middle" style="fill:white;font-size:28px">1</text>
+<circle cx="423" cy="36" r="28" fill="#176359"/><text x="423" y="46" text-anchor="middle" style="fill:white;font-size:28px">2</text>
+<circle cx="816" cy="36" r="28" fill="#48419d"/><text x="816" y="46" text-anchor="middle" style="fill:white;font-size:28px">3</text>
+<text x="0" y="126" style="font-size:44px;font-weight:500" class="iris">Qualify</text>
+<text x="393" y="126" style="font-size:44px;font-weight:500" class="green">Probe</text>
+<text x="786" y="126" style="font-size:44px;font-weight:500" class="iris">Confirm</text>
+<text x="0" y="185">Endogenous phenotype</text><text x="0" y="231">Single / cis / trans</text><text x="0" y="277">Corrected controls</text>
+<text x="393" y="185">Lock A or B</text><text x="393" y="231">Randomize + blind</text><text x="393" y="277">Benefit and harm</text>
+<text x="786" y="185">Meaningful margins</text><text x="786" y="231">Independent replication</text><text x="786" y="277">Exposure + recovery</text>
+</svg></figure>
+<p class="note">No post-hoc branch switching. Failed qualification stops drug advancement.</p>
+<footer><span class="sources"><a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-validation-v15.md">Protocol and controls</a> · Margins and sample size require assay qualification.</span><span class="page">4 / 8</span></footer>
+</section>
+
+<section class="slide outcomes" id="slide-5" aria-label="A synthetic example of misleading survivor improvement">
+<header><span class="chapter">Measure every enrolled cell</span><span>Synthetic example · not data</span></header>
+<h1>What would count as a useful result?</h1>
+<p class="sub">100 enrolled cells per arm. The denominator changes the interpretation.</p>
+<figure class="diagram"><svg viewBox="0 0 1152 340" role="img" aria-label="Synthetic example, not measured data. Errors among completed divisions are 20/80 or 25 percent for control, versus 5/45 or 11.1 percent treated. Accurate viable output per 100 enrolled is 60 percent versus 40 percent. All bars use the same 0-to-100 percent scale.">
+<title>The synthetic treatment improves one ratio while reducing useful output</title>
+<path d="M576 4V334" stroke="#b6cbd0" stroke-width="2"/>
+<text x="0" y="30" class="strong">Completed divisions</text><text x="651" y="30" class="strong">All enrolled cells</text>
+<text x="0" y="69" class="small muted">Errors / completed divisions</text><text x="651" y="69" class="small muted">Accurate viable output / enrolled</text>
+<text x="0" y="122" class="small iris">Control · 20/80</text><text x="493" y="122" text-anchor="end" class="strong iris">25%</text>
+<rect x="0" y="139" width="400" height="18" rx="9" fill="#eae9f6"/><rect id="synthetic-control-errors" x="0" y="139" width="100" height="18" rx="9" fill="#48419d"/>
+<text x="0" y="210" class="small green">Treated · 5/45</text><text x="493" y="210" text-anchor="end" class="strong green">11.1%</text>
+<rect x="0" y="227" width="400" height="18" rx="9" fill="#d8eee5"/><rect id="synthetic-treated-errors" x="0" y="227" width="44.444444" height="18" rx="9" fill="#176359"/>
+<text x="651" y="122" class="small iris">Control · 60/100</text><text x="1152" y="122" text-anchor="end" class="strong iris">60%</text>
+<rect x="651" y="139" width="400" height="18" rx="9" fill="#eae9f6"/><rect id="synthetic-control-output" x="651" y="139" width="240" height="18" rx="9" fill="#48419d"/>
+<text x="651" y="210" class="small green">Treated · 40/100</text><text x="1152" y="210" text-anchor="end" class="strong green">40%</text>
+<rect x="651" y="227" width="400" height="18" rx="9" fill="#d8eee5"/><rect id="synthetic-treated-output" x="651" y="227" width="160" height="18" rx="9" fill="#176359"/>
+<text x="0" y="310" class="small muted">Each full track = 100%</text><text x="651" y="314" style="font-size:40px;font-weight:500" class="iris">Not rescue</text>
+</svg></figure>
+<p class="note">Track death, arrest, missing cells, daughters and tissue function.</p>
+<footer><span class="sources"><a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-falsification-analysis-v15.json">Reproducible example</a> · Tumour killing requires separate deficient-normal controls.</span><span class="page">5 / 8</span></footer>
+</section>
+
+<section class="slide gates dark" id="slide-6" aria-label="Evidence gates limit advancement">
+<header><span class="chapter">Decision rules</span><span>Benefit cannot override failed safety</span></header>
+<h1>Set clear rules for advancement.</h1>
+<p class="sub">Prespecify benefit, safety and exposure requirements.</p>
+<figure class="diagram"><svg viewBox="0 0 1152 340" role="img" aria-label="Unknown evidence means hold. Failed safety means stop. All requirements met allows preclinical review only. Current biological requirements remain unresolved.">
+<title>Unknown and failed evidence have different consequences</title>
+<circle cx="28" cy="48" r="20" fill="none" stroke="#d8eee5" stroke-width="2.5" stroke-dasharray="6 5"/>
+<text id="gate-unknown" x="82" y="59" class="strong mint">Unknown evidence</text><path d="M466 48H536M526 40L536 48L526 56" fill="none" stroke="#d8eee5" stroke-width="2"/>
+<text id="gate-hold" x="585" y="68" style="font-size:58px;font-weight:500">Hold</text>
+<path d="M0 100H1152" stroke="#54787c" stroke-width="1"/>
+<rect x="10" y="141" width="36" height="36" rx="5" fill="#d8eee5"/>
+<text id="gate-failed" x="82" y="171" class="strong mint">Failed safety</text><path d="M466 160H536M526 152L536 160L526 168" fill="none" stroke="#d8eee5" stroke-width="2"/>
+<text id="gate-stop" x="585" y="181" style="font-size:58px;font-weight:500">Stop</text>
+<path d="M0 212H1152" stroke="#54787c" stroke-width="1"/>
+<path d="M10 279L25 293L47 264" stroke="#d8eee5" stroke-width="3" fill="none" stroke-linecap="round"/>
+<text id="gate-all" x="82" y="286" class="strong mint">All requirements met</text><path d="M466 275H536M526 267L536 275L526 283" fill="none" stroke="#d8eee5" stroke-width="2"/>
+<text id="gate-review" x="585" y="287" style="font-size:38px;font-weight:500">Preclinical review only</text>
+</svg></figure>
+<p class="note">Clinical exposure margin unknown. Disputed source concentration quarantined.</p>
+<footer><span class="sources"><a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-falsification-register-v15.json">19-claim falsification register</a></span><span class="page">6 / 8</span></footer>
+</section>
+
+<section class="slide contribution" id="slide-7" aria-label="Potential impact innovation and realistic scalability">
+<header><span class="chapter">Impact, innovation and reuse</span><span>From evidence to the next experiment</span></header>
+<h1>Impact that another lab can test.</h1>
+<p class="sub">Validated findings could guide non-cancer MVA research.</p>
+<figure class="diagram"><svg viewBox="0 0 1152 321" role="img" aria-label="Genotype-aware models, complete cell-fate accounting and explicit stopping rules combine to guide a justified next experiment. CPU evidence checks are reusable, but new tissues need fresh biological qualification.">
+<title>The contribution combines existing methods into an inspectable decision</title>
+<rect x="0" y="4" width="322" height="99" rx="49" fill="#eae9f6"/><text x="161" y="63" text-anchor="middle" class="strong iris">Genotype</text>
+<rect x="415" y="4" width="322" height="99" rx="49" fill="#d8eee5"/><text x="576" y="63" text-anchor="middle" class="strong green">Every cell fate</text>
+<rect x="830" y="4" width="322" height="99" rx="49" fill="#eae9f6"/><text x="991" y="63" text-anchor="middle" class="strong iris">Stop rules</text>
+<path d="M161 117V148Q161 172 187 172H965Q991 172 991 148V117M576 117V216" stroke="#4c6370" stroke-width="2.5" fill="none"/>
+<polygon points="576,226 568,213 584,213" fill="#4c6370"/>
+<text x="576" y="279" text-anchor="middle" style="font-size:40px;font-weight:500">A testable repurposing decision</text>
+</svg></figure>
+<p class="note">Public CPU checks: no subject files or GPUs. New tissues need fresh qualification.</p>
+<footer><span class="sources"><a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-reviewer-guide-v18.md">Reviewer guide</a> · No demonstrated clinical benefit or cost saving.</span><span class="page">7 / 8</span></footer>
+</section>
+
+<section class="slide ack dark" id="slide-8" aria-label="Full challenge acknowledgement">
+<header><span class="chapter">Rare Disease, Real Kid</span><span>jvv7 / Track 2</span></header>
+<h1>With<br>thanks.</h1>
+<p class="gratitude">To the child and family,<br>and everyone who<br>made this work possible.</p>
+<p class="acknowledgement">This work was made possible through the Hackathon, organized by Sage Bionetworks in partnership with the MVA Society, Hugging Face, and BEACON (The Benchmarking, Evaluation, and Assessment Consortium for Science), with prize sponsorship from AWS and Anthropic. We are deeply grateful to the child and their family who generously contributed their data and their story to advance research into this rare disease. We acknowledge their trust in making this Hackathon possible.</p>
+<p class="sub">Next decisive evidence: biological validation.</p>
+<footer><span class="sources"><a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v18.md">Report, sources and provider disclosure</a></span><span class="page">8 / 8</span></footer>
+</section>
+<nav aria-label="Slide navigation"><a href="#slide-1">1</a><a href="#slide-2">2</a><a href="#slide-3">3</a><a href="#slide-4">4</a><a href="#slide-5">5</a><a href="#slide-6">6</a><a href="#slide-7">7</a><a href="#slide-8">8</a></nav>
+</body>
+</html>

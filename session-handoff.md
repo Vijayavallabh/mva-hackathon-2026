@@ -1,119 +1,103 @@
-# Session handoff — Track 2 v17 presentation / v15 science
+# Session handoff: Track 2 v18 presentation / v15 science
 
-Updated 2026-09-24, session 56. Only feat-009 is active. Use
-`notes/track2-current.json` for current artifacts/status. V17 updates the presentation,
-report, exports and reviewer workflow against the live site and every public discussion.
-V15 science retains all eleven v10 drug dispositions. Submitted Track 1 v4 and all
-Track 2 v1–v16 inputs/releases remain immutable.
+25 September 2026, session 57. Only feat-009 is active. Authoritative paths are in
+`notes/track2-current.json`. Submitted Track 1 v4 and every v1-v17 bound input/package
+remain preserved. V18 is an aesthetic/editorial revision, not new biological evidence.
 
 ## Current materials
 
-- `notes/track2-report-v17.md`: candidate-first hypothesis, balanced evidence, staged
-  experiment, impact/innovation/reuse, eleven methods answers and full acknowledgement.
-- `notes/track2-slides-v17.html`, `notes/track2-pitch-v17.md` and
-  `notes/track2-transcript-v17.txt`: eight slides, seven SVG figures, 342 narration words.
-  Planned timing is three minutes; actual runtime is unmeasured.
-- `notes/track2-video-description-v17.md` matches report AI disclosure and acknowledgement.
-- Seven-page report PDF, participant-named Markdown and filled original methods workbook:
-  `results/feat009/v17-documents-final-20260924/`. B7–B17 filled, B17 249 words.
-- Eight-slide PDF/PNGs: `results/feat009/v17-slide-review-release-20260924/`.
-- Immutable research snapshot: `results/feat009/jvv7_track2_research_v17`.
-  Recording-materials ZIP: `results/feat009/jvv7_track2_video_materials_v17.zip`.
-- Public guidance: `notes/track2-reviewer-guide-v17.md`; concrete remaining delivery
-  questions and unsent clarification text: `notes/track2-owner-readiness-v17.md`.
+- `notes/track2-report-v18.md`: 2,119 words, 27.18% shorter than v17. Full disclosure,
+  citations, methods B7-B17 and acknowledgement preserved; abstract 166 words.
+- `notes/track2-slides-v18.html`: eight redesigned slides, seven SVG figures.
+- `notes/track2-pitch-v18.md` and `notes/track2-transcript-v18.txt`: 334 spoken words,
+  reframed for the Track 2 candidate, mechanism, experiment, impact and reuse.
+- `notes/track2-video-description-v18.md`: matched AI disclosure and acknowledgement.
+- Six-page PDF, Markdown and filled workbook: `results/feat009/v18-documents-final-b-20260925/`.
+- Eight-slide PDF/PNGs: `results/feat009/v18-slides-competition-20260925/`.
+- Research snapshot: `results/feat009/jvv7_track2_research_v18`.
+- Recording/review ZIP: `results/feat009/jvv7_track2_video_materials_v18.zip`.
+- `notes/track2-v18-design.md`, `track2-v18-editorial-review.md` and versioned audits
+  document the skills used, changes, source preservation and visual checks.
+- Public review: `notes/track2-reviewer-guide-v18.md`. Remaining delivery steps and
+  unsent clarification: `notes/track2-owner-readiness-v18.md`.
 
-## Official and community findings
+## Official brief and competition framing
 
-`notes/track2-official-requirements-review-20260924.md` independently checks ten public
-resources at live revision aeeef5ad49f51204a7439352e59e9d310aee5e9e, including exact
-live/source instructions, rubric, template and source hashes. Required: approved drug
-hypothesis, participant-named PDF/Markdown report, GitHub URL, three-minute YouTube/Vimeo
-video. Rubric: rigor 35%, impact 25%, innovation 25%, scalability 15%. No compulsory
-wet-lab data or fixed slide count; no live Q&A. Three entries/latest-only; the workbook's
-one-entry instruction is stale. Quota remains unqueried.
+The September 25 anonymous website recheck finds the same source revision
+`aeeef5ad49f51204a7439352e59e9d310aee5e9e`. Six pinned source files are unchanged;
+trimmed live submission component 40 matches its source. Full runtime config differs,
+so do not claim the entire config is identical. See `notes/track2-v18-brief-review.md`
+and `notes/track2-v18-brief-audit.json`.
 
-`notes/track2-community-review-20260924.md` covers all 24 public threads (12 closed),
-68 latest visible comments, 86 events and three administrative screenshot attachments.
-Thread 9 is absent from the public list; hidden/deleted/edit history was not sought.
-No subject content was adopted or redistributed. Organizer guidance versus participant
-suggestions is distinguished. Sep23 discussions were included: PDF methods accepted;
-parental phase and aligned-read/library resources remain unanswered. Provider conditions
-depend on actual terms/settings, not merely consumer/API labels. No contact or submission.
+Track 2 seeks approved-drug hypotheses supported by variant mechanisms. The eight-slide
+story now leads with everolimus, explains the conditional BUB1B/BUBR1 link, weighs
+compound-specific evidence, proposes qualification/probing/confirmation, defines useful
+output, and closes with impact and reuse. Rubric weights remain 35/25/25/15.
+No completed efficacy or wet-lab result is required for a hypothesis submission.
 
-## Scientific position and falsification
+The full September 24 community review remains separately dated: 24 public discussions,
+68 latest visible comments, three administrative images. No new discussion enumeration,
+hidden-history search, contact or portal callback occurred. Three entries/latest-only;
+remaining quota unknown. The workbook's old one-entry instruction stays with a comment.
 
-No rescue-priority drug. Everolimus is an optional model-qualified mechanistic probe,
-HCQ reserve; tumour killing is separate from non-cancer function. Phase, endogenous
-allele effects, clinical exposure and meaningful assay margins remain unresolved.
-No new model inference or wet-lab experiment occurred in this revision.
+## Scientific position
 
-The v15 63-source ledger, validation plan and 19-claim register retain contrary evidence,
-falsifiers, stop/reopening rules and next actions. Primary protein ordering passes 12/12,
-but all-six-control separation fails 8/12 and 11/24 retained-control scores are negative.
-That is post-hoc sensitivity, not clinical accuracy. D882A's secondary label is in main
-text; the supplement remains independently unreviewed. All older failed controls remain.
-Balnis supplemental ex vivo units conflict by 1,000-fold; neither value is a dose input.
-Unknown evidence means hold; failed safety stops; all-pass permits preclinical review only.
+No rescue-priority drug. Everolimus is an optional model-qualified mechanistic probe;
+HCQ reserve. Phase, endogenous allele effects, tissue response, clinical exposure and
+meaningful assay margins remain unresolved. Tumour killing is separate from non-cancer
+function. No GPU inference or wet-lab experiment occurred during this revision.
 
-The new narrative removes AF3/Atlas numerical outputs and figures from judge-facing
-materials, retaining historical disclosure and notices. This is not a licence cure:
-challenge CC BY scope for linked historical model outputs remains unresolved. Do not
-change blanket licensing or claim eligibility on that basis.
+The v15 ledger has 63 sources, 11 unchanged decisions and 19 falsifiable claims.
+Primary protein ordering passes 12/12; post-hoc expanded-control separation fails 8/12;
+11/24 retained-control scores are negative. Small/dependent controls cannot calibrate
+clinical pathogenicity. The secondary-control supplement remains independently unreviewed.
+Balnis source units conflict by 1,000-fold; neither value sets a dose. Unknown means
+hold; failed safety stops; all-pass permits preclinical review only.
 
 ## Verification and restart
 
 ```bash
 ./init.sh
-uv run --no-project python scripts/track2_public_review_v17.py
+uv run --no-project python scripts/track2_public_review_v18.py
 uv run python scripts/check_track2_harness.py
-uv run python scripts/track2_release_v17.py check
-uv run python -m unittest discover -s scripts -p 'test_track2*.py'
-uv run python scripts/track2_release_v17.py verify results/feat009/jvv7_track2_research_v17
-uv run python scripts/track2_bundle_v17.py verify
+uv run python scripts/track2_release_v18.py verify results/feat009/jvv7_track2_research_v18
+uv run python scripts/track2_bundle_v18.py verify
 ```
 
-The public command passed in a clean copy without data/results/logs/.env/.git, with
-network and protected-path access forbidden by an audit hook: 0.21 seconds, 37,376 KiB
-maximum RSS on one local run. This is consistency, not biology or model throughput.
-Historical release verification is separate and needs previous local snapshot folders.
-Eight slide images are identical to visually reviewed previews; no text clipping or
-overlap, 24px minimum, 640px viewport pass. All seven report pages visually reviewed.
-Workbook round-trip checks preserve prompts and Track 1 template values/styles; its
-appearance was not visually rendered. See the versioned audits and design note.
-
-The separate agent reviewed requirements and an initial report, not final exports or
-laboratory validity. Its relative-link finding was fixed. Exact final test counts,
-init output, bundle/release hashes and publication/Git checks are in session 56 progress.
+All eight final slide PDF pages and six report pages were visually reviewed. Geometry,
+minimum 24px slide text, contrast and 640px viewport pass. The PDF embeds fonts; HTML
+uses sans-serif fallback where Ubuntu is unavailable. Initial cramped text/fork alignment
+was corrected. Workbook contents round-trip; workbook appearance was not visually rendered.
+The isolated public checker passes without data/results/logs/.env/.git or network
+(0.315 seconds, one local consistency check). Final regression counts, release/bundle
+hashes, publication checks and fresh-shell init output are in session 57 progress.
+No independent reviewer inspected this visual/editorial revision.
 
 ## Blockers
 
-- Biological advancement: endogenous function, subject phase, model/branch qualification,
-  tissue response, clinical exposure and prospectively justified assay margins missing.
-- Balnis source units unresolved; secondary-control supplement and model dependence/
-  cross-gene transfer/pretraining overlap remain limits. Prior retrieval failures remain
-  recorded, not negative evidence. More correlated structures do not close these gaps.
-- Delivery: Fireworks and earlier alignment-service handling remain unverified; OpenAI
-  no-training is an owner attestation. Actual provider/credit terms need appropriate review.
-- Distribution: linked-history CC BY scope versus historical AF3/non-AVI Atlas terms
-  unresolved. A concrete clarification draft exists but has not been sent.
-- Narration runtime, recording, hosted URL, owner/live portal checks and Track 2 receipt
-  remain open. No remaining quota inferred. Do not call submission callbacks as tests.
-- Track 1 owner-reported 100/F-max 1 retained; receipt/byte identity archive unverified.
-  Never request another upload to resolve that administrative gap.
+- Biological advancement still needs endogenous function, subject phase, model/branch
+  qualification, tissue response, matched exposure and justified benefit/injury margins.
+- Balnis units, secondary-control review, model dependence, cross-gene transfer and
+  pretraining overlap remain limitations. More correlated structures do not resolve them.
+- Fireworks/earlier alignment-service handling remains unverified. OpenAI no-training
+  is an owner attestation, not an account or zero-retention audit.
+- Challenge CC BY scope versus linked historical AF3/non-AVI Atlas output terms is
+  unresolved. Numerical outputs/figures are omitted from the pitch/report; notices
+  remain. The clarification draft has not been sent; do not contact organizers.
+- Video runtime, recording, hosting, owner/live portal checks and Track 2 receipt remain
+  open. Script times are allocations. Do not infer quota or test submission callbacks.
+- Track 1 owner-reported 100/F-max 1 is retained; receipt/byte identity remains an
+  administrative gap. Never request another upload to resolve it.
 
-## Next actions and preservation
+## Next actions
 
-Rehearse and record the eight-slide pitch with the full acknowledgement visible inside
-the three-minute runtime. Resolve provider/distribution questions and final portal checks
-before submission. For research, qualify the endogenous non-cancer model and chosen
-mechanistic branch; resolve source concentration ambiguity. Before any promotion, search
-supporting and contrary primary evidence and update the relevant falsifier/reopening rule
-in a new version. BindCraft2 remains deferred without a functional target/validation route.
+Rehearse and record the eight-slide pitch with the full acknowledgement inside three
+minutes. Resolve provider/distribution items and verify final portal materials. Research
+advancement begins with model/branch qualification and the existing falsification plan.
+BindCraft2 remains deferred without a functional target and validation route.
 
-Raw subject files/clinical narrative must stay on the original machine and out of hosted
-context. No protected subject file was opened by this public research/export workflow;
-local startup integrity programs may check local data. No family contact/re-identification.
-Remote model folders under ~/v remain in the deletion inventory; no owned inference job
-is pending from this cycle. Preserve all previews, failed requests and historical notices.
-Keep the live retired-object purge guard for publication. Close: 2026-10-24 23:59 UTC;
-deletion/confirmation: 2026-11-24. Commit intended changes, push origin, verify equality.
+Raw subject files and narrative stay on the original machine and out of hosted context.
+No family contact or re-identification. Remote model folders under ~/v remain in the
+Nov24 deletion inventory. Preserve historical notices, failed attempts and all releases.
+Keep the live retired-object purge guard for publication. Commit intended changes,
+push configured origin and verify upstream equality.

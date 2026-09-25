@@ -1,0 +1,69 @@
+{
+  "checked_utc": "2026-09-25T02:52:16.706369+00:00",
+  "revision": "aeeef5ad49f51204a7439352e59e9d310aee5e9e",
+  "sources": [
+    {
+      "path": "tabs/about.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/aeeef5ad49f51204a7439352e59e9d310aee5e9e/tabs/about.py",
+      "status": 200,
+      "sha256": "1867b07f24d987fbb728c756c2d2bc4ab5f302d7c7804f53fe7b6a8b4c83ae43",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/aeeef5ad49f51204a7439352e59e9d310aee5e9e/tabs%2Fabout.py?%2Fspaces%2FSageBio%2Frare-disease-real-kid-mva-hackathon-2026%2Fresolve%2Faeeef5ad49f51204a7439352e59e9d310aee5e9e%2Ftabs%2Fabout.py=&etag=%22adfe644fb2ebf2d99f0b6e005d04b295134df305%22"
+    },
+    {
+      "path": "tabs/faq.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/aeeef5ad49f51204a7439352e59e9d310aee5e9e/tabs/faq.py",
+      "status": 200,
+      "sha256": "36c3e51e9735a6d2ffacfccea2246a28a13658038988ac88317c5aa05ad71c53",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/aeeef5ad49f51204a7439352e59e9d310aee5e9e/tabs%2Ffaq.py?%2Fspaces%2FSageBio%2Frare-disease-real-kid-mva-hackathon-2026%2Fresolve%2Faeeef5ad49f51204a7439352e59e9d310aee5e9e%2Ftabs%2Ffaq.py=&etag=%22c2892f5d9f2e101d2e3b72a9929e77a482931135%22"
+    },
+    {
+      "path": "tabs/rules.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/aeeef5ad49f51204a7439352e59e9d310aee5e9e/tabs/rules.py",
+      "status": 200,
+      "sha256": "0031b61f710ce5bcc686a88e4fcd470b165f25ed103f970827b6ebfed097ab12",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/aeeef5ad49f51204a7439352e59e9d310aee5e9e/tabs%2Frules.py?%2Fspaces%2FSageBio%2Frare-disease-real-kid-mva-hackathon-2026%2Fresolve%2Faeeef5ad49f51204a7439352e59e9d310aee5e9e%2Ftabs%2Frules.py=&etag=%222cb771449b3b126e0799d8b374cef518b3544a41%22"
+    },
+    {
+      "path": "tabs/submit_track2.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/aeeef5ad49f51204a7439352e59e9d310aee5e9e/tabs/submit_track2.py",
+      "status": 200,
+      "sha256": "f48d576ab052df34527222b7693f956e15e5376ef68eddedcf0c4f04736bf65c",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/aeeef5ad49f51204a7439352e59e9d310aee5e9e/tabs%2Fsubmit_track2.py?%2Fspaces%2FSageBio%2Frare-disease-real-kid-mva-hackathon-2026%2Fresolve%2Faeeef5ad49f51204a7439352e59e9d310aee5e9e%2Ftabs%2Fsubmit_track2.py=&etag=%2292fd894843b1bcf3c6aab81b5eb948cb23e8905a%22"
+    },
+    {
+      "path": "config.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/aeeef5ad49f51204a7439352e59e9d310aee5e9e/config.py",
+      "status": 200,
+      "sha256": "a65e67fca2fb698ac3f3fe6610e585f549cf29f175d636ce77543d7db6dc8bdc",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/aeeef5ad49f51204a7439352e59e9d310aee5e9e/config.py?%2Fspaces%2FSageBio%2Frare-disease-real-kid-mva-hackathon-2026%2Fresolve%2Faeeef5ad49f51204a7439352e59e9d310aee5e9e%2Fconfig.py=&etag=%22b1a0d52bbe8eabc5f090d6c99a2cb50ef8d44670%22"
+    },
+    {
+      "path": "README.md",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/aeeef5ad49f51204a7439352e59e9d310aee5e9e/README.md",
+      "status": 200,
+      "sha256": "9660de914f8f77523faded810d0756d390321649f00e2151eb5cdb8b818c6a3f",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/aeeef5ad49f51204a7439352e59e9d310aee5e9e/README.md?%2Fspaces%2FSageBio%2Frare-disease-real-kid-mva-hackathon-2026%2Fresolve%2Faeeef5ad49f51204a7439352e59e9d310aee5e9e%2FREADME.md=&etag=%223c3ea591800e306da65b7e603b3e36cb3da98f02%22"
+    },
+    {
+      "path": "live-config.json",
+      "url": "https://sagebio-rare-disease-real-kid-mva-hackathon-2026.hf.space/config",
+      "status": 200,
+      "sha256": "e5e25bfdefd9dc1d6ad5dba9cd79d9e374bf801e40c69779ce1d843fb59d94ca",
+      "resolved_url": "https://sagebio-rare-disease-real-kid-mva-hackathon-2026.hf.space/config"
+    }
+  ],
+  "live_submission_instruction_component_ids": [
+    40
+  ],
+  "all_comparable_source_hashes_unchanged": true,
+  "source_comparison": {
+    "tabs/about.py": true,
+    "tabs/faq.py": true,
+    "tabs/rules.py": true,
+    "tabs/submit_track2.py": true,
+    "config.py": true,
+    "README.md": true
+  },
+  "live_config_note": "Full runtime config differs; the trimmed submission instruction component matches pinned source exactly.",
+  "scope": "Anonymous official brief recheck; no login, inference, quota callback or submission. Community enumeration remains the September 24 review."
+}
