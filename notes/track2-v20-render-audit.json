@@ -1,0 +1,198 @@
+{
+  "source": "notes/track2-slides-v20.html",
+  "source_sha256": "477ab89ecd3c96196b581e30689499be301d92e306eae29ae731b5fbcfafbbe2",
+  "renderer_sha256": "165b79d0dd1906c7e33fa4f1e57f69dfb407838258490465afffa21fd5abc19a",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/131.0.6778.139",
+    "revision": "@c35bbcbd7c2775a12a3f320e05ac0022939b1a8a",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+    "jsVersion": "13.1.201.16"
+  },
+  "slides": [
+    {
+      "id": "slide-1",
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 40,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-2",
+      "x": 0,
+      "y": 752,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 68,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-3",
+      "x": 0,
+      "y": 1504,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 77,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-4",
+      "x": 0,
+      "y": 2256,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 64,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-5",
+      "x": 0,
+      "y": 3008,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 76,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-6",
+      "x": 0,
+      "y": 3760,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 44,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-7",
+      "x": 0,
+      "y": 4512,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 61,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-8",
+      "x": 0,
+      "y": 5264,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 106,
+      "min_font_px": 24,
+      "svg_figures": 0
+    }
+  ],
+  "narrow_screen": {
+    "width": 640,
+    "scrollWidth": 640
+  },
+  "files": {
+    "slide-1.png": "674b9309ccbdf7eddaf7e2ca8d57472185133b439c07cb25a30795dead779cce",
+    "slide-2.png": "02f7ff60711ee6cb11ebdeba3870a109f83e664ff28588a17e7a1aed70ae2e4b",
+    "slide-3.png": "7ebee42f7e797e2365a43dbe77f95323abd33eee8ccac036b5654f7375f557af",
+    "slide-4.png": "4abec72927e15e82a3bc432d694017f7deae8ddee362008f0ad144e02f87607c",
+    "slide-5.png": "b2b7639be5072489eb195828a990a458b0efc46060ea81deb2ee0ffaedbe96df",
+    "slide-6.png": "d87fdb3d1c95f69cbb9d6b288d46c54f4701f4fb960dd9c6ea70b607bfd0a2fe",
+    "slide-7.png": "eed30cba912317e033f66e887cc5d63d51429bb9c137de744f22274084bd59e6",
+    "slide-8.png": "81487c53947127e491473bb3e3d970cdc5da9782f24810793a702068b013fa29",
+    "track2-slides-v20.pdf": "66e5e9265091dfa39bf9beb357b8ec9cbe9793151858a147cfb02196b4527a3b"
+  },
+  "temporary_profile": {
+    "path": "/tmp/mva-v20-render-SesnTP",
+    "retained": true,
+    "contents": "isolated public-deck browser profile; no login or subject input"
+  },
+  "limits": "Geometry and screenshots are preview checks, not recording, runtime validation, scientific validity or upload readiness.",
+  "minimum_checked_text_contrast": 5.2569996756580215,
+  "text_contrast_pairs": [
+    {
+      "foreground": "#142c3c",
+      "background": "#f7fafc",
+      "ratio": 13.767054555230219
+    },
+    {
+      "foreground": "#4c6370",
+      "background": "#f7fafc",
+      "ratio": 6.023659238415741
+    },
+    {
+      "foreground": "#48419d",
+      "background": "#eae9f6",
+      "ratio": 6.942478063298914
+    },
+    {
+      "foreground": "#176359",
+      "background": "#d8eee5",
+      "ratio": 5.827511777156884
+    },
+    {
+      "foreground": "#142c3c",
+      "background": "#eae9f6",
+      "ratio": 12.014856496206148
+    },
+    {
+      "foreground": "#4c6370",
+      "background": "#eae9f6",
+      "ratio": 5.2569996756580215
+    },
+    {
+      "foreground": "#176359",
+      "background": "#f7fafc",
+      "ratio": 6.75611515334924
+    },
+    {
+      "foreground": "#48419d",
+      "background": "#f7fafc",
+      "ratio": 7.954940974626292
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#123a40",
+      "ratio": 12.316895033813308
+    },
+    {
+      "foreground": "#d8eee5",
+      "background": "#123a40",
+      "ratio": 10.135648458764628
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#176359",
+      "ratio": 7.081623949327523
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#48419d",
+      "ratio": 8.338209051021535
+    }
+  ],
+  "pdf_pages": 8,
+  "fonts_embedded": true,
+  "author_visual_review": "All eight slide screenshots inspected in contact sheet; new result and experimental slides inspected individually. No observed text clipping. Full acknowledgement remains visible. PDF contains eight pages with embedded fonts; visual review used renderer screenshots.",
+  "independent_visual_review": false
+}

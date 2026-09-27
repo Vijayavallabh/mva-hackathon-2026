@@ -17,8 +17,8 @@ STATUS = {
 CURRENT_REVIEW = {
     'script': 'scripts/check_track2_harness.py',
     'isolation_audit': 'scripts/audit_track2_harness.py',
-    'guide': 'notes/track2-reviewer-guide-v19.md',
-    'readiness': 'notes/track2-owner-readiness-v19.md',
+    'guide': 'notes/track2-reviewer-guide-v20.md',
+    'readiness': 'notes/track2-owner-readiness-v20.md',
 }
 RESEARCH_PATHS = {
     'plan': 'notes/track2-transcriptome-plan-v19.json',
@@ -37,7 +37,7 @@ RESEARCH_PATHS = {
 }
 RESEARCH_STATE = {
     'version': 19, 'kind': 'public_perturbation_transcriptome', 'status': 'complete',
-    'report_integration': 'separate_addendum_preserves_v18',
+    'report_integration': 'integrated_in_v20_preserves_v18_and_v19',
     'gpus': 8, 'compound_profiles': 312438, 'query_compound_comparisons': 12185082,
     'resampled_reagent_sets': 560000, 'primary_query_gates_passed': 0,
     'drug_ranking_changed': False,
@@ -100,8 +100,8 @@ def validate(state, features, documents):
             'Stale or unsafe render-directory path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['document_directory']),
             'Stale or unsafe document-directory path')
-    require(state.get('harness_version') == 19 and
-            state['harness_review'] == 'notes/track2-harness-review-v19.md', 'Stale harness review')
+    require(state.get('harness_version') == 20 and
+            state['harness_review'] == 'notes/track2-harness-review-v20.md', 'Stale harness review')
     require(state.get('current_review') == CURRENT_REVIEW, 'Missing or stale combined review route')
     addendum = state.get('research_addendum')
     expected = RESEARCH_PATHS | RESEARCH_STATE
@@ -224,7 +224,7 @@ def check(root=ROOT):
     for field in ['gpus', 'compound_profiles', 'query_compound_comparisons', 'resampled_reagent_sets',
                   'primary_query_gates_passed', 'drug_ranking_changed']:
         require(state['research_addendum'][field] == summary[field], 'Current research summary drift: '+field)
-    return dict(passed=True, active_feature='feat-009', harness_version=19,
+    return dict(passed=True, active_feature='feat-009', harness_version=20,
                 presentation_version=state['presentation_version'],
                 drug_science_version=15, slides=presentation['slides'],
                 narration_words=presentation['narration_words'], upload_ready=False,

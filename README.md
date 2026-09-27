@@ -93,8 +93,8 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-**Track 2 (feat-009) is in progress.** Read the [v18 report](notes/track2-report-v18.md)
-alongside the [v19 research addendum](notes/track2-transcriptome-v19.md).
+**Track 2 (feat-009) is in progress.** Read the [integrated v20 report](notes/track2-report-v20.md)
+and the complete [v19 research record](notes/track2-transcriptome-v19.md).
 The [falsification review](notes/track2-falsification-review-v15.md) challenges the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
 No drug earns rescue priority; everolimus is an optional qualified mechanistic probe,
@@ -134,18 +134,18 @@ assumption; revise or abandon the approach when warranted. Use the original
 throughout research and before promotion/release. Apply the same standard to benefit,
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
-Current materials: [six-page report source](notes/track2-report-v18.md),
-[334-word narration](notes/track2-pitch-v18.md), [plain transcript](notes/track2-transcript-v18.txt),
-[eight-slide deck](notes/track2-slides-v18.html) and
-[video description](notes/track2-video-description-v18.md). The report leads with the
-conditional approved-drug hypothesis, balanced evidence and a staged benefit/harm test.
-The report is 27.18% shorter; the redesigned deck and rewritten pitch follow the
-[official Track 2 brief](notes/track2-v18-brief-review.md), rechecked September 25.
-It answers all eleven methods questions, including AI disclosure and a 166-word abstract.
-The original methods workbook is also filled by the document exporter. Full
-acknowledgement and historical model notices remain. The [readiness note](notes/track2-owner-readiness-v19.md)
-retains recording/hosting, provider handling, unresolved distribution scope, owner/live
-checks and receipt. These drafts do not establish a wet-lab result or an upload.
+Current materials: [seven-page report source](notes/track2-report-v20.md),
+[324-word narration](notes/track2-pitch-v20.md), [plain transcript](notes/track2-transcript-v20.txt),
+[eight-slide deck](notes/track2-slides-v20.html) and
+[video description](notes/track2-video-description-v20.md). Two result slides integrate
+the public expression findings and their limits; the report retains balanced literature
+evidence, model failures and the synthetic cell-fate example. All eleven methods
+answers, the 195-word abstract and the original workbook export are synchronized.
+The dated [official Track 2 brief review](notes/track2-v18-brief-review.md) remains the
+requirements source. Full acknowledgement and historical notices remain.
+The [readiness note](notes/track2-owner-readiness-v20.md) lists recording/hosting,
+provider handling, distribution scope, live checks and receipt. These are recording
+and review materials, not a recorded video or submission.
 
 The September 27 [GPU research addendum](notes/track2-transcriptome-v19.md) adds public
 LINCS perturbation evidence. All eight H100s completed three analysis waves over
@@ -153,13 +153,13 @@ LINCS perturbation evidence. All eight H100s completed three analysis waves over
 passed the operational reproducibility filter. The follow-up retains a limited HT29
 positive; everolimus's lower-dose evidence has chemical-identity and quality gaps.
 The resulting experiment requirements qualify the perturbation before testing a drug.
-No rescue-drug priority or clinical claim follows. V18 remains preserved; GPU use was
+No rescue-drug priority or clinical claim follows. Earlier versions remain preserved; GPU use was
 bursty, not saturated. [Execution, limits and reproduction](notes/track2-transcriptome-reproduction-v19.md)
-are recorded. The v18 presentation/recording bundle does not include this later
-addendum; future presentation integration needs a new version.
+are recorded. The v20 presentation and recording bundle now incorporate these findings
+and include the v19 narrative, figure and reproduction note.
 
-Start with the [combined reviewer guide](notes/track2-reviewer-guide-v19.md). One
-public CPU command checks the v18 materials and v19 addendum, including the reported
+Start with the [combined reviewer guide](notes/track2-reviewer-guide-v20.md). One
+public CPU command checks the v20 materials and v19 research, including the reported
 counts, failed filters and HT29 counterweight. It needs no subject files, data/results
 folders, keys, network, Git history or model weights:
 
@@ -167,12 +167,12 @@ folders, keys, network, Git history or model weights:
 uv run --no-project python scripts/check_track2_harness.py
 ```
 
-The preserved v18 public reviewer and standalone transcriptome checker remain available
-for narrower checks. Use `scripts/track2_release_v18.py` for exact-byte v18 snapshots;
+The versioned v20 public reviewer and standalone transcriptome checker remain available
+for narrower checks. Use `scripts/track2_release_v20.py` for exact-byte v20 snapshots;
 the reviewer guide distinguishes exports, archive checks and full reproduction.
 All v1–v18 bound inputs/releases, the fixed v19 campaign and submitted Track 1 v4 are preserved.
 The [current-artifact record](notes/track2-current.json) and
-[harness review](notes/track2-harness-review-v19.md) route the current work.
+[harness review](notes/track2-harness-review-v20.md) route the current work.
 `./init.sh` checks artifact versions, narration, original models, new falsification
 results and unresolved scientific/delivery status. The dated [official review](notes/track2-official-requirements-review-20260924.md)
 checked revision aeeef5ad49f51204a7439352e59e9d310aee5e9e; the
@@ -231,7 +231,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v18 disclosure names this route without
+GLM for public-literature synthesis; the current v20 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 

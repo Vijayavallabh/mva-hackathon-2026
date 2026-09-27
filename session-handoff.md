@@ -1,42 +1,35 @@
-# Session handoff: Track 2 v18 presentation / v19 public transcriptome addendum
+# Session handoff: integrated Track 2 v20 presentation / fixed v19 research
 
-27 September 2026, session 59. Only feat-009 is active. Authoritative paths are in
-`notes/track2-current.json`. Submitted Track 1 v4 and every v1-v18 bound input/package
-remain preserved. V18 is the frozen presentation; v19 is a separate completed public
-perturbation reanalysis. V15 drug dispositions remain unchanged.
+27 September 2026, session 60. Only feat-009 is active. Authoritative paths are in
+`notes/track2-current.json`. V20 integrates the completed public transcriptome evidence
+into the report, slides, narration, methods workbook and recording materials. All
+older sources/packages, fixed v19 research and submitted Track 1 v4 remain preserved.
+V15 drug dispositions and scientific status are unchanged.
 
-The combined harness is now version 19. Use
-`uv run --no-project python scripts/check_track2_harness.py` and
-`notes/track2-reviewer-guide-v19.md` for both presentation and research. The current
-readiness note is `notes/track2-owner-readiness-v19.md`; the v18 guide/readiness files
-are preserved package inputs. `notes/track2-harness-review-v19.md` records the false
-passes corrected in this session. No new research, GPU job or presentation revision ran.
+Use `uv run --no-project python scripts/check_track2_harness.py` and
+`notes/track2-reviewer-guide-v20.md`. The current readiness note is
+`notes/track2-owner-readiness-v20.md`; `notes/track2-harness-review-v20.md` records this
+integration. No new GPU job, inference, wet-lab work, contact or submission occurred.
 
 ## Current materials
 
-- `notes/track2-transcriptome-v19.md`: new findings and revised experiment requirements;
-  complete results, fixed plans, source/chemical-identity review, SVG and audit accompany it.
-- `notes/track2-transcriptome-reproduction-v19.md`: exact computation scope, limits,
-  executed commands and archive verification. The completed remote campaign is under
-  `/home/prachh/v/mva-track2-transcriptome-20260927`; no worker/monitor remains active.
+- `notes/track2-report-v20.md`: integrated findings, balanced evidence, proposed
+  experiment, full disclosure, methods B7-B17 and 195-word abstract.
+- `notes/track2-slides-v20.html`: eight slides, including two new result diagrams.
+- `notes/track2-pitch-v20.md` and `notes/track2-transcript-v20.txt`: 324 spoken words
+  with matching slide cues and unmeasured three-minute rehearsal allocations.
+- `notes/track2-video-description-v20.md`: matched disclosure and acknowledgement.
+- Report PDF/Markdown and original filled workbook: `results/feat009/v20-documents-final-b-20260927/`.
+- Eight-slide PDF/PNGs: `results/feat009/v20-slides-final-20260927/`.
+- Research snapshot: `results/feat009/jvv7_track2_research_v20`.
+- Recording/review ZIP: `results/feat009/jvv7_track2_video_materials_v20.zip`.
+- `notes/track2-v20-design.md`, `track2-v20-editorial-review.md` and versioned audits
+  describe visual/editorial review, scientific limits and export hashes.
+- `notes/track2-transcriptome-v19.md` and `notes/track2-transcriptome-reproduction-v19.md`:
+  frozen complete findings, sources, fixed plans, result matrices, figure and methods.
 - `results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz`: verified
-  457-file audit archive. No subject input or new hosted model was used.
-- `notes/track2-report-v18.md`: 2,119 words, 27.18% shorter than v17. Full disclosure,
-  citations, methods B7-B17 and acknowledgement preserved; abstract 166 words.
-- `notes/track2-slides-v18.html`: eight redesigned slides, seven SVG figures.
-- `notes/track2-pitch-v18.md` and `notes/track2-transcript-v18.txt`: 334 spoken words,
-  reframed for the Track 2 candidate, mechanism, experiment, impact and reuse.
-- `notes/track2-video-description-v18.md`: matched AI disclosure and acknowledgement.
-- Six-page PDF, Markdown and filled workbook: `results/feat009/v18-documents-final-b-20260925/`.
-- Eight-slide PDF/PNGs: `results/feat009/v18-slides-competition-20260925/`.
-- Research snapshot: `results/feat009/jvv7_track2_research_v18`.
-- Recording/review ZIP: `results/feat009/jvv7_track2_video_materials_v18.zip`.
-- `notes/track2-v18-design.md`, `track2-v18-editorial-review.md` and versioned audits
-  document the skills used, changes, source preservation and visual checks.
-- Combined public review: `notes/track2-reviewer-guide-v19.md`. Remaining delivery
-  steps: `notes/track2-owner-readiness-v19.md`, linking the preserved unsent clarification.
-- The v18 recording ZIP excludes the later v19 addendum. A future integrated report,
-  slide/script and methods package must use a new version.
+  457-file public-data archive. Remote campaign remains under
+  `/home/prachh/v/mva-track2-transcriptome-20260927`; no owned jobs are pending.
 
 ## Official brief and competition framing
 
@@ -48,8 +41,8 @@ and `notes/track2-v18-brief-audit.json`.
 
 Track 2 seeks approved-drug hypotheses supported by variant mechanisms. The eight-slide
 story now leads with everolimus, explains the conditional BUB1B/BUBR1 link, weighs
-compound-specific evidence, proposes qualification/probing/confirmation, defines useful
-output, and closes with impact and reuse. Rubric weights remain 35/25/25/15.
+public expression findings and their limits, proposes joint drug-plus-deficit
+qualification/probing/confirmation, and closes with impact and reuse. Rubric weights remain 35/25/25/15.
 No completed efficacy or wet-lab result is required for a hypothesis submission.
 
 The full September 24 community review remains separately dated: 24 public discussions,
@@ -90,18 +83,18 @@ hold; failed safety stops; all-pass permits preclinical review only.
 uv run --no-project python scripts/check_track2_harness.py
 uv run --no-project python scripts/check_track2_transcriptome.py
 uv run --no-project python scripts/verify_track2_transcriptome_archive.py results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz
-uv run python scripts/track2_release_v18.py verify results/feat009/jvv7_track2_research_v18
-uv run python scripts/track2_bundle_v18.py verify
+uv run python scripts/track2_release_v20.py verify results/feat009/jvv7_track2_research_v20
+uv run python scripts/track2_bundle_v20.py verify
 ```
 
-All eight final slide PDF pages and six report pages were visually reviewed. Geometry,
-minimum 24px slide text, contrast and 640px viewport pass. The PDF embeds fonts; HTML
-uses sans-serif fallback where Ubuntu is unavailable. Initial cramped text/fork alignment
-was corrected. Workbook contents round-trip; workbook appearance was not visually rendered.
-The isolated public checker passes without data/results/logs/.env/.git or network
-(0.315 seconds, one local consistency check). Final regression counts, release/bundle
-hashes, publication checks and fresh-shell init output are in session 57 progress.
-No independent reviewer inspected this visual/editorial revision.
+V20 has eight slide pages and seven report pages. The visible slide text is at least
+24px, all geometry/overlap checks pass, and contrast is at least 5.26:1. Rendered
+screenshots and all report pages were visually checked. Tables and the acknowledgement
+remain intact; earlier pagination defects were corrected. The workbook round-trips its
+answers, questions and original Track 1 styles; its appearance was not visually rendered.
+The isolated v20 public check passes with six blocked audit probes, without project
+venv, network, protected paths or source checkout/history. No independent scientific
+review is claimed. Final tests, preservation checks and init output are in session 60.
 
 V19 checked every archive member and retained null array locally; a separate SciPy
 implementation from original GCTX coordinates agrees on all 139 raw everolimus-labelled
@@ -134,8 +127,8 @@ input hashes are recorded in session 59 progress. `./init.sh` invokes the combin
 
 ## Next actions
 
-For integration of the new findings, make a new synchronized presentation/report
-version; the v18 bundle has not absorbed v19. Rehearse and record the chosen pitch
+V20 integrates the findings into synchronized presentation/report materials. Rehearse
+and record the v20 pitch
 with the full acknowledgement inside three minutes. Resolve provider/distribution
 items and verify final portal materials. Research
 advancement begins with model/branch qualification, the existing falsification plan

@@ -4915,3 +4915,167 @@ git push origin main
 git status --short
 git rev-list --left-right --count HEAD...@{upstream}
 ```
+
+
+## 2026-09-27, session 60: integrate GPU findings into presentation and documents
+
+Only feat-009 remains active. The owner requested the slides, report, transcript and
+related files in addition to the harness update. V20 now integrates the completed v19
+public expression findings into all current presentation outputs. V15 drug dispositions,
+the fixed campaign and every earlier release remain unchanged.
+
+The eight-slide deck gives the primary query filter and compound identity/QC findings
+two dedicated slides. It retains the favourable HT29 post-hoc result and the filter's
+uncalibrated status. The seven-page report adds the full comparison denominators,
+chemical metadata limits, primary everolimus correlations and revised independent-
+genetic-control/joint-treatment requirements. Literature evidence, protein-control
+failures, source-unit conflict, the synthetic cell-fate example, complete acknowledgement
+and provider disclosure remain. No drug, phase, clinical margin or delivery promotion.
+
+Applied frontend-design, scientific-slides, humanizer, no-ai-slop and document-export
+skills. The 324-word pitch matches eight transcript cues and retains unmeasured
+three-minute rehearsal allocations. Methods B7-B17, including the 195-word abstract
+and expanded B9 disclosure, are exported into the original hash-verified workbook.
+The PDF report has 2,687 whitespace-separated source words including the methods and
+acknowledgement. Tables and acknowledgement pagination were corrected after rendering.
+All eight slide screenshots and seven final PDF report pages were visually inspected;
+new result/experiment slides and report result/disclosure/abstract pages were also
+inspected individually. No independent visual or scientific review is claimed.
+Slide geometry has no text clipping/overlap, minimum 24px type, contrast at least 5.26:1
+and a passing 640px viewport. The PDF embeds fonts. Workbook verification covers
+values, official prompts and Track 1 sheet styles, not a visual workbook render.
+
+New sources include `notes/track2-report-v20.md`, `track2-slides-v20.html`,
+`track2-pitch-v20.md`, `track2-transcript-v20.txt`, `track2-video-description-v20.md`,
+reviewer/readiness/design/editorial notes and versioned render/document audits.
+`notes/track2-current.json`, AGENTS, README, feature evidence and handoff now route v20.
+The current harness checks integration status; the versioned public reviewer pins
+v19 evidence independently of mutable current-presentation routes. The copied official
+requirements/community records retain their original September 24-25 dates. A web open
+reached the Space shell and NCBI browser checks; no fresh full site/discussion audit
+is claimed. No new inference, subject transfer, wet-lab work, recording, upload or
+external message occurred.
+
+Validation:
+
+- **693 Track 2 tests passed in 8.778 seconds**, including 23 new versioned public-
+  review/release regressions. Log: `logs/track2-v20-tests-20260927.log`.
+- Track 1 submission self-check and the historical base evidence checker pass. The
+  latter's conditional-screen label is historical; v15/v20 dispositions take precedence.
+- Frozen v20 review passes in an isolated public-only copy: 0.098 seconds, 442 copied
+  files, uv-managed base Python 3.13.13, no project venv or original checkout/history.
+  All six network/process/protected/credential/external/write probes were blocked.
+  Current combined review separately passes in 0.181 seconds with 446 public files.
+  These timings measure consistency checks only. See `notes/track2-public-review-v20.json`
+  and `results/feat009/v20-combined-public-audit-20260927.json`.
+- All **346 preserved scientific input hashes match**, recorded in
+  `results/feat009/v20-preservation-verification-20260927.json`.
+- New immutable snapshot `results/feat009/jvv7_track2_research_v20` verifies **88 files /
+  370 bound inputs**, recursively preserving v1-v18. V19 public campaign code/plans/
+  results are included; the original large public-data archive is unchanged.
+- Recording/review bundle `results/feat009/jvv7_track2_video_materials_v20.zip` verifies
+  **23 files, 1,236,593 bytes**, SHA-256
+  `08fa7d74788e0856582f2402c16af6d361231bcafd19deb8ad670f676734d6c0`.
+  It contains integrated slides, report, workbook, script/transcript, disclosure,
+  guides and v19 narrative/figure/reproduction notes. It is not a video or receipt.
+- Live publication guard passes: PUBLIC, all 13 retired objects unavailable, zero
+  unknown errors and a retrievable live-object control. See
+  `results/feat009/v20-publication-remote-20260927.json`.
+
+Reproduction and review commands:
+
+```bash
+uv run node scripts/render_track2_slides_v20.mjs new-v20-slides
+uv run scripts/track2_export_documents_v20.py new-v20-documents
+uv run node scripts/render_track2_report_v20.mjs new-v20-documents
+uv run --no-project python scripts/track2_public_review_v20.py
+uv run --no-project python scripts/check_track2_harness.py
+uv run --no-project python scripts/audit_track2_public_v20.py
+uv run --no-project python scripts/audit_track2_harness.py
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+uv run python scripts/track2_release_v20.py verify results/feat009/jvv7_track2_research_v20
+uv run python scripts/track2_bundle_v20.py verify
+```
+
+Use new lowercase directory names for exports; existing outputs are protected.
+Presentation integration is complete. Feat-009 stays in progress for biological
+qualification and the recorded provider, distribution, video/hosting and final
+portal/receipt items. No additional GPU job is pending.
+
+Fresh no-argument `./init.sh` completed from a new login shell with exit 0. Actual
+output (`logs/track2-v20-final-init-20260927.log`):
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "harness_version": 20,
+  "presentation_version": 20,
+  "drug_science_version": 15,
+  "slides": 8,
+  "narration_words": 324,
+  "upload_ready": false,
+  "research_addendum": {
+    "version": 19,
+    "status": "complete",
+    "gpus": 8,
+    "completed_gpu_waves": 3,
+    "compound_profiles": 312438,
+    "query_compound_comparisons": 12185082,
+    "resampled_reagent_sets": 560000,
+    "primary_contexts": 14,
+    "primary_query_gates_passed": 0,
+    "post_hoc_comparisons": 42,
+    "post_hoc_full_filters_passed": 0,
+    "primary_everolimus_comparisons": 19,
+    "primary_everolimus_profiles": 14,
+    "primary_everolimus_positive_correlations": 13,
+    "phase2_unresolved_labelled_profiles": 174,
+    "phase2_reference_matching_profiles": 6,
+    "phase2_reference_matching_qc_passes": 0,
+    "ht29_post_hoc_reagents": 5,
+    "ht29_post_hoc_adjusted_tail": 0.041995800419958006,
+    "ht29_full_filter_passed": false,
+    "drug_ranking_changed": false
+  },
+  "biological_validation": false,
+  "scope": "Combined public presentation/research consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```
+
+The staged disclosure audit passes 454 blobs with no findings. The all-ref audit
+is recorded after commit at `results/feat009/v20-history-disclosure-20260927.json`.
+End-of-session publication and synchronization commands:
+
+```bash
+uv run python scripts/audit_publication.py --staged --output results/feat009/v20-commit-staged-disclosure-20260927.json
+git diff --cached --check
+git commit -m "Integrate GPU falsification findings into Track 2 slides and deliverables"
+uv run python scripts/audit_publication.py --output results/feat009/v20-history-disclosure-20260927.json
+git push origin main
+git status --short
+git rev-list --left-right --count HEAD...@{upstream}
+```

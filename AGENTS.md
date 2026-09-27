@@ -79,21 +79,20 @@ This is a continuing objective, not a one-time review. Preserve immutable snapsh
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the current artifact record and [session-handoff.md](session-handoff.md) for next
-steps and blockers. V18 is the current six-page report, eight-slide deck, 334-word
-read-aloud transcript, methods workbook and video description. Session 57 redesigned
-the visuals, shortened the report and reframed the pitch against a fresh official brief
-check: `notes/track2-v18-brief-review.md`. The v15 ledger and
-validation plan preserve v10 drug dispositions and add stricter falsification gates.
-The complete research history is in `progress.md`; older harness wording is preserved
-at Git revision `bb82cd6`, not treated as current instructions.
+steps and blockers. V20 is the current seven-page report, eight-slide deck, 324-word
+read-aloud transcript, methods workbook and video description. Session 60 integrates
+v19 public expression findings, retains the HT29 partial positive and chemical/QC
+limits, and strengthens the proposed joint drug/deficit experiment. The v15 ledger
+and validation plan keep all drug dispositions and falsification gates. Requirements
+remain from the dated September 24-25 review; v20 is not a new live portal audit.
+The complete research history is in `progress.md`.
 
-Session 59 unifies current review in `scripts/check_track2_harness.py`: it checks the
-v18 presentation and v19 addendum together, including completed GPU coverage, failed
-filters and the retained HT29 counterweight. Start with
-[notes/track2-reviewer-guide-v19.md](notes/track2-reviewer-guide-v19.md) and
-[notes/track2-owner-readiness-v19.md](notes/track2-owner-readiness-v19.md).
-`harness_version` is 19; `presentation_version` stays 18. The v18 recording bundle
-does not contain the later addendum. New presentation integration needs a new version.
+Use `scripts/check_track2_harness.py`,
+[notes/track2-reviewer-guide-v20.md](notes/track2-reviewer-guide-v20.md) and
+[notes/track2-owner-readiness-v20.md](notes/track2-owner-readiness-v20.md).
+Both `harness_version` and `presentation_version` are 20; research stays v19 and the
+drug ledger stays v15. The v20 recording ZIP integrates these findings and includes
+the research narrative, figure and reproduction guide. It is not a recorded video.
 
 - **Session 58 public transcriptome addendum (2026-09-27):** use
   `notes/track2-transcriptome-v19.md` and its fixed plans, complete results and audit.
@@ -141,36 +140,36 @@ does not contain the later addendum. New presentation integration needs a new ve
   sequence; its policies remain unverified. Newer model inference ran on the owner
   host and reused the alignment. Self-hosted retrieval does not imply local inference.
   Carry AlphaFold3 Output Terms, mandatory notice, modifications and citation with
-  derived findings. Never print `.env` or keys. See the current report section 6.
+  derived findings. Never print `.env` or keys. See the current report section 7.
 - **Official requirements and community:** session 56 reviewed live revision
   `aeeef5ad49f51204a7439352e59e9d310aee5e9e`, all 24 public discussions/68 latest
-  comments and three administrative images. Use `notes/track2-requirements-v18.json`
+  comments and three administrative images. Use `notes/track2-requirements-v20.json`
   and `notes/track2-community-review-20260924.md`; rubric weights are 35/25/25/15.
   PDF/Markdown report plus GitHub and three-minute YouTube/Vimeo pitch are required.
   Methods B9 is required and B17 is limited to 500 words. The template's one-entry
   line is stale; three entries/latest-only is current. Quota remains unknown.
 - **Distribution scope:** challenge CC BY scope versus historical AF3/non-AVI Atlas
-  output terms remains unresolved. V18 omits their numerical outputs/derived figures
+  output terms remains unresolved. V20 omits their numerical outputs/derived figures
   from judge-facing materials, but does not establish that linked history is outside
   submission scope. Preserve original notices; do not grant a blanket relicence or
   mark eligibility resolved. Concrete unsent clarification in
-  `notes/track2-owner-readiness-v18.md`, linked from the v19 readiness note; no organizer
+  `notes/track2-owner-readiness-v18.md`, linked from the v20 readiness note; no organizer
   contact is authorized.
 - **Delivery:** no wet-lab experiment, recorded/hosted video or Track 2 submission is
   established. A script/PDF and successful tests do not fill those gaps. The portal
   permits three entries and reviews only the latest; remaining quota is unknown.
   Record the complete acknowledgement inside the three-minute video. Preserve the
-  Track 1 submitted v4, every Track 2 v1–v18 bound input/package and the fixed v19 campaign.
+  Track 1 submitted v4, every earlier Track 2 bound input/package, the fixed v19 campaign and v20 releases.
 
-Use `scripts/track2_release_v18.py` to check/build/verify **new** v18 research snapshot
-directories. Render with `scripts/render_track2_slides_v18.mjs`; export the report and
-workbook with `scripts/track2_export_documents_v18.py` followed by
-`scripts/render_track2_report_v18.mjs`. Current recording materials have a separate
-`scripts/track2_bundle_v18.py` builder; historical research retains AF3 notices.
+Use `scripts/track2_release_v20.py` to check/build/verify **new** v20 research snapshot
+directories. Render with `scripts/render_track2_slides_v20.mjs`; export the report and
+workbook with `scripts/track2_export_documents_v20.py` followed by
+`scripts/render_track2_report_v20.mjs`. Recording materials use
+`scripts/track2_bundle_v20.py`; historical research retains AF3 notices.
 The combined public reviewer needs no data/results folders, keys, network, GPUs or old
 local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
-The preserved `scripts/track2_public_review_v18.py` checks the v18 presentation only;
-`scripts/check_track2_transcriptome.py` checks the frozen v19 campaign only.
+The versioned `scripts/track2_public_review_v20.py` checks the integrated presentation
+and frozen research; `scripts/check_track2_transcriptome.py` checks v19 alone.
 Its passing result verifies consistency, not biology or eligibility. The stricter
 release verification also requires retained local historical archives.
 The mutable current-artifact record,
@@ -197,14 +196,14 @@ uv run python scripts/track2_evidence.py check
 uv run python scripts/check_track2_harness.py
 uv run --no-project python scripts/check_track2_transcriptome.py
 uv run python scripts/track2_falsification_v15.py check
-uv run --no-project python scripts/track2_public_review_v18.py
-uv run python scripts/track2_release_v18.py check
+uv run --no-project python scripts/track2_public_review_v20.py
+uv run python scripts/track2_release_v20.py check
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
 `track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
 its old conditional-screen label is not today's drug decision. The current v15
-ledger, v18 report and v19 research addendum take precedence. Historical exact-byte verification remains
+ledger, v20 report and v19 research addendum take precedence. Historical exact-byte verification remains
 available through the versioned release scripts; never resubmit Track 1 to resolve
 its missing administrative receipt.
 
