@@ -1,9 +1,16 @@
 # Session handoff: Track 2 v18 presentation / v19 public transcriptome addendum
 
-27 September 2026, session 58. Only feat-009 is active. Authoritative paths are in
+27 September 2026, session 59. Only feat-009 is active. Authoritative paths are in
 `notes/track2-current.json`. Submitted Track 1 v4 and every v1-v18 bound input/package
 remain preserved. V18 is the frozen presentation; v19 is a separate completed public
 perturbation reanalysis. V15 drug dispositions remain unchanged.
+
+The combined harness is now version 19. Use
+`uv run --no-project python scripts/check_track2_harness.py` and
+`notes/track2-reviewer-guide-v19.md` for both presentation and research. The current
+readiness note is `notes/track2-owner-readiness-v19.md`; the v18 guide/readiness files
+are preserved package inputs. `notes/track2-harness-review-v19.md` records the false
+passes corrected in this session. No new research, GPU job or presentation revision ran.
 
 ## Current materials
 
@@ -26,8 +33,10 @@ perturbation reanalysis. V15 drug dispositions remain unchanged.
 - Recording/review ZIP: `results/feat009/jvv7_track2_video_materials_v18.zip`.
 - `notes/track2-v18-design.md`, `track2-v18-editorial-review.md` and versioned audits
   document the skills used, changes, source preservation and visual checks.
-- Public review: `notes/track2-reviewer-guide-v18.md`. Remaining delivery steps and
-  unsent clarification: `notes/track2-owner-readiness-v18.md`.
+- Combined public review: `notes/track2-reviewer-guide-v19.md`. Remaining delivery
+  steps: `notes/track2-owner-readiness-v19.md`, linking the preserved unsent clarification.
+- The v18 recording ZIP excludes the later v19 addendum. A future integrated report,
+  slide/script and methods package must use a new version.
 
 ## Official brief and competition framing
 
@@ -78,8 +87,7 @@ hold; failed safety stops; all-pass permits preclinical review only.
 
 ```bash
 ./init.sh
-uv run --no-project python scripts/track2_public_review_v18.py
-uv run python scripts/check_track2_harness.py
+uv run --no-project python scripts/check_track2_harness.py
 uv run --no-project python scripts/check_track2_transcriptome.py
 uv run --no-project python scripts/verify_track2_transcriptome_archive.py results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz
 uv run python scripts/track2_release_v18.py verify results/feat009/jvv7_track2_research_v18
@@ -100,7 +108,10 @@ implementation from original GCTX coordinates agrees on all 139 raw everolimus-l
 comparisons (max error <4.75e-8). This is numerical verification, not an independent
 scientific review. The new figure was visually checked; the initial legend spacing was
 corrected. Final regression counts, preservation checks and fresh init output are in
-session 58 progress. The v19 check is now part of `./init.sh`.
+session 58 progress. Session 59 makes the v19 check part of the combined harness,
+removes the duplicate startup call, validates research routes/counts and pins the
+frozen campaign audit. The isolated public run, new regressions and 346 preserved
+input hashes are recorded in session 59 progress. `./init.sh` invokes the combined check.
 
 ## Blockers
 
@@ -123,8 +134,10 @@ session 58 progress. The v19 check is now part of `./init.sh`.
 
 ## Next actions
 
-Rehearse and record the eight-slide pitch with the full acknowledgement inside three
-minutes. Resolve provider/distribution items and verify final portal materials. Research
+For integration of the new findings, make a new synchronized presentation/report
+version; the v18 bundle has not absorbed v19. Rehearse and record the chosen pitch
+with the full acknowledgement inside three minutes. Resolve provider/distribution
+items and verify final portal materials. Research
 advancement begins with model/branch qualification, the existing falsification plan
 and the v19 experimental requirements. No additional GPU jobs are pending.
 BindCraft2 remains deferred without a functional target and validation route.

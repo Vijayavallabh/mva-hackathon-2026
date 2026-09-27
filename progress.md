@@ -4765,3 +4765,153 @@ git rev-list --left-right --count HEAD...@{upstream}
 The requested compute campaign and research integration are complete. Feat-009 remains
 in progress for the biological and delivery gaps above; no clinical validation or
 competition submission is claimed.
+
+
+## Session 59 — 2026-09-27: synchronize the remaining Track 2 harness and review files
+
+Owner requested the other harness and relevant files be updated after the completed
+GPU campaign. Only feat-009 remained active. Used the harness-creator skill to inspect
+instructions, state, verification, scope and lifecycle; no subagents were used.
+
+The structural audit scored 5/5 in all five subsystems (100/100 overall), both before
+and after the change. All subsystems tie; the tool's automatic “instructions” label
+is not evidence of a bottleneck. Direct mutation checks found the actual gap: the old
+main harness accepted a missing v19 addendum, a report routed into `data/`, a GPU count
+of 80 and fourteen fabricated primary query passes. Those four baseline false passes
+are recorded in `results/feat009/harness-sync-baseline-gaps-20260927.json`.
+
+Updated the mutable main checker, current-artifact record, startup, AGENTS, README,
+feature evidence and handoff. Added `notes/track2-reviewer-guide-v19.md`,
+`notes/track2-owner-readiness-v19.md`, `notes/track2-harness-review-v19.md` and the
+reusable `scripts/audit_track2_harness.py`. The current routes distinguish harness v19,
+presentation v18, ledger v15 and research addendum v19. The v18 bundle does not include
+the later research; a future presentation integration must use a new version.
+
+`uv run --no-project python scripts/check_track2_harness.py` now verifies both the
+preserved v18 presentation and v19 campaign. It requires exact public addendum routes,
+pins the original campaign audit, checks bound files and derives current counts from
+the completed results. It rejects changed GPU coverage, query/QC results, chemical
+identity counts, stale links and fabricated advancement. It retains the favourable
+five-reagent HT29 sensitivity alongside the failed full filter. Public paths reject
+parent/leaf symlinks. The retained archive path is metadata only; the public checker
+does not open `results/`. Startup invokes the combined check once.
+
+A version-label review found the earlier generic “current vN” check conflated harness
+and presentation versions. It now distinguishes v19 harness/addendum, v18 presentation
+and v15 ledger labels. Tests cover correct labels and reject stale ones. The first
+668-test pass preceded this correction; the final 670-test result below covers it.
+
+Verification:
+
+- **670 Track 2 tests pass in 8.060 seconds**, including 18 new harness regressions
+  (`logs/track2-harness-sync-release-tests-20260927.log`).
+- The isolated combined review passes in 0.146 seconds using 422 copied public files
+  and the uv-managed base Python 3.13.13, without the project virtual environment.
+  Six probes confirm the Python audit hook blocks network, process launches, protected
+  paths, credentials, external files and writes. The outer helper uses Git to stage
+  the copy; the child uses no original checkout, Git history, data/results/logs or `.env`.
+  This is a dependency audit, not operating-system sandbox certification. Final record:
+  `results/feat009/harness-sync-isolated-release-20260927.json`.
+- All **346 preserved inputs** match their pre-edit hashes at `71488a7`: 316 inputs
+  bound by v18 plus the 29-file v19 inventory and its audit. No scientific result,
+  frozen checker, model/script input or historical guide was edited. The v18 recursive
+  verification passes 57 package files and 316 bound inputs with v1–v17 preserved.
+- Track 1 self-check and the historical baseline evidence check pass. The baseline's
+  conditional-screen label remains historical, not today's candidate disposition.
+- The live publication guard reports PUBLIC, 13 retired objects unavailable, zero
+  unknown errors and a successful live-object control. No portal callback, upload,
+  organizer contact, new literature search, model inference or wet-lab work occurred.
+
+Commands:
+
+```bash
+uv run node /home/sports/.agents/skills/harness-creator/scripts/validate-harness.mjs --target /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026
+uv run --no-project python scripts/check_track2_harness.py
+uv run --no-project python scripts/audit_track2_harness.py --output results/feat009/harness-sync-isolated-release-20260927.json
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+uv run python scripts/track1_submission.py --self-check
+uv run python scripts/track2_evidence.py check
+uv run python scripts/track2_release_v18.py verify results/feat009/jvv7_track2_research_v18
+uv run python scripts/check_publication_remote.py --output results/feat009/harness-sync-publication-remote-20260927.json
+```
+
+The requested harness/document integration is complete. Feat-009 remains in progress
+for biological qualification and the separately recorded provider, distribution,
+presentation-integration, video/hosting and portal/receipt items. No drug, phase,
+clinical-exposure or delivery status was promoted.
+
+Fresh no-argument `./init.sh` completed from a new login shell with exit 0. Actual
+output (`logs/track2-harness-sync-final-init-20260927.log`):
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "harness_version": 19,
+  "presentation_version": 18,
+  "drug_science_version": 15,
+  "slides": 8,
+  "narration_words": 334,
+  "upload_ready": false,
+  "research_addendum": {
+    "version": 19,
+    "status": "complete",
+    "gpus": 8,
+    "completed_gpu_waves": 3,
+    "compound_profiles": 312438,
+    "query_compound_comparisons": 12185082,
+    "resampled_reagent_sets": 560000,
+    "primary_contexts": 14,
+    "primary_query_gates_passed": 0,
+    "post_hoc_comparisons": 42,
+    "post_hoc_full_filters_passed": 0,
+    "primary_everolimus_comparisons": 19,
+    "primary_everolimus_profiles": 14,
+    "primary_everolimus_positive_correlations": 13,
+    "phase2_unresolved_labelled_profiles": 174,
+    "phase2_reference_matching_profiles": 6,
+    "phase2_reference_matching_qc_passes": 0,
+    "ht29_post_hoc_reagents": 5,
+    "ht29_post_hoc_adjusted_tail": 0.041995800419958006,
+    "ht29_full_filter_passed": false,
+    "drug_ranking_changed": false
+  },
+  "biological_validation": false,
+  "scope": "Combined public presentation/research consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```
+
+End-of-session publication and synchronization commands:
+
+```bash
+uv run python scripts/audit_publication.py --staged --output results/feat009/harness-sync-staged-disclosure-20260927.json
+git diff --cached --check
+git commit -m "Unify Track 2 harness and reviewer routes for the completed GPU research"
+uv run python scripts/audit_publication.py --output results/feat009/harness-sync-history-disclosure-20260927.json
+git push origin main
+git status --short
+git rev-list --left-right --count HEAD...@{upstream}
+```

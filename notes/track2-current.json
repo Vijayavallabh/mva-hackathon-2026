@@ -55,7 +55,7 @@
     "licensing_scope_resolved": false
   },
   "history": "progress.md",
-  "harness_review": "notes/track2-harness-review-v18.md",
+  "harness_review": "notes/track2-harness-review-v19.md",
   "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v18.zip",
   "document_directory": "results/feat009/v18-documents-final-b-20260925",
   "research_addendum": {
@@ -83,5 +83,12 @@
     "primary_query_gates_passed": 0,
     "drug_ranking_changed": false,
     "archive": "results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz"
+  },
+  "harness_version": 19,
+  "current_review": {
+    "script": "scripts/check_track2_harness.py",
+    "guide": "notes/track2-reviewer-guide-v19.md",
+    "readiness": "notes/track2-owner-readiness-v19.md",
+    "isolation_audit": "scripts/audit_track2_harness.py"
   }
 }

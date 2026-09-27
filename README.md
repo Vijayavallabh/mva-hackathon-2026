@@ -93,8 +93,9 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-**Track 2 (feat-009) is in progress.** The [current v18 report](notes/track2-report-v18.md)
-and [falsification review](notes/track2-falsification-review-v15.md) challenge the full
+**Track 2 (feat-009) is in progress.** Read the [v18 report](notes/track2-report-v18.md)
+alongside the [v19 research addendum](notes/track2-transcriptome-v19.md).
+The [falsification review](notes/track2-falsification-review-v15.md) challenges the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
 No drug earns rescue priority; everolimus is an optional qualified mechanistic probe,
 HCQ is reserve, phase is unconfirmed and clinical exposure margins are unknown.
@@ -142,7 +143,7 @@ The report is 27.18% shorter; the redesigned deck and rewritten pitch follow the
 [official Track 2 brief](notes/track2-v18-brief-review.md), rechecked September 25.
 It answers all eleven methods questions, including AI disclosure and a 166-word abstract.
 The original methods workbook is also filled by the document exporter. Full
-acknowledgement and historical model notices remain. The [readiness note](notes/track2-owner-readiness-v18.md)
+acknowledgement and historical model notices remain. The [readiness note](notes/track2-owner-readiness-v19.md)
 retains recording/hosting, provider handling, unresolved distribution scope, owner/live
 checks and receipt. These drafts do not establish a wet-lab result or an upload.
 
@@ -154,27 +155,27 @@ positive; everolimus's lower-dose evidence has chemical-identity and quality gap
 The resulting experiment requirements qualify the perturbation before testing a drug.
 No rescue-drug priority or clinical claim follows. V18 remains preserved; GPU use was
 bursty, not saturated. [Execution, limits and reproduction](notes/track2-transcriptome-reproduction-v19.md)
-are recorded, with a public offline check:
+are recorded. The v18 presentation/recording bundle does not include this later
+addendum; future presentation integration needs a new version.
+
+Start with the [combined reviewer guide](notes/track2-reviewer-guide-v19.md). One
+public CPU command checks the v18 materials and v19 addendum, including the reported
+counts, failed filters and HT29 counterweight. It needs no subject files, data/results
+folders, keys, network, Git history or model weights:
 
 ```bash
-uv run --no-project python scripts/check_track2_transcriptome.py
+uv run --no-project python scripts/check_track2_harness.py
 ```
 
-Start with the [reviewer guide](notes/track2-reviewer-guide-v18.md) for the v18 materials. Its public CPU check
-needs no subject files, data/results folders, keys, network or model weights:
-
-```bash
-uv run --no-project python scripts/track2_public_review_v18.py
-```
-
-Use `scripts/track2_release_v18.py` for new research snapshots; the reviewer guide
-documents PDF/workbook/slide regeneration and separates historical integrity checks.
-All v1–v17 bound inputs/releases and submitted Track 1 v4 are preserved.
+The preserved v18 public reviewer and standalone transcriptome checker remain available
+for narrower checks. Use `scripts/track2_release_v18.py` for exact-byte v18 snapshots;
+the reviewer guide distinguishes exports, archive checks and full reproduction.
+All v1–v18 bound inputs/releases, the fixed v19 campaign and submitted Track 1 v4 are preserved.
 The [current-artifact record](notes/track2-current.json) and
-[harness review](notes/track2-harness-review-v18.md) route the current work.
+[harness review](notes/track2-harness-review-v19.md) route the current work.
 `./init.sh` checks artifact versions, narration, original models, new falsification
-results and unresolved scientific/delivery status. The [official review](notes/track2-official-requirements-review-20260924.md)
-checks live revision aeeef5ad49f51204a7439352e59e9d310aee5e9e; the
+results and unresolved scientific/delivery status. The dated [official review](notes/track2-official-requirements-review-20260924.md)
+checked revision aeeef5ad49f51204a7439352e59e9d310aee5e9e; the
 [community review](notes/track2-community-review-20260924.md) covers all 24 public
 discussions and 68 latest visible comments. Rigor/impact/innovation/scalability receive
 35/25/25/15 percent; hypotheses are permitted and three entries/latest-only applies.

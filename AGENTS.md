@@ -58,7 +58,8 @@ improve the proposal, including changing direction or abandoning a favored appro
 
 Follow `notes/track2-falsification-plan.md` alongside the preserved original plan.
 Use the current 19-claim `notes/track2-falsification-register-v15.json` and
-`notes/track2-falsification-review-v15.md` across every part of the evidence chain.
+`notes/track2-falsification-review-v15.md` across every part of the evidence chain,
+alongside the v19 transcriptome addendum's model and compound qualification requirements.
 Each consequential claim needs support and challenge, a falsifier, stop/reopening
 criteria and a next discriminating action. Unknown evidence means hold; it is not
 disproof. Failed safety overrides apparent benefit; all-pass permits only further
@@ -85,6 +86,14 @@ check: `notes/track2-v18-brief-review.md`. The v15 ledger and
 validation plan preserve v10 drug dispositions and add stricter falsification gates.
 The complete research history is in `progress.md`; older harness wording is preserved
 at Git revision `bb82cd6`, not treated as current instructions.
+
+Session 59 unifies current review in `scripts/check_track2_harness.py`: it checks the
+v18 presentation and v19 addendum together, including completed GPU coverage, failed
+filters and the retained HT29 counterweight. Start with
+[notes/track2-reviewer-guide-v19.md](notes/track2-reviewer-guide-v19.md) and
+[notes/track2-owner-readiness-v19.md](notes/track2-owner-readiness-v19.md).
+`harness_version` is 19; `presentation_version` stays 18. The v18 recording bundle
+does not contain the later addendum. New presentation integration needs a new version.
 
 - **Session 58 public transcriptome addendum (2026-09-27):** use
   `notes/track2-transcriptome-v19.md` and its fixed plans, complete results and audit.
@@ -145,20 +154,23 @@ at Git revision `bb82cd6`, not treated as current instructions.
   from judge-facing materials, but does not establish that linked history is outside
   submission scope. Preserve original notices; do not grant a blanket relicence or
   mark eligibility resolved. Concrete unsent clarification in
-  `notes/track2-owner-readiness-v18.md`; no organizer contact is authorized.
+  `notes/track2-owner-readiness-v18.md`, linked from the v19 readiness note; no organizer
+  contact is authorized.
 - **Delivery:** no wet-lab experiment, recorded/hosted video or Track 2 submission is
   established. A script/PDF and successful tests do not fill those gaps. The portal
   permits three entries and reviews only the latest; remaining quota is unknown.
   Record the complete acknowledgement inside the three-minute video. Preserve the
-  Track 1 submitted v4 and every Track 2 v1–v17 bound input/package.
+  Track 1 submitted v4, every Track 2 v1–v18 bound input/package and the fixed v19 campaign.
 
 Use `scripts/track2_release_v18.py` to check/build/verify **new** v18 research snapshot
 directories. Render with `scripts/render_track2_slides_v18.mjs`; export the report and
 workbook with `scripts/track2_export_documents_v18.py` followed by
 `scripts/render_track2_report_v18.mjs`. Current recording materials have a separate
 `scripts/track2_bundle_v18.py` builder; historical research retains AF3 notices.
-The public reviewer command needs no data/results folders, keys, network, GPUs or old
-local snapshots: `uv run --no-project python scripts/track2_public_review_v18.py`.
+The combined public reviewer needs no data/results folders, keys, network, GPUs or old
+local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
+The preserved `scripts/track2_public_review_v18.py` checks the v18 presentation only;
+`scripts/check_track2_transcriptome.py` checks the frozen v19 campaign only.
 Its passing result verifies consistency, not biology or eligibility. The stricter
 release verification also requires retained local historical archives.
 The mutable current-artifact record,
@@ -169,7 +181,7 @@ Do not edit old bound code to make a new check pass or mark upload readiness tru
 ## Startup workflow
 
 ```bash
-./init.sh                 # includes current Track 2 harness consistency check
+./init.sh                 # includes combined presentation/research consistency check
 cat feature_list.json     # exactly one active feature: feat-009
 cat notes/track2-current.json
 cat session-handoff.md
@@ -183,6 +195,7 @@ uv run python scripts/verify_data.py --self-check
 uv run python scripts/track1_submission.py --self-check
 uv run python scripts/track2_evidence.py check
 uv run python scripts/check_track2_harness.py
+uv run --no-project python scripts/check_track2_transcriptome.py
 uv run python scripts/track2_falsification_v15.py check
 uv run --no-project python scripts/track2_public_review_v18.py
 uv run python scripts/track2_release_v18.py check
@@ -191,7 +204,7 @@ uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 
 `track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
 its old conditional-screen label is not today's drug decision. The current v15
-ledger and v18 report take precedence. Historical exact-byte verification remains
+ledger, v18 report and v19 research addendum take precedence. Historical exact-byte verification remains
 available through the versioned release scripts; never resubmit Track 1 to resolve
 its missing administrative receipt.
 
