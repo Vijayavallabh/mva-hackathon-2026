@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-27",
+  "registration_scope": "Added after inspection of phase-II metadata but before expression values from either release were opened. Phase-I design is unchanged.",
+  "reason": "Phase I has only 17 everolimus profiles. Phase II metadata contains 180, including nominal concentration series and additional batches. Test whether direction depends on release, cell, dose or compound identifier.",
+  "dataset": "GSE70138",
+  "release": "2017-03-06",
+  "source": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE70nnn/GSE70138/suppl/",
+  "matrix": "GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx.gz",
+  "expected_matrix_profiles": 118050,
+  "expected_compound_profiles": 107404,
+  "query": "All 14 fixed phase-I BUB1B CGSs; exact cell_id matching only. Do not equate ASC.C, NPC.CAS9, etc. with the unmodified cell ID.",
+  "analysis": "All phase-II compounds in the same three rank spaces and with the same named compounds, quality rules and CPU/GPU tolerance as phase I. Fit nuisance bases using phase-I genetic references only. Retain all dose/time/batch/compound identifiers and exclude exact signature-ID overlaps with phase I.",
+  "identity": "Separate the three everolimus BRD IDs; compare available canonical structure/InChI information before pooling. Missing or discordant identity means hold the compound-specific inference.",
+  "interpretation": "A second deposited release is a sensitivity check on drug signatures, not independent BUB1B genetics, an independent laboratory or proof of rescue. No BUB1B CRISPR record is present in its inspected metadata. No patient RNA or drug-plus-knockdown experiment is supplied.",
+  "decisions": "Opposite, weak, QC-failing, dose-specific or nuisance-sensitive correlations constrain transcriptomic support. Even consistent opposition cannot promote treatment, a clinical exposure margin or a rescue-priority drug."
+}

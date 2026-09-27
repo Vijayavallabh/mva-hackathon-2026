@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_date": "2026-09-25",
+  "updated_date": "2026-09-27",
   "active_feature": "feat-009",
   "presentation_version": 18,
   "drug_science_version": 15,
@@ -57,5 +57,31 @@
   "history": "progress.md",
   "harness_review": "notes/track2-harness-review-v18.md",
   "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v18.zip",
-  "document_directory": "results/feat009/v18-documents-final-b-20260925"
+  "document_directory": "results/feat009/v18-documents-final-b-20260925",
+  "research_addendum": {
+    "version": 19,
+    "kind": "public_perturbation_transcriptome",
+    "status": "complete",
+    "plan": "notes/track2-transcriptome-plan-v19.json",
+    "phase2_plan": "notes/track2-transcriptome-phase2-plan-v19.json",
+    "source_review": "notes/track2-transcriptome-source-review-v19.md",
+    "identity_audit": "notes/track2-transcriptome-identity-v19.json",
+    "check": "scripts/check_track2_transcriptome.py",
+    "report_integration": "separate_addendum_preserves_v18",
+    "report": "notes/track2-transcriptome-v19.md",
+    "reproduction": "notes/track2-transcriptome-reproduction-v19.md",
+    "audit": "notes/track2-transcriptome-audit-v19.json",
+    "followup_plan": "notes/track2-transcriptome-followup-plan-v19.json",
+    "primary_results": "notes/track2-transcriptome-results-v19.json",
+    "phase2_results": "notes/track2-transcriptome-phase2-results-v19.json",
+    "followup_results": "notes/track2-transcriptome-followup-results-v19.json",
+    "figure": "notes/track2-transcriptome-v19.svg",
+    "gpus": 8,
+    "compound_profiles": 312438,
+    "query_compound_comparisons": 12185082,
+    "resampled_reagent_sets": 560000,
+    "primary_query_gates_passed": 0,
+    "drug_ranking_changed": false,
+    "archive": "results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz"
+  }
 }

@@ -1,0 +1,65 @@
+{
+  "sources": [
+    {
+      "name": "geo_guide",
+      "url": "https://clue.io/connectopedia/guide_to_geo_l1000_data",
+      "retrieved_utc": "2026-09-27T12:30:20.382675+00:00",
+      "status": 200,
+      "bytes": 131394,
+      "sha256": "f93eaea2468a86022d756e8f7f9ca3466e58e694d6b18ee1395280d09ca65550"
+    },
+    {
+      "name": "redistribution",
+      "url": "https://clue.io/connectopedia/data_redistribution",
+      "retrieved_utc": "2026-09-27T12:30:20.383545+00:00",
+      "status": 200,
+      "bytes": 107598,
+      "sha256": "0fb9e55ab81e35039d49e687d724583786f318151f65825ab76127ed509a0cd9"
+    },
+    {
+      "name": "quality",
+      "url": "https://clue.io/connectopedia/signature_quality_metrics",
+      "retrieved_utc": "2026-09-27T12:30:20.389362+00:00",
+      "status": 200,
+      "bytes": 112344,
+      "sha256": "75fd6e0266d3088fcaf22cc7129bde01eea649e2540dbfe28669a48e80dd6eec"
+    },
+    {
+      "name": "smith_2017",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2003213",
+      "retrieved_utc": "2026-09-27T12:30:21.992275+00:00",
+      "status": 200,
+      "bytes": 267429,
+      "sha256": "d132664ad8a3cba7796eeb3e5b28f4863af080e516bb87ee9860c36e2d4bf5e0"
+    },
+    {
+      "name": "lim_2021",
+      "url": "https://www.nature.com/articles/s41598-021-97005-z",
+      "retrieved_utc": "2026-09-27T12:30:21.994213+00:00",
+      "status": 200,
+      "bytes": 377404,
+      "sha256": "55a81bbea780c8b150d12168df3c7a21067023c5aa87e0e108e2ca4d4a3c98b9"
+    },
+    {
+      "name": "hafner_2017",
+      "url": "https://www.nature.com/articles/s41467-017-01383-w",
+      "retrieved_utc": "2026-09-27T12:30:22.162029+00:00",
+      "status": 200,
+      "bytes": 482016,
+      "sha256": "688f5868c1e28b104fc68166c6a3d7f90adabb41e00f3fd2073f8524c566f013"
+    },
+    {
+      "name": "cmap_2017",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5990023/fullTextXML",
+      "retrieved_utc": "2026-09-27T12:30:23.542546+00:00",
+      "error": "HTTPError: HTTP Error 500: "
+    }
+  ],
+  "public_only": true,
+  "new_model_provider": false,
+  "reading_depth_note": "notes/track2-transcriptome-source-review-v19.md",
+  "local_gpu_detection": "NVML driver/library mismatch; availability unknown",
+  "remote_gpu_detection": "8 H100 80GB; idle at initial probe",
+  "chemical_identity_review": "notes/track2-transcriptome-identity-v19.json",
+  "pubchem_reference_response_sha256": "8ba96339f1453236c3db40e11f8d2ede9eb390cc734be77cf9d2e5aed760b6f3"
+}

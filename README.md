@@ -146,7 +146,21 @@ acknowledgement and historical model notices remain. The [readiness note](notes/
 retains recording/hosting, provider handling, unresolved distribution scope, owner/live
 checks and receipt. These drafts do not establish a wet-lab result or an upload.
 
-Start with the [reviewer guide](notes/track2-reviewer-guide-v18.md). Its public CPU check
+The September 27 [GPU research addendum](notes/track2-transcriptome-v19.md) adds public
+LINCS perturbation evidence. All eight H100s completed three analysis waves over
+312,438 compound profiles and 560,000 reagent-set resamples. No primary BUB1B query
+passed the operational reproducibility filter. The follow-up retains a limited HT29
+positive; everolimus's lower-dose evidence has chemical-identity and quality gaps.
+The resulting experiment requirements qualify the perturbation before testing a drug.
+No rescue-drug priority or clinical claim follows. V18 remains preserved; GPU use was
+bursty, not saturated. [Execution, limits and reproduction](notes/track2-transcriptome-reproduction-v19.md)
+are recorded, with a public offline check:
+
+```bash
+uv run --no-project python scripts/check_track2_transcriptome.py
+```
+
+Start with the [reviewer guide](notes/track2-reviewer-guide-v18.md) for the v18 materials. Its public CPU check
 needs no subject files, data/results folders, keys, network or model weights:
 
 ```bash

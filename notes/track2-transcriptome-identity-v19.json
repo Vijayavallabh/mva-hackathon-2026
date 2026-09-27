@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-27",
+  "reference_cid": 6442177,
+  "reference_inchi_key": "HKVAMNSJSFKALM-GKUWKFKPSA-N",
+  "reference_url": "https://pubchem.ncbi.nlm.nih.gov/compound/6442177",
+  "reference_response_sha256": "8ba96339f1453236c3db40e11f8d2ede9eb390cc734be77cf9d2e5aed760b6f3",
+  "metadata": [
+    {
+      "source": "GSE92742_Broad_LINCS_pert_info.txt.gz",
+      "pert_id": "BRD-K13514097",
+      "inchi_key": "HKVAMNSJSFKALM-GKUWKFKPSA-N"
+    },
+    {
+      "source": "GSE70138_Broad_LINCS_pert_info_2017-03-06.txt.gz",
+      "pert_id": "BRD-A25736793",
+      "inchi_key": "HKVAMNSJSFKALM-UHFFFAOYSA-N"
+    },
+    {
+      "source": "GSE70138_Broad_LINCS_pert_info_2017-03-06.txt.gz",
+      "pert_id": "BRD-K13514097",
+      "inchi_key": "HKVAMNSJSFKALM-GKUWKFKPSA-N"
+    },
+    {
+      "source": "GSE70138_Broad_LINCS_pert_info_2017-03-06.txt.gz",
+      "pert_id": "BRD-K13154216",
+      "inchi_key": "HKVAMNSJSFKALM-MUKRYTAKSA-N"
+    }
+  ],
+  "phase2_profile_counts_by_id": {
+    "BRD-A25736793": 132,
+    "BRD-K13514097": 6,
+    "BRD-K13154216": 42
+  },
+  "eligible_identity_id": "BRD-K13514097",
+  "unresolved_ids": [
+    "BRD-A25736793",
+    "BRD-K13154216"
+  ],
+  "interpretation": "Metadata match only; not independent vial chemistry verification. Other identifiers retained separately; do not silently pool.",
+  "input_sha256": {
+    "GSE92742_Broad_LINCS_pert_info.txt.gz": "b1945b3fde51021865b12269929cc78ccf2665be27f53a4da9336e4ddcf4b42f",
+    "GSE70138_Broad_LINCS_pert_info_2017-03-06.txt.gz": "000171e8ce17cb00a3e80a907d97f0bc4218077eb4cb2ac03f4e0f9f4f2e5493",
+    "GSE70138_Broad_LINCS_sig_info_2017-03-06.txt.gz": "b78284478d62029f600d4397334c538d363123110affd2454bf0055bd0678e01"
+  }
+}

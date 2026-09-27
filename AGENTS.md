@@ -86,6 +86,23 @@ validation plan preserve v10 drug dispositions and add stricter falsification ga
 The complete research history is in `progress.md`; older harness wording is preserved
 at Git revision `bb82cd6`, not treated as current instructions.
 
+- **Session 58 public transcriptome addendum (2026-09-27):** use
+  `notes/track2-transcriptome-v19.md` and its fixed plans, complete results and audit.
+  Three completed CUDA waves used all eight owner-host H100s: 312,438 public compound
+  profiles, 12,185,082 query/compound comparisons and 560,000 reagent-set resamples.
+  These counts are not independent experiments; utilization was bursty, not saturated.
+  No primary query passed the operational gate (0/14). Post-hoc full filters pass 0/42;
+  preserve HT29's five-reagent projected q=0.042 partial positive. Exact provider
+  membership is now checked; seed independence/weights/on-target function are not.
+  Everolimus has 13/19 positive primary correlations at 10 µM nominal exposure. Of
+  180 second-release labelled profiles, 174 have unresolved stereochemical metadata;
+  the six reference-matching 0.1 µM profiles all fail specified drug QC. Do not pool
+  identifiers, claim a dose response, promote HCQ by elimination or equate filter
+  failure with biological disproof. Qualify the perturbation, then test joint treatment
+  and functional endpoints. All inputs were public; no subject transfer or new neural
+  inference. Keep v18 immutable and use `scripts/check_track2_transcriptome.py` for
+  the separate completed research addendum. No drug/phase/exposure promotion follows.
+
 - **Drug decisions:** no rescue-priority candidate. Everolimus is an optional,
   model-qualified mechanistic probe; HCQ is reserve. The session-32 conditional
   priority is historical and was withdrawn. Clinical exposure margins remain unknown.

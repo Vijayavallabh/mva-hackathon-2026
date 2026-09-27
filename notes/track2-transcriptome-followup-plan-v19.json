@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-27",
+  "status": "Post-hoc sensitivity plan, fixed after seeing the complete first-release results and before calculating these new statistics. Does not replace the original gate.",
+  "trigger": "All 14 raw all-reagent filters failed. Smith et al. report that shared-pattern removal can improve holdout discrimination; provider CGS distil_id metadata can identify its actual member signatures.",
+  "question": "Does the original failure persist when shared rank-space variation is removed or provider membership is used?",
+  "arms": ["all_reagents_shared_pc1_removed", "provider_members_raw", "provider_members_shared_pc1_removed"],
+  "membership": "Parse each CGS distil_id as exact Level5 signature IDs. Require every ID exists, targets BUB1B and has exactly matching cell and perturbation time. Median repeated records within each unique reagent. Compare provider count with original all-reagent count. Do not infer independent shRNA seeds or reproduce undocumented CGS weights.",
+  "projection": "Fit the same uncentered leading right singular direction of same-cell/time non-BUB1B rank-normalized shRNA profiles. For each balanced subset, average original measured-gene vectors, rank-normalize, remove this direction and renormalize. Apply the identical statistic to every null draw. Raw arm omits the projection.",
+  "null": "10000 sets of distinct non-BUB1B reagents per arm/context; same set size and median balanced-split statistic as observed. BH over all 42 arm/context comparisons. Tail areas remain operational, not clinically calibrated.",
+  "seed": 20260928,
+  "resamples": 10000,
+  "limits": "Post-hoc; the same experiment and gene vectors are reused. No independent validation, no clinical probabilities, no drug-plus-knockdown observations. Primary failure is preserved. A sensitivity pass limits a blanket unreliability claim and motivates independent on-target validation; it cannot promote a drug.",
+  "original_decisions_unchanged": true
+}

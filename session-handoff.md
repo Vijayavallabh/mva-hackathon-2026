@@ -1,11 +1,19 @@
-# Session handoff: Track 2 v18 presentation / v15 science
+# Session handoff: Track 2 v18 presentation / v19 public transcriptome addendum
 
-25 September 2026, session 57. Only feat-009 is active. Authoritative paths are in
-`notes/track2-current.json`. Submitted Track 1 v4 and every v1-v17 bound input/package
-remain preserved. V18 is an aesthetic/editorial revision, not new biological evidence.
+27 September 2026, session 58. Only feat-009 is active. Authoritative paths are in
+`notes/track2-current.json`. Submitted Track 1 v4 and every v1-v18 bound input/package
+remain preserved. V18 is the frozen presentation; v19 is a separate completed public
+perturbation reanalysis. V15 drug dispositions remain unchanged.
 
 ## Current materials
 
+- `notes/track2-transcriptome-v19.md`: new findings and revised experiment requirements;
+  complete results, fixed plans, source/chemical-identity review, SVG and audit accompany it.
+- `notes/track2-transcriptome-reproduction-v19.md`: exact computation scope, limits,
+  executed commands and archive verification. The completed remote campaign is under
+  `/home/prachh/v/mva-track2-transcriptome-20260927`; no worker/monitor remains active.
+- `results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz`: verified
+  457-file audit archive. No subject input or new hosted model was used.
 - `notes/track2-report-v18.md`: 2,119 words, 27.18% shorter than v17. Full disclosure,
   citations, methods B7-B17 and acknowledgement preserved; abstract 166 words.
 - `notes/track2-slides-v18.html`: eight redesigned slides, seven SVG figures.
@@ -45,7 +53,19 @@ remaining quota unknown. The workbook's old one-entry instruction stays with a c
 No rescue-priority drug. Everolimus is an optional model-qualified mechanistic probe;
 HCQ reserve. Phase, endogenous allele effects, tissue response, clinical exposure and
 meaningful assay margins remain unresolved. Tumour killing is separate from non-cancer
-function. No GPU inference or wet-lab experiment occurred during this revision.
+function. V19 adds CUDA statistical reanalysis, not new neural-model inference or wet-lab work.
+
+All eight H100s completed three waves. 312,438 public compound profiles yielded
+12,185,082 query/compound comparisons and 560,000 reagent-set resamples; these are
+dependent observations and computational draws, not independent experiments. GPU
+utilization was bursty, not saturated. Primary operational query filters pass 0/14;
+post-hoc full filters pass 0/42. Preserve HT29's five-reagent projected q=0.042 partial
+positive; this prevents overclaiming biological disproof. Provider CGS membership is
+verified, but weighting, seed independence and on-target function remain unresolved.
+Everolimus has 13/19 positive primary raw correlations at 10 µM nominal culture
+exposure. Of 180 second-release labelled profiles, 174 have unresolved stereochemical
+metadata; the six reference-matching 0.1 µM profiles fail drug QC. Do not pool them or
+claim a dose curve. Qualify the perturbation before testing joint drug/deficit function.
 
 The v15 ledger has 63 sources, 11 unchanged decisions and 19 falsifiable claims.
 Primary protein ordering passes 12/12; post-hoc expanded-control separation fails 8/12;
@@ -60,6 +80,8 @@ hold; failed safety stops; all-pass permits preclinical review only.
 ./init.sh
 uv run --no-project python scripts/track2_public_review_v18.py
 uv run python scripts/check_track2_harness.py
+uv run --no-project python scripts/check_track2_transcriptome.py
+uv run --no-project python scripts/verify_track2_transcriptome_archive.py results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz
 uv run python scripts/track2_release_v18.py verify results/feat009/jvv7_track2_research_v18
 uv run python scripts/track2_bundle_v18.py verify
 ```
@@ -73,10 +95,20 @@ The isolated public checker passes without data/results/logs/.env/.git or networ
 hashes, publication checks and fresh-shell init output are in session 57 progress.
 No independent reviewer inspected this visual/editorial revision.
 
+V19 checked every archive member and retained null array locally; a separate SciPy
+implementation from original GCTX coordinates agrees on all 139 raw everolimus-labelled
+comparisons (max error <4.75e-8). This is numerical verification, not an independent
+scientific review. The new figure was visually checked; the initial legend spacing was
+corrected. Final regression counts, preservation checks and fresh init output are in
+session 58 progress. The v19 check is now part of `./init.sh`.
+
 ## Blockers
 
 - Biological advancement still needs endogenous function, subject phase, model/branch
   qualification, tissue response, matched exposure and justified benefit/injury margins.
+- Public transcriptomic query qualification failed. RNAi seeds/off-target effects,
+  selected-genotype transfer, joint-treatment response and chemical-identity gaps remain.
+  More correlations cannot close these gaps; neither can an arbitrary stricter filter.
 - Balnis units, secondary-control review, model dependence, cross-gene transfer and
   pretraining overlap remain limitations. More correlated structures do not resolve them.
 - Fireworks/earlier alignment-service handling remains unverified. OpenAI no-training
@@ -93,7 +125,8 @@ No independent reviewer inspected this visual/editorial revision.
 
 Rehearse and record the eight-slide pitch with the full acknowledgement inside three
 minutes. Resolve provider/distribution items and verify final portal materials. Research
-advancement begins with model/branch qualification and the existing falsification plan.
+advancement begins with model/branch qualification, the existing falsification plan
+and the v19 experimental requirements. No additional GPU jobs are pending.
 BindCraft2 remains deferred without a functional target and validation route.
 
 Raw subject files and narrative stay on the original machine and out of hosted context.

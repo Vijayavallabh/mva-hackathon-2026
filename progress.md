@@ -4588,3 +4588,180 @@ git rev-list --left-right --count HEAD...@{upstream}
 The requested slide redesign, concise report edit and competition-focused pitch rewrite
 are complete. Feat-009 remains in progress for the biological and delivery items listed
 in the handoff; no submission is claimed.
+
+## Session 58 — 2026-09-27: eight-H100 public transcriptome falsification campaign
+
+Owner requested extensive use of the other host's GPUs to improve Track 2. Only
+feat-009 was active. Applied the available-resources, scientific-critical-thinking,
+GPU-optimization and Matplotlib skills. Chose a new evidence type—public perturbation
+transcriptomes—rather than repeating the completed protein/structure/DNA campaign.
+No subagents or new hosted-model provider were used.
+
+Three completed CUDA waves used all eight H100 80GB GPUs on `PrakashDGX_H2`, exclusively
+under `/home/prachh/v/mva-track2-transcriptome-20260927`. Public NIH GEO data, code,
+plans and the uv-managed environment were the only inputs. No subject file, clinical
+narrative, `.env` or credential was transferred. All workers finished; the owned
+monitor was stopped after completion. Initial and each prelaunch occupancy check passed.
+Local NVML had a driver/library mismatch, so local GPU availability was unknown.
+
+New artifacts are routed from `notes/track2-current.json` as a **completed separate
+research addendum**, leaving the v18 presentation and v15 drug dispositions intact:
+
+- `notes/track2-transcriptome-v19.md`: findings, limits and revised experimental requirements.
+- `notes/track2-transcriptome-reproduction-v19.md`: executed commands, pinned sources,
+  environment, hardware measurements, corrections and reproduction instructions.
+- Three fixed plans; complete primary, second-release and post-hoc result JSON files;
+  chemical-identity and source reviews/audits; final scientific SVG.
+- `scripts/track2_transcriptome*.py`, versioned environment/lockfile and run wrappers:
+  preparation, CUDA computation, follow-up, original-GCTX audit and archive construction.
+- `scripts/check_track2_transcriptome.py`, archive verifier and audit builder; the
+  new public check is part of `./init.sh`. README, AGENTS, handoff and feature evidence
+  route the addendum. The remote directory is on the deletion inventory.
+
+Both GCTX downloads and checked metadata matched public upstream SHA512 entries.
+GSE92742 contributes 205,034 compound profiles; the specified GSE70138 release adds
+107,404. Fourteen BUB1B consensus contexts cover eleven exact cell identifiers.
+Thirty-nine raw/projected query vectors per release produce 12,185,082 comparisons
+over 978 measured landmarks. Complete cross-cell vectors remain exploratory; named
+interpretation matches cell context and retains doses/times. No inferred genes or
+silent subline pooling. Counts represent dependent profiles, not drugs or experiments.
+
+Primary reproducibility filters pass **0/14**. Whole-reagent resampling uses the same
+median-over-balanced-splits statistic and BH across fourteen contexts: 140,000 draws.
+The negative finding was itself challenged with a separately fixed post-hoc plan:
+verified exact provider consensus membership and shared-pattern removal, 420,000
+additional draws across 42 arm/context comparisons. Full filters pass **0/42**.
+Preserve HT29's favourable five-reagent projected split agreement 0.321, q=0.042;
+it fails the declared minimum of six. All-reagent projected HT29 q=0.067. These
+operational, uncalibrated filters do not establish biological disproof. Seed identity,
+off-target effects, weights, on-target potency and allele transfer remain unresolved.
+
+Everolimus has 13/19 positive primary raw correlations at 10 µM nominal exposure;
+these nineteen comparisons reuse fourteen matched drug profiles. Negative NPC/HCC515
+correlations change sign under shared-pattern removal. Of 180 second-release labelled
+profiles, 174 have unspecified/different stereochemical metadata. They remain separate
+unresolved identifiers; metadata does not prove vial identity. All six exact-reference
+0.1 µM profiles fail specified QC (single samples, missing replicate correlation,
+low activity). No qualified dose curve or expression-reversal drug ranking follows.
+
+Concrete revision: qualify endogenous BUBR1/function and independent genetic controls
+before using a perturbation signature; then measure drug-plus-deficit treatment and
+functional endpoints, with exact compound identity and exposure. Keep first-division
+segregation, daughter survival, sustained non-cancer function and tumour killing
+separate. HCQ does not gain priority by elimination. Everolimus remains an optional
+model-qualified mechanistic probe. Phase, clinical margins and efficacy are unchanged.
+
+Numerical/integrity verification:
+
+- All eight device registrations and completion records exist for each wave. TF32 off;
+  float32 connectivity, float64 resampling. All 78 complete score vectors are finite.
+  All 560,000 retained null draws were re-read locally and their reported empirical
+  tails recomputed, rather than trusting aggregate JSON alone.
+- A separate SciPy calculation read original GCTX coordinates for all 139 raw
+  everolimus-labelled comparisons, including unresolved identifiers. Maximum absolute
+  CPU/CUDA difference is 4.74258e-8. This is same-agent numerical verification, not
+  independent scientific review.
+- The 117,668,567-byte archive contains 457 regular files including its manifest.
+  All 456 manifested members passed local size/hash checks and safe-path validation.
+  Large genetic-reference matrices remain remote; the 421-file output inventory hashes
+  them. Archive SHA256: `2a5749f0cffaedce2eb68bba7a5b99ad5478dce57879808011ba168d67c56272`.
+- Three waves' longest worker wall times: 91.25, 23.25 and 13.92 seconds. These include
+  CPU work. Peak tensor allocation was under 2.53 GiB per worker. Five-second monitor
+  samples showed brief/bursty use, not saturation. No GPU-hour, full-utilization,
+  neural training or new neural-model inference claim is made.
+- An initial numerical test caught nonfinite rank input; the guard was corrected
+  before production. Mixed-type warnings concern unused metadata; dose strings are
+  preserved. “PC1” is explicitly clarified as the uncentered leading singular
+  direction. The frozen plans/results were not rewritten after inspection.
+- The final figure was visually checked; initial legend spacing was corrected.
+  The initial no-wait local init launch produced no completion receipt and is not
+  counted as passing. The tracked fresh-shell rerun below supplies actual completion.
+
+Checks executed:
+
+```bash
+uv run python scripts/build_track2_transcriptome_audit.py results/feat009/transcriptome-remote-v19 notes/track2-transcriptome-audit-v19.json
+uv run --no-project python scripts/check_track2_transcriptome.py
+uv run --no-project python scripts/verify_track2_transcriptome_archive.py results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+uv run python scripts/track1_submission.py --self-check
+uv run python scripts/track2_release_v18.py verify results/feat009/jvv7_track2_research_v18
+uv run python scripts/check_publication_remote.py --output results/feat009/transcriptome-publication-final-remote-20260927.json
+```
+
+**652 tests pass in 7.701 seconds** (`logs/track2-transcriptome-final-tests-20260927.log`).
+The archive verifier passes 457 files/456 member hashes. The v18 recursive preservation
+check passes 57 package files/316 bound inputs and historical v1–v17 preservation.
+Track 1 self-check passes. The final live publication guard confirms PUBLIC visibility,
+13 retired objects unavailable, zero unknown errors and a successful live-object control.
+No portal action, family contact or submission occurred. The existing biological,
+provider, licensing, video/hosting and receipt gaps remain in `session-handoff.md`.
+
+Fresh no-argument `./init.sh` completed from a new login shell with exit 0. Actual
+output (`logs/track2-transcriptome-final-init-b-20260927.log`):
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "presentation_version": 18,
+  "drug_science_version": 15,
+  "slides": 8,
+  "narration_words": 334,
+  "upload_ready": false,
+  "scope": "Public artifact/state consistency; not biological validation or submission preflight"
+}
+=== 8. public Track 2 transcriptome addendum ===
+{
+  "passed": true,
+  "genetic_contexts": 14,
+  "cell_types": 11,
+  "gpus": 8,
+  "resampled_reagent_sets": 140000,
+  "operational_query_gates_passed": 0,
+  "clinical_validation": false,
+  "drug_ranking_changed": false,
+  "post_hoc_resampled_reagent_sets": 420000
+}
+=== OK ===
+```
+
+The staged disclosure audit checks 428 blobs with zero findings. SVG export whitespace
+was normalized before publication; XML geometry and text are unchanged, and the
+prepublication artifact hashes were refreshed. End-of-session commands:
+
+```bash
+uv run python scripts/audit_publication.py --staged --output results/feat009/transcriptome-staged-final-disclosure-20260927.json
+git diff --cached --check
+git commit -m "Add eight-GPU public transcriptome falsification evidence for Track 2"
+uv run python scripts/audit_publication.py --output results/feat009/transcriptome-history-disclosure-20260927.json
+git push origin main
+git status --short
+git rev-list --left-right --count HEAD...@{upstream}
+```
+
+The requested compute campaign and research integration are complete. Feat-009 remains
+in progress for the biological and delivery gaps above; no clinical validation or
+competition submission is claimed.

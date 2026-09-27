@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-27",
+  "question": "Does public BUB1B knockdown provide a reproducible expression signature, and does everolimus oppose it after cell-context and shared-growth-program sensitivity checks?",
+  "registration_scope": "Fixed before opening expression values; dataset metadata, reagent counts and published signature QC were inspected. Earlier Track 2 conclusions are known. This is an exploratory public-data reanalysis, not a clinical validation or independent experiment.",
+  "dataset": "GSE92742",
+  "matrix": "GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx.gz",
+  "source": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92742/suppl/",
+  "integrity": "Compare all provided upstream SHA512 hashes; record SHA256 and bytes. Reject nonfinite values and duplicate/mismatched identifiers. Exactly 978 directly measured landmarks; inferred features are excluded.",
+  "query": {"gene": "BUB1B", "type": "trt_sh.cgs", "expected_contexts": 14, "expected_cell_types": 11},
+  "compound_universe": {"type": "trt_cp", "expected_profiles": 205034, "selection": "All profiles retained. Primary comparisons match cell_id; doses and times remain separate. Cross-cell matrix is exploratory and never substitutes for missing matched context."},
+  "named_compounds": ["everolimus", "sirolimus", "temsirolimus", "hydroxychloroquine", "chloroquine"],
+  "mechanism_controls": ["MTOR", "RPTOR"],
+  "growth_sensitivity_genes": ["CDK1", "CDK2", "PCNA", "RRM2", "POLA1", "CDC20", "KIF11", "PLK1"],
+  "analyses": [
+    "Rank-normalized landmark Spearman correlation for every BUB1B CGS versus every compound signature, retaining complete matrices.",
+    "Matched-context compound rankings and named-drug scores, per dose and time; metadata quality flag requires distil_nsample >= 3, distil_cc_q75 >= 0.2 and TAS >= 0.2. All failed profiles retained.",
+    "Rank-space sensitivity removing the first principal component of same-cell/time non-BUB1B shRNA profiles; do not label this a proven growth correction.",
+    "Rank-space sensitivity projecting out the span of available same-cell/time CGSs for the eight fixed proliferation/mitosis genes. Require >= 3 controls; this can remove genuine BUB1B biology and is only a specificity stress test.",
+    "Unique BUB1B shRNA reagent vectors (median across repeated signatures), target-transcript knockdown direction, all pairwise correlations, leave-one-reagent-out drug score ranges and all balanced half-splits (cap 1000 deterministically).",
+    "10000 same-cell/time non-BUB1B reagent-set resamples for split-half agreement, preserving complete gene vectors. Empirical tail area and BH across 14 contexts; not a clinical probability. Seed sequences and exact CGS membership are not verified.",
+    "All same-cell/time genetic CGSs versus matched-cell compound profiles for gene-specificity ranks and MTOR/RPTOR mechanism comparisons. These genes and profiles are dependent; empirical percentiles are descriptive, not p-values.",
+    "CPU float64 versus GPU float32 numerical comparison, TF32 disabled; maximum absolute correlation difference <= 2e-5. All eight explicitly assigned H100s process fixed context shards. Retain failures and all completed outputs."
+  ],
+  "seed": 20260927,
+  "resamples": 10000,
+  "operational_query_gate": {
+    "minimum_unique_reagents": 6,
+    "median_BUB1B_landmark_z": "< 0",
+    "median_pairwise_rank_correlation": "> 0",
+    "split_half_median_rank_correlation": "> 0",
+    "split_half_BH_q": "<= 0.05 across all 14 contexts"
+  },
+  "decision_rules": [
+    "Query-gate failure prevents a drug-ranking claim in that context; missing information is unknown rather than evidence of no drug effect.",
+    "A positive everolimus/BUB1B correlation contradicts expression-reversal support in that tested context, not all functional-benefit hypotheses.",
+    "A negative correlation is insufficient for rescue: require reproducible query, acceptable drug QC, consistency across relevant contexts, sensitivity checks and future direct function/safety measurements.",
+    "No pooled tumour/normal claim. ASC, NPC and immortalized HA1E are distinct model contexts; none is the child's tissue or selected allele pair.",
+    "No approved-drug promotion from an exploratory top hit, nominal culture concentration, correlation sign, empirical rank, GPU throughput or software pass.",
+    "Retain no rescue-priority drug, unknown clinical margins and unknown phase. Results can change experimental controls, model selection and the strength of the transcriptomic rationale."
+  ],
+  "limits": ["Knockdown is not the selected genotype", "No drug-plus-knockdown combination was measured", "No patient RNA", "shRNA off-target and shared seed effects", "CGS membership may differ from all available reagents", "6/24-hour drug versus 96/144/120/168-hour knockdown timing", "Compound availability and culture exposures are uneven", "No measured growth or chromosome-segregation endpoint in this reanalysis", "Pooled signature vectors are not independent biological replicates"],
+  "remote_root": "/home/prachh/v/mva-track2-transcriptome-20260927",
+  "protected_inputs": "None; only public NIH data and analysis code. No new model API, credentials or subject content.",
+  "presentation": "Preserve v18. Publish a separate v19 research addendum before any later presentation integration."
+}

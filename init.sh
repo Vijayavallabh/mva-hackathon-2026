@@ -46,4 +46,7 @@ echo "=== 6. offline annotation resources ==="
 echo "=== 7. current Track 2 harness ==="
 uv run python scripts/check_track2_harness.py
 
+echo "=== 8. public Track 2 transcriptome addendum ==="
+uv run python scripts/check_track2_transcriptome.py
+
 echo "=== OK ==="
