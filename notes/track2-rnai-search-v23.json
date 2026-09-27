@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-27",
+  "scope": "Targeted source discovery and contrary-evidence follow-up; not systematic",
+  "queries": [
+    "LINCS L1000 shRNA seed sequence off target CGS Smith 2017 dataset",
+    "GSE92742 shRNA hairpin sequence pert_id TRCN Broad",
+    "L1000 LINCS drug repurposing signature reversal proliferation confounding reproducibility limitations study",
+    "RNAi CRISPR disagreement essential genes partial knockdown knockout BUB1B seed effects"
+  ],
+  "reading": [
+    {"url":"https://doi.org/10.1371/journal.pbio.2003213","depth":"Primary article results, discussion and methods; selected supporting-information descriptions; no new supplement experiment claim"},
+    {"url":"https://ftp.ncbi.nlm.nih.gov/geo/series/GSE106nnn/GSE106127/suppl/","depth":"Directory, README and full signature metadata before plan; checksum-verified matrices afterward","retrieval":"web tool failed; direct HTTPS succeeded"},
+    {"url":"https://api.github.com/repos/iamsinht/rnaicrispr/git/trees/master?recursive=1","depth":"File tree; pinned get_data.m and modzs.m read, not executed","revision":"b30494958464142d0ff6985fceff2e374069ad25","retrieval":"web API open failed; direct HTTPS succeeded"},
+    {"url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC6821211/","depth":"Search-returned primary abstract and selected results"},
+    {"url":"https://doi.org/10.1038/s41598-021-97005-z","depth":"Search discovery and summary only; not a full-paper review"},
+    {"url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC5510182/","depth":"Search-returned primary summary only"}
+  ],
+  "limitations": ["Non-exhaustive search", "Reuse of the same public experiments", "No BUB1B CRISPR record", "No independent functional validation", "No new exposure or treatment evidence"]
+}

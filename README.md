@@ -93,6 +93,15 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
+**Session 63: eight-GPU RNAi falsification.** The [v23 addendum](notes/track2-rnai-v23.md)
+adds 1.54 billion pair comparisons and 5.84 million matched-control evaluations.
+Seed and batch controls weaken unqualified target attribution. HT29 retains a favorable
+signal, but finite-reference sensitivity removes the primary threshold crossings.
+[Five new claim challenges](notes/track2-rnai-register-v23.json) and
+[revised qualification controls](notes/track2-rnai-validation-v23.md) strengthen the
+next experiment. GPU execution was bursty; no independent BUB1B experiment or drug
+benefit is established. V22 presentation files remain frozen.
+
 **Session 62: presentation update.** The v22 report, eight-slide deck and 337-word
 narration give functional counterevidence its own slide and distinguish five decision
 outcomes. Computational qualification is combined without losing the HT29 exception
@@ -171,8 +180,8 @@ bursty, not saturated. [Execution, limits and reproduction](notes/track2-transcr
 are recorded. The v22 presentation and recording bundle now incorporate these findings
 and include the v19 narrative, figure and reproduction note.
 
-Start with the [combined reviewer guide](notes/track2-reviewer-guide-v22.md). One
-public CPU command checks the v22 materials and v19 research, including the reported
+Start with the [combined reviewer guide](notes/track2-reviewer-guide-v23.md). One
+public CPU command checks v23 RNAi, v22 materials and v19 research, including the reported
 counts, failed filters and HT29 counterweight. It needs no subject files, data/results
 folders, keys, network, Git history or model weights:
 
@@ -183,9 +192,9 @@ uv run --no-project python scripts/check_track2_harness.py
 The versioned v22 public reviewer and standalone transcriptome checker remain available
 for narrower checks. Use `scripts/track2_release_v22.py` for exact-byte v22 snapshots;
 the reviewer guide distinguishes exports, archive checks and full reproduction.
-All v1–v21 bound inputs/releases, the fixed v19 campaign and submitted Track 1 v4 are preserved.
+All v1–v22 bound inputs/releases, the fixed v19 campaign and submitted Track 1 v4 are preserved.
 The [current-artifact record](notes/track2-current.json) and
-[harness review](notes/track2-harness-review-v22.md) route the current work.
+[harness review](notes/track2-harness-review-v23.md) route the current work.
 `./init.sh` checks artifact versions, narration, original models, new falsification
 results and unresolved scientific/delivery status. The dated [official review](notes/track2-official-requirements-review-20260924.md)
 checked revision aeeef5ad49f51204a7439352e59e9d310aee5e9e; the

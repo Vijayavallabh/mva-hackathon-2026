@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "version": 23,
+  "supplements": "notes/track2-falsification-register-v21.json",
+  "drug_dispositions_changed": false,
+  "biological_validation": false,
+  "claims": [
+    {
+      "id": "R28",
+      "claim": "Independent BUB1B reagents support target attribution",
+      "support": "Ten distinct reagent IDs have distinct annotated 6-mer and 7-mer seeds.",
+      "challenge": "Alternative processing, potency and unintended targets remain unmeasured; distinct annotations alone do not establish independent biological effects.",
+      "falsifier": "Alternative mature products or target-engagement measurements reveal shared effects or lack of intended knockdown.",
+      "stop": "Do not qualify the perturbation based on IDs or annotations alone.",
+      "reopen": "Sequence-aware and independently measured target/function evidence.",
+      "next_action": "Include sequence/seed records, independent perturbation and restoration controls."
+    },
+    {
+      "id": "R29",
+      "claim": "The public BUB1B expression signature is predominantly on-target",
+      "support": "HT29 retains positive conditional coherence and target-transcript reduction.",
+      "challenge": "45/54 evaluable BUB1B reagent-context records have stronger different-target/same-seed than same-target similarity, separately in both spaces.",
+      "falsifier": "Matched off-target controls reproduce the claimed downstream functional effect without relevant BUB1B deficit.",
+      "stop": "No drug rescue inference from expression coherence alone.",
+      "reopen": "Joint deficit/drug testing in an independently qualified model with functional recovery and injury endpoints.",
+      "next_action": "Add same-seed/different-target and batch controls."
+    },
+    {
+      "id": "R30",
+      "claim": "The earlier failed reproducibility filter excludes useful BUB1B signal",
+      "support": "The fixed v19 full filter still fails in all 14 contexts.",
+      "challenge": "HT29 retains a processed six-reagent excess-coherence signal in the v23 batch reference; v19 also retained a five-provider-reagent partial positive.",
+      "falsifier": "Independent target-specific functional validation succeeds despite the earlier filter failure.",
+      "stop": "Do not equate operational filter failure with biological disproof.",
+      "reopen": "Relevant endogenous target/function evidence.",
+      "next_action": "Keep HT29 as a limited orthogonal-qualification lead, without transfer to non-cancer tissue or the child."
+    },
+    {
+      "id": "R31",
+      "claim": "A zero reference tail establishes strong confirmation",
+      "support": "Four positive-coherence seed-reference results exceed every enumerated control set.",
+      "challenge": "Finite seed references often contain only 4–40 sets; add-one sensitivity removes all five primary threshold crossings across the fixed 36-test family.",
+      "falsifier": "Coverage, null matching or multiplicity sensitivity removes the apparent support.",
+      "stop": "No calibrated FDR/probability claim; no promotion from zero exceedances.",
+      "reopen": "Prespecified adequately covered controls plus independent confirmation.",
+      "next_action": "Retain original and sensitivity results together; prespecify handling of finite references and missing controls."
+    },
+    {
+      "id": "R32",
+      "claim": "Orthogonal reference agreement validates the BUB1B/everolimus proposal",
+      "support": "The PRIME analysis places intended genes first in 21/297 comparisons and MTOR within ranks 1–13 of thousands of RNAi references.",
+      "challenge": "No BUB1B CRISPR observation, no joint drug/deficit experiment, selected targets, engineered-parent differences and dependent observations.",
+      "falsifier": "BUB1B perturbation/restoration or joint drug/deficit functional testing fails in the intended model.",
+      "stop": "No cross-gene transfer of biological qualification or drug benefit.",
+      "reopen": "Direct BUB1B and drug/function evidence satisfying v21 safeguards.",
+      "next_action": "Use MTOR as a method/mechanism reference while validating BUB1B and non-cancer function separately."
+    }
+  ]
+}

@@ -55,7 +55,7 @@
     "licensing_scope_resolved": false
   },
   "history": "progress.md",
-  "harness_review": "notes/track2-harness-review-v22.md",
+  "harness_review": "notes/track2-harness-review-v23.md",
   "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v22.zip",
   "document_directory": "results/feat009/v22-documents-final-b-20260927",
   "research_addendum": {
@@ -84,11 +84,31 @@
     "drug_ranking_changed": false,
     "archive": "results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz"
   },
-  "harness_version": 22,
+  "harness_version": 23,
   "current_review": {
     "script": "scripts/check_track2_harness.py",
-    "guide": "notes/track2-reviewer-guide-v22.md",
+    "guide": "notes/track2-reviewer-guide-v23.md",
     "readiness": "notes/track2-owner-readiness-v22.md",
     "isolation_audit": "scripts/audit_track2_harness.py"
+  },
+  "rnai_addendum": {
+    "version": 23,
+    "status": "complete",
+    "report": "notes/track2-rnai-v23.md",
+    "plan": "notes/track2-rnai-plan-v23.json",
+    "results": "notes/track2-rnai-results-v23.json",
+    "sensitivity": "notes/track2-rnai-tail-sensitivity-v23.json",
+    "audit": "notes/track2-rnai-audit-v23.json",
+    "validation": "notes/track2-rnai-validation-v23.md",
+    "register": "notes/track2-rnai-register-v23.json",
+    "check": "scripts/check_track2_rnai_v23.py",
+    "figure": "notes/track2-rnai-v23.svg",
+    "archive": "results/feat009/rnai-v23/rnai-v23-audit.tar.gz",
+    "gpus": 8,
+    "unordered_pair_comparisons": 1536619950,
+    "conditional_control_sets": 5843968,
+    "orthogonal_comparisons": 2364754,
+    "drug_ranking_changed": false,
+    "presentation_integration": "separate_addendum_v22_preserved"
   }
 }

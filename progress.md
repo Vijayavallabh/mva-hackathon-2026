@@ -5482,3 +5482,355 @@ git push origin main
 git status --short
 git rev-list --left-right --count HEAD...@{upstream}
 ```
+
+## 2026-09-27 — session 63: eight-H100 RNAi falsification
+
+Owner requested extensive use of the other host to strengthen Track 2. Only feat-009
+was active. Resource and scientific-critical-thinking skills guided a new, bounded
+public-data analysis of a consequential gap: target attribution versus RNAi seed/batch
+signals. The Matplotlib skill guided the review figure. No subject data or narrative
+left this machine; only public NIH inputs, scripts and the fixed plan were used remotely.
+
+`PrakashDGX_H2` had eight idle H100 80GB devices, 192 logical/96 physical CPU cores,
+about 978 GiB available RAM and 3.6 TiB free disk. Campaign root:
+`/home/prachh/v/mva-track2-rnai-20260927-v23`. The local resource detector could not
+see a usable GPU; this does not establish that the shared local host lacks hardware.
+The previous pinned uv environment was reused with `--no-sync`; the exact lock was
+retained. No system packages, new model provider or neural inference were used.
+
+Fixed plan `notes/track2-rnai-plan-v23.json` was written after public metadata/prior
+results were known, before opening these matrices. Plan SHA256:
+`f8d4edc7cc7dbbce9afb1ca10b45f4ea3ae5b02020a21942316871904e8cdeaf`.
+Direct HTTPS retrieved the NIH directory and authors' code after web-tool requests
+failed. The source note distinguishes full selected article-section reading from
+search-summary discovery. Four exact search queries are retained. No contact occurred.
+
+Completed all eight workers using the two checksum-verified 119,013×978 GSE106127
+matrices. Five data files match NIH SHA512 entries; the sixth download is the checksum
+listing. All 116,782 RNAi signature IDs and replicate-ID sets overlap v19. Outputs:
+
+- 1,536,619,950 unordered pair comparisons across raw/PRIME representations.
+- 5,843,968 conditional control-set evaluations, including exact enumeration where
+  small seed pools limit the reference and 100,000 draws per batch-matched test.
+- 2,364,754 orthogonal RNAi/CRISPR reference comparisons; 297 intended-gene comparisons
+  per representation. No BUB1B CRISPR observation is present.
+
+Counts are dependent computations, not biological replicates. All ten BUB1B reagents
+have different annotated 6-mer/7-mer seeds, resolving that metadata gap only. Actual
+processed products, potency and off-target transcripts remain unknown. In each
+representation, 45/54 evaluable BUB1B reagent-context records correlate more with
+unrelated same-seed reagents than same-target peers. HEPG2 lacks one required seed
+comparator; its two missing comparisons remain unknown.
+
+HT29 preserves a favorable six-reagent PRIME coherence signal: mean pair correlation
+0.1187, batch-reference tail 0.002370, fixed-family adjusted value 0.01422. It does not
+replace v19's different five-provider-reagent result or qualify a normal-tissue model.
+Four positive exact-reference results have zero exceedances from small sets; an
+additional negative-coherence MCF7 result also has zero exceedances. This prompted a
+labelled post-hoc finite-reference/dependence sensitivity. Add-one across all finite
+sets with the same 36-test family removes all five original operational crossings;
+HT29's adjusted batch value becomes 0.08532. Both original and sensitivity results
+are retained. Neither calculation establishes exchangeability or calibrated FDR.
+
+Other-gene/MTOR cross-technology agreement is a favorable method control, not BUB1B
+or drug qualification. The new report, five supplementary claim challenges, source
+record, figure and qualification revisions require same-seed controls, batch-aware
+allocation, finite-reference handling and independent target/function confirmation.
+No drug disposition, phase, clinical margin, wet-lab or delivery state was promoted.
+The existing v21 biological gates and 27-claim register remain in force.
+
+Execution used all eight registered GPU UUIDs. Worker wall times were 19.0–53.5 s;
+large matrix-product CUDA events alone were 0.098–0.132 s per worker and omit other
+work. Peak tensor allocation was 1.48–3.10 GiB. One-second monitoring recorded maxima
+0–9%; workload was bursty, not saturated. No owned job remains. No unrelated process
+was stopped. The campaign is added to the November 24 deletion inventory.
+
+The primary archive has 161 files, 76,185,162 bytes, SHA256
+`98809cd42b285cd1f5c88682738c758a6a210561e149ad76b2164eeddc92310e`.
+All 160 listed members verify locally without extraction. Twenty-four large arrays
+remain hash-inventoried remotely. The numerical auditor checks every retained pair
+matrix for finiteness and all 5,843,968 retained null statistics/tails; selected
+original GCTX coordinates checked through SciPy differ by at most 5.27e-8. This is
+an independent numerical implementation by the same agent, not independent scientific
+review. The new public audit binds 22 source/result/code/figure files and the archive.
+
+A test initially used exact floating-point equality for BH values; the test now uses
+1e-15 tolerance and production statistics were unchanged. Figure inspection found
+legend/footer overlap and clipping of a control range; the final PNG/PDF/SVG fixes both.
+Final exports are in `results/feat009/rnai-v23-figure-final/`; tracked SVG matches.
+No historical presentation file was edited.
+
+Harness v23 now checks the RNAi addendum alongside preserved presentation v22, science
+v21 and research v19. Updated current record, reviewer/harness guides, entry documents,
+feature evidence, handoff and cleanup inventory. The five v23 claim challenges are
+supplementary; the frozen v22 report/slides/script/workbook/ZIP do not include them yet.
+The biological, provider/distribution, video/hosting, live portal and receipt blockers
+remain explicitly recorded. No new submission or quota probe was attempted.
+
+Verification:
+
+- **784 Track 2 tests pass in 10.317 s**, `logs/track2-rnai-v23-tests-20260927.log`.
+- Track 1 submission self-check passes; historical evidence baseline passes with
+  53 sources/12 candidates (its old conditional label is historical).
+- All **433 v22-bound input hashes unchanged**; v22 recursive snapshot verification
+  passes. Results: `rnai-v23-preservation.json` and
+  `rnai-v23-preserved-release-verification.json` under `results/feat009/`.
+- Isolated public review passes in 0.3484 s with 532 copied public files and all six
+  guard probes blocked; no project venv, protected path, process, network or history
+  used. `results/feat009/rnai-v23-isolated-review.json`.
+- Live configured-origin guard: PUBLIC, all 13 retired objects unavailable, zero
+  unknown errors, current-object retrieval successful.
+- Primary archive verification: `results/feat009/rnai-v23/archive-verification.json`.
+
+Fresh no-argument startup output and end-of-session publication checks follow below.
+
+Fresh shell `./init.sh` exited 0. Actual output (`logs/track2-rnai-v23-final-init-20260927.log`):
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "harness_version": 23,
+  "presentation_version": 22,
+  "drug_science_version": 21,
+  "slides": 8,
+  "narration_words": 337,
+  "falsification_amendment": {
+    "passed": true,
+    "claims": 27,
+    "additional_source_records": 12,
+    "current_decision": {
+      "clinical_recommendation": false,
+      "scope": "qualified_non_cancer_model",
+      "evidence_kind": "not_measured",
+      "decision": "HOLD",
+      "reason": "Prerequisites unresolved or failed; no transfer from another branch"
+    },
+    "drug_dispositions_changed": false,
+    "biological_validation": false
+  },
+  "upload_ready": false,
+  "research_addendum": {
+    "version": 19,
+    "status": "complete",
+    "gpus": 8,
+    "completed_gpu_waves": 3,
+    "compound_profiles": 312438,
+    "query_compound_comparisons": 12185082,
+    "resampled_reagent_sets": 560000,
+    "primary_contexts": 14,
+    "primary_query_gates_passed": 0,
+    "post_hoc_comparisons": 42,
+    "post_hoc_full_filters_passed": 0,
+    "primary_everolimus_comparisons": 19,
+    "primary_everolimus_profiles": 14,
+    "primary_everolimus_positive_correlations": 13,
+    "phase2_unresolved_labelled_profiles": 174,
+    "phase2_reference_matching_profiles": 6,
+    "phase2_reference_matching_qc_passes": 0,
+    "ht29_post_hoc_reagents": 5,
+    "ht29_post_hoc_adjusted_tail": 0.041995800419958006,
+    "ht29_full_filter_passed": false,
+    "drug_ranking_changed": false
+  },
+  "rnai_addendum": {
+    "passed": true,
+    "version": 23,
+    "gpus": 8,
+    "unordered_pair_comparisons": 1536619950,
+    "null_sets": 5843968,
+    "orthogonal_comparisons": 2364754,
+    "primary_threshold_crossings": 5,
+    "finite_reference_threshold_crossings": 0,
+    "unknown_comparisons": 2,
+    "seed_comparison": {
+      "raw": {
+        "available": 54,
+        "seed_greater": 45
+      },
+      "prime": {
+        "available": 54,
+        "seed_greater": 45
+      }
+    },
+    "orthogonal_reference": {
+      "raw": {
+        "comparisons": 297,
+        "top1": 14,
+        "top5percent": 84
+      },
+      "prime": {
+        "comparisons": 297,
+        "top1": 21,
+        "top5percent": 93
+      }
+    },
+    "independent_bub1b_experiment": false,
+    "drug_ranking_changed": false,
+    "biological_validation": false
+  },
+  "biological_validation": false,
+  "scope": "Combined public presentation/research consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```
+
+Publication closeout commands (results retained under `results/feat009/`):
+
+```bash
+uv run python scripts/audit_publication.py --staged --output results/feat009/rnai-v23-staged-disclosure.json
+git diff --cached --check
+git commit -m "Test Track 2 RNAi attribution with eight-GPU falsification"
+uv run python scripts/audit_publication.py --output results/feat009/rnai-v23-history-disclosure.json
+git push origin main
+git status --short
+git rev-list --left-right --count HEAD...@{upstream}
+```
+
+Final publication formatting check found trailing whitespace generated by Matplotlib
+in the SVG. It was stripped in both retained SVG copies, and the plot exporter now
+normalizes trailing whitespace. The new prepublication public-audit binding was
+refreshed; the primary GPU archive and all 433 historical inputs were unchanged.
+A fresh reproduction produces an identical PNG. After this correction, all **784
+Track 2 tests pass in 9.718 s** (`logs/track2-rnai-v23-tests-final-20260927.log`).
+The final isolated public review passes in 0.5203 s with 532 files and six blocked
+probes (`results/feat009/rnai-v23-isolated-review-final.json`). The staged disclosure
+audit passes **536 blobs / zero findings**. Shell wrappers pass `bash -n`.
+
+Final fresh-shell startup after the formatting correction exited 0. Actual output
+(`logs/track2-rnai-v23-final-init-b-20260927.log`):
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "harness_version": 23,
+  "presentation_version": 22,
+  "drug_science_version": 21,
+  "slides": 8,
+  "narration_words": 337,
+  "falsification_amendment": {
+    "passed": true,
+    "claims": 27,
+    "additional_source_records": 12,
+    "current_decision": {
+      "clinical_recommendation": false,
+      "scope": "qualified_non_cancer_model",
+      "evidence_kind": "not_measured",
+      "decision": "HOLD",
+      "reason": "Prerequisites unresolved or failed; no transfer from another branch"
+    },
+    "drug_dispositions_changed": false,
+    "biological_validation": false
+  },
+  "upload_ready": false,
+  "research_addendum": {
+    "version": 19,
+    "status": "complete",
+    "gpus": 8,
+    "completed_gpu_waves": 3,
+    "compound_profiles": 312438,
+    "query_compound_comparisons": 12185082,
+    "resampled_reagent_sets": 560000,
+    "primary_contexts": 14,
+    "primary_query_gates_passed": 0,
+    "post_hoc_comparisons": 42,
+    "post_hoc_full_filters_passed": 0,
+    "primary_everolimus_comparisons": 19,
+    "primary_everolimus_profiles": 14,
+    "primary_everolimus_positive_correlations": 13,
+    "phase2_unresolved_labelled_profiles": 174,
+    "phase2_reference_matching_profiles": 6,
+    "phase2_reference_matching_qc_passes": 0,
+    "ht29_post_hoc_reagents": 5,
+    "ht29_post_hoc_adjusted_tail": 0.041995800419958006,
+    "ht29_full_filter_passed": false,
+    "drug_ranking_changed": false
+  },
+  "rnai_addendum": {
+    "passed": true,
+    "version": 23,
+    "gpus": 8,
+    "unordered_pair_comparisons": 1536619950,
+    "null_sets": 5843968,
+    "orthogonal_comparisons": 2364754,
+    "primary_threshold_crossings": 5,
+    "finite_reference_threshold_crossings": 0,
+    "unknown_comparisons": 2,
+    "seed_comparison": {
+      "raw": {
+        "available": 54,
+        "seed_greater": 45
+      },
+      "prime": {
+        "available": 54,
+        "seed_greater": 45
+      }
+    },
+    "orthogonal_reference": {
+      "raw": {
+        "comparisons": 297,
+        "top1": 14,
+        "top5percent": 84
+      },
+      "prime": {
+        "comparisons": 297,
+        "top1": 21,
+        "top5percent": 93
+      }
+    },
+    "independent_bub1b_experiment": false,
+    "drug_ranking_changed": false,
+    "biological_validation": false
+  },
+  "biological_validation": false,
+  "scope": "Combined public presentation/research consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```
+
+Additional matching-metadata crosscheck: {"signatures": 119013, "duplicate_distil_id_records": 0, "missing_metrics": 0, "count_mismatches": 0, "count_semantics": "distinct provider replicate IDs, not independent donors"}.

@@ -6,6 +6,9 @@ import json
 import re
 from pathlib import Path
 
+RNAI_STATE = {'version': 23, 'status': 'complete', 'report': 'notes/track2-rnai-v23.md', 'plan': 'notes/track2-rnai-plan-v23.json', 'results': 'notes/track2-rnai-results-v23.json', 'sensitivity': 'notes/track2-rnai-tail-sensitivity-v23.json', 'audit': 'notes/track2-rnai-audit-v23.json', 'validation': 'notes/track2-rnai-validation-v23.md', 'register': 'notes/track2-rnai-register-v23.json', 'check': 'scripts/check_track2_rnai_v23.py', 'figure': 'notes/track2-rnai-v23.svg', 'archive': 'results/feat009/rnai-v23/rnai-v23-audit.tar.gz', 'gpus': 8, 'unordered_pair_comparisons': 1536619950, 'conditional_control_sets': 5843968, 'orthogonal_comparisons': 2364754, 'drug_ranking_changed': False, 'presentation_integration': 'separate_addendum_v22_preserved'}
+RNAI_AUDIT_SHA256 = '27bff5205ea443acdfe1dbb8863f21725af36af3e7400199bcea3345cdf9cb3c'
+
 ROOT = Path(__file__).resolve().parents[1]
 STATUS = {
     'rescue_priority': None, 'everolimus': 'mechanistic_probe_only', 'hcq': 'reserve',
@@ -17,7 +20,7 @@ STATUS = {
 CURRENT_REVIEW = {
     'script': 'scripts/check_track2_harness.py',
     'isolation_audit': 'scripts/audit_track2_harness.py',
-    'guide': 'notes/track2-reviewer-guide-v22.md',
+    'guide': 'notes/track2-reviewer-guide-v23.md',
     'readiness': 'notes/track2-owner-readiness-v22.md',
 }
 RESEARCH_PATHS = {
@@ -100,9 +103,10 @@ def validate(state, features, documents):
             'Stale or unsafe render-directory path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['document_directory']),
             'Stale or unsafe document-directory path')
-    require(state.get('harness_version') == 22 and
-            state['harness_review'] == 'notes/track2-harness-review-v22.md', 'Stale harness review')
+    require(state.get('harness_version') == 23 and
+            state['harness_review'] == 'notes/track2-harness-review-v23.md', 'Stale harness review')
     require(state.get('current_review') == CURRENT_REVIEW, 'Missing or stale combined review route')
+    require(state.get('rnai_addendum') == RNAI_STATE, 'Missing or inconsistent RNAi addendum')
     addendum = state.get('research_addendum')
     expected = RESEARCH_PATHS | RESEARCH_STATE
     require(isinstance(addendum, dict) and addendum == expected and
@@ -116,7 +120,7 @@ def validate(state, features, documents):
                 'ledger': state['drug_science_version'], 'evidence': state['drug_science_version'],
                 'validation': state['drug_science_version'], 'harness': state['harness_version'],
                 'research': addendum['version'], 'addendum': addendum['version'],
-                'transcriptome': addendum['version'],
+                'transcriptome': addendum['version'], 'rnai': 23,
             }
             expected = role_versions.get(role.lower(), version)
             require(int(found)==expected, 'Historical version mislabeled current: '+name)
@@ -224,12 +228,16 @@ def check(root=ROOT):
     for field in ['gpus', 'compound_profiles', 'query_compound_comparisons', 'resampled_reagent_sets',
                   'primary_query_gates_passed', 'drug_ranking_changed']:
         require(state['research_addendum'][field] == summary[field], 'Current research summary drift: '+field)
-    return dict(passed=True, active_feature='feat-009', harness_version=22,
+    rnai_audit = public_path(root, RNAI_STATE['audit']).read_bytes()
+    require(hashlib.sha256(rnai_audit).hexdigest() == RNAI_AUDIT_SHA256, 'Frozen RNAi audit changed')
+    rnai = importlib.import_module('check_track2_rnai_v23').check(root)
+    require(rnai['passed'], 'RNAi review failed')
+    return dict(passed=True, active_feature='feat-009', harness_version=23,
                 presentation_version=state['presentation_version'],
                 drug_science_version=21, slides=presentation['slides'],
                 narration_words=presentation['narration_words'], falsification_amendment=presentation['falsification_amendment'], upload_ready=False,
                 research_addendum=dict(version=19, status='complete', **summary),
-                biological_validation=False,
+                rnai_addendum=rnai, biological_validation=False,
                 scope='Combined public presentation/research consistency; not biological validation or submission preflight')
 
 

@@ -90,13 +90,32 @@ remain null. Keep invalid assays, imprecision, scoped futility and safety stops 
 Requirements remain the dated September 24-25 review, not a new live portal audit.
 
 Use scripts/check_track2_harness.py,
-[notes/track2-reviewer-guide-v22.md](notes/track2-reviewer-guide-v22.md) and
+[notes/track2-reviewer-guide-v23.md](notes/track2-reviewer-guide-v23.md) and
 [notes/track2-owner-readiness-v22.md](notes/track2-owner-readiness-v22.md).
-Harness and presentation are v22; the evidence amendment and validation remain v21. The frozen public campaign
+Harness is v23 and presentation is v22; the evidence amendment and validation remain v21. The frozen public campaign
 remains notes/track2-transcriptome-v19.md; preserve every earlier bound input and
-release through v21. The v22 recording ZIP is not a recorded video. Public searches
+release through v22. The v22 recording ZIP is not a recorded video. Public searches
 added no model provider or GPU inference; biological qualification is the next
 discriminating work. See notes/track2-falsification-review-v21.md for search gaps.
+
+- **Session 63 seed/batch RNAi falsification (2026-09-27):** new research is
+  `notes/track2-rnai-v23.md`, with fixed plan, complete results, five additional claim
+  challenges, qualification revisions and public checker. All eight H100s completed
+  1,536,619,950 pair comparisons, 5,843,968 conditional control evaluations and
+  2,364,754 orthogonal reference comparisons. This is CUDA statistics, not new neural
+  inference. All 116,782 RNAi signatures and replicate-ID sets overlap v19; counts
+  are dependent computations, not independent experiments. All ten BUB1B reagents
+  have distinct annotated seeds; actual processed products and potency are unknown.
+  Same-seed similarity exceeds same-target similarity in 45/54 evaluable BUB1B
+  reagent-context records per representation. HT29 retains favorable PRIME coherence;
+  the five primary operational threshold crossings become zero in the labelled
+  finite-reference sensitivity. Neither tail calculation establishes calibrated FDR.
+  HEPG2 lacks a seed control; unknown is not a negative. Other-gene RNAi/CRISPR
+  agreement, including MTOR, cannot qualify BUB1B: no BUB1B CRISPR record is present.
+  Use `notes/track2-rnai-validation-v23.md` alongside v21 biological safeguards.
+  All primary outputs and the 161-file archive are preserved. Eight GPUs executed
+  briefly; monitoring does not support sustained/full utilization. No owned job is
+  pending. The combined harness is v23; frozen v22 presentation and v19 research remain.
 
 - **Session 58 public transcriptome addendum (2026-09-27):** use
   `notes/track2-transcriptome-v19.md` and its fixed plans, complete results and audit.
@@ -170,7 +189,8 @@ directories. Render with `scripts/render_track2_slides_v22.mjs`; export the repo
 workbook with `scripts/track2_export_documents_v22.py` followed by
 `scripts/render_track2_report_v22.mjs`. Recording materials use
 `scripts/track2_bundle_v22.py`; historical research retains AF3 notices.
-The combined public reviewer needs no data/results folders, keys, network, GPUs or old
+The combined public reviewer checks v23 RNAi alongside v22/v21/v19 and needs no
+data/results folders, keys, network, GPUs or old
 local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
 The versioned `scripts/track2_public_review_v22.py` checks the integrated presentation
 and frozen research; `scripts/check_track2_transcriptome.py` checks v19 alone.
@@ -199,6 +219,7 @@ uv run python scripts/track1_submission.py --self-check
 uv run python scripts/track2_evidence.py check
 uv run python scripts/check_track2_harness.py
 uv run --no-project python scripts/check_track2_transcriptome.py
+uv run --no-project python scripts/check_track2_rnai_v23.py
 uv run --no-project python scripts/track2_falsification_v21.py
 uv run --no-project python scripts/track2_public_review_v22.py
 uv run python scripts/track2_release_v22.py check

@@ -18,6 +18,9 @@ Delete, from every environment:
   GEO inputs, uv environment/cache, derived matrices, logs and archives. This
   campaign uses public cell-line perturbation data only; it contains no transferred
   subject files. Include it in the project's remote cleanup inventory.
+- `/home/prachh/v/mva-track2-rnai-20260927-v23/` in full: public GSE106127
+  inputs, prepared/raw/PRIME arrays, complete correlation matrices, controls, logs,
+  cache and archives. No subject content was transferred.
 - any intermediate BAM/VCF outside this repo
 - feat-007 recovery bundles, mirror clones and replacement maps in `results/feat007/`
 - local unreachable Git objects and reflogs retained during feat-007 recovery; coordinate

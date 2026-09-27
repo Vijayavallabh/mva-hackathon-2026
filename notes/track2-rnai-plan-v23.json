@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "version": 23,
+  "date": "2026-09-27",
+  "question": "Can the public BUB1B RNAi expression signal be distinguished from seed-associated and batch-associated signatures, and does the same analysis recover orthogonal RNAi/CRISPR agreement?",
+  "registration": "Fixed after reading GSE106127 signature metadata and prior v19 results, before opening GSE106127 expression matrices. Exploratory follow-up using overlapping public experiments, not independent validation.",
+  "dataset": "GSE106127",
+  "source": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE106nnn/GSE106127/suppl/",
+  "matrices": {
+    "raw": "GSE106127_level_5_modz_n119013x978.gctx.gz",
+    "prime": "GSE106127_level_5_PRIME_modz_n119013x978.gctx.gz"
+  },
+  "spaces": ["raw", "prime"],
+  "cells": ["A375", "A549", "HA1E", "HCC515", "HEPG2", "HT29", "MCF7", "PC3", "VCAP"],
+  "crispr_pairs": {"A375":"A375.311", "A549":"A549.311", "HA1E":"HA1E.311", "HT29":"HT29.311", "MCF7":"MCF7.311", "PC3":"PC3.311"},
+  "primary_gene": "BUB1B",
+  "expected_signatures": 119013,
+  "expected_rnai_signatures": 116782,
+  "expected_bub1b_signatures": 55,
+  "expected_landmarks": 978,
+  "integrity": "Validate every downloaded file with NIH SHA512; exact matrix/metadata ID joins, finite values, unique reagents per cell, identical gene/signature ordering across raw and PRIME; match v19 signature IDs and underlying distil_id sets and report overlap.",
+  "seed_definition": "Use deposited seed_seq_6mer and seed_seq_7mer literally, excluding missing/non-ACGT annotations. These are annotated seeds, not directly sequenced mature RNA products; alternative processing remains untested.",
+  "analysis": [
+    "On each GPU compute the complete same-cell RNAi by RNAi Spearman matrix over all 978 measured landmarks, separately for raw and deposited PRIME. Retain matrices and identifiers. No new PC removal is fitted; PRIME is the authors' deposited processed representation, not the earlier v19 rank-space projection.",
+    "Summarize all unordered pairs in mutually explicit classes: same gene/different 6mer seed, different gene/same 6mer, different gene/same 7mer (nested sensitivity), and different gene/different 6mer. Report counts, means, exact selected-class quantiles and background histograms. Pairs share reagents and are not independent replicates; no pairwise population p-values.",
+    "For each BUB1B reagent, report target transcript z/rank, same-gene/different-seed correlations, different-gene/same-seed correlations and source batch. Compute mean pairwise correlation across the full BUB1B reagent set, without dropping unfavorable reagents.",
+    "Seed-matched null: one different-target reagent with the same 6mer for each BUB1B reagent in that cell/time, excluding BUB1B and requiring all selected target genes distinct. Enumerate every combination if the Cartesian product has at most 3000000 members. If larger, draw 100000 accepted sets with a fixed seed. If any pool is empty or no valid set exists, record unknown; do not substitute unmatched draws. Enumeration tail is exact count/total with ties included; sampled tail uses (count+1)/(draws+1). Retain null arrays and pool identities. Seed matching alone does not control batch or potency.",
+    "Batch/replicate-count null: one different-target reagent for each BUB1B reagent matched to its signature batch prefix and number-of-distil-IDs bin (1,2,3+), with distinct target genes and distinct 6mer seeds across the selected set. Draw 100000 accepted sets. Matching does not establish exchangeability or clinical calibration. Use the identical mean-pair statistic in observed and null samples.",
+    "Adjust the primary BUB1B tail areas together across 9 cells x 2 spaces x 2 nulls using BH, counting missing tests as p=1 in the fixed family of 36. Do not replace the v19 gate or call a statistical pass biological qualification. A q<=0.05 result with positive correlation is evidence of excess coherence only under that null.",
+    "Orthogonal reference: construct equal-weight mean expression signatures for every RNAi target and each of the 53 CRISPR target genes per available engineered-parent pair; rank-normalize the averages. Score every CRISPR query against every RNAi consensus in its paired parental line and record the intended-gene rank, top-1/top-5/top-10 percentiles, all results and held-out target-mRNA direction where measured. Repeat raw and PRIME. Engineered lines are not identical to parental lines; this selected panel is not a random validation set. BUB1B has no CRISPR profile, so other-gene agreement cannot qualify BUB1B. MTOR is a separately labelled mechanism control; no drug response is measured."
+  ],
+  "null_draws": 100000,
+  "max_exact_seed_combinations": 3000000,
+  "seed": 20260929,
+  "gpu_count": 8,
+  "assignment": "Cell index modulo eight; worker zero also processes VCAP. Each worker computes both spaces and available orthogonal controls. No unrelated jobs stopped.",
+  "numeric_validation": "Disable TF32; float32 CUDA matrix products, float64 CPU Spearman reference; verify selected pairs and null statistics within 2e-5. Reject nonfinite/constant vectors. Preserve registrations, failures, GPU UUIDs and one-second utilization/memory samples. Do not call wall time kernel time or claim saturation from model names.",
+  "decisions": [
+    "Shared seeds within BUB1B would reduce independent reagent support; distinct annotated seeds resolve only that specific gap.",
+    "BUB1B similarity to unrelated same-seed reagents or failure against conditional nulls weakens unqualified on-target attribution. It does not prove all BUB1B effects are off-target.",
+    "Positive conditional coherence and orthogonal reference recovery constrain overly broad dismissal of RNAi, but neither establishes endogenous allele function, combination efficacy, normal-tissue benefit or clinical exposure.",
+    "Retain no rescue-priority drug, everolimus as an optional model-qualified mechanistic probe, HCQ reserve, unknown phase/exposure and no wet-lab experiment. Upgrade the reagent/assay qualification plan and retain favorable and unfavorable results."
+  ],
+  "remote_root": "/home/prachh/v/mva-track2-rnai-20260927-v23",
+  "data_boundary": "Only public NIH data, public code and plans. No subject input, narrative, credentials, hosted inference or external model API.",
+  "delivery": "New v23 research addendum and public checker; preserve frozen v22 presentation and all previous releases. Record this addendum in the current harness."
+}

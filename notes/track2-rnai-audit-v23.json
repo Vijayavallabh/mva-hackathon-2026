@@ -1,0 +1,754 @@
+{
+  "version": 23,
+  "public_input_sha256": {
+    "notes/track2-rnai-plan-v23.json": "f8d4edc7cc7dbbce9afb1ca10b45f4ea3ae5b02020a21942316871904e8cdeaf",
+    "notes/track2-rnai-results-v23.json": "1113042c54d16ace51d5d8ab09a5425a5078d85699a01f5c800a4fe87141fdff",
+    "notes/track2-rnai-tail-sensitivity-v23.json": "37beeb557ec3067ad7f8176f3b703412f401bc0f6df36b72e53b277cbe4d4c4b",
+    "notes/track2-rnai-register-v23.json": "dc8ff5c21e5e2dd7ca57e8f5ec1ee2dbe27c056cd677cdfcc6148222bdc167ea",
+    "notes/track2-rnai-search-v23.json": "d76b86ba117252af9b4a5e3778dc9fbaa038772b8d158fc1ca3f7864a0969701",
+    "notes/track2-rnai-sources-v23.md": "e2faf4ccebc8583fbc231699372c5aa5dd40b4612eed8fba6e8cc7bc17ed58a0",
+    "notes/track2-rnai-validation-v23.md": "9bb9fde47118d2fa739c66c56e07690a22e92eb38e42a1e78ce237e1412336a0",
+    "notes/track2-rnai-v23.md": "9ff0bfab7d31e3e533aa2f6330bd390c23201227224a0f4db249edab8430ad17",
+    "notes/track2-rnai-v23.svg": "066ed2d44fd82717388ecc7b8e28e1b08265e9700ec967155280dbc556debc83",
+    "scripts/track2_rnai_v23.py": "2c72dbd8e14aeebb7d53b2131e91cf6f239e829e7b78301aa03faceacac8548c",
+    "scripts/track2_rnai_tail_sensitivity_v23.py": "c0aecac7f98aba3c5efd517534e53c71d0cd08de11203d27a138f437b11f9e9a",
+    "scripts/audit_track2_rnai_v23.py": "f41eb374df85efdf192dfe458df0292e96081af5a21895de29e870af0752bbbd",
+    "scripts/verify_track2_rnai_archive_v23.py": "82dcdf1fd077af003a7f417e9640fa6ed0727c70d2373068812d2a09fa0947fd",
+    "scripts/plot_track2_rnai_v23.py": "72c4494a0c413b4139184d2f301bfb1b7eaeacbfcc1481ab0ba0a65577bc6d7d",
+    "scripts/check_track2_rnai_v23.py": "e4619a7a53c78630b8854a660182dba072aed9274b4376d8390732ec825ed144",
+    "scripts/test_track2_rnai_v23.py": "b626acbd4e1dcd4b40a8c4dc847efc390bae302ce31ef1387a397d4191e00fdc",
+    "scripts/test_track2_rnai_check_v23.py": "9f4b7aad17531d9b4af6a7a39c6fc2d92890bcc8b3d974843fbdc6b2f6abd55e",
+    "scripts/build_track2_rnai_audit_v23.py": "e7edc21826836ef349a1402119a69c96b128e76954d4b695b7da0096b41ff0b2",
+    "scripts/run_track2_rnai_download_v23.sh": "afc63817c8665ca66f6f819b347861019d5b71e03f8d326090abfbef64752989",
+    "scripts/run_track2_rnai_v23.sh": "6eb9cbefad69910abc8761774638664574632797854db4fd150ba260c1fe0f06",
+    "scripts/track2_transcriptome_environment.toml": "5ededc05d6cd50859c19a80bd65a051cfe7ad79fb7ed5f0bd2c4f174cb6e5fed",
+    "scripts/track2_transcriptome.uv.lock": "6f1b32915546f8a46c86f1674fa5a9ffc240d04363144ee9349a76aa5e164bfc"
+  },
+  "archive": {
+    "path": "rnai-v23-audit.tar.gz",
+    "bytes": 76185162,
+    "sha256": "98809cd42b285cd1f5c88682738c758a6a210561e149ad76b2164eeddc92310e",
+    "files": 161,
+    "full_inventory_files": 184,
+    "omitted_files": 24
+  },
+  "archive_verification": {
+    "passed": true,
+    "files": 161,
+    "checked_members": 160,
+    "bytes": 76185162,
+    "sha256": "98809cd42b285cd1f5c88682738c758a6a210561e149ad76b2164eeddc92310e",
+    "extracted": false,
+    "code_executed": false,
+    "biological_validation": false
+  },
+  "preparation": {
+    "created_utc": "2026-09-27T15:53:41.997586+00:00",
+    "plan_sha256": "f8d4edc7cc7dbbce9afb1ca10b45f4ea3ae5b02020a21942316871904e8cdeaf",
+    "script_sha256": "2c72dbd8e14aeebb7d53b2131e91cf6f239e829e7b78301aa03faceacac8548c",
+    "source": [
+      {
+        "path": "inputs/GSE106127_gene_info.txt.gz",
+        "bytes": 17230,
+        "sha256": "060380e8c909d76965e4a4916c529d9330e73f98e4da5cc710e2cc2c3010af4b",
+        "sha512": "6ded16d46b7a54760a4fdc23d4ed1dd94299f1ec79def1f2e5377816b74542fcd0fcd0297f0c7b7f96bc4df44a721418c9d5678b4565da268d5dac9230756619"
+      },
+      {
+        "path": "inputs/GSE106127_level_5_PRIME_modz_n119013x978.gctx.gz",
+        "bytes": 499960632,
+        "sha256": "3c3d36491adb4b73969bc75c5bff0f73abe1c06a6bedafafa2af1bc1e2448475",
+        "sha512": "ee8236d797270b569bcbbad5f0ae3a9b662b6ba5301c7fc8656388735239fb2e99e67fa3b0c29fc92dc6156053f937b25400f8637572ab577c096c8ef3fce1f0"
+      },
+      {
+        "path": "inputs/GSE106127_level_5_modz_n119013x978.gctx.gz",
+        "bytes": 486343173,
+        "sha256": "b4813293cecb772b6d60609f1de79550e3dc193ab25fa97b85d98aacde05cc47",
+        "sha512": "a5243643b6a6a1073ec7f16bf8bba4d9f3cf422b3a8e89ae50a4fbf782148ce9e333420444b37169b037389520bba8f08621b2f2dde50ebf89d6663ba8ddb1a1"
+      },
+      {
+        "path": "inputs/GSE106127_sig_info.txt.gz",
+        "bytes": 3151251,
+        "sha256": "9f339d22ec63bf1faa43ea5e67e990838ce29df55aff209879139415370c7949",
+        "sha512": "98975a522d31254b5b3af75c2f89e4dfabbe652d7760e45d003c1b77dc99a1654dce51d18faf0e91fd47bf85947645882dd6f213efbe3a6651ffd142db7fe899"
+      },
+      {
+        "path": "inputs/GSE106127_sig_metrics.txt.gz",
+        "bytes": 5587480,
+        "sha256": "c2dd2412b3766befcb1d1171757c13cdaad933f83bd8159692a5d2593c7a7c12",
+        "sha512": "843cd26d5a4fac71a5cc48758939776d844aaef424c7a0ea933a879034c9bc773e08d1425d1f921807b4ec000b5e9e52cc47425744aade6a3761ce7c519f0192"
+      }
+    ],
+    "matrices": [
+      {
+        "space": "raw",
+        "shape": [
+          119013,
+          978
+        ],
+        "sha256": "a12c8d2a0df40a31cac56e7b606b52fbf8e5d5bd0778e113f968d49f0d90c961"
+      },
+      {
+        "space": "prime",
+        "shape": [
+          119013,
+          978
+        ],
+        "sha256": "95b29f6fd693e5eecbaf18dc1e774a714a565fbb14fa9c55293fdb45dbe7722a"
+      }
+    ],
+    "metadata_sha256": "b0a6c4e746f111a93bc09c10971825a0e508c1f1d59485e2eda94e8f21daf7f4",
+    "genes_sha256": "6a30b8d5008d039c999f1c1c86d745f13e09d4383dea9b732b6bc26d9b75c821",
+    "v19_metadata_sha256": "caeb838f0424e4ab7e97e37d1dce0286a5ff4cc6bd1e35c62ba51e96ae44fa13",
+    "v19_exact_signature_overlap": 116782,
+    "v19_same_distil_id_sets": 116782,
+    "v19_bub1b_overlap": 55,
+    "elapsed_seconds": 17.850486134993844
+  },
+  "numerical": {
+    "passed": true,
+    "source": "Original GCTX read with h5py; independent scipy.stats.spearmanr",
+    "independent_reviewer": false,
+    "biological_validation": false,
+    "cells": [
+      {
+        "cell": "A375",
+        "space": "raw",
+        "bub1b_pair_comparisons": 15,
+        "original_coordinate_mean_error": 2.8206380231488026e-08,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 40,
+            "original_coordinate_sample_error": 6.396037421918521e-09
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "A549",
+        "space": "raw",
+        "bub1b_pair_comparisons": 15,
+        "original_coordinate_mean_error": 1.229561116811162e-08,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 40,
+            "original_coordinate_sample_error": 2.754062013632288e-08
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "HA1E",
+        "space": "raw",
+        "bub1b_pair_comparisons": 15,
+        "original_coordinate_mean_error": 1.995338187732454e-08,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 40,
+            "original_coordinate_sample_error": 2.154225721591463e-08
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "HCC515",
+        "space": "raw",
+        "bub1b_pair_comparisons": 15,
+        "original_coordinate_mean_error": 1.6410575426773627e-08,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 40,
+            "original_coordinate_sample_error": 5.265805542303825e-08
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "HEPG2",
+        "space": "raw",
+        "bub1b_pair_comparisons": 15,
+        "original_coordinate_mean_error": 2.401887811689582e-08,
+        "nulls": [
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "HT29",
+        "space": "raw",
+        "bub1b_pair_comparisons": 15,
+        "original_coordinate_mean_error": 2.3092041070982283e-08,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 20,
+            "original_coordinate_sample_error": 8.610702123545977e-09
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "MCF7",
+        "space": "raw",
+        "bub1b_pair_comparisons": 3,
+        "original_coordinate_mean_error": 2.264225644997564e-08,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 4,
+            "original_coordinate_sample_error": 2.6962350234416288e-08
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "PC3",
+        "space": "raw",
+        "bub1b_pair_comparisons": 15,
+        "original_coordinate_mean_error": 2.065876827245239e-09,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 40,
+            "original_coordinate_sample_error": 1.076252075654649e-08
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "VCAP",
+        "space": "raw",
+        "bub1b_pair_comparisons": 45,
+        "original_coordinate_mean_error": 4.3704551262735425e-09,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 2021760,
+            "original_coordinate_sample_error": 1.30831331011938e-08
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "A375",
+        "space": "prime",
+        "bub1b_pair_comparisons": 15,
+        "original_coordinate_mean_error": 7.106882624063893e-09,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 40,
+            "original_coordinate_sample_error": 1.047956628072444e-08
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "A549",
+        "space": "prime",
+        "bub1b_pair_comparisons": 15,
+        "original_coordinate_mean_error": 1.0391242241669651e-09,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 40,
+            "original_coordinate_sample_error": 6.649369735378663e-09
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "HA1E",
+        "space": "prime",
+        "bub1b_pair_comparisons": 15,
+        "original_coordinate_mean_error": 9.328354227955415e-09,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 40,
+            "original_coordinate_sample_error": 9.14477540914227e-09
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "HCC515",
+        "space": "prime",
+        "bub1b_pair_comparisons": 15,
+        "original_coordinate_mean_error": 1.914268037139788e-08,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 40,
+            "original_coordinate_sample_error": 2.3143927395375113e-08
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "HEPG2",
+        "space": "prime",
+        "bub1b_pair_comparisons": 15,
+        "original_coordinate_mean_error": 2.3220870261353443e-09,
+        "nulls": [
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "HT29",
+        "space": "prime",
+        "bub1b_pair_comparisons": 15,
+        "original_coordinate_mean_error": 7.609735661051609e-09,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 20,
+            "original_coordinate_sample_error": 1.568383210456825e-08
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "MCF7",
+        "space": "prime",
+        "bub1b_pair_comparisons": 3,
+        "original_coordinate_mean_error": 7.690385925296361e-09,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 4,
+            "original_coordinate_sample_error": 1.698597433888449e-08
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "PC3",
+        "space": "prime",
+        "bub1b_pair_comparisons": 15,
+        "original_coordinate_mean_error": 1.5342369364540476e-08,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 40,
+            "original_coordinate_sample_error": 3.41772095346915e-09
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      },
+      {
+        "cell": "VCAP",
+        "space": "prime",
+        "bub1b_pair_comparisons": 45,
+        "original_coordinate_mean_error": 9.279752211446834e-09,
+        "nulls": [
+          {
+            "arm": "seed6",
+            "retained": 2021760,
+            "original_coordinate_sample_error": 8.641571906187542e-09
+          },
+          {
+            "arm": "batch_replicates",
+            "retained": 100000,
+            "original_coordinate_sample_error": null
+          }
+        ]
+      }
+    ],
+    "retained_null_statistics": 5843968,
+    "maximum_original_coordinate_error": 5.265805542303825e-08,
+    "gpu_monitor": {
+      "0": {
+        "samples": 59,
+        "max_percent": 9.0,
+        "mean_percent": 0.4067796610169492,
+        "peak_used_mib": 3961.0
+      },
+      "1": {
+        "samples": 59,
+        "max_percent": 5.0,
+        "mean_percent": 0.1694915254237288,
+        "peak_used_mib": 2571.0
+      },
+      "2": {
+        "samples": 59,
+        "max_percent": 6.0,
+        "mean_percent": 0.1016949152542373,
+        "peak_used_mib": 2655.0
+      },
+      "3": {
+        "samples": 59,
+        "max_percent": 0.0,
+        "mean_percent": 0.0,
+        "peak_used_mib": 2279.0
+      },
+      "4": {
+        "samples": 59,
+        "max_percent": 8.0,
+        "mean_percent": 0.13559322033898305,
+        "peak_used_mib": 2207.0
+      },
+      "5": {
+        "samples": 59,
+        "max_percent": 1.0,
+        "mean_percent": 0.01694915254237288,
+        "peak_used_mib": 2463.0
+      },
+      "6": {
+        "samples": 59,
+        "max_percent": 7.0,
+        "mean_percent": 0.13559322033898305,
+        "peak_used_mib": 2341.0
+      },
+      "7": {
+        "samples": 59,
+        "max_percent": 5.0,
+        "mean_percent": 0.0847457627118644,
+        "peak_used_mib": 2683.0
+      }
+    }
+  },
+  "registrations": [
+    {
+      "created_utc": "2026-09-27T15:53:49.581203+00:00",
+      "shard": 0,
+      "plan_sha256": "f8d4edc7cc7dbbce9afb1ca10b45f4ea3ae5b02020a21942316871904e8cdeaf",
+      "script_sha256": "2c72dbd8e14aeebb7d53b2131e91cf6f239e829e7b78301aa03faceacac8548c",
+      "manifest_sha256": "ae857a29070bb49cd59e40283630a8e74e52c003940d2a66ceec69d89fc21083",
+      "lock_sha256": "6f1b32915546f8a46c86f1674fa5a9ffc240d04363144ee9349a76aa5e164bfc",
+      "device": "NVIDIA H100 80GB HBM3",
+      "device_uuid": "4b0cb198-278c-29fe-7cf7-0742dbe248fa",
+      "torch": "2.11.0+cu126",
+      "numpy": "2.4.3",
+      "cuda": "12.6",
+      "tf32": false
+    },
+    {
+      "created_utc": "2026-09-27T15:53:50.487262+00:00",
+      "shard": 1,
+      "plan_sha256": "f8d4edc7cc7dbbce9afb1ca10b45f4ea3ae5b02020a21942316871904e8cdeaf",
+      "script_sha256": "2c72dbd8e14aeebb7d53b2131e91cf6f239e829e7b78301aa03faceacac8548c",
+      "manifest_sha256": "ae857a29070bb49cd59e40283630a8e74e52c003940d2a66ceec69d89fc21083",
+      "lock_sha256": "6f1b32915546f8a46c86f1674fa5a9ffc240d04363144ee9349a76aa5e164bfc",
+      "device": "NVIDIA H100 80GB HBM3",
+      "device_uuid": "9932f351-6a76-ac09-a560-ec7b67efb5de",
+      "torch": "2.11.0+cu126",
+      "numpy": "2.4.3",
+      "cuda": "12.6",
+      "tf32": false
+    },
+    {
+      "created_utc": "2026-09-27T15:53:49.337500+00:00",
+      "shard": 2,
+      "plan_sha256": "f8d4edc7cc7dbbce9afb1ca10b45f4ea3ae5b02020a21942316871904e8cdeaf",
+      "script_sha256": "2c72dbd8e14aeebb7d53b2131e91cf6f239e829e7b78301aa03faceacac8548c",
+      "manifest_sha256": "ae857a29070bb49cd59e40283630a8e74e52c003940d2a66ceec69d89fc21083",
+      "lock_sha256": "6f1b32915546f8a46c86f1674fa5a9ffc240d04363144ee9349a76aa5e164bfc",
+      "device": "NVIDIA H100 80GB HBM3",
+      "device_uuid": "8b97ecf4-3858-58ab-f2f2-a456106ddd14",
+      "torch": "2.11.0+cu126",
+      "numpy": "2.4.3",
+      "cuda": "12.6",
+      "tf32": false
+    },
+    {
+      "created_utc": "2026-09-27T15:53:51.272944+00:00",
+      "shard": 3,
+      "plan_sha256": "f8d4edc7cc7dbbce9afb1ca10b45f4ea3ae5b02020a21942316871904e8cdeaf",
+      "script_sha256": "2c72dbd8e14aeebb7d53b2131e91cf6f239e829e7b78301aa03faceacac8548c",
+      "manifest_sha256": "ae857a29070bb49cd59e40283630a8e74e52c003940d2a66ceec69d89fc21083",
+      "lock_sha256": "6f1b32915546f8a46c86f1674fa5a9ffc240d04363144ee9349a76aa5e164bfc",
+      "device": "NVIDIA H100 80GB HBM3",
+      "device_uuid": "5823a29a-e328-c67e-48be-49105f456ca7",
+      "torch": "2.11.0+cu126",
+      "numpy": "2.4.3",
+      "cuda": "12.6",
+      "tf32": false
+    },
+    {
+      "created_utc": "2026-09-27T15:53:50.872741+00:00",
+      "shard": 4,
+      "plan_sha256": "f8d4edc7cc7dbbce9afb1ca10b45f4ea3ae5b02020a21942316871904e8cdeaf",
+      "script_sha256": "2c72dbd8e14aeebb7d53b2131e91cf6f239e829e7b78301aa03faceacac8548c",
+      "manifest_sha256": "ae857a29070bb49cd59e40283630a8e74e52c003940d2a66ceec69d89fc21083",
+      "lock_sha256": "6f1b32915546f8a46c86f1674fa5a9ffc240d04363144ee9349a76aa5e164bfc",
+      "device": "NVIDIA H100 80GB HBM3",
+      "device_uuid": "7a66e0d4-0593-7e9e-1979-623d62ef3aa0",
+      "torch": "2.11.0+cu126",
+      "numpy": "2.4.3",
+      "cuda": "12.6",
+      "tf32": false
+    },
+    {
+      "created_utc": "2026-09-27T15:53:50.159932+00:00",
+      "shard": 5,
+      "plan_sha256": "f8d4edc7cc7dbbce9afb1ca10b45f4ea3ae5b02020a21942316871904e8cdeaf",
+      "script_sha256": "2c72dbd8e14aeebb7d53b2131e91cf6f239e829e7b78301aa03faceacac8548c",
+      "manifest_sha256": "ae857a29070bb49cd59e40283630a8e74e52c003940d2a66ceec69d89fc21083",
+      "lock_sha256": "6f1b32915546f8a46c86f1674fa5a9ffc240d04363144ee9349a76aa5e164bfc",
+      "device": "NVIDIA H100 80GB HBM3",
+      "device_uuid": "0f3c548e-64c5-452d-e1a6-d8d9e4e62c1b",
+      "torch": "2.11.0+cu126",
+      "numpy": "2.4.3",
+      "cuda": "12.6",
+      "tf32": false
+    },
+    {
+      "created_utc": "2026-09-27T15:53:49.121196+00:00",
+      "shard": 6,
+      "plan_sha256": "f8d4edc7cc7dbbce9afb1ca10b45f4ea3ae5b02020a21942316871904e8cdeaf",
+      "script_sha256": "2c72dbd8e14aeebb7d53b2131e91cf6f239e829e7b78301aa03faceacac8548c",
+      "manifest_sha256": "ae857a29070bb49cd59e40283630a8e74e52c003940d2a66ceec69d89fc21083",
+      "lock_sha256": "6f1b32915546f8a46c86f1674fa5a9ffc240d04363144ee9349a76aa5e164bfc",
+      "device": "NVIDIA H100 80GB HBM3",
+      "device_uuid": "123f14db-3f83-de52-44fb-cbf2d565d773",
+      "torch": "2.11.0+cu126",
+      "numpy": "2.4.3",
+      "cuda": "12.6",
+      "tf32": false
+    },
+    {
+      "created_utc": "2026-09-27T15:53:49.852882+00:00",
+      "shard": 7,
+      "plan_sha256": "f8d4edc7cc7dbbce9afb1ca10b45f4ea3ae5b02020a21942316871904e8cdeaf",
+      "script_sha256": "2c72dbd8e14aeebb7d53b2131e91cf6f239e829e7b78301aa03faceacac8548c",
+      "manifest_sha256": "ae857a29070bb49cd59e40283630a8e74e52c003940d2a66ceec69d89fc21083",
+      "lock_sha256": "6f1b32915546f8a46c86f1674fa5a9ffc240d04363144ee9349a76aa5e164bfc",
+      "device": "NVIDIA H100 80GB HBM3",
+      "device_uuid": "2089b3fa-c729-88ce-c154-eb93d2096d91",
+      "torch": "2.11.0+cu126",
+      "numpy": "2.4.3",
+      "cuda": "12.6",
+      "tf32": false
+    }
+  ],
+  "resources": {
+    "timestamp": "2026-09-27T17:48:54.456900",
+    "os": {
+      "system": "Linux",
+      "release": "5.15.0-107-generic",
+      "version": "#117-Ubuntu SMP Fri Apr 26 12:26:49 UTC 2024",
+      "machine": "x86_64",
+      "python_version": "3.12.14"
+    },
+    "cpu": {
+      "physical_cores": 96,
+      "logical_cores": 192,
+      "max_frequency_mhz": 0.0,
+      "architecture": "x86_64",
+      "processor": "x86_64",
+      "current_frequency_mhz": 2110.3670572916667
+    },
+    "memory": {
+      "total_gb": 1007.37,
+      "available_gb": 978.07,
+      "used_gb": 29.3,
+      "percent_used": 2.9,
+      "swap_total_gb": 0.0,
+      "swap_available_gb": 0.0
+    },
+    "disk": {
+      "path": "/home/prachh/v/mva-track2-rnai-20260927-v23",
+      "total_gb": 14192.05,
+      "available_gb": 3594.6,
+      "used_gb": 9882.14,
+      "percent_used": 73.3
+    },
+    "gpu": {
+      "nvidia_gpus": [
+        {
+          "index": 0,
+          "name": "NVIDIA H100 80GB HBM3",
+          "memory_total_mb": 81559.0,
+          "memory_free_mb": 81079.0,
+          "driver_version": "580.178.04",
+          "compute_capability": "9.0",
+          "type": "NVIDIA",
+          "backend": "CUDA"
+        },
+        {
+          "index": 1,
+          "name": "NVIDIA H100 80GB HBM3",
+          "memory_total_mb": 81559.0,
+          "memory_free_mb": 81079.0,
+          "driver_version": "580.178.04",
+          "compute_capability": "9.0",
+          "type": "NVIDIA",
+          "backend": "CUDA"
+        },
+        {
+          "index": 2,
+          "name": "NVIDIA H100 80GB HBM3",
+          "memory_total_mb": 81559.0,
+          "memory_free_mb": 81079.0,
+          "driver_version": "580.178.04",
+          "compute_capability": "9.0",
+          "type": "NVIDIA",
+          "backend": "CUDA"
+        },
+        {
+          "index": 3,
+          "name": "NVIDIA H100 80GB HBM3",
+          "memory_total_mb": 81559.0,
+          "memory_free_mb": 81079.0,
+          "driver_version": "580.178.04",
+          "compute_capability": "9.0",
+          "type": "NVIDIA",
+          "backend": "CUDA"
+        },
+        {
+          "index": 4,
+          "name": "NVIDIA H100 80GB HBM3",
+          "memory_total_mb": 81559.0,
+          "memory_free_mb": 81079.0,
+          "driver_version": "580.178.04",
+          "compute_capability": "9.0",
+          "type": "NVIDIA",
+          "backend": "CUDA"
+        },
+        {
+          "index": 5,
+          "name": "NVIDIA H100 80GB HBM3",
+          "memory_total_mb": 81559.0,
+          "memory_free_mb": 81079.0,
+          "driver_version": "580.178.04",
+          "compute_capability": "9.0",
+          "type": "NVIDIA",
+          "backend": "CUDA"
+        },
+        {
+          "index": 6,
+          "name": "NVIDIA H100 80GB HBM3",
+          "memory_total_mb": 81559.0,
+          "memory_free_mb": 81079.0,
+          "driver_version": "580.178.04",
+          "compute_capability": "9.0",
+          "type": "NVIDIA",
+          "backend": "CUDA"
+        },
+        {
+          "index": 7,
+          "name": "NVIDIA H100 80GB HBM3",
+          "memory_total_mb": 81559.0,
+          "memory_free_mb": 81079.0,
+          "driver_version": "580.178.04",
+          "compute_capability": "9.0",
+          "type": "NVIDIA",
+          "backend": "CUDA"
+        }
+      ],
+      "amd_gpus": [],
+      "apple_silicon": null,
+      "total_gpus": 8,
+      "available_backends": [
+        "CUDA"
+      ]
+    },
+    "recommendations": {
+      "parallel_processing": {
+        "strategy": "high_parallelism",
+        "suggested_workers": 190,
+        "libraries": [
+          "joblib",
+          "multiprocessing",
+          "dask"
+        ]
+      },
+      "memory_strategy": {
+        "strategy": "memory_abundant",
+        "note": "Can load most datasets into memory"
+      },
+      "gpu_acceleration": {
+        "available": true,
+        "backends": [
+          "CUDA"
+        ],
+        "suggested_libraries": [
+          "pytorch",
+          "tensorflow",
+          "jax",
+          "cupy",
+          "rapids"
+        ]
+      },
+      "large_data_handling": {
+        "strategy": "disk_abundant",
+        "note": "Sufficient space for large intermediate files"
+      }
+    }
+  },
+  "biological_validation": false,
+  "drug_ranking_changed": false,
+  "presentation": "Frozen v22; v23 is a separate research addendum",
+  "independent_scientific_review": false
+}

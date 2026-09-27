@@ -1,15 +1,35 @@
-# Session handoff: integrated Track 2 v22 presentation / fixed v19 research
+# Session handoff: v23 RNAi research / preserved v22 presentation
 
-27 September 2026, session 62. Only feat-009 is active. Authoritative paths are in
+27 September 2026, session 63. Only feat-009 is active. Authoritative paths are in
 `notes/track2-current.json`. V22 presents the preserved v21 falsification findings and fixed public transcriptome evidence
 into the report, slides, narration, methods workbook and recording materials. All
 older sources/packages, fixed v19 research and submitted Track 1 v4 remain preserved.
 The v21 evidence/validation/decision contract and all eleven v15 drug dispositions stay unchanged. V22 combines computational qualification, adds a dedicated functional-evidence slide and distinguishes five decision outcomes.
 
 Use `uv run --no-project python scripts/check_track2_harness.py` and
-`notes/track2-reviewer-guide-v22.md`. The current readiness note is
-`notes/track2-owner-readiness-v22.md`; `notes/track2-harness-review-v22.md` records this
-integration. No new GPU job, inference, wet-lab work, contact or submission occurred.
+`notes/track2-reviewer-guide-v23.md`. The current readiness note is
+`notes/track2-owner-readiness-v22.md`; `notes/track2-harness-review-v23.md` records this
+integration. Session 63 completed a new public-data CUDA analysis on all eight H100s. No new neural
+inference, wet-lab work, contact or submission occurred.
+
+## New research addendum
+
+`notes/track2-rnai-v23.md`, its complete result matrix, fixed plan, source/search records,
+five-claim register, qualification revisions, figure and audits document the completed
+campaign in `/home/prachh/v/mva-track2-rnai-20260927-v23`. All 116,782 RNAi signature
+IDs/replicate sets overlap v19. Distinct annotated BUB1B seeds resolve that metadata
+gap only. Same-seed similarity exceeds same-target similarity in 45/54 evaluable
+BUB1B records per representation. HT29 remains a favorable follow-up clue, but the
+finite-reference sensitivity removes all five primary threshold crossings. HEPG2's
+missing seed control stays unknown. Other-gene/MTOR CRISPR agreement cannot transfer
+to BUB1B or drug benefit. See `notes/track2-rnai-validation-v23.md`.
+
+All eight GPU workers finished; no jobs are pending. Utilization was brief, not
+saturated. The primary archive `results/feat009/rnai-v23/rnai-v23-audit.tar.gz` has
+161 files; all 160 listed members passed local non-extracting verification. The large
+matrices remain hash-inventoried remotely. The combined harness now includes v23 via
+`scripts/check_track2_rnai_v23.py`. V22 exported report/slides/script/workbook and
+recording ZIP remain unchanged; the new addendum is separate.
 
 ## Current materials
 
@@ -112,7 +132,8 @@ input hashes are recorded in session 59 progress. `./init.sh` invokes the combin
   tissue response, matched exposure and justified benefit/injury margins. Subject phase
   remains necessary for trans-specific attribution to the child; its uncertainty does
   not prevent properly qualified engineered-model research.
-- Public transcriptomic query qualification failed. RNAi seeds/off-target effects,
+- Public transcriptomic query qualification is unresolved. Annotated seed independence
+  is checked by v23, but off-target effects,
   selected-genotype transfer, joint-treatment response and chemical-identity gaps remain.
   More correlations cannot close these gaps; neither can an arbitrary stricter filter.
 - Balnis units, secondary-control review, model dependence, cross-gene transfer and
@@ -129,12 +150,15 @@ input hashes are recorded in session 59 progress. `./init.sh` invokes the combin
 
 ## Next actions
 
-V22 integrates the findings into synchronized presentation/report materials. Rehearse
+V23 changes assay controls without promoting a drug. A future presentation revision
+can integrate this separate addendum while preserving v22. V22 integrates the earlier
+findings into synchronized presentation/report materials. Rehearse
 and record the v22 pitch
 with the full acknowledgement inside three minutes. Resolve provider/distribution
 items and verify final portal materials. Research
 advancement begins with model/branch qualification and notes/track2-validation-v21.md.
-The 27-claim register and decision contract retain unknown gates and null margins.
+The 27-claim register, five v23 supplemental challenges and decision contract retain
+unknown biological gates and null margins.
 No additional GPU jobs are pending.
 BindCraft2 remains deferred without a functional target and validation route.
 
