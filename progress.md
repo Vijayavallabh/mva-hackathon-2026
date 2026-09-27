@@ -5291,3 +5291,194 @@ git push origin main
 git status --short
 git rev-list --left-right --count HEAD...@{upstream}
 ```
+
+
+## 2026-09-27, session 62: synchronize the presentation with v21 falsification
+
+Only feat-009 remains active. The owner requested updated slides, report, transcript
+and related materials. V22 reorganizes presentation of the existing evidence; science,
+validation, drug dispositions and the actual decision contract remain v21, and the
+public transcriptome campaign remains v19. Every earlier source and release is preserved.
+
+The eight-slide deck combines query qualification and compound identity/QC into one
+slide, retaining the favorable post-hoc HT29 finding and the uncalibrated filter's limits.
+A dedicated functional-evidence slide shows the RAPA-EX-01 primary intention-to-treat
+estimate, confidence interval and population beside differing rat/mouse findings.
+The displayed contrast is sirolimus minus placebo; both human groups exercised, and
+the animal models are explicitly labeled rapamycin. Findings stay indirect for
+MVA/everolimus. Five decision rows distinguish invalidity, uncertainty, scoped futility,
+injury and preclinical review. No threshold, clinical margin or candidate is promoted.
+
+The 337-word pitch and plain transcript follow all eight slide cues. Timings are
+rehearsal allocations, not measured runtime. The report's opening and 215-word
+abstract follow the revised evidence sequence. B7-B17 and the full B9 disclosure
+are synchronized with the original methods workbook and video description. The
+niacin methods correction remains attributed, with unchanged findings retained.
+Required acknowledgement, source-unit conflict, model failures, synthetic cell-fate
+example, tumour/deficient-normal distinction and historical notices remain.
+
+Applied frontend-design, scientific-slides, humanizer, no-ai-slop and document-export
+workflows. All visuals use editable local SVG and offline Chrome; no image-generation
+provider was added. Selected primary passages were spot-checked against the preserved
+v21 adjudications. RAPA and HCQ direct DOI opens failed; the RAPA publisher page then
+succeeded, as did PoWeR and the rat publisher pages. HCQ retains its prior recorded
+review. No new exhaustive search, complete-paper review or competition-site audit
+is claimed; official/community records retain September 24-25 dates. No new inference,
+GPU job, subject transfer, wet-lab work, contact, recording or upload occurred.
+
+Visual and export checks:
+
+- Eight slides, seven SVG figures and 601 visible words. All eight previews were
+  inspected in a contact sheet; final slide 4 was inspected at full resolution after
+  clarifying contrast direction and compound identity. The other seven final PNG
+  hashes match inspected previews. No detected overlap/clipping; minimum text 24px,
+  checked contrast at least 5.26:1, 640px layout passes. The PDF embeds fonts.
+- Eight report pages and 3,142 whitespace-separated source words, including methods
+  and acknowledgement. All final PDF pages were inspected in a contact sheet.
+  Tables remain intact and the full acknowledgement fits on page eight. Workbook
+  checks cover answers, prompts and original Track 1 values/styles, not visual rendering.
+- An intermediate copied version assertion and an evidence-amendment label were
+  corrected before final verification. The scientific ledger remains v21. No
+  independent scientific or visual review is claimed.
+
+Validation:
+
+- **768 Track 2 tests pass in 10.012 seconds**, including twenty v22 public-review
+  and six release regressions. Log: `logs/track2-v22-tests-20260927.log`. Track 1
+  submission self-check and the historical base evidence checker also pass; its old
+  conditional-screen label is not the current drug disposition.
+- Versioned isolated public review passes in 0.241 seconds with 507 copied public
+  files; combined current review passes in 0.208 seconds with 509 files. Both use
+  uv base Python 3.13.13, no project environment or original checkout/history, and
+  six blocked network/process/protected/credential/external/write probes. This
+  checks runtime dependencies, not OS security or biology.
+- All **408 earlier bound inputs match** and the v21 snapshot verifies recursively.
+  See `results/feat009/v22-preservation-verification-20260927.json`.
+- New `results/feat009/jvv7_track2_research_v22` verifies **105 files / 433 bound inputs**.
+- New `results/feat009/jvv7_track2_video_materials_v22.zip` verifies **28 files,
+  1,349,181 bytes**, SHA-256
+  `f86157434af6b2c40737439cb5ae4c198f1500e39391709ad266eef8402ec61f`.
+  It contains the current report/workbook, slides/PNGs, narration/transcript,
+  disclosure/guides, v21 falsification materials and v19 research notes.
+- Live publication guard passes: PUBLIC, thirteen retired objects unavailable,
+  zero unknown errors, retrievable live-object control. See
+  `results/feat009/v22-publication-remote-20260927.json`.
+
+Current outputs:
+
+- `notes/track2-report-v22.md`, `track2-slides-v22.html`, `track2-pitch-v22.md`,
+  `track2-transcript-v22.txt`, `track2-video-description-v22.md`.
+- `results/feat009/v22-slides-final-20260927/` and
+  `results/feat009/v22-documents-final-b-20260927/`.
+- Versioned reviewer/readiness/design/editorial/integration notes and export audits.
+  `notes/track2-current.json`, AGENTS, README, feature evidence and handoff route v22.
+
+Reproduction commands use new output directories:
+
+```bash
+uv run node scripts/render_track2_slides_v22.mjs new-v22-slides
+uv run scripts/track2_export_documents_v22.py new-v22-documents
+uv run node scripts/render_track2_report_v22.mjs new-v22-documents
+uv run --no-project python scripts/track2_public_review_v22.py
+uv run --no-project python scripts/check_track2_harness.py
+uv run --no-project python scripts/audit_track2_public_v22.py
+uv run --no-project python scripts/audit_track2_harness.py
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+uv run python scripts/track2_release_v22.py verify results/feat009/jvv7_track2_research_v22
+uv run python scripts/track2_bundle_v22.py verify
+```
+
+Presentation integration is complete. Feat-009 remains in progress for biological
+qualification and the existing provider, distribution, recording/hosting, live portal
+and receipt gaps. The next scientific work follows v21 validation; no GPU job is pending.
+
+
+Fresh no-argument `./init.sh` completed from a new login shell with exit 0. Actual
+output (`logs/track2-v22-final-init-20260927.log`):
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "harness_version": 22,
+  "presentation_version": 22,
+  "drug_science_version": 21,
+  "slides": 8,
+  "narration_words": 337,
+  "falsification_amendment": {
+    "passed": true,
+    "claims": 27,
+    "additional_source_records": 12,
+    "current_decision": {
+      "clinical_recommendation": false,
+      "scope": "qualified_non_cancer_model",
+      "evidence_kind": "not_measured",
+      "decision": "HOLD",
+      "reason": "Prerequisites unresolved or failed; no transfer from another branch"
+    },
+    "drug_dispositions_changed": false,
+    "biological_validation": false
+  },
+  "upload_ready": false,
+  "research_addendum": {
+    "version": 19,
+    "status": "complete",
+    "gpus": 8,
+    "completed_gpu_waves": 3,
+    "compound_profiles": 312438,
+    "query_compound_comparisons": 12185082,
+    "resampled_reagent_sets": 560000,
+    "primary_contexts": 14,
+    "primary_query_gates_passed": 0,
+    "post_hoc_comparisons": 42,
+    "post_hoc_full_filters_passed": 0,
+    "primary_everolimus_comparisons": 19,
+    "primary_everolimus_profiles": 14,
+    "primary_everolimus_positive_correlations": 13,
+    "phase2_unresolved_labelled_profiles": 174,
+    "phase2_reference_matching_profiles": 6,
+    "phase2_reference_matching_qc_passes": 0,
+    "ht29_post_hoc_reagents": 5,
+    "ht29_post_hoc_adjusted_tail": 0.041995800419958006,
+    "ht29_full_filter_passed": false,
+    "drug_ranking_changed": false
+  },
+  "biological_validation": false,
+  "scope": "Combined public presentation/research consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```
+
+End-of-session disclosure and synchronization commands:
+
+```bash
+uv run python scripts/audit_publication.py --staged --output results/feat009/v22-staged-disclosure-20260927.json
+git diff --cached --check
+git commit -m "Present Track 2 falsification findings in synchronized v22 materials"
+uv run python scripts/audit_publication.py --output results/feat009/v22-history-disclosure-20260927.json
+git push origin main
+git status --short
+git rev-list --left-right --count HEAD...@{upstream}
+```

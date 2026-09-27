@@ -79,20 +79,22 @@ This is a continuing objective, not a one-time review. Preserve immutable snapsh
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the current artifact record and [session-handoff.md](session-handoff.md) for next
-steps and blockers. V21 is the current eight-page report, eight-slide deck, 335-word
-read-aloud transcript, methods workbook and video description. Session 61 adds a
-27-claim falsification register, twelve source adjudications and a proposed executable
+steps and blockers. V22 is the current eight-page report, eight-slide deck, 337-word
+read-aloud transcript, methods workbook and video description. Session 62 gives
+functional counterevidence a dedicated slide, combines computational qualification
+and separates five decision outcomes. The 337-word narration matches all eight cues.
+Session 61 supplies a 27-claim falsification register, twelve source adjudications and a proposed executable
 decision contract. No drug disposition changed: the v21 ledger preserves all eleven
 v15 decisions. The validation plan is now v21; all biological measurements and margins
 remain null. Keep invalid assays, imprecision, scoped futility and safety stops distinct.
 Requirements remain the dated September 24-25 review, not a new live portal audit.
 
 Use scripts/check_track2_harness.py,
-[notes/track2-reviewer-guide-v21.md](notes/track2-reviewer-guide-v21.md) and
-[notes/track2-owner-readiness-v21.md](notes/track2-owner-readiness-v21.md).
-Harness, presentation and the evidence amendment are v21. The frozen public campaign
+[notes/track2-reviewer-guide-v22.md](notes/track2-reviewer-guide-v22.md) and
+[notes/track2-owner-readiness-v22.md](notes/track2-owner-readiness-v22.md).
+Harness and presentation are v22; the evidence amendment and validation remain v21. The frozen public campaign
 remains notes/track2-transcriptome-v19.md; preserve every earlier bound input and
-release through v20. The v21 recording ZIP is not a recorded video. Public searches
+release through v21. The v22 recording ZIP is not a recorded video. Public searches
 added no model provider or GPU inference; biological qualification is the next
 discriminating work. See notes/track2-falsification-review-v21.md for search gaps.
 
@@ -145,32 +147,32 @@ discriminating work. See notes/track2-falsification-review-v21.md for search gap
   derived findings. Never print `.env` or keys. See the current report section 7.
 - **Official requirements and community:** session 56 reviewed live revision
   `aeeef5ad49f51204a7439352e59e9d310aee5e9e`, all 24 public discussions/68 latest
-  comments and three administrative images. Use `notes/track2-requirements-v21.json`
+  comments and three administrative images. Use `notes/track2-requirements-v22.json`
   and `notes/track2-community-review-20260924.md`; rubric weights are 35/25/25/15.
   PDF/Markdown report plus GitHub and three-minute YouTube/Vimeo pitch are required.
   Methods B9 is required and B17 is limited to 500 words. The template's one-entry
   line is stale; three entries/latest-only is current. Quota remains unknown.
 - **Distribution scope:** challenge CC BY scope versus historical AF3/non-AVI Atlas
-  output terms remains unresolved. V21 omits their numerical outputs/derived figures
+  output terms remains unresolved. V22 omits their numerical outputs/derived figures
   from judge-facing materials, but does not establish that linked history is outside
   submission scope. Preserve original notices; do not grant a blanket relicence or
   mark eligibility resolved. Concrete unsent clarification in
-  `notes/track2-owner-readiness-v18.md`, linked from the v21 readiness note; no organizer
+  `notes/track2-owner-readiness-v18.md`, linked from the v22 readiness note; no organizer
   contact is authorized.
 - **Delivery:** no wet-lab experiment, recorded/hosted video or Track 2 submission is
   established. A script/PDF and successful tests do not fill those gaps. The portal
   permits three entries and reviews only the latest; remaining quota is unknown.
   Record the complete acknowledgement inside the three-minute video. Preserve the
-  Track 1 submitted v4, every earlier Track 2 bound input/package, the fixed v19 campaign and v1-v20 releases.
+  Track 1 submitted v4, every earlier Track 2 bound input/package, the fixed v19 campaign and v1-v21 releases.
 
-Use `scripts/track2_release_v21.py` to check/build/verify **new** v21 research snapshot
-directories. Render with `scripts/render_track2_slides_v21.mjs`; export the report and
-workbook with `scripts/track2_export_documents_v21.py` followed by
-`scripts/render_track2_report_v21.mjs`. Recording materials use
-`scripts/track2_bundle_v21.py`; historical research retains AF3 notices.
+Use `scripts/track2_release_v22.py` to check/build/verify **new** v22 research snapshot
+directories. Render with `scripts/render_track2_slides_v22.mjs`; export the report and
+workbook with `scripts/track2_export_documents_v22.py` followed by
+`scripts/render_track2_report_v22.mjs`. Recording materials use
+`scripts/track2_bundle_v22.py`; historical research retains AF3 notices.
 The combined public reviewer needs no data/results folders, keys, network, GPUs or old
 local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
-The versioned `scripts/track2_public_review_v21.py` checks the integrated presentation
+The versioned `scripts/track2_public_review_v22.py` checks the integrated presentation
 and frozen research; `scripts/check_track2_transcriptome.py` checks v19 alone.
 Its passing result verifies consistency, not biology or eligibility. The stricter
 release verification also requires retained local historical archives.
@@ -198,14 +200,14 @@ uv run python scripts/track2_evidence.py check
 uv run python scripts/check_track2_harness.py
 uv run --no-project python scripts/check_track2_transcriptome.py
 uv run --no-project python scripts/track2_falsification_v21.py
-uv run --no-project python scripts/track2_public_review_v21.py
-uv run python scripts/track2_release_v21.py check
+uv run --no-project python scripts/track2_public_review_v22.py
+uv run python scripts/track2_release_v22.py check
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
 `track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
 its old conditional-screen label is not today's drug decision. The current v21
-ledger, v21 report and v19 research addendum take precedence. Historical exact-byte verification remains
+ledger, v22 report and v19 research addendum take precedence. Historical exact-byte verification remains
 available through the versioned release scripts; never resubmit Track 1 to resolve
 its missing administrative receipt.
 

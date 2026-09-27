@@ -1,0 +1,56 @@
+# Track 2 v22: slide-by-slide recording script
+
+Participant jvv7 · 27 September 2026. Read with the eight-slide v22 deck.
+Times total three minutes but are rehearsal allocations; runtime is unmeasured.
+Read only the paragraphs. Keep the complete acknowledgement visible in the video.
+
+## Narration
+
+### Slide 1 / 0:00-0:18 / The research proposal
+
+Our Track Two proposal tests everolimus for useful non-cancer function in MVA. This approved mTORC1 inhibitor remains an optional mechanistic probe. The evidence supports a qualified experiment; no drug earns rescue priority.
+
+### Slide 2 / 0:18-0:38 / Qualify the mechanism
+
+The starting hypothesis is a stop-gain and missense BUB1B pair. Phase and endogenous effects remain unresolved. We would qualify either excess mTOR activity with impaired function, or impaired flux and regeneration. Neither branch is established. Everolimus does not replace BUBR1.
+
+### Slide 3 / 0:38-1:10 / Computational evidence has limits
+
+None of fourteen contexts passed the primary expression filter. The filter is uncalibrated, so failure does not disprove biology. Preserve the favourable post-hoc HT29 result: five reagents against our six-reagent requirement. Compound evidence also needs qualification: one hundred seventy-four profiles have unresolved stereochemical metadata. The six reference-matching profiles at point-one micromolar nominal culture concentration fail quality checks. This establishes neither benefit nor harm.
+
+### Slide 4 / 1:10-1:36 / Functional counterevidence
+
+In forty older adults, sirolimus plus exercise did not establish functional benefit. The primary confidence interval includes no effect. Young rats lost muscle force, while adult female mice retained exercise-associated gains. These differing contexts require direct tests of function, exposure and recovery in the intended model.
+
+### Slide 5 / 1:36-2:01 / The decisive experiment
+
+First establish endogenous BUBR1 and function with single-allele, cis, trans and corrected controls, plus independent genetic perturbation. Then verify compound identity and test drug plus the qualified deficit. Randomize cultures and blind scoring. Track every enrolled cell, daughter survival and sustained function. No wet-lab experiment has been performed.
+
+### Slide 6 / 2:01-2:25 / What would change the decision
+
+Invalid assays hold inference; imprecise results hold advancement. A valid test excluding meaningful benefit stops that tested claim. Failed safety stops advancement for review. Confirmation requires independent replication and justified exposure. Whole blood is not free tissue. All requirements passing permits preclinical review only; current margins remain unknown.
+
+### Slide 7 / 2:25-2:44 / Alternatives and reuse
+
+HCQ remains reserve and needs independent flux and chromosome-function checks. NAD findings do not establish niacin rescue. Public CPU checks need no subject files or GPUs. New tissues require fresh qualification; tumour killing requires separate deficient-normal controls.
+
+### Slide 8 / 2:44-3:00 / Acknowledgement
+
+We thank the child and family, MVA Society and Sage Bionetworks. The full acknowledgement is displayed. Our next decisive step is biological validation.
+
+## Recording notes
+
+Narration contains 337 whitespace-separated words. Timings are allocations, not
+measured runtime. Rehearse with transitions; use the remaining acknowledgement cue
+to hold the complete text on screen. Measure the recorded file before delivery.
+
+Slide 3 combines the earlier query and compound-QC slides. Slide 4 now presents the
+human primary estimate beside differing animal findings; read the interpretation,
+with the estimate and confidence interval visible. Slide 6 distinguishes five
+outcomes. Sources and full AI disclosure are in the video description and report.
+
+Pronunciation: MVA as letters; BUB1B as "bub one bee"; BUBR1 as "bub R one";
+mTORC1 as "em-tor complex one"; everolimus as "eh-ver-OH-li-mus";
+sirolimus as "sih-ROH-li-mus"; HT29 as "H T twenty-nine".
+Keep "nominal culture" with the concentration. The disputed source units remain
+quarantined in the report; this script supplies no dosing instruction.

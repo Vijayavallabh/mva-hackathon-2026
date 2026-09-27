@@ -1,0 +1,64 @@
+{
+  "document_directory": "results/feat009/v22-documents-final-b-20260927",
+  "export": {
+    "created_utc": "2026-09-27T15:07:09.266858+00:00",
+    "template_url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/aeeef5ad49f51204a7439352e59e9d310aee5e9e/static/templates/methods_description_form.xlsx",
+    "template_sha256": "61aab080a2868a3b724e76692b83c24812112e305cd3a8b03f8f91a6b2414441",
+    "report_sha256": "261a4a7f52d96a4dec97b5f792b8014323230baa5d208a0028d22ebb8a033121",
+    "script_sha256": "4543c18a0bcdf27e6dd9b89e6b74f386c54fae9d37fa62686c9a27aa6e3c1e3f",
+    "answer_cells": [
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17"
+    ],
+    "abstract_words": 215,
+    "official_questions_unchanged": true,
+    "formulas": 0,
+    "formula_errors": 0,
+    "track1_values_and_cell_styles_preserved": true,
+    "files": {
+      "jvv7_track2_report_v22.md": "261a4a7f52d96a4dec97b5f792b8014323230baa5d208a0028d22ebb8a033121",
+      "jvv7_track2_methods_v22.xlsx": "7e06397bd829684d6df0014e7de8c08f5209321e61c0276bb7bcdf7f315bebd9",
+      "jvv7_track2_report_v22.html": "8de87e76d735ea860b84e81e0f82b4007d797241f9e9e053c9eb638b9779c30d",
+      "methods-answers.json": "f7ed7ab5fd97ad1be0c852107ed09efbde2d463ae930232de8c321f4aab87940"
+    },
+    "upload_ready": false
+  },
+  "pdf": {
+    "source": "notes/track2-report-v22.md",
+    "source_sha256": "261a4a7f52d96a4dec97b5f792b8014323230baa5d208a0028d22ebb8a033121",
+    "html_sha256": "8de87e76d735ea860b84e81e0f82b4007d797241f9e9e053c9eb638b9779c30d",
+    "renderer_sha256": "757a041eb6e62e1aac9bab598f790b47caebbd3ee4e6f9f87b37597243aebe45",
+    "exporter_sha256": "4543c18a0bcdf27e6dd9b89e6b74f386c54fae9d37fa62686c9a27aa6e3c1e3f",
+    "browser": {
+      "protocolVersion": "1.3",
+      "product": "Chrome/131.0.6778.139",
+      "revision": "@c35bbcbd7c2775a12a3f320e05ac0022939b1a8a",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+      "jsVersion": "13.1.201.16"
+    },
+    "geometry": {
+      "width": 665,
+      "scrollWidth": 665,
+      "links": 46,
+      "headings": 8,
+      "tables": 3
+    },
+    "files": {
+      "jvv7_track2_report_v22.pdf": "f96a45b129c65139a0d5a55789ef461561f189bbdf1be98ffd877fb2e500646c"
+    },
+    "limits": "PDF export and geometry; no scientific, licensing, recording or upload certification."
+  },
+  "pages": 8,
+  "author_visual_review": "All eight final PDF pages inspected in a contact sheet. Tables remain intact and the complete acknowledgement fits on page eight. The current evidence amendment is correctly labeled v21. Workbook round-trip checks preserve answers, official prompts and Track 1 values/styles; workbook appearance not visually rendered.",
+  "independent_visual_review": false,
+  "clinical_validation": false
+}

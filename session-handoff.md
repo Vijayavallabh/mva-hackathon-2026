@@ -1,29 +1,29 @@
-# Session handoff: integrated Track 2 v21 presentation / fixed v19 research
+# Session handoff: integrated Track 2 v22 presentation / fixed v19 research
 
-27 September 2026, session 61. Only feat-009 is active. Authoritative paths are in
-`notes/track2-current.json`. V21 integrates a 27-claim falsification amendment and the fixed public transcriptome evidence
+27 September 2026, session 62. Only feat-009 is active. Authoritative paths are in
+`notes/track2-current.json`. V22 presents the preserved v21 falsification findings and fixed public transcriptome evidence
 into the report, slides, narration, methods workbook and recording materials. All
 older sources/packages, fixed v19 research and submitted Track 1 v4 remain preserved.
-V21 preserves all eleven v15 drug dispositions. Validation and falsification are revised; biological and delivery status remain unchanged.
+The v21 evidence/validation/decision contract and all eleven v15 drug dispositions stay unchanged. V22 combines computational qualification, adds a dedicated functional-evidence slide and distinguishes five decision outcomes.
 
 Use `uv run --no-project python scripts/check_track2_harness.py` and
-`notes/track2-reviewer-guide-v21.md`. The current readiness note is
-`notes/track2-owner-readiness-v21.md`; `notes/track2-harness-review-v21.md` records this
+`notes/track2-reviewer-guide-v22.md`. The current readiness note is
+`notes/track2-owner-readiness-v22.md`; `notes/track2-harness-review-v22.md` records this
 integration. No new GPU job, inference, wet-lab work, contact or submission occurred.
 
 ## Current materials
 
-- `notes/track2-report-v21.md`: integrated findings, balanced evidence, proposed
+- `notes/track2-report-v22.md`: integrated findings, balanced evidence, proposed
   experiment, full disclosure, methods B7-B17 and 215-word abstract.
-- `notes/track2-slides-v21.html`: eight slides with calibrated-inference boundaries and clearer decision rules.
-- `notes/track2-pitch-v21.md` and `notes/track2-transcript-v21.txt`: 335 spoken words
+- `notes/track2-slides-v22.html`: eight slides with combined computational qualification, a human/animal evidence comparison and five decision outcomes.
+- `notes/track2-pitch-v22.md` and `notes/track2-transcript-v22.txt`: 337 spoken words
   with matching slide cues and unmeasured three-minute rehearsal allocations.
-- `notes/track2-video-description-v21.md`: matched disclosure and acknowledgement.
-- Report PDF/Markdown and original filled workbook: `results/feat009/v21-documents-final-20260927/`.
-- Eight-slide PDF/PNGs: `results/feat009/v21-slides-final-20260927/`.
-- Research snapshot: `results/feat009/jvv7_track2_research_v21`.
-- Recording/review ZIP: `results/feat009/jvv7_track2_video_materials_v21.zip`.
-- `notes/track2-v21-design.md`, `track2-v21-editorial-review.md` and versioned audits
+- `notes/track2-video-description-v22.md`: matched disclosure and acknowledgement.
+- Report PDF/Markdown and original filled workbook: `results/feat009/v22-documents-final-b-20260927/`.
+- Eight-slide PDF/PNGs: `results/feat009/v22-slides-final-20260927/`.
+- Research snapshot: `results/feat009/jvv7_track2_research_v22`.
+- Recording/review ZIP: `results/feat009/jvv7_track2_video_materials_v22.zip`.
+- `notes/track2-v22-design.md`, `track2-v22-editorial-review.md` and versioned audits
   describe visual/editorial review, scientific limits and export hashes.
 - `notes/track2-transcriptome-v19.md` and `notes/track2-transcriptome-reproduction-v19.md`:
   frozen complete findings, sources, fixed plans, result matrices, figure and methods.
@@ -83,18 +83,18 @@ hold; failed safety stops; all-pass permits preclinical review only.
 uv run --no-project python scripts/check_track2_harness.py
 uv run --no-project python scripts/check_track2_transcriptome.py
 uv run --no-project python scripts/verify_track2_transcriptome_archive.py results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz
-uv run python scripts/track2_release_v21.py verify results/feat009/jvv7_track2_research_v21
-uv run python scripts/track2_bundle_v21.py verify
+uv run python scripts/track2_release_v22.py verify results/feat009/jvv7_track2_research_v22
+uv run python scripts/track2_bundle_v22.py verify
 ```
 
-V21 has eight slide pages and eight report pages. The visible slide text is at least
+V22 has eight slide pages and eight report pages. The visible slide text is at least
 24px, all geometry/overlap checks pass, and contrast is at least 5.26:1. Rendered
 screenshots and all report pages were visually checked. Tables and the acknowledgement
 remain intact; earlier pagination defects were corrected. The workbook round-trips its
 answers, questions and original Track 1 styles; its appearance was not visually rendered.
-The isolated v21 public check passes with six blocked audit probes, without project
+The isolated v22 public check passes with six blocked audit probes, without project
 venv, network, protected paths or source checkout/history. No independent scientific
-review is claimed. Final tests, preservation checks and init output are in session 61.
+review is claimed. Final tests, preservation checks and init output are in session 62.
 
 V19 checked every archive member and retained null array locally; a separate SciPy
 implementation from original GCTX coordinates agrees on all 139 raw everolimus-labelled
@@ -129,8 +129,8 @@ input hashes are recorded in session 59 progress. `./init.sh` invokes the combin
 
 ## Next actions
 
-V21 integrates the findings into synchronized presentation/report materials. Rehearse
-and record the v21 pitch
+V22 integrates the findings into synchronized presentation/report materials. Rehearse
+and record the v22 pitch
 with the full acknowledgement inside three minutes. Resolve provider/distribution
 items and verify final portal materials. Research
 advancement begins with model/branch qualification and notes/track2-validation-v21.md.

@@ -93,6 +93,11 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
+**Session 62: presentation update.** The v22 report, eight-slide deck and 337-word
+narration give functional counterevidence its own slide and distinguish five decision
+outcomes. Computational qualification is combined without losing the HT29 exception
+or identity/QC limits. V21 science and all earlier releases remain unchanged.
+
 **Session 61: falsification revision.** The [27-claim audit](notes/track2-falsification-review-v21.md)
 adds primary counterevidence and favourable counterweights, challenges the uncalibrated
 expression filter, and sharpens the [validation plan](notes/track2-validation-v21.md).
@@ -101,7 +106,7 @@ The proposed decision contract returns HOLD with unmeasured biology and null mar
 An invalid assay, imprecision, scoped futility and safety failure now have different
 consequences. No wet-lab result, new model inference or candidate promotion is claimed.
 
-**Track 2 (feat-009) is in progress.** Read the [integrated v21 report](notes/track2-report-v21.md)
+**Track 2 (feat-009) is in progress.** Read the [integrated v22 report](notes/track2-report-v22.md)
 and the complete [v19 research record](notes/track2-transcriptome-v19.md).
 The [falsification review](notes/track2-falsification-review-v21.md) challenges the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
@@ -142,16 +147,16 @@ assumption; revise or abandon the approach when warranted. Use the original
 throughout research and before promotion/release. Apply the same standard to benefit,
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
-Current materials: [eight-page report source](notes/track2-report-v21.md),
-[335-word narration](notes/track2-pitch-v21.md), [plain transcript](notes/track2-transcript-v21.txt),
-[eight-slide deck](notes/track2-slides-v21.html) and
-[video description](notes/track2-video-description-v21.md). Two result slides integrate
-the public expression findings and their limits; the report retains balanced literature
+Current materials: [eight-page report source](notes/track2-report-v22.md),
+[337-word narration](notes/track2-pitch-v22.md), [plain transcript](notes/track2-transcript-v22.txt),
+[eight-slide deck](notes/track2-slides-v22.html) and
+[video description](notes/track2-video-description-v22.md). One slide combines public expression qualification; a dedicated functional-evidence
+slide preserves the human primary interval and differing animal findings; the report retains balanced literature
 evidence, model failures and the synthetic cell-fate example. All eleven methods
 answers, the 215-word abstract and the original workbook export are synchronized.
 The dated [official Track 2 brief review](notes/track2-v18-brief-review.md) remains the
 requirements source. Full acknowledgement and historical notices remain.
-The [readiness note](notes/track2-owner-readiness-v21.md) lists recording/hosting,
+The [readiness note](notes/track2-owner-readiness-v22.md) lists recording/hosting,
 provider handling, distribution scope, live checks and receipt. These are recording
 and review materials, not a recorded video or submission.
 
@@ -163,11 +168,11 @@ positive; everolimus's lower-dose evidence has chemical-identity and quality gap
 The resulting experiment requirements qualify the perturbation before testing a drug.
 No rescue-drug priority or clinical claim follows. Earlier versions remain preserved; GPU use was
 bursty, not saturated. [Execution, limits and reproduction](notes/track2-transcriptome-reproduction-v19.md)
-are recorded. The v21 presentation and recording bundle now incorporate these findings
+are recorded. The v22 presentation and recording bundle now incorporate these findings
 and include the v19 narrative, figure and reproduction note.
 
-Start with the [combined reviewer guide](notes/track2-reviewer-guide-v21.md). One
-public CPU command checks the v21 materials and v19 research, including the reported
+Start with the [combined reviewer guide](notes/track2-reviewer-guide-v22.md). One
+public CPU command checks the v22 materials and v19 research, including the reported
 counts, failed filters and HT29 counterweight. It needs no subject files, data/results
 folders, keys, network, Git history or model weights:
 
@@ -175,12 +180,12 @@ folders, keys, network, Git history or model weights:
 uv run --no-project python scripts/check_track2_harness.py
 ```
 
-The versioned v21 public reviewer and standalone transcriptome checker remain available
-for narrower checks. Use `scripts/track2_release_v21.py` for exact-byte v21 snapshots;
+The versioned v22 public reviewer and standalone transcriptome checker remain available
+for narrower checks. Use `scripts/track2_release_v22.py` for exact-byte v22 snapshots;
 the reviewer guide distinguishes exports, archive checks and full reproduction.
-All v1–v20 bound inputs/releases, the fixed v19 campaign and submitted Track 1 v4 are preserved.
+All v1–v21 bound inputs/releases, the fixed v19 campaign and submitted Track 1 v4 are preserved.
 The [current-artifact record](notes/track2-current.json) and
-[harness review](notes/track2-harness-review-v21.md) route the current work.
+[harness review](notes/track2-harness-review-v22.md) route the current work.
 `./init.sh` checks artifact versions, narration, original models, new falsification
 results and unresolved scientific/delivery status. The dated [official review](notes/track2-official-requirements-review-20260924.md)
 checked revision aeeef5ad49f51204a7439352e59e9d310aee5e9e; the
@@ -239,7 +244,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v21 disclosure names this route without
+GLM for public-literature synthesis; the current v22 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 
