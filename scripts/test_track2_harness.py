@@ -81,15 +81,15 @@ class CurrentStateTests(unittest.TestCase):
                 harness.validate(state,self.features,self.documents)
 
     def test_integrated_versions_preserve_research_version(self):
-        self.assertEqual(self.state['presentation_version'],20)
-        self.assertEqual(self.state['harness_version'],20)
+        self.assertEqual(self.state['presentation_version'],21)
+        self.assertEqual(self.state['harness_version'],21)
         self.assertEqual(self.state['research_addendum']['version'],19)
         self.state['harness_review']='notes/track2-harness-review-v18.md'
         with self.assertRaisesRegex(ValueError,'Stale harness'):
             harness.validate(self.state,self.features,self.documents)
 
     def test_correct_independent_version_labels_accepted(self):
-        self.documents['README.md']+='\nUse the current v20 harness and current v19 addendum with the current v20 presentation and current v15 ledger.'
+        self.documents['README.md']+='\nUse the current v21 harness and current v19 addendum with the current v21 presentation and current v21 ledger.'
         harness.validate(self.state,self.features,self.documents)
 
     def test_stale_addendum_label_rejected(self):

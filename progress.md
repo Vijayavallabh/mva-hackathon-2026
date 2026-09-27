@@ -5079,3 +5079,215 @@ git push origin main
 git status --short
 git rev-list --left-right --count HEAD...@{upstream}
 ```
+
+
+## 2026-09-27, session 61: falsification across the full Track 2 evidence chain
+
+Only feat-009 remains active. The owner requested rigorous falsification at every
+part of the solution. V21 expands the register from 19 to 27 claims, adds twelve
+source adjudications and replaces the proposed validation plan. All eleven v15 drug
+dispositions, the completed v19 campaign and all v1-v20 bound inputs/releases remain
+unchanged. No drug earns rescue priority; everolimus remains an optional qualified-model
+probe and HCQ reserve. Trans phase and clinical exposure margins remain unresolved.
+
+Applied scientific-critical-thinking, experimental-design and harness-creator, alongside
+the presentation/editorial workflows. This is author/agent review, not independent
+scientific peer review. No new model inference, GPU job, wet-lab experiment, subject
+transfer, family/organizer contact, recorded video or submission occurred.
+
+Substantive changes:
+
+- The uncalibrated 0/14 operational filter cannot disprove biology. Its six-reagent
+  threshold and unmatched seed/potency/off-target null need independent calibration.
+  The favorable HT29 post-hoc tail remains visible, with no retrospective relaxation.
+- Separate drug-only and deficient-only profiles cannot establish joint intervention
+  response. Compound identity, QC and exposure remain separate gates; unresolved
+  stereochemistry and failed low-activity QC cannot become a pooled dose curve.
+- RAPA-EX-01 adds adult-human functional counterevidence without replacing its
+  nonsignificant primary estimate with significant sensitivity analyses. Young-rat
+  injury and the published PoWeR mouse counterweight prevent class-wide benefit or
+  harm claims. Compound, age, stage and schedule remain transfer limitations.
+- HCQ chromatin experiments challenge its use as a selective autophagy control, not
+  prove harm at an MVA exposure. NAD/SIRT2 genetic, NMN abundance and small human
+  niacin findings are separated. The niacin methods correction changes COX/SDH
+  incubation times; the authors state the findings are unchanged. No alternative
+  inherits rescue priority because everolimus remains unsupported.
+- The future experiment randomizes independently treated cultures, retains crossed
+  clone/day effects and nested cells, and records all enrolled fates, daughter
+  survival and direct lineage function. Genotype specificity needs an interaction
+  contrast; a useful shared benefit is not automatically rejected.
+- The decision contract distinguishes failed controls, imprecision, scoped futility,
+  injury and preclinical review. All thirteen actual gates are unknown, the five
+  injury endpoints unmeasured, benefit/injury margins null and the result HOLD.
+  Numerical regression examples are synthetic; the checker estimates no intervals,
+  verifies no experimental truth and supplies no clinical recommendation.
+
+Search coverage and limits are reproducible in the v21 web/search/metadata logs.
+There were 31 web discovery queries and 16 successful PubMed queries across two runs;
+all sixteen Europe PMC attempts returned HTTP 503. The initial PubMed responses did
+not retain translation/warnings; two fallback phrase queries were expanded. Broad
+queries retain a first-result window. Metadata from 249 deduplicated IDs exposed the
+niacin correction; these are discovery records, not 249 papers read. Twelve selected
+adjudications include two existing-source rechecks and a protocol/result overlap.
+Selected primary methods/results, indexed abstracts and an official label have
+explicit reading-depth labels. Direct ANZCTR retrieval failed; registry amendment
+history, exhaustive correction surveillance and independent extraction remain absent.
+No claim of systematic/exhaustive coverage, meta-analysis or proof of absent evidence.
+
+Current science is in `notes/track2-falsification-review-v21.md`, the 27-claim register,
+`track2-evidence-v21.json`, `track2-validation-v21.md` and the decision contract.
+The report, deck, narration, transcript, video description, methods workbook, guides
+and harness routes are v21. Requirements/community copies retain their September
+24-25 dates; no new complete competition-site audit is claimed.
+
+The report has eight PDF pages and 3,113 whitespace-separated source words including
+methods/acknowledgement. The eight-slide deck has 538 visible words, seven SVG figures,
+minimum 24px text, checked contrast at least 5.26:1, no detected overlap/clipping and
+no horizontal overflow at 640px. All eight slide previews and all eight PDF preview
+pages were visually inspected. Final PNG hashes match the inspected previews;
+final report source, HTML, renderer and geometry match the inspected PDF preview.
+The complete acknowledgement is retained. The original methods workbook round-trips
+all eleven answers, prompts and Track 1 values/styles; it was not visually rendered.
+The 335-word read-aloud script matches its transcript; runtime remains unmeasured.
+The abstract is 215 words. See the versioned render/document/editorial audits.
+
+Validation:
+
+- **742 Track 2 tests passed in 8.661 seconds**, including 26 new decision/artifact
+  regressions, 17 versioned public-review regressions and six release regressions.
+  Log: `logs/track2-v21-tests-20260927.log`. Track 1 submission self-check and the
+  historical base evidence checker also pass; its historical conditional-screen
+  label is not the current disposition.
+- The versioned public review passes in 0.102 seconds and the combined current review
+  in 0.188 seconds. Both used 484 copied public files and uv base Python 3.13.13,
+  without project environment, source checkout/history or protected inputs. Six
+  network/process/protected/credential/external/write probes were blocked. This is
+  a dependency/isolation check, not an OS security assessment or scientific replication.
+- All **370 earlier bound input hashes match**, and the v20 snapshot verifies
+  recursively. See `results/feat009/v21-preservation-verification-20260927.json`.
+- New immutable `results/feat009/jvv7_track2_research_v21` verifies **103 files /
+  408 bound inputs**, preserving earlier releases and the fixed public campaign.
+- New `results/feat009/jvv7_track2_video_materials_v21.zip` verifies **28 files,
+  1,273,442 bytes**, SHA-256
+  `b4be4d61be2034f68c659d73c5d962766351855816b7ecdf9cf83a8238cfe83a`.
+  It includes the new falsification/validation/contract/evidence material alongside
+  the report, workbook, slides, narration and v19 research notes. It is not a video.
+- Live publication guard: PUBLIC; all thirteen retired objects unavailable, zero
+  unknown errors, live-object control retrievable. See
+  `results/feat009/v21-publication-remote-20260927.json`.
+
+Review/reproduction commands (search/export outputs require new paths):
+
+```bash
+uv run --no-project python scripts/track2_falsification_v21.py
+uv run python scripts/track2_falsification_search_v21.py new-public-search.json
+uv run python scripts/track2_falsification_search_v21.py new-public-fallback.json --pubmed-fallback
+uv run python scripts/track2_falsification_metadata_v21.py new-public-metadata.json
+uv run --no-project python scripts/check_track2_harness.py
+uv run --no-project python scripts/audit_track2_public_v21.py
+uv run --no-project python scripts/audit_track2_harness.py
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+uv run node scripts/render_track2_slides_v21.mjs new-v21-slides
+uv run scripts/track2_export_documents_v21.py new-v21-documents
+uv run node scripts/render_track2_report_v21.mjs new-v21-documents
+uv run python scripts/track2_release_v21.py verify results/feat009/jvv7_track2_research_v21
+uv run python scripts/track2_bundle_v21.py verify
+```
+
+Feat-009 remains in progress for biological qualification and the existing provider,
+distribution, recording/hosting, live portal and receipt gaps. Subject-phase uncertainty
+limits attribution to the child; it does not bar properly qualified engineered-model
+research. Next work follows the v21 validation plan. No additional model run can
+currently settle endogenous function, joint response or free-tissue exposure.
+
+
+Fresh no-argument `./init.sh` completed from a new login shell with exit 0. Actual
+output (`logs/track2-v21-final-init-20260927.log`):
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "harness_version": 21,
+  "presentation_version": 21,
+  "drug_science_version": 21,
+  "slides": 8,
+  "narration_words": 335,
+  "falsification_amendment": {
+    "passed": true,
+    "claims": 27,
+    "additional_source_records": 12,
+    "current_decision": {
+      "clinical_recommendation": false,
+      "scope": "qualified_non_cancer_model",
+      "evidence_kind": "not_measured",
+      "decision": "HOLD",
+      "reason": "Prerequisites unresolved or failed; no transfer from another branch"
+    },
+    "drug_dispositions_changed": false,
+    "biological_validation": false
+  },
+  "upload_ready": false,
+  "research_addendum": {
+    "version": 19,
+    "status": "complete",
+    "gpus": 8,
+    "completed_gpu_waves": 3,
+    "compound_profiles": 312438,
+    "query_compound_comparisons": 12185082,
+    "resampled_reagent_sets": 560000,
+    "primary_contexts": 14,
+    "primary_query_gates_passed": 0,
+    "post_hoc_comparisons": 42,
+    "post_hoc_full_filters_passed": 0,
+    "primary_everolimus_comparisons": 19,
+    "primary_everolimus_profiles": 14,
+    "primary_everolimus_positive_correlations": 13,
+    "phase2_unresolved_labelled_profiles": 174,
+    "phase2_reference_matching_profiles": 6,
+    "phase2_reference_matching_qc_passes": 0,
+    "ht29_post_hoc_reagents": 5,
+    "ht29_post_hoc_adjusted_tail": 0.041995800419958006,
+    "ht29_full_filter_passed": false,
+    "drug_ranking_changed": false
+  },
+  "biological_validation": false,
+  "scope": "Combined public presentation/research consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```
+
+End-of-session disclosure and synchronization commands; their audit outputs retain
+findings and counts without protected source text:
+
+```bash
+uv run python scripts/audit_publication.py --staged --output results/feat009/v21-staged-disclosure-20260927.json
+git diff --cached --check
+git commit -m "Strengthen Track 2 falsification and synchronize v21 deliverables"
+uv run python scripts/audit_publication.py --output results/feat009/v21-history-disclosure-20260927.json
+git push origin main
+git status --short
+git rev-list --left-right --count HEAD...@{upstream}
+```

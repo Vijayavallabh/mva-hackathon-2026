@@ -1,0 +1,53 @@
+{
+  "schema_version": 21,
+  "scope": "qualified_non_cancer_model",
+  "gates": {
+    "assay_valid": "unknown",
+    "model_qualified": "unknown",
+    "branch_eligible": "unknown",
+    "plan_locked": "unknown",
+    "compound_identity": "unknown",
+    "joint_drug_deficit": "unknown",
+    "randomized_blinded": "unknown",
+    "experimental_units_valid": "unknown",
+    "all_enrolled_accounted": "unknown",
+    "independent_confirmation": "unknown",
+    "exposure_bridge": "unknown",
+    "mechanism_interpretable": "unknown",
+    "scope_qualified": "unknown"
+  },
+  "benefit": {
+    "unit": "prospectively qualified functional units",
+    "interval": null,
+    "margin": null
+  },
+  "harms": {
+    "division_capacity": {
+      "unit": "prospectively qualified injury units",
+      "interval": null,
+      "margin": null
+    },
+    "chromosome_fidelity": {
+      "unit": "prospectively qualified injury units",
+      "interval": null,
+      "margin": null
+    },
+    "viability": {
+      "unit": "prospectively qualified injury units",
+      "interval": null,
+      "margin": null
+    },
+    "regeneration": {
+      "unit": "prospectively qualified injury units",
+      "interval": null,
+      "margin": null
+    },
+    "recovery": {
+      "unit": "prospectively qualified injury units",
+      "interval": null,
+      "margin": null
+    }
+  },
+  "safety_stop_observed": null,
+  "evidence_kind": "not_measured"
+}

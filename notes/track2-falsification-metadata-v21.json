@@ -1,0 +1,2909 @@
+{
+  "date_utc": "2026-09-27T14:42:13.745864+00:00",
+  "requested_ids": [
+    "10084045",
+    "11410517",
+    "11858361",
+    "1281285",
+    "12864851",
+    "14504461",
+    "14585225",
+    "14710364",
+    "14988919",
+    "15036397",
+    "15045032",
+    "16175142",
+    "16207585",
+    "16597167",
+    "16790088",
+    "16955467",
+    "17170621",
+    "17268814",
+    "17389228",
+    "17650307",
+    "17802748",
+    "17872472",
+    "18539601",
+    "19282667",
+    "19303679",
+    "19352372",
+    "19528295",
+    "19846757",
+    "20081372",
+    "200890",
+    "20162290",
+    "20237300",
+    "20472200",
+    "20532971",
+    "21555972",
+    "21632529",
+    "21792211",
+    "21803218",
+    "22014409",
+    "22033322",
+    "22444789",
+    "23348586",
+    "23512483",
+    "23580857",
+    "23619976",
+    "23688688",
+    "23878276",
+    "23909960",
+    "24224736",
+    "24249672",
+    "24655348",
+    "24695965",
+    "24743044",
+    "24814395",
+    "24825348",
+    "24913039",
+    "24920578",
+    "24926828",
+    "24986086",
+    "24998445",
+    "25030697",
+    "25179604",
+    "25183957",
+    "25242757",
+    "25246613",
+    "25285631",
+    "25314592",
+    "25432075",
+    "25446280",
+    "25598153",
+    "25609570",
+    "25662209",
+    "25672491",
+    "25824339",
+    "25888134",
+    "25924852",
+    "25924882",
+    "26028219",
+    "26092412",
+    "26125114",
+    "26162688",
+    "26256069",
+    "26324890",
+    "26636678",
+    "26907642",
+    "27075305",
+    "27260644",
+    "27313317",
+    "27350047",
+    "27509861",
+    "27998540",
+    "28035748",
+    "28249296",
+    "28254441",
+    "28314266",
+    "28404789",
+    "28549783",
+    "28628199",
+    "28751710",
+    "28769090",
+    "28861278",
+    "28884992",
+    "28950102",
+    "29030394",
+    "29065900",
+    "29067790",
+    "29186990",
+    "29195078",
+    "29286963",
+    "29709701",
+    "29797808",
+    "29866590",
+    "29872120",
+    "29883308",
+    "30015406",
+    "30070028",
+    "30157472",
+    "30181270",
+    "30430228",
+    "30459282",
+    "30610030",
+    "30693443",
+    "30733524",
+    "31030813",
+    "31264964",
+    "31291457",
+    "31335322",
+    "31511308",
+    "31513481",
+    "31547228",
+    "31628467",
+    "31678323",
+    "31722796",
+    "31771225",
+    "31784732",
+    "31787052",
+    "31924480",
+    "32035011",
+    "32286328",
+    "32386566",
+    "32499867",
+    "32580235",
+    "32640244",
+    "32914523",
+    "32977361",
+    "33109034",
+    "33207204",
+    "33355089",
+    "33386558",
+    "33439069",
+    "33658088",
+    "33731717",
+    "33801334",
+    "33819340",
+    "33860079",
+    "34027130",
+    "34035233",
+    "34297127",
+    "34635673",
+    "34639012",
+    "34650921",
+    "34659903",
+    "35191375",
+    "35326770",
+    "35392063",
+    "35580604",
+    "35639235",
+    "35688486",
+    "35835966",
+    "35865311",
+    "35881695",
+    "35907244",
+    "35956406",
+    "36430301",
+    "36525974",
+    "36693378",
+    "36766802",
+    "37016270",
+    "37094517",
+    "37130978",
+    "37243336",
+    "37274003",
+    "37679013",
+    "37786437",
+    "38009412",
+    "3817012",
+    "38323474",
+    "38364328",
+    "38406555",
+    "38553728",
+    "38865189",
+    "38936378",
+    "39147820",
+    "39299930",
+    "39403898",
+    "39490401",
+    "39516273",
+    "39675713",
+    "39753942",
+    "40013582",
+    "4018404",
+    "40298946",
+    "40353859",
+    "40357267",
+    "40386363",
+    "40583368",
+    "40641039",
+    "40714656",
+    "40811342",
+    "41100733",
+    "41154353",
+    "41229848",
+    "41266821",
+    "41352525",
+    "41405487",
+    "41410033",
+    "41470091",
+    "41481756",
+    "41524558",
+    "41646932",
+    "41686888",
+    "41751568",
+    "41864372",
+    "41888005",
+    "41895167",
+    "41985884",
+    "42009009",
+    "42113905",
+    "42144735",
+    "42188047",
+    "42209514",
+    "42223054",
+    "42339509",
+    "42341897",
+    "42392367",
+    "42419414",
+    "42537336",
+    "42624103",
+    "42708068",
+    "42776599",
+    "6287655",
+    "7534292",
+    "7704464",
+    "7715800",
+    "7816040",
+    "7871574",
+    "7879049",
+    "8438246",
+    "9636418"
+  ],
+  "input_sha256": {
+    "notes/track2-falsification-search-v21.json": "4cb59436cebb2c1752faa86dbc6480dacdc73ccb8d0e928cbb6afa804361ee49",
+    "notes/track2-falsification-search-fallback-v21.json": "4d4ce8b7039c459be459443123c647b27f4c2af4ffcfc760ecdd5983db1eebe0"
+  },
+  "scope": "Discovery metadata, not papers independently reviewed",
+  "raw_sha256": "eca372ba29c720beb138c0cf2961304960040e0b1c977fa32653c70e56dff7ba",
+  "records": [
+    {
+      "pmid": "10084045",
+      "title": "Juvenile dermatomyositis: clinical profile and disease course in 25 patients.",
+      "doi": null,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "11410517",
+      "title": "Biochemical correlates of mTOR inhibition by the rapamycin ester CCI-779 and tumor growth inhibition.",
+      "doi": null,
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, P.H.S."
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "11858361",
+      "title": "Dermatomyositis sine myositis and antisynthetase syndrome.",
+      "doi": "10.1016/s1297-319x(01)00345-1",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "1281285",
+      "title": "CD1b restricts the response of human CD4-8- T lymphocytes to a microbial antigen.",
+      "doi": "10.1038/360593a0",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, P.H.S."
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "12864851",
+      "title": "Mapping of the Plasmodium falciparum multidrug resistance gene 5'-upstream region, and evidence of induction of transcript levels by antimalarial drugs in chloroquine sensitive parasites.",
+      "doi": "10.1046/j.1365-2958.2003.03597.x",
+      "publication_types": [
+        "Comparative Study",
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Research Support, U.S. Gov't, P.H.S."
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "14504461",
+      "title": "The survivin/Aurora B complex: its role in coordinating tension and attachment.",
+      "doi": "10.4161/cc.2.6.559",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "14585225",
+      "title": "New therapeutic strategies for soft tissue sarcomas.",
+      "doi": "10.1007/s11864-003-0045-4",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "14710364",
+      "title": "Insulin-like growth factor binding protein-6 and CCI-779, an ester analogue of rapamycin, additively inhibit rhabdomyosarcoma growth.",
+      "doi": "10.1055/s-2004-814153",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "14988919",
+      "title": "Electron microscopic and biochemical study of the effects of rapamycin on glycogen autophagy in the newborn rat liver.",
+      "doi": "10.1002/jemt.20032",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "15036397",
+      "title": "Effects of aerobic exercise training on the protein kinase B (PKB)/mammalian target of rapamycin (mTOR) signaling pathway in aged skeletal muscle.",
+      "doi": "10.1016/j.exger.2003.12.005",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Research Support, U.S. Gov't, P.H.S."
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "15045032",
+      "title": "Everolimus: a proliferation signal inhibitor targeting primary causes of allograft dysfunction.",
+      "doi": "10.1358/dot.2004.40.2.799422",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "16175142",
+      "title": "The role of therapeutic monitoring of everolimus in solid organ transplantation.",
+      "doi": "10.1097/01.ftd.0000175911.70172.2e",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "16207585",
+      "title": "[Pellagra].",
+      "doi": null,
+      "publication_types": [
+        "English Abstract",
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "16597167",
+      "title": "Everolimus: a review of its use in renal and cardiac transplantation.",
+      "doi": "10.2165/00003495-200666040-00009",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "16790088",
+      "title": "CCI-779 inhibits rhabdomyosarcoma xenograft growth by an antiangiogenic mechanism linked to the targeting of mTOR/Hif-1alpha/VEGF signaling.",
+      "doi": "10.1593/neo.05820",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Intramural"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "16955467",
+      "title": "Detection in primary chronic myeloid leukaemia cells of p210BCR-ABL1 in complexes with adaptor proteins CBL, CRKL, and GRB2.",
+      "doi": "10.1002/gcc.20377",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "17170621",
+      "title": "Severe gastrointestinal inflammation in adult dermatomyositis: characterization of a novel clinical association.",
+      "doi": "10.1097/00000441-200612000-00003",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "17268814",
+      "title": "Genetic variation in the major mitotic checkpoint genes does not affect familial breast cancer risk.",
+      "doi": "10.1007/s10549-007-9496-9",
+      "publication_types": [
+        "Comparative Study",
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "17389228",
+      "title": "Bub1 is essential for assembly of the functional inner centromere.",
+      "doi": "10.1083/jcb.200609044",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Intramural"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "17650307",
+      "title": "Running on a treadmill: dynamic inhibition of APC/C by the spindle checkpoint.",
+      "doi": "10.1186/1747-1028-2-23",
+      "publication_types": [
+        "Editorial"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "17802748",
+      "title": "[Assembly of correct kinetochore architecture in Xenopus laevis egg extract requires transition of sperm DNA through interphase].",
+      "doi": null,
+      "publication_types": [
+        "English Abstract",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "17872472",
+      "title": "Interferon-gamma and intimal hyperplasia.",
+      "doi": "10.1161/CIRCRESAHA.107.160911",
+      "publication_types": [
+        "Editorial",
+        "Research Support, Non-U.S. Gov't",
+        "Comment"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentOn",
+          "pmid": "17656678"
+        }
+      ]
+    },
+    {
+      "pmid": "18539601",
+      "title": "Juglone inactivates cysteine-rich proteins required for progression through mitosis.",
+      "doi": "10.1074/jbc.M710264200",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "19282667",
+      "title": "SIRT2 downregulation confers resistance to microtubule inhibitors by prolonging chronic mitotic arrest.",
+      "doi": "10.4161/cc.8.8.8245",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "19303679",
+      "title": "Rapamycin for focal segmental glomerulosclerosis: a report of 3 cases.",
+      "doi": "10.1053/j.ajkd.2008.12.024",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "19352372",
+      "title": "Missing lincs in the transcriptome.",
+      "doi": "10.1038/nbt0409-346",
+      "publication_types": [
+        "Comment",
+        "Journal Article"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentOn",
+          "pmid": "19182780"
+        }
+      ]
+    },
+    {
+      "pmid": "19528295",
+      "title": "Loss of spindle assembly checkpoint-mediated inhibition of Cdc20 promotes tumorigenesis in mice.",
+      "doi": "10.1083/jcb.200904020",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "linked_notices": [
+        {
+          "type": "ErratumIn",
+          "pmid": null
+        },
+        {
+          "type": "CommentIn",
+          "pmid": "19528293"
+        }
+      ]
+    },
+    {
+      "pmid": "19846757",
+      "title": "Polyploidy impairs human aortic endothelial cell function and is prevented by nicotinamide phosphoribosyltransferase.",
+      "doi": "10.1152/ajpcell.00357.2009",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "20081372",
+      "title": "Requirement for proteolysis in spindle assembly checkpoint silencing.",
+      "doi": "10.4161/cc.9.3.10581",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentIn",
+          "pmid": "20190575"
+        }
+      ]
+    },
+    {
+      "pmid": "200890",
+      "title": "[Chloroquine neuromyopathy. One case in prophylactic maleriatherapy (author's transl)].",
+      "doi": null,
+      "publication_types": [
+        "English Abstract",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "20162290",
+      "title": "Re-evaluating the role of Tao1 in the spindle checkpoint.",
+      "doi": "10.1007/s00412-010-0261-1",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "20237300",
+      "title": "Downregulation of Akt/mammalian target of rapamycin pathway in skeletal muscle is associated with increased REDD1 expression in response to chronic hypoxia.",
+      "doi": "10.1152/ajpregu.00550.2009",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "20472200",
+      "title": "Optic nerve tumor in tuberous sclerosis complex is not responsive to sirolimus.",
+      "doi": "10.1016/j.pediatrneurol.2010.01.016",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "20532971",
+      "title": "Rapamycin can inhibit the development of Chlamydia pneumoniae, which might partly contribute to the prevention of in-stent restenosis.",
+      "doi": "10.1007/s10557-010-6238-8",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "21555972",
+      "title": "Everolimus for cardiac allograft vasculopathy--every patient, at any time?",
+      "doi": "10.1097/TP.0b013e318220588f",
+      "publication_types": [
+        "Journal Article",
+        "Comment"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentOn",
+          "pmid": "21677600"
+        }
+      ]
+    },
+    {
+      "pmid": "21632529",
+      "title": "No role for early IGF-1 signalling in stimulating acute 'muscle building' responses.",
+      "doi": "10.1113/jphysiol.2011.207332",
+      "publication_types": [
+        "Journal Article",
+        "Comment"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentOn",
+          "pmid": "21300751"
+        }
+      ]
+    },
+    {
+      "pmid": "21792211",
+      "title": "Identification of novel rapamycin derivatives as low-level impurities in active pharmaceutical ingredients.",
+      "doi": "10.1038/ja.2011.61",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "21803218",
+      "title": "Emerging toxic neuropathies and myopathies.",
+      "doi": "10.1016/j.ncl.2011.05.009",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "22014409",
+      "title": "Rapamycin inhibits osteolysis and improves survival in a model of experimental bone metastases.",
+      "doi": "10.1016/j.canlet.2011.09.026",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "22033322",
+      "title": "Phase II trial of temsirolimus in children with high-grade glioma, neuroblastoma and rhabdomyosarcoma.",
+      "doi": "10.1016/j.ejca.2011.09.021",
+      "publication_types": [
+        "Clinical Trial, Phase II",
+        "Journal Article",
+        "Multicenter Study",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "22444789",
+      "title": "Reduction in size of renal angiomyolipoma after treatment with everolimus in lung transplantation due to lymphangioleiomyomatosis.",
+      "doi": "10.1016/j.arbres.2012.02.002",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "23348586",
+      "title": "Resveratrol potentiates rapamycin to prevent hyperinsulinemia and obesity in male mice on high fat diet.",
+      "doi": "10.1038/cddis.2012.202",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentIn",
+          "pmid": "23788037"
+        }
+      ]
+    },
+    {
+      "pmid": "23512483",
+      "title": "Making an effective switch at the kinetochore by phosphorylation and dephosphorylation.",
+      "doi": "10.1007/s00412-013-0401-5",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "23580857",
+      "title": "In vivo confocal microscopy in chloroquine-induced keratopathy.",
+      "doi": "10.4103/0974-9233.106397",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "23619976",
+      "title": "EBV-transformed lymphoblastoid cell lines as vaccines against cancer testis antigen-positive tumors.",
+      "doi": "10.1007/s00262-013-1412-z",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "23688688",
+      "title": "Emerging toxic neuropathies and myopathies.",
+      "doi": "10.1016/j.psc.2013.02.002",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "23878276",
+      "title": "Loss of BubR1 acetylation causes defects in spindle assembly checkpoint signaling and promotes tumor formation.",
+      "doi": "10.1083/jcb.201210099",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "23909960",
+      "title": "First left-right comparative study of topical rapamycin vs. vehicle for facial angiofibromas in patients with tuberous sclerosis complex.",
+      "doi": "10.1111/bjd.12567",
+      "publication_types": [
+        "Comparative Study",
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "24224736",
+      "title": "Palmoplantar peeling secondary to sirolimus therapy.",
+      "doi": "10.1111/ajt.12511",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "24249672",
+      "title": "Phase 1 trial of temsirolimus in combination with irinotecan and temozolomide in children, adolescents and young adults with relapsed or refractory solid tumors: a Children's Oncology Group Study.",
+      "doi": "10.1002/pbc.24874",
+      "publication_types": [
+        "Clinical Trial, Phase I",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "24655348",
+      "title": "Weekly administration of rapamycin improves survival and biomarkers in obese male mice on high-fat diet.",
+      "doi": "10.1111/acel.12211",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "24695965",
+      "title": "Conditional targeting of MAD1 to kinetochores is sufficient to reactivate the spindle assembly checkpoint in metaphase.",
+      "doi": "10.1007/s00412-014-0458-9",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "24743044",
+      "title": "Novel downstream molecular targets of SIRT1 in melanoma: a quantitative proteomics approach.",
+      "doi": "10.18632/oncotarget.1898",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "24814395",
+      "title": "Chemosensitization of rhabdomyosarcoma cells by the histone deacetylase inhibitor SAHA.",
+      "doi": "10.1016/j.canlet.2014.04.021",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "24825348",
+      "title": "SIRT2 induces the checkpoint kinase BubR1 to increase lifespan.",
+      "doi": "10.15252/embj.201386907",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentIn",
+          "pmid": "24920578"
+        }
+      ]
+    },
+    {
+      "pmid": "24913039",
+      "title": "Prenatal diagnosis of giant cardiac rhabdomyoma in tuberous sclerosis complex: a new therapeutic option with everolimus.",
+      "doi": "10.1002/uog.13434",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "24920578",
+      "title": "Sirtuin to the rescue: SIRT2 extends life span of BubR1 mice.",
+      "doi": "10.15252/embj.201488983",
+      "publication_types": [
+        "Journal Article",
+        "Comment"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentOn",
+          "pmid": "24825348"
+        }
+      ]
+    },
+    {
+      "pmid": "24926828",
+      "title": "Rapamycin represses myotube hypertrophy and preserves viability of C2C12 cells during myogenesis in vitro.",
+      "doi": "10.1097/TP.0000000000000175",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "24986086",
+      "title": "Rapamycin does not inhibit human cytomegalovirus reactivation from dendritic cells in vitro.",
+      "doi": "10.1099/vir.0.066332-0",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "24998445",
+      "title": "Targeted polytherapy in small cell sarcoma and its association with doxorubicin.",
+      "doi": "10.1016/j.molonc.2014.05.016",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25030697",
+      "title": "Lineage of origin in rhabdomyosarcoma informs pharmacological response.",
+      "doi": "10.1101/gad.238733.114",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25179604",
+      "title": "B56-PP2A regulates motor dynamics for mitotic chromosome alignment.",
+      "doi": "10.1242/jcs.154609",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25183957",
+      "title": "Pompe disease: from pathophysiology to therapy and back again.",
+      "doi": "10.3389/fnagi.2014.00177",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25242757",
+      "title": "5 year comparison of very low-dose cyclosporine and high-dose everolimus vs standard cyclosporine and enteric-coated mycophenolate in renal transplantation patients.",
+      "doi": "10.1016/j.transproceed.2014.07.041",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25246613",
+      "title": "PP2A-B56 opposes Mps1 phosphorylation of Knl1 and thereby promotes spindle assembly checkpoint silencing.",
+      "doi": "10.1083/jcb.201406109",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25285631",
+      "title": "Deacetylation of the mitotic checkpoint protein BubR1 at lysine 250 by SIRT2 and subsequent effects on BubR1 degradation during the prometaphase/anaphase transition.",
+      "doi": "10.1016/j.bbrc.2014.09.128",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25314592",
+      "title": "Classic Kaposi's sarcoma treated with topical rapamycin.",
+      "doi": "10.1111/dth.12182",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25432075",
+      "title": "GLI inhibitor GANT-61 diminishes embryonal and alveolar rhabdomyosarcoma growth by inhibiting Shh/AKT-mTOR axis.",
+      "doi": "10.18632/oncotarget.2569",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25446280",
+      "title": "Phase II study of cixutumumab in combination with temsirolimus in pediatric patients and young adults with recurrent or refractory sarcoma: a report from the Children's Oncology Group.",
+      "doi": "10.1002/pbc.25334",
+      "publication_types": [
+        "Clinical Trial, Phase II",
+        "Journal Article",
+        "Multicenter Study",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25598153",
+      "title": "Successful treatment of kaposiform lymphangiomatosis with sirolimus.",
+      "doi": "10.1002/pbc.25422",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25609570",
+      "title": "Compound signature detection on LINCS L1000 big data.",
+      "doi": "10.1039/c4mb00677a",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25662209",
+      "title": "Decreased vascularization of retroperitoneal kaposiform hemangioendothelioma induced by treatment with sirolimus explains relief of symptoms.",
+      "doi": "10.1016/j.clinimag.2015.01.003",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25672491",
+      "title": "Selective Sirt2 inhibition by ligand-induced rearrangement of the active site.",
+      "doi": "10.1038/ncomms7263",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25824339",
+      "title": "New ways to boost molecular dynamics simulations.",
+      "doi": "10.1002/jcc.23899",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25888134",
+      "title": "Lazarillo-related Lipocalins confer long-term protection against type I Spinocerebellar Ataxia degeneration contributing to optimize selective autophagy.",
+      "doi": "10.1186/s13024-015-0009-8",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25924852",
+      "title": "A dual-specific anti-IGF-1/IGF-2 human monoclonal antibody alone and in combination with temsirolimus for therapy of neuroblastoma.",
+      "doi": "10.1002/ijc.29588",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Intramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "25924882",
+      "title": "Profiling of the fetal and adult rat liver transcriptome and translatome reveals discordant regulation by the mechanistic target of rapamycin (mTOR).",
+      "doi": "10.1152/ajpregu.00114.2015",
+      "publication_types": [
+        "Comparative Study",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "26028219",
+      "title": "Inherent Instability of Correct Kinetochore-Microtubule Attachments during Meiosis I in Oocytes.",
+      "doi": "10.1016/j.devcel.2015.04.020",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentIn",
+          "pmid": "26058054"
+        }
+      ]
+    },
+    {
+      "pmid": "26092412",
+      "title": "Long-Term Everolimus Treatment in Individuals With Tuberous Sclerosis Complex: A Review of the Current Literature.",
+      "doi": "10.1016/j.pediatrneurol.2014.10.024",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "26125114",
+      "title": "Cyclin B3 controls anaphase onset independent of spindle assembly checkpoint in meiotic oocytes.",
+      "doi": "10.1080/15384101.2015.1064567",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentIn",
+          "pmid": "26496167"
+        }
+      ]
+    },
+    {
+      "pmid": "26162688",
+      "title": "Histone Deacetylase Inhibitors Inhibit Rhabdomyosarcoma by Reactive Oxygen Species-Dependent Targeting of Specificity Protein Transcription Factors.",
+      "doi": "10.1158/1535-7163.MCT-15-0148",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "26256069",
+      "title": "The designs and applications of a scanning interface with electrical signal detection on the scalp for the severely disabled.",
+      "doi": "10.1016/j.cmpb.2015.07.007",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "26324890",
+      "title": "Mode of interaction of TRIP13 AAA-ATPase with the Mad2-binding protein p31comet and with mitotic checkpoint complexes.",
+      "doi": "10.1073/pnas.1515358112",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "26636678",
+      "title": "Histone Deacetylase Inhibitors Antagonize Distinct Pathways to Suppress Tumorigenesis of Embryonal Rhabdomyosarcoma.",
+      "doi": "10.1371/journal.pone.0144320",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "26907642",
+      "title": "Successful Everolimus Treatment of Kaposiform Hemangioendothelioma With Kasabach-Merritt Phenomenon: Clinical Efficacy and Adverse Effects of mTOR Inhibitor Therapy.",
+      "doi": "10.1097/MPH.0000000000000509",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "27075305",
+      "title": "The morphological analysis of autophagy in primary skeletal muscle cells infected with Toxoplasma gondii.",
+      "doi": "10.1007/s00436-016-5040-3",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "27260644",
+      "title": "Effect of everolimus initiation and early calcineurin inhibitor withdrawal on myocardial FOXP3+ regulatory T cells in heart transplantation.",
+      "doi": "10.1016/j.trim.2016.05.004",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "27313317",
+      "title": "Aneuploidy impairs hematopoietic stem cell fitness and is selected against in regenerating tissues in vivo.",
+      "doi": "10.1101/gad.278820.116",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "27350047",
+      "title": "Crystal structure of a PP2A B56-BubR1 complex and its implications for PP2A substrate recruitment and localization.",
+      "doi": "10.1007/s13238-016-0283-4",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "27509861",
+      "title": "Molecular basis of APC/C regulation by the spindle assembly checkpoint.",
+      "doi": "10.1038/nature19083",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentIn",
+          "pmid": "27509855"
+        }
+      ]
+    },
+    {
+      "pmid": "27998540",
+      "title": "Expanding the PP2A Interactome by Defining a B56-Specific SLiM.",
+      "doi": "10.1016/j.str.2016.09.010",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "28035748",
+      "title": "A phase I study of perifosine with temsirolimus for recurrent pediatric solid tumors.",
+      "doi": "10.1002/pbc.26409",
+      "publication_types": [
+        "Clinical Trial, Phase I",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "28249296",
+      "title": "Regulation of Liver Energy Balance by the Nuclear Receptors Farnesoid X Receptor and Peroxisome Proliferator Activated Receptor \u03b1.",
+      "doi": "10.1159/000450912",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "28254441",
+      "title": "Omega-3 polyunsaturated fatty acids suppress the inflammatory responses of lipopolysaccharide-stimulated mouse microglia by activating SIRT1 pathways.",
+      "doi": "10.1016/j.bbalip.2017.02.010",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "28314266",
+      "title": "Additive Interaction of Cisplatin and Histone Deacetylase Inhibitors Combined Treatment in Rhabdomyosarcoma Cells - An Isobolographic Analysis.",
+      "doi": "10.21873/anticanres.11418",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "28404789",
+      "title": "The PP2AB56 phosphatase promotes the association of Cdc20 with APC/C in mitosis.",
+      "doi": "10.1242/jcs.201608",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "28549783",
+      "title": "Irinotecan-temozolomide with temsirolimus or dinutuximab in children with refractory or relapsed neuroblastoma (COG ANBL1221): an open-label, randomised, phase 2 trial.",
+      "doi": "10.1016/S1470-2045(17)30355-8",
+      "publication_types": [
+        "Clinical Trial, Phase II",
+        "Journal Article",
+        "Multicenter Study",
+        "Randomized Controlled Trial"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentIn",
+          "pmid": "28549784"
+        }
+      ]
+    },
+    {
+      "pmid": "28628199",
+      "title": "Measuring Cancer Drug Sensitivity and Resistance in Cultured Cells.",
+      "doi": "10.1002/cpch.21",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "28751710",
+      "title": "Aurora-B kinase pathway controls the lateral to end-on conversion of kinetochore-microtubule attachments in human cells.",
+      "doi": "10.1038/s41467-017-00209-z",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "28769090",
+      "title": "Discovery of novel therapeutic properties of drugs from transcriptional responses based on multi-label classification.",
+      "doi": "10.1038/s41598-017-07705-8",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "28861278",
+      "title": "Comparing structural and transcriptional drug networks reveals signatures of drug activity and toxicity in transcriptional responses.",
+      "doi": "10.1038/s41540-017-0022-3",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "28884992",
+      "title": "New therapeutic approach by sirolimus for enteropathy treatment in patients with LRBA deficiency.",
+      "doi": "10.23822/EurAnnACI.1764-1489.22",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "28950102",
+      "title": "Distinct Roles of the Chromosomal Passenger Complex in the Detection of and Response to Errors in Kinetochore-Microtubule Attachment.",
+      "doi": "10.1016/j.devcel.2017.08.022",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "29030394",
+      "title": "PtdIns3P controls mTORC1 signaling through lysosomal positioning.",
+      "doi": "10.1083/jcb.201611073",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "29065900",
+      "title": "GRcalculator: an online tool for calculating and mining dose-response data.",
+      "doi": "10.1186/s12885-017-3689-3",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "29067790",
+      "title": "Sirt2-BubR1 acetylation pathway mediates the effects of advanced maternal age on oocyte quality.",
+      "doi": "10.1111/acel.12698",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "29186990",
+      "title": "Nanomedicine approaches for sirolimus delivery: a review of pharmaceutical properties and preclinical studies.",
+      "doi": "10.1080/21691401.2017.1408123",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "29195078",
+      "title": "A Next Generation Connectivity Map: L1000 Platform and the First 1,000,000 Profiles.",
+      "doi": "10.1016/j.cell.2017.10.049",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "29286963",
+      "title": "Restricted Range of Motion and a Cold Upper Extremity in a Two-Year-Old Boy: Kaposiform Hemangioendothelioma of the Bone and the Brachial Plexus: A Case Report.",
+      "doi": "10.2106/JBJS.CC.17.00027",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "29709701",
+      "title": "Co-targeting of BET proteins and HDACs as a novel approach to trigger apoptosis in rhabdomyosarcoma cells.",
+      "doi": "10.1016/j.canlet.2018.04.032",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "29797808",
+      "title": "Rejuvenating Aged Hematopoietic Stem Cells Through Improvement of Mitochondrial Function.",
+      "doi": "10.3343/alm.2018.38.5.395",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "29866590",
+      "title": "Comprehending a Killer: The Akt/mTOR Signaling Pathways Are Temporally High-Jacked by the Highly Pathogenic 1918 Influenza Virus.",
+      "doi": "10.1016/j.ebiom.2018.05.027",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "29872120",
+      "title": "Rapamycin attenuates pathological hypertrophy caused by an absence of trabecular formation.",
+      "doi": "10.1038/s41598-018-26843-1",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, Non-P.H.S."
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "29883308",
+      "title": "Hydroxychloroquine: An old drug with new relevance.",
+      "doi": "10.3949/ccjm.85a.17034",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "30015406",
+      "title": "Topical rapamycin (sirolimus) for the treatment of uncomplicated tufted angiomas in two children and review of the literature.",
+      "doi": "10.1111/pde.13596",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "30070028",
+      "title": "Kaposiform hemangioendothelioma with Kasabach-Merritt phenomenon in an infant: Successful treatment with prednisolone, vincristine, and addition of sirolimus.",
+      "doi": "10.1002/pbc.27305",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "30157472",
+      "title": "Liver regeneration in aged mice: new insights.",
+      "doi": "10.18632/aging.101524",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "30181270",
+      "title": "Correction for Tomasini et al., TAp73 regulates the spindle assembly checkpoint by modulating BubR1 activity.",
+      "doi": "10.1073/pnas.1814112115",
+      "publication_types": [
+        "Journal Article",
+        "Published Erratum"
+      ],
+      "linked_notices": [
+        {
+          "type": "ErratumFor",
+          "pmid": "19139399"
+        }
+      ]
+    },
+    {
+      "pmid": "30430228",
+      "title": "Role of the HDAC6/STAT3 pathway in regulating PD-L1 expression in osteosarcoma cell lines.",
+      "doi": "10.1007/s00280-018-3721-6",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "30459282",
+      "title": "The HDAC3-SMARCA4-miR-27a axis promotes expression of the PAX3:FOXO1 fusion oncogene in rhabdomyosarcoma.",
+      "doi": "10.1126/scisignal.aau7632",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, N.I.H., Intramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "30610030",
+      "title": "Autoimmunity and immunodeficiency at the crossroad: autoimmune disorders as the presenting feature of selective IgM deficiency.",
+      "doi": "10.1136/bcr-2017-223180",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "30693443",
+      "title": "ROS-Induced Activation of DNA Damage Responses Drives Senescence-Like State in Postmitotic Cochlear Cells: Implication for Hearing Preservation.",
+      "doi": "10.1007/s12035-019-1493-6",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "30733524",
+      "title": "Functional random forest with applications in dose-response predictions.",
+      "doi": "10.1038/s41598-018-38231-w",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "31030813",
+      "title": "Vascular Anomalies: Diagnosis of Complicated Anomalies and New\u00a0Medical Treatment Options.",
+      "doi": "10.1016/j.hoc.2019.01.011",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "31264964",
+      "title": "Centralized scientific communities are less likely to generate replicable results.",
+      "doi": "10.7554/eLife.43094",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, Non-P.H.S."
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "31291457",
+      "title": "A PARP1-BRG1-SIRT1 axis promotes HR repair by reducing nucleosome density at DNA damage sites.",
+      "doi": "10.1093/nar/gkz592",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "31335322",
+      "title": "Induction of cardiomyocyte proliferation and angiogenesis protects neonatal mice from pressure overload-associated maladaptation.",
+      "doi": "10.1172/jci.insight.128336",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "31511308",
+      "title": "Checkpoint signaling and error correction require regulation of the MPS1 T-loop by PP2A-B56.",
+      "doi": "10.1083/jcb.201905026",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "31513481",
+      "title": "Randomized Phase II Trial of Bevacizumab or Temsirolimus in Combination With Chemotherapy for First Relapse Rhabdomyosarcoma: A Report From the Children's Oncology Group.",
+      "doi": "10.1200/JCO.19.00576",
+      "publication_types": [
+        "Clinical Trial, Phase II",
+        "Comparative Study",
+        "Journal Article",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "31547228",
+      "title": "Mechanistic Connections between Endoplasmic Reticulum (ER) Redox Control and Mitochondrial Metabolism.",
+      "doi": "10.3390/cells8091071",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "31628467",
+      "title": "Genetic and genomic studies of pathogenic EXOSC2 mutations in the newly described disease SHRF implicate the autophagy pathway in disease pathogenesis.",
+      "doi": "10.1093/hmg/ddz251",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "31678323",
+      "title": "Rapid and persistent loss of TXNIP in HT22 neuronal cells under carbonyl and hyperosmotic stress.",
+      "doi": "10.1016/j.neuint.2019.104585",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "31722796",
+      "title": "Recommendations for the management of renal involvement in the tuberous sclerosis complex.",
+      "doi": "10.1016/j.nefro.2019.07.002",
+      "publication_types": [
+        "Journal Article",
+        "Practice Guideline",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "31771225",
+      "title": "Wasabi Compound 6-(Methylsulfinyl) Hexyl Isothiocyanate Induces Cell Death with Coexisting Mitotic Arrest and Autophagy in Human Chronic Myelogenous Leukemia K562 Cells.",
+      "doi": "10.3390/biom9120774",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "31784732",
+      "title": "Histone hyperacetylation disrupts core gene regulatory architecture in rhabdomyosarcoma.",
+      "doi": "10.1038/s41588-019-0534-4",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "31787052",
+      "title": "Attenuation of Angiotensin II-Induced Hypertension in BubR1 Low-Expression Mice Via Repression of Angiotensin II Receptor 1 Overexpression.",
+      "doi": "10.1161/JAHA.118.011911",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "31924480",
+      "title": "Cannabidiol Elevates Mechanistic Target of Rapamycin Inhibitor Levels in Patients With Tuberous Sclerosis Complex.",
+      "doi": "10.1016/j.pediatrneurol.2019.11.017",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "32035011",
+      "title": "Inclusion-body myositis and primary Sj\u00f6gren syndrome: mechanisms for shared etiologies.",
+      "doi": "10.1002/mus.26830",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": [
+        {
+          "type": "ErratumIn",
+          "pmid": "32798332"
+        }
+      ]
+    },
+    {
+      "pmid": "32286328",
+      "title": "Proper chromosome alignment depends on BRCA2 phosphorylation by PLK1.",
+      "doi": "10.1038/s41467-020-15689-9",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "32386566",
+      "title": "Niacin Cures Systemic NAD+ Deficiency and Improves Muscle Performance in Adult-Onset Mitochondrial Myopathy.",
+      "doi": "10.1016/j.cmet.2020.04.008",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentIn",
+          "pmid": "32492387"
+        },
+        {
+          "type": "ErratumIn",
+          "pmid": "32640244"
+        }
+      ]
+    },
+    {
+      "pmid": "32499867",
+      "title": "Entinostat augments NK cell functions via epigenetic upregulation of IFIT1-STING-STAT4 pathway.",
+      "doi": "10.18632/oncotarget.27546",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "32580235",
+      "title": "Role of low-dose calcineurin inhibitor regimens in pediatric kidney transplantation.",
+      "doi": "10.1111/ajt.16159",
+      "publication_types": [
+        "Editorial",
+        "Comment"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentOn",
+          "pmid": "32406111"
+        }
+      ]
+    },
+    {
+      "pmid": "32640244",
+      "title": "Niacin Cures Systemic NAD+ Deficiency and Improves Muscle Performance in Adult-Onset Mitochondrial Myopathy.",
+      "doi": "10.1016/j.cmet.2020.05.020",
+      "publication_types": [
+        "Published Erratum"
+      ],
+      "linked_notices": [
+        {
+          "type": "ErratumFor",
+          "pmid": "32386566"
+        }
+      ]
+    },
+    {
+      "pmid": "32914523",
+      "title": "CHK1 monitors spindle assembly checkpoint and DNA damage repair during the first cleavage of mouse early embryos.",
+      "doi": "10.1111/cpr.12895",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "32977361",
+      "title": "BUB1B promotes hepatocellular carcinoma progression via activation of the mTORC1 signaling pathway.",
+      "doi": "10.1002/cam4.3411",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "33109034",
+      "title": "Integrating LINCS Data to Evaluate Cancer Transcriptome Modifying Potential of Small-molecule Compounds for Drug Repositioning.",
+      "doi": "10.2174/1386207323666201027120149",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "33207204",
+      "title": "BUBR1 Pseudokinase Domain Promotes Kinetochore PP2A-B56 Recruitment, Spindle Checkpoint Silencing, and Chromosome Alignment.",
+      "doi": "10.1016/j.celrep.2020.108397",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "33355089",
+      "title": "BUB-1 targets PP2A:B56 to regulate chromosome congression during meiosis I in C. elegans oocytes.",
+      "doi": "10.7554/eLife.65307",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't",
+        "Video-Audio Media"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "33386558",
+      "title": "Emerging and converging molecular mechanisms in dystonia.",
+      "doi": "10.1007/s00702-020-02290-z",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "33439069",
+      "title": "Intra-arterial chemotherapy for rhabdomyosarcoma.",
+      "doi": "10.1080/08880018.2020.1871138",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article",
+        "Video-Audio Media"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "33658088",
+      "title": "Everolimus treatment in a 3-month-old infant with tuberous sclerosis complex cardiac rhabdomyoma, severe left ventricular outflow tract obstruction, and hearing loss.",
+      "doi": "10.1017/S1047951121000639",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "33731717",
+      "title": "\u03b1-Catenin levels determine direction of YAP/TAZ response to autophagy perturbation.",
+      "doi": "10.1038/s41467-021-21882-1",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentIn",
+          "pmid": "34036899"
+        }
+      ]
+    },
+    {
+      "pmid": "33801334",
+      "title": "The Role of Network Science in Glioblastoma.",
+      "doi": "10.3390/cancers13051045",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "33819340",
+      "title": "Coupling of Cdc20 inhibition and activation by BubR1.",
+      "doi": "10.1083/jcb.202012081",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "33860079",
+      "title": "Adventures of the undead at kinetochores.",
+      "doi": "10.1080/23723556.2021.1876511",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "34027130",
+      "title": "Longevity pathways are associated with human ovarian ageing.",
+      "doi": "10.1093/hropen/hoab020",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "34035233",
+      "title": "FOXM1 repression increases mitotic death upon antimitotic chemotherapy through BMF upregulation.",
+      "doi": "10.1038/s41419-021-03822-5",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "34297127",
+      "title": "Multiple pools of PP2A regulate spindle assembly, kinetochore attachments and cohesion in Drosophila oocytes.",
+      "doi": "10.1242/jcs.254037",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "34635673",
+      "title": "Spatiotemporal coordination of the RSF1-PLK1-Aurora B cascade establishes mitotic signaling platforms.",
+      "doi": "10.1038/s41467-021-26220-z",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "34639012",
+      "title": "MS-275 (Entinostat) Promotes Radio-Sensitivity in PAX3-FOXO1 Rhabdomyosarcoma Cells.",
+      "doi": "10.3390/ijms221910671",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "34650921",
+      "title": "A Systematic Analysis Identifies Key Regulators Involved in Cell Proliferation and Potential Drugs for the Treatment of Human Lung Adenocarcinoma.",
+      "doi": "10.3389/fonc.2021.737152",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "34659903",
+      "title": "Repurposing of posaconazole as a hedgehog/SMO signaling inhibitor for embryonal rhabdomyosarcoma therapy.",
+      "doi": null,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "35191375",
+      "title": "A survey of optimal strategy for signature-based drug repositioning and an application to liver cancer.",
+      "doi": "10.7554/eLife.71880",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "35326770",
+      "title": "Polymyxin Induces Significant Transcriptomic Perturbations of Cellular Signalling Networks in Human Lung Epithelial Cells.",
+      "doi": "10.3390/antibiotics11030307",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "35392063",
+      "title": "Identification of the Tumor Immune Microenvironment and Therapeutic Biomarkers by a Novel Molecular Subtype Based on Aging-Related Genes in Hepatocellular Carcinoma.",
+      "doi": "10.3389/fsurg.2022.836080",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "35580604",
+      "title": "Myotubularin-related phosphatase 5 is a critical determinant of autophagy in neurons.",
+      "doi": "10.1016/j.cub.2022.04.053",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, N.I.H., Intramural"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentIn",
+          "pmid": "35728530"
+        }
+      ]
+    },
+    {
+      "pmid": "35639235",
+      "title": "SIRT1 regulates mitotic catastrophe via autophagy and BubR1 signaling.",
+      "doi": "10.1007/s11010-022-04470-9",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "35688486",
+      "title": "Estimating intraclonal heterogeneity and subpopulation changes from bulk expression profiles in CMap.",
+      "doi": "10.26508/lsa.202101299",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "35835966",
+      "title": "Kinesin KIF15 regulates tubulin acetylation and spindle assembly checkpoint in mouse oocyte meiosis.",
+      "doi": "10.1007/s00018-022-04447-3",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "35865311",
+      "title": "Case Report: Reversible Hyperglycemia Following Rapamycin Treatment for Atypical Choroid Plexus Papilloma in an Infant.",
+      "doi": "10.3389/fendo.2022.865913",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "35881695",
+      "title": "Acquisition of cross-azole tolerance and aneuploidy in Candida albicans strains evolved to posaconazole.",
+      "doi": "10.1093/g3journal/jkac156",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "35907244",
+      "title": "Histone Deacetylase Inhibition Restores Behavioral and Synaptic Function in a Mouse Model of 16p11.2 Deletion.",
+      "doi": "10.1093/ijnp/pyac048",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "35956406",
+      "title": "Supplementation with NAD+ and Its Precursors to Prevent Cognitive Decline across Disease Contexts.",
+      "doi": "10.3390/nu14153231",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "36430301",
+      "title": "Mammalian Target of Rapamycin (mTOR) Signaling at the Crossroad of Muscle Fiber Fate in Sarcopenia.",
+      "doi": "10.3390/ijms232213823",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "36525974",
+      "title": "Connections between sister and non-sister telomeres of segregating chromatids maintain euploidy.",
+      "doi": "10.1016/j.cub.2022.11.038",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "36693378",
+      "title": "Loci for insulin processing and secretion provide insight into type 2 diabetes risk.",
+      "doi": "10.1016/j.ajhg.2023.01.002",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "36766802",
+      "title": "Voltage-Gated T-Type Calcium Channel Modulation by Kinases and Phosphatases: The Old Ones, the New Ones, and the Missing Ones.",
+      "doi": "10.3390/cells12030461",
+      "publication_types": [
+        "Journal Article",
+        "Review",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "37016270",
+      "title": "Alveolar rhabdomyosarcoma has superior response rates to vinorelbine compared to embryonal rhabdomyosarcoma in patients with relapsed/refractory disease: A meta-analysis.",
+      "doi": "10.1002/cam4.5749",
+      "publication_types": [
+        "Meta-Analysis",
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "37094517",
+      "title": "The establishment of mitotic errors-driven senescence depends on autophagy.",
+      "doi": "10.1016/j.redox.2023.102701",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "37130978",
+      "title": "Author Correction: Unique progerin C-terminal peptide ameliorates Hutchinson-Gilford progeria syndrome phenotype by rescuing BUBR1.",
+      "doi": "10.1038/s43587-023-00427-9",
+      "publication_types": [
+        "Published Erratum"
+      ],
+      "linked_notices": [
+        {
+          "type": "ErratumFor",
+          "pmid": "37118121"
+        }
+      ]
+    },
+    {
+      "pmid": "37243336",
+      "title": "Feasibility of combining temsirolimus to vincristine, dactinomycin, cyclophosphamide, and vincristine and irinotecan chemotherapy for children with intermediate-risk rhabdomyosarcoma: A report from Children's Oncology Group.",
+      "doi": "10.1002/pbc.30436",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "37274003",
+      "title": "Fabrication and characterization of photosensitive non-isocyanate polyurethane acrylate resin for 3D printing of customized biocompatible orthopedic surgical guides.",
+      "doi": "10.18063/ijb.684",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "37679013",
+      "title": "Use of everolimus following kidney transplantation during pregnancy: A case report and systematic review.",
+      "doi": "10.1016/j.tjog.2023.07.026",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "37786437",
+      "title": "Adverse Events of Everolimus in Patients with Tuberous Sclerosis Complex Treated for Renal Angiomyolipoma/Subependymal Giant Cell Astrocytoma.",
+      "doi": "10.7150/ijms.88022",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "38009412",
+      "title": "SIRT2 transgenic over-expression does not impact lifespan in mice.",
+      "doi": "10.1111/acel.14027",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "3817012",
+      "title": "Effects of fibroblastic growth factor on protein degradation, the migration of non-histone proteins to the nucleus and DNA synthesis in diploid fibroblasts.",
+      "doi": "10.1016/0014-4827(87)90236-9",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, U.S. Gov't, P.H.S."
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "38323474",
+      "title": "Integrated Stress Response Potentiates Ponatinib-Induced Cardiotoxicity.",
+      "doi": "10.1161/CIRCRESAHA.123.323683",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentIn",
+          "pmid": "38422183"
+        }
+      ]
+    },
+    {
+      "pmid": "38364328",
+      "title": "A cardiomyocyte-based biosensing platform for dynamic and quantitative investigation of excessive autophagy.",
+      "doi": "10.1016/j.bios.2024.116113",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "38406555",
+      "title": "Hypertrophic cardiomyopathy in MYBPC3 carriers in aging.",
+      "doi": "10.20517/jca.2023.29",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "38553728",
+      "title": "Kinesin KIFC3 is essential for microtubule stability and cytokinesis in oocyte meiosis.",
+      "doi": "10.1186/s12964-024-01589-8",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "38865189",
+      "title": "Meiosis-specific functions of kinetochore protein SPC105R required for chromosome segregation in Drosophila oocytes.",
+      "doi": "10.1091/mbc.E24-02-0067",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": [
+        {
+          "type": "UpdateOf",
+          "pmid": "38559067"
+        }
+      ]
+    },
+    {
+      "pmid": "38936378",
+      "title": "Addition of temsirolimus to chemotherapy in children, adolescents, and young adults with intermediate-risk rhabdomyosarcoma (ARST1431): a randomised, open-label, phase 3 trial from the Children's Oncology Group.",
+      "doi": "10.1016/S1470-2045(24)00255-9",
+      "publication_types": [
+        "Journal Article",
+        "Clinical Trial, Phase III",
+        "Randomized Controlled Trial",
+        "Multicenter Study",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentIn",
+          "pmid": "38936374"
+        },
+        {
+          "type": "CommentIn",
+          "pmid": "40386363"
+        }
+      ]
+    },
+    {
+      "pmid": "39147820",
+      "title": "Entinostat as a combinatorial therapeutic for rhabdomyosarcoma.",
+      "doi": "10.1038/s41598-024-66545-5",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "39299930",
+      "title": "Autophagy unrelated transcriptional mechanisms of hydroxychloroquine resistance revealed by integrated multi-omics of evolved cancer cells.",
+      "doi": "10.1080/15384101.2024.2402191",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "39403898",
+      "title": "A High-Throughput Drug Repurposing Strategy to Treat TBX2 and/or TBX3 Dependent Cancers.",
+      "doi": "10.1002/cam4.70303",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "39490401",
+      "title": "BubR1 and SIRT2: Insights into aneuploidy, aging, and cancer.",
+      "doi": "10.1016/j.semcancer.2024.10.005",
+      "publication_types": [
+        "Journal Article",
+        "Review",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "39516273",
+      "title": "Self-priming of Plk1 binding to BubR1 ensures accurate mitotic progression.",
+      "doi": "10.1038/s42003-024-07205-2",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "39675713",
+      "title": "Phosphorylation of Ephexin4 at Ser-41 contributes to chromosome alignment via RhoG activation in cell division.",
+      "doi": "10.1016/j.jbc.2024.108084",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "39753942",
+      "title": "Aneuploidy-driven gene expression profiling in human blastocysts: insights from RNA-Seq analysis.",
+      "doi": "10.1007/s10815-024-03369-2",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "40013582",
+      "title": "Design and synthesis of novel HDAC6 inhibitor dimer as HDAC6 degrader for cancer treatment by palladium catalysed dimerisation.",
+      "doi": "10.1080/14756366.2025.2468355",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "4018404",
+      "title": "Increased endocytosis of acetylcholine receptors by dystrophic mouse myotubes in vitro.",
+      "doi": "10.1016/0012-1606(85)90095-8",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "40298946",
+      "title": "Pharmacokinetics and tissue distribution of intranasal administration of rapamycin in rats.",
+      "doi": "10.1080/00498254.2025.2498009",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "40353859",
+      "title": "Pediatric acute kidney injury is associated with impairment in nicotinamide adenine dinucleotide (NAD+) metabolism.",
+      "doi": "10.1007/s00467-025-06791-5",
+      "publication_types": [
+        "Journal Article",
+        "Observational Study"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "40357267",
+      "title": "Tissue-specific effects of bacterial PncA overexpression on NAD+ metabolism and aging in mice: implications for tissue-specific aging interventions.",
+      "doi": "10.3389/fragi.2025.1546017",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "40386363",
+      "title": "Future directions for the molecular therapy of rhabdomyosarcoma: how do we detect and investigate new, appropriate target mutations and populations?",
+      "doi": "10.21037/tp-2024-605",
+      "publication_types": [
+        "Editorial",
+        "Comment"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentOn",
+          "pmid": "38936378"
+        }
+      ]
+    },
+    {
+      "pmid": "40583368",
+      "title": "Nicotinamide Riboside Supplementation Alleviates Heat Stress-Induced Testicular Damage and Improves Semen Quality in Boars.",
+      "doi": "10.1002/mnfr.70162",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "40641039",
+      "title": "High-throughput screening identifies a previously undescribed checkpoint controlling mitotic progression in response to DNA damage.",
+      "doi": "10.1111/febs.70183",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "40714656",
+      "title": "Two new cases of KYNU deficiency: Further delineation of the phenotypic and biochemical spectrum and exploration of treatment options.",
+      "doi": "10.1016/j.ymgme.2025.109194",
+      "publication_types": [
+        "Journal Article",
+        "Case Reports"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "40811342",
+      "title": "Pre-Training and Ensembling of Deep Neural Networks for Target Gene Expression Prediction From Landmark Genes.",
+      "doi": "10.1109/TCBBIO.2025.3560620",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41100733",
+      "title": "NMNAT3 deficiency: a novel red blood cell enzymopathy causing hemolysis by altering NAD levels and glycolysis.",
+      "doi": "10.1182/blood.2025030958",
+      "publication_types": [
+        "Journal Article",
+        "Case Reports"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41154353",
+      "title": "From Carcinogenesis to Drug Resistance: The Multifaceted Role of Oxidative Stress in Head and Neck Cancer.",
+      "doi": "10.3390/cancers17203295",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41229848",
+      "title": "NUF2 promotes the malignant development of lung adenocarcinoma through the mTORC1 signaling pathway via binding to BUB1B.",
+      "doi": "10.21037/jtd-2025-704",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41266821",
+      "title": "Hepatocyte mitochondrial NAD+ content is limiting for liver regeneration.",
+      "doi": "10.1038/s42255-025-01408-5",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41352525",
+      "title": "Aging and metabolism in HFpEF: Pathophysiology and therapeutic implications.",
+      "doi": "10.1016/j.metabol.2025.156460",
+      "publication_types": [
+        "Journal Article",
+        "Review",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41405487",
+      "title": "The role of CD38 in monocytes during fibrotic progression of myeloproliferative neoplasms.",
+      "doi": "10.1182/blood.2025028703",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": [
+        {
+          "type": "CommentIn",
+          "pmid": "41746641"
+        }
+      ]
+    },
+    {
+      "pmid": "41410033",
+      "title": "Endothelial Transcription Factor EB Protects Against Doxorubicin-Induced Endothelial Toxicity and Cardiac Dysfunction.",
+      "doi": "10.1161/CIRCULATIONAHA.124.071774",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41470091",
+      "title": "Dysregulation of Niacin-Derived NAD+ Salvage Pathway Markers (CD38, NAMPT, SIRT1) Across Albuminuria Stages in Type 2 Diabetes.",
+      "doi": "10.3390/medicina61122089",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41481756",
+      "title": "Perturbation of NAD(P)H metabolism with the LbNOX xenotopic tool extends lifespan and mitigates age-related changes.",
+      "doi": "10.1126/sciadv.ady0628",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41524558",
+      "title": "Rapamycin Exerts Its Geroprotective Effects in the Ageing Human Immune System by Enhancing Resilience Against DNA Damage.",
+      "doi": "10.1111/acel.70364",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41646932",
+      "title": "Transcriptional response to combination antiretroviral therapy predicts side effects and novel targets.",
+      "doi": "10.3389/fphar.2025.1743543",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41686888",
+      "title": "Mechanical loading induces the longitudinal growth of muscle fibers via a rapamycin-insensitive mechanism.",
+      "doi": "10.1126/sciadv.aec5134",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41751568",
+      "title": "Gene Expression-Guided Drug Repurposing in Oncology: Insights from Antiretroviral Agents in Prostate and Bladder Cancer.",
+      "doi": "10.3390/genes17020184",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41864372",
+      "title": "Mammalian target of rapamycin in chronic liver disease and the potential for therapeutic manipulation.",
+      "doi": "10.1016/j.exger.2026.113105",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": [
+        {
+          "type": "ErratumIn",
+          "pmid": "41905871"
+        }
+      ]
+    },
+    {
+      "pmid": "41888005",
+      "title": "The rapamycin sTORy: 50-year journey from Easter Island to the frontiers of biology and medicine.",
+      "doi": "10.1016/j.tibs.2026.02.004",
+      "publication_types": [
+        "Journal Article",
+        "Review",
+        "Historical Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41895167",
+      "title": "In silico discovery of selective TPX2 and BUB1B inhibitors as novel antimitotic agents in breast cancer therapy.",
+      "doi": "10.1016/j.compbiolchem.2026.109012",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "41985884",
+      "title": "Exercise and Weekly Sirolimus (Rapamycin) in Older Adults: RAPA-EX-01 Randomised, Double-Blind, Placebo-Controlled Trial.",
+      "doi": "10.1002/jcsm.70274",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "42009009",
+      "title": "Safety and efficacy of individualised exercise and NAD+ precursor supplementation in patients with Friedreich's ataxia in the USA: a single-centre, 2\u2008\u00d7\u20082 factorial, randomised controlled trial.",
+      "doi": "10.1016/S1474-4422(26)00082-7",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Clinical Trial, Phase II"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "42113905",
+      "title": "Glucocorticoid excess disrupts NAD+ homeostasis in male and female mice.",
+      "doi": "10.1530/JOE-26-0011",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "42144735",
+      "title": "Dual mechanism of human ATG10S in suppressing MEF2A-Driven pro-inflammatory responses.",
+      "doi": "10.1080/15548627.2026.2676074",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "42188047",
+      "title": "Targeting NAD Homeostasis: Compartmentalization, Quantification, and Modulation.",
+      "doi": "10.3390/metabo16050338",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "42209514",
+      "title": "Fusion-positive rhabdomyosarcoma oncofusions share a common interactome.",
+      "doi": "10.1038/s41467-026-73749-y",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "42223054",
+      "title": "A metabolic constraint in de novo NAD+ synthesis drives mucosal inflammation in IBD.",
+      "doi": "10.1093/ecco-jcc/jjag043",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": [
+        {
+          "type": "UpdateOf",
+          "pmid": "39211892"
+        }
+      ]
+    },
+    {
+      "pmid": "42339509",
+      "title": "Cumulus cells enhance oocyte genomic quality control by promoting DNA damage-induced meiotic arrest.",
+      "doi": "10.1242/jcs.264929",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "42341897",
+      "title": "Programmed axon degeneration gene variants in human disease.",
+      "doi": "10.1016/j.expneurol.2026.115891",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "42392367",
+      "title": "Human biopsy-defined ischemia-reperfusion injury-selective reperfusion signature prioritizes reperfusion-timed mitogen-activated protein kinase kinase inhibition after donation after circulatory death liver transplantation.",
+      "doi": "10.1016/j.ajt.2026.06.025",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "42419414",
+      "title": "Gene-level variability, pathway-level convergence: A systems view of vitamin D signaling.",
+      "doi": "10.1016/j.jsbmb.2026.107083",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "42537336",
+      "title": "A reproducible computational transcriptomic framework for cell-type-resolved fibroinflammatory-AKT remodeling in human heart failure.",
+      "doi": "10.1016/j.compbiolchem.2026.109287",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "42624103",
+      "title": "Melanoma to rhabdomyosarcoma plasticity in the setting of immunotherapy.",
+      "doi": "10.1016/j.medj.2026.101266",
+      "publication_types": [
+        "Journal Article",
+        "Case Reports"
+      ],
+      "linked_notices": [
+        {
+          "type": "UpdateOf",
+          "pmid": "41282820"
+        }
+      ]
+    },
+    {
+      "pmid": "42708068",
+      "title": "Precision Nanodelivery Enables Spatiotemporal Control of NAD\u207a Metabolism in Ageing and Disease.",
+      "doi": "10.2147/IJN.S626615",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "42776599",
+      "title": "Metabolism of Nicotinamide Adenine Dinucleotide+ in Atherosclerosis: Mechanisms and Nutritional Modulation.",
+      "doi": "10.1093/nutrit/nuag128",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "6287655",
+      "title": "Genetics of receptors for bioactive polypeptides: expression of the human EGF receptor gene and internalization and processing of the receptor-bound EGF in human-mouse cell hybrids.",
+      "doi": "10.1007/BF01538892",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, P.H.S."
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "7534292",
+      "title": "Role of p70 S6 protein kinase in angiotensin II-induced protein synthesis in vascular smooth muscle cells.",
+      "doi": "10.1074/jbc.270.10.5225",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "7704464",
+      "title": "Incidence of myopathy in patients treated with antimalarials. A report of three cases and a review of the literature.",
+      "doi": "10.1093/rheumatology/34.2.166",
+      "publication_types": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "7715800",
+      "title": "Immunohistochemical evidence for amyloid beta in rat soleus muscle in chloroquine-induced myopathy.",
+      "doi": "10.1016/0304-3940(94)90785-4",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "7816040",
+      "title": "Positive and negative transcriptional regulation by the yeast GAL11 protein depends on the structure of the promoter and a combination of cis elements.",
+      "doi": "10.1007/BF00290110",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "7871574",
+      "title": "Successful myoblast allotransplantation in mdx mice using rapamycin.",
+      "doi": null,
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "7879049",
+      "title": "Rapamycin (Sirolimus) inhibits vascular smooth muscle DNA synthesis in vitro and suppresses narrowing in arterial allografts and in balloon-injured carotid arteries: evidence that rapamycin antagonizes growth factor action on immune and nonimmune cells.",
+      "doi": null,
+      "publication_types": [
+        "Comparative Study",
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "8438246",
+      "title": "Treatment with rapamycin blocks arterial intimal thickening following mechanical and alloimmune injury.",
+      "doi": null,
+      "publication_types": [
+        "Comparative Study",
+        "Journal Article"
+      ],
+      "linked_notices": []
+    },
+    {
+      "pmid": "9636418",
+      "title": "Rapamycin's effect on vasomotion in the rat.",
+      "doi": "10.1016/s0041-1345(98)00140-7",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "linked_notices": []
+    }
+  ]
+}

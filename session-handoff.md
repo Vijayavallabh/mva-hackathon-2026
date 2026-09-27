@@ -1,29 +1,29 @@
-# Session handoff: integrated Track 2 v20 presentation / fixed v19 research
+# Session handoff: integrated Track 2 v21 presentation / fixed v19 research
 
-27 September 2026, session 60. Only feat-009 is active. Authoritative paths are in
-`notes/track2-current.json`. V20 integrates the completed public transcriptome evidence
+27 September 2026, session 61. Only feat-009 is active. Authoritative paths are in
+`notes/track2-current.json`. V21 integrates a 27-claim falsification amendment and the fixed public transcriptome evidence
 into the report, slides, narration, methods workbook and recording materials. All
 older sources/packages, fixed v19 research and submitted Track 1 v4 remain preserved.
-V15 drug dispositions and scientific status are unchanged.
+V21 preserves all eleven v15 drug dispositions. Validation and falsification are revised; biological and delivery status remain unchanged.
 
 Use `uv run --no-project python scripts/check_track2_harness.py` and
-`notes/track2-reviewer-guide-v20.md`. The current readiness note is
-`notes/track2-owner-readiness-v20.md`; `notes/track2-harness-review-v20.md` records this
+`notes/track2-reviewer-guide-v21.md`. The current readiness note is
+`notes/track2-owner-readiness-v21.md`; `notes/track2-harness-review-v21.md` records this
 integration. No new GPU job, inference, wet-lab work, contact or submission occurred.
 
 ## Current materials
 
-- `notes/track2-report-v20.md`: integrated findings, balanced evidence, proposed
-  experiment, full disclosure, methods B7-B17 and 195-word abstract.
-- `notes/track2-slides-v20.html`: eight slides, including two new result diagrams.
-- `notes/track2-pitch-v20.md` and `notes/track2-transcript-v20.txt`: 324 spoken words
+- `notes/track2-report-v21.md`: integrated findings, balanced evidence, proposed
+  experiment, full disclosure, methods B7-B17 and 215-word abstract.
+- `notes/track2-slides-v21.html`: eight slides with calibrated-inference boundaries and clearer decision rules.
+- `notes/track2-pitch-v21.md` and `notes/track2-transcript-v21.txt`: 335 spoken words
   with matching slide cues and unmeasured three-minute rehearsal allocations.
-- `notes/track2-video-description-v20.md`: matched disclosure and acknowledgement.
-- Report PDF/Markdown and original filled workbook: `results/feat009/v20-documents-final-b-20260927/`.
-- Eight-slide PDF/PNGs: `results/feat009/v20-slides-final-20260927/`.
-- Research snapshot: `results/feat009/jvv7_track2_research_v20`.
-- Recording/review ZIP: `results/feat009/jvv7_track2_video_materials_v20.zip`.
-- `notes/track2-v20-design.md`, `track2-v20-editorial-review.md` and versioned audits
+- `notes/track2-video-description-v21.md`: matched disclosure and acknowledgement.
+- Report PDF/Markdown and original filled workbook: `results/feat009/v21-documents-final-20260927/`.
+- Eight-slide PDF/PNGs: `results/feat009/v21-slides-final-20260927/`.
+- Research snapshot: `results/feat009/jvv7_track2_research_v21`.
+- Recording/review ZIP: `results/feat009/jvv7_track2_video_materials_v21.zip`.
+- `notes/track2-v21-design.md`, `track2-v21-editorial-review.md` and versioned audits
   describe visual/editorial review, scientific limits and export hashes.
 - `notes/track2-transcriptome-v19.md` and `notes/track2-transcriptome-reproduction-v19.md`:
   frozen complete findings, sources, fixed plans, result matrices, figure and methods.
@@ -69,7 +69,7 @@ exposure. Of 180 second-release labelled profiles, 174 have unresolved stereoche
 metadata; the six reference-matching 0.1 µM profiles fail drug QC. Do not pool them or
 claim a dose curve. Qualify the perturbation before testing joint drug/deficit function.
 
-The v15 ledger has 63 sources, 11 unchanged decisions and 19 falsifiable claims.
+The historical v15 ledger retains 63 sources and 11 decisions. The v21 amendment adds twelve source adjudications, 27 claims and the proposed decision contract; actual result HOLD.
 Primary protein ordering passes 12/12; post-hoc expanded-control separation fails 8/12;
 11/24 retained-control scores are negative. Small/dependent controls cannot calibrate
 clinical pathogenicity. The secondary-control supplement remains independently unreviewed.
@@ -83,18 +83,18 @@ hold; failed safety stops; all-pass permits preclinical review only.
 uv run --no-project python scripts/check_track2_harness.py
 uv run --no-project python scripts/check_track2_transcriptome.py
 uv run --no-project python scripts/verify_track2_transcriptome_archive.py results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz
-uv run python scripts/track2_release_v20.py verify results/feat009/jvv7_track2_research_v20
-uv run python scripts/track2_bundle_v20.py verify
+uv run python scripts/track2_release_v21.py verify results/feat009/jvv7_track2_research_v21
+uv run python scripts/track2_bundle_v21.py verify
 ```
 
-V20 has eight slide pages and seven report pages. The visible slide text is at least
+V21 has eight slide pages and eight report pages. The visible slide text is at least
 24px, all geometry/overlap checks pass, and contrast is at least 5.26:1. Rendered
 screenshots and all report pages were visually checked. Tables and the acknowledgement
 remain intact; earlier pagination defects were corrected. The workbook round-trips its
 answers, questions and original Track 1 styles; its appearance was not visually rendered.
-The isolated v20 public check passes with six blocked audit probes, without project
+The isolated v21 public check passes with six blocked audit probes, without project
 venv, network, protected paths or source checkout/history. No independent scientific
-review is claimed. Final tests, preservation checks and init output are in session 60.
+review is claimed. Final tests, preservation checks and init output are in session 61.
 
 V19 checked every archive member and retained null array locally; a separate SciPy
 implementation from original GCTX coordinates agrees on all 139 raw everolimus-labelled
@@ -108,8 +108,10 @@ input hashes are recorded in session 59 progress. `./init.sh` invokes the combin
 
 ## Blockers
 
-- Biological advancement still needs endogenous function, subject phase, model/branch
-  qualification, tissue response, matched exposure and justified benefit/injury margins.
+- Biological advancement still needs endogenous function, model/branch qualification,
+  tissue response, matched exposure and justified benefit/injury margins. Subject phase
+  remains necessary for trans-specific attribution to the child; its uncertainty does
+  not prevent properly qualified engineered-model research.
 - Public transcriptomic query qualification failed. RNAi seeds/off-target effects,
   selected-genotype transfer, joint-treatment response and chemical-identity gaps remain.
   More correlations cannot close these gaps; neither can an arbitrary stricter filter.
@@ -127,12 +129,13 @@ input hashes are recorded in session 59 progress. `./init.sh` invokes the combin
 
 ## Next actions
 
-V20 integrates the findings into synchronized presentation/report materials. Rehearse
-and record the v20 pitch
+V21 integrates the findings into synchronized presentation/report materials. Rehearse
+and record the v21 pitch
 with the full acknowledgement inside three minutes. Resolve provider/distribution
 items and verify final portal materials. Research
-advancement begins with model/branch qualification, the existing falsification plan
-and the v19 experimental requirements. No additional GPU jobs are pending.
+advancement begins with model/branch qualification and notes/track2-validation-v21.md.
+The 27-claim register and decision contract retain unknown gates and null margins.
+No additional GPU jobs are pending.
 BindCraft2 remains deferred without a functional target and validation route.
 
 Raw subject files and narrative stay on the original machine and out of hosted context.

@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "review": {
+    "passed": true,
+    "presentation_version": 21,
+    "drug_science_version": 21,
+    "static_deck_verified": true,
+    "source_sha256": "75d55d7ff12893749df7022299ea9d7a96547400e84adeeca6986d5898fa1d6c",
+    "slides": 8,
+    "vector_figures": 7,
+    "visible_words": [
+      40,
+      68,
+      76,
+      64,
+      76,
+      46,
+      62,
+      106
+    ],
+    "narration_words": 335,
+    "words_per_slide": [
+      36,
+      41,
+      45,
+      45,
+      46,
+      50,
+      49,
+      23
+    ],
+    "requirements": {
+      "revision": "aeeef5ad49f51204a7439352e59e9d310aee5e9e",
+      "public_discussions": 24,
+      "visible_comments": 68,
+      "closed_discussions": 12
+    },
+    "transcriptome": {
+      "gpus": 8,
+      "completed_gpu_waves": 3,
+      "compound_profiles": 312438,
+      "query_compound_comparisons": 12185082,
+      "resampled_reagent_sets": 560000,
+      "primary_contexts": 14,
+      "primary_query_gates_passed": 0,
+      "post_hoc_comparisons": 42,
+      "post_hoc_full_filters_passed": 0,
+      "primary_everolimus_comparisons": 19,
+      "primary_everolimus_profiles": 14,
+      "primary_everolimus_positive_correlations": 13,
+      "phase2_unresolved_labelled_profiles": 174,
+      "phase2_reference_matching_profiles": 6,
+      "phase2_reference_matching_qc_passes": 0,
+      "ht29_post_hoc_reagents": 5,
+      "ht29_post_hoc_adjusted_tail": 0.041995800419958006,
+      "ht29_full_filter_passed": false,
+      "drug_ranking_changed": false
+    },
+    "methods_fields": 11,
+    "abstract_words": 215,
+    "falsification": {
+      "passed": true,
+      "claims": 19,
+      "primary_pass": 12,
+      "sensitivity_fail": 8,
+      "advancement": {
+        "decision": "hold_unresolved",
+        "failed": [],
+        "unresolved": [
+          "division_capacity",
+          "exposure_match",
+          "functional_benefit",
+          "hypothesis_lock",
+          "model_qualification",
+          "normal_tissue_safety",
+          "replication",
+          "source_integrity"
+        ],
+        "clinical_recommendation": false
+      },
+      "scope": "Evidence consistency, not biological validation"
+    },
+    "falsification_amendment": {
+      "passed": true,
+      "claims": 27,
+      "additional_source_records": 12,
+      "current_decision": {
+        "clinical_recommendation": false,
+        "scope": "qualified_non_cancer_model",
+        "evidence_kind": "not_measured",
+        "decision": "HOLD",
+        "reason": "Prerequisites unresolved or failed; no transfer from another branch"
+      },
+      "drug_dispositions_changed": false,
+      "biological_validation": false
+    },
+    "upload_ready": false,
+    "biological_validation": false,
+    "scope": "Tracked-public consistency checks; no inference, clinical or eligibility certification"
+  },
+  "seconds": 0.10223811701871455,
+  "blocked_probes": [
+    "network",
+    "process",
+    "protected_path",
+    "credentials",
+    "external_path",
+    "write"
+  ],
+  "network_forbidden_by_audit_hook": true,
+  "data_results_logs_env_forbidden_by_audit_hook": true,
+  "writes_forbidden_by_audit_hook": true,
+  "process_launch_forbidden_by_audit_hook": true,
+  "project_environment_used": false,
+  "source_checkout_or_history_used": false,
+  "copied_public_files": 484,
+  "total_seconds": 0.1494853470940143,
+  "python_version": "3.13.13",
+  "source_copy_created_without_git_history": true,
+  "script_sha256": "34b9d1b2743002d4314c2cd75c166a76039d17140a2775351df287ce71085c98",
+  "report_sha256": "09b2ec308cc2e2a13b80f49270855d18eb75ff2f75a122a84cc41b287eb44cca",
+  "slide_sha256": "75d55d7ff12893749df7022299ea9d7a96547400e84adeeca6986d5898fa1d6c"
+}

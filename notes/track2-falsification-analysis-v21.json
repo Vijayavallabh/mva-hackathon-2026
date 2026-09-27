@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "claims": 27,
+  "additional_source_records": 12,
+  "current_decision": {
+    "clinical_recommendation": false,
+    "scope": "qualified_non_cancer_model",
+    "evidence_kind": "not_measured",
+    "decision": "HOLD",
+    "reason": "Prerequisites unresolved or failed; no transfer from another branch"
+  },
+  "drug_dispositions_changed": false,
+  "biological_validation": false
+}

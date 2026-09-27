@@ -17,8 +17,8 @@ STATUS = {
 CURRENT_REVIEW = {
     'script': 'scripts/check_track2_harness.py',
     'isolation_audit': 'scripts/audit_track2_harness.py',
-    'guide': 'notes/track2-reviewer-guide-v20.md',
-    'readiness': 'notes/track2-owner-readiness-v20.md',
+    'guide': 'notes/track2-reviewer-guide-v21.md',
+    'readiness': 'notes/track2-owner-readiness-v21.md',
 }
 RESEARCH_PATHS = {
     'plan': 'notes/track2-transcriptome-plan-v19.json',
@@ -37,7 +37,7 @@ RESEARCH_PATHS = {
 }
 RESEARCH_STATE = {
     'version': 19, 'kind': 'public_perturbation_transcriptome', 'status': 'complete',
-    'report_integration': 'integrated_in_v20_preserves_v18_and_v19',
+    'report_integration': 'integrated_in_v21_preserves_v18_v19_v20',
     'gpus': 8, 'compound_profiles': 312438, 'query_compound_comparisons': 12185082,
     'resampled_reagent_sets': 560000, 'primary_query_gates_passed': 0,
     'drug_ranking_changed': False,
@@ -62,7 +62,7 @@ def validate(state, features, documents):
     current = next(f for f in features if f['id'] == 'feat-009')
     require('notes/track2-current.json' in current['evidence'] and f'v{version}' in current['evidence'],
             'Feature evidence points to stale artifacts')
-    require(state['drug_science_version'] == 15, 'Drug science changed without a reviewed harness update')
+    require(state['drug_science_version'] == 21, 'Drug science changed without a reviewed harness update')
     require(state['status'] == STATUS, 'Unsupported scientific/delivery promotion; review evidence before updating the harness')
     require(state['model_campaign'] == dict(protein_scores=84, structures=192, dna_comparisons=100,
                                           inference_complete=True), 'Model completion/count drift')
@@ -73,10 +73,10 @@ def validate(state, features, documents):
         'transcript':f'notes/track2-transcript-v{version}.txt',
         'video_description':f'notes/track2-video-description-v{version}.md',
         'design_review':f'notes/track2-v{version}-design.md',
-        'evidence':'notes/track2-evidence-v15.json', 'validation':'notes/track2-validation-v15.md',
-        'falsification_register':'notes/track2-falsification-register-v15.json',
-        'falsification_review':'notes/track2-falsification-review-v15.md',
-        'falsification_analysis':'notes/track2-falsification-analysis-v15.json',
+        'evidence':'notes/track2-evidence-v21.json', 'validation':'notes/track2-validation-v21.md',
+        'falsification_register':'notes/track2-falsification-register-v21.json',
+        'falsification_review':'notes/track2-falsification-review-v21.md',
+        'falsification_analysis':'notes/track2-falsification-analysis-v21.json',
         'latest_model_findings':'notes/track2-latest-models.md',
         'latest_model_audit':'notes/track2-latest-model-audit.json',
         'release_script':f'scripts/track2_release_v{version}.py',
@@ -100,8 +100,8 @@ def validate(state, features, documents):
             'Stale or unsafe render-directory path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['document_directory']),
             'Stale or unsafe document-directory path')
-    require(state.get('harness_version') == 20 and
-            state['harness_review'] == 'notes/track2-harness-review-v20.md', 'Stale harness review')
+    require(state.get('harness_version') == 21 and
+            state['harness_review'] == 'notes/track2-harness-review-v21.md', 'Stale harness review')
     require(state.get('current_review') == CURRENT_REVIEW, 'Missing or stale combined review route')
     addendum = state.get('research_addendum')
     expected = RESEARCH_PATHS | RESEARCH_STATE
@@ -224,10 +224,10 @@ def check(root=ROOT):
     for field in ['gpus', 'compound_profiles', 'query_compound_comparisons', 'resampled_reagent_sets',
                   'primary_query_gates_passed', 'drug_ranking_changed']:
         require(state['research_addendum'][field] == summary[field], 'Current research summary drift: '+field)
-    return dict(passed=True, active_feature='feat-009', harness_version=20,
+    return dict(passed=True, active_feature='feat-009', harness_version=21,
                 presentation_version=state['presentation_version'],
-                drug_science_version=15, slides=presentation['slides'],
-                narration_words=presentation['narration_words'], upload_ready=False,
+                drug_science_version=21, slides=presentation['slides'],
+                narration_words=presentation['narration_words'], falsification_amendment=presentation['falsification_amendment'], upload_ready=False,
                 research_addendum=dict(version=19, status='complete', **summary),
                 biological_validation=False,
                 scope='Combined public presentation/research consistency; not biological validation or submission preflight')

@@ -1,0 +1,340 @@
+{
+  "schema_version": 21,
+  "date": "2026-09-27",
+  "baseline": "notes/track2-evidence-v15.json",
+  "source_scope": "Twelve adjudication records including two existing-source rechecks and one protocol/result overlap; not twelve independent new studies",
+  "decisions": [
+    {
+      "id": "everolimus",
+      "name": "Everolimus",
+      "scope": "constitutional",
+      "decision": "mechanistic_probe_only",
+      "support": [
+        "jci126863",
+        "everolimus_label",
+        "abutaleb2023",
+        "joseph2019"
+      ],
+      "counterevidence": [
+        "slippage",
+        "goutas2023",
+        "quy2013",
+        "castets2019",
+        "ge2009",
+        "zhang2015",
+        "bonatti1998"
+      ],
+      "rationale": "Optional model-qualified probe only. Separate excess-pathway branch A from prospectively qualified flux/function branch B; neither is established in the selected pair. Graded exposure, regeneration/recovery and delayed injury must be adjudicated.",
+      "stop_rule": "No advancement without qualified branch-specific functional phenotype, faithful useful output, acceptable immediate/delayed safety, justified exposure and replication. No post-hoc switching between branches; material BUBR1 loss pauses review. Unresolved source units, model-only function or survivor/growth-rate artifacts cannot satisfy gates; imprecise results are held, not automatically rejected.",
+      "clinical_exposure_margin": null,
+      "context_sources": {
+        "arst1431": "Tumour-claim boundary only; not direct counterevidence to constitutional rescue.",
+        "jci_correction": "Figure 2E provenance correction; does not specifically invalidate Figure 5 mTOR blots.",
+        "balnis2025": "Challenges a universal measured-excess gate; different compound/model, separate prospective flux-function hypothesis only.",
+        "yamada2026": "Yeast mechanism lead, not direct mammalian harm.",
+        "pun2025": "Developmental scope limit; no drug response.",
+        "vanerp2016": "Exposure-matrix limitation; clinical margin stays null.",
+        "growth_registry": "Selected uncontrolled follow-up; not generalized pediatric safety.",
+        "balnis_supplement": "Disputed concentration quarantined; qualitative branch B rationale remains indirect.",
+        "transplant2025": "Context-specific positive safety counterweight; not MVA safety.",
+        "biomede2026": "Mixed tumor evidence outside RMS; no general biomarker rule."
+      },
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "hydroxychloroquine",
+      "name": "Hydroxychloroquine",
+      "scope": "tumour",
+      "decision": "reserve",
+      "support": [
+        "haas_hcq",
+        "goutas2023"
+      ],
+      "counterevidence": [
+        "tang",
+        "naddaf2021"
+      ],
+      "rationale": "Retain actual adult compound-combination signal while requiring compound-specific RMS flux/selectivity evidence. HCQ increased protein abundance at 100 micromolar for 2 h in late-passage stromal cells; this is not constitutional functional rescue or an exposure bridge.",
+      "stop_rule": "Do not reopen without compound-specific flux/function, matched deficient-normal safety including delayed muscle/lysosomal injury and recovery, and exposure; no inference from protein accumulation or another lysosomal drug.",
+      "clinical_exposure_margin": null,
+      "context_sources": {
+        "goenka2025": "Negative different-cancer randomized combination; not an RMS effect estimate.",
+        "hcq_terminated_registry": "Historical-control stopping record, not randomized efficacy.",
+        "rms_tmz2018": "Bafilomycin evidence must not be attributed to HCQ."
+      },
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "pralatrexate",
+      "name": "Pralatrexate",
+      "scope": "tumour",
+      "decision": "tumour_only_horizon",
+      "support": [
+        "pralatrexate_rms"
+      ],
+      "counterevidence": [
+        "pralatrexate_rms",
+        "pralatrexate_label"
+      ],
+      "rationale": "Optional documented fusion-positive RMS model hypothesis, not constitutional repair or assumed subject subtype.",
+      "stop_rule": "No advance without subtype/comparator, matched exposure and deficient-normal safety; recurrence rules out durable-eradication claims.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "temsirolimus",
+      "name": "Temsirolimus",
+      "scope": "tumour",
+      "decision": "benchmark_only",
+      "support": [
+        "arst0921"
+      ],
+      "counterevidence": [
+        "arst1431"
+      ],
+      "rationale": "Preserve different trial questions; prevent unsupported class-wide benefit claims.",
+      "stop_rule": "No direct transfer to constitutional everolimus rescue or unqualified standard-of-care comparator.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "entinostat",
+      "name": "Entinostat",
+      "scope": "tumour",
+      "decision": "deprioritize",
+      "support": [
+        "entinostat2024",
+        "entinostat_nmpa"
+      ],
+      "counterevidence": [
+        "entinostat2019",
+        "entinostat2024"
+      ],
+      "rationale": "Jurisdiction-aware eligibility does not repair model/schedule, multiplicity and exposure gaps.",
+      "stop_rule": "No promotion without appropriate subtype, replicated benefit, schedule-matched exposure and deficient-normal assessment.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "vorinostat",
+      "name": "Vorinostat",
+      "scope": "tumour",
+      "decision": "deprioritize",
+      "support": [
+        "vorinostat_case"
+      ],
+      "counterevidence": [
+        "vorinostat_case"
+      ],
+      "rationale": "Retain transient case benefit alongside progression, toxicity and negative PDX growth outcome.",
+      "stop_rule": "Necrosis or target engagement alone cannot establish efficacy; require exposure and matched normal safety.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "niclosamide",
+      "name": "Niclosamide and TBX-screen compounds",
+      "scope": "tumour",
+      "decision": "deprioritize",
+      "support": [
+        "tbx_screen",
+        "niclo_reformulation"
+      ],
+      "counterevidence": [
+        "niclo_original",
+        "niclo_correction",
+        "tbx_screen"
+      ],
+      "rationale": "Reformulation evidence tempers original PK failure but does not create a free RMS exposure bridge.",
+      "stop_rule": "Verify product/jurisdiction and endogenous mechanism; no advancement from extrapolated EC50s or unmatched total-plasma comparisons.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "posaconazole",
+      "name": "Posaconazole",
+      "scope": "tumour",
+      "decision": "deprioritize",
+      "support": [
+        "posaconazole"
+      ],
+      "counterevidence": [
+        "posaconazole",
+        "posaconazole_label"
+      ],
+      "rationale": "Actual growth inhibition retained; tissue injury and interactions undermine broad safety assumptions.",
+      "stop_rule": "No advancement without justified free exposure, normal-cell function and interaction review; no paper-to-paper combination assembly.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "pp2a_tools",
+      "name": "PP2A recruitment and chemical tools",
+      "scope": "mechanistic",
+      "decision": "exclude",
+      "support": [
+        "xu_pp2a",
+        "leonard_pp2a",
+        "naqvi_pp2a"
+      ],
+      "counterevidence": [
+        "vit_pp2a",
+        "xu_pp2a"
+      ],
+      "rationale": "Exclude from approved-drug shortlist; retain localized recruitment as an optional mechanistic control.",
+      "stop_rule": "Alignment under arrest, isolated scaffold binding or disputed compound annotation cannot establish faithful division or drug eligibility.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "senolysis",
+      "name": "Drug senolysis and HSP90 inhibition",
+      "scope": "constitutional",
+      "decision": "exclude",
+      "support": [
+        "baker2011",
+        "zhu_senolysis",
+        "fuhrmann_hsp90"
+      ],
+      "counterevidence": [
+        "baker2013",
+        "bubr1_stability"
+      ],
+      "rationale": "Genetic BubR1 clearance evidence and other-model drug benefits do not establish drug-mediated constitutional rescue.",
+      "stop_rule": "No generic lower-p21 or marker-clearance success criterion; require tissue-resolved viable function and chromosome safety.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    },
+    {
+      "id": "readthrough",
+      "name": "Ataluren/readthrough route",
+      "scope": "constitutional",
+      "decision": "exclude",
+      "support": [
+        "roy_readthrough"
+      ],
+      "counterevidence": [
+        "bolze_readthrough",
+        "ema_ataluren"
+      ],
+      "rationale": "Retain mechanism-control lessons but no approved clinical candidate promotion or selected-pair functional evidence.",
+      "stop_rule": "Endogenous RNA, actual traversal, full-length protein and function must pass separately; current regulatory eligibility also required.",
+      "clinical_exposure_margin": null,
+      "v15_reopening_rule": "Same requirements for all directions: qualified model/context, locked functional question, useful output, deficient-normal safety, relevant exposure and independent confirmation; no promotion by elimination."
+    }
+  ],
+  "additional_sources": [
+    {
+      "id": "S64",
+      "url": "https://doi.org/10.1002/jcsm.70274",
+      "reading_depth": "Selected primary methods/results, 2026 final article",
+      "finding": "RAPA-EX-01 randomized 40 older adults to weekly sirolimus or placebo with exercise for 13 weeks. Primary ITT difference: -2.13 chair stands (95% CI -4.61 to 0.34; p=0.089). Complete-case/per-protocol estimates favored placebo.",
+      "limit": "Exploratory, small, imputed missing outcomes, no multiplicity adjustment. Sirolimus, older adults and exercise differ from everolimus in MVA. Sensitivity analyses do not supersede the primary result.",
+      "decision": "Reject a generic rapalog-to-muscle-function benefit assumption; retain direct function and schedule/recovery tests."
+    },
+    {
+      "id": "S65",
+      "url": "https://doi.org/10.1186/s13063-024-08490-2",
+      "reading_depth": "Published original protocol; selected design/outcome sections",
+      "finding": "Original RAPA-EX-01 protocol names chair-stand performance and ACTRN12624000790549.",
+      "limit": "Protocol and results are one study, not replication. Direct registry retrieval failed; amendment history and full statistical code were not audited.",
+      "decision": "Report the primary outcome; do not elevate significant sensitivity findings into the primary claim."
+    },
+    {
+      "id": "S66",
+      "url": "https://doi.org/10.1080/15384101.2024.2402191",
+      "reading_depth": "Primary Figure 6, related methods/results and limitations",
+      "finding": "HCQ delayed chromatin compaction/decompaction in CAOV3 cells at 33 micromolar (two independent experiments, blinded scoring); the tripolar-division trend was not significant. Nuclear extracts used 500 micromolar (three experiments).",
+      "limit": "Tumour/extract systems and high nominal exposures do not establish harm at relevant deficient-normal exposure. Resistance screens do not prove one causal target.",
+      "decision": "HCQ is not a selective autophagy control. Keep reserve; require separate chromosome/kinetic safety and orthogonal flux controls before reopening."
+    },
+    {
+      "id": "S67",
+      "url": "https://doi.org/10.1371/journal.pone.0312859",
+      "reading_depth": "Primary methods, force results and discussion",
+      "finding": "Young male rats receiving rapamycin showed reduced contractile force and glucose intolerance versus vehicle and pair-fed comparisons; eight rats per group.",
+      "limit": "Pair-feeding began a week later. Route, compound, schedule and species differ; reduced Rictor is not proof of causal mTORC2 mediation.",
+      "decision": "Measure force separately from mass, and retain metabolic feedback and recovery endpoints."
+    },
+    {
+      "id": "S68",
+      "url": "https://doi.org/10.1111/acel.70183",
+      "reading_depth": "Final published primary methods, Figure 3 and limitations",
+      "finding": "In adult female mice, exercise-associated grip-strength and myofiber gains persisted with rapamycin. Thirty-six runners were randomized across three groups; 14 non-runners formed a sedentary vehicle group.",
+      "limit": "No sedentary drug groups; running volume differed. This final publication and its March preprint are one experiment. It does not establish MVA safety.",
+      "decision": "Reject inevitable class-wide muscle harm; qualify compound, stage and schedule instead."
+    },
+    {
+      "id": "S69",
+      "url": "https://doi.org/10.15252/embj.201386907",
+      "reading_depth": "Primary K668/SIRT2 and NMN results, Figures 1/3/6",
+      "finding": "SIRT2 overexpression improved survival in BubR1-hypomorphic mice; NMN increased BubR1 abundance in separate experiments. Nicotinamide inhibited sirtuin-associated effects in cell assays.",
+      "limit": "Genetic overexpression survival is not NMN drug rescue. NMN, nicotinamide and nicotinic acid are distinct; abundance is not selected-allele function.",
+      "decision": "Reopen NAD/SIRT2 only as a mechanistic comparison with measured residual functional protein; no new drug priority."
+    },
+    {
+      "id": "S70",
+      "url": "https://doi.org/10.1016/j.bbrc.2014.09.128",
+      "reading_depth": "Primary abstract/highlights; full paper not retrieved",
+      "finding": "SIRT2 deacetylated BUBR1 K250, but knockdown-associated acetylation did not substantially increase total BUBR1 or delay prometaphase-to-anaphase transition.",
+      "limit": "Different residue and experimental context from K668; this does not refute the K668 study.",
+      "decision": "Measure checkpoint timing and function instead of assuming every SIRT2 perturbation stabilizes useful BUBR1."
+    },
+    {
+      "id": "S71",
+      "url": "https://doi.org/10.1016/j.cmet.2020.04.008",
+      "reading_depth": "Primary summary, selected author-hosted methods and appended published correction; registry landing page uninformative",
+      "finding": "Niacin-associated NAD restoration and muscle improvement were reported in a small adult mitochondrial-myopathy study with treated matched controls.",
+      "limit": "Five patients, open-label design; active malignancy requiring treatment and severe treated kidney disease were excluded. Neither BUBR1 rescue nor MVA suitability was tested.",
+      "decision": "Do not transfer the favorable result or dosing to MVA; require the full compound-specific chain.",
+      "correction": {
+        "url": "https://doi.org/10.1016/j.cmet.2020.05.020",
+        "read_at": "https://www.brennerlab.net/files/Pirinen20.pdf",
+        "scope": "COX/SDH human-sample incubation methods corrected; authors state data, analysis and conclusions unchanged."
+      }
+    },
+    {
+      "id": "S72",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8485915/",
+      "reading_depth": "Indexed primary abstract and selected indexed passages; direct PMC page blocked",
+      "finding": "A randomized blinded study in 14 physically compromised older adults found no improvement in muscle or mitochondrial function with a combined NAD-precursor intervention.",
+      "limit": "Combination, population and exposure differ from niacin monotherapy and MVA. Null results are not universal inefficacy.",
+      "decision": "Preserve counterevidence to a generic NAD-to-function claim."
+    },
+    {
+      "id": "S73",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f1ae129-c21e-4c25-84c1-a6757d9a7eb2",
+      "reading_depth": "Official current oral-suspension label, sections 1/5/8/12; recheck of existing source",
+      "finding": "Specified pediatric TSC indications coexist with infection, renal, metabolic and wound-healing warnings; uncontrolled growth follow-up is a favorable but limited observation.",
+      "limit": "This formulation-specific label is not MVA approval, individual safety assessment or a tissue exposure bridge.",
+      "decision": "Keep the favorable growth evidence with its comparator limitation; retain specialist exposure/safety review."
+    },
+    {
+      "id": "S74",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42757823/",
+      "reading_depth": "Indexed primary abstract; direct PubMed page blocked",
+      "finding": "A 2026 prostate-cancer study reports BUB1B-dependent resistant tumour growth and CENP-E perturbation effects.",
+      "limit": "Adult prostate cancer is not RMS or constitutional MVA. Abstract-level review cannot settle disputed kinase/scaffold mechanisms.",
+      "decision": "Restoring abundance is not automatically tumour-safe. Preserve separate tumour and deficient-normal endpoints; no new inhibitor recommendation."
+    },
+    {
+      "id": "S75",
+      "url": "https://doi.org/10.1016/j.redox.2023.102701",
+      "reading_depth": "Primary Figure 6 and methods 4.5; recheck of existing source",
+      "finding": "Late-passage stromal-cell BUBR1 fell after 24-hour everolimus exposure; early-passage response differed. Methods specify 50 nM at 24 hours and 100 nM at 3 hours.",
+      "limit": "Protein abundance and cell state cannot establish deficient-normal function, target causality or a clinical margin.",
+      "decision": "Retain passage/state matching and endogenous BUBR1/function monitoring. Do not import these concentrations as a recommended experiment or child dose."
+    }
+  ],
+  "disposition_change": false,
+  "rescue_priority": null,
+  "clinical_exposure_margin": null,
+  "phase": "unconfirmed",
+  "search_records": [
+    "notes/track2-falsification-web-v21.json",
+    "notes/track2-falsification-search-v21.json",
+    "notes/track2-falsification-search-fallback-v21.json",
+    "notes/track2-falsification-metadata-v21.json"
+  ],
+  "correction_status": "PubMed linked notices revealed the S71 published correction, inspected in the author-hosted PDF. COX/SDH incubation times were corrected; authors state data and conclusions unchanged. Selected publisher/metadata checks found no other decision-changing notice; exhaustive surveillance and registry amendment history remain unverified."
+}

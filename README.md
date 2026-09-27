@@ -93,14 +93,22 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-**Track 2 (feat-009) is in progress.** Read the [integrated v20 report](notes/track2-report-v20.md)
+**Session 61: falsification revision.** The [27-claim audit](notes/track2-falsification-review-v21.md)
+adds primary counterevidence and favourable counterweights, challenges the uncalibrated
+expression filter, and sharpens the [validation plan](notes/track2-validation-v21.md).
+The [v21 ledger](notes/track2-evidence-v21.json) preserves every v15 drug disposition.
+The proposed decision contract returns HOLD with unmeasured biology and null margins.
+An invalid assay, imprecision, scoped futility and safety failure now have different
+consequences. No wet-lab result, new model inference or candidate promotion is claimed.
+
+**Track 2 (feat-009) is in progress.** Read the [integrated v21 report](notes/track2-report-v21.md)
 and the complete [v19 research record](notes/track2-transcriptome-v19.md).
-The [falsification review](notes/track2-falsification-review-v15.md) challenges the full
+The [falsification review](notes/track2-falsification-review-v21.md) challenges the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
 No drug earns rescue priority; everolimus is an optional qualified mechanistic probe,
 HCQ is reserve, phase is unconfirmed and clinical exposure margins are unknown.
 
-The [19-claim register](notes/track2-falsification-register-v15.json) specifies support,
+The [27-claim register](notes/track2-falsification-register-v21.json) specifies support,
 contrary evidence, falsifiers, stop/reopening rules and next actions. The new offline
 checker distinguishes unresolved evidence from failed hypotheses and prevents model-only
 or planned evidence from satisfying biological advancement gates. All-pass evidence
@@ -115,7 +123,7 @@ related ex vivo methods; the disputed concentration is quarantined. All original
 results, narrow successes, prior failures and positive safety counterweights remain.
 
 The [63-source/11-decision ledger](notes/track2-evidence-v15.json) and
-[validation plan](notes/track2-validation-v15.md) add controls for growth-rate and
+[validation plan](notes/track2-validation-v21.md) add controls for growth-rate and
 flux-reporter artifacts, missingness, meaningful-effect/safety bounds and delayed
 injury. Synthetic examples demonstrate how fewer abnormal survivors can coexist with
 worse useful output; they are explicitly not laboratory data. Bounded public searches,
@@ -134,16 +142,16 @@ assumption; revise or abandon the approach when warranted. Use the original
 throughout research and before promotion/release. Apply the same standard to benefit,
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
-Current materials: [seven-page report source](notes/track2-report-v20.md),
-[324-word narration](notes/track2-pitch-v20.md), [plain transcript](notes/track2-transcript-v20.txt),
-[eight-slide deck](notes/track2-slides-v20.html) and
-[video description](notes/track2-video-description-v20.md). Two result slides integrate
+Current materials: [eight-page report source](notes/track2-report-v21.md),
+[335-word narration](notes/track2-pitch-v21.md), [plain transcript](notes/track2-transcript-v21.txt),
+[eight-slide deck](notes/track2-slides-v21.html) and
+[video description](notes/track2-video-description-v21.md). Two result slides integrate
 the public expression findings and their limits; the report retains balanced literature
 evidence, model failures and the synthetic cell-fate example. All eleven methods
-answers, the 195-word abstract and the original workbook export are synchronized.
+answers, the 215-word abstract and the original workbook export are synchronized.
 The dated [official Track 2 brief review](notes/track2-v18-brief-review.md) remains the
 requirements source. Full acknowledgement and historical notices remain.
-The [readiness note](notes/track2-owner-readiness-v20.md) lists recording/hosting,
+The [readiness note](notes/track2-owner-readiness-v21.md) lists recording/hosting,
 provider handling, distribution scope, live checks and receipt. These are recording
 and review materials, not a recorded video or submission.
 
@@ -155,11 +163,11 @@ positive; everolimus's lower-dose evidence has chemical-identity and quality gap
 The resulting experiment requirements qualify the perturbation before testing a drug.
 No rescue-drug priority or clinical claim follows. Earlier versions remain preserved; GPU use was
 bursty, not saturated. [Execution, limits and reproduction](notes/track2-transcriptome-reproduction-v19.md)
-are recorded. The v20 presentation and recording bundle now incorporate these findings
+are recorded. The v21 presentation and recording bundle now incorporate these findings
 and include the v19 narrative, figure and reproduction note.
 
-Start with the [combined reviewer guide](notes/track2-reviewer-guide-v20.md). One
-public CPU command checks the v20 materials and v19 research, including the reported
+Start with the [combined reviewer guide](notes/track2-reviewer-guide-v21.md). One
+public CPU command checks the v21 materials and v19 research, including the reported
 counts, failed filters and HT29 counterweight. It needs no subject files, data/results
 folders, keys, network, Git history or model weights:
 
@@ -167,12 +175,12 @@ folders, keys, network, Git history or model weights:
 uv run --no-project python scripts/check_track2_harness.py
 ```
 
-The versioned v20 public reviewer and standalone transcriptome checker remain available
-for narrower checks. Use `scripts/track2_release_v20.py` for exact-byte v20 snapshots;
+The versioned v21 public reviewer and standalone transcriptome checker remain available
+for narrower checks. Use `scripts/track2_release_v21.py` for exact-byte v21 snapshots;
 the reviewer guide distinguishes exports, archive checks and full reproduction.
-All v1–v18 bound inputs/releases, the fixed v19 campaign and submitted Track 1 v4 are preserved.
+All v1–v20 bound inputs/releases, the fixed v19 campaign and submitted Track 1 v4 are preserved.
 The [current-artifact record](notes/track2-current.json) and
-[harness review](notes/track2-harness-review-v20.md) route the current work.
+[harness review](notes/track2-harness-review-v21.md) route the current work.
 `./init.sh` checks artifact versions, narration, original models, new falsification
 results and unresolved scientific/delivery status. The dated [official review](notes/track2-official-requirements-review-20260924.md)
 checked revision aeeef5ad49f51204a7439352e59e9d310aee5e9e; the
@@ -231,7 +239,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v20 disclosure names this route without
+GLM for public-literature synthesis; the current v21 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 

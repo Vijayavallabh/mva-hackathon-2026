@@ -1,0 +1,26 @@
+Track 2 v21 - read-aloud transcript
+Read the paragraphs; headings and times are cues, not narration.
+
+Slide 1 | 0:00-0:20 | The repurposing proposal
+Our Track Two proposal tests everolimus for useful, non-cancer cell function in MVA. This approved mTORC1 inhibitor remains an optional mechanistic probe. Our falsification review strengthens the model and measurement requirements. No drug earns rescue priority.
+
+Slide 2 | 0:20-0:42 | From variant to mechanism
+The starting hypothesis is a stop-gain and missense BUB1B pair. Phase and endogenous effects remain unresolved. Different-model evidence motivates two branches: excess mTOR activity with impaired function, or impaired flux and regeneration. Neither is established here. Everolimus does not replace BUBR1.
+
+Slide 3 | 0:42-1:09 | Test the expression signature
+Across fourteen BUB1B knockdown contexts, none passed our full primary filter. That filter is uncalibrated; this does not disprove the biology. A post-hoc HT29 result was favourable after shared-pattern removal, but had five reagents against our six-reagent requirement. Keep that exception; calibrate using independent controls.
+
+Slide 4 | 1:09-1:35 | Verify the compound evidence
+Of one hundred eighty everolimus-labelled profiles in the second release, one hundred seventy-four had unresolved stereochemical metadata. The six reference-matching profiles, at point-one micromolar nominal culture concentration, all failed drug quality checks. That leaves no qualified lower-dose reversal evidence. It establishes neither benefit nor harm.
+
+Slide 5 | 1:35-2:00 | The decisive experiment
+First establish endogenous BUBR1 and function using single-allele, cis, trans and corrected controls, plus independent genetic perturbation. Then verify compound identity and test drug plus the qualified deficit. Randomize and blind. Track every enrolled cell, daughter survival and sustained function. No wet-lab experiment has been performed.
+
+Slide 6 | 2:00-2:25 | Rules for advancement
+An invalid assay cannot reject biology. Imprecise benefit or safety means hold. A valid test excluding meaningful benefit stops that claim. Injury stops advancement. Confirmation requires independent replication and justified exposure. Whole blood is not free tissue. The disputed source concentration stays quarantined. Passing all requirements permits preclinical review only.
+
+Slide 7 | 2:25-2:47 | Impact and reuse
+A recent older-adult sirolimus trial did not establish functional benefit; mouse findings vary. This strengthens direct function and recovery tests. HCQ also needs chromosome-safety checks. Public CPU checks need no subject files or GPUs. Each new tissue needs fresh qualification; tumour killing needs separate deficient-normal controls. HCQ remains reserve.
+
+Slide 8 | 2:47-3:00 | Acknowledgement
+We thank the child and family, MVA Society and Sage Bionetworks. The full acknowledgement is displayed. Our next decisive step is biological validation.
