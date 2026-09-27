@@ -93,6 +93,12 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
+**Session 64: integrated presentation and harness.** The v24 report, nine-slide deck,
+342-word script and methods export incorporate the v23 RNAi findings. Seed-associated
+similarity, favorable HT29 evidence and finite-reference sensitivity now appear together,
+with concrete model-qualification changes. New release checks bind both research
+campaigns; earlier versions remain intact.
+
 **Session 63: eight-GPU RNAi falsification.** The [v23 addendum](notes/track2-rnai-v23.md)
 adds 1.54 billion pair comparisons and 5.84 million matched-control evaluations.
 Seed and batch controls weaken unqualified target attribution. HT29 retains a favorable
@@ -115,7 +121,7 @@ The proposed decision contract returns HOLD with unmeasured biology and null mar
 An invalid assay, imprecision, scoped futility and safety failure now have different
 consequences. No wet-lab result, new model inference or candidate promotion is claimed.
 
-**Track 2 (feat-009) is in progress.** Read the [integrated v22 report](notes/track2-report-v22.md)
+**Track 2 (feat-009) is in progress.** Read the [integrated v24 report](notes/track2-report-v24.md)
 and the complete [v19 research record](notes/track2-transcriptome-v19.md).
 The [falsification review](notes/track2-falsification-review-v21.md) challenges the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
@@ -156,16 +162,16 @@ assumption; revise or abandon the approach when warranted. Use the original
 throughout research and before promotion/release. Apply the same standard to benefit,
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
-Current materials: [eight-page report source](notes/track2-report-v22.md),
-[337-word narration](notes/track2-pitch-v22.md), [plain transcript](notes/track2-transcript-v22.txt),
-[eight-slide deck](notes/track2-slides-v22.html) and
-[video description](notes/track2-video-description-v22.md). One slide combines public expression qualification; a dedicated functional-evidence
+Current materials: [nine-page report source](notes/track2-report-v24.md),
+[342-word narration](notes/track2-pitch-v24.md), [plain transcript](notes/track2-transcript-v24.txt),
+[nine-slide deck](notes/track2-slides-v24.html) and
+[video description](notes/track2-video-description-v24.md). A dedicated RNAi slide contrasts seed association with the favorable but sensitive HT29 finding; another combines public expression qualification; a dedicated functional-evidence
 slide preserves the human primary interval and differing animal findings; the report retains balanced literature
 evidence, model failures and the synthetic cell-fate example. All eleven methods
-answers, the 215-word abstract and the original workbook export are synchronized.
+answers, the 227-word abstract and the original workbook export are synchronized.
 The dated [official Track 2 brief review](notes/track2-v18-brief-review.md) remains the
 requirements source. Full acknowledgement and historical notices remain.
-The [readiness note](notes/track2-owner-readiness-v22.md) lists recording/hosting,
+The [readiness note](notes/track2-owner-readiness-v24.md) lists recording/hosting,
 provider handling, distribution scope, live checks and receipt. These are recording
 and review materials, not a recorded video or submission.
 
@@ -177,11 +183,11 @@ positive; everolimus's lower-dose evidence has chemical-identity and quality gap
 The resulting experiment requirements qualify the perturbation before testing a drug.
 No rescue-drug priority or clinical claim follows. Earlier versions remain preserved; GPU use was
 bursty, not saturated. [Execution, limits and reproduction](notes/track2-transcriptome-reproduction-v19.md)
-are recorded. The v22 presentation and recording bundle now incorporate these findings
-and include the v19 narrative, figure and reproduction note.
+are recorded. The v24 presentation and recording bundle now incorporate these findings
+and include both campaigns' findings, figures and qualification notes.
 
-Start with the [combined reviewer guide](notes/track2-reviewer-guide-v23.md). One
-public CPU command checks v23 RNAi, v22 materials and v19 research, including the reported
+Start with the [combined reviewer guide](notes/track2-reviewer-guide-v24.md). One
+public CPU command checks v23 RNAi, v24 materials and v19 research, including the reported
 counts, failed filters and HT29 counterweight. It needs no subject files, data/results
 folders, keys, network, Git history or model weights:
 
@@ -189,12 +195,12 @@ folders, keys, network, Git history or model weights:
 uv run --no-project python scripts/check_track2_harness.py
 ```
 
-The versioned v22 public reviewer and standalone transcriptome checker remain available
-for narrower checks. Use `scripts/track2_release_v22.py` for exact-byte v22 snapshots;
+The versioned v24 public reviewer and standalone transcriptome checker remain available
+for narrower checks. Use `scripts/track2_release_v24.py` for exact-byte v24 snapshots;
 the reviewer guide distinguishes exports, archive checks and full reproduction.
-All v1–v22 bound inputs/releases, the fixed v19 campaign and submitted Track 1 v4 are preserved.
+All earlier bound inputs/releases, the fixed v19/v23 campaigns and submitted Track 1 v4 are preserved.
 The [current-artifact record](notes/track2-current.json) and
-[harness review](notes/track2-harness-review-v23.md) route the current work.
+[harness review](notes/track2-harness-review-v24.md) route the current work.
 `./init.sh` checks artifact versions, narration, original models, new falsification
 results and unresolved scientific/delivery status. The dated [official review](notes/track2-official-requirements-review-20260924.md)
 checked revision aeeef5ad49f51204a7439352e59e9d310aee5e9e; the
@@ -253,7 +259,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v22 disclosure names this route without
+GLM for public-literature synthesis; the current v24 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 

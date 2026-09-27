@@ -59,7 +59,8 @@ improve the proposal, including changing direction or abandoning a favored appro
 Follow `notes/track2-falsification-plan.md` alongside the preserved original plan.
 Use the current 27-claim `notes/track2-falsification-register-v21.json` and
 `notes/track2-falsification-review-v21.md` across every part of the evidence chain,
-alongside the v19 transcriptome addendum's model and compound qualification requirements.
+alongside the v19 transcriptome qualification requirements and five supplemental
+`notes/track2-rnai-register-v23.json` challenges (32 claim records total).
 Each consequential claim needs support and challenge, a falsifier, stop/reopening
 criteria and a next discriminating action. Unknown evidence means hold; it is not
 disproof. Failed safety overrides apparent benefit; all-pass permits only further
@@ -79,10 +80,10 @@ This is a continuing objective, not a one-time review. Preserve immutable snapsh
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the current artifact record and [session-handoff.md](session-handoff.md) for next
-steps and blockers. V22 is the current eight-page report, eight-slide deck, 337-word
-read-aloud transcript, methods workbook and video description. Session 62 gives
-functional counterevidence a dedicated slide, combines computational qualification
-and separates five decision outcomes. The 337-word narration matches all eight cues.
+steps and blockers. V24 is the current nine-page report, nine-slide deck, 342-word
+read-aloud transcript, methods workbook and video description. Session 64 integrates
+v23 seed/batch RNAi findings, favorable HT29 evidence and finite-reference sensitivity.
+The distinct v19 five-reagent and v23 six-reagent findings must not be conflated.
 Session 61 supplies a 27-claim falsification register, twelve source adjudications and a proposed executable
 decision contract. No drug disposition changed: the v21 ledger preserves all eleven
 v15 decisions. The validation plan is now v21; all biological measurements and margins
@@ -90,11 +91,11 @@ remain null. Keep invalid assays, imprecision, scoped futility and safety stops 
 Requirements remain the dated September 24-25 review, not a new live portal audit.
 
 Use scripts/check_track2_harness.py,
-[notes/track2-reviewer-guide-v23.md](notes/track2-reviewer-guide-v23.md) and
-[notes/track2-owner-readiness-v22.md](notes/track2-owner-readiness-v22.md).
-Harness is v23 and presentation is v22; the evidence amendment and validation remain v21. The frozen public campaign
+[notes/track2-reviewer-guide-v24.md](notes/track2-reviewer-guide-v24.md) and
+[notes/track2-owner-readiness-v24.md](notes/track2-owner-readiness-v24.md).
+Harness and presentation are v24; the evidence amendment and validation remain v21. The frozen public campaign
 remains notes/track2-transcriptome-v19.md; preserve every earlier bound input and
-release through v22. The v22 recording ZIP is not a recorded video. Public searches
+release through v22 and frozen v23 research. The v24 recording ZIP is not a recorded video. Public searches
 added no model provider or GPU inference; biological qualification is the next
 discriminating work. See notes/track2-falsification-review-v21.md for search gaps.
 
@@ -115,7 +116,7 @@ discriminating work. See notes/track2-falsification-review-v21.md for search gap
   Use `notes/track2-rnai-validation-v23.md` alongside v21 biological safeguards.
   All primary outputs and the 161-file archive are preserved. Eight GPUs executed
   briefly; monitoring does not support sustained/full utilization. No owned job is
-  pending. The combined harness is v23; frozen v22 presentation and v19 research remain.
+  pending. The v24 integration preserves the frozen v23 research, v22 presentation and v19 campaign.
 
 - **Session 58 public transcriptome addendum (2026-09-27):** use
   `notes/track2-transcriptome-v19.md` and its fixed plans, complete results and audit.
@@ -124,7 +125,8 @@ discriminating work. See notes/track2-falsification-review-v21.md for search gap
   These counts are not independent experiments; utilization was bursty, not saturated.
   No primary query passed the operational gate (0/14). Post-hoc full filters pass 0/42;
   preserve HT29's five-reagent projected q=0.042 partial positive. Exact provider
-  membership is now checked; seed independence/weights/on-target function are not.
+  membership and annotated seed independence are checked; weights, actual processing,
+  potency and on-target function remain unresolved.
   Everolimus has 13/19 positive primary correlations at 10 µM nominal exposure. Of
   180 second-release labelled profiles, 174 have unresolved stereochemical metadata;
   the six reference-matching 0.1 µM profiles all fail specified drug QC. Do not pool
@@ -166,7 +168,7 @@ discriminating work. See notes/track2-falsification-review-v21.md for search gap
   derived findings. Never print `.env` or keys. See the current report section 7.
 - **Official requirements and community:** session 56 reviewed live revision
   `aeeef5ad49f51204a7439352e59e9d310aee5e9e`, all 24 public discussions/68 latest
-  comments and three administrative images. Use `notes/track2-requirements-v22.json`
+  comments and three administrative images. Use `notes/track2-requirements-v24.json`
   and `notes/track2-community-review-20260924.md`; rubric weights are 35/25/25/15.
   PDF/Markdown report plus GitHub and three-minute YouTube/Vimeo pitch are required.
   Methods B9 is required and B17 is limited to 500 words. The template's one-entry
@@ -176,7 +178,7 @@ discriminating work. See notes/track2-falsification-review-v21.md for search gap
   from judge-facing materials, but does not establish that linked history is outside
   submission scope. Preserve original notices; do not grant a blanket relicence or
   mark eligibility resolved. Concrete unsent clarification in
-  `notes/track2-owner-readiness-v18.md`, linked from the v22 readiness note; no organizer
+  `notes/track2-owner-readiness-v18.md`, linked from the v24 readiness note; no organizer
   contact is authorized.
 - **Delivery:** no wet-lab experiment, recorded/hosted video or Track 2 submission is
   established. A script/PDF and successful tests do not fill those gaps. The portal
@@ -184,15 +186,15 @@ discriminating work. See notes/track2-falsification-review-v21.md for search gap
   Record the complete acknowledgement inside the three-minute video. Preserve the
   Track 1 submitted v4, every earlier Track 2 bound input/package, the fixed v19 campaign and v1-v21 releases.
 
-Use `scripts/track2_release_v22.py` to check/build/verify **new** v22 research snapshot
-directories. Render with `scripts/render_track2_slides_v22.mjs`; export the report and
-workbook with `scripts/track2_export_documents_v22.py` followed by
-`scripts/render_track2_report_v22.mjs`. Recording materials use
-`scripts/track2_bundle_v22.py`; historical research retains AF3 notices.
-The combined public reviewer checks v23 RNAi alongside v22/v21/v19 and needs no
+Use `scripts/track2_release_v24.py` to check/build/verify **new** v24 research snapshot
+directories. Render with `scripts/render_track2_slides_v24.mjs`; export the report and
+workbook with `scripts/track2_export_documents_v24.py` followed by
+`scripts/render_track2_report_v24.mjs`. Recording materials use
+`scripts/track2_bundle_v24.py`; historical research retains AF3 notices.
+The combined public reviewer checks v23 RNAi alongside v24/v21/v19 and needs no
 data/results folders, keys, network, GPUs or old
 local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
-The versioned `scripts/track2_public_review_v22.py` checks the integrated presentation
+The versioned `scripts/track2_public_review_v24.py` checks the integrated presentation
 and frozen research; `scripts/check_track2_transcriptome.py` checks v19 alone.
 Its passing result verifies consistency, not biology or eligibility. The stricter
 release verification also requires retained local historical archives.
@@ -221,14 +223,14 @@ uv run python scripts/check_track2_harness.py
 uv run --no-project python scripts/check_track2_transcriptome.py
 uv run --no-project python scripts/check_track2_rnai_v23.py
 uv run --no-project python scripts/track2_falsification_v21.py
-uv run --no-project python scripts/track2_public_review_v22.py
-uv run python scripts/track2_release_v22.py check
+uv run --no-project python scripts/track2_public_review_v24.py
+uv run python scripts/track2_release_v24.py check
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
 `track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
 its old conditional-screen label is not today's drug decision. The current v21
-ledger, v22 report and v19 research addendum take precedence. Historical exact-byte verification remains
+ledger, v24 report and v19/v23 research take precedence. Historical exact-byte verification remains
 available through the versioned release scripts; never resubmit Track 1 to resolve
 its missing administrative receipt.
 

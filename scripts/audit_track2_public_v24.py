@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the combined review in a temporary public-only copy with Python audit guards.
+"""Run the v24 presentation/research review in a temporary public-only copy with Python audit guards.
 
 This checks runtime dependencies, not biology or operating-system sandbox security.
 The original repository is read only. No network or protected input is needed.
@@ -53,11 +53,9 @@ for name, probe in probes.items():
 captured = io.StringIO()
 started = time.perf_counter()
 with contextlib.redirect_stdout(captured):
-    runpy.run_path(str(root / 'scripts/check_track2_harness.py'), run_name='__main__')
+    runpy.run_path(str(root / 'scripts/track2_public_review_v24.py'), run_name='__main__')
 result = json.loads(captured.getvalue())
-assert result['passed'] and result['research_addendum']['version'] == 19
-assert result['presentation_version'] == result['harness_version'] == 24
-assert result['rnai_addendum']['version'] == 23 and result['rnai_addendum']['passed']
+assert result['passed'] and result['presentation_version'] == 24 and result['transcriptome']['gpus'] == 8
 assert sys.prefix == sys.base_prefix, 'Project environment unexpectedly active'
 print(json.dumps(dict(passed=True, review=result, seconds=time.perf_counter()-started,
     blocked_probes=blocked, network_forbidden_by_audit_hook=True,
@@ -97,7 +95,9 @@ def audit(root=ROOT):
         result = json.loads(child.stdout)
         result.update(copied_public_files=len(files), total_seconds=time.perf_counter()-started,
                       python_version=sys.version.split()[0], source_copy_created_without_git_history=True,
-                      reviewer_sha256=hashlib.sha256((root/'scripts/check_track2_harness.py').read_bytes()).hexdigest())
+                      script_sha256=hashlib.sha256((root/'scripts/track2_public_review_v24.py').read_bytes()).hexdigest(),
+                      report_sha256=hashlib.sha256((root/'notes/track2-report-v24.md').read_bytes()).hexdigest(),
+                      slide_sha256=hashlib.sha256((root/'notes/track2-slides-v24.html').read_bytes()).hexdigest())
         return result
 
 

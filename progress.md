@@ -5834,3 +5834,185 @@ annotation resources ready
 ```
 
 Additional matching-metadata crosscheck: {"signatures": 119013, "duplicate_distil_id_records": 0, "missing_metrics": 0, "count_mismatches": 0, "count_semantics": "distinct provider replicate IDs, not independent donors"}.
+
+## Session 64 — 2026-09-27 — integrate RNAi findings into presentation and harness
+
+Feat-009 remains in progress. The owner requested updated slides, report, transcript
+and all harness files. V24 now integrates the frozen v23 RNAi analysis while preserving
+v19 research, v21 drug/biological decisions, v22 materials and submitted Track 1 v4.
+The report adds seed/batch attribution, favorable HT29 evidence, finite-reference
+sensitivity, reused experiments and missing BUB1B CRISPR evidence. The resulting
+qualification changes include seed controls, independent perturbation/restoration,
+finite-control coverage and fixed missing-data/multiplicity handling. The original
+27-claim register plus five v23 challenges remain separate, with 32 records checked.
+
+Humanizer/no-ai-slop editing and scientific-slides/frontend-design guidance produced
+a synchronized nine-slide deck, 342-word script/plain transcript and nine-page report.
+The abstract is 227 words; all eleven methods answers are filled in the pinned official
+workbook. Report B9 exactly matches the video description. A dedicated RNAi slide
+separates the six-reagent PRIME analysis from the older five-provider-reagent projection.
+All full acknowledgements and historical notices are retained. A limited primary-paper
+spot-check supports provenance; this was no new systematic search or competition review.
+
+Current routes: `notes/track2-current.json`, `notes/track2-reviewer-guide-v24.md` and
+`notes/track2-harness-review-v24.md`. Mutable AGENTS/README/feature/handoff files point
+to v24; versioned review, render, export, release, bundle and tests bind the new files.
+The v24 release inherits v22 and explicitly incorporates the frozen RNAi audit inputs.
+The combined reviewer still needs no subject files, data/results folders, credentials,
+network, GPU, model weights or Git history. Stronger evidence guards retain the
+favorable result, unknown controls, post-hoc qualification and no-promotion status.
+
+Verified outputs:
+
+- `results/feat009/v24-slides-final-20260927/track2-slides-v24.pdf`: nine pages and
+  nine PNGs, all visually inspected; slide 4 also inspected at full size. No detected
+  text overlap/clipping, minimum 24px slide text, 640px narrow fit, minimum checked
+  contrast 5.257:1 and embedded fonts. Exported PDF text retains the findings and full
+  acknowledgement after whitespace normalization.
+- `results/feat009/v24-documents-final-20260927/`: nine-page report PDF/Markdown/HTML
+  and `jvv7_track2_methods_v24.xlsx`. All PDF pages inspected, four tables intact.
+  Workbook values, official prompts and Track 1 values/styles round-trip; workbook
+  appearance was not rendered. No independent visual/scientific review is claimed.
+- `results/feat009/jvv7_track2_research_v24`: 115 files and 479 bound inputs; recursive
+  historical verification passes. All 433 prior v22 input hashes and all 22 v23 audit
+  input hashes are unchanged (453 unique inputs due to two shared environment files).
+- `results/feat009/jvv7_track2_video_materials_v24.zip`: 34 files, 1,512,922 bytes,
+  SHA256 `8d92b4d6cf960e38678d3642c5911546548152a95b8d50b2e5e7e90be20cfc84`.
+  The verified recording/review ZIP includes the RNAi narrative, figure, validation,
+  register and sensitivity alongside the earlier evidence materials.
+- `uv run python -m unittest discover -s scripts -p 'test_track2*.py'`: **812 tests
+  pass**, 10.123 seconds. Log `logs/track2-v24-tests-20260927.log`.
+- Public isolated presentation review passes with 554 copied files, six blocked audit
+  probes, 0.209 seconds. Combined review passes with 557 public files, six blocked
+  probes, 0.259 seconds. These command timings are not project-effort or speedup claims.
+  Audits: `notes/track2-public-review-v24.json` and
+  `results/feat009/v24-harness-isolated-20260927.json`.
+- Live publication guard: repository PUBLIC, 13 retired objects unavailable, successful
+  live-object control, zero unknown errors. Staged audit before adding this progress
+  entry checks 559 blobs with no findings. Final staged/all-ref checks are recorded
+  under `results/feat009/v24-*-audit-20260927.json` before push.
+
+Commands: `uv run node scripts/render_track2_slides_v24.mjs v24-slides-final-20260927`;
+`uv run scripts/track2_export_documents_v24.py v24-documents-final-20260927`;
+`uv run node scripts/render_track2_report_v24.mjs v24-documents-final-20260927`;
+`uv run --no-project python logs/audit_v24_exports.py` (local export/hash inspection);
+`uv run python scripts/track2_release_v24.py build results/feat009/jvv7_track2_research_v24`;
+`uv run python scripts/track2_bundle_v24.py build`. Both final verify commands pass.
+No GPU rerun, new provider, neural inference, laboratory experiment or submission occurred.
+Video recording/runtime/hosting, provider/distribution resolution, live delivery checks
+and receipt remain open. Hypothesis submission readiness is separate from biological
+advancement; phase, exposure and biological margins stay unresolved.
+
+Fresh-shell `./init.sh` actual output, captured in
+`logs/track2-v24-final-init-20260927.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "harness_version": 24,
+  "presentation_version": 24,
+  "drug_science_version": 21,
+  "slides": 9,
+  "narration_words": 342,
+  "falsification_amendment": {
+    "passed": true,
+    "claims": 27,
+    "additional_source_records": 12,
+    "current_decision": {
+      "clinical_recommendation": false,
+      "scope": "qualified_non_cancer_model",
+      "evidence_kind": "not_measured",
+      "decision": "HOLD",
+      "reason": "Prerequisites unresolved or failed; no transfer from another branch"
+    },
+    "drug_dispositions_changed": false,
+    "biological_validation": false
+  },
+  "upload_ready": false,
+  "research_addendum": {
+    "version": 19,
+    "status": "complete",
+    "gpus": 8,
+    "completed_gpu_waves": 3,
+    "compound_profiles": 312438,
+    "query_compound_comparisons": 12185082,
+    "resampled_reagent_sets": 560000,
+    "primary_contexts": 14,
+    "primary_query_gates_passed": 0,
+    "post_hoc_comparisons": 42,
+    "post_hoc_full_filters_passed": 0,
+    "primary_everolimus_comparisons": 19,
+    "primary_everolimus_profiles": 14,
+    "primary_everolimus_positive_correlations": 13,
+    "phase2_unresolved_labelled_profiles": 174,
+    "phase2_reference_matching_profiles": 6,
+    "phase2_reference_matching_qc_passes": 0,
+    "ht29_post_hoc_reagents": 5,
+    "ht29_post_hoc_adjusted_tail": 0.041995800419958006,
+    "ht29_full_filter_passed": false,
+    "drug_ranking_changed": false
+  },
+  "rnai_addendum": {
+    "passed": true,
+    "version": 23,
+    "gpus": 8,
+    "unordered_pair_comparisons": 1536619950,
+    "null_sets": 5843968,
+    "orthogonal_comparisons": 2364754,
+    "primary_threshold_crossings": 5,
+    "finite_reference_threshold_crossings": 0,
+    "unknown_comparisons": 2,
+    "seed_comparison": {
+      "raw": {
+        "available": 54,
+        "seed_greater": 45
+      },
+      "prime": {
+        "available": 54,
+        "seed_greater": 45
+      }
+    },
+    "orthogonal_reference": {
+      "raw": {
+        "comparisons": 297,
+        "top1": 14,
+        "top5percent": 84
+      },
+      "prime": {
+        "comparisons": 297,
+        "top1": 21,
+        "top5percent": 93
+      }
+    },
+    "independent_bub1b_experiment": false,
+    "drug_ranking_changed": false,
+    "biological_validation": false
+  },
+  "biological_validation": false,
+  "scope": "Combined public presentation/research consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```
