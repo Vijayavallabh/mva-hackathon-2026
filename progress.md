@@ -6659,3 +6659,10 @@ annotation resources ready
 }
 === OK ===
 ```
+
+Post-commit verification of `1aa620b`: full reachable-history publication audit PASS
+(88 commits /1174 blobs, zero findings). Final combined
+harness also passes. Source/prose whitespace check passes; Git flags trailing spaces
+inside the generated Matplotlib SVG path strings. The exact rendered/bound SVG is
+preserved as a generated-artifact formatting exception; geometry and visual checks pass.
+No extra inference or scientific change followed final validation.
