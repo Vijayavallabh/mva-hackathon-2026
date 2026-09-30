@@ -61,7 +61,8 @@ Use the current 27-claim `notes/track2-falsification-register-v21.json` and
 `notes/track2-falsification-review-v21.md` across every part of the evidence chain,
 alongside the v19 transcriptome qualification requirements, five supplemental
 `notes/track2-rnai-register-v23.json` challenges and five
-`notes/track2-crispr-register-v25.json` challenges (37 claim records, not studies).
+`notes/track2-crispr-register-v25.json` challenges and five
+`notes/track2-falsification-register-v27.json` challenges (42 claim records, not studies).
 Each consequential claim needs support and challenge, a falsifier, stop/reopening
 criteria and a next discriminating action. Unknown evidence means hold; it is not
 disproof. Failed safety overrides apparent benefit; all-pass permits only further
@@ -81,36 +82,28 @@ This is a continuing objective, not a one-time review. Preserve immutable snapsh
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the current artifact record and [session-handoff.md](session-handoff.md) for next
-steps and blockers. Session 67 adds completed v27 protein-background and expression
-specificity research in `notes/track2-falsification-v27.md`; read it alongside the
-preserved v26 presentation. All eight H100s completed new neural inference (9,472 masked
-distributions, 179,968 substitution scores) and 918,999,010 expression comparisons.
-Negative protein scores are common; matched N-to-K ranks retain qualified favorable
-evidence. HT29 remains near the top under stronger sensitivities. MCF7 BUB1B drug-reversal
-rank falls from 7 to 1,184 after mean plus ten-component removal while MTOR stays first.
-These post-hoc projections can remove real biology; they do not prove confounding.
-One guide, failed model QC, no joint rescue and null clinical margins remain. Five new
-R38-R42 challenges make 42 claim records, not studies. Anthropic's optimization kit was
-reviewed but not executed; frozen upstream ESM models ran locally. All owned jobs are
-complete. Use `scripts/check_track2_falsification_v27.py` and the combined harness.
-The new remote folder under `~/v` is in the November 24 deletion scope.
+steps and blockers. Session 68 integrates the completed v27 protein-background and
+expression-specificity research into v28 report, nine-slide deck, 330-word narration,
+plain transcript, disclosure and methods workbook (271-word abstract). Use
+`scripts/check_track2_harness.py`, `notes/track2-reviewer-guide-v28.md` and
+`notes/track2-owner-readiness-v28.md`. Presentation and combined harness are v28;
+the drug ledger/base validation remain v21 with frozen v19/v23/v25/v27 research.
 
-Session 66 integrates frozen v25 CRISPR findings into the current
-v26 eleven-page report, nine-slide deck, 343-word read-aloud transcript, methods workbook
-and video description. Slides 3-4 separate HT29 assay qualification from MCF7 drug
-connections and failed BUB1B model checks. The report retains all older RNAi and
-transcriptome findings with dataset-specific scope, source-well reuse and new controls.
-The distinct v19 five-reagent and v23 six-reagent HT29 findings must not be conflated.
+HT29 retains retrieval ranks 2–5 after post-hoc feature/projection changes; one guide,
+failed-batch QC and tumour context limit it to assay development. MCF7 BUB1B reversal
+falls from rank 7 to 1,184 while MTOR stays first; drug QC cannot repair failed query
+QC. Projection can remove real biology and is not causal adjustment. Negative protein
+scores are common; favorable matched N→K evidence remains model/comparison dependent.
+Expanded control separation still fails 8/12. All 42 claim records and eleven drug
+dispositions persist. No rescue priority, confirmed phase, clinical margin or wet-lab
+result is established. The distinct five- and six-reagent HT29 findings stay separate.
 
-Use `scripts/check_track2_harness.py`,
-[notes/track2-reviewer-guide-v27.md](notes/track2-reviewer-guide-v27.md) and
-[notes/track2-owner-readiness-v27.md](notes/track2-owner-readiness-v27.md).
-Presentation is v26 and the combined harness is v27; the drug ledger and base validation remain v21,
-with frozen v23/v25 qualification addenda and 37 claim records. All eleven drug
-dispositions, biological null margins and delivery/provider flags remain unchanged.
-Requirements remain the dated September 24-25 review, not a new live portal audit.
-Preserve the v24 presentation and all earlier bound files, plus v25 research.
-No GPU rerun or new model provider is needed to reproduce this presentation.
+All eight H100s completed v27 inference/statistics; no owned job is pending. The
+Anthropic toolkit was reviewed but not executed; frozen local FP32 runtimes ran the
+models. The remote folder under `~/v` remains in the November 24 deletion scope.
+This integration used no extra model inference or provider. Preserve all v26-bound
+inputs, the v27 audit and every earlier release. Requirements remain the dated
+September 24–25 review; delivery/provider/distribution flags remain unresolved.
 
 - **Session 65 public CRISPR follow-up (2026-10-01 IST):** use
   `notes/track2-crispr-v25.md`, its fixed plan, complete results, source-well continuity,
@@ -218,15 +211,15 @@ No GPU rerun or new model provider is needed to reproduce this presentation.
   Record the complete acknowledgement inside the three-minute video. Preserve the
   Track 1 submitted v4, every earlier Track 2 bound input/package, the fixed v19 campaign and v1-v21 releases.
 
-Use `scripts/track2_release_v26.py` to check/build/verify **new** v26 research snapshot
-directories. Render with `scripts/render_track2_slides_v26.mjs`; export the report and
-workbook with `scripts/track2_export_documents_v26.py` followed by
-`scripts/render_track2_report_v26.mjs`. Recording materials use
-`scripts/track2_bundle_v26.py`; historical research retains AF3 notices.
-The combined public reviewer checks v27 research, integrated v26 and frozen v25 CRISPR, v23 RNAi, v21 decisions and v19 findings and needs no
+Use `scripts/track2_release_v28.py` to check/build/verify **new** v28 research snapshot
+directories. Render with `scripts/render_track2_slides_v28.mjs`; export the report and
+workbook with `scripts/track2_export_documents_v28.py` followed by
+`scripts/render_track2_report_v28.mjs`. Recording materials use
+`scripts/track2_bundle_v28.py`; historical research retains AF3 notices.
+The combined public reviewer checks v27 research, integrated v28 and frozen v25 CRISPR, v23 RNAi, v21 decisions and v19 findings and needs no
 data/results folders, keys, network, GPUs or old
 local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
-The versioned `scripts/track2_public_review_v26.py` checks the integrated presentation
+The versioned `scripts/track2_public_review_v28.py` checks the integrated presentation
 and frozen research; `scripts/check_track2_transcriptome.py` checks v19 alone.
 Its passing result verifies consistency, not biology or eligibility. The stricter
 release verification also requires retained local historical archives.
@@ -256,14 +249,14 @@ uv run --no-project python scripts/check_track2_transcriptome.py
 uv run --no-project python scripts/check_track2_rnai_v23.py
 uv run --no-project python scripts/check_track2_crispr_v25.py
 uv run --no-project python scripts/track2_falsification_v21.py
-uv run --no-project python scripts/track2_public_review_v26.py
-uv run python scripts/track2_release_v26.py check
+uv run --no-project python scripts/track2_public_review_v28.py
+uv run python scripts/track2_release_v28.py check
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
 `track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
 its old conditional-screen label is not today's drug decision. The current v21
-ledger, v26 report and v19/v23/v25 research take precedence. Historical exact-byte verification remains
+ledger, v28 report and v19/v23/v25/v27 research take precedence. Historical exact-byte verification remains
 available through the versioned release scripts; never resubmit Track 1 to resolve
 its missing administrative receipt.
 

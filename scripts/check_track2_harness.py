@@ -6,7 +6,7 @@ import json
 import re
 from pathlib import Path
 
-RNAI_STATE = {'version': 23, 'status': 'complete', 'report': 'notes/track2-rnai-v23.md', 'plan': 'notes/track2-rnai-plan-v23.json', 'results': 'notes/track2-rnai-results-v23.json', 'sensitivity': 'notes/track2-rnai-tail-sensitivity-v23.json', 'audit': 'notes/track2-rnai-audit-v23.json', 'validation': 'notes/track2-rnai-validation-v23.md', 'register': 'notes/track2-rnai-register-v23.json', 'check': 'scripts/check_track2_rnai_v23.py', 'figure': 'notes/track2-rnai-v23.svg', 'archive': 'results/feat009/rnai-v23/rnai-v23-audit.tar.gz', 'gpus': 8, 'unordered_pair_comparisons': 1536619950, 'conditional_control_sets': 5843968, 'orthogonal_comparisons': 2364754, 'drug_ranking_changed': False, 'presentation_integration': 'integrated_in_v26_preserves_v23'}
+RNAI_STATE = {'version': 23, 'status': 'complete', 'report': 'notes/track2-rnai-v23.md', 'plan': 'notes/track2-rnai-plan-v23.json', 'results': 'notes/track2-rnai-results-v23.json', 'sensitivity': 'notes/track2-rnai-tail-sensitivity-v23.json', 'audit': 'notes/track2-rnai-audit-v23.json', 'validation': 'notes/track2-rnai-validation-v23.md', 'register': 'notes/track2-rnai-register-v23.json', 'check': 'scripts/check_track2_rnai_v23.py', 'figure': 'notes/track2-rnai-v23.svg', 'archive': 'results/feat009/rnai-v23/rnai-v23-audit.tar.gz', 'gpus': 8, 'unordered_pair_comparisons': 1536619950, 'conditional_control_sets': 5843968, 'orthogonal_comparisons': 2364754, 'drug_ranking_changed': False, 'presentation_integration': 'integrated_in_v28_preserves_v23'}
 RNAI_AUDIT_SHA256 = '27bff5205ea443acdfe1dbb8863f21725af36af3e7400199bcea3345cdf9cb3c'
 CRISPR_STATE = {
     'version':25, 'status':'complete', 'report':'notes/track2-crispr-v25.md',
@@ -18,10 +18,10 @@ CRISPR_STATE = {
     'archive':'results/feat009/crispr-v25/crispr-v25-audit.tar.gz',
     'gpus':8,'comparisons':2474445074,'bub1b_profiles':31,'bub1b_guides':1,
     'matched_compound_profiles':285488,'drug_ranking_changed':False,
-    'presentation_integration':'integrated_in_v26_preserves_v25',
+    'presentation_integration':'integrated_in_v28_preserves_v25',
 }
 CRISPR_AUDIT_SHA256 = '264a46ecc491e0894d57f204c9d9739cb20494ca866bb6e73e3fdce5bd8e3ebb'
-FALSIFICATION_STATE = {'version': 27, 'status': 'complete', 'report': 'notes/track2-falsification-v27.md', 'saturation_plan': 'notes/track2-saturation-plan-v27.json', 'specificity_plan': 'notes/track2-specificity-plan-v27.json', 'saturation_results': 'notes/track2-saturation-results-v27.json', 'specificity_results': 'notes/track2-specificity-results-v27.json', 'compute': 'notes/track2-falsification-compute-v27.json', 'register': 'notes/track2-falsification-register-v27.json', 'audit': 'notes/track2-falsification-audit-v27.json', 'check': 'scripts/check_track2_falsification_v27.py', 'reproduction': 'notes/track2-falsification-reproduction-v27.md', 'figure': 'notes/track2-falsification-v27.svg', 'archive': 'results/feat009/falsification-v27/falsification-v27-audit.tar.gz', 'gpus': 8, 'masked_positions': 9472, 'substitution_scores': 179968, 'expression_comparisons': 918999010, 'drug_ranking_changed': False, 'presentation_integration': 'separate_addendum_read_with_preserved_v26'}
+FALSIFICATION_STATE = {'version': 27, 'status': 'complete', 'report': 'notes/track2-falsification-v27.md', 'saturation_plan': 'notes/track2-saturation-plan-v27.json', 'specificity_plan': 'notes/track2-specificity-plan-v27.json', 'saturation_results': 'notes/track2-saturation-results-v27.json', 'specificity_results': 'notes/track2-specificity-results-v27.json', 'compute': 'notes/track2-falsification-compute-v27.json', 'register': 'notes/track2-falsification-register-v27.json', 'audit': 'notes/track2-falsification-audit-v27.json', 'check': 'scripts/check_track2_falsification_v27.py', 'reproduction': 'notes/track2-falsification-reproduction-v27.md', 'figure': 'notes/track2-falsification-v27.svg', 'archive': 'results/feat009/falsification-v27/falsification-v27-audit.tar.gz', 'gpus': 8, 'masked_positions': 9472, 'substitution_scores': 179968, 'expression_comparisons': 918999010, 'drug_ranking_changed': False, 'presentation_integration': 'integrated_in_v28_preserves_v27'}
 FALSIFICATION_AUDIT_SHA256 = '690411890163add844aaa61aaf1a832b1447143341d67bdb34b45ec37128bd27'
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,8 +35,8 @@ STATUS = {
 CURRENT_REVIEW = {
     'script': 'scripts/check_track2_harness.py',
     'isolation_audit': 'scripts/audit_track2_harness.py',
-    'guide': 'notes/track2-reviewer-guide-v27.md',
-    'readiness': 'notes/track2-owner-readiness-v27.md',
+    'guide': 'notes/track2-reviewer-guide-v28.md',
+    'readiness': 'notes/track2-owner-readiness-v28.md',
 }
 RESEARCH_PATHS = {
     'plan': 'notes/track2-transcriptome-plan-v19.json',
@@ -55,7 +55,7 @@ RESEARCH_PATHS = {
 }
 RESEARCH_STATE = {
     'version': 19, 'kind': 'public_perturbation_transcriptome', 'status': 'complete',
-    'report_integration': 'integrated_in_v26_preserves_v19_through_v25',
+    'report_integration': 'integrated_in_v28_preserves_v19_through_v27',
     'gpus': 8, 'compound_profiles': 312438, 'query_compound_comparisons': 12185082,
     'resampled_reagent_sets': 560000, 'primary_query_gates_passed': 0,
     'drug_ranking_changed': False,
@@ -118,8 +118,8 @@ def validate(state, features, documents):
             'Stale or unsafe render-directory path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['document_directory']),
             'Stale or unsafe document-directory path')
-    require(state.get('harness_version') == 27 and
-            state['harness_review'] == 'notes/track2-harness-review-v27.md', 'Stale harness review')
+    require(state.get('harness_version') == 28 and
+            state['harness_review'] == 'notes/track2-harness-review-v28.md', 'Stale harness review')
     require(state.get('current_review') == CURRENT_REVIEW, 'Missing or stale combined review route')
     require(state.get('rnai_addendum') == RNAI_STATE, 'Missing or inconsistent RNAi addendum')
     require(state.get('falsification_addendum') == FALSIFICATION_STATE and
@@ -263,7 +263,7 @@ def check(root=ROOT):
     require(hashlib.sha256(v27_bytes).hexdigest()==FALSIFICATION_AUDIT_SHA256,'Frozen v27 audit changed')
     v27=importlib.import_module('check_track2_falsification_v27').check(root)
     require(v27['passed'],'V27 review failed')
-    return dict(passed=True, active_feature='feat-009', harness_version=27,
+    return dict(passed=True, active_feature='feat-009', harness_version=28,
                 presentation_version=state['presentation_version'],
                 drug_science_version=21, slides=presentation['slides'],
                 narration_words=presentation['narration_words'], falsification_amendment=presentation['falsification_amendment'], upload_ready=False,

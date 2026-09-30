@@ -1,0 +1,64 @@
+{
+  "document_directory": "results/feat009/v28-documents-final-20261001",
+  "export": {
+    "created_utc": "2026-09-30T22:52:07.335755+00:00",
+    "template_url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/aeeef5ad49f51204a7439352e59e9d310aee5e9e/static/templates/methods_description_form.xlsx",
+    "template_sha256": "61aab080a2868a3b724e76692b83c24812112e305cd3a8b03f8f91a6b2414441",
+    "report_sha256": "ef0d53833dc1a5bbeed28c2ce6bfd73a4d76db7e4be86b367bb1b94b6269dd98",
+    "script_sha256": "83b23ea04de6309b9a02c59bf6d343c38578fcdd16429977ebe8d3e968b0241c",
+    "answer_cells": [
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17"
+    ],
+    "abstract_words": 271,
+    "official_questions_unchanged": true,
+    "formulas": 0,
+    "formula_errors": 0,
+    "track1_values_and_cell_styles_preserved": true,
+    "files": {
+      "jvv7_track2_report_v28.md": "ef0d53833dc1a5bbeed28c2ce6bfd73a4d76db7e4be86b367bb1b94b6269dd98",
+      "methods-answers.json": "6a290965603cba32dafdcfb9cd24393a92d3d13bcadcb085009ff827556b8adf",
+      "jvv7_track2_methods_v28.xlsx": "5517a93ced2134a1287b074abe2769c8a7c40ca989f65f42c1d5e8149558be83",
+      "jvv7_track2_report_v28.html": "fe997cd4ba9d82919c92fde0151f16fb5f4230d4365b3170abdfcdf872978e3b"
+    },
+    "upload_ready": false
+  },
+  "pdf": {
+    "source": "notes/track2-report-v28.md",
+    "source_sha256": "ef0d53833dc1a5bbeed28c2ce6bfd73a4d76db7e4be86b367bb1b94b6269dd98",
+    "html_sha256": "fe997cd4ba9d82919c92fde0151f16fb5f4230d4365b3170abdfcdf872978e3b",
+    "renderer_sha256": "9c5bf6b30da34e51a688146f1c377a3624794c1d62768c052ce3531318f47350",
+    "exporter_sha256": "83b23ea04de6309b9a02c59bf6d343c38578fcdd16429977ebe8d3e968b0241c",
+    "browser": {
+      "protocolVersion": "1.3",
+      "product": "Chrome/131.0.6778.139",
+      "revision": "@c35bbcbd7c2775a12a3f320e05ac0022939b1a8a",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+      "jsVersion": "13.1.201.16"
+    },
+    "geometry": {
+      "width": 665,
+      "scrollWidth": 665,
+      "links": 61,
+      "headings": 8,
+      "tables": 7
+    },
+    "files": {
+      "jvv7_track2_report_v28.pdf": "cdcaf4f92ce23956a1d2d4e5cc33a9eccf38c1376fd80a001729c7cd53f5d136"
+    },
+    "limits": "PDF export and geometry; no scientific, licensing, recording or upload certification."
+  },
+  "pages": 12,
+  "author_visual_review": "All twelve final report pages inspected in contact sheets; new sensitivity table and protein background text inspected at full resolution. Seven tables and full acknowledgement retained. Workbook values/styles round-trip checked; workbook appearance not rendered.",
+  "independent_visual_review": false,
+  "clinical_validation": false
+}

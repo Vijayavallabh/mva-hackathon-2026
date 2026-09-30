@@ -93,21 +93,18 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-**Session 67: completed Track 2 v27 falsification research.** All eight H100s ran
-four protein models and expression-specificity tests. The
-[new addendum](notes/track2-falsification-v27.md) qualifies protein score interpretation,
-strengthens HT29 assay-development evidence and weakens reliance on MCF7 BUB1B drug
-reversal. No rescue drug or clinical margin is established. The current
-[combined reviewer guide](notes/track2-reviewer-guide-v27.md) covers all 42 claim records
-and full outputs; the v26 presentation remains preserved and should be read with v27.
+**Session 68: Track 2 v28 materials and harness are synchronized.** The
+[report](notes/track2-report-v28.md), [nine slides](notes/track2-slides-v28.html),
+[330-word narration](notes/track2-pitch-v28.md) and methods workbook integrate
+completed v27 protein-background and expression-specificity research. HT29 retains
+retrieval ranks 2–5; MCF7 BUB1B reversal weakens from 7 to 1,184 while MTOR stays first.
+The [reviewer guide](notes/track2-reviewer-guide-v28.md) covers all 42 claim records.
+No rescue priority or clinical margin is established. Earlier releases remain intact.
 
-**Session 66: synchronized Track 2 v26 materials.** The
-[report](notes/track2-report-v26.md), [nine slides](notes/track2-slides-v26.html),
-[343-word narration](notes/track2-pitch-v26.md) and methods workbook integrate the
-v25 CRISPR findings. HT29 is an assay-development lead with one-guide limits;
-MCF7 drug/MTOR connections remain separate from its failed BUB1B query. The
-[reviewer guide](notes/track2-reviewer-guide-v27.md) and current harness check all
-three expression campaigns and 37 claim records. Earlier releases remain intact.
+**Session 67 research remains frozen.** All eight H100s completed four protein models
+and expression sensitivities. The [v27 record](notes/track2-falsification-v27.md) retains
+full matrices, compute provenance, failed controls and favorable exceptions. Session 68
+integrates those results without new GPU/model execution.
 
 **Session 65: completed eight-GPU CRISPR falsification.** The
 [v25 findings](notes/track2-crispr-v25.md) add 2,474,445,074 expression comparisons,
@@ -147,7 +144,7 @@ The proposed decision contract returns HOLD with unmeasured biology and null mar
 An invalid assay, imprecision, scoped futility and safety failure now have different
 consequences. No wet-lab result, new model inference or candidate promotion is claimed.
 
-**Track 2 (feat-009) is in progress.** Read the [integrated v26 report](notes/track2-report-v26.md)
+**Track 2 (feat-009) is in progress.** Read the [integrated v28 report](notes/track2-report-v28.md)
 and the complete [v19 research record](notes/track2-transcriptome-v19.md).
 The [falsification review](notes/track2-falsification-review-v21.md) challenges the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
@@ -188,17 +185,17 @@ assumption; revise or abandon the approach when warranted. Use the original
 throughout research and before promotion/release. Apply the same standard to benefit,
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
-Current materials: [eleven-page report source](notes/track2-report-v26.md),
-[343-word narration](notes/track2-pitch-v26.md), [plain transcript](notes/track2-transcript-v26.txt),
-[nine-slide deck](notes/track2-slides-v26.html) and
-[video description](notes/track2-video-description-v26.md). New figures separate
-HT29 assay evidence, one-guide limitations, favorable MCF7 drug connections and failed
-BUB1B model QC. The report preserves the older seed/finite-reference results and failed
+Current materials: [report source](notes/track2-report-v28.md),
+[330-word narration](notes/track2-pitch-v28.md), [plain transcript](notes/track2-transcript-v28.txt),
+[nine-slide deck](notes/track2-slides-v28.html) and
+[video description](notes/track2-video-description-v28.md). New figures separate
+retained HT29 retrieval, one-guide limitations, weakened MCF7 BUB1B drug reversal
+and failed model QC. The report preserves the older seed/finite-reference results and failed
 compound checks, then explains the newer source-well aggregation. All eleven methods
-answers and the 269-word abstract match the workbook export.
+answers and the 271-word abstract match the workbook export.
 
-Start with the [combined reviewer guide](notes/track2-reviewer-guide-v27.md). One
-public CPU command checks v27 research, integrated v26 materials and frozen v19/v21/v23/v25 findings:
+Start with the [combined reviewer guide](notes/track2-reviewer-guide-v28.md). One
+public CPU command checks v27 research, integrated v28 materials and frozen v19/v21/v23/v25 findings:
 
 ```bash
 uv run --no-project python scripts/check_track2_harness.py
@@ -206,12 +203,12 @@ uv run --no-project python scripts/check_track2_harness.py
 
 It requires no subject files, data/results folders, keys, network, Git history or model
 weights. The check verifies consistency, not biological efficacy. The versioned public
-presentation reviewer and release/bundle scripts use v26; the combined research harness
-uses v27. Earlier versions remain available and bound
+presentation reviewer and release/bundle scripts use v28; the combined research harness
+uses v28. Earlier versions remain available and bound
 inputs stay unchanged. The [current artifact record](notes/track2-current.json),
-[harness review](notes/track2-harness-review-v27.md) and `./init.sh` route current work.
+[harness review](notes/track2-harness-review-v28.md) and `./init.sh` route current work.
 
-The [readiness note](notes/track2-owner-readiness-v27.md) lists outstanding recording,
+The [readiness note](notes/track2-owner-readiness-v28.md) lists outstanding recording,
 runtime measurement, hosting, provider handling, distribution scope, live checks and
 receipt. The September 24-25 official/community review is retained with its date;
 this editing session does not repeat it. The new materials omit AF3/Atlas numerical
@@ -266,7 +263,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v26 disclosure names this route without
+GLM for public-literature synthesis; the current v28 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 
