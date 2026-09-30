@@ -6,7 +6,7 @@ import json
 import re
 from pathlib import Path
 
-RNAI_STATE = {'version': 23, 'status': 'complete', 'report': 'notes/track2-rnai-v23.md', 'plan': 'notes/track2-rnai-plan-v23.json', 'results': 'notes/track2-rnai-results-v23.json', 'sensitivity': 'notes/track2-rnai-tail-sensitivity-v23.json', 'audit': 'notes/track2-rnai-audit-v23.json', 'validation': 'notes/track2-rnai-validation-v23.md', 'register': 'notes/track2-rnai-register-v23.json', 'check': 'scripts/check_track2_rnai_v23.py', 'figure': 'notes/track2-rnai-v23.svg', 'archive': 'results/feat009/rnai-v23/rnai-v23-audit.tar.gz', 'gpus': 8, 'unordered_pair_comparisons': 1536619950, 'conditional_control_sets': 5843968, 'orthogonal_comparisons': 2364754, 'drug_ranking_changed': False, 'presentation_integration': 'integrated_in_v24_preserves_v23'}
+RNAI_STATE = {'version': 23, 'status': 'complete', 'report': 'notes/track2-rnai-v23.md', 'plan': 'notes/track2-rnai-plan-v23.json', 'results': 'notes/track2-rnai-results-v23.json', 'sensitivity': 'notes/track2-rnai-tail-sensitivity-v23.json', 'audit': 'notes/track2-rnai-audit-v23.json', 'validation': 'notes/track2-rnai-validation-v23.md', 'register': 'notes/track2-rnai-register-v23.json', 'check': 'scripts/check_track2_rnai_v23.py', 'figure': 'notes/track2-rnai-v23.svg', 'archive': 'results/feat009/rnai-v23/rnai-v23-audit.tar.gz', 'gpus': 8, 'unordered_pair_comparisons': 1536619950, 'conditional_control_sets': 5843968, 'orthogonal_comparisons': 2364754, 'drug_ranking_changed': False, 'presentation_integration': 'integrated_in_v26_preserves_v23'}
 RNAI_AUDIT_SHA256 = '27bff5205ea443acdfe1dbb8863f21725af36af3e7400199bcea3345cdf9cb3c'
 CRISPR_STATE = {
     'version':25, 'status':'complete', 'report':'notes/track2-crispr-v25.md',
@@ -18,7 +18,7 @@ CRISPR_STATE = {
     'archive':'results/feat009/crispr-v25/crispr-v25-audit.tar.gz',
     'gpus':8,'comparisons':2474445074,'bub1b_profiles':31,'bub1b_guides':1,
     'matched_compound_profiles':285488,'drug_ranking_changed':False,
-    'presentation_integration':'separate_completed_addendum_preserves_v24',
+    'presentation_integration':'integrated_in_v26_preserves_v25',
 }
 CRISPR_AUDIT_SHA256 = '264a46ecc491e0894d57f204c9d9739cb20494ca866bb6e73e3fdce5bd8e3ebb'
 
@@ -33,8 +33,8 @@ STATUS = {
 CURRENT_REVIEW = {
     'script': 'scripts/check_track2_harness.py',
     'isolation_audit': 'scripts/audit_track2_harness.py',
-    'guide': 'notes/track2-reviewer-guide-v25.md',
-    'readiness': 'notes/track2-owner-readiness-v24.md',
+    'guide': 'notes/track2-reviewer-guide-v26.md',
+    'readiness': 'notes/track2-owner-readiness-v26.md',
 }
 RESEARCH_PATHS = {
     'plan': 'notes/track2-transcriptome-plan-v19.json',
@@ -53,7 +53,7 @@ RESEARCH_PATHS = {
 }
 RESEARCH_STATE = {
     'version': 19, 'kind': 'public_perturbation_transcriptome', 'status': 'complete',
-    'report_integration': 'integrated_in_v24_preserves_v19_through_v23',
+    'report_integration': 'integrated_in_v26_preserves_v19_through_v25',
     'gpus': 8, 'compound_profiles': 312438, 'query_compound_comparisons': 12185082,
     'resampled_reagent_sets': 560000, 'primary_query_gates_passed': 0,
     'drug_ranking_changed': False,
@@ -116,8 +116,8 @@ def validate(state, features, documents):
             'Stale or unsafe render-directory path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['document_directory']),
             'Stale or unsafe document-directory path')
-    require(state.get('harness_version') == 25 and
-            state['harness_review'] == 'notes/track2-harness-review-v25.md', 'Stale harness review')
+    require(state.get('harness_version') == 26 and
+            state['harness_review'] == 'notes/track2-harness-review-v26.md', 'Stale harness review')
     require(state.get('current_review') == CURRENT_REVIEW, 'Missing or stale combined review route')
     require(state.get('rnai_addendum') == RNAI_STATE, 'Missing or inconsistent RNAi addendum')
     require(state.get('crispr_addendum') == CRISPR_STATE and
@@ -254,7 +254,7 @@ def check(root=ROOT):
     require(crispr['passed'],'CRISPR review failed')
     for key in ['gpus','comparisons','bub1b_profiles','bub1b_guides','matched_compound_profiles','drug_ranking_changed']:
         require(state['crispr_addendum'][key]==crispr[key],'Current CRISPR summary drift: '+key)
-    return dict(passed=True, active_feature='feat-009', harness_version=25,
+    return dict(passed=True, active_feature='feat-009', harness_version=26,
                 presentation_version=state['presentation_version'],
                 drug_science_version=21, slides=presentation['slides'],
                 narration_words=presentation['narration_words'], falsification_amendment=presentation['falsification_amendment'], upload_ready=False,

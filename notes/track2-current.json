@@ -2,37 +2,37 @@
   "schema_version": 1,
   "updated_date": "2026-10-01",
   "active_feature": "feat-009",
-  "presentation_version": 24,
+  "presentation_version": 26,
   "drug_science_version": 21,
   "artifacts": {
-    "report": "notes/track2-report-v24.md",
-    "slides": "notes/track2-slides-v24.html",
-    "pitch": "notes/track2-pitch-v24.md",
-    "transcript": "notes/track2-transcript-v24.txt",
-    "video_description": "notes/track2-video-description-v24.md",
-    "design_review": "notes/track2-v24-design.md",
+    "report": "notes/track2-report-v26.md",
+    "slides": "notes/track2-slides-v26.html",
+    "pitch": "notes/track2-pitch-v26.md",
+    "transcript": "notes/track2-transcript-v26.txt",
+    "video_description": "notes/track2-video-description-v26.md",
+    "design_review": "notes/track2-v26-design.md",
     "evidence": "notes/track2-evidence-v21.json",
     "validation": "notes/track2-validation-v21.md",
     "latest_model_findings": "notes/track2-latest-models.md",
     "latest_model_audit": "notes/track2-latest-model-audit.json",
-    "release_script": "scripts/track2_release_v24.py",
-    "renderer": "scripts/render_track2_slides_v24.mjs",
+    "release_script": "scripts/track2_release_v26.py",
+    "renderer": "scripts/render_track2_slides_v26.mjs",
     "af3_terms": "notes/alphafold3-output-terms.md",
     "af3_notice": "notes/alphafold3-Legally-Binding-Terms-of-Use.txt",
     "falsification_register": "notes/track2-falsification-register-v21.json",
     "falsification_review": "notes/track2-falsification-review-v21.md",
     "falsification_analysis": "notes/track2-falsification-analysis-v21.json",
-    "official_requirements": "notes/track2-requirements-v24.json",
+    "official_requirements": "notes/track2-requirements-v26.json",
     "community_review": "notes/track2-community-review-20260924.md",
-    "reviewer_guide": "notes/track2-reviewer-guide-v24.md",
-    "owner_readiness": "notes/track2-owner-readiness-v24.md",
-    "public_review_script": "scripts/track2_public_review_v24.py",
-    "document_exporter": "scripts/track2_export_documents_v24.py",
-    "report_renderer": "scripts/render_track2_report_v24.mjs",
-    "bundle_script": "scripts/track2_bundle_v24.py"
+    "reviewer_guide": "notes/track2-reviewer-guide-v26.md",
+    "owner_readiness": "notes/track2-owner-readiness-v26.md",
+    "public_review_script": "scripts/track2_public_review_v26.py",
+    "document_exporter": "scripts/track2_export_documents_v26.py",
+    "report_renderer": "scripts/render_track2_report_v26.mjs",
+    "bundle_script": "scripts/track2_bundle_v26.py"
   },
-  "snapshot": "results/feat009/jvv7_track2_research_v24",
-  "render_directory": "results/feat009/v24-slides-final-20260927",
+  "snapshot": "results/feat009/jvv7_track2_research_v26",
+  "render_directory": "results/feat009/v26-slides-final-20261001",
   "model_campaign": {
     "protein_scores": 84,
     "structures": 192,
@@ -55,9 +55,9 @@
     "licensing_scope_resolved": false
   },
   "history": "progress.md",
-  "harness_review": "notes/track2-harness-review-v25.md",
-  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v24.zip",
-  "document_directory": "results/feat009/v24-documents-final-20260927",
+  "harness_review": "notes/track2-harness-review-v26.md",
+  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v26.zip",
+  "document_directory": "results/feat009/v26-documents-final-20261001",
   "research_addendum": {
     "version": 19,
     "kind": "public_perturbation_transcriptome",
@@ -67,7 +67,7 @@
     "source_review": "notes/track2-transcriptome-source-review-v19.md",
     "identity_audit": "notes/track2-transcriptome-identity-v19.json",
     "check": "scripts/check_track2_transcriptome.py",
-    "report_integration": "integrated_in_v24_preserves_v19_through_v23",
+    "report_integration": "integrated_in_v26_preserves_v19_through_v25",
     "report": "notes/track2-transcriptome-v19.md",
     "reproduction": "notes/track2-transcriptome-reproduction-v19.md",
     "audit": "notes/track2-transcriptome-audit-v19.json",
@@ -84,12 +84,12 @@
     "drug_ranking_changed": false,
     "archive": "results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz"
   },
-  "harness_version": 25,
+  "harness_version": 26,
   "current_review": {
     "script": "scripts/check_track2_harness.py",
     "isolation_audit": "scripts/audit_track2_harness.py",
-    "guide": "notes/track2-reviewer-guide-v25.md",
-    "readiness": "notes/track2-owner-readiness-v24.md"
+    "guide": "notes/track2-reviewer-guide-v26.md",
+    "readiness": "notes/track2-owner-readiness-v26.md"
   },
   "rnai_addendum": {
     "version": 23,
@@ -109,7 +109,7 @@
     "conditional_control_sets": 5843968,
     "orthogonal_comparisons": 2364754,
     "drug_ranking_changed": false,
-    "presentation_integration": "integrated_in_v24_preserves_v23"
+    "presentation_integration": "integrated_in_v26_preserves_v23"
   },
   "crispr_addendum": {
     "version": 25,
@@ -131,6 +131,6 @@
     "bub1b_guides": 1,
     "matched_compound_profiles": 285488,
     "drug_ranking_changed": false,
-    "presentation_integration": "separate_completed_addendum_preserves_v24"
+    "presentation_integration": "integrated_in_v26_preserves_v25"
   }
 }

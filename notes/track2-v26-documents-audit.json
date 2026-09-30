@@ -1,0 +1,64 @@
+{
+  "document_directory": "results/feat009/v26-documents-final-20261001",
+  "export": {
+    "created_utc": "2026-09-30T21:54:09.433033+00:00",
+    "template_url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/aeeef5ad49f51204a7439352e59e9d310aee5e9e/static/templates/methods_description_form.xlsx",
+    "template_sha256": "61aab080a2868a3b724e76692b83c24812112e305cd3a8b03f8f91a6b2414441",
+    "report_sha256": "ee88d630be55238a74c653f9d331e149ab16386861cb16422043d71dd84a6292",
+    "script_sha256": "75ae8f6dacd282f04649a77ad74414729e72af50d2960008dd42e84895c02918",
+    "answer_cells": [
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17"
+    ],
+    "abstract_words": 269,
+    "official_questions_unchanged": true,
+    "formulas": 0,
+    "formula_errors": 0,
+    "track1_values_and_cell_styles_preserved": true,
+    "files": {
+      "jvv7_track2_report_v26.html": "363a6d8a9585f02ed3be9b304b4dd7d77e0f4320dd8a34a1fa03142c53ee8991",
+      "jvv7_track2_report_v26.md": "ee88d630be55238a74c653f9d331e149ab16386861cb16422043d71dd84a6292",
+      "jvv7_track2_methods_v26.xlsx": "eb5d0ba02a60bd6454fff0d2eaf43c9a0c3395ef47a59541746dcd2322f862e8",
+      "methods-answers.json": "9e4e39012d4965163bd3343441aad12b805c26334398e26be1b06b638eb5f95b"
+    },
+    "upload_ready": false
+  },
+  "pdf": {
+    "source": "notes/track2-report-v26.md",
+    "source_sha256": "ee88d630be55238a74c653f9d331e149ab16386861cb16422043d71dd84a6292",
+    "html_sha256": "363a6d8a9585f02ed3be9b304b4dd7d77e0f4320dd8a34a1fa03142c53ee8991",
+    "renderer_sha256": "d62c185ecf966619b32f46e4ad35d77ec5ccb807e88632f02270815e0d3c9cba",
+    "exporter_sha256": "75ae8f6dacd282f04649a77ad74414729e72af50d2960008dd42e84895c02918",
+    "browser": {
+      "protocolVersion": "1.3",
+      "product": "Chrome/131.0.6778.139",
+      "revision": "@c35bbcbd7c2775a12a3f320e05ac0022939b1a8a",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+      "jsVersion": "13.1.201.16"
+    },
+    "geometry": {
+      "width": 665,
+      "scrollWidth": 665,
+      "links": 57,
+      "headings": 8,
+      "tables": 6
+    },
+    "files": {
+      "jvv7_track2_report_v26.pdf": "e60e02779bc6f302976a279c9e078c2bf647d633ffd8a13a38342120834ce03c"
+    },
+    "limits": "PDF export and geometry; no scientific, licensing, recording or upload certification."
+  },
+  "pages": 11,
+  "author_visual_review": "All eleven report pages inspected in contact sheets; new CRISPR and drug tables also inspected at full resolution. Six tables and complete acknowledgement are present. Quantitative tables use a narrower cell-label column. Workbook round-trip checks preserve answers, official prompts and Track 1 values/styles; workbook appearance not visually rendered.",
+  "independent_visual_review": false,
+  "clinical_validation": false
+}

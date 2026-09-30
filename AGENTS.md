@@ -81,24 +81,22 @@ This is a continuing objective, not a one-time review. Preserve immutable snapsh
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the current artifact record and [session-handoff.md](session-handoff.md) for next
-steps and blockers. V24 is the current nine-page report, nine-slide deck, 342-word
-read-aloud transcript, methods workbook and video description. Session 64 integrates
-v23 seed/batch RNAi findings, favorable HT29 evidence and finite-reference sensitivity.
-The distinct v19 five-reagent and v23 six-reagent findings must not be conflated.
-Session 61 supplies a 27-claim falsification register, twelve source adjudications and a proposed executable
-decision contract. No drug disposition changed: the v21 ledger preserves all eleven
-v15 decisions. The validation plan is now v21; all biological measurements and margins
-remain null. Keep invalid assays, imprecision, scoped futility and safety stops distinct.
-Requirements remain the dated September 24-25 review, not a new live portal audit.
+steps and blockers. Session 66 integrates frozen v25 CRISPR findings into the current
+v26 eleven-page report, nine-slide deck, 343-word read-aloud transcript, methods workbook
+and video description. Slides 3-4 separate HT29 assay qualification from MCF7 drug
+connections and failed BUB1B model checks. The report retains all older RNAi and
+transcriptome findings with dataset-specific scope, source-well reuse and new controls.
+The distinct v19 five-reagent and v23 six-reagent HT29 findings must not be conflated.
 
-Use scripts/check_track2_harness.py,
-[notes/track2-reviewer-guide-v25.md](notes/track2-reviewer-guide-v25.md) and
-[notes/track2-owner-readiness-v24.md](notes/track2-owner-readiness-v24.md).
-Harness is v25 and presentation remains frozen at v24; the evidence amendment and validation remain v21. The frozen public campaign
-remains notes/track2-transcriptome-v19.md; preserve every earlier bound input and
-release through v22 and frozen v23 research. The v24 recording ZIP is not a recorded video. The v25 public-data CUDA campaign
-added no model provider or neural inference; biological qualification is the next
-discriminating work. See notes/track2-falsification-review-v21.md for search gaps.
+Use `scripts/check_track2_harness.py`,
+[notes/track2-reviewer-guide-v26.md](notes/track2-reviewer-guide-v26.md) and
+[notes/track2-owner-readiness-v26.md](notes/track2-owner-readiness-v26.md).
+Presentation and harness are v26; the drug ledger and base validation remain v21,
+with frozen v23/v25 qualification addenda and 37 claim records. All eleven drug
+dispositions, biological null margins and delivery/provider flags remain unchanged.
+Requirements remain the dated September 24-25 review, not a new live portal audit.
+Preserve the v24 presentation and all earlier bound files, plus v25 research.
+No GPU rerun or new model provider is needed to reproduce this presentation.
 
 - **Session 65 public CRISPR follow-up (2026-10-01 IST):** use
   `notes/track2-crispr-v25.md`, its fixed plan, complete results, source-well continuity,
@@ -115,8 +113,8 @@ discriminating work. See notes/track2-falsification-review-v21.md for search gap
   phase, clinical-margin or wet-lab promotion follows. Eight workers used GPUs
   briefly; timed products total 1.231 seconds and one-second monitoring peaks at 8%.
   No sustained saturation or new neural inference is claimed. The 186-file local
-  archive and original-coordinate CPU validation pass. Harness v25 checks this new
-  addendum; presentation v24 remains frozen and has not incorporated these findings.
+  archive and original-coordinate CPU validation pass. Harness v25 originally checked this separate
+  addendum; session 66 now integrates it in v26 while preserving presentation v24.
   Preserve all v24-bound inputs and earlier releases. All owned jobs are complete.
 
 - **Session 63 seed/batch RNAi falsification (2026-09-27):** new research is
@@ -132,7 +130,7 @@ discriminating work. See notes/track2-falsification-review-v21.md for search gap
   the five primary operational threshold crossings become zero in the labelled
   finite-reference sensitivity. Neither tail calculation establishes calibrated FDR.
   HEPG2 lacks a seed control; unknown is not a negative. Other-gene RNAi/CRISPR
-  agreement, including MTOR, cannot qualify BUB1B: no BUB1B CRISPR record is present.
+  agreement, including MTOR, cannot qualify BUB1B: no BUB1B CRISPR record is present in that older panel. V25 adds newer coverage.
   Use `notes/track2-rnai-validation-v23.md` alongside v21 biological safeguards.
   All primary outputs and the 161-file archive are preserved. Eight GPUs executed
   briefly; monitoring does not support sustained/full utilization. No owned job is
@@ -206,15 +204,15 @@ discriminating work. See notes/track2-falsification-review-v21.md for search gap
   Record the complete acknowledgement inside the three-minute video. Preserve the
   Track 1 submitted v4, every earlier Track 2 bound input/package, the fixed v19 campaign and v1-v21 releases.
 
-Use `scripts/track2_release_v24.py` to check/build/verify **new** v24 research snapshot
-directories. Render with `scripts/render_track2_slides_v24.mjs`; export the report and
-workbook with `scripts/track2_export_documents_v24.py` followed by
-`scripts/render_track2_report_v24.mjs`. Recording materials use
-`scripts/track2_bundle_v24.py`; historical research retains AF3 notices.
-The combined public reviewer checks v25 CRISPR and v23 RNAi alongside v24/v21/v19 and needs no
+Use `scripts/track2_release_v26.py` to check/build/verify **new** v26 research snapshot
+directories. Render with `scripts/render_track2_slides_v26.mjs`; export the report and
+workbook with `scripts/track2_export_documents_v26.py` followed by
+`scripts/render_track2_report_v26.mjs`. Recording materials use
+`scripts/track2_bundle_v26.py`; historical research retains AF3 notices.
+The combined public reviewer checks integrated v26 and frozen v25 CRISPR, v23 RNAi, v21 decisions and v19 findings and needs no
 data/results folders, keys, network, GPUs or old
 local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
-The versioned `scripts/track2_public_review_v24.py` checks the integrated presentation
+The versioned `scripts/track2_public_review_v26.py` checks the integrated presentation
 and frozen research; `scripts/check_track2_transcriptome.py` checks v19 alone.
 Its passing result verifies consistency, not biology or eligibility. The stricter
 release verification also requires retained local historical archives.
@@ -244,14 +242,14 @@ uv run --no-project python scripts/check_track2_transcriptome.py
 uv run --no-project python scripts/check_track2_rnai_v23.py
 uv run --no-project python scripts/check_track2_crispr_v25.py
 uv run --no-project python scripts/track2_falsification_v21.py
-uv run --no-project python scripts/track2_public_review_v24.py
-uv run python scripts/track2_release_v24.py check
+uv run --no-project python scripts/track2_public_review_v26.py
+uv run python scripts/track2_release_v26.py check
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
 `track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
 its old conditional-screen label is not today's drug decision. The current v21
-ledger, v24 report and v19/v23 research take precedence. Historical exact-byte verification remains
+ledger, v26 report and v19/v23/v25 research take precedence. Historical exact-byte verification remains
 available through the versioned release scripts; never resubmit Track 1 to resolve
 its missing administrative receipt.
 
