@@ -59,8 +59,9 @@ improve the proposal, including changing direction or abandoning a favored appro
 Follow `notes/track2-falsification-plan.md` alongside the preserved original plan.
 Use the current 27-claim `notes/track2-falsification-register-v21.json` and
 `notes/track2-falsification-review-v21.md` across every part of the evidence chain,
-alongside the v19 transcriptome qualification requirements and five supplemental
-`notes/track2-rnai-register-v23.json` challenges (32 claim records total).
+alongside the v19 transcriptome qualification requirements, five supplemental
+`notes/track2-rnai-register-v23.json` challenges and five
+`notes/track2-crispr-register-v25.json` challenges (37 claim records, not studies).
 Each consequential claim needs support and challenge, a falsifier, stop/reopening
 criteria and a next discriminating action. Unknown evidence means hold; it is not
 disproof. Failed safety overrides apparent benefit; all-pass permits only further
@@ -91,13 +92,32 @@ remain null. Keep invalid assays, imprecision, scoped futility and safety stops 
 Requirements remain the dated September 24-25 review, not a new live portal audit.
 
 Use scripts/check_track2_harness.py,
-[notes/track2-reviewer-guide-v24.md](notes/track2-reviewer-guide-v24.md) and
+[notes/track2-reviewer-guide-v25.md](notes/track2-reviewer-guide-v25.md) and
 [notes/track2-owner-readiness-v24.md](notes/track2-owner-readiness-v24.md).
-Harness and presentation are v24; the evidence amendment and validation remain v21. The frozen public campaign
+Harness is v25 and presentation remains frozen at v24; the evidence amendment and validation remain v21. The frozen public campaign
 remains notes/track2-transcriptome-v19.md; preserve every earlier bound input and
-release through v22 and frozen v23 research. The v24 recording ZIP is not a recorded video. Public searches
-added no model provider or GPU inference; biological qualification is the next
+release through v22 and frozen v23 research. The v24 recording ZIP is not a recorded video. The v25 public-data CUDA campaign
+added no model provider or neural inference; biological qualification is the next
 discriminating work. See notes/track2-falsification-review-v21.md for search gaps.
+
+- **Session 65 public CRISPR follow-up (2026-10-01 IST):** use
+  `notes/track2-crispr-v25.md`, its fixed plan, complete results, source-well continuity,
+  five R33-R37 challenges and `notes/track2-crispr-validation-v25.md`. All eight H100s
+  finished 2,474,445,074 expression comparisons. The new public release supplies 31
+  BUB1B CRISPR profiles across 19 contexts, but one guide ID; older panel-specific
+  absence statements must not be generalized. HT29 has favorable cross-batch and
+  RNAi/CRISPR agreement, retained after removing BUB1B's transcript. This strengthens
+  assay qualification only: one guide, one failed-QC batch and tumor context remain.
+  MCF7 has favorable reference-matching everolimus/MTOR connections, but its BUB1B
+  query fails QC and disagrees with RNAi. Do not combine findings across cells into
+  a fictional joint rescue result. Two newer 0.1-uM signatures regroup older wells;
+  changed IDs or improved QC do not establish independent replication. No drug,
+  phase, clinical-margin or wet-lab promotion follows. Eight workers used GPUs
+  briefly; timed products total 1.231 seconds and one-second monitoring peaks at 8%.
+  No sustained saturation or new neural inference is claimed. The 186-file local
+  archive and original-coordinate CPU validation pass. Harness v25 checks this new
+  addendum; presentation v24 remains frozen and has not incorporated these findings.
+  Preserve all v24-bound inputs and earlier releases. All owned jobs are complete.
 
 - **Session 63 seed/batch RNAi falsification (2026-09-27):** new research is
   `notes/track2-rnai-v23.md`, with fixed plan, complete results, five additional claim
@@ -191,7 +211,7 @@ directories. Render with `scripts/render_track2_slides_v24.mjs`; export the repo
 workbook with `scripts/track2_export_documents_v24.py` followed by
 `scripts/render_track2_report_v24.mjs`. Recording materials use
 `scripts/track2_bundle_v24.py`; historical research retains AF3 notices.
-The combined public reviewer checks v23 RNAi alongside v24/v21/v19 and needs no
+The combined public reviewer checks v25 CRISPR and v23 RNAi alongside v24/v21/v19 and needs no
 data/results folders, keys, network, GPUs or old
 local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
 The versioned `scripts/track2_public_review_v24.py` checks the integrated presentation
@@ -222,6 +242,7 @@ uv run python scripts/track2_evidence.py check
 uv run python scripts/check_track2_harness.py
 uv run --no-project python scripts/check_track2_transcriptome.py
 uv run --no-project python scripts/check_track2_rnai_v23.py
+uv run --no-project python scripts/check_track2_crispr_v25.py
 uv run --no-project python scripts/track2_falsification_v21.py
 uv run --no-project python scripts/track2_public_review_v24.py
 uv run python scripts/track2_release_v24.py check

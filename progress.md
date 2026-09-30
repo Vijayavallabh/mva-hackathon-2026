@@ -6016,3 +6016,213 @@ annotation resources ready
 }
 === OK ===
 ```
+
+
+## Session 65 — 2026-10-01 IST: public CRISPR falsification on eight H100s
+
+Owner request: use the other host's GPUs extensively to improve Track 2. Only
+feat-009 was worked. Applied resource-audit, GPU-computing and scientific-critical-
+thinking guidance. No sub-agent, hosted model, subject transfer, contact or portal
+callback was used. Raw subject files and the clinical narrative stayed local.
+
+### Research and consequences
+
+- Public LINCS2020 metadata and two original matrices were downloaded under
+  `/home/prachh/v/mva-track2-crispr-20261001-v25`. All six objects passed source
+  multipart-ETag/length checks and were SHA256-recorded. The plan was fixed after
+  metadata/prior-result review and before new matrix inspection.
+- All eight H100 workers finished 2,474,445,074 descriptive expression comparisons:
+  700,767,475 cross-batch, 367,326,268 orthogonal and 1,406,351,331 CRISPR–compound.
+  The source has 720,216 compound profiles; 285,488 were scored in matched contexts.
+  Counts reuse profiles and include sensitivity analyses; they are not experiments.
+- New BUB1B CRISPR coverage comprises 31 profiles/19 contexts/one guide ID. HT29
+  provides favorable cross-batch retrieval and fourth-place PRIME target retrieval
+  in both RNAi/CRISPR directions, unchanged after removing its own transcript.
+  One guide, one failed-QC batch and tumor context limit this to assay qualification.
+- Reference-matching everolimus includes favorable lower-nominal-dose connections
+  and an MCF7 MTOR rank-1 result. MCF7's BUB1B query fails QC and disagrees with RNAi.
+  Do not assemble findings from different cells into a fictional joint rescue.
+- Well-level checks show A375/NPC 0.1-uM profiles regroup old singleton wells under
+  new IDs. Better aggregation is retained without erasing old QC failures or counting
+  the regrouping as independent replication. Other compound identities stay separate.
+- Five new R33-R37 challenges supplement the 32 existing records. New validation
+  requirements specify independent perturbation/restoration, editing-stress controls,
+  same-context joint function/fate/injury tests and source-well/chemical provenance.
+  No rescue priority, drug-disposition promotion, measured biological margin or phase
+  change. Everolimus remains an optional qualified mechanistic probe; HCQ reserve.
+- Workers ran 17.6–179.5 seconds each; timed CUDA products totalled 1.231 seconds.
+  GPU activity was brief, with 8% peak in one-second sampling. CPU summaries and I/O
+  dominated; no sustained saturation or new neural inference is claimed. All GPUs
+  were idle again at final check; no owned job remains.
+
+### Artifacts and preserved state
+
+`notes/track2-crispr-v25.md` is the new research report, with plan, full results,
+summary, source manifest/review, continuity audit, everolimus table, five-claim
+register, validation changes, registration review and reproduction instructions.
+The 186-file local archive is 18,876,408 bytes, SHA256
+`74c365e7b12c086b2d52c1115e2d8a83d39aa6844135a7819cc8f609f557b2d4`.
+All 185 inventoried members pass a non-extracting verifier. Source matrices and large
+derived arrays stay hash-inventoried remotely; source data are not publicly redistributed.
+
+Separate CPU validation checks original GCTX coordinates and all 141 BUB1B/everolimus
+comparisons across identifiers; maximum error 2.8296306517350267e-7 versus tolerance
+2e-5. This is internal numerical verification, not independent specialist review.
+A pre-run test caught infinity ranking; the guard was fixed before preparation.
+The registered arithmetic assumption about 1,956 missing columns was falsified:
+they are 1,128 vector and 828 untreated controls, with no missing metadata.
+The first archive attempt rejected a cache directory; corrected file enumeration
+retains symlink rejection. Failed attempts and scope corrections are preserved.
+
+Harness v25 binds the new 27-input science audit and checks v24 presentation plus
+v21/v19/v23/v25 research. `notes/track2-current.json`, AGENTS, README, feature evidence,
+reviewer guide and handoff are synchronized. The v24 slides/report/transcript/workbook
+remain byte-preserved and **have not integrated v25**; a future presentation revision
+must do that. Existing video/provider/distribution/portal/receipt gaps remain open.
+The remote root joins the existing November 24 deletion scope.
+
+### Verification
+
+Commands and retained output:
+
+- `uv run --no-project python scripts/check_track2_crispr_v25.py`: passes.
+- `uv run --no-project python scripts/check_track2_harness.py`: passes.
+- `uv run python -m unittest discover -s scripts -p 'test_track2*.py'`:
+  **827 tests pass in 10.113 seconds**; `logs/track2-v25-tests-20261001.log`.
+- `uv run python scripts/audit_track2_harness.py --output
+  results/feat009/v25-harness-isolated-20261001.json`: passes with 584 public files,
+  six blocked probes, no project environment; 0.317 seconds total.
+- V24 release and recording ZIP strict verification pass. All **479 unique previously
+  bound inputs** remain unchanged; `results/feat009/v25-preservation-20261001.json`.
+- Live publication guard: PUBLIC; all 13 retired objects unavailable, successful live
+  blob control, zero unknown errors; `results/feat009/v25-publication-remote-20261001.json`.
+- Initial staged disclosure audit: 586 blobs, zero findings. Final staged/all-ref audits
+  are saved under `results/feat009/v25-*-audit-20261001.json`.
+- Startup `./init.sh` passed. Fresh final `./init.sh` real output follows below;
+  log path: `logs/track2-v25-final-init-20261001.log`.
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "harness_version": 25,
+  "presentation_version": 24,
+  "drug_science_version": 21,
+  "slides": 9,
+  "narration_words": 342,
+  "falsification_amendment": {
+    "passed": true,
+    "claims": 27,
+    "additional_source_records": 12,
+    "current_decision": {
+      "clinical_recommendation": false,
+      "scope": "qualified_non_cancer_model",
+      "evidence_kind": "not_measured",
+      "decision": "HOLD",
+      "reason": "Prerequisites unresolved or failed; no transfer from another branch"
+    },
+    "drug_dispositions_changed": false,
+    "biological_validation": false
+  },
+  "upload_ready": false,
+  "research_addendum": {
+    "version": 19,
+    "status": "complete",
+    "gpus": 8,
+    "completed_gpu_waves": 3,
+    "compound_profiles": 312438,
+    "query_compound_comparisons": 12185082,
+    "resampled_reagent_sets": 560000,
+    "primary_contexts": 14,
+    "primary_query_gates_passed": 0,
+    "post_hoc_comparisons": 42,
+    "post_hoc_full_filters_passed": 0,
+    "primary_everolimus_comparisons": 19,
+    "primary_everolimus_profiles": 14,
+    "primary_everolimus_positive_correlations": 13,
+    "phase2_unresolved_labelled_profiles": 174,
+    "phase2_reference_matching_profiles": 6,
+    "phase2_reference_matching_qc_passes": 0,
+    "ht29_post_hoc_reagents": 5,
+    "ht29_post_hoc_adjusted_tail": 0.041995800419958006,
+    "ht29_full_filter_passed": false,
+    "drug_ranking_changed": false
+  },
+  "rnai_addendum": {
+    "passed": true,
+    "version": 23,
+    "gpus": 8,
+    "unordered_pair_comparisons": 1536619950,
+    "null_sets": 5843968,
+    "orthogonal_comparisons": 2364754,
+    "primary_threshold_crossings": 5,
+    "finite_reference_threshold_crossings": 0,
+    "unknown_comparisons": 2,
+    "seed_comparison": {
+      "raw": {
+        "available": 54,
+        "seed_greater": 45
+      },
+      "prime": {
+        "available": 54,
+        "seed_greater": 45
+      }
+    },
+    "orthogonal_reference": {
+      "raw": {
+        "comparisons": 297,
+        "top1": 14,
+        "top5percent": 84
+      },
+      "prime": {
+        "comparisons": 297,
+        "top1": 21,
+        "top5percent": 93
+      }
+    },
+    "independent_bub1b_experiment": false,
+    "drug_ranking_changed": false,
+    "biological_validation": false
+  },
+  "crispr_addendum": {
+    "passed": true,
+    "version": 25,
+    "gpus": 8,
+    "comparisons": 2474445074,
+    "bub1b_profiles": 31,
+    "bub1b_guides": 1,
+    "matched_compound_profiles": 285488,
+    "ht29_qualification_lead": true,
+    "independent_guide_qualified_contexts": 0,
+    "drug_ranking_changed": false,
+    "biological_validation": false,
+    "new_neural_inference": false,
+    "claim_records": 5
+  },
+  "biological_validation": false,
+  "scope": "Combined public presentation/research consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```

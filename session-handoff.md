@@ -1,11 +1,38 @@
-# Session handoff: integrated Track 2 v24
+# Session handoff: completed Track 2 CRISPR campaign v25
 
-27 September 2026, session 64. Only feat-009 is active. Use `notes/track2-current.json`,
-`scripts/check_track2_harness.py`, `notes/track2-reviewer-guide-v24.md` and
-`notes/track2-owner-readiness-v24.md`. V24 integrates the completed v23 RNAi findings
-into the report, deck, script, workbook and recording materials. Drug decisions remain
-v21. All older bound inputs, v19/v23 research and submitted Track 1 v4 are preserved.
-No new GPU/model execution, wet-lab experiment, contact, recording or upload occurred.
+1 October 2026 IST, session 65. Only feat-009 is active. Use `notes/track2-current.json`,
+`scripts/check_track2_harness.py` and `notes/track2-reviewer-guide-v25.md`.
+Harness v25 now checks the new CRISPR addendum alongside frozen presentation v24.
+The drug ledger remains v21. No drug, phase, exposure, wet-lab or delivery promotion.
+All eight owner-host H100 workers and the CPU audit have finished; no job is pending.
+
+## New research and its consequence
+
+`notes/track2-crispr-v25.md` reports 2,474,445,074 CUDA expression comparisons from
+public LINCS2020 data. There are 31 BUB1B CRISPR profiles across 19 contexts, but one
+guide ID. HT29 has favorable cross-batch retrieval and fourth-place PRIME RNAi/CRISPR
+retrieval in both directions, retained after BUB1B transcript removal. It is an assay
+qualification lead, with one failed-QC batch and tumor-context limitations.
+
+MCF7 has a favorable reference-matching 0.1-uM nominal everolimus connection and
+retrieves MTOR first. Its BUB1B query fails QC and disagrees with RNAi. Never combine
+HT29 model evidence with MCF7 drug evidence into a joint rescue claim. The newer
+A375/NPC low-dose profiles regroup old source wells under changed signature IDs.
+Improved aggregation remains useful; it is not independent replication.
+
+Use `notes/track2-crispr-plan-v25.json`, full results/summary/source manifest, continuity,
+five-claim register, validation, registration review and reproduction instructions.
+The new 186-file archive is `results/feat009/crispr-v25/crispr-v25-audit.tar.gz`.
+SHA256: `74c365e7b12c086b2d52c1115e2d8a83d39aa6844135a7819cc8f609f557b2d4`.
+It passes safe non-extracting verification. All 141 BUB1B/everolimus connections
+match original-coordinate CPU calculations within 2.83e-7. GPU product time totals
+1.231 seconds across workers; monitoring peaks at 8%. Do not call this saturation
+or new neural inference. Eight workers took 17.6–179.5 seconds including CPU/I/O.
+
+The campaign root `/home/prachh/v/mva-track2-crispr-20261001-v25` contains only public
+inputs and derived findings, and joins the standing November 24 deletion scope.
+Original source files and dense matrices stay remote; public findings and code are
+bound in `notes/track2-crispr-audit-v25.json`. No subject transfer or new provider.
 
 ## Current materials
 
@@ -68,6 +95,7 @@ are negative. Balnis units conflict by 1,000-fold; neither value sets a dose.
 ./init.sh
 uv run --no-project python scripts/check_track2_harness.py
 uv run --no-project python scripts/check_track2_rnai_v23.py
+uv run --no-project python scripts/check_track2_crispr_v25.py
 uv run --no-project python scripts/check_track2_transcriptome.py
 uv run python scripts/track2_release_v24.py verify results/feat009/jvv7_track2_research_v24
 uv run python scripts/track2_bundle_v24.py verify
@@ -90,6 +118,9 @@ Reproduction instructions and numerical validation are in the frozen research no
 
 ## Blockers
 
+- Presentation v24 is not updated with v25; the new addendum must accompany it.
+- Independent BUB1B guide/function evidence is still missing; HT29 and MCF7 findings
+  answer different questions and cannot be combined into a demonstrated rescue.
 - Biological advancement needs relevant endogenous function, model/branch qualification,
   direct drug-plus-deficit response, independent confirmation and justified benefit,
   injury and exposure margins. Subject phase remains unconfirmed.
@@ -109,9 +140,10 @@ Reproduction instructions and numerical validation are in the frozen research no
 
 ## Next actions
 
-Rehearse and record the v24 pitch with the complete acknowledgement. Measure the
-recorded file, resolve provider/distribution items and verify final portal materials.
-Research advancement begins with v21 validation and the v23 qualification addendum.
+Integrate the new v25 findings into a future presentation revision before describing
+them as part of the deck. Preserve v24 bytes. Then rehearse and record with the complete
+acknowledgement, measure runtime, resolve provider/distribution items and verify portal materials.
+Research advancement uses v21 validation plus v23 and v25 qualification addenda.
 No GPU job is pending. BindCraft2 remains deferred without a functional target and
 validation route. Preserve all earlier releases and failed attempts.
 

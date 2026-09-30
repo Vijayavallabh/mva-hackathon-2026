@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_date": "2026-09-27",
+  "updated_date": "2026-10-01",
   "active_feature": "feat-009",
   "presentation_version": 24,
   "drug_science_version": 21,
@@ -55,7 +55,7 @@
     "licensing_scope_resolved": false
   },
   "history": "progress.md",
-  "harness_review": "notes/track2-harness-review-v24.md",
+  "harness_review": "notes/track2-harness-review-v25.md",
   "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v24.zip",
   "document_directory": "results/feat009/v24-documents-final-20260927",
   "research_addendum": {
@@ -84,12 +84,12 @@
     "drug_ranking_changed": false,
     "archive": "results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz"
   },
-  "harness_version": 24,
+  "harness_version": 25,
   "current_review": {
     "script": "scripts/check_track2_harness.py",
-    "guide": "notes/track2-reviewer-guide-v24.md",
-    "readiness": "notes/track2-owner-readiness-v24.md",
-    "isolation_audit": "scripts/audit_track2_harness.py"
+    "isolation_audit": "scripts/audit_track2_harness.py",
+    "guide": "notes/track2-reviewer-guide-v25.md",
+    "readiness": "notes/track2-owner-readiness-v24.md"
   },
   "rnai_addendum": {
     "version": 23,
@@ -110,5 +110,27 @@
     "orthogonal_comparisons": 2364754,
     "drug_ranking_changed": false,
     "presentation_integration": "integrated_in_v24_preserves_v23"
+  },
+  "crispr_addendum": {
+    "version": 25,
+    "status": "complete",
+    "report": "notes/track2-crispr-v25.md",
+    "plan": "notes/track2-crispr-plan-v25.json",
+    "results": "notes/track2-crispr-results-v25.json",
+    "summary": "notes/track2-crispr-summary-v25.json",
+    "audit": "notes/track2-crispr-audit-v25.json",
+    "continuity": "notes/track2-crispr-continuity-v25.json",
+    "validation": "notes/track2-crispr-validation-v25.md",
+    "register": "notes/track2-crispr-register-v25.json",
+    "check": "scripts/check_track2_crispr_v25.py",
+    "reproduction": "notes/track2-crispr-reproduction-v25.md",
+    "archive": "results/feat009/crispr-v25/crispr-v25-audit.tar.gz",
+    "gpus": 8,
+    "comparisons": 2474445074,
+    "bub1b_profiles": 31,
+    "bub1b_guides": 1,
+    "matched_compound_profiles": 285488,
+    "drug_ranking_changed": false,
+    "presentation_integration": "separate_completed_addendum_preserves_v24"
   }
 }

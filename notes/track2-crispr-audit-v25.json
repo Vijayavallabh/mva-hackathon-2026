@@ -1,0 +1,87 @@
+{
+  "version": 25,
+  "public_input_sha256": {
+    "notes/track2-crispr-continuity-v25.json": "164cf7394600a33733ff4e7446b4dba78c96da72c672e24a1d1f03a9ead894b0",
+    "notes/track2-crispr-everolimus-v25.tsv": "f6d692730c0670fb6a0e332dee2e14bac1250ba92b9f74e81b5e85d28ec2afcd",
+    "notes/track2-crispr-plan-v25.json": "97434545e3056f3d4afd1a85a6657d96911732a223c0f02701dab7231bc90885",
+    "notes/track2-crispr-register-v25.json": "b6ff4848151702ef9cab80866a2098fed85915ffbabdb29adaddb37ad19bad11",
+    "notes/track2-crispr-registration-review-v25.md": "942a14e0246e341463e82ded2fbeaee7e66a4a99b5eb574edf55e738ffe5880f",
+    "notes/track2-crispr-reproduction-v25.md": "f610878a98e05215b83577fd5559bbe85ce380b99336c6731543552ae5797677",
+    "notes/track2-crispr-results-v25.json": "a57f3f6c36a5ce6ab2baf5386eb97908ad05f043582530ac111ad47cfb913899",
+    "notes/track2-crispr-source-manifest-v25.json": "f35a7277f89466d3765a9cc3482e9bcb364d75d09841edcfb686f15b6ebc9a6e",
+    "notes/track2-crispr-sources-v25.json": "0fc6596c11e68453c4cbfb0b517e4f91c19012a3f73146b1620cb60699a9dd20",
+    "notes/track2-crispr-summary-v25.json": "a9d79b1462321ac3a8880afc13127eac6e85e1152c4005799ce5a4aae3e4fe61",
+    "notes/track2-crispr-v25.md": "3791346d12c3e1d3f602150642e90dfd3a9c2851748c5474e1de297e71604def",
+    "notes/track2-crispr-validation-v25.md": "7e8a0d12660b63b9d907be8e00c4190ba1874117927a9f4ad30f5ce63442f36c",
+    "scripts/archive_track2_crispr_v25.py": "f6490efbeab48043c113ad3f65c10ff26893339d761b7dcc9471132e064e013d",
+    "scripts/audit_track2_crispr_continuity_v25.py": "1b34774218eb8df83df171022207673eaa8001989eb3f4de7e50ac79abb2749a",
+    "scripts/audit_track2_crispr_v25.py": "293685cfd6a37095ae4dc17e50915727752281299c612d1adeec33847be8e724",
+    "scripts/build_track2_crispr_audit_v25.py": "3b2971b8ee00ce65857afd51ba5cb794a58dbf975e9efaf30b6472d8cc587b0c",
+    "scripts/check_track2_crispr_v25.py": "b3f4fa3018cfedb88cadc04cde6a92249aeef47611654ee75eaec5f2cd661b1a",
+    "scripts/download_track2_crispr_v25.py": "b7a6eb9ad8abf07fc37b11ce7b47ce1ea6b3d4d50c5b5b9283403383879ac70a",
+    "scripts/run_track2_crispr_v25.sh": "fa9bef62cf9ca697d7eb3f3496a73abf339ce8860498d71287b58e4bc7a9e048",
+    "scripts/summarize_track2_crispr_v25.py": "f4a96dfa3123fc2a68c10642019fd76f84952e1bac600ed2168209a98da9c97f",
+    "scripts/test_track2_crispr_check_v25.py": "2a06c83b5ee1788b7d80a29b1ae73fbe9ca909f0cd3cd5be25bec5c02ab159de",
+    "scripts/test_track2_crispr_v25.py": "48f454620b11504787bb5e7266ede0f370495e3580aa7798f92653f731e3b45f",
+    "scripts/track2_crispr_v25.py": "d5730de1f0d712922d136d3e693267c5b5e9a57548681bdb11b2aea0e80ecf7f",
+    "scripts/track2_transcriptome.uv.lock": "6f1b32915546f8a46c86f1674fa5a9ffc240d04363144ee9349a76aa5e164bfc",
+    "scripts/track2_transcriptome_environment.toml": "5ededc05d6cd50859c19a80bd65a051cfe7ad79fb7ed5f0bd2c4f174cb6e5fed",
+    "scripts/verify_track2_crispr_archive_v25.py": "e77597f4ba00152aefbd81a35137d26fff0b3d5f9f24f448bf2f603339427667",
+    "scripts/verify_track2_rnai_archive_v23.py": "82dcdf1fd077af003a7f417e9640fa6ed0727c70d2373068812d2a09fa0947fd"
+  },
+  "archive": {
+    "path": "crispr-v25-audit.tar.gz",
+    "files": 186,
+    "bytes": 18876408,
+    "sha256": "74c365e7b12c086b2d52c1115e2d8a83d39aa6844135a7819cc8f609f557b2d4",
+    "full_inventory_files": 195,
+    "source_files_redistributed": false
+  },
+  "archive_verification": {
+    "passed": true,
+    "files": 186,
+    "checked_members": 185,
+    "bytes": 18876408,
+    "sha256": "74c365e7b12c086b2d52c1115e2d8a83d39aa6844135a7819cc8f609f557b2d4",
+    "extracted": false,
+    "code_executed": false,
+    "biological_validation": false
+  },
+  "numerical": {
+    "passed": true,
+    "source_coordinates": [
+      {
+        "arm": "xpr",
+        "rows_checked": 55,
+        "features_checked": 978,
+        "maximum_error": 0.0,
+        "all_column_ids_equal": true
+      },
+      {
+        "arm": "cp",
+        "rows_checked": 87,
+        "features_checked": 978,
+        "maximum_error": 0.0,
+        "all_column_ids_equal": true
+      }
+    ],
+    "direct_everolimus_count": 141,
+    "maximum_error": 2.8296306517350267e-07,
+    "tolerance": 2e-05,
+    "inventory_sha256": "f0278ad1cdc1340c4ca5758bb4b18d5959ffa2e4a7b45b92c928270f1a8ffadc",
+    "inventory_files": 195,
+    "method": "CPU SciPy Spearman from original GCTX values and exact IDs; no GPU score reuse as reference",
+    "independent_reviewer": false
+  },
+  "registration": {
+    "plan_sha256": "97434545e3056f3d4afd1a85a6657d96911732a223c0f02701dab7231bc90885",
+    "registered_utc": "2026-09-30T21:15:30Z",
+    "nonfinite_guard_fixed_utc": "2026-09-30T21:20:32Z",
+    "completed_utc": "2026-09-30T21:26:11Z"
+  },
+  "independent_scientific_review": false,
+  "biological_validation": false,
+  "drug_ranking_changed": false,
+  "presentation": "Frozen v24; v25 is a separate completed research addendum",
+  "source_files_redistributed": false
+}

@@ -56,8 +56,9 @@ with contextlib.redirect_stdout(captured):
     runpy.run_path(str(root / 'scripts/check_track2_harness.py'), run_name='__main__')
 result = json.loads(captured.getvalue())
 assert result['passed'] and result['research_addendum']['version'] == 19
-assert result['presentation_version'] == result['harness_version'] == 24
+assert result['presentation_version'] == 24 and result['harness_version'] == 25
 assert result['rnai_addendum']['version'] == 23 and result['rnai_addendum']['passed']
+assert result['crispr_addendum']['version'] == 25 and result['crispr_addendum']['passed']
 assert sys.prefix == sys.base_prefix, 'Project environment unexpectedly active'
 print(json.dumps(dict(passed=True, review=result, seconds=time.perf_counter()-started,
     blocked_probes=blocked, network_forbidden_by_audit_hook=True,

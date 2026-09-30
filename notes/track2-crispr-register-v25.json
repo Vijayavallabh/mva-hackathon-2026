@@ -1,0 +1,68 @@
+{
+  "version": 25,
+  "scope": "Five supplemental challenges to the preserved 27 v21 and five v23 claim records; not independent studies.",
+  "claims": [
+    {
+      "id": "R33",
+      "claim": "The missing BUB1B CRISPR evidence cannot be obtained from public data.",
+      "support": "The frozen v23 panel contains no BUB1B CRISPR record.",
+      "challenge": "The newer public release contains 31 BUB1B CRISPR profiles across 19 contexts, all from one guide ID.",
+      "disposition": "Narrow the old absence statement to its dataset; public orthogonal coverage now exists.",
+      "falsifier": "Exact metadata/ID or source-well checks reveal the supposed BUB1B records are misassigned or duplicate older BUB1B CRISPR observations.",
+      "stop": "Do not treat profile count as guide count, independent experiment count or functional confirmation.",
+      "reopen": "Independently targeted and restored endogenous function in the intended residual-function model.",
+      "next_action": "Use the new profiles to qualify candidates for orthogonal follow-up, preserving source and guide identity."
+    },
+    {
+      "id": "R34",
+      "claim": "The HT29 expression lead is only an RNAi artifact.",
+      "support": "RNAi seed/batch confounding, finite-reference sensitivity and the earlier failed full filters remain.",
+      "challenge": "HT29 ranks fourth in both PRIME RNAi/CRISPR retrieval directions; removing BUB1B's measured transcript preserves both ranks. Its repeated CRISPR guide is retrieved first across two batches.",
+      "disposition": "Strengthen HT29 as an assay-qualification lead while retaining one-guide and tumor-context limits.",
+      "falsifier": "Independent perturbation/restoration fails to reproduce the endogenous functional deficit, or the expression effect follows editing/general stress rather than BUB1B function.",
+      "stop": "One guide, one failed-QC batch and a tumor line cannot establish independent-guide or non-cancer-model qualification.",
+      "reopen": "Reproducible target-specific functional deficit and restoration, with independent controls.",
+      "next_action": "Prioritize HT29 for the narrow attribution test; develop the non-cancer model separately."
+    },
+    {
+      "id": "R35",
+      "claim": "A favorable low-dose everolimus connection supplies the missing rescue evidence.",
+      "support": "Three reference-matching 0.1-uM profiles pass drug QC and negatively correlate with BUB1B; MCF7 has a relatively specific negative connection and retrieves MTOR first.",
+      "challenge": "All three BUB1B queries have zero passing profiles. MCF7 RNAi and CRISPR disagree. No direct drug-plus-deficit function is measured; HT29's available exact-ID drug profile fails QC.",
+      "disposition": "Keep favorable mechanism evidence separate from model qualification and therapeutic rescue.",
+      "falsifier": "The favorable connection fails independent target engagement or joint functional assays, or useful function worsens despite expression reversal.",
+      "stop": "Do not combine HT29 model evidence with MCF7 drug evidence into a fictional joint result. Failed safety overrides any expression benefit.",
+      "reopen": "Qualified deficit and drug response in the same relevant model with prespecified function, fate, recovery and injury endpoints.",
+      "next_action": "Retain MCF7 as a mechanism comparator only; test the joint contrast after model qualification."
+    },
+    {
+      "id": "R36",
+      "claim": "New identifiers or better quality scores establish independent low-dose replication.",
+      "support": "The newer release has more reference-matching profiles and three passing 0.1-uM profiles in matched contexts.",
+      "challenge": "A375 and NPC regroup earlier singleton wells under new signature IDs. Exact-ID checks alone miss this reuse; other compound identifiers remain stereochemically unresolved.",
+      "disposition": "Retain improved aggregation and source coverage without overwriting old results or inflating independence.",
+      "falsifier": "Well-level provenance or chemistry verification contradicts the assumed grouping or identity.",
+      "stop": "No cross-ID pooling, clinical exposure inference or independence claim from relabelled/reprocessed observations.",
+      "reopen": "Independent experimental provenance, verified chemistry and relevant exposure measurements.",
+      "next_action": "Bind signature IDs, source-well sets, preparation versions and chemistry to each future assay result."
+    },
+    {
+      "id": "R37",
+      "claim": "A large GPU campaign materially establishes biological confidence.",
+      "support": "Eight H100 workers complete 2,474,445,074 comparisons with original-coordinate numerical checks.",
+      "challenge": "Comparisons share profiles; repeated representations are not replication. Timed matrix work is brief and one-second monitoring peaks at 8 percent. No protein function, clinical exposure or joint rescue is established.",
+      "disposition": "Use compute to expose specificity, context and provenance limits; do not promote biological claims from scale or software success.",
+      "falsifier": "Numerical, provenance or metadata audits fail, or the biological model fails despite consistent scores.",
+      "stop": "Any failed integrity check invalidates its derived claim. Additional correlated scores cannot bypass unknown biology.",
+      "reopen": "Verified computation plus independently qualified biological evidence addressing the specific claim.",
+      "next_action": "Keep full result tables and uncertainty; spend the next discriminating effort on target/function qualification."
+    }
+  ],
+  "rescue_priority": null,
+  "everolimus": "mechanistic_probe_only",
+  "hcq": "reserve",
+  "phase": "unconfirmed",
+  "clinical_exposure_margin": null,
+  "wet_lab_performed": false,
+  "drug_ranking_changed": false
+}

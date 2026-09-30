@@ -82,15 +82,25 @@ class CurrentStateTests(unittest.TestCase):
 
     def test_integrated_versions_preserve_research_version(self):
         self.assertEqual(self.state['presentation_version'],24)
-        self.assertEqual(self.state['harness_version'],24)
+        self.assertEqual(self.state['harness_version'],25)
         self.assertEqual(self.state['research_addendum']['version'],19)
         self.state['harness_review']='notes/track2-harness-review-v18.md'
         with self.assertRaisesRegex(ValueError,'Stale harness'):
             harness.validate(self.state,self.features,self.documents)
 
     def test_correct_independent_version_labels_accepted(self):
-        self.documents['README.md']+='\nUse the current v24 harness and current v19 addendum with the current v24 presentation and current v21 ledger.'
+        self.documents['README.md']+='\nUse the current v25 harness and current v19 addendum with the current v24 presentation and current v21 ledger.'
         harness.validate(self.state,self.features,self.documents)
+
+    def test_crispr_addendum_cannot_disappear_or_promote_guides(self):
+        for key,value in [('bub1b_guides',31),('gpus',8.0),('drug_ranking_changed',True),
+                          ('comparisons',1),('presentation_integration','integrated_in_v24')]:
+            state=deepcopy(self.state);state['crispr_addendum'][key]=value
+            with self.subTest(key=key),self.assertRaisesRegex(ValueError,'CRISPR addendum'):
+                harness.validate(state,self.features,self.documents)
+        state=deepcopy(self.state);state.pop('crispr_addendum')
+        with self.assertRaisesRegex(ValueError,'CRISPR addendum'):
+            harness.validate(state,self.features,self.documents)
 
     def test_stale_addendum_label_rejected(self):
         self.documents['README.md']+='\nUse the current v18 addendum.'

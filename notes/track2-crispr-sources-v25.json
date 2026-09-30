@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-01",
+  "scope": "Targeted primary-source discovery and adversarial rereading for the new public CRISPR campaign; not an exhaustive literature review or a fresh competition/portal audit.",
+  "queries": [
+    "BUB1B BubR1 rapamycin RNA seq GSE muscle senescence",
+    "BUB1B CRISPR LINCS L1000 knockdown signature GSE",
+    "aneuploid cells rapamycin rescue proteotoxic stress paradox mTOR 2025 2026",
+    "L2S2 Data availability",
+    "level5_beta_trt_xpr download LINCS",
+    "macchiato.clue.io level5",
+    "BUB1B L1000 knockout",
+    "BUB1B CRISPR knockout single guide DNA damage p53 aneuploidy transcriptome",
+    "rapamycin suppress senescence DNA damage aneuploidy proliferation rescue falsification"
+  ],
+  "sources": [
+    {
+      "id": "C25-S1",
+      "url": "https://academic.oup.com/nar/article/53/W1/W338/8123452",
+      "doi": "10.1093/nar/gkaf373",
+      "title": "L2S2: chemical perturbation and CRISPR KO LINCS L1000 signature search engine",
+      "depth": "Primary abstract/introduction/data availability, authors' download-page source code at commit 42814c9c2bfc13ebebb05705fad937e389924682; not a full-paper re-review",
+      "supports": "A newer accessible collection has broad CRISPR and chemical coverage; motivates testing the older panel's BUB1B coverage gap.",
+      "does_not_support": "The published search engine's hit list is not evidence of rescue, and processing more signatures is not new biological replication. We use original Broad measured-landmark values, not this paper's inferred-gene search results."
+    },
+    {
+      "id": "C25-S2",
+      "url": "https://clue.io/data/CMap2020",
+      "data_url": "https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/",
+      "depth": "Public data page, terms and complete four metadata tables; original matrices downloaded and integrity-checked by the campaign",
+      "supports": "Anonymous public metadata and original L1000 files; source page encourages publication of analytical findings.",
+      "challenge": "Source-file redistribution restrictions; data reuse across releases, compound stereochemistry and quality must be audited. No source-data relicensing or wholesale expression-file redistribution."
+    },
+    {
+      "id": "C25-S3",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2003213",
+      "doi": "10.1371/journal.pbio.2003213",
+      "title": "Evaluation of RNAi and CRISPR technologies by large-scale gene expression profiling in the Connectivity Map",
+      "depth": "Carried-forward v23 primary-source review and deposited raw/PRIME data; no new full-paper review claimed",
+      "supports": "Orthogonal perturbation methods can expose RNAi attribution problems.",
+      "challenge": "The same RNAi experiments remain reused. New CRISPR data do not erase seed/batch concerns or establish functional equivalence between knockdown and knockout."
+    },
+    {
+      "id": "C25-S4",
+      "url": "https://www.nature.com/articles/s41591-018-0049-z",
+      "doi": "10.1038/s41591-018-0049-z",
+      "title": "CRISPR-Cas9 genome editing induces a p53-mediated DNA damage response",
+      "depth": "Primary publisher abstract; full article not obtained",
+      "supports": "Editing itself can activate p53 and cell-cycle arrest in immortalized retinal pigment epithelial cells.",
+      "challenge": "This cannot quantify that effect in the LINCS cell lines; it requires an editing-stress control rather than explaining away every observed BUB1B signal."
+    },
+    {
+      "id": "C25-S5",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37900274/",
+      "doi": "10.3389/fcell.2023.1282182",
+      "title": "P53 independent pathogenic mechanisms contribute to BubR1 microcephaly",
+      "depth": "Primary abstract retrieved through Europe PMC; not a full-paper review",
+      "supports": "In the studied mouse cortex, Trp53 co-deletion leaves residual cell death and little anatomical rescue after BubR1 loss.",
+      "challenge": "Suppressing a downstream response is not sufficient evidence of functional rescue. Complete developmental loss in mice is not the selected human allele pair."
+    },
+    {
+      "id": "C25-S6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41524558/",
+      "doi": "10.1111/acel.70364",
+      "title": "Rapamycin Exerts Its Geroprotective Effects in the Ageing Human Immune System by Enhancing Resilience Against DNA Damage",
+      "depth": "Primary abstract retrieved through Europe PMC; indexed in v21 but not a new independent study; full methods and supplementary material not reviewed here",
+      "supports": "Favorable counterweight: the authors report lower DNA damage and better survival after acute genotoxic stress in human T cells, with a p21 change in an older-adult placebo-controlled study.",
+      "challenge": "These outcomes do not establish chromosome-segregation repair, pediatric safety, BUB1B-specific rescue or everolimus equivalence. They argue against a blanket claim that mTOR inhibition can only conceal damage."
+    }
+  ],
+  "retrieval_limits": [
+    "Some PMC/PubMed web views returned browser challenges or empty content; primary abstracts were retrieved via Europe PMC instead.",
+    "Anonymous bucket listing and guessed root-level matrix paths returned 403. Correct public objects under level5/ succeeded without credentials. No access control was bypassed.",
+    "A search surfaced another competition repository; it was not used as biological evidence or opened for analysis.",
+    "No new systematic adverse-event, drug-label, clinical-trial or competition discussion audit was performed. Existing v21/v24 safeguards and dated requirements remain in force."
+  ]
+}

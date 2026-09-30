@@ -1,0 +1,153 @@
+{
+  "version": 25,
+  "source": "Public LINCS2020 vs frozen GSE70138",
+  "new_metadata_sha256": "60844bca4a3952c9910bb706a849eea135d41e82dcee50685e42f88db744add4",
+  "old_metadata_sha256": "c9ffc8272cea2fe997935de9fb4845f406ac5c962d4686ffba698a89fb2c89e2",
+  "comparison": "All source wells audited, including changed signature identifiers",
+  "rows": [
+    {
+      "signature_id": "LPROT003_A375_6H:BRD-K13514097:0.1",
+      "cell": "A375",
+      "nominal_dose_uM": 0.1,
+      "quality_pass": true,
+      "new_wells": 3,
+      "previous_profiles": [
+        {
+          "signature_id": "LPROT003_A375_6H:H02",
+          "compound_id": "BRD-K13514097",
+          "nsample": "1",
+          "cc_q75": "-666.0",
+          "tas": "0.00736154",
+          "shared_wells": 1
+        },
+        {
+          "signature_id": "LPROT003_A375_6H:H04",
+          "compound_id": "BRD-K13514097",
+          "nsample": "1",
+          "cc_q75": "-666.0",
+          "tas": "0.00736154",
+          "shared_wells": 1
+        },
+        {
+          "signature_id": "LPROT003_A375_6H:H06",
+          "compound_id": "BRD-K13514097",
+          "nsample": "1",
+          "cc_q75": "-666.0",
+          "tas": "0.00893054",
+          "shared_wells": 1
+        }
+      ],
+      "shared_wells": 3,
+      "added_wells": 0,
+      "exact_signature_match": false,
+      "new_nsample": 3,
+      "new_cc_q75": 0.39,
+      "new_tas": 0.240462,
+      "new_qc_pass": 1
+    },
+    {
+      "signature_id": "LPROT003_NPC_6H:BRD-K13514097:0.1",
+      "cell": "NPC",
+      "nominal_dose_uM": 0.1,
+      "quality_pass": false,
+      "new_wells": 3,
+      "previous_profiles": [
+        {
+          "signature_id": "LPROT003_NPC_6H:H01",
+          "compound_id": "BRD-K13514097",
+          "nsample": "1",
+          "cc_q75": "-666.0",
+          "tas": "0.0113054",
+          "shared_wells": 1
+        },
+        {
+          "signature_id": "LPROT003_NPC_6H:H03",
+          "compound_id": "BRD-K13514097",
+          "nsample": "1",
+          "cc_q75": "-666.0",
+          "tas": "0.00776706",
+          "shared_wells": 1
+        },
+        {
+          "signature_id": "LPROT003_NPC_6H:H05",
+          "compound_id": "BRD-K13514097",
+          "nsample": "1",
+          "cc_q75": "-666.0",
+          "tas": "0.0078326",
+          "shared_wells": 1
+        }
+      ],
+      "shared_wells": 3,
+      "added_wells": 0,
+      "exact_signature_match": false,
+      "new_nsample": 3,
+      "new_cc_q75": 0.2,
+      "new_tas": 0.161156,
+      "new_qc_pass": 1
+    },
+    {
+      "signature_id": "LPROT004_MCF7_6H:BRD-K13514097:0.1",
+      "cell": "MCF7",
+      "nominal_dose_uM": 0.1,
+      "quality_pass": true,
+      "new_wells": 3,
+      "previous_profiles": [],
+      "shared_wells": 0,
+      "added_wells": 3,
+      "exact_signature_match": false,
+      "new_nsample": 3,
+      "new_cc_q75": 0.4,
+      "new_tas": 0.253402,
+      "new_qc_pass": 1
+    },
+    {
+      "signature_id": "LPROT004_YAPC_6H:BRD-K13514097:0.1",
+      "cell": "YAPC",
+      "nominal_dose_uM": 0.1,
+      "quality_pass": true,
+      "new_wells": 3,
+      "previous_profiles": [],
+      "shared_wells": 0,
+      "added_wells": 3,
+      "exact_signature_match": false,
+      "new_nsample": 3,
+      "new_cc_q75": 0.41,
+      "new_tas": 0.200613,
+      "new_qc_pass": 1
+    },
+    {
+      "signature_id": "LPROT005_A549_6H:BRD-K13514097:0.1",
+      "cell": "A549",
+      "nominal_dose_uM": 0.1,
+      "quality_pass": false,
+      "new_wells": 3,
+      "previous_profiles": [],
+      "shared_wells": 0,
+      "added_wells": 3,
+      "exact_signature_match": false,
+      "new_nsample": 3,
+      "new_cc_q75": 0.33,
+      "new_tas": 0.265559,
+      "new_qc_pass": 0
+    },
+    {
+      "signature_id": "LPROT005_PC3_6H:BRD-K13514097:0.1",
+      "cell": "PC3",
+      "nominal_dose_uM": 0.1,
+      "quality_pass": false,
+      "new_wells": 3,
+      "previous_profiles": [],
+      "shared_wells": 0,
+      "added_wells": 3,
+      "exact_signature_match": false,
+      "new_nsample": 3,
+      "new_cc_q75": 0.38,
+      "new_tas": 0.316616,
+      "new_qc_pass": 0
+    }
+  ],
+  "regrouped_profiles": 2,
+  "exact_signature_matches": 0,
+  "interpretation": "Different signature IDs can represent the same experimental wells. Improved aggregation/QC is retained; neither old failed QC nor new passing QC is overwritten or counted as independent replication.",
+  "scope": "This audits regrouping against GSE70138. Preparation separately audits reuse against GSE92742. Neither covers all historical Broad experiments."
+}

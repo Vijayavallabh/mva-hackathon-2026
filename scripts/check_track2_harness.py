@@ -8,6 +8,19 @@ from pathlib import Path
 
 RNAI_STATE = {'version': 23, 'status': 'complete', 'report': 'notes/track2-rnai-v23.md', 'plan': 'notes/track2-rnai-plan-v23.json', 'results': 'notes/track2-rnai-results-v23.json', 'sensitivity': 'notes/track2-rnai-tail-sensitivity-v23.json', 'audit': 'notes/track2-rnai-audit-v23.json', 'validation': 'notes/track2-rnai-validation-v23.md', 'register': 'notes/track2-rnai-register-v23.json', 'check': 'scripts/check_track2_rnai_v23.py', 'figure': 'notes/track2-rnai-v23.svg', 'archive': 'results/feat009/rnai-v23/rnai-v23-audit.tar.gz', 'gpus': 8, 'unordered_pair_comparisons': 1536619950, 'conditional_control_sets': 5843968, 'orthogonal_comparisons': 2364754, 'drug_ranking_changed': False, 'presentation_integration': 'integrated_in_v24_preserves_v23'}
 RNAI_AUDIT_SHA256 = '27bff5205ea443acdfe1dbb8863f21725af36af3e7400199bcea3345cdf9cb3c'
+CRISPR_STATE = {
+    'version':25, 'status':'complete', 'report':'notes/track2-crispr-v25.md',
+    'plan':'notes/track2-crispr-plan-v25.json','results':'notes/track2-crispr-results-v25.json',
+    'summary':'notes/track2-crispr-summary-v25.json','audit':'notes/track2-crispr-audit-v25.json',
+    'continuity':'notes/track2-crispr-continuity-v25.json','validation':'notes/track2-crispr-validation-v25.md',
+    'register':'notes/track2-crispr-register-v25.json','check':'scripts/check_track2_crispr_v25.py',
+    'reproduction':'notes/track2-crispr-reproduction-v25.md',
+    'archive':'results/feat009/crispr-v25/crispr-v25-audit.tar.gz',
+    'gpus':8,'comparisons':2474445074,'bub1b_profiles':31,'bub1b_guides':1,
+    'matched_compound_profiles':285488,'drug_ranking_changed':False,
+    'presentation_integration':'separate_completed_addendum_preserves_v24',
+}
+CRISPR_AUDIT_SHA256 = '264a46ecc491e0894d57f204c9d9739cb20494ca866bb6e73e3fdce5bd8e3ebb'
 
 ROOT = Path(__file__).resolve().parents[1]
 STATUS = {
@@ -20,7 +33,7 @@ STATUS = {
 CURRENT_REVIEW = {
     'script': 'scripts/check_track2_harness.py',
     'isolation_audit': 'scripts/audit_track2_harness.py',
-    'guide': 'notes/track2-reviewer-guide-v24.md',
+    'guide': 'notes/track2-reviewer-guide-v25.md',
     'readiness': 'notes/track2-owner-readiness-v24.md',
 }
 RESEARCH_PATHS = {
@@ -103,10 +116,13 @@ def validate(state, features, documents):
             'Stale or unsafe render-directory path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['document_directory']),
             'Stale or unsafe document-directory path')
-    require(state.get('harness_version') == 24 and
-            state['harness_review'] == 'notes/track2-harness-review-v24.md', 'Stale harness review')
+    require(state.get('harness_version') == 25 and
+            state['harness_review'] == 'notes/track2-harness-review-v25.md', 'Stale harness review')
     require(state.get('current_review') == CURRENT_REVIEW, 'Missing or stale combined review route')
     require(state.get('rnai_addendum') == RNAI_STATE, 'Missing or inconsistent RNAi addendum')
+    require(state.get('crispr_addendum') == CRISPR_STATE and
+            all(type(state['crispr_addendum'][k]) is type(v) for k,v in CRISPR_STATE.items()),
+            'Missing or inconsistent CRISPR addendum')
     addendum = state.get('research_addendum')
     expected = RESEARCH_PATHS | RESEARCH_STATE
     require(isinstance(addendum, dict) and addendum == expected and
@@ -120,7 +136,7 @@ def validate(state, features, documents):
                 'ledger': state['drug_science_version'], 'evidence': state['drug_science_version'],
                 'validation': state['drug_science_version'], 'harness': state['harness_version'],
                 'research': addendum['version'], 'addendum': addendum['version'],
-                'transcriptome': addendum['version'], 'rnai': 23,
+                'transcriptome': addendum['version'], 'rnai': 23, 'crispr':25,
             }
             expected = role_versions.get(role.lower(), version)
             require(int(found)==expected, 'Historical version mislabeled current: '+name)
@@ -232,12 +248,18 @@ def check(root=ROOT):
     require(hashlib.sha256(rnai_audit).hexdigest() == RNAI_AUDIT_SHA256, 'Frozen RNAi audit changed')
     rnai = importlib.import_module('check_track2_rnai_v23').check(root)
     require(rnai['passed'], 'RNAi review failed')
-    return dict(passed=True, active_feature='feat-009', harness_version=24,
+    crispr_bytes=public_path(root,CRISPR_STATE['audit']).read_bytes()
+    require(hashlib.sha256(crispr_bytes).hexdigest()==CRISPR_AUDIT_SHA256,'Frozen CRISPR audit changed')
+    crispr=importlib.import_module('check_track2_crispr_v25').check(root)
+    require(crispr['passed'],'CRISPR review failed')
+    for key in ['gpus','comparisons','bub1b_profiles','bub1b_guides','matched_compound_profiles','drug_ranking_changed']:
+        require(state['crispr_addendum'][key]==crispr[key],'Current CRISPR summary drift: '+key)
+    return dict(passed=True, active_feature='feat-009', harness_version=25,
                 presentation_version=state['presentation_version'],
                 drug_science_version=21, slides=presentation['slides'],
                 narration_words=presentation['narration_words'], falsification_amendment=presentation['falsification_amendment'], upload_ready=False,
                 research_addendum=dict(version=19, status='complete', **summary),
-                rnai_addendum=rnai, biological_validation=False,
+                rnai_addendum=rnai, crispr_addendum=crispr, biological_validation=False,
                 scope='Combined public presentation/research consistency; not biological validation or submission preflight')
 
 

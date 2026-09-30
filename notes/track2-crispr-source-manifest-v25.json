@@ -1,0 +1,146 @@
+{
+  "source": "Broad LINCS2020 public S3",
+  "files": [
+    {
+      "name": "siginfo_beta.txt",
+      "url": "https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/siginfo_beta.txt",
+      "bytes": 465242319,
+      "sha256": "1a38d7ea2a804be79804af4a27aff9f2537af8f13d3c8af1fdc1fef780f40201",
+      "source_etag": "f1f854d7675f5dfd0a3ae3664640f70e-28",
+      "etag_verified": true,
+      "multipart_bytes": 16777216,
+      "headers": {
+        "x-amz-id-2": "HToATrTDKI8FuWUc9EZbDA75r76eiOOO7jXErNOCQ2BhIMOPnmD9YXjN49uWeBjprlnxQzhHB2UxUHlPWoDOEmO/ZmiWMiR4",
+        "x-amz-request-id": "QKM0EWA1K7JYV84R",
+        "Date": "Wed, 30 Sep 2026 21:13:09 GMT",
+        "Last-Modified": "Tue, 07 Dec 2021 13:24:26 GMT",
+        "ETag": "\"f1f854d7675f5dfd0a3ae3664640f70e-28\"",
+        "x-amz-storage-class": "INTELLIGENT_TIERING",
+        "Content-Disposition": "attachment",
+        "x-amz-version-id": "IdjZYad8vgq4Fste7egTLfio9nCf9bkI",
+        "Accept-Ranges": "bytes",
+        "Content-Type": "text/plain",
+        "Content-Length": "465242319",
+        "Server": "AmazonS3",
+        "Connection": "close"
+      }
+    },
+    {
+      "name": "geneinfo_beta.txt",
+      "url": "https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/geneinfo_beta.txt",
+      "bytes": 1141389,
+      "sha256": "e739d06bad42ff9285c00b778e65d8999425062a3375cc7e7cdab0e7154490b5",
+      "source_etag": "45c725d17ce6c377f1e7de07b821a5f0",
+      "etag_verified": true,
+      "multipart_bytes": 16777216,
+      "headers": {
+        "x-amz-id-2": "+spbvwnbdThqIgj8mS0ENpuJXFurMkhCPASpftpSza474KwO2L18fjz5/1ShGjaNynyX/narg3I=",
+        "x-amz-request-id": "2VBQCZ3CZF8TGE5W",
+        "Date": "Wed, 30 Sep 2026 21:13:11 GMT",
+        "Last-Modified": "Wed, 16 Dec 2020 19:38:56 GMT",
+        "ETag": "\"45c725d17ce6c377f1e7de07b821a5f0\"",
+        "x-amz-storage-class": "INTELLIGENT_TIERING",
+        "Content-Disposition": "attachment",
+        "x-amz-version-id": "zMQVoz8KI8QHbXRa2UHS.ta3VQhg3lgq",
+        "Accept-Ranges": "bytes",
+        "Content-Type": "text/plain",
+        "Content-Length": "1141389",
+        "Server": "AmazonS3",
+        "Connection": "close"
+      }
+    },
+    {
+      "name": "cellinfo_beta.txt",
+      "url": "https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/cellinfo_beta.txt",
+      "bytes": 37979,
+      "sha256": "d26a08f7f290f6a94bff593cdea4dcfc3fe17177e05593cd381cb65aebc63fc2",
+      "source_etag": "c4686b4bcd2bad8fa64e229932c8d486",
+      "etag_verified": true,
+      "multipart_bytes": 16777216,
+      "headers": {
+        "x-amz-id-2": "2hYTLigQpy09cWarLNAsIVqFtf/RV44Yy0DZdq+LNcP0thfLw/+Z59hCZS6u3B5gU9s6UCDYV+kSAT/le3jNABFxWLajxjJh",
+        "x-amz-request-id": "8NWP9WZF3EKPTJER",
+        "Date": "Wed, 30 Sep 2026 21:13:12 GMT",
+        "Last-Modified": "Wed, 16 Dec 2020 19:39:13 GMT",
+        "ETag": "\"c4686b4bcd2bad8fa64e229932c8d486\"",
+        "Content-Disposition": "attachment",
+        "x-amz-version-id": "DxP58xHNnj33qNtET_Od3Y.z.q_hfGvu",
+        "Accept-Ranges": "bytes",
+        "Content-Type": "text/plain",
+        "Content-Length": "37979",
+        "Server": "AmazonS3",
+        "Connection": "close"
+      }
+    },
+    {
+      "name": "compoundinfo_beta.txt",
+      "url": "https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/compoundinfo_beta.txt",
+      "bytes": 4631014,
+      "sha256": "a71fca6de41dcc46a5063858be7e04155f3c09832c8b3fb35814f03db8d9fdff",
+      "source_etag": "bf8e3a15ad026b47903c98d625195d24",
+      "etag_verified": true,
+      "multipart_bytes": 16777216,
+      "headers": {
+        "x-amz-id-2": "RsBbZ7KzxJReyIobew0l1qqYGXiyIYjS2/n2l04ns5tCgqHB55J+gL2O87Ft5msr4YEwGCZTQhUVoIepT6AdyxHD6gWhX0sF",
+        "x-amz-request-id": "H7CVN7S0BD1DPYZQ",
+        "Server": "AmazonS3",
+        "Date": "Wed, 30 Sep 2026 21:13:14 GMT",
+        "Last-Modified": "Thu, 28 Jan 2021 22:46:50 GMT",
+        "ETag": "\"bf8e3a15ad026b47903c98d625195d24\"",
+        "x-amz-storage-class": "INTELLIGENT_TIERING",
+        "Content-Disposition": "attachment",
+        "x-amz-version-id": "TnqtvNk2u_hkNd5GcYY7QjMPZqL2FrpM",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4631014",
+        "Content-Type": "text/plain",
+        "Connection": "close"
+      }
+    },
+    {
+      "name": "level5_beta_trt_xpr_n142901x12328.gctx",
+      "url": "https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/level5/level5_beta_trt_xpr_n142901x12328.gctx",
+      "bytes": 6516812529,
+      "sha256": "78ee0a7de9135b9781cf81577b68444b1f9c0f443214b031f7630fec06dba037",
+      "source_etag": "97c0fe339ee236cfda07adb75a8ccb5e-389",
+      "etag_verified": true,
+      "multipart_bytes": 16777216,
+      "headers": {
+        "x-amz-id-2": "5Q+0icVNTe2UEtQzo/VTezzdy164KWk7AKVdTYFyFkiQRnm9TkVddZsRCJnuyJSXZhlbTaHwchdNk38QSoaJinK8oChNH4WY",
+        "x-amz-request-id": "5PP4MH7QYRD66DA4",
+        "Date": "Wed, 30 Sep 2026 21:13:15 GMT",
+        "Last-Modified": "Thu, 17 Dec 2020 00:27:09 GMT",
+        "ETag": "\"97c0fe339ee236cfda07adb75a8ccb5e-389\"",
+        "x-amz-storage-class": "INTELLIGENT_TIERING",
+        "x-amz-version-id": "wbWtqATPNzviEfaX4E9PVsMR40Gy5Nsb",
+        "Accept-Ranges": "bytes",
+        "Content-Type": "binary/octet-stream",
+        "Content-Length": "6516812529",
+        "Server": "AmazonS3",
+        "Connection": "close"
+      }
+    },
+    {
+      "name": "level5_beta_trt_cp_n720216x12328.gctx",
+      "url": "https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/level5/level5_beta_trt_cp_n720216x12328.gctx",
+      "bytes": 35518405386,
+      "sha256": "fbb04a94d8aa8a4fa6daf01f7d94dcd938fb9b7937730f81bfba3d8d0f1472a8",
+      "source_etag": "d342ab7f3fa6ece699099bc2d8fc94b8-2118",
+      "etag_verified": true,
+      "multipart_bytes": 16777216,
+      "headers": {
+        "x-amz-id-2": "iGoIeJVn3DxgWQP3PIooC74fmxobgpbDgNl1Ar4EwzZJwv6k1X8Dyn/e9KmwGvO/LGXKtJMTkLCes0IVXtej49moe7BxLXsh",
+        "x-amz-request-id": "W1P61FTMQ6PY0BAV",
+        "Date": "Wed, 30 Sep 2026 21:14:23 GMT",
+        "Last-Modified": "Wed, 16 Dec 2020 23:54:09 GMT",
+        "ETag": "\"d342ab7f3fa6ece699099bc2d8fc94b8-2118\"",
+        "x-amz-storage-class": "INTELLIGENT_TIERING",
+        "x-amz-version-id": "ljLz1nWDJ4co.kG6bSrfEs7mrklxiVS4",
+        "Accept-Ranges": "bytes",
+        "Content-Type": "binary/octet-stream",
+        "Content-Length": "35518405386",
+        "Server": "AmazonS3",
+        "Connection": "close"
+      }
+    }
+  ]
+}

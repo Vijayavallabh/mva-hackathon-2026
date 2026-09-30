@@ -93,6 +93,16 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
+**Session 65: completed eight-GPU CRISPR falsification.** The
+[v25 findings](notes/track2-crispr-v25.md) add 2,474,445,074 expression comparisons,
+strengthening HT29 as an assay-qualification lead. Favorable MCF7 everolimus/MTOR
+connections remain separate from its failed BUB1B model qualification. New source-well
+checks detect regrouped old experiments under new IDs. One BUB1B guide and no joint
+functional rescue mean no drug promotion. The
+[v25 reviewer guide](notes/track2-reviewer-guide-v25.md) connects the full evidence,
+validation changes and combined `scripts/check_track2_harness.py` check.
+Presentation v24 remains frozen and has not yet integrated this addendum.
+
 **Session 64: integrated presentation and harness.** The v24 report, nine-slide deck,
 342-word script and methods export incorporate the v23 RNAi findings. Seed-associated
 similarity, favorable HT29 evidence and finite-reference sensitivity now appear together,
@@ -186,7 +196,7 @@ bursty, not saturated. [Execution, limits and reproduction](notes/track2-transcr
 are recorded. The v24 presentation and recording bundle now incorporate these findings
 and include both campaigns' findings, figures and qualification notes.
 
-Start with the [combined reviewer guide](notes/track2-reviewer-guide-v24.md). One
+Start with the [combined reviewer guide](notes/track2-reviewer-guide-v25.md). One
 public CPU command checks v23 RNAi, v24 materials and v19 research, including the reported
 counts, failed filters and HT29 counterweight. It needs no subject files, data/results
 folders, keys, network, Git history or model weights:
