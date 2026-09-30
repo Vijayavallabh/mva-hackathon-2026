@@ -81,7 +81,21 @@ This is a continuing objective, not a one-time review. Preserve immutable snapsh
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the current artifact record and [session-handoff.md](session-handoff.md) for next
-steps and blockers. Session 66 integrates frozen v25 CRISPR findings into the current
+steps and blockers. Session 67 adds completed v27 protein-background and expression
+specificity research in `notes/track2-falsification-v27.md`; read it alongside the
+preserved v26 presentation. All eight H100s completed new neural inference (9,472 masked
+distributions, 179,968 substitution scores) and 918,999,010 expression comparisons.
+Negative protein scores are common; matched N-to-K ranks retain qualified favorable
+evidence. HT29 remains near the top under stronger sensitivities. MCF7 BUB1B drug-reversal
+rank falls from 7 to 1,184 after mean plus ten-component removal while MTOR stays first.
+These post-hoc projections can remove real biology; they do not prove confounding.
+One guide, failed model QC, no joint rescue and null clinical margins remain. Five new
+R38-R42 challenges make 42 claim records, not studies. Anthropic's optimization kit was
+reviewed but not executed; frozen upstream ESM models ran locally. All owned jobs are
+complete. Use `scripts/check_track2_falsification_v27.py` and the combined harness.
+The new remote folder under `~/v` is in the November 24 deletion scope.
+
+Session 66 integrates frozen v25 CRISPR findings into the current
 v26 eleven-page report, nine-slide deck, 343-word read-aloud transcript, methods workbook
 and video description. Slides 3-4 separate HT29 assay qualification from MCF7 drug
 connections and failed BUB1B model checks. The report retains all older RNAi and
@@ -89,9 +103,9 @@ transcriptome findings with dataset-specific scope, source-well reuse and new co
 The distinct v19 five-reagent and v23 six-reagent HT29 findings must not be conflated.
 
 Use `scripts/check_track2_harness.py`,
-[notes/track2-reviewer-guide-v26.md](notes/track2-reviewer-guide-v26.md) and
-[notes/track2-owner-readiness-v26.md](notes/track2-owner-readiness-v26.md).
-Presentation and harness are v26; the drug ledger and base validation remain v21,
+[notes/track2-reviewer-guide-v27.md](notes/track2-reviewer-guide-v27.md) and
+[notes/track2-owner-readiness-v27.md](notes/track2-owner-readiness-v27.md).
+Presentation is v26 and the combined harness is v27; the drug ledger and base validation remain v21,
 with frozen v23/v25 qualification addenda and 37 claim records. All eleven drug
 dispositions, biological null margins and delivery/provider flags remain unchanged.
 Requirements remain the dated September 24-25 review, not a new live portal audit.
@@ -209,7 +223,7 @@ directories. Render with `scripts/render_track2_slides_v26.mjs`; export the repo
 workbook with `scripts/track2_export_documents_v26.py` followed by
 `scripts/render_track2_report_v26.mjs`. Recording materials use
 `scripts/track2_bundle_v26.py`; historical research retains AF3 notices.
-The combined public reviewer checks integrated v26 and frozen v25 CRISPR, v23 RNAi, v21 decisions and v19 findings and needs no
+The combined public reviewer checks v27 research, integrated v26 and frozen v25 CRISPR, v23 RNAi, v21 decisions and v19 findings and needs no
 data/results folders, keys, network, GPUs or old
 local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
 The versioned `scripts/track2_public_review_v26.py` checks the integrated presentation

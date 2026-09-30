@@ -1,0 +1,1804 @@
+{
+  "version": 27,
+  "complete": true,
+  "plan_sha256": "f2256426943cc7c927d89bed5d518735546c972da3eb0cd8915fc302291d0daf",
+  "models": [
+    {
+      "model": "biohub/ESMC-300M",
+      "rows": 2368,
+      "substitution_scores": 44992,
+      "original_score_max_abs_error": 3.3736228942871094e-05,
+      "windows": [
+        {
+          "window": "n_terminal_1022",
+          "candidate_score": -0.19075393676757812,
+          "backgrounds": {
+            "whole_window": {
+              "n": 19418,
+              "negative": 15006,
+              "negative_fraction": 0.7727881347203626,
+              "at_or_below_candidate": 14089,
+              "at_or_below_candidate_fraction": 0.7255639097744361,
+              "quantiles": {
+                "min": -16.108566783368587,
+                "q05": -7.737549698352813,
+                "q25": -2.7182144671678543,
+                "median": -1.0798468589782715,
+                "q75": -0.09410858154296875,
+                "q95": 1.1375490188598614,
+                "max": 5.746316730976105
+              }
+            },
+            "common_domain": {
+              "n": 5738,
+              "negative": 4319,
+              "negative_fraction": 0.752701289647961,
+              "at_or_below_candidate": 4074,
+              "at_or_below_candidate_fraction": 0.7100034855350297,
+              "quantiles": {
+                "min": -15.85389193892479,
+                "q05": -7.46532344520092,
+                "q25": -2.7957171201705933,
+                "median": -1.0799760818481445,
+                "q75": -0.014627456665039062,
+                "q95": 1.2717818856239298,
+                "max": 5.746316730976105
+              }
+            },
+            "matched_N_to_K": {
+              "n": 43,
+              "negative": 14,
+              "negative_fraction": 0.32558139534883723,
+              "at_or_below_candidate": 11,
+              "at_or_below_candidate_fraction": 0.2558139534883721,
+              "quantiles": {
+                "min": -8.618702363222837,
+                "q05": -2.717630386352539,
+                "q25": -0.18848323822021484,
+                "median": 0.36939239501953125,
+                "q75": 0.8615927696228027,
+                "q95": 1.3621342778205872,
+                "max": 1.5006942749023438
+              }
+            },
+            "position1002": {
+              "n": 19,
+              "negative": 16,
+              "negative_fraction": 0.8421052631578947,
+              "at_or_below_candidate": 15,
+              "at_or_below_candidate_fraction": 0.7894736842105263,
+              "quantiles": {
+                "min": -4.000290870666504,
+                "q05": -3.4944271087646483,
+                "q25": -2.1175436973571777,
+                "median": -1.1992712020874023,
+                "q75": -0.29444217681884766,
+                "q95": 0.36666629314422566,
+                "max": 0.5362042188644409
+              }
+            }
+          },
+          "controls": [
+            {
+              "variant": "V793R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-C,I",
+              "score": -3.691503643989563
+            },
+            {
+              "variant": "K795R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -1.348999947309494
+            },
+            {
+              "variant": "D911N",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -0.5494938492774963
+            },
+            {
+              "variant": "D882N",
+              "group": "primary_retained",
+              "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+              "source_panel": "Figure 3 A-D",
+              "score": 2.243529260158539
+            },
+            {
+              "variant": "K795A",
+              "group": "secondary_impaired",
+              "endpoint": "Reduced abundance and thermal stability; contextual check only",
+              "source_panel": "Figure 3 F-H",
+              "score": -4.759936302900314
+            },
+            {
+              "variant": "D882A",
+              "group": "secondary_retained",
+              "endpoint": "Main-text-reported retained function; contextual check only",
+              "source_panel": "Main text referring to Figure S3C",
+              "score": 0.6091451644897461
+            }
+          ],
+          "primary_gate": true,
+          "expanded_gate": true
+        },
+        {
+          "window": "c_terminal_1022",
+          "candidate_score": -0.2629423141479492,
+          "backgrounds": {
+            "whole_window": {
+              "n": 19418,
+              "negative": 14994,
+              "negative_fraction": 0.772170151405912,
+              "at_or_below_candidate": 13720,
+              "at_or_below_candidate_fraction": 0.7065609228550829,
+              "quantiles": {
+                "min": -16.465351969003677,
+                "q05": -7.3864281951449815,
+                "q25": -2.636096455156803,
+                "median": -1.0606800317764282,
+                "q75": -0.08830070495605469,
+                "q95": 1.1518741250038136,
+                "max": 5.526697039604187
+              }
+            },
+            "common_domain": {
+              "n": 6156,
+              "negative": 4682,
+              "negative_fraction": 0.7605588044184536,
+              "at_or_below_candidate": 4315,
+              "at_or_below_candidate_fraction": 0.7009421702404158,
+              "quantiles": {
+                "min": -16.465351969003677,
+                "q05": -7.410902053117752,
+                "q25": -2.8590188026428223,
+                "median": -1.122187614440918,
+                "q75": -0.05195975303649902,
+                "q95": 1.2763299942016602,
+                "max": 5.526697039604187
+              }
+            },
+            "matched_N_to_K": {
+              "n": 43,
+              "negative": 13,
+              "negative_fraction": 0.3023255813953488,
+              "at_or_below_candidate": 9,
+              "at_or_below_candidate_fraction": 0.20930232558139536,
+              "quantiles": {
+                "min": -3.3720006346702576,
+                "q05": -1.4593528747558593,
+                "q25": -0.12125539779663086,
+                "median": 0.41375255584716797,
+                "q75": 0.8520922660827637,
+                "q95": 1.417356777191162,
+                "max": 3.74625700712204
+              }
+            },
+            "position1002": {
+              "n": 19,
+              "negative": 17,
+              "negative_fraction": 0.8947368421052632,
+              "at_or_below_candidate": 15,
+              "at_or_below_candidate_fraction": 0.7894736842105263,
+              "quantiles": {
+                "min": -4.032324552536011,
+                "q05": -3.598821210861206,
+                "q25": -2.1693670749664307,
+                "median": -1.305013656616211,
+                "q75": -0.35114192962646484,
+                "q95": 0.22064123153686482,
+                "max": 0.38982295989990234
+              }
+            }
+          },
+          "controls": [
+            {
+              "variant": "V793R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-C,I",
+              "score": -3.920889973640442
+            },
+            {
+              "variant": "K795R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -1.6251039505004883
+            },
+            {
+              "variant": "D911N",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -0.4573916792869568
+            },
+            {
+              "variant": "D882N",
+              "group": "primary_retained",
+              "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+              "source_panel": "Figure 3 A-D",
+              "score": 2.5233927071094513
+            },
+            {
+              "variant": "K795A",
+              "group": "secondary_impaired",
+              "endpoint": "Reduced abundance and thermal stability; contextual check only",
+              "source_panel": "Figure 3 F-H",
+              "score": -5.154966235160828
+            },
+            {
+              "variant": "D882A",
+              "group": "secondary_retained",
+              "endpoint": "Main-text-reported retained function; contextual check only",
+              "source_panel": "Main text referring to Figure S3C",
+              "score": 0.6646432876586914
+            }
+          ],
+          "primary_gate": true,
+          "expanded_gate": true
+        },
+        {
+          "window": "published_domain_721_1044",
+          "candidate_score": -0.0909585952758789,
+          "backgrounds": {
+            "whole_window": {
+              "n": 6156,
+              "negative": 4567,
+              "negative_fraction": 0.7418778427550358,
+              "at_or_below_candidate": 4417,
+              "at_or_below_candidate_fraction": 0.717511371020143,
+              "quantiles": {
+                "min": -13.534732915461063,
+                "q05": -6.151849456131458,
+                "q25": -2.2875377535820007,
+                "median": -0.8915572166442871,
+                "q75": 0.025909423828125,
+                "q95": 1.2185370326042175,
+                "max": 6.289385057985783
+              }
+            },
+            "common_domain": {
+              "n": 6156,
+              "negative": 4567,
+              "negative_fraction": 0.7418778427550358,
+              "at_or_below_candidate": 4417,
+              "at_or_below_candidate_fraction": 0.717511371020143,
+              "quantiles": {
+                "min": -13.534732915461063,
+                "q05": -6.151849456131458,
+                "q25": -2.2875377535820007,
+                "median": -0.8915572166442871,
+                "q75": 0.025909423828125,
+                "q95": 1.2185370326042175,
+                "max": 6.289385057985783
+              }
+            },
+            "matched_N_to_K": {
+              "n": 17,
+              "negative": 8,
+              "negative_fraction": 0.47058823529411764,
+              "at_or_below_candidate": 6,
+              "at_or_below_candidate_fraction": 0.35294117647058826,
+              "quantiles": {
+                "min": -1.4063396453857422,
+                "q05": -1.367527389526367,
+                "q25": -0.34639739990234375,
+                "median": 0.06055164337158203,
+                "q75": 0.823328971862793,
+                "q95": 1.4713990092277516,
+                "max": 2.804416596889496
+              }
+            },
+            "position1002": {
+              "n": 19,
+              "negative": 17,
+              "negative_fraction": 0.8947368421052632,
+              "at_or_below_candidate": 15,
+              "at_or_below_candidate_fraction": 0.7894736842105263,
+              "quantiles": {
+                "min": -3.617230176925659,
+                "q05": -3.355987310409546,
+                "q25": -2.0210039615631104,
+                "median": -1.211761474609375,
+                "q75": -0.28167200088500977,
+                "q95": 0.25030403137206975,
+                "max": 0.48539257049560547
+              }
+            }
+          },
+          "controls": [
+            {
+              "variant": "V793R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-C,I",
+              "score": -3.5341949462890625
+            },
+            {
+              "variant": "K795R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -1.5959672927856445
+            },
+            {
+              "variant": "D911N",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -0.7530937194824219
+            },
+            {
+              "variant": "D882N",
+              "group": "primary_retained",
+              "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+              "source_panel": "Figure 3 A-D",
+              "score": 1.4892024397850037
+            },
+            {
+              "variant": "K795A",
+              "group": "secondary_impaired",
+              "endpoint": "Reduced abundance and thermal stability; contextual check only",
+              "source_panel": "Figure 3 F-H",
+              "score": -4.735644578933716
+            },
+            {
+              "variant": "D882A",
+              "group": "secondary_retained",
+              "endpoint": "Main-text-reported retained function; contextual check only",
+              "source_panel": "Main text referring to Figure S3C",
+              "score": -0.1439800262451172
+            }
+          ],
+          "primary_gate": true,
+          "expanded_gate": true
+        }
+      ],
+      "public_matrix": "track2-saturation-esmc300m-v27.tsv",
+      "public_matrix_sha256": "afe9335955015efeafd13e8a8b368660a8f8b9d2eb66ac59e0a8ffd9e57df9f3"
+    },
+    {
+      "model": "biohub/ESMC-600M",
+      "rows": 2368,
+      "substitution_scores": 44992,
+      "original_score_max_abs_error": 2.8371810913085938e-05,
+      "windows": [
+        {
+          "window": "n_terminal_1022",
+          "candidate_score": -2.309418737888336,
+          "backgrounds": {
+            "whole_window": {
+              "n": 19418,
+              "negative": 15442,
+              "negative_fraction": 0.7952415284787311,
+              "at_or_below_candidate": 7035,
+              "at_or_below_candidate_fraction": 0.3622927180966114,
+              "quantiles": {
+                "min": -18.16868153528776,
+                "q05": -8.723851769044995,
+                "q25": -3.535548686981201,
+                "median": -1.371056079864502,
+                "q75": -0.22345209121704102,
+                "q95": 1.137031650543211,
+                "max": 5.755857586860657
+              }
+            },
+            "common_domain": {
+              "n": 5738,
+              "negative": 4394,
+              "negative_fraction": 0.7657720460090623,
+              "at_or_below_candidate": 1914,
+              "at_or_below_candidate_fraction": 0.33356570233530847,
+              "quantiles": {
+                "min": -14.2564765997231,
+                "q05": -7.849562081694603,
+                "q25": -3.1491565629839897,
+                "median": -1.2214244604110718,
+                "q75": -0.0716705322265625,
+                "q95": 1.3183599948883034,
+                "max": 4.718641996383667
+              }
+            },
+            "matched_N_to_K": {
+              "n": 43,
+              "negative": 22,
+              "negative_fraction": 0.5116279069767442,
+              "at_or_below_candidate": 5,
+              "at_or_below_candidate_fraction": 0.11627906976744186,
+              "quantiles": {
+                "min": -7.2366868406534195,
+                "q05": -3.282850646972656,
+                "q25": -0.5794854164123535,
+                "median": -0.015442848205566406,
+                "q75": 0.7529792785644531,
+                "q95": 1.588297080993652,
+                "max": 2.0435179471969604
+              }
+            },
+            "position1002": {
+              "n": 19,
+              "negative": 19,
+              "negative_fraction": 1.0,
+              "at_or_below_candidate": 14,
+              "at_or_below_candidate_fraction": 0.7368421052631579,
+              "quantiles": {
+                "min": -6.864082396030426,
+                "q05": -6.844653761386871,
+                "q25": -4.991687834262848,
+                "median": -3.0652933716773987,
+                "q75": -2.244831144809723,
+                "q95": -1.7951180100440987,
+                "max": -1.460975706577301
+              }
+            }
+          },
+          "controls": [
+            {
+              "variant": "V793R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-C,I",
+              "score": -5.878639221191406
+            },
+            {
+              "variant": "K795R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -1.4733715057373047
+            },
+            {
+              "variant": "D911N",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": 0.3564205765724182
+            },
+            {
+              "variant": "D882N",
+              "group": "primary_retained",
+              "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+              "source_panel": "Figure 3 A-D",
+              "score": 0.5759029388427734
+            },
+            {
+              "variant": "K795A",
+              "group": "secondary_impaired",
+              "endpoint": "Reduced abundance and thermal stability; contextual check only",
+              "source_panel": "Figure 3 F-H",
+              "score": -6.096671223640442
+            },
+            {
+              "variant": "D882A",
+              "group": "secondary_retained",
+              "endpoint": "Main-text-reported retained function; contextual check only",
+              "source_panel": "Main text referring to Figure S3C",
+              "score": -0.46481120586395264
+            }
+          ],
+          "primary_gate": true,
+          "expanded_gate": false
+        },
+        {
+          "window": "c_terminal_1022",
+          "candidate_score": -2.665001928806305,
+          "backgrounds": {
+            "whole_window": {
+              "n": 19418,
+              "negative": 15328,
+              "negative_fraction": 0.7893706869914512,
+              "at_or_below_candidate": 5886,
+              "at_or_below_candidate_fraction": 0.30312081573797506,
+              "quantiles": {
+                "min": -17.49228940939065,
+                "q05": -8.183965322375297,
+                "q25": -3.2854705154895782,
+                "median": -1.2812713980674744,
+                "q75": -0.18861722946166992,
+                "q95": 1.14480171203613,
+                "max": 5.67232221364975
+              }
+            },
+            "common_domain": {
+              "n": 6156,
+              "negative": 4734,
+              "negative_fraction": 0.7690058479532164,
+              "at_or_below_candidate": 1741,
+              "at_or_below_candidate_fraction": 0.28281351526965565,
+              "quantiles": {
+                "min": -13.66946262307465,
+                "q05": -7.594009026885033,
+                "q25": -3.0116626024246216,
+                "median": -1.2151980996131897,
+                "q75": -0.08152580261230469,
+                "q95": 1.2985975742340088,
+                "max": 4.754607021808624
+              }
+            },
+            "matched_N_to_K": {
+              "n": 43,
+              "negative": 20,
+              "negative_fraction": 0.46511627906976744,
+              "at_or_below_candidate": 3,
+              "at_or_below_candidate_fraction": 0.06976744186046512,
+              "quantiles": {
+                "min": -4.634638667106628,
+                "q05": -2.6281208604574204,
+                "q25": -0.4647397994995117,
+                "median": 0.03725719451904297,
+                "q75": 0.7748880386352539,
+                "q95": 1.8624872207641596,
+                "max": 3.4179612398147583
+              }
+            },
+            "position1002": {
+              "n": 19,
+              "negative": 19,
+              "negative_fraction": 1.0,
+              "at_or_below_candidate": 16,
+              "at_or_below_candidate_fraction": 0.8421052631578947,
+              "quantiles": {
+                "min": -7.200307667255402,
+                "q05": -7.035954773426056,
+                "q25": -5.3219693303108215,
+                "median": -3.467984974384308,
+                "q75": -2.7871528267860413,
+                "q95": -2.125213778018952,
+                "max": -1.8773184418678284
+              }
+            }
+          },
+          "controls": [
+            {
+              "variant": "V793R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-C,I",
+              "score": -5.806686520576477
+            },
+            {
+              "variant": "K795R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -1.474918395280838
+            },
+            {
+              "variant": "D911N",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": 0.2516021728515625
+            },
+            {
+              "variant": "D882N",
+              "group": "primary_retained",
+              "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+              "source_panel": "Figure 3 A-D",
+              "score": 0.4671134948730469
+            },
+            {
+              "variant": "K795A",
+              "group": "secondary_impaired",
+              "endpoint": "Reduced abundance and thermal stability; contextual check only",
+              "source_panel": "Figure 3 F-H",
+              "score": -5.7821634113788605
+            },
+            {
+              "variant": "D882A",
+              "group": "secondary_retained",
+              "endpoint": "Main-text-reported retained function; contextual check only",
+              "source_panel": "Main text referring to Figure S3C",
+              "score": -0.6030540466308594
+            }
+          ],
+          "primary_gate": true,
+          "expanded_gate": false
+        },
+        {
+          "window": "published_domain_721_1044",
+          "candidate_score": -1.8598966598510742,
+          "backgrounds": {
+            "whole_window": {
+              "n": 6156,
+              "negative": 4654,
+              "negative_fraction": 0.7560103963612735,
+              "at_or_below_candidate": 2143,
+              "at_or_below_candidate_fraction": 0.3481156595191683,
+              "quantiles": {
+                "min": -13.000262261368334,
+                "q05": -6.790927514433861,
+                "q25": -2.681169256567955,
+                "median": -1.0115617513656616,
+                "q75": -0.023311376571655273,
+                "q95": 1.224902868270874,
+                "max": 6.043530352413654
+              }
+            },
+            "common_domain": {
+              "n": 6156,
+              "negative": 4654,
+              "negative_fraction": 0.7560103963612735,
+              "at_or_below_candidate": 2143,
+              "at_or_below_candidate_fraction": 0.3481156595191683,
+              "quantiles": {
+                "min": -13.000262261368334,
+                "q05": -6.790927514433861,
+                "q25": -2.681169256567955,
+                "median": -1.0115617513656616,
+                "q75": -0.023311376571655273,
+                "q95": 1.224902868270874,
+                "max": 6.043530352413654
+              }
+            },
+            "matched_N_to_K": {
+              "n": 17,
+              "negative": 7,
+              "negative_fraction": 0.4117647058823529,
+              "at_or_below_candidate": 2,
+              "at_or_below_candidate_fraction": 0.11764705882352941,
+              "quantiles": {
+                "min": -2.3730697631835938,
+                "q05": -1.962531280517578,
+                "q25": -0.5897351503372192,
+                "median": 0.1455240249633789,
+                "q75": 1.2063921689987183,
+                "q95": 2.2961607217788695,
+                "max": 2.3467780351638794
+              }
+            },
+            "position1002": {
+              "n": 19,
+              "negative": 19,
+              "negative_fraction": 1.0,
+              "at_or_below_candidate": 14,
+              "at_or_below_candidate_fraction": 0.7368421052631579,
+              "quantiles": {
+                "min": -6.174283027648926,
+                "q05": -5.663858222961426,
+                "q25": -4.189592361450195,
+                "median": -2.582850456237793,
+                "q75": -1.8569416999816895,
+                "q95": -1.4577892303466806,
+                "max": -1.0699615478515625
+              }
+            }
+          },
+          "controls": [
+            {
+              "variant": "V793R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-C,I",
+              "score": -4.965991854667664
+            },
+            {
+              "variant": "K795R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -1.4545840620994568
+            },
+            {
+              "variant": "D911N",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -0.18647384643554688
+            },
+            {
+              "variant": "D882N",
+              "group": "primary_retained",
+              "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+              "source_panel": "Figure 3 A-D",
+              "score": 0.8610419034957886
+            },
+            {
+              "variant": "K795A",
+              "group": "secondary_impaired",
+              "endpoint": "Reduced abundance and thermal stability; contextual check only",
+              "source_panel": "Figure 3 F-H",
+              "score": -5.0335065722465515
+            },
+            {
+              "variant": "D882A",
+              "group": "secondary_retained",
+              "endpoint": "Main-text-reported retained function; contextual check only",
+              "source_panel": "Main text referring to Figure S3C",
+              "score": 0.12295711040496826
+            }
+          ],
+          "primary_gate": true,
+          "expanded_gate": true
+        }
+      ],
+      "public_matrix": "track2-saturation-esmc600m-v27.tsv",
+      "public_matrix_sha256": "1ceb3f0ffd8303c9010d03313cfa2f7f69c1934170cb01ddad35613b6b52fba9"
+    },
+    {
+      "model": "biohub/ESMC-6B",
+      "rows": 2368,
+      "substitution_scores": 44992,
+      "original_score_max_abs_error": 3.540515899658203e-05,
+      "windows": [
+        {
+          "window": "n_terminal_1022",
+          "candidate_score": -6.362629535142332,
+          "backgrounds": {
+            "whole_window": {
+              "n": 19418,
+              "negative": 17442,
+              "negative_fraction": 0.898238747553816,
+              "at_or_below_candidate": 5965,
+              "at_or_below_candidate_fraction": 0.30718920589144094,
+              "quantiles": {
+                "min": -19.203975772252306,
+                "q05": -11.774626742722466,
+                "q25": -7.159891042858362,
+                "median": -3.9838695526123047,
+                "q75": -1.3667392134666443,
+                "q95": 0.7334979653358455,
+                "max": 6.83462281525135
+              }
+            },
+            "common_domain": {
+              "n": 5738,
+              "negative": 5221,
+              "negative_fraction": 0.9098989194841408,
+              "at_or_below_candidate": 1680,
+              "at_or_below_candidate_fraction": 0.292784942488672,
+              "quantiles": {
+                "min": -19.203975772252306,
+                "q05": -11.506064607575535,
+                "q25": -6.94115436822176,
+                "median": -4.0163280963897705,
+                "q75": -1.771065890789032,
+                "q95": 0.7716286420822142,
+                "max": 6.83462281525135
+              }
+            },
+            "matched_N_to_K": {
+              "n": 43,
+              "negative": 36,
+              "negative_fraction": 0.8372093023255814,
+              "at_or_below_candidate": 3,
+              "at_or_below_candidate_fraction": 0.06976744186046512,
+              "quantiles": {
+                "min": -9.263036843272857,
+                "q05": -6.295349614927545,
+                "q25": -3.9521092288196087,
+                "median": -2.536510705947876,
+                "q75": -0.5671571493148804,
+                "q95": 1.0926727056503296,
+                "max": 1.9006540775299072
+              }
+            },
+            "position1002": {
+              "n": 19,
+              "negative": 19,
+              "negative_fraction": 1.0,
+              "at_or_below_candidate": 18,
+              "at_or_below_candidate_fraction": 0.9473684210526315,
+              "quantiles": {
+                "min": -15.24861920112744,
+                "q05": -13.643375899735839,
+                "q25": -11.254448535386473,
+                "median": -9.793115737382323,
+                "q75": -8.266273143235594,
+                "q95": -6.293134572450073,
+                "max": -5.667679908219725
+              }
+            }
+          },
+          "controls": [
+            {
+              "variant": "V793R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-C,I",
+              "score": -3.7371870279312134
+            },
+            {
+              "variant": "K795R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -4.107853597030044
+            },
+            {
+              "variant": "D911N",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -3.365666002035141
+            },
+            {
+              "variant": "D882N",
+              "group": "primary_retained",
+              "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+              "source_panel": "Figure 3 A-D",
+              "score": -1.3283639252185822
+            },
+            {
+              "variant": "K795A",
+              "group": "secondary_impaired",
+              "endpoint": "Reduced abundance and thermal stability; contextual check only",
+              "source_panel": "Figure 3 F-H",
+              "score": -10.189793771132827
+            },
+            {
+              "variant": "D882A",
+              "group": "secondary_retained",
+              "endpoint": "Main-text-reported retained function; contextual check only",
+              "source_panel": "Main text referring to Figure S3C",
+              "score": -4.408535987138748
+            }
+          ],
+          "primary_gate": true,
+          "expanded_gate": false
+        },
+        {
+          "window": "c_terminal_1022",
+          "candidate_score": -5.645513474941254,
+          "backgrounds": {
+            "whole_window": {
+              "n": 19418,
+              "negative": 17398,
+              "negative_fraction": 0.8959728087341642,
+              "at_or_below_candidate": 6935,
+              "at_or_below_candidate_fraction": 0.35714285714285715,
+              "quantiles": {
+                "min": -18.984978351800237,
+                "q05": -11.546434613736347,
+                "q25": -7.055560722015798,
+                "median": -3.8996476531028748,
+                "q75": -1.3225983381271362,
+                "q95": 0.753849351406095,
+                "max": 6.870018914341927
+              }
+            },
+            "common_domain": {
+              "n": 6156,
+              "negative": 5558,
+              "negative_fraction": 0.9028589993502274,
+              "at_or_below_candidate": 2111,
+              "at_or_below_candidate_fraction": 0.34291747888239116,
+              "quantiles": {
+                "min": -18.984978351800237,
+                "q05": -11.258087906986475,
+                "q25": -6.769578538835049,
+                "median": -3.8702691793441772,
+                "q75": -1.6302478909492493,
+                "q95": 0.8989343047142029,
+                "max": 6.870018914341927
+              }
+            },
+            "matched_N_to_K": {
+              "n": 43,
+              "negative": 34,
+              "negative_fraction": 0.7906976744186046,
+              "at_or_below_candidate": 3,
+              "at_or_below_candidate_fraction": 0.06976744186046512,
+              "quantiles": {
+                "min": -8.081281738472171,
+                "q05": -5.628759742155671,
+                "q25": -3.885610196739435,
+                "median": -1.9545245170593262,
+                "q75": -0.4603356122970581,
+                "q95": 1.1982160091400145,
+                "max": 1.6382241249084473
+              }
+            },
+            "position1002": {
+              "n": 19,
+              "negative": 19,
+              "negative_fraction": 1.0,
+              "at_or_below_candidate": 18,
+              "at_or_below_candidate_fraction": 0.9473684210526315,
+              "quantiles": {
+                "min": -14.58232206106186,
+                "q05": -12.538172376155853,
+                "q25": -10.538914144039154,
+                "median": -9.14911550283432,
+                "q75": -7.638117969036102,
+                "q95": -5.60402616262436,
+                "max": -5.230640351772308
+              }
+            }
+          },
+          "controls": [
+            {
+              "variant": "V793R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-C,I",
+              "score": -3.5163494348526
+            },
+            {
+              "variant": "K795R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -4.138427153229713
+            },
+            {
+              "variant": "D911N",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -3.2015446797013283
+            },
+            {
+              "variant": "D882N",
+              "group": "primary_retained",
+              "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+              "source_panel": "Figure 3 A-D",
+              "score": -1.173368901014328
+            },
+            {
+              "variant": "K795A",
+              "group": "secondary_impaired",
+              "endpoint": "Reduced abundance and thermal stability; contextual check only",
+              "source_panel": "Figure 3 F-H",
+              "score": -10.086368456482887
+            },
+            {
+              "variant": "D882A",
+              "group": "secondary_retained",
+              "endpoint": "Main-text-reported retained function; contextual check only",
+              "source_panel": "Main text referring to Figure S3C",
+              "score": -4.1204714477062225
+            }
+          ],
+          "primary_gate": true,
+          "expanded_gate": false
+        },
+        {
+          "window": "published_domain_721_1044",
+          "candidate_score": -4.718550695106387,
+          "backgrounds": {
+            "whole_window": {
+              "n": 6156,
+              "negative": 5514,
+              "negative_fraction": 0.8957115009746589,
+              "at_or_below_candidate": 2261,
+              "at_or_below_candidate_fraction": 0.36728395061728397,
+              "quantiles": {
+                "min": -17.593737757531926,
+                "q05": -10.350037652999163,
+                "q25": -6.176817514002323,
+                "median": -3.4541925340890884,
+                "q75": -1.313597396016121,
+                "q95": 0.8939364850521088,
+                "max": 5.822438895702362
+              }
+            },
+            "common_domain": {
+              "n": 6156,
+              "negative": 5514,
+              "negative_fraction": 0.8957115009746589,
+              "at_or_below_candidate": 2261,
+              "at_or_below_candidate_fraction": 0.36728395061728397,
+              "quantiles": {
+                "min": -17.593737757531926,
+                "q05": -10.350037652999163,
+                "q25": -6.176817514002323,
+                "median": -3.4541925340890884,
+                "q75": -1.313597396016121,
+                "q95": 0.8939364850521088,
+                "max": 5.822438895702362
+              }
+            },
+            "matched_N_to_K": {
+              "n": 17,
+              "negative": 11,
+              "negative_fraction": 0.6470588235294118,
+              "at_or_below_candidate": 1,
+              "at_or_below_candidate_fraction": 0.058823529411764705,
+              "quantiles": {
+                "min": -4.718550695106387,
+                "q05": -2.9667875315994023,
+                "q25": -1.9417099952697754,
+                "median": -0.6818344593048096,
+                "q75": 0.5958850383758545,
+                "q95": 1.626864695549011,
+                "max": 2.0936862230300903
+              }
+            },
+            "position1002": {
+              "n": 19,
+              "negative": 19,
+              "negative_fraction": 1.0,
+              "at_or_below_candidate": 18,
+              "at_or_below_candidate_fraction": 0.9473684210526315,
+              "quantiles": {
+                "min": -12.193325055763125,
+                "q05": -10.434097207710147,
+                "q25": -8.993667615577579,
+                "median": -7.766232503578067,
+                "q75": -6.603418840095401,
+                "q95": -4.708878434821964,
+                "max": -4.621828092262149
+              }
+            }
+          },
+          "controls": [
+            {
+              "variant": "V793R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-C,I",
+              "score": -3.614192008972168
+            },
+            {
+              "variant": "K795R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -3.9058465603739023
+            },
+            {
+              "variant": "D911N",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -1.4175252467393875
+            },
+            {
+              "variant": "D882N",
+              "group": "primary_retained",
+              "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+              "source_panel": "Figure 3 A-D",
+              "score": 0.6110685467720032
+            },
+            {
+              "variant": "K795A",
+              "group": "secondary_impaired",
+              "endpoint": "Reduced abundance and thermal stability; contextual check only",
+              "source_panel": "Figure 3 F-H",
+              "score": -9.271260464563966
+            },
+            {
+              "variant": "D882A",
+              "group": "secondary_retained",
+              "endpoint": "Main-text-reported retained function; contextual check only",
+              "source_panel": "Main text referring to Figure S3C",
+              "score": -2.189167022705078
+            }
+          ],
+          "primary_gate": true,
+          "expanded_gate": false
+        }
+      ],
+      "public_matrix": "track2-saturation-esmc6b-v27.tsv",
+      "public_matrix_sha256": "f3f9519cd5319a79065eb6cf354e109e6a49a3b58e4e696ed1df202f726f4a7c"
+    },
+    {
+      "model": "EvolutionaryScale/esm3-sm-open-v1",
+      "rows": 2368,
+      "substitution_scores": 44992,
+      "original_score_max_abs_error": 5.9604644775390625e-06,
+      "windows": [
+        {
+          "window": "n_terminal_1022",
+          "candidate_score": -0.2691216468811035,
+          "backgrounds": {
+            "whole_window": {
+              "n": 19418,
+              "negative": 14147,
+              "negative_fraction": 0.7285508291276136,
+              "at_or_below_candidate": 12451,
+              "at_or_below_candidate_fraction": 0.6412091873519415,
+              "quantiles": {
+                "min": -13.8681410131976,
+                "q05": -5.002401125431061,
+                "q25": -1.7405750751495361,
+                "median": -0.7002768516540527,
+                "q75": 0.07078111171722412,
+                "q95": 1.1565335392951956,
+                "max": 5.437356173992157
+              }
+            },
+            "common_domain": {
+              "n": 5738,
+              "negative": 4210,
+              "negative_fraction": 0.7337051237364935,
+              "at_or_below_candidate": 3766,
+              "at_or_below_candidate_fraction": 0.6563262460787731,
+              "quantiles": {
+                "min": -10.852942943572998,
+                "q05": -5.299897228181362,
+                "q25": -1.9894095659255981,
+                "median": -0.8134187459945679,
+                "q75": 0.06740456819534302,
+                "q95": 1.2611579537391642,
+                "max": 5.437356173992157
+              }
+            },
+            "matched_N_to_K": {
+              "n": 43,
+              "negative": 13,
+              "negative_fraction": 0.3023255813953488,
+              "at_or_below_candidate": 7,
+              "at_or_below_candidate_fraction": 0.16279069767441862,
+              "quantiles": {
+                "min": -1.324061393737793,
+                "q05": -0.8537288188934326,
+                "q25": -0.118691086769104,
+                "median": 0.46573829650878906,
+                "q75": 0.7490086555480957,
+                "q95": 1.2097377777099605,
+                "max": 1.947981595993042
+              }
+            },
+            "position1002": {
+              "n": 19,
+              "negative": 16,
+              "negative_fraction": 0.8421052631578947,
+              "at_or_below_candidate": 16,
+              "at_or_below_candidate_fraction": 0.8421052631578947,
+              "quantiles": {
+                "min": -3.7586259841918945,
+                "q05": -3.3939940452575685,
+                "q25": -2.3131868839263916,
+                "median": -1.2621474266052246,
+                "q75": -0.5573170185089111,
+                "q95": 0.14490896463394148,
+                "max": 0.21699225902557373
+              }
+            }
+          },
+          "controls": [
+            {
+              "variant": "V793R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-C,I",
+              "score": -3.4719226360321045
+            },
+            {
+              "variant": "K795R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -1.046091079711914
+            },
+            {
+              "variant": "D911N",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -0.8622217178344727
+            },
+            {
+              "variant": "D882N",
+              "group": "primary_retained",
+              "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+              "source_panel": "Figure 3 A-D",
+              "score": 0.7860445976257324
+            },
+            {
+              "variant": "K795A",
+              "group": "secondary_impaired",
+              "endpoint": "Reduced abundance and thermal stability; contextual check only",
+              "source_panel": "Figure 3 F-H",
+              "score": -3.5641276836395264
+            },
+            {
+              "variant": "D882A",
+              "group": "secondary_retained",
+              "endpoint": "Main-text-reported retained function; contextual check only",
+              "source_panel": "Main text referring to Figure S3C",
+              "score": -1.149388313293457
+            }
+          ],
+          "primary_gate": true,
+          "expanded_gate": false
+        },
+        {
+          "window": "c_terminal_1022",
+          "candidate_score": -0.13247466087341309,
+          "backgrounds": {
+            "whole_window": {
+              "n": 19418,
+              "negative": 14143,
+              "negative_fraction": 0.7283448346894634,
+              "at_or_below_candidate": 13296,
+              "at_or_below_candidate_fraction": 0.6847255124111649,
+              "quantiles": {
+                "min": -13.810704649426043,
+                "q05": -4.906648764014244,
+                "q25": -1.7012861371040344,
+                "median": -0.6784791946411133,
+                "q75": 0.07617038488388062,
+                "q95": 1.1319252252578706,
+                "max": 5.559964060783386
+              }
+            },
+            "common_domain": {
+              "n": 6156,
+              "negative": 4510,
+              "negative_fraction": 0.7326185834957765,
+              "at_or_below_candidate": 4254,
+              "at_or_below_candidate_fraction": 0.6910331384015594,
+              "quantiles": {
+                "min": -10.822482377290726,
+                "q05": -4.966656282544136,
+                "q25": -1.764931321144104,
+                "median": -0.7202082872390747,
+                "q75": 0.07534706592559814,
+                "q95": 1.2280316948890686,
+                "max": 5.559964060783386
+              }
+            },
+            "matched_N_to_K": {
+              "n": 43,
+              "negative": 13,
+              "negative_fraction": 0.3023255813953488,
+              "at_or_below_candidate": 10,
+              "at_or_below_candidate_fraction": 0.23255813953488372,
+              "quantiles": {
+                "min": -1.2824897766113281,
+                "q05": -0.937369418144226,
+                "q25": -0.08002209663391113,
+                "median": 0.3648500442504883,
+                "q75": 0.7412358522415161,
+                "q95": 1.3540029048919677,
+                "max": 1.8056416511535645
+              }
+            },
+            "position1002": {
+              "n": 19,
+              "negative": 16,
+              "negative_fraction": 0.8421052631578947,
+              "at_or_below_candidate": 16,
+              "at_or_below_candidate_fraction": 0.8421052631578947,
+              "quantiles": {
+                "min": -3.5633819103240967,
+                "q05": -3.1000060558319094,
+                "q25": -2.186769962310791,
+                "median": -1.021618127822876,
+                "q75": -0.5064921379089355,
+                "q95": 0.2773720383644101,
+                "max": 0.3959699869155884
+              }
+            }
+          },
+          "controls": [
+            {
+              "variant": "V793R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-C,I",
+              "score": -3.308923363685608
+            },
+            {
+              "variant": "K795R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -1.0640622973442078
+            },
+            {
+              "variant": "D911N",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -0.8322062492370605
+            },
+            {
+              "variant": "D882N",
+              "group": "primary_retained",
+              "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+              "source_panel": "Figure 3 A-D",
+              "score": 0.8242394924163818
+            },
+            {
+              "variant": "K795A",
+              "group": "secondary_impaired",
+              "endpoint": "Reduced abundance and thermal stability; contextual check only",
+              "source_panel": "Figure 3 F-H",
+              "score": -3.53076833486557
+            },
+            {
+              "variant": "D882A",
+              "group": "secondary_retained",
+              "endpoint": "Main-text-reported retained function; contextual check only",
+              "source_panel": "Main text referring to Figure S3C",
+              "score": -1.0867903232574463
+            }
+          ],
+          "primary_gate": true,
+          "expanded_gate": false
+        },
+        {
+          "window": "published_domain_721_1044",
+          "candidate_score": -0.0752408504486084,
+          "backgrounds": {
+            "whole_window": {
+              "n": 6156,
+              "negative": 4405,
+              "negative_fraction": 0.7155620532813515,
+              "at_or_below_candidate": 4275,
+              "at_or_below_candidate_fraction": 0.6944444444444444,
+              "quantiles": {
+                "min": -10.36398434638977,
+                "q05": -4.732248537242413,
+                "q25": -1.7702478170394897,
+                "median": -0.6737953424453735,
+                "q75": 0.12216508388519287,
+                "q95": 1.2036558389663696,
+                "max": 5.447859942913055
+              }
+            },
+            "common_domain": {
+              "n": 6156,
+              "negative": 4405,
+              "negative_fraction": 0.7155620532813515,
+              "at_or_below_candidate": 4275,
+              "at_or_below_candidate_fraction": 0.6944444444444444,
+              "quantiles": {
+                "min": -10.36398434638977,
+                "q05": -4.732248537242413,
+                "q25": -1.7702478170394897,
+                "median": -0.6737953424453735,
+                "q75": 0.12216508388519287,
+                "q95": 1.2036558389663696,
+                "max": 5.447859942913055
+              }
+            },
+            "matched_N_to_K": {
+              "n": 17,
+              "negative": 6,
+              "negative_fraction": 0.35294117647058826,
+              "at_or_below_candidate": 6,
+              "at_or_below_candidate_fraction": 0.35294117647058826,
+              "quantiles": {
+                "min": -1.1849603652954102,
+                "q05": -1.1752756118774415,
+                "q25": -0.21669769287109375,
+                "median": 0.39595818519592285,
+                "q75": 0.6800098419189453,
+                "q95": 0.8550734043121337,
+                "max": 0.9045097827911377
+              }
+            },
+            "position1002": {
+              "n": 19,
+              "negative": 17,
+              "negative_fraction": 0.8947368421052632,
+              "at_or_below_candidate": 17,
+              "at_or_below_candidate_fraction": 0.8947368421052632,
+              "quantiles": {
+                "min": -2.866611957550049,
+                "q05": -1.9601218700408936,
+                "q25": -1.5016196966171265,
+                "median": -0.7343850135803223,
+                "q75": -0.4541466236114502,
+                "q95": 0.05982260704040521,
+                "max": 0.08881020545959473
+              }
+            }
+          },
+          "controls": [
+            {
+              "variant": "V793R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-C,I",
+              "score": -3.118816375732422
+            },
+            {
+              "variant": "K795R",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -1.3111235797405243
+            },
+            {
+              "variant": "D911N",
+              "group": "primary_impaired",
+              "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+              "source_panel": "Figure 3 A-D",
+              "score": -1.389518290758133
+            },
+            {
+              "variant": "D882N",
+              "group": "primary_retained",
+              "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+              "source_panel": "Figure 3 A-D",
+              "score": 0.1909480094909668
+            },
+            {
+              "variant": "K795A",
+              "group": "secondary_impaired",
+              "endpoint": "Reduced abundance and thermal stability; contextual check only",
+              "source_panel": "Figure 3 F-H",
+              "score": -4.251501530408859
+            },
+            {
+              "variant": "D882A",
+              "group": "secondary_retained",
+              "endpoint": "Main-text-reported retained function; contextual check only",
+              "source_panel": "Main text referring to Figure S3C",
+              "score": -1.648412823677063
+            }
+          ],
+          "primary_gate": true,
+          "expanded_gate": false
+        }
+      ],
+      "public_matrix": "track2-saturation-esm3-v27.tsv",
+      "public_matrix_sha256": "d9200618c2bc0ea17f3f5993d70637300ef9769a6bd070ec412038be53689c4c"
+    }
+  ],
+  "workers": [
+    {
+      "model": "biohub/ESMC-300M",
+      "shard": 0,
+      "masked_positions": 1184,
+      "substitution_scores": 22496,
+      "elapsed_seconds": 32.510666710091755,
+      "cuda_forward_seconds": 23.717567797660834,
+      "peak_allocated_gib": 1.7121872901916504,
+      "output_sha256": "c3199901fb76abf842f479baaf2f3771dfaff993931652aa58719faf376a0100",
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false,
+      "wet_lab_performed": false
+    },
+    {
+      "model": "biohub/ESMC-300M",
+      "shard": 1,
+      "masked_positions": 1184,
+      "substitution_scores": 22496,
+      "elapsed_seconds": 32.54530066798907,
+      "cuda_forward_seconds": 23.75521290969848,
+      "peak_allocated_gib": 1.7121872901916504,
+      "output_sha256": "28152b62db44e1c8f8f8ea14c3bb169eb03e8f22fc323a9bbc03cfd5915a0feb",
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false,
+      "wet_lab_performed": false
+    },
+    {
+      "model": "biohub/ESMC-600M",
+      "shard": 2,
+      "masked_positions": 1184,
+      "substitution_scores": 22496,
+      "elapsed_seconds": 47.077917785034515,
+      "cuda_forward_seconds": 39.649946924209594,
+      "peak_allocated_gib": 2.763213634490967,
+      "output_sha256": "2e2289b6d7e1afbe65175d873912145851710964f3aab89fb3920dc0d2a726bb",
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false,
+      "wet_lab_performed": false
+    },
+    {
+      "model": "biohub/ESMC-600M",
+      "shard": 3,
+      "masked_positions": 1184,
+      "substitution_scores": 22496,
+      "elapsed_seconds": 46.94462899805512,
+      "cuda_forward_seconds": 39.64712433815002,
+      "peak_allocated_gib": 2.763213634490967,
+      "output_sha256": "dc85def199b249f865a06886d17c2ee06a6ae8d0d3a7c74456656117d3f3c8a3",
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false,
+      "wet_lab_performed": false
+    },
+    {
+      "model": "biohub/ESMC-6B",
+      "shard": 4,
+      "masked_positions": 1184,
+      "substitution_scores": 22496,
+      "elapsed_seconds": 346.557122688042,
+      "cuda_forward_seconds": 337.34567237854014,
+      "peak_allocated_gib": 25.143249034881592,
+      "output_sha256": "b4fe6f8746aead8019a0ceada85cce6bdde1781e1dbbdf8c444c48bdc51026b3",
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false,
+      "wet_lab_performed": false
+    },
+    {
+      "model": "biohub/ESMC-6B",
+      "shard": 5,
+      "masked_positions": 1184,
+      "substitution_scores": 22496,
+      "elapsed_seconds": 345.3762000469724,
+      "cuda_forward_seconds": 336.1633196334839,
+      "peak_allocated_gib": 25.143249034881592,
+      "output_sha256": "de32ecb75bdf8188fdf9189873e2cd21e109b5b3b7d19624c3bf19d4357f5112",
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false,
+      "wet_lab_performed": false
+    },
+    {
+      "model": "EvolutionaryScale/esm3-sm-open-v1",
+      "shard": 6,
+      "masked_positions": 1184,
+      "substitution_scores": 22496,
+      "elapsed_seconds": 106.86328006896656,
+      "cuda_forward_seconds": 101.9844451637268,
+      "peak_allocated_gib": 45.76733589172363,
+      "output_sha256": "684b638dd06d52c544ba87796efc103c8befafa4a64a333331f01713981b82a8",
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false,
+      "wet_lab_performed": false
+    },
+    {
+      "model": "EvolutionaryScale/esm3-sm-open-v1",
+      "shard": 7,
+      "masked_positions": 1184,
+      "substitution_scores": 22496,
+      "elapsed_seconds": 107.4452023289632,
+      "cuda_forward_seconds": 101.93275741195686,
+      "peak_allocated_gib": 45.76733589172363,
+      "output_sha256": "29c2e043cf4257cc3e69eb2b90439b5b205cdc11f1076278b98894c69a62e224",
+      "clinical_classification": false,
+      "phase_resolved": false,
+      "drug_ranking_changed": false,
+      "wet_lab_performed": false
+    }
+  ],
+  "correlations": [
+    {
+      "kind": "within_model_windows",
+      "model": "biohub/ESMC-300M",
+      "a": "n_terminal_1022",
+      "b": "c_terminal_1022",
+      "n": 18886,
+      "spearman": 0.9838339345424979
+    },
+    {
+      "kind": "within_model_windows",
+      "model": "biohub/ESMC-300M",
+      "a": "n_terminal_1022",
+      "b": "published_domain_721_1044",
+      "n": 5738,
+      "spearman": 0.9591430935004871
+    },
+    {
+      "kind": "within_model_windows",
+      "model": "biohub/ESMC-300M",
+      "a": "c_terminal_1022",
+      "b": "published_domain_721_1044",
+      "n": 6156,
+      "spearman": 0.9606908544886926
+    },
+    {
+      "kind": "within_model_windows",
+      "model": "biohub/ESMC-600M",
+      "a": "n_terminal_1022",
+      "b": "c_terminal_1022",
+      "n": 18886,
+      "spearman": 0.9797749833961548
+    },
+    {
+      "kind": "within_model_windows",
+      "model": "biohub/ESMC-600M",
+      "a": "n_terminal_1022",
+      "b": "published_domain_721_1044",
+      "n": 5738,
+      "spearman": 0.9649477586493796
+    },
+    {
+      "kind": "within_model_windows",
+      "model": "biohub/ESMC-600M",
+      "a": "c_terminal_1022",
+      "b": "published_domain_721_1044",
+      "n": 6156,
+      "spearman": 0.9671395353408013
+    },
+    {
+      "kind": "within_model_windows",
+      "model": "biohub/ESMC-6B",
+      "a": "n_terminal_1022",
+      "b": "c_terminal_1022",
+      "n": 18886,
+      "spearman": 0.9956528305272366
+    },
+    {
+      "kind": "within_model_windows",
+      "model": "biohub/ESMC-6B",
+      "a": "n_terminal_1022",
+      "b": "published_domain_721_1044",
+      "n": 5738,
+      "spearman": 0.9746565453970158
+    },
+    {
+      "kind": "within_model_windows",
+      "model": "biohub/ESMC-6B",
+      "a": "c_terminal_1022",
+      "b": "published_domain_721_1044",
+      "n": 6156,
+      "spearman": 0.9771756776046729
+    },
+    {
+      "kind": "within_model_windows",
+      "model": "EvolutionaryScale/esm3-sm-open-v1",
+      "a": "n_terminal_1022",
+      "b": "c_terminal_1022",
+      "n": 18886,
+      "spearman": 0.993448166175614
+    },
+    {
+      "kind": "within_model_windows",
+      "model": "EvolutionaryScale/esm3-sm-open-v1",
+      "a": "n_terminal_1022",
+      "b": "published_domain_721_1044",
+      "n": 5738,
+      "spearman": 0.9507889379512288
+    },
+    {
+      "kind": "within_model_windows",
+      "model": "EvolutionaryScale/esm3-sm-open-v1",
+      "a": "c_terminal_1022",
+      "b": "published_domain_721_1044",
+      "n": 6156,
+      "spearman": 0.9601269685218287
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-300M",
+      "b": "biohub/ESMC-600M",
+      "window": "n_terminal_1022",
+      "n": 19418,
+      "spearman": 0.8657283395708427
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-300M",
+      "b": "biohub/ESMC-600M",
+      "window": "c_terminal_1022",
+      "n": 19418,
+      "spearman": 0.8624196132688887
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-300M",
+      "b": "biohub/ESMC-600M",
+      "window": "published_domain_721_1044",
+      "n": 6156,
+      "spearman": 0.9091541465216965
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-300M",
+      "b": "biohub/ESMC-6B",
+      "window": "n_terminal_1022",
+      "n": 19418,
+      "spearman": 0.6139148445790363
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-300M",
+      "b": "biohub/ESMC-6B",
+      "window": "c_terminal_1022",
+      "n": 19418,
+      "spearman": 0.6105152035997622
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-300M",
+      "b": "biohub/ESMC-6B",
+      "window": "published_domain_721_1044",
+      "n": 6156,
+      "spearman": 0.6532954705558287
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-300M",
+      "b": "EvolutionaryScale/esm3-sm-open-v1",
+      "window": "n_terminal_1022",
+      "n": 19418,
+      "spearman": 0.7872817658296051
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-300M",
+      "b": "EvolutionaryScale/esm3-sm-open-v1",
+      "window": "c_terminal_1022",
+      "n": 19418,
+      "spearman": 0.8036662053271544
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-300M",
+      "b": "EvolutionaryScale/esm3-sm-open-v1",
+      "window": "published_domain_721_1044",
+      "n": 6156,
+      "spearman": 0.8343046575719058
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-600M",
+      "b": "biohub/ESMC-6B",
+      "window": "n_terminal_1022",
+      "n": 19418,
+      "spearman": 0.6893133797397727
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-600M",
+      "b": "biohub/ESMC-6B",
+      "window": "c_terminal_1022",
+      "n": 19418,
+      "spearman": 0.6725391930566471
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-600M",
+      "b": "biohub/ESMC-6B",
+      "window": "published_domain_721_1044",
+      "n": 6156,
+      "spearman": 0.6770567918350409
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-600M",
+      "b": "EvolutionaryScale/esm3-sm-open-v1",
+      "window": "n_terminal_1022",
+      "n": 19418,
+      "spearman": 0.7102653172076675
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-600M",
+      "b": "EvolutionaryScale/esm3-sm-open-v1",
+      "window": "c_terminal_1022",
+      "n": 19418,
+      "spearman": 0.7369763050501025
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-600M",
+      "b": "EvolutionaryScale/esm3-sm-open-v1",
+      "window": "published_domain_721_1044",
+      "n": 6156,
+      "spearman": 0.8107142736040436
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-6B",
+      "b": "EvolutionaryScale/esm3-sm-open-v1",
+      "window": "n_terminal_1022",
+      "n": 19418,
+      "spearman": 0.4641437617150242
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-6B",
+      "b": "EvolutionaryScale/esm3-sm-open-v1",
+      "window": "c_terminal_1022",
+      "n": 19418,
+      "spearman": 0.4676754841939697
+    },
+    {
+      "kind": "between_models",
+      "a": "biohub/ESMC-6B",
+      "b": "EvolutionaryScale/esm3-sm-open-v1",
+      "window": "published_domain_721_1044",
+      "n": 6156,
+      "spearman": 0.5763969307443797
+    }
+  ],
+  "masked_positions": 9472,
+  "substitution_scores": 179968,
+  "original_84_score_max_abs_error": 3.540515899658203e-05,
+  "unique_reference_positions": 1050,
+  "unique_single_substitution_identities": 19950,
+  "clinical_classification": false,
+  "drug_ranking_changed": false,
+  "biological_validation": false,
+  "neural_inference": true
+}

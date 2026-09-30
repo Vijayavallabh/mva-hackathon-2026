@@ -1,0 +1,121 @@
+{
+  "version": 27,
+  "created_utc": "2026-09-30T22:10:16.028263+00:00",
+  "design_status": "fixed before new inference; prior v13/v21/v25 findings known; exploratory follow-up, not independent biological validation",
+  "question": "Does negative N1002K score distinguish it from the complete in-silico substitution background, and how context-dependent are candidate/control ranks?",
+  "models": [
+    {
+      "repository": "biohub/ESMC-300M",
+      "revision": "e4bac860f0c502cd80f3aeac3d0ce6524c6627cb",
+      "bytes": 1332088898,
+      "gated": false
+    },
+    {
+      "repository": "biohub/ESMC-600M",
+      "revision": "fcc9d36f5fff97d9bb69a36e3252de61cc78c968",
+      "bytes": 2300257715,
+      "gated": false
+    },
+    {
+      "repository": "biohub/ESMC-6B",
+      "revision": "af1602ba7406f521b11bf8f81d52af378cde09e4",
+      "bytes": 25408281233,
+      "gated": false
+    },
+    {
+      "repository": "EvolutionaryScale/esm3-sm-open-v1",
+      "revision": "47f0545b2b6daf26a93439a3cd610f4f7f3d5478",
+      "bytes": 5495561673,
+      "gated": false
+    }
+  ],
+  "reference": {
+    "reference_accession": "O60566",
+    "reference_length": 1050,
+    "reference_fasta_sha256": "4ac6895daf90501d8398d17ded42f46d78b9db777f5084facc875c2926496d1b"
+  },
+  "windows": [
+    {
+      "name": "n_terminal_1022",
+      "start": 1,
+      "end": 1022
+    },
+    {
+      "name": "c_terminal_1022",
+      "start": 29,
+      "end": 1050
+    },
+    {
+      "name": "published_domain_721_1044",
+      "start": 721,
+      "end": 1044
+    }
+  ],
+  "controls": [
+    {
+      "variant": "V793R",
+      "group": "primary_impaired",
+      "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+      "source_panel": "Figure 3 A-C,I"
+    },
+    {
+      "variant": "K795R",
+      "group": "primary_impaired",
+      "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+      "source_panel": "Figure 3 A-D"
+    },
+    {
+      "variant": "D911N",
+      "group": "primary_impaired",
+      "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+      "source_panel": "Figure 3 A-D"
+    },
+    {
+      "variant": "D882N",
+      "group": "primary_retained",
+      "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+      "source_panel": "Figure 3 A-D"
+    },
+    {
+      "variant": "K795A",
+      "group": "secondary_impaired",
+      "endpoint": "Reduced abundance and thermal stability; contextual check only",
+      "source_panel": "Figure 3 F-H"
+    },
+    {
+      "variant": "D882A",
+      "group": "secondary_retained",
+      "endpoint": "Main-text-reported retained function; contextual check only",
+      "source_panel": "Main text referring to Figure S3C"
+    }
+  ],
+  "candidate": "N1002K",
+  "batch_size": 8,
+  "numerical_tolerance": 0.0001,
+  "expected_masked_positions": 9472,
+  "expected_substitution_scores": 179968,
+  "gpus": 8,
+  "primary_outputs": [
+    "all 20 amino acid log probabilities at every masked position",
+    "negative-score fraction among 19 non-reference substitutions per position",
+    "candidate empirical fraction of scores <= candidate, lower is more incompatible",
+    "candidate rank among 19 alternate residues at position 1002",
+    "matched N-to-K substitution distribution",
+    "common domain 721-1044 background for all three windows",
+    "all six published control ranks and original primary ordering; secondary sensitivity retained",
+    "cross-window and cross-model Spearman on shared coordinates; no independence claim"
+  ],
+  "interpretation": [
+    "No background is clinically benign or pathogenic; fractions are not p-values, FDR or clinical probabilities.",
+    "The complete substitution landscape is computational, not a deep mutational scanning experiment.",
+    "Repeated windows, related models, and scores from one masked distribution are dependent.",
+    "No new functional classification, phase, rescue priority or exposure margin follows from a rank.",
+    "Negative score alone is challenged by reporting how common it is; no fitted threshold.",
+    "No new protein or binder design; all substitutions are scored only."
+  ],
+  "remote_root": "/home/prachh/v/mva-track2-falsification-20261001-v27",
+  "uplifting_repository_revision": "f4f62fa6592ae4938d49b1757bea0cfeff9f468e",
+  "uplifting_execution": "not selected: different SDK/checkpoint pins and optimized BF16 call path; keep existing qualified FP32 model comparison",
+  "source_reference": "notes/track2-latest-model-plan.json",
+  "source_reference_sha256": "241ce0d5a9a3f6405788cb4b4bc9fa44d511a28017cff44605eb55c673d75ed7"
+}

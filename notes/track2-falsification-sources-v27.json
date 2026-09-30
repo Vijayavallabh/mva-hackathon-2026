@@ -1,0 +1,59 @@
+{
+  "source_review_date": "2026-10-01",
+  "scope": "Targeted adverse and favorable evidence search; selected sections, not systematic review; no hosted biological model inference.",
+  "searches": [
+    "BUB1B CRISPR L1000 HT29 p53 copy number DNA damage cutting effects study",
+    "BUBR1 N1002K C terminal kinase function PP2A mutation drug rescue",
+    "BUB1B deep mutational scanning functional variants saturation",
+    "Connectivity Map proliferation confounding",
+    "transcriptional cell viability LINCS signature confound",
+    "protein language models unequal sequence sampling published"
+  ],
+  "sources": [
+    {
+      "id": "V27-S1",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6821211/",
+      "reading_depth": "Abstract, introduction and preprocessing methods; PMC retrieval succeeded, later find encountered browser challenge. Publisher full-text tool returned redirect failure.",
+      "finding": "Szalai et al. connected LINCS signatures to viability and found generic death/proliferation signals can confound mechanism matching. Their prediction methods also show useful signal is possible.",
+      "application": "Motivates feature/projection sensitivity only. Current PCA adjustment is not their validated viability model, has no measured viability labels and may remove real biology."
+    },
+    {
+      "id": "V27-S2",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7343612/",
+      "reading_depth": "Abstract, results on genetic/chemical assay concordance, discussion and L1000 methods. No independent supplement review.",
+      "finding": "Cas9 introduction can change p53 signaling and selection, and affect genetic and chemical screens. MCF7 nutlin response was one experiment.",
+      "application": "Require editing/vector controls and evaluate selection. This does not establish that the current MCF7 everolimus or HT29 BUB1B connection is artifactual."
+    },
+    {
+      "id": "V27-S3",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.03.07.584001v1",
+      "reading_depth": "Primary preprint abstract.",
+      "finding": "PLM likelihood can encode sequence-sampling/species biases.",
+      "application": "Background-relative description, not biological calibration. No evidence that this specific within-human mutation score is caused by species bias."
+    },
+    {
+      "id": "V27-S4",
+      "url": "https://github.com/Biohub/esm",
+      "reading_depth": "Official local inference, model/SDK and runtime documentation.",
+      "finding": "Local ESMC and ESM3 paths are available; use frozen already-verified source/checkpoints for numerical continuity. Skill text mentioning 6B hosted-only and old SDK is outdated."
+    },
+    {
+      "id": "V27-S5",
+      "url": "https://github.com/anthropics/uplifting-biomolecular-modeling/tree/f4f62fa6592ae4938d49b1757bea0cfeff9f468e",
+      "reading_depth": "Pinned root README, ESMC README/STOCK/CHANGES and PINS; five local source copies/hashes archived.",
+      "finding": "Reference optimization release, no maintenance promise, per-kit upstream pins and exact mode. ESMC pins 3.4.0 and older model revisions; our campaign preserves 3.4.1.post1 and its prior checkpoints.",
+      "application": "Reviewed but not installed/executed. No speedup/exact-mode equivalence claimed. Plan wording about BF16 refers to the documented example; we did not establish that the kit cannot serve FP32. SDK/checkpoint continuity is the decisive reason."
+    },
+    {
+      "id": "V27-S6",
+      "url": "https://www.nature.com/articles/s41592-026-03028-7",
+      "reading_depth": "Indexed primary abstract only. Publisher failed; PMC returned browser challenge.",
+      "application": "Not used as evidence for a measured outcome or full-paper claim."
+    }
+  ],
+  "scope_limits": [
+    "No new evidence closes phase, endogenous allele function, drug-plus-deficit response, safety or exposure margins.",
+    "Current v21 biological stop rules and v23/v25 guide/QC/source-well limitations retained.",
+    "No licensed AF3/Atlas numerical outputs newly generated or redistributed."
+  ]
+}

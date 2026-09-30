@@ -21,6 +21,8 @@ CRISPR_STATE = {
     'presentation_integration':'integrated_in_v26_preserves_v25',
 }
 CRISPR_AUDIT_SHA256 = '264a46ecc491e0894d57f204c9d9739cb20494ca866bb6e73e3fdce5bd8e3ebb'
+FALSIFICATION_STATE = {'version': 27, 'status': 'complete', 'report': 'notes/track2-falsification-v27.md', 'saturation_plan': 'notes/track2-saturation-plan-v27.json', 'specificity_plan': 'notes/track2-specificity-plan-v27.json', 'saturation_results': 'notes/track2-saturation-results-v27.json', 'specificity_results': 'notes/track2-specificity-results-v27.json', 'compute': 'notes/track2-falsification-compute-v27.json', 'register': 'notes/track2-falsification-register-v27.json', 'audit': 'notes/track2-falsification-audit-v27.json', 'check': 'scripts/check_track2_falsification_v27.py', 'reproduction': 'notes/track2-falsification-reproduction-v27.md', 'figure': 'notes/track2-falsification-v27.svg', 'archive': 'results/feat009/falsification-v27/falsification-v27-audit.tar.gz', 'gpus': 8, 'masked_positions': 9472, 'substitution_scores': 179968, 'expression_comparisons': 918999010, 'drug_ranking_changed': False, 'presentation_integration': 'separate_addendum_read_with_preserved_v26'}
+FALSIFICATION_AUDIT_SHA256 = '690411890163add844aaa61aaf1a832b1447143341d67bdb34b45ec37128bd27'
 
 ROOT = Path(__file__).resolve().parents[1]
 STATUS = {
@@ -33,8 +35,8 @@ STATUS = {
 CURRENT_REVIEW = {
     'script': 'scripts/check_track2_harness.py',
     'isolation_audit': 'scripts/audit_track2_harness.py',
-    'guide': 'notes/track2-reviewer-guide-v26.md',
-    'readiness': 'notes/track2-owner-readiness-v26.md',
+    'guide': 'notes/track2-reviewer-guide-v27.md',
+    'readiness': 'notes/track2-owner-readiness-v27.md',
 }
 RESEARCH_PATHS = {
     'plan': 'notes/track2-transcriptome-plan-v19.json',
@@ -116,10 +118,13 @@ def validate(state, features, documents):
             'Stale or unsafe render-directory path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['document_directory']),
             'Stale or unsafe document-directory path')
-    require(state.get('harness_version') == 26 and
-            state['harness_review'] == 'notes/track2-harness-review-v26.md', 'Stale harness review')
+    require(state.get('harness_version') == 27 and
+            state['harness_review'] == 'notes/track2-harness-review-v27.md', 'Stale harness review')
     require(state.get('current_review') == CURRENT_REVIEW, 'Missing or stale combined review route')
     require(state.get('rnai_addendum') == RNAI_STATE, 'Missing or inconsistent RNAi addendum')
+    require(state.get('falsification_addendum') == FALSIFICATION_STATE and
+            all(type(state['falsification_addendum'][k]) is type(v) for k,v in FALSIFICATION_STATE.items()),
+            'Missing or inconsistent v27 falsification addendum')
     require(state.get('crispr_addendum') == CRISPR_STATE and
             all(type(state['crispr_addendum'][k]) is type(v) for k,v in CRISPR_STATE.items()),
             'Missing or inconsistent CRISPR addendum')
@@ -254,12 +259,16 @@ def check(root=ROOT):
     require(crispr['passed'],'CRISPR review failed')
     for key in ['gpus','comparisons','bub1b_profiles','bub1b_guides','matched_compound_profiles','drug_ranking_changed']:
         require(state['crispr_addendum'][key]==crispr[key],'Current CRISPR summary drift: '+key)
-    return dict(passed=True, active_feature='feat-009', harness_version=26,
+    v27_bytes=public_path(root,FALSIFICATION_STATE['audit']).read_bytes()
+    require(hashlib.sha256(v27_bytes).hexdigest()==FALSIFICATION_AUDIT_SHA256,'Frozen v27 audit changed')
+    v27=importlib.import_module('check_track2_falsification_v27').check(root)
+    require(v27['passed'],'V27 review failed')
+    return dict(passed=True, active_feature='feat-009', harness_version=27,
                 presentation_version=state['presentation_version'],
                 drug_science_version=21, slides=presentation['slides'],
                 narration_words=presentation['narration_words'], falsification_amendment=presentation['falsification_amendment'], upload_ready=False,
                 research_addendum=dict(version=19, status='complete', **summary),
-                rnai_addendum=rnai, crispr_addendum=crispr, biological_validation=False,
+                rnai_addendum=rnai, crispr_addendum=crispr, falsification_addendum=v27, biological_validation=False,
                 scope='Combined public presentation/research consistency; not biological validation or submission preflight')
 
 

@@ -55,7 +55,7 @@
     "licensing_scope_resolved": false
   },
   "history": "progress.md",
-  "harness_review": "notes/track2-harness-review-v26.md",
+  "harness_review": "notes/track2-harness-review-v27.md",
   "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v26.zip",
   "document_directory": "results/feat009/v26-documents-final-20261001",
   "research_addendum": {
@@ -84,12 +84,12 @@
     "drug_ranking_changed": false,
     "archive": "results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz"
   },
-  "harness_version": 26,
+  "harness_version": 27,
   "current_review": {
     "script": "scripts/check_track2_harness.py",
     "isolation_audit": "scripts/audit_track2_harness.py",
-    "guide": "notes/track2-reviewer-guide-v26.md",
-    "readiness": "notes/track2-owner-readiness-v26.md"
+    "guide": "notes/track2-reviewer-guide-v27.md",
+    "readiness": "notes/track2-owner-readiness-v27.md"
   },
   "rnai_addendum": {
     "version": 23,
@@ -132,5 +132,27 @@
     "matched_compound_profiles": 285488,
     "drug_ranking_changed": false,
     "presentation_integration": "integrated_in_v26_preserves_v25"
+  },
+  "falsification_addendum": {
+    "version": 27,
+    "status": "complete",
+    "report": "notes/track2-falsification-v27.md",
+    "saturation_plan": "notes/track2-saturation-plan-v27.json",
+    "specificity_plan": "notes/track2-specificity-plan-v27.json",
+    "saturation_results": "notes/track2-saturation-results-v27.json",
+    "specificity_results": "notes/track2-specificity-results-v27.json",
+    "compute": "notes/track2-falsification-compute-v27.json",
+    "register": "notes/track2-falsification-register-v27.json",
+    "audit": "notes/track2-falsification-audit-v27.json",
+    "check": "scripts/check_track2_falsification_v27.py",
+    "reproduction": "notes/track2-falsification-reproduction-v27.md",
+    "figure": "notes/track2-falsification-v27.svg",
+    "archive": "results/feat009/falsification-v27/falsification-v27-audit.tar.gz",
+    "gpus": 8,
+    "masked_positions": 9472,
+    "substitution_scores": 179968,
+    "expression_comparisons": 918999010,
+    "drug_ranking_changed": false,
+    "presentation_integration": "separate_addendum_read_with_preserved_v26"
   }
 }

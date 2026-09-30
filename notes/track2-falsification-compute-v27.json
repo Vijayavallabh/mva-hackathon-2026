@@ -1,0 +1,163 @@
+{
+  "version": 27,
+  "archive": {
+    "passed": true,
+    "files": 178,
+    "archive_sha256": "e6ed7cf8d7f2cbde6a65d079946c4c6e1147309ce1a63a833d07a57074d5b435",
+    "bytes": 4277889
+  },
+  "gpu_uuids": [
+    "4b0cb198-278c-29fe-7cf7-0742dbe248fa",
+    "9932f351-6a76-ac09-a560-ec7b67efb5de",
+    "8b97ecf4-3858-58ab-f2f2-a456106ddd14",
+    "5823a29a-e328-c67e-48be-49105f456ca7",
+    "7a66e0d4-0593-7e9e-1979-623d62ef3aa0",
+    "0f3c548e-64c5-452d-e1a6-d8d9e4e62c1b",
+    "123f14db-3f83-de52-44fb-cbf2d565d773",
+    "2089b3fa-c729-88ce-c154-eb93d2096d91"
+  ],
+  "protein_cuda_forward_seconds": 1004.1960465574266,
+  "protein_wall_seconds_range": [
+    32.510666710091755,
+    346.557122688042
+  ],
+  "max_batch_single_abs_error": 3.719329833984375e-05,
+  "max_repeat_abs_error": 0.0,
+  "telemetry": [
+    {
+      "log": "gpu-monitor.csv",
+      "gpus": [
+        {
+          "gpu": 0,
+          "samples": 384,
+          "mean_sampled_utilization_pct": 6.03125,
+          "peak_sampled_utilization_pct": 100.0,
+          "samples_at_least_90pct": 23
+        },
+        {
+          "gpu": 1,
+          "samples": 384,
+          "mean_sampled_utilization_pct": 6.119791666666667,
+          "peak_sampled_utilization_pct": 100.0,
+          "samples_at_least_90pct": 23
+        },
+        {
+          "gpu": 2,
+          "samples": 384,
+          "mean_sampled_utilization_pct": 10.122395833333334,
+          "peak_sampled_utilization_pct": 100.0,
+          "samples_at_least_90pct": 39
+        },
+        {
+          "gpu": 3,
+          "samples": 384,
+          "mean_sampled_utilization_pct": 10.114583333333334,
+          "peak_sampled_utilization_pct": 100.0,
+          "samples_at_least_90pct": 39
+        },
+        {
+          "gpu": 4,
+          "samples": 384,
+          "mean_sampled_utilization_pct": 87.859375,
+          "peak_sampled_utilization_pct": 100.0,
+          "samples_at_least_90pct": 337
+        },
+        {
+          "gpu": 5,
+          "samples": 384,
+          "mean_sampled_utilization_pct": 87.60677083333333,
+          "peak_sampled_utilization_pct": 100.0,
+          "samples_at_least_90pct": 335
+        },
+        {
+          "gpu": 6,
+          "samples": 384,
+          "mean_sampled_utilization_pct": 26.690104166666668,
+          "peak_sampled_utilization_pct": 100.0,
+          "samples_at_least_90pct": 102
+        },
+        {
+          "gpu": 7,
+          "samples": 384,
+          "mean_sampled_utilization_pct": 26.541666666666668,
+          "peak_sampled_utilization_pct": 100.0,
+          "samples_at_least_90pct": 102
+        }
+      ]
+    },
+    {
+      "log": "specificity-gpu-monitor.csv",
+      "gpus": [
+        {
+          "gpu": 0,
+          "samples": 32,
+          "mean_sampled_utilization_pct": 0.25,
+          "peak_sampled_utilization_pct": 5.0,
+          "samples_at_least_90pct": 0
+        },
+        {
+          "gpu": 1,
+          "samples": 32,
+          "mean_sampled_utilization_pct": 0.34375,
+          "peak_sampled_utilization_pct": 5.0,
+          "samples_at_least_90pct": 0
+        },
+        {
+          "gpu": 2,
+          "samples": 32,
+          "mean_sampled_utilization_pct": 0.03125,
+          "peak_sampled_utilization_pct": 1.0,
+          "samples_at_least_90pct": 0
+        },
+        {
+          "gpu": 3,
+          "samples": 32,
+          "mean_sampled_utilization_pct": 0.03125,
+          "peak_sampled_utilization_pct": 1.0,
+          "samples_at_least_90pct": 0
+        },
+        {
+          "gpu": 4,
+          "samples": 32,
+          "mean_sampled_utilization_pct": 0.0,
+          "peak_sampled_utilization_pct": 0.0,
+          "samples_at_least_90pct": 0
+        },
+        {
+          "gpu": 5,
+          "samples": 32,
+          "mean_sampled_utilization_pct": 0.0,
+          "peak_sampled_utilization_pct": 0.0,
+          "samples_at_least_90pct": 0
+        },
+        {
+          "gpu": 6,
+          "samples": 32,
+          "mean_sampled_utilization_pct": 0.125,
+          "peak_sampled_utilization_pct": 2.0,
+          "samples_at_least_90pct": 0
+        },
+        {
+          "gpu": 7,
+          "samples": 32,
+          "mean_sampled_utilization_pct": 0.125,
+          "peak_sampled_utilization_pct": 4.0,
+          "samples_at_least_90pct": 0
+        }
+      ]
+    }
+  ],
+  "all_owned_jobs_complete": true,
+  "remote_root": "/home/prachh/v/mva-track2-falsification-20261001-v27",
+  "new_neural_inference": true,
+  "uplifting_toolkit_executed": false,
+  "new_provider": false,
+  "subject_inputs_transferred": false,
+  "clinical_exposure_margin": null,
+  "rescue_priority": null,
+  "wet_lab_performed": false,
+  "internal_validation_only": true,
+  "technical_corrections": [
+    "First local telemetry parser expected bare utilization numbers; actual CSV includes percent suffix. Corrected parser; no inference rerun."
+  ]
+}

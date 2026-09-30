@@ -1,8 +1,8 @@
-# Session handoff: integrated Track 2 v26 materials
+# Session handoff: Track 2 v27 research with preserved v26 materials
 
-1 October 2026 IST, session 66. Only feat-009 is active. Use `notes/track2-current.json`,
-`scripts/check_track2_harness.py` and `notes/track2-reviewer-guide-v26.md`.
-Presentation and harness are v26; the drug ledger and base validation remain v21 with
+1 October 2026 IST, session 67. Only feat-009 is active. Use `notes/track2-current.json`,
+`scripts/check_track2_harness.py` and `notes/track2-reviewer-guide-v27.md`.
+Presentation is v26 and the combined harness is v27; the drug ledger and base validation remain v21 with
 frozen v23/v25 qualification addenda. All older bound files and releases are preserved.
 
 ## Current materials
@@ -20,6 +20,20 @@ frozen v23/v25 qualification addenda. All older bound files and releases are pre
   `notes/track2-harness-review-v26.md` record checks and their limits.
 
 ## Scientific position
+
+Read `notes/track2-falsification-v27.md` alongside the preserved v26 presentation.
+The completed four-model scan covers 9,472 masked distributions and 179,968 substitution
+scores: negative scores are common, but matched N-to-K backgrounds retain qualified
+favorable candidate evidence. Expanded controls still fail separation in 8/12 comparisons.
+New 918,999,010 expression comparisons retain HT29 BUB1B PRIME ranks 2–5 under stronger
+feature/projection sensitivities. MCF7 BUB1B drug reversal declines from rank 7 to 1,184
+while MTOR mimicry stays first; query QC remains failed. Projections may remove real
+biology and are not causal adjustment. All 42 claim records retain contrary evidence.
+Five new R38-R42 challenges, complete matrices, archive and public checker are available.
+All eight H100s completed both waves; no owned job is pending. The reviewed Anthropic
+kit was not executed. Its different SDK/checkpoint pins were not substituted into the
+established full-precision comparison. New folder `~/v/mva-track2-falsification-20261001-v27`
+is included in the November 24 deletion scope.
 
 No rescue-priority drug is supported. Everolimus remains an optional model-qualified
 mechanistic probe; HCQ stays reserve. Phase, endogenous allele effects, relevant tissue
@@ -50,8 +64,8 @@ the distinct five-reagent projected HT29 partial positive. These campaigns reuse
 experiments and do not establish biological independence. The three claim registers
 now contain 37 records, not studies. All eleven drug dispositions persist.
 
-The full source analyses and safe archive verifiers remain in v19/v23/v25. All eight
-H100 workers finished before this editing session; no GPU job is pending or rerun.
+The full source analyses and safe archive verifiers remain in v19/v23/v25. Those earlier
+H100 campaigns were not rerun; the new v27 campaign addresses different questions.
 V25 product time totals 1.231 seconds with an 8% peak in one-second monitoring.
 Do not call this sustained saturation or new neural inference. Public-only remote
 folders under `~/v` remain in the November 24 deletion scope.
@@ -61,13 +75,14 @@ folders under `~/v` remain in the November 24 deletion scope.
 ```bash
 ./init.sh
 uv run --no-project python scripts/check_track2_harness.py
+uv run --no-project python scripts/check_track2_falsification_v27.py
 uv run --no-project python scripts/track2_public_review_v26.py
 uv run python scripts/track2_release_v26.py verify results/feat009/jvv7_track2_research_v26
 uv run python scripts/track2_bundle_v26.py verify
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
-Actual checks and fresh init output are in progress.md session 66. Public checks need
+Actual checks and fresh init output are in progress.md session 67. Public checks need
 no subject files, credentials, network, GPUs or old snapshots; strict release verification
 also checks local historical archives. Visual review covers all slides and report pages;
 workbook checks preserve official prompts, Track 1 values/styles and exact answers.
@@ -94,6 +109,9 @@ These are internal checks, not independent specialist/clinical review.
   a separate administrative gap. Never request another upload to resolve it.
 
 ## Next actions
+
+Integrate v27 findings in a new presentation revision before using the frozen v26
+materials as a complete account of current research. Do not edit old bound files.
 
 Rehearse the v26 script, record with the complete acknowledgement and measure runtime.
 Resolve provider/distribution items and check final portal materials before delivery.

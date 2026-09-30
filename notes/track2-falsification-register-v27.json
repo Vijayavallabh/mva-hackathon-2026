@@ -1,0 +1,63 @@
+{
+  "version": 27,
+  "claims": [
+    {
+      "id": "R38",
+      "claim": "A consistently negative N1002K protein score provides strong variant-specific evidence.",
+      "support": "All four current models score the substitution negatively and reproduce the original control scores. ESMC 600M/6B rank it relatively low among matched N-to-K substitutions.",
+      "challenge": "71.6\u201389.8% of background substitutions score negatively. Candidate rank changes by model and comparison set; 6B places K second-most compatible among alternatives at this constrained position.",
+      "falsifier": "Candidate effect is not distinguishable from appropriate measured retained-function controls, or endogenous assays retain function.",
+      "stop": "Do not promote pathogenicity or folding rescue from sign, raw magnitude, rank or model voting.",
+      "reopen": "Independent endogenous abundance/localization/segregation evidence with measured controls.",
+      "next_action": "Test candidate and retained/impaired controls in the same relevant assay; preserve matched-background and secondary-control sensitivity."
+    },
+    {
+      "id": "R39",
+      "claim": "Passing the small primary model challenge generalizes to broader function discrimination.",
+      "support": "12/12 original primary comparisons pass again.",
+      "challenge": "Adding the secondary controls still breaks separation in 8/12 comparisons; model/window outputs are dependent and no clinically labeled background exists.",
+      "falsifier": "New blinded relevant control panel fails prespecified discrimination or calibration.",
+      "stop": "No sensitivity/specificity, clinical probability or therapeutic-effect estimate from these scores.",
+      "reopen": "Independent assay-labeled benchmark and a frozen decision rule with a held-out evaluation.",
+      "next_action": "Retain expanded controls and record all model/window results; do not select only models that support the candidate."
+    },
+    {
+      "id": "R40",
+      "claim": "HT29 BUB1B cross-modal retrieval is explained entirely by broad shared response.",
+      "support": "Correlation attenuates from .3712 to .1510 after mean plus ten-component removal; TTK is a strong original neighbor.",
+      "challenge": "BUB1B remains rank 2\u20135 in both directions across all five PRIME views, including removal of 13 selected cell-cycle/stress features.",
+      "falsifier": "Independent perturbation/restoration retains target-specific segregation effects after matching growth, viability and editing controls.",
+      "stop": "Do not discard favorable HT29 counterevidence, but do not qualify a non-cancer MVA model from one guide and one passing batch.",
+      "reopen": "Independent guide or non-cutting perturbation, restoration and relevant non-cancer functional endpoints.",
+      "next_action": "Use HT29 for attribution/assay development, followed by relevant model qualification."
+    },
+    {
+      "id": "R41",
+      "claim": "MCF7 everolimus reversal is a robust BUB1B-rescue rationale.",
+      "support": "Original rank 7 and feature-removal rank 8; MTOR mimicry stays rank 1 under all five views.",
+      "challenge": "BUB1B reversal falls to rank 1184 under mean plus ten-component removal; all MCF7 BUB1B queries fail QC. A375 small correlation changes sign.",
+      "falsifier": "Relevant qualified joint drug-plus-deficit experiments show a reproducible benefit at a justified exposure without injury; specificity survives independent perturbation/restoration.",
+      "stop": "Remove robust-rescue interpretation of rank 7; no cross-cell stitching, dose extrapolation or clinical promotion.",
+      "reopen": "Qualified same-model joint treatment, direct first-division/daughter outcomes and exposure/safety margins.",
+      "next_action": "Retain everolimus only as optional qualified mechanistic probe and MTOR as a pathway control."
+    },
+    {
+      "id": "R42",
+      "claim": "More GPU work or optimized runtime establishes stronger biological evidence.",
+      "support": "All eight H100s executed new neural inference; complete outputs and numerical continuity checks are available.",
+      "challenge": "Scores share models, windows and experimental sources; compute count is not evidence independence. Anthropic toolkit was reviewed but not executed.",
+      "falsifier": "A new calculation fails numerical/source checks or does not answer a discriminating biological question.",
+      "stop": "No saturation, toolkit speedup, new experiments or independent-review claims unsupported by records.",
+      "reopen": "A new bounded question with fixed inputs, relevant controls and a decision it could change.",
+      "next_action": "Use the completed evidence to design stronger qualification tests; retain full output/telemetry and avoid reruns solely to raise compute counts."
+    }
+  ],
+  "drug_ranking_changed": false,
+  "rescue_priority": null,
+  "everolimus": "mechanistic_probe_only",
+  "hcq": "reserve",
+  "phase": "unconfirmed",
+  "clinical_exposure_margin": null,
+  "wet_lab_performed": false,
+  "independent_guide_qualified_contexts": 0
+}

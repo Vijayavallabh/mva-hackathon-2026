@@ -6436,3 +6436,226 @@ annotation resources ready
 }
 === OK ===
 ```
+
+
+## Session 67 — 2026-10-01 IST: eight-H100 falsification follow-up (v27)
+
+Owner request: use the remote GPUs extensively for discriminating Track 2 work, and
+assess Anthropic's biomolecular optimization repository. Only feat-009 remained active.
+Applied resource checking, scientific critical thinking, ESM and Matplotlib guidance.
+No sub-agent, new hosted model provider, subject-file transfer or external communication
+was used. All work ran in the owner's authorized `~/v` subtree.
+
+Completed two waves on all eight H100s under
+`/home/prachh/v/mva-track2-falsification-20261001-v27`:
+
+- Four frozen protein models (ESMC 300M/600M/6B, ESM3-open 1.4B), three prior windows,
+  9,472 masked distributions and 179,968 non-reference substitution scores. Full matrices
+  retained; 19,950 distinct substitution identities recur across windows/models.
+- 1,004.196 aggregate CUDA forward seconds, excluding checkpoint verification and setup.
+  Workers took 32.5–346.6 seconds after verification. Every device reached 100% in
+  one-second sampling, but workers finished at different times: no eight-GPU sustained
+  saturation claim. Protein batch/single error <=3.71933e-5, repeat difference zero;
+  all 84 earlier scores reproduce within 3.54052e-5.
+- Ten cell/representation tasks and five specificity views, 918,999,010 expression
+  comparisons. Matrix-product time totals 0.57184 seconds, excluding GPU covariance
+  eigendecomposition, CPU work and I/O. CPU subset maximum error 3.77908e-7. All 20
+  original BUB1B/MTOR cross-modal correlations/ranks reproduce.
+
+Scientific changes: negative protein scores are common (71.6–89.8%); matched N-to-K
+backgrounds preserve qualified favorable evidence, without clinical calibration.
+Original primary control gates pass 12/12; expanded gates still fail 8/12. HT29 PRIME
+BUB1B retrieval remains ranks 2–5 after feature/projection challenges, strengthening
+assay development only. MCF7 BUB1B everolimus reversal declines from rank 7 to 1,184
+under the strongest adjustment while MTOR stays first. A375 sign flips in two views.
+The projections are post-hoc sensitivities, may remove real biology, and do not use
+symmetric target holdout for every competitor. No causal-confounding estimate follows.
+One guide, failed QC, absent joint rescue, unconfirmed phase and null clinical margins
+remain. No drug-priority, wet-lab or delivery promotion. Five new R38-R42 challenges
+bring the combined record to 42 claims, not studies.
+
+Anthropic repo `f4f62fa6592ae4938d49b1757bea0cfeff9f468e` was reviewed through five
+pinned upstream documents. The ESMC kit has different SDK/checkpoint pins. Existing
+qualified upstream FP32 inference was retained; no optimization kit was installed or
+executed, and no speedup/equivalence claim is made. The BF16 plan wording concerns
+its example, not a verified limitation of the kit. Optional-kernel fallback warnings
+remain in logs. No new dependency installation was needed.
+
+Artifacts: notes/track2-falsification-v27.md, fixed saturation/specificity plans, complete
+results/four TSV matrices, sources, compute, R38-R42 register, reproduction note and
+figure. Current combined harness/reviewer/readiness routes are v27; presentation v26
+remains frozen and must be read with the addendum until a new presentation revision.
+Mutable AGENTS, README, state, feature evidence and handoff are synchronized. The
+new remote folder remains in the 24 November deletion scope.
+
+Archive: results/feat009/falsification-v27/falsification-v27-audit.tar.gz, 178 files,
+4,277,889 bytes, SHA-256
+`e6ed7cf8d7f2cbde6a65d079946c4c6e1147309ce1a63a833d07a57074d5b435`.
+Exact-member safe extraction passes. Two local analyses reproduce all seven published
+matrix/summary/reference files byte-for-byte. Reused expression matrices/metadata,
+checkpoint manifests, pinned tracked ESM source and both environment locks are recorded.
+All owned jobs completed; final GPU query showed zero memory use/utilization on all eight.
+
+Checks so far:
+
+- 860 Track 2 tests PASS in 12.903 seconds; log: logs/track2-v27-tests-20261001.log.
+- V27 public checker and combined harness PASS. Public isolation covers 640 files,
+  with network/process/protected-path/credentials/external-path/write probes denied.
+  These are internal software/numerical checks, not independent biological review.
+- All 529 v26-bound inputs unchanged; results/feat009/v27-preservation-20261001.json.
+- Live publication guard PASS: PUBLIC, 13 retired objects unavailable, successful live
+  control, zero unknown errors; results/feat009/v27-publication-remote-20261001.json.
+- Figure reviewed visually. First preview clipped left labels; final export has wider
+  margin and all labels visible. Final SVG/PNG/PDF: results/feat009/v27-figure-final-20261001/.
+- First local telemetry parser expected bare numbers; actual CSV includes percent units.
+  Parser corrected; no inference rerun or scientific output change.
+
+Startup init passed in logs/track2-v27-startup-20261001.log. Fresh final init output
+and remaining preservation/publication checks are appended below after completion.
+
+Final checks: isolated current harness PASS (640 public files, six denied probes);
+preserved v26 strict release PASS (128 files /529 bound inputs and older history).
+Staged publication audit PASS (640 blobs, zero findings). Final preservation still
+passes for all 529 historical inputs. New v27 audit SHA-256:
+`690411890163add844aaa61aaf1a832b1447143341d67bdb34b45ec37128bd27`.
+
+Fresh final `./init.sh` completed successfully; exact output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "harness_version": 27,
+  "presentation_version": 26,
+  "drug_science_version": 21,
+  "slides": 9,
+  "narration_words": 343,
+  "falsification_amendment": {
+    "passed": true,
+    "claims": 27,
+    "additional_source_records": 12,
+    "current_decision": {
+      "clinical_recommendation": false,
+      "scope": "qualified_non_cancer_model",
+      "evidence_kind": "not_measured",
+      "decision": "HOLD",
+      "reason": "Prerequisites unresolved or failed; no transfer from another branch"
+    },
+    "drug_dispositions_changed": false,
+    "biological_validation": false
+  },
+  "upload_ready": false,
+  "research_addendum": {
+    "version": 19,
+    "status": "complete",
+    "gpus": 8,
+    "completed_gpu_waves": 3,
+    "compound_profiles": 312438,
+    "query_compound_comparisons": 12185082,
+    "resampled_reagent_sets": 560000,
+    "primary_contexts": 14,
+    "primary_query_gates_passed": 0,
+    "post_hoc_comparisons": 42,
+    "post_hoc_full_filters_passed": 0,
+    "primary_everolimus_comparisons": 19,
+    "primary_everolimus_profiles": 14,
+    "primary_everolimus_positive_correlations": 13,
+    "phase2_unresolved_labelled_profiles": 174,
+    "phase2_reference_matching_profiles": 6,
+    "phase2_reference_matching_qc_passes": 0,
+    "ht29_post_hoc_reagents": 5,
+    "ht29_post_hoc_adjusted_tail": 0.041995800419958006,
+    "ht29_full_filter_passed": false,
+    "drug_ranking_changed": false
+  },
+  "rnai_addendum": {
+    "passed": true,
+    "version": 23,
+    "gpus": 8,
+    "unordered_pair_comparisons": 1536619950,
+    "null_sets": 5843968,
+    "orthogonal_comparisons": 2364754,
+    "primary_threshold_crossings": 5,
+    "finite_reference_threshold_crossings": 0,
+    "unknown_comparisons": 2,
+    "seed_comparison": {
+      "raw": {
+        "available": 54,
+        "seed_greater": 45
+      },
+      "prime": {
+        "available": 54,
+        "seed_greater": 45
+      }
+    },
+    "orthogonal_reference": {
+      "raw": {
+        "comparisons": 297,
+        "top1": 14,
+        "top5percent": 84
+      },
+      "prime": {
+        "comparisons": 297,
+        "top1": 21,
+        "top5percent": 93
+      }
+    },
+    "independent_bub1b_experiment": false,
+    "drug_ranking_changed": false,
+    "biological_validation": false
+  },
+  "crispr_addendum": {
+    "passed": true,
+    "version": 25,
+    "gpus": 8,
+    "comparisons": 2474445074,
+    "bub1b_profiles": 31,
+    "bub1b_guides": 1,
+    "matched_compound_profiles": 285488,
+    "ht29_qualification_lead": true,
+    "independent_guide_qualified_contexts": 0,
+    "drug_ranking_changed": false,
+    "biological_validation": false,
+    "new_neural_inference": false,
+    "claim_records": 5
+  },
+  "falsification_addendum": {
+    "passed": true,
+    "version": 27,
+    "gpus": 8,
+    "masked_positions": 9472,
+    "substitution_scores": 179968,
+    "expression_comparisons": 918999010,
+    "claim_records": 5,
+    "new_neural_inference": true,
+    "drug_ranking_changed": false,
+    "biological_validation": false,
+    "independent_guide_qualified_contexts": 0
+  },
+  "biological_validation": false,
+  "scope": "Combined public presentation/research consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```

@@ -93,12 +93,20 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
+**Session 67: completed Track 2 v27 falsification research.** All eight H100s ran
+four protein models and expression-specificity tests. The
+[new addendum](notes/track2-falsification-v27.md) qualifies protein score interpretation,
+strengthens HT29 assay-development evidence and weakens reliance on MCF7 BUB1B drug
+reversal. No rescue drug or clinical margin is established. The current
+[combined reviewer guide](notes/track2-reviewer-guide-v27.md) covers all 42 claim records
+and full outputs; the v26 presentation remains preserved and should be read with v27.
+
 **Session 66: synchronized Track 2 v26 materials.** The
 [report](notes/track2-report-v26.md), [nine slides](notes/track2-slides-v26.html),
 [343-word narration](notes/track2-pitch-v26.md) and methods workbook integrate the
 v25 CRISPR findings. HT29 is an assay-development lead with one-guide limits;
 MCF7 drug/MTOR connections remain separate from its failed BUB1B query. The
-[reviewer guide](notes/track2-reviewer-guide-v26.md) and current harness check all
+[reviewer guide](notes/track2-reviewer-guide-v27.md) and current harness check all
 three expression campaigns and 37 claim records. Earlier releases remain intact.
 
 **Session 65: completed eight-GPU CRISPR falsification.** The
@@ -189,8 +197,8 @@ BUB1B model QC. The report preserves the older seed/finite-reference results and
 compound checks, then explains the newer source-well aggregation. All eleven methods
 answers and the 269-word abstract match the workbook export.
 
-Start with the [combined reviewer guide](notes/track2-reviewer-guide-v26.md). One
-public CPU command checks integrated v26 materials and frozen v19/v21/v23/v25 findings:
+Start with the [combined reviewer guide](notes/track2-reviewer-guide-v27.md). One
+public CPU command checks v27 research, integrated v26 materials and frozen v19/v21/v23/v25 findings:
 
 ```bash
 uv run --no-project python scripts/check_track2_harness.py
@@ -198,11 +206,12 @@ uv run --no-project python scripts/check_track2_harness.py
 
 It requires no subject files, data/results folders, keys, network, Git history or model
 weights. The check verifies consistency, not biological efficacy. The versioned public
-reviewer and release/bundle scripts use v26; earlier versions remain available and bound
+presentation reviewer and release/bundle scripts use v26; the combined research harness
+uses v27. Earlier versions remain available and bound
 inputs stay unchanged. The [current artifact record](notes/track2-current.json),
-[harness review](notes/track2-harness-review-v26.md) and `./init.sh` route current work.
+[harness review](notes/track2-harness-review-v27.md) and `./init.sh` route current work.
 
-The [readiness note](notes/track2-owner-readiness-v26.md) lists outstanding recording,
+The [readiness note](notes/track2-owner-readiness-v27.md) lists outstanding recording,
 runtime measurement, hosting, provider handling, distribution scope, live checks and
 receipt. The September 24-25 official/community review is retained with its date;
 this editing session does not repeat it. The new materials omit AF3/Atlas numerical

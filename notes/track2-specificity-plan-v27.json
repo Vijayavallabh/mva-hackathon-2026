@@ -1,0 +1,82 @@
+{
+  "version": 27,
+  "created_utc": "2026-09-30T22:10:55.794177+00:00",
+  "purpose": "Challenge whether BUB1B cross-modal agreement and everolimus associations survive broad shared-response removal; descriptive sensitivity, not causal adjustment.",
+  "source": "frozen public LINCS2020 and v23 RNAi prepared inputs from v25",
+  "cells": [
+    "A375",
+    "A549",
+    "HT29",
+    "MCF7",
+    "PC3"
+  ],
+  "spaces": [
+    "raw",
+    "prime"
+  ],
+  "aggregation": "equal arithmetic mean of all same-gene signatures per cell, preserving v25; no QC relabelling",
+  "representations": [
+    "all978",
+    "without_selected_cycle_stress_features",
+    "residual_pc1",
+    "residual_pc3",
+    "residual_pc10"
+  ],
+  "cycle_stress_features": [
+    "BUB1B",
+    "BUB1",
+    "AURKA",
+    "AURKB",
+    "CCNA2",
+    "CCNB1",
+    "CCNB2",
+    "CCNE1",
+    "CDK1",
+    "CDC20",
+    "CDC25A",
+    "CDC25B",
+    "CDC25C",
+    "CDKN1A",
+    "GADD45A",
+    "MDM2",
+    "MKI67",
+    "MAD2L1",
+    "PLK1",
+    "TTK"
+  ],
+  "query_genes": [
+    "BUB1B",
+    "MTOR"
+  ],
+  "excluded_training_targets": [
+    "BUB1B",
+    "BUB1",
+    "MAD2L1",
+    "CDC20",
+    "TTK",
+    "AURKB",
+    "PLK1",
+    "MTOR",
+    "RPTOR",
+    "RICTOR"
+  ],
+  "projection": "Rank-normalize each original signature mean across features; fit first 10 right singular vectors to vertically stacked RNAi and CRISPR rows from nonexcluded targets, after removal of pooled mean direction; then project all ranked rows off mean and first k vectors and unit normalize. No refitting after outcome.",
+  "controls": [
+    "v25 unadjusted BUB1B and MTOR correlations/ranks reproduced",
+    "entire shared-gene retrieval panel retained",
+    "top 20 in each direction for both query genes",
+    "all feature presence/absence recorded",
+    "CPU double-precision subset compared against CUDA float32 <=2e-5",
+    "orthonormality and residual orthogonality checked"
+  ],
+  "limitations": [
+    "Post-hoc stress test chosen after knowing HT29 favorable result; not external validation.",
+    "Removing principal components can remove real biology; attenuation is not disproof or a causal confounding estimate.",
+    "No controls labelled benign, no empirical tail converted to p-value or FDR.",
+    "Same one-guide and failed-QC caveats persist even if stable.",
+    "No genotype-plus-drug experiments and no clinical exposure inference."
+  ],
+  "drug_identity": "Reference-matching BRD-K13514097 only; keep all same-cell contexts and QC, dose/time separately; no model promotion.",
+  "numerical_tolerance": 2e-05,
+  "remote_root": "/home/prachh/v/mva-track2-falsification-20261001-v27"
+}
