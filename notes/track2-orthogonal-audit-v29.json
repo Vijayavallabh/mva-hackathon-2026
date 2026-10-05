@@ -1,0 +1,69 @@
+{
+  "version": 29,
+  "passed": true,
+  "created_utc": "2026-10-05T19:58:14.112140+00:00",
+  "original_archive": {
+    "path": "results/feat009/orthogonal-v29/orthogonal-v29-audit.tar.gz",
+    "sha256": "373d78784dabc003335813736f907348f7c90aaac510e242b0c917eff8e5280e",
+    "bytes": 1645137933,
+    "files": 3838,
+    "extracted_digests_verified": true
+  },
+  "executed_scripts_match_public": true,
+  "executed_plans_match_public": true,
+  "local_aggregate_reanalysis": {
+    "track2-structural-results-v29.json": {
+      "max_abs_difference": 1.7763568394002505e-15,
+      "numeric_fields": 316,
+      "exact_bytes": false
+    },
+    "track2-crossfit-results-v29.json": {
+      "max_abs_difference": 0,
+      "numeric_fields": 82524,
+      "exact_bytes": false
+    },
+    "track2-orthogonal-summary-v29.json": {
+      "max_abs_difference": 0,
+      "numeric_fields": 421,
+      "exact_bytes": true
+    },
+    "track2-structural-probabilities-v29.tsv": {
+      "rows": 10560,
+      "max_abs_difference": 1.7763568394002505e-15,
+      "exact_bytes": false
+    }
+  },
+  "public_input_sha256": {
+    "notes/track2-crossfit-plan-v29.json": "e405788d56c72ee51d2d2129013a5cf1703fecdaf4100d67d1cf69b78c584633",
+    "notes/track2-crossfit-results-v29.json": "ecf166144daf556392c7fd4dd6482c3b0b455b5c148c1fa550b03e4c5d48976d",
+    "notes/track2-harness-review-v29.md": "123a9254d2e3ad6b887af7ab670dcaaffe8f129da5bf3afd48ebe0ee03c86ae6",
+    "notes/track2-orthogonal-compute-v29.json": "4a3b799e93b6d8d2667338725e26e8c95fa754c0e455922973f392ce20c73662",
+    "notes/track2-orthogonal-register-v29.json": "7f6262b0bddde5ac921ce54d2f8d3616894a61e37e414d923c1c3559f1659e26",
+    "notes/track2-orthogonal-reproduction-v29.md": "c916ec5e4381bd3ec1f916a00b73065c88faaadd4a89f016abcffd42754476e9",
+    "notes/track2-orthogonal-sources-v29.json": "d4f37efb09b88297bfd86990a794633e468ae14b92ec1fe3886f18c3e1380575",
+    "notes/track2-orthogonal-summary-v29.json": "ccdabe75135b50ec789444f6223fc2937230efaf1b869b61eb7d046e1a7f610f",
+    "notes/track2-orthogonal-v29.md": "93a31e61f803cd12fc9c4012418bb9921a896f831df2dc0445a655b54e0ac5cc",
+    "notes/track2-orthogonal-validation-v29.md": "9d55af0c1b2475e6f4af5f0068275e85a57b1bea3465ddf24121d94bf8350f72",
+    "notes/track2-reviewer-guide-v29.md": "d06f15392db7e474168c929e83a5481f41334d8f0bbc030b4e9013277ee8b2f2",
+    "notes/track2-structural-plan-v29.json": "8402a04e94f7dabf0362a70b8f662cf4cf5bb5d3ddb8b2b265b14ae2a07400f2",
+    "notes/track2-structural-probabilities-v29.tsv": "cfb412b50282bd7fa1c0af2989b21f1ac0b8aac613041dbeee0352f944b5a25a",
+    "notes/track2-structural-results-v29.json": "4ab1fafcbf53bdd8b47c6fb9d0e60475071f11e0adbcff90f47d27e5124ee11d",
+    "scripts/analyze_track2_orthogonal_v29.py": "f5f42cabe3cafc36eb216feb08fe4c9ba7b8154738426e2939614e5bb044ceca",
+    "scripts/archive_track2_orthogonal_v29.py": "d49ed4860c37f998ee9971a35ad70e0bb8adae69ffe1c3466597ba2cde6ac221",
+    "scripts/audit_track2_orthogonal_v29.py": "5f3bd58d1b640f6ff8cfb1c00ebe2ec3292a5d7d63d5a1fee1f788edf1bb545f",
+    "scripts/check_track2_orthogonal_v29.py": "1dbb895a687d7591334bd42b56a63cbe09924907eb0266d8aa686ad318c24120",
+    "scripts/run_track2_crossfit_v29.sh": "85243afd6dfa099ee10302ceea3dfc4972e5bd6dc923e6eeb55553195c7dc3d9",
+    "scripts/run_track2_orthogonal_v29.sh": "c15d3e4e00b95d46b88d1c841839c1c5a3e0af85c1849c04556d6ab7c40f40ff",
+    "scripts/setup_track2_orthogonal_v29.sh": "80149f5f716cbd25ff1691003da3ca0fc64b2977bc8847b861e78a1df60bb395",
+    "scripts/summarize_track2_orthogonal_v29.py": "423919e0b8cedd50b5fe18c52a1dfcad0478527ea60d63cfe8e0664f57fc1e6e",
+    "scripts/test_track2_orthogonal_v29.py": "2dd94b59306e2bc8f30afb578eedc13fb92c43f4e27553bbfa7d16c09514ac16",
+    "scripts/track2_crossfit_v29.py": "753128076b4ac428e7f78f756c91a8a79d64a594016a9a8c34ffe7ea97f40460",
+    "scripts/track2_orthogonal_v29.py": "29c4563d1ab3af1cd2c714b16f9dd90cf2e738e0f3437ad603944abcecc0ccf2"
+  },
+  "v28_preservation": {
+    "passed": true,
+    "inputs": 586,
+    "changed": []
+  },
+  "scope": "Complete-output consistency, aggregate recomputation and source binding; not biological validation or independent specialist review."
+}

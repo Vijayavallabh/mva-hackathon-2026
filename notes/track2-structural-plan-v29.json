@@ -1,0 +1,140 @@
+{
+  "version": 29,
+  "created_utc": "2026-10-05T19:28:45.282717+00:00",
+  "design_status": "Fixed before v29 model results; exploratory after v27, not an independent biological study.",
+  "question": "Do structure-conditioned mutation preferences reproduce functional controls and the N1002K interpretation across backbones and weight sets?",
+  "toolkit_revision": "f4f62fa6592ae4938d49b1757bea0cfeff9f468e",
+  "upstream_revision": "8907e6671bfbfc92303b5f79c4b5e6ce47cdef57",
+  "models": [
+    {
+      "variant": "vanilla",
+      "name": "v_48_010"
+    },
+    {
+      "variant": "vanilla",
+      "name": "v_48_020"
+    },
+    {
+      "variant": "vanilla",
+      "name": "v_48_030"
+    },
+    {
+      "variant": "soluble",
+      "name": "v_48_020"
+    }
+  ],
+  "domain": [
+    721,
+    1044
+  ],
+  "reference": {
+    "reference_accession": "O60566",
+    "reference_length": 1050,
+    "reference_fasta_sha256": "4ac6895daf90501d8398d17ded42f46d78b9db777f5084facc875c2926496d1b"
+  },
+  "controls": [
+    {
+      "variant": "V793R",
+      "group": "primary_impaired",
+      "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+      "source_panel": "Figure 3 A-C,I"
+    },
+    {
+      "variant": "K795R",
+      "group": "primary_impaired",
+      "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+      "source_panel": "Figure 3 A-D"
+    },
+    {
+      "variant": "D911N",
+      "group": "primary_impaired",
+      "endpoint": "Reduced abundance and impaired segregation/checkpoint in the reported reconstitution assays",
+      "source_panel": "Figure 3 A-D"
+    },
+    {
+      "variant": "D882N",
+      "group": "primary_retained",
+      "endpoint": "Retained function and abundance in the reported reconstitution assays; not a clinically benign label",
+      "source_panel": "Figure 3 A-D"
+    },
+    {
+      "variant": "K795A",
+      "group": "secondary_impaired",
+      "endpoint": "Reduced abundance and thermal stability; contextual check only",
+      "source_panel": "Figure 3 F-H"
+    },
+    {
+      "variant": "D882A",
+      "group": "secondary_retained",
+      "endpoint": "Main-text-reported retained function; contextual check only",
+      "source_panel": "Main text referring to Figure S3C"
+    }
+  ],
+  "candidate": "N1002K",
+  "positions": [
+    763,
+    787,
+    793,
+    795,
+    808,
+    816,
+    840,
+    865,
+    882,
+    892,
+    901,
+    903,
+    904,
+    911,
+    944,
+    983,
+    994,
+    1002,
+    1004,
+    1020,
+    1032
+  ],
+  "structure_sources": [
+    "ESMFold2-single_sequence-retry",
+    "ESMFold2-shared_msa"
+  ],
+  "structure_seeds": [
+    11,
+    12,
+    13
+  ],
+  "structure_variants": [
+    "WT",
+    "N1002K"
+  ],
+  "primary": "WT backbones; one mutable position, every other residue fixed to public WT. 128 draws over decoding orders per position. Save conditional probabilities; no candidate selection from sampled sequences.",
+  "sensitivity": "N1002K-predicted backbone, score position 1002 with all other WT residues fixed; quantifies backbone dependence only.",
+  "samples_per_context": 128,
+  "batch_size": 16,
+  "temperature": 1.0,
+  "inference_seed": 291006,
+  "primary_contexts": 504,
+  "sensitivity_contexts": 24,
+  "expected_samples": 67584,
+  "gpus": 8,
+  "numerical_tolerance": 2e-05,
+  "software_controls": [
+    "one complete off/exact paired run, same seed and inputs; compare sequence bytes, probability and score arrays",
+    "direct upstream conditional_probs_only site 1002 cross-check within 2e-5",
+    "all sampled sequences may differ only at declared mutable site",
+    "native reference identities and original CIF SHA256 verified",
+    "complete output membership; no best-model selection"
+  ],
+  "decision_rules": [
+    "Primary functional control gate: all three impaired controls have lower log odds than retained D882N, per weight/backbone. Expanded gate includes K795A and D882A. Retain all failures.",
+    "Candidate ranks use 17 N-to-K domain sites including itself. Background fractions are descriptive, not p-values or clinical labels.",
+    "Failure of controls restricts structural likelihood to description; successful separation is still narrow and cannot establish N1002K function.",
+    "No drug, phase, clinical-margin or wet-lab promotion; stop codon and NMD are outside this protein model."
+  ],
+  "limitations": [
+    "Four weight sets are related, not four independent models. Six predicted WT structures and decoding orders are not biological replicates.",
+    "Predicted isolated domain omits cellular partners, dynamics and full-length regulation.",
+    "Training overlap is unresolved. Conditional log odds are not measured stability or function."
+  ],
+  "remote_root": "/home/prachh/v/mva-track2-orthogonal-20261006-v29"
+}

@@ -82,14 +82,14 @@ class CurrentStateTests(unittest.TestCase):
 
     def test_integrated_versions_preserve_research_version(self):
         self.assertEqual(self.state['presentation_version'],28)
-        self.assertEqual(self.state['harness_version'],28)
+        self.assertEqual(self.state['harness_version'],29)
         self.assertEqual(self.state['research_addendum']['version'],19)
         self.state['harness_review']='notes/track2-harness-review-v18.md'
         with self.assertRaisesRegex(ValueError,'Stale harness'):
             harness.validate(self.state,self.features,self.documents)
 
     def test_correct_independent_version_labels_accepted(self):
-        self.documents['README.md']+='\nUse the current v28 harness and current v19 addendum with the current v28 presentation and current v21 ledger.'
+        self.documents['README.md']+='\nUse the current v29 harness and current v19 addendum with the current v28 presentation and current v21 ledger.'
         harness.validate(self.state,self.features,self.documents)
 
     def test_crispr_addendum_cannot_disappear_or_promote_guides(self):
@@ -100,6 +100,16 @@ class CurrentStateTests(unittest.TestCase):
                 harness.validate(state,self.features,self.documents)
         state=deepcopy(self.state);state.pop('crispr_addendum')
         with self.assertRaisesRegex(ValueError,'CRISPR addendum'):
+            harness.validate(state,self.features,self.documents)
+
+    def test_orthogonal_addendum_cannot_disappear_or_change_counts(self):
+        for key,value in [('fixed_site_samples',1),('gpus',8.0),('drug_ranking_changed',True),
+                          ('check','data/subject.vcf'),('presentation_integration','integrated_in_v28')]:
+            state=deepcopy(self.state);state['orthogonal_addendum'][key]=value
+            with self.subTest(key=key),self.assertRaisesRegex(ValueError,'orthogonal addendum'):
+                harness.validate(state,self.features,self.documents)
+        state=deepcopy(self.state);state.pop('orthogonal_addendum')
+        with self.assertRaisesRegex(ValueError,'orthogonal addendum'):
             harness.validate(state,self.features,self.documents)
 
     def test_stale_addendum_label_rejected(self):

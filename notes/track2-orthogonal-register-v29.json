@@ -1,0 +1,59 @@
+{
+  "version": 29,
+  "claims": [
+    {
+      "id": "R43",
+      "claim": "Structural likelihood can validate N1002K function through the historical control panel.",
+      "support": "Candidate has the lowest N-to-K log odds among the 17 domain sites on all 24 WT weight/backbone combinations.",
+      "challenge": "Primary ordering passes 1/24; expanded ordering passes 0/24. D882N retains reported 2012/2020 endpoints but loses CENP-E phosphorylation in the 2019 study; labels are endpoint-specific.",
+      "falsifier": "A blinded, independently measured relevant control panel fails the proposed functional discrimination, or endogenous N1002K retains the claimed function.",
+      "stop": "No pathogenicity, stability or drug-branch promotion from this score. Preserve fixed historical labels and the endpoint conflict.",
+      "reopen": "Relevant endogenous abundance, localization and chromosome-attachment/segregation measurements with qualified controls.",
+      "next_action": "Predefine which endpoint each control validates; measure scaffolding and catalytic outputs separately."
+    },
+    {
+      "id": "R44",
+      "claim": "A candidate score is robust to plausible structural input choices.",
+      "support": "WT backbones consistently give negative N1002K log odds.",
+      "challenge": "Using mutant-predicted backbones shifts the range from -5.696 to -5.389 to -2.780 to +0.463. Both rely on predicted domain geometry.",
+      "falsifier": "Independent structure/function evidence contradicts the proposed mechanism, or the conclusion depends on selecting one predicted backbone.",
+      "stop": "Do not choose the backbone/checkpoint that supports a preferred mechanism or equate probability with measured energy.",
+      "reopen": "Independent measurements constrain relevant conformation and functional consequences.",
+      "next_action": "Keep paired WT/mutant backbone sensitivity with all seeds and related checkpoints."
+    },
+    {
+      "id": "R45",
+      "claim": "HT29 BUB1B cross-modal agreement is entirely a projection-fitting or failed-batch artifact.",
+      "support": "Symmetric held-out fitting and passing-CRISPR-only aggregation retain positive PRIME agreement; ten-PC ranks remain 1-6 and 1-3 within the stated smaller panels.",
+      "challenge": "One guide, tumour context, RNAi seed/potency uncertainty and post-hoc analysis remain. Projection can remove real biology; persistence can reflect a shared mitotic pathway.",
+      "falsifier": "Independent perturbation/restoration fails to reproduce a target-specific functional deficit after matched growth, viability and editing controls.",
+      "stop": "HT29 is an assay-development lead only; no relevant non-cancer or joint-treatment qualification.",
+      "reopen": "Independent guide or non-cutting perturbation, restoration and relevant non-cancer functional measurements.",
+      "next_action": "Keep HT29 counterevidence and qualify the perturbation before drug work."
+    },
+    {
+      "id": "R46",
+      "claim": "MCF7 everolimus reversal qualifies a BUB1B rescue hypothesis.",
+      "support": "Reference-matching drug QC passes; MTOR mimicry remains rank 1, including with passing CRISPR profiles.",
+      "challenge": "BUB1B reversal attenuates with symmetric adjustment; no MCF7 BUB1B query survives QC. Passing drug QC is a separate property.",
+      "falsifier": "Qualified same-model joint treatment fails benefit or shows injury at justified exposures.",
+      "stop": "Do not zero-fill the absent query, transfer MTOR QC, combine cell types, or infer a clinical margin from nominal culture dose.",
+      "reopen": "New qualified BUB1B perturbation plus joint functional treatment evidence and justified exposure/safety margins.",
+      "next_action": "Retain everolimus only as an optional model-qualified mechanistic probe."
+    },
+    {
+      "id": "R47",
+      "claim": "Successful optimized compute provides biological validation.",
+      "support": "All eight H100s completed 67584 fixed-site samples and 820147416 expression comparisons; the toolkit was executed with recorded pins and controls.",
+      "challenge": "One stock/exact pilot is bounded; source experiments, checkpoint families, backbones and decoding orders are dependent. The structural controls largely fail.",
+      "falsifier": "Source/output reproduction or numerical controls fail, or measured biology contradicts the model.",
+      "stop": "Software success cannot open a biological gate or resolve phase, exposure or clinical benefit.",
+      "reopen": "Independent biological evidence plus reproducible technical provenance.",
+      "next_action": "Retain failure logs, complete matrices, all outcomes and explicit limits on measured GPU utilization."
+    }
+  ],
+  "prior_claims_preserved": 42,
+  "total_claim_records": 47,
+  "drug_ranking_changed": false,
+  "biological_validation": false
+}

@@ -1,0 +1,77 @@
+{
+  "version": 29,
+  "created_utc": "2026-10-05T19:28:45.282717+00:00",
+  "design_status": "Fixed before v29 calculation; post-hoc sensitivity after v27.",
+  "question": "Does BUB1B specificity survive symmetric out-of-fit comparisons and CRISPR QC restriction?",
+  "source": "v25 public prepared matrices; same experimental wells as prior cycles",
+  "cells": [
+    "A375",
+    "A549",
+    "HT29",
+    "MCF7",
+    "PC3"
+  ],
+  "spaces": [
+    "raw",
+    "prime"
+  ],
+  "quality_views": [
+    "all_profiles",
+    "crispr_quality_pass_only"
+  ],
+  "partition_seeds": [
+    17,
+    41,
+    73,
+    101
+  ],
+  "folds": 5,
+  "split": "SHA256(str(seed)+\":\"+gene) integer mod 5; same gene assigned same fold in both modalities.",
+  "representations": [
+    "all978",
+    "residual_pc1",
+    "residual_pc3",
+    "residual_pc10"
+  ],
+  "query_genes": [
+    "BUB1B",
+    "BUB1",
+    "MAD2L1",
+    "CDC20",
+    "TTK",
+    "AURKB",
+    "PLK1",
+    "MTOR",
+    "RPTOR",
+    "RICTOR"
+  ],
+  "aggregation": "Arithmetic mean by target/cell in each modality, as v25; CRISPR 96h; no invented RNAi QC.",
+  "projection": "Rank normalize 978 features. Exclude all query genes and current held-out fold from training in both modalities. Fit pooled mean direction and first 10 residual PCs. Evaluate ONLY held-out references plus query genes. Never combine correlation scales across folds.",
+  "comparisons": "Both cross-modal retrieval directions; same-cell identity-matched everolimus and MTOR profiles. Preserve separate drug/query QC and dose/time. No joint-rescue claim.",
+  "outputs": [
+    "all query correlation/rank/count records across 400 fitted folds and four representations",
+    "full held-out shared-gene panel, separately retained locally",
+    "held-out same-target top1/top10 retrieval counts as quality context",
+    "missing query cells explicit, never zero-filled",
+    "unadjusted all-profile full-panel values must match v27"
+  ],
+  "controls": [
+    "train/evaluation target sets disjoint in each modality",
+    "all ordinary reference genes evaluated once per seed",
+    "CPU FP64 vs CUDA FP32 subset <=2e-5",
+    "finite residuals and projection orthogonality <=1e-8",
+    "one known reference query MTOR and all eight other query targets retained"
+  ],
+  "gpus": 8,
+  "numerical_tolerance": 2e-05,
+  "expected_tasks": 80,
+  "expected_fits": 400,
+  "limitations": [
+    "Same source experiments; no new guide or biological replication.",
+    "Repeated partitions and PC removal are sensitivity checks, not confidence intervals or causal adjustment.",
+    "Removal can discard true biology. Held-out ranks have smaller denominators than original all-gene ranks.",
+    "QC-only applies to CRISPR profiles; RNAi potency/seed controls remain unresolved.",
+    "No operational threshold selected to promote HT29 or drug response."
+  ],
+  "remote_root": "/home/prachh/v/mva-track2-orthogonal-20261006-v29"
+}

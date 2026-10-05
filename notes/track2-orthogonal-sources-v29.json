@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-06",
+  "scope": "Targeted primary-source falsification review; not systematic or exhaustive. Prior findings known.",
+  "searches": [
+    "BUB1B deficiency rapamycin everolimus rescue senescence aneuploidy 2025 2026",
+    "DepMap BUB1B MTOR dependency aneuploidy rapamycin sensitivity",
+    "ProteinMPNN variant effect prediction zero shot stability function inverse folding limitations benchmark",
+    "L1000 cross modality RNAi CRISPR perturbation retrieval batch confounding 2025 benchmark",
+    "BubR1 phosphorylates CENP-E D882N chromosome",
+    "BubR1 phosphorylates CENP-E correction retraction",
+    "BUBR1 Pseudokinase Domain D882N",
+    "BUBR1 D882N 2025",
+    "ARST1431 temsirolimus randomized trial no event free survival benefit rhabdomyosarcoma 2024 Lancet Oncology",
+    "site:dailymed.nlm.nih.gov everolimus infections pneumonitis renal failure",
+    "BubR1 hypomorphic rapamycin cardiac function adverse senescence muscle 2024 2025 2026"
+  ],
+  "sources": [
+    {
+      "id": "V29-S1",
+      "url": "https://github.com/anthropics/uplifting-biomolecular-modeling/tree/f4f62fa6592ae4938d49b1757bea0cfeff9f468e/proteinmpnn",
+      "reading_depth": "README, STOCK, CHANGES, pins and executed source; root and ESM-IF1 docs compared.",
+      "finding": "Exact mode supports fixed-site design probabilities but refuses direct conditional/score-only modes. Use pinned source, record runtime deviations and compare stock output. The default two weight files are kit-pinned; extra 010/030 weights are pinned here by upstream commit and recorded digests."
+    },
+    {
+      "id": "V29-S2",
+      "url": "https://github.com/dauparas/ProteinMPNN/tree/8907e6671bfbfc92303b5f79c4b5e6ce47cdef57",
+      "reading_depth": "Official inference documentation and sampling/conditional-scoring source.",
+      "finding": "Native-sequence-conditioned inverse folding is a separate representation from the earlier sequence models. Four checkpoints remain related; fixed-backbone likelihood is not a calibrated stability or functional endpoint."
+    },
+    {
+      "id": "V29-S3",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1534580712001323",
+      "reading_depth": "Indexed primary results on controls, Figure 3 references and discussion; previous stored control labels retained. Direct DOI retrieval failed.",
+      "finding": "2012 study reports reduced stability/function for V793R, K795R, D911N and K795A; D882N/A retained the measured reconstitution endpoints. These are endpoint-specific labels, not clinical benign/pathogenic labels."
+    },
+    {
+      "id": "V29-S4",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6796941/",
+      "reading_depth": "Indexed primary abstract, Fig.4b/results and discussion; direct PMC browser retrieval challenged. Supplement not independently inspected.",
+      "finding": "2019 study reports D882N lacks CENP-E phosphorylation while retaining protein stability. This challenges treating the historical retained control as universally functional; it does not directly remeasure every 2012 segregation endpoint."
+    },
+    {
+      "id": "V29-S5",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2211124720313863",
+      "reading_depth": "Indexed primary introduction, D882N/A KARD-S676 results, PP2A recruitment and discussion. Direct page open failed.",
+      "finding": "2020 study retains D882N/A stability and S676 signals and supports an indirect scaffolding role; authors do not exclude catalysis under untested conditions. Preserve both mechanistic accounts. Require abundance, KARD/PP2A and chromosome-attachment endpoints rather than a catalytic proxy alone."
+    },
+    {
+      "id": "V29-S6",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11817935/",
+      "reading_depth": "Indexed primary abstract and benchmark rationale; direct PMC page challenged.",
+      "finding": "Sampling and ranking protein variants are different tasks; generic design success does not validate target-specific functional scoring."
+    },
+    {
+      "id": "V29-S7",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6821211/",
+      "reading_depth": "Prior v27 selected-section review retained; current direct retrieval challenged.",
+      "finding": "Shared viability/proliferation response can confound expression matching. Current symmetric held-out projection is a new sensitivity design, not the paper's validated viability model and not a causal adjustment."
+    },
+    {
+      "id": "V29-S8",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1470204524002559",
+      "reading_depth": "Primary indexed trial abstract and interpretation; prior Track 2 trial review retained.",
+      "finding": "ARST1431 did not demonstrate an event-free-survival benefit from adding temsirolimus to its RMS chemotherapy regimen. This challenges extrapolating mTOR target matching to clinical efficacy; it is not a direct test of everolimus in MVA functional rescue."
+    },
+    {
+      "id": "V29-S9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5aaf2fb7-93f6-40d6-941a-9583a3794ce7",
+      "reading_depth": "Official oncology/TSC product label warnings and pharmacokinetic distribution sections; formulation/indication scope retained.",
+      "finding": "Infection, noninfectious pneumonitis, renal failure and myelosuppression remain material risks. Blood/plasma distribution and protein binding prevent treating nominal culture exposure as an established unbound tissue margin. No dose advice or individual risk estimate is generated."
+    }
+  ],
+  "decisions": [
+    "Keep frozen original control ordering but label it 2012 endpoint separation; add explicit D882N endpoint conflict, no relabelling to improve model performance.",
+    "Evaluate query and competing targets outside projection fitting. Report within-fold denominators and repeated-partition dependence.",
+    "Preserve all previous drug dispositions and biological/exposure gates pending relevant functional evidence.",
+    "ProteinMPNN chosen for the control question; additional ligand/binder generation cannot resolve current unqualified endogenous function.",
+    "Failed RMS trial and official safety/PK counterevidence preserve the existing clinical exposure and injury gates; neither proves that all mTOR research hypotheses are false.",
+    "Scaffolding/PP2A recruitment remains a competing mechanistic branch to test, not a new approved-drug priority; no HCQ promotion by elimination."
+  ],
+  "limits": [
+    "No new treatment recommendation, on-demand genomic inference, raw subject transfer or organizer/family contact.",
+    "Search results did not constitute a systematic correction/retraction audit.",
+    "New source reading did not independently verify supplements or published raw experimental data."
+  ]
+}

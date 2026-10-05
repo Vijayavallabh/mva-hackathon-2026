@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_date": "2026-10-01",
+  "updated_date": "2026-10-06",
   "active_feature": "feat-009",
   "presentation_version": 28,
   "drug_science_version": 21,
@@ -55,7 +55,7 @@
     "licensing_scope_resolved": false
   },
   "history": "progress.md",
-  "harness_review": "notes/track2-harness-review-v28.md",
+  "harness_review": "notes/track2-harness-review-v29.md",
   "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v28.zip",
   "document_directory": "results/feat009/v28-documents-final-20261001",
   "research_addendum": {
@@ -84,11 +84,11 @@
     "drug_ranking_changed": false,
     "archive": "results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz"
   },
-  "harness_version": 28,
+  "harness_version": 29,
   "current_review": {
     "script": "scripts/check_track2_harness.py",
     "isolation_audit": "scripts/audit_track2_harness.py",
-    "guide": "notes/track2-reviewer-guide-v28.md",
+    "guide": "notes/track2-reviewer-guide-v29.md",
     "readiness": "notes/track2-owner-readiness-v28.md"
   },
   "rnai_addendum": {
@@ -154,5 +154,29 @@
     "expression_comparisons": 918999010,
     "drug_ranking_changed": false,
     "presentation_integration": "integrated_in_v28_preserves_v27"
+  },
+  "orthogonal_addendum": {
+    "version": 29,
+    "status": "complete",
+    "report": "notes/track2-orthogonal-v29.md",
+    "structural_plan": "notes/track2-structural-plan-v29.json",
+    "crossfit_plan": "notes/track2-crossfit-plan-v29.json",
+    "structural_results": "notes/track2-structural-results-v29.json",
+    "crossfit_results": "notes/track2-crossfit-results-v29.json",
+    "summary": "notes/track2-orthogonal-summary-v29.json",
+    "compute": "notes/track2-orthogonal-compute-v29.json",
+    "register": "notes/track2-orthogonal-register-v29.json",
+    "validation": "notes/track2-orthogonal-validation-v29.md",
+    "audit": "notes/track2-orthogonal-audit-v29.json",
+    "check": "scripts/check_track2_orthogonal_v29.py",
+    "reproduction": "notes/track2-orthogonal-reproduction-v29.md",
+    "archive": "results/feat009/orthogonal-v29/orthogonal-v29-audit.tar.gz",
+    "gpus": 8,
+    "structural_contexts": 528,
+    "fixed_site_samples": 67584,
+    "expression_fits": 400,
+    "expression_comparisons": 820147416,
+    "drug_ranking_changed": false,
+    "presentation_integration": "separate_addendum_read_with_preserved_v28"
   }
 }

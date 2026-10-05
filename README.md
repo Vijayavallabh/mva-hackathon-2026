@@ -93,6 +93,19 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
+**Session 69: completed v29 structural and expression falsification on all eight H100s.**
+The [new research addendum](notes/track2-orthogonal-v29.md) records 67,584 fixed-site
+ProteinMPNN samples using Anthropic's toolkit and 400 held-out expression fits.
+Structural controls pass only 1/24 primary and 0/24 expanded comparisons; backbone
+sensitivity and an endpoint-specific D882N literature conflict limit interpretation.
+HT29 agreement survives stricter adjustment and CRISPR QC restriction. MCF7 has no
+QC-qualified BUB1B query. Drug decisions remain unchanged.
+
+The [v29 reviewer guide](notes/track2-reviewer-guide-v29.md) covers 47 claim records,
+complete provenance and the combined `scripts/check_track2_harness.py` check.
+Presentation v28 stays frozen and must be read with this separate addendum; it does
+not already contain the new results. All owned jobs have finished.
+
 **Session 68: Track 2 v28 materials and harness are synchronized.** The
 [report](notes/track2-report-v28.md), [nine slides](notes/track2-slides-v28.html),
 [330-word narration](notes/track2-pitch-v28.md) and methods workbook integrate

@@ -1,0 +1,955 @@
+{
+  "version": 29,
+  "structural": {
+    "primary_control_passes": 1,
+    "expanded_control_passes": 0,
+    "comparisons": 24,
+    "candidate_WT_backbone_log_odds": [
+      -5.696062808823428,
+      -5.389331069930358
+    ],
+    "candidate_mutant_backbone_log_odds": [
+      -2.7797182647661476,
+      0.4625128149122816
+    ],
+    "matched_NK_at_or_below": [
+      1,
+      1
+    ],
+    "matched_NK_count": 17,
+    "candidate_alternate_rank": [
+      3,
+      13
+    ]
+  },
+  "expression": [
+    {
+      "cell": "HT29",
+      "quality": "all_profiles",
+      "representation": "all978",
+      "partitions": 20,
+      "available": 20,
+      "missing": 0,
+      "correlation": [
+        0.3712058663368225,
+        0.3712059259414673
+      ],
+      "rnai_rank": [
+        2,
+        4
+      ],
+      "crispr_rank": [
+        2,
+        3
+      ],
+      "rnai_reference_genes": [
+        715,
+        781
+      ],
+      "crispr_reference_genes": [
+        945,
+        1088
+      ]
+    },
+    {
+      "cell": "HT29",
+      "quality": "all_profiles",
+      "representation": "residual_pc1",
+      "partitions": 20,
+      "available": 20,
+      "missing": 0,
+      "correlation": [
+        0.3584289252758026,
+        0.3646358549594879
+      ],
+      "rnai_rank": [
+        2,
+        4
+      ],
+      "crispr_rank": [
+        1,
+        2
+      ],
+      "rnai_reference_genes": [
+        715,
+        781
+      ],
+      "crispr_reference_genes": [
+        945,
+        1088
+      ]
+    },
+    {
+      "cell": "HT29",
+      "quality": "all_profiles",
+      "representation": "residual_pc3",
+      "partitions": 20,
+      "available": 20,
+      "missing": 0,
+      "correlation": [
+        0.19396761059761047,
+        0.2014455795288086
+      ],
+      "rnai_rank": [
+        1,
+        3
+      ],
+      "crispr_rank": [
+        1,
+        2
+      ],
+      "rnai_reference_genes": [
+        715,
+        781
+      ],
+      "crispr_reference_genes": [
+        945,
+        1088
+      ]
+    },
+    {
+      "cell": "HT29",
+      "quality": "all_profiles",
+      "representation": "residual_pc10",
+      "partitions": 20,
+      "available": 20,
+      "missing": 0,
+      "correlation": [
+        0.13910941779613495,
+        0.16700218617916107
+      ],
+      "rnai_rank": [
+        1,
+        3
+      ],
+      "crispr_rank": [
+        1,
+        4
+      ],
+      "rnai_reference_genes": [
+        715,
+        781
+      ],
+      "crispr_reference_genes": [
+        945,
+        1088
+      ]
+    },
+    {
+      "cell": "HT29",
+      "quality": "crispr_quality_pass_only",
+      "representation": "all978",
+      "partitions": 20,
+      "available": 20,
+      "missing": 0,
+      "correlation": [
+        0.350042462348938,
+        0.3500424921512604
+      ],
+      "rnai_rank": [
+        2,
+        3
+      ],
+      "crispr_rank": [
+        2,
+        4
+      ],
+      "rnai_reference_genes": [
+        715,
+        781
+      ],
+      "crispr_reference_genes": [
+        276,
+        340
+      ]
+    },
+    {
+      "cell": "HT29",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc1",
+      "partitions": 20,
+      "available": 20,
+      "missing": 0,
+      "correlation": [
+        0.33167168498039246,
+        0.33934879302978516
+      ],
+      "rnai_rank": [
+        2,
+        3
+      ],
+      "crispr_rank": [
+        1,
+        3
+      ],
+      "rnai_reference_genes": [
+        715,
+        781
+      ],
+      "crispr_reference_genes": [
+        276,
+        340
+      ]
+    },
+    {
+      "cell": "HT29",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc3",
+      "partitions": 20,
+      "available": 20,
+      "missing": 0,
+      "correlation": [
+        0.14481155574321747,
+        0.15546032786369324
+      ],
+      "rnai_rank": [
+        3,
+        7
+      ],
+      "crispr_rank": [
+        1,
+        5
+      ],
+      "rnai_reference_genes": [
+        715,
+        781
+      ],
+      "crispr_reference_genes": [
+        276,
+        340
+      ]
+    },
+    {
+      "cell": "HT29",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc10",
+      "partitions": 20,
+      "available": 20,
+      "missing": 0,
+      "correlation": [
+        0.12229305505752563,
+        0.13708992302417755
+      ],
+      "rnai_rank": [
+        1,
+        6
+      ],
+      "crispr_rank": [
+        1,
+        3
+      ],
+      "rnai_reference_genes": [
+        715,
+        781
+      ],
+      "crispr_reference_genes": [
+        276,
+        340
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "all978",
+      "partitions": 20,
+      "available": 20,
+      "missing": 0,
+      "correlation": [
+        -0.08874109387397766,
+        -0.08874107897281647
+      ],
+      "rnai_rank": [
+        547,
+        600
+      ],
+      "crispr_rank": [
+        713,
+        832
+      ],
+      "rnai_reference_genes": [
+        670,
+        738
+      ],
+      "crispr_reference_genes": [
+        787,
+        920
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "residual_pc1",
+      "partitions": 20,
+      "available": 20,
+      "missing": 0,
+      "correlation": [
+        -0.02553986757993698,
+        0.026998696848750114
+      ],
+      "rnai_rank": [
+        262,
+        480
+      ],
+      "crispr_rank": [
+        243,
+        510
+      ],
+      "rnai_reference_genes": [
+        670,
+        738
+      ],
+      "crispr_reference_genes": [
+        787,
+        920
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "residual_pc3",
+      "partitions": 20,
+      "available": 20,
+      "missing": 0,
+      "correlation": [
+        -0.04208797588944435,
+        -0.037759751081466675
+      ],
+      "rnai_rank": [
+        538,
+        587
+      ],
+      "crispr_rank": [
+        662,
+        771
+      ],
+      "rnai_reference_genes": [
+        670,
+        738
+      ],
+      "crispr_reference_genes": [
+        787,
+        920
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "residual_pc10",
+      "partitions": 20,
+      "available": 20,
+      "missing": 0,
+      "correlation": [
+        -0.010742157697677612,
+        -0.004484040662646294
+      ],
+      "rnai_rank": [
+        351,
+        424
+      ],
+      "crispr_rank": [
+        437,
+        543
+      ],
+      "rnai_reference_genes": [
+        670,
+        738
+      ],
+      "crispr_reference_genes": [
+        787,
+        920
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "all978",
+      "partitions": 20,
+      "available": 0,
+      "missing": 20,
+      "correlation": null,
+      "rnai_rank": null,
+      "crispr_rank": null,
+      "rnai_reference_genes": [
+        670,
+        738
+      ],
+      "crispr_reference_genes": [
+        235,
+        313
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc1",
+      "partitions": 20,
+      "available": 0,
+      "missing": 20,
+      "correlation": null,
+      "rnai_rank": null,
+      "crispr_rank": null,
+      "rnai_reference_genes": [
+        670,
+        738
+      ],
+      "crispr_reference_genes": [
+        235,
+        313
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc3",
+      "partitions": 20,
+      "available": 0,
+      "missing": 20,
+      "correlation": null,
+      "rnai_rank": null,
+      "crispr_rank": null,
+      "rnai_reference_genes": [
+        670,
+        738
+      ],
+      "crispr_reference_genes": [
+        235,
+        313
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc10",
+      "partitions": 20,
+      "available": 0,
+      "missing": 20,
+      "correlation": null,
+      "rnai_rank": null,
+      "crispr_rank": null,
+      "rnai_reference_genes": [
+        670,
+        738
+      ],
+      "crispr_reference_genes": [
+        235,
+        313
+      ]
+    }
+  ],
+  "drug": [
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "all978",
+      "partitions": 20,
+      "gene": "BUB1B",
+      "available": 20,
+      "correlation": [
+        -0.21435822546482086,
+        -0.21435822546482086
+      ],
+      "reversal_rank": [
+        1,
+        3
+      ],
+      "mimic_rank": [
+        786,
+        918
+      ],
+      "reference_genes": [
+        787,
+        920
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "all978",
+      "partitions": 20,
+      "gene": "MTOR",
+      "available": 20,
+      "correlation": [
+        0.28358209133148193,
+        0.28358209133148193
+      ],
+      "reversal_rank": [
+        787,
+        920
+      ],
+      "mimic_rank": [
+        1,
+        1
+      ],
+      "reference_genes": [
+        787,
+        920
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "residual_pc1",
+      "partitions": 20,
+      "gene": "BUB1B",
+      "available": 20,
+      "correlation": [
+        -0.11990877240896225,
+        -0.10607364773750305
+      ],
+      "reversal_rank": [
+        8,
+        24
+      ],
+      "mimic_rank": [
+        778,
+        901
+      ],
+      "reference_genes": [
+        787,
+        920
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "residual_pc1",
+      "partitions": 20,
+      "gene": "MTOR",
+      "available": 20,
+      "correlation": [
+        0.20798780024051666,
+        0.2158707082271576
+      ],
+      "reversal_rank": [
+        787,
+        920
+      ],
+      "mimic_rank": [
+        1,
+        1
+      ],
+      "reference_genes": [
+        787,
+        920
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "residual_pc3",
+      "partitions": 20,
+      "gene": "BUB1B",
+      "available": 20,
+      "correlation": [
+        -0.09658650308847427,
+        -0.09140230715274811
+      ],
+      "reversal_rank": [
+        12,
+        35
+      ],
+      "mimic_rank": [
+        776,
+        886
+      ],
+      "reference_genes": [
+        787,
+        920
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "residual_pc3",
+      "partitions": 20,
+      "gene": "MTOR",
+      "available": 20,
+      "correlation": [
+        0.22728587687015533,
+        0.22990068793296814
+      ],
+      "reversal_rank": [
+        787,
+        920
+      ],
+      "mimic_rank": [
+        1,
+        1
+      ],
+      "reference_genes": [
+        787,
+        920
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "residual_pc10",
+      "partitions": 20,
+      "gene": "BUB1B",
+      "available": 20,
+      "correlation": [
+        -0.033487338572740555,
+        -0.025887150317430496
+      ],
+      "reversal_rank": [
+        204,
+        308
+      ],
+      "mimic_rank": [
+        578,
+        666
+      ],
+      "reference_genes": [
+        787,
+        920
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "residual_pc10",
+      "partitions": 20,
+      "gene": "MTOR",
+      "available": 20,
+      "correlation": [
+        0.22177694737911224,
+        0.2296370267868042
+      ],
+      "reversal_rank": [
+        787,
+        920
+      ],
+      "mimic_rank": [
+        1,
+        1
+      ],
+      "reference_genes": [
+        787,
+        920
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "all978",
+      "partitions": 20,
+      "gene": "BUB1B",
+      "available": 0,
+      "correlation": null,
+      "reversal_rank": null,
+      "mimic_rank": null,
+      "reference_genes": null
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "all978",
+      "partitions": 20,
+      "gene": "MTOR",
+      "available": 20,
+      "correlation": [
+        0.29053691029548645,
+        0.29053694009780884
+      ],
+      "reversal_rank": [
+        235,
+        313
+      ],
+      "mimic_rank": [
+        1,
+        1
+      ],
+      "reference_genes": [
+        235,
+        313
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc1",
+      "partitions": 20,
+      "gene": "BUB1B",
+      "available": 0,
+      "correlation": null,
+      "reversal_rank": null,
+      "mimic_rank": null,
+      "reference_genes": null
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc1",
+      "partitions": 20,
+      "gene": "MTOR",
+      "available": 20,
+      "correlation": [
+        0.27610042691230774,
+        0.2831375002861023
+      ],
+      "reversal_rank": [
+        235,
+        313
+      ],
+      "mimic_rank": [
+        1,
+        1
+      ],
+      "reference_genes": [
+        235,
+        313
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc3",
+      "partitions": 20,
+      "gene": "BUB1B",
+      "available": 0,
+      "correlation": null,
+      "reversal_rank": null,
+      "mimic_rank": null,
+      "reference_genes": null
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc3",
+      "partitions": 20,
+      "gene": "MTOR",
+      "available": 20,
+      "correlation": [
+        0.24889029562473297,
+        0.2520204782485962
+      ],
+      "reversal_rank": [
+        235,
+        313
+      ],
+      "mimic_rank": [
+        1,
+        1
+      ],
+      "reference_genes": [
+        235,
+        313
+      ]
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc10",
+      "partitions": 20,
+      "gene": "BUB1B",
+      "available": 0,
+      "correlation": null,
+      "reversal_rank": null,
+      "mimic_rank": null,
+      "reference_genes": null
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc10",
+      "partitions": 20,
+      "gene": "MTOR",
+      "available": 20,
+      "correlation": [
+        0.1809394359588623,
+        0.19688978791236877
+      ],
+      "reversal_rank": [
+        235,
+        313
+      ],
+      "mimic_rank": [
+        1,
+        1
+      ],
+      "reference_genes": [
+        235,
+        313
+      ]
+    }
+  ],
+  "panel": [
+    {
+      "cell": "HT29",
+      "quality": "all_profiles",
+      "representation": "all978",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 6528,
+      "heldout_rnai_top1": 0.0274203431372549,
+      "heldout_crispr_top1": 0.032935049019607844,
+      "heldout_rnai_top10": 0.06786151960784313,
+      "heldout_crispr_top10": 0.05667892156862745
+    },
+    {
+      "cell": "HT29",
+      "quality": "all_profiles",
+      "representation": "residual_pc1",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 6528,
+      "heldout_rnai_top1": 0.032475490196078434,
+      "heldout_crispr_top1": 0.03400735294117647,
+      "heldout_rnai_top10": 0.07169117647058823,
+      "heldout_crispr_top10": 0.06801470588235294
+    },
+    {
+      "cell": "HT29",
+      "quality": "all_profiles",
+      "representation": "residual_pc3",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 6528,
+      "heldout_rnai_top1": 0.037377450980392156,
+      "heldout_crispr_top1": 0.03722426470588235,
+      "heldout_rnai_top10": 0.07368259803921569,
+      "heldout_crispr_top10": 0.07460171568627451
+    },
+    {
+      "cell": "HT29",
+      "quality": "all_profiles",
+      "representation": "residual_pc10",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 6528,
+      "heldout_rnai_top1": 0.04105392156862745,
+      "heldout_crispr_top1": 0.042738970588235295,
+      "heldout_rnai_top10": 0.07705269607843138,
+      "heldout_crispr_top10": 0.07337622549019608
+    },
+    {
+      "cell": "HT29",
+      "quality": "crispr_quality_pass_only",
+      "representation": "all978",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 2100,
+      "heldout_rnai_top1": 0.056666666666666664,
+      "heldout_crispr_top1": 0.07380952380952381,
+      "heldout_rnai_top10": 0.10380952380952381,
+      "heldout_crispr_top10": 0.13142857142857142
+    },
+    {
+      "cell": "HT29",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc1",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 2100,
+      "heldout_rnai_top1": 0.06285714285714286,
+      "heldout_crispr_top1": 0.07761904761904762,
+      "heldout_rnai_top10": 0.11,
+      "heldout_crispr_top10": 0.13476190476190475
+    },
+    {
+      "cell": "HT29",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc3",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 2100,
+      "heldout_rnai_top1": 0.07571428571428572,
+      "heldout_crispr_top1": 0.08142857142857143,
+      "heldout_rnai_top10": 0.12047619047619047,
+      "heldout_crispr_top10": 0.14857142857142858
+    },
+    {
+      "cell": "HT29",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc10",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 2100,
+      "heldout_rnai_top1": 0.07476190476190477,
+      "heldout_crispr_top1": 0.09095238095238095,
+      "heldout_rnai_top10": 0.1180952380952381,
+      "heldout_crispr_top10": 0.1457142857142857
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "all978",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 5092,
+      "heldout_rnai_top1": 0.01610369206598586,
+      "heldout_crispr_top1": 0.01610369206598586,
+      "heldout_rnai_top10": 0.03750981932443048,
+      "heldout_crispr_top10": 0.03790259230164965
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "residual_pc1",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 5092,
+      "heldout_rnai_top1": 0.018460329929300863,
+      "heldout_crispr_top1": 0.0192458758837392,
+      "heldout_rnai_top10": 0.039473684210526314,
+      "heldout_crispr_top10": 0.03927729772191673
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "residual_pc3",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 5092,
+      "heldout_rnai_top1": 0.02199528672427337,
+      "heldout_crispr_top1": 0.02376276512175962,
+      "heldout_rnai_top10": 0.048507462686567165,
+      "heldout_crispr_top10": 0.04890023566378633
+    },
+    {
+      "cell": "MCF7",
+      "quality": "all_profiles",
+      "representation": "residual_pc10",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 5092,
+      "heldout_rnai_top1": 0.023173605655930872,
+      "heldout_crispr_top1": 0.029065200314218383,
+      "heldout_rnai_top10": 0.05439905734485467,
+      "heldout_crispr_top10": 0.055184603299293006
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "all978",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 1800,
+      "heldout_rnai_top1": 0.04,
+      "heldout_crispr_top1": 0.04833333333333333,
+      "heldout_rnai_top10": 0.07611111111111112,
+      "heldout_crispr_top10": 0.09166666666666666
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc1",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 1800,
+      "heldout_rnai_top1": 0.04055555555555555,
+      "heldout_crispr_top1": 0.058888888888888886,
+      "heldout_rnai_top10": 0.08444444444444445,
+      "heldout_crispr_top10": 0.10611111111111111
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc3",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 1800,
+      "heldout_rnai_top1": 0.04888888888888889,
+      "heldout_crispr_top1": 0.06722222222222222,
+      "heldout_rnai_top10": 0.08944444444444444,
+      "heldout_crispr_top10": 0.11833333333333333
+    },
+    {
+      "cell": "MCF7",
+      "quality": "crispr_quality_pass_only",
+      "representation": "residual_pc10",
+      "partitions": 20,
+      "repeated_heldout_gene_records": 1800,
+      "heldout_rnai_top1": 0.05333333333333334,
+      "heldout_crispr_top1": 0.0661111111111111,
+      "heldout_rnai_top10": 0.09277777777777778,
+      "heldout_crispr_top10": 0.12777777777777777
+    }
+  ]
+}

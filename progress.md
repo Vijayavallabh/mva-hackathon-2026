@@ -6888,3 +6888,286 @@ annotation resources ready
 }
 === OK ===
 ```
+
+
+## Session 69 — eight-H100 structural and held-out expression falsification (2026-10-06 IST)
+
+The owner requested extensive relevant remote GPU modeling and use of Anthropic's
+biomolecular optimization toolkit where useful. Feat-009 remained the sole active
+feature and stays `in_progress`: this computational campaign is complete, while
+biological qualification, video, provider/distribution and receipt work remain open.
+No raw subject file, source VCF record or clinical narrative was transferred. All
+remote work is under `/home/prachh/v/mva-track2-orthogonal-20261006-v29` and remains
+in the November 24 deletion scope. No new hosted model provider was used.
+
+### Completed work and consequences
+
+- Executed the pinned Anthropic ProteinMPNN `exact` implementation, rather than only
+  reviewing its documentation: toolkit `f4f62fa6592ae4938d49b1757bea0cfeff9f468e`,
+  upstream `8907e6671bfbfc92303b5f79c4b5e6ce47cdef57`. Four related checkpoint
+  sets and six WT backbones produce 504 WT contexts; 24 mutant-backbone contexts
+  complete the 528-context plan. There are 67,584 fixed-site samples and 10,560
+  aggregate site/amino-acid records. These are not independent biological replicates.
+- Historical primary control ordering passes only **1/24** comparisons, expanded
+  ordering **0/24**. N1002K is lowest among 17 matched N-to-K sites in all WT
+  backbone/checkpoint combinations, but mutant-predicted backbones materially change
+  its score. Neither favorable ranking nor a predicted fold validates function.
+- A targeted primary-source search identified endpoint-specific disagreement for
+  D882N: retained 2012 reconstitution endpoints, lost 2019 CENP-E phosphorylation
+  despite retained stability, and retained 2020 KARD-S676/scaffolding endpoints.
+  Original gates were not relabelled after results. Qualification now separates
+  abundance, scaffolding, catalysis and chromosome outcomes. Failed RMS mTOR-trial
+  and official everolimus safety/PK counterevidence preserve existing exposure and
+  injury gates. Source-reading depth and retrieval limits are explicit.
+- Eight expression workers completed **400** symmetric held-out fits and
+  **820,147,416** correlations across five cells, raw/PRIME spaces, all-profile/QC-only
+  views and four gene partitions. Every evaluated target, including all ten query
+  genes, is excluded from projection training in both modalities. Within-fold
+  denominators and repeated-partition dependence are retained.
+- HT29 PRIME agreement survives CRISPR QC restriction; after ten-PC removal its
+  correlation is 0.1223–0.1371, with RNAi/CRISPR retrieval ranks 1–6/1–3 among
+  smaller held-out panels. One guide, tumour context and RNAi uncertainty remain.
+  MCF7 has no QC-qualified BUB1B query. Its all-profile everolimus reversal weakens
+  under projection, while MTOR matching remains first. No cross-cell joint-rescue
+  claim or drug promotion follows. Everolimus remains an optional model-qualified
+  mechanistic probe; HCQ reserve; phase unconfirmed; clinical margins null.
+
+All eight H100 model workers and all eight expression workers finished. The model
+wave reached 100% sampled utilization on each GPU, with whole-launch means
+38.96–41.33% including pilot/startup. Individual model workers took 28–30 seconds;
+expression workers took 49.6–103.2 seconds and had low average GPU utilization.
+The expression kernel-product total was 0.9763 seconds; covariance/eigen wall time
+summed to 8.2872 seconds. These measures do not establish continuous saturation or
+biological evidence. Final remote inspection found all eight GPUs idle and no owned
+inference job remaining. Full measurements are in the compute record.
+
+The stock/exact pilot matched sequence bytes and probability/score arrays at its
+bounded test setting. A forced-last-site upstream sampling/direct-conditional check
+had maximum probability difference 1.79e-7. Production retained upstream random
+ordering. Setup failures (wrapper configuration, JSON-lines input format and missing
+setuptools runtime dependency) are preserved; upstream model code was unchanged.
+
+### Artifacts, reproduction and preservation
+
+New authoritative addendum: `notes/track2-orthogonal-v29.md`, fixed structural and
+crossfit plans, complete JSON/TSV results, compact summary, source review, validation
+amendments, compute/audit records, reproduction guide and R43–R47 register. All 47
+claim records remain available; they are not 47 studies. The combined harness,
+current-state record, root instructions, README, feature evidence and handoff now
+route to v29 research with **preserved presentation v28**. The frozen slides/report
+have not been rewritten to imply they already contain these findings.
+
+Original archive: `results/feat009/orthogonal-v29/orthogonal-v29-audit.tar.gz`,
+**3,838 files / 1,645,137,933 bytes**, SHA-256
+`373d78784dabc003335813736f907348f7c90aaac510e242b0c917eff8e5280e`.
+Includes original per-draw arrays/FASTAs, reference panels/bases, public CIFs, plans,
+locks, source, logs and failed attempts. The archive verifier checked every digest
+and safe member path before extracting into a fresh directory. Local aggregate
+recomputation reproduced expression values exactly and the scientific summary byte-for-byte.
+The public expression JSON was compacted from 7,376,962 to 3,439,297 bytes to meet
+the 5 MB publication gate; TSV line endings were normalized to LF. Values and
+original outputs are preserved. Structural JSON/TSV differences were at most
+1.7763568394002505e-15 across runtime
+versions. The audit binds 25 new public files. All **586** prior v28-bound inputs
+are unchanged; strict v28 verification passes for **147** packaged files and all
+historical inputs. No prior release or submitted Track 1 deliverable was changed.
+
+Principal commands (complete flags and runtime paths in the reproduction guide):
+
+```bash
+# Owner host, separate logs/ and nohup for each wave; original launcher files retained.
+nohup bash scripts/setup_track2_orthogonal_v29.sh > logs/setup.log 2>&1 < /dev/null &
+nohup bash scripts/run_track2_crossfit_v29.sh > logs/expression-launch.log 2>&1 < /dev/null &
+nohup bash scripts/run_track2_orthogonal_v29.sh > logs/model-launch.log 2>&1 < /dev/null &
+# Original wave order: expression completed during model-runtime repair, then model.
+
+uv run python scripts/archive_track2_orthogonal_v29.py verify results/feat009/orthogonal-v29/orthogonal-v29-audit.tar.gz results/feat009/orthogonal-v29/archive
+uv run python scripts/analyze_track2_orthogonal_v29.py results/feat009/orthogonal-v29/archive . results/feat009/v29-local-reanalysis
+uv run python scripts/summarize_track2_orthogonal_v29.py results/feat009/orthogonal-v29/archive results/feat009/v29-local-reanalysis
+uv run python scripts/audit_track2_orthogonal_v29.py . results/feat009/orthogonal-v29/orthogonal-v29-audit.tar.gz results/feat009/orthogonal-v29/archive results/feat009/v29-local-reanalysis
+uv run --no-project python scripts/check_track2_orthogonal_v29.py
+uv run --no-project python scripts/check_track2_harness.py
+uv run python scripts/audit_track2_harness.py --output results/feat009/v29-isolated-harness-audit-20261006.json
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+uv run python scripts/track2_release_v28.py verify results/feat009/jvv7_track2_research_v28
+uv run python scripts/check_publication_remote.py --output results/feat009/v29-publication-remote-20261006.json
+```
+
+### Verification
+
+- New and combined public checks pass; biological validation and upload-ready remain
+  false. **896 tests pass**, including 14 new regression tests. The final public-byte
+  rerun also passes (17.983 seconds).
+- Isolated combined review passes with 692 public files, no project environment,
+  protected path, network, process launch or write access through its audit guards.
+  This is a dependency audit, not an operating-system sandbox certification.
+- Safe archive verification, complete local reanalysis and historical preservation
+  pass. Shell syntax, Python compilation and `git diff --check` pass.
+- The final staged publication audit passes for 690 blobs with no findings.
+  Final isolated public review also passes after formatting and audit-hash updates.
+- Live publication guard passes: repository PUBLIC, all 13 retired objects
+  unavailable, successful live-object control, no unknown errors.
+
+The first staged audit identified only the oversized expression JSON; it was resolved
+by lossless compact formatting. Staged whitespace checking also prompted TSV newline
+normalization. Updated audit hashes bind the final public bytes.
+
+Startup and both final `./init.sh` checks passed. The final no-argument fresh-shell
+check was repeated after public formatting and hash updates. Actual complete output
+from `logs/track2-v29-final-init-public-bytes-20261006.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "harness_version": 29,
+  "presentation_version": 28,
+  "drug_science_version": 21,
+  "slides": 9,
+  "narration_words": 330,
+  "falsification_amendment": {
+    "passed": true,
+    "claims": 27,
+    "additional_source_records": 12,
+    "current_decision": {
+      "clinical_recommendation": false,
+      "scope": "qualified_non_cancer_model",
+      "evidence_kind": "not_measured",
+      "decision": "HOLD",
+      "reason": "Prerequisites unresolved or failed; no transfer from another branch"
+    },
+    "drug_dispositions_changed": false,
+    "biological_validation": false
+  },
+  "upload_ready": false,
+  "research_addendum": {
+    "version": 19,
+    "status": "complete",
+    "gpus": 8,
+    "completed_gpu_waves": 3,
+    "compound_profiles": 312438,
+    "query_compound_comparisons": 12185082,
+    "resampled_reagent_sets": 560000,
+    "primary_contexts": 14,
+    "primary_query_gates_passed": 0,
+    "post_hoc_comparisons": 42,
+    "post_hoc_full_filters_passed": 0,
+    "primary_everolimus_comparisons": 19,
+    "primary_everolimus_profiles": 14,
+    "primary_everolimus_positive_correlations": 13,
+    "phase2_unresolved_labelled_profiles": 174,
+    "phase2_reference_matching_profiles": 6,
+    "phase2_reference_matching_qc_passes": 0,
+    "ht29_post_hoc_reagents": 5,
+    "ht29_post_hoc_adjusted_tail": 0.041995800419958006,
+    "ht29_full_filter_passed": false,
+    "drug_ranking_changed": false
+  },
+  "rnai_addendum": {
+    "passed": true,
+    "version": 23,
+    "gpus": 8,
+    "unordered_pair_comparisons": 1536619950,
+    "null_sets": 5843968,
+    "orthogonal_comparisons": 2364754,
+    "primary_threshold_crossings": 5,
+    "finite_reference_threshold_crossings": 0,
+    "unknown_comparisons": 2,
+    "seed_comparison": {
+      "raw": {
+        "available": 54,
+        "seed_greater": 45
+      },
+      "prime": {
+        "available": 54,
+        "seed_greater": 45
+      }
+    },
+    "orthogonal_reference": {
+      "raw": {
+        "comparisons": 297,
+        "top1": 14,
+        "top5percent": 84
+      },
+      "prime": {
+        "comparisons": 297,
+        "top1": 21,
+        "top5percent": 93
+      }
+    },
+    "independent_bub1b_experiment": false,
+    "drug_ranking_changed": false,
+    "biological_validation": false
+  },
+  "crispr_addendum": {
+    "passed": true,
+    "version": 25,
+    "gpus": 8,
+    "comparisons": 2474445074,
+    "bub1b_profiles": 31,
+    "bub1b_guides": 1,
+    "matched_compound_profiles": 285488,
+    "ht29_qualification_lead": true,
+    "independent_guide_qualified_contexts": 0,
+    "drug_ranking_changed": false,
+    "biological_validation": false,
+    "new_neural_inference": false,
+    "claim_records": 5
+  },
+  "falsification_addendum": {
+    "passed": true,
+    "version": 27,
+    "gpus": 8,
+    "masked_positions": 9472,
+    "substitution_scores": 179968,
+    "expression_comparisons": 918999010,
+    "claim_records": 5,
+    "new_neural_inference": true,
+    "drug_ranking_changed": false,
+    "biological_validation": false,
+    "independent_guide_qualified_contexts": 0
+  },
+  "orthogonal_addendum": {
+    "passed": true,
+    "version": 29,
+    "gpus": 8,
+    "structural_contexts": 528,
+    "fixed_site_samples": 67584,
+    "expression_fits": 400,
+    "expression_comparisons": 820147416,
+    "primary_control_passes": 1,
+    "expanded_control_passes": 0,
+    "claim_records": 5,
+    "total_claim_records": 47,
+    "new_neural_inference": true,
+    "toolkit_executed": true,
+    "biological_validation": false,
+    "drug_ranking_changed": false
+  },
+  "biological_validation": false,
+  "scope": "Combined public presentation/research consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```
