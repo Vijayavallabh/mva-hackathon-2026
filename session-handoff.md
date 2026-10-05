@@ -1,9 +1,10 @@
-# Session handoff: Track 2 v29 research and harness
+# Session handoff: Track 2 v30 presentation and harness
 
-6 October 2026 IST, session 69. Only feat-009 is active. Use `notes/track2-current.json`,
-`scripts/check_track2_harness.py` and `notes/track2-reviewer-guide-v29.md`.
-Harness v29 checks the new research alongside preserved presentation v28 and all older
-research. The v21 drug ledger and decision contract remain unchanged.
+6 October 2026 IST, session 70. Only feat-009 is active. Use `notes/track2-current.json`,
+`scripts/check_track2_harness.py` and `notes/track2-reviewer-guide-v30.md`.
+Harness and presentation v30 integrate the frozen v29 research with all earlier
+findings. The v21 drug ledger and decision contract remain unchanged. No model runs
+were repeated for this update.
 
 ## New completed research
 
@@ -44,13 +45,14 @@ Local extraction/reanalysis is separate from public CPU consistency checks.
 No raw subject transfer or new hosted biological model provider occurred. This folder,
 its caches and all earlier `~/v/mva-*` folders remain in the November 24 deletion scope.
 
-## Preserved presentation and earlier evidence
+## Current presentation and preserved evidence
 
-`notes/track2-report-v28.md`, `notes/track2-slides-v28.html`,
-`notes/track2-pitch-v28.md`, plain transcript, disclosure and workbook remain frozen.
-The presentation has nine slides and 330 narration words. It integrates v27, but **does
-not yet integrate v29**; read it with the new addendum. Exports remain under
-`results/feat009/v28-slides-final-20261001/` and `v28-documents-final-20261001/`.
+`notes/track2-report-v30.md`, `notes/track2-slides-v30.html`,
+`notes/track2-pitch-v30.md`, plain transcript, disclosure and methods workbook
+integrate v29. Nine slides accompany 326 narration words; runtime is unmeasured.
+Exports are under `results/feat009/v30-slides-final2-20261006/` and
+`v30-documents-final2-20261006/`. Snapshot and ZIP paths are in the current-state file.
+All v28-bound sources and the frozen v29 research remain unchanged.
 
 Keep frozen `notes/track2-transcriptome-v19.md`, v23 RNAi, v25 CRISPR and v27
 protein-background/expression records. Their same-well overlap, failed QC, seed effects,
@@ -72,11 +74,11 @@ separate from non-cancer function.
 uv run --no-project python scripts/check_track2_orthogonal_v29.py
 uv run --no-project python scripts/check_track2_harness.py
 uv run python scripts/audit_track2_harness.py
-uv run python scripts/track2_release_v28.py verify results/feat009/jvv7_track2_research_v28
+uv run python scripts/track2_release_v30.py verify results/feat009/jvv7_track2_research_v30
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
-Actual final checks and fresh init output are in progress.md session 69. Preserve all
+Actual final checks and fresh init output are in progress.md session 70. Preserve all
 older bound inputs and use new versions for future research or presentation changes.
 
 ## Blockers
@@ -92,15 +94,17 @@ older bound inputs and use new versions for future research or presentation chan
 - Challenge CC BY scope versus linked historical AF3/non-AVI Atlas terms is unresolved.
   Preserve notices and the unsent clarification; organizer contact is not authorized.
 - Video recording, runtime measurement, hosting, owner/live-portal checks and Track 2
-  receipt remain open. September 24-25 requirements/discussions are dated reviews:
-  three entries, latest only reviewed, quota unknown. No submission callback was used.
+  receipt remain open. October 6 requirements/discussions refresh covers 26 threads and 79 visible comments:
+  three entries, latest only reviewed, quota unknown. Judging extends to December 17
+  and winners to December 18; submission and November 24 deletion stay unchanged.
+  Provider clarification does not verify account settings. No submission callback was used.
 - Track 1's owner-reported 100/F-max 1 remains an attestation; receipt/byte identity is
   a separate administrative gap. Preserve submitted v4 and never request another upload.
 
 ## Next actions
 
-The requested compute campaign is complete. Incorporate v29 into a new presentation
-release if requested; do not alter v28-bound files. Next scientific advancement requires
+The requested compute campaign and v30 presentation integration are complete. Preserve
+all bound versions; future changes need a new release. Next scientific advancement requires
 the v21 safeguards plus the new endpoint-specific qualification amendments. BindCraft2
 remains deferred without a functional target and a validation route.
 

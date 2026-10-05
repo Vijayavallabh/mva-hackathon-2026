@@ -7171,3 +7171,260 @@ annotation resources ready
 }
 === OK ===
 ```
+
+## 2026-10-06 IST — Session 70: v30 presentation and harness integration
+
+Completed the requested update to the slides, report, narration/plain transcript,
+video description, methods workbook and all current harness routes. The new version
+integrates the completed v29 ProteinMPNN and symmetric held-out expression research.
+No biological model was rerun. Feat-009 remains the sole active feature; recording,
+provider/distribution, delivery and biological qualification gaps remain separate.
+
+### Scientific and editorial changes
+
+- Nine slides retain the spindle identity and use eight local SVG figures. New result
+  slides show 1/24 primary and 0/24 expanded ProteinMPNN control ordering, endpoint-specific
+  D882N controls, QC-restricted HT29 agreement and weaker MCF7 drug reversal. The 31
+  CRISPR profiles are explicitly labeled as the total dataset.
+- The 14-page report preserves older favorable and contrary findings, adds the four-row
+  held-out table and all 47 claim records, and separates missing queries from zero scores.
+  Repeated-partition ranges are not confidence intervals; within-fold ranks use smaller
+  reference panels. HT29 and MCF7 findings cannot supply a joint rescue experiment.
+- Narration is 326 words across nine matching sections; runtime remains unmeasured.
+  The plain transcript matches exactly. Eleven methods answers round-trip to the
+  unchanged official workbook; its abstract is 268 words. B9 is identical in the
+  report and video description, including actual v29 toolkit execution and this
+  cycle's Codex/API-assisted editing. Full acknowledgements are preserved.
+- Humanizer/no-ai-slop and scientific-slides/frontend-design guidance informed the
+  editing. PDF/workbook checks preserve the official template. No independent author,
+  scientific, visual or requirements reviewer participated this cycle.
+
+### Official refresh
+
+Anonymous public retrieval checked revision
+`c9b4a7e6247574124cd5bbfd249af9af6f1bbac3`, live/source agreement and the unchanged
+methods workbook. All 26 threads / 79 visible comments were compared with the prior
+archive; twelve new/edited comments were reread. Three prior administrative attachments
+retain their original review, with no new image attachments in changed comments.
+Judging now ends December 17 and winners are announced December 18. Submission
+remains October 24; deletion remains November 24. Consumer-tier clarification does
+not verify account settings or relax our data rules. Organizers will not confirm
+candidate-specific phase during the challenge. No contact or submission occurred.
+
+### Artifacts and reproduction
+
+Current routes are in `notes/track2-current.json`, with presentation/harness v30
+and the unchanged v21 drug ledger. Research v19/v23/v25/v27/v29 and presentation
+v28 remain frozen. The separate preservation audit confirms **612 files unchanged**.
+
+- Slides: `results/feat009/v30-slides-final2-20261006/track2-slides-v30.pdf`
+- Report: `results/feat009/v30-documents-final2-20261006/jvv7_track2_report_v30.pdf`
+- Methods: `results/feat009/v30-documents-final2-20261006/jvv7_track2_methods_v30.xlsx`
+- Transcript: `notes/track2-transcript-v30.txt`
+- Snapshot: `results/feat009/jvv7_track2_research_v30`, **164 files / 640 bound inputs**.
+- ZIP: `results/feat009/jvv7_track2_video_materials_v30.zip`, **49 files / 1,625,505 bytes**,
+  SHA-256 `af078f033bbc052c3f62ccd4eff2985160df594cac6e5adabb4fe3d42126981a`.
+
+```bash
+uv run python scripts/track2_community_review_v17.py results/feat009/v30-community-20261006
+uv run python scripts/track2_challenge_review.py results/feat009/v30-official-20261006
+uv run node scripts/render_track2_slides_v30.mjs NEW-SLIDE-DIRECTORY
+uv run scripts/track2_export_documents_v30.py NEW-DOCUMENT-DIRECTORY
+uv run node scripts/render_track2_report_v30.mjs NEW-DOCUMENT-DIRECTORY
+uv run --no-project python scripts/track2_public_review_v30.py
+uv run --no-project python scripts/check_track2_harness.py
+uv run python scripts/audit_track2_harness.py
+uv run python scripts/track2_release_v30.py verify results/feat009/jvv7_track2_research_v30
+uv run python scripts/track2_bundle_v30.py verify
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+```
+
+The renderer/exporter directory arguments must be new simple lowercase names. The
+commands above document the route; placeholders are not literal invocations.
+Original preview exports remain ignored and preserved. The initial report preview
+split a quantitative table; final CSS keeps these tables together. A later B9 wording
+clarification changed only page 13. All other final report rasterizations match the
+reviewed export, and only slide 3 differs from the inspected slide preview. The
+changed result slides and report pages were inspected at full resolution.
+
+### Verification
+
+- **924 Track 2 tests pass** in 19.256 seconds, including 28 new versioned regression
+  tests. Numerical display checks reject changed held-out values, fabricated missing
+  query scores, false confidence intervals, erased control failures and deadline drift.
+- Nine-slide geometry: no outside text or text overlap, minimum 24px; checked palette
+  contrast at least 5.257:1, 640px layout without horizontal overflow, embedded PDF fonts.
+  Fourteen report pages and eight tables are retained. Workbook prompts and Track 1
+  values/styles are unchanged; zero formulas and zero formula errors.
+- Versioned public-copy review passes with 719 copied files; combined review passes
+  with 720. All six prohibited-action probes are blocked and the project environment
+  is unused. This checks dependencies, not operating-system security or biology.
+- Snapshot/build verification and exact-byte ZIP verification pass. All earlier bound
+  inputs remain unchanged. Python compilation, links and staged whitespace checks pass.
+- Staged disclosure audit passes for 718 blobs without findings. Live publication guard
+  reports PUBLIC, 13 retired objects unavailable, a successful live-object control
+  and zero unknown errors. The pre-commit hook repeats the staged data gate.
+
+Everolimus remains an optional qualified mechanistic probe, HCQ reserve; no rescue
+priority, trans confirmation, clinical margin, wet-lab result or recorded video is
+established. Provider handling/distribution, runtime/hosting, final portal checks and
+receipt remain open in `session-handoff.md`.
+
+Startup and final fresh-shell `./init.sh` passed. Actual complete final output
+from `logs/track2-v30-final-init-20261006.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "harness_version": 30,
+  "presentation_version": 30,
+  "drug_science_version": 21,
+  "slides": 9,
+  "narration_words": 326,
+  "falsification_amendment": {
+    "passed": true,
+    "claims": 27,
+    "additional_source_records": 12,
+    "current_decision": {
+      "clinical_recommendation": false,
+      "scope": "qualified_non_cancer_model",
+      "evidence_kind": "not_measured",
+      "decision": "HOLD",
+      "reason": "Prerequisites unresolved or failed; no transfer from another branch"
+    },
+    "drug_dispositions_changed": false,
+    "biological_validation": false
+  },
+  "upload_ready": false,
+  "research_addendum": {
+    "version": 19,
+    "status": "complete",
+    "gpus": 8,
+    "completed_gpu_waves": 3,
+    "compound_profiles": 312438,
+    "query_compound_comparisons": 12185082,
+    "resampled_reagent_sets": 560000,
+    "primary_contexts": 14,
+    "primary_query_gates_passed": 0,
+    "post_hoc_comparisons": 42,
+    "post_hoc_full_filters_passed": 0,
+    "primary_everolimus_comparisons": 19,
+    "primary_everolimus_profiles": 14,
+    "primary_everolimus_positive_correlations": 13,
+    "phase2_unresolved_labelled_profiles": 174,
+    "phase2_reference_matching_profiles": 6,
+    "phase2_reference_matching_qc_passes": 0,
+    "ht29_post_hoc_reagents": 5,
+    "ht29_post_hoc_adjusted_tail": 0.041995800419958006,
+    "ht29_full_filter_passed": false,
+    "drug_ranking_changed": false
+  },
+  "rnai_addendum": {
+    "passed": true,
+    "version": 23,
+    "gpus": 8,
+    "unordered_pair_comparisons": 1536619950,
+    "null_sets": 5843968,
+    "orthogonal_comparisons": 2364754,
+    "primary_threshold_crossings": 5,
+    "finite_reference_threshold_crossings": 0,
+    "unknown_comparisons": 2,
+    "seed_comparison": {
+      "raw": {
+        "available": 54,
+        "seed_greater": 45
+      },
+      "prime": {
+        "available": 54,
+        "seed_greater": 45
+      }
+    },
+    "orthogonal_reference": {
+      "raw": {
+        "comparisons": 297,
+        "top1": 14,
+        "top5percent": 84
+      },
+      "prime": {
+        "comparisons": 297,
+        "top1": 21,
+        "top5percent": 93
+      }
+    },
+    "independent_bub1b_experiment": false,
+    "drug_ranking_changed": false,
+    "biological_validation": false
+  },
+  "crispr_addendum": {
+    "passed": true,
+    "version": 25,
+    "gpus": 8,
+    "comparisons": 2474445074,
+    "bub1b_profiles": 31,
+    "bub1b_guides": 1,
+    "matched_compound_profiles": 285488,
+    "ht29_qualification_lead": true,
+    "independent_guide_qualified_contexts": 0,
+    "drug_ranking_changed": false,
+    "biological_validation": false,
+    "new_neural_inference": false,
+    "claim_records": 5
+  },
+  "falsification_addendum": {
+    "passed": true,
+    "version": 27,
+    "gpus": 8,
+    "masked_positions": 9472,
+    "substitution_scores": 179968,
+    "expression_comparisons": 918999010,
+    "claim_records": 5,
+    "new_neural_inference": true,
+    "drug_ranking_changed": false,
+    "biological_validation": false,
+    "independent_guide_qualified_contexts": 0
+  },
+  "orthogonal_addendum": {
+    "passed": true,
+    "version": 29,
+    "gpus": 8,
+    "structural_contexts": 528,
+    "fixed_site_samples": 67584,
+    "expression_fits": 400,
+    "expression_comparisons": 820147416,
+    "primary_control_passes": 1,
+    "expanded_control_passes": 0,
+    "claim_records": 5,
+    "total_claim_records": 47,
+    "new_neural_inference": true,
+    "toolkit_executed": true,
+    "biological_validation": false,
+    "drug_ranking_changed": false
+  },
+  "biological_validation": false,
+  "scope": "Combined public presentation/research consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```
