@@ -63,7 +63,8 @@ alongside the v19 transcriptome qualification requirements, five supplemental
 `notes/track2-rnai-register-v23.json` challenges and five
 `notes/track2-crispr-register-v25.json` challenges and five
 `notes/track2-falsification-register-v27.json` challenges and five
-`notes/track2-orthogonal-register-v29.json` challenges (47 claim records, not studies).
+`notes/track2-orthogonal-register-v29.json` challenges and five
+`notes/track2-perturbseq-register-v31.json` challenges (52 claim records, not studies).
 Each consequential claim needs support and challenge, a falsifier, stop/reopening
 criteria and a next discriminating action. Unknown evidence means hold; it is not
 disproof. Failed safety overrides apparent benefit; all-pass permits only further
@@ -83,12 +84,26 @@ This is a continuing objective, not a one-time review. Preserve immutable snapsh
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the artifact record and [session-handoff.md](session-handoff.md) for next steps.
-Session 70 integrates the completed v29 ProteinMPNN and symmetric held-out expression
-research into **presentation and harness v30**. Use the nine-slide deck, 326-word
-narration, report, transcript and disclosure in `notes/track2-current.json`.
-Use `scripts/check_track2_harness.py`, `notes/track2-reviewer-guide-v30.md` and
-`notes/track2-owner-readiness-v30.md`. Research v29 remains frozen, as do presentation
-v28 and every earlier bound input. The drug ledger/base validation remain v21.
+Session 71 adds the completed v31 public Perturb-seq analysis and integrates it into
+**presentation and harness v32**. Use the nine-slide deck, 335-word narration, report,
+transcript, disclosure and methods workbook routed by `notes/track2-current.json`.
+Use `scripts/check_track2_harness.py`, `notes/track2-reviewer-guide-v32.md` and
+`notes/track2-owner-readiness-v32.md`. All earlier bound inputs and releases through
+v30 remain frozen. The drug ledger/base validation remain v21.
+
+V31 used all eight H100s for 27,628,823,832 CUDA correlations and 2,048 split repeats
+on 558,299 public Replogle/Weissman cells. RPE1 BUB1B expression is repeatable but
+own-target retrieval is weak; cross-cell BUB1B correlation is 0.1043 versus MTOR
+0.5836. One shared guide pair and selected core controls limit attribution. The
+unselected-control sensitivity is unavailable, not a duplicate successful test.
+RPE1 remains a functional-assay comparator pending independent perturbation/restoration
+and relevant function. No clinical or drug-priority promotion. The 226-file archive,
+original-count CPU checks and local full-output reanalysis passed, with numerical
+rounding differences retained. GPU use was brief and bursty, not sustained saturation;
+no new neural inference occurred in v31. See `notes/track2-perturbseq-v31.md`, its
+methods, source review, reproduction guide, audit and qualification amendments.
+All jobs finished under `/home/prachh/v/mva-track2-perturbseq-20261007-v31`;
+this folder and all earlier remote roots/caches remain in the November 24 deletion scope.
 
 The pinned Anthropic toolkit actually executed ProteinMPNN exact mode for 528 contexts
 and 67,584 fixed-site samples. Four related checkpoints separate historical primary
@@ -104,7 +119,7 @@ ranks use smaller within-fold denominators. One guide and tumour context remain.
 MCF7 has no QC-qualified BUB1B query, while MTOR drug matching remains first. Missing
 queries are not zero scores. No cross-cell joint-rescue claim is supported.
 
-All 47 claim records and eleven drug dispositions persist. No rescue priority,
+All 52 claim records and eleven drug dispositions persist. No rescue priority,
 confirmed phase, clinical margin or wet-lab result is established. Earlier five- and
 six-reagent HT29 findings stay separate. All owned GPU jobs finished. The new remote
 folder `~/v/mva-track2-orthogonal-20261006-v29` is in the November 24 deletion scope.
@@ -225,16 +240,16 @@ participated. Delivery, provider and distribution flags remain unresolved.
   Record the complete acknowledgement inside the three-minute video. Preserve the
   Track 1 submitted v4, every earlier Track 2 bound input/package, the fixed v19 campaign and v1-v21 releases.
 
-Use `scripts/track2_release_v30.py` to check/build/verify **new** v30 research snapshot
-directories. Render with `scripts/render_track2_slides_v30.mjs`; export the report and
-workbook with `scripts/track2_export_documents_v30.py` followed by
-`scripts/render_track2_report_v30.mjs`. Recording materials use
-`scripts/track2_bundle_v30.py`; historical research retains AF3 notices.
-The combined public reviewer checks integrated v30 and frozen v29/v27 research, v25 CRISPR, v23 RNAi, v21 decisions
+Use `scripts/track2_release_v32.py` to check/build/verify **new** v32 research snapshot
+directories. Render with `scripts/render_track2_slides_v32.mjs`; export the report and
+workbook with `scripts/track2_export_documents_v32.py` followed by
+`scripts/render_track2_report_v32.mjs`. Recording materials use
+`scripts/track2_bundle_v32.py`; historical research retains AF3 notices.
+The combined public reviewer checks integrated v32 and frozen v31/v29/v27 research, v25 CRISPR, v23 RNAi, v21 decisions
 and v19 findings. It needs no
 data/results folders, keys, network, GPUs or old
 local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
-The versioned `scripts/track2_public_review_v30.py` checks the integrated presentation
+The versioned `scripts/track2_public_review_v32.py` checks the integrated presentation
 and frozen research; `scripts/check_track2_transcriptome.py` checks v19 alone.
 Its passing result verifies consistency, not biology or eligibility. The stricter
 release verification also requires retained local historical archives.
@@ -264,15 +279,16 @@ uv run --no-project python scripts/check_track2_transcriptome.py
 uv run --no-project python scripts/check_track2_rnai_v23.py
 uv run --no-project python scripts/check_track2_crispr_v25.py
 uv run --no-project python scripts/check_track2_orthogonal_v29.py
+uv run --no-project python scripts/check_track2_perturbseq_v31.py
 uv run --no-project python scripts/track2_falsification_v21.py
-uv run --no-project python scripts/track2_public_review_v30.py
-uv run python scripts/track2_release_v30.py check
+uv run --no-project python scripts/track2_public_review_v32.py
+uv run python scripts/track2_release_v32.py check
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
 `track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
 its old conditional-screen label is not today's drug decision. The current v21
-ledger, v30 report and v19/v23/v25/v27/v29 research take precedence. Historical exact-byte verification remains
+ledger, v32 report and v19/v23/v25/v27/v29/v31 research take precedence. Historical exact-byte verification remains
 available through the versioned release scripts; never resubmit Track 1 to resolve
 its missing administrative receipt.
 

@@ -1,0 +1,259 @@
+{
+  "version": 31,
+  "passed": true,
+  "created_utc": "2026-10-06T21:47:12.056609+00:00",
+  "archive_verification": {
+    "passed": true,
+    "files": 226,
+    "bytes": 887986492,
+    "sha256": "8cd7f0b4c1c453fc10a586d66354c087aa95e2fbbb79ffc0247f9834641585ae"
+  },
+  "reanalysis": {
+    "passed": true,
+    "summary_byte_identical": false,
+    "numeric_fields": 2705,
+    "differing_numeric_fields": 58,
+    "max_absolute_difference": 2.220446049250313e-16,
+    "tolerance": 2e-05,
+    "complete_output_comparisons": {
+      "all-split-query-records.tsv.gz": {
+        "rows": 49152,
+        "max_absolute_difference": 0.0,
+        "decompressed_byte_identical": true
+      },
+      "all_features-all-shared-constructs.tsv.gz": {
+        "rows": 1763,
+        "max_absolute_difference": 4.996003610813204e-16,
+        "decompressed_byte_identical": false
+      },
+      "all_features-cross-cell-correlations.npy": {
+        "shape": [
+          2154,
+          2077
+        ],
+        "max_absolute_difference": 0.0
+      },
+      "no_queries-all-shared-constructs.tsv.gz": {
+        "rows": 1763,
+        "max_absolute_difference": 3.885780586188048e-16,
+        "decompressed_byte_identical": false
+      },
+      "no_queries-cross-cell-correlations.npy": {
+        "shape": [
+          2154,
+          2077
+        ],
+        "max_absolute_difference": 0.0
+      },
+      "no_queries_or_cycle-all-shared-constructs.tsv.gz": {
+        "rows": 1763,
+        "max_absolute_difference": 6.106226635438361e-16,
+        "decompressed_byte_identical": false
+      },
+      "no_queries_or_cycle-cross-cell-correlations.npy": {
+        "shape": [
+          2154,
+          2077
+        ],
+        "max_absolute_difference": 0.0
+      }
+    },
+    "scope": "Numerical reproduction of archived analysis; not independent biological validation"
+  },
+  "raw_count_cpu_audits": [
+    {
+      "passed": true,
+      "scope": "Original raw counts and library totals to independent CPU FP64 full query mean profiles",
+      "worker": "pilot-0",
+      "queries": [
+        {
+          "gene": "BUB1B",
+          "construct": "934_BUB1B_P1P2_ENSG00000156970",
+          "cells": 106,
+          "max_absolute_error": 1.4405452250509931e-06
+        },
+        {
+          "gene": "BUB1",
+          "construct": "935_BUB1_P1P2_ENSG00000169679",
+          "cells": 75,
+          "max_absolute_error": 1.394200952971325e-06
+        },
+        {
+          "gene": "MAD2L1",
+          "construct": "4746_MAD2L1_P1P2_ENSG00000164109",
+          "cells": 108,
+          "max_absolute_error": 1.7118420715944715e-06
+        },
+        {
+          "gene": "TTK",
+          "construct": "9400_TTK_P1P2_ENSG00000112742",
+          "cells": 80,
+          "max_absolute_error": 1.3815654165416635e-06
+        },
+        {
+          "gene": "PLK1",
+          "construct": "6453_PLK1_P1P2_ENSG00000166851",
+          "cells": 36,
+          "max_absolute_error": 9.928418405885653e-07
+        },
+        {
+          "gene": "MTOR",
+          "construct": "5339_MTOR_P1P2_ENSG00000198793",
+          "cells": 102,
+          "max_absolute_error": 2.0492062088872665e-06
+        },
+        {
+          "gene": "RPTOR",
+          "construct": "7541_RPTOR_P1P2_ENSG00000141564",
+          "cells": 30,
+          "max_absolute_error": 1.2707623867624918e-06
+        }
+      ],
+      "tolerance": 2e-05,
+      "biological_validation": false
+    },
+    {
+      "passed": true,
+      "scope": "Original raw counts and library totals to independent CPU FP64 full query mean profiles",
+      "worker": "worker-4",
+      "queries": [
+        {
+          "gene": "BUB1B",
+          "construct": "934_BUB1B_P1P2_ENSG00000156970",
+          "cells": 141,
+          "max_absolute_error": 2.2385550021754037e-06
+        },
+        {
+          "gene": "BUB1",
+          "construct": "935_BUB1_P1P2_ENSG00000169679",
+          "cells": 648,
+          "max_absolute_error": 2.829792066696285e-06
+        },
+        {
+          "gene": "MAD2L1",
+          "construct": "4746_MAD2L1_P1P2_ENSG00000164109",
+          "cells": 154,
+          "max_absolute_error": 2.1109279182279783e-06
+        },
+        {
+          "gene": "CDC20",
+          "construct": "1390_CDC20_P1P2_ENSG00000117399",
+          "cells": 115,
+          "max_absolute_error": 1.8378047364278616e-06
+        },
+        {
+          "gene": "TTK",
+          "construct": "9400_TTK_P1P2_ENSG00000112742",
+          "cells": 199,
+          "max_absolute_error": 1.880853399680027e-06
+        },
+        {
+          "gene": "AURKB",
+          "construct": "715_AURKB_P1P2_ENSG00000178999",
+          "cells": 33,
+          "max_absolute_error": 1.8336881509233103e-06
+        },
+        {
+          "gene": "PLK1",
+          "construct": "6453_PLK1_P1P2_ENSG00000166851",
+          "cells": 60,
+          "max_absolute_error": 1.3328735410517156e-06
+        },
+        {
+          "gene": "MTOR",
+          "construct": "5339_MTOR_P1P2_ENSG00000198793",
+          "cells": 101,
+          "max_absolute_error": 1.497826606217112e-06
+        },
+        {
+          "gene": "RPTOR",
+          "construct": "7541_RPTOR_P1P2_ENSG00000141564",
+          "cells": 82,
+          "max_absolute_error": 1.8054730511474215e-06
+        }
+      ],
+      "tolerance": 2e-05,
+      "biological_validation": false
+    }
+  ],
+  "telemetry": {
+    "0": {
+      "samples": 64,
+      "peak_utilization_percent": 20.0,
+      "mean_sampled_utilization_percent": 5.84375,
+      "peak_memory_mib": 16053.0,
+      "nonzero_utilization_samples": 27
+    },
+    "1": {
+      "samples": 64,
+      "peak_utilization_percent": 22.0,
+      "mean_sampled_utilization_percent": 5.328125,
+      "peak_memory_mib": 16049.0,
+      "nonzero_utilization_samples": 25
+    },
+    "2": {
+      "samples": 64,
+      "peak_utilization_percent": 19.0,
+      "mean_sampled_utilization_percent": 5.296875,
+      "peak_memory_mib": 13931.0,
+      "nonzero_utilization_samples": 25
+    },
+    "3": {
+      "samples": 64,
+      "peak_utilization_percent": 21.0,
+      "mean_sampled_utilization_percent": 5.6875,
+      "peak_memory_mib": 16047.0,
+      "nonzero_utilization_samples": 27
+    },
+    "4": {
+      "samples": 64,
+      "peak_utilization_percent": 20.0,
+      "mean_sampled_utilization_percent": 6.8125,
+      "peak_memory_mib": 17745.0,
+      "nonzero_utilization_samples": 37
+    },
+    "5": {
+      "samples": 64,
+      "peak_utilization_percent": 20.0,
+      "mean_sampled_utilization_percent": 7.3125,
+      "peak_memory_mib": 14985.0,
+      "nonzero_utilization_samples": 37
+    },
+    "6": {
+      "samples": 64,
+      "peak_utilization_percent": 24.0,
+      "mean_sampled_utilization_percent": 7.1875,
+      "peak_memory_mib": 17745.0,
+      "nonzero_utilization_samples": 37
+    },
+    "7": {
+      "samples": 64,
+      "peak_utilization_percent": 23.0,
+      "mean_sampled_utilization_percent": 7.078125,
+      "peak_memory_mib": 20509.0,
+      "nonzero_utilization_samples": 36
+    }
+  },
+  "public_input_sha256": {
+    "notes/track2-perturbseq-amendment-v31.json": "d028b20343b427e9ece8423d6fdec3fbe6d3fe80ccb9680c63932ded6cd4c727",
+    "notes/track2-perturbseq-methods-v31.md": "486ee122e5a7ea69ec2ad3d8bb372dcc5a24094db1ae8eff20aeb409579d32e2",
+    "notes/track2-perturbseq-plan-v31.json": "ffe3948e3acbfa149b24d1af1da3e095fe08b0f56a96a811a0e5f914a3867ab9",
+    "notes/track2-perturbseq-register-v31.json": "245b52eec61e538c65d0693d6e0483b9d31afbf3931f4745863643564131da00",
+    "notes/track2-perturbseq-reproduction-v31.md": "de2eb1129cd8a7946438778b6fa3f4003be396de8d1edb7c427e0773982e0a8b",
+    "notes/track2-perturbseq-results-v31.json": "753417fc3a57a342ed00aa77d13529aff411ed56d0683f96e39e7ac03406f980",
+    "notes/track2-perturbseq-source-review-v31.md": "95731f6a76b790c14c30231914e19c9639f86011fbdfe9abcad1cdc060563ac8",
+    "notes/track2-perturbseq-sources-v31.json": "da0de7b5606dd99dd48713ced96da6140e2701f193cecf1568c8da1dea90d045",
+    "notes/track2-perturbseq-v31.md": "fc287da37c53a48b7118bd739a4fe5d435ba8eb099d1df14eee402fca4cfdf1a",
+    "notes/track2-perturbseq-validation-v31.md": "a2b975d6e8f22eb998e282dec53ec4271722c36291edeec3cee89a48cacecb6b",
+    "scripts/archive_track2_perturbseq_v31.py": "b5701a65ef3f43d9feaeaf5487c85346dcc9162b51f786be936805a3cfc81118",
+    "scripts/audit_track2_perturbseq_v31.py": "9c50c5dac506a98fab91d0704413d2c0c040554d73d908666bdeeb55d61cd04f",
+    "scripts/check_track2_perturbseq_v31.py": "6be587a9ead889530bf579ea6de43a1c4d0fb8ba19e2faa8de4fdf15337dfee7",
+    "scripts/compare_track2_perturbseq_v31.py": "58c843fcd7e9a081884072a19e2c9bc5f5ee3fba1df88f9d3447ae41725192d8",
+    "scripts/run_track2_perturbseq_v31.sh": "de545c831fbea9a6138739f55678f96521b1126e3e3cac15e8605c33ad15337d",
+    "scripts/summarize_track2_perturbseq_v31.py": "ecf968d7441174cf4ee0c675a2086615d0a421d6074f3fae427f19190e7bd3db",
+    "scripts/test_track2_perturbseq_v31.py": "f3ce4bd41f887adad1dc7c53fdd4251e73b168f0248e0e622e294c912e9994fe",
+    "scripts/track2_perturbseq_fetch_v31.py": "ab2ce10a34677d9f1c2b714c5f066da68248ce0d5b897128152b2586e9f5a462",
+    "scripts/track2_perturbseq_v31.py": "192f3f8a39078312163d2e17b8a232c8c3969de241d5e3298103c81291272167"
+  },
+  "scope": "Numerical and public-evidence consistency; not biological validation, independent specialist review or submission readiness"
+}

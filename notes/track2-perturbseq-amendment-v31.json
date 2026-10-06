@@ -1,0 +1,16 @@
+{
+  "version": 31,
+  "reason": "Deposited retained non-targeting cells all belong to provider-selected core controls in both cell types. The two planned control views have identical membership; evaluating them as distinct sensitivity conditions would misrepresent coverage.",
+  "timing": "After source schema/coverage and target-knockdown inspection, during the two-repeat pilot; before the full GPU wave. No split-half or cross-cell BUB1B results used to choose this change.",
+  "original_plan_sha256": "ffe3948e3acbfa149b24d1af1da3e095fe08b0f56a96a811a0e5f914a3867ab9",
+  "core_and_all_control_cells": {"rpe1": 11485, "K562_essential": 10691},
+  "changes": {
+    "control_views": ["core_control"],
+    "all_control_sensitivity": "unavailable_in_deposited_singlecell_export",
+    "allocation": "two cell types x four sampling-seed blocks = eight GPUs",
+    "repeats_per_worker": 256,
+    "repeats_per_cell": 1024,
+    "seeds": [310000, 310001, 310002, 310003, 310004, 310005, 310006, 310007]
+  },
+  "interpretation": "Additional partitions are conditional resampling, not independent biological experiments. The unavailable unselected-control test remains an explicit qualification gap. Original plan and failed/obsolete pilot attempts are preserved. No drug decision or promotion threshold changes."
+}

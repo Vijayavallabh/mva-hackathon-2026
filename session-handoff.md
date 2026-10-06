@@ -1,87 +1,84 @@
-# Session handoff: Track 2 v30 presentation and harness
+# Session handoff: Track 2 v32 materials and v31 Perturb-seq
 
-6 October 2026 IST, session 70. Only feat-009 is active. Use `notes/track2-current.json`,
-`scripts/check_track2_harness.py` and `notes/track2-reviewer-guide-v30.md`.
-Harness and presentation v30 integrate the frozen v29 research with all earlier
-findings. The v21 drug ledger and decision contract remain unchanged. No model runs
-were repeated for this update.
+7 October 2026 IST, session 71. Only feat-009 is active. Use `notes/track2-current.json`,
+`scripts/check_track2_harness.py` and `notes/track2-reviewer-guide-v32.md`.
+Presentation and harness v32 integrate completed v31 research. The v21 drug ledger,
+base safeguards and all historical release inputs remain unchanged.
 
-## New completed research
+## Completed research and interpretation
 
-`notes/track2-orthogonal-v29.md` reports two completed waves on all eight H100s:
+`notes/track2-perturbseq-v31.md` reports public Replogle/Weissman data from 247,914
+RPE1 and 310,385 K562 essential-screen cells. All eight H100s ran the public campaign:
+27,628,823,832 CUDA correlations, 2,048 dependent split repetitions and 13,421,574 CPU
+cross-cell comparisons. CUDA products totaled 6.476 seconds; workers took 40-59 seconds.
+Sampled utilization peaked at 19-24%, with no new neural-model inference or continuous
+saturation claim. All owned jobs are complete.
 
-- ProteinMPNN through the pinned Anthropic optimization toolkit: 528 contexts,
-  67,584 fixed-site samples, 10,560 aggregate site/amino-acid records. Four related
-  checkpoints and six WT backbones are not independent biological replicates.
-- Symmetric held-out expression analysis: 400 fits and 820,147,416 comparisons.
-  All evaluated genes are excluded from projection fitting. CRISPR QC-only sensitivity
-  is explicit; RNAi qualification limits persist.
+BUB1B depletion is detectable but poorly retrieves its own target among essential-gene
+responses. Query-excluded split medians are 0.6572 in RPE1 and 0.1197 in K562;
+first-direction median ranks are 171.5/2,154 and 323.5/2,077. Cross-cell BUB1B correlation
+is 0.1043 versus MTOR 0.5836. One shared paired-guide construct contains 106/141 BUB1B
+cells. Both retained control populations equal provider-selected core controls, so
+an unselected-control sensitivity is unavailable. The original plan and amendment
+remain distinct. RICTOR absence, low CDC20/AURKB coverage and unmeasured RPE1 RPTOR
+transcript remain separate missing states.
 
-N1002K ranks lowest among 17 matched N-to-K sites on all WT backbone/checkpoint
-combinations, but historical control ordering passes only 1/24 primary and 0/24
-expanded comparisons. Mutant-predicted backbones shift the score substantially,
-including positive values. Do not infer stability, function or a drug branch.
-D882N is retained for the historical 2012 measured endpoints, not universally functional:
-2019 CENP-E phosphorylation and 2020 KARD/scaffolding results require endpoint-specific
-interpretation. The catalytic disagreement is not resolved here.
+Keep RPE1 as a functional-assay comparator pending independent perturbation/restoration,
+protein/function, division fidelity, daughter survival and later function. MTOR matching
+cannot qualify BUB1B, transfer signatures or establish joint drug rescue. The bounded
+source review screened 98 returned titles and selected abstracts/passages. Favorable
+clinical counterevidence remains alongside primary endpoint failures and species limits.
+R48-R52 join earlier registers, for 52 claims across six registers.
 
-HT29 PRIME RNAi/CRISPR agreement survives both symmetric fitting and removal of failed
-CRISPR profiles. One guide, tumour context and RNAi seed/potency uncertainty remain.
-MCF7 BUB1B drug reversal weakens after adjustment; its BUB1B query is absent after QC
-restriction. MTOR matching remains first. Smaller within-fold ranks cannot be compared
-with prior full-panel ranks. No joint drug-plus-deficit response was measured.
+## Provenance and preservation
 
-Use `notes/track2-orthogonal-validation-v29.md`, complete results, source review,
-R43-R47 register, compute record, audit and reproduction guide. All 47 claim records
-remain available. Failed setup/runtime attempts and original outputs are preserved.
-The stock/exact pilot and direct conditional API check passed at their stated scope.
+Remote root: `/home/prachh/v/mva-track2-perturbseq-20261007-v31`.
+Archive: `results/feat009/perturbseq-v31/perturbseq-v31-audit.tar.gz`, 226 files,
+887,986,492 bytes, SHA-256
+`8cd7f0b4c1c453fc10a586d66354c087aa95e2fbbb79ffc0247f9834641585ae`.
+All file digests passed. Local complete-output reanalysis reproduces three cross-cell
+matrices exactly; summary differences are at most 2.23e-16. Original-count CPU checks
+ran on the owner host and agree within 2.83e-6. The archive omits six redownloadable
+H5ADs and two reproducible arrays but binds their digests. All raw inputs are public.
+The premature local verification during SCP failed with EOF; the completed transfer
+then passed. The earlier pandas read-only audit failure is also retained.
 
-All owned GPU jobs finished. Remote folder:
-`/home/prachh/v/mva-track2-orthogonal-20261006-v29`.
-Original 3,838-file archive:
-`results/feat009/orthogonal-v29/orthogonal-v29-audit.tar.gz`.
-Its SHA-256 is `373d78784dabc003335813736f907348f7c90aaac510e242b0c917eff8e5280e`.
-Local extraction/reanalysis is separate from public CPU consistency checks.
-No raw subject transfer or new hosted biological model provider occurred. This folder,
-its caches and all earlier `~/v/mva-*` folders remain in the November 24 deletion scope.
+Use `notes/track2-perturbseq-reproduction-v31.md`, the public audit and complete results.
+No source VCF, read data or clinical narrative was transferred. All remote roots and
+caches remain in the November 24 deletion scope. Previous ProteinMPNN/ESM/structure,
+Evo2 and public expression work is preserved, including failed controls and reused wells.
+`notes/track2-transcriptome-v19.md` remains the original expression campaign record.
+V29 keeps its favorable limited HT29 result and weak MCF7 drug connection; the new
+RPE1 evidence neither replaces those records nor supplies a joint rescue experiment.
 
-## Current presentation and preserved evidence
+## Current materials and verification
 
-`notes/track2-report-v30.md`, `notes/track2-slides-v30.html`,
-`notes/track2-pitch-v30.md`, plain transcript, disclosure and methods workbook
-integrate v29. Nine slides accompany 326 narration words; runtime is unmeasured.
-Exports are under `results/feat009/v30-slides-final2-20261006/` and
-`v30-documents-final2-20261006/`. Snapshot and ZIP paths are in the current-state file.
-All v28-bound sources and the frozen v29 research remain unchanged.
-
-Keep frozen `notes/track2-transcriptome-v19.md`, v23 RNAi, v25 CRISPR and v27
-protein-background/expression records. Their same-well overlap, failed QC, seed effects,
-five- versus six-reagent HT29 findings and control failures persist. Earlier negative
-scores and repeated windows are not calibrated probabilities. AF3/ESMFold confidence
-does not establish function. Evo2's BRCA1 benchmark does not validate BUB1B.
-
-No rescue-priority drug is supported. Everolimus remains an optional model-qualified
-mechanistic probe; HCQ stays reserve. Phase, endogenous allele effects, relevant tissue
-response and clinical exposure/benefit/injury margins remain unresolved. No wet-lab
-experiment has been performed. Unknown evidence returns HOLD; safety failure overrides
-apparent benefit; all-pass permits only further preclinical review. Tumour killing is
-separate from non-cancer function.
-
-## Restart and verification
+`notes/track2-report-v32.md`, `notes/track2-slides-v32.html`,
+`notes/track2-pitch-v32.md`, `notes/track2-transcript-v32.txt` and video description
+are synchronized. There are nine slides, 335 narration words, sixteen report pages
+and eleven methods fields with a 313-word abstract. Runtime remains unmeasured.
+Exports use `results/feat009/v32-slides-final-20261007` and
+`results/feat009/v32-documents-final-20261007`. Snapshot/ZIP paths are in the current state.
 
 ```bash
 ./init.sh
-uv run --no-project python scripts/check_track2_orthogonal_v29.py
 uv run --no-project python scripts/check_track2_harness.py
+uv run --no-project python scripts/check_track2_perturbseq_v31.py
 uv run python scripts/audit_track2_harness.py
-uv run python scripts/track2_release_v30.py verify results/feat009/jvv7_track2_research_v30
+uv run python scripts/track2_release_v32.py verify results/feat009/jvv7_track2_research_v32
+uv run python scripts/track2_bundle_v32.py verify
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
-Actual final checks and fresh init output are in progress.md session 70. Preserve all
-older bound inputs and use new versions for future research or presentation changes.
+Final checks and fresh init output are in progress.md session 71. Preserve all earlier
+bound inputs; future changes require a new version. No rescue-priority drug is supported.
+Everolimus is an optional model-qualified probe; HCQ stays reserve. Phase and clinical
+margins remain unknown. No wet-lab experiment has been performed. Unknown evidence
+returns HOLD; safety failure overrides apparent benefit; all-pass permits preclinical
+review only. Tumour killing is separate from non-cancer function.
 
 ## Blockers
+
 
 - Independent BUB1B perturbation/restoration, relevant non-cancer model qualification
   and joint functional treatment evidence remain missing. No compute closes these gaps.
@@ -103,15 +100,17 @@ older bound inputs and use new versions for future research or presentation chan
 
 ## Next actions
 
-The requested compute campaign and v30 presentation integration are complete. Preserve
-all bound versions; future changes need a new release. Next scientific advancement requires
-the v21 safeguards plus the new endpoint-specific qualification amendments. BindCraft2
-remains deferred without a functional target and a validation route.
+The authorized compute and presentation integration are complete. Further scientific
+advancement requires the v21 safeguards and v23/v25/v27/v29/v31 qualification amendments,
+including independent attribution and joint functional treatment evidence. Extra splits
+or larger language models cannot supply those measurements. BindCraft2 remains deferred
+without a functional target and a validation route.
 
-Rehearse/record the eventual current script with the full acknowledgement and measure
-runtime. Resolve provider/distribution items and inspect final portal requirements
-before delivery. Feat-009 remains in progress for those separate steps.
+Rehearse and record the current script with the complete acknowledgement, measure runtime,
+and host the video. Resolve provider/distribution items and inspect live portal requirements
+before delivery. Feat-009 remains in progress for those separate steps. The latest full
+requirements/discussions review is October 6, not a new October 7 community review.
 
-Raw subject files and clinical narrative stay on the original machine and out of hosted
-context. No family contact or re-identification. Keep the live retired-object purge
-guard; commit intended changes, push configured origin and verify upstream equality.
+Keep raw subject files and narrative on the original machine. No family contact or
+re-identification. Retain the live purge guard, commit intended changes, push configured
+origin and verify upstream equality. Preserve Track 1 v4; do not request another upload.

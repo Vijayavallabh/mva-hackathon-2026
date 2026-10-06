@@ -1,0 +1,126 @@
+{
+  "version": 31,
+  "search_date": "2026-10-07",
+  "reading_depth": "98 returned titles screened; selected abstracts and primary-source passages reviewed. Bounded search, not systematic or independent peer review.",
+  "queries": [
+    {
+      "domain": "alleles",
+      "query": "TITLE_ABS:((BUB1B OR BubR1) AND (mutation OR variant) AND (rescue OR function OR stability)) AND FIRST_PDATE:[1900-01-01 TO 2026-10-07]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28%28BUB1B+OR+BubR1%29+AND+%28mutation+OR+variant%29+AND+%28rescue+OR+function+OR+stability%29%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-07%5D&format=json&resultType=core&pageSize=20",
+      "retrieved_utc": "2026-10-06T21:30:20.065956+00:00",
+      "total_hits": 31,
+      "retained_records": 20,
+      "cache_file": "results/feat009/perturbseq-v31/sources/retry-alleles.json",
+      "sha256": "3c1840b9689057b8499b47a264d925d117a836ebc3b43caeee2236ec41a2de55"
+    },
+    {
+      "domain": "alternatives",
+      "query": "TITLE_ABS:(aneuploidy AND (hydroxychloroquine OR senolytic OR autophagy inhibitor)) AND FIRST_PDATE:[1900-01-01 TO 2026-10-07]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28aneuploidy+AND+%28hydroxychloroquine+OR+senolytic+OR+autophagy+inhibitor%29%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-07%5D&format=json&resultType=core&pageSize=20",
+      "retrieved_utc": "2026-10-06T21:30:23.493634+00:00",
+      "total_hits": 367,
+      "retained_records": 20,
+      "cache_file": "results/feat009/perturbseq-v31/sources/retry-alternatives.json",
+      "sha256": "bc5dedd39b8250740a84446353bd07e599fa89a709496ef26090872942ba4a41"
+    },
+    {
+      "domain": "clinical_failure",
+      "query": "TITLE_ABS:(rhabdomyosarcoma AND (everolimus OR temsirolimus) AND (randomized OR trial OR resistance)) AND FIRST_PDATE:[1900-01-01 TO 2026-10-07]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28rhabdomyosarcoma+AND+%28everolimus+OR+temsirolimus%29+AND+%28randomized+OR+trial+OR+resistance%29%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-07%5D&format=json&resultType=core&pageSize=20",
+      "retrieved_utc": "2026-10-06T21:30:22.049792+00:00",
+      "total_hits": 7,
+      "retained_records": 7,
+      "cache_file": "results/feat009/perturbseq-v31/sources/retry-clinical_failure.json",
+      "sha256": "983019f8e63f64180329b4a64897cc63fc33c0991fc4c2311d220f2396436df8"
+    },
+    {
+      "domain": "contrary_function",
+      "query": "TITLE_ABS:((rapamycin OR everolimus) AND (aneuploidy OR chromosome instability OR mitotic slippage)) AND FIRST_PDATE:[1900-01-01 TO 2026-10-07]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28%28rapamycin+OR+everolimus%29+AND+%28aneuploidy+OR+chromosome+instability+OR+mitotic+slippage%29%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-07%5D&format=json&resultType=core&pageSize=20",
+      "retrieved_utc": "2026-10-06T21:30:21.116508+00:00",
+      "total_hits": 5,
+      "retained_records": 5,
+      "cache_file": "results/feat009/perturbseq-v31/sources/retry-contrary_function.json",
+      "sha256": "81a330ed7fa82e40488a7d84eb550716a67e2a46548b644a0eb0a6fcdacd91cd"
+    },
+    {
+      "domain": "mechanism",
+      "query": "TITLE_ABS:((BUB1B OR BubR1) AND (rapamycin OR everolimus OR autophagy)) AND FIRST_PDATE:[1900-01-01 TO 2026-10-07]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28%28BUB1B+OR+BubR1%29+AND+%28rapamycin+OR+everolimus+OR+autophagy%29%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-07%5D&format=json&resultType=core&pageSize=20",
+      "retrieved_utc": "2026-10-06T21:30:19.942979+00:00",
+      "total_hits": 14,
+      "retained_records": 14,
+      "cache_file": "results/feat009/perturbseq-v31/sources/retry-mechanism.json",
+      "sha256": "417aef1cab7e940f7bcb5a0b68d06a78ea56f51aa1ddd2d67e8c800ae778f9b7"
+    },
+    {
+      "domain": "model",
+      "query": "TITLE_ABS:((BUB1B OR BubR1) AND (RPE1 OR CRISPRi OR Perturb-seq)) AND FIRST_PDATE:[1900-01-01 TO 2026-10-07]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28%28BUB1B+OR+BubR1%29+AND+%28RPE1+OR+CRISPRi+OR+Perturb-seq%29%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-07%5D&format=json&resultType=core&pageSize=20",
+      "retrieved_utc": "2026-10-06T21:30:20.820816+00:00",
+      "total_hits": 1,
+      "retained_records": 1,
+      "cache_file": "results/feat009/perturbseq-v31/sources/retry-model.json",
+      "sha256": "5d378dcf87fa68b5c2bec1536bc1392b9d45b679f0da8346318881208df55c9a"
+    },
+    {
+      "domain": "models",
+      "query": "TITLE_ABS:(single-cell AND perturbation AND (foundation model OR deep learning) AND (benchmark OR baseline)) AND FIRST_PDATE:[1900-01-01 TO 2026-10-07]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28single-cell+AND+perturbation+AND+%28foundation+model+OR+deep+learning%29+AND+%28benchmark+OR+baseline%29%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-07%5D&format=json&resultType=core&pageSize=20",
+      "retrieved_utc": "2026-10-06T21:30:24.280760+00:00",
+      "total_hits": 11,
+      "retained_records": 11,
+      "cache_file": "results/feat009/perturbseq-v31/sources/retry-models.json",
+      "sha256": "ddf19183a0261efe0ed3555da8a62ea2db88c723eb8247b13ffa9d766d772569"
+    },
+    {
+      "domain": "safety",
+      "query": "TITLE_ABS:(everolimus AND pediatric AND (growth OR kidney OR muscle OR infection) AND (toxicity OR adverse)) AND FIRST_PDATE:[1900-01-01 TO 2026-10-07]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28everolimus+AND+pediatric+AND+%28growth+OR+kidney+OR+muscle+OR+infection%29+AND+%28toxicity+OR+adverse%29%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-07%5D&format=json&resultType=core&pageSize=20",
+      "retrieved_utc": "2026-10-06T21:30:22.867307+00:00",
+      "total_hits": 27,
+      "retained_records": 20,
+      "cache_file": "results/feat009/perturbseq-v31/sources/retry-safety.json",
+      "sha256": "53e5d53cdfcc82fb7587ea3bf254f4b6c22b67017bb297c7ec887595a72512f5"
+    }
+  ],
+  "initial_api_failures": 8,
+  "initial_failure": "HTTP 503 for requests using sort=RELEVANCE and open-ended date syntax; revised queries without sort succeeded. Cause unproven.",
+  "subject_inputs": false,
+  "new_hosted_biological_model": false,
+  "pipeline_archive_pending": false,
+  "primary_passages": [
+    {
+      "doi": "10.1016/j.cell.2022.05.013",
+      "depth": "selected full-text methods and results"
+    },
+    {
+      "doi": "10.1093/nar/gkz805",
+      "depth": "selected full-text methods and discussion"
+    },
+    {
+      "doi": "10.1038/s41592-025-02772-6",
+      "depth": "abstract and selected benchmark passages"
+    },
+    {
+      "doi": "10.3389/fcell.2023.1282182",
+      "depth": "selected full-text design and results"
+    },
+    {
+      "doi": "10.21037/jtd-2025-704",
+      "depth": "selected full-text design and results"
+    },
+    {
+      "doi": "10.1093/bbb/zbag087",
+      "depth": "indexed abstract; full text unavailable"
+    },
+    {
+      "doi": "10.1038/s41591-026-04354-1",
+      "depth": "selected full-text design, safety, biomarkers and discussion"
+    },
+    {
+      "doi": "10.1001/jama.2025.14338",
+      "depth": "indexed abstract; full-text request failed"
+    }
+  ]
+}

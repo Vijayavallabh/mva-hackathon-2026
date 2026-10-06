@@ -1,0 +1,5016 @@
+{
+  "version": 31,
+  "complete": true,
+  "plan_sha256": "ffe3948e3acbfa149b24d1af1da3e095fe08b0f56a96a811a0e5f914a3867ab9",
+  "amendment_sha256": "d028b20343b427e9ece8423d6fdec3fbe6d3fe80ccb9680c63932ded6cd4c727",
+  "query_metadata": {
+    "rpe1": {
+      "cells": 247914,
+      "features": 8749,
+      "batches": 56,
+      "core_control_cells": 11485,
+      "all_control_cells": 11485,
+      "query_metadata": [
+        {
+          "gene": "BUB1B",
+          "cells": 106,
+          "constructs": [
+            "934_BUB1B_P1P2_ENSG00000156970"
+          ],
+          "guide_pairs": [
+            "BUB1B_-_40453297.23-P1P2|BUB1B_-_40453273.23-P1P2"
+          ],
+          "gemgroups": 44,
+          "provider_summaries": {
+            "934_BUB1B_P1P2_ENSG00000156970": {
+              "num_cells_filtered": 106.0,
+              "num_cells_unfiltered": 114.0,
+              "fold_expr": 0.05828229732815119,
+              "control_expr": 0.627962156686332,
+              "cnv_score_z": 23.442648041408297
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000156970"
+          ],
+          "mean_target_cp10k": 0.025073168169106437,
+          "matched_control_cp10k": 0.5147681141948212,
+          "cp10k_ratio": 0.04870769474198075,
+          "raw_umi_ratio": 0.06318323131598597
+        },
+        {
+          "gene": "BUB1",
+          "cells": 75,
+          "constructs": [
+            "935_BUB1_P1P2_ENSG00000169679"
+          ],
+          "guide_pairs": [
+            "BUB1_-_111435363.23-P1P2|BUB1_-_111435372.23-P1P2"
+          ],
+          "gemgroups": 44,
+          "provider_summaries": {
+            "935_BUB1_P1P2_ENSG00000169679": {
+              "num_cells_filtered": 75.0,
+              "num_cells_unfiltered": 79.0,
+              "fold_expr": 0.012738097077842786,
+              "control_expr": 0.9019191406385672,
+              "cnv_score_z": 11.155660435314367
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000169679"
+          ],
+          "mean_target_cp10k": 0.008328648468569762,
+          "matched_control_cp10k": 0.775962970622924,
+          "cp10k_ratio": 0.010733306593075862,
+          "raw_umi_ratio": 0.012086358792765524
+        },
+        {
+          "gene": "MAD2L1",
+          "cells": 108,
+          "constructs": [
+            "4746_MAD2L1_P1P2_ENSG00000164109"
+          ],
+          "guide_pairs": [
+            "MAD2L1_+_120987540.23-P1P2|MAD2L1_+_120987919.23-P1P2"
+          ],
+          "gemgroups": 46,
+          "provider_summaries": {
+            "4746_MAD2L1_P1P2_ENSG00000164109": {
+              "num_cells_filtered": 108.0,
+              "num_cells_unfiltered": 121.0,
+              "fold_expr": 0.15317970456400545,
+              "control_expr": 1.347840514595525,
+              "cnv_score_z": 22.963899192271317
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000164109"
+          ],
+          "mean_target_cp10k": 0.2287549448078846,
+          "matched_control_cp10k": 1.147484940832834,
+          "cp10k_ratio": 0.19935333063443636,
+          "raw_umi_ratio": 0.15047526044261855
+        },
+        {
+          "gene": "CDC20",
+          "cells": 15,
+          "constructs": [
+            "1390_CDC20_P1P2_ENSG00000117399"
+          ],
+          "guide_pairs": [
+            "CDC20_-_43824668.23-P1P2|CDC20_-_43824671.23-P1P2"
+          ],
+          "gemgroups": 15,
+          "provider_summaries": {
+            "1390_CDC20_P1P2_ENSG00000117399": {
+              "num_cells_filtered": 15.0,
+              "num_cells_unfiltered": 17.0,
+              "fold_expr": 0.2270286973749616,
+              "control_expr": 1.455876148089552,
+              "cnv_score_z": -1.156845881482529
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000117399"
+          ],
+          "mean_target_cp10k": 0.23147769091043488,
+          "matched_control_cp10k": 1.3384593123619728,
+          "cp10k_ratio": 0.17294339003996118,
+          "raw_umi_ratio": 0.22870103050128254
+        },
+        {
+          "gene": "TTK",
+          "cells": 80,
+          "constructs": [
+            "9400_TTK_P1P2_ENSG00000112742"
+          ],
+          "guide_pairs": [
+            "TTK_+_80714409.23-P1P2|TTK_-_80714487.23-P1P2"
+          ],
+          "gemgroups": 41,
+          "provider_summaries": {
+            "9400_TTK_P1P2_ENSG00000112742": {
+              "num_cells_filtered": 80.0,
+              "num_cells_unfiltered": 88.0,
+              "fold_expr": 0.1736859848826434,
+              "control_expr": 0.4656705061224462,
+              "cnv_score_z": 54.993371485765906
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000112742"
+          ],
+          "mean_target_cp10k": 0.06456494884040626,
+          "matched_control_cp10k": 0.36654575527638356,
+          "cp10k_ratio": 0.17614430916468496,
+          "raw_umi_ratio": 0.1847514897820407
+        },
+        {
+          "gene": "AURKB",
+          "cells": 5,
+          "constructs": [
+            "715_AURKB_P1P2_ENSG00000178999"
+          ],
+          "guide_pairs": [
+            "AURKB_-_8113518.23-P1P2|AURKB_-_8113837.23-P1P2"
+          ],
+          "gemgroups": 4,
+          "provider_summaries": {
+            "715_AURKB_P1P2_ENSG00000178999": {
+              "num_cells_filtered": 5.0,
+              "num_cells_unfiltered": 5.0,
+              "fold_expr": 0.0,
+              "control_expr": 0.5289555534084821,
+              "cnv_score_z": null
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000178999"
+          ],
+          "mean_target_cp10k": 0.0,
+          "matched_control_cp10k": 0.4705109949560832,
+          "cp10k_ratio": 0.0,
+          "raw_umi_ratio": 0.0
+        },
+        {
+          "gene": "PLK1",
+          "cells": 36,
+          "constructs": [
+            "6453_PLK1_P1P2_ENSG00000166851"
+          ],
+          "guide_pairs": [
+            "PLK1_+_23690651.23-P1P2|PLK1_-_23690679.23-P1P2"
+          ],
+          "gemgroups": 27,
+          "provider_summaries": {
+            "6453_PLK1_P1P2_ENSG00000166851": {
+              "num_cells_filtered": 36.0,
+              "num_cells_unfiltered": 42.0,
+              "fold_expr": 0.10614483547995472,
+              "control_expr": 1.082891396580726,
+              "cnv_score_z": 15.878485455166116
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000166851"
+          ],
+          "mean_target_cp10k": 0.16838575616664042,
+          "matched_control_cp10k": 0.8793008929175437,
+          "cp10k_ratio": 0.19149958509416729,
+          "raw_umi_ratio": 0.16254022892556316
+        },
+        {
+          "gene": "MTOR",
+          "cells": 102,
+          "constructs": [
+            "5339_MTOR_P1P2_ENSG00000198793"
+          ],
+          "guide_pairs": [
+            "MTOR_+_11322547.23-P1P2|MTOR_+_11322541.23-P1P2"
+          ],
+          "gemgroups": 47,
+          "provider_summaries": {
+            "5339_MTOR_P1P2_ENSG00000198793": {
+              "num_cells_filtered": 102.0,
+              "num_cells_unfiltered": 110.0,
+              "fold_expr": 0.2313552106521201,
+              "control_expr": 0.2512590528311062,
+              "cnv_score_z": 0.2507252278411478
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000198793"
+          ],
+          "mean_target_cp10k": 0.03433615349640093,
+          "matched_control_cp10k": 0.21586137122068635,
+          "cp10k_ratio": 0.15906576198525713,
+          "raw_umi_ratio": 0.16531892233207604
+        },
+        {
+          "gene": "RPTOR",
+          "cells": 30,
+          "constructs": [
+            "7541_RPTOR_P1P2_ENSG00000141564"
+          ],
+          "guide_pairs": [
+            "RPTOR_+_78519157.23-P1P2|RPTOR_+_78519208.23-P1P2"
+          ],
+          "gemgroups": 22,
+          "provider_summaries": {
+            "7541_RPTOR_P1P2_ENSG00000141564": {
+              "num_cells_filtered": 30.0,
+              "num_cells_unfiltered": 32.0,
+              "fold_expr": 0.3166900290821441,
+              "control_expr": 0.09561800613223194,
+              "cnv_score_z": 3.278559822772051
+            }
+          },
+          "measured_gene_ids": []
+        },
+        {
+          "gene": "RICTOR",
+          "cells": 0,
+          "constructs": [],
+          "guide_pairs": [],
+          "gemgroups": 0,
+          "provider_summaries": {},
+          "measured_gene_ids": [
+            "ENSG00000164327"
+          ]
+        }
+      ],
+      "minimum_adjusted_umi": 3000.1650390625,
+      "maximum_mito_fraction": 0.10999932885169983,
+      "source_integer_counts": true,
+      "source_already_selected": true,
+      "selection_warning": "Only deposited retained cells; excluded/dead cells unavailable."
+    },
+    "K562_essential": {
+      "cells": 310385,
+      "features": 8563,
+      "batches": 48,
+      "core_control_cells": 10691,
+      "all_control_cells": 10691,
+      "query_metadata": [
+        {
+          "gene": "BUB1B",
+          "cells": 141,
+          "constructs": [
+            "934_BUB1B_P1P2_ENSG00000156970"
+          ],
+          "guide_pairs": [
+            "BUB1B_-_40453297.23-P1P2|BUB1B_-_40453273.23-P1P2"
+          ],
+          "gemgroups": 48,
+          "provider_summaries": {
+            "934_BUB1B_P1P2_ENSG00000156970": {
+              "num_cells_filtered": 141.0,
+              "num_cells_unfiltered": 145.0,
+              "fold_expr": 0.12550542003562545,
+              "control_expr": 0.471656471146696,
+              "cnv_score_z": 8.67566841676612
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000156970"
+          ],
+          "mean_target_cp10k": 0.03047743597796841,
+          "matched_control_cp10k": 0.3169453497018551,
+          "cp10k_ratio": 0.09615990897685671,
+          "raw_umi_ratio": 0.12848804213365253
+        },
+        {
+          "gene": "BUB1",
+          "cells": 648,
+          "constructs": [
+            "935_BUB1_P1P2_ENSG00000169679"
+          ],
+          "guide_pairs": [
+            "BUB1_-_111435363.23-P1P2|BUB1_-_111435372.23-P1P2"
+          ],
+          "gemgroups": 48,
+          "provider_summaries": {
+            "935_BUB1_P1P2_ENSG00000169679": {
+              "num_cells_filtered": 648.0,
+              "num_cells_unfiltered": 671.0,
+              "fold_expr": 0.13677992167745792,
+              "control_expr": 1.261283361369086,
+              "cnv_score_z": 4.980920378634396
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000169679"
+          ],
+          "mean_target_cp10k": 0.10518236515567872,
+          "matched_control_cp10k": 0.8721803328504582,
+          "cp10k_ratio": 0.12059703847244745,
+          "raw_umi_ratio": 0.1378470495222162
+        },
+        {
+          "gene": "MAD2L1",
+          "cells": 154,
+          "constructs": [
+            "4746_MAD2L1_P1P2_ENSG00000164109"
+          ],
+          "guide_pairs": [
+            "MAD2L1_+_120987540.23-P1P2|MAD2L1_+_120987919.23-P1P2"
+          ],
+          "gemgroups": 46,
+          "provider_summaries": {
+            "4746_MAD2L1_P1P2_ENSG00000164109": {
+              "num_cells_filtered": 154.0,
+              "num_cells_unfiltered": 166.0,
+              "fold_expr": 0.32096141991301314,
+              "control_expr": 2.5636210067761778,
+              "cnv_score_z": 4.025731649083008
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000164109"
+          ],
+          "mean_target_cp10k": 0.5029011654993116,
+          "matched_control_cp10k": 1.818156707314015,
+          "cp10k_ratio": 0.27659946113349804,
+          "raw_umi_ratio": 0.3189787937471443
+        },
+        {
+          "gene": "CDC20",
+          "cells": 115,
+          "constructs": [
+            "1390_CDC20_P1P2_ENSG00000117399"
+          ],
+          "guide_pairs": [
+            "CDC20_-_43824668.23-P1P2|CDC20_-_43824671.23-P1P2"
+          ],
+          "gemgroups": 42,
+          "provider_summaries": {
+            "1390_CDC20_P1P2_ENSG00000117399": {
+              "num_cells_filtered": 115.0,
+              "num_cells_unfiltered": 139.0,
+              "fold_expr": 0.4758545922958054,
+              "control_expr": 1.1802537667859356,
+              "cnv_score_z": 8.68223077715916
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000117399"
+          ],
+          "mean_target_cp10k": 0.3601895999094975,
+          "matched_control_cp10k": 0.8024303069864618,
+          "cp10k_ratio": 0.44887337476346645,
+          "raw_umi_ratio": 0.5038969529851898
+        },
+        {
+          "gene": "TTK",
+          "cells": 199,
+          "constructs": [
+            "9400_TTK_P1P2_ENSG00000112742"
+          ],
+          "guide_pairs": [
+            "TTK_+_80714409.23-P1P2|TTK_-_80714487.23-P1P2"
+          ],
+          "gemgroups": 47,
+          "provider_summaries": {
+            "9400_TTK_P1P2_ENSG00000112742": {
+              "num_cells_filtered": 199.0,
+              "num_cells_unfiltered": 245.0,
+              "fold_expr": 0.22348605340822866,
+              "control_expr": 0.4719701244674809,
+              "cnv_score_z": 41.873686923084605
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000112742"
+          ],
+          "mean_target_cp10k": 0.0605856076023866,
+          "matched_control_cp10k": 0.3119770327347473,
+          "cp10k_ratio": 0.19419893532322421,
+          "raw_umi_ratio": 0.20736896715721215
+        },
+        {
+          "gene": "AURKB",
+          "cells": 33,
+          "constructs": [
+            "715_AURKB_P1P2_ENSG00000178999"
+          ],
+          "guide_pairs": [
+            "AURKB_-_8113518.23-P1P2|AURKB_-_8113837.23-P1P2"
+          ],
+          "gemgroups": 24,
+          "provider_summaries": {
+            "715_AURKB_P1P2_ENSG00000178999": {
+              "num_cells_filtered": 33.0,
+              "num_cells_unfiltered": 47.0,
+              "fold_expr": 0.5071579825999976,
+              "control_expr": 0.6440386549569048,
+              "cnv_score_z": 9.264903802579859
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000178999"
+          ],
+          "mean_target_cp10k": 0.270868179571748,
+          "matched_control_cp10k": 0.43140210055962913,
+          "cp10k_ratio": 0.6278786756493973,
+          "raw_umi_ratio": 0.6674405415909775
+        },
+        {
+          "gene": "PLK1",
+          "cells": 60,
+          "constructs": [
+            "6453_PLK1_P1P2_ENSG00000166851"
+          ],
+          "guide_pairs": [
+            "PLK1_+_23690651.23-P1P2|PLK1_-_23690679.23-P1P2"
+          ],
+          "gemgroups": 33,
+          "provider_summaries": {
+            "6453_PLK1_P1P2_ENSG00000166851": {
+              "num_cells_filtered": 60.0,
+              "num_cells_unfiltered": 75.0,
+              "fold_expr": 0.4537303330368396,
+              "control_expr": 1.6339272343484637,
+              "cnv_score_z": 2.9328282037532585
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000166851"
+          ],
+          "mean_target_cp10k": 0.4745471375364566,
+          "matched_control_cp10k": 1.0361788842917825,
+          "cp10k_ratio": 0.45797800431033164,
+          "raw_umi_ratio": 0.4609464903848932
+        },
+        {
+          "gene": "MTOR",
+          "cells": 101,
+          "constructs": [
+            "5339_MTOR_P1P2_ENSG00000198793"
+          ],
+          "guide_pairs": [
+            "MTOR_+_11322547.23-P1P2|MTOR_+_11322541.23-P1P2"
+          ],
+          "gemgroups": 46,
+          "provider_summaries": {
+            "5339_MTOR_P1P2_ENSG00000198793": {
+              "num_cells_filtered": 101.0,
+              "num_cells_unfiltered": 108.0,
+              "fold_expr": 0.2241741319631643,
+              "control_expr": 0.4740776405923954,
+              "cnv_score_z": 1.5375987423099375
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000198793"
+          ],
+          "mean_target_cp10k": 0.04859301417318819,
+          "matched_control_cp10k": 0.33439252670978087,
+          "cp10k_ratio": 0.14531728520165776,
+          "raw_umi_ratio": 0.20397359007118585
+        },
+        {
+          "gene": "RPTOR",
+          "cells": 82,
+          "constructs": [
+            "7541_RPTOR_P1P2_ENSG00000141564"
+          ],
+          "guide_pairs": [
+            "RPTOR_+_78519157.23-P1P2|RPTOR_+_78519208.23-P1P2"
+          ],
+          "gemgroups": 41,
+          "provider_summaries": {
+            "7541_RPTOR_P1P2_ENSG00000141564": {
+              "num_cells_filtered": 82.0,
+              "num_cells_unfiltered": 90.0,
+              "fold_expr": 0.08465607458141311,
+              "control_expr": 0.1637461849951352,
+              "cnv_score_z": 0.5058922488870199
+            }
+          },
+          "measured_gene_ids": [
+            "ENSG00000141564"
+          ],
+          "mean_target_cp10k": 0.010392979334599891,
+          "matched_control_cp10k": 0.11378165878891965,
+          "cp10k_ratio": 0.09134142923579865,
+          "raw_umi_ratio": 0.07335901014581964
+        },
+        {
+          "gene": "RICTOR",
+          "cells": 0,
+          "constructs": [],
+          "guide_pairs": [],
+          "gemgroups": 0,
+          "provider_summaries": {},
+          "measured_gene_ids": [
+            "ENSG00000164327"
+          ]
+        }
+      ],
+      "minimum_adjusted_umi": 3000.298095703125,
+      "maximum_mito_fraction": 0.19997231662273407,
+      "source_integer_counts": true,
+      "source_already_selected": true,
+      "selection_warning": "Only deposited retained cells; excluded/dead cells unavailable."
+    }
+  },
+  "feature_counts": {
+    "all_features": 4861,
+    "no_queries": 4852,
+    "no_queries_or_cycle": 4773
+  },
+  "split_results": [
+    {
+      "cell": "K562_essential",
+      "gene": "AURKB",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": -0.0604157447814941,
+        "q025": -0.0038954815594478614,
+        "median": 0.058300076052546446,
+        "q975": 0.10606042854487889,
+        "maximum": 0.1252941191196441
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 2.0,
+        "q025": 23.575000000000003,
+        "median": 530.0,
+        "q975": 1547.85,
+        "maximum": 2002.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 36.150000000000006,
+        "median": 514.5,
+        "q975": 1517.2749999999999,
+        "maximum": 1981.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 1,
+      "forward_top10": 10,
+      "reverse_top10": 9
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "AURKB",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": -0.0611915737390518,
+        "q025": -0.004371356678893739,
+        "median": 0.057821087539196,
+        "q975": 0.10593444574624293,
+        "maximum": 0.1248035430908203
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 2.0,
+        "q025": 24.0,
+        "median": 531.0,
+        "q975": 1553.9749999999997,
+        "maximum": 2001.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 36.72500000000001,
+        "median": 513.0,
+        "q975": 1522.0999999999995,
+        "maximum": 1984.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 1,
+      "forward_top10": 9,
+      "reverse_top10": 9
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "AURKB",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": -0.0659030675888061,
+        "q025": -0.0047281255130655325,
+        "median": 0.05661720968782895,
+        "q975": 0.1021578758955001,
+        "maximum": 0.1214792728424072
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 24.575000000000003,
+        "median": 516.0,
+        "q975": 1543.6999999999998,
+        "maximum": 2009.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 41.0,
+        "median": 515.0,
+        "q975": 1513.9749999999997,
+        "maximum": 2001.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 1,
+      "reverse_top1": 1,
+      "forward_top10": 6,
+      "reverse_top10": 5
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.13277667760849,
+        "q025": 0.17832976393401623,
+        "median": 0.2185346633195877,
+        "q975": 0.244957634806633,
+        "maximum": 0.2666609585285187
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 2.0,
+        "median": 80.0,
+        "q975": 327.0,
+        "maximum": 549.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 3.0,
+        "median": 95.0,
+        "q975": 357.8499999999999,
+        "maximum": 726.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 25,
+      "reverse_top1": 15,
+      "forward_top10": 103,
+      "reverse_top10": 80
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.080470822751522,
+        "q025": 0.12811603806912894,
+        "median": 0.1687582582235336,
+        "q975": 0.1958061400800943,
+        "maximum": 0.2188867330551147
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 15.0,
+        "q025": 68.575,
+        "median": 244.0,
+        "q975": 552.3999999999996,
+        "maximum": 842.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 5.0,
+        "q025": 82.575,
+        "median": 263.0,
+        "q975": 597.2749999999999,
+        "maximum": 1039.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 0,
+      "reverse_top10": 1
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.0818199962377548,
+        "q025": 0.1346698477864265,
+        "median": 0.17270357161760325,
+        "q975": 0.19802775718271728,
+        "maximum": 0.2197207659482956
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 12.0,
+        "q025": 66.0,
+        "median": 234.0,
+        "q975": 529.8499999999999,
+        "maximum": 802.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 5.0,
+        "q025": 73.575,
+        "median": 253.0,
+        "q975": 587.2749999999999,
+        "maximum": 1031.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 0,
+      "reverse_top10": 1
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1B",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.0305557381361722,
+        "q025": 0.08273964971303936,
+        "median": 0.12201341241598125,
+        "q975": 0.15028925798833365,
+        "maximum": 0.1708703935146331
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 2.0,
+        "q025": 87.0,
+        "median": 312.0,
+        "q975": 758.3999999999996,
+        "maximum": 1271.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 37.0,
+        "q025": 89.575,
+        "median": 308.5,
+        "q975": 737.425,
+        "maximum": 1326.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 1,
+      "reverse_top10": 0
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1B",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.02849742770195,
+        "q025": 0.08013455122709272,
+        "median": 0.1196591295301914,
+        "q975": 0.14785454086959357,
+        "maximum": 0.1680933088064193
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 3.0,
+        "q025": 94.575,
+        "median": 323.5,
+        "q975": 775.3999999999996,
+        "maximum": 1274.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 39.0,
+        "q025": 97.575,
+        "median": 320.0,
+        "q975": 750.0,
+        "maximum": 1341.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 1,
+      "reverse_top10": 0
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1B",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.0250421836972236,
+        "q025": 0.07744178231805558,
+        "median": 0.11661360412836075,
+        "q975": 0.1447414085268974,
+        "maximum": 0.1640482693910598
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 5.0,
+        "q025": 107.0,
+        "median": 348.5,
+        "q975": 797.1249999999998,
+        "maximum": 1159.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 44.0,
+        "q025": 107.575,
+        "median": 347.5,
+        "q975": 770.0999999999995,
+        "maximum": 1368.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 1,
+      "reverse_top10": 0
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "CDC20",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.1119802147150039,
+        "q025": 0.16494661234319205,
+        "median": 0.2167522832751274,
+        "q975": 0.24978761374950403,
+        "maximum": 0.2711267471313476
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 11.0,
+        "q025": 41.0,
+        "median": 221.5,
+        "q975": 554.2749999999999,
+        "maximum": 932.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 13.0,
+        "q025": 41.0,
+        "median": 219.5,
+        "q975": 497.27499999999986,
+        "maximum": 707.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 0,
+      "reverse_top10": 0
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "CDC20",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.1101821288466453,
+        "q025": 0.16251457557082172,
+        "median": 0.21439965069293976,
+        "q975": 0.24731791391968722,
+        "maximum": 0.268424779176712
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 14.0,
+        "q025": 46.575,
+        "median": 232.0,
+        "q975": 566.6999999999998,
+        "maximum": 945.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 13.0,
+        "q025": 47.0,
+        "median": 227.0,
+        "q975": 505.0,
+        "maximum": 720.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 0,
+      "reverse_top10": 0
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "CDC20",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.1005834266543388,
+        "q025": 0.15647927038371562,
+        "median": 0.2074490338563919,
+        "q975": 0.23982763588428493,
+        "maximum": 0.2617768347263336
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 8.0,
+        "q025": 63.575,
+        "median": 253.5,
+        "q975": 600.6999999999998,
+        "maximum": 993.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 17.0,
+        "q025": 58.575,
+        "median": 251.5,
+        "q975": 545.425,
+        "maximum": 780.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 1,
+      "reverse_top10": 0
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MAD2L1",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.2949635982513428,
+        "q025": 0.314067492634058,
+        "median": 0.3499656170606613,
+        "q975": 0.3725795455276966,
+        "maximum": 0.3865343630313873
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 2.0,
+        "median": 13.0,
+        "q975": 72.0,
+        "maximum": 136.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 2.0,
+        "median": 13.0,
+        "q975": 70.42499999999995,
+        "maximum": 174.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 19,
+      "reverse_top1": 12,
+      "forward_top10": 455,
+      "reverse_top10": 444
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MAD2L1",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.2755992114543915,
+        "q025": 0.29512755796313284,
+        "median": 0.3320465534925461,
+        "q975": 0.35486150085926055,
+        "maximum": 0.3692164719104767
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 2.0,
+        "median": 23.0,
+        "q975": 98.27499999999986,
+        "maximum": 181.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 2.0,
+        "q025": 2.0,
+        "median": 23.0,
+        "q975": 95.42499999999995,
+        "maximum": 225.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 4,
+      "reverse_top1": 0,
+      "forward_top10": 290,
+      "reverse_top10": 271
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MAD2L1",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.2744532525539398,
+        "q025": 0.3003371968865394,
+        "median": 0.3345321714878082,
+        "q975": 0.35689834877848625,
+        "maximum": 0.3736420571804046
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 2.0,
+        "median": 22.0,
+        "q975": 94.84999999999991,
+        "maximum": 178.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 2.0,
+        "q025": 2.0,
+        "median": 21.0,
+        "q975": 92.0,
+        "maximum": 232.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 4,
+      "reverse_top1": 0,
+      "forward_top10": 315,
+      "reverse_top10": 292
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MTOR",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.5447795391082764,
+        "q025": 0.5660439103841781,
+        "median": 0.593306303024292,
+        "q975": 0.6112843304872513,
+        "maximum": 0.6201893091201782
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 3.0,
+        "maximum": 5.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 3.0,
+        "maximum": 6.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 804,
+      "reverse_top1": 817,
+      "forward_top10": 1024,
+      "reverse_top10": 1024
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MTOR",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.5443012118339539,
+        "q025": 0.5655647233128548,
+        "median": 0.5927870571613312,
+        "q975": 0.6105635955929756,
+        "maximum": 0.61973637342453
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 3.0,
+        "maximum": 5.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 3.0,
+        "maximum": 5.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 795,
+      "reverse_top1": 809,
+      "forward_top10": 1024,
+      "reverse_top10": 1024
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MTOR",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.552932620048523,
+        "q025": 0.5705276876688004,
+        "median": 0.5936940610408783,
+        "q975": 0.6103220582008362,
+        "maximum": 0.6192206740379333
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 3.0,
+        "maximum": 4.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 3.0,
+        "maximum": 5.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 815,
+      "reverse_top1": 827,
+      "forward_top10": 1024,
+      "reverse_top10": 1024
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "PLK1",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": -0.0678550228476524,
+        "q025": -0.02236032532528039,
+        "median": 0.0174955567345023,
+        "q975": 0.0457476905547082,
+        "maximum": 0.0622458271682262
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 49.0,
+        "q025": 508.02500000000003,
+        "median": 1218.0,
+        "q975": 1851.85,
+        "maximum": 2052.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 244.0,
+        "q025": 506.75,
+        "median": 1206.0,
+        "q975": 1871.425,
+        "maximum": 2058.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 0,
+      "reverse_top10": 0
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "PLK1",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": -0.0706229507923126,
+        "q025": -0.0248273639008402,
+        "median": 0.01476028328761455,
+        "q975": 0.042575852386653346,
+        "maximum": 0.0590362846851348
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 65.0,
+        "q025": 569.15,
+        "median": 1282.5,
+        "q975": 1882.85,
+        "maximum": 2054.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 299.0,
+        "q025": 550.15,
+        "median": 1269.0,
+        "q975": 1886.85,
+        "maximum": 2063.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 0,
+      "reverse_top10": 0
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "PLK1",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": -0.0764446333050727,
+        "q025": -0.026423489721491923,
+        "median": 0.011825784575194051,
+        "q975": 0.03898793542757627,
+        "maximum": 0.0541110001504421
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 86.0,
+        "q025": 661.475,
+        "median": 1338.5,
+        "q975": 1892.2749999999999,
+        "maximum": 2056.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 367.0,
+        "q025": 641.575,
+        "median": 1320.5,
+        "q975": 1895.2749999999999,
+        "maximum": 2059.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 0,
+      "reverse_top10": 0
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "RPTOR",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.3244890868663788,
+        "q025": 0.35203202068805695,
+        "median": 0.38419827818870544,
+        "q975": 0.40654492303729056,
+        "maximum": 0.4188395142555237
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 4.0,
+        "median": 5.0,
+        "q975": 26.424999999999955,
+        "maximum": 56.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 4.0,
+        "median": 5.0,
+        "q975": 28.424999999999955,
+        "maximum": 59.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 1,
+      "reverse_top1": 1,
+      "forward_top10": 823,
+      "reverse_top10": 829
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "RPTOR",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.3233626782894134,
+        "q025": 0.3515875861048698,
+        "median": 0.3836159855127334,
+        "q975": 0.4062745168805122,
+        "maximum": 0.4187604784965515
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 4.0,
+        "median": 5.0,
+        "q975": 26.424999999999955,
+        "maximum": 55.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 4.0,
+        "median": 5.0,
+        "q975": 28.424999999999955,
+        "maximum": 60.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 1,
+      "reverse_top1": 1,
+      "forward_top10": 823,
+      "reverse_top10": 831
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "RPTOR",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.3316139578819275,
+        "q025": 0.3531663969159126,
+        "median": 0.3830593675374985,
+        "q975": 0.40418400093913076,
+        "maximum": 0.4187472760677337
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 4.0,
+        "median": 5.0,
+        "q975": 26.0,
+        "maximum": 50.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 2.0,
+        "q025": 4.0,
+        "median": 5.0,
+        "q975": 29.0,
+        "maximum": 66.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 1,
+      "reverse_top1": 0,
+      "forward_top10": 808,
+      "reverse_top10": 818
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "TTK",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.7320714592933655,
+        "q025": 0.7605596512556076,
+        "median": 0.78558349609375,
+        "q975": 0.8021776288747787,
+        "maximum": 0.8127684593200684
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 2.0,
+        "maximum": 3.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 2.0,
+        "maximum": 7.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 904,
+      "reverse_top1": 921,
+      "forward_top10": 1024,
+      "reverse_top10": 1024
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "TTK",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.7325146198272705,
+        "q025": 0.7609071969985962,
+        "median": 0.7854231297969818,
+        "q975": 0.8020993530750274,
+        "maximum": 0.8125196695327759
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 2.0,
+        "maximum": 3.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 2.0,
+        "maximum": 7.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 901,
+      "reverse_top1": 920,
+      "forward_top10": 1024,
+      "reverse_top10": 1024
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "TTK",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.7358648777008057,
+        "q025": 0.7621955186128616,
+        "median": 0.7860846817493439,
+        "q975": 0.8019624069333077,
+        "maximum": 0.8117784261703491
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 2.0,
+        "maximum": 3.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 2.0,
+        "maximum": 7.0
+      },
+      "reference_constructs": [
+        2077
+      ],
+      "forward_top1": 900,
+      "reverse_top1": 915,
+      "forward_top10": 1024,
+      "reverse_top10": 1024
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.3270725011825561,
+        "q025": 0.3944767333567142,
+        "median": 0.479116290807724,
+        "q975": 0.5066531985998154,
+        "maximum": 0.5182151794433594
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 172.0,
+        "q975": 801.0,
+        "maximum": 1081.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 160.5,
+        "q975": 869.425,
+        "maximum": 1114.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 92,
+      "reverse_top1": 76,
+      "forward_top10": 221,
+      "reverse_top10": 193
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.325502872467041,
+        "q025": 0.39239696785807604,
+        "median": 0.47679929435253143,
+        "q975": 0.5041792929172516,
+        "maximum": 0.5158835649490356
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 176.5,
+        "q975": 802.1249999999998,
+        "maximum": 1080.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 166.5,
+        "q975": 869.6999999999998,
+        "maximum": 1113.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 82,
+      "reverse_top1": 67,
+      "forward_top10": 214,
+      "reverse_top10": 190
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.3394668102264404,
+        "q025": 0.3900665037333965,
+        "median": 0.46015743911266327,
+        "q975": 0.4860295355319976,
+        "maximum": 0.4978461563587188
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 133.0,
+        "q975": 688.2749999999999,
+        "maximum": 974.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 133.0,
+        "q975": 749.7999999999993,
+        "maximum": 992.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 89,
+      "reverse_top1": 75,
+      "forward_top10": 233,
+      "reverse_top10": 211
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1B",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.5450633764266968,
+        "q025": 0.6137540355324745,
+        "median": 0.6592086851596832,
+        "q975": 0.6802229225635529,
+        "maximum": 0.6919458508491516
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 18.0,
+        "q025": 37.575,
+        "median": 170.0,
+        "q975": 411.6999999999998,
+        "maximum": 719.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 6.0,
+        "q025": 45.0,
+        "median": 182.0,
+        "q975": 417.6999999999998,
+        "maximum": 724.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 0,
+      "reverse_top10": 1
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1B",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.5432948470115662,
+        "q025": 0.6115664884448051,
+        "median": 0.6572057902812958,
+        "q975": 0.678077507019043,
+        "maximum": 0.6901563405990601
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 18.0,
+        "q025": 38.0,
+        "median": 171.5,
+        "q975": 415.6999999999998,
+        "maximum": 716.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 7.0,
+        "q025": 46.0,
+        "median": 183.0,
+        "q975": 419.42499999999995,
+        "maximum": 728.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 0,
+      "reverse_top10": 1
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1B",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.516586184501648,
+        "q025": 0.5841110363602638,
+        "median": 0.6289862096309662,
+        "q975": 0.6499986246228218,
+        "maximum": 0.6619881987571716
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 16.0,
+        "q025": 37.0,
+        "median": 166.0,
+        "q975": 396.27499999999986,
+        "maximum": 645.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 5.0,
+        "q025": 46.0,
+        "median": 177.0,
+        "q975": 398.8499999999999,
+        "maximum": 710.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 0,
+      "reverse_top10": 1
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MAD2L1",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.7447870969772339,
+        "q025": 0.7560083657503128,
+        "median": 0.7743297219276428,
+        "q975": 0.7876617282629013,
+        "maximum": 0.7938116788864136
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 12.0,
+        "q975": 63.424999999999955,
+        "maximum": 143.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 11.0,
+        "q975": 58.84999999999991,
+        "maximum": 109.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 41,
+      "reverse_top1": 45,
+      "forward_top10": 465,
+      "reverse_top10": 487
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MAD2L1",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.7427539229393005,
+        "q025": 0.7540427774190903,
+        "median": 0.7724509537220001,
+        "q975": 0.7858716115355492,
+        "maximum": 0.7920541167259216
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 12.0,
+        "q975": 64.84999999999991,
+        "maximum": 143.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 12.0,
+        "q975": 60.274999999999864,
+        "maximum": 111.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 41,
+      "reverse_top1": 39,
+      "forward_top10": 452,
+      "reverse_top10": 478
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MAD2L1",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.7140253782272339,
+        "q025": 0.7268620774149894,
+        "median": 0.7461099326610565,
+        "q975": 0.7606286182999611,
+        "maximum": 0.7671816349029541
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 13.0,
+        "q975": 65.0,
+        "maximum": 152.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 12.0,
+        "q975": 62.424999999999955,
+        "maximum": 113.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 42,
+      "reverse_top1": 44,
+      "forward_top10": 430,
+      "reverse_top10": 467
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MTOR",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.7694254517555237,
+        "q025": 0.7889294415712357,
+        "median": 0.8050120174884796,
+        "q975": 0.8144336864352226,
+        "maximum": 0.8196579217910767
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 2.0,
+        "maximum": 4.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 2.0,
+        "maximum": 5.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 991,
+      "reverse_top1": 980,
+      "forward_top10": 1024,
+      "reverse_top10": 1024
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MTOR",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.7690492868423462,
+        "q025": 0.7882833495736122,
+        "median": 0.8044432997703552,
+        "q975": 0.813791586458683,
+        "maximum": 0.8190810084342957
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 2.0,
+        "maximum": 4.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 2.0,
+        "maximum": 5.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 992,
+      "reverse_top1": 981,
+      "forward_top10": 1024,
+      "reverse_top10": 1024
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MTOR",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.7591269612312317,
+        "q025": 0.7750710263848305,
+        "median": 0.790890097618103,
+        "q975": 0.8003360152244567,
+        "maximum": 0.806781530380249
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 2.0,
+        "maximum": 3.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 2.0,
+        "maximum": 4.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 996,
+      "reverse_top1": 994,
+      "forward_top10": 1024,
+      "reverse_top10": 1024
+    },
+    {
+      "cell": "rpe1",
+      "gene": "PLK1",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.3269838094711303,
+        "q025": 0.4282250791788101,
+        "median": 0.5049681961536407,
+        "q975": 0.5421846568584442,
+        "maximum": 0.5666142702102661
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 6.0,
+        "q025": 63.0,
+        "median": 354.5,
+        "q975": 806.6999999999998,
+        "maximum": 1062.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 13.0,
+        "q025": 65.575,
+        "median": 351.5,
+        "q975": 854.425,
+        "maximum": 1188.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 1,
+      "reverse_top10": 0
+    },
+    {
+      "cell": "rpe1",
+      "gene": "PLK1",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.3275790810585022,
+        "q025": 0.42786586880683897,
+        "median": 0.5036778151988983,
+        "q975": 0.5406682834029197,
+        "maximum": 0.5649226903915405
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 6.0,
+        "q025": 64.15,
+        "median": 356.0,
+        "q975": 803.425,
+        "maximum": 1064.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 15.0,
+        "q025": 65.575,
+        "median": 351.5,
+        "q975": 852.1249999999998,
+        "maximum": 1183.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 1,
+      "reverse_top10": 0
+    },
+    {
+      "cell": "rpe1",
+      "gene": "PLK1",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.3593287169933319,
+        "q025": 0.424160598218441,
+        "median": 0.4889961779117584,
+        "q975": 0.5255459934473038,
+        "maximum": 0.5472370386123657
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 6.0,
+        "q025": 63.575,
+        "median": 331.0,
+        "q975": 720.6999999999998,
+        "maximum": 975.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 13.0,
+        "q025": 69.575,
+        "median": 329.0,
+        "q975": 767.2749999999999,
+        "maximum": 1063.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 1,
+      "reverse_top10": 0
+    },
+    {
+      "cell": "rpe1",
+      "gene": "RPTOR",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.3415531814098358,
+        "q025": 0.4190697655081749,
+        "median": 0.4932590872049331,
+        "q975": 0.5239010781049729,
+        "maximum": 0.5420961976051331
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 5.0,
+        "q025": 12.0,
+        "median": 130.5,
+        "q975": 674.3999999999996,
+        "maximum": 1045.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 5.0,
+        "q025": 12.0,
+        "median": 123.5,
+        "q975": 736.8499999999999,
+        "maximum": 1062.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 16,
+      "reverse_top10": 14
+    },
+    {
+      "cell": "rpe1",
+      "gene": "RPTOR",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.3433007597923279,
+        "q025": 0.41970168724656104,
+        "median": 0.49290199577808375,
+        "q975": 0.5236123442649842,
+        "maximum": 0.5417729020118713
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 5.0,
+        "q025": 12.0,
+        "median": 129.0,
+        "q975": 668.425,
+        "maximum": 1042.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 5.0,
+        "q025": 12.0,
+        "median": 120.5,
+        "q975": 730.5499999999997,
+        "maximum": 1057.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 17,
+      "reverse_top10": 14
+    },
+    {
+      "cell": "rpe1",
+      "gene": "RPTOR",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.3584469854831695,
+        "q025": 0.41952059194445607,
+        "median": 0.4814842492341995,
+        "q975": 0.5101046994328499,
+        "maximum": 0.5293983221054077
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 5.0,
+        "q025": 11.0,
+        "median": 101.0,
+        "q975": 548.2749999999999,
+        "maximum": 913.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 6.0,
+        "q025": 12.0,
+        "median": 97.5,
+        "q975": 615.9749999999997,
+        "maximum": 899.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 17,
+      "reverse_top10": 18
+    },
+    {
+      "cell": "rpe1",
+      "gene": "TTK",
+      "representation": "all_features",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.7950330376625061,
+        "q025": 0.8150911554694176,
+        "median": 0.8344148695468903,
+        "q975": 0.8487596586346626,
+        "maximum": 0.8565531969070435
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 2.0,
+        "q025": 2.0,
+        "median": 2.0,
+        "q975": 6.0,
+        "maximum": 25.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 2.0,
+        "q025": 2.0,
+        "median": 2.0,
+        "q975": 6.4249999999999545,
+        "maximum": 35.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 1018,
+      "reverse_top10": 1016
+    },
+    {
+      "cell": "rpe1",
+      "gene": "TTK",
+      "representation": "no_queries",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.7942489981651306,
+        "q025": 0.8143742352724075,
+        "median": 0.8337669968605042,
+        "q975": 0.8482109233736992,
+        "maximum": 0.8560712337493896
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 2.0,
+        "q025": 2.0,
+        "median": 2.0,
+        "q975": 6.0,
+        "maximum": 25.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 2.0,
+        "q025": 2.0,
+        "median": 2.0,
+        "q975": 6.0,
+        "maximum": 35.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 1019,
+      "reverse_top10": 1016
+    },
+    {
+      "cell": "rpe1",
+      "gene": "TTK",
+      "representation": "no_queries_or_cycle",
+      "correlation": {
+        "n": 1024,
+        "minimum": 0.7758229970932007,
+        "q025": 0.7973745316267014,
+        "median": 0.8186301589012146,
+        "q975": 0.8342589467763901,
+        "maximum": 0.8427114486694336
+      },
+      "forward_rank": {
+        "n": 1024,
+        "minimum": 2.0,
+        "q025": 2.0,
+        "median": 2.0,
+        "q975": 5.0,
+        "maximum": 21.0
+      },
+      "reverse_rank": {
+        "n": 1024,
+        "minimum": 2.0,
+        "q025": 2.0,
+        "median": 2.0,
+        "q975": 5.4249999999999545,
+        "maximum": 33.0
+      },
+      "reference_constructs": [
+        2154
+      ],
+      "forward_top1": 0,
+      "reverse_top1": 0,
+      "forward_top10": 1020,
+      "reverse_top10": 1017
+    }
+  ],
+  "null_results": [
+    {
+      "cell": "rpe1",
+      "gene": "BUB1B",
+      "representation": "all_features",
+      "observed_norm": 5.874573230743408,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.5461530685424805,
+        "q025": 2.6094410359859466,
+        "median": 2.717500925064087,
+        "q975": 2.954127204418182,
+        "maximum": 3.325002908706665
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1B",
+      "representation": "no_queries",
+      "observed_norm": 5.849015235900879,
+      "observed_norm_seed_max_difference": 4.76837158203125e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.5449717044830322,
+        "q025": 2.607561331987381,
+        "median": 2.7149676084518433,
+        "q975": 2.9478451907634735,
+        "maximum": 3.318021774291992
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1B",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 5.521164894104004,
+      "observed_norm_seed_max_difference": 4.76837158203125e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.5093483924865723,
+        "q025": 2.5811438620090486,
+        "median": 2.681218385696411,
+        "q975": 2.85384446978569,
+        "maximum": 3.2226109504699707
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1",
+      "representation": "all_features",
+      "observed_norm": 5.536711692810059,
+      "observed_norm_seed_max_difference": 4.76837158203125e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.993216037750244,
+        "q025": 3.0861004829406737,
+        "median": 3.2214066982269287,
+        "q975": 3.4853931963443756,
+        "maximum": 3.7670209407806396
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1",
+      "representation": "no_queries",
+      "observed_norm": 5.515181064605713,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.9909729957580566,
+        "q025": 3.083375257253647,
+        "median": 3.2180286645889282,
+        "q975": 3.482767164707184,
+        "maximum": 3.7574403285980225
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 5.339667797088623,
+      "observed_norm_seed_max_difference": 4.76837158203125e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.9612107276916504,
+        "q025": 3.0510426580905916,
+        "median": 3.1753615140914917,
+        "q975": 3.380257099866867,
+        "maximum": 3.622093677520752
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MAD2L1",
+      "representation": "all_features",
+      "observed_norm": 7.5637712478637695,
+      "observed_norm_seed_max_difference": 4.76837158203125e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.535460948944092,
+        "q025": 2.5831857562065124,
+        "median": 2.6917147636413574,
+        "q975": 2.890577149391174,
+        "maximum": 3.0873537063598633
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MAD2L1",
+      "representation": "no_queries",
+      "observed_norm": 7.524986267089844,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.5343446731567383,
+        "q025": 2.580204910039902,
+        "median": 2.6889888048171997,
+        "q975": 2.884503227472305,
+        "maximum": 3.078824281692505
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MAD2L1",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 7.023131847381592,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.510164737701416,
+        "q025": 2.554390925168991,
+        "median": 2.6546287536621094,
+        "q975": 2.816768217086792,
+        "maximum": 2.928074359893799
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "TTK",
+      "representation": "all_features",
+      "observed_norm": 11.429926872253418,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.9132497310638428,
+        "q025": 3.010991722345352,
+        "median": 3.130822539329529,
+        "q975": 3.376028710603714,
+        "maximum": 3.69773530960083
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "TTK",
+      "representation": "no_queries",
+      "observed_norm": 11.403654098510742,
+      "observed_norm_seed_max_difference": 9.5367431640625e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.9116504192352295,
+        "q025": 3.0082953035831452,
+        "median": 3.1285051107406616,
+        "q975": 3.3689040422439573,
+        "maximum": 3.6856353282928467
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "TTK",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 10.821771621704102,
+      "observed_norm_seed_max_difference": 9.5367431640625e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.880603313446045,
+        "q025": 2.9779562652111053,
+        "median": 3.089537262916565,
+        "q975": 3.277271258831024,
+        "maximum": 3.5393192768096924
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "PLK1",
+      "representation": "all_features",
+      "observed_norm": 7.551915168762207,
+      "observed_norm_seed_max_difference": 4.76837158203125e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 4.238861083984375,
+        "q025": 4.422918033599854,
+        "median": 4.6628804206848145,
+        "q975": 5.018617343902588,
+        "maximum": 5.527930736541748
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "PLK1",
+      "representation": "no_queries",
+      "observed_norm": 7.531966209411621,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 4.232646465301514,
+        "q025": 4.417735207080841,
+        "median": 4.658868789672852,
+        "q975": 5.013932573795318,
+        "maximum": 5.517395496368408
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "PLK1",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 7.309823036193848,
+      "observed_norm_seed_max_difference": 4.76837158203125e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 4.188373565673828,
+        "q025": 4.369889259338379,
+        "median": 4.5979883670806885,
+        "q975": 4.8983857274055485,
+        "maximum": 5.31027364730835
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MTOR",
+      "representation": "all_features",
+      "observed_norm": 8.976332664489746,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.6192538738250732,
+        "q025": 2.692643481492996,
+        "median": 2.798952579498291,
+        "q975": 2.977351725101471,
+        "maximum": 3.318741798400879
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MTOR",
+      "representation": "no_queries",
+      "observed_norm": 8.956886291503906,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.616912364959717,
+        "q025": 2.690321761369705,
+        "median": 2.7961829900741577,
+        "q975": 2.9743651151657104,
+        "maximum": 3.3081960678100586
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MTOR",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 8.568891525268555,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.5947155952453613,
+        "q025": 2.6652473866939546,
+        "median": 2.759720802307129,
+        "q975": 2.9066982209682464,
+        "maximum": 3.184112787246704
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "RPTOR",
+      "representation": "all_features",
+      "observed_norm": 8.789055824279785,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 4.709773540496826,
+        "q025": 4.814732825756073,
+        "median": 5.076404809951782,
+        "q975": 5.509722197055815,
+        "maximum": 5.833685398101807
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "RPTOR",
+      "representation": "no_queries",
+      "observed_norm": 8.77993106842041,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 4.707653999328613,
+        "q025": 4.8106849193573,
+        "median": 5.070847988128662,
+        "q975": 5.50021151304245,
+        "maximum": 5.819009304046631
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "rpe1",
+      "gene": "RPTOR",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 8.556904792785645,
+      "observed_norm_seed_max_difference": 9.5367431640625e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 4.669805526733398,
+        "q025": 4.758426439762116,
+        "median": 5.005126237869263,
+        "q975": 5.390878415107727,
+        "maximum": 5.531373500823975
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1B",
+      "representation": "all_features",
+      "observed_norm": 2.5943708419799805,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.1589112281799316,
+        "q025": 2.198205214738846,
+        "median": 2.278250217437744,
+        "q975": 2.383385545015335,
+        "maximum": 2.511026382446289
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1B",
+      "representation": "no_queries",
+      "observed_norm": 2.585944652557373,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.1575493812561035,
+        "q025": 2.195405399799347,
+        "median": 2.2758984565734863,
+        "q975": 2.3819161653518677,
+        "maximum": 2.5089237689971924
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1B",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 2.5486249923706055,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.1309731006622314,
+        "q025": 2.173151993751526,
+        "median": 2.2512811422348022,
+        "q975": 2.34872168302536,
+        "maximum": 2.468578577041626
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1",
+      "representation": "all_features",
+      "observed_norm": 1.375296950340271,
+      "observed_norm_seed_max_difference": 1.1920928955078125e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 1.0554251670837402,
+        "q025": 1.0684487789869308,
+        "median": 1.0970681309700012,
+        "q975": 1.139437711238861,
+        "maximum": 1.2295706272125244
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1",
+      "representation": "no_queries",
+      "observed_norm": 1.3049649000167847,
+      "observed_norm_seed_max_difference": 1.1920928955078125e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 1.0547033548355103,
+        "q025": 1.0674442589282989,
+        "median": 1.0961931347846985,
+        "q975": 1.1381872683763503,
+        "maximum": 1.2281123399734497
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 1.2952296733856201,
+      "observed_norm_seed_max_difference": 1.1920928955078125e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 1.0435988903045654,
+        "q025": 1.0556647896766662,
+        "median": 1.084148645401001,
+        "q975": 1.122626405954361,
+        "maximum": 1.2159085273742676
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MAD2L1",
+      "representation": "all_features",
+      "observed_norm": 3.203616142272949,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.0879974365234375,
+        "q025": 2.1420550882816314,
+        "median": 2.212361454963684,
+        "q975": 2.317783635854721,
+        "maximum": 2.4128096103668213
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MAD2L1",
+      "representation": "no_queries",
+      "observed_norm": 3.135911703109741,
+      "observed_norm_seed_max_difference": 2.384185791015625e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.085763931274414,
+        "q025": 2.1402303516864776,
+        "median": 2.209795832633972,
+        "q975": 2.313774698972702,
+        "maximum": 2.408564567565918
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MAD2L1",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 3.109342575073242,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.0660903453826904,
+        "q025": 2.118549871444702,
+        "median": 2.18705952167511,
+        "q975": 2.2849397003650664,
+        "maximum": 2.385052442550659
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "CDC20",
+      "representation": "all_features",
+      "observed_norm": 3.2836813926696777,
+      "observed_norm_seed_max_difference": 2.384185791015625e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.42582106590271,
+        "q025": 2.4652004063129427,
+        "median": 2.5496097803115845,
+        "q975": 2.681464189291,
+        "maximum": 2.9635558128356934
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "CDC20",
+      "representation": "no_queries",
+      "observed_norm": 3.27264666557312,
+      "observed_norm_seed_max_difference": 2.384185791015625e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.4243581295013428,
+        "q025": 2.463343787193298,
+        "median": 2.54718816280365,
+        "q975": 2.67761293053627,
+        "maximum": 2.9586727619171143
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "CDC20",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 3.2118966579437256,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.393829584121704,
+        "q025": 2.4398017048835756,
+        "median": 2.5201107263565063,
+        "q975": 2.6471327185630797,
+        "maximum": 2.922069549560547
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "TTK",
+      "representation": "all_features",
+      "observed_norm": 6.390575885772705,
+      "observed_norm_seed_max_difference": 4.76837158203125e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 1.8401339054107666,
+        "q025": 1.8812914043664932,
+        "median": 1.9400165677070618,
+        "q975": 2.0244255363941193,
+        "maximum": 2.0957746505737305
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "TTK",
+      "representation": "no_queries",
+      "observed_norm": 6.384038925170898,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 1.838951587677002,
+        "q025": 1.8794563949108123,
+        "median": 1.938156545162201,
+        "q975": 2.022311818599701,
+        "maximum": 2.0916929244995117
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "TTK",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 6.3273725509643555,
+      "observed_norm_seed_max_difference": 4.76837158203125e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 1.8242933750152588,
+        "q025": 1.8602705240249633,
+        "median": 1.9172053337097168,
+        "q975": 1.9986289590597153,
+        "maximum": 2.070627212524414
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "AURKB",
+      "representation": "all_features",
+      "observed_norm": 4.9177680015563965,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 4.345198154449463,
+        "q025": 4.482356488704681,
+        "median": 4.688601732254028,
+        "q975": 5.033757126331329,
+        "maximum": 5.574673652648926
+      },
+      "greater_equal": 84,
+      "descriptive_tail": 0.08292682926829269
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "AURKB",
+      "representation": "no_queries",
+      "observed_norm": 4.912041664123535,
+      "observed_norm_seed_max_difference": 4.76837158203125e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 4.343368053436279,
+        "q025": 4.477285075187683,
+        "median": 4.684426784515381,
+        "q975": 5.028383421897888,
+        "maximum": 5.572120666503906
+      },
+      "greater_equal": 84,
+      "descriptive_tail": 0.08292682926829269
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "AURKB",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 4.852165222167969,
+      "observed_norm_seed_max_difference": 4.76837158203125e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 4.298180103302002,
+        "q025": 4.42830046415329,
+        "median": 4.631997585296631,
+        "q975": 4.972317779064178,
+        "maximum": 5.533959865570068
+      },
+      "greater_equal": 82,
+      "descriptive_tail": 0.08097560975609756
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "PLK1",
+      "representation": "all_features",
+      "observed_norm": 3.749519109725952,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 3.352262496948242,
+        "q025": 3.4099380493164064,
+        "median": 3.558802366256714,
+        "q975": 3.739336097240448,
+        "maximum": 3.9143502712249756
+      },
+      "greater_equal": 25,
+      "descriptive_tail": 0.025365853658536587
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "PLK1",
+      "representation": "no_queries",
+      "observed_norm": 3.7357053756713867,
+      "observed_norm_seed_max_difference": 2.384185791015625e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 3.34843111038208,
+        "q025": 3.406351828575134,
+        "median": 3.55507230758667,
+        "q975": 3.735216408967972,
+        "maximum": 3.910121202468872
+      },
+      "greater_equal": 26,
+      "descriptive_tail": 0.026341463414634145
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "PLK1",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 3.6840529441833496,
+      "observed_norm_seed_max_difference": 2.384185791015625e-07,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 3.3177683353424072,
+        "q025": 3.3706410348415377,
+        "median": 3.5143963098526,
+        "q975": 3.6862260520458223,
+        "maximum": 3.872551202774048
+      },
+      "greater_equal": 28,
+      "descriptive_tail": 0.02829268292682927
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MTOR",
+      "representation": "all_features",
+      "observed_norm": 5.604648113250732,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.529689073562622,
+        "q025": 2.608381825685501,
+        "median": 2.708456873893738,
+        "q975": 2.826824027299881,
+        "maximum": 2.94124436378479
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MTOR",
+      "representation": "no_queries",
+      "observed_norm": 5.5955328941345215,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.5267508029937744,
+        "q025": 2.605789363384247,
+        "median": 2.705791473388672,
+        "q975": 2.8254183292388917,
+        "maximum": 2.9364895820617676
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MTOR",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 5.542806148529053,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.4989912509918213,
+        "q025": 2.5801054358482363,
+        "median": 2.6754329204559326,
+        "q975": 2.797261470556259,
+        "maximum": 2.8804538249969482
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "RPTOR",
+      "representation": "all_features",
+      "observed_norm": 4.7741169929504395,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.8574342727661133,
+        "q025": 2.91460303068161,
+        "median": 3.028496742248535,
+        "q975": 3.1792134404182435,
+        "maximum": 3.357508659362793
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "RPTOR",
+      "representation": "no_queries",
+      "observed_norm": 4.767351150512695,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.8545749187469482,
+        "q025": 2.9116953372955323,
+        "median": 3.0259917974472046,
+        "q975": 3.176856851577759,
+        "maximum": 3.353107213973999
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "RPTOR",
+      "representation": "no_queries_or_cycle",
+      "observed_norm": 4.7123284339904785,
+      "observed_norm_seed_max_difference": 0.0,
+      "null_norm": {
+        "n": 1024,
+        "minimum": 2.8265247344970703,
+        "q025": 2.881711792945862,
+        "median": 2.9915462732315063,
+        "q975": 3.136049693822861,
+        "maximum": 3.3308916091918945
+      },
+      "greater_equal": 0,
+      "descriptive_tail": 0.000975609756097561
+    }
+  ],
+  "partition_sensitivity": [
+    {
+      "cell": "rpe1",
+      "gene": "BUB1B",
+      "representation": "all_features",
+      "partitions": 44,
+      "correlation": {
+        "n": 44,
+        "minimum": 0.9948086142539978,
+        "q025": 0.9948875844478607,
+        "median": 0.9977074861526489,
+        "q975": 0.99946910738945,
+        "maximum": 0.9994791150093079
+      },
+      "rank": {
+        "n": 44,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1B",
+      "representation": "no_queries",
+      "partitions": 44,
+      "correlation": {
+        "n": 44,
+        "minimum": 0.9947683811187744,
+        "q025": 0.9948537737131119,
+        "median": 0.9976897835731506,
+        "q975": 0.9994647935032844,
+        "maximum": 0.9994746446609497
+      },
+      "rank": {
+        "n": 44,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1B",
+      "representation": "no_queries_or_cycle",
+      "partitions": 44,
+      "correlation": {
+        "n": 44,
+        "minimum": 0.9941941499710083,
+        "q025": 0.9943344429135322,
+        "median": 0.9974432587623596,
+        "q975": 0.9994079008698463,
+        "maximum": 0.9994216561317444
+      },
+      "rank": {
+        "n": 44,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1",
+      "representation": "all_features",
+      "partitions": 44,
+      "correlation": {
+        "n": 44,
+        "minimum": 0.9882065057754517,
+        "q025": 0.9885838270187378,
+        "median": 0.9965811669826508,
+        "q975": 0.9986319884657859,
+        "maximum": 0.9986510872840881
+      },
+      "rank": {
+        "n": 44,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1",
+      "representation": "no_queries",
+      "partitions": 44,
+      "correlation": {
+        "n": 44,
+        "minimum": 0.9881250858306885,
+        "q025": 0.9885071486234664,
+        "median": 0.9965619742870331,
+        "q975": 0.9986225590109825,
+        "maximum": 0.9986427426338196
+      },
+      "rank": {
+        "n": 44,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "BUB1",
+      "representation": "no_queries_or_cycle",
+      "partitions": 44,
+      "correlation": {
+        "n": 44,
+        "minimum": 0.9876035451889038,
+        "q025": 0.9878644153475762,
+        "median": 0.9964094460010529,
+        "q975": 0.9985653012990952,
+        "maximum": 0.9985887408256531
+      },
+      "rank": {
+        "n": 44,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MAD2L1",
+      "representation": "all_features",
+      "partitions": 46,
+      "correlation": {
+        "n": 46,
+        "minimum": 0.9953610897064209,
+        "q025": 0.9964458420872688,
+        "median": 0.9989385604858398,
+        "q975": 0.999475508928299,
+        "maximum": 0.9994804263114929
+      },
+      "rank": {
+        "n": 46,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MAD2L1",
+      "representation": "no_queries",
+      "partitions": 46,
+      "correlation": {
+        "n": 46,
+        "minimum": 0.9953159689903259,
+        "q025": 0.9964121207594872,
+        "median": 0.9989292025566101,
+        "q975": 0.9994703158736229,
+        "maximum": 0.9994761943817139
+      },
+      "rank": {
+        "n": 46,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MAD2L1",
+      "representation": "no_queries_or_cycle",
+      "partitions": 46,
+      "correlation": {
+        "n": 46,
+        "minimum": 0.9946824312210083,
+        "q025": 0.995920404791832,
+        "median": 0.9987919330596924,
+        "q975": 0.999396800994873,
+        "maximum": 0.9994165301322937
+      },
+      "rank": {
+        "n": 46,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "TTK",
+      "representation": "all_features",
+      "partitions": 41,
+      "correlation": {
+        "n": 41,
+        "minimum": 0.9963679313659668,
+        "q025": 0.997372031211853,
+        "median": 0.9990108013153076,
+        "q975": 0.9996500015258789,
+        "maximum": 0.9998420476913452
+      },
+      "rank": {
+        "n": 41,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "TTK",
+      "representation": "no_queries",
+      "partitions": 41,
+      "correlation": {
+        "n": 41,
+        "minimum": 0.9963525533676147,
+        "q025": 0.9973605275154114,
+        "median": 0.9990072250366211,
+        "q975": 0.9996485710144043,
+        "maximum": 0.9998414516448975
+      },
+      "rank": {
+        "n": 41,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "TTK",
+      "representation": "no_queries_or_cycle",
+      "partitions": 41,
+      "correlation": {
+        "n": 41,
+        "minimum": 0.99598228931427,
+        "q025": 0.9970921874046326,
+        "median": 0.998924970626831,
+        "q975": 0.9996123313903809,
+        "maximum": 0.9998255372047424
+      },
+      "rank": {
+        "n": 41,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "PLK1",
+      "representation": "all_features",
+      "partitions": 27,
+      "correlation": {
+        "n": 27,
+        "minimum": 0.9834764003753662,
+        "q025": 0.9852957725524902,
+        "median": 0.995467483997345,
+        "q975": 0.9976778626441956,
+        "maximum": 0.9977437257766724
+      },
+      "rank": {
+        "n": 27,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "PLK1",
+      "representation": "no_queries",
+      "partitions": 27,
+      "correlation": {
+        "n": 27,
+        "minimum": 0.9834232926368713,
+        "q025": 0.985242161154747,
+        "median": 0.995451807975769,
+        "q975": 0.9976721197366715,
+        "maximum": 0.9977379441261292
+      },
+      "rank": {
+        "n": 27,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "PLK1",
+      "representation": "no_queries_or_cycle",
+      "partitions": 27,
+      "correlation": {
+        "n": 27,
+        "minimum": 0.9828870892524719,
+        "q025": 0.9848210632801055,
+        "median": 0.9952760934829712,
+        "q975": 0.9976509720087051,
+        "maximum": 0.9977017641067505
+      },
+      "rank": {
+        "n": 27,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MTOR",
+      "representation": "all_features",
+      "partitions": 47,
+      "correlation": {
+        "n": 47,
+        "minimum": 0.996379554271698,
+        "q025": 0.9969652980566025,
+        "median": 0.9988681674003601,
+        "q975": 0.9996037662029267,
+        "maximum": 0.9997050762176514
+      },
+      "rank": {
+        "n": 47,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MTOR",
+      "representation": "no_queries",
+      "partitions": 47,
+      "correlation": {
+        "n": 47,
+        "minimum": 0.996366024017334,
+        "q025": 0.9969543367624283,
+        "median": 0.9988637566566467,
+        "q975": 0.9996025174856186,
+        "maximum": 0.9997037053108215
+      },
+      "rank": {
+        "n": 47,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "rpe1",
+      "gene": "MTOR",
+      "representation": "no_queries_or_cycle",
+      "partitions": 47,
+      "correlation": {
+        "n": 47,
+        "minimum": 0.996086597442627,
+        "q025": 0.9967134714126586,
+        "median": 0.9987709522247314,
+        "q975": 0.999572217464447,
+        "maximum": 0.9996798038482666
+      },
+      "rank": {
+        "n": 47,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1B",
+      "representation": "all_features",
+      "partitions": 48,
+      "correlation": {
+        "n": 48,
+        "minimum": 0.9739110469818115,
+        "q025": 0.9815875083208084,
+        "median": 0.9924689531326294,
+        "q975": 0.998021987080574,
+        "maximum": 0.9981067180633545
+      },
+      "rank": {
+        "n": 48,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1B",
+      "representation": "no_queries",
+      "partitions": 48,
+      "correlation": {
+        "n": 48,
+        "minimum": 0.9738572239875793,
+        "q025": 0.9814877852797508,
+        "median": 0.9924329519271851,
+        "q975": 0.9980134531855583,
+        "maximum": 0.9981003403663635
+      },
+      "rank": {
+        "n": 48,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1B",
+      "representation": "no_queries_or_cycle",
+      "partitions": 48,
+      "correlation": {
+        "n": 48,
+        "minimum": 0.9736252427101135,
+        "q025": 0.9813365653157234,
+        "median": 0.9924019277095795,
+        "q975": 0.9979971155524254,
+        "maximum": 0.9981098175048828
+      },
+      "rank": {
+        "n": 48,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1",
+      "representation": "all_features",
+      "partitions": 48,
+      "correlation": {
+        "n": 48,
+        "minimum": 0.9826346635818481,
+        "q025": 0.9881052643060684,
+        "median": 0.9937686324119568,
+        "q975": 0.9980034798383712,
+        "maximum": 0.9984672665596008
+      },
+      "rank": {
+        "n": 48,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1",
+      "representation": "no_queries",
+      "partitions": 48,
+      "correlation": {
+        "n": 48,
+        "minimum": 0.9807238578796387,
+        "q025": 0.9868546947836876,
+        "median": 0.9931102991104126,
+        "q975": 0.9977940574288369,
+        "maximum": 0.998300313949585
+      },
+      "rank": {
+        "n": 48,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "BUB1",
+      "representation": "no_queries_or_cycle",
+      "partitions": 48,
+      "correlation": {
+        "n": 48,
+        "minimum": 0.9808664321899414,
+        "q025": 0.9870568975806236,
+        "median": 0.9931661784648895,
+        "q975": 0.9978233218193054,
+        "maximum": 0.9982975125312805
+      },
+      "rank": {
+        "n": 48,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MAD2L1",
+      "representation": "all_features",
+      "partitions": 46,
+      "correlation": {
+        "n": 46,
+        "minimum": 0.9848152995109558,
+        "q025": 0.9858005344867706,
+        "median": 0.9959623217582703,
+        "q975": 0.9986784532666206,
+        "maximum": 0.9989343285560608
+      },
+      "rank": {
+        "n": 46,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MAD2L1",
+      "representation": "no_queries",
+      "partitions": 46,
+      "correlation": {
+        "n": 46,
+        "minimum": 0.9842091798782349,
+        "q025": 0.9851917251944542,
+        "median": 0.9958013892173767,
+        "q975": 0.9986241906881332,
+        "maximum": 0.99889075756073
+      },
+      "rank": {
+        "n": 46,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MAD2L1",
+      "representation": "no_queries_or_cycle",
+      "partitions": 46,
+      "correlation": {
+        "n": 46,
+        "minimum": 0.984367311000824,
+        "q025": 0.9852394908666611,
+        "median": 0.9958281517028809,
+        "q975": 0.9986280500888824,
+        "maximum": 0.9988996386528015
+      },
+      "rank": {
+        "n": 46,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "CDC20",
+      "representation": "all_features",
+      "partitions": 42,
+      "correlation": {
+        "n": 42,
+        "minimum": 0.9762788414955139,
+        "q025": 0.9805668845772744,
+        "median": 0.9939291477203369,
+        "q975": 0.9983736768364906,
+        "maximum": 0.9985871315002441
+      },
+      "rank": {
+        "n": 42,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "CDC20",
+      "representation": "no_queries",
+      "partitions": 42,
+      "correlation": {
+        "n": 42,
+        "minimum": 0.9761450290679932,
+        "q025": 0.9804885894060135,
+        "median": 0.9939022660255432,
+        "q975": 0.9983672812581063,
+        "maximum": 0.9985830783843994
+      },
+      "rank": {
+        "n": 42,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "CDC20",
+      "representation": "no_queries_or_cycle",
+      "partitions": 42,
+      "correlation": {
+        "n": 42,
+        "minimum": 0.975665807723999,
+        "q025": 0.9801564395427704,
+        "median": 0.9938240051269531,
+        "q975": 0.9983671858906746,
+        "maximum": 0.9985731840133667
+      },
+      "rank": {
+        "n": 42,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "TTK",
+      "representation": "all_features",
+      "partitions": 47,
+      "correlation": {
+        "n": 47,
+        "minimum": 0.9967547059059143,
+        "q025": 0.9969689428806305,
+        "median": 0.9988770484924316,
+        "q975": 0.9997489869594574,
+        "maximum": 0.9998105764389038
+      },
+      "rank": {
+        "n": 47,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "TTK",
+      "representation": "no_queries",
+      "partitions": 47,
+      "correlation": {
+        "n": 47,
+        "minimum": 0.9967735409736633,
+        "q025": 0.9969654619693756,
+        "median": 0.9988759756088257,
+        "q975": 0.9997489631175995,
+        "maximum": 0.9998105764389038
+      },
+      "rank": {
+        "n": 47,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "TTK",
+      "representation": "no_queries_or_cycle",
+      "partitions": 47,
+      "correlation": {
+        "n": 47,
+        "minimum": 0.9967712759971619,
+        "q025": 0.9969645798206329,
+        "median": 0.9988731741905212,
+        "q975": 0.9997498214244842,
+        "maximum": 0.9998118877410889
+      },
+      "rank": {
+        "n": 47,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "AURKB",
+      "representation": "all_features",
+      "partitions": 24,
+      "correlation": {
+        "n": 24,
+        "minimum": 0.9583297371864319,
+        "q025": 0.9614644184708595,
+        "median": 0.981775313615799,
+        "q975": 0.9918824851512908,
+        "maximum": 0.9925324320793152
+      },
+      "rank": {
+        "n": 24,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "AURKB",
+      "representation": "no_queries",
+      "partitions": 24,
+      "correlation": {
+        "n": 24,
+        "minimum": 0.9582709074020386,
+        "q025": 0.961446613073349,
+        "median": 0.9817605018615723,
+        "q975": 0.991883285343647,
+        "maximum": 0.9925305247306824
+      },
+      "rank": {
+        "n": 24,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "AURKB",
+      "representation": "no_queries_or_cycle",
+      "partitions": 24,
+      "correlation": {
+        "n": 24,
+        "minimum": 0.9582310914993286,
+        "q025": 0.961489462852478,
+        "median": 0.9815980195999146,
+        "q975": 0.9918719366192817,
+        "maximum": 0.9924695491790771
+      },
+      "rank": {
+        "n": 24,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "PLK1",
+      "representation": "all_features",
+      "partitions": 33,
+      "correlation": {
+        "n": 33,
+        "minimum": 0.9578070640563965,
+        "q025": 0.9692718982696533,
+        "median": 0.988254189491272,
+        "q975": 0.9954887151718139,
+        "maximum": 0.9958781003952026
+      },
+      "rank": {
+        "n": 33,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "PLK1",
+      "representation": "no_queries",
+      "partitions": 33,
+      "correlation": {
+        "n": 33,
+        "minimum": 0.9575710296630859,
+        "q025": 0.9691247463226318,
+        "median": 0.9881869554519653,
+        "q975": 0.9954640626907348,
+        "maximum": 0.9958583116531372
+      },
+      "rank": {
+        "n": 33,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "PLK1",
+      "representation": "no_queries_or_cycle",
+      "partitions": 33,
+      "correlation": {
+        "n": 33,
+        "minimum": 0.9570396542549133,
+        "q025": 0.9688497185707092,
+        "median": 0.9880512952804565,
+        "q975": 0.9954211950302124,
+        "maximum": 0.9958168268203735
+      },
+      "rank": {
+        "n": 33,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MTOR",
+      "representation": "all_features",
+      "partitions": 46,
+      "correlation": {
+        "n": 46,
+        "minimum": 0.9904698133468628,
+        "q025": 0.9931194260716438,
+        "median": 0.997672438621521,
+        "q975": 0.9992465451359749,
+        "maximum": 0.9994551539421082
+      },
+      "rank": {
+        "n": 46,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MTOR",
+      "representation": "no_queries",
+      "partitions": 46,
+      "correlation": {
+        "n": 46,
+        "minimum": 0.990447998046875,
+        "q025": 0.9931101948022842,
+        "median": 0.9976680874824524,
+        "q975": 0.9992483630776405,
+        "maximum": 0.9994538426399231
+      },
+      "rank": {
+        "n": 46,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "MTOR",
+      "representation": "no_queries_or_cycle",
+      "partitions": 46,
+      "correlation": {
+        "n": 46,
+        "minimum": 0.9904575347900391,
+        "q025": 0.9931246042251587,
+        "median": 0.9976688623428345,
+        "q975": 0.9992644935846329,
+        "maximum": 0.9994545578956604
+      },
+      "rank": {
+        "n": 46,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "RPTOR",
+      "representation": "all_features",
+      "partitions": 41,
+      "correlation": {
+        "n": 41,
+        "minimum": 0.9842422008514404,
+        "q025": 0.9863681793212891,
+        "median": 0.9948979616165161,
+        "q975": 0.9982765913009644,
+        "maximum": 0.998407244682312
+      },
+      "rank": {
+        "n": 41,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "RPTOR",
+      "representation": "no_queries",
+      "partitions": 41,
+      "correlation": {
+        "n": 41,
+        "minimum": 0.9842227697372437,
+        "q025": 0.9863413572311401,
+        "median": 0.9948928952217102,
+        "q975": 0.9982781410217285,
+        "maximum": 0.9984068274497986
+      },
+      "rank": {
+        "n": 41,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    },
+    {
+      "cell": "K562_essential",
+      "gene": "RPTOR",
+      "representation": "no_queries_or_cycle",
+      "partitions": 41,
+      "correlation": {
+        "n": 41,
+        "minimum": 0.9841495752334595,
+        "q025": 0.9862775206565857,
+        "median": 0.9948623180389404,
+        "q975": 0.998273491859436,
+        "maximum": 0.9984081387519836
+      },
+      "rank": {
+        "n": 41,
+        "minimum": 1.0,
+        "q025": 1.0,
+        "median": 1.0,
+        "q975": 1.0,
+        "maximum": 1.0
+      },
+      "reference_includes_retained_cells": true
+    }
+  ],
+  "cross_cell_queries": [
+    {
+      "construct": "4746_MAD2L1_P1P2_ENSG00000164109",
+      "correlation": 0.25591325951254634,
+      "k562_rank": 366,
+      "rpe1_rank": 81,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "all_features"
+    },
+    {
+      "construct": "5339_MTOR_P1P2_ENSG00000198793",
+      "correlation": 0.5840017664531818,
+      "k562_rank": 1,
+      "rpe1_rank": 2,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "all_features"
+    },
+    {
+      "construct": "6453_PLK1_P1P2_ENSG00000166851",
+      "correlation": 0.12325790711661475,
+      "k562_rank": 918,
+      "rpe1_rank": 6,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "all_features"
+    },
+    {
+      "construct": "7541_RPTOR_P1P2_ENSG00000141564",
+      "correlation": 0.39881891880432013,
+      "k562_rank": 46,
+      "rpe1_rank": 6,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "all_features"
+    },
+    {
+      "construct": "934_BUB1B_P1P2_ENSG00000156970",
+      "correlation": 0.10908345312646098,
+      "k562_rank": 955,
+      "rpe1_rank": 363,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "all_features"
+    },
+    {
+      "construct": "935_BUB1_P1P2_ENSG00000169679",
+      "correlation": 0.22093967152398133,
+      "k562_rank": 338,
+      "rpe1_rank": 27,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "all_features"
+    },
+    {
+      "construct": "9400_TTK_P1P2_ENSG00000112742",
+      "correlation": 0.5515149938152326,
+      "k562_rank": 2,
+      "rpe1_rank": 6,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "all_features"
+    },
+    {
+      "construct": "4746_MAD2L1_P1P2_ENSG00000164109",
+      "correlation": 0.24763801107775782,
+      "k562_rank": 394,
+      "rpe1_rank": 95,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "no_queries"
+    },
+    {
+      "construct": "5339_MTOR_P1P2_ENSG00000198793",
+      "correlation": 0.5836009983187407,
+      "k562_rank": 1,
+      "rpe1_rank": 2,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "no_queries"
+    },
+    {
+      "construct": "6453_PLK1_P1P2_ENSG00000166851",
+      "correlation": 0.1225577404488857,
+      "k562_rank": 919,
+      "rpe1_rank": 8,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "no_queries"
+    },
+    {
+      "construct": "7541_RPTOR_P1P2_ENSG00000141564",
+      "correlation": 0.39789145832781836,
+      "k562_rank": 46,
+      "rpe1_rank": 6,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "no_queries"
+    },
+    {
+      "construct": "934_BUB1B_P1P2_ENSG00000156970",
+      "correlation": 0.10431815026873847,
+      "k562_rank": 980,
+      "rpe1_rank": 386,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "no_queries"
+    },
+    {
+      "construct": "935_BUB1_P1P2_ENSG00000169679",
+      "correlation": 0.20874476048306445,
+      "k562_rank": 391,
+      "rpe1_rank": 89,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "no_queries"
+    },
+    {
+      "construct": "9400_TTK_P1P2_ENSG00000112742",
+      "correlation": 0.5515444987247716,
+      "k562_rank": 2,
+      "rpe1_rank": 6,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "no_queries"
+    },
+    {
+      "construct": "4746_MAD2L1_P1P2_ENSG00000164109",
+      "correlation": 0.25275628054283533,
+      "k562_rank": 396,
+      "rpe1_rank": 90,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "no_queries_or_cycle"
+    },
+    {
+      "construct": "5339_MTOR_P1P2_ENSG00000198793",
+      "correlation": 0.5892380906842059,
+      "k562_rank": 1,
+      "rpe1_rank": 2,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "no_queries_or_cycle"
+    },
+    {
+      "construct": "6453_PLK1_P1P2_ENSG00000166851",
+      "correlation": 0.1284056084391712,
+      "k562_rank": 866,
+      "rpe1_rank": 10,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "no_queries_or_cycle"
+    },
+    {
+      "construct": "7541_RPTOR_P1P2_ENSG00000141564",
+      "correlation": 0.3987435108215693,
+      "k562_rank": 39,
+      "rpe1_rank": 6,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "no_queries_or_cycle"
+    },
+    {
+      "construct": "934_BUB1B_P1P2_ENSG00000156970",
+      "correlation": 0.13530939657767155,
+      "k562_rank": 810,
+      "rpe1_rank": 334,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "no_queries_or_cycle"
+    },
+    {
+      "construct": "935_BUB1_P1P2_ENSG00000169679",
+      "correlation": 0.21512613653036824,
+      "k562_rank": 355,
+      "rpe1_rank": 110,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "no_queries_or_cycle"
+    },
+    {
+      "construct": "9400_TTK_P1P2_ENSG00000112742",
+      "correlation": 0.5551819538078376,
+      "k562_rank": 2,
+      "rpe1_rank": 5,
+      "k562_denominator": 2077,
+      "rpe1_denominator": 2154,
+      "representation": "no_queries_or_cycle"
+    }
+  ],
+  "cross_cell_context": [
+    {
+      "representation": "all_features",
+      "shared_constructs": 1763,
+      "k562_top1": 195,
+      "rpe1_top1": 360,
+      "limitation": "General retrieval context; queried transcripts removed, not every reference target transcript."
+    },
+    {
+      "representation": "no_queries",
+      "shared_constructs": 1763,
+      "k562_top1": 199,
+      "rpe1_top1": 362,
+      "limitation": "General retrieval context; queried transcripts removed, not every reference target transcript."
+    },
+    {
+      "representation": "no_queries_or_cycle",
+      "shared_constructs": 1763,
+      "k562_top1": 217,
+      "rpe1_top1": 369,
+      "limitation": "General retrieval context; queried transcripts removed, not every reference target transcript."
+    }
+  ],
+  "within_cell_queries": [
+    {
+      "cell": "rpe1",
+      "representation": "all_features",
+      "bub1b_query_correlations": {
+        "BUB1B": 0.9999999999999989,
+        "BUB1": 0.610389479543008,
+        "MAD2L1": 0.8064302526615955,
+        "CDC20": null,
+        "TTK": 0.805427275119732,
+        "AURKB": null,
+        "PLK1": 0.6968744096984404,
+        "MTOR": 0.5982704166084037,
+        "RPTOR": 0.5523646024570493,
+        "RICTOR": null
+      },
+      "top20_other_constructs": [
+        {
+          "construct": "9257_TREX2_P1P2_ENSG00000183479",
+          "correlation": 0.8530045716354823
+        },
+        {
+          "construct": "6455_PLK4_P1P2_ENSG00000142731",
+          "correlation": 0.8481776660152323
+        },
+        {
+          "construct": "6474_PMF1_P1P2_ENSG00000160783",
+          "correlation": 0.8476818507044235
+        },
+        {
+          "construct": "4900_MCM3_P1P2_ENSG00000112118",
+          "correlation": 0.8465883548804413
+        },
+        {
+          "construct": "10701_ZNHIT3_P1P2_ENSG00000273611",
+          "correlation": 0.8424820485934371
+        },
+        {
+          "construct": "9425_TUBGCP2_P1P2_ENSG00000130640",
+          "correlation": 0.8422093651466864
+        },
+        {
+          "construct": "9427_TUBGCP4_P1P2_ENSG00000137822",
+          "correlation": 0.8421562602998296
+        },
+        {
+          "construct": "2076_DCTN4_P1P2_ENSG00000132912",
+          "correlation": 0.8391177921972717
+        },
+        {
+          "construct": "8158_SMC4_P1_ENSG00000113810",
+          "correlation": 0.8379211710593083
+        },
+        {
+          "construct": "9426_TUBGCP3_P1P2_ENSG00000126216",
+          "correlation": 0.8377376732957174
+        },
+        {
+          "construct": "1409_CDC6_P1P2_ENSG00000094804",
+          "correlation": 0.8369787984980245
+        },
+        {
+          "construct": "6539_POLR1E_P1P2_ENSG00000137054",
+          "correlation": 0.836403045105139
+        },
+        {
+          "construct": "8506_STIL_P1P2_ENSG00000123473",
+          "correlation": 0.8363052123515907
+        },
+        {
+          "construct": "1365_CD3EAP_P1P2_ENSG00000117877",
+          "correlation": 0.8335540091725829
+        },
+        {
+          "construct": "8826_TEX10_P1P2_ENSG00000136891",
+          "correlation": 0.8303173127266249
+        },
+        {
+          "construct": "7576_RSL1D1_P1_ENSG00000171490",
+          "correlation": 0.8301472950028072
+        },
+        {
+          "construct": "3372_GINS4_P1P2_ENSG00000147536",
+          "correlation": 0.8288114974483424
+        },
+        {
+          "construct": "8332_SPC25_P1P2_ENSG00000152253",
+          "correlation": 0.8280897675781697
+        },
+        {
+          "construct": "2074_DCTN2_P1P2_ENSG00000175203",
+          "correlation": 0.8276942575165017
+        },
+        {
+          "construct": "7903_SHQ1_P1P2_ENSG00000144736",
+          "correlation": 0.8276542878958832
+        }
+      ],
+      "drug_plus_deficit_measured": false
+    },
+    {
+      "cell": "K562_essential",
+      "representation": "all_features",
+      "bub1b_query_correlations": {
+        "BUB1B": 0.9999999999999988,
+        "BUB1": 0.21128322464154256,
+        "MAD2L1": 0.22190292505599324,
+        "CDC20": 0.18406282809058802,
+        "TTK": 0.3220045159924587,
+        "AURKB": 0.07315985008909788,
+        "PLK1": 0.0717870967647708,
+        "MTOR": 0.2293161054994319,
+        "RPTOR": 0.21062041260018793,
+        "RICTOR": null
+      },
+      "top20_other_constructs": [
+        {
+          "construct": "6524_POLE_P1P2_ENSG00000177084",
+          "correlation": 0.3669230666256524
+        },
+        {
+          "construct": "6135_PCNA_P1P2_ENSG00000132646",
+          "correlation": 0.36160473200197524
+        },
+        {
+          "construct": "7558_RRM2_P1P2_ENSG00000171848",
+          "correlation": 0.3495294807869641
+        },
+        {
+          "construct": "4930_MED10_P1P2_ENSG00000133398",
+          "correlation": 0.34903671937771535
+        },
+        {
+          "construct": "7556_RRM1_P1P2_ENSG00000167325",
+          "correlation": 0.3469964529234034
+        },
+        {
+          "construct": "4897_MCM10_P1P2_ENSG00000065328",
+          "correlation": 0.3458087921678947
+        },
+        {
+          "construct": "2336_DONSON_P1P2_ENSG00000159147",
+          "correlation": 0.3447421717293774
+        },
+        {
+          "construct": "6512_POLA1_P1P2_ENSG00000101868",
+          "correlation": 0.3439743170844509
+        },
+        {
+          "construct": "4953_MED30_P1P2_ENSG00000164758",
+          "correlation": 0.3416331629242745
+        },
+        {
+          "construct": "1545_CHAF1B_P1P2_ENSG00000159259",
+          "correlation": 0.3408914184152429
+        },
+        {
+          "construct": "4871_MAX_P1P2_ENSG00000125952",
+          "correlation": 0.34066274739661306
+        },
+        {
+          "construct": "4956_MED6_P1P2_ENSG00000133997",
+          "correlation": 0.33907067937239505
+        },
+        {
+          "construct": "812_BCR_P1P2_ENSG00000186716",
+          "correlation": 0.33794245354949987
+        },
+        {
+          "construct": "4941_MED19_P1P2_ENSG00000156603",
+          "correlation": 0.3375886268001617
+        },
+        {
+          "construct": "4942_MED1_P1P2_ENSG00000125686",
+          "correlation": 0.33744142270342903
+        },
+        {
+          "construct": "6513_POLA2_P1P2_ENSG00000014138",
+          "correlation": 0.33668804425264875
+        },
+        {
+          "construct": "4939_MED17_P1P2_ENSG00000042429",
+          "correlation": 0.3366335219739175
+        },
+        {
+          "construct": "4931_MED11_P1P2_ENSG00000161920",
+          "correlation": 0.3362710604656734
+        },
+        {
+          "construct": "4957_MED7_P1P2_ENSG00000155868",
+          "correlation": 0.33626104794284817
+        },
+        {
+          "construct": "7247_RFC3_P1P2_ENSG00000133119",
+          "correlation": 0.3355410938131302
+        }
+      ],
+      "drug_plus_deficit_measured": false
+    },
+    {
+      "cell": "rpe1",
+      "representation": "no_queries",
+      "bub1b_query_correlations": {
+        "BUB1B": 0.999999999999999,
+        "BUB1": 0.6094181873729645,
+        "MAD2L1": 0.80522429421004,
+        "CDC20": null,
+        "TTK": 0.8047303976255443,
+        "AURKB": null,
+        "PLK1": 0.6960812225687683,
+        "MTOR": 0.5963257986243885,
+        "RPTOR": 0.5516851945620165,
+        "RICTOR": null
+      },
+      "top20_other_constructs": [
+        {
+          "construct": "9257_TREX2_P1P2_ENSG00000183479",
+          "correlation": 0.8521457915970496
+        },
+        {
+          "construct": "6455_PLK4_P1P2_ENSG00000142731",
+          "correlation": 0.8473000082562743
+        },
+        {
+          "construct": "6474_PMF1_P1P2_ENSG00000160783",
+          "correlation": 0.8468702193634535
+        },
+        {
+          "construct": "4900_MCM3_P1P2_ENSG00000112118",
+          "correlation": 0.8459603942709969
+        },
+        {
+          "construct": "9427_TUBGCP4_P1P2_ENSG00000137822",
+          "correlation": 0.8415876683617749
+        },
+        {
+          "construct": "9425_TUBGCP2_P1P2_ENSG00000130640",
+          "correlation": 0.8414954253104885
+        },
+        {
+          "construct": "10701_ZNHIT3_P1P2_ENSG00000273611",
+          "correlation": 0.8414716261182121
+        },
+        {
+          "construct": "2076_DCTN4_P1P2_ENSG00000132912",
+          "correlation": 0.8386863601835102
+        },
+        {
+          "construct": "8158_SMC4_P1_ENSG00000113810",
+          "correlation": 0.8372294641474186
+        },
+        {
+          "construct": "9426_TUBGCP3_P1P2_ENSG00000126216",
+          "correlation": 0.8371192843856392
+        },
+        {
+          "construct": "1409_CDC6_P1P2_ENSG00000094804",
+          "correlation": 0.8364908724043737
+        },
+        {
+          "construct": "8506_STIL_P1P2_ENSG00000123473",
+          "correlation": 0.8356430140965562
+        },
+        {
+          "construct": "6539_POLR1E_P1P2_ENSG00000137054",
+          "correlation": 0.8356230692531216
+        },
+        {
+          "construct": "1365_CD3EAP_P1P2_ENSG00000117877",
+          "correlation": 0.8328403255113207
+        },
+        {
+          "construct": "8826_TEX10_P1P2_ENSG00000136891",
+          "correlation": 0.8294001322485702
+        },
+        {
+          "construct": "7576_RSL1D1_P1_ENSG00000171490",
+          "correlation": 0.8292544364928522
+        },
+        {
+          "construct": "3372_GINS4_P1P2_ENSG00000147536",
+          "correlation": 0.8278742503411921
+        },
+        {
+          "construct": "8332_SPC25_P1P2_ENSG00000152253",
+          "correlation": 0.8274325909349799
+        },
+        {
+          "construct": "2074_DCTN2_P1P2_ENSG00000175203",
+          "correlation": 0.826764660404883
+        },
+        {
+          "construct": "7903_SHQ1_P1P2_ENSG00000144736",
+          "correlation": 0.8267059586509751
+        }
+      ],
+      "drug_plus_deficit_measured": false
+    },
+    {
+      "cell": "K562_essential",
+      "representation": "no_queries",
+      "bub1b_query_correlations": {
+        "BUB1B": 1.000000000000001,
+        "BUB1": 0.2215193681188895,
+        "MAD2L1": 0.2208033476507808,
+        "CDC20": 0.18560207065950665,
+        "TTK": 0.3226509575923766,
+        "AURKB": 0.07089825732592671,
+        "PLK1": 0.07205019784040553,
+        "MTOR": 0.22903472510057757,
+        "RPTOR": 0.21060981813745527,
+        "RICTOR": null
+      },
+      "top20_other_constructs": [
+        {
+          "construct": "6524_POLE_P1P2_ENSG00000177084",
+          "correlation": 0.36758528858882716
+        },
+        {
+          "construct": "6135_PCNA_P1P2_ENSG00000132646",
+          "correlation": 0.3628324935042781
+        },
+        {
+          "construct": "7558_RRM2_P1P2_ENSG00000171848",
+          "correlation": 0.35060929008347913
+        },
+        {
+          "construct": "4930_MED10_P1P2_ENSG00000133398",
+          "correlation": 0.35015172094115016
+        },
+        {
+          "construct": "7556_RRM1_P1P2_ENSG00000167325",
+          "correlation": 0.347901890014577
+        },
+        {
+          "construct": "4897_MCM10_P1P2_ENSG00000065328",
+          "correlation": 0.3475241963163684
+        },
+        {
+          "construct": "2336_DONSON_P1P2_ENSG00000159147",
+          "correlation": 0.3468563681216503
+        },
+        {
+          "construct": "6512_POLA1_P1P2_ENSG00000101868",
+          "correlation": 0.34449481510278335
+        },
+        {
+          "construct": "4953_MED30_P1P2_ENSG00000164758",
+          "correlation": 0.3421950034505806
+        },
+        {
+          "construct": "1545_CHAF1B_P1P2_ENSG00000159259",
+          "correlation": 0.34179263350302586
+        },
+        {
+          "construct": "4871_MAX_P1P2_ENSG00000125952",
+          "correlation": 0.3413570062593686
+        },
+        {
+          "construct": "4956_MED6_P1P2_ENSG00000133997",
+          "correlation": 0.34016371772237575
+        },
+        {
+          "construct": "812_BCR_P1P2_ENSG00000186716",
+          "correlation": 0.33868851811036643
+        },
+        {
+          "construct": "4941_MED19_P1P2_ENSG00000156603",
+          "correlation": 0.33852384059729934
+        },
+        {
+          "construct": "4942_MED1_P1P2_ENSG00000125686",
+          "correlation": 0.33776193603435495
+        },
+        {
+          "construct": "6513_POLA2_P1P2_ENSG00000014138",
+          "correlation": 0.33765219035347815
+        },
+        {
+          "construct": "4939_MED17_P1P2_ENSG00000042429",
+          "correlation": 0.33735964685727954
+        },
+        {
+          "construct": "4931_MED11_P1P2_ENSG00000161920",
+          "correlation": 0.33707727809082494
+        },
+        {
+          "construct": "4957_MED7_P1P2_ENSG00000155868",
+          "correlation": 0.3368503224722796
+        },
+        {
+          "construct": "7247_RFC3_P1P2_ENSG00000133119",
+          "correlation": 0.3359309095392103
+        }
+      ],
+      "drug_plus_deficit_measured": false
+    },
+    {
+      "cell": "rpe1",
+      "representation": "no_queries_or_cycle",
+      "bub1b_query_correlations": {
+        "BUB1B": 1.0000000000000007,
+        "BUB1": 0.5825919668579445,
+        "MAD2L1": 0.7819657197199409,
+        "CDC20": null,
+        "TTK": 0.7836982111943799,
+        "AURKB": null,
+        "PLK1": 0.6794954170357008,
+        "MTOR": 0.5575969972129072,
+        "RPTOR": 0.5258495702672408,
+        "RICTOR": null
+      },
+      "top20_other_constructs": [
+        {
+          "construct": "9257_TREX2_P1P2_ENSG00000183479",
+          "correlation": 0.8341967259541352
+        },
+        {
+          "construct": "4900_MCM3_P1P2_ENSG00000112118",
+          "correlation": 0.8297943154795019
+        },
+        {
+          "construct": "6455_PLK4_P1P2_ENSG00000142731",
+          "correlation": 0.8287410849594437
+        },
+        {
+          "construct": "6474_PMF1_P1P2_ENSG00000160783",
+          "correlation": 0.8284755226969519
+        },
+        {
+          "construct": "9427_TUBGCP4_P1P2_ENSG00000137822",
+          "correlation": 0.8233079209534725
+        },
+        {
+          "construct": "9425_TUBGCP2_P1P2_ENSG00000130640",
+          "correlation": 0.8228415529750284
+        },
+        {
+          "construct": "10701_ZNHIT3_P1P2_ENSG00000273611",
+          "correlation": 0.8217035913178722
+        },
+        {
+          "construct": "2076_DCTN4_P1P2_ENSG00000132912",
+          "correlation": 0.8209837101654895
+        },
+        {
+          "construct": "1409_CDC6_P1P2_ENSG00000094804",
+          "correlation": 0.8190492552694597
+        },
+        {
+          "construct": "9426_TUBGCP3_P1P2_ENSG00000126216",
+          "correlation": 0.8189871174164522
+        },
+        {
+          "construct": "8158_SMC4_P1_ENSG00000113810",
+          "correlation": 0.81849475945297
+        },
+        {
+          "construct": "8506_STIL_P1P2_ENSG00000123473",
+          "correlation": 0.8159639170554258
+        },
+        {
+          "construct": "6539_POLR1E_P1P2_ENSG00000137054",
+          "correlation": 0.8158025766526902
+        },
+        {
+          "construct": "1365_CD3EAP_P1P2_ENSG00000117877",
+          "correlation": 0.8132801663561564
+        },
+        {
+          "construct": "3372_GINS4_P1P2_ENSG00000147536",
+          "correlation": 0.8098207393730611
+        },
+        {
+          "construct": "7576_RSL1D1_P1_ENSG00000171490",
+          "correlation": 0.8091810340996799
+        },
+        {
+          "construct": "8826_TEX10_P1P2_ENSG00000136891",
+          "correlation": 0.8089140377066063
+        },
+        {
+          "construct": "8332_SPC25_P1P2_ENSG00000152253",
+          "correlation": 0.8081772974394115
+        },
+        {
+          "construct": "5302_MTBP_P1P2_ENSG00000172167",
+          "correlation": 0.8070904571807027
+        },
+        {
+          "construct": "8396_SRBD1_P1P2_ENSG00000068784",
+          "correlation": 0.807032034404551
+        }
+      ],
+      "drug_plus_deficit_measured": false
+    },
+    {
+      "cell": "K562_essential",
+      "representation": "no_queries_or_cycle",
+      "bub1b_query_correlations": {
+        "BUB1B": 1.0000000000000007,
+        "BUB1": 0.21922608295238036,
+        "MAD2L1": 0.223130062420269,
+        "CDC20": 0.18236810850558755,
+        "TTK": 0.3290858756375206,
+        "AURKB": 0.07496322399684158,
+        "PLK1": 0.07015761976275889,
+        "MTOR": 0.23950479812626954,
+        "RPTOR": 0.2201802913290404,
+        "RICTOR": null
+      },
+      "top20_other_constructs": [
+        {
+          "construct": "6524_POLE_P1P2_ENSG00000177084",
+          "correlation": 0.3664841024075253
+        },
+        {
+          "construct": "6135_PCNA_P1P2_ENSG00000132646",
+          "correlation": 0.3610712563152317
+        },
+        {
+          "construct": "2336_DONSON_P1P2_ENSG00000159147",
+          "correlation": 0.35026876534824947
+        },
+        {
+          "construct": "7558_RRM2_P1P2_ENSG00000171848",
+          "correlation": 0.34913288230927386
+        },
+        {
+          "construct": "4897_MCM10_P1P2_ENSG00000065328",
+          "correlation": 0.3485928387446724
+        },
+        {
+          "construct": "4930_MED10_P1P2_ENSG00000133398",
+          "correlation": 0.3466418889720572
+        },
+        {
+          "construct": "7556_RRM1_P1P2_ENSG00000167325",
+          "correlation": 0.3451843792189761
+        },
+        {
+          "construct": "6512_POLA1_P1P2_ENSG00000101868",
+          "correlation": 0.3446528235698145
+        },
+        {
+          "construct": "812_BCR_P1P2_ENSG00000186716",
+          "correlation": 0.34432933786182734
+        },
+        {
+          "construct": "1545_CHAF1B_P1P2_ENSG00000159259",
+          "correlation": 0.3426836697751812
+        },
+        {
+          "construct": "4953_MED30_P1P2_ENSG00000164758",
+          "correlation": 0.3426447641613139
+        },
+        {
+          "construct": "4957_MED7_P1P2_ENSG00000155868",
+          "correlation": 0.340794002515602
+        },
+        {
+          "construct": "4942_MED1_P1P2_ENSG00000125686",
+          "correlation": 0.3401972037630929
+        },
+        {
+          "construct": "4956_MED6_P1P2_ENSG00000133997",
+          "correlation": 0.33960535102290673
+        },
+        {
+          "construct": "4939_MED17_P1P2_ENSG00000042429",
+          "correlation": 0.33945927973843654
+        },
+        {
+          "construct": "4871_MAX_P1P2_ENSG00000125952",
+          "correlation": 0.33843288242006975
+        },
+        {
+          "construct": "4941_MED19_P1P2_ENSG00000156603",
+          "correlation": 0.3383775366399148
+        },
+        {
+          "construct": "7247_RFC3_P1P2_ENSG00000133119",
+          "correlation": 0.33710682773955924
+        },
+        {
+          "construct": "4959_MED9_P1P2_ENSG00000141026",
+          "correlation": 0.33623168764769473
+        },
+        {
+          "construct": "8904_TICRR_P1P2_ENSG00000140534",
+          "correlation": 0.3355298246934196
+        }
+      ],
+      "drug_plus_deficit_measured": false
+    }
+  ],
+  "full_profile_seed_checks": [
+    {
+      "shard": 0,
+      "reference_shard": 0,
+      "max_error": 0.0
+    },
+    {
+      "shard": 1,
+      "reference_shard": 0,
+      "max_error": 1.3266690075397491e-06
+    },
+    {
+      "shard": 2,
+      "reference_shard": 0,
+      "max_error": 1.434236764907837e-06
+    },
+    {
+      "shard": 3,
+      "reference_shard": 0,
+      "max_error": 1.430511474609375e-06
+    },
+    {
+      "shard": 4,
+      "reference_shard": 4,
+      "max_error": 0.0
+    },
+    {
+      "shard": 5,
+      "reference_shard": 4,
+      "max_error": 1.5255063772201538e-06
+    },
+    {
+      "shard": 6,
+      "reference_shard": 4,
+      "max_error": 1.8402934074401855e-06
+    },
+    {
+      "shard": 7,
+      "reference_shard": 4,
+      "max_error": 1.5497207641601562e-06
+    }
+  ],
+  "missing_queries": {
+    "rpe1": [
+      "CDC20",
+      "AURKB",
+      "RICTOR"
+    ],
+    "K562_essential": [
+      "RICTOR"
+    ]
+  },
+  "compute": {
+    "gpus": 8,
+    "workers": 8,
+    "split_repetitions": 2048,
+    "gpu_correlations": 27628823832,
+    "cuda_product_seconds": 6.475899453155708,
+    "max_dot_product_cpu_error": 4.496810909193627e-07,
+    "worker_wall_seconds": [
+      43.455478033050895,
+      40.47046815091744,
+      40.49687203997746,
+      43.3663377801422,
+      58.83017724589445,
+      58.722561094909906,
+      58.843833710066974,
+      52.82619417691603
+    ],
+    "cpu_cross_cell_correlations": 13421574
+  },
+  "all_controls_sensitivity": "unavailable; retained all-control and core-control membership is identical",
+  "drug_ranking_changed": false,
+  "biological_validation": false,
+  "phase_confirmed": false,
+  "clinical_exposure_margin": null,
+  "conditional_ranges_are_biological_confidence_intervals": false,
+  "neural_model_inference": false
+}

@@ -1,0 +1,64 @@
+{
+  "version": 31,
+  "created_date": "2026-10-07",
+  "status": "Fixed before examination of BUB1B expression effects; dataset schema and study methods inspected first. Exploratory follow-up after v29, not external preregistration.",
+  "question": "Does independent public CRISPRi evidence support a BUB1B perturbation model in non-cancer RPE1 cells, and what contradicts transfer from tumour-cell transcriptomic findings?",
+  "data": {
+    "article": "https://api.figshare.com/v2/articles/20029387",
+    "version": 1,
+    "doi": "10.25452/figshare.plus.20029387",
+    "paper": "10.1016/j.cell.2022.05.013",
+    "cells": ["RPE1", "K562_essential"],
+    "inputs": "Original raw single-cell, raw pseudobulk and normalized pseudobulk AnnData files; public reference experiments only.",
+    "provenance": "Provider MD5 where available, source bytes, local SHA256, full metadata and observed schema retained. RPE1 raw single-cell provider MD5 is missing, not verified."
+  },
+  "queries": ["BUB1B", "BUB1", "MAD2L1", "CDC20", "TTK", "AURKB", "PLK1", "MTOR", "RPTOR", "RICTOR"],
+  "metadata_audit": [
+    "Count distinct target constructs, actual guide annotations, cells and gemgroups for every query; paired guides in one construct are one perturbation.",
+    "Preserve transcript-start-site and construct labels; do not pool alternate constructs as independent replicates.",
+    "Identify whether exported raw single-cell matrix is already QC-filtered; use original cell metadata and report selection limits.",
+    "Compare original provider target knockdown and cell-cycle/CNV summary columns, explicitly separating published estimates from newly calculated measurements."
+  ],
+  "primary_analysis": {
+    "normalization": "Log1p CP10k from nonnegative count input, subtract same-gemgroup mean of core non-targeting controls. Fixed fallback is no evaluable effect if a relevant gemgroup has fewer than 20 control cells; never silently borrow a different batch.",
+    "feature_selection": "Common measured genes with mean raw counts >=0.25 in core controls of both cell lines. Selection excludes target effects. Remove all ten queried genes from the primary specificity features; retain all-feature sensitivity.",
+    "constructs": "At least 30 retained cells, exact gene_transcript label; absent or under-covered targets are missing, not zero.",
+    "profiles": "Mean centered single-cell vectors by construct. Pearson correlation across features. Full target panels retained, no top-hit-only output.",
+    "target_knockdown": "Ratio of mean CP10k target expression to gemgroup-matched controls with reported counts and unnormalized UMI sensitivity; transcript knockdown is not protein depletion or functional qualification.",
+    "same_cell_specificity": "Stratified random half-splits within construct and gemgroup. Retrieve each held-out half from all opposite halves; record both directions, same-target correlations, reference denominator, complete per-query distributions and full-panel aggregate retrieval.",
+    "cross_cell_specificity": "Compare exact shared construct labels and gene-level unambiguous matches between RPE1 and K562. Preserve unequal time, effector, culture and p53 context; correlation is not equal function.",
+    "null": "Equal-size control-cell pseudo-perturbations matched to query gemgroup counts, sampled without replacement where feasible. Controls for null effects use disjoint reference halves to avoid guaranteed zero by self-centering. Retain finite-reference resolution and dependence.",
+    "resampling": "1024 split-half replicates per cell/control view in two fixed seed blocks of 512. Cells are subsamples, not independent experiments. Quantiles describe conditional resampling stability, not biological confidence intervals.",
+    "cell_cycle": "Compare published cell-cycle metadata if available. Sensitivity excludes the fixed Seurat S/G2M gene list. This removes potentially causal biology and is not a causal adjustment.",
+    "control_sensitivity": "Repeat with all annotated non-targeting controls rather than provider-selected core controls. Report disagreement; core selection can make nulls optimistic.",
+    "sampling_sensitivity": "Leave-one-gemgroup-out query profiles where remaining target/control coverage is adequate; sequencing partitions are not biological replicates."
+  },
+  "compute": {
+    "gpus": 8,
+    "allocation": "Two cell types by two control views by two seed blocks, one worker per GPU.",
+    "precision": "CUDA FP32 with TF32 disabled; selected operations compared with CPU FP64 at absolute tolerance 2e-5.",
+    "reproduction": "Retain source receipts, pinned environment lock, executed scripts, numerical checks, GPU monitoring, failed attempts and complete outputs. No sustained-utilization claim without telemetry.",
+    "root": "/home/prachh/v/mva-track2-perturbseq-20261007-v31"
+  },
+  "falsifiers": [
+    "Absent BUB1B coverage, poor target suppression or inconsistent effects across available constructs prevents qualification.",
+    "Apparent specificity that disappears with query-transcript removal, all-control sensitivity or partition exclusion weakens attribution.",
+    "Cross-cell disagreement or cell-cycle dependence weakens direct transfer from the LINCS tumour models.",
+    "Strong generic essential-gene responses or negative-control false matches prevents selective pathway interpretation.",
+    "No independent construct/restoration, no drug-plus-deficit data and no direct division/fate outcomes means no functional-rescue or clinical claim regardless of statistical result."
+  ],
+  "decision_contract": {
+    "maximum_supported_update": "Refine non-cancer assay model and controls; downgrade or retain tumour-to-non-cancer extrapolation.",
+    "drug_ranking_change_from_transcriptomics_alone": false,
+    "phase_confirmation": false,
+    "clinical_exposure_margin": null,
+    "wet_lab_performed_by_this_project": false
+  },
+  "limitations": [
+    "RPE1 is immortalized retinal epithelium, not the child's kidney, muscle or developmental tissue.",
+    "Generic transcriptional CRISPRi depletion does not recreate the selected alleles.",
+    "Survivor and QC selection, pooled culture, off-target repression, shared control selection and library batch effects remain.",
+    "RNA-derived CNV and cell-cycle labels are estimates, not independently measured karyotype, division fidelity or tissue function.",
+    "Shared guides across cell types and many cell subsamples do not provide independent biological replication."
+  ]
+}

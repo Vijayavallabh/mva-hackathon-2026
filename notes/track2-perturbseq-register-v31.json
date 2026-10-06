@@ -1,0 +1,59 @@
+{
+  "version": 31,
+  "claims": [
+    {
+      "id": "R48",
+      "claim": "A detectable BUB1B expression response qualifies a specific disease surrogate.",
+      "support": "BUB1B target RNA is suppressed and the RPE1 response exceeds the selected-control reference.",
+      "challenge": "Own-target retrieval is weak among essential-gene responses; one guide pair and no protein/function restoration.",
+      "falsifier": "Independent perturbation/restoration or relevant functional endpoints fail despite an expression effect.",
+      "decision": "HOLD model qualification; retain RPE1 as an assay comparator.",
+      "next_discriminating_action": "Demonstrate independent attribution, division fidelity, daughter fate and later function.",
+      "reopening_criteria": "Demonstrate independent attribution, division fidelity, daughter fate and later function."
+    },
+    {
+      "id": "R49",
+      "claim": "The non-targeting export provides an unselected negative-control sensitivity.",
+      "support": "The plan explicitly requested core versus all-control analyses.",
+      "challenge": "Both sets contain exactly the same retained cells: RPE1 11485, K562 10691.",
+      "falsifier": "Membership equality prevents the proposed sensitivity from testing control-selection bias.",
+      "decision": "Reject the claimed sensitivity; preserve documented amendment and missing comparison.",
+      "next_discriminating_action": "Recover independent or unselected controls; do not use more random splits as a substitute.",
+      "reopening_criteria": "Recover independent or unselected controls; do not use more random splits as a substitute."
+    },
+    {
+      "id": "R50",
+      "claim": "A BUB1B signature transfers across cell contexts if MTOR agrees.",
+      "support": "MTOR has strong cross-cell expression matching.",
+      "challenge": "BUB1B correlation is 0.1043 with query transcripts removed, with ranks 980/2077 and 386/2154.",
+      "falsifier": "Relevant BUB1B functional response differs between contexts despite a transferable reference target.",
+      "decision": "HOLD cross-cell transfer; evaluate each context separately.",
+      "next_discriminating_action": "Measure common functional endpoints in qualified non-cancer and tumour models; retain separate objectives.",
+      "reopening_criteria": "Measure common functional endpoints in qualified non-cancer and tumour models; retain separate objectives."
+    },
+    {
+      "id": "R51",
+      "claim": "Many cells, paired guides and repeated splits establish independent replication.",
+      "support": "The dataset contains 106 RPE1 and 141 K562 BUB1B cells and 1024 splits per cell type.",
+      "challenge": "One paired-guide construct is shared across cell types; resampling reuses cells and controls.",
+      "falsifier": "A new construct or restoration control does not reproduce the attributed effect.",
+      "decision": "Reject biological replication/CI claims from these counts.",
+      "next_discriminating_action": "Obtain independent perturbation and appropriate restoration evidence.",
+      "reopening_criteria": "Obtain independent perturbation and appropriate restoration evidence."
+    },
+    {
+      "id": "R52",
+      "claim": "New mTOR-related studies establish uniform mechanism, safety or benefit for MVA.",
+      "support": "Selected tumour biomarker and pediatric regimen findings are favorable in their own settings.",
+      "challenge": "Primary clinical futility, context dependence, existing renal/infection risks and yeast cohesion findings remain.",
+      "falsifier": "Model-relevant target engagement fails to improve joint function or worsens division/fate/injury.",
+      "decision": "No drug promotion; keep exposure margins null and safety override.",
+      "next_discriminating_action": "Measure pathway direction, relevant exposure, joint response and injury in the qualified model.",
+      "reopening_criteria": "Measure pathway direction, relevant exposure, joint response and injury in the qualified model."
+    }
+  ],
+  "drug_ranking_changed": false,
+  "unknown_means_hold": true,
+  "safety_overrides_benefit": true,
+  "all_pass_means": "further_preclinical_review_only"
+}

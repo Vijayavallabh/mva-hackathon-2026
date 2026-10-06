@@ -1,0 +1,29 @@
+Track 2 v32 - read-aloud transcript
+Read the paragraphs; headings and times are cues, not narration.
+
+Slide 1 | 0:00-0:14 | The research proposal
+Our Track Two proposal tests everolimus for useful non-cancer function in MVA. This approved mTORC1 inhibitor remains an optional mechanistic probe. No drug earns rescue priority.
+
+Slide 2 | 0:14-0:39 | Protein controls fail
+ProteinMPNN failed expanded controls in all twenty-four comparisons. Favorable candidate rankings cannot establish function. Control behavior depends on the assay: separate stability, scaffolding and catalysis. Phase and endogenous effects remain unresolved. Qualify excess mTOR activity or impaired flux before exposure; neither branch is established.
+
+Slide 3 | 0:39-1:06 | RPE1 needs functional qualification
+Public non-cancer RPE1 cells show a repeatable BUB1B expression response, but weak own-target retrieval. Cross-cell agreement is weak, while MTOR matches better. One shared guide pair and selected controls limit attribution. Repeated splits reuse cells. Require independent perturbation, restoration and relevant function before drug matching.
+
+Slide 4 | 1:06-1:32 | The drug connection weakens
+In MCF7, no BUB1B query passes quality checks. Everolimus reversal weakens after adjustment, while MTOR stays first. Passing drug quality at point-one micromolar nominal culture concentration cannot qualify the query. HT29 drug quality also fails. Different cells cannot supply a joint rescue result.
+
+Slide 5 | 1:32-1:49 | Functional counterevidence
+Sirolimus plus exercise did not establish functional benefit in forty older adults; the primary confidence interval includes no effect. Young rats lost force, while adult female mice retained exercise gains. Test function and recovery directly.
+
+Slide 6 | 1:49-2:12 | The decisive experiment
+Qualify endogenous BUBR1 and function with single-allele, cis, trans and corrected controls. Include independent genetic, seed and editing-stress controls. Test drug plus deficit against each alone. Randomize cultures and blind scoring. Track every cell, daughter survival and sustained function. No wet-lab experiment has been performed.
+
+Slide 7 | 2:12-2:36 | What changes the decision
+Invalid assays hold inference; imprecise results hold advancement. Valid evidence excluding meaningful benefit stops that tested claim. Failed safety stops advancement. Require independent confirmation and justified exposure. Whole blood is not free tissue. Passing every requirement permits preclinical review only; clinical margins remain unknown.
+
+Slide 8 | 2:36-2:48 | Alternatives and reuse
+HCQ remains reserve; NAD findings do not establish niacin rescue. Public CPU checks need no subject files or GPUs. New tissues need fresh qualification; tumour killing needs separate deficient-normal controls.
+
+Slide 9 | 2:48-3:00 | Acknowledgement
+We thank the child and family, MVA Society and Sage Bionetworks. The full acknowledgement is displayed. Our next decisive step is biological validation.

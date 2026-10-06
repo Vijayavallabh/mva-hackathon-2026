@@ -81,15 +81,15 @@ class CurrentStateTests(unittest.TestCase):
                 harness.validate(state,self.features,self.documents)
 
     def test_integrated_versions_preserve_research_version(self):
-        self.assertEqual(self.state['presentation_version'],30)
-        self.assertEqual(self.state['harness_version'],30)
+        self.assertEqual(self.state['presentation_version'],32)
+        self.assertEqual(self.state['harness_version'],32)
         self.assertEqual(self.state['research_addendum']['version'],19)
         self.state['harness_review']='notes/track2-harness-review-v18.md'
         with self.assertRaisesRegex(ValueError,'Stale harness'):
             harness.validate(self.state,self.features,self.documents)
 
     def test_correct_independent_version_labels_accepted(self):
-        self.documents['README.md']+='\nUse the current v30 harness and current v19 addendum with the current v30 presentation and current v21 ledger.'
+        self.documents['README.md']+='\nUse the current v32 harness and current v19 addendum with the current v32 presentation and current v21 ledger.'
         harness.validate(self.state,self.features,self.documents)
 
     def test_crispr_addendum_cannot_disappear_or_promote_guides(self):
@@ -110,6 +110,17 @@ class CurrentStateTests(unittest.TestCase):
                 harness.validate(state,self.features,self.documents)
         state=deepcopy(self.state);state.pop('orthogonal_addendum')
         with self.assertRaisesRegex(ValueError,'orthogonal addendum'):
+            harness.validate(state,self.features,self.documents)
+
+    def test_perturbseq_addendum_preserves_missing_controls_and_counts(self):
+        for key,value in [('public_cells',1),('gpus',8.0),('drug_ranking_changed',True),
+                          ('all_control_sensitivity_available',True),('split_repetitions',1),
+                          ('check','data/subject.vcf')]:
+            state=deepcopy(self.state);state['perturbseq_addendum'][key]=value
+            with self.subTest(key=key),self.assertRaisesRegex(ValueError,'Perturb-seq addendum'):
+                harness.validate(state,self.features,self.documents)
+        state=deepcopy(self.state);state.pop('perturbseq_addendum')
+        with self.assertRaisesRegex(ValueError,'Perturb-seq addendum'):
             harness.validate(state,self.features,self.documents)
 
     def test_stale_addendum_label_rejected(self):

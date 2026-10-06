@@ -7428,3 +7428,285 @@ annotation resources ready
 }
 === OK ===
 ```
+
+
+## Session 71 — 7 October 2026 IST: public Perturb-seq falsification and v32 integration
+
+Only feat-009 was selected and remains in progress. The owner requested extensive GPU
+falsification work followed by updates to the slides, report, transcript and all current
+harness files. The completed v31 campaign uses public Replogle/Weissman experiments;
+v32 integrates the results into new presentation and release files. All older bound
+inputs and the v21 drug decisions remain unchanged.
+
+### Scientific result and revision
+
+All eight H100s completed public RPE1/K562 analysis under
+`/home/prachh/v/mva-track2-perturbseq-20261007-v31`. The matrices contain 247,914 retained
+RPE1 and 310,385 K562 essential-screen cells. BUB1B has 106/141 cells from one shared
+paired-guide construct. The selected-control population equals all retained controls
+in both exports. The original plan and documented amendment retain that unavailable
+sensitivity; four seed blocks per cell do not replace an unselected-control population.
+
+With query transcripts removed, BUB1B split-half median correlations are 0.6572/0.1197;
+first-direction own-target median ranks are 171.5/2,154 and 323.5/2,077. Cross-cell
+correlation is 0.1043 for BUB1B and 0.5836 for MTOR. Detectable expression change does
+not qualify a specific disease surrogate. RPE1 remains a functional-assay comparator
+pending independent perturbation/restoration, endogenous protein/function, division,
+daughter fate and later function. Missing/low-coverage/unmeasured query states remain
+explicit. No direct drug-plus-deficit response was measured.
+
+The campaign performed 27,628,823,832 GPU correlations, 2,048 dependent split repeats
+and 13,421,574 CPU cross-cell comparisons. CUDA products totaled 6.476 seconds;
+worker wall times were 40-59 seconds and sampled GPU utilization peaked at 19-24%.
+All eight devices executed work, with brief bursts rather than sustained saturation.
+V31 performed no new neural inference. Prior ProteinMPNN execution through Anthropic's
+pinned toolkit, earlier heavy protein/DNA models and all negative controls remain
+preserved; no completed campaign was repeated to force agreement.
+
+Eight bounded literature queries retained 98 titles for screening. Selected abstracts
+and primary passages, reading depths and failed requests are recorded. BIOMEDE primary
+futility coexists with context-specific tolerability/biomarker findings; TEAMMATE's
+selected population/regimen comparison cannot establish MVA exposure or benefit. The
+2026 TORC1/cohesin finding is a budding-yeast hypothesis based on an available primary
+abstract. The review adds qualification requirements, not a drug-priority change.
+R48-R52 bring the combined register to 52 claims across six registers.
+
+### Reproduction and failure accounting
+
+The original archive has 226 files, 887,986,492 bytes and SHA-256
+`8cd7f0b4c1c453fc10a586d66354c087aa95e2fbbb79ffc0247f9834641585ae`.
+All file digests passed. Six redownloadable H5ADs and two reproducible prepared arrays
+are omitted but hash-bound. Five provider MD5 checks passed; the RPE1 raw export has
+no provider MD5. Original-count CPU calculations check all seven/nine evaluable query
+profiles within 2.83e-6. All three cross-cell matrices match local reanalysis exactly;
+2,705 numerical summary fields differ by at most 2.23e-16. Summary bytes differ through
+rounding, as recorded, while public results retain the original output.
+
+The first local archive verification ran before SCP finished and failed with EOF.
+The complete transfer then matched the receipt and all archive checks. A remote CPU
+audit initially failed on a pandas read-only view; copying the array fixed it. Both
+failed logs remain retained. Full reproduction commands, raw-count versus derived-array
+check scope and environment versions are in `notes/track2-perturbseq-reproduction-v31.md`.
+No failed attempt is counted as a completed result or biological evidence.
+
+### Materials and current harness
+
+New v32 report, slides, pitch, transcript, video description, methods workbook,
+reviewer/readiness notes, source/editorial/design/integration reviews, renderers,
+release and bundle scripts integrate v31. Scientific-slides, humanizer and no-ai-slop
+were used with local SVG/HTML rendering. No image-generation provider was added.
+Nine slides have eight vector figures and a complete acknowledgement. Narration has
+335 words; the sixteen-page report contains nine tables. All eleven methods answers
+and the 313-word abstract match the reopened workbook. B9 disclosure is synchronized.
+All slides/report pages were inspected, with new result and source-limit pages viewed
+at full resolution. Text geometry has no clipping/overlap, checked contrast is at least
+5.257:1 and slide PDF fonts are embedded. Workbook appearance was not rendered.
+Runtime is unmeasured; these are recording materials, not a hosted video or receipt.
+
+The final cross-file review caught an inherited 326-word description count and a
+requirements link pointing to an uncreated v32 review. Both were corrected; two new
+regressions now check word-count agreement and repository links. The provisional
+snapshot/ZIP/review are preserved in ignored `before-link-fix` locations. Final report
+and slide render bytes were unaffected. The full community review remains October 6;
+no new October 7 full discussion review is claimed.
+
+Mutable AGENTS, README, feature evidence, current-state record, combined checker,
+isolation audit, regression tests and handoff now route v32 plus frozen v31 evidence.
+The new release binds 687 inputs and contains 176 output files. Its recording ZIP has
+53 files and SHA-256 `82ce1ed373672e91e0d143577b994e846e81d3ac96eac7f4e66ca00a02fe0168`.
+The 723-file preservation baseline is unchanged; strict v30 verification passes its
+640 inputs and historical chain. All owned GPU jobs are complete, and all owner-host
+roots/caches remain in the 24 November deletion scope. No subject data, family contact,
+submission, clinical claim or provider/licensing attestation was added.
+
+### Validation
+
+- `uv run --no-project python scripts/check_track2_perturbseq_v31.py`: passed.
+- Complete archive extraction/reanalysis and all numerical/table/matrix comparisons: passed.
+- Public presentation and combined isolated review: passed without subject files,
+  credentials, network, subprocesses or project environment. Python audit guards
+  establish dependency isolation only, not OS sandbox security or biological validity.
+- `uv run python -m unittest discover -s scripts -p 'test_track2*.py'`: initial 954
+  passed; after the description/link fixes, **956 tests passed in 20.878 seconds**.
+- New release and 53-file recording-materials bundle: verified; historical v30 retained.
+- All-ref disclosure audit at starting HEAD: 92 commits / 1,280 blobs, no findings.
+- Live public-repository guard: all 13 retired blobs unavailable, live control succeeds,
+  zero unknown errors. Final staged audit and push verification follow this record.
+
+Feature blockers remain biological model/branch qualification, independent joint
+functional confirmation and justified exposure; provider/distribution settings;
+recording/runtime/hosting; final live portal/owner checks and receipt. Everolimus stays
+an optional model-qualified probe, HCQ reserve, no rescue-priority drug. Phase and
+clinical margins remain unknown. The separate Track 1 receipt gap does not justify
+another upload. Further progress requires new evidence, not more dependent resampling.
+
+Fresh-shell no-argument startup (`nohup bash -lc './init.sh'`), actual output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+84.99 GB in /mnt/md0/IITM/BackUp/Home/vijayavallabh/mva-hackathon-2026/data
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+bcftools 1.24
+samtools 1.24
+tabix (htslib) 1.24
+2.2.1
+pigz 2.8
+Picard Version: 3.5.0
+      version 26.04.6 build 12646
+openjdk version "17.0.20.1" 2026-08-18
+Delly 2.1.0
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+{
+  "passed": true,
+  "active_feature": "feat-009",
+  "harness_version": 32,
+  "presentation_version": 32,
+  "drug_science_version": 21,
+  "slides": 9,
+  "narration_words": 335,
+  "falsification_amendment": {
+    "passed": true,
+    "claims": 27,
+    "additional_source_records": 12,
+    "current_decision": {
+      "clinical_recommendation": false,
+      "scope": "qualified_non_cancer_model",
+      "evidence_kind": "not_measured",
+      "decision": "HOLD",
+      "reason": "Prerequisites unresolved or failed; no transfer from another branch"
+    },
+    "drug_dispositions_changed": false,
+    "biological_validation": false
+  },
+  "upload_ready": false,
+  "research_addendum": {
+    "version": 19,
+    "status": "complete",
+    "gpus": 8,
+    "completed_gpu_waves": 3,
+    "compound_profiles": 312438,
+    "query_compound_comparisons": 12185082,
+    "resampled_reagent_sets": 560000,
+    "primary_contexts": 14,
+    "primary_query_gates_passed": 0,
+    "post_hoc_comparisons": 42,
+    "post_hoc_full_filters_passed": 0,
+    "primary_everolimus_comparisons": 19,
+    "primary_everolimus_profiles": 14,
+    "primary_everolimus_positive_correlations": 13,
+    "phase2_unresolved_labelled_profiles": 174,
+    "phase2_reference_matching_profiles": 6,
+    "phase2_reference_matching_qc_passes": 0,
+    "ht29_post_hoc_reagents": 5,
+    "ht29_post_hoc_adjusted_tail": 0.041995800419958006,
+    "ht29_full_filter_passed": false,
+    "drug_ranking_changed": false
+  },
+  "rnai_addendum": {
+    "passed": true,
+    "version": 23,
+    "gpus": 8,
+    "unordered_pair_comparisons": 1536619950,
+    "null_sets": 5843968,
+    "orthogonal_comparisons": 2364754,
+    "primary_threshold_crossings": 5,
+    "finite_reference_threshold_crossings": 0,
+    "unknown_comparisons": 2,
+    "seed_comparison": {
+      "raw": {
+        "available": 54,
+        "seed_greater": 45
+      },
+      "prime": {
+        "available": 54,
+        "seed_greater": 45
+      }
+    },
+    "orthogonal_reference": {
+      "raw": {
+        "comparisons": 297,
+        "top1": 14,
+        "top5percent": 84
+      },
+      "prime": {
+        "comparisons": 297,
+        "top1": 21,
+        "top5percent": 93
+      }
+    },
+    "independent_bub1b_experiment": false,
+    "drug_ranking_changed": false,
+    "biological_validation": false
+  },
+  "crispr_addendum": {
+    "passed": true,
+    "version": 25,
+    "gpus": 8,
+    "comparisons": 2474445074,
+    "bub1b_profiles": 31,
+    "bub1b_guides": 1,
+    "matched_compound_profiles": 285488,
+    "ht29_qualification_lead": true,
+    "independent_guide_qualified_contexts": 0,
+    "drug_ranking_changed": false,
+    "biological_validation": false,
+    "new_neural_inference": false,
+    "claim_records": 5
+  },
+  "falsification_addendum": {
+    "passed": true,
+    "version": 27,
+    "gpus": 8,
+    "masked_positions": 9472,
+    "substitution_scores": 179968,
+    "expression_comparisons": 918999010,
+    "claim_records": 5,
+    "new_neural_inference": true,
+    "drug_ranking_changed": false,
+    "biological_validation": false,
+    "independent_guide_qualified_contexts": 0
+  },
+  "orthogonal_addendum": {
+    "passed": true,
+    "version": 29,
+    "gpus": 8,
+    "structural_contexts": 528,
+    "fixed_site_samples": 67584,
+    "expression_fits": 400,
+    "expression_comparisons": 820147416,
+    "primary_control_passes": 1,
+    "expanded_control_passes": 0,
+    "claim_records": 5,
+    "total_claim_records": 47,
+    "new_neural_inference": true,
+    "toolkit_executed": true,
+    "biological_validation": false,
+    "drug_ranking_changed": false
+  },
+  "perturbseq_addendum": {
+    "passed": true,
+    "version": 31,
+    "gpus": 8,
+    "gpu_correlations": 27628823832,
+    "split_repetitions": 2048,
+    "public_cells": 558299,
+    "drug_ranking_changed": false,
+    "biological_validation": false,
+    "claim_records": 5,
+    "all_control_sensitivity_available": false,
+    "scope": "Public computation consistency; not biological qualification or submission readiness"
+  },
+  "biological_validation": false,
+  "scope": "Combined public presentation/research consistency; not biological validation or submission preflight"
+}
+=== OK ===
+```
