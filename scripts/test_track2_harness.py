@@ -39,6 +39,14 @@ class CurrentStateTests(unittest.TestCase):
             with self.subTest(value=value),self.assertRaises(ValueError):
                 harness.validate(state,self.features,self.documents)
 
+    def test_coordinate_contaminated_fits_cannot_be_promoted(self):
+        for key,value in [('original_v33_model_fits_excluded',False),
+                          ('full_model_gain_validated',True),('corrected_features',1068),
+                          ('mitotic_gain_gate_passed',True)]:
+            state=deepcopy(self.state);state['research_correction'][key]=value
+            with self.subTest(key=key),self.assertRaisesRegex(ValueError,'coordinate correction'):
+                harness.validate(state,self.features,self.documents)
+
     def test_false_readiness_or_scientific_promotion_rejected(self):
         for key,value in [('upload_ready',True),('video_recorded',True),('video_url','https://example.org/video'),
                           ('phase','trans'),('clinical_exposure_margin',10),('rescue_priority','everolimus'),

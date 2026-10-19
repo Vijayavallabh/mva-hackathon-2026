@@ -1,0 +1,98 @@
+{
+  "schema_version": 35,
+  "date": "2026-10-19",
+  "original_plan_sha256": "f9e56533068de83eea12844a1d660252a4f18c2e0f6133a65bdb484ea773fa1d",
+  "prior_amendment_sha256": "6a450836a153c34f0b45786b0a911228eac2b42fa5cbd3fb0cd8f68984a2cdfd",
+  "timing": "After all eight v33 mitotic fits completed. One incidental real-seed learned MRR (0.05295643399051719) was seen in a log; no full baseline/test comparison was reviewed. Before corrected fitting or interphase effect analysis. This is a transparent correction, not external preregistration.",
+  "correction": {
+    "excluded_features": [
+      "nucleus_centroid_r",
+      "nucleus_centroid_c",
+      "cell_centroid_r",
+      "cell_centroid_c"
+    ],
+    "reason": "Absolute image centroids violate the original feature policy and can encode position/batch. The original selector omitted this naming pattern. Original model runs remain preserved and excluded from gain claims.",
+    "original_features": 1068,
+    "corrected_features": 1064
+  },
+  "preparation": {
+    "output_directory": "prepared-v35",
+    "preserve_v33": true,
+    "global_cell_sample_unchanged": true,
+    "source_transform_unchanged": true,
+    "full_guide_summaries_unchanged_except_removed_columns": true,
+    "add": "Per-guide, per-plate full counts, feature sums and finite counts for separate-plate sensitivity; no query-specific selection.",
+    "storage_review": "Mitotic export is partitioned by guides: 20404 total per-shard guide records equal 20404 distinct guides; prepared output 8063718534 bytes. Three interphase schema-only samples have 1, 8 and 5 guides per shard. The feared intermediate explosion was not supported; retain checksum-bound sharded preparation with a resource guard."
+  },
+  "models": {
+    "seeds": [
+      3301,
+      3302,
+      3303,
+      3304
+    ],
+    "steps": 3000,
+    "controls": "Four real and four shuffled fits per arm; all eight idle H100s. Same original gene split, sampling, architecture, optimizer and validation checkpoint rule.",
+    "model_directory": "models-v35",
+    "reject_absolute_coordinates": true
+  },
+  "baseline_details": {
+    "basic_features": [
+      "nucleus_area",
+      "cell_area",
+      "nucleus_dapi_int",
+      "nucleus_dapi_mean",
+      "nucleus_eccentricity",
+      "nucleus_form_factor",
+      "nucleus_solidity",
+      "cell_eccentricity",
+      "cell_form_factor",
+      "cell_solidity"
+    ],
+    "size_only": [
+      "nucleus_area",
+      "cell_area"
+    ],
+    "full_profile": [
+      "cosine",
+      "within-profile-centered correlation"
+    ],
+    "PCA_whitening_dimensions": [
+      64,
+      128,
+      256
+    ],
+    "abundance": "Within-arm log1p counts; observed mitotic fraction after both exports complete. Never call this viability.",
+    "required_baselines": "Fail if declared basic/size features are absent; report variable-feature exclusions rather than silently drop a baseline."
+  },
+  "aggregate_analysis": {
+    "bootstrap_seed": 3501,
+    "bootstrap_repetitions": 20000,
+    "unit": "Held-out genes; guides and seeds are dependent repeats.",
+    "interval": "Paired percentile 95% interval. Within each bootstrap draw subtract the maximum simple-baseline macro-MRR; report each seed and minimum-over-four-seeds joint interval.",
+    "gain_gate": "All four real seeds exceed the strongest simple baseline by >=0.02 absolute macro-MRR; each paired lower bound and joint lower bound >0. Report shuffled controls separately. No clinical interpretation.",
+    "all_methods_same_test_genes": true,
+    "retain_all_seeds": true,
+    "topk": "Macro-average guide fractions within each gene, then genes; report ties explicitly."
+  },
+  "plate_sensitivity": {
+    "unit": "Exact source plate label",
+    "minimum_full_cells_per_guide_plate": 20,
+    "minimum_distinct_guides": 2,
+    "comparison": "Query each eligible guide on one plate against distinct-guide gene references pooled only from other plates. Exclude the query guide from its own gene reference. Use training-gene preprocessing.",
+    "interpretation": "Plate-separated retrieval; the pooled model has seen training-gene cells from all plates. This is not a completely unseen-acquisition test or biological replication. Preserve insufficient plate/guide coverage.",
+    "methods": "Full cosine/correlation, basic/size, abundance and learned profiles from the same fixed sampled cells; report sampled-cell counts and missing states."
+  },
+  "numerical_validation": {
+    "mitotic_replay": "Exact original vs corrected guide metadata, sample identities and retained sample columns; full sums/counts/means must agree after excluding four centroid columns.",
+    "independent_summary": "CPU float64 recomputation for all ten named queries, with separately implemented reduction and source checksum checks.",
+    "cuda_tolerance": 2e-05
+  },
+  "unchanged": [
+    "All ten queries",
+    "20-cell and two-guide evaluation gates",
+    "Query genes excluded from training/validation",
+    "No drug priority, phase, exposure, wet-lab or clinical promotion",
+    "Deletion by 2026-11-23; cnb@sagebase.org"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "archive_sha256": "5ac610082576059c8fccf132308c723873df90ca76ca4a069abe9aa3cd3a88e6",
+  "files": 118,
+  "models": 8,
+  "held_out_genes": 950,
+  "baseline_methods": 8,
+  "bootstrap_repetitions": 20000,
+  "rank_to_gene_and_macro_metrics_recomputed": true,
+  "paired_intervals_recomputed": true,
+  "tolerance": 1e-12,
+  "practical_gain_gate_passed": false,
+  "biological_validation": false,
+  "script_sha256": "4ecac48eeee72f0371d7a4999e5880f1bea0ccea762e7a502ee8a03bceba62d2"
+}

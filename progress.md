@@ -7985,3 +7985,83 @@ annotation resources ready
 }
 === OK ===
 ```
+
+
+## Session 73 — 2026-10-19: correct optical leakage; retain failed mitotic gain
+
+Feat-009 remains in progress. Found four absolute centroid columns in the v33
+feature selector, contrary to the registered policy. Excluded those original fits
+from gain claims and preserved their bytes. `notes/track2-optical-amendment-v35.json`
+records the correction timing, including one previously seen incidental learned
+MRR. Corrected preparation uses 1,064 features. Full mitotic replay preserves every
+retained sampled value, identity, complete-guide count, sum and mean exactly.
+
+Eight corrected 3,000-step fits and eight plate-sensitivity workers completed on
+all eight H100s under `/home/prachh/v/mva-track2-optical-20261019-v33`. An independent
+CPU reduction verifies all 40 query guides. Strongest simple-baseline MRR is
+0.047518; four real models give 0.050422–0.055476. Gains of 0.002904–0.007958 fail
+the declared 0.02 gate. Two paired intervals and the minimum-over-seeds interval
+include zero. Shuffled MRRs are 0.026842–0.033273. Full results and source bindings
+are in `notes/track2-optical-mitotic-results-v35.json`; local rank-to-gene metrics
+and both 20,000-resample comparisons reproduce within 1e-12. These are dependent
+algorithmic comparisons, not biological replications.
+
+BUB1B mitotic coverage remains 11/15/11/25: one guide meets 20 cells, while two
+are required. Plate-separated evaluation has only 0–2 eligible test/reference
+genes per plate; none of the ten named queries qualifies on any plate. It cannot
+validate plate robustness. Weighted plate embeddings agree with pooled embeddings
+within 5.087e-7. All missing states and low-coverage results are retained.
+
+`notes/track2-optical-correction-v35.md` is a mandatory addendum to frozen v34
+materials. Current state, README, AGENTS, feature evidence and handoff route it;
+new public checks reject promotion of original fits, missing BUB1B evidence or the
+failed gain gate. No rescue-priority drug, phase, exposure or wet-lab claim changes.
+
+The original interphase download is still active, Python PID 4156734. New supervisor
+PID 546535 waits for complete checksum-bound coverage, then runs corrected
+preparation, independent CPU checks, eight model fits and eight plate checks.
+It records stage/terminal receipts, checks storage and script hashes, waits for
+idle GPUs and never kills another process or restarts the downloader. At 12:21 UTC,
+2,018/3,029 files (214,264,876,807 bytes) were complete with no reported errors;
+free space was 388,122,353,664 bytes. This historical count is not a completion
+claim. `notes/track2-optical-secondary-plan-v35.json` declares the pending cross-arm
+fraction control and an exploratory matched-128-cell mean diagnostic before
+interphase fitting; the latter follows mitotic results and cannot rescue its gate.
+
+Validation:
+
+- 1,008 Track 2 tests pass, with 11 local Torch skips; all 13 computation-focused
+  v35 tests pass remotely. Final focused harness: 32 tests; claim guards: 2 tests.
+- Public-only isolation audit passes all six denied-access probes. New checks need
+  no network, protected inputs, credentials, project environment or subprocesses.
+- V34 release verifies unchanged: 186 files, 734 bound inputs, historical chain intact.
+- The 118-file public mitotic review archive is 14,235,350 bytes, SHA-256
+  `5ac610082576059c8fccf132308c723873df90ca76ca4a069abe9aa3cd3a88e6`.
+  It retains review JSON/scripts/source manifests, not checkpoint/prepared arrays;
+  those remain on the owner host. Local replay verifies archive integrity and metrics.
+- The first final startup caught removed canonical handoff routes; they were restored.
+  Initial remote tests also caught the default temporary filesystem's space limit;
+  TMPDIR now stays under the authorized remote root. Neither failure is hidden.
+
+Full interphase, cross-arm and integrated scientific review remain pending. The
+research goal and feat-009 are active. No submission, recording, email or deletion
+was performed. The organizer's November 23 deadline and cnb@sagebase.org recipient
+remain current.
+
+Fresh no-argument startup recheck passed. Selected verbatim output from
+`logs/track2-optical-v35-final-init-recheck.log`:
+
+```text
+=== 1. uv environment ===
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+=== OK ===
+```

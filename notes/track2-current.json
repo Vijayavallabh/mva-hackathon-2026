@@ -220,5 +220,17 @@
     "drug_ranking_changed": false,
     "check": "scripts/check_track2_optical_progress_v33.py",
     "snapshot": "notes/track2-optical-status-v33.json"
+  },
+  "research_correction": {
+    "version": 35,
+    "status": "in_progress",
+    "amendment": "notes/track2-optical-amendment-v35.json",
+    "report": "notes/track2-optical-correction-v35.md",
+    "original_v33_model_fits_excluded": true,
+    "corrected_features": 1064,
+    "full_model_gain_validated": false,
+    "drug_ranking_changed": false,
+    "mitotic_gain_gate_passed": false,
+    "mitotic_results": "notes/track2-optical-mitotic-results-v35.json"
   }
 }

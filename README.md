@@ -18,6 +18,11 @@ variant. Two tracks:
 
 Submissions close **24 Oct 2026, 23:59 UTC**.
 
+The optical follow-up has a documented [coordinate-exclusion correction](notes/track2-optical-correction-v35.md).
+Four absolute centroid columns slipped into the original v33 model inputs. Those
+fits are excluded from gain claims; corrected fitting and validation use separate
+v35 outputs. Read this correction alongside the frozen v34 progress presentation.
+
 ## This repository contains no subject data, and never will
 
 Access is gated and the terms are binding, not advisory. `data/`, `results/` and

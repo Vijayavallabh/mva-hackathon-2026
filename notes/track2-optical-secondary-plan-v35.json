@@ -1,0 +1,25 @@
+{
+  "schema_version": 35,
+  "date": "2026-10-19",
+  "timing": "After corrected mitotic model results and plate coverage review; before complete interphase preparation/fitting or effect analysis.",
+  "primary_analysis_unchanged": true,
+  "cross_arm_count_baseline": {
+    "status": "Already required by the original v33 plan; still pending both complete exports",
+    "definition": "Observed mitotic cells / (observed mitotic + observed interphase cells), matched by exact guide sequence and consistent gene label.",
+    "missing_rule": "Zero observed cells in one arm is allowed only after complete export coverage is verified and the guide is present in the other arm. Missing or conflicting attribution is a failure, not zero.",
+    "retrieval": "Within each arm's existing eligible test cohort, absolute-distance retrieval with the same distinct-guide own-reference policy and average exact-tie ranks.",
+    "scope": "Selected fixed-cell class fraction, not measured viability, mitotic duration, all-enrolled survival or probability of rescue."
+  },
+  "matched_sampling_diagnostic": {
+    "status": "Exploratory addition after mitotic results; not part of the originally registered eight within-arm baselines",
+    "reason": "The encoder uses at most 128 sampled cells per guide while the practical full-profile baseline uses all cells. Failure against that baseline cannot isolate representation quality from sampling information.",
+    "definition": "Source-clipped feature means from the exact deterministic cells already selected for neural fitting. Reuse each fitted model's training-gene-only feature retention, center and scale, and the original cosine retrieval.",
+    "no_selection": "No new sampling, guide thresholds, architecture, checkpoints, seeds, hyperparameters or drug ranking. Evaluate all eligible test genes and ten queries in both arms.",
+    "interpretation": "Report alongside the original full-data baseline. It cannot retroactively rescue the failed primary mitotic practical-gain gate. A gain over a sampled baseline alone does not establish a gain over the strongest full-data baseline."
+  },
+  "unchanged": [
+    "All original primary results retained",
+    "Gene-level uncertainty; no cell/guide/seed pseudo-replication",
+    "No drug, phase, exposure, wet-lab or clinical promotion"
+  ]
+}

@@ -1,0 +1,416 @@
+{
+  "passed": true,
+  "arm": "mitotic",
+  "features": 1064,
+  "guides": [
+    {
+      "gene": "BUB1",
+      "guide": "ACCAGACGGACACTTACTGA",
+      "cells": 19,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "PLK1",
+      "guide": "ACCGGCGAAAGAGATCCCGG",
+      "cells": 28,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "MAD2L1",
+      "guide": "ACTCGAGTAAAGGTTTCAGA",
+      "cells": 7,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "MAD2L1",
+      "guide": "AGCAGGGAATCACCCTGCGC",
+      "cells": 12,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "PLK1",
+      "guide": "AGCCAAGCACAATTTGCCGT",
+      "cells": 12,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "AURKB",
+      "guide": "AGGCCACCATACCTCAGGGA",
+      "cells": 3,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "RPTOR",
+      "guide": "AGTACGAGAACTGGCAGCCA",
+      "cells": 27,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "BUB1B",
+      "guide": "AGTGAAGCTGTATTGCCACG",
+      "cells": 11,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "TTK",
+      "guide": "ATTTTGGCCATATTTATCTG",
+      "cells": 22,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "BUB1",
+      "guide": "CAAGGAGAAGCTTATTCGTG",
+      "cells": 14,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "MTOR",
+      "guide": "CAGCATCGGATGCTTAGGAG",
+      "cells": 44,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "TTK",
+      "guide": "AAATGCTGGAAATTGCCCTG",
+      "cells": 5,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "PLK1",
+      "guide": "AACCAAAGTCGAATATGACG",
+      "cells": 11,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "CDC20",
+      "guide": "CAGTCTGTTCTGATAACCTG",
+      "cells": 104,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "AURKB",
+      "guide": "CATCAACCCATACTGCAGGT",
+      "cells": 10,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "RPTOR",
+      "guide": "CTTACGTCGCAACGCCAAGG",
+      "cells": 41,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "BUB1B",
+      "guide": "GAGCAGAACTATCCTCAAGG",
+      "cells": 15,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "MTOR",
+      "guide": "GAGCCGGAATGAGGAAACCA",
+      "cells": 30,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "RPTOR",
+      "guide": "GATCTGGCAGAACTTCGACT",
+      "cells": 27,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "BUB1B",
+      "guide": "GCAGATGCGATATTTCAGGA",
+      "cells": 11,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "RICTOR",
+      "guide": "GGCATAGTCGCAAACATCTG",
+      "cells": 86,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "CDC20",
+      "guide": "GGCCAAATGTCGTCCATCTG",
+      "cells": 169,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "AURKB",
+      "guide": "GGGTGACAGGCTCTTTCCGG",
+      "cells": 20,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "BUB1",
+      "guide": "GGTAGCAAAACAGTGTACCC",
+      "cells": 13,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "PLK1",
+      "guide": "GTCCCGCTTCTCGTCGATGT",
+      "cells": 1,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "RPTOR",
+      "guide": "TCAAGCAGTTCGCACTACAG",
+      "cells": 81,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "BUB1B",
+      "guide": "TCACAGTGAAGCCATGTCCC",
+      "cells": 25,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "BUB1",
+      "guide": "TCAGAGAGGAATTCAAAACC",
+      "cells": 45,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "MTOR",
+      "guide": "TCAGGAAATGATCCGCACAG",
+      "cells": 36,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "CDC20",
+      "guide": "TCCCAGAACTCCAATCCACA",
+      "cells": 18,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "RICTOR",
+      "guide": "TGACATACAACAGAGCAACG",
+      "cells": 47,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "AURKB",
+      "guide": "TGACGAGCAGCGAACAGCCA",
+      "cells": 5,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "MAD2L1",
+      "guide": "TGATCTGTCTGATCACTGAA",
+      "cells": 13,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "MTOR",
+      "guide": "TGGCCGTCTTGCCATGGCAG",
+      "cells": 28,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "CDC20",
+      "guide": "TGGGGAATATATATCCTCTG",
+      "cells": 7,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "RICTOR",
+      "guide": "TGTATAGGCAGGTAGACGTG",
+      "cells": 37,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "MAD2L1",
+      "guide": "AATGTGGTGGAACAACTGAA",
+      "cells": 12,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "RICTOR",
+      "guide": "ACAACTATGGACACAGACTG",
+      "cells": 137,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "TTK",
+      "guide": "TTAACTGGGACTCTTCCAAA",
+      "cells": 4,
+      "maximum_sum_error": 0.0
+    },
+    {
+      "gene": "TTK",
+      "guide": "TTATATGAACACTATAGTGG",
+      "cells": 39,
+      "maximum_sum_error": 0.0
+    }
+  ],
+  "source_files": [
+    {
+      "source": "part.10.parquet",
+      "sha256": "f3a7b7b1d9abd73287529980b87ea93cfb5711bbbf94149670f55dd5da90a80c",
+      "provider_md5": "4212103bdaccf5f4c9c2768d8455912c"
+    },
+    {
+      "source": "part.11.parquet",
+      "sha256": "da46464a6259da050b1de420035e7456332345a23f7aade0236096762b238db7",
+      "provider_md5": "77636f8267f723a89cbc52280ee52361"
+    },
+    {
+      "source": "part.13.parquet",
+      "sha256": "7cc4c14aaa73ba51dc3867cfee169cb4772d194e67aecdb31d6309725f15044a",
+      "provider_md5": "8f1f38c9f2313f9cbecd674fa9c76a85"
+    },
+    {
+      "source": "part.16.parquet",
+      "sha256": "1a786cde392d9aad145371833356d2210d44431855b8eac9be856137341a3349",
+      "provider_md5": "208063835f2367ff1297ca969b4eac51"
+    },
+    {
+      "source": "part.18.parquet",
+      "sha256": "7bceb099600bba19674c0b1ad07d879e8ed1c9fedbfd3d7ae39a3c960e52af61",
+      "provider_md5": "69ed0ce43cb5e23cfebb56b3ed8538f2"
+    },
+    {
+      "source": "part.19.parquet",
+      "sha256": "08e90812876eabfd934228b2aea829d114a4a3d8086839d51faa2a86eb93eab4",
+      "provider_md5": "15a379e0b2aa1405aacaef25b761404f"
+    },
+    {
+      "source": "part.20.parquet",
+      "sha256": "2b311f990dd44004ff3526044b8929e3ae4f3986bed8d5bf2402d240d74a2675",
+      "provider_md5": "1aff34284badeb7d1cfb03a06606f940"
+    },
+    {
+      "source": "part.25.parquet",
+      "sha256": "51ecab9d9a0bc62e87f0fda9e768bdb1e8e3d4fb8396ff409aadc9abd7b4ebb1",
+      "provider_md5": "cd23faef1486e724b7a2a5bcf5b5f68f"
+    },
+    {
+      "source": "part.27.parquet",
+      "sha256": "2e7255b15beb73083af8e95306d87924f30235ea16ba0f6711aeb51f23f2c432",
+      "provider_md5": "20787f1fb48cf04a66e1418516c59a8e"
+    },
+    {
+      "source": "part.29.parquet",
+      "sha256": "eb1def18d8a31808ea5772cb99d80387a6ed4388ee07566b37b756ceb0f0a767",
+      "provider_md5": "f1ce49d4604effb8335bc3e352b359ee"
+    },
+    {
+      "source": "part.2.parquet",
+      "sha256": "4b107054593d2dbf4eb576ebe7be1dca105b979e7d296ab0a4efcae35933a2cd",
+      "provider_md5": "31c63b845972585fdcd6a536c449c9e2"
+    },
+    {
+      "source": "part.31.parquet",
+      "sha256": "145bdbbbbc514a76ebeee818c31c42e23da961386eff953559f8c0241dece8af",
+      "provider_md5": "a972015f809a88ed07734b54ff777d02"
+    },
+    {
+      "source": "part.45.parquet",
+      "sha256": "634e82892956e08e79586cf111701aa5d9b9746645063cbbe9287e6dac3681bc",
+      "provider_md5": "c3e017bbf6f7337275762663e8d279e9"
+    },
+    {
+      "source": "part.51.parquet",
+      "sha256": "eab21b17c205226e58b0484250785e2a441226908879090f99e5eb252c714dd8",
+      "provider_md5": "712a6627e0e569abdb17922cc2331bc8"
+    },
+    {
+      "source": "part.52.parquet",
+      "sha256": "88311310705c5e0b19e573e2de5230835bee1f089f9c629fc4cc4c6807e61a42",
+      "provider_md5": "598efef90e28fea505ca28bbecf5ad56"
+    },
+    {
+      "source": "part.53.parquet",
+      "sha256": "15cb24f68346de124b43a833bef20c014e1d4eaa9419f2d0c79d136785b4e6ac",
+      "provider_md5": "1cfd9e837848f31e21b0d9cefd5ebb72"
+    },
+    {
+      "source": "part.56.parquet",
+      "sha256": "06204a2bdbcf6f0f8865ecc3092afa884c055eaabd7ce808c074488514c1d86f",
+      "provider_md5": "ba78ca8a9698ece5494b8a493c82f2be"
+    },
+    {
+      "source": "part.64.parquet",
+      "sha256": "4508262d5bdf8a5a40fe95723057a8211610beafe4799e1fdba1f2dd916afc51",
+      "provider_md5": "879a80d6bfc0f3872c7090ec28cb2f4e"
+    },
+    {
+      "source": "part.66.parquet",
+      "sha256": "eb2b0228c4182168f95ca1ff10f1356a8bc2c5b84f163307e5ba6875a99a7ab1",
+      "provider_md5": "f49eaa98c6dd2cec1e294ea2c171ce96"
+    },
+    {
+      "source": "part.67.parquet",
+      "sha256": "292af2046698126fca19291fc37481ebf711a49db7e1e437aa28cff8ed081298",
+      "provider_md5": "158f9e047b1413f9d8112827670b9196"
+    },
+    {
+      "source": "part.70.parquet",
+      "sha256": "b666dc4d12e1b86c87d041f0ca826b52637222179c42ea1b5e43e0c09f2e6c3b",
+      "provider_md5": "92c37c62223f1ff5df2c8febe3068502"
+    },
+    {
+      "source": "part.77.parquet",
+      "sha256": "c9292c214c8865d8d16f6d067cb37ab4f2855f2edfd75a72d50e5cf0fcdc954b",
+      "provider_md5": "5ba4c5c82e9b8d3ab7a664b803a6e809"
+    },
+    {
+      "source": "part.78.parquet",
+      "sha256": "976bf766adcb4d4e6cb4093b4918ee6892f8d3bf80e24cacf2b5e70364fce4f4",
+      "provider_md5": "2240b62e00a2e9d37a3a929122fdd063"
+    },
+    {
+      "source": "part.80.parquet",
+      "sha256": "670e7af40c9f876dbef0bd2ff0799301488e6e7f4b9ce1fda103aad9126b92de",
+      "provider_md5": "236a085bda29624750a825ad7d29419a"
+    },
+    {
+      "source": "part.84.parquet",
+      "sha256": "e01579af3b780552c1958cab28378a4cb5cbe4e2dd58b1f527db2d2df2f3494e",
+      "provider_md5": "a0e32015e2c26dc8fe4d61080107ba0a"
+    },
+    {
+      "source": "part.85.parquet",
+      "sha256": "caa7ad9a1e2783f2a583cbab2f8bb14bd1f2552e5cfb5fecb7d15aa4721477d6",
+      "provider_md5": "0ec9c79e1def1dedda162b5bc310ac68"
+    },
+    {
+      "source": "part.87.parquet",
+      "sha256": "db24727a464947d6d1963119917452d539d404f4def6fb11d2918018ecc4704d",
+      "provider_md5": "7921e6abbe4b1051f600623e5ae0446b"
+    },
+    {
+      "source": "part.88.parquet",
+      "sha256": "267a37cec8e7709496af3520e624567c28feaaea8e0bf0b5764bb0ff90048fae",
+      "provider_md5": "e69045c4f852f01933b4a16cd93b8b67"
+    },
+    {
+      "source": "part.89.parquet",
+      "sha256": "30b7616644ff575a383df636861071435cfc362d472d5fa7f780446889507d59",
+      "provider_md5": "847e372761fbbb8342df9ad17e4f9074"
+    },
+    {
+      "source": "part.8.parquet",
+      "sha256": "0aad21615d1484c5b9eff307ed247bb68931f202ad86a435afcdacceffe9caee",
+      "provider_md5": "1f90d6763435ff2c72647e70fffe013d"
+    },
+    {
+      "source": "part.90.parquet",
+      "sha256": "ce5076b0a327ef3cbd6efdb792fe4e93d9f085ae20fd5da41db0c1b3aecdf366",
+      "provider_md5": "a4d0c0edc5b8d26111dcbd867225129c"
+    },
+    {
+      "source": "part.91.parquet",
+      "sha256": "e962a5d502a3ffe40a651ca00dd2802c69746f95dfb8a560bf7f50b8c5db2a11",
+      "provider_md5": "a38caa234c07dd9fa0ea72e9199ec31f"
+    }
+  ],
+  "sum_absolute_tolerance": 1e-07,
+  "elapsed_seconds": 12.252431793138385,
+  "prepared_complete_sha256": "a0e2346d932c3762eba59e7131fdc9d73abc280719242aae52066f7e6f46cf09",
+  "script_sha256": "e99b82a6c857a5ea13890524b1c6624d26b2bbb279898772bfd6ab10782ca49a",
+  "arithmetic": "Separate source reads; CPU math.fsum over finite source-float32 values clipped to [-10,10]",
+  "biological_validation": false,
+  "drug_ranking_changed": false
+}

@@ -96,6 +96,12 @@ def validate(state, features, documents):
         'progress':'notes/track2-optical-progress-v33.md','model_results_validated':False,
         'drug_ranking_changed':False,'check':'scripts/check_track2_optical_progress_v33.py',
         'snapshot':'notes/track2-optical-status-v33.json'}, 'Optical progress falsely promoted or missing')
+    require(state.get('research_correction') == {
+        'version':35,'status':'in_progress','amendment':'notes/track2-optical-amendment-v35.json',
+        'report':'notes/track2-optical-correction-v35.md','original_v33_model_fits_excluded':True,
+        'corrected_features':1064,'full_model_gain_validated':False,'drug_ranking_changed':False,
+        'mitotic_gain_gate_passed':False,'mitotic_results':'notes/track2-optical-mitotic-results-v35.json'},
+        'Optical coordinate correction omitted or falsely promoted')
     require(state['status'] == STATUS, 'Unsupported scientific/delivery promotion; review evidence before updating the harness')
     require(state['model_campaign'] == dict(protein_scores=84, structures=192, dna_comparisons=100,
                                           inference_complete=True), 'Model completion/count drift')
@@ -264,8 +270,15 @@ def check(root=ROOT):
     for relative in set(roles.values()) | set(CURRENT_REVIEW.values()) | set(RESEARCH_PATHS.values()) | {state['harness_review']}:
         public_path(root, relative)
     optical = importlib.import_module('check_track2_optical_progress_v33').check(root)
+    optical_correction = importlib.import_module('check_track2_optical_correction_v35').check(root)
     for key in ['plan','amendment','progress','check','snapshot']:
         public_path(root,state['research_in_progress'][key])
+    for key in ['amendment','report','mitotic_results']:
+        public_path(root,state['research_correction'][key])
+    correction=json.loads(public_path(root,state['research_correction']['amendment']).read_text())
+    require(correction['correction']['excluded_features']==[
+        'nucleus_centroid_r','nucleus_centroid_c','cell_centroid_r','cell_centroid_c'],
+        'Optical coordinate exclusion changed')
     public_path(root,state['deletion_policy']['plan'])
     audit = campaign_audit(root)
     release = importlib.import_module(f"track2_release_v{state['presentation_version']}")
@@ -306,7 +319,8 @@ def check(root=ROOT):
                 presentation_version=state['presentation_version'],
                 drug_science_version=21, slides=presentation['slides'],
                 narration_words=presentation['narration_words'], falsification_amendment=presentation['falsification_amendment'], upload_ready=False,
-                optical_progress=optical, deletion_deadline=state['deletion_policy']['deadline'], research_addendum=dict(version=19, status='complete', **summary),
+                optical_progress=optical, optical_correction=optical_correction,
+                deletion_deadline=state['deletion_policy']['deadline'], research_addendum=dict(version=19, status='complete', **summary),
                 rnai_addendum=rnai, crispr_addendum=crispr, falsification_addendum=v27, orthogonal_addendum=v29, perturbseq_addendum=v31, biological_validation=False,
                 scope='Combined public presentation/research consistency; not biological validation or submission preflight')
 

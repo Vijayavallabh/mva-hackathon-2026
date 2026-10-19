@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "original_features": 1068,
+  "corrected_features": 1064,
+  "removed": [
+    "nucleus_centroid_r",
+    "nucleus_centroid_c",
+    "cell_centroid_r",
+    "cell_centroid_c"
+  ],
+  "sampled_cells": 832846,
+  "exact_cells_counts_sampling_and_values": true,
+  "old_complete_sha256": "32da7575a8095798c757a043ed39da28ffd6b5d052e504b1b3ab97463ba21820",
+  "new_complete_sha256": "a0e2346d932c3762eba59e7131fdc9d73abc280719242aae52066f7e6f46cf09",
+  "biological_validation": false,
+  "audit_script_sha256": "d22948163ed66837bc78ee8db6429e63ff3df4a538fd009ab4709d631657bc2e"
+}

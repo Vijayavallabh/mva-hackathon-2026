@@ -101,6 +101,12 @@ All earlier bound inputs and releases through v32 remain frozen. The drug ledger
 and base validation remain v21.
 
 V33 is in progress under `/home/prachh/v/mva-track2-optical-20261019-v33`.
+**Correction in progress, v35:** the v33 selector retained four absolute centroid
+columns, contrary to its registered policy. The original fits are excluded from
+gain claims. Read `notes/track2-optical-correction-v35.md` and the v35 amendment;
+preserve all v33/v34 bound bytes. Corrected preparation, eight-worker fitting and
+numerical/plate audits use separately named v35 paths. Never launch the old model
+script for the interphase arm. The original coverage counts remain valid.
 The public mitotic dataset has 838,224 cells; BUB1B guide counts 11/15/11/25 leave
 only one guide above the fixed 20-cell minimum. Retrieval requires two guides.
 Retain this missing state. The status snapshot binds preparation and eight launched
