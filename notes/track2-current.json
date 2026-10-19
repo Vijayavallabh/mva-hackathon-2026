@@ -50,7 +50,7 @@
     "literature_audit": "notes/track2-literature-audit-v41.json",
     "literature_check": "scripts/check_track2_literature_v41.py"
   },
-  "snapshot": "results/feat009/jvv7_track2_research_v41-verified",
+  "snapshot": "results/feat009/jvv7_track2_research_v41-verified2",
   "render_directory": "results/feat009/v41-slides-final-20261020-3",
   "model_campaign": {
     "protein_scores": 84,
@@ -75,8 +75,8 @@
   },
   "history": "progress.md",
   "harness_review": "notes/track2-harness-review-v41.md",
-  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v41.zip",
-  "document_directory": "results/feat009/v41-documents-final-20261020-3",
+  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v41_2.zip",
+  "document_directory": "results/feat009/v41-documents-final-20261020-4",
   "research_addendum": {
     "version": 19,
     "kind": "public_perturbation_transcriptome",

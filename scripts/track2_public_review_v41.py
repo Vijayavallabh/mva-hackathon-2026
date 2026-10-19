@@ -85,7 +85,7 @@ def report_checks(report):
                    'availability, clone feasibility and functional qualification remain unconfirmed',
                    'synthetic margins cannot qualify','diagnostic use would still require',
                    'why work through everolimus?','the first experiment is model qualification',
-                   'two downstream mtor-related hypotheses','presentation and harness revision']:
+                   'two downstream mtor-related hypotheses','changes readout design, not any drug disposition']:
         require(phrase in text,'Rubric/limitations drift: '+phrase)
     return answers
 
@@ -127,7 +127,7 @@ def check():
     visual=check_deck()
     literature_result=literature.check()
     report=(ROOT/'notes/track2-report-v41.md').read_text();answers=report_checks(report)
-    prior.optical_numbers(json.loads((ROOT/'notes/track2-optical-results-v36.json').read_text()),report,(ROOT/'notes/track2-slides-v40.html').read_text())
+    prior.optical_numbers(json.loads((ROOT/'notes/track2-optical-results-v36.json').read_text()),report,(ROOT/'notes/track2-slides-v41.html').read_text())
     requirements=requirements_checks(*[json.loads((ROOT/f'notes/track2-{n}-v39.json').read_text()) for n in ['requirements','community-audit']])
     counts,transcript=narration((ROOT/'notes/track2-pitch-v40.md').read_text())
     require((ROOT/'notes/track2-transcript-v40.txt').read_text()==transcript,'Transcript differs')
@@ -140,9 +140,12 @@ def check():
     require(acknowledgement() in normalized(description),'Video acknowledgement missing')
     require(builder.rendered()==(ROOT/'notes/track2-demo-v37.html').read_text(),'Generated demo differs')
     teaching=demo.run();teaching.pop('seconds')
-    for name in ['report','slides','pitch','reviewer-guide','owner-readiness','video-description','lab-handoff','community-kit','judge-questions','external-review-packet','recording-guide']:
+    for name in ['report','slides','pitch','video-description','lab-handoff','community-kit','judge-questions','external-review-packet','recording-guide']:
         suffix='html' if name=='slides' else 'md'
         document=(ROOT/f'notes/track2-{name}-v40.{suffix}').read_text()
+        repository_links(document);command_paths(document)
+    for name in ['reviewer-guide','owner-readiness']:
+        document=(ROOT/f'notes/track2-{name}-v41.md').read_text()
         repository_links(document);command_paths(document)
     return dict(old,passed=True,presentation_version=41,literature_refresh=literature_result,**visual,narration_words=sum(counts),words_per_slide=counts,planned_recording=timing.summary(pitch),
         abstract_words=len(answers['B17'].split()),requirements=requirements,teaching_demo=teaching,

@@ -1,8 +1,9 @@
 # Track 2 v41 harness review
 
-The current record, AGENTS, README, feature evidence and handoff route v40 materials
-and the completed optical comparison. The drug ledger remains v21. All completed
-v19/v23/v25/v27/v29/v31 findings persist, with the six retained optical falsification records:
+The current record, AGENTS, README, feature evidence and handoff route v41 materials,
+the v41 public literature addendum and the completed optical comparison. The drug
+ledger remains v21. All completed v19/v23/v25/v27/v29/v31 findings persist, with
+the six retained optical falsification records:
 58 claim records across seven registers, not 58 studies. Earlier bound releases,
 original coordinate-contaminated fits and failed execution receipts remain intact.
 
@@ -25,7 +26,7 @@ and subprocesses; they test dependency isolation, not operating-system security.
 The retained v37 demo exposes the unchanged v21 decision policy in a browser. Fixed author-
 selected cases, Python/JavaScript agreement and invalid-record rejection test
 implementation, not clinical performance or the truth of declared prerequisites.
-The retained v37 demo audit and new v40 teleprompter audit check browser source hashes, desktop/mobile geometry, all case outcomes,
+The retained v37 demo audit and frozen v40 teleprompter audit check browser source hashes, desktop/mobile geometry, all case outcomes,
 teleprompter cue boundaries, conservative delivery state and the extracted small-kit
 replay. The kit audit uses the frozen v37 isolation helper; no mutable current-route
 file is hash-bound into its inputs, so future harness versions do not invalidate it. It rejects omissions and changes to required inputs. Browser checks are
@@ -33,8 +34,9 @@ local and do not constitute a formal accessibility or external usability audit.
 
 Versioned presentation checks bind report, numerical slide values, narration,
 transcript, methods answers, acknowledgement, official source receipts and exports.
-Release v40 preserves the v39 snapshot and every prior bound input. Source
-captures, v39 scientific adjudications and the v37 demo/kit remain unchanged.
+Release v41 preserves the v40 snapshot and every prior bound input. The v39
+official captures and scientific adjudications, v40 own-voice recording workflow
+and v37 demo/kit remain unchanged.
 The new narration parser derives counts, positive contiguous cue durations and
 planned speaking rates. The guide, transcript and teleprompter must match it;
 none of those planned rates constitutes measured runtime. New

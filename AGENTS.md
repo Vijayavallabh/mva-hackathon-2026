@@ -351,9 +351,9 @@ uv run --no-project python scripts/check_track2_crispr_v25.py
 uv run --no-project python scripts/check_track2_orthogonal_v29.py
 uv run --no-project python scripts/check_track2_perturbseq_v31.py
 uv run --no-project python scripts/track2_falsification_v21.py
-uv run --no-project python scripts/track2_public_review_v40.py
+uv run --no-project python scripts/track2_public_review_v41.py
 uv run --no-project python scripts/check_track2_optical_v36.py
-uv run python scripts/track2_release_v40.py check
+uv run python scripts/track2_release_v41.py check
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 

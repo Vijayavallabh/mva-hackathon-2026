@@ -29,7 +29,7 @@ uv run --no-project python scripts/track2_public_review_v41.py
 uv run --no-project python scripts/check_track2_optical_v36.py
 uv run --no-project python scripts/track2_demo_v37.py
 uv run python scripts/audit_track2_harness.py
-uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v40
+uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified2
 uv run python scripts/track2_bundle_v41.py verify
 ```
 
@@ -68,5 +68,5 @@ read; it has no organizer reply; unchanged text retains earlier review. The [act
 requires deletion and confirmation to cnb@sagebase.org by November 23. Earlier frozen
 dates are superseded. Submission remains October 24 at 23:59 UTC.
 
-[Delivery readiness](track2-owner-readiness-v40.md) separately tracks recording,
+[Delivery readiness](track2-owner-readiness-v41.md) separately tracks recording,
 runtime, hosting, provider/distribution questions, portal checks and receipt.

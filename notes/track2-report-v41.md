@@ -368,7 +368,7 @@ Review the examples, then the full scientific record:
 
 ```bash
 uv run --no-project python scripts/track2_demo_v37.py
-uv run --no-project python scripts/track2_public_review_v40.py
+uv run --no-project python scripts/track2_public_review_v41.py
 ```
 
 The reusable elements are the evidence states, provenance, schema, all-enrolled
@@ -386,9 +386,8 @@ v39 review rechecked the primary mouse discussion and found no new direct
 selected-pair treatment validation in four bounded search results. Earlier source
 adjudications, registry amendment history, the yeast TORC1/cohesin hypothesis and
 Balnis units conflict remain in the linked records. Endogenous effects, tissue
-response and clinical margins remain unresolved. V40 is a presentation and harness
-revision using those retained sources; it adds no literature search or biological
-evidence and changes no drug disposition.
+response and clinical margins remain unresolved. V41 adds a bounded public-source literature refresh to those retained sources;
+it changes readout design, not any drug disposition. It adds no biological experiment.
 
 ## 6. Competition delivery
 
@@ -409,7 +408,7 @@ the latest is reviewed. Quota remains unknown. Recording, measured runtime,
 hosting, owner/provider review, live-portal checks and receipt remain open.
 Delete the data and confirm to **cnb@sagebase.org by November 23**; earlier frozen
 dates/recipients are superseded. Winners are announced December 18. No upload,
-contact or deletion occurred. [Readiness](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-owner-readiness-v40.md).
+contact or deletion occurred. [Readiness](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-owner-readiness-v41.md).
 
 **Distribution scope remains unresolved.** Challenge CC BY requirements may conflict
 with linked historical AF3/non-AVI Atlas output terms. This report/pitch omit those
