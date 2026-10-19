@@ -29,8 +29,16 @@ class CurrentStateTests(unittest.TestCase):
     def test_pending_optical_work_cannot_be_declared_validated(self):
         for key,value in [('status','complete'),('model_results_validated',True),
                           ('drug_ranking_changed',True)]:
-            state=deepcopy(self.state);state['research_in_progress'][key]=value
+            state=deepcopy(self.state);state['historical_optical_progress'][key]=value
             with self.subTest(key=key),self.assertRaisesRegex(ValueError,'Optical progress'):
+                harness.validate(state,self.features,self.documents)
+
+    def test_completed_optical_record_cannot_omit_or_promote_results(self):
+        for key,value in [('cells',1),('corrected_fits',8),('biological_validation',True),
+                          ('drug_ranking_changed',True),('interphase_gain_gate_passed',True),
+                          ('post_hoc_plate_control',False)]:
+            state=deepcopy(self.state);state['optical_addendum'][key]=value
+            with self.subTest(key=key),self.assertRaisesRegex(ValueError,'completed optical addendum'):
                 harness.validate(state,self.features,self.documents)
 
     def test_mixed_and_unsafe_paths_rejected(self):
@@ -102,15 +110,15 @@ class CurrentStateTests(unittest.TestCase):
                 harness.validate(state,self.features,self.documents)
 
     def test_integrated_versions_preserve_research_version(self):
-        self.assertEqual(self.state['presentation_version'],34)
-        self.assertEqual(self.state['harness_version'],34)
+        self.assertEqual(self.state['presentation_version'],36)
+        self.assertEqual(self.state['harness_version'],36)
         self.assertEqual(self.state['research_addendum']['version'],19)
         self.state['harness_review']='notes/track2-harness-review-v18.md'
         with self.assertRaisesRegex(ValueError,'Stale harness'):
             harness.validate(self.state,self.features,self.documents)
 
     def test_correct_independent_version_labels_accepted(self):
-        self.documents['README.md']+='\nUse the current v34 harness and current v19 addendum with the current v34 presentation and current v21 ledger.'
+        self.documents['README.md']+='\nUse the current v36 harness and current v19 addendum with the current v36 presentation and current v21 ledger.'
         harness.validate(self.state,self.features,self.documents)
 
     def test_crispr_addendum_cannot_disappear_or_promote_guides(self):

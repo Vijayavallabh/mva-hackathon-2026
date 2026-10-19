@@ -21,7 +21,8 @@ Submissions close **24 Oct 2026, 23:59 UTC**.
 The optical follow-up has a documented [coordinate-exclusion correction](notes/track2-optical-correction-v35.md).
 Four absolute centroid columns slipped into the original v33 model inputs. Those
 fits are excluded from gain claims; corrected fitting and validation use separate
-v35 outputs. Read this correction alongside the frozen v34 progress presentation.
+v35 outputs. The [completed v36 comparison](notes/track2-optical-v36.md) integrates the correction,
+all controls and their limitations; the frozen v34 progress presentation is historical.
 
 ## This repository contains no subject data, and never will
 
@@ -98,9 +99,26 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-The [reviewer brief](notes/track2-reviewer-brief-v34.md) summarizes the proposed
-experiment. [Competition priorities](notes/track2-competition-strategy-v34.md) map
+The [reviewer brief](notes/track2-reviewer-brief-v36.md) summarizes the proposed
+experiment. [Competition priorities](notes/track2-competition-strategy-v36.md) map
 work to the four weighted criteria and organizer announcement 28.
+
+**Session 74: v36 integrates the completed optical comparison and a clearer experiment.**
+Use the [nine-page report](notes/track2-report-v36.md),
+[nine slides](notes/track2-slides-v36.html), [355-word script](notes/track2-pitch-v36.md),
+[plain transcript](notes/track2-transcript-v36.txt) and
+[reviewer guide](notes/track2-reviewer-guide-v36.md). The
+[current record](notes/track2-current.json) routes the PDF, workbook and recording ZIP.
+All eight H100s were used; 16 corrected fits and both full-cell/median campaigns
+completed. Full interphase means recover BUB1B at ranks 1/3/3/2, with substantial
+fourth-guide sensitivity. Neither arm passes the practical neural-gain gate;
+mitotic coverage remains missing. Equal-cap learning improves on sampled means,
+without beating full-data profiles. No drug or clinical claim is promoted.
+The [complete analysis](notes/track2-optical-v36.md), six new falsification records
+and all earlier research remain checked. There are 58 claim records across seven
+registers. Review with `uv run --no-project python scripts/check_track2_harness.py`;
+original qualification evidence remains in `notes/track2-transcriptome-v19.md`.
+Recording/hosting, provider/distribution questions, live checks and receipt remain open.
 
 **Session 72: v34 materials distinguish pending optical work from validated results.**
 The [report](notes/track2-report-v34.md), [nine slides](notes/track2-slides-v34.html),
@@ -195,7 +213,7 @@ The proposed decision contract returns HOLD with unmeasured biology and null mar
 An invalid assay, imprecision, scoped futility and safety failure now have different
 consequences. No wet-lab result, new model inference or candidate promotion is claimed.
 
-**Track 2 (feat-009) is in progress.** Read the [integrated v34 report](notes/track2-report-v34.md)
+**Track 2 (feat-009) is in progress.** Read the [integrated v36 report](notes/track2-report-v36.md)
 and the complete [v19 research record](notes/track2-transcriptome-v19.md).
 The [falsification review](notes/track2-falsification-review-v21.md) challenges the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
@@ -236,17 +254,17 @@ assumption; revise or abandon the approach when warranted. Use the original
 throughout research and before promotion/release. Apply the same standard to benefit,
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
-Current materials: [report source](notes/track2-report-v34.md),
-[336-word narration](notes/track2-pitch-v34.md), [plain transcript](notes/track2-transcript-v34.txt),
-[nine-slide deck](notes/track2-slides-v34.html) and
-[video description](notes/track2-video-description-v34.md). New figures separate
-ProteinMPNN control failures, limited RPE1 specificity and the missing mitotic
-BUB1B comparison. Model gains remain unvalidated; drug matching stays in the report. The report preserves the older seed/finite-reference results and failed
-compound checks, then explains the newer source-well aggregation. All eleven methods
-answers and the 356-word abstract match the workbook export.
+Current materials: [report source](notes/track2-report-v36.md),
+[355-word narration](notes/track2-pitch-v36.md), [plain transcript](notes/track2-transcript-v36.txt),
+[nine-slide deck](notes/track2-slides-v36.html) and
+[video description](notes/track2-video-description-v36.md). The mechanism and joint-treatment experiment lead the presentation, followed by
+the synthetic denominator example and completed optical comparison. Favorable BUB1B
+morphology, failed practical neural gain, guide/plate sensitivity and missing mitotic
+coverage remain distinct. All eleven methods answers and the 289-word abstract match
+the workbook export. Prior scientific details remain in linked research records.
 
-Start with the [combined reviewer guide](notes/track2-reviewer-guide-v34.md). One
-public CPU command checks integrated v34 materials and frozen v19/v21/v23/v25/v27/v29/v31 findings:
+Start with the [combined reviewer guide](notes/track2-reviewer-guide-v36.md). One
+public CPU command checks integrated v36 materials and completed v19/v21/v23/v25/v27/v29/v31/v36 findings:
 
 ```bash
 uv run --no-project python scripts/check_track2_harness.py
@@ -254,12 +272,12 @@ uv run --no-project python scripts/check_track2_harness.py
 
 It requires no subject files, data/results folders, keys, network, Git history or model
 weights. The check verifies consistency, not biological efficacy. The versioned public
-presentation reviewer and release/bundle scripts use v34; the combined research harness
-uses v34. Earlier versions remain available and bound
+presentation reviewer and release/bundle scripts use v36; the combined research harness
+uses v36. Earlier versions remain available and bound
 inputs stay unchanged. The [current artifact record](notes/track2-current.json),
-[harness review](notes/track2-harness-review-v34.md) and `./init.sh` route current work.
+[harness review](notes/track2-harness-review-v36.md) and `./init.sh` route current work.
 
-The [readiness note](notes/track2-owner-readiness-v34.md) lists outstanding recording,
+The [readiness note](notes/track2-owner-readiness-v36.md) lists outstanding recording,
 runtime measurement, hosting, provider handling, distribution scope, live checks and
 receipt. The October 19 official/community refresh covers 29 threads and 83 visible comments;
 four new or changed comments were reread. Delete and confirm to cnb@sagebase.org
@@ -315,7 +333,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v34 disclosure names this route without
+GLM for public-literature synthesis; the current v36 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 

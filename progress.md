@@ -8065,3 +8065,153 @@ annotation resources ready
 === 7. current Track 2 presentation and research harness ===
 === OK ===
 ```
+
+## Session 74 — 2026-10-19 — completed optical falsification and v36 integration
+
+Feat-009 remains the only active feature. Completed both public optical arms and
+integrated their findings into the Track 2 proposal. All sixteen corrected
+3,000-step fits, sixteen cross-plate workers and sixteen complete-guide median
+workers finished on the eight owner-host H100s under the authorized `v` root.
+The interphase export contains 31,046,046 cells; mitotic contains 838,224. No protected
+subject data was transferred and no additional hosted model provider was added.
+
+The corrected practical gain rule fails in both arms against twelve baselines.
+Full means score 0.047518 mitotic and 0.234113 interphase. Interphase learned scores
+0.143636-0.148017 beat the exactly matched 128-cell mean (0.093093), but not full-data
+profiles. This positive equal-information finding is exploratory and does not rescue
+the primary gate. Full interphase BUB1B ranks 1/3/3/2 among 994 genes remain a favorable
+assay-development lead. The fourth guide changes substantially by aggregation,
+neural seed and plate; cross-plate rank reaches 520. Mitotic counts 11/15/11/25
+remain insufficient for two qualifying guides. All missing states stay missing.
+
+Post-hoc plate proportions do not reproduce the favorable morphology ranks but
+cannot exclude phenotype-specific batch effects. The exclusive-single-plate control
+has no eligible genes; it is unavailable. The pooled-trained encoder is not an
+unseen-acquisition test. Source classifier, within-class normalization, fixed-cell
+selection and early-versus-prolonged sensitivity motivate direct classification
+checks and all-enrolled daughter fate, sustained function and recovery. The targeted
+reread covers selected Funk methods and Cohen-Sharir results/methods; it is not a
+systematic or full-paper literature review. Six new records R53-R58 bring the total
+to 58 across seven registers. Drug, phase, exposure and biological decisions do not change.
+
+The legitimate empty interphase shard exposed a preserved v35 preparation failure.
+V36 repairs zero-row handling while leaving nonempty processing intact, archives
+partial output and retains all 3,027 shard receipts. The repaired pipeline finished
+at 13:09:25 UTC, secondary controls at 13:26:31 and packaging at 13:28:06. No live
+campaign work remains; do not restart old supervisors. A default-TMPDIR test attempt
+hit the space guard; 35 tests passed after using the authorized root's TMPDIR, then
+two post-hoc plate-control tests passed. Original coordinate-contaminated fits remain
+excluded and preserved.
+
+The 3,535-file public review archive is 81,058,361 bytes, SHA-256
+`a1e366c5c931a626c446c17de4d77fd15384e5c5730cd45e2f11c04f7d40ab8d`.
+Independent CPU source reductions, 40 query-guide medians per arm and public workbook
+counts pass. Local replay verifies every member, recomputes rank-to-gene/macro MRR,
+reproduces twelve paired comparisons and checks 480 evaluated cross-plate metrics
+plus both post-hoc plate-only metrics. Intervals reuse the registered bootstrap
+algorithm, not a second independent implementation. Source parquet, prepared arrays
+and checkpoints remain remote; the archive is a review/provenance bundle.
+
+V36 uses scientific-slides/frontend-design and humanizer/no-ai-slop: nine slides,
+eight local SVG figures, 355 narration words and a 3,683-word/nine-page report
+(previously 7,189 words/seventeen pages). The mechanism, joint-treatment experiment
+and labelled synthetic denominator example lead; detailed campaigns remain linked.
+All eleven official methods answers, the 289-word abstract, provider history and
+full acknowledgement persist. Draft inspection fixed an overlapping label, a crowded
+optical heading and a dangling report link. Final slides/report pages were inspected;
+no independent reviewer participated. There is no recorded video or measured runtime.
+
+The current artifact record, README, AGENTS, feature evidence, handoff and combined
+harness now route v36. The first combined regression exposed stale README routes;
+the full suite then caught the isolation bootstrap's old version assertion. Both
+were corrected without changing frozen historical files or relaxing guards.
+Final `uv run python -m unittest discover -s scripts -p 'test_track2*.py'`:
+**1,043 tests, OK with 14 local skips**, recorded in
+`logs/track2-v36-full-tests-final.log`. Computation-focused remote tests and actual
+GPU execution are recorded separately; skips are not represented as local passes.
+Public versioned/current isolation checks deny network, protected paths, credentials,
+process launch and writes. They test dependencies, not operating-system security.
+
+The first release candidate `results/feat009/jvv7_track2_research_v36` verified 206 files
+and 812 bound inputs, preserving v34 and the earlier chain. The 83-file recording
+ZIP is 2,711,137 bytes, SHA-256
+`5b06f2611a138d0c02f1e6d677a0f3e7afda47492d4582e78f2b827320e5c9e4`.
+The final exports have nine PDF pages each; slide labels are at least 24 px,
+checked contrast is at least 5.8275, fonts are embedded and geometry checks find
+no clipping/overlap. The official workbook's questions and Track 1 cells/styles
+round-trip unchanged. Workbook appearance was not rendered.
+
+Official October 19 requirements are retained, not described as another fresh
+portal review: 35/25/25/15 rubric, October 24 at 23:59 UTC close, three entries/latest
+reviewed, quota unknown, and November 23 deletion/confirmation to cnb@sagebase.org.
+The computational goal is complete after repository delivery; feat-009 stays in
+progress for recording/hosting, provider/distribution questions, owner/live checks
+and receipt. Biological qualification and joint-treatment evidence remain open.
+No upload, organizer/family contact, email or deletion occurred.
+
+Final fresh-shell, no-argument `./init.sh` passed. Selected verbatim output from
+`logs/track2-v36-final-init.log`:
+
+```text
+=== 1. uv environment ===
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+=== OK ===
+```
+
+Initial candidate snapshot and ZIP verification passed. All 734 v34-bound inputs remain
+byte-identical. The live publication guard confirms PUBLIC visibility, all 13
+retired objects unavailable, a working reachable-object control and zero unknown
+errors (`results/feat009/v36-live-publication-check-20261019.json`). No new purge
+request or visibility change was needed. Every intended repository change is
+included in this session's commit and pushed to the configured origin.
+
+The subsequent commit hook rejected the first candidate solely for an oversized
+10,728,780-byte JSON blob; no protected-text/credential/VCF finding occurred.
+The gate was not bypassed. The rejected snapshot, ZIP and all 812 bound inputs are
+preserved under `results/feat009/v36-size-gate-rejected-20261019/`. The new public
+encoder produces 4,709,908-byte compact JSON, checks exact decoded equality and
+records both hashes. The public checker reconstructs and hashes the exact original
+analysis serialization and keeps the original workbook/replay receipts. Scientific
+values and all rendered exports are unchanged. The current candidate is rebuilt
+with renewed isolation, tests, staged disclosure and fresh-shell startup checks.
+An isolation invocation briefly caught an absent staged audit filename during
+replacement; the preserved prior file was restored for the copy, then the new audit
+was written through a separate output path. No scientific work was rerun.
+
+Final compact publication package verification supersedes the first candidate's
+counts above. `results/feat009/jvv7_track2_research_v36` contains **207 files and
+814 bound inputs**. The **84-file** recording-materials ZIP is **2,596,702 bytes**,
+SHA-256 `e55d22204d45104129dc88d5ceeb5b46356a2937dad06413b6c3583f88988c57`.
+Both packages verify; neither establishes a recorded video or upload readiness.
+Versioned and current public-only isolation checks pass all six denied-access
+probes. The staged disclosure audit passes **893 blobs with zero findings**
+(`results/feat009/v36-staged-disclosure-compact.json`). The complete regression
+suite passes again after the encoding change: **1,043 tests in 24.284 seconds,
+OK (skipped=14)** (`logs/track2-v36-compact-full-tests.log`).
+
+The final fresh-shell, no-argument `./init.sh` exits successfully after that change.
+Selected verbatim output from `logs/track2-v36-compact-final-init.log`:
+
+```text
+=== 1. uv environment ===
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+=== OK ===
+```

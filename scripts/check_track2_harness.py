@@ -6,7 +6,7 @@ import json
 import re
 from pathlib import Path
 
-RNAI_STATE = {'version': 23, 'status': 'complete', 'report': 'notes/track2-rnai-v23.md', 'plan': 'notes/track2-rnai-plan-v23.json', 'results': 'notes/track2-rnai-results-v23.json', 'sensitivity': 'notes/track2-rnai-tail-sensitivity-v23.json', 'audit': 'notes/track2-rnai-audit-v23.json', 'validation': 'notes/track2-rnai-validation-v23.md', 'register': 'notes/track2-rnai-register-v23.json', 'check': 'scripts/check_track2_rnai_v23.py', 'figure': 'notes/track2-rnai-v23.svg', 'archive': 'results/feat009/rnai-v23/rnai-v23-audit.tar.gz', 'gpus': 8, 'unordered_pair_comparisons': 1536619950, 'conditional_control_sets': 5843968, 'orthogonal_comparisons': 2364754, 'drug_ranking_changed': False, 'presentation_integration': 'integrated_in_v34_preserves_v23'}
+RNAI_STATE = {'version': 23, 'status': 'complete', 'report': 'notes/track2-rnai-v23.md', 'plan': 'notes/track2-rnai-plan-v23.json', 'results': 'notes/track2-rnai-results-v23.json', 'sensitivity': 'notes/track2-rnai-tail-sensitivity-v23.json', 'audit': 'notes/track2-rnai-audit-v23.json', 'validation': 'notes/track2-rnai-validation-v23.md', 'register': 'notes/track2-rnai-register-v23.json', 'check': 'scripts/check_track2_rnai_v23.py', 'figure': 'notes/track2-rnai-v23.svg', 'archive': 'results/feat009/rnai-v23/rnai-v23-audit.tar.gz', 'gpus': 8, 'unordered_pair_comparisons': 1536619950, 'conditional_control_sets': 5843968, 'orthogonal_comparisons': 2364754, 'drug_ranking_changed': False, 'presentation_integration': 'integrated_in_v36_preserves_v23'}
 RNAI_AUDIT_SHA256 = '27bff5205ea443acdfe1dbb8863f21725af36af3e7400199bcea3345cdf9cb3c'
 CRISPR_STATE = {
     'version':25, 'status':'complete', 'report':'notes/track2-crispr-v25.md',
@@ -18,16 +18,32 @@ CRISPR_STATE = {
     'archive':'results/feat009/crispr-v25/crispr-v25-audit.tar.gz',
     'gpus':8,'comparisons':2474445074,'bub1b_profiles':31,'bub1b_guides':1,
     'matched_compound_profiles':285488,'drug_ranking_changed':False,
-    'presentation_integration':'integrated_in_v34_preserves_v25',
+    'presentation_integration':'integrated_in_v36_preserves_v25',
 }
 CRISPR_AUDIT_SHA256 = '264a46ecc491e0894d57f204c9d9739cb20494ca866bb6e73e3fdce5bd8e3ebb'
-FALSIFICATION_STATE = {'version': 27, 'status': 'complete', 'report': 'notes/track2-falsification-v27.md', 'saturation_plan': 'notes/track2-saturation-plan-v27.json', 'specificity_plan': 'notes/track2-specificity-plan-v27.json', 'saturation_results': 'notes/track2-saturation-results-v27.json', 'specificity_results': 'notes/track2-specificity-results-v27.json', 'compute': 'notes/track2-falsification-compute-v27.json', 'register': 'notes/track2-falsification-register-v27.json', 'audit': 'notes/track2-falsification-audit-v27.json', 'check': 'scripts/check_track2_falsification_v27.py', 'reproduction': 'notes/track2-falsification-reproduction-v27.md', 'figure': 'notes/track2-falsification-v27.svg', 'archive': 'results/feat009/falsification-v27/falsification-v27-audit.tar.gz', 'gpus': 8, 'masked_positions': 9472, 'substitution_scores': 179968, 'expression_comparisons': 918999010, 'drug_ranking_changed': False, 'presentation_integration': 'integrated_in_v34_preserves_v27'}
+FALSIFICATION_STATE = {'version': 27, 'status': 'complete', 'report': 'notes/track2-falsification-v27.md', 'saturation_plan': 'notes/track2-saturation-plan-v27.json', 'specificity_plan': 'notes/track2-specificity-plan-v27.json', 'saturation_results': 'notes/track2-saturation-results-v27.json', 'specificity_results': 'notes/track2-specificity-results-v27.json', 'compute': 'notes/track2-falsification-compute-v27.json', 'register': 'notes/track2-falsification-register-v27.json', 'audit': 'notes/track2-falsification-audit-v27.json', 'check': 'scripts/check_track2_falsification_v27.py', 'reproduction': 'notes/track2-falsification-reproduction-v27.md', 'figure': 'notes/track2-falsification-v27.svg', 'archive': 'results/feat009/falsification-v27/falsification-v27-audit.tar.gz', 'gpus': 8, 'masked_positions': 9472, 'substitution_scores': 179968, 'expression_comparisons': 918999010, 'drug_ranking_changed': False, 'presentation_integration': 'integrated_in_v36_preserves_v27'}
 FALSIFICATION_AUDIT_SHA256 = '690411890163add844aaa61aaf1a832b1447143341d67bdb34b45ec37128bd27'
-ORTHOGONAL_STATE = {'version': 29, 'status': 'complete', 'report': 'notes/track2-orthogonal-v29.md', 'structural_plan': 'notes/track2-structural-plan-v29.json', 'crossfit_plan': 'notes/track2-crossfit-plan-v29.json', 'structural_results': 'notes/track2-structural-results-v29.json', 'crossfit_results': 'notes/track2-crossfit-results-v29.json', 'summary': 'notes/track2-orthogonal-summary-v29.json', 'compute': 'notes/track2-orthogonal-compute-v29.json', 'register': 'notes/track2-orthogonal-register-v29.json', 'validation': 'notes/track2-orthogonal-validation-v29.md', 'audit': 'notes/track2-orthogonal-audit-v29.json', 'check': 'scripts/check_track2_orthogonal_v29.py', 'reproduction': 'notes/track2-orthogonal-reproduction-v29.md', 'archive': 'results/feat009/orthogonal-v29/orthogonal-v29-audit.tar.gz', 'gpus': 8, 'structural_contexts': 528, 'fixed_site_samples': 67584, 'expression_fits': 400, 'expression_comparisons': 820147416, 'drug_ranking_changed': False, 'presentation_integration': 'integrated_in_v34_preserves_v29'}
+ORTHOGONAL_STATE = {'version': 29, 'status': 'complete', 'report': 'notes/track2-orthogonal-v29.md', 'structural_plan': 'notes/track2-structural-plan-v29.json', 'crossfit_plan': 'notes/track2-crossfit-plan-v29.json', 'structural_results': 'notes/track2-structural-results-v29.json', 'crossfit_results': 'notes/track2-crossfit-results-v29.json', 'summary': 'notes/track2-orthogonal-summary-v29.json', 'compute': 'notes/track2-orthogonal-compute-v29.json', 'register': 'notes/track2-orthogonal-register-v29.json', 'validation': 'notes/track2-orthogonal-validation-v29.md', 'audit': 'notes/track2-orthogonal-audit-v29.json', 'check': 'scripts/check_track2_orthogonal_v29.py', 'reproduction': 'notes/track2-orthogonal-reproduction-v29.md', 'archive': 'results/feat009/orthogonal-v29/orthogonal-v29-audit.tar.gz', 'gpus': 8, 'structural_contexts': 528, 'fixed_site_samples': 67584, 'expression_fits': 400, 'expression_comparisons': 820147416, 'drug_ranking_changed': False, 'presentation_integration': 'integrated_in_v36_preserves_v29'}
 ORTHOGONAL_AUDIT_SHA256 = 'c8499bbaa69f10884ec3fc43d95faf570bc97c379c5a2ef14bfbc08bc75d0e6f'
 
-PERTURBSEQ_STATE = {'version': 31, 'status': 'complete', 'report': 'notes/track2-perturbseq-v31.md', 'plan': 'notes/track2-perturbseq-plan-v31.json', 'amendment': 'notes/track2-perturbseq-amendment-v31.json', 'results': 'notes/track2-perturbseq-results-v31.json', 'audit': 'notes/track2-perturbseq-audit-v31.json', 'validation': 'notes/track2-perturbseq-validation-v31.md', 'register': 'notes/track2-perturbseq-register-v31.json', 'check': 'scripts/check_track2_perturbseq_v31.py', 'reproduction': 'notes/track2-perturbseq-reproduction-v31.md', 'archive': 'results/feat009/perturbseq-v31/perturbseq-v31-audit.tar.gz', 'gpus': 8, 'public_cells': 558299, 'gpu_correlations': 27628823832, 'split_repetitions': 2048, 'all_control_sensitivity_available': False, 'drug_ranking_changed': False, 'presentation_integration': 'integrated_in_v34_preserves_v31'}
+PERTURBSEQ_STATE = {'version': 31, 'status': 'complete', 'report': 'notes/track2-perturbseq-v31.md', 'plan': 'notes/track2-perturbseq-plan-v31.json', 'amendment': 'notes/track2-perturbseq-amendment-v31.json', 'results': 'notes/track2-perturbseq-results-v31.json', 'audit': 'notes/track2-perturbseq-audit-v31.json', 'validation': 'notes/track2-perturbseq-validation-v31.md', 'register': 'notes/track2-perturbseq-register-v31.json', 'check': 'scripts/check_track2_perturbseq_v31.py', 'reproduction': 'notes/track2-perturbseq-reproduction-v31.md', 'archive': 'results/feat009/perturbseq-v31/perturbseq-v31-audit.tar.gz', 'gpus': 8, 'public_cells': 558299, 'gpu_correlations': 27628823832, 'split_repetitions': 2048, 'all_control_sensitivity_available': False, 'drug_ranking_changed': False, 'presentation_integration': 'integrated_in_v36_preserves_v31'}
 PERTURBSEQ_AUDIT_SHA256 = '1385314a02c2475578ace8d82e7db4a336bed9496e905fe0050ab4b5b607a5c6'
+
+OPTICAL_STATE = {
+    'version':36, 'status':'complete', 'report':'notes/track2-optical-v36.md',
+    'results':'notes/track2-optical-results-v36.json', 'audit':'notes/track2-optical-audit-v36.json',
+    'validation':'notes/track2-optical-validation-v36.md', 'register':'notes/track2-optical-register-v36.json',
+    'reproduction':'notes/track2-optical-reproduction-v36.md', 'check':'scripts/check_track2_optical_v36.py',
+    'local_replay':'notes/track2-optical-local-replay-v36.json',
+    'archive':'results/feat009/optical-v36/optical-v36-review.tar.gz',
+    'gpus':8, 'cells':31884270, 'corrected_fits':16, 'baseline_methods_per_arm':12,
+    'post_hoc_plate_control':True, 'model_comparison_complete':True,
+    'mitotic_gain_gate_passed':False, 'interphase_gain_gate_passed':False,
+    'bub1b_mitotic_retrieval':'insufficient_guide_coverage',
+    'full_profile_bub1b_interphase_ranks':[1,3,3,2],
+    'drug_ranking_changed':False, 'biological_validation':False,
+    'presentation_integration':'integrated_in_v36_preserves_prior_research',
+}
 
 ROOT = Path(__file__).resolve().parents[1]
 STATUS = {
@@ -40,8 +56,8 @@ STATUS = {
 CURRENT_REVIEW = {
     'script': 'scripts/check_track2_harness.py',
     'isolation_audit': 'scripts/audit_track2_harness.py',
-    'guide': 'notes/track2-reviewer-guide-v34.md',
-    'readiness': 'notes/track2-owner-readiness-v34.md',
+    'guide': 'notes/track2-reviewer-guide-v36.md',
+    'readiness': 'notes/track2-owner-readiness-v36.md',
 }
 RESEARCH_PATHS = {
     'plan': 'notes/track2-transcriptome-plan-v19.json',
@@ -60,7 +76,7 @@ RESEARCH_PATHS = {
 }
 RESEARCH_STATE = {
     'version': 19, 'kind': 'public_perturbation_transcriptome', 'status': 'complete',
-    'report_integration': 'integrated_in_v34_preserves_v19_through_v29',
+    'report_integration': 'integrated_in_v36_preserves_v19_through_v29',
     'gpus': 8, 'compound_profiles': 312438, 'query_compound_comparisons': 12185082,
     'resampled_reagent_sets': 560000, 'primary_query_gates_passed': 0,
     'drug_ranking_changed': False,
@@ -90,18 +106,19 @@ def validate(state, features, documents):
         'deadline':'2026-11-23','confirmation_email':'cnb@sagebase.org',
         'plan':'notes/deletion-plan-v2.md','source_review':'notes/track2-requirements-review-v33.md',
         'supersedes_frozen_dates':True}, 'Stale deletion policy')
-    require(state.get('research_in_progress') == {
+    require(state.get('historical_optical_progress') == {
         'version':33,'kind':'public_optical_phenotypes','status':'in_progress',
         'plan':'notes/track2-optical-plan-v33.json','amendment':'notes/track2-optical-amendment-v33.json',
         'progress':'notes/track2-optical-progress-v33.md','model_results_validated':False,
         'drug_ranking_changed':False,'check':'scripts/check_track2_optical_progress_v33.py',
         'snapshot':'notes/track2-optical-status-v33.json'}, 'Optical progress falsely promoted or missing')
     require(state.get('research_correction') == {
-        'version':35,'status':'in_progress','amendment':'notes/track2-optical-amendment-v35.json',
-        'report':'notes/track2-optical-correction-v35.md','original_v33_model_fits_excluded':True,
+        'version':35,'status':'complete','amendment':'notes/track2-optical-amendment-v35.json',
+        'report':'notes/track2-optical-v36.md','original_v33_model_fits_excluded':True,
         'corrected_features':1064,'full_model_gain_validated':False,'drug_ranking_changed':False,
         'mitotic_gain_gate_passed':False,'mitotic_results':'notes/track2-optical-mitotic-results-v35.json'},
         'Optical coordinate correction omitted or falsely promoted')
+    require(state.get('optical_addendum') == OPTICAL_STATE, 'Missing or inconsistent completed optical addendum')
     require(state['status'] == STATUS, 'Unsupported scientific/delivery promotion; review evidence before updating the harness')
     require(state['model_campaign'] == dict(protein_scores=84, structures=192, dna_comparisons=100,
                                           inference_complete=True), 'Model completion/count drift')
@@ -141,8 +158,8 @@ def validate(state, features, documents):
             'Stale or unsafe render-directory path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['document_directory']),
             'Stale or unsafe document-directory path')
-    require(state.get('harness_version') == 34 and
-            state['harness_review'] == 'notes/track2-harness-review-v34.md', 'Stale harness review')
+    require(state.get('harness_version') == 36 and
+            state['harness_review'] == 'notes/track2-harness-review-v36.md', 'Stale harness review')
     require(state.get('current_review') == CURRENT_REVIEW, 'Missing or stale combined review route')
     require(state.get('perturbseq_addendum') == PERTURBSEQ_STATE and
             all(type(state['perturbseq_addendum'][k]) is type(v) for k,v in PERTURBSEQ_STATE.items()),
@@ -271,8 +288,13 @@ def check(root=ROOT):
         public_path(root, relative)
     optical = importlib.import_module('check_track2_optical_progress_v33').check(root)
     optical_correction = importlib.import_module('check_track2_optical_correction_v35').check(root)
+    optical_complete = importlib.import_module('check_track2_optical_v36').check(root)
+    for key in ['report','results','audit','validation','register','reproduction','check','local_replay']:
+        public_path(root,state['optical_addendum'][key])
+    require(optical_complete['cells']==OPTICAL_STATE['cells'] and optical_complete['corrected_fits']==16,
+            'Completed optical counts differ')
     for key in ['plan','amendment','progress','check','snapshot']:
-        public_path(root,state['research_in_progress'][key])
+        public_path(root,state['historical_optical_progress'][key])
     for key in ['amendment','report','mitotic_results']:
         public_path(root,state['research_correction'][key])
     correction=json.loads(public_path(root,state['research_correction']['amendment']).read_text())
@@ -315,11 +337,11 @@ def check(root=ROOT):
     require(v31['passed'],'V31 review failed')
     for key in ['gpus','public_cells','gpu_correlations','split_repetitions','all_control_sensitivity_available','drug_ranking_changed']:
         require(state['perturbseq_addendum'][key]==v31[key],'Current Perturb-seq summary drift: '+key)
-    return dict(passed=True, active_feature='feat-009', harness_version=34,
+    return dict(passed=True, active_feature='feat-009', harness_version=36,
                 presentation_version=state['presentation_version'],
                 drug_science_version=21, slides=presentation['slides'],
                 narration_words=presentation['narration_words'], falsification_amendment=presentation['falsification_amendment'], upload_ready=False,
-                optical_progress=optical, optical_correction=optical_correction,
+                optical_addendum=optical_complete, historical_optical_progress=optical, historical_optical_correction=optical_correction,
                 deletion_deadline=state['deletion_policy']['deadline'], research_addendum=dict(version=19, status='complete', **summary),
                 rnai_addendum=rnai, crispr_addendum=crispr, falsification_addendum=v27, orthogonal_addendum=v29, perturbseq_addendum=v31, biological_validation=False,
                 scope='Combined public presentation/research consistency; not biological validation or submission preflight')

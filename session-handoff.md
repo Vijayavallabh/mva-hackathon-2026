@@ -1,143 +1,116 @@
-# Session handoff: corrected optical validation v35; interphase pipeline active
+# Session handoff: completed optical research and integrated v36 materials
 
-Only **feat-009** is active. Presentation/harness v34 remain the latest immutable
-release. Current routes in `notes/track2-current.json` add the mandatory v35
-correction and failed mitotic comparison. Read `notes/track2-optical-correction-v35.md`
-before using the old presentation. Do not edit any v33/v34 bound file.
-The current presentation files are `notes/track2-report-v34.md`,
-`notes/track2-slides-v34.html`, `notes/track2-pitch-v34.md` and
-`notes/track2-transcript-v34.txt`; use them with the correction above.
-The combined reviewer entry points remain `scripts/track2_public_review_v34.py`,
-`notes/track2-reviewer-guide-v34.md` and the original assay-qualification report
-`notes/track2-transcriptome-v19.md` alongside later research addenda.
+Only **feat-009** remains active, for delivery and unresolved biological qualification.
+The computational research cycle is complete. Use `notes/track2-current.json`,
+`notes/track2-report-v36.md`, `notes/track2-slides-v36.html`,
+`notes/track2-pitch-v36.md` and `notes/track2-transcript-v36.txt`.
+The combined entry points are `scripts/check_track2_harness.py`,
+`notes/track2-reviewer-guide-v36.md` and `notes/track2-owner-readiness-v36.md`.
+The original qualification report `notes/track2-transcriptome-v19.md` and all later
+addenda remain preserved; the drug ledger and base decision contract remain v21.
+Do not edit old bound inputs or releases through v34.
 
-## Completed this session
+## Completed research
 
-- Found four absolute centroid columns in the original 1,068 v33 features. This
-  violated the registered policy. Preserve and exclude those original fits from
-  gain claims; the v33 blanket coordinate-exclusion statement is superseded.
-- V35 preparation retains 1,064 features. Exact full mitotic replay verifies all
-  retained sample identities/values, complete guide counts, sums and means.
-- Eight corrected 3,000-step fits completed on eight H100s: real seeds 3301–3304
-  plus four shuffled controls. Source clipping, sample cap, gene split and model
-  settings are unchanged; no query-driven tuning.
-- The practical gain gate fails across 950 held-out genes/3,164 guide queries.
-  Strongest simple baseline MRR 0.047518; real models 0.050422–0.055476. Gains
-  0.002904–0.007958 fall short of 0.02; two paired intervals and the joint interval
-  include zero. Shuffled controls 0.026842–0.033273. All outputs are retained.
-- Independent CPU `math.fsum` reductions verify all 40 guides in the ten queries.
-- Eight plate-sensitivity workers completed. Each plate has only 0–2 eligible
-  test/reference genes. None of the ten queries qualifies on any plate. Do not
-  interpret the two-gene scores as confirmation or compare them to the 950-gene pool.
-  Weighted plate embeddings agree with pooled embeddings within 5.087e-7.
-- BUB1B counts remain 11/15/11/25; only one meets 20 cells, while two guides are
-  required. Missing evidence is not a negative biological effect.
-- No rescue-priority drug, phase, exposure, wet-lab or clinical update.
+Read `notes/track2-optical-v36.md` and its reproduction/audit/results records.
+Both public exports completed: 838,224 mitotic and 31,046,046 interphase cells.
+Sixteen corrected 3,000-step real/shuffled fits, sixteen plate workers and sixteen
+complete-guide median workers finished on all eight H100s. Twelve baseline methods
+per arm remain, with their original, registered and exploratory timing.
 
-Recheck locally:
+- Both practical neural-gain gates fail. Full means are strongest: MRR 0.047518
+  mitotic and 0.234113 interphase. Interphase neural MRR is 0.143636-0.148017.
+- Equal-cap interphase means score 0.093093, below the neural models. This supports
+  an exploratory representation benefit under the cap, not a full-data gain.
+- Full interphase BUB1B ranks 1/3/3/2 among 994 genes are favorable. The fourth guide
+  varies strongly with aggregation, model and plate; cross-plate ranks reach 520.
+  Treat this as an assay-development lead, not qualified non-cancer rescue.
+- BUB1B mitotic counts remain 11/15/11/25. Only one guide qualifies; two are required.
+  Missing is not zero, a normal phenotype or disproof of biology.
+- Post-hoc plate proportions do not reproduce the favorable pooled ranks, but do
+  not rule out batch effects. The exclusive-single-plate control has zero eligible
+  genes and remains unavailable. Pooled-trained encoders are not unseen-batch tests.
+- Original centroid-contaminated fits stay excluded. The legitimate empty shard
+  exposed a preserved v35 failure; v36 repairs it without changing nonempty processing.
+- Independent CPU reductions, all 40 query-guide medians per arm, workbook counts,
+  archive hashes and local rank/MRR/paired-interval replay pass. Replay reuses the
+  registered bootstrap implementation; no independent statistical algorithm is claimed.
+- Six new falsification records bring the total to 58 across seven registers.
+  No drug, phase, exposure, wet-lab or clinical claim changes.
 
-```bash
-uv run --no-project python scripts/check_track2_optical_correction_v35.py
-uv run --no-project python scripts/check_track2_harness.py
-uv run python scripts/track2_release_v34.py verify results/feat009/jvv7_track2_research_v34
-```
-
-The local review archive is `results/feat009/optical-v35/mitotic/mitotic-v35-review.tar.gz`:
-118 files, 14,235,350 bytes, SHA-256
-`5ac610082576059c8fccf132308c723873df90ca76ca4a069abe9aa3cd3a88e6`.
-It contains public JSON review records, script/environment provenance and source
-manifests. Checkpoints and prepared numeric arrays remain on the owner host; this
-is not an archive of the entire raw public dataset or model binaries.
-
-## Live owner-hosted work — do not duplicate
+## Remote state: finished, do not restart
 
 Host `PrakashDGX_H2`; root `/home/prachh/v/mva-track2-optical-20261019-v33`.
-All processing/caches stay under that root, using `/home/prachh/v/bin/uv` and the
-existing isolated environment. No protected subject data was transferred.
+All work, cache and temporary files stayed under the owner's `v` folder, using
+`/home/prachh/v/bin/uv` and the isolated pinned environment. No protected subject
+input was transferred. All owned campaign stages have successful terminal receipts:
 
-At 12:21 UTC, 2,018/3,029 files (214,264,876,807 bytes) were downloaded without
-reported errors; free space was 388,122,353,664 bytes. This is a historical status,
-not current completion. The pipeline Python PID is **546535**.
+- `outputs/interphase-v36-pipeline/finished.json`, 13:09:25 UTC.
+- `outputs/secondary-v35-pipeline/finished.json`, 13:26:31 UTC.
+- `outputs/finalize-v36-pipeline/finished.json`, 13:28:06 UTC.
 
-The original interphase downloader Python PID is **4156734**. A separate
-`track2_optical_finish_v35.py` supervisor waits for its complete checksum-bound
-manifest. It then runs, sequentially:
+The old `outputs/interphase-v35-pipeline/failed.json` is historical, not an active
+failure. Preserve original scripts, registrations, partial-output archive, fitted
+checkpoints and prepared arrays. Do not restart the downloader or supervisors.
 
-1. Corrected interphase preparation with eight CPU workers.
-2. Independent CPU query reductions.
-3. Four real and four shuffled fits on eight idle H100s.
-4. Fixed gene-level comparison against all eight within-arm baselines.
-5. Eight plate-sensitivity workers.
+Local review archive: `results/feat009/optical-v36/optical-v36-review.tar.gz`,
+3,535 files / 81,058,361 bytes, SHA-256
+`a1e366c5c931a626c446c17de4d77fd15384e5c5730cd45e2f11c04f7d40ab8d`.
+This contains public review records, code and provenance; source parquet, checkpoints
+and prepared numeric matrices remain remote. Local replay covers twelve paired
+comparisons, 480 evaluated cross-plate metrics and both post-hoc plate-only metrics.
+The remote root and all earlier caches remain in the November 23 deletion scope.
 
-It refuses partial coverage, changed registered scripts, occupied GPUs after a
-bounded wait, storage over 450 GB or free space below 128 GiB. It never restarts
-the downloader, stops another process or overwrites an existing wave. Do not
-modify its registered scripts while this pipeline is active. The plain v33 model
-must never be used for the interphase arm.
+## Current materials and checks
 
-Authoritative status:
+V36 has nine slides, eight local SVG figures, a 355-word script/plain transcript,
+nine-page report, eleven-answer official methods workbook and recording-materials
+ZIP. Scientific-slides/frontend-design and humanizer/no-ai-slop informed the revision.
+The full acknowledgement and provider history remain. The script's three-minute
+allocations are not a measured recording. Exact verification/export evidence and
+fresh startup output are in progress.md session 74.
 
 ```bash
-ssh PrakashDGX_H2 'cd /home/prachh/v/mva-track2-optical-20261019-v33 && cat outputs/download-interphase-status.json && cat outputs/interphase-v35-pipeline/status.json'
+./init.sh
+uv run --no-project python scripts/check_track2_harness.py
+uv run --no-project python scripts/check_track2_optical_v36.py
+uv run --no-project python scripts/track2_public_review_v36.py
+uv run python scripts/audit_track2_harness.py
+uv run python scripts/track2_release_v36.py verify results/feat009/jvv7_track2_research_v36
+uv run python scripts/track2_bundle_v36.py verify
 ```
 
-Pipeline registration/status/terminal files: `outputs/interphase-v35-pipeline/`.
-Log: `logs/interphase-v35-pipeline.log`. Completed corrected mitotic paths are
-`prepared-v35/mitotic`, `models-v35/mitotic-*`, `plate-v35/mitotic-*`,
-`outputs/wave-v35-mitotic` and `outputs/wave-plates-v35-mitotic`. Old `prepared/`,
-`models/` and `outputs/wave-mitotic` remain preserved historical work.
+Public checks need no subject files, GPU, keys or network. Strict package verification
+also checks retained local exports/snapshots. Old v33/v35 checkers describe frozen
+capture states; the current complete record is v36. Python audit guards check
+dependency isolation, not operating-system security. Computation and software checks
+do not establish biological validation.
 
-If a tool call times out, inspect process identity and these receipts before
-considering a restart. A pending download is not a blocker while independent work
-is possible; the overall research goal remains active.
+## Blockers and next actions
 
-## Next bounded work
+- Record, measure and host the three-minute video on YouTube/Vimeo. No recording,
+  measured runtime, hosted URL, Track 2 upload or authenticated receipt exists.
+- Resolve Fireworks/earlier alignment-service handling and linked AF3/non-AVI Atlas
+  versus challenge CC BY distribution scope. OpenAI no-training is an owner attestation.
+  Existing unsent clarification remains unsent; no organizer contact was authorized.
+- Before delivery, review exact files, identity/team, live rules/quota, public GitHub
+  and video access. Three entries are allowed; only the latest is reviewed. Quota
+  is unknown. Archive uploaded bytes and receipt after actual submission.
+- Scientific advancement needs endogenous effects, independent perturbation/restoration,
+  qualified non-cancer function and joint treatment. Everolimus remains an optional
+  model-qualified probe, HCQ reserve; no rescue-priority drug. Phase and clinical
+  exposure margins remain unknown. Safety failure overrides benefit; all-pass allows
+  preclinical review only. Balnis's 1,000-fold units conflict stays quarantined.
+- Preserve submitted Track 1 v4. Owner-reported 100/F-max 1 is separate from the
+  missing receipt/byte audit; do not request another upload.
+- Official October 19 refresh: seven files at
+  `60e1c30e337ce6fe01813040dbe49979eb8c50aa`, 29 threads / 83 visible comments;
+  four changed/new comments reread. No live account/quota/receipt audit was performed.
+  Submit by **October 24, 23:59 UTC**. Delete and confirm to **cnb@sagebase.org by
+  November 23** under `notes/deletion-plan-v2.md`. Feat-010 is not started; no deletion
+  or email occurred. Winners are announced December 18.
 
-- Continue from the active pipeline; inspect its failed/finished receipt and every
-  worker return code. Verify complete interphase BUB1B counts independently against
-  the source workbook's 859/1219/839/1435; do not assume agreement.
-- Run `track2_optical_plate_summary_v35.py . --arm interphase` after plate completion.
-  The pipeline does not invoke this final condensation step.
-- Implement the already-declared cross-arm mitotic-fraction control and the
-  exploratory matched-128-cell mean diagnostic in
-  `notes/track2-optical-secondary-plan-v35.json`. The latter was declared after
-  mitotic results but before interphase fitting. It cannot rescue the failed
-  primary mitotic gate. Preserve original primary metrics and all seeds.
-- Validate all gains against the strongest simple baseline, not just a favorable
-  comparator. Query specificity, reference-cohort sizes, plate coverage, sampling
-  information and HeLa/p53 limitations must remain explicit.
-- Audit the full evidence, bind retained records and update the research summary,
-  falsification decisions and harness. Then integrate finished findings into a new
-  presentation/report/transcript version and render/inspect it. Preserve v34.
-- Carbon was reviewed and deferred as irrelevant to functional rescue. The
-  unchanged Anthropic toolkit already ran extensive ProteinMPNN inference in v29;
-  failed functional controls remain. Do not rerun unrelated models to force gain.
-
-## Official requirements and blockers
-
-- The October 19 source refresh covers seven files at revision
-  `60e1c30e337ce6fe01813040dbe49979eb8c50aa` and 29 public threads/83 visible comments.
-  Four changed/new comments were reread. Unchanged text retains previous review.
-  No independent reviewer, account, quota, live-rendering or receipt check occurred.
-- Submission remains **October 24, 23:59 UTC**. The active deletion/confirmation
-  deadline is **November 23**, recipient **cnb@sagebase.org**. Use
-  `notes/deletion-plan-v2.md`; old frozen dates and addresses are superseded.
-  Feat-010 remains not started; no deletion or email occurred.
-- No rescue-priority drug. Everolimus remains an optional model-qualified probe;
-  HCQ reserve. Phase, endogenous effects and clinical exposure margins remain unknown.
-  Independent perturbation/restoration, non-cancer function and joint drug treatment
-  are still missing. No computational score supplies those measurements.
-- Keep invalid assays, imprecision, futility and safety failure distinct. Unknown
-  evidence means HOLD; safety failure overrides benefit. All-pass allows preclinical
-  review only. Tumour killing requires separate deficient-normal controls.
-- Balnis ex vivo units conflict by 1,000-fold; both values remain quarantined.
-- Fireworks/earlier alignment-service handling and linked AF3/non-AVI Atlas versus
-  challenge CC BY scope remain unresolved. OpenAI no-training is owner attestation.
-- Recording, measured runtime, hosting, owner/live-portal checks and Track 2 receipt
-  remain open. Three entries, latest only reviewed; quota unknown. No upload occurred.
-- Preserve submitted Track 1 v4. Owner-reported 100/F-max 1 is an attestation; its
-  receipt/byte verification is separate. Do not request another upload.
-
-No family contact or re-identification. Keep the purge guard, commit intended changes,
-push configured origin and verify upstream equality. The overall research goal is
-not complete merely because this presentation update is complete.
+The Anthropic toolkit already executed substantial ProteinMPNN work in v29; failed
+functional controls remain. Carbon annotation was reviewed and deferred as irrelevant
+to functional rescue. More model runs should answer a new discriminating question,
+not seek agreement with a favored drug. The next decisive evidence is biological.

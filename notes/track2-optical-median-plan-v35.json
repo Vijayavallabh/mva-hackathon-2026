@@ -1,0 +1,20 @@
+{
+  "schema_version": 35,
+  "date": "2026-10-19",
+  "timing": "After the corrected mitotic mean-profile/model comparison and before complete interphase preparation, fitting or effect inspection. Exploratory source-method sensitivity, not external preregistration.",
+  "motivation": "A focused reread of Funk fixed-cell methods identifies median cell-to-guide and median guide-to-gene summaries. Our practical retrieval uses clipped means. Test a stronger aggregation baseline rather than claim the original benchmark exhausted simple alternatives.",
+  "input": "The same complete checksum-bound Dataverse v2 exports, corrected 1064 features and source float32 clipping [-10,10]. No subject data.",
+  "computation": "Deterministic featurewise median over all cells per exact guide. Even finite counts use the average of the two central values. Nonfinite source values remain missing. Never average shard medians: all shards for a guide are assigned to the same worker and values combined before reduction.",
+  "gpu_workers": 8,
+  "assignment": "Connected components of source files linked by a shared guide; greedily distribute components by declared source bytes with deterministic tie breaking. Labels/counts only, no phenotype-based scheduling.",
+  "validation": "Source size/MD5/SHA; metadata guide/count/attribution conservation; all ten query genes audited against independent CPU float64 nanmedian, atol 2e-5 and matching missing masks. Synthetic odd/even/missing-value and cross-file-assignment regression tests.",
+  "retrieval": "Keep the original eligible test genes, guide exclusion and reference policy. First reuse the fitted mean-profile preprocessing; also report training-gene-only center/scale fitted on median profiles using the same retained-feature mask, dropping only newly negligible median variance. No query tuning or model refitting.",
+  "comparison": "Report both median baselines beside the original eight within-arm methods, the registered cross-arm fraction and declared matched-sample mean. Adding a comparator cannot rescue the failed mitotic primary gate. Retain all four real/shuffled models.",
+  "limits": [
+    "This does not reproduce the published PHATE analysis or median aggregation across gene references.",
+    "Published fixed-cell classes came from morphology-based classification and were normalized within class; fractions combine biology, sampling and classification. Misclassification in BUB1B cells has not been measured.",
+    "No drug, phase, exposure or clinical promotion."
+  ],
+  "primary_source": "https://doi.org/10.1016/j.cell.2022.10.017",
+  "source_methods": "Public PDF already retained locally; fixed-cell phenotype analysis around extracted-text lines 2780-2818."
+}

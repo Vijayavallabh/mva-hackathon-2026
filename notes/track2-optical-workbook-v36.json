@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "source_url": "https://vesuvius.wi.mit.edu/genes.xlsx",
+  "workbook_sha256": "e7ab2a2ea9cb065c94f0747ee5344a9aba3a029b9b067d2505d4ef07d4f69045",
+  "sheet": "data_portal_table.20211015",
+  "counts": [
+    {
+      "guide": "AGTGAAGCTGTATTGCCACG",
+      "interphase_cells": 859,
+      "mitotic_cells": 11
+    },
+    {
+      "guide": "GAGCAGAACTATCCTCAAGG",
+      "interphase_cells": 1219,
+      "mitotic_cells": 15
+    },
+    {
+      "guide": "GCAGATGCGATATTTCAGGA",
+      "interphase_cells": 839,
+      "mitotic_cells": 11
+    },
+    {
+      "guide": "TCACAGTGAAGCCATGTCCC",
+      "interphase_cells": 1435,
+      "mitotic_cells": 25
+    }
+  ],
+  "results_sha256": "332f847697174ed765a3ec2e488e8e98a1b6801b7de9d458d32fc613caf925ca",
+  "script_sha256": "05b6c99fe4c00389311689da3c58a9e9d75eebf1d674659d7b6055d87967a776",
+  "biological_validation": false,
+  "interpretation": "Independent file/representation check; same originating experiment."
+}

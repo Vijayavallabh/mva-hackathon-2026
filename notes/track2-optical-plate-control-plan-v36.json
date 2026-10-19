@@ -1,0 +1,15 @@
+{
+  "version": 36,
+  "date": "2026-10-19",
+  "timing": "Post-hoc after all corrected interphase fits and inspection of full-profile BUB1B ranks 1/3/3/2; before median/secondary scores. No original fit or gate is changed.",
+  "question": "Could acquisition-plate identity explain the favorable BUB1B cross-guide morphology match?",
+  "baseline": "Complete per-guide cell proportions across the eight plates, without phenotype features; cosine retrieval with the original test cohorts, reference aggregation, self-guide exclusion and exact-tie average ranks.",
+  "sensitivity": "Within each plate, retain only guides whose complete observed cells are exclusively on that plate, at least 20 cells per guide and at least two guides per gene. Restrict to the same held-out gene split. Evaluate the original full-profile cosine against that plate-specific gene cohort. Do not compare these changing-cohort MRRs to pooled performance as a gain.",
+  "audit": "Reconstruct full-profile global retrieval from saved preprocessing and complete means; compare every guide rank with the original 3301-real baseline. Conserve complete guide-plate cell counts. Keep all plates, query directions and missing states.",
+  "limitations": [
+    "Exploratory after a favorable query result; no independent confirmation.",
+    "Training-gene preprocessing still includes every plate; not unseen-acquisition validation.",
+    "Within-plate target retrieval does not prove BUB1B-specific biology, non-cancer transfer, selected-allele function or drug response."
+  ],
+  "drug_ranking_changed": false
+}

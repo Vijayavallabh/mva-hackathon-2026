@@ -1,0 +1,29 @@
+Track 2 v36 - read-aloud transcript
+Read the paragraphs; headings and times are cues, not narration.
+
+Slide 1 | 0:00-0:16 | The research proposal
+We propose testing everolimus for useful non-cancer function in BUB1B-associated MVA. This approved mTORC1 inhibitor remains an optional mechanistic probe. No drug earns rescue priority. Our next decision requires biological evidence.
+
+Slide 2 | 0:16-0:38 | Qualify the mechanism
+BUBR1 helps control chromosome attachment and division. The retained pair's phase and endogenous effects remain unresolved. A different mouse model suggests altered mTOR signaling. Qualify excess activity or impaired dynamic flux before exposure; neither branch is established. Everolimus does not replace BUBR1.
+
+Slide 3 | 0:38-1:01 | The joint-treatment experiment
+Establish single-allele, cis, trans and corrected models with independent perturbation and restoration. Then compare deficit plus drug with each alone and corrected controls. Randomize cultures, blind scoring and confirm independently. Measure useful function, chromosome fidelity, exposure and recovery in the same context.
+
+Slide 4 | 1:01-1:24 | Count every enrolled cell
+This example is synthetic. Division errors fall from twenty-five to eleven percent, yet accurate viable output drops from sixty to forty per hundred enrolled cells. The surviving-cell ratio hides worse output. Track every cell, missing observations and daughter fate. Early relative sensitivity can reverse with longer follow-up.
+
+Slide 5 | 1:24-1:44 | Why the plan changed
+ProteinMPNN failed expanded functional controls. RPE1 expression changes were repeatable but weakly specific; separate drug profiles cannot establish rescue. Sirolimus plus exercise did not establish functional benefit in forty older adults. Measure function directly and retain contrary evidence.
+
+Slide 6 | 1:44-2:03 | Corrected optical evidence
+In public HeLa images, simple profiles place BUB1B among the top three genes for all four interphase guides. Every neural seed misses the required gain. Mitotic coverage is insufficient. One guide varies by method and plate. This supports an imaging assay lead, not functional rescue.
+
+Slide 7 | 2:03-2:28 | Decisions that follow the evidence
+Invalid assays hold inference; imprecision holds advancement. Valid evidence excluding meaningful benefit stops the tested claim. Injury stops advancement despite apparent benefit. Clinical exposure margins remain unknown: whole blood is not free tissue. Passing every requirement permits preclinical review only. No wet-lab experiment has been performed.
+
+Slide 8 | 2:28-2:47 | Review and reuse
+Public CPU checks connect source records, failed controls and decisions without subject files or GPUs. New tissues need fresh qualification. HCQ remains reserve; tumour killing needs separate deficient-normal controls. The next investment is a qualified model and a controlled joint-treatment experiment.
+
+Slide 9 | 2:47-3:00 | Acknowledgement
+We thank the child and family, MVA Society and Sage Bionetworks. The complete acknowledgement is displayed. Our next decisive step is biological validation.

@@ -1,0 +1,14 @@
+{
+  "version": 36,
+  "source_bytes": 10728780,
+  "public_bytes": 4709908,
+  "source_sha256": "332f847697174ed765a3ec2e488e8e98a1b6801b7de9d458d32fc613caf925ca",
+  "public_sha256": "2739c2561ed96a2f7afc32b97450a3cc7c52f3c478299f91153f30fcf5b1cdc5",
+  "original_serialization_reconstructable": true,
+  "decoded_values_identical": true,
+  "archive_member": "outputs/final-review-v36/results.json",
+  "script_sha256": "d00c6e43fbd02781c5f91cf1e360e68658f937098027d593addcc871d62a13c6",
+  "scientific_results_changed": false,
+  "biological_validation": false,
+  "reason": "Whitespace-only encoding change to satisfy the 5,000,000-byte public blob limit."
+}

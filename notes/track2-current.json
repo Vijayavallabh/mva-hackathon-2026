@@ -2,39 +2,39 @@
   "schema_version": 1,
   "updated_date": "2026-10-19",
   "active_feature": "feat-009",
-  "presentation_version": 34,
+  "presentation_version": 36,
   "drug_science_version": 21,
   "artifacts": {
-    "report": "notes/track2-report-v34.md",
-    "slides": "notes/track2-slides-v34.html",
-    "pitch": "notes/track2-pitch-v34.md",
-    "transcript": "notes/track2-transcript-v34.txt",
-    "video_description": "notes/track2-video-description-v34.md",
-    "design_review": "notes/track2-v34-design.md",
+    "report": "notes/track2-report-v36.md",
+    "slides": "notes/track2-slides-v36.html",
+    "pitch": "notes/track2-pitch-v36.md",
+    "transcript": "notes/track2-transcript-v36.txt",
+    "video_description": "notes/track2-video-description-v36.md",
+    "design_review": "notes/track2-v36-design.md",
     "evidence": "notes/track2-evidence-v21.json",
     "validation": "notes/track2-validation-v21.md",
     "latest_model_findings": "notes/track2-latest-models.md",
     "latest_model_audit": "notes/track2-latest-model-audit.json",
-    "release_script": "scripts/track2_release_v34.py",
-    "renderer": "scripts/render_track2_slides_v34.mjs",
+    "release_script": "scripts/track2_release_v36.py",
+    "renderer": "scripts/render_track2_slides_v36.mjs",
     "af3_terms": "notes/alphafold3-output-terms.md",
     "af3_notice": "notes/alphafold3-Legally-Binding-Terms-of-Use.txt",
     "falsification_register": "notes/track2-falsification-register-v21.json",
     "falsification_review": "notes/track2-falsification-review-v21.md",
     "falsification_analysis": "notes/track2-falsification-analysis-v21.json",
-    "official_requirements": "notes/track2-requirements-v34.json",
+    "official_requirements": "notes/track2-requirements-v36.json",
     "community_review": "notes/track2-requirements-review-v33.md",
-    "reviewer_guide": "notes/track2-reviewer-guide-v34.md",
-    "owner_readiness": "notes/track2-owner-readiness-v34.md",
-    "public_review_script": "scripts/track2_public_review_v34.py",
-    "document_exporter": "scripts/track2_export_documents_v34.py",
-    "report_renderer": "scripts/render_track2_report_v34.mjs",
-    "bundle_script": "scripts/track2_bundle_v34.py",
-    "reviewer_brief": "notes/track2-reviewer-brief-v34.md",
-    "competition_strategy": "notes/track2-competition-strategy-v34.md"
+    "reviewer_guide": "notes/track2-reviewer-guide-v36.md",
+    "owner_readiness": "notes/track2-owner-readiness-v36.md",
+    "public_review_script": "scripts/track2_public_review_v36.py",
+    "document_exporter": "scripts/track2_export_documents_v36.py",
+    "report_renderer": "scripts/render_track2_report_v36.mjs",
+    "bundle_script": "scripts/track2_bundle_v36.py",
+    "reviewer_brief": "notes/track2-reviewer-brief-v36.md",
+    "competition_strategy": "notes/track2-competition-strategy-v36.md"
   },
-  "snapshot": "results/feat009/jvv7_track2_research_v34",
-  "render_directory": "results/feat009/v34-slides-final-20261019",
+  "snapshot": "results/feat009/jvv7_track2_research_v36",
+  "render_directory": "results/feat009/v36-slides-final-20261019",
   "model_campaign": {
     "protein_scores": 84,
     "structures": 192,
@@ -57,9 +57,9 @@
     "licensing_scope_resolved": false
   },
   "history": "progress.md",
-  "harness_review": "notes/track2-harness-review-v34.md",
-  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v34.zip",
-  "document_directory": "results/feat009/v34-documents-final-20261019",
+  "harness_review": "notes/track2-harness-review-v36.md",
+  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v36.zip",
+  "document_directory": "results/feat009/v36-documents-final-20261019",
   "research_addendum": {
     "version": 19,
     "kind": "public_perturbation_transcriptome",
@@ -69,7 +69,7 @@
     "source_review": "notes/track2-transcriptome-source-review-v19.md",
     "identity_audit": "notes/track2-transcriptome-identity-v19.json",
     "check": "scripts/check_track2_transcriptome.py",
-    "report_integration": "integrated_in_v34_preserves_v19_through_v29",
+    "report_integration": "integrated_in_v36_preserves_v19_through_v29",
     "report": "notes/track2-transcriptome-v19.md",
     "reproduction": "notes/track2-transcriptome-reproduction-v19.md",
     "audit": "notes/track2-transcriptome-audit-v19.json",
@@ -86,12 +86,12 @@
     "drug_ranking_changed": false,
     "archive": "results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz"
   },
-  "harness_version": 34,
+  "harness_version": 36,
   "current_review": {
     "script": "scripts/check_track2_harness.py",
     "isolation_audit": "scripts/audit_track2_harness.py",
-    "guide": "notes/track2-reviewer-guide-v34.md",
-    "readiness": "notes/track2-owner-readiness-v34.md"
+    "guide": "notes/track2-reviewer-guide-v36.md",
+    "readiness": "notes/track2-owner-readiness-v36.md"
   },
   "rnai_addendum": {
     "version": 23,
@@ -111,7 +111,7 @@
     "conditional_control_sets": 5843968,
     "orthogonal_comparisons": 2364754,
     "drug_ranking_changed": false,
-    "presentation_integration": "integrated_in_v34_preserves_v23"
+    "presentation_integration": "integrated_in_v36_preserves_v23"
   },
   "crispr_addendum": {
     "version": 25,
@@ -133,7 +133,7 @@
     "bub1b_guides": 1,
     "matched_compound_profiles": 285488,
     "drug_ranking_changed": false,
-    "presentation_integration": "integrated_in_v34_preserves_v25"
+    "presentation_integration": "integrated_in_v36_preserves_v25"
   },
   "falsification_addendum": {
     "version": 27,
@@ -155,7 +155,7 @@
     "substitution_scores": 179968,
     "expression_comparisons": 918999010,
     "drug_ranking_changed": false,
-    "presentation_integration": "integrated_in_v34_preserves_v27"
+    "presentation_integration": "integrated_in_v36_preserves_v27"
   },
   "orthogonal_addendum": {
     "version": 29,
@@ -179,7 +179,7 @@
     "expression_fits": 400,
     "expression_comparisons": 820147416,
     "drug_ranking_changed": false,
-    "presentation_integration": "integrated_in_v34_preserves_v29"
+    "presentation_integration": "integrated_in_v36_preserves_v29"
   },
   "perturbseq_addendum": {
     "version": 31,
@@ -200,7 +200,7 @@
     "split_repetitions": 2048,
     "all_control_sensitivity_available": false,
     "drug_ranking_changed": false,
-    "presentation_integration": "integrated_in_v34_preserves_v31"
+    "presentation_integration": "integrated_in_v36_preserves_v31"
   },
   "deletion_policy": {
     "deadline": "2026-11-23",
@@ -209,7 +209,19 @@
     "source_review": "notes/track2-requirements-review-v33.md",
     "supersedes_frozen_dates": true
   },
-  "research_in_progress": {
+  "research_correction": {
+    "version": 35,
+    "status": "complete",
+    "amendment": "notes/track2-optical-amendment-v35.json",
+    "report": "notes/track2-optical-v36.md",
+    "original_v33_model_fits_excluded": true,
+    "corrected_features": 1064,
+    "full_model_gain_validated": false,
+    "drug_ranking_changed": false,
+    "mitotic_gain_gate_passed": false,
+    "mitotic_results": "notes/track2-optical-mitotic-results-v35.json"
+  },
+  "historical_optical_progress": {
     "version": 33,
     "kind": "public_optical_phenotypes",
     "status": "in_progress",
@@ -221,16 +233,35 @@
     "check": "scripts/check_track2_optical_progress_v33.py",
     "snapshot": "notes/track2-optical-status-v33.json"
   },
-  "research_correction": {
-    "version": 35,
-    "status": "in_progress",
-    "amendment": "notes/track2-optical-amendment-v35.json",
-    "report": "notes/track2-optical-correction-v35.md",
-    "original_v33_model_fits_excluded": true,
-    "corrected_features": 1064,
-    "full_model_gain_validated": false,
-    "drug_ranking_changed": false,
+  "optical_addendum": {
+    "version": 36,
+    "status": "complete",
+    "report": "notes/track2-optical-v36.md",
+    "results": "notes/track2-optical-results-v36.json",
+    "audit": "notes/track2-optical-audit-v36.json",
+    "validation": "notes/track2-optical-validation-v36.md",
+    "register": "notes/track2-optical-register-v36.json",
+    "reproduction": "notes/track2-optical-reproduction-v36.md",
+    "check": "scripts/check_track2_optical_v36.py",
+    "local_replay": "notes/track2-optical-local-replay-v36.json",
+    "archive": "results/feat009/optical-v36/optical-v36-review.tar.gz",
+    "gpus": 8,
+    "cells": 31884270,
+    "corrected_fits": 16,
+    "baseline_methods_per_arm": 12,
+    "post_hoc_plate_control": true,
+    "model_comparison_complete": true,
     "mitotic_gain_gate_passed": false,
-    "mitotic_results": "notes/track2-optical-mitotic-results-v35.json"
+    "interphase_gain_gate_passed": false,
+    "bub1b_mitotic_retrieval": "insufficient_guide_coverage",
+    "full_profile_bub1b_interphase_ranks": [
+      1,
+      3,
+      3,
+      2
+    ],
+    "drug_ranking_changed": false,
+    "biological_validation": false,
+    "presentation_integration": "integrated_in_v36_preserves_prior_research"
   }
 }

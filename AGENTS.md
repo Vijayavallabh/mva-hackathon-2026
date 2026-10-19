@@ -65,7 +65,8 @@ alongside the v19 transcriptome qualification requirements, five supplemental
 `notes/track2-crispr-register-v25.json` challenges and five
 `notes/track2-falsification-register-v27.json` challenges and five
 `notes/track2-orthogonal-register-v29.json` challenges and five
-`notes/track2-perturbseq-register-v31.json` challenges (52 claim records, not studies).
+`notes/track2-perturbseq-register-v31.json` challenges and six
+`notes/track2-optical-register-v36.json` challenges (58 claim records, not studies).
 Each consequential claim needs support and challenge, a falsifier, stop/reopening
 criteria and a next discriminating action. Unknown evidence means hold; it is not
 disproof. Failed safety overrides apparent benefit; all-pass permits only further
@@ -83,7 +84,7 @@ This is a continuing objective, not a one-time review. Preserve immutable snapsh
 
 Owner competition priority, 19 October 2026: focus work and presentation on the
 35/25/25/15 panel rubric and the Innovation Prize criteria. Use
-`notes/track2-competition-strategy-v34.md` and the reviewer brief. Track 1 recognition
+`notes/track2-competition-strategy-v36.md` and the reviewer brief. Track 1 recognition
 is separate from Track 2 judging; model scale and computation counts do not establish
 impact. Optimize the supported mechanism, decisive experiment, reusable contribution
 and timely delivery. Do not infer efficacy, eligibility or awards.
@@ -92,30 +93,34 @@ and timely delivery. Do not infer efficacy, eligibility or awards.
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the artifact record and [session-handoff.md](session-handoff.md) for next steps.
-Session 72 updates **presentation and harness v34** with completed v31 research,
-verified v33 optical preparation and explicit pending-model status. Use the nine-slide
-deck, 336-word narration, report, transcript, disclosure and methods workbook routed
-by `notes/track2-current.json`, `scripts/check_track2_harness.py`,
-`notes/track2-reviewer-guide-v34.md` and `notes/track2-owner-readiness-v34.md`.
-All earlier bound inputs and releases through v32 remain frozen. The drug ledger
-and base validation remain v21.
+Session 74 updates **presentation and harness v36** with the completed optical
+comparison, nine slides, 355-word narration, concise nine-page report, transcript,
+provider disclosure and methods workbook. Use `notes/track2-current.json`,
+`scripts/check_track2_harness.py`, `notes/track2-reviewer-guide-v36.md` and
+`notes/track2-owner-readiness-v36.md`. All earlier bound inputs and releases through
+v34 remain frozen. The drug ledger and base validation remain v21.
 
-V33 is in progress under `/home/prachh/v/mva-track2-optical-20261019-v33`.
-**Correction in progress, v35:** the v33 selector retained four absolute centroid
-columns, contrary to its registered policy. The original fits are excluded from
-gain claims. Read `notes/track2-optical-correction-v35.md` and the v35 amendment;
-preserve all v33/v34 bound bytes. Corrected preparation, eight-worker fitting and
-numerical/plate audits use separately named v35 paths. Never launch the old model
-script for the interphase arm. The original coverage counts remain valid.
-The public mitotic dataset has 838,224 cells; BUB1B guide counts 11/15/11/25 leave
-only one guide above the fixed 20-cell minimum. Retrieval requires two guides.
-Retain this missing state. The status snapshot binds preparation and eight launched
-workers, not validated model gains. Check live remote status before restarting or
-allocating GPUs. Interphase processing, aggregate baseline comparison, plate
-sensitivity and independent numerical checks remain outstanding. The two-step smoke
-run is excluded. HeLa is transformed and lacks functional p53. No drug promotion.
-Use `notes/track2-optical-progress-v33.md`, the original plan and separate amendment,
-and `scripts/check_track2_optical_progress_v33.py`. No subject data left this machine.
+The public optical work is complete under
+`/home/prachh/v/mva-track2-optical-20261019-v33`. Read `notes/track2-optical-v36.md`
+and `notes/track2-optical-reproduction-v36.md`. All sixteen corrected model fits,
+sixteen cross-plate workers and sixteen median workers finished. Both arms fail
+the practical gain rule against twelve simple baselines. Interphase full means
+recover BUB1B at ranks 1/3/3/2 among 994 genes; the fourth guide varies substantially
+by aggregation, neural seed and plate. Equal-cap learning beats the 128-cell mean
+but loses to the full-data baseline. These are separate findings. Mitotic BUB1B
+counts 11/15/11/25 remain insufficient for two qualifying guides; missing is not zero.
+
+Original centroid-contaminated fits are excluded and preserved. The legitimate
+empty-shard failure and repaired preparation remain auditable. Complete counts,
+independent CPU reductions, all 40 query-guide medians per arm, public workbook
+reconciliation, archive hashes and local rank/paired-interval replay pass.
+Plate-only controls are post-hoc; the single-plate-only design has no eligible
+genes, and the pooled-trained encoder is not unseen-acquisition validation.
+Use `scripts/check_track2_optical_v36.py`; v33/v35 progress/correction checkers retain
+historical capture states. Do not restart finished supervisors or overwrite their
+results. All remote roots/caches remain in the November 23 deletion scope.
+HeLa is transformed and p53-defective. No protected subject data was transferred.
+No model result promotes drug efficacy, phase or clinical exposure.
 
 The October 19 refresh covers seven files at revision
 60e1c30e337ce6fe01813040dbe49979eb8c50aa and 29 public threads/83 visible comments.
@@ -151,7 +156,7 @@ ranks use smaller within-fold denominators. One guide and tumour context remain.
 MCF7 has no QC-qualified BUB1B query, while MTOR drug matching remains first. Missing
 queries are not zero scores. No cross-cell joint-rescue claim is supported.
 
-All 52 claim records and eleven drug dispositions persist. No rescue priority,
+All 58 claim records and eleven drug dispositions persist. No rescue priority,
 confirmed phase, clinical margin or wet-lab result is established. Earlier five- and
 six-reagent HT29 findings stay separate. All v29 GPU jobs finished. The historical remote
 folder `~/v/mva-track2-orthogonal-20261006-v29` is in the November 23 deletion scope.
@@ -272,16 +277,16 @@ participated. Delivery, provider and distribution flags remain unresolved.
   Record the complete acknowledgement inside the three-minute video. Preserve the
   Track 1 submitted v4, every earlier Track 2 bound input/package, the fixed v19 campaign and v1-v21 releases.
 
-Use `scripts/track2_release_v34.py` to check/build/verify **new** v34 research snapshot
-directories. Render with `scripts/render_track2_slides_v34.mjs`; export the report and
-workbook with `scripts/track2_export_documents_v34.py` followed by
-`scripts/render_track2_report_v34.mjs`. Recording materials use
-`scripts/track2_bundle_v34.py`; historical research retains AF3 notices.
-The combined public reviewer checks integrated v34 and frozen v31/v29/v27 research, v25 CRISPR, v23 RNAi, v21 decisions
+Use `scripts/track2_release_v36.py` to check/build/verify **new** v36 research snapshot
+directories. Render with `scripts/render_track2_slides_v36.mjs`; export the report and
+workbook with `scripts/track2_export_documents_v36.py` followed by
+`scripts/render_track2_report_v36.mjs`. Recording materials use
+`scripts/track2_bundle_v36.py`; historical research retains AF3 notices.
+The combined public reviewer checks integrated v36 and frozen v31/v29/v27 research, v25 CRISPR, v23 RNAi, v21 decisions
 and v19 findings. It needs no
 data/results folders, keys, network, GPUs or old
 local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
-The versioned `scripts/track2_public_review_v34.py` checks the integrated presentation
+The versioned `scripts/track2_public_review_v36.py` checks the integrated presentation
 and frozen research; `scripts/check_track2_transcriptome.py` checks v19 alone.
 Its passing result verifies consistency, not biology or eligibility. The stricter
 release verification also requires retained local historical archives.
@@ -313,14 +318,15 @@ uv run --no-project python scripts/check_track2_crispr_v25.py
 uv run --no-project python scripts/check_track2_orthogonal_v29.py
 uv run --no-project python scripts/check_track2_perturbseq_v31.py
 uv run --no-project python scripts/track2_falsification_v21.py
-uv run --no-project python scripts/track2_public_review_v34.py
-uv run python scripts/track2_release_v34.py check
+uv run --no-project python scripts/track2_public_review_v36.py
+uv run --no-project python scripts/check_track2_optical_v36.py
+uv run python scripts/track2_release_v36.py check
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
 `track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
 its old conditional-screen label is not today's drug decision. The current v21
-ledger, v34 report and v19/v23/v25/v27/v29/v31 research take precedence. Historical exact-byte verification remains
+ledger, v36 report and v19/v23/v25/v27/v29/v31 research take precedence. Historical exact-byte verification remains
 available through the versioned release scripts; never resubmit Track 1 to resolve
 its missing administrative receipt.
 

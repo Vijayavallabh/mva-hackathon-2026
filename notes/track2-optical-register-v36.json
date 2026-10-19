@@ -1,0 +1,75 @@
+{
+  "version": 36,
+  "claims": [
+    {
+      "id": "R53",
+      "claim": "The original optical inputs respected the registered coordinate exclusion.",
+      "support": "The original selector excluded several location fields and passed its initial checks.",
+      "challenge": "Four absolute centroid fields remained. One legitimate empty interphase shard also exposed an unhandled zero-row case.",
+      "falsifier": "Feature/schema or source-coverage replay differs from the declared policy.",
+      "decision": "Exclude the original centroid-containing fits. Retain the corrected reruns and the preserved empty-shard repair.",
+      "next_discriminating_action": "Reopen an engineering claim only with exact retained-value replay, complete checksummed coverage and independent reductions.",
+      "reopening_criteria": "Reopen an engineering claim only with exact retained-value replay, complete checksummed coverage and independent reductions.",
+      "drug_ranking_changed": false
+    },
+    {
+      "id": "R54",
+      "claim": "The learned optical representation improves practical retrieval over simple methods.",
+      "support": "Real labels can outperform shuffled-label fits on the held-out genes.",
+      "challenge": "That comparison alone is insufficient; every seed must beat the strongest simple baseline by 0.02 with positive paired and joint intervals.",
+      "falsifier": "Any seed fails the fixed gain threshold or uncertainty bound against the strongest registered baseline.",
+      "decision": "Both arms fail the fixed practical gain gate. Keep original and expanded comparisons; no model or drug promotion. Equal-cap interphase learning outperforms its sampled mean, an exploratory finding that does not rescue full-data performance.",
+      "next_discriminating_action": "A new independently specified model comparison must pass strong baselines, controls and external-context checks before a gain claim.",
+      "reopening_criteria": "A new independently specified model comparison must pass strong baselines, controls and external-context checks before a gain claim.",
+      "drug_ranking_changed": false
+    },
+    {
+      "id": "R55",
+      "claim": "BUB1B imaging coverage supplies a qualified functional model.",
+      "support": "Four interphase guides exceed 20 cells and agree with the public workbook. Complete mean profiles give BUB1B ranks 1/3/3/2 among 994 genes.",
+      "challenge": "Only one mitotic guide exceeds 20 cells; two are required. HeLa is transformed and p53-defective. Retrieval measures neither endogenous allele function nor joint drug response. The fourth guide ranks 836 with shared-scale medians, 9 with training-median scaling and 770-788 across neural seeds; other checkpoint targets are competing matches.",
+      "falsifier": "Independent restoration fails, relevant function is absent, or the required guide/context coverage is missing.",
+      "decision": "Retain missing mitotic retrieval; assess interphase agreement descriptively. HOLD functional and non-cancer transfer.",
+      "next_discriminating_action": "Qualify independent perturbation/restoration and useful function in the intended non-cancer model.",
+      "reopening_criteria": "Qualify independent perturbation/restoration and useful function in the intended non-cancer model.",
+      "drug_ranking_changed": false
+    },
+    {
+      "id": "R56",
+      "claim": "The practical full-data comparison isolates representation quality.",
+      "support": "Methods use the same eligible genes and guide-excluded references.",
+      "challenge": "The model uses at most 128 cells per guide while full profiles use every cell. Published methods also motivate median aggregation.",
+      "falsifier": "A claimed advantage disappears with equal sampled cells or a stronger aggregation baseline.",
+      "decision": "Full-data means remain strongest. Equal-cap interphase means score 0.093093, below neural seeds, while full means score 0.234113. Preserve this distinction and exploratory timing; do not infer lack of all representation benefit from failed practical gain.",
+      "next_discriminating_action": "Separate information volume from representation using a locked equal-information comparison, followed by independent validation.",
+      "reopening_criteria": "Separate information volume from representation using a locked equal-information comparison, followed by independent validation.",
+      "drug_ranking_changed": false
+    },
+    {
+      "id": "R57",
+      "claim": "Plate-separated retrieval establishes unseen-acquisition generalization.",
+      "support": "The source supplies eight acquisition plates and complete per-guide plate counts.",
+      "challenge": "The encoder is fitted on training-gene cells from all plates. Reference cohorts change by plate and sparse query coverage limits inference. A post-hoc plate-only and within-plate comparison was declared after favorable interphase BUB1B ranks were inspected; it does not replace independent batch confirmation. Cross-plate BUB1B full-mean ranks range from 1 to 520. The single-plate-only control has zero eligible genes everywhere; it is unavailable, not successful. Plate proportions alone do not reproduce the pooled BUB1B match, but do not rule out phenotype-specific batch effects.",
+      "falsifier": "A fixed held-out acquisition or sufficiently covered cross-plate query fails after batch-aware controls.",
+      "decision": "Reject the unseen-acquisition claim; report every plate and its denominator without comparison to the pooled cohort.",
+      "next_discriminating_action": "Hold out acquisition batches from fitting and qualify adequate independent-guide coverage before testing transfer.",
+      "reopening_criteria": "Hold out acquisition batches from fitting and qualify adequate independent-guide coverage before testing transfer.",
+      "drug_ranking_changed": false
+    },
+    {
+      "id": "R58",
+      "claim": "A lower mitotic fraction or early favorable image establishes rescue.",
+      "support": "Complete exports allow observed mitotic/(mitotic+interphase) fractions by exact guide.",
+      "challenge": "Class labels depend on morphology; source normalization is within class. Entry, exit, cell loss and classification remain alternatives. Relative sensitivity can reverse at prolonged assessment.",
+      "falsifier": "Later daughter survival, sustained function or recovery deteriorates despite an early marker/fraction improvement.",
+      "decision": "HOLD rescue inference. Count all enrolled cells and tracking loss; preserve first-division fidelity and later fate as separate endpoints.",
+      "next_discriminating_action": "Demonstrate independently replicated useful output without unacceptable injury through a prespecified follow-up/recovery window.",
+      "reopening_criteria": "Demonstrate independently replicated useful output without unacceptable injury through a prespecified follow-up/recovery window.",
+      "drug_ranking_changed": false
+    }
+  ],
+  "drug_ranking_changed": false,
+  "unknown_means_hold": true,
+  "safety_overrides_benefit": true,
+  "all_pass_means": "further_preclinical_review_only"
+}

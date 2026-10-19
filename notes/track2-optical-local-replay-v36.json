@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "archive_sha256": "a1e366c5c931a626c446c17de4d77fd15384e5c5730cd45e2f11c04f7d40ab8d",
+  "files": 3535,
+  "arms": {
+    "mitotic": {
+      "models": 8,
+      "test_genes": 950,
+      "baseline_methods": 12,
+      "paired_comparisons_replayed": 6,
+      "cross_plate_metrics_recomputed": 96,
+      "post_hoc_plate_only_rank_metrics_recomputed": true,
+      "within_plate_rank_metrics_recomputed": 0,
+      "registered_gate": false,
+      "exploratory_gate": false
+    },
+    "interphase": {
+      "models": 8,
+      "test_genes": 994,
+      "baseline_methods": 12,
+      "paired_comparisons_replayed": 6,
+      "cross_plate_metrics_recomputed": 384,
+      "post_hoc_plate_only_rank_metrics_recomputed": true,
+      "within_plate_rank_metrics_recomputed": 0,
+      "registered_gate": false,
+      "exploratory_gate": false
+    }
+  },
+  "rank_to_mrr_recomputed": true,
+  "all_archive_hashes_verified": true,
+  "paired_intervals_recomputed": true,
+  "bootstrap_repetitions": 20000,
+  "bootstrap_implementation": "Reused registered function; no independent statistical algorithm claimed",
+  "tolerance": 1e-12,
+  "biological_validation": false,
+  "drug_ranking_changed": false,
+  "script_sha256": "b61a3e0f75c9417cfb3aa5a73b259421f04838698c8c86fdb302664c078ceee9"
+}
