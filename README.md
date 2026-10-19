@@ -116,6 +116,13 @@ make the method inspectable. The owner chose their own voice: use the
 The 17 synthetic examples and actual unmeasured state test software behavior;
 they do not establish clinical performance or external adoption.
 
+The [follow-up assessment](notes/track2-competitive-review-v38.md) identifies remaining
+work on the drug rationale, novelty and reader comprehension. An
+[outside-review packet](notes/track2-external-review-packet-v38.md) and
+[candidate comparison](notes/track2-candidate-comparison-v38.md) are ready for the
+reviewer the owner can arrange. No outside review has occurred. These are review
+additions; the presentation and release remain v37, with scientific decisions unchanged.
+
 The preceding research used all eight H100s; 16 corrected fits and both full-cell/median campaigns
 completed. Full interphase means recover BUB1B at ranks 1/3/3/2, with substantial
 fourth-guide sensitivity. Neither arm passes the practical neural-gain gate;

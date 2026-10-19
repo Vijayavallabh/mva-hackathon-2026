@@ -102,6 +102,17 @@ provider disclosure and methods workbook retain the completed optical evidence. 
 `notes/track2-owner-readiness-v37.md`. All earlier bound inputs and releases through
 v36 remain frozen. The drug ledger and base validation remain v21.
 
+Session 76 adds a **review addendum only**, with presentation and harness still v37.
+Read `notes/track2-competitive-review-v38.md`,
+`notes/track2-candidate-comparison-v38.md` and
+`notes/track2-external-review-packet-v38.md`. Remaining priorities are comparative
+drug rationale, a specific innovation claim, unfamiliar-reader comprehension and
+recording/delivery. Another public methods README challenges broad novelty claims;
+its performance was not verified. The owner can arrange a reviewer and is a
+bioengineering undergraduate. No reviewer has been contacted or feedback received.
+Keep author rehearsal separate from outside review. Preserve all v37 bound inputs;
+the addendum changes no scientific decision or delivery flag.
+
 Four completed MVA uv installer caches were cleaned at the owner's request.
 See `notes/track2-dgx-cleanup-v37.md`: about 2.5 GiB was removed by uv, while
 most cache links shared retained environment storage. Scientific inputs, outputs,

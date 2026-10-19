@@ -8406,3 +8406,104 @@ annotation resources ready
 All intended repository changes are staged for the session commit and delivery to
 the configured origin. Feature 009 remains in progress; recording/hosting, provider/
 distribution and biological/delivery gates remain as recorded in the handoff.
+
+## Session 76 — 2026-10-19 — remaining-work assessment and outside-review packet
+
+Baseline `e61c92b`; only feat-009 was selected and remains in progress. The owner
+asked whether all useful work toward Track 2 and the Innovation Prize was exhausted.
+It is not. They can arrange an outside reviewer and identify as a bioengineering
+undergraduate. Prepared a focused packet for that reviewer and a separate technical
+rehearsal checklist for the owner. No contact, feedback or endorsement occurred.
+Applied scientific-critical-thinking and peer-review guidance. This is an agent
+assessment, not an independent review or prediction of placement.
+
+New review additions:
+
+- `notes/track2-competitive-review-v38.md`: remaining priorities, novelty challenge,
+  presentation observations and source-reading limits.
+- `notes/track2-candidate-comparison-v38.md`: everolimus, NAD/SIRT2, HCQ and
+  mechanism qualification before drug testing, under common evidence requirements.
+- `notes/track2-external-review-packet-v38.md`: a twenty-minute scientific critique,
+  uncoached comprehension/demo tasks, blank feedback record and owner preparation.
+
+Presentation, release and harness remain v37. The drug ledger remains v21. The
+additions do not change candidate priorities, phase, exposure, biological-validation
+flags or delivery status. Existing v37 materials were preserved rather than edited
+before receiving decision-changing evidence or feedback. Current README, AGENTS,
+feature evidence and handoff link the additions and retain the unresolved work.
+
+Four official source files were anonymously retrieved at 16:03:59 UTC: about, rules,
+FAQ and Track 2 submission. All returned HTTP 200 and match the retained v37 hashes.
+The 35/25/25/15 rubric and separate Innovation Prize remain the basis for priorities;
+adoption or wet-lab validation was not invented as an eligibility requirement. No
+new discussion census, account check, quota inference or submission occurred. Receipts:
+`results/feat009/competitive-reassessment-20261019/manifest.json`.
+
+A public methods README at `swoopeagle/mva-hackathon-methods`, revision
+`c21dd5a79cbb59959fbb6b6ea420375fe799649c`, describes reusable direction checks,
+rejection rules and controls. This challenges a broad novelty claim; it does not
+establish that the other submission is better. Only the README methods description
+was inspected, without executing code or inspecting its candidate report/case.
+Performance and registration timing were not independently verified. Anonymous
+receipt and pinned bytes are in `public-comparator-manifest.json` and
+`public-comparator-README.md` under the same ignored results directory.
+
+Bounded public searches revisited BUB1B/Asn1002Lys, SIRT2/NAD, the primary mouse
+paper and other public Track 2 methods. The JCI discussion was accessible; several
+PMC/PubMed requests were blocked or incomplete. Indexed primary abstracts and
+retained adjudications were used with explicit reading limits. The comparison
+separates genetic SIRT2 survival, NMN abundance, normal-background SIRT2 results
+and niacin evidence. It does not claim a new full-paper systematic review or a
+new therapeutic result. No raw subject data or clinical narrative was sent to a
+search or external service.
+
+All nine final slide PNGs were visually inspected in sequence. Existing render
+counts total 707 visible words, including headings and attribution; narration is
+368 words. Slides 5 and 6 contain 92/97 visible words with 19/20-second allocations.
+This raises a comprehension concern, not a measured failure. Real outside feedback,
+an unfamiliar reader's demo use and an actual timed recording remain pending.
+The synthetic teaching cases and software parity are not usability or policy validation.
+
+Validation commands:
+
+```bash
+uv run --no-project python scripts/check_track2_harness.py
+uv run --no-project python scripts/track2_release_v37.py verify results/feat009/jvv7_track2_research_v37
+uv run python scripts/check_publication_remote.py --output results/feat009/competitive-reassessment-20261019/live-publication.json
+git diff --check
+./init.sh
+```
+
+The current harness passes. Strict v37 release verification passes for 219 files /
+864 bound inputs and preserves the historical chain through v36; upload-ready remains
+false. A separate SHA-256 comparison finds all 864 pre-review bound inputs unchanged.
+All 98 relative Markdown links across the three additions and three navigation files
+resolve. Records are `current-harness.json`, `release-verify.json` and
+`review-integrity.json` in the review results directory. No implementation changed,
+so the earlier 1,063-test regression was not repeated or relabelled as a new result.
+
+The live publication guard also passes: repository PUBLIC, all 13 retired objects
+unavailable, successful reachable-object control and zero unknown errors. No
+visibility change or purge request occurred. Fresh startup output follows below.
+
+Fresh no-argument `./init.sh` passed from a fresh shell after the additions.
+Selected verbatim output from `logs/track2-competitive-reassessment-final-init-20261019.log`:
+
+```text
+=== 1. uv environment ===
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+=== OK ===
+```
+
+The eight intended files are ready for the session commit and push to configured
+origin. Feat-009 stays in progress for actual outside feedback, biological
+qualification, recording/hosting and the recorded provider/distribution/delivery gaps.

@@ -8,7 +8,25 @@ The combined entry points are `scripts/check_track2_harness.py`,
 `notes/track2-reviewer-guide-v37.md` and `notes/track2-owner-readiness-v37.md`.
 The original qualification report `notes/track2-transcriptome-v19.md` and all later
 addenda remain preserved; the drug ledger and base decision contract remain v21.
-Do not edit old bound inputs or releases through v36.
+Do not edit old bound inputs or releases through v37.
+
+## Follow-up competitive assessment
+
+Session 76 adds `notes/track2-competitive-review-v38.md`,
+`notes/track2-candidate-comparison-v38.md` and
+`notes/track2-external-review-packet-v38.md`. These are review additions; presentation
+and harness remain v37. Four official files were freshly retrieved unchanged; no
+new discussion census or live submission-account check occurred. A public methods
+README challenges broad novelty claims about reusable direction/rejection rules;
+its scientific performance was not verified. All nine final slides were visually
+reviewed; comprehension within the allocated time remains unmeasured.
+
+The owner can arrange an outside reviewer and identifies as a bioengineering
+undergraduate. The packet supports their technical preparation and a bounded
+external critique. No contact, feedback or endorsement exists. Prioritize the
+comparative drug rationale, specific contribution and observed reader comprehension
+before more computation without a decision-changing question. Preserve the v37
+materials until a justified revision is made in new files.
 
 ## New competition and recording work
 
@@ -103,6 +121,10 @@ do not establish biological validation.
 
 ## Blockers and next actions
 
+- The owner can share the prepared review packet with a relevant faculty mentor or
+  researcher. Obtain actual feedback, retain it with the reviewed version and
+  adjudicate objections before claiming outside review. An unfamiliar-reader pitch
+  and demo check is also pending; author rehearsal does not satisfy independence.
 - Use the own-voice guide and teleprompter; record, measure and host the three-minute video on YouTube/Vimeo. No recording,
   measured runtime, hosted URL, Track 2 upload or authenticated receipt exists.
 - Resolve Fireworks/earlier alignment-service handling and linked AF3/non-AVI Atlas
