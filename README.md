@@ -99,9 +99,19 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-The [reviewer brief](notes/track2-reviewer-brief-v37.md) summarizes the proposed
-experiment. [Competition priorities](notes/track2-competition-strategy-v37.md) map
+The [reviewer brief](notes/track2-reviewer-brief-v39.md) summarizes the proposed
+experiment. [Competition priorities](notes/track2-competition-strategy-v39.md) map
 work to the four weighted criteria and organizer announcement 28.
+
+**Session 77: v39 qualifies endogenous function before advancing a drug hypothesis.**
+The [source adjudication](notes/track2-rehearsal-adjudication-v39.md) narrows the
+carrier-muscle mTOR rationale, corrects SIRT2 site/sex claims and retains opposing
+somatic evidence. The [candidate comparison](notes/track2-candidate-comparison-v39.md)
+and [qualification amendment](notes/track2-qualification-amendment-v39.md) define
+falsifiers and the next experiment. Everolimus remains a conditional probe on HOLD;
+no rescue-priority drug is established. The proposed engineered hTERT-RPE1 comparator
+is not an available patient model. Use the [v39 outside-review packet](notes/track2-external-review-packet-v39.md);
+owner rehearsal and AI-assisted checks do not count as independent feedback.
 
 **Session 75: v37 connects the proposal to the judging criteria and adds a working demo.**
 Use the [nine-page report](notes/track2-report-v37.md),
@@ -121,7 +131,7 @@ work on the drug rationale, novelty and reader comprehension. An
 [outside-review packet](notes/track2-external-review-packet-v38.md) and
 [candidate comparison](notes/track2-candidate-comparison-v38.md) are ready for the
 reviewer the owner can arrange. No outside review has occurred. These are review
-additions; the presentation and release remain v37, with scientific decisions unchanged.
+additions; at that point the presentation and release remained v37, with drug decisions unchanged.
 
 The preceding research used all eight H100s; 16 corrected fits and both full-cell/median campaigns
 completed. Full interphase means recover BUB1B at ranks 1/3/3/2, with substantial
@@ -227,7 +237,7 @@ The proposed decision contract returns HOLD with unmeasured biology and null mar
 An invalid assay, imprecision, scoped futility and safety failure now have different
 consequences. No wet-lab result, new model inference or candidate promotion is claimed.
 
-**Track 2 (feat-009) is in progress.** Read the [integrated v37 report](notes/track2-report-v37.md)
+**Track 2 (feat-009) is in progress.** Read the [integrated v39 report](notes/track2-report-v39.md)
 and the complete [v19 research record](notes/track2-transcriptome-v19.md).
 The [falsification review](notes/track2-falsification-review-v21.md) challenges the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
@@ -268,17 +278,17 @@ assumption; revise or abandon the approach when warranted. Use the original
 throughout research and before promotion/release. Apply the same standard to benefit,
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
-Current materials: [report source](notes/track2-report-v37.md),
-[368-word narration](notes/track2-pitch-v37.md), [plain transcript](notes/track2-transcript-v37.txt),
-[nine-slide deck](notes/track2-slides-v37.html) and
-[video description](notes/track2-video-description-v37.md). The mechanism and joint-treatment experiment lead the presentation, followed by
+Current materials: [report source](notes/track2-report-v39.md),
+[364-word narration](notes/track2-pitch-v39.md), [plain transcript](notes/track2-transcript-v39.txt),
+[nine-slide deck](notes/track2-slides-v39.html) and
+[video description](notes/track2-video-description-v39.md). The mechanism and joint-treatment experiment lead the presentation, followed by
 the synthetic denominator example and completed optical comparison. Favorable BUB1B
 morphology, failed practical neural gain, guide/plate sensitivity and missing mitotic
-coverage remain distinct. All eleven methods answers and the 295-word abstract match
+coverage remain distinct. All eleven methods answers and the 334-word abstract match
 the workbook export. Prior scientific details remain in linked research records.
 
-Start with the [combined reviewer guide](notes/track2-reviewer-guide-v37.md). One
-public CPU command checks integrated v37 materials and completed v19/v21/v23/v25/v27/v29/v31/v36 findings:
+Start with the [combined reviewer guide](notes/track2-reviewer-guide-v39.md). One
+public CPU command checks integrated v39 materials and completed v19/v21/v23/v25/v27/v29/v31/v36 findings:
 
 ```bash
 uv run --no-project python scripts/check_track2_harness.py
@@ -286,12 +296,12 @@ uv run --no-project python scripts/check_track2_harness.py
 
 It requires no subject files, data/results folders, keys, network, Git history or model
 weights. The check verifies consistency, not biological efficacy. The versioned public
-presentation reviewer and release/bundle scripts use v37; the combined research harness
-uses v37. Earlier versions remain available and bound
+presentation reviewer and release/bundle scripts use v39; the combined research harness
+uses v39. Earlier versions remain available and bound
 inputs stay unchanged. The [current artifact record](notes/track2-current.json),
-[harness review](notes/track2-harness-review-v37.md) and `./init.sh` route current work.
+[harness review](notes/track2-harness-review-v39.md) and `./init.sh` route current work.
 
-The [readiness note](notes/track2-owner-readiness-v37.md) lists outstanding recording,
+The [readiness note](notes/track2-owner-readiness-v39.md) lists outstanding recording,
 runtime measurement, hosting, provider handling, distribution scope, live checks and
 receipt. The October 19 official/community refresh covers 30 threads and 84 visible comments;
 the new unanswered participant question in thread 31 was read. Delete and confirm to cnb@sagebase.org
@@ -347,7 +357,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v37 disclosure names this route without
+GLM for public-literature synthesis; the current v39 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 

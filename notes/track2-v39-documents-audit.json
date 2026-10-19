@@ -1,0 +1,64 @@
+{
+  "document_directory": "results/feat009/v39-documents-final-b-20261020",
+  "export": {
+    "created_utc": "2026-10-19T18:56:38.198419+00:00",
+    "template_url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/60e1c30e337ce6fe01813040dbe49979eb8c50aa/static/templates/methods_description_form.xlsx",
+    "template_sha256": "61aab080a2868a3b724e76692b83c24812112e305cd3a8b03f8f91a6b2414441",
+    "report_sha256": "3b408ec75189c9e4523fc611accf839c27525b3a562a1db48701835eda14c123",
+    "script_sha256": "aedae7c010847974a608d34c569899b96c796270e6ca4c9ae0c981210b64b3a0",
+    "answer_cells": [
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17"
+    ],
+    "abstract_words": 334,
+    "official_questions_unchanged": true,
+    "formulas": 0,
+    "formula_errors": 0,
+    "track1_values_and_cell_styles_preserved": true,
+    "files": {
+      "jvv7_track2_report_v39.md": "3b408ec75189c9e4523fc611accf839c27525b3a562a1db48701835eda14c123",
+      "jvv7_track2_methods_v39.xlsx": "c7785894959f742618eef53919350e85469bc95ef6949a0983b9b0f558af6f42",
+      "jvv7_track2_report_v39.html": "7399a03f176eabb3e54b517c5ac6a0c930044e4489d8a3aef58c26110e06083c",
+      "methods-answers.json": "71afc83edb81b19fd344d5e7400b1a6413920e1b1a13a889cae39907820e69a5"
+    },
+    "upload_ready": false
+  },
+  "pdf": {
+    "source": "notes/track2-report-v39.md",
+    "source_sha256": "3b408ec75189c9e4523fc611accf839c27525b3a562a1db48701835eda14c123",
+    "html_sha256": "7399a03f176eabb3e54b517c5ac6a0c930044e4489d8a3aef58c26110e06083c",
+    "renderer_sha256": "3cf62082cd5ad18c78e4565f5a9c8048854de9e05817a472c059572ba53d0ee6",
+    "exporter_sha256": "aedae7c010847974a608d34c569899b96c796270e6ca4c9ae0c981210b64b3a0",
+    "browser": {
+      "protocolVersion": "1.3",
+      "product": "Chrome/131.0.6778.139",
+      "revision": "@c35bbcbd7c2775a12a3f320e05ac0022939b1a8a",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+      "jsVersion": "13.1.201.16"
+    },
+    "geometry": {
+      "width": 665,
+      "scrollWidth": 665,
+      "links": 55,
+      "headings": 8,
+      "tables": 4
+    },
+    "files": {
+      "jvv7_track2_report_v39.pdf": "94817d105334368feee95b93298e7166cc6613b783394ac0aea81a9f0c42bf6b"
+    },
+    "limits": "PDF export and geometry; no scientific, licensing, recording or upload certification."
+  },
+  "pages": 10,
+  "author_visual_review": "All 10 final report pages inspected in contact sheets; optical table and page transitions checked at full resolution. Full acknowledgement retained. Workbook values/styles round-trip checked; workbook appearance not rendered.",
+  "independent_visual_review": false,
+  "clinical_validation": false
+}

@@ -1,0 +1,210 @@
+{
+  "source": "notes/track2-slides-v39.html",
+  "source_sha256": "1aa6848cbc24e957d69fc690eb2cb4f7c810f515833a35cfe08d6335186970c6",
+  "renderer_sha256": "7d0a37c9f06b02cd2748412ea4df13d37665c70ed50c7f5a8dc9d0c1d6bcfe2b",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/131.0.6778.139",
+    "revision": "@c35bbcbd7c2775a12a3f320e05ac0022939b1a8a",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+    "jsVersion": "13.1.201.16"
+  },
+  "slides": [
+    {
+      "id": "slide-1",
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 36,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-2",
+      "x": 0,
+      "y": 752,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 60,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-3",
+      "x": 0,
+      "y": 1504,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 69,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-4",
+      "x": 0,
+      "y": 2256,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 75,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-5",
+      "x": 0,
+      "y": 3008,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 92,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-6",
+      "x": 0,
+      "y": 3760,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 97,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-7",
+      "x": 0,
+      "y": 4512,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 77,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-8",
+      "x": 0,
+      "y": 5264,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 90,
+      "min_font_px": 24,
+      "svg_figures": 1
+    },
+    {
+      "id": "slide-9",
+      "x": 0,
+      "y": 6016,
+      "width": 1280,
+      "height": 720,
+      "outside": [],
+      "overlaps": [],
+      "visible_words": 106,
+      "min_font_px": 24,
+      "svg_figures": 0
+    }
+  ],
+  "narrow_screen": {
+    "width": 640,
+    "scrollWidth": 640
+  },
+  "files": {
+    "slide-1.png": "2f07877f147923cea5c76e3c0d193b8a092d88e17e50232104a25f654e8193b9",
+    "slide-2.png": "c01a44d801ad6339805068bbd70ee544503c1518dd5b26c24bda2225e2fdde65",
+    "slide-3.png": "31fb3a3d743cf61262e647683a4217507b62f4e52305d8ae3a9953c78c8bf5d3",
+    "slide-4.png": "bc123b6583fc20da8543afddb1ce0a29ed078d0bc02d129aed3d7a8040ddd0f7",
+    "slide-5.png": "14f72ad0d9f9aaab9d0761098e347604e932813ecffb84e82c6a8819097bd327",
+    "slide-6.png": "cdbc08f48e4c3554ad58a7434d895e56b9636253cdd06bf0e8b51e7cdedc9143",
+    "slide-7.png": "c5c9fd3fe323dd30ba886413824e92adc6c566e22caff0c1b3e0d6a07c8cfd24",
+    "slide-8.png": "26a44471861f5c531a71a957deeb57270e03b30f9e5b4fb8d5a085310d0e0824",
+    "slide-9.png": "aa95e818db0096d1f6316b2fab0aacf231e35dbaec5c2e9e1d8669f16c42414f",
+    "track2-slides-v39.pdf": "55c60ad60e85afebb1e942f3ed43839d59e4acd3cd0a37a45c23d2b675881c45"
+  },
+  "temporary_profile": {
+    "path": "/tmp/mva-v39-render-e6Olox",
+    "retained": true,
+    "contents": "isolated public-deck browser profile; no login or subject input"
+  },
+  "limits": "Geometry and screenshots are preview checks, not recording, runtime validation, scientific validity or upload readiness.",
+  "pdf_pages": 9,
+  "fonts_embedded": true,
+  "contrast_checks": [
+    {
+      "foreground": "#142c3c",
+      "background": "#f2f7f8",
+      "ratio": 13.35509404566003
+    },
+    {
+      "foreground": "#425c6b",
+      "background": "#f2f7f8",
+      "ratio": 6.533250184901696
+    },
+    {
+      "foreground": "#176359",
+      "background": "#f2f7f8",
+      "ratio": 6.553947534261013
+    },
+    {
+      "foreground": "#48419d",
+      "background": "#f2f7f8",
+      "ratio": 7.716900112337211
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#123a40",
+      "ratio": 12.316895033813308
+    },
+    {
+      "foreground": "#d8eee5",
+      "background": "#123a40",
+      "ratio": 10.135648458764628
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#176359",
+      "ratio": 7.081623949327523
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#48419d",
+      "ratio": 8.338209051021535
+    },
+    {
+      "foreground": "#48419d",
+      "background": "#eae9f6",
+      "ratio": 6.942478063298914
+    },
+    {
+      "foreground": "#142c3c",
+      "background": "#eae9f6",
+      "ratio": 12.014856496206148
+    },
+    {
+      "foreground": "#425c6b",
+      "background": "#eae9f6",
+      "ratio": 5.877612179819492
+    },
+    {
+      "foreground": "#176359",
+      "background": "#d8eee5",
+      "ratio": 5.827511777156884
+    }
+  ],
+  "minimum_checked_text_contrast": 5.827511777156884,
+  "author_visual_review": "All nine final slides inspected in a contact sheet and changed figures at full resolution. No independent reviewer."
+}

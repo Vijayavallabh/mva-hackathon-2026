@@ -1,0 +1,47 @@
+{
+  "retrieved_utc": "2026-10-19T16:48:11.579585+00:00",
+  "sources": [
+    {
+      "name": "north",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4194088/fullTextXML",
+      "error": "HTTP Error 500: "
+    },
+    {
+      "name": "qiu",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5770883/fullTextXML",
+      "status": 200,
+      "bytes": 105818,
+      "sha256": "f05d8f100885eea8bc8c1ba060668c0a711b4e092ab5f1d01548487e7f471e8b"
+    },
+    {
+      "name": "park",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3718975/fullTextXML",
+      "status": 200,
+      "bytes": 163831,
+      "sha256": "babbf3e48a30207bb4d3223390681f836f935c034d92525d2876a323abeeb9c9"
+    },
+    {
+      "name": "sieben",
+      "url": "https://www.jci.org/articles/view/126863",
+      "status": 200,
+      "bytes": 213845,
+      "sha256": "83fa99888a1e8aad26c6cfb3d9e1e4a64b653deb38f2edc860bdc61f8cf8755b"
+    },
+    {
+      "name": "afinitor",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=2150f73a-179b-4afc-b8ce-67c85cc72f04",
+      "status": 200,
+      "bytes": 308015,
+      "sha256": "82085bd9862d6dde80cece8d4976550be3d5e5c2f55dbbc8e650d79114a0295e"
+    },
+    {
+      "name": "zortress",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e082a024-7850-400b-a5c2-2a140612562a",
+      "status": 200,
+      "bytes": 362990,
+      "sha256": "3fd72fc8b25b87d8f08ad4c2457bfe33d11b897b35c6ddd9f36a16cf8aa9fb4c"
+    }
+  ],
+  "scope": "Retained October 19 public retrieval receipts, rehashed October 20; not a fresh literature or official-site refresh.",
+  "reading_depth_note": "notes/track2-rehearsal-adjudication-v39.md"
+}

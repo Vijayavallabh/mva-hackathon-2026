@@ -33,3 +33,6 @@ CLAUDE.md
 /reference/
 /learning-records/
 /assets/
+
+# Local conversation exports may contain private historical context.
+codex-session-*.md

@@ -8507,3 +8507,128 @@ annotation resources ready
 The eight intended files are ready for the session commit and push to configured
 origin. Feat-009 stays in progress for actual outside feedback, biological
 qualification, recording/hosting and the recorded provider/distribution/delivery gaps.
+
+## Session 77 — 2026-10-20 — complete the interrupted v39 qualification-first revision
+
+Resumed from the owner-provided local session export and the existing untracked
+v39 draft. The export remains local and is excluded by `codex-session-*.md`; it is
+not a public artifact. Only feat-009 is active. The last substantive steering was
+the owner's source-based rehearsal, followed by requests to continue.
+
+The revision starts with endogenous BUB1B deficit and independent functional
+restoration before a drug-branch prerequisite. Everolimus is a conditional worked
+example on HOLD, with no rescue-priority drug; HCQ stays reserve. The mTOR observation
+is narrowed to heterozygous BubR1+/X753 skeletal muscle with sarcopenia relevance.
+North's genetic SIRT2 survival result is sex-qualified and separated from NMN
+abundance/niacin experiments. Mouse K243 corresponds to human K250; opposing somatic
+checkpoint/tumor evidence prevents using the oocyte K243R result as a generic rescue
+control. SIRT2 overexpression is not a BUBR1-specific restoration. Proposed hTERT-RPE1
+is an immortalized qualification comparator with availability and function unconfirmed.
+Product-specific Afinitor/Zortress labeling replaces the molecule-level boxed-warning
+shorthand. No phase, clinical margin, drug efficacy or wet-lab result was promoted.
+
+`notes/track2-rehearsal-adjudication-v39.md`, the candidate comparison and the new
+qualification amendment preserve support, challenges, falsifiers, stop/reopening
+criteria and next actions. The 58 existing claim records and eleven drug dispositions
+remain. The public source receipt rehashes the retained October 19 downloads and
+failed North XML request. No new live official/literature refresh is claimed on
+October 20. The owner rehearsal is separate from independent review; the updated
+external-review packet retains blank response fields. No contact or feedback occurred.
+
+Scientific-critical-thinking, scientific-slides, frontend-design, PDF, XLSX,
+humanizer and no-ai-slop guided the final review. V39 contains nine slides/eight
+vector figures, 364 narration words, a ten-page report, 334-word abstract and eleven
+methods answers. The script's 180-second allocations imply about 121 words/minute,
+not measured speech. Full disclosure and acknowledgement persist. The v37 demo and
+nine-file community kit remain frozen and are included in the recording-materials ZIP.
+
+All nine slide images and ten report pages were reviewed; revised mechanism and
+experiment slides, the optical table and final page 7 were inspected at full size.
+Nine report pages stayed pixel-identical after correcting a copied command. Minimum
+checked palette contrast is 5.8275:1. Slide fonts are embedded; geometry has no
+detected overflow/overlap. Workbook question text, answer values, original styles
+and absence of formulas/errors pass; workbook appearance was not rendered. The
+teleprompter now measures its wrapped sticky header so cue headings stay visible at
+1280- and 390-pixel widths; all nine positions and keyboard start/pause pass.
+This is not formal accessibility certification or observed user comprehension.
+
+Preserved intermediate attempts include sandbox-blocked uv/Chrome launches, initial
+report/prompter exports and earlier public/recording audit receipts. The first
+background startup attempt stopped after its initial environment heading; its
+incomplete log is not counted as a pass. The subsequent no-argument startup command
+runs under nohup with its tool session retained. The initial focused-test selector
+matched zero tests and is not counted; the corrected eight-test suite passes. Three
+initial mutation subtests failed because the mutation did not span line breaks;
+requiring a successful whitespace-aware mutation fixes the tests without weakening
+the report checks.
+
+Final artifacts and commands:
+
+- Slides: `results/feat009/v39-slides-final-20261020`;
+  `node scripts/render_track2_slides_v39.mjs v39-slides-final-20261020`.
+- Report/workbook: `results/feat009/v39-documents-final-b-20261020`;
+  `uv run scripts/track2_export_documents_v39.py v39-documents-final-b-20261020`,
+  then `node scripts/render_track2_report_v39.mjs v39-documents-final-b-20261020`.
+- Teleprompter: `node scripts/review_track2_interactive_v39.mjs
+  v39-prompter-final-c-20261020 prompter`; final receipt is
+  `notes/track2-prompter-audit-v39.json`.
+- `uv run python -m unittest discover -s scripts -p 'test_track2*.py'`: **1,071 tests,
+  OK, 14 skips** in 26.076 seconds. The skips are unchanged historical optical
+  Torch/model/median/plate tests requiring the owner-host environment; they were not
+  executed remotely during this revision. All eight new v39 tests execute and pass.
+- `uv run --no-project python scripts/check_track2_harness.py`, the versioned public
+  review and `uv run python scripts/audit_track2_harness.py` pass. Isolation probes
+  block network, process creation, protected/credential/external paths and writes.
+  These checks establish consistency/dependency isolation, not biological validation.
+- `uv run python scripts/track1_submission.py --self-check` passes; historical
+  `track2_evidence.py check` retains 53 sources/12 candidates. Its conditional-screen
+  label remains historical; the current v21 ledger/39 presentation take precedence.
+- `uv run python scripts/track2_release_v39.py build
+  results/feat009/jvv7_track2_research_v39` and strict verification pass: **225 files,
+  909 bound inputs**, historical chain through v37 preserved. Separate SHA-256
+  comparison finds **all 864 v37 inputs unchanged**.
+- `uv run python scripts/track2_bundle_v39.py build` creates and verifies **117 files**,
+  2,754,762 bytes, SHA-256
+  `708c2576956bc57f846f1941e7a198fcd5e3bc409a346bddc680167b1b86f7af`.
+  It contains the frozen runnable community ZIP and demo as well as v39 materials.
+- All **167 local Markdown/HTML links** checked in the staged documents resolve;
+  `git diff --cached --check` passes. Publication-content audit passes **991 staged
+  blobs**, no findings. Live remote guard confirms PUBLIC, **13 retired objects
+  unavailable**, a successful live-object control and zero unknown errors.
+
+Final audit/export records are versioned under notes; command logs and preliminary
+receipts remain under ignored logs/results. Current record, AGENTS, README, feature
+evidence and handoff route v39 while preserving prior research and releases.
+
+Fresh-shell, no-argument `nohup ./init.sh` completed successfully. Selected verbatim
+output from `logs/track2-v39-final-init-b-20261020.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+  "passed": true,
+  "active_feature": "feat-009",
+  "harness_version": 39,
+  "presentation_version": 39,
+  "drug_science_version": 21,
+  "slides": 9,
+  "narration_words": 364,
+  "upload_ready": false,
+=== OK ===
+```
+
+Feat-009 stays in progress. No actual recording, measured video runtime, hosting,
+outside feedback or Track 2 upload/receipt is established. Provider/distribution
+questions remain unresolved. Submitted Track 1 v4 stays unchanged. No new GPU job,
+patient-data transfer, family/organizer contact, challenge-data deletion or email
+occurred. The end-of-session commit and push follow these checks.

@@ -93,25 +93,33 @@ and timely delivery. Do not infer efficacy, eligibility or awards.
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the artifact record and [session-handoff.md](session-handoff.md) for next steps.
-Session 75 updates **presentation and harness v37** around the official 35/25/25/15
-rubric. It adds a staged laboratory handoff, 18-case offline teaching demo, small
-community kit, reviewer questions and the owner-selected own-voice recording guide
-and teleprompter. Nine slides, 368 narration words, a nine-page report, transcript,
-provider disclosure and methods workbook retain the completed optical evidence. Use `notes/track2-current.json`,
-`scripts/check_track2_harness.py`, `notes/track2-reviewer-guide-v37.md` and
-`notes/track2-owner-readiness-v37.md`. All earlier bound inputs and releases through
-v36 remain frozen. The drug ledger and base validation remain v21.
+Session 77 completes **presentation and harness v39**. Nine slides, 364 narration
+words, a ten-page report, 334-word abstract, methods workbook and own-voice
+teleprompter incorporate the owner's scientific rehearsal. Start with
+`notes/track2-reviewer-guide-v39.md` and `notes/track2-owner-readiness-v39.md`.
+All bound releases through v37 remain frozen. The drug ledger and base validation
+remain v21; the 18-case demo and small community ZIP remain v37.
 
-Session 76 adds a **review addendum only**, with presentation and harness still v37.
-Read `notes/track2-competitive-review-v38.md`,
-`notes/track2-candidate-comparison-v38.md` and
-`notes/track2-external-review-packet-v38.md`. Remaining priorities are comparative
-drug rationale, a specific innovation claim, unfamiliar-reader comprehension and
-recording/delivery. Another public methods README challenges broad novelty claims;
-its performance was not verified. The owner can arrange a reviewer and is a
-bioengineering undergraduate. No reviewer has been contacted or feedback received.
-Keep author rehearsal separate from outside review. Preserve all v37 bound inputs;
-the addendum changes no scientific decision or delivery flag.
+Read `notes/track2-rehearsal-adjudication-v39.md`,
+`notes/track2-candidate-comparison-v39.md` and
+`notes/track2-qualification-amendment-v39.md`. First qualify endogenous BUB1B
+function with independent correction/restoration in proposed engineered hTERT-RPE1;
+line availability and functional qualification are unconfirmed. Everolimus is a
+worked conditional branch on HOLD for unmeasured prerequisites, not a rescue-priority
+drug. Its mouse mTOR rationale is heterozygous BubR1+/X753 skeletal muscle with
+sarcopenia relevance. NAD/SIRT2 genetic survival was male biased; mouse K243 and human
+K250 correspond. Favorable oocyte results have opposing somatic checkpoint/tumor
+evidence; no generic K243R rescue control or SIRT2 drug promotion follows. Use
+product-specific Afinitor/Zortress safety labels. Neither a missing measurement nor
+a failed assay disproves biology. All prior favorable and adverse findings persist.
+
+The owner can arrange a reviewer and is a bioengineering undergraduate. Use the
+updated `notes/track2-external-review-packet-v39.md`. The owner's rehearsal and
+AI-assisted adjudication are not independent outside review. No reviewer contact,
+feedback, recording, hosting or submission is established. Source receipts in v39
+retain the October 19 captures; finalizing on October 20 is not a new live refresh.
+The v38 competitive review remains historical context, including its unverified
+competitor-methods README and warning against broad novelty claims.
 
 Four completed MVA uv installer caches were cleaned at the owner's request.
 See `notes/track2-dgx-cleanup-v37.md`: about 2.5 GiB was removed by uv, while
@@ -296,16 +304,16 @@ participated. Delivery, provider and distribution flags remain unresolved.
   Record the complete acknowledgement inside the three-minute video. Preserve the
   Track 1 submitted v4, every earlier Track 2 bound input/package, the fixed v19 campaign and v1-v21 releases.
 
-Use `scripts/track2_release_v37.py` to check/build/verify **new** v37 research snapshot
-directories. Render with `scripts/render_track2_slides_v37.mjs`; export the report and
-workbook with `scripts/track2_export_documents_v37.py` followed by
-`scripts/render_track2_report_v37.mjs`. Recording materials use
-`scripts/track2_bundle_v37.py`; historical research retains AF3 notices.
-The combined public reviewer checks integrated v37 and frozen v31/v29/v27 research, v25 CRISPR, v23 RNAi, v21 decisions
+Use `scripts/track2_release_v39.py` to check/build/verify **new** v39 research snapshot
+directories. Render with `scripts/render_track2_slides_v39.mjs`; export the report and
+workbook with `scripts/track2_export_documents_v39.py` followed by
+`scripts/render_track2_report_v39.mjs`. Recording materials use
+`scripts/track2_bundle_v39.py`; historical research retains AF3 notices.
+The combined public reviewer checks integrated v39 and frozen v31/v29/v27 research, v25 CRISPR, v23 RNAi, v21 decisions
 and v19 findings. It needs no
 data/results folders, keys, network, GPUs or old
 local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
-The versioned `scripts/track2_public_review_v37.py` checks the integrated presentation
+The versioned `scripts/track2_public_review_v39.py` checks the integrated presentation
 and frozen research; `scripts/check_track2_transcriptome.py` checks v19 alone.
 Its passing result verifies consistency, not biology or eligibility. The stricter
 release verification also requires retained local historical archives.
@@ -337,15 +345,15 @@ uv run --no-project python scripts/check_track2_crispr_v25.py
 uv run --no-project python scripts/check_track2_orthogonal_v29.py
 uv run --no-project python scripts/check_track2_perturbseq_v31.py
 uv run --no-project python scripts/track2_falsification_v21.py
-uv run --no-project python scripts/track2_public_review_v37.py
+uv run --no-project python scripts/track2_public_review_v39.py
 uv run --no-project python scripts/check_track2_optical_v36.py
-uv run python scripts/track2_release_v37.py check
+uv run python scripts/track2_release_v39.py check
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
 `track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
 its old conditional-screen label is not today's drug decision. The current v21
-ledger, v37 report and v19/v23/v25/v27/v29/v31 research take precedence. Historical exact-byte verification remains
+ledger, v39 report and v19/v23/v25/v27/v29/v31 research take precedence. Historical exact-byte verification remains
 available through the versioned release scripts; never resubmit Track 1 to resolve
 its missing administrative receipt.
 

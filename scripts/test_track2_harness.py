@@ -42,7 +42,7 @@ class CurrentStateTests(unittest.TestCase):
                 harness.validate(state,self.features,self.documents)
 
     def test_new_reviewer_and_recording_routes_are_required(self):
-        for field in ['interactive_demo','demo_audit','community_kit_guide','lab_handoff','judge_questions','recording_guide','teleprompter']:
+        for field in ['interactive_demo','demo_audit','community_kit_guide','lab_handoff','judge_questions','recording_guide','teleprompter','candidate_comparison','rehearsal_adjudication','qualification_amendment','external_review_packet','recording_audit']:
             state=deepcopy(self.state);state['artifacts'].pop(field)
             with self.subTest(field=field),self.assertRaisesRegex(ValueError,'artifact paths'):
                 harness.validate(state,self.features,self.documents)
@@ -116,15 +116,15 @@ class CurrentStateTests(unittest.TestCase):
                 harness.validate(state,self.features,self.documents)
 
     def test_integrated_versions_preserve_research_version(self):
-        self.assertEqual(self.state['presentation_version'],37)
-        self.assertEqual(self.state['harness_version'],37)
+        self.assertEqual(self.state['presentation_version'],39)
+        self.assertEqual(self.state['harness_version'],39)
         self.assertEqual(self.state['research_addendum']['version'],19)
         self.state['harness_review']='notes/track2-harness-review-v18.md'
         with self.assertRaisesRegex(ValueError,'Stale harness'):
             harness.validate(self.state,self.features,self.documents)
 
     def test_correct_independent_version_labels_accepted(self):
-        self.documents['README.md']+='\nUse the current v37 harness and current v19 addendum with the current v37 presentation and current v21 ledger.'
+        self.documents['README.md']+='\nUse the current v39 harness and current v19 addendum with the current v39 presentation and current v21 ledger.'
         harness.validate(self.state,self.features,self.documents)
 
     def test_crispr_addendum_cannot_disappear_or_promote_guides(self):

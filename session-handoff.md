@@ -1,42 +1,57 @@
-# Session handoff: completed optical research and integrated v37 materials
+# Session handoff: v39 qualification-first proposal and recording materials
 
-Only **feat-009** remains active, for delivery and unresolved biological qualification.
-The computational research cycle is complete. Use `notes/track2-current.json`,
-`notes/track2-report-v37.md`, `notes/track2-slides-v37.html`,
-`notes/track2-pitch-v37.md` and `notes/track2-transcript-v37.txt`.
-The combined entry points are `scripts/check_track2_harness.py`,
-`notes/track2-reviewer-guide-v37.md` and `notes/track2-owner-readiness-v37.md`.
-The original qualification report `notes/track2-transcriptome-v19.md` and all later
-addenda remain preserved; the drug ledger and base decision contract remain v21.
-Do not edit old bound inputs or releases through v37.
+20 October 2026, session 77. Only **feat-009** remains active for delivery and
+unresolved biological qualification. The interrupted v39 work from the owner's
+session export is integrated. Use `notes/track2-current.json`,
+`notes/track2-report-v39.md`, `notes/track2-slides-v39.html`,
+`notes/track2-pitch-v39.md` and `notes/track2-transcript-v39.txt`.
+The combined entry point is `scripts/check_track2_harness.py`; start with
+`notes/track2-reviewer-guide-v39.md` and `notes/track2-owner-readiness-v39.md`.
+The v19 `notes/track2-transcriptome-v19.md` and all later completed research are
+preserved. The drug ledger/base contract remain v21; the demo and community kit
+remain v37. All bound releases through v37 and the v38 review addendum are frozen.
 
-## Follow-up competitive assessment
+## What changed after the owner's rehearsal
 
-Session 76 adds `notes/track2-competitive-review-v38.md`,
-`notes/track2-candidate-comparison-v38.md` and
-`notes/track2-external-review-packet-v38.md`. These are review additions; presentation
-and harness remain v37. Four official files were freshly retrieved unchanged; no
-new discussion census or live submission-account check occurred. A public methods
-README challenges broad novelty claims about reusable direction/rejection rules;
-its scientific performance was not verified. All nine final slides were visually
-reviewed; comprehension within the allocated time remains unmeasured.
+Read `notes/track2-rehearsal-adjudication-v39.md`,
+`notes/track2-candidate-comparison-v39.md` and
+`notes/track2-qualification-amendment-v39.md`. First qualify endogenous BUB1B
+function and independently controlled restoration in proposed engineered hTERT-RPE1.
+The comparator is immortalized, has weak retained expression specificity, and is
+not an available patient line or a muscle/renal surrogate. Availability, clone
+feasibility and functional qualification remain unconfirmed. No biological work
+is promised before the submission deadline.
 
-The owner can arrange an outside reviewer and identifies as a bioengineering
-undergraduate. The packet supports their technical preparation and a bounded
-external critique. No contact, feedback or endorsement exists. Prioritize the
-comparative drug rationale, specific contribution and observed reader comprehension
-before more computation without a decision-changing question. Preserve the v37
-materials until a justified revision is made in new files.
+Everolimus is a conditional worked example on HOLD for unmeasured prerequisites.
+The mTOR mouse signal is heterozygous BubR1+/X753 skeletal muscle, with sarcopenia
+relevance, not demonstrated compound-pair rescue. North's genetic SIRT2 survival
+benefit was male biased and distinct from NMN abundance or niacin findings. Mouse
+K243 corresponds to human K250; favorable oocyte results coexist with harmful
+somatic checkpoint/tumor findings. No generic K243R rescue control, allele-agnostic
+rescue or new drug priority follows. SIRT2 is not a BUBR1-specific restoration.
+Use product-specific Afinitor/Zortress labeling. Unknown evidence remains HOLD;
+valid precise negatives close only the tested claim/context. Injury overrides benefit.
 
-## New competition and recording work
+The owner can arrange a reviewer and is a bioengineering undergraduate. Use
+`notes/track2-external-review-packet-v39.md`. The supplied rehearsal and AI-assisted
+adjudication are not the independent review being arranged. No reviewer contact,
+feedback or endorsement is established. The v38 competitive-review caveats remain,
+including unverified competitor performance and the limits of broad novelty claims.
 
-Official weights are rigor 35%, impact 25%, innovation 25%, scalability 15%.
-Use `notes/track2-competition-plan-v37.md` and `notes/track2-lab-handoff-v37.md`.
-The offline demo and small kit contain 17 synthetic cases plus the actual unmeasured
-HOLD state. Python/JavaScript agreement tests software behavior, not policy validity.
-The owner selected their own voice: `notes/track2-recording-guide-v37.md` and
-`notes/track2-teleprompter-v37.html` provide nine cues across 180 seconds.
-No new hosted model, GPU campaign, wet-lab result, recording or upload was added.
+## Current materials
+
+V39 contains nine slides, eight vector figures, 364 narration words, a ten-page
+report, 334-word abstract, all eleven methods answers, transcript, video description
+and an own-voice teleprompter. The frozen v37 demo still has 17 synthetic cases and
+the actual unmeasured HOLD state. Its rules demonstrate software behavior, not
+biological or clinical validity. The v39 small-kit guide points to that existing kit.
+
+Exports are `results/feat009/v39-slides-final-20261020` and
+`results/feat009/v39-documents-final-b-20261020`; the final teleprompter browser receipt
+is under `results/feat009/v39-prompter-final-c-20261020`. The header now respects
+wrapped mobile controls so cue headings stay visible. Earlier draft exports and
+interim audit receipts remain in ignored results. Local conversation exports are
+ignored and are not publication artifacts. Actual final checks are in progress.md.
 
 ## Completed research
 
@@ -94,60 +109,51 @@ directory allocation largely shared hard-linked storage with retained environmen
 Results, source data, models, checkpoints and unrelated projects were preserved.
 See `notes/track2-dgx-cleanup-v37.md`; environment imports passed after cleanup.
 
-## Current materials and checks
-
-V37 has nine slides, eight local SVG figures, a 368-word script/plain transcript,
-nine-page report, eleven-answer official methods workbook and recording-materials
-ZIP. Scientific-slides/frontend-design and humanizer/no-ai-slop informed the revision.
-The full acknowledgement and provider history remain. The script's three-minute
-allocations are not a measured recording. Exact verification/export evidence and
-fresh startup output are in progress.md session 75.
+## Checks and reproduction
 
 ```bash
 ./init.sh
 uv run --no-project python scripts/check_track2_harness.py
+uv run --no-project python scripts/track2_public_review_v39.py
 uv run --no-project python scripts/check_track2_optical_v36.py
-uv run --no-project python scripts/track2_public_review_v37.py
 uv run python scripts/audit_track2_harness.py
-uv run python scripts/track2_release_v37.py verify results/feat009/jvv7_track2_research_v37
-uv run python scripts/track2_bundle_v37.py verify
+uv run python scripts/track2_release_v39.py verify results/feat009/jvv7_track2_research_v39
+uv run python scripts/track2_bundle_v39.py verify
+uv run --no-project python scripts/track2_community_kit_v37.py verify
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
-Public checks need no subject files, GPU, keys or network. Strict package verification
-also checks retained local exports/snapshots. Old v33/v35 checkers describe frozen
-capture states; the current complete record is v36. Python audit guards check
-dependency isolation, not operating-system security. Computation and software checks
-do not establish biological validation.
+Public checks need no subject files, GPU, keys, network or historical local snapshots.
+Strict release verification also checks retained local exports/archives. New snapshots
+must use unused directories; never edit old bound inputs to make a new check pass.
+Python audit hooks check dependency isolation, not operating-system security.
 
 ## Blockers and next actions
 
-- The owner can share the prepared review packet with a relevant faculty mentor or
-  researcher. Obtain actual feedback, retain it with the reviewed version and
-  adjudicate objections before claiming outside review. An unfamiliar-reader pitch
-  and demo check is also pending; author rehearsal does not satisfy independence.
-- Use the own-voice guide and teleprompter; record, measure and host the three-minute video on YouTube/Vimeo. No recording,
-  measured runtime, hosted URL, Track 2 upload or authenticated receipt exists.
-- Resolve Fireworks/earlier alignment-service handling and linked AF3/non-AVI Atlas
-  versus challenge CC BY distribution scope. OpenAI no-training is an owner attestation.
-  Existing unsent clarification remains unsent; no organizer contact was authorized.
-- Before delivery, review exact files, identity/team, live rules/quota, public GitHub
-  and video access. Three entries are allowed; only the latest is reviewed. Quota
-  is unknown. Archive uploaded bytes and receipt after actual submission.
-- Scientific advancement needs endogenous effects, independent perturbation/restoration,
-  qualified non-cancer function and joint treatment. Everolimus remains an optional
-  model-qualified probe, HCQ reserve; no rescue-priority drug. Phase and clinical
-  exposure margins remain unknown. Safety failure overrides benefit; all-pass allows
-  preclinical review only. Balnis's 1,000-fold units conflict stays quarantined.
-- Preserve submitted Track 1 v4. Owner-reported 100/F-max 1 is separate from the
-  missing receipt/byte audit; do not request another upload.
-- Official October 19 refresh: seven files at
-  `60e1c30e337ce6fe01813040dbe49979eb8c50aa`, 30 threads / 84 visible comments;
-  one new participant comment read; unchanged text retains earlier review. No live account/quota/receipt audit was performed.
-  Submit by **October 24, 23:59 UTC**. Delete and confirm to **cnb@sagebase.org by
-  November 23** under `notes/deletion-plan-v2.md`. Feat-010 is not started; no challenge-data deletion
-  or email occurred. Winners are announced December 18.
+- Arrange actual outside review through the owner; preserve feedback and the reviewed
+  version, then adjudicate objections. Uncoached pitch/demo comprehension is unmeasured.
+- Record the 364-word pitch in the owner's own voice, measure the full exported video
+  including acknowledgement and transitions, and host on YouTube/Vimeo. Script cue
+  allocations total 180 seconds but are not a measured recording. No video or URL exists.
+- Resolve existing provider/distribution questions. OpenAI no-training is an owner
+  attestation; Fireworks and earlier alignment-service handling remain unverified.
+  Historical AF3/non-AVI Atlas terms versus challenge CC BY scope remain unresolved.
+  Preserve the notices and existing unsent clarification; no organizer contact is authorized.
+- Before delivery, review exact files, team identity, live rules/quota, public GitHub
+  and video access. Three entries are allowed; only the latest is judged. Quota is
+  unknown. Archive uploaded bytes and the receipt after actual submission.
+- Scientific advancement needs independent endogenous perturbation/restoration,
+  qualified non-cancer function, joint treatment, exposure and injury measurements.
+  No rescue-priority drug, confirmed phase, clinical margin or wet-lab result exists.
+  Everolimus remains an optional probe; HCQ remains reserve. Balnis units stay quarantined.
+- Preserve submitted Track 1 v4. Owner-reported 100/F-max 1 is separate from the missing
+  receipt/byte audit; do not upload again to fix that administrative gap.
+- V39 retains the October 19 official capture: seven files at
+  `60e1c30e337ce6fe01813040dbe49979eb8c50aa`, 30 threads and 84 visible comments.
+  October 20 completion/re-hashing is not a new live refresh or account/quota check.
+  Submit by **October 24, 23:59 UTC**. Delete all scoped local/remote data and confirm
+  to **cnb@sagebase.org by November 23**, under `notes/deletion-plan-v2.md`. Feat-010
+  has not started. Cache cleanup did not satisfy this obligation. No email/upload occurred.
 
-The Anthropic toolkit already executed substantial ProteinMPNN work in v29; failed
-functional controls remain. Carbon annotation was reviewed and deferred as irrelevant
-to functional rescue. More model runs should answer a new discriminating question,
-not seek agreement with a favored drug. The next decisive evidence is biological.
+No GPU campaign, remote job, wet-lab result or additional hosted model provider was
+added in v39. The next decisive evidence is biological, not more model agreement.

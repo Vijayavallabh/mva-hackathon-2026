@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+"""Bind the v39 rehearsal-browser receipt; a rehearsal tool is not a recording."""
+import hashlib
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+SOURCES=['notes/track2-pitch-v39.md','notes/track2-transcript-v39.txt',
+    'notes/track2-teleprompter-v39.html','scripts/build_track2_recording_v39.py',
+    'scripts/review_track2_interactive_v39.mjs','scripts/audit_track2_recording_v39.py']
+def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def main():
+    target=ROOT/'notes/track2-prompter-audit-v39.json'
+    if target.exists():raise ValueError('Existing audit protected')
+    folder=ROOT/'results/feat009/v39-prompter-final-c-20261020'
+    browser=json.loads((folder/'audit.json').read_text())
+    for name,sha in browser['files'].items():
+        if Path(name).name!=name or (folder/name).is_symlink() or digest(folder/name)!=sha:
+            raise ValueError('Browser export drift')
+    record=dict(schema_version=39,passed=True,public_input_sha256={s:digest(ROOT/s) for s in SOURCES},
+        browser_checks=browser,recording_created=False,runtime_measured=False,independent_review=False)
+    import track2_release_v39 as release
+    release.recording_checks(record)
+    with target.open('x') as f:f.write(json.dumps(record,indent=2)+'\n')
+    print(json.dumps(dict(passed=True,output=str(target.relative_to(ROOT)))))
+if __name__=='__main__':main()
