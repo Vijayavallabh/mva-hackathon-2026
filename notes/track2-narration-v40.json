@@ -1,0 +1,73 @@
+{
+  "schema_version": 40,
+  "narration_words": 367,
+  "allocation_seconds": 180,
+  "planned_words_per_minute": 122.3,
+  "cues": [
+    {
+      "slide": 1,
+      "start": 0,
+      "end": 18,
+      "words": 39,
+      "planned_words_per_minute": 130.0
+    },
+    {
+      "slide": 2,
+      "start": 18,
+      "end": 40,
+      "words": 48,
+      "planned_words_per_minute": 130.9
+    },
+    {
+      "slide": 3,
+      "start": 40,
+      "end": 63,
+      "words": 44,
+      "planned_words_per_minute": 114.8
+    },
+    {
+      "slide": 4,
+      "start": 63,
+      "end": 87,
+      "words": 44,
+      "planned_words_per_minute": 110.0
+    },
+    {
+      "slide": 5,
+      "start": 87,
+      "end": 106,
+      "words": 40,
+      "planned_words_per_minute": 126.3
+    },
+    {
+      "slide": 6,
+      "start": 106,
+      "end": 126,
+      "words": 43,
+      "planned_words_per_minute": 129.0
+    },
+    {
+      "slide": 7,
+      "start": 126,
+      "end": 149,
+      "words": 42,
+      "planned_words_per_minute": 109.6
+    },
+    {
+      "slide": 8,
+      "start": 149,
+      "end": 168,
+      "words": 45,
+      "planned_words_per_minute": 142.1
+    },
+    {
+      "slide": 9,
+      "start": 168,
+      "end": 180,
+      "words": 22,
+      "planned_words_per_minute": 110.0
+    }
+  ],
+  "runtime_measured": false,
+  "video_recorded": false
+}

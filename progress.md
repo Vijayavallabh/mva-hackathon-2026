@@ -8632,3 +8632,119 @@ outside feedback or Track 2 upload/receipt is established. Provider/distribution
 questions remain unresolved. Submitted Track 1 v4 stays unchanged. No new GPU job,
 patient-data transfer, family/organizer contact, challenge-data deletion or email
 occurred. The end-of-session commit and push follow these checks.
+
+## Session 78 — v40 presentation clarity and recording consistency (2026-10-20)
+
+The owner requested coordinated updates to the slides, report, harness and supporting
+files. This is a presentation/harness revision of completed v39, not new research.
+`notes/track2-current.json` now routes v40. The v39 scientific adjudications and
+October 19 official captures remain the source record; no literature refresh,
+biological result, GPU job, external reviewer contact or new hosted provider was added.
+Only feat-009 remains active. All 58 claim records, eleven drug dispositions, v21
+base contract and frozen v37 teaching demo/community kit persist.
+
+The mechanism slide now makes endogenous deficit and independently attributable
+functional restoration a prerequisite to either intervention route. It distinguishes
+mTOR from NAD/SIRT2 while retaining carrier-muscle, genotype, sarcopenia, sex and
+opposing site/context qualifiers. Report branches A/B remain the two downstream
+mTOR-related hypotheses; NAD/SIRT2 is a separate route. The report explains why
+an approved mTORC1 probe is a concrete worked example without claiming comparative
+superiority. Its specific contribution is the inspectable connection between
+evidence states, all-enrolled outcomes and the next laboratory decision. The
+reviewer brief, laboratory handoff, questions, recording guide and outside-review
+packet point to the coordinated materials. Nothing promotes a drug, phase,
+clinical margin, biological validation or upload readiness.
+
+Slide 4 labels the synthetic vehicle/probe arms; all numbers remain unchanged.
+Slide 6 explains mean reciprocal rank and emphasizes the interpretation instead of
+compute scale. Nine slides and eight vector figures remain. The ten-page report
+retains the 334-word abstract and eleven methods fields. The pitch now contains
+367 words. `scripts/track2_narration_v40.py` derives positive, contiguous nine-cue
+allocations, total words and planned speaking rates. The guide, JSON metrics,
+transcript and prompter must agree. The overall planned rate is 122.3 words/minute;
+the fastest cue is slide 8 at 142.1. None is measured speech or video runtime.
+
+All nine slides and ten report pages were inspected as contact sheets. Slides 2/4/6,
+the report opening, optical table and acknowledgement were inspected at full size.
+No text collision or clipping was observed; automated checks find no slide
+outside/overlapping text, minimum 24 px text, embedded PDF fonts and minimum checked
+palette contrast 5.8275:1. Report geometry is 665/665 px. Workbook values, official
+questions, original Track 1 sheet styles and absence of formulas round-trip correctly;
+workbook appearance was not rendered. The prompter passes 1280/390 px layout,
+all nine cue positions, start/pause controls and zero network-resource checks.
+The mobile second cue was also inspected. This is agent review, not independent
+scientific review or measured reader comprehension.
+
+Reproduction and actual results:
+
+- `uv run node scripts/render_track2_slides_v40.mjs v40-slides-final-20261020`:
+  nine slides, zero outside text and zero text overlaps.
+- `uv run scripts/track2_export_documents_v40.py v40-documents-final-20261020`,
+  then `uv run node scripts/render_track2_report_v40.mjs v40-documents-final-20261020`:
+  ten-page PDF and checked workbook. Source/export receipts are in the versioned audits.
+- `uv run node scripts/review_track2_interactive_v40.mjs
+  v40-prompter-final-20261020 prompter`: passed. `scripts/audit_track2_recording_v40.py`
+  binds the actual browser receipt and all narration/guide inputs.
+- `uv run python -m unittest discover -s scripts -p 'test_track2*.py'`:
+  **1,079 tests, OK, 14 skips**, 27.140 seconds. The skips are unchanged historical
+  Torch-dependent optical tests; no remote test run is claimed. The eight new v40
+  tests execute. An earlier full run found one stale v39 version assertion in the
+  mutable harness test; both expected current versions were corrected to v40.
+  Its failed log is retained; no historical bound test was changed.
+- `uv run --no-project python scripts/check_track2_harness.py` and
+  `uv run python scripts/track2_release_v40.py check`: passed. The current public
+  reviewer and combined isolation audit both pass without subject inputs, network,
+  project environment or Git history. All six guard probes block their intended
+  operations; these are dependency checks, not operating-system sandbox certification.
+- Track 1 submission self-check passes. The historical evidence checker still reports
+  53 sources/12 candidates; its old conditional-screen label is not today's drug decision.
+- `uv run python scripts/track2_release_v40.py build
+  results/feat009/jvv7_track2_research_v40`: built and strictly verified **226 files /
+  945 bound inputs**, retaining the historical chain through v39. Direct SHA-256
+  comparison found all **909 v39 inputs unchanged**. Every new notes/scripts file
+  belongs to the new release input set.
+- `uv run python scripts/track2_bundle_v40.py build`: built and verified **113 files**,
+  2,793,832 bytes, SHA-256
+  `7b582d705a3083dc834a3067cb3ffc67e99d5f1d0e1f070328af46782e3addf3`.
+  The ZIP includes the frozen runnable community kit and current recording materials;
+  it is not a recorded video or submission receipt.
+- All **204 checked local/repository Markdown/HTML links** in changed materials resolve.
+  The staged whitespace check passes. Initial staged publication audit passes
+  **1,027 unique blobs / zero findings**. The live guard verifies PUBLIC visibility,
+  all 13 retired objects unavailable, a successful live-object control and zero
+  unknown errors. No purge request or visibility change was made.
+
+Logs retain the first test failure and subsequent passing run. Export/audit outputs
+use new directories; v39 and older bound bytes are unchanged. Final full startup
+output and commit-state validation follow below.
+
+Fresh no-argument `nohup ./init.sh` finished with exit status 0. Selected verbatim
+output from `logs/track2-v40-final-init-20261020.log`:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+  "active_feature": "feat-009",
+  "harness_version": 40,
+  "presentation_version": 40,
+  "narration_words": 367,
+=== OK ===
+```
+
+No recording, measured runtime, hosting, outside scientific review or Track 2
+submission is established. Provider/distribution questions remain unresolved.
+Delivery and biological qualification keep feat-009 in progress. All scoped data
+and remote campaign roots remain subject to deletion and confirmation to
+cnb@sagebase.org by November 23. No contact, submission or challenge-data deletion
+was performed in this session. The completed repository update is committed and
+pushed to the configured origin; local/upstream equality is checked at session end.

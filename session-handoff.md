@@ -1,15 +1,15 @@
-# Session handoff: v39 qualification-first proposal and recording materials
+# Session handoff: v40 presentation, recording metrics and harness
 
-20 October 2026, session 77. Only **feat-009** remains active for delivery and
-unresolved biological qualification. The interrupted v39 work from the owner's
-session export is integrated. Use `notes/track2-current.json`,
-`notes/track2-report-v39.md`, `notes/track2-slides-v39.html`,
-`notes/track2-pitch-v39.md` and `notes/track2-transcript-v39.txt`.
+20 October 2026, session 78. Only **feat-009** remains active for delivery and
+unresolved biological qualification. The v40 revision makes the qualification sequence explicit, labels the synthetic
+comparison arms and derives recording metrics from the script. Use `notes/track2-current.json`,
+`notes/track2-report-v40.md`, `notes/track2-slides-v40.html`,
+`notes/track2-pitch-v40.md` and `notes/track2-transcript-v40.txt`.
 The combined entry point is `scripts/check_track2_harness.py`; start with
-`notes/track2-reviewer-guide-v39.md` and `notes/track2-owner-readiness-v39.md`.
+`notes/track2-reviewer-guide-v40.md` and `notes/track2-owner-readiness-v40.md`.
 The v19 `notes/track2-transcriptome-v19.md` and all later completed research are
 preserved. The drug ledger/base contract remain v21; the demo and community kit
-remain v37. All bound releases through v37 and the v38 review addendum are frozen.
+remain v37. All bound releases through v39 and the v38 review addendum are frozen.
 
 ## What changed after the owner's rehearsal
 
@@ -33,23 +33,24 @@ Use product-specific Afinitor/Zortress labeling. Unknown evidence remains HOLD;
 valid precise negatives close only the tested claim/context. Injury overrides benefit.
 
 The owner can arrange a reviewer and is a bioengineering undergraduate. Use
-`notes/track2-external-review-packet-v39.md`. The supplied rehearsal and AI-assisted
+`notes/track2-external-review-packet-v40.md`. The supplied rehearsal and AI-assisted
 adjudication are not the independent review being arranged. No reviewer contact,
 feedback or endorsement is established. The v38 competitive-review caveats remain,
 including unverified competitor performance and the limits of broad novelty claims.
 
 ## Current materials
 
-V39 contains nine slides, eight vector figures, 364 narration words, a ten-page
+V40 contains nine slides, eight vector figures, 367 narration words, a ten-page
 report, 334-word abstract, all eleven methods answers, transcript, video description
 and an own-voice teleprompter. The frozen v37 demo still has 17 synthetic cases and
 the actual unmeasured HOLD state. Its rules demonstrate software behavior, not
-biological or clinical validity. The v39 small-kit guide points to that existing kit.
+biological or clinical validity. The v40 small-kit guide points to that existing kit.
 
-Exports are `results/feat009/v39-slides-final-20261020` and
-`results/feat009/v39-documents-final-b-20261020`; the final teleprompter browser receipt
-is under `results/feat009/v39-prompter-final-c-20261020`. The header now respects
-wrapped mobile controls so cue headings stay visible. Earlier draft exports and
+Exports are `results/feat009/v40-slides-final-20261020` and
+`results/feat009/v40-documents-final-20261020`; the final teleprompter browser receipt
+is under `results/feat009/v40-prompter-final-20261020`. The header continues to respect wrapped mobile controls. A shared narration parser
+checks the transcript, prompter, guide and metrics JSON: 367 words in 180 allocated
+seconds, or 122.3 planned words/minute. These are not measured video times. Earlier draft exports and
 interim audit receipts remain in ignored results. Local conversation exports are
 ignored and are not publication artifacts. Actual final checks are in progress.md.
 
@@ -114,11 +115,11 @@ See `notes/track2-dgx-cleanup-v37.md`; environment imports passed after cleanup.
 ```bash
 ./init.sh
 uv run --no-project python scripts/check_track2_harness.py
-uv run --no-project python scripts/track2_public_review_v39.py
+uv run --no-project python scripts/track2_public_review_v40.py
 uv run --no-project python scripts/check_track2_optical_v36.py
 uv run python scripts/audit_track2_harness.py
-uv run python scripts/track2_release_v39.py verify results/feat009/jvv7_track2_research_v39
-uv run python scripts/track2_bundle_v39.py verify
+uv run python scripts/track2_release_v40.py verify results/feat009/jvv7_track2_research_v40
+uv run python scripts/track2_bundle_v40.py verify
 uv run --no-project python scripts/track2_community_kit_v37.py verify
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
@@ -132,7 +133,7 @@ Python audit hooks check dependency isolation, not operating-system security.
 
 - Arrange actual outside review through the owner; preserve feedback and the reviewed
   version, then adjudicate objections. Uncoached pitch/demo comprehension is unmeasured.
-- Record the 364-word pitch in the owner's own voice, measure the full exported video
+- Record the 367-word pitch in the owner's own voice, measure the full exported video
   including acknowledgement and transitions, and host on YouTube/Vimeo. Script cue
   allocations total 180 seconds but are not a measured recording. No video or URL exists.
 - Resolve existing provider/distribution questions. OpenAI no-training is an owner
@@ -148,12 +149,13 @@ Python audit hooks check dependency isolation, not operating-system security.
   Everolimus remains an optional probe; HCQ remains reserve. Balnis units stay quarantined.
 - Preserve submitted Track 1 v4. Owner-reported 100/F-max 1 is separate from the missing
   receipt/byte audit; do not upload again to fix that administrative gap.
-- V39 retains the October 19 official capture: seven files at
+- V40 reuses the v39 October 19 official capture: seven files at
   `60e1c30e337ce6fe01813040dbe49979eb8c50aa`, 30 threads and 84 visible comments.
   October 20 completion/re-hashing is not a new live refresh or account/quota check.
   Submit by **October 24, 23:59 UTC**. Delete all scoped local/remote data and confirm
   to **cnb@sagebase.org by November 23**, under `notes/deletion-plan-v2.md`. Feat-010
   has not started. Cache cleanup did not satisfy this obligation. No email/upload occurred.
 
-No GPU campaign, remote job, wet-lab result or additional hosted model provider was
-added in v39. The next decisive evidence is biological, not more model agreement.
+No new search, GPU campaign, remote job, wet-lab result or additional hosted model
+provider was added in v40. The v39 scientific adjudications and official captures
+remain authoritative; the v40 changes are presentation and harness work. The next decisive evidence is biological, not more model agreement.
