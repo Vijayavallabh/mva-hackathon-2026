@@ -8215,3 +8215,194 @@ annotation resources ready
 === 7. current Track 2 presentation and research harness ===
 === OK ===
 ```
+
+
+## Session 75 — 2026-10-19 — rubric-focused v37, own-voice recording kit and DGX cleanup
+
+Only feat-009 was selected; it remains in progress for biological qualification and
+actual delivery. The owner asked to maximize Track 2/top-three and Innovation Prize
+prospects, selected their own voice with timed recording guidance, and authorized
+unwanted DGX-file cleanup. No award, clinical outcome or upload was promised.
+
+### Official criteria and source review
+
+Seven official files were freshly fetched at Space revision
+`60e1c30e337ce6fe01813040dbe49979eb8c50aa`; all bytes are unchanged from v36.
+The anonymous discussion capture now covers 30 threads, 14 closed, 84 visible
+comments. Thread 31 adds one participant question without an organizer reply.
+The other 29 thread records/83 comments are byte-identical and retain earlier
+reading-depth records, rather than being described as freshly reread full text.
+Captures: `results/feat009/competition-official-v37-20261019/manifest.json` and
+`competition-community-v37-20261019/manifest.json`. Public tools/anonymous HTTP
+were used; no account, private input or quota/receipt check was involved.
+
+The actual rubric is rigor 35%, potential impact 25%, innovation 25%, scalability
+15%. Potential impact includes contribution to MVA understanding or diagnosis if
+independently validated; it is not limited to a promised treatment effect. The
+Innovation Prize is independent of placement. No live Q&A is planned. The new
+`notes/track2-competition-plan-v37.md` maps concrete deliverables to these criteria.
+Deadline, three-entry/latest-reviewed rule, three-minute hosted video and November
+23 deletion/confirmation remain unchanged; no eligibility promotion was made.
+
+Four bounded fresh literature searches examined BUB1B/rapalog rescue, alternative
+mechanisms, the retained pair and recent rescue work. The primary JCI mouse
+article's discussion was reread, distinguishing mouse L1002P from human Asn1002Lys.
+Two PMC full-page requests returned challenge pages; these were not counted as
+full-paper reviews. No direct selected-pair efficacy appeared in returned results;
+this is not a systematic search or proof of absence. Earlier adjudications stand.
+No new provider, hosted inference, GPU campaign or experimental evidence was added.
+
+### Materials and the reusable contribution
+
+Scientific-slides/frontend-design informed the nine-slide deck; humanizer/no-ai-slop
+editing sharpened the report without removing qualifications or attribution.
+The report, reviewer brief, laboratory handoff and twelve reviewer questions
+separate gene mechanism, endogenous pair effects, downstream state and drug effect.
+Branch A is the first qualification question; a flux-based alternative requires
+its own plan. The handoff stages endogenous qualification, relevant useful function,
+joint intervention and independent confirmation without inventing n, cost or timing.
+No new family sample or family co-design is claimed. No rescue-priority drug,
+phase, exposure margin or wet-lab result changes. The full v36 optical findings,
+favorable ranks, failed neural-gain gates, guide/plate sensitivity and missing
+mitotic evidence remain; 58 claim records are not 58 independent studies.
+
+`notes/track2-demo-v37.html` exposes the unchanged v21 decision policy in an offline
+browser page. Eighteen manually expected cases comprise 17 synthetic failure-mode
+examples and the actual unmeasured HOLD state. Intentionally incomplete benefit-only
+and benefit-plus-viability comparators advance 11 and 9 cases rejected by the full
+policy. These are selected teaching cases, not a representative/held-out benchmark
+or evidence of policy validity. The denominator example preserves every enrolled
+cell and labels missingness bounds separately from sampling uncertainty.
+
+Six implementation tests pass: Python and JavaScript agree on 83 valid records and
+both reject 12 invalid records. All 18 UI decisions, exact input/explanation download,
+reset, labelled controls and desktop/mobile layouts passed local browser checks.
+The teleprompter passed ten cue-boundary checks and keyboard pause. No HTTP resources
+loaded; network requests were blocked. No formal accessibility, human/external
+usability or clinical validation is claimed. Audits bind actual source and screenshot
+hashes in `notes/track2-demo-audit-v37.json`.
+
+The compact kit was extracted into a temporary directory with only its nine files.
+Its hashes and replay passed using the base Python interpreter and standard library.
+Six probes blocked network, subprocess, protected paths, credentials, outside paths
+and writes. No original checkout/history or project environment was used. This tests
+dependency isolation, not operating-system sandbox security or biological validity.
+The full-repository packaging instructions and public readiness link were clarified;
+the earlier kit/audit were retained under `v37-kit-before-guide-fix` before rebuilding.
+
+The owner-selected voice package contains 368 narration words, nine contiguous cue
+windows across 180 seconds, a plain transcript, pronunciation guide and offline
+teleprompter. Actual pace/runtime remains unmeasured; no audio capture, narration
+service, hosted video, submission or receipt was created. The eleven official
+methods answers preserve the workbook questions/styles; abstract length is 295 words.
+The final PDF report is nine pages. Its first draft was ten pages; repeated B9 wording
+was shortened while preserving provider history and disclosure limitations. All nine
+report pages and slides were inspected; contrast minimum is 5.8275, slide fonts are
+at least 24 px, and no measured text overflow/overlap remains. The visual pass caught
+and shortened a divider crossing slide 8's note; previous exports/audits remain in
+ignored draft folders. Workbook values/styles were checked, appearance not rendered.
+
+Final exports: `results/feat009/v37-slides-final-b-20261019/` and
+`results/feat009/v37-documents-final-20261019/`. Reports, scripts, generated sources,
+current record, README, AGENTS, feature evidence and handoff route v37. All 814
+v36-bound inputs are byte-identical; the strict historical v36 verification passes.
+
+### DGX maintenance
+
+`scripts/track2_dgx_cleanup_v37.py` ran only on four explicitly allowlisted completed
+MVA uv installer caches under `/home/prachh/v`. Exact-path/symlink, retained-symlink
+and open/mapped-file checks preceded `uv cache clean`; all four removals exited 0.
+The cache directory allocation totaled 36,565,536,768 bytes, but much was hard-linked
+to retained environments. uv reported about 2.5 GiB plus small metadata removals;
+34 GiB must not be reported as newly freed space. Concurrent workloads prevent a
+precise causal free-filesystem delta. Scientific inputs, outputs, weights, checkpoints,
+logs, environments, interpreters and other projects were retained. No other job was
+stopped. This is not completion of challenge-data deletion or confirmation.
+
+The first environment smoke command omitted an executable after uv run and failed
+on syntax; its corrected version imported Torch 2.11.0+cu126, NumPy 2.4.3 and
+PyArrow 25.0.1 successfully. Optical terminal receipts remain present. Plan/apply and
+smoke receipts are in `results/feat009/dgx-cleanup-v37-*`; public summary is
+`notes/track2-dgx-cleanup-v37.md`. An initial broad local inventory remains ignored;
+unrelated process metadata was not published.
+
+### Verification and delivery
+
+Commands completed:
+
+```bash
+uv run --no-project python scripts/audit_track2_demo_v37.py
+uv run --script scripts/audit_track2_exports_v37.py
+uv run --no-project python scripts/audit_track2_public_v37.py --output notes/track2-public-review-v37.json
+uv run --no-project python scripts/audit_track2_harness.py --output results/feat009/v37-combined-isolation-20261019.json
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+uv run --no-project python scripts/track2_release_v36.py verify results/feat009/jvv7_track2_research_v36
+uv run --no-project python scripts/track2_release_v37.py build results/feat009/jvv7_track2_research_v37
+uv run --no-project python scripts/track2_bundle_v37.py build
+uv run python scripts/check_publication_remote.py --output results/feat009/v37-live-publication-check-20261019.json
+```
+
+The full regression reports **Ran 1062 tests in 31.531s; OK (skipped=14)** in
+`logs/track2-v37-full-tests.log`; targeted v37 tests also pass. Public-only full
+presentation and combined-harness copies pass without subject files, credentials,
+network, project environment or history. The live publication guard confirms PUBLIC
+visibility, all 13 retired objects unavailable, a working reachable-object control
+and zero unknown errors. No visibility change or new purge request occurred.
+
+The first v37 candidate snapshot contained 219 files and bound 864 inputs;
+all historical snapshots through v36 are preserved. The recording-materials ZIP
+contains 112 files, 2,706,342 bytes, SHA-256 `421baf8c0222b55010f2060823dfa2bb50479ece82c98e1efa92729c5419f684`.
+The nine-file compact community kit is 20,774 bytes, SHA-256
+`da6184b96052b93b224d3d5879afa3bb45b2546fa67ad796257434d177986aa4`. Both retain false clinical/delivery flags.
+
+A visual-contact-sheet helper initially attempted unpinned dependencies in the project
+environment and was terminated before use; the corrected isolated command pinned
+PyMuPDF 1.26.4/Pillow 11.3.0. No result was taken from the failed attempt. The final
+artifact reviews use those pinned tools and locally rendered browser output.
+
+Remaining work is explicit in session-handoff.md: owner recording and measured
+runtime, hosting/public access, provider/distribution questions, live identity/quota
+checks and eventual exact-byte receipt. Scientific advancement requires appropriate
+biological qualification and joint treatment. These gaps do not become complete
+because presentation and implementation checks pass.
+
+Final review found one future-release integrity issue: the teaching audit had bound
+the mutable current isolation helper. It now uses the frozen v37 public helper, with
+a regression excluding mutable routing files. The first candidate snapshot, ZIP,
+audits and affected code are preserved under
+`results/feat009/v37-candidate-before-versioned-isolation/`. They are superseded
+by the final candidate, without changing any v36-or-earlier bound input or the demo's
+scientific policy, HTML, kit bytes or browser behavior. The small-kit isolation
+replay, combined isolated check and full regression were rerun for this correction.
+
+Final regression: **Ran 1063 tests in 30.110s; OK (skipped=14)**
+(`logs/track2-v37-final-full-tests.log`). Final snapshot: 219 files /
+864 bound inputs. Final recording ZIP: 112 files / 2,706,489 bytes,
+SHA-256 `fe892e0e401a9a101e31e69692627c8e19825cb3e61def17c312ea605578e8bb`.
+
+The core Track 1 submission self-check and historical Track 2 evidence check also
+pass; the latter reports 53 sources/12 candidates and is not the current drug-priority
+ledger. Its 63 dedicated tests pass. A staged disclosure audit checked 943 unique
+blobs with no findings; the commit hook rechecks the final index.
+
+Fresh no-argument `./init.sh` completed successfully from a fresh shell. Selected
+verbatim output from `logs/track2-v37-final-init.log`:
+
+```text
+=== 1. uv environment ===
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+=== OK ===
+```
+
+All intended repository changes are staged for the session commit and delivery to
+the configured origin. Feature 009 remains in progress; recording/hosting, provider/
+distribution and biological/delivery gates remain as recorded in the handoff.

@@ -1,0 +1,629 @@
+{
+  "schema_version": 37,
+  "passed": true,
+  "public_input_sha256": {
+    "notes/track2-community-kit-v37.md": "99d9efaaeb6ad185674abbb94eeb08c15784477ee1c76ba8d7ed0962aa3fdab3",
+    "notes/track2-decision-contract-v21.json": "9bc02e7d3ff69dd478984d4f8bd3df883abb707da94fa9783403f8cf67182826",
+    "notes/track2-demo-cases-v37.json": "809d11d70c6408cf201162a32d943dcfa4d8f50a70bdadd444eedd2db5134e83",
+    "notes/track2-demo-template-v37.html": "45d5b601e168a799b26ce2b750abfd5a1d30f79bb3d5dd189dbb384d6ecc3956",
+    "notes/track2-demo-v37.html": "77d49e26f44235b262f4884a0177ff3b0039683cc24160e104cc730272a0e20c",
+    "notes/track2-pitch-v37.md": "f18dc1521febc52102bf54979ea4449d9a58bb6ef399e0b9e132aafb849b0733",
+    "notes/track2-teleprompter-v37.html": "4ee4d5cf9f3ce9866e6e151baf5e920b9a4379fc40bd794ece7aa59dc56599db",
+    "scripts/audit_track2_demo_v37.py": "33c6bd3e4a3e3e03492084b9046de205eeb96d29841ea9ea5391332f6be3df3a",
+    "scripts/audit_track2_public_v37.py": "ee1051192f952bf65f712fd1656ec0106338d475dc679daf1d5fc6002cabc161",
+    "scripts/build_track2_demo_v37.py": "6e41ece4099ebdb36e44bc9dfc706613b12876b64c56a0a933bb98f8c80a3171",
+    "scripts/build_track2_recording_v37.py": "427baec29862e8b7febd35f567930fe8c74f916c006dfd7f42fec3573765a162",
+    "scripts/review_track2_interactive_v37.mjs": "c3ae31a76c49ac630864b65adcf1f953c36aa8386843de185c5b4e1eb0f9bcc2",
+    "scripts/test_track2_demo_v37.py": "5f14da7876ee8f99f55047a8d2f8fe20203a9c23d8699f501f92e1fc77b33045",
+    "scripts/track2_community_kit_v37.py": "75c80957a8b45e79805b0b8bbc76c010773c6f6c60c0b6ef91afcef3e8d1486b",
+    "scripts/track2_demo_v37.js": "e395184b19c8937c5c071e7c265a783f47f179a044b04b4b85eb66da936de767",
+    "scripts/track2_demo_v37.py": "b9b7cb1351cd4dc3c77935e63de321143c51d7b541c4f9e72d8b712b0182533b",
+    "scripts/track2_falsification_v21.py": "47f8540cb4ac4eb0de674e34b43d875f86ebee82effa8b69170e4752e931ed7a"
+  },
+  "implementation_tests": {
+    "passed": true,
+    "tests": 6,
+    "valid_python_javascript_agreements": 83,
+    "invalid_records_rejected_by_both": 12
+  },
+  "browser_checks": {
+    "demo": {
+      "passed": true,
+      "kind": "demo",
+      "source_sha256": "77d49e26f44235b262f4884a0177ff3b0039683cc24160e104cc730272a0e20c",
+      "renderer_sha256": "c3ae31a76c49ac630864b65adcf1f953c36aa8386843de185c5b4e1eb0f9bcc2",
+      "checks": {
+        "current": {
+          "decision": "HOLD",
+          "cells": 200,
+          "cases": 18
+        },
+        "cases": [
+          {
+            "id": "current",
+            "decision": "HOLD",
+            "expected": "HOLD"
+          },
+          {
+            "id": "all-pass",
+            "decision": "PRECLINICAL_REVIEW_ONLY",
+            "expected": "PRECLINICAL_REVIEW_ONLY"
+          },
+          {
+            "id": "injury",
+            "decision": "STOP_SAFETY_REVIEW",
+            "expected": "STOP_SAFETY_REVIEW"
+          },
+          {
+            "id": "uncertain-safety",
+            "decision": "HOLD",
+            "expected": "HOLD"
+          },
+          {
+            "id": "futility",
+            "decision": "STOP_TESTED_BENEFIT",
+            "expected": "STOP_TESTED_BENEFIT"
+          },
+          {
+            "id": "imprecision",
+            "decision": "HOLD",
+            "expected": "HOLD"
+          },
+          {
+            "id": "invalid",
+            "decision": "INVALID_HOLD",
+            "expected": "INVALID_HOLD"
+          },
+          {
+            "id": "posthoc",
+            "decision": "INVALID_HOLD",
+            "expected": "INVALID_HOLD"
+          },
+          {
+            "id": "scope",
+            "decision": "HOLD",
+            "expected": "HOLD"
+          },
+          {
+            "id": "branch",
+            "decision": "STOP_BRANCH",
+            "expected": "STOP_BRANCH"
+          },
+          {
+            "id": "separate",
+            "decision": "HOLD",
+            "expected": "HOLD"
+          },
+          {
+            "id": "exposure",
+            "decision": "HOLD",
+            "expected": "HOLD"
+          },
+          {
+            "id": "units",
+            "decision": "HOLD",
+            "expected": "HOLD"
+          },
+          {
+            "id": "missing",
+            "decision": "HOLD",
+            "expected": "HOLD"
+          },
+          {
+            "id": "margin",
+            "decision": "HOLD",
+            "expected": "HOLD"
+          },
+          {
+            "id": "trigger",
+            "decision": "STOP_SAFETY_REVIEW",
+            "expected": "STOP_SAFETY_REVIEW"
+          },
+          {
+            "id": "benefit-boundary",
+            "decision": "HOLD",
+            "expected": "HOLD"
+          },
+          {
+            "id": "injury-boundary",
+            "decision": "HOLD",
+            "expected": "HOLD"
+          }
+        ],
+        "reset": true,
+        "download": {
+          "notice": "Author-designed educational cases, not clinical or external validation. Values and margins are arbitrary.",
+          "case_id": "current",
+          "record": {
+            "schema_version": 21,
+            "scope": "qualified_non_cancer_model",
+            "gates": {
+              "assay_valid": "unknown",
+              "model_qualified": "unknown",
+              "branch_eligible": "unknown",
+              "plan_locked": "unknown",
+              "compound_identity": "unknown",
+              "joint_drug_deficit": "unknown",
+              "randomized_blinded": "unknown",
+              "experimental_units_valid": "unknown",
+              "all_enrolled_accounted": "unknown",
+              "independent_confirmation": "unknown",
+              "exposure_bridge": "unknown",
+              "mechanism_interpretable": "unknown",
+              "scope_qualified": "unknown"
+            },
+            "benefit": {
+              "unit": "prospectively qualified functional units",
+              "interval": null,
+              "margin": null
+            },
+            "harms": {
+              "division_capacity": {
+                "unit": "prospectively qualified injury units",
+                "interval": null,
+                "margin": null
+              },
+              "chromosome_fidelity": {
+                "unit": "prospectively qualified injury units",
+                "interval": null,
+                "margin": null
+              },
+              "viability": {
+                "unit": "prospectively qualified injury units",
+                "interval": null,
+                "margin": null
+              },
+              "regeneration": {
+                "unit": "prospectively qualified injury units",
+                "interval": null,
+                "margin": null
+              },
+              "recovery": {
+                "unit": "prospectively qualified injury units",
+                "interval": null,
+                "margin": null
+              }
+            },
+            "safety_stop_observed": null,
+            "evidence_kind": "not_measured"
+          },
+          "decision": {
+            "clinical_recommendation": false,
+            "scope": "qualified_non_cancer_model",
+            "evidence_kind": "not_measured",
+            "decision": "HOLD",
+            "reason": "Prerequisites unresolved or failed; no transfer from another branch"
+          }
+        },
+        "desktop": {
+          "width": 1280,
+          "scrollWidth": 1280,
+          "buttons": [
+            {
+              "text": "Return to current research",
+              "height": 49.890625
+            },
+            {
+              "text": "Download this example and its explanation",
+              "height": 49.890625
+            }
+          ],
+          "labelledControls": true,
+          "networkResources": 0
+        },
+        "mobile": {
+          "width": 390,
+          "scrollWidth": 390,
+          "buttons": [
+            {
+              "text": "Return to current research",
+              "height": 49.890625
+            },
+            {
+              "text": "Download this example and its explanation",
+              "height": 77.78125
+            }
+          ],
+          "labelledControls": true,
+          "networkResources": 0
+        }
+      },
+      "files": {
+        "desktop.png": "4fbb6bdc2fdb6da80a8904f2fb7c259a5580c524c862c1c59de0ee6110c85dcd",
+        "injury-case.png": "5872a957e1b7ba392f4211266e98ea6cfa212fcc515dc436233a2fcb6ccabaf1",
+        "mobile.png": "564a4b416388b53c35a9f43669e8d63f2aaf1c5f45dc218c39a7496ba554b618"
+      },
+      "browser": {
+        "protocolVersion": "1.3",
+        "product": "Chrome/131.0.6778.139",
+        "revision": "@c35bbcbd7c2775a12a3f320e05ac0022939b1a8a",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+        "jsVersion": "13.1.201.16"
+      },
+      "network_blocked": true,
+      "independent_review": false,
+      "formal_accessibility_audit": false,
+      "clinical_validation": false
+    },
+    "prompter": {
+      "passed": true,
+      "kind": "prompter",
+      "source_sha256": "4ee4d5cf9f3ce9866e6e151baf5e920b9a4379fc40bd794ece7aa59dc56599db",
+      "renderer_sha256": "c3ae31a76c49ac630864b65adcf1f953c36aa8386843de185c5b4e1eb0f9bcc2",
+      "checks": {
+        "timing": [
+          {
+            "seconds": 0,
+            "slide": 1
+          },
+          {
+            "seconds": 18,
+            "slide": 2
+          },
+          {
+            "seconds": 40,
+            "slide": 3
+          },
+          {
+            "seconds": 63,
+            "slide": 4
+          },
+          {
+            "seconds": 87,
+            "slide": 5
+          },
+          {
+            "seconds": 106,
+            "slide": 6
+          },
+          {
+            "seconds": 126,
+            "slide": 7
+          },
+          {
+            "seconds": 149,
+            "slide": 8
+          },
+          {
+            "seconds": 168,
+            "slide": 9
+          },
+          {
+            "seconds": 180,
+            "slide": 9
+          }
+        ],
+        "keyboard": {
+          "elapsed": 0.25190000009536745,
+          "running": false,
+          "slide": 1
+        },
+        "desktop": {
+          "width": 1280,
+          "scrollWidth": 1280,
+          "buttons": [
+            {
+              "text": "Start rehearsal",
+              "height": 52.09375
+            },
+            {
+              "text": "Reset",
+              "height": 52.09375
+            },
+            {
+              "text": "Previous cue",
+              "height": 52.09375
+            },
+            {
+              "text": "Next cue",
+              "height": 52.09375
+            }
+          ],
+          "labelledControls": true,
+          "networkResources": 0
+        },
+        "mobile": {
+          "width": 390,
+          "scrollWidth": 390,
+          "buttons": [
+            {
+              "text": "Start rehearsal",
+              "height": 48
+            },
+            {
+              "text": "Reset",
+              "height": 48
+            },
+            {
+              "text": "Previous cue",
+              "height": 48
+            },
+            {
+              "text": "Next cue",
+              "height": 48
+            }
+          ],
+          "labelledControls": true,
+          "networkResources": 0
+        }
+      },
+      "files": {
+        "desktop.png": "0a6943d5ac39a8f7b4a86f2ce37cfe437c3bcf655eb4bb4bf6c401b704d7e0ca",
+        "mobile.png": "18daa8959e495cb650b995543d9e318bf9b4293056eb09143a9afa334ba8d244"
+      },
+      "browser": {
+        "protocolVersion": "1.3",
+        "product": "Chrome/131.0.6778.139",
+        "revision": "@c35bbcbd7c2775a12a3f320e05ac0022939b1a8a",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+        "jsVersion": "13.1.201.16"
+      },
+      "network_blocked": true,
+      "independent_review": false,
+      "formal_accessibility_audit": false,
+      "clinical_validation": false
+    }
+  },
+  "community_kit": {
+    "receipt": {
+      "verified": true,
+      "files": 9,
+      "bytes": 20774,
+      "sha256": "da6184b96052b93b224d3d5879afa3bb45b2546fa67ad796257434d177986aa4",
+      "path": "results/feat009/jvv7_track2_community_kit_v37.zip",
+      "clinical_validation": false
+    },
+    "isolated_replay": {
+      "passed": true,
+      "review": {
+        "passed": true,
+        "version": 37,
+        "cases": 18,
+        "synthetic_cases": 17,
+        "current_decision": "HOLD",
+        "rows": [
+          {
+            "id": "current",
+            "expected": "HOLD",
+            "decision": "HOLD",
+            "reason": "Prerequisites unresolved or failed; no transfer from another branch",
+            "evidence_kind": "not_measured",
+            "benefit_only_advance": false,
+            "benefit_and_viability_advance": false,
+            "full_policy_advance": false
+          },
+          {
+            "id": "all-pass",
+            "expected": "PRECLINICAL_REVIEW_ONLY",
+            "decision": "PRECLINICAL_REVIEW_ONLY",
+            "reason": "All scoped criteria met; specialist review and additional scope qualification remain",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": true,
+            "benefit_and_viability_advance": true,
+            "full_policy_advance": true
+          },
+          {
+            "id": "injury",
+            "expected": "STOP_SAFETY_REVIEW",
+            "decision": "STOP_SAFETY_REVIEW",
+            "reason": "Injury exceeds its prespecified bound in the tested context",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": true,
+            "benefit_and_viability_advance": true,
+            "full_policy_advance": false
+          },
+          {
+            "id": "uncertain-safety",
+            "expected": "HOLD",
+            "decision": "HOLD",
+            "reason": "Insufficient precision for benefit or noninferiority; nonsignificance is not safety",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": true,
+            "benefit_and_viability_advance": false,
+            "full_policy_advance": false
+          },
+          {
+            "id": "futility",
+            "expected": "STOP_TESTED_BENEFIT",
+            "decision": "STOP_TESTED_BENEFIT",
+            "reason": "Interval excludes the prespecified meaningful benefit; not universal inefficacy",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": false,
+            "benefit_and_viability_advance": false,
+            "full_policy_advance": false
+          },
+          {
+            "id": "imprecision",
+            "expected": "HOLD",
+            "decision": "HOLD",
+            "reason": "Insufficient precision for benefit or noninferiority; nonsignificance is not safety",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": false,
+            "benefit_and_viability_advance": false,
+            "full_policy_advance": false
+          },
+          {
+            "id": "invalid",
+            "expected": "INVALID_HOLD",
+            "decision": "INVALID_HOLD",
+            "reason": "Failed assay/control cannot refute a biological hypothesis",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": false,
+            "benefit_and_viability_advance": false,
+            "full_policy_advance": false
+          },
+          {
+            "id": "posthoc",
+            "expected": "INVALID_HOLD",
+            "decision": "INVALID_HOLD",
+            "reason": "Post-hoc changes cannot serve as locked confirmation",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": true,
+            "benefit_and_viability_advance": true,
+            "full_policy_advance": false
+          },
+          {
+            "id": "scope",
+            "expected": "HOLD",
+            "decision": "HOLD",
+            "reason": "Prerequisites unresolved or failed; no transfer from another branch",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": true,
+            "benefit_and_viability_advance": true,
+            "full_policy_advance": false
+          },
+          {
+            "id": "branch",
+            "expected": "STOP_BRANCH",
+            "decision": "STOP_BRANCH",
+            "reason": "Qualified test rejects this model/branch prerequisite only",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": true,
+            "benefit_and_viability_advance": true,
+            "full_policy_advance": false
+          },
+          {
+            "id": "separate",
+            "expected": "HOLD",
+            "decision": "HOLD",
+            "reason": "Prerequisites unresolved or failed; no transfer from another branch",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": true,
+            "benefit_and_viability_advance": true,
+            "full_policy_advance": false
+          },
+          {
+            "id": "exposure",
+            "expected": "HOLD",
+            "decision": "HOLD",
+            "reason": "Prerequisites unresolved or failed; no transfer from another branch",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": true,
+            "benefit_and_viability_advance": true,
+            "full_policy_advance": false
+          },
+          {
+            "id": "units",
+            "expected": "HOLD",
+            "decision": "HOLD",
+            "reason": "Prerequisites unresolved or failed; no transfer from another branch",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": true,
+            "benefit_and_viability_advance": true,
+            "full_policy_advance": false
+          },
+          {
+            "id": "missing",
+            "expected": "HOLD",
+            "decision": "HOLD",
+            "reason": "Prerequisites unresolved or failed; no transfer from another branch",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": true,
+            "benefit_and_viability_advance": true,
+            "full_policy_advance": false
+          },
+          {
+            "id": "margin",
+            "expected": "HOLD",
+            "decision": "HOLD",
+            "reason": "Measurements or independently justified margins missing",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": false,
+            "benefit_and_viability_advance": false,
+            "full_policy_advance": false
+          },
+          {
+            "id": "trigger",
+            "expected": "STOP_SAFETY_REVIEW",
+            "decision": "STOP_SAFETY_REVIEW",
+            "reason": "Observed safety trigger; attribution requires review",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": true,
+            "benefit_and_viability_advance": true,
+            "full_policy_advance": false
+          },
+          {
+            "id": "benefit-boundary",
+            "expected": "HOLD",
+            "decision": "HOLD",
+            "reason": "Insufficient precision for benefit or noninferiority; nonsignificance is not safety",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": false,
+            "benefit_and_viability_advance": false,
+            "full_policy_advance": false
+          },
+          {
+            "id": "injury-boundary",
+            "expected": "HOLD",
+            "decision": "HOLD",
+            "reason": "Insufficient precision for benefit or noninferiority; nonsignificance is not safety",
+            "evidence_kind": "synthetic",
+            "benefit_only_advance": true,
+            "benefit_and_viability_advance": false,
+            "full_policy_advance": false
+          }
+        ],
+        "outcomes": {
+          "vehicle": {
+            "enrolled": 100,
+            "completed_divisions": 80,
+            "error_fraction": 0.25,
+            "observed_useful_fraction": 0.6,
+            "missingness_bounds": [
+              0.6,
+              0.65
+            ],
+            "confidence_interval": false
+          },
+          "drug": {
+            "enrolled": 100,
+            "completed_divisions": 45,
+            "error_fraction": 0.1111111111111111,
+            "observed_useful_fraction": 0.4,
+            "missingness_bounds": [
+              0.4,
+              0.5
+            ],
+            "confidence_interval": false
+          }
+        },
+        "observed_useful_difference": -0.19999999999999996,
+        "missingness_difference_bounds": [
+          -0.25,
+          -0.09999999999999998
+        ],
+        "missingness_bounds_are_confidence_intervals": false,
+        "shortcut_advances_rejected_by_policy": {
+          "benefit_only_advance": 11,
+          "benefit_and_viability_advance": 9
+        },
+        "case_sha256": "809d11d70c6408cf201162a32d943dcfa4d8f50a70bdadd444eedd2db5134e83",
+        "current_sha256": "9bc02e7d3ff69dd478984d4f8bd3df883abb707da94fa9783403f8cf67182826",
+        "seconds": 0.0027195927686989307,
+        "clinical_validation": false,
+        "external_validation": false,
+        "community_adoption_measured": false,
+        "scope": "Implementation checks on author-selected teaching cases; no diagnostic or therapeutic performance claim"
+      },
+      "seconds": 0.06100434297695756,
+      "blocked_probes": [
+        "network",
+        "process",
+        "protected_path",
+        "credentials",
+        "external_path",
+        "write"
+      ],
+      "network_forbidden_by_audit_hook": true,
+      "protected_paths_forbidden_by_audit_hook": true,
+      "project_environment_used": false,
+      "source_checkout_or_history_used": false
+    }
+  },
+  "case_selection": "Author-designed teaching cases, not representative or held-out clinical validation",
+  "independent_review": false,
+  "clinical_validation": false,
+  "external_adoption_measured": false,
+  "policy_validity_established": false,
+  "recording_created": false
+}

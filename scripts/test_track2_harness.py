@@ -41,6 +41,12 @@ class CurrentStateTests(unittest.TestCase):
             with self.subTest(key=key),self.assertRaisesRegex(ValueError,'completed optical addendum'):
                 harness.validate(state,self.features,self.documents)
 
+    def test_new_reviewer_and_recording_routes_are_required(self):
+        for field in ['interactive_demo','demo_audit','community_kit_guide','lab_handoff','judge_questions','recording_guide','teleprompter']:
+            state=deepcopy(self.state);state['artifacts'].pop(field)
+            with self.subTest(field=field),self.assertRaisesRegex(ValueError,'artifact paths'):
+                harness.validate(state,self.features,self.documents)
+
     def test_mixed_and_unsafe_paths_rejected(self):
         for value in ['notes/track2-pitch-v13.md','../outside.md','data/subject.vcf']:
             state=deepcopy(self.state);state['artifacts']['pitch']=value
@@ -110,15 +116,15 @@ class CurrentStateTests(unittest.TestCase):
                 harness.validate(state,self.features,self.documents)
 
     def test_integrated_versions_preserve_research_version(self):
-        self.assertEqual(self.state['presentation_version'],36)
-        self.assertEqual(self.state['harness_version'],36)
+        self.assertEqual(self.state['presentation_version'],37)
+        self.assertEqual(self.state['harness_version'],37)
         self.assertEqual(self.state['research_addendum']['version'],19)
         self.state['harness_review']='notes/track2-harness-review-v18.md'
         with self.assertRaisesRegex(ValueError,'Stale harness'):
             harness.validate(self.state,self.features,self.documents)
 
     def test_correct_independent_version_labels_accepted(self):
-        self.documents['README.md']+='\nUse the current v36 harness and current v19 addendum with the current v36 presentation and current v21 ledger.'
+        self.documents['README.md']+='\nUse the current v37 harness and current v19 addendum with the current v37 presentation and current v21 ledger.'
         harness.validate(self.state,self.features,self.documents)
 
     def test_crispr_addendum_cannot_disappear_or_promote_guides(self):

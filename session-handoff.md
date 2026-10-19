@@ -1,14 +1,24 @@
-# Session handoff: completed optical research and integrated v36 materials
+# Session handoff: completed optical research and integrated v37 materials
 
 Only **feat-009** remains active, for delivery and unresolved biological qualification.
 The computational research cycle is complete. Use `notes/track2-current.json`,
-`notes/track2-report-v36.md`, `notes/track2-slides-v36.html`,
-`notes/track2-pitch-v36.md` and `notes/track2-transcript-v36.txt`.
+`notes/track2-report-v37.md`, `notes/track2-slides-v37.html`,
+`notes/track2-pitch-v37.md` and `notes/track2-transcript-v37.txt`.
 The combined entry points are `scripts/check_track2_harness.py`,
-`notes/track2-reviewer-guide-v36.md` and `notes/track2-owner-readiness-v36.md`.
+`notes/track2-reviewer-guide-v37.md` and `notes/track2-owner-readiness-v37.md`.
 The original qualification report `notes/track2-transcriptome-v19.md` and all later
 addenda remain preserved; the drug ledger and base decision contract remain v21.
-Do not edit old bound inputs or releases through v34.
+Do not edit old bound inputs or releases through v36.
+
+## New competition and recording work
+
+Official weights are rigor 35%, impact 25%, innovation 25%, scalability 15%.
+Use `notes/track2-competition-plan-v37.md` and `notes/track2-lab-handoff-v37.md`.
+The offline demo and small kit contain 17 synthetic cases plus the actual unmeasured
+HOLD state. Python/JavaScript agreement tests software behavior, not policy validity.
+The owner selected their own voice: `notes/track2-recording-guide-v37.md` and
+`notes/track2-teleprompter-v37.html` provide nine cues across 180 seconds.
+No new hosted model, GPU campaign, wet-lab result, recording or upload was added.
 
 ## Completed research
 
@@ -59,25 +69,30 @@ Local review archive: `results/feat009/optical-v36/optical-v36-review.tar.gz`,
 This contains public review records, code and provenance; source parquet, checkpoints
 and prepared numeric matrices remain remote. Local replay covers twelve paired
 comparisons, 480 evaluated cross-plate metrics and both post-hoc plate-only metrics.
-The remote root and all earlier caches remain in the November 23 deletion scope.
+The remote roots remain in the November 23 deletion scope. At the owner's request,
+four uv installer caches from completed MVA jobs were removed after dependency
+and open-file checks. Approximately 2.5 GiB was removed by uv; 34 GiB of cache
+directory allocation largely shared hard-linked storage with retained environments.
+Results, source data, models, checkpoints and unrelated projects were preserved.
+See `notes/track2-dgx-cleanup-v37.md`; environment imports passed after cleanup.
 
 ## Current materials and checks
 
-V36 has nine slides, eight local SVG figures, a 355-word script/plain transcript,
+V37 has nine slides, eight local SVG figures, a 368-word script/plain transcript,
 nine-page report, eleven-answer official methods workbook and recording-materials
 ZIP. Scientific-slides/frontend-design and humanizer/no-ai-slop informed the revision.
 The full acknowledgement and provider history remain. The script's three-minute
 allocations are not a measured recording. Exact verification/export evidence and
-fresh startup output are in progress.md session 74.
+fresh startup output are in progress.md session 75.
 
 ```bash
 ./init.sh
 uv run --no-project python scripts/check_track2_harness.py
 uv run --no-project python scripts/check_track2_optical_v36.py
-uv run --no-project python scripts/track2_public_review_v36.py
+uv run --no-project python scripts/track2_public_review_v37.py
 uv run python scripts/audit_track2_harness.py
-uv run python scripts/track2_release_v36.py verify results/feat009/jvv7_track2_research_v36
-uv run python scripts/track2_bundle_v36.py verify
+uv run python scripts/track2_release_v37.py verify results/feat009/jvv7_track2_research_v37
+uv run python scripts/track2_bundle_v37.py verify
 ```
 
 Public checks need no subject files, GPU, keys or network. Strict package verification
@@ -88,7 +103,7 @@ do not establish biological validation.
 
 ## Blockers and next actions
 
-- Record, measure and host the three-minute video on YouTube/Vimeo. No recording,
+- Use the own-voice guide and teleprompter; record, measure and host the three-minute video on YouTube/Vimeo. No recording,
   measured runtime, hosted URL, Track 2 upload or authenticated receipt exists.
 - Resolve Fireworks/earlier alignment-service handling and linked AF3/non-AVI Atlas
   versus challenge CC BY distribution scope. OpenAI no-training is an owner attestation.
@@ -104,10 +119,10 @@ do not establish biological validation.
 - Preserve submitted Track 1 v4. Owner-reported 100/F-max 1 is separate from the
   missing receipt/byte audit; do not request another upload.
 - Official October 19 refresh: seven files at
-  `60e1c30e337ce6fe01813040dbe49979eb8c50aa`, 29 threads / 83 visible comments;
-  four changed/new comments reread. No live account/quota/receipt audit was performed.
+  `60e1c30e337ce6fe01813040dbe49979eb8c50aa`, 30 threads / 84 visible comments;
+  one new participant comment read; unchanged text retains earlier review. No live account/quota/receipt audit was performed.
   Submit by **October 24, 23:59 UTC**. Delete and confirm to **cnb@sagebase.org by
-  November 23** under `notes/deletion-plan-v2.md`. Feat-010 is not started; no deletion
+  November 23** under `notes/deletion-plan-v2.md`. Feat-010 is not started; no challenge-data deletion
   or email occurred. Winners are announced December 18.
 
 The Anthropic toolkit already executed substantial ProteinMPNN work in v29; failed

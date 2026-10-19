@@ -1,0 +1,298 @@
+{
+  "version": 37,
+  "purpose": "Author-designed educational cases, not clinical or external validation. Values and margins are arbitrary.",
+  "selection": "Deliberately selected failure modes and boundary cases, not a representative sample or held-out benchmark.",
+  "base_synthetic_record": {
+    "schema_version": 21,
+    "scope": "qualified_non_cancer_model",
+    "evidence_kind": "synthetic",
+    "gates": {
+      "assay_valid": "pass",
+      "model_qualified": "pass",
+      "branch_eligible": "pass",
+      "plan_locked": "pass",
+      "compound_identity": "pass",
+      "joint_drug_deficit": "pass",
+      "randomized_blinded": "pass",
+      "experimental_units_valid": "pass",
+      "all_enrolled_accounted": "pass",
+      "independent_confirmation": "pass",
+      "exposure_bridge": "pass",
+      "mechanism_interpretable": "pass",
+      "scope_qualified": "pass"
+    },
+    "benefit": {
+      "unit": "invented teaching units",
+      "interval": [
+        3,
+        5
+      ],
+      "margin": 2
+    },
+    "harms": {
+      "division_capacity": {
+        "unit": "invented teaching units",
+        "interval": [
+          -1,
+          1
+        ],
+        "margin": 2
+      },
+      "chromosome_fidelity": {
+        "unit": "invented teaching units",
+        "interval": [
+          -1,
+          1
+        ],
+        "margin": 2
+      },
+      "viability": {
+        "unit": "invented teaching units",
+        "interval": [
+          -1,
+          1
+        ],
+        "margin": 2
+      },
+      "regeneration": {
+        "unit": "invented teaching units",
+        "interval": [
+          -1,
+          1
+        ],
+        "margin": 2
+      },
+      "recovery": {
+        "unit": "invented teaching units",
+        "interval": [
+          -1,
+          1
+        ],
+        "margin": 2
+      }
+    },
+    "safety_stop_observed": false
+  },
+  "cases": [
+    {
+      "id": "current",
+      "title": "Current research: evidence is not measured",
+      "patch": {},
+      "expected": "HOLD",
+      "explanation": "The current MVA proposal has no biological measurements or justified margins.",
+      "evidence": "current"
+    },
+    {
+      "id": "all-pass",
+      "title": "All scoped requirements met",
+      "patch": {},
+      "expected": "PRECLINICAL_REVIEW_ONLY",
+      "explanation": "Even this invented all-pass example permits further preclinical review only.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "injury",
+      "title": "Benefit with unacceptable recovery injury",
+      "patch": {
+        "harms.recovery.interval": [
+          3,
+          4
+        ]
+      },
+      "expected": "STOP_SAFETY_REVIEW",
+      "explanation": "An apparent benefit cannot compensate for a valid injury signal.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "uncertain-safety",
+      "title": "Nonsignificant injury is not proven safe",
+      "patch": {
+        "harms.viability.interval": [
+          -3,
+          4
+        ]
+      },
+      "expected": "HOLD",
+      "explanation": "The injury interval includes unacceptable harm even though it crosses zero.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "futility",
+      "title": "Meaningful benefit excluded",
+      "patch": {
+        "benefit.interval": [
+          -1,
+          1
+        ]
+      },
+      "expected": "STOP_TESTED_BENEFIT",
+      "explanation": "A valid interval excludes the chosen target in this context; this is not universal inefficacy.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "imprecision",
+      "title": "Benefit is too imprecise",
+      "patch": {
+        "benefit.interval": [
+          -1,
+          5
+        ]
+      },
+      "expected": "HOLD",
+      "explanation": "The interval spans the target. This is inconclusive, not evidence that the drug cannot work.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "invalid",
+      "title": "Failed assay with an unfavorable result",
+      "patch": {
+        "gates.assay_valid": "fail",
+        "benefit.interval": [
+          -5,
+          -3
+        ]
+      },
+      "expected": "INVALID_HOLD",
+      "explanation": "A failed control prevents a biological conclusion from this assay.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "posthoc",
+      "title": "Confirmation plan changed after results",
+      "patch": {
+        "gates.plan_locked": "fail"
+      },
+      "expected": "INVALID_HOLD",
+      "explanation": "An exploratory result cannot silently become locked confirmation.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "scope",
+      "title": "Unqualified tissue context",
+      "patch": {
+        "gates.scope_qualified": "fail"
+      },
+      "expected": "HOLD",
+      "explanation": "Evidence from one tissue cannot automatically qualify a different tissue.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "branch",
+      "title": "The tested mechanism prerequisite fails",
+      "patch": {
+        "gates.branch_eligible": "fail"
+      },
+      "expected": "STOP_BRANCH",
+      "explanation": "Stop this mechanistic branch; do not infer that every alternative mechanism fails.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "separate",
+      "title": "Drug and genetic deficit measured separately",
+      "patch": {
+        "gates.joint_drug_deficit": "unknown"
+      },
+      "expected": "HOLD",
+      "explanation": "Separate profiles cannot show a drug effect inside deficient cells.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "exposure",
+      "title": "Exposure bridge missing",
+      "patch": {
+        "gates.exposure_bridge": "unknown"
+      },
+      "expected": "HOLD",
+      "explanation": "Nominal culture concentration cannot establish unbound tissue exposure.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "units",
+      "title": "Cells counted as independent cultures",
+      "patch": {
+        "gates.experimental_units_valid": "fail"
+      },
+      "expected": "HOLD",
+      "explanation": "Nested cells do not supply independently treated biological replicates.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "missing",
+      "title": "Only surviving cells counted",
+      "patch": {
+        "gates.all_enrolled_accounted": "unknown"
+      },
+      "expected": "HOLD",
+      "explanation": "Unknown fate of enrolled cells can hide harm or failed divisions.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "margin",
+      "title": "Benefit margin not justified",
+      "patch": {
+        "benefit.margin": null
+      },
+      "expected": "HOLD",
+      "explanation": "An invented or absent benefit threshold cannot qualify a biological result.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "trigger",
+      "title": "Observed safety trigger before attribution",
+      "patch": {
+        "gates.assay_valid": "unknown",
+        "safety_stop_observed": true
+      },
+      "expected": "STOP_SAFETY_REVIEW",
+      "explanation": "Stop advancement for safety review while attribution remains unresolved.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "benefit-boundary",
+      "title": "Benefit interval touches the target",
+      "patch": {
+        "benefit.interval": [
+          2,
+          5
+        ]
+      },
+      "expected": "HOLD",
+      "explanation": "The lower bound must exceed the target; equality does not pass.",
+      "evidence": "synthetic"
+    },
+    {
+      "id": "injury-boundary",
+      "title": "Injury interval touches the bound",
+      "patch": {
+        "harms.viability.interval": [
+          -1,
+          2
+        ]
+      },
+      "expected": "HOLD",
+      "explanation": "The upper injury bound must exclude unacceptable harm; equality does not pass.",
+      "evidence": "synthetic"
+    }
+  ],
+  "denominator_example": {
+    "evidence_kind": "synthetic",
+    "vehicle": {
+      "accurate_viable": 60,
+      "erroneous_division": 20,
+      "death": 5,
+      "arrest": 5,
+      "slippage": 5,
+      "missing": 5
+    },
+    "drug": {
+      "accurate_viable": 40,
+      "erroneous_division": 5,
+      "death": 20,
+      "arrest": 15,
+      "slippage": 10,
+      "missing": 10
+    },
+    "enrolled_per_arm": 100,
+    "limit": "Mutually exclusive invented first-window categories; later daughter fate is a separate endpoint. Missingness bounds are not confidence intervals."
+  }
+}

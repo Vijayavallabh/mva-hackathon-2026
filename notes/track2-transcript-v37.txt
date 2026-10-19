@@ -1,0 +1,29 @@
+Track 2 v37 - read-aloud transcript
+Read the paragraphs; headings and times are cues, not narration.
+
+Slide 1 | 0:00-0:18 | A useful outcome
+A drug must improve useful function without worsening chromosome instability. We propose a staged everolimus experiment for BUB1B-associated MVA, with a public tool that explains when evidence is sufficient to continue. This is a research hypothesis; no drug earns rescue priority.
+
+Slide 2 | 0:18-0:40 | Four links in the evidence
+BUBR1 controls chromosome attachment and division. This pair’s phase and endogenous effects remain unresolved. A different mouse model motivates testing excess mTOR activity with impaired function first. Neither branch is established. A flux-based alternative needs its own locked plan. Everolimus does not replace BUBR1.
+
+Slide 3 | 0:40-1:03 | The decisive experiment
+Qualify endogenous models with independent perturbation and restoration. Compare deficit plus everolimus with each alone and corrected controls. Randomize cultures, blind scoring and confirm independently. Measure useful function, fidelity, injury and recovery together. A validated assay could also improve mechanistic characterization of other BUB1B variants.
+
+Slide 4 | 1:03-1:27 | Demonstrate the hidden failure
+This example is synthetic. Errors fall from twenty-five to eleven percent, but accurate viable output drops from sixty to forty per hundred enrolled cells. Even favorable missing-observation assignments cannot reverse the decline. Track every cell and later daughter fate; early relative sensitivity can reverse.
+
+Slide 5 | 1:27-1:46 | Evidence against the hypothesis
+ProteinMPNN failed expanded functional controls. Repeatable RPE1 expression was weakly specific. Separate drug profiles cannot establish rescue. Sirolimus plus exercise did not establish functional benefit in forty older adults. These findings require direct function measurements, rather than assuming a biomarker improvement is useful.
+
+Slide 6 | 1:46-2:06 | What imaging contributes
+Simple public HeLa profiles place BUB1B among the top three genes for all four interphase guides. One guide varies by method and plate. Neural models miss the required gain, and mitotic coverage is insufficient. This is an assay-development lead, not established non-cancer rescue.
+
+Slide 7 | 2:06-2:29 | Demonstrate the decision tool
+Our offline demo explains eighteen evidence cases. Invalid assays hold inference; imprecision holds advancement. Injury stops advancement despite apparent benefit. Whole blood is not free tissue: clinical exposure remains unknown. Passing everything permits preclinical review only. No wet-lab experiment has been performed.
+
+Slide 8 | 2:29-2:48 | Impact and community use
+Other teams can inspect the examples and replay the rules without subject files or GPUs. New tissues need fresh qualification. The first proposed work uses engineered models, without requesting another family sample. HCQ remains reserve. The contribution is a testable experiment and reusable review tool.
+
+Slide 9 | 2:48-3:00 | Acknowledgement
+We thank the child and family and the organizers. The complete acknowledgement is displayed. Our next decisive step is biological validation.

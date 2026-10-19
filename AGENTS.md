@@ -84,7 +84,7 @@ This is a continuing objective, not a one-time review. Preserve immutable snapsh
 
 Owner competition priority, 19 October 2026: focus work and presentation on the
 35/25/25/15 panel rubric and the Innovation Prize criteria. Use
-`notes/track2-competition-strategy-v36.md` and the reviewer brief. Track 1 recognition
+`notes/track2-competition-strategy-v37.md` and the reviewer brief. Track 1 recognition
 is separate from Track 2 judging; model scale and computation counts do not establish
 impact. Optimize the supported mechanism, decisive experiment, reusable contribution
 and timely delivery. Do not infer efficacy, eligibility or awards.
@@ -93,12 +93,20 @@ and timely delivery. Do not infer efficacy, eligibility or awards.
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the artifact record and [session-handoff.md](session-handoff.md) for next steps.
-Session 74 updates **presentation and harness v36** with the completed optical
-comparison, nine slides, 355-word narration, concise nine-page report, transcript,
-provider disclosure and methods workbook. Use `notes/track2-current.json`,
-`scripts/check_track2_harness.py`, `notes/track2-reviewer-guide-v36.md` and
-`notes/track2-owner-readiness-v36.md`. All earlier bound inputs and releases through
-v34 remain frozen. The drug ledger and base validation remain v21.
+Session 75 updates **presentation and harness v37** around the official 35/25/25/15
+rubric. It adds a staged laboratory handoff, 18-case offline teaching demo, small
+community kit, reviewer questions and the owner-selected own-voice recording guide
+and teleprompter. Nine slides, 368 narration words, a nine-page report, transcript,
+provider disclosure and methods workbook retain the completed optical evidence. Use `notes/track2-current.json`,
+`scripts/check_track2_harness.py`, `notes/track2-reviewer-guide-v37.md` and
+`notes/track2-owner-readiness-v37.md`. All earlier bound inputs and releases through
+v36 remain frozen. The drug ledger and base validation remain v21.
+
+Four completed MVA uv installer caches were cleaned at the owner's request.
+See `notes/track2-dgx-cleanup-v37.md`: about 2.5 GiB was removed by uv, while
+most cache links shared retained environment storage. Scientific inputs, outputs,
+weights, checkpoints and other projects were preserved. This is not completion of
+the November 23 challenge-data deletion requirement.
 
 The public optical work is complete under
 `/home/prachh/v/mva-track2-optical-20261019-v33`. Read `notes/track2-optical-v36.md`
@@ -123,8 +131,8 @@ HeLa is transformed and p53-defective. No protected subject data was transferred
 No model result promotes drug efficacy, phase or clinical exposure.
 
 The October 19 refresh covers seven files at revision
-60e1c30e337ce6fe01813040dbe49979eb8c50aa and 29 public threads/83 visible comments.
-Four changed/new comments were reread. Submission remains October 24; delete and
+60e1c30e337ce6fe01813040dbe49979eb8c50aa and 30 public threads/84 visible comments.
+The new participant question in thread 31 was read; it has no organizer reply. Submission remains October 24; delete and
 confirm to cnb@sagebase.org by November 23. `notes/deletion-plan-v2.md` supersedes
 historical dates without changing old snapshot bytes. No email or upload occurred.
 
@@ -277,16 +285,16 @@ participated. Delivery, provider and distribution flags remain unresolved.
   Record the complete acknowledgement inside the three-minute video. Preserve the
   Track 1 submitted v4, every earlier Track 2 bound input/package, the fixed v19 campaign and v1-v21 releases.
 
-Use `scripts/track2_release_v36.py` to check/build/verify **new** v36 research snapshot
-directories. Render with `scripts/render_track2_slides_v36.mjs`; export the report and
-workbook with `scripts/track2_export_documents_v36.py` followed by
-`scripts/render_track2_report_v36.mjs`. Recording materials use
-`scripts/track2_bundle_v36.py`; historical research retains AF3 notices.
-The combined public reviewer checks integrated v36 and frozen v31/v29/v27 research, v25 CRISPR, v23 RNAi, v21 decisions
+Use `scripts/track2_release_v37.py` to check/build/verify **new** v37 research snapshot
+directories. Render with `scripts/render_track2_slides_v37.mjs`; export the report and
+workbook with `scripts/track2_export_documents_v37.py` followed by
+`scripts/render_track2_report_v37.mjs`. Recording materials use
+`scripts/track2_bundle_v37.py`; historical research retains AF3 notices.
+The combined public reviewer checks integrated v37 and frozen v31/v29/v27 research, v25 CRISPR, v23 RNAi, v21 decisions
 and v19 findings. It needs no
 data/results folders, keys, network, GPUs or old
 local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
-The versioned `scripts/track2_public_review_v36.py` checks the integrated presentation
+The versioned `scripts/track2_public_review_v37.py` checks the integrated presentation
 and frozen research; `scripts/check_track2_transcriptome.py` checks v19 alone.
 Its passing result verifies consistency, not biology or eligibility. The stricter
 release verification also requires retained local historical archives.
@@ -318,15 +326,15 @@ uv run --no-project python scripts/check_track2_crispr_v25.py
 uv run --no-project python scripts/check_track2_orthogonal_v29.py
 uv run --no-project python scripts/check_track2_perturbseq_v31.py
 uv run --no-project python scripts/track2_falsification_v21.py
-uv run --no-project python scripts/track2_public_review_v36.py
+uv run --no-project python scripts/track2_public_review_v37.py
 uv run --no-project python scripts/check_track2_optical_v36.py
-uv run python scripts/track2_release_v36.py check
+uv run python scripts/track2_release_v37.py check
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
 `track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
 its old conditional-screen label is not today's drug decision. The current v21
-ledger, v36 report and v19/v23/v25/v27/v29/v31 research take precedence. Historical exact-byte verification remains
+ledger, v37 report and v19/v23/v25/v27/v29/v31 research take precedence. Historical exact-byte verification remains
 available through the versioned release scripts; never resubmit Track 1 to resolve
 its missing administrative receipt.
 
