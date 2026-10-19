@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-10-19T21:52:34Z",
+  "purpose": "Public literature refresh behind Track 2 v41 addendum; no subject data.",
+  "searches": [
+    {
+      "name": "PubMed BUB1B/BUBR1/MVA 2025-2026",
+      "database": "PubMed eSearch/eSummary/eFetch",
+      "found": 141,
+      "returned": 100,
+      "query_receipt": "sources/public-literature-v41/pubmed-mva-bub1b-2025-2026-search.json",
+      "summary_receipt": "sources/public-literature-v41/pubmed-mva-bub1b-2025-2026-summary.json"
+    },
+    {
+      "name": "OpenAlex BUB1B/BUBR1/MVA from 2025",
+      "database": "OpenAlex works search",
+      "found": 206,
+      "returned": 100,
+      "query_receipt": "sources/public-literature-v41/openalex-mva-bub1b-2025-2026-search.json"
+    },
+    {
+      "name": "PubMed mTOR/rapamycin/everolimus + targets",
+      "database": "PubMed",
+      "found": 13,
+      "query_receipt": "sources/public-literature-v41/pubmed-mtor-targets-search.json"
+    },
+    {
+      "name": "PubMed NAD/NMN/SIRT2 + targets",
+      "database": "PubMed",
+      "found": 7,
+      "query_receipt": "sources/public-literature-v41/pubmed-nad-sirt2-targets-search.json"
+    },
+    {
+      "name": "PubMed hTERT-RPE1 + targets",
+      "database": "PubMed",
+      "found": 2,
+      "query_receipt": "sources/public-literature-v41/pubmed-rpe1-targets-search.json"
+    }
+  ],
+  "selected_sources": [
+    {
+      "doi": "10.1002/cbin.70033",
+      "pmid": "40470792",
+      "title": "BUBR1 Facilitated Nerve Regeneration by Modulating STAT3 Phosphorylation, Thereby Alleviating HIE in Neonatal Mice.",
+      "journal": "Cell biology international",
+      "authors": [
+        "Chang S",
+        "Huang W",
+        "Li G",
+        "Zhang M",
+        "Wu X"
+      ],
+      "receipt": "sources/public-literature-v41/pubmed-40470792-efetch.xml",
+      "sha256": "99276281f47817370ad469db565c17c44fbedca5dfe8926129d430f42f1cc4e7"
+    },
+    {
+      "doi": "10.1016/j.ceb.2025.102537",
+      "pmid": "40441073",
+      "title": "Chromosomal instability in development and disease: Beyond cancer evolution.",
+      "journal": "Current opinion in cell biology",
+      "authors": [
+        "Milán M"
+      ],
+      "receipt": "sources/public-literature-v41/pubmed-40441073-efetch.xml",
+      "sha256": "9716bbdecb523c81668ea52c1b1a8e343bb880654a28c2b742f70be1287c8327"
+    },
+    {
+      "doi": "10.1038/s41467-026-70521-0",
+      "pmid": "41820377",
+      "title": "Proteostasis failure and mitochondrial dysfunction contribute to chromosomal instability-induced microcephaly.",
+      "journal": "Nature communications",
+      "authors": [
+        "González-Blanco A",
+        "Acuña-Higaki A",
+        "Boettger D",
+        "Joy J",
+        "Milán M"
+      ],
+      "receipt": "sources/public-literature-v41/pubmed-41820377-efetch.xml",
+      "sha256": "6687bb763e1f5edb53073857cbf9778c094da455ab780f95e89b791c4045455d"
+    },
+    {
+      "doi": "10.1038/s41467-026-77795-4",
+      "pmid": null,
+      "title": "Cep57 organizes pericentriolar material through dual architectural modules and prevents human mosaic variegated aneuploidy",
+      "journal": "Nature Communications",
+      "authors": [
+        "Jong Il Ahn",
+        "Jung-Eun Park",
+        "Hye-Yeoung Yun",
+        "Yan Zeng",
+        "Klara Kirsch",
+        "Vipin Kumar",
+        "Bonsu Ku",
+        "Arlene Bartolome",
+        "Harsha Ravishankar",
+        "Ruchi Bhardwaj",
+        "Rodolfo Ghirlando",
+        "Mahaiwon Shadang",
+        "Mohamadreza Fazel",
+        "David A. Ball",
+        "Jessica Matthias",
+        "Seung Jun Kim",
+        "Neerja Gupta",
+        "Jayanth Kumar Palanichamy",
+        "Tatiana S. Karpova",
+        "Kyung S. Lee"
+      ],
+      "receipt": "sources/public-literature-v41/crossref-cep57-2026.json",
+      "sha256": "559e4f243d89c6098725882c50c2acb3e5a05d6268d39a98c964c8fd9465714f"
+    },
+    {
+      "doi": "10.1038/s42003-026-10384-9",
+      "pmid": "42477419",
+      "title": "BubR1 TPR domain supports the mitotic checkpoint by promoting MCC formation and MCC-APC/C interaction.",
+      "journal": "Communications biology",
+      "authors": [
+        "Zhang M",
+        "Lei T",
+        "Wang Y",
+        "Li M",
+        "Wang Y",
+        "Fang J",
+        "Zhang G"
+      ],
+      "receipt": "sources/public-literature-v41/pubmed-42477419-efetch.xml",
+      "sha256": "4fa1eefa72da7e2e5eb398eddab4d11c170249f9fb96cf6c8d816fce4e7f2e75"
+    },
+    {
+      "doi": "10.1080/01676830.2026.2715719",
+      "pmid": "42595739",
+      "title": "Sequential presentation of Wilms' tumor and orbital rhabdomyosarcoma in a child with mosaic variegated aneuploidy syndrome 3.",
+      "journal": "Orbit (Amsterdam, Netherlands)",
+      "authors": [
+        "Vempuluru VS",
+        "Sanjeev Patne G",
+        "Chattannavar G",
+        "Mishra DK",
+        "Kaliki S"
+      ],
+      "receipt": "sources/public-literature-v41/pubmed-42595739-efetch.xml",
+      "sha256": "b495c6547e61b8221f91e2ee60fb69e3679abcf056d87225fdb4bbec9e5dac5d"
+    },
+    {
+      "doi": "10.1093/humupd/dmag012",
+      "pmid": null,
+      "title": "Maternal genetic variants associated with aneuploid conception: a narrative review",
+      "journal": "Human Reproduction Update",
+      "authors": [
+        "Siyao Ha",
+        "Wenyi Liu",
+        "Ping Yuan",
+        "Shangya Yuan",
+        "Chunwei Cao",
+        "Anming Meng",
+        "Hui Chen"
+      ],
+      "receipt": "sources/public-literature-v41/crossref-maternal-aneuploidy-review-2026.json",
+      "sha256": "2e6dca7a650c674f5ee8bba2a4c093d126caa5cb7f5e08811b39010d7e61c520"
+    },
+    {
+      "doi": "10.1093/nar/gkaf1517",
+      "pmid": "41533580",
+      "title": "Linking kinetochore attachment to checkpoint control: the role of Aurora B in BubR1 acetylation.",
+      "journal": "Nucleic acids research",
+      "authors": [
+        "Choi SY",
+        "Park H",
+        "Kim SS",
+        "Kim H",
+        "Park S",
+        "Lee H"
+      ],
+      "receipt": "sources/public-literature-v41/pubmed-41533580-efetch.xml",
+      "sha256": "9ec75a2c5684b8f7cf529e3d13858ad9742570401d53dfc07f5b85de8da33dad"
+    },
+    {
+      "doi": "10.1111/acel.70160",
+      "pmid": "40607964",
+      "title": "BubR1 Insufficiency Drives Transcriptomic Alterations and Pathology Associated With Cardiac Aging and Heart Failure.",
+      "journal": "Aging cell",
+      "authors": [
+        "Pun R",
+        "Haas AL",
+        "Thapa A",
+        "Takafuji SR",
+        "Suzuki RM",
+        "Kay GF",
+        "Zheng L",
+        "Waknitz M",
+        "Kim MH",
+        "Baker DJ",
+        "van Deursen JM",
+        "Sorgen PL",
+        "Gundry RL",
+        "North BJ"
+      ],
+      "receipt": "sources/public-literature-v41/pubmed-40607964-efetch.xml",
+      "sha256": "ed54de19574af314431ed8bc9a3f45b501e1f1833d8f62266014129de9c57cb9"
+    },
+    {
+      "doi": "10.1126/sciadv.ady6890",
+      "pmid": "40938979",
+      "title": "The BUB1 and BUBR1 paralogs scaffold the kinetochore fibrous corona.",
+      "journal": "Science advances",
+      "authors": [
+        "Cmentowski V",
+        "Musacchio A"
+      ],
+      "receipt": "sources/public-literature-v41/pubmed-40938979-efetch.xml",
+      "sha256": "3ae97271e0b57cb07972f4cefb663e0452629694b870bb755f59e1f2d9f4570c"
+    },
+    {
+      "doi": "10.1136/jmg-2025-111325",
+      "pmid": "41702694",
+      "title": "Mosaic variegated aneuploidy as a novel feature in patients with Mulibrey nanism and TRIM37 variants.",
+      "journal": "Journal of medical genetics",
+      "authors": [
+        "Hakonen AH",
+        "Karlberg S",
+        "Kiiski K",
+        "Lipsanen-Nyman M",
+        "Saloranta C",
+        "Pekkinen M",
+        "Laakso S",
+        "Lehtonen J",
+        "Saarela J",
+        "Anttonen AK",
+        "Jakkula E",
+        "Aittomäki K",
+        "Mäkitie O"
+      ],
+      "receipt": "sources/public-literature-v41/pubmed-41702694-efetch.xml",
+      "sha256": "a1af682fc4c0669c699fec4b6835204548af7c5eeca904ed696ee12f9a409bb3"
+    },
+    {
+      "doi": "10.1158/0008-5472.CAN-26-0874",
+      "pmid": "42757823",
+      "title": "BUB1B Mitotic Kinase Dependency Reveals CENP-E Inhibition as a Tractable Approach for Castration and Enzalutamide Resistant Prostate Cancer.",
+      "journal": "Cancer research",
+      "authors": [
+        "Martinez MJ",
+        "Blanco C",
+        "Peinetti N",
+        "Cooke M",
+        "Lyles RD",
+        "Revuelta MV",
+        "Corey E",
+        "Stathias V",
+        "Campbell MJ",
+        "Burnstein KL"
+      ],
+      "receipt": "sources/public-literature-v41/pubmed-42757823-efetch.xml",
+      "sha256": "1c6b5fadd3b37284c5acaf2d2c17f552bf27fef55f77e14b007fd4da8fb980c1"
+    },
+    {
+      "doi": "10.1515/jpem-2025-0643",
+      "pmid": "41700350",
+      "title": "A novel CEP57 gene mutation in mosaic variegated aneuploidy syndrome 2: case report.",
+      "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+      "authors": [
+        "Viudes CP",
+        "Mansó Borrás M",
+        "Enrique Madrid S",
+        "Diago García B",
+        "Maruenda Jiménez AC",
+        "Guzmán Tena P",
+        "Vázquez Álvarez ML",
+        "Cañadas Olmo V",
+        "Guillamón DT",
+        "Edo Tena MA",
+        "Novella-Maestre E",
+        "Marín Reina P"
+      ],
+      "receipt": "sources/public-literature-v41/pubmed-41700350-efetch.xml",
+      "sha256": "27a246c59264634b6364bd9c8bef9a498c54ad24465feb84913b4bc3e14eaf11"
+    },
+    {
+      "doi": "10.3389/fendo.2026.1838559",
+      "pmid": "42434306",
+      "title": "Functional and clinical evidence for two novel heterozygous BUB1B variants and their value in precision genetic counseling for recurrent pregnancy loss.",
+      "journal": "Frontiers in endocrinology",
+      "authors": [
+        "Wei TY",
+        "Kang MX",
+        "Zhang GH",
+        "Zhang J",
+        "Liu JE",
+        "Ma J",
+        "Tian YP",
+        "Hu HY"
+      ],
+      "receipt": "sources/public-literature-v41/pubmed-42434306-efetch.xml",
+      "sha256": "78e4cbdab84d57af94092258a8f46c9d2587d4ed30f43ccfd503fc917903d6c5"
+    }
+  ],
+  "public_receipts": {
+    "pubmed-targets-summary.json": "c6e8bcecac62fbc137901a550687fcbcca99e15a1d90975b4fa17f7ea0f74c72",
+    "pubmed-42595739-efetch.xml": "b495c6547e61b8221f91e2ee60fb69e3679abcf056d87225fdb4bbec9e5dac5d",
+    "pubmed-mva-bub1b-2025-2026-summary.json": "359917d6e7644fa9e9e222b3b693e5953c384276124db136e08da2664c0ce62c",
+    "pubmed-rpe1-targets-search.json": "16dafc1a0fee8f7bee4aa3af378715ba7fcc66e724fed4b25907e7d5977bc92e",
+    "pubmed-42434306-efetch.xml": "78e4cbdab84d57af94092258a8f46c9d2587d4ed30f43ccfd503fc917903d6c5",
+    "pubmed-40441073-efetch.xml": "9716bbdecb523c81668ea52c1b1a8e343bb880654a28c2b742f70be1287c8327",
+    "pubmed-41533580-efetch.xml": "9ec75a2c5684b8f7cf529e3d13858ad9742570401d53dfc07f5b85de8da33dad",
+    "openalex-mva-bub1b-2025-2026-search.json": "9fa1659a2afc6b0b5b97f5faf6ca623c2df4682f99a3d6f62970120ba79eea56",
+    "crossref-maternal-aneuploidy-review-2026.json": "2e6dca7a650c674f5ee8bba2a4c093d126caa5cb7f5e08811b39010d7e61c520",
+    "pubmed-40470792-efetch.xml": "99276281f47817370ad469db565c17c44fbedca5dfe8926129d430f42f1cc4e7",
+    "pubmed-42477419-efetch.xml": "4fa1eefa72da7e2e5eb398eddab4d11c170249f9fb96cf6c8d816fce4e7f2e75",
+    "pubmed-nad-sirt2-targets-search.json": "36f772aad2726d9cd4fb220e8974e100615509ea552f5d6d3bd007240a6d511e",
+    "pubmed-40607964-efetch.xml": "ed54de19574af314431ed8bc9a3f45b501e1f1833d8f62266014129de9c57cb9",
+    "pubmed-mva-bub1b-2025-2026-search.json": "66f3f684fb976de647f3565ecc8780c6f35168270327189e8271394e137a10e4",
+    "pubmed-41700350-efetch.xml": "27a246c59264634b6364bd9c8bef9a498c54ad24465feb84913b4bc3e14eaf11",
+    "pubmed-mtor-targets-search.json": "8a45c9e090b8a42cb34a5d3406970e46a1c5f96d83aaa3aa820e23c1dac13d03",
+    "pubmed-41820377-efetch.xml": "6687bb763e1f5edb53073857cbf9778c094da455ab780f95e89b791c4045455d",
+    "crossref-cep57-2026.json": "559e4f243d89c6098725882c50c2acb3e5a05d6268d39a98c964c8fd9465714f",
+    "pubmed-40938979-efetch.xml": "3ae97271e0b57cb07972f4cefb663e0452629694b870bb755f59e1f2d9f4570c",
+    "pubmed-42757823-efetch.xml": "1c6b5fadd3b37284c5acaf2d2c17f552bf27fef55f77e14b007fd4da8fb980c1",
+    "pubmed-41702694-efetch.xml": "a1af682fc4c0669c699fec4b6835204548af7c5eeca904ed696ee12f9a409bb3"
+  },
+  "limitations": [
+    "Bounded index/abstract-level review; not exhaustive full-text systematic review",
+    "No live official rules refresh; v39/v40 official capture remains current for this note",
+    "No subject files queried or transferred",
+    "No biological experiment, drug response, clinical efficacy, exposure or safety claim established",
+    "Most broad-list titles are unrelated cancer/biomarker records and were not automatically counted as evidence"
+  ],
+  "disposition_changes": {
+    "everolimus": "unchanged_mechanistic_probe_only_on_hold",
+    "hydroxychloroquine": "unchanged_reserve",
+    "nad_sirt2": "unchanged_not_promoted",
+    "rescue_priority": null,
+    "clinical_exposure_margin": null,
+    "phase": "unconfirmed"
+  },
+  "note": "This audit preserves public literature evidence only. It does not license raw subject data or override repository rules.",
+  "biological_validation": false,
+  "full_text_systematic_review": false
+}
