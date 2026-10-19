@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "presentation_version": 41,
+  "literature_refresh": {
+    "passed": true,
+    "version": 41,
+    "searches": 5,
+    "selected_sources": 14,
+    "public_receipts": 21,
+    "repository_bytes": 1670961,
+    "subject_data_read": false,
+    "drug_dispositions_changed": false,
+    "biological_validation": false,
+    "full_text_systematic_review": false
+  },
+  "script_sha256": "6b845de980b2b93d3ae8e07d4d4d7daacaf57743d7c401ced199f85ecb263b88",
+  "report_sha256": "aed5771148893424ccf2802dab811c16e51df7edc02d690721ad7e915c4a6000",
+  "slide_sha256": "35f2646a9a54be94c9330bc3faa0e6e1c074562da1f405dd0505d3fbe7a6b946",
+  "network_forbidden_by_audit_hook": true,
+  "data_results_logs_env_forbidden_by_audit_hook": true,
+  "project_environment_used": false,
+  "upload_ready": false
+}

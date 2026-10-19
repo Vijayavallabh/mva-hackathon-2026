@@ -93,15 +93,17 @@ and timely delivery. Do not infer efficacy, eligibility or awards.
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the artifact record and [session-handoff.md](session-handoff.md) for next steps.
-Session 78 updates **presentation and harness v40**. Nine slides, 367 narration
-words, a ten-page report, 334-word abstract, methods workbook and own-voice
-teleprompter make qualification precede the competing intervention hypotheses.
-Synthetic arms are labelled; recording counts and cue rates are derived from the
-script. Start with `notes/track2-reviewer-guide-v40.md` and
-`notes/track2-owner-readiness-v40.md`. All bound releases through v39 remain frozen.
+Session 81 updates **presentation and harness v41** with the completed current public
+literature refresh. The nine-slide, 367-word own-voice recording workflow and methods
+workbook remain frozen at v40 wording; the current report/deck and public review now
+add five PubMed/OpenAlex search records, fourteen selected 2025-2026 sources and
+twenty-one public receipts. The literature changes readout design—corona/MCC/APC/C,
+checkpoint architecture, mitochondrial integrity and proteostasis—without changing
+any drug disposition. Start with `notes/track2-reviewer-guide-v41.md` and
+`notes/track2-owner-readiness-v41.md`. All bound releases through v40 remain frozen.
 The drug ledger and base validation remain v21; the 18-case demo and small community
-ZIP remain v37. V40 reuses the v39 source captures and scientific adjudications.
-It adds no literature search, biological evidence or drug-priority change.
+ZIP remain v37. V41 reuses the v39 official captures, v40 recording materials and
+scientific adjudications. It adds no biological experiment or drug-priority change.
 
 Read `notes/track2-rehearsal-adjudication-v39.md`,
 `notes/track2-candidate-comparison-v39.md` and
@@ -307,18 +309,19 @@ participated. Delivery, provider and distribution flags remain unresolved.
   Record the complete acknowledgement inside the three-minute video. Preserve the
   Track 1 submitted v4, every earlier Track 2 bound input/package, the fixed v19 campaign and v1-v21 releases.
 
-Use `scripts/track2_release_v40.py` to check/build/verify **new** v39 research snapshot
-directories. Render with `scripts/render_track2_slides_v40.mjs`; export the report and
-workbook with `scripts/track2_export_documents_v40.py` followed by
-`scripts/render_track2_report_v40.mjs`. Recording materials use
-`scripts/track2_bundle_v40.py`; historical research retains AF3 notices.
+Use `scripts/track2_release_v41.py` to check/build/verify **new** v40 research snapshot
+directories. Render with `scripts/render_track2_slides_v41.mjs`; export the report and
+workbook with `scripts/track2_export_documents_v41.py` followed by
+`scripts/render_track2_report_v41.mjs`. Recording materials use
+`scripts/track2_bundle_v41.py`; historical research retains AF3 notices. Public
+literature receipts are checked by `scripts/check_track2_literature_v41.py`.
 The combined public reviewer checks integrated v39 and frozen v31/v29/v27 research, v25 CRISPR, v23 RNAi, v21 decisions
 and v19 findings. It needs no
 data/results folders, keys, network, GPUs or old
 local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
-The versioned `scripts/track2_public_review_v40.py` checks the integrated presentation
-and frozen research; `scripts/check_track2_transcriptome.py` checks v19 alone.
-Its passing result verifies consistency, not biology or eligibility. The stricter
+The versioned `scripts/track2_public_review_v41.py` checks the integrated presentation,
+frozen research and literature provenance; `scripts/check_track2_transcriptome.py`
+checks v19 alone. Its passing result verifies consistency, not biology or eligibility. The stricter
 release verification also requires retained local historical archives.
 The mutable current-artifact record,
 AGENTS, feature state and handoff are not bound into historical release manifests.

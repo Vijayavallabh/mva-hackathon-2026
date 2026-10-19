@@ -53,11 +53,12 @@ STATUS = {
     'upload_performed': False, 'upload_ready': False, 'provider_settings_verified': False,
     'licensing_scope_resolved': False,
 }
+LITERATURE_STATE = {'version': 41, 'status': 'complete', 'kind': 'public_literature_refresh', 'note': 'notes/track2-literature-v41.md', 'audit': 'notes/track2-literature-audit-v41.json', 'check': 'scripts/check_track2_literature_v41.py', 'public_receipts': 21, 'selected_sources': 14, 'searches': 5, 'drug_disposition_change': False, 'biological_validation': False, 'full_text_systematic_review': False}
 CURRENT_REVIEW = {
     'script': 'scripts/check_track2_harness.py',
     'isolation_audit': 'scripts/audit_track2_harness.py',
-    'guide': 'notes/track2-reviewer-guide-v40.md',
-    'readiness': 'notes/track2-owner-readiness-v40.md',
+    'guide': 'notes/track2-reviewer-guide-v41.md',
+    'readiness': 'notes/track2-owner-readiness-v41.md',
 }
 RESEARCH_PATHS = {
     'plan': 'notes/track2-transcriptome-plan-v19.json',
@@ -94,7 +95,7 @@ def require(condition, message):
 def validate(state, features, documents):
     require(state['schema_version'] == 1, 'Unsupported current-state schema')
     version = state['presentation_version']
-    require(type(version) is int and version == 40, 'Stale presentation revision')
+    require(type(version) is int and version == 41, 'Stale presentation revision')
     require(state['active_feature'] == 'feat-009', 'Wrong active feature')
     require([f['id'] for f in features if f['status'] == 'in_progress'] == ['feat-009'],
             'Exactly one active feature is required')
@@ -119,6 +120,7 @@ def validate(state, features, documents):
         'mitotic_gain_gate_passed':False,'mitotic_results':'notes/track2-optical-mitotic-results-v35.json'},
         'Optical coordinate correction omitted or falsely promoted')
     require(state.get('optical_addendum') == OPTICAL_STATE, 'Missing or inconsistent completed optical addendum')
+    require(state.get('literature_addendum') == LITERATURE_STATE, 'Missing or inconsistent completed literature addendum')
     require(state['status'] == STATUS, 'Unsupported scientific/delivery promotion; review evidence before updating the harness')
     require(state['model_campaign'] == dict(protein_scores=84, structures=192, dna_comparisons=100,
                                           inference_complete=True), 'Model completion/count drift')
@@ -131,13 +133,13 @@ def validate(state, features, documents):
         'judge_questions':'notes/track2-judge-questions-v40.md',
         'recording_guide':'notes/track2-recording-guide-v40.md',
         'teleprompter':'notes/track2-teleprompter-v40.html',
-        'reviewer_brief':f'notes/track2-reviewer-brief-v{version}.md',
-        'competition_strategy':f'notes/track2-competition-strategy-v{version}.md',
+        'reviewer_brief':'notes/track2-reviewer-brief-v40.md',
+        'competition_strategy':'notes/track2-competition-strategy-v40.md',
         'slides':f'notes/track2-slides-v{version}.html',
-        'pitch':f'notes/track2-pitch-v{version}.md',
-        'transcript':f'notes/track2-transcript-v{version}.txt',
-        'video_description':f'notes/track2-video-description-v{version}.md',
-        'design_review':f'notes/track2-v{version}-design.md',
+        'pitch':'notes/track2-pitch-v40.md',
+        'transcript':'notes/track2-transcript-v40.txt',
+        'video_description':'notes/track2-video-description-v40.md',
+        'design_review':'notes/track2-v40-design.md',
         'evidence':'notes/track2-evidence-v21.json', 'validation':'notes/track2-validation-v21.md',
         'falsification_register':'notes/track2-falsification-register-v21.json',
         'falsification_review':'notes/track2-falsification-review-v21.md',
@@ -157,19 +159,20 @@ def validate(state, features, documents):
         'report_renderer':f'scripts/render_track2_report_v{version}.mjs',
         'bundle_script':f'scripts/track2_bundle_v{version}.py',
     }
+    roles.update({'literature_note':'notes/track2-literature-v41.md','literature_audit':'notes/track2-literature-audit-v41.json','literature_check':'scripts/check_track2_literature_v41.py'})
     roles.update({'candidate_comparison': 'notes/track2-candidate-comparison-v39.md', 'rehearsal_adjudication': 'notes/track2-rehearsal-adjudication-v39.md', 'rehearsal_sources': 'notes/track2-rehearsal-sources-v39.json', 'qualification_amendment': 'notes/track2-qualification-amendment-v39.md', 'external_review_packet': 'notes/track2-external-review-packet-v40.md', 'recording_audit': 'notes/track2-prompter-audit-v40.json'})
     roles['narration_metrics']='notes/track2-narration-v40.json'
     require(state['artifacts'] == roles, 'Mixed, missing or unsafe artifact paths')
     require(state.get('community_kit_bundle') == 'results/feat009/jvv7_track2_community_kit_v37.zip', 'Stale community kit path')
-    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}', 'Stale snapshot path')
+    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified', 'Stale snapshot path')
     require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}.zip',
             'Stale recording-materials bundle path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['render_directory']),
             'Stale or unsafe render-directory path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['document_directory']),
             'Stale or unsafe document-directory path')
-    require(state.get('harness_version') == 40 and
-            state['harness_review'] == 'notes/track2-harness-review-v40.md', 'Stale harness review')
+    require(state.get('harness_version') == 41 and
+            state['harness_review'] == 'notes/track2-harness-review-v41.md', 'Stale harness review')
     require(state.get('current_review') == CURRENT_REVIEW, 'Missing or stale combined review route')
     require(state.get('perturbseq_addendum') == PERTURBSEQ_STATE and
             all(type(state['perturbseq_addendum'][k]) is type(v) for k,v in PERTURBSEQ_STATE.items()),
@@ -201,7 +204,7 @@ def validate(state, features, documents):
             }
             expected = role_versions.get(role.lower(), version)
             require(int(found)==expected, 'Historical version mislabeled current: '+name)
-    require(f'notes/track2-pitch-v{version}.md' in documents['session-handoff.md'], 'Stale transcript handoff')
+    require('notes/track2-pitch-v40.md' in documents['session-handoff.md'], 'Stale transcript handoff')
     require(f'scripts/track2_release_v{version}.py' in documents['AGENTS.md'], 'Stale release entry point')
     for name, document in documents.items():
         for route in [CURRENT_REVIEW['script'], CURRENT_REVIEW['guide'], RESEARCH_PATHS['report']]:
@@ -315,6 +318,8 @@ def check(root=ROOT):
     audit = campaign_audit(root)
     release = importlib.import_module(f"track2_release_v{state['presentation_version']}")
     presentation = release.scientific_checks()
+    literature_addendum = importlib.import_module('check_track2_literature_v41').check()
+    require(literature_addendum['passed'],'Literature provenance review failed')
     transcriptome = importlib.import_module('check_track2_transcriptome')
     require(transcriptome.check(root)['passed'], 'Public transcriptome check failed')
     first, second, followup, identity = [json.loads(public_path(root, RESEARCH_PATHS[k]).read_text())
@@ -347,8 +352,8 @@ def check(root=ROOT):
     require(v31['passed'],'V31 review failed')
     for key in ['gpus','public_cells','gpu_correlations','split_repetitions','all_control_sensitivity_available','drug_ranking_changed']:
         require(state['perturbseq_addendum'][key]==v31[key],'Current Perturb-seq summary drift: '+key)
-    return dict(passed=True, active_feature='feat-009', harness_version=40,
-                presentation_version=state['presentation_version'],
+    return dict(passed=True, active_feature='feat-009', harness_version=41,
+                presentation_version=state['presentation_version'], literature_refresh=literature_addendum,
                 drug_science_version=21, slides=presentation['slides'],
                 narration_words=presentation['narration_words'], falsification_amendment=presentation['falsification_amendment'], upload_ready=False,
                 optical_addendum=optical_complete, historical_optical_progress=optical, historical_optical_correction=optical_correction,

@@ -56,7 +56,9 @@ with contextlib.redirect_stdout(captured):
     runpy.run_path(str(root / 'scripts/check_track2_harness.py'), run_name='__main__')
 result = json.loads(captured.getvalue())
 assert result['passed'] and result['research_addendum']['version'] == 19
-assert result['presentation_version'] == 40 and result['harness_version'] == 40
+assert result['presentation_version'] == 41 and result['harness_version'] == 41
+assert result['literature_refresh']['version'] == 41 and result['literature_refresh']['passed'] is True
+assert result['literature_refresh']['drug_dispositions_changed'] is False
 assert result['rnai_addendum']['version'] == 23 and result['rnai_addendum']['passed']
 assert result['crispr_addendum']['version'] == 25 and result['crispr_addendum']['passed']
 assert result['falsification_addendum']['version'] == 27 and result['falsification_addendum']['passed']
@@ -74,7 +76,7 @@ print(json.dumps(dict(passed=True, review=result, seconds=time.perf_counter()-st
 def audit(root=ROOT):
     names = subprocess.check_output([
         'git', 'ls-files', '--cached', '--others', '--exclude-standard', '-z', '--',
-        'AGENTS.md', 'README.md', 'feature_list.json', 'session-handoff.md', 'notes', 'scripts',
+        'AGENTS.md', 'README.md', 'feature_list.json', 'session-handoff.md', 'notes', 'scripts', 'sources',
     ], cwd=root).decode().split('\0')
     files = sorted(set(n for n in names if n))
     with tempfile.TemporaryDirectory(prefix='track2-public-harness-') as temporary:

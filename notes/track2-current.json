@@ -2,11 +2,11 @@
   "schema_version": 1,
   "updated_date": "2026-10-20",
   "active_feature": "feat-009",
-  "presentation_version": 40,
+  "presentation_version": 41,
   "drug_science_version": 21,
   "artifacts": {
-    "report": "notes/track2-report-v40.md",
-    "slides": "notes/track2-slides-v40.html",
+    "report": "notes/track2-report-v41.md",
+    "slides": "notes/track2-slides-v41.html",
     "pitch": "notes/track2-pitch-v40.md",
     "transcript": "notes/track2-transcript-v40.txt",
     "video_description": "notes/track2-video-description-v40.md",
@@ -15,8 +15,8 @@
     "validation": "notes/track2-validation-v21.md",
     "latest_model_findings": "notes/track2-latest-models.md",
     "latest_model_audit": "notes/track2-latest-model-audit.json",
-    "release_script": "scripts/track2_release_v40.py",
-    "renderer": "scripts/render_track2_slides_v40.mjs",
+    "release_script": "scripts/track2_release_v41.py",
+    "renderer": "scripts/render_track2_slides_v41.mjs",
     "af3_terms": "notes/alphafold3-output-terms.md",
     "af3_notice": "notes/alphafold3-Legally-Binding-Terms-of-Use.txt",
     "falsification_register": "notes/track2-falsification-register-v21.json",
@@ -24,12 +24,12 @@
     "falsification_analysis": "notes/track2-falsification-analysis-v21.json",
     "official_requirements": "notes/track2-requirements-v39.json",
     "community_review": "notes/track2-requirements-review-v39.md",
-    "reviewer_guide": "notes/track2-reviewer-guide-v40.md",
-    "owner_readiness": "notes/track2-owner-readiness-v40.md",
-    "public_review_script": "scripts/track2_public_review_v40.py",
-    "document_exporter": "scripts/track2_export_documents_v40.py",
-    "report_renderer": "scripts/render_track2_report_v40.mjs",
-    "bundle_script": "scripts/track2_bundle_v40.py",
+    "reviewer_guide": "notes/track2-reviewer-guide-v41.md",
+    "owner_readiness": "notes/track2-owner-readiness-v41.md",
+    "public_review_script": "scripts/track2_public_review_v41.py",
+    "document_exporter": "scripts/track2_export_documents_v41.py",
+    "report_renderer": "scripts/render_track2_report_v41.mjs",
+    "bundle_script": "scripts/track2_bundle_v41.py",
     "reviewer_brief": "notes/track2-reviewer-brief-v40.md",
     "competition_strategy": "notes/track2-competition-strategy-v40.md",
     "interactive_demo": "notes/track2-demo-v37.html",
@@ -45,10 +45,13 @@
     "qualification_amendment": "notes/track2-qualification-amendment-v39.md",
     "external_review_packet": "notes/track2-external-review-packet-v40.md",
     "recording_audit": "notes/track2-prompter-audit-v40.json",
-    "narration_metrics": "notes/track2-narration-v40.json"
+    "narration_metrics": "notes/track2-narration-v40.json",
+    "literature_note": "notes/track2-literature-v41.md",
+    "literature_audit": "notes/track2-literature-audit-v41.json",
+    "literature_check": "scripts/check_track2_literature_v41.py"
   },
-  "snapshot": "results/feat009/jvv7_track2_research_v40",
-  "render_directory": "results/feat009/v40-slides-final-20261020",
+  "snapshot": "results/feat009/jvv7_track2_research_v41-verified",
+  "render_directory": "results/feat009/v41-slides-final-20261020-3",
   "model_campaign": {
     "protein_scores": 84,
     "structures": 192,
@@ -71,9 +74,9 @@
     "licensing_scope_resolved": false
   },
   "history": "progress.md",
-  "harness_review": "notes/track2-harness-review-v40.md",
-  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v40.zip",
-  "document_directory": "results/feat009/v40-documents-final-20261020",
+  "harness_review": "notes/track2-harness-review-v41.md",
+  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v41.zip",
+  "document_directory": "results/feat009/v41-documents-final-20261020-3",
   "research_addendum": {
     "version": 19,
     "kind": "public_perturbation_transcriptome",
@@ -100,12 +103,12 @@
     "drug_ranking_changed": false,
     "archive": "results/feat009/transcriptome-remote-v19/transcriptome-v19-audit.tar.gz"
   },
-  "harness_version": 40,
+  "harness_version": 41,
   "current_review": {
     "script": "scripts/check_track2_harness.py",
     "isolation_audit": "scripts/audit_track2_harness.py",
-    "guide": "notes/track2-reviewer-guide-v40.md",
-    "readiness": "notes/track2-owner-readiness-v40.md"
+    "guide": "notes/track2-reviewer-guide-v41.md",
+    "readiness": "notes/track2-owner-readiness-v41.md"
   },
   "rnai_addendum": {
     "version": 23,
@@ -278,5 +281,19 @@
     "biological_validation": false,
     "presentation_integration": "integrated_in_v40_preserves_prior_research"
   },
-  "community_kit_bundle": "results/feat009/jvv7_track2_community_kit_v37.zip"
+  "community_kit_bundle": "results/feat009/jvv7_track2_community_kit_v37.zip",
+  "literature_addendum": {
+    "version": 41,
+    "status": "complete",
+    "kind": "public_literature_refresh",
+    "note": "notes/track2-literature-v41.md",
+    "audit": "notes/track2-literature-audit-v41.json",
+    "check": "scripts/check_track2_literature_v41.py",
+    "public_receipts": 21,
+    "selected_sources": 14,
+    "searches": 5,
+    "drug_disposition_change": false,
+    "biological_validation": false,
+    "full_text_systematic_review": false
+  }
 }

@@ -246,7 +246,7 @@ The proposed decision contract returns HOLD with unmeasured biology and null mar
 An invalid assay, imprecision, scoped futility and safety failure now have different
 consequences. No wet-lab result, new model inference or candidate promotion is claimed.
 
-**Track 2 (feat-009) is in progress.** Read the [integrated v40 report](notes/track2-report-v40.md)
+**Track 2 (feat-009) is in progress.** Read the [integrated v41 report](notes/track2-report-v41.md)
 and the complete [v19 research record](notes/track2-transcriptome-v19.md).
 The [falsification review](notes/track2-falsification-review-v21.md) challenges the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
@@ -287,17 +287,20 @@ assumption; revise or abandon the approach when warranted. Use the original
 throughout research and before promotion/release. Apply the same standard to benefit,
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
-Current materials: [report source](notes/track2-report-v40.md),
+Current materials: [report source](notes/track2-report-v41.md),
 [367-word narration](notes/track2-pitch-v40.md), [plain transcript](notes/track2-transcript-v40.txt),
-[nine-slide deck](notes/track2-slides-v40.html) and
-[video description](notes/track2-video-description-v40.md). The mechanism and joint-treatment experiment lead the presentation, followed by
+[nine-slide deck](notes/track2-slides-v41.html) and
+[video description](notes/track2-video-description-v40.md). The
+[v41 literature addendum](notes/track2-literature-v41.md) and
+[audit](notes/track2-literature-audit-v41.json) add public-source readout evidence
+without changing drug decisions. The mechanism and joint-treatment experiment lead the presentation, followed by
 the synthetic denominator example and completed optical comparison. Favorable BUB1B
 morphology, failed practical neural gain, guide/plate sensitivity and missing mitotic
 coverage remain distinct. All eleven methods answers and the 334-word abstract match
 the workbook export. Prior scientific details remain in linked research records.
 
-Start with the [combined reviewer guide](notes/track2-reviewer-guide-v40.md). One
-public CPU command checks integrated v40 materials and completed v19/v21/v23/v25/v27/v29/v31/v36 findings:
+Start with the [combined reviewer guide](notes/track2-reviewer-guide-v41.md). One
+public CPU command checks integrated v41 materials and completed v19/v21/v23/v25/v27/v29/v31/v36 findings plus the v41 literature audit:
 
 ```bash
 uv run --no-project python scripts/check_track2_harness.py
@@ -305,12 +308,12 @@ uv run --no-project python scripts/check_track2_harness.py
 
 It requires no subject files, data/results folders, keys, network, Git history or model
 weights. The check verifies consistency, not biological efficacy. The versioned public
-presentation reviewer and release/bundle scripts use v40; the combined research harness
-uses v40. Earlier versions remain available and bound
+presentation reviewer and release/bundle scripts use v41, while the 367-word voice and
+recording materials preserve v40. Earlier versions remain available and bound
 inputs stay unchanged. The [current artifact record](notes/track2-current.json),
-[harness review](notes/track2-harness-review-v40.md) and `./init.sh` route current work.
+[harness review](notes/track2-harness-review-v41.md) and `./init.sh` route current work.
 
-The [readiness note](notes/track2-owner-readiness-v40.md) lists outstanding recording,
+The [readiness note](notes/track2-owner-readiness-v41.md) lists outstanding recording,
 runtime measurement, hosting, provider handling, distribution scope, live checks and
 receipt. The October 19 official/community refresh covers 30 threads and 84 visible comments;
 the new unanswered participant question in thread 31 was read. Delete and confirm to cnb@sagebase.org
@@ -366,7 +369,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v40 disclosure names this route without
+GLM for public-literature synthesis; the historical v40 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 

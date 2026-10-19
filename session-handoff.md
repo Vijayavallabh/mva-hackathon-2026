@@ -1,12 +1,17 @@
-# Session handoff: v40 presentation, recording metrics and harness
+# Session handoff: v41 literature-integrated presentation and harness
 
-20 October 2026, session 78. Only **feat-009** remains active for delivery and
-unresolved biological qualification. The v40 revision makes the qualification sequence explicit, labels the synthetic
-comparison arms and derives recording metrics from the script. Use `notes/track2-current.json`,
-`notes/track2-report-v40.md`, `notes/track2-slides-v40.html`,
-`notes/track2-pitch-v40.md` and `notes/track2-transcript-v40.txt`.
-The combined entry point is `scripts/check_track2_harness.py`; start with
-`notes/track2-reviewer-guide-v40.md` and `notes/track2-owner-readiness-v40.md`.
+20 October 2026, session 81. Only **feat-009** remains active for delivery and
+unresolved biological qualification. The v41 revision preserves the frozen v40
+qualification sequence, synthetic-arm labels, 367-word own-voice narration and
+recording metrics while adding the current public literature refresh. Use
+`notes/track2-current.json`, `notes/track2-report-v41.md`,
+`notes/track2-slides-v41.html`, `notes/track2-pitch-v40.md` and
+`notes/track2-transcript-v40.txt`. The combined entry point is
+`scripts/check_track2_harness.py`; start with
+`notes/track2-reviewer-guide-v41.md` and `notes/track2-owner-readiness-v41.md`.
+The literature chain is `notes/track2-literature-v41.md`,
+`notes/track2-literature-audit-v41.json` and
+`scripts/check_track2_literature_v41.py`.
 The v19 `notes/track2-transcriptome-v19.md` and all later completed research are
 preserved. The drug ledger/base contract remain v21; the demo and community kit
 remain v37. All bound releases through v39 and the v38 review addendum are frozen.
@@ -46,9 +51,11 @@ and an own-voice teleprompter. The frozen v37 demo still has 17 synthetic cases 
 the actual unmeasured HOLD state. Its rules demonstrate software behavior, not
 biological or clinical validity. The v40 small-kit guide points to that existing kit.
 
-Exports are `results/feat009/v40-slides-final-20261020` and
+Frozen v40 exports remain `results/feat009/v40-slides-final-20261020` and
 `results/feat009/v40-documents-final-20261020`; the final teleprompter browser receipt
-is under `results/feat009/v40-prompter-final-20261020`. The header continues to respect wrapped mobile controls. A shared narration parser
+remains under `results/feat009/v40-prompter-final-20261020`. Current v41 exports are
+`results/feat009/v41-slides-final-20261020-3` and
+`results/feat009/v41-documents-final-20261020-3`; no measured recording is claimed. The header continues to respect wrapped mobile controls. A shared narration parser
 checks the transcript, prompter, guide and metrics JSON: 367 words in 180 allocated
 seconds, or 122.3 planned words/minute. These are not measured video times. Earlier draft exports and
 interim audit receipts remain in ignored results. Local conversation exports are
@@ -115,11 +122,12 @@ See `notes/track2-dgx-cleanup-v37.md`; environment imports passed after cleanup.
 ```bash
 ./init.sh
 uv run --no-project python scripts/check_track2_harness.py
-uv run --no-project python scripts/track2_public_review_v40.py
+uv run --no-project python scripts/track2_public_review_v41.py
+uv run --no-project python scripts/check_track2_literature_v41.py
 uv run --no-project python scripts/check_track2_optical_v36.py
 uv run python scripts/audit_track2_harness.py
-uv run python scripts/track2_release_v40.py verify results/feat009/jvv7_track2_research_v40
-uv run python scripts/track2_bundle_v40.py verify
+uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified
+uv run python scripts/track2_bundle_v41.py verify
 uv run --no-project python scripts/track2_community_kit_v37.py verify
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
@@ -156,6 +164,8 @@ Python audit hooks check dependency isolation, not operating-system security.
   to **cnb@sagebase.org by November 23**, under `notes/deletion-plan-v2.md`. Feat-010
   has not started. Cache cleanup did not satisfy this obligation. No email/upload occurred.
 
-No new search, GPU campaign, remote job, wet-lab result or additional hosted model
-provider was added in v40. The v39 scientific adjudications and official captures
-remain authoritative; the v40 changes are presentation and harness work. The next decisive evidence is biological, not more model agreement.
+One bounded public-source literature search was added in v41; no GPU campaign, remote
+job, wet-lab result or additional hosted model provider was run. The v39/v40 scientific
+adjudications and official captures remain authoritative. The literature changes
+readout design, not drug disposition. The next decisive evidence remains biological,
+not more model agreement.
