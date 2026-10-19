@@ -41,8 +41,8 @@ raw subject data or the clinical narrative to a model API.
 Commit every intended repository change, even a tiny one. At the end of each session,
 push all new commits to the configured `origin` after verification.
 
-Everything must be deleted by **24 Nov 2026** and confirmed by email —
-see `notes/deletion-plan.md`. Full rules in `AGENTS.md`.
+Everything must be deleted and confirmed by **23 Nov 2026** at **cnb@sagebase.org** —
+see `notes/deletion-plan-v2.md`, which corrects earlier frozen deadlines and the recipient. Full rules in `AGENTS.md`.
 
 ## Setup
 
@@ -93,6 +93,19 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
+The [reviewer brief](notes/track2-reviewer-brief-v34.md) summarizes the proposed
+experiment. [Competition priorities](notes/track2-competition-strategy-v34.md) map
+work to the four weighted criteria and organizer announcement 28.
+
+**Session 72: v34 materials distinguish pending optical work from validated results.**
+The [report](notes/track2-report-v34.md), [nine slides](notes/track2-slides-v34.html),
+[336-word narration](notes/track2-pitch-v34.md) and [reviewer guide](notes/track2-reviewer-guide-v34.md)
+retain all completed research. The [v33 progress record](notes/track2-optical-progress-v33.md)
+adds verified mitotic coverage and the registered eight-GPU study. Only one BUB1B
+guide meets the mitotic minimum; model gains and interphase analysis remain unvalidated.
+The [October 19 refresh](notes/track2-requirements-review-v33.md) corrects deletion
+and confirmation to November 23 at cnb@sagebase.org. Frozen releases remain intact.
+
 **Session 71: presentation and harness v32 integrate public Perturb-seq falsification.**
 The [report](notes/track2-report-v32.md), [nine slides](notes/track2-slides-v32.html),
 [335-word narration](notes/track2-pitch-v32.md) and [reviewer guide](notes/track2-reviewer-guide-v32.md)
@@ -110,7 +123,7 @@ ProteinMPNN control failures, endpoint-specific controls and held-out expression
 results. The [reviewer guide](notes/track2-reviewer-guide-v30.md) covers 47 claim records.
 The [October 6 official refresh](notes/track2-requirements-review-v30.md) covers 26
 public discussions and 79 visible comments. Later judging does not extend the October
-24 submission or November 24 deletion deadlines. No biological or delivery status
+24 submission deadline; the deletion deadline was corrected to November 23 in the October 19 refresh. No biological or delivery status
 is promoted. Earlier releases remain preserved.
 
 **Session 69: completed v29 structural and expression falsification on all eight H100s.**
@@ -124,7 +137,7 @@ QC-qualified BUB1B query. Drug decisions remain unchanged.
 The [v29 reviewer guide](notes/track2-reviewer-guide-v29.md) covers 47 claim records,
 complete provenance and the combined `scripts/check_track2_harness.py` check.
 At session 69, presentation v28 required the separate addendum. V30 now integrates
-those results and preserves v28. All owned GPU jobs have finished.
+those results and preserves v28. All v29 GPU jobs have finished.
 
 **Session 68: Track 2 v28 materials and harness are synchronized.** The
 [report](notes/track2-report-v28.md), [nine slides](notes/track2-slides-v28.html),
@@ -177,7 +190,7 @@ The proposed decision contract returns HOLD with unmeasured biology and null mar
 An invalid assay, imprecision, scoped futility and safety failure now have different
 consequences. No wet-lab result, new model inference or candidate promotion is claimed.
 
-**Track 2 (feat-009) is in progress.** Read the [integrated v32 report](notes/track2-report-v32.md)
+**Track 2 (feat-009) is in progress.** Read the [integrated v34 report](notes/track2-report-v34.md)
 and the complete [v19 research record](notes/track2-transcriptome-v19.md).
 The [falsification review](notes/track2-falsification-review-v21.md) challenges the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
@@ -218,17 +231,17 @@ assumption; revise or abandon the approach when warranted. Use the original
 throughout research and before promotion/release. Apply the same standard to benefit,
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
-Current materials: [report source](notes/track2-report-v32.md),
-[335-word narration](notes/track2-pitch-v32.md), [plain transcript](notes/track2-transcript-v32.txt),
-[nine-slide deck](notes/track2-slides-v32.html) and
-[video description](notes/track2-video-description-v32.md). New figures separate
-ProteinMPNN control failures, limited RPE1 specificity and weakened MCF7 drug
-reversal with a missing qualified query. The report preserves the older seed/finite-reference results and failed
+Current materials: [report source](notes/track2-report-v34.md),
+[336-word narration](notes/track2-pitch-v34.md), [plain transcript](notes/track2-transcript-v34.txt),
+[nine-slide deck](notes/track2-slides-v34.html) and
+[video description](notes/track2-video-description-v34.md). New figures separate
+ProteinMPNN control failures, limited RPE1 specificity and the missing mitotic
+BUB1B comparison. Model gains remain unvalidated; drug matching stays in the report. The report preserves the older seed/finite-reference results and failed
 compound checks, then explains the newer source-well aggregation. All eleven methods
-answers and the 313-word abstract match the workbook export.
+answers and the 356-word abstract match the workbook export.
 
-Start with the [combined reviewer guide](notes/track2-reviewer-guide-v32.md). One
-public CPU command checks integrated v32 materials and frozen v19/v21/v23/v25/v27/v29/v31 findings:
+Start with the [combined reviewer guide](notes/track2-reviewer-guide-v34.md). One
+public CPU command checks integrated v34 materials and frozen v19/v21/v23/v25/v27/v29/v31 findings:
 
 ```bash
 uv run --no-project python scripts/check_track2_harness.py
@@ -236,15 +249,16 @@ uv run --no-project python scripts/check_track2_harness.py
 
 It requires no subject files, data/results folders, keys, network, Git history or model
 weights. The check verifies consistency, not biological efficacy. The versioned public
-presentation reviewer and release/bundle scripts use v32; the combined research harness
-uses v32. Earlier versions remain available and bound
+presentation reviewer and release/bundle scripts use v34; the combined research harness
+uses v34. Earlier versions remain available and bound
 inputs stay unchanged. The [current artifact record](notes/track2-current.json),
-[harness review](notes/track2-harness-review-v32.md) and `./init.sh` route current work.
+[harness review](notes/track2-harness-review-v34.md) and `./init.sh` route current work.
 
-The [readiness note](notes/track2-owner-readiness-v32.md) lists outstanding recording,
+The [readiness note](notes/track2-owner-readiness-v34.md) lists outstanding recording,
 runtime measurement, hosting, provider handling, distribution scope, live checks and
-receipt. The October 6 official/community refresh preserves the earlier review for unchanged
-comments and rereads all twelve new or edited comments. The new materials omit AF3/Atlas numerical
+receipt. The October 19 official/community refresh covers 29 threads and 83 visible comments;
+four new or changed comments were reread. Delete and confirm to cnb@sagebase.org
+by November 23, as specified in [the active deletion plan](notes/deletion-plan-v2.md). The new materials omit AF3/Atlas numerical
 outputs and derived figures, which does not resolve CC BY scope for linked history.
 
 The historical [baseline evidence ledger](notes/track2-candidates.json) assesses twelve
@@ -296,7 +310,7 @@ the AI disclosure: OpenAI/Codex API tier, data not used for model training, and 
 AI providers at that time. Subsequent session-35 work uses Google DeepMind Atlas
 precomputed predictions, as disclosed in the addendum above; the submitted Track 1
 files remain unchanged. Session 37 additionally used Firecrawl with Fireworks-hosted
-GLM for public-literature synthesis; the current v32 disclosure names this route without
+GLM for public-literature synthesis; the current v34 disclosure names this route without
 assuming additional-provider account settings. The earlier attestation does not claim zero retention; purge
 was verified separately.
 

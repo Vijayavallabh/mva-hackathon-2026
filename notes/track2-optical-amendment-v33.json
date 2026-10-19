@@ -1,0 +1,38 @@
+{
+  "schema_version": 33,
+  "date": "2026-10-19",
+  "original_plan_sha256": "f9e56533068de83eea12844a1d660252a4f18c2e0f6133a65bdb484ea773fa1d",
+  "timing": "After download, schema checks and mitotic preparation; before model fitting or retrieval analysis",
+  "changes": [
+    {
+      "item": "deletion_deadline",
+      "value": "2026-11-23",
+      "reason": "Organizer discussion 28 explicitly specifies November 23; October 13 rules change confirmation recipient to cnb@sagebase.org. This corrects the project's earlier one-day date error, while preserving frozen artifacts."
+    },
+    {
+      "item": "GPU_scheduling",
+      "value": "Eight workers per arm: four real-label seeds on GPUs 0-3 and four shuffled-association controls on GPUs 4-7. Process the mitotic arm while the interphase download continues, then the interphase arm.",
+      "reason": "The planned shuffled-training control also needs fitting. This keeps all eight devices available for relevant tests without waiting for the larger download."
+    }
+  ],
+  "implementation_details_fixed_before_fitting": {
+    "retrieval": "Every eligible guide queries gene references. Its own gene reference excludes that guide; alternatives average all eligible guides. Unequal reference counts are shared by all methods and remain a limitation. Report every guide, then macro-average over genes.",
+    "exact_ties": "Average ranks, including constant or zero-vector baselines",
+    "preprocessing": "Drop features with >5% missing values or negligible variance in training genes. Fit center/scale from their complete-guide means; impute to training center; clip standardized values to [-10,10]. Source normalization remains reused.",
+    "basic_features": ["nucleus_area", "cell_area", "nucleus_dapi_int", "nucleus_dapi_mean", "nucleus_eccentricity", "nucleus_form_factor", "nucleus_solidity", "cell_eccentricity", "cell_form_factor", "cell_solidity"],
+    "PCA_whitening_dimensions": [64, 128, 256],
+    "abundance": "Within-arm log1p guide cell count with absolute-distance retrieval; cross-arm mitotic fraction added only after both arms are complete. Counts are not measured viability.",
+    "MLP_activation": "GELU; no batch normalization or label inputs",
+    "precision": "BF16 autocast, FP32 parameters and score reductions, TF32 disabled; CPU FP64 similarity audit",
+    "smoke_run": "Separate two-step runtime test; exclude its outputs from scientific results",
+    "guide_minimum_unchanged": 20
+  },
+  "observed_coverage": {
+    "source": "https://vesuvius.wi.mit.edu/genes.xlsx",
+    "source_sha256": "e7ab2a2ea9cb065c94f0747ee5344a9aba3a029b9b067d2505d4ef07d4f69045",
+    "BUB1B_mitotic_cells_by_source_guide_order": [11, 15, 11, 25],
+    "BUB1B_interphase_cells_by_source_guide_order": [859, 1219, 839, 1435],
+    "consequence": "The published mitotic counts fail the two-guide coverage requirement. Retain this missing state; do not lower the threshold. Complete single-cell export coverage must be checked separately."
+  },
+  "unchanged": ["All ten queries", "Held-out gene split", "Four seeds", "3000-step maximum", "Validation-only checkpoint selection", "No drug or clinical promotion"]
+}

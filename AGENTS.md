@@ -41,8 +41,9 @@ organizers' own words from the official Hackathon Rules.
    `data/`, `results/` and `logs/` are gitignored and a pre-commit hook enforces it.
 
 2. **No re-identification, no contacting the family or the MVA Society.**
-3. **Delete everything by 24 Nov 2026** (30 days after close), then email
-   RarediseaserealkidMVAhackathon2026@synapse.org to confirm. See `notes/deletion-plan.md`.
+3. **Delete everything by 23 Nov 2026**, then email **cnb@sagebase.org** to confirm.
+   The October 19 official refresh corrects our earlier one-day error and recipient;
+   see `notes/deletion-plan-v2.md`. Frozen historical deadlines are superseded.
 4. **Embargo**: code and derived outputs may be shared publicly at any time; manuscripts
    using the dataset may not be submitted until organizers publish their summary report.
 
@@ -80,16 +81,41 @@ is not disproof, and failure to find a contradiction is not validation. Resolve 
 explicitly retain high-impact gaps before promoting the corresponding claim.
 This is a continuing objective, not a one-time review. Preserve immutable snapshots.
 
+Owner competition priority, 19 October 2026: focus work and presentation on the
+35/25/25/15 panel rubric and the Innovation Prize criteria. Use
+`notes/track2-competition-strategy-v34.md` and the reviewer brief. Track 1 recognition
+is separate from Track 2 judging; model scale and computation counts do not establish
+impact. Optimize the supported mechanism, decisive experiment, reusable contribution
+and timely delivery. Do not infer efficacy, eligibility or awards.
+
 ## Current work and authoritative files
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the artifact record and [session-handoff.md](session-handoff.md) for next steps.
-Session 71 adds the completed v31 public Perturb-seq analysis and integrates it into
-**presentation and harness v32**. Use the nine-slide deck, 335-word narration, report,
-transcript, disclosure and methods workbook routed by `notes/track2-current.json`.
-Use `scripts/check_track2_harness.py`, `notes/track2-reviewer-guide-v32.md` and
-`notes/track2-owner-readiness-v32.md`. All earlier bound inputs and releases through
-v30 remain frozen. The drug ledger/base validation remain v21.
+Session 72 updates **presentation and harness v34** with completed v31 research,
+verified v33 optical preparation and explicit pending-model status. Use the nine-slide
+deck, 336-word narration, report, transcript, disclosure and methods workbook routed
+by `notes/track2-current.json`, `scripts/check_track2_harness.py`,
+`notes/track2-reviewer-guide-v34.md` and `notes/track2-owner-readiness-v34.md`.
+All earlier bound inputs and releases through v32 remain frozen. The drug ledger
+and base validation remain v21.
+
+V33 is in progress under `/home/prachh/v/mva-track2-optical-20261019-v33`.
+The public mitotic dataset has 838,224 cells; BUB1B guide counts 11/15/11/25 leave
+only one guide above the fixed 20-cell minimum. Retrieval requires two guides.
+Retain this missing state. The status snapshot binds preparation and eight launched
+workers, not validated model gains. Check live remote status before restarting or
+allocating GPUs. Interphase processing, aggregate baseline comparison, plate
+sensitivity and independent numerical checks remain outstanding. The two-step smoke
+run is excluded. HeLa is transformed and lacks functional p53. No drug promotion.
+Use `notes/track2-optical-progress-v33.md`, the original plan and separate amendment,
+and `scripts/check_track2_optical_progress_v33.py`. No subject data left this machine.
+
+The October 19 refresh covers seven files at revision
+60e1c30e337ce6fe01813040dbe49979eb8c50aa and 29 public threads/83 visible comments.
+Four changed/new comments were reread. Submission remains October 24; delete and
+confirm to cnb@sagebase.org by November 23. `notes/deletion-plan-v2.md` supersedes
+historical dates without changing old snapshot bytes. No email or upload occurred.
 
 V31 used all eight H100s for 27,628,823,832 CUDA correlations and 2,048 split repeats
 on 558,299 public Replogle/Weissman cells. RPE1 BUB1B expression is repeatable but
@@ -103,7 +129,7 @@ rounding differences retained. GPU use was brief and bursty, not sustained satur
 no new neural inference occurred in v31. See `notes/track2-perturbseq-v31.md`, its
 methods, source review, reproduction guide, audit and qualification amendments.
 All jobs finished under `/home/prachh/v/mva-track2-perturbseq-20261007-v31`;
-this folder and all earlier remote roots/caches remain in the November 24 deletion scope.
+this folder and all earlier remote roots/caches remain in the November 23 deletion scope.
 
 The pinned Anthropic toolkit actually executed ProteinMPNN exact mode for 528 contexts
 and 67,584 fixed-site samples. Four related checkpoints separate historical primary
@@ -121,15 +147,15 @@ queries are not zero scores. No cross-cell joint-rescue claim is supported.
 
 All 52 claim records and eleven drug dispositions persist. No rescue priority,
 confirmed phase, clinical margin or wet-lab result is established. Earlier five- and
-six-reagent HT29 findings stay separate. All owned GPU jobs finished. The new remote
-folder `~/v/mva-track2-orthogonal-20261006-v29` is in the November 24 deletion scope.
+six-reagent HT29 findings stay separate. All v29 GPU jobs finished. The historical remote
+folder `~/v/mva-track2-orthogonal-20261006-v29` is in the November 23 deletion scope.
 No raw subject input or additional hosted model provider was used. Preserve all
 v28-bound inputs, every earlier audit/release and all failed runtime attempts.
 The October 6 official refresh checks revision c9b4a7e6247574124cd5bbfd249af9af6f1bbac3,
 26 discussions and 79 latest visible comments. Twelve new/edited comments were reread;
 unchanged content and three attachments retain the prior review. Judging now ends
 December 17; winners are announced December 18. Submission remains October 24 and
-our data-deletion deadline remains November 24. Consumer-tier clarification does not
+the then-recorded deletion date was November 24, corrected to November 23 by session 72. Consumer-tier clarification does not
 verify our account settings or relax raw-data restrictions. Organizers will not confirm
 candidate-specific phase during the challenge. No independent requirements reviewer
 participated. Delivery, provider and distribution flags remain unresolved.
@@ -240,16 +266,16 @@ participated. Delivery, provider and distribution flags remain unresolved.
   Record the complete acknowledgement inside the three-minute video. Preserve the
   Track 1 submitted v4, every earlier Track 2 bound input/package, the fixed v19 campaign and v1-v21 releases.
 
-Use `scripts/track2_release_v32.py` to check/build/verify **new** v32 research snapshot
-directories. Render with `scripts/render_track2_slides_v32.mjs`; export the report and
-workbook with `scripts/track2_export_documents_v32.py` followed by
-`scripts/render_track2_report_v32.mjs`. Recording materials use
-`scripts/track2_bundle_v32.py`; historical research retains AF3 notices.
-The combined public reviewer checks integrated v32 and frozen v31/v29/v27 research, v25 CRISPR, v23 RNAi, v21 decisions
+Use `scripts/track2_release_v34.py` to check/build/verify **new** v34 research snapshot
+directories. Render with `scripts/render_track2_slides_v34.mjs`; export the report and
+workbook with `scripts/track2_export_documents_v34.py` followed by
+`scripts/render_track2_report_v34.mjs`. Recording materials use
+`scripts/track2_bundle_v34.py`; historical research retains AF3 notices.
+The combined public reviewer checks integrated v34 and frozen v31/v29/v27 research, v25 CRISPR, v23 RNAi, v21 decisions
 and v19 findings. It needs no
 data/results folders, keys, network, GPUs or old
 local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
-The versioned `scripts/track2_public_review_v32.py` checks the integrated presentation
+The versioned `scripts/track2_public_review_v34.py` checks the integrated presentation
 and frozen research; `scripts/check_track2_transcriptome.py` checks v19 alone.
 Its passing result verifies consistency, not biology or eligibility. The stricter
 release verification also requires retained local historical archives.
@@ -281,14 +307,14 @@ uv run --no-project python scripts/check_track2_crispr_v25.py
 uv run --no-project python scripts/check_track2_orthogonal_v29.py
 uv run --no-project python scripts/check_track2_perturbseq_v31.py
 uv run --no-project python scripts/track2_falsification_v21.py
-uv run --no-project python scripts/track2_public_review_v32.py
-uv run python scripts/track2_release_v32.py check
+uv run --no-project python scripts/track2_public_review_v34.py
+uv run python scripts/track2_release_v34.py check
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
 `track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
 its old conditional-screen label is not today's drug decision. The current v21
-ledger, v32 report and v19/v23/v25/v27/v29/v31 research take precedence. Historical exact-byte verification remains
+ledger, v34 report and v19/v23/v25/v27/v29/v31 research take precedence. Historical exact-byte verification remains
 available through the versioned release scripts; never resubmit Track 1 to resolve
 its missing administrative receipt.
 

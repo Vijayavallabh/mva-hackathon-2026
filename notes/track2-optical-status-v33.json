@@ -1,0 +1,418 @@
+{
+  "schema_version": 33,
+  "as_of_utc": "2026-10-19T11:43:25.350279+00:00",
+  "research_status": "in_progress",
+  "model_results_validated": false,
+  "drug_ranking_changed": false,
+  "biological_validation": false,
+  "source_doi": "10.7910/DVN/VYKTI5",
+  "source_version": "2.0",
+  "source_license": "CC BY 4.0",
+  "plan_sha256": "f9e56533068de83eea12844a1d660252a4f18c2e0f6133a65bdb484ea773fa1d",
+  "amendment_sha256": "6a450836a153c34f0b45786b0a911228eac2b42fa5cbd3fb0cd8f68984a2cdfd",
+  "mitotic_preparation": {
+    "arm": "mitotic",
+    "cells": 838224,
+    "sampled_cells": 832846,
+    "guides": 20404,
+    "genes": 5050,
+    "features": 1068,
+    "query_coverage": {
+      "BUB1B": [
+        {
+          "guide": "AGTGAAGCTGTATTGCCACG",
+          "cells": 11,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "GAGCAGAACTATCCTCAAGG",
+          "cells": 15,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "GCAGATGCGATATTTCAGGA",
+          "cells": 11,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "TCACAGTGAAGCCATGTCCC",
+          "cells": 25,
+          "meets_20_cell_minimum": true
+        }
+      ],
+      "BUB1": [
+        {
+          "guide": "ACCAGACGGACACTTACTGA",
+          "cells": 19,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "CAAGGAGAAGCTTATTCGTG",
+          "cells": 14,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "GGTAGCAAAACAGTGTACCC",
+          "cells": 13,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "TCAGAGAGGAATTCAAAACC",
+          "cells": 45,
+          "meets_20_cell_minimum": true
+        }
+      ],
+      "MAD2L1": [
+        {
+          "guide": "AATGTGGTGGAACAACTGAA",
+          "cells": 12,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "ACTCGAGTAAAGGTTTCAGA",
+          "cells": 7,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "AGCAGGGAATCACCCTGCGC",
+          "cells": 12,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "TGATCTGTCTGATCACTGAA",
+          "cells": 13,
+          "meets_20_cell_minimum": false
+        }
+      ],
+      "CDC20": [
+        {
+          "guide": "CAGTCTGTTCTGATAACCTG",
+          "cells": 104,
+          "meets_20_cell_minimum": true
+        },
+        {
+          "guide": "GGCCAAATGTCGTCCATCTG",
+          "cells": 169,
+          "meets_20_cell_minimum": true
+        },
+        {
+          "guide": "TCCCAGAACTCCAATCCACA",
+          "cells": 18,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "TGGGGAATATATATCCTCTG",
+          "cells": 7,
+          "meets_20_cell_minimum": false
+        }
+      ],
+      "TTK": [
+        {
+          "guide": "AAATGCTGGAAATTGCCCTG",
+          "cells": 5,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "ATTTTGGCCATATTTATCTG",
+          "cells": 22,
+          "meets_20_cell_minimum": true
+        },
+        {
+          "guide": "TTAACTGGGACTCTTCCAAA",
+          "cells": 4,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "TTATATGAACACTATAGTGG",
+          "cells": 39,
+          "meets_20_cell_minimum": true
+        }
+      ],
+      "AURKB": [
+        {
+          "guide": "AGGCCACCATACCTCAGGGA",
+          "cells": 3,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "CATCAACCCATACTGCAGGT",
+          "cells": 10,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "GGGTGACAGGCTCTTTCCGG",
+          "cells": 20,
+          "meets_20_cell_minimum": true
+        },
+        {
+          "guide": "TGACGAGCAGCGAACAGCCA",
+          "cells": 5,
+          "meets_20_cell_minimum": false
+        }
+      ],
+      "PLK1": [
+        {
+          "guide": "AACCAAAGTCGAATATGACG",
+          "cells": 11,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "ACCGGCGAAAGAGATCCCGG",
+          "cells": 28,
+          "meets_20_cell_minimum": true
+        },
+        {
+          "guide": "AGCCAAGCACAATTTGCCGT",
+          "cells": 12,
+          "meets_20_cell_minimum": false
+        },
+        {
+          "guide": "GTCCCGCTTCTCGTCGATGT",
+          "cells": 1,
+          "meets_20_cell_minimum": false
+        }
+      ],
+      "MTOR": [
+        {
+          "guide": "CAGCATCGGATGCTTAGGAG",
+          "cells": 44,
+          "meets_20_cell_minimum": true
+        },
+        {
+          "guide": "GAGCCGGAATGAGGAAACCA",
+          "cells": 30,
+          "meets_20_cell_minimum": true
+        },
+        {
+          "guide": "TCAGGAAATGATCCGCACAG",
+          "cells": 36,
+          "meets_20_cell_minimum": true
+        },
+        {
+          "guide": "TGGCCGTCTTGCCATGGCAG",
+          "cells": 28,
+          "meets_20_cell_minimum": true
+        }
+      ],
+      "RPTOR": [
+        {
+          "guide": "AGTACGAGAACTGGCAGCCA",
+          "cells": 27,
+          "meets_20_cell_minimum": true
+        },
+        {
+          "guide": "CTTACGTCGCAACGCCAAGG",
+          "cells": 41,
+          "meets_20_cell_minimum": true
+        },
+        {
+          "guide": "GATCTGGCAGAACTTCGACT",
+          "cells": 27,
+          "meets_20_cell_minimum": true
+        },
+        {
+          "guide": "TCAAGCAGTTCGCACTACAG",
+          "cells": 81,
+          "meets_20_cell_minimum": true
+        }
+      ],
+      "RICTOR": [
+        {
+          "guide": "ACAACTATGGACACAGACTG",
+          "cells": 137,
+          "meets_20_cell_minimum": true
+        },
+        {
+          "guide": "GGCATAGTCGCAAACATCTG",
+          "cells": 86,
+          "meets_20_cell_minimum": true
+        },
+        {
+          "guide": "TGACATACAACAGAGCAACG",
+          "cells": 47,
+          "meets_20_cell_minimum": true
+        },
+        {
+          "guide": "TGTATAGGCAGGTAGACGTG",
+          "cells": 37,
+          "meets_20_cell_minimum": true
+        }
+      ]
+    },
+    "plan_sha256": "f9e56533068de83eea12844a1d660252a4f18c2e0f6133a65bdb484ea773fa1d",
+    "biological_validation": false,
+    "source_normalization_reused": true,
+    "outputs": {
+      "guides.json": "4645705c4990061e65210942800b368d1e93098870d2927910ce7e457c646b47",
+      "features.json": "ad534a15dfd87d6c68a766862f0938b17298fe98d560b61d316f1a3866992854",
+      "full_profiles.npz": "11e4f3a04b1a839188536682e214ba0ef8e5ca56179880ec8b8f8285911f21f4",
+      "sample_meta.parquet": "dc3720179928db411a2ff71815b75105b492199ff9f2fcc7eab60ebc8abbadc0",
+      "sample_x.npy": "e2c6a6b2d1599f8918ef1ce7afe91d5a511511745c72839437f9bfec34b53b59"
+    }
+  },
+  "mitotic_preparation_receipt_sha256": "32da7575a8095798c757a043ed39da28ffd6b5d052e504b1b3ab97463ba21820",
+  "mitotic_worker_registration": {
+    "started_utc": "2026-10-19T11:43:25.350279+00:00",
+    "model_script_sha256": "eabdac39bfc5763e1775bf707cf5e07c5c01f84f647d736999acb52f4a5ced78",
+    "workers": [
+      {
+        "gpu": 0,
+        "uuid": "GPU-4b0cb198-278c-29fe-7cf7-0742dbe248fa",
+        "seed": 3301,
+        "shuffled": false,
+        "label": "mitotic-3301-real",
+        "pid": 126288,
+        "command": [
+          "/home/prachh/v/mva-track2-optical-20261019-v33/.venv/bin/python",
+          "/home/prachh/v/mva-track2-optical-20261019-v33/scripts/track2_optical_model_v33.py",
+          "/home/prachh/v/mva-track2-optical-20261019-v33",
+          "--arm",
+          "mitotic",
+          "--seed",
+          "3301"
+        ]
+      },
+      {
+        "gpu": 1,
+        "uuid": "GPU-9932f351-6a76-ac09-a560-ec7b67efb5de",
+        "seed": 3302,
+        "shuffled": false,
+        "label": "mitotic-3302-real",
+        "pid": 126289,
+        "command": [
+          "/home/prachh/v/mva-track2-optical-20261019-v33/.venv/bin/python",
+          "/home/prachh/v/mva-track2-optical-20261019-v33/scripts/track2_optical_model_v33.py",
+          "/home/prachh/v/mva-track2-optical-20261019-v33",
+          "--arm",
+          "mitotic",
+          "--seed",
+          "3302"
+        ]
+      },
+      {
+        "gpu": 2,
+        "uuid": "GPU-8b97ecf4-3858-58ab-f2f2-a456106ddd14",
+        "seed": 3303,
+        "shuffled": false,
+        "label": "mitotic-3303-real",
+        "pid": 126290,
+        "command": [
+          "/home/prachh/v/mva-track2-optical-20261019-v33/.venv/bin/python",
+          "/home/prachh/v/mva-track2-optical-20261019-v33/scripts/track2_optical_model_v33.py",
+          "/home/prachh/v/mva-track2-optical-20261019-v33",
+          "--arm",
+          "mitotic",
+          "--seed",
+          "3303"
+        ]
+      },
+      {
+        "gpu": 3,
+        "uuid": "GPU-5823a29a-e328-c67e-48be-49105f456ca7",
+        "seed": 3304,
+        "shuffled": false,
+        "label": "mitotic-3304-real",
+        "pid": 126291,
+        "command": [
+          "/home/prachh/v/mva-track2-optical-20261019-v33/.venv/bin/python",
+          "/home/prachh/v/mva-track2-optical-20261019-v33/scripts/track2_optical_model_v33.py",
+          "/home/prachh/v/mva-track2-optical-20261019-v33",
+          "--arm",
+          "mitotic",
+          "--seed",
+          "3304"
+        ]
+      },
+      {
+        "gpu": 4,
+        "uuid": "GPU-7a66e0d4-0593-7e9e-1979-623d62ef3aa0",
+        "seed": 3301,
+        "shuffled": true,
+        "label": "mitotic-3301-shuffled",
+        "pid": 126292,
+        "command": [
+          "/home/prachh/v/mva-track2-optical-20261019-v33/.venv/bin/python",
+          "/home/prachh/v/mva-track2-optical-20261019-v33/scripts/track2_optical_model_v33.py",
+          "/home/prachh/v/mva-track2-optical-20261019-v33",
+          "--arm",
+          "mitotic",
+          "--seed",
+          "3301",
+          "--shuffled"
+        ]
+      },
+      {
+        "gpu": 5,
+        "uuid": "GPU-0f3c548e-64c5-452d-e1a6-d8d9e4e62c1b",
+        "seed": 3302,
+        "shuffled": true,
+        "label": "mitotic-3302-shuffled",
+        "pid": 126293,
+        "command": [
+          "/home/prachh/v/mva-track2-optical-20261019-v33/.venv/bin/python",
+          "/home/prachh/v/mva-track2-optical-20261019-v33/scripts/track2_optical_model_v33.py",
+          "/home/prachh/v/mva-track2-optical-20261019-v33",
+          "--arm",
+          "mitotic",
+          "--seed",
+          "3302",
+          "--shuffled"
+        ]
+      },
+      {
+        "gpu": 6,
+        "uuid": "GPU-123f14db-3f83-de52-44fb-cbf2d565d773",
+        "seed": 3303,
+        "shuffled": true,
+        "label": "mitotic-3303-shuffled",
+        "pid": 126294,
+        "command": [
+          "/home/prachh/v/mva-track2-optical-20261019-v33/.venv/bin/python",
+          "/home/prachh/v/mva-track2-optical-20261019-v33/scripts/track2_optical_model_v33.py",
+          "/home/prachh/v/mva-track2-optical-20261019-v33",
+          "--arm",
+          "mitotic",
+          "--seed",
+          "3303",
+          "--shuffled"
+        ]
+      },
+      {
+        "gpu": 7,
+        "uuid": "GPU-2089b3fa-c729-88ce-c154-eb93d2096d91",
+        "seed": 3304,
+        "shuffled": true,
+        "label": "mitotic-3304-shuffled",
+        "pid": 126295,
+        "command": [
+          "/home/prachh/v/mva-track2-optical-20261019-v33/.venv/bin/python",
+          "/home/prachh/v/mva-track2-optical-20261019-v33/scripts/track2_optical_model_v33.py",
+          "/home/prachh/v/mva-track2-optical-20261019-v33",
+          "--arm",
+          "mitotic",
+          "--seed",
+          "3304",
+          "--shuffled"
+        ]
+      }
+    ]
+  },
+  "mitotic_worker_registration_sha256": "0fdfe7dde8eb94c23abc8418fea99cb50cd2df785e235e29b2281ffcbb5baf78",
+  "interphase_status": "download_in_progress_at_capture",
+  "smoke_excluded": true,
+  "full_model_gain": null,
+  "source_review": "notes/track2-optical-source-review-v33.md",
+  "scripts": {
+    "scripts/test_track2_optical_model_v33.py": "c30886524efe0657bfb994a9e3667352d686e05589cfea8dc946cc01e5874b82",
+    "scripts/test_track2_optical_v33.py": "305bf4097af7b20815713cd930a6819b9162b4919df1fbb9a7134b844c962681",
+    "scripts/track2_optical_fetch_v33.py": "c6b60f1f37ff63bf4576772a8c1b4c6e6624695929e7b8f738f201827335dd97",
+    "scripts/track2_optical_model_v33.py": "eabdac39bfc5763e1775bf707cf5e07c5c01f84f647d736999acb52f4a5ced78",
+    "scripts/track2_optical_prepare_v33.py": "9904f6c42dd4f55d539922b4ddc29c35a4c45b5aa99f9fed9ea0f5f3d36bee9f",
+    "scripts/track2_optical_run_v33.py": "5e19efb4f092a3b8097c61f9cd122e896e0bafbde34d9679d9ab2a43d7283bcf",
+    "scripts/track2_optical_sources_v33.py": "c349380118b714476d89e6c7f7ed7362b7c93c9ef1efeb8600d14236ba204968"
+  },
+  "environment": {
+    "notes/track2-optical-environment-v33.toml": "3b53c07f0b9cdf3a668d2a5a375eef1dfe3b5cf1c8499ecf223ff55d38e498b8",
+    "notes/track2-optical-uv-v33.lock": "ef235aec7d69aeaa12c52cee371c5b7b93e2d7f9d4bfbad0b653a935933d732f"
+  }
+}

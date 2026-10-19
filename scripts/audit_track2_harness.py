@@ -56,7 +56,7 @@ with contextlib.redirect_stdout(captured):
     runpy.run_path(str(root / 'scripts/check_track2_harness.py'), run_name='__main__')
 result = json.loads(captured.getvalue())
 assert result['passed'] and result['research_addendum']['version'] == 19
-assert result['presentation_version'] == 32 and result['harness_version'] == 32
+assert result['presentation_version'] == 34 and result['harness_version'] == 34
 assert result['rnai_addendum']['version'] == 23 and result['rnai_addendum']['passed']
 assert result['crispr_addendum']['version'] == 25 and result['crispr_addendum']['passed']
 assert result['falsification_addendum']['version'] == 27 and result['falsification_addendum']['passed']

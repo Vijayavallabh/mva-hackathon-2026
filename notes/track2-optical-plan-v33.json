@@ -1,0 +1,120 @@
+{
+  "schema_version": 33,
+  "date": "2026-10-19",
+  "feature": "feat-009",
+  "status": "registered_before_target_effect_analysis",
+  "scope": "Public optical-screen reanalysis and prospective assay qualification; no patient experiment or treatment prediction",
+  "motivation": "Challenge the inference that weak BUB1B transcriptomic specificity makes all functional surrogates uninformative. Test an independent imaging readout and separate guide designs, while testing whether richer models merely encode abundance, size or cell-cycle effects.",
+  "baseline": {
+    "presentation_version": 32,
+    "drug_science_version": 21,
+    "latest_research_version": 31,
+    "rescue_priority": null,
+    "everolimus": "mechanistic_probe_only",
+    "hcq": "reserve",
+    "phase": "unconfirmed",
+    "clinical_exposure_margin": null
+  },
+  "registration_limits": [
+    "Exploratory follow-up informed by prior Track 2 results and published Funk figures/methods; not external preregistration.",
+    "Source metadata, column names, published figure labels and data availability were inspected before this plan.",
+    "The BUB1B webpage and aggregate workbook were downloaded before registration; target effect values have not been extracted for analysis.",
+    "The source's live-cell analysis combines mitotic/apoptotic classes, excludes incomplete 24-hour lineages and selects the stronger day for one figure. Those outputs cannot supply unbiased daughter survival or a faithful mitotic-duration rescue endpoint.",
+    "The deposited fixed-cell features were already normalized using same-well non-targeting controls. Original raw-feature normalization cannot be independently reconstructed from this export."
+  ],
+  "inputs": {
+    "paper_doi": "10.1016/j.cell.2022.10.017",
+    "dataset_doi": "10.7910/DVN/VYKTI5",
+    "dataset_version": "2.0",
+    "dataset_license": "CC BY 4.0",
+    "metadata_sha256": "8596a110ae68aa73579c0bd28d8bb68b3e61d9297dd24c0a9a4886efb5262903",
+    "mitotic_files": 97,
+    "mitotic_bytes": 8399967217,
+    "mitotic_rows_from_parquet_metadata": 838224,
+    "interphase_files": 3029,
+    "interphase_bytes": 321585666869,
+    "public_inputs_only": true,
+    "cell_model": "HeLa, transformed aneuploid cervical cancer cells lacking a functional p53 pathway"
+  },
+  "queries": ["BUB1B", "BUB1", "MAD2L1", "CDC20", "TTK", "AURKB", "PLK1", "MTOR", "RPTOR", "RICTOR"],
+  "coverage": {
+    "report_every_query": true,
+    "guide_identity": "Exact public sgRNA sequence plus gene label; do not equate multiple cells with independent designs",
+    "minimum_cells_per_guide_for_profile": 20,
+    "minimum_distinct_guides_for_evaluation": 2,
+    "minimum_guides_for_neural_training_gene": 3,
+    "insufficient_coverage": "Explicit missing state, never zero effect or successful qualification",
+    "reject_duplicate_cell_identity": ["plate", "well", "tile", "label"],
+    "report_plate_well_coverage": true
+  },
+  "preprocessing": {
+    "arms": ["interphase", "mitotic"],
+    "analyze_arms_separately": true,
+    "no_live_fate_inference_from_fixed_cells": true,
+    "features": "Numeric phenotype features only. Exclude gene/guide labels, plate/well/site/tile, cell identifiers, classifier outputs, image bounds and absolute coordinates including center-of-mass/max-location coordinates.",
+    "source_normalized_clipping": [-10, 10],
+    "missing_values": "Report per-feature fractions. Fit imputation/standardization only on training genes; retain missing query states. Do not hide failed numerical rows.",
+    "neural_cell_cap_per_guide": 128,
+    "sampling": "Deterministic hash of full cell identity; sampling independent of feature values; retain complete-guide counts and full-data baseline summaries.",
+    "query_cells": "Do not select by favorable morphology or source phenotype cluster."
+  },
+  "comparison": {
+    "baselines": [
+      "Guide abundance and mitotic fraction; not a direct viability measurement",
+      "Basic size, DNA intensity/content and nuclear-shape features",
+      "Full robust phenotype profiles with cosine/correlation retrieval",
+      "Training-gene-only PCA/whitening sensitivity"
+    ],
+    "learned_model": "Cross-guide contrastive MLP: per-cell encoder 512,256,128; mean of 32-cell bags; symmetric InfoNCE with temperature 0.1; no gene/guide identity as an input",
+    "optimizer": "AdamW, learning rate 0.0003, weight decay 0.01",
+    "training_genes_per_step": 128,
+    "maximum_steps": 3000,
+    "validation_interval_steps": 100,
+    "checkpoint_selection": "Best validation-gene macro reciprocal rank; no query-based selection",
+    "seeds": [3301, 3302, 3303, 3304],
+    "gene_split": "SHA256('track2-v33|' + gene) modulo 10: 0-1 test, 2 validation, 3-9 training; all ten named queries forced into test",
+    "guide_separation": "Different guide sequences for paired views and held-out retrieval; report every eligible guide direction",
+    "batch_sensitivity": "Separate-plate comparisons wherever coverage permits; retain missing/insufficient states",
+    "primary_metric": "Macro reciprocal rank across held-out genes for own-gene retrieval from distinct-guide reference profiles",
+    "secondary_metrics": ["top-1 and top-10 fractions", "per-query rank and similarity", "guide concordance", "nearest alternatives", "plate dependence"],
+    "practical_gain_gate": "At least 0.02 absolute macro-MRR improvement over the strongest simple baseline in all four seeds, with paired held-out-gene resampling interval excluding zero; engineering gate only, not a biological threshold",
+    "negative_controls": ["Shuffled training-gene associations", "Guide/metadata leakage checks", "Size-only and abundance-only baselines", "Held-out-plate sensitivity"],
+    "uncertainty": "Resample genes for aggregate performance; cells, guides, seeds and wells are not independent biological replicates. Report paired effects and distributions, not inflated sample sizes."
+  },
+  "numerical_validation": [
+    "Provider file size and MD5 plus observed SHA256 for all downloaded files",
+    "Independently recompute selected guide summaries on CPU in float64",
+    "Compare CPU and CUDA similarity arithmetic on fixed public controls",
+    "Fail on nonfinite outputs, duplicate identities or query/validation leakage",
+    "Retain all seeds, failures, counts and baseline results"
+  ],
+  "interpretation": {
+    "falsifiers": [
+      "No reproducible signal across distinct BUB1B guides",
+      "Signal explained by basic size/cell-cycle features or fails separate-plate comparisons",
+      "Learned model does not improve on the strongest simple baseline",
+      "Apparent normality depends on excluding dying cells or selecting a favorable time point"
+    ],
+    "favorable_result": "May prioritize an imaging readout for subsequent non-cancer, independent perturbation/restoration experiments. It cannot validate the child's alleles or establish joint drug rescue.",
+    "drug_promotion_allowed": false,
+    "exposure_update_allowed": false,
+    "clinical_recommendation_allowed": false,
+    "negative_result": "Retain failures, narrow the surrogate claim, and strengthen prospective assay stopping rules."
+  },
+  "resources": {
+    "remote_root": "/home/prachh/v/mva-track2-optical-20261019-v33",
+    "gpu_workers": "Four seeds by two arms on eight actually idle H100s; one worker per device",
+    "maximum_new_storage_bytes": 450000000000,
+    "minimum_remote_free_bytes": 137438953472,
+    "local_raw_dataset_mirror": false,
+    "background_logs": true,
+    "deletion_deadline": "2026-11-24",
+    "subject_data_transfer": false
+  },
+  "tool_selection": {
+    "anthropic_toolkit_revision": "f4f62fa6592ae4938d49b1757bea0cfeff9f468e",
+    "anthropic_toolkit_action": "Current revision is unchanged. Preserve extensive executed v29 ProteinMPNN exact-mode work; the toolkit supplies no optical-phenotype model. Do not rerun molecular inference to inflate compute.",
+    "carbon_revision": "f6789ee79e6ef397de333577ffec1cb734496620",
+    "carbon_action": "Reviewed the requested collection, blog and model card. Defer inference: coding-region annotation is not the unresolved Track 2 drug/functional-rescue task; one consensus path per locus is not allele-specific splicing, phase or drug response."
+  }
+}
