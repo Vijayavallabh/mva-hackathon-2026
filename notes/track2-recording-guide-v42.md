@@ -1,7 +1,7 @@
 # Record the three-minute pitch in your own voice
 
-Use the nine-slide v40 deck and the [367-word script](track2-pitch-v40.md).
-Open the [offline teleprompter](track2-teleprompter-v40.html) on a second screen or
+Use the nine-slide v40 deck and the [367-word script](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-pitch-v40.md).
+Open the [offline teleprompter](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-teleprompter-v40.html) on a second screen or
 beside the slides. It requires no microphone permission and records nothing.
 Press Space to start/pause; arrow keys move between cues. Keep its controls out
 of the final capture. Cue allocations include the acknowledgement; your actual pace must be measured.
@@ -57,7 +57,7 @@ After export, watch the entire file. Check audible opening/closing words, slide
 alignment, full acknowledgement, legibility and duration. Measure the actual exported
 video; teleprompter allocations are not a recording receipt. Add captions corrected
 against the actual audio, especially drug/gene names. Use the exact provider disclosure
-and acknowledgement in [video description](track2-video-description-v42.md).
+and acknowledgement in [video description](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-video-description-v42.md).
 
 The official portal requires a YouTube/Vimeo link. Hosting, public-access testing,
 owner/provider/distribution review, live quota checks and an authenticated submission

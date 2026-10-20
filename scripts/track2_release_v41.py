@@ -43,6 +43,8 @@ FILES['track2-judge-questions-v42.md']='notes/track2-judge-questions-v42.md'
 FILES['track2-community-kit-v42.md']='notes/track2-community-kit-v42.md'
 FILES['track2-recording-guide-v42.md']='notes/track2-recording-guide-v42.md'
 FILES['track2-competition-strategy-v42.md']='notes/track2-competition-strategy-v42.md'
+FILES['track2-lab-handoff-v42.md']='notes/track2-lab-handoff-v42.md'
+FILES['track2-candidate-comparison-v42.md']='notes/track2-candidate-comparison-v42.md'
 SCRIPTS=['track2_release_v41.py','test_track2_release_v41.py',
     'track2_public_review_v41.py','test_track2_public_review_v41.py',
     'track2_export_documents_v41.py','render_track2_report_v41.mjs',

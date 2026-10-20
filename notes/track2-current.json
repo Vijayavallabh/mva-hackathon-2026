@@ -35,11 +35,11 @@
     "interactive_demo": "notes/track2-demo-v37.html",
     "demo_audit": "notes/track2-demo-audit-v37.json",
     "community_kit_guide": "notes/track2-community-kit-v42.md",
-    "lab_handoff": "notes/track2-lab-handoff-v40.md",
+    "lab_handoff": "notes/track2-lab-handoff-v42.md",
     "judge_questions": "notes/track2-judge-questions-v42.md",
     "recording_guide": "notes/track2-recording-guide-v42.md",
     "teleprompter": "notes/track2-teleprompter-v40.html",
-    "candidate_comparison": "notes/track2-candidate-comparison-v39.md",
+    "candidate_comparison": "notes/track2-candidate-comparison-v42.md",
     "rehearsal_adjudication": "notes/track2-rehearsal-adjudication-v39.md",
     "rehearsal_sources": "notes/track2-rehearsal-sources-v39.json",
     "qualification_amendment": "notes/track2-qualification-amendment-v39.md",
@@ -53,7 +53,7 @@
     "requirements_v42_audit": "notes/track2-requirements-v42.json",
     "requirements_v42_check": "scripts/check_track2_requirements_v42.py"
   },
-  "snapshot": "results/feat009/jvv7_track2_research_v41-verified25",
+  "snapshot": "results/feat009/jvv7_track2_research_v41-verified26",
   "render_directory": "results/feat009/v41-slides-final-20261020-3",
   "model_campaign": {
     "protein_scores": 84,
@@ -78,7 +78,7 @@
   },
   "history": "progress.md",
   "harness_review": "notes/track2-harness-review-v41.md",
-  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v41_22.zip",
+  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v41_23.zip",
   "document_directory": "results/feat009/v41-documents-final-20261020-7",
   "research_addendum": {
     "version": 19,
