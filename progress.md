@@ -9107,3 +9107,15 @@ Fresh verified outputs are
 and `results/feat009/jvv7_track2_research_v47-verified11` (241 files/972 bound inputs).
 No video, URL, hosting, authenticated quota/provider check, biological validation or
 submission occurred.
+
+## Session 100 — 2026-10-20: current report wording and export refresh
+
+The v47 report was corrected to describe the current 369-word script and the later
+v44 live requirements refresh. A fresh 12-page report/workbook export was rendered
+at `results/feat009/v47-documents-final-20261020-4`; the current artifact record,
+submission-materials receipt, submission checklist, owner/reviewer guides and
+checker now route this export. Fresh verified outputs are
+`results/feat009/jvv7_track2_video_materials_v47_13.zip` (106 files, 2,810,849
+bytes) and `results/feat009/jvv7_track2_research_v47-verified12` (241 files/972
+bound inputs). No video, URL, hosting, authenticated quota/provider check,
+biological validation or submission occurred.

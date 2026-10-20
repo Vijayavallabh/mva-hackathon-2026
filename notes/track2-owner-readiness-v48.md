@@ -11,10 +11,10 @@ receipt is established.
 ## Exact current deliverables
 
 - Report source: `notes/track2-report-v47.md`
-- Report PDF/workbook directory: `results/feat009/v47-documents-final-20261020-3`
+- Report PDF/workbook directory: `results/feat009/v47-documents-final-20261020-4`
 - Slide deck source: `notes/track2-slides-v47.html`
 - Rendered slides/PDF: `results/feat009/v47-slides-final-20261020-1`
-- Methods workbook: `results/feat009/v47-documents-final-20261020-3/jvv7_track2_methods_v47.xlsx`
+- Methods workbook: `results/feat009/v47-documents-final-20261020-4/jvv7_track2_methods_v47.xlsx`
 - Recording materials ZIP: `results/feat009/jvv7_track2_video_materials_v47_3.zip`
 - Verified release snapshot: `results/feat009/jvv7_track2_research_v47-verified7`
 - Public repository HEAD: `1fc4163ff7ba67c51decd73e14062d06fe86101d`

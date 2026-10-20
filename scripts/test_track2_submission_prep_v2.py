@@ -54,7 +54,7 @@ class SubmissionPrepTests(unittest.TestCase):
     def test_receipt_hash_drift_is_rejected(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
-            for relative in ["notes", "results/feat009/v47-documents-final-20261020-3",
+            for relative in ["notes", "results/feat009/v47-documents-final-20261020-4",
                              "results/feat009/v47-slides-final-20261020-1", "sources/public-official-v42"]:
                 (root / relative).mkdir(parents=True, exist_ok=True)
             for name in ["track2-submission-prep-v2.md", "track2-current.json", "track2-submission-materials-v1.json"]:
@@ -63,8 +63,8 @@ class SubmissionPrepTests(unittest.TestCase):
                 Path("sources/public-official-v42/tabs-submit_track2.py").read_bytes())
             for name in ["jvv7_track2_report_v47.pdf", "jvv7_track2_report_v47.md",
                          "jvv7_track2_methods_v47.xlsx"]:
-                source = Path("results/feat009/v47-documents-final-20261020-3", name)
-                (root / "results/feat009/v47-documents-final-20261020-3" / name).write_bytes(source.read_bytes())
+                source = Path("results/feat009/v47-documents-final-20261020-4", name)
+                (root / "results/feat009/v47-documents-final-20261020-4" / name).write_bytes(source.read_bytes())
             slide = Path("results/feat009/v47-slides-final-20261020-1/track2-slides-v47.pdf")
             (root / "results/feat009/v47-slides-final-20261020-1/track2-slides-v47.pdf").write_bytes(slide.read_bytes())
             materials = json.loads((root / "notes/track2-submission-materials-v1.json").read_text())

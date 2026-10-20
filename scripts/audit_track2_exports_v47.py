@@ -11,7 +11,7 @@ import fitz
 
 ROOT = Path(__file__).resolve().parents[1]
 SLIDES = ROOT / 'results/feat009/v47-slides-final-20261020-1'
-DOCS = ROOT / 'results/feat009/v47-documents-final-20261020-3'
+DOCS = ROOT / 'results/feat009/v47-documents-final-20261020-4'
 
 
 def digest(path):
@@ -25,7 +25,7 @@ def luminance(color):
 
 
 def main():
-    destinations = [ROOT/f'notes/track2-v47-{kind}-audit-v47.json' for kind in ('render', 'documents')]
+    destinations = [ROOT/f'notes/track2-v47-{kind}-audit-v48.json' for kind in ('render', 'documents')]
     if any(p.exists() or p.is_symlink() for p in destinations):
         raise ValueError('Existing audits are protected')
     render = json.loads((SLIDES/'render.json').read_text())
