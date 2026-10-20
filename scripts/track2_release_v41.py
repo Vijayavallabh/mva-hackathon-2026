@@ -36,6 +36,7 @@ for name in sorted(LITERATURE_AUDIT['public_receipts']):
     FILES[name]='sources/public-literature-v41/'+name
 FILES['track2-report-v41.md']='notes/track2-report-v41.md'
 FILES['track2-slides-v41.html']='notes/track2-slides-v41.html'
+FILES['track2-external-review-packet-v42.md']='notes/track2-external-review-packet-v42.md'
 SCRIPTS=['track2_release_v41.py','test_track2_release_v41.py',
     'track2_public_review_v41.py','test_track2_public_review_v41.py',
     'track2_export_documents_v41.py','render_track2_report_v41.mjs',

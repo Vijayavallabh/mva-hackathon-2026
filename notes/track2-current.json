@@ -43,7 +43,7 @@
     "rehearsal_adjudication": "notes/track2-rehearsal-adjudication-v39.md",
     "rehearsal_sources": "notes/track2-rehearsal-sources-v39.json",
     "qualification_amendment": "notes/track2-qualification-amendment-v39.md",
-    "external_review_packet": "notes/track2-external-review-packet-v40.md",
+    "external_review_packet": "notes/track2-external-review-packet-v42.md",
     "recording_audit": "notes/track2-prompter-audit-v40.json",
     "narration_metrics": "notes/track2-narration-v40.json",
     "literature_note": "notes/track2-literature-v41.md",
@@ -53,7 +53,7 @@
     "requirements_v42_audit": "notes/track2-requirements-v42.json",
     "requirements_v42_check": "scripts/check_track2_requirements_v42.py"
   },
-  "snapshot": "results/feat009/jvv7_track2_research_v41-verified4",
+  "snapshot": "results/feat009/jvv7_track2_research_v41-verified14",
   "render_directory": "results/feat009/v41-slides-final-20261020-3",
   "model_campaign": {
     "protein_scores": 84,
@@ -78,7 +78,7 @@
   },
   "history": "progress.md",
   "harness_review": "notes/track2-harness-review-v41.md",
-  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v41_3.zip",
+  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v41_11.zip",
   "document_directory": "results/feat009/v41-documents-final-20261020-5",
   "research_addendum": {
     "version": 19,
