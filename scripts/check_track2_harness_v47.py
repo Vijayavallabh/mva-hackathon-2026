@@ -169,8 +169,8 @@ def validate(state, features, documents):
     roles['narration_metrics']='notes/track2-narration-v46.json'
     require(state['artifacts'] == roles, 'Mixed, missing or unsafe artifact paths')
     require(state.get('community_kit_bundle') == 'results/feat009/jvv7_track2_community_kit_v37.zip', 'Stale community kit path')
-    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified13', 'Stale snapshot path')
-    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_14.zip',
+    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified14', 'Stale snapshot path')
+    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_16.zip',
             'Stale recording-materials bundle path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['render_directory']),
             'Stale or unsafe render-directory path')

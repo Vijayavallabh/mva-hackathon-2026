@@ -9137,3 +9137,16 @@ outputs are `results/feat009/jvv7_track2_video_materials_v47_14.zip` (106 files,
 2,810,926 bytes) and `results/feat009/jvv7_track2_research_v47-verified13`
 (241 files/972 bound inputs). No video, URL, hosting, authenticated
 quota/provider check, biological validation or submission occurred.
+
+## Session 102 — 2026-10-20: final current bundle/snapshot consistency repair
+
+A routine verification found that the v47 owner/review bundle retained an older
+copy of `scripts/test_track2_submission_prep_v2.py`. The bundle was rebuilt as
+`results/feat009/jvv7_track2_video_materials_v47_16.zip` (106 files, 2,810,927
+bytes), and a fresh release snapshot was bound at
+`results/feat009/jvv7_track2_research_v47-verified14` (241 files/972 bound inputs).
+Current artifact routes and harness expectations now use these exact outputs.
+
+Verification passed: current v47 harness, release, bundle, 1,149 tests with 14
+skipped, and `./init.sh`. No video, URL, hosting, authenticated quota/provider
+check, biological validation or submission occurred.
