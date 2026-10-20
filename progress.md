@@ -8914,3 +8914,36 @@ The owner must still record and measure the video, host it, arrange independent
 review, resolve provider/distribution questions, perform live portal checks,
 submit and archive a receipt. All scoped data remain subject to deletion and
 confirmation to cnb@sagebase.org by November 23.
+
+## Session 87 — 2026-10-20: v43 public synchronization and handoff hardening
+
+The two v43 commits were pushed to public GitHub and synchronized at
+`7a38d480e7645f99b5082870c45204bf26ebdf7f`. Anonymous checks returned HTTP 200 for
+the current v43 report, literature note/audit, lab handoff, reviewer brief, owner
+readiness, slides and 51 current repository links in the current support documents.
+This is public link availability, not an authenticated account/quota check.
+
+The current handoff and README were updated from stale v41 entry points to the v43
+report/deck, v43 literature chain, reviewer/owner guides, public reviewer, release
+snapshot `results/feat009/jvv7_track2_research_v43-verified35`, and verified
+recording-materials bundle. Historical sections retain their own versioned routes.
+
+Final verification after the route update:
+
+```bash
+./init.sh
+uv run --no-project python scripts/check_track2_literature_v43.py
+uv run --no-project python scripts/track2_public_review_v43.py
+uv run python scripts/track2_release_v43.py check
+uv run python scripts/track2_release_v43.py verify results/feat009/jvv7_track2_research_v43-verified35
+uv run python scripts/track2_bundle_v43.py verify
+uv run python scripts/audit_track2_harness_v43.py --output <new-output.json>
+uv run python -m unittest discover -s scripts -p 'test_track2*.py'
+```
+
+Observed results: literature/public/release checks passed; the snapshot verified
+241 files/972 bound inputs; the ZIP verified 96 files/2,762,262 bytes; the isolated
+harness audit passed with network/process/protected-path/credential/write probes
+blocked; the full suite ran 1118 tests with 14 skipped and no failures. No subject
+data was accessed or committed. No wet-lab result, outside review, recording,
+hosting, upload or submission occurred.

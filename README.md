@@ -149,7 +149,7 @@ mitotic coverage remains missing. Equal-cap learning improves on sampled means,
 without beating full-data profiles. No drug or clinical claim is promoted.
 The [complete analysis](notes/track2-optical-v36.md), six new falsification records
 and all earlier research remain checked. There are 58 claim records across seven
-registers. Review with `uv run --no-project python scripts/check_track2_harness.py`;
+registers. Review with `uv run --no-project python scripts/check_track2_harness_v43.py`;
 original qualification evidence remains in `notes/track2-transcriptome-v19.md`.
 Recording/hosting, provider/distribution questions, live checks and receipt remain open.
 
@@ -191,7 +191,7 @@ HT29 agreement survives stricter adjustment and CRISPR QC restriction. MCF7 has 
 QC-qualified BUB1B query. Drug decisions remain unchanged.
 
 The [v29 reviewer guide](notes/track2-reviewer-guide-v29.md) covers 47 claim records,
-complete provenance and the combined `scripts/check_track2_harness.py` check.
+complete provenance and the combined `scripts/check_track2_harness_v29.py` check.
 At session 69, presentation v28 required the separate addendum. V30 now integrates
 those results and preserves v28. All v29 GPU jobs have finished.
 
@@ -215,7 +215,7 @@ connections remain separate from its failed BUB1B model qualification. New sourc
 checks detect regrouped old experiments under new IDs. One BUB1B guide and no joint
 functional rescue mean no drug promotion. The
 [v25 reviewer guide](notes/track2-reviewer-guide-v25.md) connects the full evidence,
-validation changes and combined `scripts/check_track2_harness.py` check.
+validation changes and combined `scripts/check_track2_harness_v25.py` check.
 Presentation v24 remains frozen; the later v26 materials integrate this addendum.
 
 **Session 64: integrated presentation and harness.** The v24 report, nine-slide deck,
@@ -246,7 +246,7 @@ The proposed decision contract returns HOLD with unmeasured biology and null mar
 An invalid assay, imprecision, scoped futility and safety failure now have different
 consequences. No wet-lab result, new model inference or candidate promotion is claimed.
 
-**Track 2 (feat-009) is in progress.** Read the [integrated v41 report](notes/track2-report-v41.md)
+**Track 2 (feat-009) is in progress.** Read the [integrated v43 report](notes/track2-report-v43.md)
 and the complete [v19 research record](notes/track2-transcriptome-v19.md).
 The [falsification review](notes/track2-falsification-review-v21.md) challenges the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
@@ -287,33 +287,34 @@ assumption; revise or abandon the approach when warranted. Use the original
 throughout research and before promotion/release. Apply the same standard to benefit,
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
-Current materials: [report source](notes/track2-report-v41.md),
+Current materials: [report source](notes/track2-report-v43.md),
 [367-word narration](notes/track2-pitch-v40.md), [plain transcript](notes/track2-transcript-v40.txt),
-[nine-slide deck](notes/track2-slides-v41.html) and
+[nine-slide deck](notes/track2-slides-v43.html) and
 [video description](notes/track2-video-description-v42.md). The
-[v41 literature addendum](notes/track2-literature-v41.md) and
-[audit](notes/track2-literature-audit-v41.json) add public-source readout evidence
+[v41 literature addendum](notes/track2-literature-v41.md), the
+[v43 TORC1-segregation addendum](notes/track2-literature-v43.md) and their
+[audits](notes/track2-literature-audit-v43.json) add public-source readout evidence
 without changing drug decisions. The mechanism and joint-treatment experiment lead the presentation, followed by
 the synthetic denominator example and completed optical comparison. Favorable BUB1B
 morphology, failed practical neural gain, guide/plate sensitivity and missing mitotic
 coverage remain distinct. All eleven methods answers and the 334-word abstract match
 the workbook export. Prior scientific details remain in linked research records.
 
-Start with the [combined reviewer guide](notes/track2-reviewer-guide-v41.md). One
-public CPU command checks integrated v41 materials and completed v19/v21/v23/v25/v27/v29/v31/v36 findings plus the v41 literature audit:
+Start with the [combined reviewer guide](notes/track2-reviewer-guide-v43.md). One
+public CPU command checks integrated v43 materials and completed v19/v21/v23/v25/v27/v29/v31/v36 findings plus the v41 literature audit:
 
 ```bash
-uv run --no-project python scripts/check_track2_harness.py
+uv run --no-project python scripts/check_track2_harness_v43.py
 ```
 
 It requires no subject files, data/results folders, keys, network, Git history or model
 weights. The check verifies consistency, not biological efficacy. The versioned public
-presentation reviewer and release/bundle scripts use v41, while the 367-word voice and
+presentation reviewer and release/bundle scripts use v43, while the 367-word voice and
 recording materials preserve v40. Earlier versions remain available and bound
 inputs stay unchanged. The [current artifact record](notes/track2-current.json),
-[harness review](notes/track2-harness-review-v41.md) and `./init.sh` route current work.
+[harness review](notes/track2-harness-review-v43.md) and `./init.sh` route current work.
 
-The [readiness note](notes/track2-owner-readiness-v41.md) lists outstanding recording,
+The [readiness note](notes/track2-owner-readiness-v43.md) lists outstanding recording,
 runtime measurement, hosting, provider handling, distribution scope, live checks and
 receipt. The current [v42 requirements refresh](notes/track2-requirements-review-v42.md) found
 the seven official files unchanged and public discussion at 31 threads/89 visible

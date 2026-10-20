@@ -368,7 +368,7 @@ Core self-checks and current presentation validation:
 uv run python scripts/verify_data.py --self-check
 uv run python scripts/track1_submission.py --self-check
 uv run python scripts/track2_evidence.py check
-uv run python scripts/check_track2_harness.py
+uv run python scripts/check_track2_harness_v43.py
 uv run --no-project python scripts/check_track2_transcriptome.py
 uv run --no-project python scripts/check_track2_rnai_v23.py
 uv run --no-project python scripts/check_track2_crispr_v25.py

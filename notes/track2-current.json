@@ -53,7 +53,7 @@
     "requirements_v42_audit": "notes/track2-requirements-v42.json",
     "requirements_v42_check": "scripts/check_track2_requirements_v42.py"
   },
-  "snapshot": "results/feat009/jvv7_track2_research_v43-verified35",
+  "snapshot": "results/feat009/jvv7_track2_research_v43-verified36",
   "render_directory": "results/feat009/v43-slides-final-20261020-2",
   "model_campaign": {
     "protein_scores": 84,

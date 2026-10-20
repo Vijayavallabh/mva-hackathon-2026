@@ -1,17 +1,18 @@
-# Session handoff: v41/v42 public-delivery-hardened presentation and harness
+# Session handoff: v43 published TORC1-segregation evidence and fresh exports
 
-20 October 2026, session 83. Only **feat-009** remains active for delivery and
-unresolved biological qualification. The v41 revision preserves the frozen v40
+20 October 2026, sessions 84-86. Only **feat-009** remains active for delivery and
+unresolved biological qualification. Current v43 preserves the frozen v40
 qualification sequence, synthetic-arm labels, 367-word own-voice narration and
-recording metrics while adding the current public literature refresh. Use
-`notes/track2-current.json`, `notes/track2-report-v41.md`,
-`notes/track2-slides-v41.html`, `notes/track2-pitch-v40.md` and
+recording metrics while adding the TORC1-segregation contrary-evidence refresh,
+direct mTORC1 engagement and mitotic lagging-DNA/anaphase-bridge readouts. Use
+`notes/track2-current.json`, `notes/track2-report-v43.md`,
+`notes/track2-slides-v43.html`, `notes/track2-pitch-v40.md` and
 `notes/track2-transcript-v40.txt`. The combined entry point is
-`scripts/check_track2_harness.py`; start with
-`notes/track2-reviewer-guide-v41.md` and `notes/track2-owner-readiness-v41.md`.
-The literature chain is `notes/track2-literature-v41.md`,
-`notes/track2-literature-audit-v41.json` and
-`scripts/check_track2_literature_v41.py`. The official-state chain is
+`scripts/check_track2_harness_v43.py`; start with
+`notes/track2-reviewer-guide-v43.md` and `notes/track2-owner-readiness-v43.md`.
+The current literature chain is `notes/track2-literature-v43.md`,
+`notes/track2-literature-audit-v43.json` and
+`scripts/check_track2_literature_v43.py`; the broader v41 refresh remains preserved. The official-state chain is
 `notes/track2-requirements-review-v42.md`,
 `notes/track2-requirements-v42.json` and
 `scripts/check_track2_requirements_v42.py`; an 11:49 UTC live recheck found the
@@ -129,13 +130,13 @@ See `notes/track2-dgx-cleanup-v37.md`; environment imports passed after cleanup.
 
 ```bash
 ./init.sh
-uv run --no-project python scripts/check_track2_harness.py
-uv run --no-project python scripts/track2_public_review_v41.py
-uv run --no-project python scripts/check_track2_literature_v41.py
+uv run --no-project python scripts/check_track2_harness_v43.py
+uv run --no-project python scripts/track2_public_review_v43.py
+uv run --no-project python scripts/check_track2_literature_v43.py
 uv run --no-project python scripts/check_track2_optical_v36.py
-uv run python scripts/audit_track2_harness.py
-uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified32
-uv run python scripts/track2_bundle_v41.py verify
+uv run python scripts/audit_track2_harness_v43.py --output <new-output.json>
+uv run python scripts/track2_release_v43.py verify results/feat009/jvv7_track2_research_v43-verified35
+uv run python scripts/track2_bundle_v43.py verify
 uv run --no-project python scripts/track2_community_kit_v37.py verify
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
