@@ -100,7 +100,7 @@ benefit from adding temsirolimus to VAC/VI in 297 evaluable intermediate-risk RM
 participants (HR 0.86; 95% CI 0.58-1.26; p=0.44). BIOMEDE stopped for futility;
 its primary survival comparison used a historical cohort despite randomized active
 treatment arms. Favorable tolerability and exploratory biomarker findings do not
-supply non-cancer rescue. [ARST1431](https://doi.org/10.1016/S1470-2045(24)00255-9),
+supply non-cancer rescue. [ARST1431](https://doi.org/10.1016/S1470-2045%2824%2900255-9),
 [BIOMEDE](https://doi.org/10.1038/s41591-026-04354-1).
 
 Selected pediatric TSC follow-up and TEAMMATE argue against assuming inevitable

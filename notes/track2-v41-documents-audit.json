@@ -1,10 +1,10 @@
 {
-  "document_directory": "results/feat009/v41-documents-final-20261020-7",
+  "document_directory": "results/feat009/v41-documents-final-20261020-8",
   "export": {
-    "created_utc": "2026-10-20T10:41:43.329394+00:00",
+    "created_utc": "2026-10-20T10:58:53.639553+00:00",
     "template_url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/60e1c30e337ce6fe01813040dbe49979eb8c50aa/static/templates/methods_description_form.xlsx",
     "template_sha256": "61aab080a2868a3b724e76692b83c24812112e305cd3a8b03f8f91a6b2414441",
-    "report_sha256": "fe4e0cfc0bcf952263c04d504966a1455e7dc947aec674397fc5cbb9fcabed70",
+    "report_sha256": "e44c9fba76e89a132dde23a85b3b095c2a77c51a91bd4fd977324d167917f618",
     "script_sha256": "beb0cdd9a2db7395f51f8afb619a47d3c17fb628df02e66e1df0360e1115ab17",
     "answer_cells": [
       "B7",
@@ -25,17 +25,17 @@
     "formula_errors": 0,
     "track1_values_and_cell_styles_preserved": true,
     "files": {
-      "jvv7_track2_methods_v41.xlsx": "8d83b3877a758e94817a7bd8f23b1358aa96508055632cab379b199f0148a832",
-      "jvv7_track2_report_v41.md": "fe4e0cfc0bcf952263c04d504966a1455e7dc947aec674397fc5cbb9fcabed70",
+      "jvv7_track2_methods_v41.xlsx": "d59eda1f40b6e239bae26618285c84e1fc47f3eae159de4e2819675eb41567ba",
+      "jvv7_track2_report_v41.md": "e44c9fba76e89a132dde23a85b3b095c2a77c51a91bd4fd977324d167917f618",
       "methods-answers.json": "9b046a8b436743dc1e056b97c4744543071358758bf15d4ca88d0671a8a8aa38",
-      "jvv7_track2_report_v41.html": "7d34308bd0af7b0754bfd4a71c663740ac501b9a17168ee592f0cfeb59c3893e"
+      "jvv7_track2_report_v41.html": "aa4ee7de59e759ace0cfbc42a396579fd32d513cfd1234773aedef34f7d49a53"
     },
     "upload_ready": false
   },
   "pdf": {
     "source": "notes/track2-report-v41.md",
-    "source_sha256": "fe4e0cfc0bcf952263c04d504966a1455e7dc947aec674397fc5cbb9fcabed70",
-    "html_sha256": "7d34308bd0af7b0754bfd4a71c663740ac501b9a17168ee592f0cfeb59c3893e",
+    "source_sha256": "e44c9fba76e89a132dde23a85b3b095c2a77c51a91bd4fd977324d167917f618",
+    "html_sha256": "aa4ee7de59e759ace0cfbc42a396579fd32d513cfd1234773aedef34f7d49a53",
     "renderer_sha256": "2f1a91fb82ee08b97ff02da353fbdfd1a2d7bcfdc01f77b93e30ab2e73dc997f",
     "exporter_sha256": "beb0cdd9a2db7395f51f8afb619a47d3c17fb628df02e66e1df0360e1115ab17",
     "browser": {
@@ -53,7 +53,7 @@
       "tables": 4
     },
     "files": {
-      "jvv7_track2_report_v41.pdf": "64394f7ab1c5355dba66e94d3c663b1b88a2a3e37b6d7360ce73a6413e246877"
+      "jvv7_track2_report_v41.pdf": "cbbddbab6293f2503c8282c958dec3d130a997da166b9865223d15bf4c36b8ed"
     },
     "limits": "PDF export and geometry; no scientific, licensing, recording or upload certification."
   },
