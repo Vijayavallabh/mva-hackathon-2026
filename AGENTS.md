@@ -92,7 +92,7 @@ and timely delivery. Do not infer efficacy, eligibility or awards.
 ## Current work and authoritative files
 
 **Session 84 (2026-10-20): current v43 is the active public presentation state.**
-Start with `notes/track2-reviewer-guide-v43.md` and `notes/track2-owner-readiness-v43.md`.
+Start with `notes/track2-reviewer-guide-v45.md` and `notes/track2-owner-readiness-v45.md`; they list exact current deliverables.
 The current requirements refresh, v44, found the live Space revision, all
 seven official files and discussion listing unchanged; no new organizer requirement
 appeared. The v43 targeted literature refresh found a 2026 fission-yeast TORC1-segregation

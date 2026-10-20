@@ -24,8 +24,8 @@
     "falsification_analysis": "notes/track2-falsification-analysis-v21.json",
     "official_requirements": "notes/track2-requirements-v39.json",
     "community_review": "notes/track2-requirements-review-v39.md",
-    "reviewer_guide": "notes/track2-reviewer-guide-v43.md",
-    "owner_readiness": "notes/track2-owner-readiness-v43.md",
+    "reviewer_guide": "notes/track2-reviewer-guide-v45.md",
+    "owner_readiness": "notes/track2-owner-readiness-v45.md",
     "public_review_script": "scripts/track2_public_review_v43.py",
     "document_exporter": "scripts/track2_export_documents_v43.py",
     "report_renderer": "scripts/render_track2_report_v43.mjs",
@@ -56,7 +56,7 @@
     "requirements_v44_audit": "notes/track2-requirements-v44.json",
     "requirements_v44_check": "scripts/check_track2_requirements_v44.py"
   },
-  "snapshot": "results/feat009/jvv7_track2_research_v43-verified38",
+  "snapshot": "results/feat009/jvv7_track2_research_v43-verified39",
   "render_directory": "results/feat009/v43-slides-final-20261020-2",
   "model_campaign": {
     "protein_scores": 84,
@@ -81,7 +81,7 @@
   },
   "history": "progress.md",
   "harness_review": "notes/track2-harness-review-v43.md",
-  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v43_32.zip",
+  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v43_33.zip",
   "document_directory": "results/feat009/v43-documents-final-20261020-2",
   "research_addendum": {
     "version": 19,
@@ -113,8 +113,8 @@
   "current_review": {
     "script": "scripts/check_track2_harness_v43.py",
     "isolation_audit": "scripts/audit_track2_harness_v43.py",
-    "guide": "notes/track2-reviewer-guide-v43.md",
-    "readiness": "notes/track2-owner-readiness-v43.md"
+    "guide": "notes/track2-reviewer-guide-v45.md",
+    "readiness": "notes/track2-owner-readiness-v45.md"
   },
   "rnai_addendum": {
     "version": 23,

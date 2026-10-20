@@ -8967,3 +8967,20 @@ New artifacts: `notes/track2-requirements-review-v44.md`,
 `notes/track2-requirements-v44.json`, `scripts/check_track2_requirements_v44.py`
 and `scripts/test_track2_requirements_v44.py`. The current artifact record and
 v43 harness route the v44 refresh while preserving the full v42 thread receipts.
+
+## Session 89 — 2026-10-20: v45 exact-deliverable reviewer and owner guides
+
+The current reviewer guide and owner readiness note were advanced to v45 without changing
+the v43 report/deck or drug science. They now distinguish the broad v41 literature refresh
+from the targeted v43 TORC1-segregation addendum; route the proposal through the v43 lab
+handoff and judge questions; use the current v44 live deadline refresh; use the current
+v43 harness/public/release/bundle commands; and list exact current deliverables, including
+the 11-page report/workbook, nine-slide render, v43 recording-materials ZIP and verified
+release snapshot. They explicitly state that no video or video URL exists and that these
+local artifacts are not a submission receipt.
+
+A new recording/review bundle was produced with the v45 guides:
+`results/feat009/jvv7_track2_video_materials_v43_33.zip` (100 files, 2,770,147 bytes),
+and a new verified release snapshot was bound at
+`results/feat009/jvv7_track2_research_v43-verified39`. No biological validation, recording,
+hosting, provider setting, quota check or submission occurred.

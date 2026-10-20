@@ -58,8 +58,8 @@ REQUIREMENTS44_STATE = {'version':44,'status':'complete','kind':'anonymous_live_
 CURRENT_REVIEW = {
     'script': 'scripts/check_track2_harness_v43.py',
     'isolation_audit': 'scripts/audit_track2_harness_v43.py',
-    'guide': 'notes/track2-reviewer-guide-v43.md',
-    'readiness': 'notes/track2-owner-readiness-v43.md',
+    'guide': 'notes/track2-reviewer-guide-v45.md',
+    'readiness': 'notes/track2-owner-readiness-v45.md',
 }
 RESEARCH_PATHS = {
     'plan': 'notes/track2-transcriptome-plan-v19.json',
@@ -164,12 +164,13 @@ def validate(state, features, documents):
     roles.update({'literature_note':'notes/track2-literature-v43.md','literature_audit':'notes/track2-literature-audit-v43.json','literature_check':'scripts/check_track2_literature_v43.py'})
     roles.update({'requirements_v42_review':'notes/track2-requirements-review-v42.md','requirements_v42_audit':'notes/track2-requirements-v42.json','requirements_v42_check':'scripts/check_track2_requirements_v42.py'})
     roles.update({'requirements_v44_review':'notes/track2-requirements-review-v44.md','requirements_v44_audit':'notes/track2-requirements-v44.json','requirements_v44_check':'scripts/check_track2_requirements_v44.py'})
+    roles.update({'reviewer_guide':'notes/track2-reviewer-guide-v45.md','owner_readiness':'notes/track2-owner-readiness-v45.md'})
     roles.update({'candidate_comparison': 'notes/track2-candidate-comparison-v42.md', 'rehearsal_adjudication': 'notes/track2-rehearsal-adjudication-v39.md', 'rehearsal_sources': 'notes/track2-rehearsal-sources-v39.json', 'qualification_amendment': 'notes/track2-qualification-amendment-v39.md', 'external_review_packet': 'notes/track2-external-review-packet-v43.md', 'recording_audit': 'notes/track2-prompter-audit-v40.json'})
     roles['narration_metrics']='notes/track2-narration-v40.json'
     require(state['artifacts'] == roles, 'Mixed, missing or unsafe artifact paths')
     require(state.get('community_kit_bundle') == 'results/feat009/jvv7_track2_community_kit_v37.zip', 'Stale community kit path')
-    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified38', 'Stale snapshot path')
-    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_32.zip',
+    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified39', 'Stale snapshot path')
+    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_33.zip',
             'Stale recording-materials bundle path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['render_directory']),
             'Stale or unsafe render-directory path')

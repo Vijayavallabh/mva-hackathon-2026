@@ -300,7 +300,7 @@ morphology, failed practical neural gain, guide/plate sensitivity and missing mi
 coverage remain distinct. All eleven methods answers and the 334-word abstract match
 the workbook export. Prior scientific details remain in linked research records.
 
-Start with the [combined reviewer guide](notes/track2-reviewer-guide-v43.md). One
+Start with the [combined v45 reviewer guide](notes/track2-reviewer-guide-v45.md). One
 public CPU command checks integrated v43 materials and completed v19/v21/v23/v25/v27/v29/v31/v36 findings plus the v41 literature audit:
 
 ```bash
@@ -314,7 +314,7 @@ recording materials preserve v40. Earlier versions remain available and bound
 inputs stay unchanged. The [current artifact record](notes/track2-current.json),
 [harness review](notes/track2-harness-review-v43.md) and `./init.sh` route current work.
 
-The [readiness note](notes/track2-owner-readiness-v43.md) lists outstanding recording,
+The [v45 readiness note](notes/track2-owner-readiness-v45.md) lists exact current deliverables and lists outstanding recording,
 runtime measurement, hosting, provider handling, distribution scope, live checks and
 receipt. The full [v42 requirements refresh](notes/track2-requirements-review-v42.md) found
 31 threads/89 visible comments/16 closed. Thread 32 permits a clearly labeled published-paper
