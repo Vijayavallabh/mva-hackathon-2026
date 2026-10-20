@@ -4,12 +4,12 @@ import argparse
 import json
 from pathlib import Path
 import zipfile
-import track2_release_v43 as release
+import track2_release_v47 as release
 
 ROOT=release.ROOT
 SLIDES=ROOT/'results/feat009/v47-slides-final-20261020-1'
 DOCS=ROOT/'results/feat009/v47-documents-final-20261020-3'
-DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v47_1.zip'
+DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v47_3.zip'
 def sources():
     release.scientific_checks()
     render=json.loads((ROOT/'notes/track2-v47-render-audit-v47.json').read_text())
