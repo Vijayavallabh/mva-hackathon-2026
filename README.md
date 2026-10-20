@@ -149,7 +149,7 @@ mitotic coverage remains missing. Equal-cap learning improves on sampled means,
 without beating full-data profiles. No drug or clinical claim is promoted.
 The [complete analysis](notes/track2-optical-v36.md), six new falsification records
 and all earlier research remain checked. There are 58 claim records across seven
-registers. Review with `uv run --no-project python scripts/check_track2_harness_v43.py`;
+registers. Review with `uv run --no-project python scripts/check_track2_harness_v47.py`;
 original qualification evidence remains in `notes/track2-transcriptome-v19.md`.
 Recording/hosting, provider/distribution questions, live checks and receipt remain open.
 
@@ -304,7 +304,7 @@ Start with the [combined v45 reviewer guide](notes/track2-reviewer-guide-v45.md)
 public CPU command checks integrated v43 materials and completed v19/v21/v23/v25/v27/v29/v31/v36 findings plus the v41 literature audit:
 
 ```bash
-uv run --no-project python scripts/check_track2_harness_v43.py
+uv run --no-project python scripts/check_track2_harness_v47.py
 ```
 
 It requires no subject files, data/results folders, keys, network, Git history or model
@@ -420,6 +420,8 @@ Required in any output from this work:
 
 ## Current Track 2 state
 
-Current v43 adds the TORC1-segregation readout update without changing drug disposition.
+The current revision, v47, integrates the external-review adjudication, explicit candidate selection, decision-contribution
+table, four-arm experiment, primary endpoint/units, software-vs-biology boundary and v46 narration without
+changing drug disposition.
 Use `notes/track2-reviewer-guide-v43.md` and `notes/track2-owner-readiness-v43.md`.
-Reproduce the literature check with `scripts/check_track2_literature_v43.py` and the combined harness with `scripts/check_track2_harness_v43.py`.
+Reproduce the literature check with `scripts/check_track2_literature_v45.py` and the combined harness with `scripts/check_track2_harness_v47.py`.

@@ -46,7 +46,7 @@ def check() -> dict[str, Any]:
         if path.is_file():
             require(not path.is_symlink(), f"Symlinked submission material: {name}")
     snapshot = ROOT / state["snapshot"]
-    require(state["snapshot"].startswith("results/feat009/jvv7_track2_research_v43-verified"), "Unsafe current release-snapshot route")
+    require(state["snapshot"].startswith("results/feat009/jvv7_track2_research_v47-verified"), "Unsafe current release-snapshot route")
     bundle = ROOT / state["video_materials_bundle"]
     require(bundle == exact_files["bundle"], "Checklist/current bundle drift")
     require(state["render_directory"] == str((ROOT / materials["slide_pdf"]["path"]).parent.relative_to(ROOT)), "Render-directory drift")

@@ -1,7 +1,7 @@
 # Session handoff: v43 published TORC1-segregation evidence and fresh exports
 
 20 October 2026, sessions 84-86. Only **feat-009** remains active for delivery and
-unresolved biological qualification. Current v43 preserves the frozen v40
+unresolved biological qualification. Current v47 integrates the adjudicated external review and preserves the frozen v40
 qualification sequence, synthetic-arm labels, 367-word own-voice narration and
 recording metrics while adding the TORC1-segregation contrary-evidence refresh,
 direct mTORC1 engagement and mitotic lagging-DNA/anaphase-bridge readouts. Use
@@ -60,12 +60,11 @@ biological or clinical validity. The v40 small-kit guide points to that existing
 
 Frozen v40 exports remain `results/feat009/v40-slides-final-20261020` and
 `results/feat009/v40-documents-final-20261020`; the final teleprompter browser receipt
-remains under `results/feat009/v40-prompter-final-20261020`. Current v43 exports are `results/feat009/v43-slides-final-20261020-2`,
-`results/feat009/v43-documents-final-20261020-2`,
-`results/feat009/jvv7_track2_research_v43-verified36` and
-`results/feat009/jvv7_track2_video_materials_v43_31.zip`; prior exports remain
+remains under `results/feat009/v40-prompter-final-20261020`. Current v47 exports are `results/feat009/v47-slides-final-20261020-1`,
+`results/feat009/v47-documents-final-20261020-3`, `results/feat009/jvv7_track2_research_v47-verified1`
+and `results/feat009/jvv7_track2_video_materials_v47_1.zip`; prior exports remain
 available for historical comparison. No measured recording is claimed. The header continues to respect wrapped mobile controls. A shared narration parser
-checks the transcript, prompter, guide and metrics JSON: 367 words in 180 allocated
+checks the transcript, prompter, guide and metrics JSON: 369 words in 180 allocated
 seconds, or 122.3 planned words/minute. These are not measured video times. Earlier draft exports and
 interim audit receipts remain in ignored results. Local conversation exports are
 ignored and are not publication artifacts. Actual final checks are in progress.md.
@@ -195,8 +194,8 @@ biological, not more model agreement.
 
 ## Current state
 
-Current v43 adds the targeted TORC1-segregation literature refresh; use
+Current v47 integrates the external-review adjudication and v46 narration; use
 `notes/track2-reviewer-guide-v45.md` and `notes/track2-owner-readiness-v45.md`; they list exact current deliverables.
 It routes the report/lab handoff/reviewer brief/judge questions/external review packet
-through v43, and the current live requirements refresh through v44. Reproduce with `scripts/check_track2_literature_v43.py`,
-`scripts/test_track2_literature_v43.py` and `scripts/check_track2_harness_v43.py`. It does not change drug disposition or recording state.
+through v43, and the current live requirements refresh through v44. Reproduce with `scripts/track2_public_review_v47.py`,
+`scripts/check_track2_literature_v45.py` and `scripts/check_track2_harness_v47.py`. It does not change drug disposition or recording state.

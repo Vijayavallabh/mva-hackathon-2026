@@ -9,10 +9,10 @@ has been recorded or hosted yet.
 
 | Portal field / material | Exact current file |
 |---|---|
-| Written report to upload | `results/feat009/v43-documents-final-20261020-4/jvv7_track2_report_v43.pdf` |
-| Markdown alternative (not both) | `results/feat009/v43-documents-final-20261020-4/jvv7_track2_report_v43.md` |
-| Methods workbook for review, not portal upload | `results/feat009/v43-documents-final-20261020-4/jvv7_track2_methods_v43.xlsx` |
-| Slide deck for recording, not portal upload | `results/feat009/v43-slides-final-20261020-3/track2-slides-v43.pdf` |
+| Written report to upload | `results/feat009/v47-documents-final-20261020-3/jvv7_track2_report_v47.pdf` |
+| Markdown alternative (not both) | `results/feat009/v47-documents-final-20261020-3/jvv7_track2_report_v47.md` |
+| Methods workbook for review, not portal upload | `results/feat009/v47-documents-final-20261020-3/jvv7_track2_methods_v47.xlsx` |
+| Slide deck for recording, not portal upload | `results/feat009/v47-slides-final-20261020-1/track2-slides-v47.pdf` |
 | Owner review bundle | `results/feat009/jvv7_track2_video_materials_v43_41.zip` |
 | Verified release snapshot | the current verified release snapshot in `notes/track2-current.json` |
 

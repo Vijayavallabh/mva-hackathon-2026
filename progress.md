@@ -9032,3 +9032,28 @@ bundle is `results/feat009/jvv7_track2_video_materials_v43_51.zip` (108 files,
 2,787,981 bytes); and the verified release snapshot is
 `results/feat009/jvv7_track2_research_v43-verified56`. No video was recorded or hosted,
 and no submission occurred.
+
+## Session 96 — 2026-10-20: v47 presentation integration
+
+The current presentation was advanced to v47 without changing any drug disposition.
+The report now states the conditional nomination, the explicit candidate-selection
+rationale, an evidence-status chain for every major link, the four deficient/corrected
+× vehicle/everolimus arms, the primary useful-cellular-output endpoint per enrolled
+founder cell, and the distinction between software verification and biological
+validation. Section 3 now includes a decision-contribution table explaining what each
+computational analysis changed and which analyses remain supporting appendices.
+
+The v47 deck preserves the v43 visual structure while routing to the v47 report and
+using the same four-arm, useful-output, contrary-evidence and software/biology
+boundaries. Fresh exports were produced:
+`results/feat009/v47-documents-final-20261020-3` and
+`results/feat009/v47-slides-final-20261020-1`. The verified owner/review bundle is
+`results/feat009/jvv7_track2_video_materials_v47_1.zip` (106 files, 2,810,828 bytes),
+and the verified release snapshot is
+`results/feat009/jvv7_track2_research_v47-verified1` (241 files/972 bound inputs).
+
+The current v47 harness is `scripts/check_track2_harness_v47.py`; `./init.sh` now
+routes to it. Full verification passed: 1,145 tests, 14 skipped; release, bundle and
+startup checks passed. No subject data were accessed. No video was recorded, no video
+URL exists, no authenticated quota/provider check was performed, and no submission
+occurred.
