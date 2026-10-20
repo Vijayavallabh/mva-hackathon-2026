@@ -9,7 +9,7 @@ import track2_release_v41 as release
 ROOT=release.ROOT
 SLIDES=ROOT/'results/feat009/v41-slides-final-20261020-3'
 DOCS=ROOT/'results/feat009/v41-documents-final-20261020-8'
-DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v41_24.zip'
+DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v41_30.zip'
 
 
 def sources():
@@ -24,10 +24,6 @@ def sources():
                         'Export changed or missing: '+path.name)
     files={path.name:path for path in expected if path.suffix != '.html'}
     files['jvv7_track2_slides_v41.html']=ROOT/'notes/track2-slides-v41.html'
-    # Preserve the owner-selected v40 voice and recording packet; only guide/readiness are current v41.
-    for name in ['pitch','transcript']:
-        suffix='txt' if name=='transcript' else 'md'
-        files[f'jvv7_track2_{name}_v40.{suffix}']=ROOT/f'notes/track2-{name}-v40.{suffix}'
 
     for name in ['track2-transcriptome-v19.md','track2-transcriptome-v19.svg','track2-transcriptome-reproduction-v19.md']:
         files[name]=ROOT/'notes'/name
@@ -44,12 +40,13 @@ def sources():
         files[name]=ROOT/'notes'/name
     for name in ['track2-perturbseq-v31.md','track2-perturbseq-validation-v31.md','track2-perturbseq-register-v31.json','track2-perturbseq-reproduction-v31.md']:
         files[name]=ROOT/'notes'/name
-    for name in ['track2-optical-progress-v33.md','track2-optical-source-review-v33.md','track2-optical-status-v33.json','track2-optical-plan-v33.json','track2-optical-amendment-v33.json','track2-requirements-review-v33.md','track2-requirements-v39.json','deletion-plan-v2.md','track2-reviewer-brief-v40.md','track2-competition-strategy-v40.md']:
+    for name in ['track2-optical-progress-v33.md','track2-optical-source-review-v33.md','track2-optical-status-v33.json','track2-optical-plan-v33.json','track2-optical-amendment-v33.json','track2-requirements-review-v33.md','track2-requirements-v39.json','deletion-plan-v2.md']:
         files[name]=ROOT/'notes'/name
     for source in sorted(p for p in release.OPTICAL_INPUTS if p.startswith('notes/')):
         files[Path(source).name]=ROOT/source
+    # Preserve only frozen v40 own-voice assets with unambiguous owner-facing names.
     for source in sorted(release.INPUTS):
-        if source.startswith('notes/') and ('v40' in source or 'v41' in source or source in release.FILES.values() and any(stem in source for stem in ['candidate-comparison-v39','rehearsal-adjudication-v39','rehearsal-sources-v39','qualification-amendment-v39','requirements-review-v39'])):files[Path(source).name]=ROOT/source
+        if source in {'notes/track2-pitch-v40.md','notes/track2-transcript-v40.txt','notes/track2-teleprompter-v40.html','notes/track2-narration-v40.json'}:files['jvv7_'+Path(source).name]=ROOT/source
     files['jvv7_track2_external-review-packet_v42.md']=ROOT/'notes/track2-external-review-packet-v42.md'
     files['jvv7_track2_reviewer-brief_v42.md']=ROOT/'notes/track2-reviewer-brief-v42.md'
     files['jvv7_track2_video-description_v42.md']=ROOT/'notes/track2-video-description-v42.md'
