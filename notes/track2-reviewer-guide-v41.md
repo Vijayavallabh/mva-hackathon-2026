@@ -1,6 +1,6 @@
 # Track 2 v41 reviewer guide
 
-For a short entry point, read [the reviewer brief](track2-reviewer-brief-v40.md).
+For a short entry point, read [the reviewer brief](track2-reviewer-brief-v42.md).
 Then use [the report](track2-report-v41.md), [nine slides](track2-slides-v41.html)
 and [367-word recording script](track2-pitch-v40.md). The
 [current record](track2-current.json) routes the PDF, methods workbook, transcript
@@ -34,7 +34,7 @@ uv run --no-project python scripts/track2_public_review_v41.py
 uv run --no-project python scripts/check_track2_optical_v36.py
 uv run --no-project python scripts/track2_demo_v37.py
 uv run python scripts/audit_track2_harness.py
-uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified14
+uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified16
 uv run python scripts/track2_bundle_v41.py verify
 ```
 

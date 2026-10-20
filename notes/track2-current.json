@@ -30,7 +30,7 @@
     "document_exporter": "scripts/track2_export_documents_v41.py",
     "report_renderer": "scripts/render_track2_report_v41.mjs",
     "bundle_script": "scripts/track2_bundle_v41.py",
-    "reviewer_brief": "notes/track2-reviewer-brief-v40.md",
+    "reviewer_brief": "notes/track2-reviewer-brief-v42.md",
     "competition_strategy": "notes/track2-competition-strategy-v40.md",
     "interactive_demo": "notes/track2-demo-v37.html",
     "demo_audit": "notes/track2-demo-audit-v37.json",
@@ -53,7 +53,7 @@
     "requirements_v42_audit": "notes/track2-requirements-v42.json",
     "requirements_v42_check": "scripts/check_track2_requirements_v42.py"
   },
-  "snapshot": "results/feat009/jvv7_track2_research_v41-verified14",
+  "snapshot": "results/feat009/jvv7_track2_research_v41-verified16",
   "render_directory": "results/feat009/v41-slides-final-20261020-3",
   "model_campaign": {
     "protein_scores": 84,
@@ -78,7 +78,7 @@
   },
   "history": "progress.md",
   "harness_review": "notes/track2-harness-review-v41.md",
-  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v41_11.zip",
+  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v41_13.zip",
   "document_directory": "results/feat009/v41-documents-final-20261020-5",
   "research_addendum": {
     "version": 19,

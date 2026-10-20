@@ -9,7 +9,7 @@ import track2_release_v41 as release
 ROOT=release.ROOT
 SLIDES=ROOT/'results/feat009/v41-slides-final-20261020-3'
 DOCS=ROOT/'results/feat009/v41-documents-final-20261020-5'
-DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v41_11.zip'
+DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v41_13.zip'
 
 
 def sources():
@@ -51,6 +51,7 @@ def sources():
     for source in sorted(release.INPUTS):
         if source.startswith('notes/') and ('v40' in source or 'v41' in source or source in release.FILES.values() and any(stem in source for stem in ['candidate-comparison-v39','rehearsal-adjudication-v39','rehearsal-sources-v39','qualification-amendment-v39','requirements-review-v39'])):files[Path(source).name]=ROOT/source
     files['jvv7_track2_external-review-packet_v42.md']=ROOT/'notes/track2-external-review-packet-v42.md'
+    files['jvv7_track2_reviewer-brief_v42.md']=ROOT/'notes/track2-reviewer-brief-v42.md'
     for name in ['reviewer-guide','owner-readiness']:
         files[f'jvv7_track2_{name}_v41.md']=ROOT/f'notes/track2-{name}-v41.md'
     # Preserve the reusable demo and its complete runnable kit in the recording bundle.

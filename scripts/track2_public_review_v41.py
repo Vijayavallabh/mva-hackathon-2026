@@ -146,6 +146,8 @@ def check():
         repository_links(document);command_paths(document)
     document=(ROOT/'notes/track2-external-review-packet-v42.md').read_text()
     repository_links(document);command_paths(document)
+    document=(ROOT/'notes/track2-reviewer-brief-v42.md').read_text()
+    repository_links(document);command_paths(document)
     for name in ['reviewer-guide','owner-readiness']:
         document=(ROOT/f'notes/track2-{name}-v41.md').read_text()
         repository_links(document);command_paths(document)

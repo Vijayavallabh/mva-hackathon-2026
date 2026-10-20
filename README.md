@@ -99,7 +99,7 @@ independently verified. This is a reported competition result, not the earlier l
 hypothetical 100/1 test. It does not establish allele function or phase:
 **trans phase remains unconfirmed**. The submitted v4 CSV/report are preserved.
 
-The [reviewer brief](notes/track2-reviewer-brief-v40.md) summarizes the proposed
+The [reviewer brief](notes/track2-reviewer-brief-v42.md) summarizes the proposed
 experiment. [Competition priorities](notes/track2-competition-strategy-v40.md) map
 work to the four weighted criteria and organizer announcement 28.
 

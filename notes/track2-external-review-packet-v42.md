@@ -7,7 +7,7 @@ has been made and no review or endorsement is recorded.
 
 ## Materials
 
-Start with the [one-page proposal brief](track2-reviewer-brief-v40.md) and
+Start with the [one-page proposal brief](track2-reviewer-brief-v42.md) and
 [laboratory handoff](track2-lab-handoff-v40.md). The current [full report](track2-report-v41.md)
 contains sources, counterevidence and the checkpoint/proteostasis readout extension.
 The [candidate comparison](track2-candidate-comparison-v39.md) sets out competing
