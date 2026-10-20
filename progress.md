@@ -9119,3 +9119,21 @@ checker now route this export. Fresh verified outputs are
 bytes) and `results/feat009/jvv7_track2_research_v47-verified12` (241 files/972
 bound inputs). No video, URL, hosting, authenticated quota/provider check,
 biological validation or submission occurred.
+
+## Session 101 — 2026-10-20: candidate and laboratory handoff refresh
+
+The candidate comparison and laboratory handoff were advanced to v51. Both now use
+the accepted conditional-nomination language, the four deficient/corrected ×
+vehicle/everolimus arms, current v45 literature addenda and v44 official refresh.
+The candidate comparison explicitly distinguishes conditional eligibility from
+rescue priority and points to the current v47 report. The laboratory handoff retains
+the primary useful-cellular-output endpoint, independent culture units, direct
+mTORC1 engagement, all-enrolled daughter fate and injury precedence.
+
+Current-facing documents now route to `notes/track2-lab-handoff-v51.md` and
+`notes/track2-candidate-comparison-v51.md`. A fresh 12-page report/workbook export
+was rendered at `results/feat009/v47-documents-final-20261020-5`; fresh verified
+outputs are `results/feat009/jvv7_track2_video_materials_v47_14.zip` (106 files,
+2,810,926 bytes) and `results/feat009/jvv7_track2_research_v47-verified13`
+(241 files/972 bound inputs). No video, URL, hosting, authenticated
+quota/provider check, biological validation or submission occurred.

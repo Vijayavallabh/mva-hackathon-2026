@@ -84,7 +84,7 @@ exposure margins, biological qualification and independent confirmation. The req
 video, live delivery checks, receipt and provider/distribution questions also remain.
 These are different gaps; a software check or prize objective cannot resolve them.
 
-Evidence: [current report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v47.md), [laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v43.md),
+Evidence: [current report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v47.md), [laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v51.md),
 [full optical comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-optical-v36.md), [current public literature addendum](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v41.md), [v43 TORC1-segregation addendum](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v43.md),
 [current official-state refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v42.md) and
 [community kit](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-community-kit-v37.md).

@@ -8,9 +8,9 @@ has been made and no review or endorsement is recorded.
 ## Materials
 
 Start with the [one-page proposal brief](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-reviewer-brief-v50.md) and
-[laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v43.md). The current [full report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v47.md)
+[laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v51.md). The current [full report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v47.md)
 contains sources, counterevidence and the checkpoint/proteostasis readout extension.
-The [candidate comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-candidate-comparison-v42.md) sets out competing
+The [candidate comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-candidate-comparison-v51.md) sets out competing
 mechanisms without assigning a new drug priority. The current
 [literature addendum](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v41.md), [v43 TORC1-segregation addendum](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v43.md) and [official requirements refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v42.md)
 record the newest public-source and delivery-context evidence.

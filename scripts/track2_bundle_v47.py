@@ -8,12 +8,12 @@ import track2_release_v47 as release
 
 ROOT=release.ROOT
 SLIDES=ROOT/'results/feat009/v47-slides-final-20261020-1'
-DOCS=ROOT/'results/feat009/v47-documents-final-20261020-4'
-DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v47_13.zip'
+DOCS=ROOT/'results/feat009/v47-documents-final-20261020-5'
+DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v47_14.zip'
 def sources():
     release.scientific_checks()
-    render=json.loads((ROOT/'notes/track2-v47-render-audit-v48.json').read_text())
-    docs=json.loads((ROOT/'notes/track2-v47-documents-audit-v48.json').read_text())
+    render=json.loads((ROOT/'notes/track2-v47-render-audit-v49.json').read_text())
+    docs=json.loads((ROOT/'notes/track2-v47-documents-audit-v49.json').read_text())
     expected={SLIDES/name:sha for name,sha in render['files'].items()}
     expected.update({DOCS/name:sha for name,sha in docs['export']['files'].items()})
     expected.update({DOCS/name:sha for name,sha in docs['pdf']['files'].items()})
@@ -53,7 +53,7 @@ def sources():
     files['jvv7_track2_recording-guide_v46.md']=ROOT/'notes/track2-recording-guide-v46.md'
     files['jvv7_track2_competition-strategy_v42.md']=ROOT/'notes/track2-competition-strategy-v42.md'
     files['jvv7_track2_lab-handoff_v43.md']=ROOT/'notes/track2-lab-handoff-v43.md'
-    files['jvv7_track2_candidate-comparison_v42.md']=ROOT/'notes/track2-candidate-comparison-v42.md'
+    files['jvv7_track2_candidate-comparison_v51.md']=ROOT/'notes/track2-candidate-comparison-v51.md'
     files['jvv7_track2_requirements-review_v44.md']=ROOT/'notes/track2-requirements-review-v44.md'
     files['jvv7_track2_requirements-v44.json']=ROOT/'notes/track2-requirements-v44.json'
     files['jvv7_check_track2_requirements_v44.py']=ROOT/'scripts/check_track2_requirements_v44.py'

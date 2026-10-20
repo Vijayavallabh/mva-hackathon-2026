@@ -27,7 +27,7 @@ inspect the exact inputs and download the explanation. The [small public kit](ht
 includes everything needed to replay the 18 examples with standard-library Python.
 These examples test implementation, not policy validity or clinical performance.
 
-For the proposal, use the [laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v43.md) and
+For the proposal, use the [laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v51.md) and
 [reviewer questions](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-judge-questions-v44.md). The [competition plan](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-competition-plan-v39.md)
 maps actual work to rigor 35%, impact 25%, innovation 25% and scalability 15%.
 The owner-selected voice workflow is in the [timed recording guide](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-recording-guide-v46.md)
@@ -85,10 +85,10 @@ runtime, hosting, provider/distribution questions, portal checks and receipt.
 ## Exact current deliverables
 
 - Report source: `notes/track2-report-v47.md`
-- Report PDF/workbook directory: `results/feat009/v47-documents-final-20261020-4`
+- Report PDF/workbook directory: `results/feat009/v47-documents-final-20261020-5`
 - Slide deck source: `notes/track2-slides-v47.html`
 - Rendered slides/PDF: `results/feat009/v47-slides-final-20261020-1`
-- Methods workbook: `results/feat009/v47-documents-final-20261020-4/jvv7_track2_methods_v47.xlsx`
+- Methods workbook: `results/feat009/v47-documents-final-20261020-5/jvv7_track2_methods_v47.xlsx`
 - Recording materials ZIP: `results/feat009/jvv7_track2_video_materials_v47_3.zip`
 - Verified release snapshot: `results/feat009/jvv7_track2_research_v47-verified7`
 - Public repository HEAD: `1fc4163ff7ba67c51decd73e14062d06fe86101d`

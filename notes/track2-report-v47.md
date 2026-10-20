@@ -25,7 +25,7 @@ All four stages remain unmeasured. The first experiment is model qualification.
 **Why work through everolimus?** Its approved pharmacology makes mTORC1 perturbation
 concrete, and carrier-mouse muscle supplies a bounded rationale. This is a testable
 example, not demonstrated superiority over NAD/SIRT2 or the other retained candidates.
-The [candidate comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-candidate-comparison-v42.md)
+The [candidate comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-candidate-comparison-v51.md)
 sets out the supporting evidence, objections and prerequisites for each route.
 Everolimus is conditionally eligible because approved mTORC1 pharmacology and a
 bounded carrier-mouse lead make a concrete downstream test possible. NAD/SIRT2 is
@@ -409,7 +409,7 @@ validation. A valid negative result could stop an unsupported drug route before
 scarce material is spent on it. A positive joint-treatment result could justify
 further preclinical work. Neither outcome establishes benefit for this child.
 
-The [laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v43.md)
+The [laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v51.md)
 sequences endogenous mechanism, one qualified non-cancer model, joint intervention
 and independent confirmation. It identifies assay capabilities and decisions without
 inventing budgets, sample sizes or timelines. Muscle contraction/recovery and renal

@@ -37,8 +37,8 @@ actual unmeasured HOLD state. The method distinguishes a lower error fraction fr
 higher useful output. Software checks establish implementation, not biological
 validity or external adoption.
 
-Read the current [report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v47.md), [comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-candidate-comparison-v42.md),
-[laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v43.md), [public literature addendum](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v41.md) and [v43 contrary-evidence addendum](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v43.md)
+Read the current [report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v47.md), [comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-candidate-comparison-v51.md),
+[laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v51.md), [public literature addendum](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v41.md) and [v43 contrary-evidence addendum](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v43.md)
 and [official-state refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v42.md). The owner's rehearsal and this
 AI-assisted adjudication are not the independent review being arranged. Recording,
 hosting, provider/distribution questions and submission checks remain open.
