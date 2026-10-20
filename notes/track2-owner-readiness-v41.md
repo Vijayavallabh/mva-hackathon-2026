@@ -23,7 +23,7 @@ challenge case; no script rewrite is required.
    open. Preserve the notices and [unsent clarification](track2-owner-readiness-v18.md).
    No organizer contact was authorized or performed.
 3. Check identity/team, exact files, live rules/quota, public GitHub access and video
-   access before delivery. The [October 19 review](track2-requirements-review-v39.md)
+   access before delivery. The [current October 20 review](track2-requirements-review-v42.md)
    retains three entries, latest only reviewed; remaining quota is unknown. Archive
    exact uploaded bytes and an authenticated receipt after submission.
 4. Delete the data and confirm to cnb@sagebase.org by **November 23, 2026** under

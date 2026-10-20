@@ -119,7 +119,7 @@ product-specific Afinitor/Zortress safety labels. Neither a missing measurement 
 a failed assay disproves biology. All prior favorable and adverse findings persist.
 
 The owner can arrange a reviewer and is a bioengineering undergraduate. Use the
-updated `notes/track2-external-review-packet-v40.md`. The owner's rehearsal and
+updated [outside-review packet](notes/track2-external-review-packet-v42.md). The owner's rehearsal and
 AI-assisted adjudication are not independent outside review. No reviewer contact,
 feedback, recording, hosting or submission is established. Source receipts in v39
 retain the October 19 captures; finalizing on October 20 is not a new live refresh.

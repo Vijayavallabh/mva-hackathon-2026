@@ -119,7 +119,7 @@ somatic evidence. The [candidate comparison](notes/track2-candidate-comparison-v
 and [qualification amendment](notes/track2-qualification-amendment-v39.md) define
 falsifiers and the next experiment. Everolimus remains a conditional probe on HOLD;
 no rescue-priority drug is established. The proposed engineered hTERT-RPE1 comparator
-is not an available patient model. Use the [v40 outside-review packet](notes/track2-external-review-packet-v40.md);
+is not an available patient model. Use the current [v42 outside-review packet](notes/track2-external-review-packet-v42.md);
 owner rehearsal and AI-assisted checks do not count as independent feedback.
 
 **Session 75: v37 connects the proposal to the judging criteria and adds a working demo.**

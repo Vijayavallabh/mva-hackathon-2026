@@ -140,7 +140,7 @@ def validate(state, features, documents):
         'slides':f'notes/track2-slides-v{version}.html',
         'pitch':'notes/track2-pitch-v40.md',
         'transcript':'notes/track2-transcript-v40.txt',
-        'video_description':'notes/track2-video-description-v40.md',
+        'video_description':'notes/track2-video-description-v42.md',
         'design_review':'notes/track2-v40-design.md',
         'evidence':'notes/track2-evidence-v21.json', 'validation':'notes/track2-validation-v21.md',
         'falsification_register':'notes/track2-falsification-register-v21.json',
