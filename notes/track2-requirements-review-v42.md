@@ -46,6 +46,11 @@ visible comments / 14 closed** to **31 threads / 89 visible comments / 16 closed
 No organizer statement changed the submission deadline, video length, required
 GitHub format, rubric, judging date, deletion obligation or drug-evidence standard.
 
+A later anonymous recheck at **11:49 UTC** found the same Space revision,
+`60e1c30e337ce6fe01813040dbe49979eb8c50aa`, and the same 31 listed public
+discussions. It adds a consistency check only; it does not reread every thread,
+verify an authenticated account or establish submission readiness.
+
 ## Current decision
 
 - The v41 report and deck remain within current requirements.

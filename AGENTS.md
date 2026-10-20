@@ -106,8 +106,9 @@ Start with `notes/track2-reviewer-guide-v41.md` and
 `notes/track2-owner-readiness-v41.md`. All bound releases through v40 remain frozen.
 The drug ledger and base validation remain v21; the 18-case demo and small community
 ZIP remain v37. Current outputs are
-`results/feat009/jvv7_track2_research_v41-verified31` and
-`results/feat009/jvv7_track2_video_materials_v41_30.zip`. No biological experiment,
+`results/feat009/jvv7_track2_research_v41-verified32` and
+`results/feat009/jvv7_track2_video_materials_v41_31.zip`; the 11:49 UTC anonymous
+official recheck found the same revision and 31 listed discussions. No biological experiment,
 drug-priority change, recording or submission is established.
 
 Read `notes/track2-rehearsal-adjudication-v39.md`,

@@ -403,7 +403,8 @@ organizer decisions, with no estimated winning probability.
 [preceding v39 capture](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v39.md)
 and [announcement 28](https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/28).
 The anonymous v42 refresh found the seven official files unchanged and public discussion at 31 threads/89 visible
-comments. Thread 32 permits a clearly labeled published-paper example in the pitch while
+comments. An 11:49 UTC live recheck found the same Space revision and the same 31
+listed public discussions; no new organizer requirement appeared. Thread 32 permits a clearly labeled published-paper example in the pitch while
 the written report covers the challenge case. The current non-genomic 367-word script
 remains compliant; no rewrite is required. Thread 31 documents a Synapse alternative
 for teams constrained from GitHub; our public-first GitHub route remains selected.

@@ -7,9 +7,9 @@ import zipfile
 import track2_release_v41 as release
 
 ROOT=release.ROOT
-SLIDES=ROOT/'results/feat009/v41-slides-final-20261020-3'
-DOCS=ROOT/'results/feat009/v41-documents-final-20261020-8'
-DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v41_30.zip'
+SLIDES=ROOT/'results/feat009/v41-slides-final-20261020-4'
+DOCS=ROOT/'results/feat009/v41-documents-final-20261020-9'
+DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v41_31.zip'
 
 
 def sources():

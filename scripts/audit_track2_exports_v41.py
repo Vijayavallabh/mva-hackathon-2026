@@ -10,8 +10,8 @@ from pathlib import Path
 import fitz
 
 ROOT = Path(__file__).resolve().parents[1]
-SLIDES = ROOT / 'results/feat009/v41-slides-final-20261020-3'
-DOCS = ROOT / 'results/feat009/v41-documents-final-20261020-8'
+SLIDES = ROOT / 'results/feat009/v41-slides-final-20261020-4'
+DOCS = ROOT / 'results/feat009/v41-documents-final-20261020-9'
 
 
 def digest(path):

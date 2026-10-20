@@ -107,6 +107,19 @@ def check() -> dict[str, Any]:
         require(visible_comments(payload) == thread["visible_comments"], "Visible-comment drift: " + str(thread["num"]))
         require(payload["status"] == thread["status"], "Thread status drift: " + str(thread["num"]))
 
+    recheck = audit.get("live_recheck")
+    require(recheck == {
+        "retrieved_utc": "2026-10-20T11:49:35Z",
+        "space_revision": "60e1c30e337ce6fe01813040dbe49979eb8c50aa",
+        "revision_unchanged": True,
+        "listed_public_discussions": 31,
+        "discussion_numbers_unchanged": True,
+        "new_organizer_requirement_found": False,
+        "scope": "Anonymous live revision and public discussion-listing consistency check; no authenticated account, quota or full-thread reread",
+    }, "Live official recheck drift")
+    require(any("11:49 UTC recheck confirms only Space revision" in x for x in audit["limitations"]),
+            "Live recheck limitation omitted")
+
     changes = audit["material_changes"]
     require(changes == {
         "new_thread_32_pitch_video_published_example": True,
@@ -151,6 +164,7 @@ def check() -> dict[str, Any]:
         "closed_threads": community["closed_count"],
         "requirements_changed": False,
         "anonymous_get_only": True,
+        "live_recheck_passed": True,
         "provider_settings_verified": False,
         "licensing_scope_resolved": False,
         "upload_ready": False,

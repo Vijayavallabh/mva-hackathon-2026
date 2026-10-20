@@ -34,7 +34,7 @@ uv run --no-project python scripts/track2_public_review_v41.py
 uv run --no-project python scripts/check_track2_optical_v36.py
 uv run --no-project python scripts/track2_demo_v37.py
 uv run python scripts/audit_track2_harness.py
-uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified31
+uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified32
 uv run python scripts/track2_bundle_v41.py verify
 ```
 
@@ -69,7 +69,9 @@ what could overturn each interpretation and what changes before a drug experimen
 
 The current [v42 requirements refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v42.md) checks seven
 official files and 31 public threads/89 visible comments. It found the official files
-unchanged and read new organizer/public clarifications in threads 31, 32 and 29. The [active deletion plan](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/deletion-plan-v2.md)
+unchanged and read new organizer/public clarifications in threads 31, 32 and 29.
+An 11:49 UTC live recheck found the same Space revision and the same 31 listed public
+discussions. The [active deletion plan](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/deletion-plan-v2.md)
 requires deletion and confirmation to cnb@sagebase.org by November 23. Earlier frozen
 dates are superseded. Submission remains October 24 at 23:59 UTC.
 

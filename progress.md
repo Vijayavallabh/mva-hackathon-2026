@@ -8865,3 +8865,52 @@ share the current outside-review packet with an independently arranged reviewer,
 resolve provider/distribution questions, perform live portal checks, submit and
 archive an authenticated receipt. All scoped local/remote data remain subject to
 deletion and confirmation to cnb@sagebase.org by November 23.
+
+
+## Session 83 — live official consistency recheck and current-bound rebuild (2026-10-20)
+
+An anonymous 11:49 UTC live recheck found the same official Space revision,
+`60e1c30e337ce6fe01813040dbe49979eb8c50aa`, and the same 31 listed public
+discussions as the v42 requirements refresh. No new organizer requirement appeared.
+The recheck did not reread every thread or verify an authenticated account/quota.
+
+The current report, slide 8, reviewer guide, owner readiness, requirements note,
+session handoff and requirements audit record this consistency check. Slide 8 adds
+"Live official check: rules unchanged." The report retains the current non-genomic
+367-word script as compliant and continues to document the thread 32 published-paper
+option, thread 31 Synapse fallback and thread 29 IRB/consent routing.
+
+Current rebuilt outputs:
+
+- Slide render: `results/feat009/v41-slides-final-20261020-4`
+- Report/workbook export: `results/feat009/v41-documents-final-20261020-9`
+- Release snapshot: `results/feat009/jvv7_track2_research_v41-verified32`
+- Owner bundle: `results/feat009/jvv7_track2_video_materials_v41_31.zip`
+
+Verification:
+
+- `uv run --no-project python scripts/check_track2_requirements_v42.py`: passed,
+  including the new live-recheck receipt.
+- `uv run --no-project python scripts/track2_public_review_v41.py`: passed.
+- `uv run --no-project python scripts/check_track2_harness.py`: passed.
+- `uv run python scripts/audit_track2_harness.py --output ...`: passed with all six
+  protected probes blocked and no project environment.
+- `uv run python scripts/track2_release_v41.py verify
+  results/feat009/jvv7_track2_research_v41-verified32`: passed.
+- `uv run python scripts/track2_bundle_v41.py verify`: passed.
+- `uv run python scripts/audit_publication.py --staged`: passed with zero findings.
+- `uv run python -m unittest discover -s scripts -p 'test_track2*.py'`:
+  **1,101 tests, OK, 14 skips**.
+
+The rebuilt slide render has nine slides, zero outside-text and zero overlap findings.
+The report remains eleven pages with a 334-word abstract. The release snapshot has
+260 files and 991 bound inputs. The owner bundle has 96 files and SHA-256
+`311d000e4e5a6747d36ce848afe23686a3dfe5d1bef5b8f2cf13c9224ee8dc30`.
+
+No biological validation, wet-lab result, drug/phase/exposure promotion,
+recording, hosting, reviewer contact, authenticated quota check or submission is
+established. Everolimus remains a mechanistic probe on HOLD; HCQ remains reserve.
+The owner must still record and measure the video, host it, arrange independent
+review, resolve provider/distribution questions, perform live portal checks,
+submit and archive a receipt. All scoped data remain subject to deletion and
+confirmation to cnb@sagebase.org by November 23.

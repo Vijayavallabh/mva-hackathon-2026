@@ -358,10 +358,20 @@
     "No private, hidden or deleted discussion content; historical edit states are not available",
     "No protected subject data was accessed or transferred",
     "Thread 26 changed only reaction metadata in the visible payload; its visible text and comment count remain unchanged",
-    "No requirement change beyond public discussion clarifications"
+    "No requirement change beyond public discussion clarifications",
+    "The 11:49 UTC recheck confirms only Space revision and public discussion-listing identity; it does not reread every thread or establish submission readiness"
   ],
   "change_decision": "The current v41 report/deck remain within the October 24 deadline, rubric and 180-second video duration. New thread 32 permits but does not require replacing challenge-case narration with a published-paper example; the current pitch already remains non-genomic, so no script change is required before the deadline. Thread 31 adds a Synapse alternative for teams constrained against GitHub; our public-first GitHub policy remains unchanged. Thread 29 reinforces IRB/consent routing through the submission, which matches current practice. No drug disposition, biological claim or submission readiness changes.",
   "provider_settings_verified": false,
   "licensing_scope_resolved": false,
-  "upload_ready": false
+  "upload_ready": false,
+  "live_recheck": {
+    "retrieved_utc": "2026-10-20T11:49:35Z",
+    "space_revision": "60e1c30e337ce6fe01813040dbe49979eb8c50aa",
+    "revision_unchanged": true,
+    "listed_public_discussions": 31,
+    "discussion_numbers_unchanged": true,
+    "new_organizer_requirement_found": false,
+    "scope": "Anonymous live revision and public discussion-listing consistency check; no authenticated account, quota or full-thread reread"
+  }
 }

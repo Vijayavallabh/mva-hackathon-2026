@@ -9,7 +9,8 @@ The materials support review and recording; no video, measured runtime, upload o
 receipt is established.
 
 A later [v42 requirements refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v42.md) confirms the
-October 24 deadline and 180-second video duration. Thread 32 also permits a clearly
+October 24 deadline and 180-second video duration. An 11:49 UTC live recheck found
+the same Space revision and the same 31 listed public discussions. Thread 32 also permits a clearly
 labeled published-paper example in the pitch while the written report covers the
 challenge case; no script rewrite is required.
 
