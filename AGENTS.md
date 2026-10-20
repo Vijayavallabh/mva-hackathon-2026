@@ -91,6 +91,20 @@ and timely delivery. Do not infer efficacy, eligibility or awards.
 
 ## Current work and authoritative files
 
+**Session 84 (2026-10-20): current v43 is the active public presentation state.**
+Start with `notes/track2-reviewer-guide-v43.md` and `notes/track2-owner-readiness-v43.md`.
+The v43 targeted literature refresh found a 2026 fission-yeast TORC1-segregation
+study; it motivates direct mTORC1 engagement and mitotic lagging-DNA/anaphase-bridge
+readouts without changing any drug disposition. Current routes are
+`notes/track2-report-v43.md`, `notes/track2-lab-handoff-v43.md`,
+`notes/track2-reviewer-brief-v43.md`, `notes/track2-judge-questions-v43.md`,
+`notes/track2-external-review-packet-v43.md` and
+`notes/track2-literature-v43.md`. Recheck with
+`scripts/check_track2_literature_v43.py`, `scripts/test_track2_literature_v43.py`
+and `scripts/check_track2_harness_v43.py`. No recording, upload or biological
+validation is established.
+
+
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the artifact record and [session-handoff.md](session-handoff.md) for next steps.
 Session 82 retains **presentation and harness v41** and hardens the current public
@@ -319,16 +333,16 @@ participated. Delivery, provider and distribution flags remain unresolved.
   Record the complete acknowledgement inside the three-minute video. Preserve the
   Track 1 submitted v4, every earlier Track 2 bound input/package, the fixed v19 campaign and v1-v21 releases.
 
-Use `scripts/track2_release_v41.py` to check/build/verify **new** v40 research snapshot
-directories. Render with `scripts/render_track2_slides_v41.mjs`; export the report and
-workbook with `scripts/track2_export_documents_v41.py` followed by
-`scripts/render_track2_report_v41.mjs`. Recording materials use
-`scripts/track2_bundle_v41.py`; historical research retains AF3 notices. Public
-literature receipts are checked by `scripts/check_track2_literature_v41.py`.
+Use `scripts/track2_release_v43.py` to check/build/verify **new** v43 research snapshot
+directories. Render with `scripts/render_track2_slides_v43.mjs`; export the report and
+workbook with `scripts/track2_export_documents_v43.py` followed by
+`scripts/render_track2_report_v43.mjs`. Recording materials use
+`scripts/track2_bundle_v43.py`; historical research retains AF3 notices. Public
+literature receipts are checked by `scripts/check_track2_literature_v43.py`.
 The combined public reviewer checks integrated v39 and frozen v31/v29/v27 research, v25 CRISPR, v23 RNAi, v21 decisions
 and v19 findings. It needs no
 data/results folders, keys, network, GPUs or old
-local snapshots: `uv run --no-project python scripts/check_track2_harness.py`.
+local snapshots: `uv run --no-project python scripts/check_track2_harness_v43.py`.
 The versioned `scripts/track2_public_review_v41.py` checks the integrated presentation,
 frozen research and literature provenance; `scripts/check_track2_transcriptome.py`
 checks v19 alone. Its passing result verifies consistency, not biology or eligibility. The stricter

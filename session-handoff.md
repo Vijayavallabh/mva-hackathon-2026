@@ -59,10 +59,10 @@ biological or clinical validity. The v40 small-kit guide points to that existing
 
 Frozen v40 exports remain `results/feat009/v40-slides-final-20261020` and
 `results/feat009/v40-documents-final-20261020`; the final teleprompter browser receipt
-remains under `results/feat009/v40-prompter-final-20261020`. Current v41 exports are
-`results/feat009/v41-slides-final-20261020-4` and
-`results/feat009/v41-documents-final-20261020-9`; the current research snapshot is
-`results/feat009/jvv7_track2_research_v41-verified32` and the cleaned owner bundle is
+remains under `results/feat009/v40-prompter-final-20261020`. Current v43 exports are pending a fresh render/snapshot; the prior verified v41
+exports remain available at `results/feat009/v41-slides-final-20261020-4`,
+`results/feat009/v41-documents-final-20261020-9`,
+`results/feat009/jvv7_track2_research_v41-verified32` and
 `results/feat009/jvv7_track2_video_materials_v41_31.zip`. No measured recording is claimed. The header continues to respect wrapped mobile controls. A shared narration parser
 checks the transcript, prompter, guide and metrics JSON: 367 words in 180 allocated
 seconds, or 122.3 planned words/minute. These are not measured video times. Earlier draft exports and
@@ -189,3 +189,12 @@ result or additional hosted model provider was run. The v39/v40 scientific
 adjudications remain authoritative. V41 changes readout design, not drug disposition;
 v42 changes delivery options, not requirements. The next decisive evidence remains
 biological, not more model agreement.
+
+
+## Current state
+
+Current v43 adds the targeted TORC1-segregation literature refresh; use
+`notes/track2-reviewer-guide-v43.md` and `notes/track2-owner-readiness-v43.md`.
+It routes the report/lab handoff/reviewer brief/judge questions/external review packet
+through v43. Reproduce with `scripts/check_track2_literature_v43.py`,
+`scripts/test_track2_literature_v43.py` and `scripts/check_track2_harness_v43.py`. It does not change drug disposition or recording state.

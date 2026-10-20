@@ -1,0 +1,17 @@
+{
+  "schema_version": 43,
+  "kind": "pending-fresh-export",
+  "status": "not_run",
+  "reason": "v43 report/workbook export has not yet been run in this session",
+  "source": "notes/track2-report-v43.md",
+  "exporter": "scripts/track2_export_documents_v43.py",
+  "renderer": "scripts/render_track2_report_v43.mjs",
+  "pages": null,
+  "answer_cells": ["B7","B8","B9","B10","B11","B12","B13","B14","B15","B16","B17"],
+  "official_questions_unchanged": true,
+  "track1_values_and_cell_styles_preserved": true,
+  "formulas": null,
+  "formula_errors": null,
+  "upload_ready": false,
+  "render_verified": false
+}

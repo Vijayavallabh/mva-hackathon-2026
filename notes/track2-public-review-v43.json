@@ -1,0 +1,21 @@
+{
+  "schema_version": 43,
+  "kind": "current-public-consistency-result",
+  "status": "captured",
+  "source": "scripts/track2_public_review_v43.py",
+  "passed": true,
+  "presentation_version": 43,
+  "literature_refresh": {
+    "passed": true,
+    "version": 43,
+    "searches": 3,
+    "selected_sources": 2,
+    "public_receipts": 5,
+    "subject_data_read": false,
+    "drug_dispositions_changed": false,
+    "biological_validation": false,
+    "full_text_systematic_review": false
+  },
+  "upload_ready": false,
+  "biological_validation": false
+}

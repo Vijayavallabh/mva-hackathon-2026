@@ -414,3 +414,10 @@ Required in any output from this work:
 > AWS and Anthropic. We are deeply grateful to the child and their family who
 > generously contributed their data and their story to advance research into this
 > rare disease. We acknowledge their trust in making this Hackathon possible.
+
+
+## Current Track 2 state
+
+Current v43 adds the TORC1-segregation readout update without changing drug disposition.
+Use `notes/track2-reviewer-guide-v43.md` and `notes/track2-owner-readiness-v43.md`.
+Reproduce the literature check with `scripts/check_track2_literature_v43.py` and the combined harness with `scripts/check_track2_harness_v43.py`.

@@ -44,6 +44,6 @@ echo "=== 6. offline annotation resources ==="
 ./scripts/get_resources.sh --check
 
 echo "=== 7. current Track 2 presentation and research harness ==="
-uv run python scripts/check_track2_harness.py
+uv run python scripts/check_track2_harness_v43.py
 
 echo "=== OK ==="

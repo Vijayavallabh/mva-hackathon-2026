@@ -1,0 +1,15 @@
+{
+  "schema_version": 43,
+  "kind": "pending-fresh-render",
+  "status": "not_run",
+  "reason": "v43 slides were updated textually but no browser render/export has yet been run in this session",
+  "source": "notes/track2-slides-v43.html",
+  "renderer": "scripts/render_track2_slides_v43.mjs",
+  "slides": 9,
+  "pdf_pages_expected": 9,
+  "render_verified": false,
+  "geometry_verified": false,
+  "contrast_verified": false,
+  "fonts_embedded": false,
+  "narrow_layout_verified": false
+}

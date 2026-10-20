@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-10-20T14:50:00Z",
+  "purpose": "Targeted contrary-evidence and mechanism search for Track 2 v43; no subject data.",
+  "searches": [
+    {
+      "name": "PubMed TORC1/mTOR/rapamycin/everolimus + chromosome segregation 2020-2026",
+      "database": "PubMed eSearch/eSummary/eFetch",
+      "found": 1,
+      "returned": 1,
+      "query_receipt": "sources/public-literature-v43/pubmed-elife108275-search.json",
+      "summary_receipt": "sources/public-literature-v43/pubmed-elife108275-summary.json"
+    },
+    {
+      "name": "OpenAlex TORC1 and chromosome segregation from 2020",
+      "database": "OpenAlex works title/abstract search",
+      "found": 13,
+      "returned": 20,
+      "query_receipt": null,
+      "scope": "Search was performed live but not archived before this audit; this is a search limitation, not a missing result."
+    },
+    {
+      "name": "PubMed mTOR/rapamycin/everolimus/sirolimus + BUB1B/BUBR1/SAC/aneuploidy 2025-2026",
+      "database": "PubMed eSearch",
+      "found": 13,
+      "query_receipt": "sources/public-literature-v41/pubmed-mtor-targets-search.json"
+    }
+  ],
+  "selected_sources": [
+    {
+      "doi": "10.7554/eLife.108275",
+      "pmid": "42223017",
+      "title": "Interplay between cohesin and TORC1 links chromosome segregation and gene expression to environmental changes",
+      "journal": "eLife",
+      "published": "2026-06-01",
+      "authors": ["Besson D", "Vaur S", "Vazquez S", "Tournier S", "Gachet Y", "Birot A", "Claverol S", "Marston AL", "Damdimopoulos A", "Ekwall K", "Javerzat JP"],
+      "receipt": "sources/public-literature-v43/elife-108275-fulltext.xml",
+      "metadata_receipt": "sources/public-literature-v43/pubmed-elife108275-summary.json",
+      "sha256": "57246b31e71619c5b4b73c4041584a01af1950c6df2b7817af0c8ddbace3e9f6",
+      "reading_depth": ["abstract", "results", "discussion", "figure legends", "author response"]
+    },
+    {
+      "doi": "10.1038/s41467-025-59970-1",
+      "pmid": "40410156",
+      "title": "Interplay of kinetochores and catalysts drives rapid assembly of the mitotic checkpoint complex.",
+      "journal": "Nature Communications",
+      "published": "2025-05-24",
+      "authors": ["Sethi S", "Cmentowski V", "Guerriere TB", "Stege P", "Piano V", "Musacchio A"],
+      "receipt": "sources/public-literature-v43/pubmed-40410156-efetch.xml",
+      "sha256": "1b8797a0bd3a7278b6a83806cd373c699007967a073205bced390740300bc677",
+      "reading_depth": ["abstract"]
+    }
+  ],
+  "disposition_changes": {
+    "everolimus": "unchanged_mechanistic_probe_only_on_hold",
+    "hydroxychloroquine": "unchanged_reserve",
+    "nad_sirt2": "unchanged_not_promoted",
+    "rescue_priority": null,
+    "clinical_exposure_margin": null,
+    "phase": "unconfirmed"
+  },
+  "biological_validation": false,
+  "full_text_systematic_review": false,
+  "limitations": [
+    "Not a systematic review; targeted contrary-evidence search only",
+    "Only one open-access full text was read end to end; other records were title/abstract level",
+    "The OpenAlex query response was not archived before this audit and cannot be byte-replayed",
+    "No human MVA, BUB1B, or everolimus study was found by the targeted searches; missing evidence is not disproof"
+  ]
+}
