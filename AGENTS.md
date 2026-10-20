@@ -154,9 +154,13 @@ results. All remote roots/caches remain in the November 23 deletion scope.
 HeLa is transformed and p53-defective. No protected subject data was transferred.
 No model result promotes drug efficacy, phase or clinical exposure.
 
-The October 19 refresh covers seven files at revision
+The October 19 v39 capture covered seven files at revision
 60e1c30e337ce6fe01813040dbe49979eb8c50aa and 30 public threads/84 visible comments.
-The new participant question in thread 31 was read; it has no organizer reply. Submission remains October 24; delete and
+The October 20 v42 refresh found those seven files unchanged but the public discussion
+at 31 threads/89 visible comments/16 closed. Thread 32 permits a clearly labeled
+published-paper example in the pitch; thread 31 now documents a Synapse alternative
+for GitHub-constrained teams; thread 29 reinforces IRB/consent routing through the
+submission. Submission remains October 24; delete and
 confirm to cnb@sagebase.org by November 23. `notes/deletion-plan-v2.md` supersedes
 historical dates without changing old snapshot bytes. No email or upload occurred.
 

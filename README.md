@@ -315,9 +315,12 @@ inputs stay unchanged. The [current artifact record](notes/track2-current.json),
 
 The [readiness note](notes/track2-owner-readiness-v41.md) lists outstanding recording,
 runtime measurement, hosting, provider handling, distribution scope, live checks and
-receipt. The October 19 official/community refresh covers 30 threads and 84 visible comments;
-the new unanswered participant question in thread 31 was read. Delete and confirm to cnb@sagebase.org
-by November 23, as specified in [the active deletion plan](notes/deletion-plan-v2.md). The new materials omit AF3/Atlas numerical
+receipt. The current [v42 requirements refresh](notes/track2-requirements-review-v42.md) found
+the seven official files unchanged and public discussion at 31 threads/89 visible
+comments/16 closed. Thread 32 permits a clearly labeled published-paper example in the
+pitch; thread 31 documents a Synapse alternative; thread 29 reinforces IRB/consent
+routing. Delete and confirm to cnb@sagebase.org by November 23, as specified in
+[the active deletion plan](notes/deletion-plan-v2.md). The new materials omit AF3/Atlas numerical
 outputs and derived figures, which does not resolve CC BY scope for linked history.
 
 The historical [baseline evidence ledger](notes/track2-candidates.json) assesses twelve

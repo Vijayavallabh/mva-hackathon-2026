@@ -157,15 +157,19 @@ Python audit hooks check dependency isolation, not operating-system security.
   Everolimus remains an optional probe; HCQ remains reserve. Balnis units stay quarantined.
 - Preserve submitted Track 1 v4. Owner-reported 100/F-max 1 is separate from the missing
   receipt/byte audit; do not upload again to fix that administrative gap.
-- V40 reuses the v39 October 19 official capture: seven files at
-  `60e1c30e337ce6fe01813040dbe49979eb8c50aa`, 30 threads and 84 visible comments.
-  October 20 completion/re-hashing is not a new live refresh or account/quota check.
+- The October 20 v42 anonymous refresh found the seven official files unchanged at
+  `60e1c30e337ce6fe01813040dbe49979eb8c50aa`, but public discussion now has 31 threads,
+  89 visible comments and 16 closed threads. Thread 32 permits a clearly labeled
+  published-paper example in the pitch; the current non-genomic 367-word script remains
+  compliant. Thread 31 documents a Synapse alternative; thread 29 reinforces IRB/consent
+  routing. This is still not an authenticated account/quota check.
   Submit by **October 24, 23:59 UTC**. Delete all scoped local/remote data and confirm
   to **cnb@sagebase.org by November 23**, under `notes/deletion-plan-v2.md`. Feat-010
   has not started. Cache cleanup did not satisfy this obligation. No email/upload occurred.
 
-One bounded public-source literature search was added in v41; no GPU campaign, remote
-job, wet-lab result or additional hosted model provider was run. The v39/v40 scientific
-adjudications and official captures remain authoritative. The literature changes
-readout design, not drug disposition. The next decisive evidence remains biological,
-not more model agreement.
+One bounded public-source literature search was added in v41, and one anonymous
+official/community refresh was added in v42; no GPU campaign, remote job, wet-lab
+result or additional hosted model provider was run. The v39/v40 scientific
+adjudications remain authoritative. V41 changes readout design, not drug disposition;
+v42 changes delivery options, not requirements. The next decisive evidence remains
+biological, not more model agreement.

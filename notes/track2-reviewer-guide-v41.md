@@ -67,9 +67,9 @@ registered algorithm; it is not an independent statistical implementation.
 The six [optical falsification records](track2-optical-register-v36.json) specify
 what could overturn each interpretation and what changes before a drug experiment.
 
-The [October 19 requirements review](track2-requirements-review-v39.md) covers seven
-official files and 30 public threads/84 visible comments. The one new participant comment was
-read; it has no organizer reply; unchanged text retains earlier review. The [active deletion plan](deletion-plan-v2.md)
+The current [v42 requirements refresh](track2-requirements-review-v42.md) checks seven
+official files and 31 public threads/89 visible comments. It found the official files
+unchanged and read new organizer/public clarifications in threads 31, 32 and 29. The [active deletion plan](deletion-plan-v2.md)
 requires deletion and confirmation to cnb@sagebase.org by November 23. Earlier frozen
 dates are superseded. Submission remains October 24 at 23:59 UTC.
 
