@@ -48,9 +48,12 @@
     "narration_metrics": "notes/track2-narration-v40.json",
     "literature_note": "notes/track2-literature-v41.md",
     "literature_audit": "notes/track2-literature-audit-v41.json",
-    "literature_check": "scripts/check_track2_literature_v41.py"
+    "literature_check": "scripts/check_track2_literature_v41.py",
+    "requirements_v42_review": "notes/track2-requirements-review-v42.md",
+    "requirements_v42_audit": "notes/track2-requirements-v42.json",
+    "requirements_v42_check": "scripts/check_track2_requirements_v42.py"
   },
-  "snapshot": "results/feat009/jvv7_track2_research_v41-verified2",
+  "snapshot": "results/feat009/jvv7_track2_research_v41-verified4",
   "render_directory": "results/feat009/v41-slides-final-20261020-3",
   "model_campaign": {
     "protein_scores": 84,
@@ -75,8 +78,8 @@
   },
   "history": "progress.md",
   "harness_review": "notes/track2-harness-review-v41.md",
-  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v41_2.zip",
-  "document_directory": "results/feat009/v41-documents-final-20261020-4",
+  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v41_3.zip",
+  "document_directory": "results/feat009/v41-documents-final-20261020-5",
   "research_addendum": {
     "version": 19,
     "kind": "public_perturbation_transcriptome",
@@ -295,5 +298,18 @@
     "drug_disposition_change": false,
     "biological_validation": false,
     "full_text_systematic_review": false
+  },
+  "requirements_addendum": {
+    "version": 42,
+    "status": "complete",
+    "kind": "anonymous_public_requirements_refresh",
+    "review": "notes/track2-requirements-review-v42.md",
+    "audit": "notes/track2-requirements-v42.json",
+    "check": "scripts/check_track2_requirements_v42.py",
+    "official_sources": 7,
+    "public_threads": 31,
+    "visible_comments": 89,
+    "requirements_changed": false,
+    "anonymous_get_only": true
   }
 }

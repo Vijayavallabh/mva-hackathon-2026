@@ -11,6 +11,11 @@ fourteen selected 2025-2026 sources and twenty-one receipts. It adds checkpoint/
 mitochondrial and proteostasis readouts without changing any drug disposition; it is
 public-source evidence review, not biological validation.
 
+A later [v42 requirements refresh](track2-requirements-review-v42.md) found the seven
+official files unchanged, but public discussion now has 31 threads/89 visible comments.
+Thread 32 permits a clearly labeled published-paper example in the pitch; it does not
+require changing the current 367-word script.
+
 For a two-minute demonstration, open [Every enrolled cell](track2-demo-v37.html).
 Move from the actual unmeasured HOLD state to the synthetic injury and all-pass cases;
 inspect the exact inputs and download the explanation. The [small public kit](track2-community-kit-v37.md)
@@ -29,7 +34,7 @@ uv run --no-project python scripts/track2_public_review_v41.py
 uv run --no-project python scripts/check_track2_optical_v36.py
 uv run --no-project python scripts/track2_demo_v37.py
 uv run python scripts/audit_track2_harness.py
-uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified2
+uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified4
 uv run python scripts/track2_bundle_v41.py verify
 ```
 

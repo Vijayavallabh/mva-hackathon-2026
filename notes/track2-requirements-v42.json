@@ -1,0 +1,367 @@
+{
+  "schema_version": 42,
+  "retrieved_utc": "2026-10-20T09:28:00Z",
+  "revision": "60e1c30e337ce6fe01813040dbe49979eb8c50aa",
+  "anonymous_get_only": true,
+  "baseline": "notes/track2-requirements-v39.json",
+  "official_sources": [
+    {
+      "name": "README.md",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/60e1c30e337ce6fe01813040dbe49979eb8c50aa/README.md",
+      "sha256": "9660de914f8f77523faded810d0756d390321649f00e2151eb5cdb8b818c6a3f",
+      "unchanged": true,
+      "http_status": 200,
+      "receipt": "sources/public-official-v42/README.md"
+    },
+    {
+      "name": "config.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/60e1c30e337ce6fe01813040dbe49979eb8c50aa/config.py",
+      "sha256": "a65e67fca2fb698ac3f3fe6610e585f549cf29f175d636ce77543d7db6dc8bdc",
+      "unchanged": true,
+      "http_status": 200,
+      "receipt": "sources/public-official-v42/config.py"
+    },
+    {
+      "name": "tabs/about.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/60e1c30e337ce6fe01813040dbe49979eb8c50aa/tabs/about.py",
+      "sha256": "57d25b20a840d57e09268ca6e8615e85579bf65a99829095690e68c2463d5cf3",
+      "unchanged": true,
+      "http_status": 200,
+      "receipt": "sources/public-official-v42/tabs-about.py"
+    },
+    {
+      "name": "tabs/rules.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/60e1c30e337ce6fe01813040dbe49979eb8c50aa/tabs/rules.py",
+      "sha256": "16aa61b9580abc21e6ea69e994cdb27341e1b85b1d00a57da889520a94295906",
+      "unchanged": true,
+      "http_status": 200,
+      "local_receipt_omitted_reason": "Official public source retained by external URL and SHA-256 to avoid committing publisher bytes that duplicate protected phenotype phrasing or a binary template already pinned by prior receipts."
+    },
+    {
+      "name": "tabs/faq.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/60e1c30e337ce6fe01813040dbe49979eb8c50aa/tabs/faq.py",
+      "sha256": "36c3e51e9735a6d2ffacfccea2246a28a13658038988ac88317c5aa05ad71c53",
+      "unchanged": true,
+      "http_status": 200,
+      "receipt": "sources/public-official-v42/tabs-faq.py"
+    },
+    {
+      "name": "tabs/submit_track2.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/60e1c30e337ce6fe01813040dbe49979eb8c50aa/tabs/submit_track2.py",
+      "sha256": "f48d576ab052df34527222b7693f956e15e5376ef68eddedcf0c4f04736bf65c",
+      "unchanged": true,
+      "http_status": 200,
+      "receipt": "sources/public-official-v42/tabs-submit_track2.py"
+    },
+    {
+      "name": "static/templates/methods_description_form.xlsx",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/60e1c30e337ce6fe01813040dbe49979eb8c50aa/static/templates/methods_description_form.xlsx",
+      "sha256": "61aab080a2868a3b724e76692b83c24812112e305cd3a8b03f8f91a6b2414441",
+      "unchanged": true,
+      "http_status": 200,
+      "local_receipt_omitted_reason": "Official public source retained by external URL and SHA-256 to avoid committing publisher bytes that duplicate protected phenotype phrasing or a binary template already pinned by prior receipts."
+    }
+  ],
+  "community": {
+    "listed_count": 31,
+    "closed_count": 16,
+    "visible_comments": 89,
+    "threads": [
+      {
+        "num": 1,
+        "status": "closed",
+        "title": "Need help; Unable to sign up",
+        "visible_comments": 3,
+        "sha256": "fcbc2a966437b519b5b6328fa9534c519b1ae4c4f92c7cf9201e511228014b69",
+        "receipt": "sources/public-official-v42/discussion-1.json"
+      },
+      {
+        "num": 2,
+        "status": "open",
+        "title": "Clarification on using third-party LLM APIs with the dataset",
+        "visible_comments": 12,
+        "sha256": "72f50e7f7372900811088d02779f5134e269c4fba0ba150a4131acdfa1f5685a",
+        "receipt": "sources/public-official-v42/discussion-2.json"
+      },
+      {
+        "num": 3,
+        "status": "closed",
+        "title": "Templates for track 1 missing",
+        "visible_comments": 2,
+        "sha256": "958f1a601e207ed2c17b162926094745ad08a7c14d71cf282094d6e4d636827f",
+        "receipt": "sources/public-official-v42/discussion-3.json"
+      },
+      {
+        "num": 4,
+        "status": "closed",
+        "title": "Clarifications github and model questions",
+        "visible_comments": 3,
+        "sha256": "bc4ffa668e3f02dead260cade205841da669b6e0bd2b67535f580903638edb80",
+        "receipt": "sources/public-official-v42/discussion-4.json"
+      },
+      {
+        "num": 5,
+        "status": "open",
+        "title": "Combination with an experimental drug",
+        "visible_comments": 3,
+        "sha256": "0d4227ef1eabda76f9cd4bb7f82759317fdbcbc819c5097f4952dbd57d8b0072",
+        "receipt": "sources/public-official-v42/discussion-5.json"
+      },
+      {
+        "num": 6,
+        "status": "open",
+        "title": "Anyone who wants to team up?",
+        "visible_comments": 3,
+        "sha256": "c88b003589470d3fdef46964357a27214c2ba068736b487f5cc5623f3dfc991e",
+        "receipt": "sources/public-official-v42/discussion-6.json"
+      },
+      {
+        "num": 7,
+        "status": "closed",
+        "title": "Request to reset accidental early Track 2 submission (@josephmayo)",
+        "visible_comments": 3,
+        "sha256": "69c7f35469374b178b26c68ddbd0f37ab4375e64cb2e653e42cd48952414af31",
+        "receipt": "sources/public-official-v42/discussion-7.json"
+      },
+      {
+        "num": 8,
+        "status": "closed",
+        "title": "Login & Submission Issue (\"Connection to the server was lost\")",
+        "visible_comments": 4,
+        "sha256": "3b7f8d22ba8c6c85a4cf66088828a8fd3fade0ca89d463bae1337e0dc3494c92",
+        "receipt": "sources/public-official-v42/discussion-8.json"
+      },
+      {
+        "num": 10,
+        "status": "open",
+        "title": "[Announcement] Hackathon Updates",
+        "visible_comments": 5,
+        "sha256": "a65f63600a62b3e99294efbb249a1d2a3fc688d906b7c9b2184e624ac77d1678",
+        "receipt": "sources/public-official-v42/discussion-10.json"
+      },
+      {
+        "num": 11,
+        "status": "open",
+        "title": "Prizes",
+        "visible_comments": 2,
+        "sha256": "515068cceeaf7a6ba583a9f6004cb2eac2756c22932d294c949afe0cb9eae7ec",
+        "receipt": "sources/public-official-v42/discussion-11.json"
+      },
+      {
+        "num": 12,
+        "status": "open",
+        "title": "Mvacoin",
+        "visible_comments": 2,
+        "sha256": "0ca720b5364faaf41e95e44a66bef6a81b46526d849bbb617fa2b3e7ae4b0318",
+        "receipt": "sources/public-official-v42/discussion-12.json"
+      },
+      {
+        "num": 13,
+        "status": "closed",
+        "title": "Track2",
+        "visible_comments": 2,
+        "sha256": "c05888d97a31b817098d454e8f810529783d1282ab2addcb49bc9663c585ac15",
+        "receipt": "sources/public-official-v42/discussion-13.json"
+      },
+      {
+        "num": 14,
+        "status": "closed",
+        "title": "Request for additional patient information",
+        "visible_comments": 2,
+        "sha256": "61da3e773b6bd4576c85901cfd775d36f9493fee6de71e1d9214ab1b9ae0930b",
+        "receipt": "sources/public-official-v42/discussion-14.json"
+      },
+      {
+        "num": 15,
+        "status": "closed",
+        "title": "confirm deleting data",
+        "visible_comments": 4,
+        "sha256": "d59a1d3cc3625f9d8128d97af839e00127aaa29b59f44b649f87de90bb5bdf0b",
+        "receipt": "sources/public-official-v42/discussion-15.json"
+      },
+      {
+        "num": 16,
+        "status": "closed",
+        "title": "Institution for data access?",
+        "visible_comments": 2,
+        "sha256": "bd180f73228df1b40a21d3cb24858d0aea3bea87c26a95d7defd93e0808eceaf",
+        "receipt": "sources/public-official-v42/discussion-16.json"
+      },
+      {
+        "num": 17,
+        "status": "open",
+        "title": "Confirm Reference genome used for alignment?",
+        "visible_comments": 5,
+        "sha256": "47b39dcabcf0530e68683043ec75e968e3f6e65d10d84bfb6864d26204226210",
+        "receipt": "sources/public-official-v42/discussion-17.json"
+      },
+      {
+        "num": 18,
+        "status": "open",
+        "title": "[Announcement]   Track 1 Leaderboard",
+        "visible_comments": 1,
+        "sha256": "445e44b26d14517ea520fc17fbdde9f1934ff10b5528c39830156d0e75b8c29a",
+        "receipt": "sources/public-official-v42/discussion-18.json"
+      },
+      {
+        "num": 19,
+        "status": "closed",
+        "title": "Track 1: two leaderboard entries for the same submission — which one is reviewed?",
+        "visible_comments": 4,
+        "sha256": "ae7618b14343713554a25aa857f2504dc779f3309c5660eb3100db0b57c5636b",
+        "receipt": "sources/public-official-v42/discussion-19.json"
+      },
+      {
+        "num": 20,
+        "status": "open",
+        "title": "Do incidental findings unrelated to the primary condition fall under the public-repo / CC BY 4.0 requirement?",
+        "visible_comments": 2,
+        "sha256": "8cca5d856cd1d9a09ca2473cd02b480cdf4123119f4177bc189d0be19ffb3649",
+        "receipt": "sources/public-official-v42/discussion-20.json"
+      },
+      {
+        "num": 21,
+        "status": "open",
+        "title": "Does a consumer subscription with training disabled satisfy the third-party LLM conditions?",
+        "visible_comments": 2,
+        "sha256": "b1996e9a0211980baa9dca528e2b80708d1f73ebc6b1a30d9063fa090dfca402",
+        "receipt": "sources/public-official-v42/discussion-21.json"
+      },
+      {
+        "num": 22,
+        "status": "closed",
+        "title": "UK gene bank access - cis/trans issue.",
+        "visible_comments": 2,
+        "sha256": "23e2cb2cf6b60c98ea015f2d8cb6f44221ca11b20686e21ce8a49fbe096cd2e9",
+        "receipt": "sources/public-official-v42/discussion-22.json"
+      },
+      {
+        "num": 23,
+        "status": "closed",
+        "title": "is ist ok?",
+        "visible_comments": 2,
+        "sha256": "b19a4a7020e4ff24720a58e7924b1217b43252b88a3b45cd5b2bf964a702fe05",
+        "receipt": "sources/public-official-v42/discussion-23.json"
+      },
+      {
+        "num": 24,
+        "status": "closed",
+        "title": "Phase / parental transmission for one case: is it available, and is there a private channel for the two loci?",
+        "visible_comments": 2,
+        "sha256": "353f9d4e617c724f04223e791843674cf4d5435ac4f6c6572ea14a36ecd1c833",
+        "receipt": "sources/public-official-v42/discussion-24.json"
+      },
+      {
+        "num": 25,
+        "status": "open",
+        "title": "Aligned reads and FASTQ lane/library information",
+        "visible_comments": 3,
+        "sha256": "95fa637f012b3df978470881c5f5b2f8f52009fdbe39d7db4a56d1947c4d12f7",
+        "receipt": "sources/public-official-v42/discussion-25.json"
+      },
+      {
+        "num": 26,
+        "status": "open",
+        "title": "Update on announcement date",
+        "visible_comments": 1,
+        "sha256": "5a79cab1b21805c175c67ba3aaa76830b0e2d3eea4ec471691440050d3ac4245",
+        "receipt": "sources/public-official-v42/discussion-26.json"
+      },
+      {
+        "num": 27,
+        "status": "closed",
+        "title": "Track 1 — consolidate duplicate team entries",
+        "visible_comments": 4,
+        "sha256": "297519984d517a2b0c3ca0f5d61bd1c87180d47d2dffdc367a45f6d72ac7682f",
+        "receipt": "sources/public-official-v42/discussion-27.json"
+      },
+      {
+        "num": 28,
+        "status": "open",
+        "title": "One week to go!! Prizes and recognition for each track: MVA Hackathon 2026",
+        "visible_comments": 1,
+        "sha256": "6d52f43d99e732d31dd1bc5cc0354513039148f06918091c0ffd7ed359983b14",
+        "receipt": "sources/public-official-v42/discussion-28.json"
+      },
+      {
+        "num": 29,
+        "status": "closed",
+        "title": "Time-sensitive safety findings: how do they reach the care team?",
+        "visible_comments": 2,
+        "sha256": "563dff11e99593eba7db79af47d84c0aa1fe96169c1deb32e0ef18a3b783510b",
+        "receipt": "sources/public-official-v42/discussion-29.json"
+      },
+      {
+        "num": 30,
+        "status": "open",
+        "title": "Is Google AI Pro Colab permitted for processing gated patient genomic data?",
+        "visible_comments": 1,
+        "sha256": "696d14892c6db6c80482f4730dd2206a1cd7add6e56694bfdda8e0c908bfef46",
+        "receipt": "sources/public-official-v42/discussion-30.json"
+      },
+      {
+        "num": 31,
+        "status": "open",
+        "title": "GitHub Submission Constraint – Request for Alternative Submission Methods",
+        "visible_comments": 2,
+        "sha256": "6eaa41ec2697d7cc0daa16afd68e22cc9c49e7f9139d49bd9ab179af9d48b0bc",
+        "receipt": "sources/public-official-v42/discussion-31.json"
+      },
+      {
+        "num": 32,
+        "status": "closed",
+        "title": "Clarification on Track 2 pitch video content",
+        "visible_comments": 3,
+        "sha256": "1a082cb6b85f3953a3f2a33ea98c48dfc316972e0a01fd7a50295f978c239a97",
+        "receipt": "sources/public-official-v42/discussion-32.json"
+      }
+    ],
+    "listing_receipt": "sources/public-official-v42/index-0.json",
+    "complete": true,
+    "hidden_edit_history_reviewed": false
+  },
+  "unchanged_requirements": {
+    "deadline_utc": "2026-10-24T23:59:00Z",
+    "judging_end_date": "2026-12-17",
+    "winner_announcement_date": "2026-12-18",
+    "submission_limit": 3,
+    "only_latest_reviewed": true,
+    "quota_remaining": null,
+    "required_ai_cell": "B9",
+    "abstract_word_limit": 500,
+    "video_duration_seconds": 180,
+    "video_hosts": [
+      "youtube.com",
+      "youtu.be",
+      "vimeo.com"
+    ],
+    "rubric_weights": {
+      "scientific_rigor": 35,
+      "potential_impact": 25,
+      "innovation": 25,
+      "scalability": 15
+    },
+    "data_deletion_deadline": "2026-11-23",
+    "data_deletion_confirmation_email": "cnb@sagebase.org",
+    "revision": "60e1c30e337ce6fe01813040dbe49979eb8c50aa"
+  },
+  "material_changes": {
+    "new_thread_32_pitch_video_published_example": true,
+    "thread_31_organizer_synapse_alternative": true,
+    "thread_29_participant_correction_irb_consent_routing": true,
+    "thread_26_hash_only_reaction_metadata_change": true,
+    "official_seven_files_unchanged": true
+  },
+  "scope": "Anonymous public GET refresh of seven official files, current Space revision and every listed public discussion; no hidden/deleted/private content or edit history; no authenticated account/quota state",
+  "limitations": [
+    "Anonymous GET only; no authenticated quota, identity or live rendered submission portal",
+    "No private, hidden or deleted discussion content; historical edit states are not available",
+    "No protected subject data was accessed or transferred",
+    "Thread 26 changed only reaction metadata in the visible payload; its visible text and comment count remain unchanged",
+    "No requirement change beyond public discussion clarifications"
+  ],
+  "change_decision": "The current v41 report/deck remain within the October 24 deadline, rubric and 180-second video duration. New thread 32 permits but does not require replacing challenge-case narration with a published-paper example; the current pitch already remains non-genomic, so no script change is required before the deadline. Thread 31 adds a Synapse alternative for teams constrained against GitHub; our public-first GitHub policy remains unchanged. Thread 29 reinforces IRB/consent routing through the submission, which matches current practice. No drug disposition, biological claim or submission readiness changes.",
+  "provider_settings_verified": false,
+  "licensing_scope_resolved": false,
+  "upload_ready": false
+}

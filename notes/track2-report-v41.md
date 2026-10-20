@@ -401,6 +401,12 @@ establish drug efficacy. Track 2 placements and the separate Innovation Prize ar
 organizer decisions, with no estimated winning probability.
 [Source review](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v39.md),
 [announcement 28](https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions/28).
+A later anonymous [v42 refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v42.md)
+found the seven official files unchanged and public discussion at 31 threads/89 visible
+comments. Thread 32 permits a clearly labeled published-paper example in the pitch while
+the written report covers the challenge case. The current non-genomic 367-word script
+remains compliant; no rewrite is required. Thread 31 documents a Synapse alternative
+for teams constrained from GitHub; our public-first GitHub route remains selected.
 
 Submit by **October 24, 23:59 UTC**: a participant-named PDF/Markdown report,
 GitHub URL and three-minute YouTube/Vimeo video. Three entries are allowed; only
