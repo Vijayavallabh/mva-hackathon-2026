@@ -465,8 +465,10 @@ Carbon annotation was reviewed and deferred as irrelevant to functional rescue.
 
 V37 adds an offline synthetic teaching demo, Python/JavaScript checks and an
 own-voice recording guide. V39 adjudicates the owner's rehearsal; v40 clarifies the
-presentation order and derives recording counts and cue rates from the script.
-These revisions use Codex-assisted editing and local rendering. No
+presentation order and derives recording counts and cue rates from the script. V41
+adds the current public literature readouts, and v42 updates this video destination text
+without claiming that a recording has been made. These revisions use Codex-assisted
+editing and local rendering. No
 additional hosted model provider, new GPU model campaign or biological experiment
 was used. Raw subject reads, VCF records and clinical narrative stay local. Unknown
 settings are not attested. Historical AF3-derived materials retain

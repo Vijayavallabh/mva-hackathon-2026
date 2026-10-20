@@ -135,15 +135,17 @@ def check():
     require(json.loads((ROOT/'notes/track2-narration-v40.json').read_text())==timing.summary(pitch),'Narration metrics differ')
     require(timing.guide_metrics(pitch) in (ROOT/'notes/track2-recording-guide-v40.md').read_text(),'Recording guide rates differ')
     require(recording.rendered()==(ROOT/'notes/track2-teleprompter-v40.html').read_text(),'Teleprompter differs')
-    description=(ROOT/'notes/track2-video-description-v40.md').read_text()
+    description=(ROOT/'notes/track2-video-description-v42.md').read_text()
     require(f'{sum(counts)} narration words' in description and normalized(answers['B9']) in normalized(description),'Video disclosure/count differs')
     require(acknowledgement() in normalized(description),'Video acknowledgement missing')
     require(builder.rendered()==(ROOT/'notes/track2-demo-v37.html').read_text(),'Generated demo differs')
     teaching=demo.run();teaching.pop('seconds')
-    for name in ['report','slides','pitch','video-description','lab-handoff','community-kit','judge-questions','recording-guide']:
+    for name in ['report','slides','pitch','lab-handoff','community-kit','judge-questions','recording-guide']:
         suffix='html' if name=='slides' else 'md'
         document=(ROOT/f'notes/track2-{name}-v40.{suffix}').read_text()
         repository_links(document);command_paths(document)
+    document=(ROOT/'notes/track2-video-description-v42.md').read_text()
+    repository_links(document);command_paths(document)
     document=(ROOT/'notes/track2-external-review-packet-v42.md').read_text()
     repository_links(document);command_paths(document)
     document=(ROOT/'notes/track2-reviewer-brief-v42.md').read_text()

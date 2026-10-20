@@ -8,8 +8,8 @@ import track2_release_v41 as release
 
 ROOT=release.ROOT
 SLIDES=ROOT/'results/feat009/v41-slides-final-20261020-3'
-DOCS=ROOT/'results/feat009/v41-documents-final-20261020-5'
-DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v41_13.zip'
+DOCS=ROOT/'results/feat009/v41-documents-final-20261020-6'
+DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v41_17.zip'
 
 
 def sources():
@@ -25,7 +25,7 @@ def sources():
     files={path.name:path for path in expected if path.suffix != '.html'}
     files['jvv7_track2_slides_v41.html']=ROOT/'notes/track2-slides-v41.html'
     # Preserve the owner-selected v40 voice and recording packet; only guide/readiness are current v41.
-    for name in ['pitch','transcript','video-description']:
+    for name in ['pitch','transcript']:
         suffix='txt' if name=='transcript' else 'md'
         files[f'jvv7_track2_{name}_v40.{suffix}']=ROOT/f'notes/track2-{name}-v40.{suffix}'
 
@@ -52,6 +52,7 @@ def sources():
         if source.startswith('notes/') and ('v40' in source or 'v41' in source or source in release.FILES.values() and any(stem in source for stem in ['candidate-comparison-v39','rehearsal-adjudication-v39','rehearsal-sources-v39','qualification-amendment-v39','requirements-review-v39'])):files[Path(source).name]=ROOT/source
     files['jvv7_track2_external-review-packet_v42.md']=ROOT/'notes/track2-external-review-packet-v42.md'
     files['jvv7_track2_reviewer-brief_v42.md']=ROOT/'notes/track2-reviewer-brief-v42.md'
+    files['jvv7_track2_video-description_v42.md']=ROOT/'notes/track2-video-description-v42.md'
     for name in ['reviewer-guide','owner-readiness']:
         files[f'jvv7_track2_{name}_v41.md']=ROOT/f'notes/track2-{name}-v41.md'
     # Preserve the reusable demo and its complete runnable kit in the recording bundle.

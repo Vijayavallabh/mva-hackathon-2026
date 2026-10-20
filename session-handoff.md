@@ -55,7 +55,7 @@ Frozen v40 exports remain `results/feat009/v40-slides-final-20261020` and
 `results/feat009/v40-documents-final-20261020`; the final teleprompter browser receipt
 remains under `results/feat009/v40-prompter-final-20261020`. Current v41 exports are
 `results/feat009/v41-slides-final-20261020-3` and
-`results/feat009/v41-documents-final-20261020-5`; no measured recording is claimed. The header continues to respect wrapped mobile controls. A shared narration parser
+`results/feat009/v41-documents-final-20261020-6`; no measured recording is claimed. The header continues to respect wrapped mobile controls. A shared narration parser
 checks the transcript, prompter, guide and metrics JSON: 367 words in 180 allocated
 seconds, or 122.3 planned words/minute. These are not measured video times. Earlier draft exports and
 interim audit receipts remain in ignored results. Local conversation exports are
@@ -126,7 +126,7 @@ uv run --no-project python scripts/track2_public_review_v41.py
 uv run --no-project python scripts/check_track2_literature_v41.py
 uv run --no-project python scripts/check_track2_optical_v36.py
 uv run python scripts/audit_track2_harness.py
-uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified16
+uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified20
 uv run python scripts/track2_bundle_v41.py verify
 uv run --no-project python scripts/track2_community_kit_v37.py verify
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
