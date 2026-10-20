@@ -12,7 +12,7 @@ unmeasured.
 Searches used only public article indexes and public article records. The exact
 query receipts, summaries and selected records are preserved under
 `sources/public-literature-v41/` with SHA-256 values in
-[the audit](track2-literature-audit-v41.json). No subject VCF, FASTQ, BAM,
+[the audit](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-audit-v41.json). No subject VCF, FASTQ, BAM,
 phenotype document bytes or subject identifier were queried, transferred or
 stored. The remote host was used only to observe idle hardware; no subject data
 was sent there.

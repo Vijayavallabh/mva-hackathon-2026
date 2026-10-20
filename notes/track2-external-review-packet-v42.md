@@ -7,16 +7,16 @@ has been made and no review or endorsement is recorded.
 
 ## Materials
 
-Start with the [one-page proposal brief](track2-reviewer-brief-v42.md) and
-[laboratory handoff](track2-lab-handoff-v40.md). The current [full report](track2-report-v41.md)
+Start with the [one-page proposal brief](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-reviewer-brief-v42.md) and
+[laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v40.md). The current [full report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v41.md)
 contains sources, counterevidence and the checkpoint/proteostasis readout extension.
-The [candidate comparison](track2-candidate-comparison-v39.md) sets out competing
+The [candidate comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-candidate-comparison-v39.md) sets out competing
 mechanisms without assigning a new drug priority. The current
-[literature addendum](track2-literature-v41.md) and [official requirements refresh](track2-requirements-review-v42.md)
+[literature addendum](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v41.md) and [official requirements refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v42.md)
 record the newest public-source and delivery-context evidence.
 
-For presentation review, use the [367-word script](track2-pitch-v40.md),
-[nine-slide deck](track2-slides-v41.html) and [offline demo](track2-demo-v37.html).
+For presentation review, use the [367-word script](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-pitch-v40.md),
+[nine-slide deck](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-slides-v41.html) and [offline demo](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-demo-v37.html).
 The script has not yet been measured in the owner's voice. A recorded draft should
 replace a script-only review when available.
 
@@ -106,10 +106,10 @@ Be able to explain, without reading a slide:
 - Why everolimus remains a conditional probe and what would change that choice.
 - What the contribution adds, without describing established methods as inventions.
 
-Use the [own-voice guide](track2-recording-guide-v42.md) and
-[teleprompter](track2-teleprompter-v40.html), record an uninterrupted take and measure
+Use the [own-voice guide](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-recording-guide-v42.md) and
+[teleprompter](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-teleprompter-v40.html), record an uninterrupted take and measure
 the exported duration. Your own rehearsal is valuable but is not independent review.
 No one has been contacted on your behalf, and no family or MVA Society contact is
 part of this request.
 
-The owner supplied a rehearsal, adjudicated in [the v39 source review](track2-rehearsal-adjudication-v39.md). It is not an outside review. This version routes the current report, literature addendum and official-state refresh while preserving the same qualification-first decision. Everolimus remains a conditional worked example with unmeasured prerequisites. Independent feedback remains pending.
+The owner supplied a rehearsal, adjudicated in [the v39 source review](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-rehearsal-adjudication-v39.md). It is not an outside review. This version routes the current report, literature addendum and official-state refresh while preserving the same qualification-first decision. Everolimus remains a conditional worked example with unmeasured prerequisites. Independent feedback remains pending.

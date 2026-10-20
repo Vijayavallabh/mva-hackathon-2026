@@ -40,8 +40,8 @@ actual unmeasured HOLD state. The method distinguishes a lower error fraction fr
 higher useful output. Software checks establish implementation, not biological
 validity or external adoption.
 
-Read the current [report](track2-report-v41.md), [comparison](track2-candidate-comparison-v39.md),
-[laboratory handoff](track2-lab-handoff-v40.md), [public literature addendum](track2-literature-v41.md)
-and [official-state refresh](track2-requirements-review-v42.md). The owner's rehearsal and this
+Read the current [report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v41.md), [comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-candidate-comparison-v39.md),
+[laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v40.md), [public literature addendum](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v41.md)
+and [official-state refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v42.md). The owner's rehearsal and this
 AI-assisted adjudication are not the independent review being arranged. Recording,
 hosting, provider/distribution questions and submission checks remain open.
