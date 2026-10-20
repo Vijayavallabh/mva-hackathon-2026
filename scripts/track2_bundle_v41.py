@@ -9,7 +9,7 @@ import track2_release_v41 as release
 ROOT=release.ROOT
 SLIDES=ROOT/'results/feat009/v41-slides-final-20261020-3'
 DOCS=ROOT/'results/feat009/v41-documents-final-20261020-6'
-DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v41_17.zip'
+DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v41_18.zip'
 
 
 def sources():
@@ -53,6 +53,8 @@ def sources():
     files['jvv7_track2_external-review-packet_v42.md']=ROOT/'notes/track2-external-review-packet-v42.md'
     files['jvv7_track2_reviewer-brief_v42.md']=ROOT/'notes/track2-reviewer-brief-v42.md'
     files['jvv7_track2_video-description_v42.md']=ROOT/'notes/track2-video-description-v42.md'
+    files['jvv7_track2_judge-questions_v42.md']=ROOT/'notes/track2-judge-questions-v42.md'
+    files['jvv7_track2_community-kit_v42.md']=ROOT/'notes/track2-community-kit-v42.md'
     for name in ['reviewer-guide','owner-readiness']:
         files[f'jvv7_track2_{name}_v41.md']=ROOT/f'notes/track2-{name}-v41.md'
     # Preserve the reusable demo and its complete runnable kit in the recording bundle.

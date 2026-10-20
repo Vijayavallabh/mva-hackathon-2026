@@ -39,6 +39,8 @@ FILES['track2-slides-v41.html']='notes/track2-slides-v41.html'
 FILES['track2-external-review-packet-v42.md']='notes/track2-external-review-packet-v42.md'
 FILES['track2-reviewer-brief-v42.md']='notes/track2-reviewer-brief-v42.md'
 FILES['track2-video-description-v42.md']='notes/track2-video-description-v42.md'
+FILES['track2-judge-questions-v42.md']='notes/track2-judge-questions-v42.md'
+FILES['track2-community-kit-v42.md']='notes/track2-community-kit-v42.md'
 SCRIPTS=['track2_release_v41.py','test_track2_release_v41.py',
     'track2_public_review_v41.py','test_track2_public_review_v41.py',
     'track2_export_documents_v41.py','render_track2_report_v41.mjs',

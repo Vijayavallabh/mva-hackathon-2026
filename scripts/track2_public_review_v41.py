@@ -140,9 +140,12 @@ def check():
     require(acknowledgement() in normalized(description),'Video acknowledgement missing')
     require(builder.rendered()==(ROOT/'notes/track2-demo-v37.html').read_text(),'Generated demo differs')
     teaching=demo.run();teaching.pop('seconds')
-    for name in ['report','slides','pitch','lab-handoff','community-kit','judge-questions','recording-guide']:
+    for name in ['report','slides','pitch','lab-handoff','recording-guide']:
         suffix='html' if name=='slides' else 'md'
         document=(ROOT/f'notes/track2-{name}-v40.{suffix}').read_text()
+        repository_links(document);command_paths(document)
+    for name in ['judge-questions','community-kit']:
+        document=(ROOT/f'notes/track2-{name}-v42.md').read_text()
         repository_links(document);command_paths(document)
     document=(ROOT/'notes/track2-video-description-v42.md').read_text()
     repository_links(document);command_paths(document)
