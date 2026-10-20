@@ -133,10 +133,10 @@ def validate(state, features, documents):
         'community_kit_guide':'notes/track2-community-kit-v42.md',
         'lab_handoff':'notes/track2-lab-handoff-v40.md',
         'judge_questions':'notes/track2-judge-questions-v42.md',
-        'recording_guide':'notes/track2-recording-guide-v40.md',
+        'recording_guide':'notes/track2-recording-guide-v42.md',
         'teleprompter':'notes/track2-teleprompter-v40.html',
         'reviewer_brief':'notes/track2-reviewer-brief-v42.md',
-        'competition_strategy':'notes/track2-competition-strategy-v40.md',
+        'competition_strategy':'notes/track2-competition-strategy-v42.md',
         'slides':f'notes/track2-slides-v{version}.html',
         'pitch':'notes/track2-pitch-v40.md',
         'transcript':'notes/track2-transcript-v40.txt',
@@ -167,8 +167,8 @@ def validate(state, features, documents):
     roles['narration_metrics']='notes/track2-narration-v40.json'
     require(state['artifacts'] == roles, 'Mixed, missing or unsafe artifact paths')
     require(state.get('community_kit_bundle') == 'results/feat009/jvv7_track2_community_kit_v37.zip', 'Stale community kit path')
-    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified21', 'Stale snapshot path')
-    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_18.zip',
+    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified24', 'Stale snapshot path')
+    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_21.zip',
             'Stale recording-materials bundle path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['render_directory']),
             'Stale or unsafe render-directory path')

@@ -126,7 +126,7 @@ uv run --no-project python scripts/track2_public_review_v41.py
 uv run --no-project python scripts/check_track2_literature_v41.py
 uv run --no-project python scripts/check_track2_optical_v36.py
 uv run python scripts/audit_track2_harness.py
-uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified21
+uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified24
 uv run python scripts/track2_bundle_v41.py verify
 uv run --no-project python scripts/track2_community_kit_v37.py verify
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'

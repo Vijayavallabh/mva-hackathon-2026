@@ -13,7 +13,7 @@
     "biological_validation": false,
     "full_text_systematic_review": false
   },
-  "script_sha256": "a426345155f2d502a0ae12a7b899dcb21a25622222c526d359ecc6a56e6a456e",
+  "script_sha256": "d9810a646cdbe0e0e8a99cb1c8f9d0f78174bb27a8d8d0e004621ab8ce80e0b9",
   "report_sha256": "63e8c99e1980e6f8f480aa3f4a88d8824320cf3fcaa1c0478e0f758699df7878",
   "slide_sha256": "35f2646a9a54be94c9330bc3faa0e6e1c074562da1f405dd0505d3fbe7a6b946",
   "network_forbidden_by_audit_hook": true,

@@ -290,7 +290,7 @@ harm and alternative candidates. Missing evidence and search failures are not di
 Current materials: [report source](notes/track2-report-v41.md),
 [367-word narration](notes/track2-pitch-v40.md), [plain transcript](notes/track2-transcript-v40.txt),
 [nine-slide deck](notes/track2-slides-v41.html) and
-[video description](notes/track2-video-description-v40.md). The
+[video description](notes/track2-video-description-v42.md). The
 [v41 literature addendum](notes/track2-literature-v41.md) and
 [audit](notes/track2-literature-audit-v41.json) add public-source readout evidence
 without changing drug decisions. The mechanism and joint-treatment experiment lead the presentation, followed by

@@ -23,7 +23,7 @@ includes everything needed to replay the 18 examples with standard-library Pytho
 These examples test implementation, not policy validity or clinical performance.
 
 For the proposal, use the [laboratory handoff](track2-lab-handoff-v40.md) and
-[reviewer questions](track2-judge-questions-v40.md). The [competition plan](track2-competition-plan-v39.md)
+[reviewer questions](track2-judge-questions-v42.md). The [competition plan](track2-competition-plan-v39.md)
 maps actual work to rigor 35%, impact 25%, innovation 25% and scalability 15%.
 The owner-selected voice workflow is in the [timed recording guide](track2-recording-guide-v40.md)
 and [offline teleprompter](track2-teleprompter-v40.html). No recording has been made.
@@ -34,7 +34,7 @@ uv run --no-project python scripts/track2_public_review_v41.py
 uv run --no-project python scripts/check_track2_optical_v36.py
 uv run --no-project python scripts/track2_demo_v37.py
 uv run python scripts/audit_track2_harness.py
-uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified21
+uv run python scripts/track2_release_v41.py verify results/feat009/jvv7_track2_research_v41-verified24
 uv run python scripts/track2_bundle_v41.py verify
 ```
 

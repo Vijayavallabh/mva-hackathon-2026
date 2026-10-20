@@ -21,8 +21,8 @@ and eligibility remain organizer decisions.
 
 The judge-facing story is: endogenous function must qualify before a drug hypothesis
 advances; everolimus is a conditional worked example; a qualified joint-treatment
-experiment can advance or reject the tested claim. The [brief](track2-reviewer-brief-v42.md),
-[current report](track2-report-v41.md), [current slides](track2-slides-v41.html) and
+experiment can advance or reject the tested claim. The [brief](track2-reviewer-brief-v40.md),
+[report](track2-report-v40.md), [slides](track2-slides-v40.html) and
 [narration](track2-pitch-v40.md) express that story. Compute counts document work;
 they do not establish therapeutic impact. The optical result supports a specific assay-development question, while the
 registered neural gain fails. Preserve the favorable simple-profile result and
@@ -32,7 +32,7 @@ Before the **October 24, 23:59 UTC** deadline, prioritize a reviewed evidence sn
 the recorded and measured three-minute video, accessible hosting, exact deliverable
 checks and an archived receipt. Three entries are allowed and only the latest is
 reviewed; remaining quota is unknown. Existing provider/distribution questions remain
-in [delivery readiness](track2-owner-readiness-v41.md). A new model name or extra
+in [delivery readiness](track2-owner-readiness-v40.md). A new model name or extra
 repeat is useful only if it answers an unresolved question better than the baseline.
 
 Delete and confirm to **cnb@sagebase.org by November 23** under
@@ -41,6 +41,6 @@ confirmation and required tax/eligibility checks. Winners are announced December
 No contact, upload, deletion or eligibility attestation is implied by this strategy.
 
 The current rubric-directed work and its acceptance criteria are in
-[the v39 plan](track2-competition-plan-v39.md). The [judge questions](track2-judge-questions-v42.md)
+[the v39 plan](track2-competition-plan-v39.md). The [judge questions](track2-judge-questions-v40.md)
 address objections in advance because the rules specify no live Q&A. No judge score
 or award probability is estimated.

@@ -2,7 +2,7 @@
 
 20 October 2026. The [report](track2-report-v41.md), [slides](track2-slides-v41.html),
 [pitch](track2-pitch-v40.md), [transcript](track2-transcript-v40.txt),
-[video description](track2-video-description-v40.md) and methods workbook distinguish
+[video description](track2-video-description-v42.md) and methods workbook distinguish
 completed research, including the [corrected optical comparison](track2-optical-v36.md).
 Use [the current artifact record](track2-current.json) for exports and bundles.
 The materials support review and recording; no video, measured runtime, upload or
