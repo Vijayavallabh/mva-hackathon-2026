@@ -7,16 +7,16 @@ has been made and no review or endorsement is recorded.
 
 ## Materials
 
-Start with the [one-page proposal brief](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-reviewer-brief-v43.md) and
-[laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v43.md). The current [full report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v43.md)
+Start with the [one-page proposal brief](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-reviewer-brief-v50.md) and
+[laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v43.md). The current [full report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v47.md)
 contains sources, counterevidence and the checkpoint/proteostasis readout extension.
 The [candidate comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-candidate-comparison-v42.md) sets out competing
 mechanisms without assigning a new drug priority. The current
 [literature addendum](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v41.md), [v43 TORC1-segregation addendum](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v43.md) and [official requirements refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v42.md)
 record the newest public-source and delivery-context evidence.
 
-For presentation review, use the [367-word script](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-pitch-v40.md),
-[nine-slide deck](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-slides-v41.html) and [offline demo](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-demo-v37.html).
+For presentation review, use the [369-word script](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-pitch-v46.md),
+[nine-slide deck](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-slides-v47.html) and [offline demo](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-demo-v37.html).
 The script has not yet been measured in the owner's voice. A recorded draft should
 replace a script-only review when available.
 

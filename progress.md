@@ -9092,3 +9092,18 @@ outside-review packet. Fresh verified outputs are
 bytes) and `results/feat009/jvv7_track2_research_v47-verified9` (241 files/972
 bound inputs). No video, URL, hosting, authenticated quota/provider check,
 biological validation or submission occurred.
+
+## Session 99 — 2026-10-20: current support-document cleanup
+
+The remaining current-facing stale routes were removed. The reviewer brief advanced to
+v50, judge questions to v44, and video description to v47; all now point to the v47
+report/deck and current v45 literature chain. AGENTS.md and README.md route to the v47
+report and current v50/v44/v47 support documents. The v49 outside-review packet now
+uses the v47 report/deck and v46 369-word script. The v48 reviewer/owner guides also
+route to these current support documents.
+
+Fresh verified outputs are
+`results/feat009/jvv7_track2_video_materials_v47_12.zip` (106 files, 2,810,809 bytes)
+and `results/feat009/jvv7_track2_research_v47-verified11` (241 files/972 bound inputs).
+No video, URL, hosting, authenticated quota/provider check, biological validation or
+submission occurred.

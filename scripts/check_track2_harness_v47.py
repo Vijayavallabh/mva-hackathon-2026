@@ -132,15 +132,15 @@ def validate(state, features, documents):
         'demo_audit':'notes/track2-demo-audit-v37.json',
         'community_kit_guide':'notes/track2-community-kit-v42.md',
         'lab_handoff':'notes/track2-lab-handoff-v43.md',
-        'judge_questions':'notes/track2-judge-questions-v43.md',
+        'judge_questions':'notes/track2-judge-questions-v44.md',
         'recording_guide':'notes/track2-recording-guide-v46.md',
         'teleprompter':'notes/track2-teleprompter-v46.html',
-        'reviewer_brief':'notes/track2-reviewer-brief-v43.md',
+        'reviewer_brief':'notes/track2-reviewer-brief-v50.md',
         'competition_strategy':'notes/track2-competition-strategy-v42.md',
         'slides':f'notes/track2-slides-v{version}.html',
         'pitch':'notes/track2-pitch-v46.md',
         'transcript':'notes/track2-transcript-v46.txt',
-        'video_description':'notes/track2-video-description-v46.md',
+        'video_description':'notes/track2-video-description-v47.md',
         'design_review':'notes/track2-v40-design.md',
         'evidence':'notes/track2-evidence-v21.json', 'validation':'notes/track2-validation-v21.md',
         'falsification_register':'notes/track2-falsification-register-v21.json',
@@ -169,8 +169,8 @@ def validate(state, features, documents):
     roles['narration_metrics']='notes/track2-narration-v46.json'
     require(state['artifacts'] == roles, 'Mixed, missing or unsafe artifact paths')
     require(state.get('community_kit_bundle') == 'results/feat009/jvv7_track2_community_kit_v37.zip', 'Stale community kit path')
-    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified9', 'Stale snapshot path')
-    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_10.zip',
+    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified11', 'Stale snapshot path')
+    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_12.zip',
             'Stale recording-materials bundle path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['render_directory']),
             'Stale or unsafe render-directory path')

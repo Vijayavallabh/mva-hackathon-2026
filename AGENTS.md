@@ -102,11 +102,11 @@ seven official files and discussion listing unchanged; no new organizer requirem
 appeared. The v43 targeted literature refresh found a 2026 fission-yeast TORC1-segregation
 study; it motivates direct mTORC1 engagement and mitotic lagging-DNA/anaphase-bridge
 readouts without changing any drug disposition. Current routes are
-`notes/track2-report-v43.md`, `notes/track2-lab-handoff-v43.md`,
-`notes/track2-reviewer-brief-v43.md`, `notes/track2-judge-questions-v43.md`,
-`notes/track2-external-review-packet-v43.md` and
-`notes/track2-literature-v43.md`. Recheck with
-`scripts/check_track2_literature_v43.py`, `scripts/test_track2_literature_v43.py`
+`notes/track2-report-v47.md`, `notes/track2-lab-handoff-v43.md`,
+`notes/track2-reviewer-brief-v50.md`, `notes/track2-judge-questions-v44.md`,
+`notes/track2-external-review-packet-v49.md`, `notes/track2-literature-v45.md`,
+`notes/track2-video-description-v47.md` and `notes/track2-submission-prep-v2.md`. Recheck with
+`scripts/check_track2_literature_v45.py`, `scripts/test_track2_literature_v45.py`,
 `scripts/check_track2_requirements_v44.py`,
 `scripts/test_track2_requirements_v44.py` and `scripts/check_track2_harness_v47.py`.
 No recording, upload or biological validation is established.

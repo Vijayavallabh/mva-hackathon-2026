@@ -246,7 +246,7 @@ The proposed decision contract returns HOLD with unmeasured biology and null mar
 An invalid assay, imprecision, scoped futility and safety failure now have different
 consequences. No wet-lab result, new model inference or candidate promotion is claimed.
 
-**Track 2 (feat-009) is in progress.** Read the [integrated v43 report](notes/track2-report-v43.md)
+**Track 2 (feat-009) is in progress.** Read the [integrated v47 report](notes/track2-report-v47.md)
 and the complete [v19 research record](notes/track2-transcriptome-v19.md).
 The [falsification review](notes/track2-falsification-review-v21.md) challenges the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
@@ -290,7 +290,7 @@ harm and alternative candidates. Missing evidence and search failures are not di
 Current materials: [report source](notes/track2-report-v47.md),
 [369-word narration](notes/track2-pitch-v46.md), [plain transcript](notes/track2-transcript-v46.txt),
 [nine-slide deck](notes/track2-slides-v47.html) and
-[video description](notes/track2-video-description-v46.md). The
+[video description](notes/track2-video-description-v47.md). The
 [v41 literature addendum](notes/track2-literature-v41.md), the
 [v43 TORC1-segregation addendum](notes/track2-literature-v43.md), [v45 checkpoint/computational-drug addendum](notes/track2-literature-v45.md) and their
 [audits](notes/track2-literature-audit-v45.json) add public-source readout evidence

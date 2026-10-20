@@ -2,7 +2,7 @@
 
 20 October 2026. The [report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v47.md), [slides](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-slides-v47.html),
 [pitch](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-pitch-v46.md), [transcript](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-transcript-v46.txt),
-[video description](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-video-description-v46.md) and methods workbook distinguish
+[video description](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-video-description-v47.md) and methods workbook distinguish
 completed research, including the [corrected optical comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-optical-v36.md).
 Use [the current artifact record](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-current.json) for exports and bundles.
 The materials support review and recording; no video, measured runtime, upload or
