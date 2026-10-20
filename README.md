@@ -287,21 +287,21 @@ assumption; revise or abandon the approach when warranted. Use the original
 throughout research and before promotion/release. Apply the same standard to benefit,
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
-Current materials: [report source](notes/track2-report-v43.md),
-[367-word narration](notes/track2-pitch-v40.md), [plain transcript](notes/track2-transcript-v40.txt),
-[nine-slide deck](notes/track2-slides-v43.html) and
-[video description](notes/track2-video-description-v42.md). The
+Current materials: [report source](notes/track2-report-v47.md),
+[369-word narration](notes/track2-pitch-v46.md), [plain transcript](notes/track2-transcript-v46.txt),
+[nine-slide deck](notes/track2-slides-v47.html) and
+[video description](notes/track2-video-description-v46.md). The
 [v41 literature addendum](notes/track2-literature-v41.md), the
-[v43 TORC1-segregation addendum](notes/track2-literature-v43.md) and their
-[audits](notes/track2-literature-audit-v43.json) add public-source readout evidence
-without changing drug decisions. The mechanism and joint-treatment experiment lead the presentation, followed by
+[v43 TORC1-segregation addendum](notes/track2-literature-v43.md), [v45 checkpoint/computational-drug addendum](notes/track2-literature-v45.md) and their
+[audits](notes/track2-literature-audit-v45.json) add public-source readout evidence
+without changing drug decisions. The mechanism and four-arm drug experiment lead the presentation, followed by
 the synthetic denominator example and completed optical comparison. Favorable BUB1B
 morphology, failed practical neural gain, guide/plate sensitivity and missing mitotic
 coverage remain distinct. All eleven methods answers and the 334-word abstract match
 the workbook export. Prior scientific details remain in linked research records.
 
 Start with the [combined v45 reviewer guide](notes/track2-reviewer-guide-v48.md). One
-public CPU command checks integrated v43 materials and completed v19/v21/v23/v25/v27/v29/v31/v36 findings plus the v41 literature audit:
+public CPU command checks integrated v47 materials and completed v19/v21/v23/v25/v27/v29/v31/v36 findings plus the v45 literature audit:
 
 ```bash
 uv run --no-project python scripts/check_track2_harness_v47.py
@@ -309,12 +309,12 @@ uv run --no-project python scripts/check_track2_harness_v47.py
 
 It requires no subject files, data/results folders, keys, network, Git history or model
 weights. The check verifies consistency, not biological efficacy. The versioned public
-presentation reviewer and release/bundle scripts use v43, while the 367-word voice and
-recording materials preserve v40. Earlier versions remain available and bound
+presentation reviewer and release/bundle scripts use v47, while the 369-word voice and
+recording materials preserve v46 wording. Earlier versions remain available and bound
 inputs stay unchanged. The [current artifact record](notes/track2-current.json),
-[harness review](notes/track2-harness-review-v43.md) and `./init.sh` route current work.
+[harness review](notes/track2-harness-review-v47.md) and `./init.sh` route current work.
 
-The [v45 readiness note](notes/track2-owner-readiness-v48.md) lists exact current deliverables and lists outstanding recording,
+The [v48 readiness note](notes/track2-owner-readiness-v48.md) lists exact current deliverables and outstanding recording,
 runtime measurement, hosting, provider handling, distribution scope, live checks and
 receipt. The full [v42 requirements refresh](notes/track2-requirements-review-v42.md) found
 31 threads/89 visible comments/16 closed. Thread 32 permits a clearly labeled published-paper

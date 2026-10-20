@@ -1,18 +1,18 @@
-# Session handoff: v43 published TORC1-segregation evidence and fresh exports
+# Session handoff: v47/v48 external-review-integrated delivery chain
 
 20 October 2026, sessions 84-86. Only **feat-009** remains active for delivery and
 unresolved biological qualification. Current v47 integrates the adjudicated external review and preserves the frozen v40
-qualification sequence, synthetic-arm labels, 367-word own-voice narration and
+qualification sequence, synthetic-arm labels, 369-word own-voice narration and
 recording metrics while adding the TORC1-segregation contrary-evidence refresh,
 direct mTORC1 engagement and mitotic lagging-DNA/anaphase-bridge readouts. Use
-`notes/track2-current.json`, `notes/track2-report-v43.md`,
-`notes/track2-slides-v43.html`, `notes/track2-pitch-v40.md` and
-`notes/track2-transcript-v40.txt`. The combined entry point is
-`scripts/check_track2_harness_v43.py`; start with
+`notes/track2-current.json`, `notes/track2-report-v47.md`,
+`notes/track2-slides-v47.html`, `notes/track2-pitch-v46.md` and
+`notes/track2-transcript-v46.txt`. The combined entry point is
+`scripts/check_track2_harness_v47.py`; start with
 `notes/track2-reviewer-guide-v48.md` and `notes/track2-owner-readiness-v48.md`; they list exact current deliverables.
-The current literature chain is `notes/track2-literature-v43.md`,
-`notes/track2-literature-audit-v43.json` and
-`scripts/check_track2_literature_v43.py`; the broader v41 refresh remains preserved. The official-state chains are the full v42 review plus the current live deadline refresh, v44,: `notes/track2-requirements-review-v42.md`,
+The current literature chain is `notes/track2-literature-v45.md`,
+`notes/track2-literature-audit-v45.json` and
+`scripts/check_track2_literature_v45.py`; the broader v41 and targeted v43 refreshes remain preserved. The official-state chains are the full v42 review plus the current live deadline refresh, v44,: `notes/track2-requirements-review-v42.md`,
 `notes/track2-requirements-review-v44.md`, `notes/track2-requirements-v44.json`
 and `scripts/check_track2_requirements_v44.py`. At 15:34:56 UTC, Space revision,
 all seven official files, discussion number/status/title listing and the 31/16
@@ -129,14 +129,14 @@ See `notes/track2-dgx-cleanup-v37.md`; environment imports passed after cleanup.
 
 ```bash
 ./init.sh
-uv run --no-project python scripts/check_track2_harness_v43.py
-uv run --no-project python scripts/track2_public_review_v43.py
-uv run --no-project python scripts/check_track2_literature_v43.py
+uv run --no-project python scripts/check_track2_harness_v47.py
+uv run --no-project python scripts/track2_public_review_v47.py
+uv run --no-project python scripts/check_track2_literature_v45.py
 uv run --no-project python scripts/check_track2_requirements_v44.py
 uv run --no-project python scripts/check_track2_optical_v36.py
-uv run python scripts/audit_track2_harness_v43.py --output <new-output.json>
-uv run python scripts/track2_release_v43.py verify results/feat009/jvv7_track2_research_v43-verified35
-uv run python scripts/track2_bundle_v43.py verify
+uv run python scripts/audit_track2_harness_v47.py --output <new-output.json>
+uv run python scripts/track2_release_v47.py verify results/feat009/jvv7_track2_research_v47-verified8
+uv run python scripts/track2_bundle_v47.py verify
 uv run --no-project python scripts/track2_community_kit_v37.py verify
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
@@ -150,7 +150,7 @@ Python audit hooks check dependency isolation, not operating-system security.
 
 - Arrange actual outside review through the owner; preserve feedback and the reviewed
   version, then adjudicate objections. Uncoached pitch/demo comprehension is unmeasured.
-- Record the 367-word pitch in the owner's own voice, measure the full exported video
+- Record the 369-word pitch in the owner's own voice, measure the full exported video
   including acknowledgement and transitions, and host on YouTube/Vimeo. Script cue
   allocations total 180 seconds but are not a measured recording. No video or URL exists.
 - Resolve existing provider/distribution questions. OpenAI no-training is an owner
@@ -161,7 +161,7 @@ Python audit hooks check dependency isolation, not operating-system security.
   and video access. Three entries are allowed; only the latest is judged. Quota is
   unknown. Archive uploaded bytes and the receipt after actual submission.
 - Scientific advancement needs independent endogenous perturbation/restoration,
-  qualified non-cancer function, joint treatment, exposure and injury measurements.
+  qualified non-cancer function, the four-arm drug experiment, exposure and injury measurements.
   No rescue-priority drug, confirmed phase, clinical margin or wet-lab result exists.
   Everolimus remains an optional probe; HCQ remains reserve. Balnis units stay quarantined.
 - Preserve submitted Track 1 v4. Owner-reported 100/F-max 1 is separate from the missing
@@ -169,7 +169,7 @@ Python audit hooks check dependency isolation, not operating-system security.
 - The October 20 v42 anonymous refresh found the seven official files unchanged at
   `60e1c30e337ce6fe01813040dbe49979eb8c50aa`, but public discussion now has 31 threads,
   89 visible comments and 16 closed threads. Thread 32 permits a clearly labeled
-  published-paper example in the pitch; the current non-genomic 367-word script remains
+  published-paper example in the pitch; the current non-genomic 369-word script remains
   compliant. Thread 31 documents a Synapse alternative; thread 29 reinforces IRB/consent
   routing. This is still not an authenticated account/quota check.
   Submit by **October 24, 23:59 UTC**. Delete all scoped local/remote data and confirm

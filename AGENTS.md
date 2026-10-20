@@ -114,22 +114,19 @@ No recording, upload or biological validation is established.
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the artifact record and [session-handoff.md](session-handoff.md) for next steps.
-Session 82 retains **presentation and harness v41** and hardens the current public
-delivery chain. The nine-slide, 367-word own-voice recording workflow and methods
-workbook remain frozen at v40 wording; the current report/deck add five PubMed/OpenAlex
-search records, fourteen selected 2025-2026 sources and twenty-one public receipts.
-The literature changes readout design—corona/MCC/APC/C, checkpoint architecture,
-mitochondrial integrity and proteostasis—without changing any drug disposition.
-Current support documents cover the official refresh, reviewer brief,
-outside-review packet, judge questions, video description, recording guide, lab
-handoff, candidate comparison, community-kit guide and competition strategy.
-Start with `notes/track2-reviewer-guide-v41.md` and
-`notes/track2-owner-readiness-v41.md`. All bound releases through v40 remain frozen.
-The drug ledger and base validation remain v21; the 18-case demo and small community
+Session 97 retains **presentation/harness v47** and current owner/reviewer guides
+v48. The nine-slide v47 deck and 369-word v46 own-voice recording workflow preserve
+the qualification-first sequence. The report/deck now integrate the external-review
+adjudication, explicit candidate selection, four-arm experiment, primary endpoint,
+independent units, decision-contribution table and software/biology boundary. The
+v41/v43/v45 literature addenda add checkpoint/corona/MCC/APC/C, TORC1-segregation,
+mitochondrial, proteostasis and tumour-context boundaries without changing any drug
+disposition. Start with `notes/track2-reviewer-guide-v48.md` and
+`notes/track2-owner-readiness-v48.md`; use `notes/track2-submission-prep-v2.md` for
+exact portal fields. The drug ledger/base validation remain v21; the demo/community
 ZIP remain v37. Current outputs are
-`results/feat009/jvv7_track2_research_v41-verified32` and
-`results/feat009/jvv7_track2_video_materials_v41_31.zip`; the 11:49 UTC anonymous
-official recheck found the same revision and 31 listed discussions. No biological experiment,
+`results/feat009/jvv7_track2_research_v47-verified8` and
+`results/feat009/jvv7_track2_video_materials_v47_8.zip`. No biological experiment,
 drug-priority change, recording or submission is established.
 
 Read `notes/track2-rehearsal-adjudication-v39.md`,
@@ -285,7 +282,7 @@ participated. Delivery, provider and distribution flags remain unresolved.
   180 second-release labelled profiles, 174 have unresolved stereochemical metadata;
   the six reference-matching 0.1 µM profiles all fail specified drug QC. Do not pool
   identifiers, claim a dose response, promote HCQ by elimination or equate filter
-  failure with biological disproof. Qualify the perturbation, then test joint treatment
+  failure with biological disproof. Qualify the perturbation, then test the four-arm drug experiment
   and functional endpoints. All inputs were public; no subject transfer or new neural
   inference. Keep v18 immutable and use `scripts/check_track2_transcriptome.py` for
   the separate completed research addendum. No drug/phase/exposure promotion follows.

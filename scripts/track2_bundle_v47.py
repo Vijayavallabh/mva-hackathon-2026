@@ -9,7 +9,7 @@ import track2_release_v47 as release
 ROOT=release.ROOT
 SLIDES=ROOT/'results/feat009/v47-slides-final-20261020-1'
 DOCS=ROOT/'results/feat009/v47-documents-final-20261020-3'
-DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v47_8.zip'
+DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v47_10.zip'
 def sources():
     release.scientific_checks()
     render=json.loads((ROOT/'notes/track2-v47-render-audit-v47.json').read_text())
@@ -45,7 +45,7 @@ def sources():
     # Preserve only frozen v40 own-voice assets with unambiguous owner-facing names.
     for source in sorted(release.INPUTS):
         if source in {'notes/track2-pitch-v46.md','notes/track2-transcript-v46.txt','notes/track2-teleprompter-v46.html','notes/track2-narration-v46.json'}:files['jvv7_'+Path(source).name]=ROOT/source
-    files['jvv7_track2_external-review-packet_v43.md']=ROOT/'notes/track2-external-review-packet-v43.md'
+    files['jvv7_track2_external-review-packet_v49.md']=ROOT/'notes/track2-external-review-packet-v49.md'
     files['jvv7_track2_reviewer-brief_v43.md']=ROOT/'notes/track2-reviewer-brief-v43.md'
     files['jvv7_track2_video-description_v46.md']=ROOT/'notes/track2-video-description-v46.md'
     files['jvv7_track2_judge-questions_v43.md']=ROOT/'notes/track2-judge-questions-v43.md'

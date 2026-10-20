@@ -165,12 +165,12 @@ def validate(state, features, documents):
     roles.update({'requirements_v42_review':'notes/track2-requirements-review-v42.md','requirements_v42_audit':'notes/track2-requirements-v42.json','requirements_v42_check':'scripts/check_track2_requirements_v42.py'})
     roles.update({'requirements_v44_review':'notes/track2-requirements-review-v44.md','requirements_v44_audit':'notes/track2-requirements-v44.json','requirements_v44_check':'scripts/check_track2_requirements_v44.py'})
     roles.update({'reviewer_guide':'notes/track2-reviewer-guide-v48.md','owner_readiness':'notes/track2-owner-readiness-v48.md','submission_prep':'notes/track2-submission-prep-v2.md','submission_prep_check':'scripts/check_track2_submission_prep_v2.py','submission_prep_test':'scripts/test_track2_submission_prep_v2.py','submission_materials':'notes/track2-submission-materials-v1.json'})
-    roles.update({'external_review_adjudication_v46':'notes/track2-external-review-v46.md','candidate_comparison': 'notes/track2-candidate-comparison-v42.md', 'rehearsal_adjudication': 'notes/track2-rehearsal-adjudication-v39.md', 'rehearsal_sources': 'notes/track2-rehearsal-sources-v39.json', 'qualification_amendment': 'notes/track2-qualification-amendment-v39.md', 'external_review_packet': 'notes/track2-external-review-packet-v43.md', 'recording_audit': 'notes/track2-prompter-audit-v46.json'})
+    roles.update({'external_review_adjudication_v46':'notes/track2-external-review-v46.md','candidate_comparison': 'notes/track2-candidate-comparison-v42.md', 'rehearsal_adjudication': 'notes/track2-rehearsal-adjudication-v39.md', 'rehearsal_sources': 'notes/track2-rehearsal-sources-v39.json', 'qualification_amendment': 'notes/track2-qualification-amendment-v39.md', 'external_review_packet': 'notes/track2-external-review-packet-v49.md', 'recording_audit': 'notes/track2-prompter-audit-v46.json'})
     roles['narration_metrics']='notes/track2-narration-v46.json'
     require(state['artifacts'] == roles, 'Mixed, missing or unsafe artifact paths')
     require(state.get('community_kit_bundle') == 'results/feat009/jvv7_track2_community_kit_v37.zip', 'Stale community kit path')
-    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified8', 'Stale snapshot path')
-    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_8.zip',
+    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified9', 'Stale snapshot path')
+    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_10.zip',
             'Stale recording-materials bundle path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['render_directory']),
             'Stale or unsafe render-directory path')
@@ -209,7 +209,7 @@ def validate(state, features, documents):
             }
             expected = role_versions.get(role.lower(), version)
             require(int(found)==expected, 'Historical version mislabeled current: '+name)
-    require('notes/track2-pitch-v40.md' in documents['session-handoff.md'], 'Stale transcript handoff')
+    require('notes/track2-pitch-v46.md' in documents['session-handoff.md'], 'Stale transcript handoff')
     require(f'scripts/track2_release_v{version}.py' in documents['AGENTS.md'], 'Stale release entry point')
     for name, document in documents.items():
         for route in [CURRENT_REVIEW['script'], CURRENT_REVIEW['guide'], RESEARCH_PATHS['report']]:

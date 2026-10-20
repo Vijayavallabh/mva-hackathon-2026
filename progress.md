@@ -9076,3 +9076,19 @@ v48 guides and executes the v2 submission-prep check. Fresh verified outputs:
 and `results/feat009/jvv7_track2_research_v47-verified8` (241 files/972 bound inputs).
 Full verification passed 1,149 tests with 14 skipped. No video, URL, hosting,
 authenticated quota/provider check, biological validation or submission occurred.
+
+## Session 98 — 2026-10-20: v49 outside-review packet and current-route cleanup
+
+The outside-review packet was advanced to v49 and now points to the current
+v47 nine-slide deck and v46 369-word narration rather than the stale v43/v40
+assets. AGENTS.md, README.md and session-handoff.md were cleaned of stale
+current v43/v40 entry points, old 367-word narration references and ambiguous
+joint-treatment wording. Historical sections remain available through their own
+versioned artifacts.
+
+The current v47 harness now requires the v46 pitch handoff and routes the v49
+outside-review packet. Fresh verified outputs are
+`results/feat009/jvv7_track2_video_materials_v47_10.zip` (106 files, 2,810,800
+bytes) and `results/feat009/jvv7_track2_research_v47-verified9` (241 files/972
+bound inputs). No video, URL, hosting, authenticated quota/provider check,
+biological validation or submission occurred.
