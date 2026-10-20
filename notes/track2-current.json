@@ -54,9 +54,13 @@
     "requirements_v42_check": "scripts/check_track2_requirements_v42.py",
     "requirements_v44_review": "notes/track2-requirements-review-v44.md",
     "requirements_v44_audit": "notes/track2-requirements-v44.json",
-    "requirements_v44_check": "scripts/check_track2_requirements_v44.py"
+    "requirements_v44_check": "scripts/check_track2_requirements_v44.py",
+    "submission_prep": "notes/track2-submission-prep-v1.md",
+    "submission_prep_check": "scripts/check_track2_submission_prep_v1.py",
+    "submission_prep_test": "scripts/test_track2_submission_prep_v1.py",
+    "submission_materials": "notes/track2-submission-materials-v1.json"
   },
-  "snapshot": "results/feat009/jvv7_track2_research_v43-verified39",
+  "snapshot": "results/feat009/jvv7_track2_research_v43-verified53",
   "render_directory": "results/feat009/v43-slides-final-20261020-2",
   "model_campaign": {
     "protein_scores": 84,
@@ -81,7 +85,7 @@
   },
   "history": "progress.md",
   "harness_review": "notes/track2-harness-review-v43.md",
-  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v43_33.zip",
+  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v43_48.zip",
   "document_directory": "results/feat009/v43-documents-final-20261020-2",
   "research_addendum": {
     "version": 19,

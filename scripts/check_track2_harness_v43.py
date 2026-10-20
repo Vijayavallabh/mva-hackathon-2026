@@ -164,13 +164,13 @@ def validate(state, features, documents):
     roles.update({'literature_note':'notes/track2-literature-v43.md','literature_audit':'notes/track2-literature-audit-v43.json','literature_check':'scripts/check_track2_literature_v43.py'})
     roles.update({'requirements_v42_review':'notes/track2-requirements-review-v42.md','requirements_v42_audit':'notes/track2-requirements-v42.json','requirements_v42_check':'scripts/check_track2_requirements_v42.py'})
     roles.update({'requirements_v44_review':'notes/track2-requirements-review-v44.md','requirements_v44_audit':'notes/track2-requirements-v44.json','requirements_v44_check':'scripts/check_track2_requirements_v44.py'})
-    roles.update({'reviewer_guide':'notes/track2-reviewer-guide-v45.md','owner_readiness':'notes/track2-owner-readiness-v45.md'})
+    roles.update({'reviewer_guide':'notes/track2-reviewer-guide-v45.md','owner_readiness':'notes/track2-owner-readiness-v45.md','submission_prep':'notes/track2-submission-prep-v1.md','submission_prep_check':'scripts/check_track2_submission_prep_v1.py','submission_prep_test':'scripts/test_track2_submission_prep_v1.py','submission_materials':'notes/track2-submission-materials-v1.json'})
     roles.update({'candidate_comparison': 'notes/track2-candidate-comparison-v42.md', 'rehearsal_adjudication': 'notes/track2-rehearsal-adjudication-v39.md', 'rehearsal_sources': 'notes/track2-rehearsal-sources-v39.json', 'qualification_amendment': 'notes/track2-qualification-amendment-v39.md', 'external_review_packet': 'notes/track2-external-review-packet-v43.md', 'recording_audit': 'notes/track2-prompter-audit-v40.json'})
     roles['narration_metrics']='notes/track2-narration-v40.json'
     require(state['artifacts'] == roles, 'Mixed, missing or unsafe artifact paths')
     require(state.get('community_kit_bundle') == 'results/feat009/jvv7_track2_community_kit_v37.zip', 'Stale community kit path')
-    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified39', 'Stale snapshot path')
-    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_33.zip',
+    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified53', 'Stale snapshot path')
+    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_48.zip',
             'Stale recording-materials bundle path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['render_directory']),
             'Stale or unsafe render-directory path')
@@ -327,6 +327,8 @@ def check(root=ROOT):
     require(literature_addendum['passed'],'Literature provenance review failed')
     requirements_addendum = importlib.import_module('check_track2_requirements_v44').check()
     require(requirements_addendum['passed'],'Anonymous requirements refresh failed')
+    submission_prep = importlib.import_module('check_track2_submission_prep_v1').check()
+    require(submission_prep['passed'],'Owner submission-prep checklist failed')
     transcriptome = importlib.import_module('check_track2_transcriptome')
     require(transcriptome.check(root)['passed'], 'Public transcriptome check failed')
     first, second, followup, identity = [json.loads(public_path(root, RESEARCH_PATHS[k]).read_text())
@@ -360,7 +362,7 @@ def check(root=ROOT):
     for key in ['gpus','public_cells','gpu_correlations','split_repetitions','all_control_sensitivity_available','drug_ranking_changed']:
         require(state['perturbseq_addendum'][key]==v31[key],'Current Perturb-seq summary drift: '+key)
     return dict(passed=True, active_feature='feat-009', harness_version=43,
-                presentation_version=state['presentation_version'], literature_refresh=literature_addendum, requirements_refresh=requirements_addendum,
+                presentation_version=state['presentation_version'], literature_refresh=literature_addendum, requirements_refresh=requirements_addendum, submission_prep=submission_prep,
                 drug_science_version=21, slides=presentation['slides'],
                 narration_words=presentation['narration_words'], falsification_amendment=presentation['falsification_amendment'], upload_ready=False,
                 optical_addendum=optical_complete, historical_optical_progress=optical, historical_optical_correction=optical_correction,

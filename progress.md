@@ -8984,3 +8984,26 @@ A new recording/review bundle was produced with the v45 guides:
 and a new verified release snapshot was bound at
 `results/feat009/jvv7_track2_research_v43-verified39`. No biological validation, recording,
 hosting, provider setting, quota check or submission occurred.
+
+## Session 90 — 2026-10-20: exact owner submission-prep checklist
+
+A new owner-facing submission checklist was added:
+`notes/track2-submission-prep-v1.md`. It maps the actual official portal fields to
+the exact current files, specifies that the owner should upload one report (PDF
+preferred, Markdown alternative), asks the owner to confirm the public
+team/display name and submitter identity before any filename change, and records
+that the GitHub URL is ready while the video URL is absent. It includes the
+owner sequence, exact receipt-archive fields and current blockers.
+
+`scripts/check_track2_submission_prep_v1.py` binds the checklist to the official
+v42 submit-tab receipt, exact current PDF/Markdown/workbook/slide/bundle paths,
+current state, report hashes/byte counts and false submission state.
+`scripts/test_track2_submission_prep_v1.py` adds four regression tests. The
+current v43 harness now executes and reports this check.
+
+A new verified bundle was produced at
+`results/feat009/jvv7_track2_video_materials_v43_34.zip` (103 files, 2,776,068
+bytes), and the verified release snapshot is
+`results/feat009/jvv7_track2_research_v43-verified40`. No video was recorded, no
+URL was hosted, no authenticated quota/provider check was performed, and no
+submission occurred.

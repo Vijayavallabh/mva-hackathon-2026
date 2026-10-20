@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "kind": "exact_submission_material_receipt",
+  "report_pdf": {
+    "path": "results/feat009/v43-documents-final-20261020-2/jvv7_track2_report_v43.pdf",
+    "bytes": 279785,
+    "sha256": "8214ef05597b5634a87960914dfe48817cbefe112016fff1806c47c265511006"
+  },
+  "report_markdown": {
+    "path": "results/feat009/v43-documents-final-20261020-2/jvv7_track2_report_v43.md",
+    "bytes": 42242,
+    "sha256": "df155cd9a221b389c447f8713679876a32ef65a91997f658dc0efcd9bf92402c"
+  },
+  "methods_workbook": {
+    "path": "results/feat009/v43-documents-final-20261020-2/jvv7_track2_methods_v43.xlsx",
+    "bytes": 14919,
+    "sha256": "747771dc0b0c79f1191b46631b6ce1f1187d60e676142e7839db9c2816317098"
+  },
+  "slide_pdf": {
+    "path": "results/feat009/v43-slides-final-20261020-2/track2-slides-v43.pdf",
+    "bytes": 254243,
+    "sha256": "6d39cdb308f9aee173bea42d5bd06620078e00ad99e13e29b94bd2454936e265"
+  },
+  "upload_ready": false,
+  "upload_performed": false,
+  "video_recorded": false,
+  "video_url": null,
+  "biological_validation": false
+}

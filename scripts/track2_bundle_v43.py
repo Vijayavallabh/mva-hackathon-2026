@@ -9,7 +9,7 @@ import track2_release_v43 as release
 ROOT=release.ROOT
 SLIDES=ROOT/'results/feat009/v43-slides-final-20261020-2'
 DOCS=ROOT/'results/feat009/v43-documents-final-20261020-2'
-DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v43_33.zip'
+DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v43_48.zip'
 def sources():
     release.scientific_checks()
     render=json.loads((ROOT/'notes/track2-v43-render-audit-final.json').read_text())
@@ -58,6 +58,10 @@ def sources():
     files['jvv7_track2_requirements-v44.json']=ROOT/'notes/track2-requirements-v44.json'
     files['jvv7_check_track2_requirements_v44.py']=ROOT/'scripts/check_track2_requirements_v44.py'
     files['jvv7_test_track2_requirements_v44.py']=ROOT/'scripts/test_track2_requirements_v44.py'
+    files['jvv7_track2_submission-prep_v1.md']=ROOT/'notes/track2-submission-prep-v1.md'
+    files['jvv7_check_track2_submission_prep_v1.py']=ROOT/'scripts/check_track2_submission_prep_v1.py'
+    files['jvv7_test_track2_submission_prep_v1.py']=ROOT/'scripts/test_track2_submission_prep_v1.py'
+    files['jvv7_track2-submission-materials_v1.json']=ROOT/'notes/track2-submission-materials-v1.json'
     for name in ['reviewer-guide','owner-readiness']:
         files[f'jvv7_track2_{name}_v45.md']=ROOT/f'notes/track2-{name}-v45.md'
     # Preserve the reusable demo and its complete runnable kit in the recording bundle.

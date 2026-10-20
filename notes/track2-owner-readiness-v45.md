@@ -20,7 +20,9 @@ receipt is established.
 - Public repository HEAD: `8eaa21ec998bf14a596e7f6de2632db807a50c51`
 
 No recorded video or video URL exists. These exact local deliverables are not yet
-an uploaded submission or a submission receipt.
+an uploaded submission or a submission receipt. Use the exact-field checklist in
+[submission prep](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-submission-prep-v1.md)
+and verify it with `scripts/check_track2_submission_prep_v1.py`.
 
 The full [v42 requirements refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v42.md)
 records the organizer clarifications. The current [v44 live refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v44.md)
