@@ -7,20 +7,19 @@ import zipfile
 import track2_release_v43 as release
 
 ROOT=release.ROOT
-SLIDES=ROOT/'results/feat009/v43-slides-final-20261020-4'
-DOCS=ROOT/'results/feat009/v43-documents-final-20261020-9'
+SLIDES=ROOT/'results/feat009/v43-slides-final-20261020-2'
+DOCS=ROOT/'results/feat009/v43-documents-final-20261020-2'
 DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v43_31.zip'
-# Pending fresh render/export: bundle verification is unavailable, not a pass.
-
-
 def sources():
     release.scientific_checks()
-    render=json.loads((ROOT/'notes/track2-v43-render-audit.json').read_text())
-    docs=json.loads((ROOT/'notes/track2-v43-documents-audit.json').read_text())
-    release.require(render['render_verified'] is False and docs['render_verified'] is False,
-                    'A fresh v43 render/export is required before bundle verification')
-    expected={}
-    # If a fresh render/export is added later, replace these pending audits and populate expected.
+    render=json.loads((ROOT/'notes/track2-v43-render-audit-final.json').read_text())
+    docs=json.loads((ROOT/'notes/track2-v43-documents-audit-final.json').read_text())
+    expected={SLIDES/name:sha for name,sha in render['files'].items()}
+    expected.update({DOCS/name:sha for name,sha in docs['export']['files'].items()})
+    expected.update({DOCS/name:sha for name,sha in docs['pdf']['files'].items()})
+    for path,sha in expected.items():
+        release.require(path.is_file() and not path.is_symlink() and release.digest(path)==sha,
+                        'Export changed or missing: '+path.name)
     files={path.name:path for path in expected if path.suffix != '.html'}
     files['jvv7_track2_slides_v43.html']=ROOT/'notes/track2-slides-v43.html'
 
@@ -67,7 +66,7 @@ def sources():
 
 
 def verify():
-    raise ValueError('v43 bundle is pending a fresh slide render and document export; verification is not established')
+    files=sources()
     with zipfile.ZipFile(DEST) as z:
         release.require(z.testzip() is None,'ZIP CRC failure')
         release.require(set(z.namelist())==set(files)|{'SHA256SUMS.json'} and len(z.namelist())==len(files)+1,

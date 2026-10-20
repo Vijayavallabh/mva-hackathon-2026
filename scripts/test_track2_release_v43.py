@@ -50,7 +50,9 @@ class ReleaseTests(unittest.TestCase):
                           'public_receipts':5,'repository_bytes':374467,
                           'subject_data_read':False,'drug_dispositions_changed':False,
                           'biological_validation':False,'full_text_systematic_review':False})
-        self.assertEqual(result['exports']['render_status'],'not_run')
+        self.assertEqual(result['exports']['render_pdf_pages'],9)
+        self.assertGreaterEqual(result['exports']['minimum_checked_text_contrast'],4.5)
+        self.assertFalse(result['exports']['independent_visual_review'])
         self.assertFalse(result['recording']['runtime_measured'])
 
     def test_literature_scope_promotion_rejected(self):

@@ -10,8 +10,8 @@ from pathlib import Path
 import fitz
 
 ROOT = Path(__file__).resolve().parents[1]
-SLIDES = ROOT / 'results/feat009/v43-slides-final-20261020-4'
-DOCS = ROOT / 'results/feat009/v43-documents-final-20261020-9'
+SLIDES = ROOT / 'results/feat009/v43-slides-final-20261020-2'
+DOCS = ROOT / 'results/feat009/v43-documents-final-20261020-2'
 
 
 def digest(path):
@@ -25,7 +25,7 @@ def luminance(color):
 
 
 def main():
-    destinations = [ROOT/f'notes/track2-v43-{kind}-audit.json' for kind in ('render', 'documents')]
+    destinations = [ROOT/f'notes/track2-v43-{kind}-audit-final.json' for kind in ('render', 'documents')]
     if any(p.exists() or p.is_symlink() for p in destinations):
         raise ValueError('Existing audits are protected')
     render = json.loads((SLIDES/'render.json').read_text())
@@ -69,12 +69,12 @@ def main():
         raise ValueError('Slide geometry')
     with fitz.open(DOCS/'jvv7_track2_report_v43.pdf') as report:
         text = ' '.join(' '.join(p.get_text().split()) for p in report)
-        if not 6 <= len(report) <= 14 or any(term not in text for term in ['0.1223-0.1371', '67,584', '0.6572', '558,299', '838,224', '31,046,046', 'November 23', 'cnb@sagebase.org', 'We acknowledge their trust', 'V41 public literature addendum', 'checkpoint-architecture readouts']):
+        if not 6 <= len(report) <= 14 or any(term not in text for term in ['0.1223-0.1371', '67,584', '0.6572', '558,299', '838,224', '31,046,046', 'November 23', 'cnb@sagebase.org', 'We acknowledge their trust', 'V43 TORC1-to-segregation contrary-evidence addendum', 'direct mTORC1 engagement']):
             raise ValueError('Report page/text integrity')
         pages = len(report)
-    render['author_visual_review'] = 'All nine final slides inspected in a contact sheet and changed figures at full resolution. No independent reviewer.'
+    render['author_visual_review'] = 'Programmatic PDF/font, geometry, hash and palette checks completed; no independent or manual visual review is claimed.'
     documents = dict(document_directory=str(DOCS.relative_to(ROOT)), export=export, pdf=pdf, pages=pages,
-        author_visual_review=f'All {pages} final report pages inspected in contact sheets; optical table and page transitions checked at full resolution. Full acknowledgement retained. Workbook values/styles round-trip checked; workbook appearance not rendered.',
+        author_visual_review=f'Programmatic PDF/text, page-count, hash and workbook round-trip checks completed for {pages} pages; no manual visual review is claimed.',
         independent_visual_review=False, clinical_validation=False)
     for path, content in zip(destinations, [render, documents]):
         with path.open('x') as f:

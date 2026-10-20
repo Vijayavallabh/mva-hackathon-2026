@@ -53,8 +53,8 @@
     "requirements_v42_audit": "notes/track2-requirements-v42.json",
     "requirements_v42_check": "scripts/check_track2_requirements_v42.py"
   },
-  "snapshot": "results/feat009/jvv7_track2_research_v43-verified33",
-  "render_directory": "results/feat009/v43-slides-final-20261020-1",
+  "snapshot": "results/feat009/jvv7_track2_research_v43-verified35",
+  "render_directory": "results/feat009/v43-slides-final-20261020-2",
   "model_campaign": {
     "protein_scores": 84,
     "structures": 192,
@@ -79,7 +79,7 @@
   "history": "progress.md",
   "harness_review": "notes/track2-harness-review-v43.md",
   "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v43_31.zip",
-  "document_directory": "results/feat009/v43-documents-final-20261020-1",
+  "document_directory": "results/feat009/v43-documents-final-20261020-2",
   "research_addendum": {
     "version": 19,
     "kind": "public_perturbation_transcriptome",
