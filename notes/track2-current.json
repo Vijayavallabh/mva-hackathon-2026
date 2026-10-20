@@ -299,6 +299,7 @@
     "biological_validation": false,
     "full_text_systematic_review": false
   },
+  "closeout_checklist": "notes/track2-closeout-checklist.md",
   "requirements_addendum": {
     "version": 42,
     "status": "complete",

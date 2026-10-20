@@ -175,6 +175,14 @@ Python audit hooks check dependency isolation, not operating-system security.
   to **cnb@sagebase.org by November 23**, under `notes/deletion-plan-v2.md`. Feat-010
   has not started. Cache cleanup did not satisfy this obligation. No email/upload occurred.
 
+## Post-submission close-out preparation
+
+`notes/track2-closeout-checklist.md` is the feat-010 preparation checklist. It
+records the exact local and PrakashDGX_H2 deletion inventory, pre-deletion gate,
+verification commands, per-root procedure and empty close-out log. It does not
+authorize deletion before completed submission, an archived receipt and an
+owner decision that reproduction is no longer needed.
+
 One bounded public-source literature search was added in v41, and one anonymous
 official/community refresh was added in v42; no GPU campaign, remote job, wet-lab
 result or additional hosted model provider was run. The v39/v40 scientific
