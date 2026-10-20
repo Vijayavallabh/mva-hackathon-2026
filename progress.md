@@ -8827,6 +8827,35 @@ Final current counts:
 - Official refresh: seven unchanged official files, 31 public threads,
   89 visible comments, 16 closed threads.
 
+A fresh no-argument `./init.sh` completed successfully after the record update.
+Selected verbatim output:
+
+```text
+=== 1. uv environment ===
+huggingface_hub 1.28.0
+=== 2. no subject data in git ===
+no-data-in-git: ok
+=== 3. verify_data self-check ===
+self-check ok
+=== 4. dataset integrity ===
+COMPLETE: all files present at expected size
+=== 5. local bioinformatics toolchain ===
+=== 6. offline annotation resources ===
+annotation resources ready
+=== 7. current Track 2 presentation and research harness ===
+  "passed": true,
+  "active_feature": "feat-009",
+  "harness_version": 41,
+  "presentation_version": 41,
+  "narration_words": 367,
+=== OK ===
+```
+
+The complete startup path also validated the data gates, local bioinformatics
+toolchain, offline annotation resources, current literature/official-state
+addenda and frozen research summaries. The repository remained clean and in
+synchronization with `origin/main` after the final checks.
+
 No biological validation, wet-lab result, drug/phase/exposure promotion,
 independent outside review, recorded video, measured runtime, hosting,
 authenticated quota check or submission is established. Everolimus remains a
