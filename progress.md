@@ -8748,3 +8748,91 @@ and remote campaign roots remain subject to deletion and confirmation to
 cnb@sagebase.org by November 23. No contact, submission or challenge-data deletion
 was performed in this session. The completed repository update is committed and
 pushed to the configured origin; local/upstream equality is checked at session end.
+
+## Session 82 — v41/v42 public-delivery hardening (2026-10-20)
+
+Session 82 supersedes the stale session-81 stop point in the feature evidence.
+The current record remains presentation/harness **v41** with the completed v41
+public-literature addendum and v42 anonymous official-state refresh. No biological
+experiment, wet-lab result, drug disposition change, video recording, hosting,
+outside-review contact or submission occurred.
+
+The v42 official refresh found the seven official Space files unchanged at
+`60e1c30e337ce6fe01813040dbe49979eb8c50aa`, but public discussion changed to
+**31 threads / 89 visible comments / 16 closed**. Thread 32 permits a clearly
+labelled published-paper example in the pitch while the written report covers the
+challenge case; the current non-genomic 367-word script remains compliant. Thread
+31 documents a Synapse alternative for GitHub-constrained teams. Thread 29 reinforces
+IRB/consent routing through the submission. Thread 26 changed only public reaction
+metadata. These are delivery-context clarifications, not requirement changes.
+
+Current judge-facing artifacts were upgraded without changing frozen v40 voice or
+scientific adjudications:
+
+- `notes/track2-report-v41.md` — current report, malformed ARST1431 DOI repaired.
+- `notes/track2-slides-v41.html` — current deck.
+- `notes/track2-reviewer-brief-v42.md` — current one-page proposal summary.
+- `notes/track2-external-review-packet-v42.md` — current outside-review request.
+- `notes/track2-judge-questions-v42.md` — current no-live-Q&A answer set.
+- `notes/track2-video-description-v42.md` — current upload description.
+- `notes/track2-recording-guide-v42.md` — current own-voice guide.
+- `notes/track2-lab-handoff-v42.md` — current laboratory handoff.
+- `notes/track2-candidate-comparison-v42.md` — current mechanism comparison.
+- `notes/track2-community-kit-v42.md` — current reuse guide.
+- `notes/track2-competition-strategy-v42.md` — current rubric strategy.
+
+All current reviewer-facing links were converted to absolute public GitHub URLs.
+A live anonymous crawl checked 94 unique URLs. All 50 current GitHub artifact URLs,
+official Hugging Face URLs and accessible publisher links returned successful
+responses. Publisher HTTP 403 responses were treated as access controls, not broken
+citations. The malformed ARST1431 DOI was corrected to
+`https://doi.org/10.1016/S1470-2045%2824%2900255-9`, which resolves to Elsevier with
+HTTP 200.
+
+The current video-materials bundle was cleaned to prevent owner confusion. It now
+contains only the frozen v40 own-voice assets under unambiguous `jvv7_` names and
+current v42 support documents; stale v40/v39 counterparts with current replacements
+were removed from that bundle while remaining preserved in repository history and
+frozen releases.
+
+Current authoritative outputs:
+
+- Release snapshot: `results/feat009/jvv7_track2_research_v41-verified31`
+- Video-materials bundle: `results/feat009/jvv7_track2_video_materials_v41_30.zip`
+- Report/workbook export: `results/feat009/v41-documents-final-20261020-8`
+- Slide render: `results/feat009/v41-slides-final-20261020-3`
+
+Verification completed in this session:
+
+- `uv run --no-project python scripts/check_track2_literature_v41.py`: passed.
+- `uv run --no-project python scripts/check_track2_requirements_v42.py`: passed.
+- `uv run --no-project python scripts/track2_public_review_v41.py`: passed.
+- `uv run --no-project python scripts/check_track2_harness.py`: passed.
+- `uv run python scripts/audit_track2_harness.py --output ...`: passed with all six
+  protected probes blocked and no project environment.
+- `uv run python scripts/track2_release_v41.py verify
+  results/feat009/jvv7_track2_research_v41-verified31`: passed.
+- `uv run python scripts/track2_bundle_v41.py verify`: passed.
+- `uv run python scripts/audit_publication.py --staged`: passed with zero findings.
+- `uv run python -m unittest discover -s scripts -p 'test_track2*.py'`:
+  **1,101 tests, OK, 14 skips**.
+
+Final current counts:
+
+- Release snapshot: **260 files / 991 bound inputs**.
+- Video-materials bundle: **96 files**, 2,744,055 bytes, SHA-256
+  `fb0b4e73d742f687fbf1c1cea9af369730239172901f29bd32f5e1ca48a68454`.
+- Public reviewer: nine slides, 367 narration words, 334-word abstract.
+- Literature addendum: five searches, fourteen selected sources, 21 public receipts.
+- Official refresh: seven unchanged official files, 31 public threads,
+  89 visible comments, 16 closed threads.
+
+No biological validation, wet-lab result, drug/phase/exposure promotion,
+independent outside review, recorded video, measured runtime, hosting,
+authenticated quota check or submission is established. Everolimus remains a
+mechanistic probe on HOLD; HCQ remains reserve. The owner must still record the
+script in their own voice, measure the full exported runtime, host the video,
+share the current outside-review packet with an independently arranged reviewer,
+resolve provider/distribution questions, perform live portal checks, submit and
+archive an authenticated receipt. All scoped local/remote data remain subject to
+deletion and confirmation to cnb@sagebase.org by November 23.

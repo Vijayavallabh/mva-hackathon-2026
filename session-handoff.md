@@ -1,6 +1,6 @@
-# Session handoff: v41 literature-integrated presentation and harness
+# Session handoff: v41/v42 public-delivery-hardened presentation and harness
 
-20 October 2026, session 81. Only **feat-009** remains active for delivery and
+20 October 2026, session 82. Only **feat-009** remains active for delivery and
 unresolved biological qualification. The v41 revision preserves the frozen v40
 qualification sequence, synthetic-arm labels, 367-word own-voice narration and
 recording metrics while adding the current public literature refresh. Use
@@ -11,7 +11,12 @@ recording metrics while adding the current public literature refresh. Use
 `notes/track2-reviewer-guide-v41.md` and `notes/track2-owner-readiness-v41.md`.
 The literature chain is `notes/track2-literature-v41.md`,
 `notes/track2-literature-audit-v41.json` and
-`scripts/check_track2_literature_v41.py`.
+`scripts/check_track2_literature_v41.py`. The official-state chain is
+`notes/track2-requirements-review-v42.md`,
+`notes/track2-requirements-v42.json` and
+`scripts/check_track2_requirements_v42.py`. Current support documents cover the
+reviewer brief, outside-review packet, judge questions, video description, recording
+guide, lab handoff, candidate comparison, community kit and competition strategy.
 The v19 `notes/track2-transcriptome-v19.md` and all later completed research are
 preserved. The drug ledger/base contract remain v21; the demo and community kit
 remain v37. All bound releases through v39 and the v38 review addendum are frozen.
@@ -55,7 +60,9 @@ Frozen v40 exports remain `results/feat009/v40-slides-final-20261020` and
 `results/feat009/v40-documents-final-20261020`; the final teleprompter browser receipt
 remains under `results/feat009/v40-prompter-final-20261020`. Current v41 exports are
 `results/feat009/v41-slides-final-20261020-3` and
-`results/feat009/v41-documents-final-20261020-8`; no measured recording is claimed. The header continues to respect wrapped mobile controls. A shared narration parser
+`results/feat009/v41-documents-final-20261020-8`; the current research snapshot is
+`results/feat009/jvv7_track2_research_v41-verified31` and the cleaned owner bundle is
+`results/feat009/jvv7_track2_video_materials_v41_30.zip`. No measured recording is claimed. The header continues to respect wrapped mobile controls. A shared narration parser
 checks the transcript, prompter, guide and metrics JSON: 367 words in 180 allocated
 seconds, or 122.3 planned words/minute. These are not measured video times. Earlier draft exports and
 interim audit receipts remain in ignored results. Local conversation exports are

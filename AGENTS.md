@@ -93,17 +93,22 @@ and timely delivery. Do not infer efficacy, eligibility or awards.
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
 as the artifact record and [session-handoff.md](session-handoff.md) for next steps.
-Session 81 updates **presentation and harness v41** with the completed current public
-literature refresh. The nine-slide, 367-word own-voice recording workflow and methods
-workbook remain frozen at v40 wording; the current report/deck and public review now
-add five PubMed/OpenAlex search records, fourteen selected 2025-2026 sources and
-twenty-one public receipts. The literature changes readout design—corona/MCC/APC/C,
-checkpoint architecture, mitochondrial integrity and proteostasis—without changing
-any drug disposition. Start with `notes/track2-reviewer-guide-v41.md` and
+Session 82 retains **presentation and harness v41** and hardens the current public
+delivery chain. The nine-slide, 367-word own-voice recording workflow and methods
+workbook remain frozen at v40 wording; the current report/deck add five PubMed/OpenAlex
+search records, fourteen selected 2025-2026 sources and twenty-one public receipts.
+The literature changes readout design—corona/MCC/APC/C, checkpoint architecture,
+mitochondrial integrity and proteostasis—without changing any drug disposition.
+Current support documents cover the official refresh, reviewer brief,
+outside-review packet, judge questions, video description, recording guide, lab
+handoff, candidate comparison, community-kit guide and competition strategy.
+Start with `notes/track2-reviewer-guide-v41.md` and
 `notes/track2-owner-readiness-v41.md`. All bound releases through v40 remain frozen.
 The drug ledger and base validation remain v21; the 18-case demo and small community
-ZIP remain v37. V41 reuses the v39 official captures, v40 recording materials and
-scientific adjudications. It adds no biological experiment or drug-priority change.
+ZIP remain v37. Current outputs are
+`results/feat009/jvv7_track2_research_v41-verified31` and
+`results/feat009/jvv7_track2_video_materials_v41_30.zip`. No biological experiment,
+drug-priority change, recording or submission is established.
 
 Read `notes/track2-rehearsal-adjudication-v39.md`,
 `notes/track2-candidate-comparison-v39.md` and
