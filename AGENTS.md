@@ -93,7 +93,9 @@ and timely delivery. Do not infer efficacy, eligibility or awards.
 
 **Session 84 (2026-10-20): current v43 is the active public presentation state.**
 Start with `notes/track2-reviewer-guide-v43.md` and `notes/track2-owner-readiness-v43.md`.
-The v43 targeted literature refresh found a 2026 fission-yeast TORC1-segregation
+The current requirements refresh, v44, found the live Space revision, all
+seven official files and discussion listing unchanged; no new organizer requirement
+appeared. The v43 targeted literature refresh found a 2026 fission-yeast TORC1-segregation
 study; it motivates direct mTORC1 engagement and mitotic lagging-DNA/anaphase-bridge
 readouts without changing any drug disposition. Current routes are
 `notes/track2-report-v43.md`, `notes/track2-lab-handoff-v43.md`,
@@ -101,8 +103,9 @@ readouts without changing any drug disposition. Current routes are
 `notes/track2-external-review-packet-v43.md` and
 `notes/track2-literature-v43.md`. Recheck with
 `scripts/check_track2_literature_v43.py`, `scripts/test_track2_literature_v43.py`
-and `scripts/check_track2_harness_v43.py`. No recording, upload or biological
-validation is established.
+`scripts/check_track2_requirements_v44.py`,
+`scripts/test_track2_requirements_v44.py` and `scripts/check_track2_harness_v43.py`.
+No recording, upload or biological validation is established.
 
 
 **Only feat-009 is active.** Use [notes/track2-current.json](notes/track2-current.json)
@@ -382,8 +385,7 @@ uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 
 `track2_evidence.py check` validates the historical 53-source/12-candidate baseline;
-its old conditional-screen label is not today's drug decision. The current v21
-ledger, v39 report and v19/v23/v25/v27/v29/v31 research take precedence. Historical exact-byte verification remains
+its old conditional-screen label is not today's drug decision. The v21 drug ledger, v43 report and v19/v23/v25/v27/v29/v31 research take precedence. Historical exact-byte verification remains
 available through the versioned release scripts; never resubmit Track 1 to resolve
 its missing administrative receipt.
 

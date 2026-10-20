@@ -1,0 +1,140 @@
+{
+  "schema_version": 44,
+  "retrieved_utc": "2026-10-20T15:34:56Z",
+  "anonymous_get_only": true,
+  "revision": "60e1c30e337ce6fe01813040dbe49979eb8c50aa",
+  "kind": "anonymous_live_deadline_refresh",
+  "scope": "Live Space revision, seven official file hashes, discussion listing identity/status/count; no authenticated account, quota, private thread or full-thread reread",
+  "official_sources": [
+    {
+      "name": "README.md",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/main/README.md",
+      "http_status": 200,
+      "sha256": "9660de914f8f77523faded810d0756d390321649f00e2151eb5cdb8b818c6a3f",
+      "unchanged": true
+    },
+    {
+      "name": "config.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/main/config.py",
+      "http_status": 200,
+      "sha256": "a65e67fca2fb698ac3f3fe6610e585f549cf29f175d636ce77543d7db6dc8bdc",
+      "unchanged": true
+    },
+    {
+      "name": "tabs/about.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/main/tabs/about.py",
+      "http_status": 200,
+      "sha256": "57d25b20a840d57e09268ca6e8615e85579bf65a99829095690e68c2463d5cf3",
+      "unchanged": true
+    },
+    {
+      "name": "tabs/rules.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/main/tabs/rules.py",
+      "http_status": 200,
+      "sha256": "16aa61b9580abc21e6ea69e994cdb27341e1b85b1d00a57da889520a94295906",
+      "unchanged": true
+    },
+    {
+      "name": "tabs/faq.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/main/tabs/faq.py",
+      "http_status": 200,
+      "sha256": "36c3e51e9735a6d2ffacfccea2246a28a13658038988ac88317c5aa05ad71c53",
+      "unchanged": true
+    },
+    {
+      "name": "tabs/submit_track2.py",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/main/tabs/submit_track2.py",
+      "http_status": 200,
+      "sha256": "f48d576ab052df34527222b7693f956e15e5376ef68eddedcf0c4f04736bf65c",
+      "unchanged": true
+    },
+    {
+      "name": "static/templates/methods_description_form.xlsx",
+      "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/main/static/templates/methods_description_form.xlsx",
+      "http_status": 200,
+      "sha256": "61aab080a2868a3b724e76692b83c24812112e305cd3a8b03f8f91a6b2414441",
+      "unchanged": true
+    }
+  ],
+  "discussion_listing": {
+    "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions?limit=100",
+    "http_status": 200,
+    "count": 31,
+    "closed_count": 16,
+    "numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "status_and_titles_unchanged_from_v42": true,
+    "visible_comment_counts_not_reread": true,
+    "new_organizer_requirement_found": false
+  },
+  "unchanged_requirements": {
+    "deadline_utc": "2026-10-24T23:59:00Z",
+    "judging_end_date": "2026-12-17",
+    "winner_announcement_date": "2026-12-18",
+    "submission_limit": 3,
+    "only_latest_reviewed": true,
+    "quota_remaining": null,
+    "required_ai_cell": "B9",
+    "abstract_word_limit": 500,
+    "video_duration_seconds": 180,
+    "video_hosts": [
+      "youtube.com",
+      "youtu.be",
+      "vimeo.com"
+    ],
+    "rubric_weights": {
+      "scientific_rigor": 35,
+      "potential_impact": 25,
+      "innovation": 25,
+      "scalability": 15
+    },
+    "data_deletion_deadline": "2026-11-23",
+    "data_deletion_confirmation_email": "cnb@sagebase.org"
+  },
+  "material_changes": {
+    "official_seven_files_unchanged": true,
+    "space_revision_unchanged": true,
+    "discussion_listing_unchanged_by_number_status_and_title": true,
+    "new_organizer_requirement_found": false
+  },
+  "provider_settings_verified": false,
+  "licensing_scope_resolved": false,
+  "upload_ready": false,
+  "limitations": [
+    "Anonymous GET only; no authenticated account, quota or portal submission preflight",
+    "Discussion threads were not reread, so new hidden/deleted comments cannot be detected",
+    "This live refresh does not establish video hosting, provider settings, eligibility, upload readiness or biological validation",
+    "The public repository link check is separate and does not verify organizer authentication"
+  ]
+}

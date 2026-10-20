@@ -8947,3 +8947,23 @@ harness audit passed with network/process/protected-path/credential/write probes
 blocked; the full suite ran 1118 tests with 14 skipped and no failures. No subject
 data was accessed or committed. No wet-lab result, outside review, recording,
 hosting, upload or submission occurred.
+
+## Session 88 — 2026-10-20: live v44 deadline refresh
+
+An anonymous live recheck at 15:34:56 UTC found the Space revision unchanged at
+`60e1c30e337ce6fe01813040dbe49979eb8c50aa`; all seven official files remained
+hash-identical; and the public discussion listing retained 31 listed discussions
+with the same numbers, statuses and titles as the full v42 capture, with 16
+closed. Thread bodies were not reread, so this is not a claim that no hidden or
+deleted comment changed. No new organizer requirement appeared.
+
+The October 24 deadline, 180-second video requirement, B9/B17 workbook
+requirements, 35/25/25/15 rubric, three-entry/latest-only policy, November 23
+deletion deadline and cnb@sagebase.org confirmation address remain unchanged.
+The current v43 materials therefore remain compliant. No authenticated quota,
+provider setting, biological validation, recording or submission was established.
+
+New artifacts: `notes/track2-requirements-review-v44.md`,
+`notes/track2-requirements-v44.json`, `scripts/check_track2_requirements_v44.py`
+and `scripts/test_track2_requirements_v44.py`. The current artifact record and
+v43 harness route the v44 refresh while preserving the full v42 thread receipts.

@@ -54,7 +54,7 @@ STATUS = {
     'licensing_scope_resolved': False,
 }
 LITERATURE_STATE = {'version': 43, 'status': 'complete', 'kind': 'targeted_public_contrary_evidence_refresh', 'note': 'notes/track2-literature-v43.md', 'audit': 'notes/track2-literature-audit-v43.json', 'check': 'scripts/check_track2_literature_v43.py', 'public_receipts': 5, 'selected_sources': 2, 'searches': 3, 'drug_disposition_change': False, 'biological_validation': False, 'full_text_systematic_review': False, 'prior_v41_addendum': 'notes/track2-literature-v41.md'}
-REQUIREMENTS42_STATE = {'version':42,'status':'complete','kind':'anonymous_public_requirements_refresh','review':'notes/track2-requirements-review-v42.md','audit':'notes/track2-requirements-v42.json','check':'scripts/check_track2_requirements_v42.py','official_sources':7,'public_threads':31,'visible_comments':89,'requirements_changed':False,'anonymous_get_only':True}
+REQUIREMENTS44_STATE = {'version':44,'status':'complete','kind':'anonymous_live_deadline_refresh','review':'notes/track2-requirements-review-v44.md','audit':'notes/track2-requirements-v44.json','check':'scripts/check_track2_requirements_v44.py','official_sources':7,'public_threads':31,'closed_threads':16,'thread_content_reread':False,'requirements_changed':False,'anonymous_get_only':True,'prior_full_v42_addendum':'notes/track2-requirements-review-v42.md'}
 CURRENT_REVIEW = {
     'script': 'scripts/check_track2_harness_v43.py',
     'isolation_audit': 'scripts/audit_track2_harness_v43.py',
@@ -122,7 +122,7 @@ def validate(state, features, documents):
         'Optical coordinate correction omitted or falsely promoted')
     require(state.get('optical_addendum') == OPTICAL_STATE, 'Missing or inconsistent completed optical addendum')
     require(state.get('literature_addendum') == LITERATURE_STATE, 'Missing or inconsistent completed literature addendum')
-    require(state.get('requirements_addendum') == REQUIREMENTS42_STATE, 'Missing or inconsistent completed requirements addendum')
+    require(state.get('requirements_addendum') == REQUIREMENTS44_STATE, 'Missing or inconsistent completed requirements addendum')
     require(state['status'] == STATUS, 'Unsupported scientific/delivery promotion; review evidence before updating the harness')
     require(state['model_campaign'] == dict(protein_scores=84, structures=192, dna_comparisons=100,
                                           inference_complete=True), 'Model completion/count drift')
@@ -163,12 +163,13 @@ def validate(state, features, documents):
     }
     roles.update({'literature_note':'notes/track2-literature-v43.md','literature_audit':'notes/track2-literature-audit-v43.json','literature_check':'scripts/check_track2_literature_v43.py'})
     roles.update({'requirements_v42_review':'notes/track2-requirements-review-v42.md','requirements_v42_audit':'notes/track2-requirements-v42.json','requirements_v42_check':'scripts/check_track2_requirements_v42.py'})
+    roles.update({'requirements_v44_review':'notes/track2-requirements-review-v44.md','requirements_v44_audit':'notes/track2-requirements-v44.json','requirements_v44_check':'scripts/check_track2_requirements_v44.py'})
     roles.update({'candidate_comparison': 'notes/track2-candidate-comparison-v42.md', 'rehearsal_adjudication': 'notes/track2-rehearsal-adjudication-v39.md', 'rehearsal_sources': 'notes/track2-rehearsal-sources-v39.json', 'qualification_amendment': 'notes/track2-qualification-amendment-v39.md', 'external_review_packet': 'notes/track2-external-review-packet-v43.md', 'recording_audit': 'notes/track2-prompter-audit-v40.json'})
     roles['narration_metrics']='notes/track2-narration-v40.json'
     require(state['artifacts'] == roles, 'Mixed, missing or unsafe artifact paths')
     require(state.get('community_kit_bundle') == 'results/feat009/jvv7_track2_community_kit_v37.zip', 'Stale community kit path')
-    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified36', 'Stale snapshot path')
-    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_31.zip',
+    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified38', 'Stale snapshot path')
+    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_32.zip',
             'Stale recording-materials bundle path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['render_directory']),
             'Stale or unsafe render-directory path')
@@ -323,7 +324,7 @@ def check(root=ROOT):
     presentation = release.scientific_checks()
     literature_addendum = importlib.import_module('check_track2_literature_v43').check()
     require(literature_addendum['passed'],'Literature provenance review failed')
-    requirements_addendum = importlib.import_module('check_track2_requirements_v42').check()
+    requirements_addendum = importlib.import_module('check_track2_requirements_v44').check()
     require(requirements_addendum['passed'],'Anonymous requirements refresh failed')
     transcriptome = importlib.import_module('check_track2_transcriptome')
     require(transcriptome.check(root)['passed'], 'Public transcriptome check failed')

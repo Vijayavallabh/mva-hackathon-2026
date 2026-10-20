@@ -12,11 +12,11 @@ direct mTORC1 engagement and mitotic lagging-DNA/anaphase-bridge readouts. Use
 `notes/track2-reviewer-guide-v43.md` and `notes/track2-owner-readiness-v43.md`.
 The current literature chain is `notes/track2-literature-v43.md`,
 `notes/track2-literature-audit-v43.json` and
-`scripts/check_track2_literature_v43.py`; the broader v41 refresh remains preserved. The official-state chain is
-`notes/track2-requirements-review-v42.md`,
-`notes/track2-requirements-v42.json` and
-`scripts/check_track2_requirements_v42.py`; an 11:49 UTC live recheck found the
-same Space revision and the same 31 listed public discussions. Current support documents cover the
+`scripts/check_track2_literature_v43.py`; the broader v41 refresh remains preserved. The official-state chains are the full v42 review plus the current live deadline refresh, v44,: `notes/track2-requirements-review-v42.md`,
+`notes/track2-requirements-review-v44.md`, `notes/track2-requirements-v44.json`
+and `scripts/check_track2_requirements_v44.py`. At 15:34:56 UTC, Space revision,
+all seven official files, discussion number/status/title listing and the 31/16
+listing remained unchanged; thread bodies were not reread. Current support documents cover the
 reviewer brief, outside-review packet, judge questions, video description, recording
 guide, lab handoff, candidate comparison, community kit and competition strategy.
 The v19 `notes/track2-transcriptome-v19.md` and all later completed research are
@@ -60,11 +60,11 @@ biological or clinical validity. The v40 small-kit guide points to that existing
 
 Frozen v40 exports remain `results/feat009/v40-slides-final-20261020` and
 `results/feat009/v40-documents-final-20261020`; the final teleprompter browser receipt
-remains under `results/feat009/v40-prompter-final-20261020`. Current v43 exports are pending a fresh render/snapshot; the prior verified v41
-exports remain available at `results/feat009/v41-slides-final-20261020-4`,
-`results/feat009/v41-documents-final-20261020-9`,
-`results/feat009/jvv7_track2_research_v41-verified32` and
-`results/feat009/jvv7_track2_video_materials_v41_31.zip`. No measured recording is claimed. The header continues to respect wrapped mobile controls. A shared narration parser
+remains under `results/feat009/v40-prompter-final-20261020`. Current v43 exports are `results/feat009/v43-slides-final-20261020-2`,
+`results/feat009/v43-documents-final-20261020-2`,
+`results/feat009/jvv7_track2_research_v43-verified36` and
+`results/feat009/jvv7_track2_video_materials_v43_31.zip`; prior exports remain
+available for historical comparison. No measured recording is claimed. The header continues to respect wrapped mobile controls. A shared narration parser
 checks the transcript, prompter, guide and metrics JSON: 367 words in 180 allocated
 seconds, or 122.3 planned words/minute. These are not measured video times. Earlier draft exports and
 interim audit receipts remain in ignored results. Local conversation exports are
@@ -133,6 +133,7 @@ See `notes/track2-dgx-cleanup-v37.md`; environment imports passed after cleanup.
 uv run --no-project python scripts/check_track2_harness_v43.py
 uv run --no-project python scripts/track2_public_review_v43.py
 uv run --no-project python scripts/check_track2_literature_v43.py
+uv run --no-project python scripts/check_track2_requirements_v44.py
 uv run --no-project python scripts/check_track2_optical_v36.py
 uv run python scripts/audit_track2_harness_v43.py --output <new-output.json>
 uv run python scripts/track2_release_v43.py verify results/feat009/jvv7_track2_research_v43-verified35
@@ -197,5 +198,5 @@ biological, not more model agreement.
 Current v43 adds the targeted TORC1-segregation literature refresh; use
 `notes/track2-reviewer-guide-v43.md` and `notes/track2-owner-readiness-v43.md`.
 It routes the report/lab handoff/reviewer brief/judge questions/external review packet
-through v43. Reproduce with `scripts/check_track2_literature_v43.py`,
+through v43, and the current live requirements refresh through v44. Reproduce with `scripts/check_track2_literature_v43.py`,
 `scripts/test_track2_literature_v43.py` and `scripts/check_track2_harness_v43.py`. It does not change drug disposition or recording state.
