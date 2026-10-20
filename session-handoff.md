@@ -9,7 +9,7 @@ direct mTORC1 engagement and mitotic lagging-DNA/anaphase-bridge readouts. Use
 `notes/track2-slides-v43.html`, `notes/track2-pitch-v40.md` and
 `notes/track2-transcript-v40.txt`. The combined entry point is
 `scripts/check_track2_harness_v43.py`; start with
-`notes/track2-reviewer-guide-v45.md` and `notes/track2-owner-readiness-v45.md`; they list exact current deliverables.
+`notes/track2-reviewer-guide-v48.md` and `notes/track2-owner-readiness-v48.md`; they list exact current deliverables.
 The current literature chain is `notes/track2-literature-v43.md`,
 `notes/track2-literature-audit-v43.json` and
 `scripts/check_track2_literature_v43.py`; the broader v41 refresh remains preserved. The official-state chains are the full v42 review plus the current live deadline refresh, v44,: `notes/track2-requirements-review-v42.md`,
@@ -195,7 +195,7 @@ biological, not more model agreement.
 ## Current state
 
 Current v47 integrates the external-review adjudication and v46 narration; use
-`notes/track2-reviewer-guide-v45.md` and `notes/track2-owner-readiness-v45.md`; they list exact current deliverables.
+`notes/track2-reviewer-guide-v48.md` and `notes/track2-owner-readiness-v48.md`; they list exact current deliverables.
 It routes the report/lab handoff/reviewer brief/judge questions/external review packet
 through v43, and the current live requirements refresh through v44. Reproduce with `scripts/track2_public_review_v47.py`,
 `scripts/check_track2_literature_v45.py` and `scripts/check_track2_harness_v47.py`. It does not change drug disposition or recording state.

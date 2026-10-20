@@ -9,7 +9,7 @@ import track2_release_v47 as release
 ROOT=release.ROOT
 SLIDES=ROOT/'results/feat009/v47-slides-final-20261020-1'
 DOCS=ROOT/'results/feat009/v47-documents-final-20261020-3'
-DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v47_3.zip'
+DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v47_8.zip'
 def sources():
     release.scientific_checks()
     render=json.loads((ROOT/'notes/track2-v47-render-audit-v47.json').read_text())
@@ -59,8 +59,8 @@ def sources():
     files['jvv7_check_track2_requirements_v44.py']=ROOT/'scripts/check_track2_requirements_v44.py'
     files['jvv7_test_track2_requirements_v44.py']=ROOT/'scripts/test_track2_requirements_v44.py'
     files['jvv7_track2_submission-prep_v1.md']=ROOT/'notes/track2-submission-prep-v1.md'
-    files['jvv7_check_track2_submission_prep_v1.py']=ROOT/'scripts/check_track2_submission_prep_v1.py'
-    files['jvv7_test_track2_submission_prep_v1.py']=ROOT/'scripts/test_track2_submission_prep_v1.py'
+    files['jvv7_check_track2_submission_prep_v2.py']=ROOT/'scripts/check_track2_submission_prep_v2.py'
+    files['jvv7_test_track2_submission_prep_v2.py']=ROOT/'scripts/test_track2_submission_prep_v2.py'
     files['jvv7_track2-submission-materials_v1.json']=ROOT/'notes/track2-submission-materials-v1.json'
     files['jvv7_track2-literature_v45.md']=ROOT/'notes/track2-literature-v45.md'
     files['jvv7_track2-external-review_v46.md']=ROOT/'notes/track2-external-review-v46.md'
@@ -69,7 +69,7 @@ def sources():
     files['jvv7_check_track2_literature_v45.py']=ROOT/'scripts/check_track2_literature_v45.py'
     files['jvv7_test_track2_literature_v45.py']=ROOT/'scripts/test_track2_literature_v45.py'
     for name in ['reviewer-guide','owner-readiness']:
-        files[f'jvv7_track2_{name}_v45.md']=ROOT/f'notes/track2-{name}-v45.md'
+        files[f'jvv7_track2_{name}_v48.md']=ROOT/f'notes/track2-{name}-v48.md'
     # Preserve the reusable demo and its complete runnable kit in the recording bundle.
     from track2_community_kit_v37 import verify as verify_kit
     verify_kit()

@@ -96,7 +96,7 @@ It integrates the external-review adjudication, explicit candidate selection, de
 table, four-arm experiment, primary endpoint/units, software-vs-biology boundary and v46 narration.
 Start with `notes/track2-report-v47.md`, `notes/track2-slides-v47.html` and
 `scripts/check_track2_harness_v47.py`.
-Start with `notes/track2-reviewer-guide-v45.md` and `notes/track2-owner-readiness-v45.md`; they list exact current deliverables.
+Start with `notes/track2-reviewer-guide-v48.md` and `notes/track2-owner-readiness-v48.md`; they list exact current deliverables.
 The current requirements refresh, v44, found the live Space revision, all
 seven official files and discussion listing unchanged; no new organizer requirement
 appeared. The v43 targeted literature refresh found a 2026 fission-yeast TORC1-segregation

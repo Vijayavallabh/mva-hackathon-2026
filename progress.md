@@ -9057,3 +9057,22 @@ routes to it. Full verification passed: 1,145 tests, 14 skipped; release, bundle
 startup checks passed. No subject data were accessed. No video was recorded, no video
 URL exists, no authenticated quota/provider check was performed, and no submission
 occurred.
+
+## Session 97 — 2026-10-20: v48 owner/reviewer guide refresh
+
+The owner readiness and reviewer guides were advanced to v48, and the submission
+checklist to v2, to eliminate stale v43/v40 delivery routes. They now point to the
+current v47 report/slides, v47 report/workbook export, v47 slide render, v46
+369-word narration assets, v47_8 recording-materials ZIP and v47-verified8 release
+snapshot. The submission checklist also updates the owner sequence from the old
+367-word/v43 assets to the current 369-word/v47 assets while preserving every
+unmeasured delivery boundary.
+
+New checks and tests:
+`scripts/check_track2_submission_prep_v2.py` and
+`scripts/test_track2_submission_prep_v2.py`. The current v47 harness now routes the
+v48 guides and executes the v2 submission-prep check. Fresh verified outputs:
+`results/feat009/jvv7_track2_video_materials_v47_8.zip` (106 files, 2,810,798 bytes)
+and `results/feat009/jvv7_track2_research_v47-verified8` (241 files/972 bound inputs).
+Full verification passed 1,149 tests with 14 skipped. No video, URL, hosting,
+authenticated quota/provider check, biological validation or submission occurred.

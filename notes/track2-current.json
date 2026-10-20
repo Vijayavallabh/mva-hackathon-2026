@@ -24,8 +24,8 @@
     "falsification_analysis": "notes/track2-falsification-analysis-v21.json",
     "official_requirements": "notes/track2-requirements-v39.json",
     "community_review": "notes/track2-requirements-review-v39.md",
-    "reviewer_guide": "notes/track2-reviewer-guide-v45.md",
-    "owner_readiness": "notes/track2-owner-readiness-v45.md",
+    "reviewer_guide": "notes/track2-reviewer-guide-v48.md",
+    "owner_readiness": "notes/track2-owner-readiness-v48.md",
     "public_review_script": "scripts/track2_public_review_v47.py",
     "document_exporter": "scripts/track2_export_documents_v47.py",
     "report_renderer": "scripts/render_track2_report_v47.mjs",
@@ -55,16 +55,16 @@
     "requirements_v44_review": "notes/track2-requirements-review-v44.md",
     "requirements_v44_audit": "notes/track2-requirements-v44.json",
     "requirements_v44_check": "scripts/check_track2_requirements_v44.py",
-    "submission_prep": "notes/track2-submission-prep-v1.md",
-    "submission_prep_check": "scripts/check_track2_submission_prep_v1.py",
-    "submission_prep_test": "scripts/test_track2_submission_prep_v1.py",
+    "submission_prep": "notes/track2-submission-prep-v2.md",
+    "submission_prep_check": "scripts/check_track2_submission_prep_v2.py",
+    "submission_prep_test": "scripts/test_track2_submission_prep_v2.py",
     "submission_materials": "notes/track2-submission-materials-v1.json",
     "literature_note_v45": "notes/track2-literature-v45.md",
     "literature_audit_v45": "notes/track2-literature-audit-v45.json",
     "literature_check_v45": "scripts/check_track2_literature_v45.py",
     "external_review_adjudication_v46": "notes/track2-external-review-v46.md"
   },
-  "snapshot": "results/feat009/jvv7_track2_research_v47-verified3",
+  "snapshot": "results/feat009/jvv7_track2_research_v47-verified8",
   "render_directory": "results/feat009/v47-slides-final-20261020-1",
   "model_campaign": {
     "protein_scores": 84,
@@ -89,7 +89,7 @@
   },
   "history": "progress.md",
   "harness_review": "notes/track2-harness-review-v47.md",
-  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v47_3.zip",
+  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v47_8.zip",
   "document_directory": "results/feat009/v47-documents-final-20261020-3",
   "research_addendum": {
     "version": 19,
@@ -121,8 +121,8 @@
   "current_review": {
     "script": "scripts/check_track2_harness_v47.py",
     "isolation_audit": "scripts/audit_track2_harness_v47.py",
-    "guide": "notes/track2-reviewer-guide-v45.md",
-    "readiness": "notes/track2-owner-readiness-v45.md"
+    "guide": "notes/track2-reviewer-guide-v48.md",
+    "readiness": "notes/track2-owner-readiness-v48.md"
   },
   "rnai_addendum": {
     "version": 23,
