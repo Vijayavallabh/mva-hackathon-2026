@@ -2,24 +2,24 @@
   "schema_version": 1,
   "kind": "exact_submission_material_receipt",
   "report_pdf": {
-    "path": "results/feat009/v43-documents-final-20261020-3/jvv7_track2_report_v43.pdf",
-    "bytes": 282750,
-    "sha256": "8210e5963483f91011ac3004af70bc97547c0eb41fc0212a24cac8d03b20dc3e"
+    "path": "results/feat009/v43-documents-final-20261020-4/jvv7_track2_report_v43.pdf",
+    "bytes": 291429,
+    "sha256": "ff6e25e654579c507bda147f834902a9c9ba97ab47a72f8866030283fe309591"
   },
   "report_markdown": {
-    "path": "results/feat009/v43-documents-final-20261020-3/jvv7_track2_report_v43.md",
-    "bytes": 43235,
-    "sha256": "f95f56cfc4fd22185d600272bd1175b71adc4f28168dd0089b9de309e67c2d62"
+    "path": "results/feat009/v43-documents-final-20261020-4/jvv7_track2_report_v43.md",
+    "bytes": 45160,
+    "sha256": "8e36a8cdd33c7d3922e3fae1efaf9b620369d8849842aa285ce112dc7b686814"
   },
   "methods_workbook": {
-    "path": "results/feat009/v43-documents-final-20261020-3/jvv7_track2_methods_v43.xlsx",
-    "bytes": 14919,
-    "sha256": "caaa3921a8d8b5fdd10a7615a48b528a9a075c8f0b5d801daca3475c75119edf"
+    "path": "results/feat009/v43-documents-final-20261020-4/jvv7_track2_methods_v43.xlsx",
+    "bytes": 14918,
+    "sha256": "fba20f339083a7ffe7bda11d763fbdffb6283a54cb10e94447867d54117adf34"
   },
   "slide_pdf": {
-    "path": "results/feat009/v43-slides-final-20261020-2/track2-slides-v43.pdf",
-    "bytes": 254243,
-    "sha256": "6d39cdb308f9aee173bea42d5bd06620078e00ad99e13e29b94bd2454936e265"
+    "path": "results/feat009/v43-slides-final-20261020-3/track2-slides-v43.pdf",
+    "bytes": 255785,
+    "sha256": "f865963545acedc683943342a5021753f112c8377c023d0b13c8137fb461a69f"
   },
   "upload_ready": false,
   "upload_performed": false,

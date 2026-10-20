@@ -10,8 +10,8 @@ from pathlib import Path
 import fitz
 
 ROOT = Path(__file__).resolve().parents[1]
-SLIDES = ROOT / 'results/feat009/v43-slides-final-20261020-2'
-DOCS = ROOT / 'results/feat009/v43-documents-final-20261020-3'
+SLIDES = ROOT / 'results/feat009/v43-slides-final-20261020-3'
+DOCS = ROOT / 'results/feat009/v43-documents-final-20261020-4'
 
 
 def digest(path):
@@ -25,7 +25,7 @@ def luminance(color):
 
 
 def main():
-    destinations = [ROOT/f'notes/track2-v43-{kind}-audit-v45.json' for kind in ('render', 'documents')]
+    destinations = [ROOT/f'notes/track2-v43-{kind}-audit-v46.json' for kind in ('render', 'documents')]
     if any(p.exists() or p.is_symlink() for p in destinations):
         raise ValueError('Existing audits are protected')
     render = json.loads((SLIDES/'render.json').read_text())

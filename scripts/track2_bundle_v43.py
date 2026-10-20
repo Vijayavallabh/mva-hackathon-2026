@@ -7,13 +7,13 @@ import zipfile
 import track2_release_v43 as release
 
 ROOT=release.ROOT
-SLIDES=ROOT/'results/feat009/v43-slides-final-20261020-2'
-DOCS=ROOT/'results/feat009/v43-documents-final-20261020-3'
-DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v43_51.zip'
+SLIDES=ROOT/'results/feat009/v43-slides-final-20261020-3'
+DOCS=ROOT/'results/feat009/v43-documents-final-20261020-4'
+DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v43_55.zip'
 def sources():
     release.scientific_checks()
-    render=json.loads((ROOT/'notes/track2-v43-render-audit-v45.json').read_text())
-    docs=json.loads((ROOT/'notes/track2-v43-documents-audit-v45.json').read_text())
+    render=json.loads((ROOT/'notes/track2-v43-render-audit-v46.json').read_text())
+    docs=json.loads((ROOT/'notes/track2-v43-documents-audit-v46.json').read_text())
     expected={SLIDES/name:sha for name,sha in render['files'].items()}
     expected.update({DOCS/name:sha for name,sha in docs['export']['files'].items()})
     expected.update({DOCS/name:sha for name,sha in docs['pdf']['files'].items()})
@@ -44,13 +44,13 @@ def sources():
         files[Path(source).name]=ROOT/source
     # Preserve only frozen v40 own-voice assets with unambiguous owner-facing names.
     for source in sorted(release.INPUTS):
-        if source in {'notes/track2-pitch-v40.md','notes/track2-transcript-v40.txt','notes/track2-teleprompter-v40.html','notes/track2-narration-v40.json'}:files['jvv7_'+Path(source).name]=ROOT/source
+        if source in {'notes/track2-pitch-v46.md','notes/track2-transcript-v46.txt','notes/track2-teleprompter-v46.html','notes/track2-narration-v46.json'}:files['jvv7_'+Path(source).name]=ROOT/source
     files['jvv7_track2_external-review-packet_v42.md']=ROOT/'notes/track2-external-review-packet-v43.md'
     files['jvv7_track2_reviewer-brief_v42.md']=ROOT/'notes/track2-reviewer-brief-v43.md'
-    files['jvv7_track2_video-description_v42.md']=ROOT/'notes/track2-video-description-v42.md'
+    files['jvv7_track2_video-description_v46.md']=ROOT/'notes/track2-video-description-v46.md'
     files['jvv7_track2_judge-questions_v42.md']=ROOT/'notes/track2-judge-questions-v43.md'
     files['jvv7_track2_community-kit_v42.md']=ROOT/'notes/track2-community-kit-v42.md'
-    files['jvv7_track2_recording-guide_v42.md']=ROOT/'notes/track2-recording-guide-v42.md'
+    files['jvv7_track2_recording-guide_v46.md']=ROOT/'notes/track2-recording-guide-v46.md'
     files['jvv7_track2_competition-strategy_v42.md']=ROOT/'notes/track2-competition-strategy-v42.md'
     files['jvv7_track2_lab-handoff_v42.md']=ROOT/'notes/track2-lab-handoff-v43.md'
     files['jvv7_track2_candidate-comparison_v42.md']=ROOT/'notes/track2-candidate-comparison-v42.md'
@@ -63,6 +63,8 @@ def sources():
     files['jvv7_test_track2_submission_prep_v1.py']=ROOT/'scripts/test_track2_submission_prep_v1.py'
     files['jvv7_track2-submission-materials_v1.json']=ROOT/'notes/track2-submission-materials-v1.json'
     files['jvv7_track2-literature_v45.md']=ROOT/'notes/track2-literature-v45.md'
+    files['jvv7_track2-external-review_v46.md']=ROOT/'notes/track2-external-review-v46.md'
+    files['jvv7_track2-prompter-audit_v46.json']=ROOT/'notes/track2-prompter-audit-v46.json'
     files['jvv7_track2-literature-audit_v45.json']=ROOT/'notes/track2-literature-audit-v45.json'
     files['jvv7_check_track2_literature_v45.py']=ROOT/'scripts/check_track2_literature_v45.py'
     files['jvv7_test_track2_literature_v45.py']=ROOT/'scripts/test_track2_literature_v45.py'

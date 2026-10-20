@@ -86,10 +86,10 @@ runtime, hosting, provider/distribution questions, portal checks and receipt.
 ## Exact current deliverables
 
 - Report source: `notes/track2-report-v43.md`
-- Report PDF/workbook directory: `results/feat009/v43-documents-final-20261020-3`
+- Report PDF/workbook directory: `results/feat009/v43-documents-final-20261020-4`
 - Slide deck source: `notes/track2-slides-v43.html`
-- Rendered slides/PDF: `results/feat009/v43-slides-final-20261020-2`
-- Methods workbook: `results/feat009/v43-documents-final-20261020-3/jvv7_track2_methods_v43.xlsx`
+- Rendered slides/PDF: `results/feat009/v43-slides-final-20261020-3`
+- Methods workbook: `results/feat009/v43-documents-final-20261020-4/jvv7_track2_methods_v43.xlsx`
 - Recording materials ZIP: `results/feat009/jvv7_track2_video_materials_v43_32.zip`
 - Verified release snapshot: `results/feat009/jvv7_track2_research_v43-verified38`
 - Public repository HEAD: `8eaa21ec998bf14a596e7f6de2632db807a50c51`

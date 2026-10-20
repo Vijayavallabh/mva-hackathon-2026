@@ -1,0 +1,231 @@
+{
+  "schema_version": 40,
+  "passed": true,
+  "public_input_sha256": {
+    "notes/track2-pitch-v46.md": "5cd77f1a689a19ac739ea6c07a8d79a37dd421e2aa2a83e63e0f6fcb8a9c5fc5",
+    "notes/track2-transcript-v46.txt": "609f61360598c8c7df67124e624365a789b634403979648cdff57184e420973e",
+    "notes/track2-teleprompter-v46.html": "11a3533cd860a12620767ba36ac7e85139c7ebaa58d5f9b70ba5f6d98fc94ada",
+    "scripts/build_track2_recording_v46.py": "a2f48f003d94809e2f052e138b14a7709d0fd6848dc48257281cc1ef543bc0bb",
+    "scripts/review_track2_interactive_v46.mjs": "a57d9489f2a4e7f37dac76d43b76efb0ecfc3044ed0d3a9466b5965d83dcd8ec",
+    "scripts/audit_track2_recording_v46.py": "77d94f7f3c4a4d212ba51255286839d89b9be02911ea58973009659e99c80c9d",
+    "scripts/track2_narration_v46.py": "ac33ac6bbfe69a6ba9266673689e015859a04b3df14f1ff50ad114dadc2c6a73",
+    "notes/track2-recording-guide-v46.md": "7e6270969c69c61c57ed684c22f976e4c05bebf9bcf59cffa5ccb787497afe0a",
+    "notes/track2-narration-v46.json": "b256aa57b142aea06ce2e21963ac451006a4d20d0caee97edf9afb68473ac805"
+  },
+  "browser_checks": {
+    "passed": true,
+    "kind": "prompter",
+    "source_sha256": "11a3533cd860a12620767ba36ac7e85139c7ebaa58d5f9b70ba5f6d98fc94ada",
+    "renderer_sha256": "a57d9489f2a4e7f37dac76d43b76efb0ecfc3044ed0d3a9466b5965d83dcd8ec",
+    "checks": {
+      "timing": [
+        {
+          "seconds": 0,
+          "slide": 1
+        },
+        {
+          "seconds": 18,
+          "slide": 2
+        },
+        {
+          "seconds": 40,
+          "slide": 3
+        },
+        {
+          "seconds": 63,
+          "slide": 4
+        },
+        {
+          "seconds": 87,
+          "slide": 5
+        },
+        {
+          "seconds": 106,
+          "slide": 6
+        },
+        {
+          "seconds": 126,
+          "slide": 7
+        },
+        {
+          "seconds": 149,
+          "slide": 8
+        },
+        {
+          "seconds": 168,
+          "slide": 9
+        },
+        {
+          "seconds": 180,
+          "slide": 9
+        }
+      ],
+      "keyboard": {
+        "elapsed": 0.2522999997138977,
+        "running": false,
+        "slide": 1
+      },
+      "desktop": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "buttons": [
+          {
+            "text": "Start rehearsal",
+            "height": 52.09375
+          },
+          {
+            "text": "Reset",
+            "height": 52.09375
+          },
+          {
+            "text": "Previous cue",
+            "height": 52.09375
+          },
+          {
+            "text": "Next cue",
+            "height": 52.09375
+          }
+        ],
+        "labelledControls": true,
+        "networkResources": 0
+      },
+      "desktopCues": [
+        {
+          "seconds": 0,
+          "top": 228.75,
+          "headerBottom": 216.71875
+        },
+        {
+          "seconds": 18,
+          "top": 229.34375,
+          "headerBottom": 216.71875
+        },
+        {
+          "seconds": 40,
+          "top": 228.9375,
+          "headerBottom": 216.71875
+        },
+        {
+          "seconds": 63,
+          "top": 229.53125,
+          "headerBottom": 216.71875
+        },
+        {
+          "seconds": 87,
+          "top": 229.125,
+          "headerBottom": 216.71875
+        },
+        {
+          "seconds": 106,
+          "top": 228.71875,
+          "headerBottom": 216.71875
+        },
+        {
+          "seconds": 126,
+          "top": 229.3125,
+          "headerBottom": 216.71875
+        },
+        {
+          "seconds": 149,
+          "top": 228.90625,
+          "headerBottom": 216.71875
+        },
+        {
+          "seconds": 168,
+          "top": 383.5,
+          "headerBottom": 216.71875
+        }
+      ],
+      "mobile": {
+        "width": 390,
+        "scrollWidth": 390,
+        "buttons": [
+          {
+            "text": "Start rehearsal",
+            "height": 48
+          },
+          {
+            "text": "Reset",
+            "height": 48
+          },
+          {
+            "text": "Previous cue",
+            "height": 48
+          },
+          {
+            "text": "Next cue",
+            "height": 48
+          }
+        ],
+        "labelledControls": true,
+        "networkResources": 0
+      },
+      "mobileCues": [
+        {
+          "seconds": 0,
+          "top": 337.015625,
+          "headerBottom": 324.953125
+        },
+        {
+          "seconds": 18,
+          "top": 337.609375,
+          "headerBottom": 324.953125
+        },
+        {
+          "seconds": 40,
+          "top": 337.203125,
+          "headerBottom": 324.953125
+        },
+        {
+          "seconds": 63,
+          "top": 337.796875,
+          "headerBottom": 324.953125
+        },
+        {
+          "seconds": 87,
+          "top": 337.390625,
+          "headerBottom": 324.953125
+        },
+        {
+          "seconds": 106,
+          "top": 336.984375,
+          "headerBottom": 324.953125
+        },
+        {
+          "seconds": 126,
+          "top": 337.578125,
+          "headerBottom": 324.953125
+        },
+        {
+          "seconds": 149,
+          "top": 337.171875,
+          "headerBottom": 324.953125
+        },
+        {
+          "seconds": 168,
+          "top": 337.765625,
+          "headerBottom": 324.953125
+        }
+      ]
+    },
+    "files": {
+      "desktop.png": "536b0340c702caa9282bf57e9a048d448cfa18744a015e18af6ff53bf34bba6b",
+      "mobile-cue-2.png": "75438b8d714f0b407dfb294c8b7f7c9cc1335d3539fc7abbf71330873d373521",
+      "mobile.png": "24a99ccc90cc95e42472477be0d727767cac94837be9d7f30ad004715c761edd"
+    },
+    "browser": {
+      "protocolVersion": "1.3",
+      "product": "Chrome/131.0.6778.139",
+      "revision": "@c35bbcbd7c2775a12a3f320e05ac0022939b1a8a",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+      "jsVersion": "13.1.201.16"
+    },
+    "network_blocked": true,
+    "independent_review": false,
+    "formal_accessibility_audit": false,
+    "clinical_validation": false
+  },
+  "recording_created": false,
+  "runtime_measured": false,
+  "independent_review": false
+}

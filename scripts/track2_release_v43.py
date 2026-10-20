@@ -84,17 +84,17 @@ def audit_checks(render,documents,public):
 
 def recording_checks(a):
     require(a['schema_version']==40 and a['passed'] is True,'Recording audit failed')
-    required={'notes/track2-pitch-v40.md','notes/track2-transcript-v40.txt',
-        'notes/track2-teleprompter-v40.html','scripts/build_track2_recording_v40.py',
-        'scripts/review_track2_interactive_v40.mjs','scripts/audit_track2_recording_v40.py',
-        'scripts/track2_narration_v40.py','notes/track2-recording-guide-v40.md','notes/track2-narration-v40.json'}
+    required={'notes/track2-pitch-v46.md','notes/track2-transcript-v46.txt',
+        'notes/track2-teleprompter-v46.html','scripts/build_track2_recording_v46.py',
+        'scripts/review_track2_interactive_v46.mjs','scripts/audit_track2_recording_v46.py',
+        'scripts/track2_narration_v46.py','notes/track2-recording-guide-v46.md','notes/track2-narration-v46.json'}
     require(set(a['public_input_sha256'])==required,'Recording inputs omitted or unexpected')
     for relative,sha in a['public_input_sha256'].items():
         require(digest(ROOT/relative)==sha,'Recording input drift: '+relative)
     browser=a['browser_checks']
     require(browser['passed'] is True and browser['network_blocked'] is True and
-        browser['source_sha256']==digest(ROOT/'notes/track2-teleprompter-v40.html') and
-        browser['renderer_sha256']==digest(ROOT/'scripts/review_track2_interactive_v40.mjs'),
+        browser['source_sha256']==digest(ROOT/'notes/track2-teleprompter-v46.html') and
+        browser['renderer_sha256']==digest(ROOT/'scripts/review_track2_interactive_v46.mjs'),
         'Recording browser receipt drift')
     for viewport,width in [('desktop',1280),('mobile',390)]:
         g=browser['checks'][viewport]
@@ -115,10 +115,10 @@ def recording_checks(a):
 
 def scientific_checks():
     result=review.check()
-    files=['track2-v43-render-audit-v45.json','track2-v43-documents-audit-v45.json','track2-public-review-v43.json']
+    files=['track2-v43-render-audit-v46.json','track2-v43-documents-audit-v46.json','track2-public-review-v43.json']
     result['exports']=audit_checks(*[json.loads((ROOT/'notes'/n).read_text()) for n in files])
     result['interactive']=historical.historical.historical.interactive_checks(json.loads((ROOT/'notes/track2-demo-audit-v37.json').read_text()))
-    result['recording']=recording_checks(json.loads((ROOT/'notes/track2-prompter-audit-v40.json').read_text()))
+    result['recording']=recording_checks(json.loads((ROOT/'notes/track2-prompter-audit-v46.json').read_text()))
     result['literature_v43']=literature.check()
     return result
 

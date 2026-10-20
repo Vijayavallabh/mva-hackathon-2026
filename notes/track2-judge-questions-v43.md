@@ -1,7 +1,8 @@
 # Questions the submission must answer without live Q&A, version 43
 
-**What is the drug proposal?** Test everolimus, an approved mTORC1 inhibitor, as an
-optional mechanistic probe in a functionally qualified non-cancer BUB1B model.
+**What is the drug proposal?** We nominate everolimus, an approved mTORC1 inhibitor, as a conditional
+hypothesis worth investigating—not as a treatment recommendation or rescue-priority claim. It advances
+only in a functionally qualified non-cancer BUB1B model if the relevant mTORC1 prerequisite is present.
 No drug has earned rescue priority. HCQ is reserve. No dose or treatment is proposed.
 
 **What connects these variants to the drug?** Four distinct links: the established
@@ -13,13 +14,13 @@ engineered hTERT-RPE1; availability remains unconfirmed. The mTOR rationale come
 from heterozygous BubR1+/X753 skeletal muscle and sarcopenia. Excess mTOR activity
 is a later branch prerequisite; a flux alternative needs its own locked plan.
 
-**Why everolimus if several results are unfavorable?** Those results remove claims
+**Why everolimus rather than another candidate?** Approval and pathway membership explain eligibility, not superiority. The candidate comparison shows a bounded carrier-muscle mTORC1 lead, concrete pharmacology and a testable downstream branch; NAD/SIRT2 is more proximal but has sex/site/context limits, and HCQ remains reserve. Those results remove claims
 of validated rescue and require direct functional measurements. They do not establish
 universal inefficacy. Everolimus is a defined, approved perturbation for a conditional
 mechanistic test. It advances only if model qualification supports that test. All
 eleven candidate dispositions and favorable counterweights remain in the report.
 
-**What changed because of falsification?** Functional protein controls prevent
+**What changed because of contrary evidence?** Functional protein controls prevent
 interpreting model scores as residual function. Separate drug/deficit profiles no
 longer support rescue. Muscle counterevidence requires force and recovery, not mass
 alone. Early-versus-prolonged sensitivity requires daughter fate and sustained
@@ -51,7 +52,7 @@ allele-to-function assay could strengthen mechanistic characterization. A valid
 negative result could stop an unsupported drug route; a positive result could justify
 further preclinical work. Neither is a present diagnostic or treatment benefit.
 
-**How is the design patient-oriented?** It prioritizes useful function, preserves
+**How is the design patient-motivated?** It prioritizes useful function, preserves
 death/arrest/missing outcomes, stops for injury, separates tumour killing from
 deficient-normal benefit, and starts with engineered models without requesting a
 new family sample. No family consultation, co-design or endorsement is claimed.
@@ -74,7 +75,7 @@ Failed assays and wide intervals hold inference or advancement rather than provi
 normality or universal drug failure. All-pass permits preclinical review only.
 
 **What is the next investment?** Endogenous mechanism and one qualified non-cancer
-functional context, followed by the randomized joint-treatment experiment if eligible.
+functional context, followed by the randomized four-arm drug experiment if eligible.
 No laboratory budget, staffing commitment, sample-size estimate or clinical timeline
 is justified by the computational results.
 

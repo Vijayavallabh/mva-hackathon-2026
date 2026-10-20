@@ -133,14 +133,14 @@ def validate(state, features, documents):
         'community_kit_guide':'notes/track2-community-kit-v42.md',
         'lab_handoff':'notes/track2-lab-handoff-v43.md',
         'judge_questions':'notes/track2-judge-questions-v43.md',
-        'recording_guide':'notes/track2-recording-guide-v42.md',
-        'teleprompter':'notes/track2-teleprompter-v40.html',
+        'recording_guide':'notes/track2-recording-guide-v46.md',
+        'teleprompter':'notes/track2-teleprompter-v46.html',
         'reviewer_brief':'notes/track2-reviewer-brief-v43.md',
         'competition_strategy':'notes/track2-competition-strategy-v42.md',
         'slides':f'notes/track2-slides-v{version}.html',
-        'pitch':'notes/track2-pitch-v40.md',
-        'transcript':'notes/track2-transcript-v40.txt',
-        'video_description':'notes/track2-video-description-v42.md',
+        'pitch':'notes/track2-pitch-v46.md',
+        'transcript':'notes/track2-transcript-v46.txt',
+        'video_description':'notes/track2-video-description-v46.md',
         'design_review':'notes/track2-v40-design.md',
         'evidence':'notes/track2-evidence-v21.json', 'validation':'notes/track2-validation-v21.md',
         'falsification_register':'notes/track2-falsification-register-v21.json',
@@ -165,12 +165,12 @@ def validate(state, features, documents):
     roles.update({'requirements_v42_review':'notes/track2-requirements-review-v42.md','requirements_v42_audit':'notes/track2-requirements-v42.json','requirements_v42_check':'scripts/check_track2_requirements_v42.py'})
     roles.update({'requirements_v44_review':'notes/track2-requirements-review-v44.md','requirements_v44_audit':'notes/track2-requirements-v44.json','requirements_v44_check':'scripts/check_track2_requirements_v44.py'})
     roles.update({'reviewer_guide':'notes/track2-reviewer-guide-v45.md','owner_readiness':'notes/track2-owner-readiness-v45.md','submission_prep':'notes/track2-submission-prep-v1.md','submission_prep_check':'scripts/check_track2_submission_prep_v1.py','submission_prep_test':'scripts/test_track2_submission_prep_v1.py','submission_materials':'notes/track2-submission-materials-v1.json'})
-    roles.update({'candidate_comparison': 'notes/track2-candidate-comparison-v42.md', 'rehearsal_adjudication': 'notes/track2-rehearsal-adjudication-v39.md', 'rehearsal_sources': 'notes/track2-rehearsal-sources-v39.json', 'qualification_amendment': 'notes/track2-qualification-amendment-v39.md', 'external_review_packet': 'notes/track2-external-review-packet-v43.md', 'recording_audit': 'notes/track2-prompter-audit-v40.json'})
-    roles['narration_metrics']='notes/track2-narration-v40.json'
+    roles.update({'external_review_adjudication_v46':'notes/track2-external-review-v46.md','candidate_comparison': 'notes/track2-candidate-comparison-v42.md', 'rehearsal_adjudication': 'notes/track2-rehearsal-adjudication-v39.md', 'rehearsal_sources': 'notes/track2-rehearsal-sources-v39.json', 'qualification_amendment': 'notes/track2-qualification-amendment-v39.md', 'external_review_packet': 'notes/track2-external-review-packet-v43.md', 'recording_audit': 'notes/track2-prompter-audit-v46.json'})
+    roles['narration_metrics']='notes/track2-narration-v46.json'
     require(state['artifacts'] == roles, 'Mixed, missing or unsafe artifact paths')
     require(state.get('community_kit_bundle') == 'results/feat009/jvv7_track2_community_kit_v37.zip', 'Stale community kit path')
-    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified56', 'Stale snapshot path')
-    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_51.zip',
+    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified60', 'Stale snapshot path')
+    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_55.zip',
             'Stale recording-materials bundle path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['render_directory']),
             'Stale or unsafe render-directory path')
@@ -321,7 +321,7 @@ def check(root=ROOT):
         'Optical coordinate exclusion changed')
     public_path(root,state['deletion_policy']['plan'])
     audit = campaign_audit(root)
-    release = importlib.import_module("track2_release_v41")
+    release = importlib.import_module("track2_release_v43")
     presentation = release.scientific_checks()
     literature_addendum = importlib.import_module('check_track2_literature_v45').check()
     require(literature_addendum['passed'],'Literature provenance review failed')

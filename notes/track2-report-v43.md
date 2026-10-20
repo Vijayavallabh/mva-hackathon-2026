@@ -4,10 +4,13 @@ Track 2 research proposal | jvv7 | 20 October 2026 | v43
 
 Repository: https://github.com/Vijayavallabh/mva-hackathon-2026
 
-We propose qualifying endogenous BUB1B function before advancing a drug hypothesis.
-Everolimus, an approved mTORC1 inhibitor, is a worked conditional branch, currently
-on HOLD for missing biological prerequisites. It remains an optional mechanistic
-probe. No rescue-priority drug is supported. We contribute a staged biological experiment
+We nominate everolimus as a conditional approved-drug hypothesis for investigation,
+not as a treatment recommendation or a rescue-priority claim. It is a defined
+mTORC1 probe that advances only if the retained BUB1B pair first shows a reproducible
+endogenous functional deficit and the proposed non-cancer model shows the relevant
+mTORC1 state. We first qualify endogenous BUB1B function; only then test the drug
+against deficit and corrected controls. No drug is promoted to clinical consideration.
+No rescue-priority drug is supported. We contribute this staged biological experiment
 and an inspectable research review tool. The experiment asks whether useful function
 can improve without worsening division, injury or recovery; the tool makes missing
 evidence and reasons to stop visible to other teams.
@@ -16,7 +19,7 @@ No wet-lab experiment has been performed; no treatment or dose for the child is 
 
 **Decision in order.** First establish an endogenous deficit and independently
 attributable functional restoration. Then qualify one intervention hypothesis in
-the same model. Only then test joint treatment, useful output, injury and recovery.
+the same model. Only then test the four-arm drug experiment, useful output, injury and recovery.
 All four stages remain unmeasured. The first experiment is model qualification.
 
 **Why work through everolimus?** Its approved pharmacology makes mTORC1 perturbation
@@ -46,6 +49,13 @@ and known pharmacology, not MVA efficacy or safety.
 [Mouse study](https://doi.org/10.1172/JCI126863),
 [corrigendum](https://doi.org/10.1172/JCI144781),
 [label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f1ae129-c21e-4c25-84c1-a6757d9a7eb2).
+
+The candidate chain is explicit: **gene-level BUB1B mechanism is established**;
+**pair-specific endogenous RNA/protein/function is unmeasured**; **relevant non-cancer
+cellular dysfunction is unqualified**; **mTORC1 state in that model is unmeasured**;
+**everolimus response is unmeasured**; and **sustained useful output/recovery is
+unmeasured**. The carrier-mouse mTORC1 signal is supporting evidence from another
+allele and tissue, not a patient-matched established link.
 
 The first qualification question is **endogenous functional deficit and reversibility**,
 shared by competing intervention hypotheses. Only then can **branch A**, excess
@@ -184,6 +194,14 @@ retain all eleven dispositions, approval/indication details and source correctio
 
 ## 3. What the computational work establishes
 
+Each computational analysis changed a specific decision. Protein-language and
+ProteinMPNN controls rejected model scores as residual-function evidence. Expression,
+RNAi, CRISPR and Perturb-seq analyses rejected drug-only reversal as rescue evidence
+and left HT29 as one assay-qualification lead. Optical profiling retained a simple
+assay lead but rejected a claimed neural practical gain. The decision tool made HOLD,
+STOP and preclinical-review boundaries inspectable. Analyses that did not change a
+decision are retained as appendices, not presented as validation.
+
 The public-data campaigns test model adequacy and alternative explanations.
 Separate drug-only and deficit-only profiles cannot measure rescue in deficient
 cells. Expression reversal might oppose compensation; useful function might
@@ -302,8 +320,8 @@ BUBR1-specific restoration control. Site-specific assays require validated reage
 and controls; their availability is unknown. A precise valid negative can close
 the tested prerequisite in that model. Unknowns remain HOLD, not a negative result.
 
-**Test joint treatment.** Once a branch qualifies, compare deficit + vehicle,
-deficit + everolimus, corrected + vehicle and corrected + everolimus. Include an
+**Test the conditional four-arm experiment.** Once a branch qualifies, compare deficient + vehicle,
+deficient + everolimus, corrected + vehicle and corrected + everolimus. Include an
 assay-qualified positive control and interpretable orthogonal pathway perturbation.
 Verify compound identity. Randomize independently treated cultures within clone,
 day and plate blocks; blind scoring. Cells are nested observations. Model crossed
@@ -324,9 +342,12 @@ viability. Tumour killing needs its own subtype and deficient-normal controls.
 [flux reporter](https://pmc.ncbi.nlm.nih.gov/articles/PMC3121655/).
 
 A **synthetic example, not experimental data**, shows why the denominator matters.
-With 100 enrolled cells per arm, errors among completed divisions fall from 20/80
-(25%) to 5/45 (11.1%), but accurate viable output falls from 60/100 to 40/100.
-A better surviving-cell ratio can conceal worse output. The executable example
+The denominator is all founder cells enrolled before exposure; the numerator for the
+ratio is erroneous divisions among completed divisions, while the primary useful-output
+numerator is accurate divisions yielding viable daughters during the prespecified
+follow-up window. With 100 enrolled founder cells per arm, errors among completed
+divisions fall from 20/80 (25%) to 5/45 (11.1%), but accurate viable output falls from
+60/100 to 40/100. A better surviving-cell ratio can conceal worse useful cellular output. The executable example
 retains death, arrest and missing tracks; missingness bounds do not replace sampling
 uncertainty.
 
@@ -360,8 +381,12 @@ margins and actual measurements remain null; the executable rule returns HOLD.
 The specific contribution is an inspectable connection between evidence states,
 all-enrolled outcomes and the next laboratory decision. The demo exposes the exact
 inputs and reasons for HOLD or STOP; the handoff states what measurement can change
-them. This integration is the innovation claim to assess. The component methods are
-established, and broad novelty or superior clinical performance is not claimed.
+them. Software verification means that Python/JavaScript agree on the teaching cases,
+reject invalid inputs and preserve missingness bounds. It does not mean that the
+policy is biologically valid. Biological validation would require calibrated
+benefit/injury thresholds and fresh experimental evidence. This integration is the
+innovation claim to assess. The component methods are established, and broad novelty
+or superior clinical performance is not claimed.
 
 The useful deliverable is a decision that another lab can test. A validated
 allele-to-function assay could improve mechanistic characterization of BUB1B
@@ -563,7 +588,7 @@ genetic survival evidence, alongside opposing site/context findings. Neither rou
 establishes efficacy, phase or clinical exposure margins. The proposed first
 comparator is engineered hTERT-RPE1; availability and qualification remain unconfirmed.
 
-Falsification narrowed the proposal. ProteinMPNN failed expanded functional-control
+Contrary evidence narrowed the proposal. ProteinMPNN failed expanded functional-control
 ordering in all 24 comparisons. Expression studies retain partial attribution
 signals but do not measure rescue after joint drug-plus-deficit treatment.
 Corrected public HeLa imaging places BUB1B among the top three genes for four

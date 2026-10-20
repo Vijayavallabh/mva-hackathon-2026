@@ -1,8 +1,6 @@
 # The proposal in one page, version 43
 
-**Proposal.** Qualify endogenous BUB1B function before advancing a drug hypothesis.
-Everolimus, an approved mTORC1 inhibitor, is a worked conditional branch on HOLD for
-missing prerequisites. No drug earns rescue priority; HCQ remains reserve.
+**Proposal.** We nominate everolimus as a conditional approved-drug hypothesis worth investigating—not a treatment recommendation or rescue-priority claim. Qualify endogenous BUB1B function and the relevant mTORC1 state first; only then test the four-arm drug experiment. No drug earns clinical priority; HCQ remains reserve.
 
 **Why the qualification matters.** The retained pair's phase and endogenous effects
 are unresolved. The mTORC1 mouse signal comes from heterozygous BubR1+/X753 skeletal
@@ -23,8 +21,7 @@ extension adds BUBR1/MAD2/ZW10 corona localization, MCC/APC/C engagement,
 mitochondrial integrity, proteostasis stress, direct mTORC1 engagement and mitotic lagging-DNA/anaphase-bridge counts. No patient sample or completed
 experiment is implied.
 
-**Then test a qualified branch.** Drug plus deficit must be compared with each alone
-and corrected controls. Use independent cultures, randomized blocks, blinded scoring
+**Then test a qualified branch.** The conditional four arms are deficient + vehicle, deficient + everolimus, corrected + vehicle and corrected + everolimus. The primary endpoint is useful cellular output per enrolled founder cell; injury overrides benefit. Use independent cultures, randomized blocks, blinded scoring
 and fresh confirmation. Unknowns hold; valid futility stops the tested claim; injury
 stops advancement. All-pass permits preclinical review only. Clinical exposure
 margins remain unknown.
@@ -34,7 +31,7 @@ inspectable next laboratory decision. The demo exposes exact inputs and HOLD/STO
 reasons; the handoff identifies the measurement that can change them. This is an
 integration claim, not a claim that the component methods are new.
 
-**What exists today.** Auditable public model findings and counterevidence, including the v45 tumour-killing boundary for griseofulvin/norlichexanthone and computational BUB1B inhibitors, a
+**What exists today.** Auditable public model findings and contrary evidence, including the v45 tumour-killing boundary for griseofulvin/norlichexanthone and computational BUB1B inhibitors, a
 conditional experimental plan, and an offline demo of 17 synthetic cases plus the
 actual unmeasured HOLD state. The method distinguishes a lower error fraction from
 higher useful output. Software checks establish implementation, not biological

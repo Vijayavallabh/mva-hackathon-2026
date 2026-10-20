@@ -4,12 +4,12 @@ import json
 from pathlib import Path
 import re
 import track2_public_review_v39 as previous
-import track2_narration_v40 as timing
-import build_track2_recording_v40 as recording
+import track2_narration_v46 as timing
+import build_track2_recording_v46 as recording
 import track2_public_review_v36 as prior
 import track2_demo_v37 as demo
 import build_track2_demo_v37 as builder
-import check_track2_literature_v43 as literature
+import check_track2_literature_v45 as literature
 
 ROOT=prior.ROOT
 REVISION=prior.REVISION
@@ -32,16 +32,15 @@ def presentation_checks(deck):
            'does not replace bubr1','first qualify function','independent restoration','carrier skeletal muscle','bubr1+/x753; sarcopenia',
            '1. first qualify function','2. qualify a separate hypothesis','nad/sirt2',
            'male-biased genetic survival','opposing site/context evidence'],
-        3:['no wet-lab measurements','single / cis / trans','perturbation + restoration','deficit alone',
-           'joint treatment','corrected','drug alone','randomize cultures','blind scoring','confirm independently'],
+        3:['no wet-lab measurements','single / cis / trans','perturbation + restoration','deficient baseline','four arms','corrected reference','vehicle','everolimus','randomize cultures','blind scoring','confirm independently'],
         4:['synthetic example, not experimental data','25%','20 / 80','11.1%','5 / 45','60 / 100','40 / 100',
-           'daughter fate','prespecified recovery','missing observations','deficit + vehicle','deficit + probe'],
+           'daughter fate','prespecified window','missing observations','deficient + vehicle','deficient + probe','founder cells'],
         5:['0 / 24 pass','one shared guide pair','selected controls','40 older adults','−2.13',
            '95% ci −4.61 to 0.34','p=0.089','indirect for mva','separate drug profiles cannot establish rescue'],
         6:['hela lacks functional p53','retrieval does not establish non-cancer rescue'],
         7:['invalid assay','hold inference','unknown / imprecise','hold advancement','meaningful benefit excluded',
-           'stop the tested claim','failed safety','stop; review injury','preclinical review only',
-           'clinical exposure margin unknown'],
+           'stop the tested claim','failed safety','stop; review injury','preclinical review',
+           'software verification only','biological thresholds need fresh qualified evidence','exposure margins remain unknown'],
         8:['cpu','no subject files or gpus','fresh qualification','hcq reserve','deficient-normal controls'],
     }
     for number,phrases in required.items():
@@ -115,11 +114,11 @@ def narration(pitch):
     require(300<=sum(counts)<=400 and f'Narration contains {sum(counts)} whitespace-separated words' in pitch,'Narration word drift')
     for phrase in ['no drug earns rescue priority','phase and endogenous effects remain unresolved','neither route is established',
                    'independent perturbation and restoration','this example is synthetic','track every cell',
-                   'early relative sensitivity can reverse','whole blood is not free tissue','preclinical review only',
+                   'early relative sensitivity can reverse','whole blood is not free tissue','preclinical review',
                    'invalid assays hold inference','injury stops advancement','no wet-lab experiment has been performed',
                    'hcq remains reserve','eighteen evidence cases','without requesting another family sample']:
         require(phrase in normalized(spoken).lower(),'Narration boundary missing: '+phrase)
-    transcript='Track 2 v40 - read-aloud transcript\nRead the paragraphs; headings and times are cues, not narration.\n\n'
+    transcript='Track 2 v46 - read-aloud transcript\nRead the paragraphs; headings and times are cues, not narration.\n\n'
     for h,b in rows:transcript+='Slide '+h.replace(' / ',' | ')+'\n'+b.strip()+'\n\n'
     return counts,transcript.rstrip()+'\n'
 
@@ -131,13 +130,13 @@ def check():
     report=(ROOT/'notes/track2-report-v43.md').read_text();answers=report_checks(report)
     prior.optical_numbers(json.loads((ROOT/'notes/track2-optical-results-v36.json').read_text()),report,(ROOT/'notes/track2-slides-v43.html').read_text())
     requirements=requirements_checks(*[json.loads((ROOT/f'notes/track2-{n}-v39.json').read_text()) for n in ['requirements','community-audit']])
-    counts,transcript=narration((ROOT/'notes/track2-pitch-v40.md').read_text())
-    require((ROOT/'notes/track2-transcript-v40.txt').read_text()==transcript,'Transcript differs')
-    pitch=(ROOT/'notes/track2-pitch-v40.md').read_text()
-    require(json.loads((ROOT/'notes/track2-narration-v40.json').read_text())==timing.summary(pitch),'Narration metrics differ')
-    require(timing.guide_metrics(pitch) in (ROOT/'notes/track2-recording-guide-v40.md').read_text(),'Recording guide rates differ')
-    require(recording.rendered()==(ROOT/'notes/track2-teleprompter-v40.html').read_text(),'Teleprompter differs')
-    description=(ROOT/'notes/track2-video-description-v42.md').read_text()
+    counts,transcript=narration((ROOT/'notes/track2-pitch-v46.md').read_text())
+    require((ROOT/'notes/track2-transcript-v46.txt').read_text()==transcript,'Transcript differs')
+    pitch=(ROOT/'notes/track2-pitch-v46.md').read_text()
+    require(json.loads((ROOT/'notes/track2-narration-v46.json').read_text())==timing.summary(pitch),'Narration metrics differ')
+    require(timing.guide_metrics(pitch) in (ROOT/'notes/track2-recording-guide-v46.md').read_text(),'Recording guide rates differ')
+    require(recording.rendered()==(ROOT/'notes/track2-teleprompter-v46.html').read_text(),'Teleprompter differs')
+    description=(ROOT/'notes/track2-video-description-v46.md').read_text()
     require(f'{sum(counts)} narration words' in description and normalized(answers['B9']) in normalized(description),'Video disclosure/count differs')
     require(acknowledgement() in normalized(description),'Video acknowledgement missing')
     require(builder.rendered()==(ROOT/'notes/track2-demo-v37.html').read_text(),'Generated demo differs')
@@ -146,7 +145,7 @@ def check():
         suffix='html' if name=='slides' else 'md'
         document=(ROOT/f'notes/track2-{name}-v43.{suffix}').read_text()
         repository_links(document);command_paths(document)
-    document=(ROOT/'notes/track2-pitch-v40.md').read_text()
+    document=(ROOT/'notes/track2-pitch-v46.md').read_text()
     repository_links(document);command_paths(document)
     document=(ROOT/'notes/track2-lab-handoff-v43.md').read_text()
     repository_links(document);command_paths(document)
@@ -159,7 +158,7 @@ def check():
     repository_links(document);command_paths(document)
     document=(ROOT/'notes/track2-recording-guide-v42.md').read_text()
     repository_links(document);command_paths(document)
-    document=(ROOT/'notes/track2-video-description-v42.md').read_text()
+    document=(ROOT/'notes/track2-video-description-v46.md').read_text()
     repository_links(document);command_paths(document)
     document=(ROOT/'notes/track2-external-review-packet-v43.md').read_text()
     repository_links(document);command_paths(document)

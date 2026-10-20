@@ -45,6 +45,8 @@ justified. See the current [comparison](https://github.com/Vijayavallabh/mva-hac
 | Joint intervention | Deficit + vehicle, deficit + everolimus, corrected + vehicle, corrected + everolimus; compound identity, direct mTORC1 engagement, mitotic lagging-DNA/anaphase-bridge counts, blinded scoring and randomized culture blocks. | Estimate benefit in deficient cells and context-specific injury. Orthogonal pathway disagreement limits mechanism attribution. Drug-only expression reversal supplies no substitute. |
 | Independent confirmation | Lock meaningful benefit, injury margins, follow-up, missingness, multiplicity and sample size from pilot performance before fresh confirmation. Include independent cultures/backgrounds and matched exposure measurements. | A valid interval excluding the target stops the tested benefit claim. Imprecision holds it. Injury stops advancement. All-pass permits preclinical review only. |
 
+Before the experiment, lock the primary endpoint: useful cellular output per founder cell enrolled before exposure, followed through a prespecified daughter-fate/recovery window. Define direct mTORC1 engagement as reduced p70 S6 kinase and 4EBP1 phosphorylation in the same context. Independent units are cultures nested within clone/day blocks; cells are nested observations, not independent replicates. A result is meaningful only after pilot variance fixes a justified margin; injury overrides apparent benefit.
+
 Start with the model qualification before commissioning organ-specific work. For a
 qualified muscle context, a candidate functional endpoint is contraction/force with
 recovery after the defined challenge; mass or ATP alone is insufficient. For a
@@ -65,7 +67,7 @@ A validated allele-to-function assay could improve mechanistic characterization 
 similar variants. That would need pathogenic/retained-function controls, calibration
 and independent validation before any diagnostic claim. A valid negative result can
 prevent spending scarce experimental material on an unsupported drug route. A positive
-joint-treatment result could justify the next preclinical study. None establishes
+four-arm drug result could justify the next preclinical study. None establishes
 benefit for a person, and different tissues/genotypes need their own qualification.
 
 The first proposed work uses engineered models and existing public evidence. It does
