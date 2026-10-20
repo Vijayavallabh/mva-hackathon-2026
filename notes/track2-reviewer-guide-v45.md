@@ -10,6 +10,7 @@ The broad [v41 literature addendum](https://github.com/Vijayavallabh/mva-hackath
 preserves five public searches, fourteen selected 2025-2026 sources and twenty-one
 receipts. It adds checkpoint/corona/MCC, mitochondrial and proteostasis readouts.
 The targeted [v43 TORC1-segregation addendum](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v43.md)
+and the targeted [v45 checkpoint/computational-drug falsification addendum](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v45.md)
 adds direct mTORC1 engagement and mitotic lagging-DNA/anaphase-bridge readouts based
 on one open-access fission-yeast full text. Neither addendum changes any drug
 disposition, and neither is biological validation.
@@ -85,10 +86,10 @@ runtime, hosting, provider/distribution questions, portal checks and receipt.
 ## Exact current deliverables
 
 - Report source: `notes/track2-report-v43.md`
-- Report PDF/workbook directory: `results/feat009/v43-documents-final-20261020-2`
+- Report PDF/workbook directory: `results/feat009/v43-documents-final-20261020-3`
 - Slide deck source: `notes/track2-slides-v43.html`
 - Rendered slides/PDF: `results/feat009/v43-slides-final-20261020-2`
-- Methods workbook: `results/feat009/v43-documents-final-20261020-2/jvv7_track2_methods_v43.xlsx`
+- Methods workbook: `results/feat009/v43-documents-final-20261020-3/jvv7_track2_methods_v43.xlsx`
 - Recording materials ZIP: `results/feat009/jvv7_track2_video_materials_v43_32.zip`
 - Verified release snapshot: `results/feat009/jvv7_track2_research_v43-verified38`
 - Public repository HEAD: `8eaa21ec998bf14a596e7f6de2632db807a50c51`

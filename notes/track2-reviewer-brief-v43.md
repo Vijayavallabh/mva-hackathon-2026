@@ -34,7 +34,7 @@ inspectable next laboratory decision. The demo exposes exact inputs and HOLD/STO
 reasons; the handoff identifies the measurement that can change them. This is an
 integration claim, not a claim that the component methods are new.
 
-**What exists today.** Auditable public model findings and counterevidence, a
+**What exists today.** Auditable public model findings and counterevidence, including the v45 tumour-killing boundary for griseofulvin/norlichexanthone and computational BUB1B inhibitors, a
 conditional experimental plan, and an offline demo of 17 synthetic cases plus the
 actual unmeasured HOLD state. The method distinguishes a lower error fraction from
 higher useful output. Software checks establish implementation, not biological

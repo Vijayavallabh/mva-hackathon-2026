@@ -9007,3 +9007,28 @@ bytes), and the verified release snapshot is
 `results/feat009/jvv7_track2_research_v43-verified40`. No video was recorded, no
 URL was hosted, no authenticated quota/provider check was performed, and no
 submission occurred.
+
+## Session 91 — 2026-10-20: v45 checkpoint/computational-drug falsification review
+
+A targeted public literature review added `notes/track2-literature-v45.md`, its audit,
+checker and tests. Seven archived searches covered BUBR1/MCC, BUBR1 corona,
+constitutional-MVA treatment, BUB1B drug repurposing, mTOR/rapamycin chromosome
+segregation in human cells, and norlichexanthone/TPR. Four selected records were:
+the 2026 griseofulvin/norlichexanthone Mad1-BubR1/TPR tumour-killing study; the 2026
+computational TPX2/BUB1B breast-cancer inhibitor study; the Aurora-B/BubR1 K250
+acetylation axis; and the BUB1/BUBR1 corona-scaffold study. The first two were
+abstract/metadata only and closed access.
+
+The consequence is a stronger tumour/deficient-normal boundary, not a new drug.
+Griseofulvin, norlichexanthone and vorinostat are not promoted for constitutional MVA.
+No new GPU campaign was run. Everolimus remains a mechanistic probe on HOLD; HCQ
+remains reserve; no rescue priority, clinical exposure margin, phase result or biological
+validation is established.
+
+The report/lab handoff/reviewer brief/judge questions/reviewer and owner guides were
+updated. A fresh 11-page report/workbook export was rendered at
+`results/feat009/v43-documents-final-20261020-3`; the verified recording-materials
+bundle is `results/feat009/jvv7_track2_video_materials_v43_51.zip` (108 files,
+2,787,981 bytes); and the verified release snapshot is
+`results/feat009/jvv7_track2_research_v43-verified56`. No video was recorded or hosted,
+and no submission occurred.

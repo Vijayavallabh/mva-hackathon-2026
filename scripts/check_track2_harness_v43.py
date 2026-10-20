@@ -53,7 +53,7 @@ STATUS = {
     'upload_performed': False, 'upload_ready': False, 'provider_settings_verified': False,
     'licensing_scope_resolved': False,
 }
-LITERATURE_STATE = {'version': 43, 'status': 'complete', 'kind': 'targeted_public_contrary_evidence_refresh', 'note': 'notes/track2-literature-v43.md', 'audit': 'notes/track2-literature-audit-v43.json', 'check': 'scripts/check_track2_literature_v43.py', 'public_receipts': 5, 'selected_sources': 2, 'searches': 3, 'drug_disposition_change': False, 'biological_validation': False, 'full_text_systematic_review': False, 'prior_v41_addendum': 'notes/track2-literature-v41.md'}
+LITERATURE_STATE = {'version': 45, 'status': 'complete', 'kind': 'targeted_checkpoint_and_computational_drug_falsification_review', 'note': 'notes/track2-literature-v45.md', 'audit': 'notes/track2-literature-audit-v45.json', 'check': 'scripts/check_track2_literature_v45.py', 'public_receipts': 14, 'selected_sources': 4, 'searches': 7, 'drug_disposition_change': False, 'biological_validation': False, 'full_text_systematic_review': False, 'new_gpu_campaign': False, 'prior_v41_addendum': 'notes/track2-literature-v41.md', 'prior_v43_addendum': 'notes/track2-literature-v43.md'}
 REQUIREMENTS44_STATE = {'version':44,'status':'complete','kind':'anonymous_live_deadline_refresh','review':'notes/track2-requirements-review-v44.md','audit':'notes/track2-requirements-v44.json','check':'scripts/check_track2_requirements_v44.py','official_sources':7,'public_threads':31,'closed_threads':16,'thread_content_reread':False,'requirements_changed':False,'anonymous_get_only':True,'prior_full_v42_addendum':'notes/track2-requirements-review-v42.md'}
 CURRENT_REVIEW = {
     'script': 'scripts/check_track2_harness_v43.py',
@@ -161,7 +161,7 @@ def validate(state, features, documents):
         'report_renderer':f'scripts/render_track2_report_v{version}.mjs',
         'bundle_script':f'scripts/track2_bundle_v{version}.py',
     }
-    roles.update({'literature_note':'notes/track2-literature-v43.md','literature_audit':'notes/track2-literature-audit-v43.json','literature_check':'scripts/check_track2_literature_v43.py'})
+    roles.update({'literature_note':'notes/track2-literature-v45.md','literature_audit':'notes/track2-literature-audit-v45.json','literature_check':'scripts/check_track2_literature_v45.py','literature_note_v45':'notes/track2-literature-v45.md','literature_audit_v45':'notes/track2-literature-audit-v45.json','literature_check_v45':'scripts/check_track2_literature_v45.py'})
     roles.update({'requirements_v42_review':'notes/track2-requirements-review-v42.md','requirements_v42_audit':'notes/track2-requirements-v42.json','requirements_v42_check':'scripts/check_track2_requirements_v42.py'})
     roles.update({'requirements_v44_review':'notes/track2-requirements-review-v44.md','requirements_v44_audit':'notes/track2-requirements-v44.json','requirements_v44_check':'scripts/check_track2_requirements_v44.py'})
     roles.update({'reviewer_guide':'notes/track2-reviewer-guide-v45.md','owner_readiness':'notes/track2-owner-readiness-v45.md','submission_prep':'notes/track2-submission-prep-v1.md','submission_prep_check':'scripts/check_track2_submission_prep_v1.py','submission_prep_test':'scripts/test_track2_submission_prep_v1.py','submission_materials':'notes/track2-submission-materials-v1.json'})
@@ -169,8 +169,8 @@ def validate(state, features, documents):
     roles['narration_metrics']='notes/track2-narration-v40.json'
     require(state['artifacts'] == roles, 'Mixed, missing or unsafe artifact paths')
     require(state.get('community_kit_bundle') == 'results/feat009/jvv7_track2_community_kit_v37.zip', 'Stale community kit path')
-    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified53', 'Stale snapshot path')
-    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_48.zip',
+    require(state['snapshot'] == f'results/feat009/jvv7_track2_research_v{version}-verified56', 'Stale snapshot path')
+    require(state['video_materials_bundle'] == f'results/feat009/jvv7_track2_video_materials_v{version}_51.zip',
             'Stale recording-materials bundle path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['render_directory']),
             'Stale or unsafe render-directory path')
@@ -323,7 +323,7 @@ def check(root=ROOT):
     audit = campaign_audit(root)
     release = importlib.import_module("track2_release_v41")
     presentation = release.scientific_checks()
-    literature_addendum = importlib.import_module('check_track2_literature_v43').check()
+    literature_addendum = importlib.import_module('check_track2_literature_v45').check()
     require(literature_addendum['passed'],'Literature provenance review failed')
     requirements_addendum = importlib.import_module('check_track2_requirements_v44').check()
     require(requirements_addendum['passed'],'Anonymous requirements refresh failed')

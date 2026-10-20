@@ -103,6 +103,20 @@ mitotic lagging-DNA/anaphase-bridge counts to all-enrolled daughter fate and lat
 useful output/recovery. A ratio-only endpoint remains invalid. Everolimus stays on
 HOLD; the new literature strengthens the branch question without qualifying it.
 
+## 1d. V45 checkpoint and computational-drug falsification addendum
+
+A targeted [public literature review](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-literature-v45.md)
+identified two additional 2026 antimitotic records. Griseofulvin was reported to bind
+Mad1/BubR1 and interrupt Mad1-Mad2; its shunt product norlichexanthone was reported
+to bind TPR, disrupt SAC assembly and nuclear transport, and kill tumour cells.
+A separate computational breast-cancer study docked inhibitors to TPX2/BUB1B and
+favored vorinostat. Both were abstract/metadata only. They are **tumour-killing
+contexts**, not deficient-normal rescue evidence. Griseofulvin, norlichexanthone and
+vorinostat are therefore not promoted for MVA. This reinforces the need to keep
+tumour-cell killing and useful non-cancer function separate, and to measure corona,
+MCC, segregation, all-enrolled daughter fate, useful output and injury together.
+No new GPU campaign follows from these abstracts.
+
 ## 2. Counterevidence changed the experiment
 
 | Evidence | Required change |

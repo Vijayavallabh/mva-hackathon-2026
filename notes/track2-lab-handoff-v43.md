@@ -83,3 +83,10 @@ measurement and statistical design. Each lab should cost its own stage after a
 feasibility review. Neither a calendar promise nor a sample-size number can be derived
 from the computational data. The public schema and stop rules transfer; biological
 qualification, injury limits and exposure assumptions do not.
+
+The new 2026 antimitotic BUBR1/Mad1/BubR1/TPR and BUB1B-docking studies reinforce this
+boundary. They report tumour-cell killing or cancer-model docking, not useful function
+in a deficient-normal model. Griseofulvin, norlichexanthone and vorinostat remain
+excluded from the constitutional-MVA branch. The public schema and stop rules still
+transfer; tumour-killing endpoints do not.
+

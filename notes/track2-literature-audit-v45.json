@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-10-20T16:25:00Z",
+  "purpose": "Targeted 2025-2026 checkpoint/corona/computational-drug falsification review; no subject data.",
+  "searches": [
+    {"name":"PubMed BUBR1 mitotic checkpoint complex 2025-2026","database":"PubMed eSearch","found":10,"query_receipt":"sources/public-literature-v45/pubmed-bubr1-mcc-2025-2026-search.json"},
+    {"name":"PubMed BUBR1 kinetochore corona 2025-2026","database":"PubMed eSearch","found":3,"query_receipt":"sources/public-literature-v45/pubmed-bubr1-corona-2025-2026-search.json"},
+    {"name":"PubMed mosaic variegated aneuploidy treatment 2025-2026","database":"PubMed eSearch","found":1,"query_receipt":"sources/public-literature-v45/pubmed-mva-treatment-2025-2026-search.json"},
+    {"name":"PubMed BUB1B drug repurposing 2025-2026","database":"PubMed eSearch","found":3,"query_receipt":"sources/public-literature-v45/pubmed-bub1b-drug-repurposing-2025-2026-search.json"},
+    {"name":"PubMed mTOR chromosome segregation human cells 2020-2026","database":"PubMed eSearch","found":11,"query_receipt":"sources/public-literature-v45/pubmed-mtor-chromosome-segregation-human-2020-2026-search.json"},
+    {"name":"PubMed rapamycin chromosome segregation human cells 2020-2026","database":"PubMed eSearch","found":3,"query_receipt":"sources/public-literature-v45/pubmed-rapamycin-chromosome-segregation-human-2020-2026-search.json"},
+    {"name":"PubMed/OpenAlex norlichexanthone TPR","database":"PubMed/OpenAlex","found":1,"query_receipt":"sources/public-literature-v45/openalex-norlichexanthone-search.json"}
+  ],
+  "selected_sources": [
+    {"doi":"10.1016/j.bioorg.2026.110130","pmid":42330849,"title":"Norlichexanthone, a shunt product of Griseofulvin, disrupts spindle assembly checkpoint and nucleocytoplasmic transport by targeting TPR in the nuclear pore complex.","journal":"Bioorganic Chemistry","published":"2026-09-15","receipt":"sources/public-literature-v45/pubmed-42330849-efetch.xml","sha256":"34ccb8975aebabafa072fa327ae7708318d97daed799b61b349c3bb43ff0bfee","reading_depth":["abstract","metadata"],"full_text_obtained":false},
+    {"doi":"10.1016/j.compbiolchem.2026.109012","pmid":41895167,"title":"In silico discovery of selective TPX2 and BUB1B inhibitors as novel antimitotic agents in breast cancer therapy.","journal":"Computational Biology and Chemistry","published":"2026-08","receipt":"sources/public-literature-v45/pubmed-41895167-efetch.xml","sha256":"21545da24d2e59fb8c2aaacd7be232f33c8f160ded0e14c6c0f03c083ab33a99","reading_depth":["abstract","metadata"],"full_text_obtained":false},
+    {"doi":"10.1093/nar/gkaf1517","pmid":41533580,"title":"Linking kinetochore attachment to checkpoint control: the role of Aurora B in BubR1 acetylation.","journal":"Nucleic Acids Research","published":"2026-01-14","receipt":null,"sha256":null,"reading_depth":["abstract"],"full_text_obtained":false},
+    {"doi":"10.1126/sciadv.ady6890","pmid":40938979,"title":"The BUB1 and BUBR1 paralogs scaffold the kinetochore fibrous corona.","journal":"Science Advances","published":"2025-09-12","receipt":null,"sha256":null,"reading_depth":["abstract"],"full_text_obtained":false}
+  ],
+  "disposition_changes": {
+    "everolimus":"unchanged_mechanistic_probe_only_on_hold",
+    "hydroxychloroquine":"unchanged_reserve",
+    "nad_sirt2":"unchanged_not_promoted",
+    "griseofulvin":"not_promoted_tumour_killing_context_only",
+    "norlichexanthone":"not_promoted_tumour_killing_context_only",
+    "vorinostat":"unchanged_deprioritized_tumour_only",
+    "rescue_priority":null,
+    "clinical_exposure_margin":null,
+    "phase":"unconfirmed"
+  },
+  "biological_validation":false,
+  "full_text_systematic_review":false,
+  "new_gpu_campaign":false,
+  "limitations":[
+    "Not a systematic review; targeted falsification searches only",
+    "The two newly selected 2026 drug-discovery papers were abstract/metadata only and are closed access",
+    "No full text, methods, dose, exposure or non-cancer outcome was assessed for those two records",
+    "No human MVA rescue study was found; missing evidence is not disproof"
+  ]
+}

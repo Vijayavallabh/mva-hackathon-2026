@@ -11,16 +11,17 @@ receipt is established.
 ## Exact current deliverables
 
 - Report source: `notes/track2-report-v43.md`
-- Report PDF/workbook directory: `results/feat009/v43-documents-final-20261020-2`
+- Report PDF/workbook directory: `results/feat009/v43-documents-final-20261020-3`
 - Slide deck source: `notes/track2-slides-v43.html`
 - Rendered slides/PDF: `results/feat009/v43-slides-final-20261020-2`
-- Methods workbook: `results/feat009/v43-documents-final-20261020-2/jvv7_track2_methods_v43.xlsx`
+- Methods workbook: `results/feat009/v43-documents-final-20261020-3/jvv7_track2_methods_v43.xlsx`
 - Recording materials ZIP: `results/feat009/jvv7_track2_video_materials_v43_32.zip`
 - Verified release snapshot: `results/feat009/jvv7_track2_research_v43-verified38`
 - Public repository HEAD: `8eaa21ec998bf14a596e7f6de2632db807a50c51`
 
 No recorded video or video URL exists. These exact local deliverables are not yet
-an uploaded submission or a submission receipt. Use the exact-field checklist in
+an uploaded submission or a submission receipt. The v45 literature review adds only
+contrary tumour-context boundaries; it does not change a drug disposition. Use the exact-field checklist in
 [submission prep](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-submission-prep-v1.md)
 and verify it with `scripts/check_track2_submission_prep_v1.py`.
 

@@ -11,7 +11,7 @@ import fitz
 
 ROOT = Path(__file__).resolve().parents[1]
 SLIDES = ROOT / 'results/feat009/v43-slides-final-20261020-2'
-DOCS = ROOT / 'results/feat009/v43-documents-final-20261020-2'
+DOCS = ROOT / 'results/feat009/v43-documents-final-20261020-3'
 
 
 def digest(path):
@@ -25,7 +25,7 @@ def luminance(color):
 
 
 def main():
-    destinations = [ROOT/f'notes/track2-v43-{kind}-audit-final.json' for kind in ('render', 'documents')]
+    destinations = [ROOT/f'notes/track2-v43-{kind}-audit-v45.json' for kind in ('render', 'documents')]
     if any(p.exists() or p.is_symlink() for p in destinations):
         raise ValueError('Existing audits are protected')
     render = json.loads((SLIDES/'render.json').read_text())
@@ -69,7 +69,7 @@ def main():
         raise ValueError('Slide geometry')
     with fitz.open(DOCS/'jvv7_track2_report_v43.pdf') as report:
         text = ' '.join(' '.join(p.get_text().split()) for p in report)
-        if not 6 <= len(report) <= 14 or any(term not in text for term in ['0.1223-0.1371', '67,584', '0.6572', '558,299', '838,224', '31,046,046', 'November 23', 'cnb@sagebase.org', 'We acknowledge their trust', 'V43 TORC1-to-segregation contrary-evidence addendum', 'direct mTORC1 engagement']):
+        if not 6 <= len(report) <= 14 or any(term not in text for term in ['0.1223-0.1371', '67,584', '0.6572', '558,299', '838,224', '31,046,046', 'November 23', 'cnb@sagebase.org', 'We acknowledge their trust', 'V45 checkpoint and computational-drug falsification', 'norlichexanthone']):
             raise ValueError('Report page/text integrity')
         pages = len(report)
     render['author_visual_review'] = 'Programmatic PDF/font, geometry, hash and palette checks completed; no independent or manual visual review is claimed.'

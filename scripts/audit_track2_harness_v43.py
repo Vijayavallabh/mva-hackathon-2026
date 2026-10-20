@@ -57,7 +57,7 @@ with contextlib.redirect_stdout(captured):
 result = json.loads(captured.getvalue())
 assert result['passed'] and result['research_addendum']['version'] == 19
 assert result['presentation_version'] == 43 and result['harness_version'] == 43
-assert result['literature_refresh']['version'] == 43 and result['literature_refresh']['passed'] is True
+assert result['literature_refresh']['version'] == 45 and result['literature_refresh']['passed'] is True
 assert result['literature_refresh']['drug_dispositions_changed'] is False
 assert result['rnai_addendum']['version'] == 23 and result['rnai_addendum']['passed']
 assert result['crispr_addendum']['version'] == 25 and result['crispr_addendum']['passed']

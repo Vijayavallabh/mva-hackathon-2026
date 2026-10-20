@@ -61,6 +61,12 @@ no subject data or GPUs. That proves a portable implementation, not biological
 transfer. New tissues, alleles and diseases require fresh qualification and margins.
 No external adoption or usability measurement has yet been performed.
 
+**Do new BUB1B antimitotic papers change the drug proposal?** No. The 2026
+griseofulvin/norlichexanthone and computational BUB1B-inhibitor reports concern tumour
+cell killing or cancer-model docking. They do not show useful function in a deficient-
+normal model. They reinforce tumour/deficient-normal separation rather than promoting
+a new drug.
+
 **What would falsify the main route?** A valid model/branch qualification that rejects
 the prerequisite stops that branch. Valid confirmation excluding meaningful benefit
 stops the tested claim. Unacceptable injury stops advancement despite benefit.
