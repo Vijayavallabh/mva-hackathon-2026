@@ -106,7 +106,7 @@ Be able to explain, without reading a slide:
 - Why everolimus remains a conditional probe and what would change that choice.
 - What the contribution adds, without describing established methods as inventions.
 
-Use the [own-voice guide](track2-recording-guide-v40.md) and
+Use the [own-voice guide](track2-recording-guide-v42.md) and
 [teleprompter](track2-teleprompter-v40.html), record an uninterrupted take and measure
 the exported duration. Your own rehearsal is valuable but is not independent review.
 No one has been contacted on your behalf, and no family or MVA Society contact is

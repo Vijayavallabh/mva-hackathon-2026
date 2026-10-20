@@ -13,7 +13,7 @@ October 24 deadline and 180-second video duration. Thread 32 also permits a clea
 labeled published-paper example in the pitch while the written report covers the
 challenge case; no script rewrite is required.
 
-1. The owner chose their own voice. Use the [recording guide](track2-recording-guide-v40.md)
+1. The owner chose their own voice. Use the [recording guide](track2-recording-guide-v42.md)
    and [offline teleprompter](track2-teleprompter-v40.html). Rehearse the 367-word script with nine slides. Record and measure the three-minute
    video, keep the full acknowledgement visible and host it on YouTube or Vimeo.
    Script timestamps are allocations, not measured runtime.
