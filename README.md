@@ -288,9 +288,9 @@ throughout research and before promotion/release. Apply the same standard to ben
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
 Current materials: [report source](notes/track2-report-v50.md),
-[369-word narration](notes/track2-pitch-v46.md), [plain transcript](notes/track2-transcript-v46.txt),
+[369-word narration](notes/track2-pitch-v50.md), [plain transcript](notes/track2-transcript-v50.txt),
 [nine-slide deck](notes/track2-slides-v50.html) and
-[video description](notes/track2-video-description-v47.md). The
+[video description](notes/track2-video-description-v50.md). The
 [v41 literature addendum](notes/track2-literature-v41.md), the
 [v43 TORC1-segregation addendum](notes/track2-literature-v43.md), [v45 checkpoint/computational-drug addendum](notes/track2-literature-v45.md) and their
 [audits](notes/track2-literature-audit-v45.json) add public-source readout evidence

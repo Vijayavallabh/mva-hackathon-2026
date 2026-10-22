@@ -134,14 +134,14 @@ def validate(state, features, documents):
         'community_kit_guide':'notes/track2-community-kit-v42.md',
         'lab_handoff':'notes/track2-lab-handoff-v51.md',
         'judge_questions':'notes/track2-judge-questions-v44.md',
-        'recording_guide':'notes/track2-recording-guide-v46.md',
-        'teleprompter':'notes/track2-teleprompter-v46.html',
+        'recording_guide':'notes/track2-recording-guide-v50.md',
+        'teleprompter':'notes/track2-teleprompter-v50.html',
         'reviewer_brief':'notes/track2-reviewer-brief-v50.md',
         'competition_strategy':'notes/track2-competition-strategy-v42.md',
         'slides':f'notes/track2-slides-v{version}.html',
-        'pitch':'notes/track2-pitch-v46.md',
-        'transcript':'notes/track2-transcript-v46.txt',
-        'video_description':'notes/track2-video-description-v47.md',
+        'pitch':'notes/track2-pitch-v50.md',
+        'transcript':'notes/track2-transcript-v50.txt',
+        'video_description':'notes/track2-video-description-v50.md',
         'design_review':'notes/track2-v48-design.md',
         'evidence':'notes/track2-evidence-v21.json', 'validation':'notes/track2-validation-v21.md',
         'falsification_register':'notes/track2-falsification-register-v21.json',
@@ -167,12 +167,12 @@ def validate(state, features, documents):
     roles.update({'requirements_v44_review':'notes/track2-requirements-review-v44.md','requirements_v44_audit':'notes/track2-requirements-v44.json','requirements_v44_check':'scripts/check_track2_requirements_v44.py','requirements_v52_review':'notes/track2-requirements-review-v52.md','requirements_v52_audit':'notes/track2-requirements-v52.json','requirements_v52_check':'scripts/check_track2_requirements_v52.py','requirements_v52_test':'scripts/test_track2_requirements_v52.py'})
     roles.update({'reviewer_guide':'notes/track2-reviewer-guide-v50.md','owner_readiness':'notes/track2-owner-readiness-v50.md','submission_prep':'notes/track2-submission-prep-v5.md','submission_prep_check':'scripts/check_track2_submission_prep_v5.py','submission_prep_test':'scripts/test_track2_submission_prep_v5.py','submission_materials':'notes/track2-submission-materials-v10.json'})
     roles.update({'external_review_adjudication_v46':'notes/track2-external-review-v46.md','candidate_comparison': 'notes/track2-candidate-comparison-v51.md', 'rehearsal_adjudication': 'notes/track2-rehearsal-adjudication-v39.md', 'rehearsal_sources': 'notes/track2-rehearsal-sources-v39.json', 'qualification_amendment': 'notes/track2-qualification-amendment-v39.md', 'external_review_packet': 'notes/track2-external-review-packet-v49.md', 'recording_audit': 'notes/track2-prompter-audit-v46.json'})
-    roles['narration_metrics']='notes/track2-narration-v46.json'
-    roles.update({'v50_render_audit':'notes/track2-v50-render-audit-v2.json','v50_documents_audit':'notes/track2-v50-documents-audit-v1.json','v50_submission_materials_audit':'notes/track2-submission-materials-v10.json','v50_public_review':'notes/track2-public-review-v50.json','v48_design_note':'notes/track2-v48-design.md'})
+    roles['narration_metrics']='notes/track2-narration-v50.json'
+    roles.update({'v50_render_audit':'notes/track2-v50-render-audit-v3.json','v50_documents_audit':'notes/track2-v50-documents-audit-v1.json','v50_submission_materials_audit':'notes/track2-submission-materials-v10.json','v50_public_review':'notes/track2-public-review-v50.json','v48_design_note':'notes/track2-v48-design.md'})
     require(state['artifacts'] == roles, 'Mixed, missing or unsafe artifact paths')
     require(state.get('community_kit_bundle') == 'results/feat009/jvv7_track2_community_kit_v37.zip', 'Stale community kit path')
     require(state['snapshot'] == 'results/feat009/jvv7_track2_research_v48-verified154', 'Stale snapshot path')
-    require(state['video_materials_bundle'] == 'results/feat009/jvv7_track2_video_materials_v50_35.zip',
+    require(state['video_materials_bundle'] == 'results/feat009/jvv7_track2_video_materials_v50_36.zip',
             'Stale recording-materials bundle path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['render_directory']),
             'Stale or unsafe render-directory path')
@@ -211,7 +211,7 @@ def validate(state, features, documents):
             }
             expected = role_versions.get(role.lower(), version)
             require(int(found)==expected, 'Historical version mislabeled current: '+name)
-    require('notes/track2-pitch-v46.md' in documents['session-handoff.md'], 'Stale transcript handoff')
+    require('notes/track2-pitch-v50.md' in documents['session-handoff.md'], 'Stale transcript handoff')
     require(f'scripts/track2_release_v{version}.py' in documents['AGENTS.md'], 'Stale release entry point')
     for name, document in documents.items():
         for route in [CURRENT_REVIEW['script'], CURRENT_REVIEW['guide'], RESEARCH_PATHS['report']]:

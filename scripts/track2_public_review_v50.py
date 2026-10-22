@@ -5,7 +5,7 @@ from pathlib import Path
 import re
 import track2_public_review_v39 as previous
 import track2_narration_v46 as timing
-import build_track2_recording_v46 as recording
+import build_track2_recording_v50 as recording
 import track2_public_review_v36 as prior
 import track2_demo_v37 as demo
 import build_track2_demo_v37 as builder
@@ -106,6 +106,13 @@ def requirements_checks(r,c):
     return dict(revision=REVISION,public_discussions=30,visible_comments=84,closed_discussions=14)
 
 
+def optical_report_numbers(results,report):
+    """The v50 pitch no longer displays optical statistics; verify the report numbers only."""
+    for arm,r in results['arms'].items():
+        require(f"{r['cells']:,}" in report,'Report cell count differs: '+arm)
+        for field in ['full_profile','full_median_training_preprocessing']:
+            require(f"{r['baselines'][field]['macro_mrr']:.6f}" in report,'Report baseline differs: '+arm+'/'+field)
+
 def narration(pitch):
     cues=timing.parse(pitch)
     rows=[(c['head'],c['body']) for c in cues]
@@ -116,9 +123,9 @@ def narration(pitch):
                    'independent perturbation and restoration','this example is synthetic','track every cell',
                    'early relative sensitivity can reverse','whole blood is not free tissue','preclinical review',
                    'invalid assays hold inference','injury stops advancement','no wet-lab experiment has been performed',
-                   'hcq remains reserve','eighteen evidence cases','without requesting another family sample']:
+                   'hcq remains reserve','without requesting another family sample']:
         require(phrase in normalized(spoken).lower(),'Narration boundary missing: '+phrase)
-    transcript='Track 2 v46 - read-aloud transcript\nRead the paragraphs; headings and times are cues, not narration.\n\n'
+    transcript='Track 2 v50 - read-aloud transcript\nRead the paragraphs; headings and times are cues, not narration.\n\n'
     for h,b in rows:transcript+='Slide '+h.replace(' / ',' | ')+'\n'+b.strip()+'\n\n'
     return counts,transcript.rstrip()+'\n'
 
@@ -153,15 +160,15 @@ def check():
     literature_result=literature.check()
     report=(ROOT/'notes/track2-report-v50.md').read_text();answers=report_checks(report)
     deck=(ROOT/'notes/track2-slides-v50.html').read_text();v50_result=v50_checks(report,deck)
-    prior.optical_numbers(json.loads((ROOT/'notes/track2-optical-results-v36.json').read_text()),report,deck)
+    optical_report_numbers(json.loads((ROOT/'notes/track2-optical-results-v36.json').read_text()),report)
     requirements=requirements_checks(*[json.loads((ROOT/f'notes/track2-{n}-v39.json').read_text()) for n in ['requirements','community-audit']])
-    counts,transcript=narration((ROOT/'notes/track2-pitch-v46.md').read_text())
-    require((ROOT/'notes/track2-transcript-v46.txt').read_text()==transcript,'Transcript differs')
-    pitch=(ROOT/'notes/track2-pitch-v46.md').read_text()
-    require(json.loads((ROOT/'notes/track2-narration-v46.json').read_text())==timing.summary(pitch),'Narration metrics differ')
-    require(timing.guide_metrics(pitch) in (ROOT/'notes/track2-recording-guide-v46.md').read_text(),'Recording guide rates differ')
-    require(recording.rendered()==(ROOT/'notes/track2-teleprompter-v46.html').read_text(),'Teleprompter differs')
-    description=(ROOT/'notes/track2-video-description-v46.md').read_text()
+    counts,transcript=narration((ROOT/'notes/track2-pitch-v50.md').read_text())
+    require((ROOT/'notes/track2-transcript-v50.txt').read_text()==transcript,'Transcript differs')
+    pitch=(ROOT/'notes/track2-pitch-v50.md').read_text()
+    require(json.loads((ROOT/'notes/track2-narration-v50.json').read_text())==timing.summary(pitch),'Narration metrics differ')
+    require(timing.guide_metrics(pitch) in (ROOT/'notes/track2-recording-guide-v50.md').read_text(),'Recording guide rates differ')
+    require(recording.rendered()==(ROOT/'notes/track2-teleprompter-v50.html').read_text(),'Teleprompter differs')
+    description=(ROOT/'notes/track2-video-description-v50.md').read_text()
     require(f'{sum(counts)} narration words' in description and normalized(answers['B9']) in normalized(description),'Video disclosure/count differs')
     require(acknowledgement() in normalized(description),'Video acknowledgement missing')
     require(builder.rendered()==(ROOT/'notes/track2-demo-v37.html').read_text(),'Generated demo differs')
@@ -170,7 +177,7 @@ def check():
         suffix='html' if name=='slides' else 'md'
         document=(ROOT/f'notes/track2-{name}-v48.{suffix}').read_text()
         repository_links(document);command_paths(document)
-    document=(ROOT/'notes/track2-pitch-v46.md').read_text()
+    document=(ROOT/'notes/track2-pitch-v50.md').read_text()
     repository_links(document);command_paths(document)
     document=(ROOT/'notes/track2-lab-handoff-v43.md').read_text()
     repository_links(document);command_paths(document)
@@ -183,7 +190,7 @@ def check():
     repository_links(document);command_paths(document)
     document=(ROOT/'notes/track2-recording-guide-v42.md').read_text()
     repository_links(document);command_paths(document)
-    document=(ROOT/'notes/track2-video-description-v46.md').read_text()
+    document=(ROOT/'notes/track2-video-description-v50.md').read_text()
     repository_links(document);command_paths(document)
     document=(ROOT/'notes/track2-external-review-packet-v43.md').read_text()
     repository_links(document);command_paths(document)

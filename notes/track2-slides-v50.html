@@ -132,42 +132,32 @@ nav{position:fixed;left:50%;top:6px;transform:translateX(-50%);display:flex;gap:
 <footer><span class="sources"><a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-orthogonal-v29.md">Protein controls</a> &nbsp; <a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-perturbseq-v31.md">RPE1</a> &nbsp; <a href="https://doi.org/10.1002/jcsm.70274">RAPA-EX-01</a></span><span class="page">5 / 9</span></footer>
 </section>
 
-<section class="slide optical" id="slide-6" aria-label="Favorable BUB1B interphase morphology with failed neural gain and missing mitotic coverage">
-<header><span class="chapter">Optical evidence</span><span>Public HeLa / corrected inputs</span></header>
-<h1>A BUB1B imaging lead with defined limits.</h1>
-<p class="sub">Simple profiles retain a lead; neural models miss the prespecified 0.02 gain threshold.</p>
-<figure class="diagram"><svg viewBox="0 0 1152 330" role="img" aria-label="BUB1B full-profile interphase ranks 1, 3, 3 and 2 among 994 genes. Neither arm passes the required neural gain.">
-<title>Cross-guide agreement is an assay lead, not functional rescue</title>
-<text x="0" y="30" class="strong">Interphase BUB1B ranks</text>
-<rect x="0" y="58" width="99" height="94" rx="14" fill="#d8eee5"/>
-<rect x="119" y="58" width="99" height="94" rx="14" fill="#d8eee5"/>
-<rect x="238" y="58" width="99" height="94" rx="14" fill="#d8eee5"/>
-<rect x="357" y="58" width="99" height="94" rx="14" fill="#d8eee5"/>
-<text id="bub1b-rank-1" x="49" y="126" text-anchor="middle" class="number green">1</text>
-<text id="bub1b-rank-2" x="168" y="126" text-anchor="middle" class="number green">3</text>
-<text id="bub1b-rank-3" x="287" y="126" text-anchor="middle" class="number green">3</text>
-<text id="bub1b-rank-4" x="406" y="126" text-anchor="middle" class="number green">2</text>
-<text x="0" y="195">Full means / 4 guides / 994 genes</text>
-<text x="0" y="237" class="small muted">Fourth guide varies by method and plate.</text>
-<line x1="538" y1="0" x2="538" y2="250" stroke="#425c6b" stroke-width="1"/>
-<text x="580" y="30" class="strong">Global retrieval</text><text x="580" y="64" class="small muted">MRR = mean reciprocal rank</text>
-<text x="800" y="97" class="small muted">Best simple</text><text x="960" y="97" class="small muted">Four neural seeds</text>
-<text x="580" y="141">Mitotic</text><text id="mitotic-baseline" x="800" y="141">0.0475</text><text id="mitotic-neural-range" x="960" y="141">0.0504–0.0555</text>
-<text x="580" y="188">Interphase</text><text id="interphase-baseline" x="800" y="188">0.2341</text><text id="interphase-neural-range" x="960" y="188">0.1436–0.1480</text>
-<text x="580" y="235" class="small iris">Prespecified gain ≥0.02: neither arm passes</text>
-<line x1="0" y1="267" x2="1152" y2="267" stroke="#425c6b" stroke-width="1"/>
-<text x="0" y="313">Mitotic BUB1B: insufficient guides. A missing result stays missing.</text>
+<section class="slide optical" id="slide-6" aria-label="Public evidence supports mechanism qualification but not rescue">
+<header><span class="chapter">Why this candidate</span><span>jvv7 / Track 2</span></header>
+<h1>Evidence supports a test, not a therapy.</h1>
+<p class="sub">Everolimus is the concrete conditional probe; HCQ stays reserve.</p>
+<figure class="diagram"><svg viewBox="0 0 1152 330" role="img" aria-label="Approved mTORC1 pharmacology and a bounded carrier-mouse lead justify a conditional test, while expression and imaging evidence qualify models rather than establish rescue."><title>Approved mechanism plus bounded lead support a conditional test, not rescue</title>
+<text x="0" y="39" class="strong green">Approved route</text>
+<text x="0" y="98">mTORC1 inhibitor</text>
+<text x="0" y="148">Concrete downstream perturbation</text>
+<text x="0" y="198">Known pharmacology and safety profile</text>
+<path d="M490 0V225" stroke="#b6cbd0" stroke-width="2"/>
+<text x="550" y="39" class="strong iris">Bounded lead</text>
+<text x="550" y="98">Carrier-muscle mTORC1 signal</text>
+<text x="550" y="148">Different allele and tissue</text>
+<text x="550" y="198">No rapalog rescue shown</text>
+<path d="M0 252H1152" stroke="#b6cbd0" stroke-width="2"/>
+<text x="0" y="300" class="small muted">Public expression/imaging evidence qualifies models; no drug-only profile establishes rescue.</text>
 </svg></figure>
 <p class="note">HeLa lacks functional p53. Retrieval does not establish non-cancer rescue.</p>
-<footer><span class="sources"><a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-optical-v36.md">Full comparison, controls and limitations</a></span><span class="page">6 / 9</span></footer>
+<footer><span class="sources"><a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v50.md">Candidate rationale and limits</a> &nbsp; <a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-candidate-comparison-v51.md">Candidate comparison</a></span><span class="page">6 / 9</span></footer>
 </section>
 
-<section class="slide gates dark" id="slide-7" aria-label="Five evidence states have distinct consequences">
-<header><span class="chapter">An inspectable research tool</span><span>All current biological gates remain unresolved</span></header>
-<h1>Explore 18 evidence cases, offline.</h1>
-<p class="sub">17 synthetic cases + the actual unmeasured research state.</p>
-<figure class="diagram"><svg viewBox="0 0 1152 340" role="img" aria-label="Invalid assays hold inference. Unknown or imprecise results hold advancement. A valid interval excluding meaningful benefit stops the tested claim. Failed safety stops advancement for review. All requirements met permits preclinical review only. No biological result or numerical margin is supplied.">
-<title>Invalidity, uncertainty, scoped futility, injury and further review are distinct</title>
+<section class="slide gates dark" id="slide-7" aria-label="Safety and unresolved evidence gate every advancement">
+<header><span class="chapter">Reasoning under uncertainty</span><span>All current biological gates remain unresolved</span></header>
+<h1>Missing evidence holds the candidate.</h1>
+<p class="sub">A gene-drug rationale is not enough to advance.</p>
+<figure class="diagram"><svg viewBox="0 0 1152 340" role="img" aria-label="Invalid assays hold inference, unknown or imprecise results hold advancement, excluded benefit stops the claim, failed safety stops advancement for review, and all requirements met permits preclinical review only."><title>Invalidity, uncertainty, scoped futility, injury and further review are distinct</title>
 <text id="gate-invalid" x="0" y="36" class="strong mint">Invalid assay</text><text id="gate-inference" x="650" y="36" class="strong">Hold inference</text>
 <path d="M0 58H1152" stroke="#54787c"/>
 <text id="gate-unknown" x="0" y="100" class="strong mint">Unknown / imprecise</text><text id="gate-hold" x="650" y="100" class="strong">Hold advancement</text>
@@ -179,7 +169,7 @@ nav{position:fixed;left:50%;top:6px;transform:translateX(-50%);display:flex;gap:
 <text id="gate-all" x="0" y="295" class="strong mint">All requirements met</text><text id="gate-review" x="650" y="295" class="strong">Preclinical review only</text>
 </svg></figure>
 <p class="note">Software verification only. Biological thresholds need fresh qualified evidence; exposure margins remain unknown.</p>
-<footer><span class="sources"><a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-demo-v37.html">Interactive demo and exact inputs</a> · <a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v50.md">Benefit, injury and exposure remain unmeasured</a></span><span class="page">7 / 9</span></footer>
+<footer><span class="sources"><a href="https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v50.md">Reasoning and boundaries</a></span><span class="page">7 / 9</span></footer>
 </section>
 
 <section class="slide contribution" id="slide-8" aria-label="Public CPU review and staged biological validation support reproducible decisions">

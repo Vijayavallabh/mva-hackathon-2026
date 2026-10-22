@@ -6,8 +6,8 @@ qualification sequence, synthetic-arm labels, 369-word own-voice narration and
 recording metrics while adding the TORC1-segregation contrary-evidence refresh,
 direct mTORC1 engagement and mitotic lagging-DNA/anaphase-bridge readouts. Use
 `notes/track2-current.json`, `notes/track2-report-v50.md`,
-`notes/track2-slides-v50.html`, `notes/track2-pitch-v46.md` and
-`notes/track2-transcript-v46.txt`. The combined entry point is
+`notes/track2-slides-v50.html`, `notes/track2-pitch-v50.md` and
+`notes/track2-transcript-v50.txt`. The combined entry point is
 `scripts/check_track2_harness_v50.py`; start with
 `notes/track2-reviewer-guide-v50.md` and `notes/track2-owner-readiness-v50.md`; they list exact current deliverables.
 The current literature chain is `notes/track2-literature-v45.md`,
@@ -150,7 +150,7 @@ Python audit hooks check dependency isolation, not operating-system security.
 
 - Arrange actual outside review through the owner; preserve feedback and the reviewed
   version, then adjudicate objections. Uncoached pitch/demo comprehension is unmeasured.
-- Record the 369-word pitch in the owner's own voice, measure the full exported video
+- Record the 339-word pitch in the owner's own voice, measure the full exported video
   including acknowledgement and transitions, and host on YouTube/Vimeo. Script cue
   allocations total 180 seconds but are not a measured recording. No video or URL exists.
 - Resolve existing provider/distribution questions. OpenAI no-training is an owner

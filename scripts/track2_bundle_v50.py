@@ -7,12 +7,12 @@ import zipfile
 import track2_release_v50 as release
 
 ROOT=release.ROOT
-SLIDES=ROOT/'results/feat009/v50-slides-final-20261023-2'
+SLIDES=ROOT/'results/feat009/v50-slides-final-20261023-3'
 DOCS=ROOT/'results/feat009/v50-documents-final-20261023-1'
-DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v50_35.zip'
+DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v50_36.zip'
 def sources():
     release.scientific_checks()
-    render=json.loads((ROOT/'notes/track2-v50-render-audit-v2.json').read_text())
+    render=json.loads((ROOT/'notes/track2-v50-render-audit-v3.json').read_text())
     docs=json.loads((ROOT/'notes/track2-v50-documents-audit-v1.json').read_text())
     expected={SLIDES/name:sha for name,sha in render['files'].items()}
     expected.update({DOCS/name:sha for name,sha in docs['export']['files'].items()})
@@ -44,7 +44,7 @@ def sources():
         files[Path(source).name]=ROOT/source
     # Preserve only frozen v40 own-voice assets with unambiguous owner-facing names.
     for source in sorted(release.INPUTS):
-        if source in {'notes/track2-pitch-v46.md','notes/track2-transcript-v46.txt','notes/track2-teleprompter-v46.html','notes/track2-narration-v46.json'}:files['jvv7_'+Path(source).name]=ROOT/source
+        if source in {'notes/track2-pitch-v50.md','notes/track2-transcript-v50.txt','notes/track2-teleprompter-v50.html','notes/track2-narration-v50.json','notes/track2-recording-guide-v50.md','notes/track2-video-description-v50.md'}:files['jvv7_'+Path(source).name]=ROOT/source
     files['jvv7_track2_external-review-packet_v49.md']=ROOT/'notes/track2-external-review-packet-v49.md'
     files['jvv7_track2_reviewer-brief_v50.md']=ROOT/'notes/track2-reviewer-brief-v50.md'
     files['jvv7_track2_video-description_v47.md']=ROOT/'notes/track2-video-description-v47.md'

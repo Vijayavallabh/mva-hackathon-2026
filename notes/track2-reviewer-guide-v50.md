@@ -2,7 +2,7 @@
 
 For a short entry point, read [the reviewer brief](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-reviewer-brief-v50.md).
 Then use [the report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v50.md), [nine slides](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-slides-v50.html)
-and [369-word recording script](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-pitch-v46.md). The
+and [369-word recording script](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-pitch-v50.md). The
 [current record](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-current.json) routes the PDF, methods workbook, transcript
 and recording-materials ZIP. All earlier releases remain frozen.
 
@@ -31,8 +31,8 @@ These examples test implementation, not policy validity or clinical performance.
 For the proposal, use the [laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v51.md) and
 [reviewer questions](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-judge-questions-v44.md). The [competition plan](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-competition-plan-v39.md)
 maps actual work to rigor 35%, impact 25%, innovation 25% and scalability 15%.
-The owner-selected voice workflow is in the [timed recording guide](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-recording-guide-v46.md)
-and [offline teleprompter](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-teleprompter-v46.html). No recording has been made.
+The owner-selected voice workflow is in the [timed recording guide](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-recording-guide-v50.md)
+and [offline teleprompter](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-teleprompter-v50.html). No recording has been made.
 
 ```bash
 uv run --no-project python scripts/check_track2_harness_v50.py
@@ -88,9 +88,9 @@ runtime, hosting, provider/distribution questions, portal checks and receipt.
 - Report source: `notes/track2-report-v50.md`
 - Report PDF/workbook directory: `results/feat009/v50-documents-final-20261023-1`
 - Slide deck source: `notes/track2-slides-v50.html`
-- Rendered slides/PDF: `results/feat009/v50-slides-final-20261023-2`
+- Rendered slides/PDF: `results/feat009/v50-slides-final-20261023-3`
 - Methods workbook: `results/feat009/v50-documents-final-20261023-1/jvv7_track2_methods_v50.xlsx`
-- Recording materials ZIP: `results/feat009/jvv7_track2_video_materials_v50_35.zip`
+- Recording materials ZIP: `results/feat009/jvv7_track2_video_materials_v50_36.zip`
 - Preserved historical release snapshot: `results/feat009/jvv7_track2_research_v48-verified154` (do not rebuild for a presentation-only v50 change)
 - Public repository HEAD: `1fc4163ff7ba67c51decd73e14062d06fe86101d`
 

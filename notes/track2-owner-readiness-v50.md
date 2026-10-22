@@ -1,8 +1,8 @@
 # Track 2 v50 delivery readiness
 
 22 October 2026. The [report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v50.md), [slides](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-slides-v50.html),
-[pitch](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-pitch-v46.md), [transcript](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-transcript-v46.txt),
-[video description](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-video-description-v47.md) and methods workbook distinguish
+[pitch](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-pitch-v50.md), [transcript](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-transcript-v50.txt),
+[video description](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-video-description-v50.md) and methods workbook distinguish
 completed research, including the [corrected optical comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-optical-v36.md).
 Use [the current artifact record](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-current.json) for exports and bundles.
 The materials support review and recording; no video, measured runtime, upload or
@@ -15,7 +15,7 @@ authenticated account or quota check.
 - Report source: `notes/track2-report-v50.md`
 - Report PDF/workbook directory: `results/feat009/v50-documents-final-20261023-1`
 - Slide deck source: `notes/track2-slides-v50.html`
-- Rendered slides/PDF: `results/feat009/v50-slides-final-20261023-2`
+- Rendered slides/PDF: `results/feat009/v50-slides-final-20261023-3`
 - Methods workbook: `results/feat009/v50-documents-final-20261023-1/jvv7_track2_methods_v50.xlsx`
 - Recording materials ZIP: the exact current bundle path in `notes/track2-current.json`
 - Preserved historical release snapshot: `results/feat009/jvv7_track2_research_v48-verified154` (do not rebuild for a presentation-only v50 change)
@@ -34,8 +34,8 @@ listing unchanged at 15:34:56 UTC; thread bodies were not reread. Thread 32 perm
 clearly labeled published-paper example in the pitch while the written report covers
 the challenge case; no script rewrite is required.
 
-1. The owner chose their own voice. Use the [recording guide](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-recording-guide-v46.md)
-   and [offline teleprompter](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-teleprompter-v46.html). Rehearse the 369-word script with nine slides. Record and measure the three-minute
+1. The owner chose their own voice. Use the [recording guide](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-recording-guide-v50.md)
+   and [offline teleprompter](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-teleprompter-v50.html). Rehearse the 369-word script with nine slides. Record and measure the three-minute
    video, keep the full acknowledgement visible and host it on YouTube or Vimeo.
    Script timestamps are allocations, not measured runtime.
 2. Resolve the existing provider/distribution questions. OpenAI no-training remains

@@ -105,7 +105,7 @@ readouts without changing any drug disposition. Current routes are
 `notes/track2-report-v50.md`, `notes/track2-lab-handoff-v43.md`,
 `notes/track2-reviewer-brief-v50.md`, `notes/track2-judge-questions-v44.md`,
 `notes/track2-external-review-packet-v49.md`, `notes/track2-literature-v45.md`,
-`notes/track2-video-description-v47.md` and `notes/track2-submission-prep-v3.md`. Recheck with
+`notes/track2-video-description-v50.md` and `notes/track2-submission-prep-v3.md`. Recheck with
 `scripts/check_track2_literature_v45.py`, `scripts/test_track2_literature_v45.py`,
 `scripts/check_track2_requirements_v52.py`,
 `scripts/test_track2_requirements_v52.py`, `scripts/check_track2_submission_prep_v3.py` and

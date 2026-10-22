@@ -12,8 +12,8 @@ has been recorded or hosted yet.
 | Written report to upload | `results/feat009/v50-documents-final-20261023-1/jvv7_track2_report_v50.pdf` |
 | Markdown alternative (not both) | `results/feat009/v50-documents-final-20261023-1/jvv7_track2_report_v50.md` |
 | Methods workbook for review, not portal upload | `results/feat009/v50-documents-final-20261023-1/jvv7_track2_methods_v50.xlsx` |
-| Slide deck for recording, not portal upload | `results/feat009/v50-slides-final-20261023-2/track2-slides-v50.pdf` |
-| Owner review bundle | `results/feat009/jvv7_track2_video_materials_v50_35.zip` |
+| Slide deck for recording, not portal upload | `results/feat009/v50-slides-final-20261023-3/track2-slides-v50.pdf` |
+| Owner review bundle | `results/feat009/jvv7_track2_video_materials_v50_36.zip` |
 | Verified release snapshot | the current verified release snapshot in `notes/track2-current.json` |
 
 Upload **one report file**, either the PDF or Markdown version, not both. The
@@ -51,7 +51,7 @@ publicly prove a three-minute runtime; the owner must measure the exported video
 ## Owner sequence
 
 1. Arrange and archive outside review; adjudicate material objections.
-2. Record the 369-word pitch with the v50 nine-slide deck in the owner's own voice.
+2. Record the 339-word pitch with the v50 nine-slide deck in the owner's own voice.
 3. Export the video, watch it end to end, and measure its actual runtime.
 4. Confirm the acknowledgement remains visible, audio is intelligible, drug/gene
    names are clear, and duration is within 180 seconds.

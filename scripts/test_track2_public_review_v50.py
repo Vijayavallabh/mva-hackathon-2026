@@ -15,7 +15,7 @@ class PresentationTests(unittest.TestCase):
     def test_complete_review_preserves_decisions_and_adds_literature_provenance(self):
         result=review.check()
         self.assertEqual((result['presentation_version'],result['narration_words'],
-                          result['abstract_words'],result['claim_records']),(50,369,428,58))
+                          result['abstract_words'],result['claim_records']),(50,339,428,58))
         self.assertEqual(result['literature_refresh'],
                          {'passed':True,'version':45,'searches':7,'selected_sources':4,
                           'public_receipts':14,'repository_bytes':94130,

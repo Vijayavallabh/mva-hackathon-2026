@@ -17,9 +17,9 @@
     "sha256": "b0b6d0bc254d4d9a3e25ff181efaa32b93a33cb2e8bb22ecf20c9ebfe45f88e3"
   },
   "slide_pdf": {
-    "path": "results/feat009/v50-slides-final-20261023-2/track2-slides-v50.pdf",
-    "bytes": 256447,
-    "sha256": "947b8d1058a4be60cb1de81f215b45b2f2e9717c1d20b52d270d1a396401d8e6"
+    "path": "results/feat009/v50-slides-final-20261023-3/track2-slides-v50.pdf",
+    "bytes": 249253,
+    "sha256": "c63ae683c47f6b56893cb0c930605edbc662de65a464bedeb7b584222f8da9b4"
   },
   "report_pdf_title": "jvv7 \u00b7 Track 2 report v50",
   "huggingface_username": "jvv7",

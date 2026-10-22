@@ -123,7 +123,7 @@ def recording_checks(a):
 
 def scientific_checks():
     result=review.check()
-    files=['track2-v50-render-audit-v2.json','track2-v50-documents-audit-v1.json','track2-public-review-v50.json']
+    files=['track2-v50-render-audit-v3.json','track2-v50-documents-audit-v1.json','track2-public-review-v50.json']
     result['exports']=audit_checks(*[json.loads((ROOT/'notes'/n).read_text()) for n in files])
     result['interactive']=historical.historical.historical.interactive_checks(json.loads((ROOT/'notes/track2-demo-audit-v37.json').read_text()))
     result['recording']=recording_checks(json.loads((ROOT/'notes/track2-prompter-audit-v46.json').read_text()))
