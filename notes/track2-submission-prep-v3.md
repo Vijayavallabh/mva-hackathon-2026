@@ -9,11 +9,11 @@ has been recorded or hosted yet.
 
 | Portal field / material | Exact current file |
 |---|---|
-| Written report to upload | `results/feat009/v48-documents-final-20261022-5/jvv7_track2_report_v48.pdf` |
-| Markdown alternative (not both) | `results/feat009/v48-documents-final-20261022-5/jvv7_track2_report_v48.md` |
-| Methods workbook for review, not portal upload | `results/feat009/v48-documents-final-20261022-5/jvv7_track2_methods_v48.xlsx` |
+| Written report to upload | `results/feat009/v48-documents-final-20261023-1/jvv7_track2_report_v48.pdf` |
+| Markdown alternative (not both) | `results/feat009/v48-documents-final-20261023-1/jvv7_track2_report_v48.md` |
+| Methods workbook for review, not portal upload | `results/feat009/v48-documents-final-20261023-1/jvv7_track2_methods_v48.xlsx` |
 | Slide deck for recording, not portal upload | `results/feat009/v48-slides-final-20261022-4/track2-slides-v48.pdf` |
-| Owner review bundle | `results/feat009/jvv7_track2_video_materials_v48_25.zip` |
+| Owner review bundle | `results/feat009/jvv7_track2_video_materials_v48_30.zip` |
 | Verified release snapshot | the current verified release snapshot in `notes/track2-current.json` |
 
 Upload **one report file**, either the PDF or Markdown version, not both. The
@@ -24,14 +24,19 @@ the source used to render it.
 ## Filename convention
 
 The official instructions ask for the username or team name in the report
-filename. Current files use `jvv7`. Before upload, the owner should confirm
-whether `jvv7` is the intended public team/display name and Hugging Face
-submitter identity. If a different public name is chosen, copy—not rename in
-place—the selected report to a new submission-only file using that exact name.
+filename. The owner-selected identity is fixed for this delivery:
+
+- **Hugging Face username / report filename convention:** `jvv7`
+- **Team / Display Name:** `Aeglos`
+
+The current report filename `jvv7_track2_report_v48.pdf` already satisfies the
+official filename rule, so the report bytes do not change. Do not rename the
+verified file in place. This identity choice is an owner decision; it is not an
+authenticated Hugging Face account/quota check.
 
 ## Portal fields
 
-- **Team / Display Name:** owner to choose. Blank uses the Hugging Face username.
+- **Team / Display Name:** `Aeglos` (owner-selected public team name). If left blank, the portal would use `jvv7`.
 - **GitHub repo URL:** `https://github.com/Vijayavallabh/mva-hackathon-2026`
 - **Pitch video URL:** absent; must be a YouTube/Vimeo URL after real recording and hosting.
 - **Report file:** one PDF or Markdown file from the table above.
@@ -68,8 +73,8 @@ Record these only after the real submission; do not prefill them:
 | Field | Actual value |
 |---|---|
 | Submission timestamp (UTC) | |
-| Hugging Face username | |
-| Team / display name | |
+| Hugging Face username | `jvv7` (expected, verify while signed in before submitting) |
+| Team / display name | `Aeglos` |
 | Submission number and remaining quota | |
 | GitHub URL submitted | |
 | Video URL submitted | |

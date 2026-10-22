@@ -17,6 +17,8 @@ class SubmissionPrepTests(unittest.TestCase):
         spec.loader.exec_module(checker)
         result = checker.check()
         self.assertEqual(result["version"], 3)
+        self.assertEqual((result["huggingface_username"], result["team_display_name"],
+                          result["authenticated_account_verified"]), ("jvv7", "Aeglos", False))
         self.assertGreater(result["report_pdf_bytes"], 0)
         self.assertGreater(result["report_md_bytes"], 0)
         self.assertEqual(
@@ -40,7 +42,7 @@ class SubmissionPrepTests(unittest.TestCase):
     def test_exact_portal_values_are_not_invented(self):
         normalized = " ".join(self.note.split()).lower()
         self.assertIn("https://github.com/vijayavallabh/mva-hackathon-2026", normalized)
-        self.assertIn("owner to choose", normalized)
+        self.assertIn("aeglos", normalized)
         self.assertIn("absent", normalized)
         for phrase in [
             "quota is known",

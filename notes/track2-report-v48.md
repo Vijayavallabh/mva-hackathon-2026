@@ -51,6 +51,18 @@ It also states what is outside evidence. [Track 2 brief and rubric](https://hugg
 | Reproducibility and scalability | Section 5 and the repository: replayable code, public receipts, no subject files or GPUs required. |
 | Honesty about unsupported inference | Every computational result is tied to what it did and did not change; no model result promotes drug priority. |
 
+**Official report-format compliance.** The official instructions state: “Prepare a written report (PDF or Markdown) proposing repositioned drug candidates supported by your analysis. Include a characterization of the variant’s mechanism (loss-of-function / gain-of-function, pathway disrupted, downstream biological consequence) as the basis for your repurposing rationale.” This report does so as follows:
+
+| Official requirement | v48 answer |
+|---|---|
+| Repositioned drug candidates supported by analysis | Everolimus is the conditional approved mTORC1 probe; HCQ is reserve; NAD/SIRT2 is a separately qualified competing route. Supporting evidence, contrary evidence and prerequisites are in Sections 1–4 and the linked candidate comparison. |
+| Variant mechanism characterization | BUB1B/BUBR1 contributes to spindle-checkpoint and chromosome-attachment control; biallelic disruption is an established MVA mechanism. The selected pair’s endogenous effect remains unmeasured. |
+| Loss-of-function / gain-of-function | One retained allele is a termination change and one is a missense change. The pair-specific functional direction is unmeasured and is the first qualification question, not an assumed LoF or GoF label. |
+| Pathway disrupted | BUB1B/BUBR1 spindle-checkpoint and chromosome-attachment control, with two conditional downstream mTOR-related branches requiring qualification. |
+| Downstream biological consequence | Conditional excess mTOR-associated activity, or impaired dynamic autophagic flux/regeneration as a separate alternative; both remain unmeasured for this pair. |
+| Basis for repurposing rationale | Approved mTORC1 pharmacology plus the bounded carrier-mouse lead make everolimus a concrete conditional probe. Advancement requires endogenous deficit, independent restoration, pathway-state qualification and the four-arm experiment. |
+| Official methods template | B7–B17 are answered in Section 7 and exported to the official template workbook; B9 provider disclosure is included and B17 is 335 words, under the 500-word limit. |
+
 **Current boundaries.** Selected-pair efficacy, trans phase, and clinical exposure
 margins remain unresolved. No wet-lab experiment has been performed. No treatment
 or dose is proposed for the child.

@@ -11,7 +11,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 CHECKLIST = ROOT / "notes/track2-submission-prep-v3.md"
 CURRENT = ROOT / "notes/track2-current.json"
-MATERIALS = ROOT / "notes/track2-submission-materials-v6.json"
+MATERIALS = ROOT / "notes/track2-submission-materials-v7.json"
 OFFICIAL = ROOT / "sources/public-official-v52/tabs-submit_track2.py"
 
 
@@ -60,7 +60,7 @@ def check() -> dict[str, Any]:
         "github repo url",
         "https://github.com/vijayavallabh/mva-hackathon-2026",
         "pitch video url:** absent",
-        "team / display name:** owner to choose",
+        "team / display name:** `aeglos` (owner-selected public team name)",
         "no video has been recorded",
         "no video runtime has been measured",
         "no video url exists",
@@ -104,12 +104,24 @@ def check() -> dict[str, Any]:
         if path.is_file():
             require(path.stat().st_size == record["bytes"] and digest(path) == record["sha256"], "Submission-material receipt drift: " + key)
     require("jvv7" in note, "Current filename convention omitted")
+    identity = state.get("submission_identity", {})
+    require(identity == {
+        "owner_selected_date": "2026-10-23",
+        "huggingface_username": "jvv7",
+        "team_display_name": "Aeglos",
+        "report_filename_convention": "jvv7",
+        "authenticated_account_verified": False,
+        "quota_checked": False,
+    }, "Owner-selected public identity drift")
     require("sha-256" in text and "byte count" in text, "Receipt archive fields omitted")
     require("outside the deletion scope" in text, "Receipt-retention scope omitted")
 
     return {
         "passed": True,
         "version": 3,
+        "huggingface_username": "jvv7",
+        "team_display_name": "Aeglos",
+        "authenticated_account_verified": False,
         "report_pdf_bytes": materials["report_pdf"]["bytes"],
         "report_md_bytes": materials["report_markdown"]["bytes"],
         "workbook_bytes": materials["methods_workbook"]["bytes"],

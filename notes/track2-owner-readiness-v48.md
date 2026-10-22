@@ -6,16 +6,18 @@
 completed research, including the [corrected optical comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-optical-v36.md).
 Use [the current artifact record](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-current.json) for exports and bundles.
 The materials support review and recording; no video, measured runtime, upload or
-receipt is established.
+receipt is established. The owner-selected public identity is **Team Aeglos**,
+with Hugging Face username/report filename convention `jvv7`; this is not an
+authenticated account or quota check.
 
 ## Exact current deliverables
 
 - Report source: `notes/track2-report-v48.md`
-- Report PDF/workbook directory: `results/feat009/v48-documents-final-20261022-4`
+- Report PDF/workbook directory: `results/feat009/v48-documents-final-20261023-1`
 - Slide deck source: `notes/track2-slides-v48.html`
 - Rendered slides/PDF: `results/feat009/v48-slides-final-20261022-4`
-- Methods workbook: `results/feat009/v48-documents-final-20261022-4/jvv7_track2_methods_v48.xlsx`
-- Recording materials ZIP: `results/feat009/jvv7_track2_video_materials_v48_23.zip`
+- Methods workbook: `results/feat009/v48-documents-final-20261023-1/jvv7_track2_methods_v48.xlsx`
+- Recording materials ZIP: the exact current bundle path in `notes/track2-current.json`
 - Verified release snapshot: `results/feat009/jvv7_track2_research_v48-verified154`
 - Public repository HEAD: `1fc4163ff7ba67c51decd73e14062d06fe86101d`
 
@@ -23,7 +25,7 @@ No recorded video or video URL exists. These exact local deliverables are not ye
 an uploaded submission or a submission receipt. The v45 literature review adds only
 contrary tumour-context boundaries; it does not change a drug disposition. Use the exact-field checklist in
 [submission prep](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-submission-prep-v3.md)
-and verify it with `scripts/check_track2_submission_prep_v2.py`.
+and verify it with `scripts/check_track2_submission_prep_v3.py`.
 
 The full [v42 requirements refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v42.md)
 records the organizer clarifications. The current anonymous [v52 latest-thread refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v52.md)

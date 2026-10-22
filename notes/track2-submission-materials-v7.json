@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "kind": "exact_submission_material_receipt",
+  "report_pdf": {
+    "path": "results/feat009/v48-documents-final-20261023-1/jvv7_track2_report_v48.pdf",
+    "bytes": 326108,
+    "sha256": "4cd5a29b60b2aa6e28d5b09f2222923e01fa2fd6b421c14b0a73741931314e6f"
+  },
+  "report_markdown": {
+    "path": "results/feat009/v48-documents-final-20261023-1/jvv7_track2_report_v48.md",
+    "bytes": 50981,
+    "sha256": "be5f41eb7351d9d9f5b8725ed0d14ad8abe923f12fcd41b9883fde9b9536007b"
+  },
+  "methods_workbook": {
+    "path": "results/feat009/v48-documents-final-20261023-1/jvv7_track2_methods_v48.xlsx",
+    "bytes": 14919,
+    "sha256": "8e2824d6095a20a745e19ac6157881716c8cd335cc4f3192798aac1cdaff392a"
+  },
+  "slide_pdf": {
+    "path": "results/feat009/v48-slides-final-20261022-4/track2-slides-v48.pdf",
+    "bytes": 256187,
+    "sha256": "309f20477d22293efac3718ac0ecd8c5da23775bfe970d3dae4ba7feac6a6af9"
+  },
+  "report_pdf_title": "jvv7 \u00b7 Track 2 report v48",
+  "huggingface_username": "jvv7",
+  "team_display_name": "Aeglos",
+  "upload_ready": false,
+  "upload_performed": false,
+  "video_recorded": false,
+  "video_url": null,
+  "biological_validation": false
+}
