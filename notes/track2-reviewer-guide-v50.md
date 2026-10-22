@@ -88,9 +88,9 @@ runtime, hosting, provider/distribution questions, portal checks and receipt.
 - Report source: `notes/track2-report-v50.md`
 - Report PDF/workbook directory: `results/feat009/v50-documents-final-20261023-1`
 - Slide deck source: `notes/track2-slides-v50.html`
-- Rendered slides/PDF: `results/feat009/v50-slides-final-20261023-1`
+- Rendered slides/PDF: `results/feat009/v50-slides-final-20261023-2`
 - Methods workbook: `results/feat009/v50-documents-final-20261023-1/jvv7_track2_methods_v50.xlsx`
-- Recording materials ZIP: `results/feat009/jvv7_track2_video_materials_v50_34.zip`
+- Recording materials ZIP: `results/feat009/jvv7_track2_video_materials_v50_35.zip`
 - Preserved historical release snapshot: `results/feat009/jvv7_track2_research_v48-verified154` (do not rebuild for a presentation-only v50 change)
 - Public repository HEAD: `1fc4163ff7ba67c51decd73e14062d06fe86101d`
 

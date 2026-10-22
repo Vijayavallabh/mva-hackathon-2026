@@ -168,11 +168,11 @@ def validate(state, features, documents):
     roles.update({'reviewer_guide':'notes/track2-reviewer-guide-v50.md','owner_readiness':'notes/track2-owner-readiness-v50.md','submission_prep':'notes/track2-submission-prep-v5.md','submission_prep_check':'scripts/check_track2_submission_prep_v5.py','submission_prep_test':'scripts/test_track2_submission_prep_v5.py','submission_materials':'notes/track2-submission-materials-v10.json'})
     roles.update({'external_review_adjudication_v46':'notes/track2-external-review-v46.md','candidate_comparison': 'notes/track2-candidate-comparison-v51.md', 'rehearsal_adjudication': 'notes/track2-rehearsal-adjudication-v39.md', 'rehearsal_sources': 'notes/track2-rehearsal-sources-v39.json', 'qualification_amendment': 'notes/track2-qualification-amendment-v39.md', 'external_review_packet': 'notes/track2-external-review-packet-v49.md', 'recording_audit': 'notes/track2-prompter-audit-v46.json'})
     roles['narration_metrics']='notes/track2-narration-v46.json'
-    roles.update({'v50_render_audit':'notes/track2-v50-render-audit-v1.json','v50_documents_audit':'notes/track2-v50-documents-audit-v1.json','v50_submission_materials_audit':'notes/track2-submission-materials-v10.json','v50_public_review':'notes/track2-public-review-v50.json','v48_design_note':'notes/track2-v48-design.md'})
+    roles.update({'v50_render_audit':'notes/track2-v50-render-audit-v2.json','v50_documents_audit':'notes/track2-v50-documents-audit-v1.json','v50_submission_materials_audit':'notes/track2-submission-materials-v10.json','v50_public_review':'notes/track2-public-review-v50.json','v48_design_note':'notes/track2-v48-design.md'})
     require(state['artifacts'] == roles, 'Mixed, missing or unsafe artifact paths')
     require(state.get('community_kit_bundle') == 'results/feat009/jvv7_track2_community_kit_v37.zip', 'Stale community kit path')
     require(state['snapshot'] == 'results/feat009/jvv7_track2_research_v48-verified154', 'Stale snapshot path')
-    require(state['video_materials_bundle'] == 'results/feat009/jvv7_track2_video_materials_v50_34.zip',
+    require(state['video_materials_bundle'] == 'results/feat009/jvv7_track2_video_materials_v50_35.zip',
             'Stale recording-materials bundle path')
     require(re.fullmatch(rf'results/feat009/v{version}-[a-z0-9-]+',state['render_directory']),
             'Stale or unsafe render-directory path')

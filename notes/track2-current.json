@@ -68,13 +68,13 @@
     "requirements_v52_audit": "notes/track2-requirements-v52.json",
     "requirements_v52_check": "scripts/check_track2_requirements_v52.py",
     "requirements_v52_test": "scripts/test_track2_requirements_v52.py",
-    "v50_render_audit": "notes/track2-v50-render-audit-v1.json",
+    "v50_render_audit": "notes/track2-v50-render-audit-v2.json",
     "v50_documents_audit": "notes/track2-v50-documents-audit-v1.json",
     "v50_submission_materials_audit": "notes/track2-submission-materials-v10.json",
     "v50_public_review": "notes/track2-public-review-v50.json"
   },
   "snapshot": "results/feat009/jvv7_track2_research_v48-verified154",
-  "render_directory": "results/feat009/v50-slides-final-20261023-1",
+  "render_directory": "results/feat009/v50-slides-final-20261023-2",
   "model_campaign": {
     "protein_scores": 84,
     "structures": 192,
@@ -98,7 +98,7 @@
   },
   "history": "progress.md",
   "harness_review": "notes/track2-harness-review-v50.md",
-  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v50_34.zip",
+  "video_materials_bundle": "results/feat009/jvv7_track2_video_materials_v50_35.zip",
   "document_directory": "results/feat009/v50-documents-final-20261023-1",
   "research_addendum": {
     "version": 19,

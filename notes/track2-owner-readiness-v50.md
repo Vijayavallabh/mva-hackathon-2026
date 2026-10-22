@@ -15,7 +15,7 @@ authenticated account or quota check.
 - Report source: `notes/track2-report-v50.md`
 - Report PDF/workbook directory: `results/feat009/v50-documents-final-20261023-1`
 - Slide deck source: `notes/track2-slides-v50.html`
-- Rendered slides/PDF: `results/feat009/v50-slides-final-20261023-1`
+- Rendered slides/PDF: `results/feat009/v50-slides-final-20261023-2`
 - Methods workbook: `results/feat009/v50-documents-final-20261023-1/jvv7_track2_methods_v50.xlsx`
 - Recording materials ZIP: the exact current bundle path in `notes/track2-current.json`
 - Preserved historical release snapshot: `results/feat009/jvv7_track2_research_v48-verified154` (do not rebuild for a presentation-only v50 change)
