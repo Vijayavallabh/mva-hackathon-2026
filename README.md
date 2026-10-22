@@ -149,7 +149,7 @@ mitotic coverage remains missing. Equal-cap learning improves on sampled means,
 without beating full-data profiles. No drug or clinical claim is promoted.
 The [complete analysis](notes/track2-optical-v36.md), six new falsification records
 and all earlier research remain checked. There are 58 claim records across seven
-registers. Review with `uv run --no-project python scripts/check_track2_harness_v47.py`;
+registers. Review with `uv run --no-project python scripts/check_track2_harness_v48.py`;
 original qualification evidence remains in `notes/track2-transcriptome-v19.md`.
 Recording/hosting, provider/distribution questions, live checks and receipt remain open.
 
@@ -246,7 +246,7 @@ The proposed decision contract returns HOLD with unmeasured biology and null mar
 An invalid assay, imprecision, scoped futility and safety failure now have different
 consequences. No wet-lab result, new model inference or candidate promotion is claimed.
 
-**Track 2 (feat-009) is in progress.** Read the [integrated v47 report](notes/track2-report-v47.md)
+**Track 2 (feat-009) is in progress.** Read the [current v48 report](notes/track2-report-v48.md)
 and the complete [v19 research record](notes/track2-transcriptome-v19.md).
 The [falsification review](notes/track2-falsification-review-v21.md) challenges the full
 chain from genotype to useful function, tumour selectivity, exposure and safety.
@@ -287,9 +287,9 @@ assumption; revise or abandon the approach when warranted. Use the original
 throughout research and before promotion/release. Apply the same standard to benefit,
 harm and alternative candidates. Missing evidence and search failures are not disproof.
 
-Current materials: [report source](notes/track2-report-v47.md),
+Current materials: [report source](notes/track2-report-v48.md),
 [369-word narration](notes/track2-pitch-v46.md), [plain transcript](notes/track2-transcript-v46.txt),
-[nine-slide deck](notes/track2-slides-v47.html) and
+[nine-slide deck](notes/track2-slides-v48.html) and
 [video description](notes/track2-video-description-v47.md). The
 [v41 literature addendum](notes/track2-literature-v41.md), the
 [v43 TORC1-segregation addendum](notes/track2-literature-v43.md), [v45 checkpoint/computational-drug addendum](notes/track2-literature-v45.md) and their
@@ -300,28 +300,30 @@ morphology, failed practical neural gain, guide/plate sensitivity and missing mi
 coverage remain distinct. All eleven methods answers and the 334-word abstract match
 the workbook export. Prior scientific details remain in linked research records.
 
-Start with the [combined v45 reviewer guide](notes/track2-reviewer-guide-v48.md). One
-public CPU command checks integrated v47 materials and completed v19/v21/v23/v25/v27/v29/v31/v36 findings plus the v45 literature audit:
+Start with the [combined v48 reviewer guide](notes/track2-reviewer-guide-v48.md). One
+public CPU command checks the current v48 materials and completed v19/v21/v23/v25/v27/v29/v31/v36 findings plus the v45 literature audit:
 
 ```bash
-uv run --no-project python scripts/check_track2_harness_v47.py
+uv run --no-project python scripts/check_track2_harness_v48.py
 ```
 
 It requires no subject files, data/results folders, keys, network, Git history or model
 weights. The check verifies consistency, not biological efficacy. The versioned public
-presentation reviewer and release/bundle scripts use v47, while the 369-word voice and
+presentation reviewer and release/bundle scripts use v48, while the 369-word voice and
 recording materials preserve v46 wording. Earlier versions remain available and bound
 inputs stay unchanged. The [current artifact record](notes/track2-current.json),
-[harness review](notes/track2-harness-review-v47.md) and `./init.sh` route current work.
+[harness review](notes/track2-harness-review-v48.md) and `./init.sh` route current work.
 
-The [v48 readiness note](notes/track2-owner-readiness-v48.md) lists exact current deliverables and outstanding recording,
+The [v48 readiness note](notes/track2-owner-readiness-v48.md) and [owner submission checklist](notes/track2-submission-prep-v3.md) list exact current deliverables and outstanding recording,
 runtime measurement, hosting, provider handling, distribution scope, live checks and
 receipt. The full [v42 requirements refresh](notes/track2-requirements-review-v42.md) found
 31 threads/89 visible comments/16 closed. Thread 32 permits a clearly labeled published-paper
 example in the pitch; thread 31 documents a Synapse alternative; thread 29 reinforces
-IRB/consent routing. The current anonymous [v44 deadline refresh](notes/track2-requirements-review-v44.md)
-found the Space revision, all seven official files and the discussion number/status/title
-listing unchanged at 31/16; it did not reread thread bodies. Delete and confirm to cnb@sagebase.org by November 23, as specified in
+IRB/consent routing. The current anonymous [v52 latest-thread refresh](notes/track2-requirements-review-v52.md)
+rechecked all seven official files and threads through the new open thread 33 (an SDK/README
+pull request, not a Track 2 requirement change). Official brief, rubric, deliverables,
+three-entry/latest-only rule and PDF/Markdown filename convention remain unchanged; thread
+bodies 31–33 were read. It is not an authenticated quota or account check. Delete and confirm to cnb@sagebase.org by November 23, as specified in
 [the active deletion plan](notes/deletion-plan-v2.md). The new materials omit AF3/Atlas numerical
 outputs and derived figures, which does not resolve CC BY scope for linked history.
 
@@ -424,4 +426,4 @@ The current revision, v47, integrates the external-review adjudication, explicit
 table, four-arm experiment, primary endpoint/units, software-vs-biology boundary and v46 narration without
 changing drug disposition.
 Use `notes/track2-reviewer-guide-v43.md` and `notes/track2-owner-readiness-v43.md`.
-Reproduce the literature check with `scripts/check_track2_literature_v45.py` and the combined harness with `scripts/check_track2_harness_v47.py`.
+Reproduce the literature check with `scripts/check_track2_literature_v45.py` and the combined harness with `scripts/check_track2_harness_v48.py`.

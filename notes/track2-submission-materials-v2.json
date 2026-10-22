@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "kind": "exact_submission_material_receipt",
+  "report_pdf": {
+    "path": "results/feat009/v48-documents-final-20261022-1/jvv7_track2_report_v48.pdf",
+    "bytes": 299100,
+    "sha256": "3efe9dce6dfb615bf84ba6ecc0d81c854fb9ca6ec299fed56415e510ab8909fd"
+  },
+  "report_markdown": {
+    "path": "results/feat009/v48-documents-final-20261022-1/jvv7_track2_report_v48.md",
+    "bytes": 46515,
+    "sha256": "2c9ac93988000cf520f2949f0ad11f2daaaa0dbe0f17695a05a6d2f001fcd151"
+  },
+  "methods_workbook": {
+    "path": "results/feat009/v48-documents-final-20261022-1/jvv7_track2_methods_v48.xlsx",
+    "bytes": 14919,
+    "sha256": "c4351f6a45a5bdd35901058a6590cae88175527c48083bb71d89460f5ad72b07"
+  },
+  "slide_pdf": {
+    "path": "results/feat009/v48-slides-final-20261022-1/track2-slides-v48.pdf",
+    "bytes": 255697,
+    "sha256": "46e6da9714ae5332a82754505926c2f0fac317008f75d945cff9b3caa5f70caf"
+  },
+  "upload_ready": false,
+  "upload_performed": false,
+  "video_recorded": false,
+  "video_url": null,
+  "biological_validation": false
+}

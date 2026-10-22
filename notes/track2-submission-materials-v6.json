@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "kind": "exact_submission_material_receipt",
+  "report_pdf": {
+    "path": "results/feat009/v48-documents-final-20261022-5/jvv7_track2_report_v48.pdf",
+    "bytes": 315833,
+    "sha256": "40673b2a40db8aa2a0845fc36f1839e00a3bb599724228a1c714141427472305"
+  },
+  "report_markdown": {
+    "path": "results/feat009/v48-documents-final-20261022-5/jvv7_track2_report_v48.md",
+    "bytes": 48906,
+    "sha256": "9b4e63610e9527eae2a9242d1c3ee44f7ec9b59aeb6ca6a382c1fb49ffc433ac"
+  },
+  "methods_workbook": {
+    "path": "results/feat009/v48-documents-final-20261022-5/jvv7_track2_methods_v48.xlsx",
+    "bytes": 14918,
+    "sha256": "0a1f9bb106c0403eb20a18e6f2e7482309c87e6843f0e9c38db360c4575ac977"
+  },
+  "slide_pdf": {
+    "path": "results/feat009/v48-slides-final-20261022-4/track2-slides-v48.pdf",
+    "bytes": 256187,
+    "sha256": "309f20477d22293efac3718ac0ecd8c5da23775bfe970d3dae4ba7feac6a6af9"
+  },
+  "report_pdf_title": "jvv7 \u00b7 Track 2 report v48",
+  "upload_ready": false,
+  "upload_performed": false,
+  "video_recorded": false,
+  "video_url": null,
+  "biological_validation": false
+}

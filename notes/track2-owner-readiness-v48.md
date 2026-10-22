@@ -1,6 +1,6 @@
 # Track 2 v48 delivery readiness
 
-20 October 2026. The [report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v47.md), [slides](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-slides-v47.html),
+22 October 2026. The [report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v48.md), [slides](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-slides-v48.html),
 [pitch](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-pitch-v46.md), [transcript](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-transcript-v46.txt),
 [video description](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-video-description-v47.md) and methods workbook distinguish
 completed research, including the [corrected optical comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-optical-v36.md).
@@ -10,23 +10,23 @@ receipt is established.
 
 ## Exact current deliverables
 
-- Report source: `notes/track2-report-v47.md`
-- Report PDF/workbook directory: `results/feat009/v47-documents-final-20261020-5`
-- Slide deck source: `notes/track2-slides-v47.html`
-- Rendered slides/PDF: `results/feat009/v47-slides-final-20261020-1`
-- Methods workbook: `results/feat009/v47-documents-final-20261020-5/jvv7_track2_methods_v47.xlsx`
-- Recording materials ZIP: `results/feat009/jvv7_track2_video_materials_v47_3.zip`
-- Verified release snapshot: `results/feat009/jvv7_track2_research_v47-verified7`
+- Report source: `notes/track2-report-v48.md`
+- Report PDF/workbook directory: `results/feat009/v48-documents-final-20261022-4`
+- Slide deck source: `notes/track2-slides-v48.html`
+- Rendered slides/PDF: `results/feat009/v48-slides-final-20261022-4`
+- Methods workbook: `results/feat009/v48-documents-final-20261022-4/jvv7_track2_methods_v48.xlsx`
+- Recording materials ZIP: `results/feat009/jvv7_track2_video_materials_v48_23.zip`
+- Verified release snapshot: `results/feat009/jvv7_track2_research_v48-verified154`
 - Public repository HEAD: `1fc4163ff7ba67c51decd73e14062d06fe86101d`
 
 No recorded video or video URL exists. These exact local deliverables are not yet
 an uploaded submission or a submission receipt. The v45 literature review adds only
 contrary tumour-context boundaries; it does not change a drug disposition. Use the exact-field checklist in
-[submission prep](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-submission-prep-v2.md)
+[submission prep](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-submission-prep-v3.md)
 and verify it with `scripts/check_track2_submission_prep_v2.py`.
 
 The full [v42 requirements refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v42.md)
-records the organizer clarifications. The current [v44 live refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v44.md)
+records the organizer clarifications. The current anonymous [v52 latest-thread refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v52.md)
 found the Space revision, all seven official files and the 31/16 public discussion
 listing unchanged at 15:34:56 UTC; thread bodies were not reread. Thread 32 permits a
 clearly labeled published-paper example in the pitch while the written report covers
@@ -42,7 +42,7 @@ the challenge case; no script rewrite is required.
    open. Preserve the notices and [unsent clarification](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-owner-readiness-v18.md).
    No organizer contact was authorized or performed.
 3. Check identity/team, exact files, live rules/quota, public GitHub access and video
-   access before delivery. The [current live October 20 review](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v44.md)
+   access before delivery. The [current live October 22 review](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v52.md)
    retains three entries, latest only reviewed; remaining quota is unknown. Archive
    exact uploaded bytes and an authenticated receipt after submission.
 4. Delete the data and confirm to cnb@sagebase.org by **November 23, 2026** under

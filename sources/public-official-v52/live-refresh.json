@@ -1,0 +1,229 @@
+{
+  "README.md": {
+    "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/main/README.md",
+    "http_status": 200,
+    "sha256": "9660de914f8f77523faded810d0756d390321649f00e2151eb5cdb8b818c6a3f"
+  },
+  "config.py": {
+    "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/main/config.py",
+    "http_status": 200,
+    "sha256": "a65e67fca2fb698ac3f3fe6610e585f549cf29f175d636ce77543d7db6dc8bdc"
+  },
+  "tabs/about.py": {
+    "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/main/tabs/about.py",
+    "error": "FileNotFoundError(2, 'No such file or directory')"
+  },
+  "tabs/rules.py": {
+    "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/main/tabs/rules.py",
+    "error": "FileNotFoundError(2, 'No such file or directory')"
+  },
+  "tabs/faq.py": {
+    "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/main/tabs/faq.py",
+    "error": "FileNotFoundError(2, 'No such file or directory')"
+  },
+  "tabs-submit_track2.py": {
+    "url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/main/tabs/submit_track2.py",
+    "http_status": 200,
+    "sha256": "f48d576ab052df34527222b7693f956e15e5376ef68eddedcf0c4f04736bf65c"
+  },
+  "discussion_listing": {
+    "url": "https://huggingface.co/api/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/discussions?limit=100",
+    "http_status": 200,
+    "count": 32,
+    "closed_count": 16,
+    "threads": [
+      {
+        "number": 28,
+        "title": "One week to go!! Prizes and recognition for each track: MVA Hackathon 2026",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 26,
+        "title": "Update on announcement date",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 18,
+        "title": "[Announcement]   Track 1 Leaderboard",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 10,
+        "title": "[Announcement] Hackathon Updates",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 33,
+        "title": "Update README.md",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 32,
+        "title": "Clarification on Track 2 pitch video content",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 31,
+        "title": "GitHub Submission Constraint \u2013 Request for Alternative Submission Methods",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 30,
+        "title": "Is Google AI Pro Colab permitted for processing gated patient genomic data?",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 29,
+        "title": "Time-sensitive safety findings: how do they reach the care team?",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 27,
+        "title": "Track 1 \u2014 consolidate duplicate team entries",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 25,
+        "title": "Aligned reads and FASTQ lane/library information",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 24,
+        "title": "Phase / parental transmission for one case: is it available, and is there a private channel for the two loci?",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 23,
+        "title": "is ist ok?",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 22,
+        "title": "UK gene bank access - cis/trans issue.",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 21,
+        "title": "Does a consumer subscription with training disabled satisfy the third-party LLM conditions?",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 20,
+        "title": "Do incidental findings unrelated to the primary condition fall under the public-repo / CC BY 4.0 requirement?",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 19,
+        "title": "Track 1: two leaderboard entries for the same submission \u2014 which one is reviewed?",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 17,
+        "title": "Confirm Reference genome used for alignment?",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 16,
+        "title": "Institution for data access?",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 15,
+        "title": "confirm deleting data",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 14,
+        "title": "Request for additional patient information",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 13,
+        "title": "Track2",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 12,
+        "title": "Mvacoin",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 11,
+        "title": "Prizes",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 8,
+        "title": "Login & Submission Issue (\"Connection to the server was lost\")",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 7,
+        "title": "Request to reset accidental early Track 2 submission (@josephmayo)",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 6,
+        "title": "Anyone who wants to team up?",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 5,
+        "title": "Combination with an experimental drug",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 4,
+        "title": "Clarifications github and model questions",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 3,
+        "title": "Templates for track 1 missing",
+        "status": "closed",
+        "comments": null
+      },
+      {
+        "number": 2,
+        "title": "Clarification on using third-party LLM APIs with the dataset",
+        "status": "open",
+        "comments": null
+      },
+      {
+        "number": 1,
+        "title": "Need help; Unable to sign up",
+        "status": "closed",
+        "comments": null
+      }
+    ]
+  }
+}
