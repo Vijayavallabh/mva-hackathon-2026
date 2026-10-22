@@ -1,0 +1,41 @@
+{
+  "protocol_version": "v57-example-only",
+  "disease_gene": {
+    "gene": "BUB1B",
+    "variants": ["p.Leu737Ter", "p.Asn1002Lys"],
+    "phase_status": "unconfirmed"
+  },
+  "model": {
+    "model_type": "engineered hTERT-RPE1",
+    "qualification_status": "unqualified",
+    "endogenous_deficit": false,
+    "independent_restoration": false
+  },
+  "genetic_states": ["deficient", "corrected"],
+  "interventions": ["vehicle", "everolimus"],
+  "arms": [
+    {"genetic_state": "deficient", "intervention": "vehicle"},
+    {"genetic_state": "deficient", "intervention": "everolimus"},
+    {"genetic_state": "corrected", "intervention": "vehicle"},
+    {"genetic_state": "corrected", "intervention": "everolimus"}
+  ],
+  "primary_endpoint": {
+    "name": "useful_output",
+    "numerator": "accurate divisions yielding viable daughters during prespecified follow-up",
+    "denominator": "all founder cells enrolled before exposure"
+  },
+  "enrollment": {
+    "before_exposure": true,
+    "independent_unit": "culture",
+    "nested_cells": true
+  },
+  "outcome_states": ["accurate_division", "erroneous_division", "death", "persistent_arrest", "slippage", "tracking_loss"],
+  "stop_rules": [
+    {"state": "failed_assay", "decision": "hold_inference"},
+    {"state": "unknown_or_imprecise", "decision": "hold_advancement"},
+    {"state": "benefit_excluded", "decision": "stop_tested_claim"},
+    {"state": "injury_exceeded", "decision": "stop_despite_apparent_benefit"},
+    {"state": "unmatched_exposure", "decision": "block_translational_promotion"},
+    {"state": "all_requirements_met", "decision": "preclinical_review_only"}
+  ]
+}

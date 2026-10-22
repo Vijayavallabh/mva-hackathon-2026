@@ -1,15 +1,15 @@
-# Session handoff: v56 rubric-audited delivery chain
+# Session handoff: v57 machine-validated delivery chain
 
-23 October 2026, sessions 84-110. Only **feat-009** remains active for delivery and
-unresolved biological qualification. Current v56 follows the official report instructions directly: approved candidates, mechanism characterization, supporting analysis, methods disclosure and acknowledgement. It preserves the frozen v40
+23 October 2026, sessions 84-111. Only **feat-009** remains active for delivery and
+unresolved biological qualification. Current v57 follows the official report instructions directly: approved candidates, mechanism characterization, supporting analysis, methods disclosure and acknowledgement. It preserves the frozen v40
 qualification sequence, synthetic-arm labels, 369-word own-voice narration and
 recording metrics while adding the TORC1-segregation contrary-evidence refresh,
 direct mTORC1 engagement and mitotic lagging-DNA/anaphase-bridge readouts. Use
-`notes/track2-current.json`, `notes/track2-report-v56.md`,
-`notes/track2-slides-v56.html`, `notes/track2-pitch-v56.md` and
-`notes/track2-transcript-v56.txt`. The combined entry point is
-`scripts/check_track2_harness_v56.py`; start with
-`notes/track2-reviewer-guide-v56.md` and `notes/track2-owner-readiness-v56.md`; they list exact current deliverables.
+`notes/track2-current.json`, `notes/track2-report-v57.md`,
+`notes/track2-slides-v57.html`, `notes/track2-pitch-v57.md` and
+`notes/track2-transcript-v57.txt`. The combined entry point is
+`scripts/check_track2_harness_v57.py`; start with
+`notes/track2-reviewer-guide-v57.md` and `notes/track2-owner-readiness-v57.md`; they list exact current deliverables.
 The current literature chain is `notes/track2-literature-v45.md`,
 `notes/track2-literature-audit-v45.json` and
 `scripts/check_track2_literature_v45.py`; the broader v41 and targeted v43 refreshes remain preserved. The official-state chains are the full v42 review plus the latest v52 thread refresh: `notes/track2-requirements-review-v42.md`,
@@ -61,8 +61,8 @@ biological or clinical validity. The v40 small-kit guide points to that existing
 
 Frozen v40 exports remain `results/feat009/v40-slides-final-20261020` and
 `results/feat009/v40-documents-final-20261020`; the final teleprompter browser receipt
-remains under `results/feat009/v40-prompter-final-20261020`. Current v56 exports are `results/feat009/v56-slides-final-20261023-1`,
-`results/feat009/v56-documents-final-20261023-1` and `results/feat009/jvv7_track2_video_materials_v56_42.zip`; prior exports remain
+remains under `results/feat009/v40-prompter-final-20261020`. Current v57 exports are `results/feat009/v57-slides-final-20261023-1`,
+`results/feat009/v57-documents-final-20261023-1` and `results/feat009/jvv7_track2_video_materials_v57_43.zip`; prior exports remain
 available for historical comparison. No measured recording is claimed. The header continues to respect wrapped mobile controls. A shared narration parser
 checks the transcript, prompter, guide and metrics JSON: 369 words in 180 allocated
 seconds, or 122.3 planned words/minute. These are not measured video times. Earlier draft exports and
@@ -129,8 +129,8 @@ See `notes/track2-dgx-cleanup-v37.md`; environment imports passed after cleanup.
 
 ```bash
 ./init.sh
-uv run --no-project python scripts/check_track2_harness_v56.py
-uv run --no-project python scripts/track2_public_review_v56.py
+uv run --no-project python scripts/check_track2_harness_v57.py
+uv run --no-project python scripts/track2_public_review_v57.py
 uv run --no-project python scripts/check_track2_literature_v45.py
 uv run --no-project python scripts/check_track2_requirements_v52.py
 uv run --no-project python scripts/check_track2_optical_v36.py
@@ -194,8 +194,8 @@ biological, not more model agreement.
 
 ## Current state
 
-Current v56 follows the official report instructions directly while preserving the external-review adjudication, corrected current routes and v46 narration; use
-`notes/track2-reviewer-guide-v56.md` and `notes/track2-owner-readiness-v56.md`; they list exact current deliverables.
+Current v57 follows the official report instructions directly while preserving the external-review adjudication, corrected current routes and v46 narration; use
+`notes/track2-reviewer-guide-v57.md` and `notes/track2-owner-readiness-v57.md`; they list exact current deliverables.
 It routes the report/lab handoff/reviewer brief/judge questions/external review packet
-through v50/v51, and the current live requirements refresh through v52. Reproduce with `scripts/track2_public_review_v56.py`,
-`scripts/check_track2_literature_v45.py` and `scripts/check_track2_harness_v56.py`. It does not change drug disposition or recording state.
+through v50/v51, and the current live requirements refresh through v52. Reproduce with `scripts/track2_public_review_v57.py`,
+`scripts/check_track2_literature_v45.py` and `scripts/check_track2_harness_v57.py`. It does not change drug disposition or recording state.

@@ -1,0 +1,28 @@
+name: Track 2 public review
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: Integrated public review
+        run: uv run --no-project python scripts/check_track2_harness_v56.py
+      - name: Presentation reviewer
+        run: uv run --no-project python scripts/track2_public_review_v56.py
+      - name: Literature provenance
+        run: uv run --no-project python scripts/check_track2_literature_v45.py
+      - name: Requirements refresh
+        run: uv run --no-project python scripts/check_track2_requirements_v52.py
+      - name: Four-arm protocol schema
+        run: uv run --no-project --with jsonschema==4.23.0 python scripts/check_track2_protocol_schema_v57.py
