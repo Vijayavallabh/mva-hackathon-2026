@@ -146,7 +146,7 @@ def v48_checks(report, deck):
     for phrase in ['qualify function first.','on hold','first experiment: endogenous function, not exposure','no rescue-priority drug; no clinical consideration','a staged experiment. an inspectable tool.','reusable now','qualify next']:
         require(phrase in deck_text,'V48 deck improvement missing: '+phrase)
     require('track2-report-v49.md' in deck and 'track2-report-v48.md' not in deck,'V48 route drift')
-    require('v48' in deck and 'v47' not in deck.lower(),'V48 title drift')
+    require('v49' in deck and 'v48' not in deck.lower(),'V49 title drift')
     return dict(report_revision='v49',slop_scan_passed=True,route='notes/track2-report-v49.md')
 
 def check():
@@ -194,7 +194,7 @@ def check():
     for name in ['reviewer-guide','owner-readiness']:
         document=(ROOT/f'notes/track2-{name}-v43.md').read_text()
         repository_links(document);command_paths(document)
-    return dict(old,passed=True,presentation_version=49,report_revision='v48',v48_checks=v48_result,literature_refresh=literature_result,**visual,narration_words=sum(counts),words_per_slide=counts,planned_recording=timing.summary(pitch),
+    return dict(old,passed=True,presentation_version=49,report_revision='v49',v48_checks=v48_result,literature_refresh=literature_result,**visual,narration_words=sum(counts),words_per_slide=counts,planned_recording=timing.summary(pitch),
         abstract_words=len(answers['B17'].split()),requirements=requirements,teaching_demo=teaching,
         historical_v36_checks_preserved=True,upload_ready=False,runtime_measured=False,biological_validation=False,
         scope='Public consistency, literature provenance and educational implementation checks; not biological or clinical validation')
