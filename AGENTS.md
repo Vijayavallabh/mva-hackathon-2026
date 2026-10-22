@@ -127,8 +127,8 @@ disposition. Start with `notes/track2-reviewer-guide-v48.md` and
 exact portal fields and current report package. The drug ledger/base validation remain v21; the demo/community ZIP remains v37. The current
 requirements addendum is the anonymous v52 latest-thread refresh, not v44. Current outputs are
 `results/feat009/jvv7_track2_research_v48-verified154` and
-`results/feat009/jvv7_track2_video_materials_v48_30.zip`; the current upload PDF is
-`results/feat009/v48-documents-final-20261023-1/jvv7_track2_report_v48.pdf`, whose independently
+`results/feat009/jvv7_track2_video_materials_v48_32.zip`; the current upload PDF is
+`results/feat009/v48-documents-final-20261023-2/jvv7_track2_report_v48.pdf`, whose independently
 checked metadata title is now v48 rather than stale v43. No biological experiment,
 drug-priority change, recording or submission is established.
 
@@ -344,7 +344,7 @@ Use `scripts/track2_release_v48.py` to check/build/verify **new** v48 research s
 directories (preserved snapshot `jvv7_track2_research_v48-verified154`). Render with `scripts/render_track2_slides_v48.mjs`; export the report and
 workbook with `scripts/track2_export_documents_v48.py` followed by
 `scripts/render_track2_report_v48.mjs`. Recording materials use
-`scripts/track2_bundle_v48.py` (current bundle `_30.zip`); historical research retains AF3 notices. Public
+`scripts/track2_bundle_v48.py` (current bundle `_32.zip`); historical research retains AF3 notices. Public
 literature receipts are checked by `scripts/check_track2_literature_v45.py`.
 The combined public reviewer checks integrated v39 and frozen v31/v29/v27 research, v25 CRISPR, v23 RNAi, v21 decisions
 and v19 findings. It needs no

@@ -8,12 +8,12 @@ import track2_release_v48 as release
 
 ROOT=release.ROOT
 SLIDES=ROOT/'results/feat009/v48-slides-final-20261022-4'
-DOCS=ROOT/'results/feat009/v48-documents-final-20261023-1'
-DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v48_30.zip'
+DOCS=ROOT/'results/feat009/v48-documents-final-20261023-2'
+DEST=ROOT/'results/feat009/jvv7_track2_video_materials_v48_32.zip'
 def sources():
     release.scientific_checks()
     render=json.loads((ROOT/'notes/track2-v48-render-audit-v51.json').read_text())
-    docs=json.loads((ROOT/'notes/track2-v48-documents-audit-v55.json').read_text())
+    docs=json.loads((ROOT/'notes/track2-v48-documents-audit-v56.json').read_text())
     expected={SLIDES/name:sha for name,sha in render['files'].items()}
     expected.update({DOCS/name:sha for name,sha in docs['export']['files'].items()})
     expected.update({DOCS/name:sha for name,sha in docs['pdf']['files'].items()})

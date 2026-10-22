@@ -6,8 +6,7 @@ Repository: https://github.com/Vijayavallabh/mva-hackathon-2026
 
 ## Proposal in one minute
 
-**What we propose.** Everolimus is a conditional, approved mTORC1 probe for further
-investigation—not a treatment or clinical recommendation for the child. No rescue-priority drug is supported. It advances only after two prerequisites are measured in the relevant
+**What we propose.** Everolimus is a conditional, approved mTORC1 probe for further investigation. It is not a treatment or clinical recommendation for the child. No rescue-priority drug is supported. It advances only after two prerequisites are measured in the relevant
 model: the retained BUB1B pair produces a reproducible endogenous functional deficit,
 and that model shows the relevant mTORC1 state. Until then it stays on HOLD.
 
@@ -28,8 +27,7 @@ to stop visible to other teams without patient data, models, or GPUs.
 
 **Why everolimus is eligible but not superior.** Its approved pharmacology makes
 mTORC1 perturbation concrete, and carrier-mouse muscle supplies a bounded rationale.
-It is a worked example, not demonstrated superiority over NAD/SIRT2 or the other
-retained candidates. The [candidate comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-candidate-comparison-v51.md)
+It is a worked example, not evidence of superiority over NAD/SIRT2 or the other retained candidates. The [candidate comparison](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-candidate-comparison-v51.md)
 sets out the supporting evidence, objections, and prerequisites for each route.
 Everolimus is conditionally eligible because approved mTORC1 pharmacology and a
 bounded carrier-mouse lead make a concrete downstream test possible. NAD/SIRT2 is

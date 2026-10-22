@@ -11,7 +11,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 CHECKLIST = ROOT / "notes/track2-submission-prep-v3.md"
 CURRENT = ROOT / "notes/track2-current.json"
-MATERIALS = ROOT / "notes/track2-submission-materials-v7.json"
+MATERIALS = ROOT / "notes/track2-submission-materials-v8.json"
 OFFICIAL = ROOT / "sources/public-official-v52/tabs-submit_track2.py"
 
 

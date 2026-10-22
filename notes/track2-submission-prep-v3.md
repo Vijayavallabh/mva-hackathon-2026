@@ -9,11 +9,11 @@ has been recorded or hosted yet.
 
 | Portal field / material | Exact current file |
 |---|---|
-| Written report to upload | `results/feat009/v48-documents-final-20261023-1/jvv7_track2_report_v48.pdf` |
-| Markdown alternative (not both) | `results/feat009/v48-documents-final-20261023-1/jvv7_track2_report_v48.md` |
-| Methods workbook for review, not portal upload | `results/feat009/v48-documents-final-20261023-1/jvv7_track2_methods_v48.xlsx` |
+| Written report to upload | `results/feat009/v48-documents-final-20261023-2/jvv7_track2_report_v48.pdf` |
+| Markdown alternative (not both) | `results/feat009/v48-documents-final-20261023-2/jvv7_track2_report_v48.md` |
+| Methods workbook for review, not portal upload | `results/feat009/v48-documents-final-20261023-2/jvv7_track2_methods_v48.xlsx` |
 | Slide deck for recording, not portal upload | `results/feat009/v48-slides-final-20261022-4/track2-slides-v48.pdf` |
-| Owner review bundle | `results/feat009/jvv7_track2_video_materials_v48_30.zip` |
+| Owner review bundle | `results/feat009/jvv7_track2_video_materials_v48_32.zip` |
 | Verified release snapshot | the current verified release snapshot in `notes/track2-current.json` |
 
 Upload **one report file**, either the PDF or Markdown version, not both. The
