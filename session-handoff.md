@@ -1,15 +1,15 @@
-# Session handoff: v48 final delivery chain
+# Session handoff: v49 judge-first delivery chain
 
-22 October 2026, sessions 84-98. Only **feat-009** remains active for delivery and
-unresolved biological qualification. Current v48 integrates the adjudicated external review and preserves the frozen v40
+23 October 2026, sessions 84-103. Only **feat-009** remains active for delivery and
+unresolved biological qualification. Current v49 condenses the v48 evidence dossier into a judge-first report while preserving the adjudicated external review and preserves the frozen v40
 qualification sequence, synthetic-arm labels, 369-word own-voice narration and
 recording metrics while adding the TORC1-segregation contrary-evidence refresh,
 direct mTORC1 engagement and mitotic lagging-DNA/anaphase-bridge readouts. Use
-`notes/track2-current.json`, `notes/track2-report-v48.md`,
-`notes/track2-slides-v48.html`, `notes/track2-pitch-v46.md` and
+`notes/track2-current.json`, `notes/track2-report-v49.md`,
+`notes/track2-slides-v49.html`, `notes/track2-pitch-v46.md` and
 `notes/track2-transcript-v46.txt`. The combined entry point is
-`scripts/check_track2_harness_v48.py`; start with
-`notes/track2-reviewer-guide-v48.md` and `notes/track2-owner-readiness-v48.md`; they list exact current deliverables.
+`scripts/check_track2_harness_v49.py`; start with
+`notes/track2-reviewer-guide-v49.md` and `notes/track2-owner-readiness-v49.md`; they list exact current deliverables.
 The current literature chain is `notes/track2-literature-v45.md`,
 `notes/track2-literature-audit-v45.json` and
 `scripts/check_track2_literature_v45.py`; the broader v41 and targeted v43 refreshes remain preserved. The official-state chains are the full v42 review plus the latest v52 thread refresh: `notes/track2-requirements-review-v42.md`,
@@ -61,9 +61,8 @@ biological or clinical validity. The v40 small-kit guide points to that existing
 
 Frozen v40 exports remain `results/feat009/v40-slides-final-20261020` and
 `results/feat009/v40-documents-final-20261020`; the final teleprompter browser receipt
-remains under `results/feat009/v40-prompter-final-20261020`. Current v48 exports are `results/feat009/v47-slides-final-20261020-1`,
-`results/feat009/v47-documents-final-20261020-3`, `results/feat009/jvv7_track2_research_v47-verified1`
-and `results/feat009/jvv7_track2_video_materials_v47_1.zip`; prior exports remain
+remains under `results/feat009/v40-prompter-final-20261020`. Current v49 exports are `results/feat009/v49-slides-final-20261023-1`,
+`results/feat009/v49-documents-final-20261023-1` and `results/feat009/jvv7_track2_video_materials_v49_33.zip`; prior exports remain
 available for historical comparison. No measured recording is claimed. The header continues to respect wrapped mobile controls. A shared narration parser
 checks the transcript, prompter, guide and metrics JSON: 369 words in 180 allocated
 seconds, or 122.3 planned words/minute. These are not measured video times. Earlier draft exports and
@@ -130,7 +129,7 @@ See `notes/track2-dgx-cleanup-v37.md`; environment imports passed after cleanup.
 
 ```bash
 ./init.sh
-uv run --no-project python scripts/check_track2_harness_v48.py
+uv run --no-project python scripts/check_track2_harness_v49.py
 uv run --no-project python scripts/track2_public_review_v48.py
 uv run --no-project python scripts/check_track2_literature_v45.py
 uv run --no-project python scripts/check_track2_requirements_v52.py
@@ -195,8 +194,8 @@ biological, not more model agreement.
 
 ## Current state
 
-Current v48 integrates the external-review adjudication, corrected current routes and v46 narration; use
-`notes/track2-reviewer-guide-v48.md` and `notes/track2-owner-readiness-v48.md`; they list exact current deliverables.
+Current v49 condenses the v48 evidence dossier into a judge-first report while preserving the external-review adjudication, corrected current routes and v46 narration; use
+`notes/track2-reviewer-guide-v49.md` and `notes/track2-owner-readiness-v49.md`; they list exact current deliverables.
 It routes the report/lab handoff/reviewer brief/judge questions/external review packet
 through v50/v51, and the current live requirements refresh through v52. Reproduce with `scripts/track2_public_review_v48.py`,
-`scripts/check_track2_literature_v45.py` and `scripts/check_track2_harness_v48.py`. It does not change drug disposition or recording state.
+`scripts/check_track2_literature_v45.py` and `scripts/check_track2_harness_v49.py`. It does not change drug disposition or recording state.
