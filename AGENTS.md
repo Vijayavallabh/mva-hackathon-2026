@@ -91,25 +91,25 @@ and timely delivery. Do not infer efficacy, eligibility or awards.
 
 ## Current work and authoritative files
 
-**Session 104 (2026-10-23): current v50 is the active public presentation state.**
+**Session 105 (2026-10-23): current v51 is the active public presentation state.**
 It integrates the external-review adjudication, explicit candidate selection, decision-contribution
 table, four-arm experiment, primary endpoint/units, software-vs-biology boundary and v46 narration.
-Start with `notes/track2-report-v50.md`, `notes/track2-slides-v50.html` and
-`scripts/check_track2_harness_v50.py`.
-Start with `notes/track2-reviewer-guide-v50.md` and `notes/track2-owner-readiness-v50.md`; they list exact current deliverables.
+Start with `notes/track2-report-v51.md`, `notes/track2-slides-v51.html` and
+`scripts/check_track2_harness_v51.py`.
+Start with `notes/track2-reviewer-guide-v51.md` and `notes/track2-owner-readiness-v51.md`; they list exact current deliverables.
 The current requirements refresh, v52, rechecked the official files and discussions
 through the new open thread 33; it is an SDK/README pull request, not a Track 2
 requirement change. No new organizer requirement appeared. The v43 targeted literature refresh found a 2026 fission-yeast TORC1-segregation
 study; it motivates direct mTORC1 engagement and mitotic lagging-DNA/anaphase-bridge
 readouts without changing any drug disposition. Current routes are
-`notes/track2-report-v50.md`, `notes/track2-lab-handoff-v43.md`,
+`notes/track2-report-v51.md`, `notes/track2-lab-handoff-v43.md`,
 `notes/track2-reviewer-brief-v50.md`, `notes/track2-judge-questions-v44.md`,
 `notes/track2-external-review-packet-v49.md`, `notes/track2-literature-v45.md`,
 `notes/track2-video-description-v50.md` and `notes/track2-submission-prep-v3.md`. Recheck with
 `scripts/check_track2_literature_v45.py`, `scripts/test_track2_literature_v45.py`,
 `scripts/check_track2_requirements_v52.py`,
 `scripts/test_track2_requirements_v52.py`, `scripts/check_track2_submission_prep_v3.py` and
-`scripts/check_track2_harness_v50.py`.
+`scripts/check_track2_harness_v51.py`.
 No recording, upload or biological validation is established.
 
 
@@ -122,13 +122,13 @@ adjudication, explicit candidate selection, four-arm experiment, primary endpoin
 independent units, decision-contribution table and software/biology boundary. The
 v41/v43/v45 literature addenda add checkpoint/corona/MCC/APC/C, TORC1-segregation,
 mitochondrial, proteostasis and tumour-context boundaries without changing any drug
-disposition. Start with `notes/track2-reviewer-guide-v50.md` and
-`notes/track2-owner-readiness-v50.md`; use `notes/track2-submission-prep-v3.md` for
+disposition. Start with `notes/track2-reviewer-guide-v51.md` and
+`notes/track2-owner-readiness-v51.md`; use `notes/track2-submission-prep-v3.md` for
 exact portal fields and current report package. The drug ledger/base validation remain v21; the demo/community ZIP remains v37. The current
 requirements addendum is the anonymous v52 latest-thread refresh, not v44. Current outputs are
 `results/feat009/jvv7_track2_research_v48-verified154` and
 `results/feat009/jvv7_track2_video_materials_v50_34.zip`; the current upload PDF is
-`results/feat009/v50-documents-final-20261023-1/jvv7_track2_report_v50.pdf`, whose independently
+`results/feat009/v51-documents-final-20261023-1/jvv7_track2_report_v51.pdf`, whose independently
 checked metadata title is now v48 rather than stale v43. No biological experiment,
 drug-priority change, recording or submission is established.
 
@@ -340,16 +340,16 @@ participated. Delivery, provider and distribution flags remain unresolved.
   Record the complete acknowledgement inside the three-minute video. Preserve the
   Track 1 submitted v4, every earlier Track 2 bound input/package, the fixed v19 campaign and v1-v21 releases.
 
-Use `scripts/track2_release_v50.py` to check/build/verify **new** v48 research snapshot
+Use `scripts/track2_release_v51.py` to check/build/verify **new** v48 research snapshot
 directories (preserved snapshot `jvv7_track2_research_v48-verified154`). Render with `scripts/render_track2_slides_v48.mjs`; export the report and
 workbook with `scripts/track2_export_documents_v48.py` followed by
 `scripts/render_track2_report_v48.mjs`. Recording materials use
-`scripts/track2_bundle_v50.py` (current bundle `_32.zip`); historical research retains AF3 notices. Public
+`scripts/track2_bundle_v51.py` (current bundle `_32.zip`); historical research retains AF3 notices. Public
 literature receipts are checked by `scripts/check_track2_literature_v45.py`.
 The combined public reviewer checks integrated v39 and frozen v31/v29/v27 research, v25 CRISPR, v23 RNAi, v21 decisions
 and v19 findings. It needs no
 data/results folders, keys, network, GPUs or old
-local snapshots: `uv run --no-project python scripts/check_track2_harness_v50.py`.
+local snapshots: `uv run --no-project python scripts/check_track2_harness_v51.py`.
 The versioned `scripts/track2_public_review_v48.py` checks the integrated presentation,
 frozen research and literature provenance; `scripts/check_track2_transcriptome.py`
 checks v19 alone. Its passing result verifies consistency, not biology or eligibility. The stricter
@@ -375,7 +375,7 @@ Core self-checks and current presentation validation:
 uv run python scripts/verify_data.py --self-check
 uv run python scripts/track1_submission.py --self-check
 uv run python scripts/track2_evidence.py check
-uv run python scripts/check_track2_harness_v50.py
+uv run python scripts/check_track2_harness_v51.py
 uv run --no-project python scripts/check_track2_transcriptome.py
 uv run --no-project python scripts/check_track2_rnai_v23.py
 uv run --no-project python scripts/check_track2_crispr_v25.py
@@ -384,7 +384,7 @@ uv run --no-project python scripts/check_track2_perturbseq_v31.py
 uv run --no-project python scripts/track2_falsification_v21.py
 uv run --no-project python scripts/track2_public_review_v48.py
 uv run --no-project python scripts/check_track2_optical_v36.py
-uv run python scripts/track2_release_v50.py check
+uv run python scripts/track2_release_v51.py check
 uv run python -m unittest discover -s scripts -p 'test_track2*.py'
 ```
 

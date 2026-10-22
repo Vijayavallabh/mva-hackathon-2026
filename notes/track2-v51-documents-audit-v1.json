@@ -1,0 +1,72 @@
+{
+  "document_directory": "results/feat009/v51-documents-final-20261023-1",
+  "export": {
+    "created_utc": "2026-10-22T21:27:26.742078+00:00",
+    "template_url": "https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026/resolve/60e1c30e337ce6fe01813040dbe49979eb8c50aa/static/templates/methods_description_form.xlsx",
+    "template_sha256": "61aab080a2868a3b724e76692b83c24812112e305cd3a8b03f8f91a6b2414441",
+    "report_sha256": "d93484fe6b72523c22e7498613e1a796309fdd430b2232bf2b984f74b18c9eac",
+    "script_sha256": "ad930859d8942e34eb6fd10968a2570213a1134a1fcd6e66841fefd0af4695f2",
+    "answer_cells": [
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17"
+    ],
+    "abstract_words": 428,
+    "official_questions_unchanged": true,
+    "formulas": 0,
+    "formula_errors": 0,
+    "track1_values_and_cell_styles_preserved": true,
+    "files": {
+      "jvv7_track2_methods_v51.xlsx": "19e79cf737b10d85732125451a383e8e64e81ddb7e84497df08ca431aa511942",
+      "jvv7_track2_report_v51.md": "d93484fe6b72523c22e7498613e1a796309fdd430b2232bf2b984f74b18c9eac",
+      "methods-answers.json": "6e9546975715baa2e9ff6cc6356c6358d1745521e99948de507d0aea38c7b026",
+      "jvv7_track2_report_v51.html": "e0e605d421adfc9dd34792f44dc5645b844389c3d0e893928eb90dc81e3ac61a"
+    },
+    "upload_ready": false
+  },
+  "pdf": {
+    "source": "notes/track2-report-v51.md",
+    "source_sha256": "d93484fe6b72523c22e7498613e1a796309fdd430b2232bf2b984f74b18c9eac",
+    "html_sha256": "e0e605d421adfc9dd34792f44dc5645b844389c3d0e893928eb90dc81e3ac61a",
+    "renderer_sha256": "0eabde1e936d687876655c3144b10fc7809602ff3df628c05a0f527476bac015",
+    "exporter_sha256": "ad930859d8942e34eb6fd10968a2570213a1134a1fcd6e66841fefd0af4695f2",
+    "browser": {
+      "protocolVersion": "1.3",
+      "product": "Chrome/131.0.6778.139",
+      "revision": "@c35bbcbd7c2775a12a3f320e05ac0022939b1a8a",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+      "jsVersion": "13.1.201.16"
+    },
+    "geometry": {
+      "width": 665,
+      "scrollWidth": 665,
+      "links": 57,
+      "headings": 10,
+      "tables": 7
+    },
+    "files": {
+      "jvv7_track2_report_v51.pdf": "bf99f7da8057d05c1a9dd45249640f289c731cb79a90cebdaebe6b5143b3042a"
+    },
+    "limits": "PDF export and geometry; no scientific, licensing, recording or upload certification.",
+    "pdf_title": "jvv7 \u00b7 Track 2 report v51",
+    "pdf_page_count": 13
+  },
+  "pages": 13,
+  "author_visual_review": "Programmatic PDF/title/text, page-count, hash, workbook round-trip and academic-humanizer wording checks completed; no manual visual review is claimed.",
+  "independent_visual_review": false,
+  "clinical_validation": false,
+  "pdf_title": "jvv7 \u00b7 Track 2 report v51",
+  "title_independent_check_passed": true,
+  "official_requirements_only": true,
+  "alternatives_considered_table": true,
+  "academic_humanizer_pass": true,
+  "em_dashes_removed": true
+}
