@@ -17,9 +17,9 @@ jobs:
         with:
           enable-cache: true
       - name: Integrated public review
-        run: uv run --no-project python scripts/check_track2_harness_v56.py
+        run: uv run --no-project python scripts/check_track2_harness_v67.py
       - name: Presentation reviewer
-        run: uv run --no-project python scripts/track2_public_review_v56.py
+        run: uv run --no-project python scripts/track2_public_review_v67.py
       - name: Literature provenance
         run: uv run --no-project python scripts/check_track2_literature_v45.py
       - name: Requirements refresh
