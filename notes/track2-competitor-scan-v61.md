@@ -19,6 +19,11 @@ This note records the third targeted public competitor scan. It is a comparison 
 | `kavya5cloud` + YouTube video | "Mechanism Before Repurposing": explicitly proposes **no drug candidate** because genetic architecture and mechanism remain unresolved | Our report reaches the same qualification-first conclusion while retaining one conditional probe; no change |
 | `octagono/genoma` + YouTube video | Track 1 + Track 2 combined pitch; Hsp90-inhibitor route; 4-model panel; 138 offline tests | Hsp90 route already excluded in our report; no new evidence |
 | `Ryukijano/mva-hackathon-2026` + YouTube video | Rescue/stabilise/buffer stack; amlexanox; sirolimus flagged as anti-target; local synthetic narration disclosure | Adds no candidate we support; sirolimus anti-target concern is already covered by our mTOR-branch gating |
+| Soterith + YouTube video | Corporate-style Track 2 pitch with company links and broad AI framing; no explicit candidate, mechanism or falsifying experiment identified in the description | Not adopted: no substantive route or evidence to integrate |
+| `gklab/kaiboost` + YouTube video | Three conditional routes: everolimus, niacin/acipimox, sodium phenylbutyrate; emphasizes distinguishing pathway engagement/chromosome segregation from growth suppression | Overlaps our alternatives table; reinforces but does not change our disposition |
+| `bestpricegye-ai/mva-hackathon-2026` + YouTube video | NMN/NAD+→SIRT2→BUBR1 Lys668 route framed as the only published route raising the causal protein; anti-mitotic/TTK-MPS1 guardrail; vincristine standard-of-care caveat | NAD/SIRT2 route already present as a competing route; anti-mitotic exclusion already retained; no promotion |
+| `liamc225/mva-hackathon-2026` + YouTube video | Privacy-preserving falsifiable path from two-allele hypothesis to mechanism/assay/preclinical tests; candidates framed as research hypotheses only | Compatible framing; no new candidate or evidence beyond our existing boundary |
+
 
 
 ## What this scan changed
