@@ -1,8 +1,6 @@
 # Track 2 harness review, v67
 
-22 October 2026. This is the current presentation and research consistency review
-for the v67 presentation layer. It inherits the v47 review boundaries and adds the
-v67 revision/route and no-slop wording checks. It does not add biological
+23 October 2026. This is the current presentation and research consistency review for the v67 presentation layer. It inherits the v66 review boundaries and adds the v67 academic-humanizer wording review and current-route checks. It does not add biological
 evidence, literature, a GPU campaign, a recorded video, an upload, or a drug
 decision.
 
@@ -16,32 +14,32 @@ decision.
 - Document exporter: `scripts/track2_export_documents_v67.py`
 - Report renderer: `scripts/render_track2_report_v67.mjs`
 - Recording-materials bundle: `scripts/track2_bundle_v67.py`
-- Latest requirements refresh: `notes/track2-requirements-review-v67.md`
-- Submission checklist: `notes/track2-submission-prep-v3.md`
-- Exact submission materials: `notes/track2-submission-materials-v5.json`
+- Latest requirements refresh: `notes/track2-requirements-review-v52.md`
+- Submission checklist: `notes/track2-submission-prep-v22.md`
+- Exact submission materials: `notes/track2-submission-materials-v27.json`
 - Current state: `notes/track2-current.json`
-- Design note: `notes/track2-v67-design.md`
+- Design note: `notes/track2-v48-design.md`
 
-Frozen v47 inputs, render audits, exports, snapshot, and bundle remain available
+Frozen v66 inputs, render audits, exports, snapshot, and bundle remain available
 under their original names. Historical v1-v40 snapshots and all earlier research
 addenda remain unchanged and preserved.
 
 ## Checks performed
 
-- Full inherited v47 public review.
-- V48 route and revision checks.
+- Full inherited v66 public review.
+- V67 route, revision and academic-humanizer wording checks.
 - No-slop wording scan, with the required BEACON sponsor acknowledgement exempt
   because it is the sponsor's name.
 - Nine-slide geometry: no outside text, no overlaps, minimum 24 px font.
 - PDF/font and accessibility contrast checks.
 - Methods workbook round-trip and template preservation.
-- v67 release snapshot integrity and historical preservation.
+- Preserved v48 release snapshot integrity and historical preservation.
 - v67 recording-materials bundle integrity.
 
 ## Verification architecture
 
 The current release snapshot is preserved at
-`results/feat009/jvv7_track2_research_v67-verified154`. Later current-route updates
+`results/feat009/jvv7_track2_research_v48-verified154`. Later current-route updates
 do not rewrite that snapshot. The harness scripts check live files, while the
 snapshot binds the presentation/research inputs. The harness check/audit/test
 scripts are therefore not snapshot-bound inputs; binding them would make every

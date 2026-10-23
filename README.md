@@ -191,7 +191,7 @@ HT29 agreement survives stricter adjustment and CRISPR QC restriction. MCF7 has 
 QC-qualified BUB1B query. Drug decisions remain unchanged.
 
 The [v29 reviewer guide](notes/track2-reviewer-guide-v29.md) covers 47 claim records,
-complete provenance and the combined `scripts/check_track2_harness_v29.py` check.
+complete provenance; the current v67 harness preserves these findings.
 At session 69, presentation v28 required the separate addendum. V30 now integrates
 those results and preserves v28. All v29 GPU jobs have finished.
 
@@ -215,7 +215,7 @@ connections remain separate from its failed BUB1B model qualification. New sourc
 checks detect regrouped old experiments under new IDs. One BUB1B guide and no joint
 functional rescue mean no drug promotion. The
 [v25 reviewer guide](notes/track2-reviewer-guide-v25.md) connects the full evidence,
-validation changes and combined `scripts/check_track2_harness_v25.py` check.
+validation changes; the current v67 harness preserves these findings.
 Presentation v24 remains frozen; the later v26 materials integrate this addendum.
 
 **Session 64: integrated presentation and harness.** The v24 report, nine-slide deck,

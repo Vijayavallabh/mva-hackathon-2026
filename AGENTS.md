@@ -105,10 +105,10 @@ readouts without changing any drug disposition. Current routes are
 `notes/track2-report-v67.md`, `notes/track2-lab-handoff-v43.md`,
 `notes/track2-reviewer-brief-v50.md`, `notes/track2-judge-questions-v44.md`,
 `notes/track2-external-review-packet-v49.md`, `notes/track2-literature-v45.md`,
-`notes/track2-video-description-v50.md` and `notes/track2-submission-prep-v3.md`. Recheck with
+`notes/track2-video-description-v67.md` and `notes/track2-submission-prep-v22.md`. Recheck with
 `scripts/check_track2_literature_v45.py`, `scripts/test_track2_literature_v45.py`,
 `scripts/check_track2_requirements_v52.py`,
-`scripts/test_track2_requirements_v52.py`, `scripts/check_track2_submission_prep_v3.py` and
+`scripts/test_track2_requirements_v52.py`, `scripts/check_track2_submission_prep_v22.py` and
 `scripts/check_track2_harness_v67.py`.
 No recording, upload or biological validation is established.
 
@@ -123,13 +123,13 @@ independent units, decision-contribution table and software/biology boundary. Th
 v41/v43/v45 literature addenda add checkpoint/corona/MCC/APC/C, TORC1-segregation,
 mitochondrial, proteostasis and tumour-context boundaries without changing any drug
 disposition. Start with `notes/track2-reviewer-guide-v67.md` and
-`notes/track2-owner-readiness-v67.md`; use `notes/track2-submission-prep-v3.md` for
+`notes/track2-owner-readiness-v67.md`; use `notes/track2-submission-prep-v22.md` for
 exact portal fields and current report package. The drug ledger/base validation remain v21; the demo/community ZIP remains v37. The current
 requirements addendum is the anonymous v52 latest-thread refresh, not v44. Current outputs are
 `results/feat009/jvv7_track2_research_v48-verified154` and
-`results/feat009/jvv7_track2_video_materials_v50_34.zip`; the current upload PDF is
-`results/feat009/v67-documents-final-20261023-1/jvv7_track2_report_v66.pdf`, whose independently
-checked metadata title is now v48 rather than stale v43. No biological experiment,
+`results/feat009/jvv7_track2_video_materials_v67_53.zip`; the current upload PDF is
+`results/feat009/v67-documents-final-20261023-1/jvv7_track2_report_v67.pdf`, whose independently
+checked metadata title is v67. No biological experiment,
 drug-priority change, recording or submission is established.
 
 Read `notes/track2-rehearsal-adjudication-v39.md`,

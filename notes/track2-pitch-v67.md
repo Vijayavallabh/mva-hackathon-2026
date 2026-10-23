@@ -1,6 +1,6 @@
-# Track 2 v50: three-minute pitch script
+# Track 2 v67: three-minute pitch script
 
-Participant jvv7, 23 October 2026. Read with the nine-slide v50 deck.
+Participant jvv7, 23 October 2026. Read with the nine-slide v67 deck.
 Times total three minutes but are rehearsal allocations; runtime is unmeasured.
 Read only the paragraphs. Keep the complete acknowledgement visible in the video.
 

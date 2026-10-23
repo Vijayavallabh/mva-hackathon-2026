@@ -1,8 +1,8 @@
 # Track 2 v67 reviewer guide
 
-For a short entry point, read [the reviewer brief](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-reviewer-brief-v67.md).
+For a short entry point, read [the reviewer brief](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-reviewer-brief-v50.md).
 Then use [the report](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-report-v67.md), [nine slides](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-slides-v67.html)
-and [369-word recording script](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-pitch-v67.md). The
+and [339-word recording script](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-pitch-v67.md). The
 [current record](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-current.json) routes the PDF, methods workbook, transcript
 and recording-materials ZIP. All earlier releases remain frozen.
 
@@ -17,7 +17,7 @@ disposition, and neither is biological validation.
 The full [v42 requirements refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v42.md)
 read 31 public threads/89 visible comments. Thread 32 permits a clearly labeled
 published-paper example in the pitch; it does not require changing the current
-369-word script. The current anonymous [v67 latest-thread refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v67.md)
+339-word script. The current anonymous [v67 latest-thread refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v52.md)
 rechecked all official files and the 32/16 discussion listing through the new open
 thread 33 (an SDK/README pull request, not a Track 2 requirement change). Threads
 32 and 31 were reread; no new organizer requirement appeared.
@@ -28,7 +28,7 @@ inspect the exact inputs and download the explanation. The [small public kit](ht
 includes everything needed to replay the 18 examples with standard-library Python.
 These examples test implementation, not policy validity or clinical performance.
 
-For the proposal, use the [laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v67.md) and
+For the proposal, use the [laboratory handoff](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-lab-handoff-v51.md) and
 [reviewer questions](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-judge-questions-v44.md). The [competition plan](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-competition-plan-v39.md)
 maps actual work to rigor 35%, impact 25%, innovation 25% and scalability 15%.
 The owner-selected voice workflow is in the [timed recording guide](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-recording-guide-v67.md)
@@ -37,11 +37,11 @@ and [offline teleprompter](https://github.com/Vijayavallabh/mva-hackathon-2026/b
 ```bash
 uv run --no-project python scripts/check_track2_harness_v67.py
 uv run --no-project python scripts/track2_public_review_v67.py
-uv run --no-project python scripts/check_track2_requirements_v67.py
+uv run --no-project python scripts/check_track2_requirements_v52.py
 uv run --no-project python scripts/check_track2_optical_v36.py
 uv run --no-project python scripts/track2_demo_v37.py
 uv run python scripts/audit_track2_harness_v67.py --output <new-output.json>
-uv run python scripts/track2_release_v67.py verify results/feat009/jvv7_track2_research_v67-verified154
+uv run python scripts/track2_release_v67.py verify results/feat009/jvv7_track2_research_v48-verified154
 uv run python scripts/track2_bundle_v67.py verify
 ```
 
@@ -74,7 +74,7 @@ registered algorithm; it is not an independent statistical implementation.
 The six [optical falsification records](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-optical-register-v36.json) specify
 what could overturn each interpretation and what changes before a drug experiment.
 
-The current [v67 requirements refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v67.md)
+The current [v67 requirements refresh](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/track2-requirements-review-v52.md)
 checks the live Space revision, seven official-file hashes and the 31/16 discussion
 listing. It found no new organizer requirement and did not reread thread bodies. The [active deletion plan](https://github.com/Vijayavallabh/mva-hackathon-2026/blob/main/notes/deletion-plan-v2.md)
 requires deletion and confirmation to cnb@sagebase.org by November 23. Earlier frozen
@@ -90,8 +90,8 @@ runtime, hosting, provider/distribution questions, portal checks and receipt.
 - Slide deck source: `notes/track2-slides-v67.html`
 - Rendered slides/PDF: `results/feat009/v67-slides-final-20261023-1`
 - Methods workbook: `results/feat009/v67-documents-final-20261023-1/jvv7_track2_methods_v67.xlsx`
-- Recording materials ZIP: `results/feat009/jvv7_track2_video_materials_v67_52.zip`
-- Preserved historical release snapshot: `results/feat009/jvv7_track2_research_v67-verified154` (do not rebuild for a presentation-only v67 change)
+- Recording materials ZIP: `results/feat009/jvv7_track2_video_materials_v67_53.zip`
+- Preserved historical release snapshot: `results/feat009/jvv7_track2_research_v48-verified154` (do not rebuild for a presentation-only v67 change)
 - Public repository HEAD: `1fc4163ff7ba67c51decd73e14062d06fe86101d`
 
 No recorded video or video URL exists. These exact local deliverables are not yet
