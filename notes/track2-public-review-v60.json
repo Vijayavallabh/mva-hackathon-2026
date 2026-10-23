@@ -1,0 +1,442 @@
+{
+  "passed": true,
+  "presentation_version": 60,
+  "drug_science_version": 21,
+  "static_deck_verified": true,
+  "source_sha256": "261d146cb9950a03127c9b9522b5fc64bbe17adb3b84a4e0eba75be1a37a101b",
+  "slides": 9,
+  "vector_figures": 8,
+  "visible_words": [
+    55,
+    77,
+    75,
+    88,
+    96,
+    77,
+    68,
+    89,
+    106
+  ],
+  "narration_words": 339,
+  "words_per_slide": [
+    21,
+    48,
+    46,
+    44,
+    40,
+    34,
+    39,
+    45,
+    22
+  ],
+  "methods_fields": 11,
+  "abstract_words": 428,
+  "requirements": {
+    "revision": "60e1c30e337ce6fe01813040dbe49979eb8c50aa",
+    "public_discussions": 30,
+    "visible_comments": 84,
+    "closed_discussions": 14
+  },
+  "optical": {
+    "passed": true,
+    "version": 36,
+    "status": "complete",
+    "gpus": 8,
+    "cells": 31884270,
+    "corrected_fits": 16,
+    "baseline_methods_per_arm": 12,
+    "arms": {
+      "mitotic": {
+        "cells": 838224,
+        "test_genes": 950,
+        "baseline_methods": 12,
+        "primary_gain_gate_passed": false,
+        "registered_gain_gate_passed": false,
+        "exploratory_gain_gate_passed": false,
+        "bub1b": {
+          "eligible_guides": 1,
+          "status": "insufficient_guide_coverage",
+          "rank_is_missing": true
+        }
+      },
+      "interphase": {
+        "cells": 31046046,
+        "test_genes": 994,
+        "baseline_methods": 12,
+        "primary_gain_gate_passed": false,
+        "registered_gain_gate_passed": false,
+        "exploratory_gain_gate_passed": false,
+        "bub1b": {
+          "eligible_guides": 4,
+          "status": "evaluated",
+          "rank_is_missing": false
+        }
+      }
+    },
+    "biological_validation": false,
+    "drug_ranking_changed": false
+  },
+  "claim_records": 58,
+  "historical_v34_checks_preserved": true,
+  "transcriptome": {
+    "gpus": 8,
+    "completed_gpu_waves": 3,
+    "compound_profiles": 312438,
+    "query_compound_comparisons": 12185082,
+    "resampled_reagent_sets": 560000,
+    "primary_contexts": 14,
+    "primary_query_gates_passed": 0,
+    "post_hoc_comparisons": 42,
+    "post_hoc_full_filters_passed": 0,
+    "primary_everolimus_comparisons": 19,
+    "primary_everolimus_profiles": 14,
+    "primary_everolimus_positive_correlations": 13,
+    "phase2_unresolved_labelled_profiles": 174,
+    "phase2_reference_matching_profiles": 6,
+    "phase2_reference_matching_qc_passes": 0,
+    "ht29_post_hoc_reagents": 5,
+    "ht29_post_hoc_adjusted_tail": 0.041995800419958006,
+    "ht29_full_filter_passed": false,
+    "drug_ranking_changed": false
+  },
+  "falsification_amendment": {
+    "passed": true,
+    "claims": 27,
+    "additional_source_records": 12,
+    "current_decision": {
+      "clinical_recommendation": false,
+      "scope": "qualified_non_cancer_model",
+      "evidence_kind": "not_measured",
+      "decision": "HOLD",
+      "reason": "Prerequisites unresolved or failed; no transfer from another branch"
+    },
+    "drug_dispositions_changed": false,
+    "biological_validation": false
+  },
+  "upload_ready": false,
+  "biological_validation": false,
+  "runtime_measured": false,
+  "scope": "Public consistency, literature provenance and educational implementation checks; not biological or clinical validation",
+  "report_revision": "v60",
+  "v50_checks": {
+    "report_revision": "v51",
+    "slop_scan_passed": true,
+    "route": "notes/track2-report-v60.md"
+  },
+  "literature_refresh": {
+    "passed": true,
+    "version": 45,
+    "searches": 7,
+    "selected_sources": 4,
+    "public_receipts": 14,
+    "repository_bytes": 94130,
+    "subject_data_read": false,
+    "drug_dispositions_changed": false,
+    "biological_validation": false,
+    "full_text_systematic_review": false,
+    "new_gpu_campaign": false
+  },
+  "planned_recording": {
+    "schema_version": 40,
+    "narration_words": 339,
+    "allocation_seconds": 180,
+    "planned_words_per_minute": 113.0,
+    "cues": [
+      {
+        "slide": 1,
+        "start": 0,
+        "end": 18,
+        "words": 21,
+        "planned_words_per_minute": 70.0
+      },
+      {
+        "slide": 2,
+        "start": 18,
+        "end": 40,
+        "words": 48,
+        "planned_words_per_minute": 130.9
+      },
+      {
+        "slide": 3,
+        "start": 40,
+        "end": 63,
+        "words": 46,
+        "planned_words_per_minute": 120.0
+      },
+      {
+        "slide": 4,
+        "start": 63,
+        "end": 87,
+        "words": 44,
+        "planned_words_per_minute": 110.0
+      },
+      {
+        "slide": 5,
+        "start": 87,
+        "end": 106,
+        "words": 40,
+        "planned_words_per_minute": 126.3
+      },
+      {
+        "slide": 6,
+        "start": 106,
+        "end": 126,
+        "words": 34,
+        "planned_words_per_minute": 102.0
+      },
+      {
+        "slide": 7,
+        "start": 126,
+        "end": 149,
+        "words": 39,
+        "planned_words_per_minute": 101.7
+      },
+      {
+        "slide": 8,
+        "start": 149,
+        "end": 168,
+        "words": 45,
+        "planned_words_per_minute": 142.1
+      },
+      {
+        "slide": 9,
+        "start": 168,
+        "end": 180,
+        "words": 22,
+        "planned_words_per_minute": 110.0
+      }
+    ],
+    "runtime_measured": false,
+    "video_recorded": false
+  },
+  "teaching_demo": {
+    "passed": true,
+    "version": 37,
+    "cases": 18,
+    "synthetic_cases": 17,
+    "current_decision": "HOLD",
+    "rows": [
+      {
+        "id": "current",
+        "expected": "HOLD",
+        "decision": "HOLD",
+        "reason": "Prerequisites unresolved or failed; no transfer from another branch",
+        "evidence_kind": "not_measured",
+        "benefit_only_advance": false,
+        "benefit_and_viability_advance": false,
+        "full_policy_advance": false
+      },
+      {
+        "id": "all-pass",
+        "expected": "PRECLINICAL_REVIEW_ONLY",
+        "decision": "PRECLINICAL_REVIEW_ONLY",
+        "reason": "All scoped criteria met; specialist review and additional scope qualification remain",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": true,
+        "benefit_and_viability_advance": true,
+        "full_policy_advance": true
+      },
+      {
+        "id": "injury",
+        "expected": "STOP_SAFETY_REVIEW",
+        "decision": "STOP_SAFETY_REVIEW",
+        "reason": "Injury exceeds its prespecified bound in the tested context",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": true,
+        "benefit_and_viability_advance": true,
+        "full_policy_advance": false
+      },
+      {
+        "id": "uncertain-safety",
+        "expected": "HOLD",
+        "decision": "HOLD",
+        "reason": "Insufficient precision for benefit or noninferiority; nonsignificance is not safety",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": true,
+        "benefit_and_viability_advance": false,
+        "full_policy_advance": false
+      },
+      {
+        "id": "futility",
+        "expected": "STOP_TESTED_BENEFIT",
+        "decision": "STOP_TESTED_BENEFIT",
+        "reason": "Interval excludes the prespecified meaningful benefit; not universal inefficacy",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": false,
+        "benefit_and_viability_advance": false,
+        "full_policy_advance": false
+      },
+      {
+        "id": "imprecision",
+        "expected": "HOLD",
+        "decision": "HOLD",
+        "reason": "Insufficient precision for benefit or noninferiority; nonsignificance is not safety",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": false,
+        "benefit_and_viability_advance": false,
+        "full_policy_advance": false
+      },
+      {
+        "id": "invalid",
+        "expected": "INVALID_HOLD",
+        "decision": "INVALID_HOLD",
+        "reason": "Failed assay/control cannot refute a biological hypothesis",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": false,
+        "benefit_and_viability_advance": false,
+        "full_policy_advance": false
+      },
+      {
+        "id": "posthoc",
+        "expected": "INVALID_HOLD",
+        "decision": "INVALID_HOLD",
+        "reason": "Post-hoc changes cannot serve as locked confirmation",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": true,
+        "benefit_and_viability_advance": true,
+        "full_policy_advance": false
+      },
+      {
+        "id": "scope",
+        "expected": "HOLD",
+        "decision": "HOLD",
+        "reason": "Prerequisites unresolved or failed; no transfer from another branch",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": true,
+        "benefit_and_viability_advance": true,
+        "full_policy_advance": false
+      },
+      {
+        "id": "branch",
+        "expected": "STOP_BRANCH",
+        "decision": "STOP_BRANCH",
+        "reason": "Qualified test rejects this model/branch prerequisite only",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": true,
+        "benefit_and_viability_advance": true,
+        "full_policy_advance": false
+      },
+      {
+        "id": "separate",
+        "expected": "HOLD",
+        "decision": "HOLD",
+        "reason": "Prerequisites unresolved or failed; no transfer from another branch",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": true,
+        "benefit_and_viability_advance": true,
+        "full_policy_advance": false
+      },
+      {
+        "id": "exposure",
+        "expected": "HOLD",
+        "decision": "HOLD",
+        "reason": "Prerequisites unresolved or failed; no transfer from another branch",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": true,
+        "benefit_and_viability_advance": true,
+        "full_policy_advance": false
+      },
+      {
+        "id": "units",
+        "expected": "HOLD",
+        "decision": "HOLD",
+        "reason": "Prerequisites unresolved or failed; no transfer from another branch",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": true,
+        "benefit_and_viability_advance": true,
+        "full_policy_advance": false
+      },
+      {
+        "id": "missing",
+        "expected": "HOLD",
+        "decision": "HOLD",
+        "reason": "Prerequisites unresolved or failed; no transfer from another branch",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": true,
+        "benefit_and_viability_advance": true,
+        "full_policy_advance": false
+      },
+      {
+        "id": "margin",
+        "expected": "HOLD",
+        "decision": "HOLD",
+        "reason": "Measurements or independently justified margins missing",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": false,
+        "benefit_and_viability_advance": false,
+        "full_policy_advance": false
+      },
+      {
+        "id": "trigger",
+        "expected": "STOP_SAFETY_REVIEW",
+        "decision": "STOP_SAFETY_REVIEW",
+        "reason": "Observed safety trigger; attribution requires review",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": true,
+        "benefit_and_viability_advance": true,
+        "full_policy_advance": false
+      },
+      {
+        "id": "benefit-boundary",
+        "expected": "HOLD",
+        "decision": "HOLD",
+        "reason": "Insufficient precision for benefit or noninferiority; nonsignificance is not safety",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": false,
+        "benefit_and_viability_advance": false,
+        "full_policy_advance": false
+      },
+      {
+        "id": "injury-boundary",
+        "expected": "HOLD",
+        "decision": "HOLD",
+        "reason": "Insufficient precision for benefit or noninferiority; nonsignificance is not safety",
+        "evidence_kind": "synthetic",
+        "benefit_only_advance": true,
+        "benefit_and_viability_advance": false,
+        "full_policy_advance": false
+      }
+    ],
+    "outcomes": {
+      "vehicle": {
+        "enrolled": 100,
+        "completed_divisions": 80,
+        "error_fraction": 0.25,
+        "observed_useful_fraction": 0.6,
+        "missingness_bounds": [
+          0.6,
+          0.65
+        ],
+        "confidence_interval": false
+      },
+      "drug": {
+        "enrolled": 100,
+        "completed_divisions": 45,
+        "error_fraction": 0.1111111111111111,
+        "observed_useful_fraction": 0.4,
+        "missingness_bounds": [
+          0.4,
+          0.5
+        ],
+        "confidence_interval": false
+      }
+    },
+    "observed_useful_difference": -0.19999999999999996,
+    "missingness_difference_bounds": [
+      -0.25,
+      -0.09999999999999998
+    ],
+    "missingness_bounds_are_confidence_intervals": false,
+    "shortcut_advances_rejected_by_policy": {
+      "benefit_only_advance": 11,
+      "benefit_and_viability_advance": 9
+    },
+    "case_sha256": "809d11d70c6408cf201162a32d943dcfa4d8f50a70bdadd444eedd2db5134e83",
+    "current_sha256": "9bc02e7d3ff69dd478984d4f8bd3df883abb707da94fa9783403f8cf67182826",
+    "clinical_validation": false,
+    "external_validation": false,
+    "community_adoption_measured": false,
+    "scope": "Implementation checks on author-selected teaching cases; no diagnostic or therapeutic performance claim"
+  },
+  "historical_v36_checks_preserved": true
+}
