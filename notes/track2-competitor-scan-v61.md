@@ -25,6 +25,9 @@ This note records the third targeted public competitor scan. It is a comparison 
 | `liamc225/mva-hackathon-2026` + YouTube video | Privacy-preserving falsifiable path from two-allele hypothesis to mechanism/assay/preclinical tests; candidates framed as research hypotheses only | Compatible framing; no new candidate or evidence beyond our existing boundary |
 | `matchap26/MVA-Hackathon-2026` + YouTube video | Aurora-B/PP2A/proteostasis directions; 3,132 ChEMBL records to 24-compound research shortlist; emphasizes chromosome segregation/micronuclei/aneuploidy/viability over alignment alone | Adds no candidate we support; endpoint emphasis already reflected in our all-enrolled useful-output framework |
 | `Ryukijano/mva-hackathon-2026` + YouTube video + full report | Amlexanox as NMD-inhibition/readthrough lead; ataluren regulatory status; SIRT2/K668 stabilization; metformin/rilmenidine autophagy; sirolimus anti-target gate; AlphaMissense readthrough-residue claims | Amlexanox retained as non-promoted due to topical-only approval and unmeasured patient transcript; ataluren status already noted; SIRT2 route already a competing route; autophagy comparators added as non-promoted alternatives |
+| Daniel Ojeda + YouTube video | Spanish-language pitch mentioning BUB1B, WT1, PROTAC, senolytics, AlphaGenome/AlphaMissense and other tools; no public repo identified in description | Adds PROTAC and senolytics as considered tool families; senolysis already excluded, PROTACs are not approved systemic candidates and lack a BUB1B-specific degradation rationale |
+| DETA + YouTube video | Educational puppet-film format; Track 1 reasoning plus Track 2 research questions; deliberately notes 3:30 duration and argues rules do not set a maximum | Creative communication example; we retain the official 180-second target and do not infer that exceeding it is safe |
+
 
 
 
